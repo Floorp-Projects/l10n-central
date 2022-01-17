@@ -1,0 +1,34 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!-- extracted from AccountManager.xul -->
+
+<!-- extracted from AccountManager.xhtml -->
+
+<!ENTITY accountManagerTitle.label "கணக்கு அமைவுகள்">
+
+<!ENTITY accountActionsButton.label "கணக்கு பணிகள்">
+<!ENTITY accountActionsButton.accesskey "A">
+<!ENTITY addMailAccountButton.label "அஞ்சல் கணக்கை சேர்க்க…">
+<!ENTITY addMailAccountButton.accesskey "A">
+<!ENTITY addOtherAccountButton.label "மற்றைய கணக்கை சேர்க்க…">
+<!ENTITY addOtherAccountButton.accesskey "O">
+<!ENTITY setDefaultButton.label "கொடாநிலையாக அமை">
+<!ENTITY setDefaultButton.accesskey "F">
+<!ENTITY removeButton.label "கணக்கை நீக்கு">
+<!ENTITY removeButton.accesskey "R">
+
+
+
+<!-- AccountManager.xul -->
+
+<!-- AccountManager.xhtml -->
+<!-- LOCALIZATION NOTE : this is part of an inline-style attribute on the account
+     setting dialog, which specifies the width and height in em units of the dialog.
+     Localizers ONLY can increase these widths if they are having difficulty getting
+     panel content to fit. 1em = the width of the letter 'm' in the selected font.
+     XUL/FE DEVELOPERS: DO NOT MODIFY THIS VALUE. It represents the correct size of
+     this window for en-US. -->
+<!ENTITY accountManager.size "அகலம்: 55em; உயரம்: 50em;"> 
+<!ENTITY accountTree.width   "அகலம்: 17em;">

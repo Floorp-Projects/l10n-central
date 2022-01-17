@@ -1,0 +1,65 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!-- LOCALIZATION NOTE (places.library.title): use "Library", "Archive" or "Repository" -->
+
+<!ENTITY places.library.title  "पुथी ओड़ाक्">
+<!ENTITY places.library.width  "700">
+<!ENTITY places.library.height "500">
+<!ENTITY organize.label        "साजाव">
+<!ENTITY organize.accesskey    "O">
+<!ENTITY organize.tooltip      "आमाक् पुथी चिनहा़ को साजाव ">
+
+<!ENTITY file.close.label               "बोंद मे">
+<!ENTITY file.close.accesskey           "C">
+<!ENTITY cmd.close.key                  "w">
+<!ENTITY views.label                    "ञेंल">
+<!ENTITY views.accesskey                "V">
+<!ENTITY views.tooltip                  "आमाक् ञेंल बोदोल मे">
+<!ENTITY view.columns.label             "कांधा को उदुग">
+<!ENTITY view.columns.accesskey         "C">
+<!ENTITY view.sort.label                " साला">
+<!ENTITY view.sort.accesskey            "S">
+<!ENTITY view.unsorted.label            " बाङ साला">
+<!ENTITY view.unsorted.accesskey        "U">
+<!ENTITY view.sortAscending.label       "A > Z थार ते साला">
+<!ENTITY view.sortAscending.accesskey   "A">
+<!ENTITY view.sortDescending.label      "Z > A थार ते साला ">
+<!ENTITY view.sortDescending.accesskey  "Z">
+
+<!ENTITY importBookmarksFromHTML.label     "HTML खोन पुथी चिनहा़ को आ़गु… ">
+<!ENTITY importBookmarksFromHTML.accesskey "I">
+<!ENTITY exportBookmarksToHTML.label       " HTMLखोन पुथी चिनहा़ को कुल…">
+<!ENTITY exportBookmarksToHTML.accesskey   "E">
+<!ENTITY importOtherBrowser.label          "एटागाक् ब्राउजार खोन डाटा आ़गु …">
+<!ENTITY importOtherBrowser.accesskey      "A">
+
+<!ENTITY cmd.backup.label               "नोकोल जोगाव…">
+<!ENTITY cmd.backup.accesskey           "B">
+<!ENTITY cmd.restore2.label             " दोहड़ा जोगाव ">
+<!ENTITY cmd.restore2.accesskey         "R">
+<!ENTITY cmd.restoreFromFile.label      "रेत् बाछाव…">
+<!ENTITY cmd.restoreFromFile.accesskey  "C">
+
+
+<!ENTITY col.name.label          "ञुतुम">
+<!ENTITY col.tags.label          "तोल को ">
+<!ENTITY col.url.label           "ठांव">
+<!ENTITY col.mostrecentvisit.label "आ़डिसुराक् ञेल">
+<!ENTITY col.visitcount.label    "लेखा ञुल मे">
+<!ENTITY col.dateadded.label     "सेलेद काना">
+<!ENTITY col.lastmodified.label  "मुचा़त् रे बोदोल लेन">
+
+
+<!ENTITY cmd.find.key  "f">
+
+<!ENTITY maintenance.label      " आ़गु बेकऑप तेयार">
+<!ENTITY maintenance.accesskey  "I">
+<!ENTITY maintenance.tooltip    "आमाक् पुथी चिनहा़ को आ़गू आर बेकऑप">
+
+<!ENTITY backButton.tooltip  "तायोम चालाक् मे">
+
+<!ENTITY forwardButton.tooltip  "माड़ाङ सेत् चालाक् मे">
+
+<!ENTITY detailsPane.selectAnItemText.description "मित् जिनिस आर ओना रेयाक् गुन को ञेल आर सासापड़ाव ला़गित् बाछाव मे  .">
+

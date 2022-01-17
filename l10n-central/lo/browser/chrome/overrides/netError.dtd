@@ -1,0 +1,111 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!ENTITY % brandDTD SYSTEM "chrome://branding/locale/brand.dtd">
+%brandDTD;
+
+<!ENTITY loadError.label "ມີບັນຫາໃນການໂຫລດຫນ້າເວັບ">
+<!ENTITY retry.label "ລອງໃຫມ່ອີກຄັ້ງ">
+<!ENTITY returnToPreviousPage.label "ກັບຄືນ">
+
+<!-- Specific error messages -->
+
+<!ENTITY connectionFailure.longDesc "&sharedLongDesc;">
+
+<!ENTITY deniedPortAccess.longDesc "">
+
+<!ENTITY dnsNotFound.pageTitle "ບໍ່ພົບເຊີບເວີ">
+
+<!ENTITY fileNotFound.longDesc "
+<ul>
+  <li>ກວດເບິງຊື່ໄຟລ໌ສຳລັບຕົວພີມໃຫຍ່ ຫລື ການພີມຜິດອື່ນໆ.</li>
+  <li>ກວດເບິງວ່າໄຟລ໌ໄດ້ຖືກຍ້າຍ, ປ່ຽນຊື່ ຫລື ລຶບຖີ້ມ.</li>
+</ul>">
+
+<!ENTITY fileAccessDenied.longDesc "<ul> <li>ມັນອາດຈະຖືກລຶບອອກໄປແລ້ວ, ຍ້າຍໄປໄວ້ຢູ່ບ່ອນອື່ນແລ້ວ ຫລື ທ່ານອາດບໍ່ມີສິດເຂົ້າເຖິງຟາຍຂໍ້ມູນນີ້.</li> </ul>">
+
+<!ENTITY generic.longDesc "
+<p>&brandShortName; ບໍ່ສາມາດໂຫລດຫນ້າເວັບນີ້ໄດ້ດ້ວຍບາງເຫດຜົນ.</p>">
+
+<!ENTITY captivePortal.title "ເຂົ້າສູ່ລະບົບເຄືອຂ່າຍ">
+<!ENTITY captivePortal.longDesc2 "
+<p>ທ່ານຕ້ອງໄດ້ເຂົ້າສູ່ລະບົບເຄືອຂ່າຍນີ້ກ່ອນທີ່ທ່ານຈະເຂົ້າເຖິງອິນເຕີເນັດ.</p>
+">
+
+<!ENTITY openPortalLoginPage.label2 "ເປີດຫນ້າເຂົ້າສູ່ລະບົບເຄືອຂ່າຍ">
+
+<!ENTITY malformedURI.pageTitle "URL ບໍ່ຖືກຕ້ອງ">
+
+<!ENTITY netInterrupt.longDesc "&sharedLongDesc;">
+
+<!ENTITY contentEncodingError.longDesc "
+<ul>
+  <li>ກະລຸນາຕິດຕໍ່ຫາເຈົ້າຂອງເວັບໄຊທ໌ນີ້ເພື່ອແຈ້ງບັນຫານີ້.</li>
+</ul>">
+
+<!ENTITY unsafeContentType.longDesc "
+<ul>
+  <li>ກະລຸນາຕິດຕໍ່ຫາເຈົ້າຂອງເວັບໄຊທ໌ນີ້ເພື່ອແຈ້ງບັນຫານີ້.</li>
+</ul>
+">
+
+<!ENTITY netReset.longDesc "&sharedLongDesc;">
+
+<!ENTITY netTimeout.longDesc "&sharedLongDesc;">
+
+<!ENTITY unknownProtocolFound.longDesc "
+<ul>
+  <li>ທ່ານອາດຈຳເປັນຕ້ອງຕິດຕັ້ງຊອບແວອື່ນເພື່ອເປີດທີ່ຢູ່ນີ້.</li>
+</ul>">
+
+<!ENTITY proxyConnectFailure.longDesc "
+<ul>
+  <li>ກວດເບິງການຕັ້ງຄ່າຂອງພັອກຊີໃຫ້ແນ່ໃຈວ່າການຕັ້ງຄ່າຕ່າງໆແມ່ນຖືກຕ້ອງ.</li>
+  <li>ຕິດຕໍ່ຫາຜູ້ຄ້ມຄອງລະບົບຂອງທ່ານເພື່ອໃຫ້ແນ່ໃຈວ່າພັອກຊີເຊີເວີ ເຮັດວຽກຢູ່.</li>
+</ul>">
+
+<!ENTITY redirectLoop.longDesc "
+<ul>
+  <li>ບາງຄັ້ງບັນຫານີ້ສາມາດເກີດຂື້ນມາຈາກການປິດ ຫລື ປະຕິເສດການຍອມຮັບ ຄຸກກີ້.</li>
+</ul>">
+
+<!ENTITY unknownSocketType.longDesc "
+<ul>
+  <li>ກວດເບິງໃຫ້ແນ່ໃຈວ່າລະບົບຂອງທ່ານໄດ້ຮັບການຕິດຕັ້ງ ຕົວຈັດການຄວາມປອດໄພສ່ວນບຸກຄົນ.</li>
+  <li>ນີ້ອາດຈະເນື່ອງມາຈາກການຕັ້ງຄ່າທີ່ບໍ່ໄດ້ມາດຕະຖານໃນເຊີເວີ.</li>
+</ul>">
+
+
+
+
+
+
+
+
+<!ENTITY cspBlocked.longDesc "<p>&brandShortName; ປ້ອງກັນຫນ້າເວັບນີ້ຈາກການໂຫລດໃນທິດທາງນີ້ເພາະວ່າຫນ້າເວັບມີເນື້ອຫາທີ່ຖືກບັອກໄວ້ໂດຍນະໂຍບາຍຄວາມປອດໄພ.</p>">
+
+
+<!ENTITY errorReporting.automatic2 "ລາຍງານຂໍ້ຜິດພາດເຊັ່ນນີ້ເພື່ອຊ່ວຍ Mozilla ລະບຸແລະບັອກເວັບໄຊທ໌ທີ່ເປັນອັນຕະລາຍ">
+<!ENTITY errorReporting.learnMore "ຮຽນຮູ້ເພີ່ມເຕີມ...​">
+
+<!ENTITY remoteXUL.longDesc "<p><ul><li>ກະລຸນາຕິດຕໍ່ຫາເຈົ້າຂອງເວັບໄຊທ໌ເພື່ອແຈ້ງບັນຫານີ້.</li></ul></p>">
+
+<!-- LOCALIZATION NOTE (sslv3Used.longDesc2) - Do not translate
+     "SSL_ERROR_UNSUPPORTED_VERSION". -->
+<!ENTITY sslv3Used.longDesc2 "ຂໍ້ມູນຂັ້ນສູງ: SSL_ERROR_UNSUPPORTED_VERSION">
+
+<!-- LOCALIZATION NOTE (certerror.wrongSystemTime2,
+                        certerror.wrongSystemTimeWithoutReference) - The <span id='..' />
+     tags will be injected with actual values, please leave them unchanged. -->
+
+<!ENTITY certerror.copyToClipboard.label "ສຳເນົາຂໍ້ຄວາມໄປໄວ້ທີ່ Clipboard">
+
+<!-- LOCALIZATION NOTE (inadequateSecurityError.longDesc) - Do not translate
+     "NS_ERROR_NET_INADEQUATE_SECURITY". -->
+
+<!ENTITY blockedByPolicy.title "ບັອກຫນ້າແລ້ວ">
+
+
+<!ENTITY prefReset.label "ກູ້ຄືນການຕັ້ງຄ່າເລີ່ມຕົ້ນ">
+

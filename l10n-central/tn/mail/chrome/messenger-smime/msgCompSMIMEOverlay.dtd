@@ -1,0 +1,25 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!--LOCALIZATION NOTE msgCompSMIMEOverlay.dtd UI for s/mime hooks in message composition -->
+
+
+<!-- not yet used
+<!ENTITY menu_securityEncryptOptional.label "Allow Encryption">
+<!ENTITY menu_securityEncryptOptional.accesskey "w">
+-->
+
+<!ENTITY menu_securityEncryptRequire.accesskey "K">
+
+<!ENTITY menu_securitySign.label "Saena Molaetsa Ono ka tsela ya Dijitale">
+<!ENTITY menu_securitySign.accesskey "M">
+
+<!ENTITY menu_securityStatus.label "Leba Tshedimosetso ya Pabalesego">
+<!ENTITY menu_securityStatus.accesskey "P">
+
+<!ENTITY securityButton.label "Pabalesego">
+<!ENTITY securityButton.tooltip "Leba gongwe fetola boalo jwa pabalesego">
+
+<!ENTITY menu_viewSecurityStatus.label "Tshedimosetso ya Pabalesego ya Melaetsa">
+<!ENTITY menu_viewSecurityStatus.accesskey "M">

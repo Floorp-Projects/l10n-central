@@ -1,0 +1,6 @@
+repo: 516833b1f3576c57e9e7bc9a7c2dabfa740c1c46
+node: 6ed122b33cacbdeb27068b19e86b3ca7fba642b6
+branch: default
+latesttag: FIREFOX_18_0b1_BUILD1
+latesttagdistance: 1113
+changessincelatesttag: 1123
