@@ -132,9 +132,10 @@ always-check-default =
     .label = { -brand-short-name } が既定のブラウザーか確認する
     .accesskey = y
 
+Linux = 既定にするには？
+is-linux = Floorp for Linux では、既定のブラウザーのチェックと設定を、ブラウザー内部から行えません。
+is-not-default = Floorp for Linux では、既定のブラウザーのチェックと設定を、ブラウザー内部から行えません。
 is-default = Floorp for Linux では、既定のブラウザーのチェックと設定を、ブラウザー内部から行えません。
-on-Linux = Floorp for Linux では、既定のブラウザーのチェックと設定を、ブラウザー内部から行えません。
-
 set-as-my-default-browser =
     .label = 既定のブラウザーにする...
     .accesskey = D
