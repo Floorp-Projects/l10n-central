@@ -420,7 +420,7 @@ update-application-title = { -brand-short-name } の更新
 
 update-application-description = 最高のパフォーマンスと安定性、セキュリティを提供するため { -brand-short-name } を最新の状態に保ちます。
 
-update-application-version = バージョン 8.2.4 <a data-l10n-name="learn-more">Firefox カーネルの更新情報</a>
+update-application-version = バージョン { $version } <a data-l10n-name="learn-more">Floorp Legacy のリリースノート</a>
 
 update-history =
     .label = 更新履歴を表示...
