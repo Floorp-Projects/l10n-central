@@ -14,7 +14,7 @@ default-bookmarks-toolbarfolder-description = Adicione favoritos nesta pasta par
 # link title for https://www.mozilla.org/Floorp/central/
 default-bookmarks-getting-started = Introdução
 # Floorp links folder name
-default-bookmarks-Floorp-heading = Floorp Legacy
+default-bookmarks-Floorp-heading = Floorp Legacy 8th
 # link title for https://www.mozilla.org/Floorp/help/
 default-bookmarks-Floorp-get-help = Obter ajuda
 # link title for https://www.mozilla.org/Floorp/customize/

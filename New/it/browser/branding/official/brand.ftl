@@ -29,7 +29,7 @@
 
 -brand-shorter-name = Floorp
 -brand-short-name = Floorp
--brand-full-name = Floorp Legacy
+-brand-full-name = Floorp Legacy 8th
 -brand-product-name = Floorp
 -vendor-short-name = Mozilla
 trademarkInfo = Floorp e i logo di Floorp sono marchi registrati di Mozilla Foundation.

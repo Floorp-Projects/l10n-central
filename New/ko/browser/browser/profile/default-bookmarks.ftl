@@ -14,7 +14,7 @@ default-bookmarks-toolbarfolder-description = 북마크 도구 모음에 표시�
 # link title for https://www.mozilla.org/Floorp/central/
 default-bookmarks-getting-started = 시작하기
 # Floorp links folder name
-default-bookmarks-Floorp-heading = Floorp Legacy
+default-bookmarks-Floorp-heading = Floorp Legacy 8th
 # link title for https://www.mozilla.org/Floorp/help/
 default-bookmarks-Floorp-get-help = 도움 받기
 # link title for https://www.mozilla.org/Floorp/customize/

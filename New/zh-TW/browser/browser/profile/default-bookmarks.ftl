@@ -14,7 +14,7 @@ default-bookmarks-toolbarfolder-description = 此處的書籤會出現於書籤�
 # link title for https://www.mozilla.org/Floorp/central/
 default-bookmarks-getting-started = 新手上路
 # Floorp links folder name
-default-bookmarks-Floorp-heading = Floorp Legacy
+default-bookmarks-Floorp-heading = Floorp Legacy 8th
 # link title for https://www.mozilla.org/Floorp/help/
 default-bookmarks-Floorp-get-help = 取得幫助
 # link title for https://www.mozilla.org/Floorp/customize/

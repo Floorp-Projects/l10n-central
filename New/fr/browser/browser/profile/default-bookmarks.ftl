@@ -12,7 +12,7 @@ default-bookmarks-heading = Marque-pages
 default-bookmarks-toolbarfolder = Barre personnelle
 default-bookmarks-toolbarfolder-description = Ajoutez des marque-pages dans ce dossier pour les voir apparaître sur votre barre personnelle
 # Floorp links folder name
-default-bookmarks-Floorp-heading = Floorp Legacy
+default-bookmarks-Floorp-heading = Floorp Legacy 8th
 # link title for https://www.mozilla.org/Floorp/help/
 default-bookmarks-Floorp-get-help = Obtenir de l’aide
 # link title for https://www.mozilla.org/Floorp/customize/

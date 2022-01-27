@@ -14,6 +14,10 @@ extension-Floorp-compact-dark-name = 暗色
 extension-Floorp-compact-dark-description = 暗色佈景主題。
 extension-Floorp-alpenglow-name = Floorp Alpenglow
 extension-Floorp-alpenglow-description = 使用色彩繽紛的按鈕、選單、視窗樣式。
+extension-floorp-lepton-name = 水平标签位置转移（系统主题）
+extension-floorp-lepton-description = 将水平标签移到书签栏的底部。
+extension-floorp-edge-name= 优化垂直标签的 Floorp（系统主题）。
+extension-floorp-edge-description= 优化垂直标签的 Floorp。 水平标签将被隐藏，无法使用。
 
 ## Colorway Themes
 ## These themes are variants of a colorway. The colorway is specified in the

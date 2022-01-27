@@ -14,6 +14,10 @@ extension-Floorp-compact-dark-name = Тёмная
 extension-Floorp-compact-dark-description = Тема с тёмной цветовой гаммой.
 extension-Floorp-alpenglow-name = Floorp Alpenglow
 extension-Floorp-alpenglow-description = Использует красочный внешний вид для кнопок, меню и окон.
+extension-floorp-lepton-name = Смещение положения горизонтальной вкладки (системная тема)
+extension-floorp-lepton-description = Переместите горизонтальные вкладки в нижнюю часть панели закладок.
+extension-floorp-edge-name= Оптимизация Floorp для вертикальных вкладок (системная тема)
+extension-floorp-edge-description= Оптимизируйте Floorp для вертикальных вкладок. Горизонтальные вкладки будут скрыты и непригодны для использования.
 
 ## Colorway Themes
 ## These themes are variants of a colorway. The colorway is specified in the

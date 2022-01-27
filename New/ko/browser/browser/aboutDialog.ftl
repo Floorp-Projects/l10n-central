@@ -39,6 +39,7 @@ warningDesc-version = { -brand-short-name }는 실험적 버전으로서 불안�
 
 aboutdialog-help-user = { -brand-product-name } 도움말
 aboutdialog-submit-feedback = 의견 보내기
+iconprov = Floorp Legacy 아이콘 제작자 : <label data-l10n-name="iconprov-Link">@kotaten_kt</label>
 
 community-exp = <label data-l10n-name="community-exp-mozillaLink">{ -vendor-short-name }</label>는  <label data-l10n-name="community-exp-creditsLink">모든 사람이 공공 자원으로서 사용하는 </label> 열린 웹을 만들고자 하는 글로벌 커뮤니티입니다.
 

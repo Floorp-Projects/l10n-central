@@ -16,7 +16,7 @@ default-bookmarks-toolbarfolder-description = Aggiungere un segnalibro a questa 
 default-bookmarks-getting-started = Come iniziare
 
 # Floorp links folder name
-default-bookmarks-Floorp-heading = Floorp Legacy
+default-bookmarks-Floorp-heading = Floorp Legacy 8th
 
 # link title for https://www.mozilla.org/Floorp/help/
 default-bookmarks-Floorp-get-help = Ottieni assistenza

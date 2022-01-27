@@ -4,7 +4,7 @@
 
 <!ENTITY  brandShorterName      "Floorp">
 <!ENTITY  brandShortName        "Floorp">
-<!ENTITY  brandFullName         "Floorp Legacy">            
+<!ENTITY  brandFullName         "Floorp Legacy 8th">            
 <!-- LOCALIZATION NOTE (brandProductName):
    This brand name can be used in messages where the product name needs to
    remain unchanged across different versions (Nightly, Beta, etc.). -->

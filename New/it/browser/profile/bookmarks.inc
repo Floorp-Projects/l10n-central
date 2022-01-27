@@ -16,7 +16,7 @@
 
 # LOCALIZATION NOTE (Floorp_heading):
 # Floorp links folder name
-#define Floorp_heading Floorp Legacy
+#define Floorp_heading Floorp Legacy 8th
 
 # LOCALIZATION NOTE (Floorp_get_help):
 # link title for http://www.mozilla.com/Floorp/help/

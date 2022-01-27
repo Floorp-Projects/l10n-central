@@ -14,6 +14,10 @@ extension-Floorp-compact-dark-name = 어둡게
 extension-Floorp-compact-dark-description = 어두운 색 구성표를 가진 테마입니다.
 extension-Floorp-alpenglow-name = Floorp Alpenglow
 extension-Floorp-alpenglow-description = 버튼, 메뉴 및 창에 색상형 화면 배색을 사용합니다.
+extension-floorp-lepton-name = 수평 탭 위치 이동 (시스템 테마)
+extension-floorp-lepton-description = 가로 탭을 책갈피 막대의 맨 아래로 이동합니다.
+extension-floorp-edge-name= 수직 탭에 Floorp 최적화 (시스템 테마)
+extension-floorp-edge-description= 수직 탭에 Floorp를 최적화합니다. 수평 탭은 숨겨져 사용할 수 없게 됩니다.
 
 ## Colorway Themes
 ## These themes are variants of a colorway. The colorway is specified in the

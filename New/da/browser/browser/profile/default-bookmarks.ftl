@@ -14,7 +14,7 @@ default-bookmarks-toolbarfolder-description = Tilføj bogmærker til denne mappe
 # link title for https://www.mozilla.org/Floorp/central/
 default-bookmarks-getting-started = Kom i gang
 # Floorp links folder name
-default-bookmarks-Floorp-heading = Floorp Legacy
+default-bookmarks-Floorp-heading = Floorp Legacy 8th
 # link title for https://www.mozilla.org/Floorp/help/
 default-bookmarks-Floorp-get-help = Få hjælp
 # link title for https://www.mozilla.org/Floorp/customize/

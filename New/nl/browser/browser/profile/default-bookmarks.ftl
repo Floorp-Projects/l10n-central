@@ -14,7 +14,7 @@ default-bookmarks-toolbarfolder-description = Voeg bladwijzers aan deze map toe 
 # link title for https://www.mozilla.org/Floorp/central/
 default-bookmarks-getting-started = Aan de slag
 # Floorp links folder name
-default-bookmarks-Floorp-heading = Floorp Legacy
+default-bookmarks-Floorp-heading = Floorp Legacy 8th
 # link title for https://www.mozilla.org/Floorp/help/
 default-bookmarks-Floorp-get-help = Hulp verkrijgen
 # link title for https://www.mozilla.org/Floorp/customize/

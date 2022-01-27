@@ -14,7 +14,7 @@ default-bookmarks-toolbarfolder-description = A mappához adott könyvjelzők me
 # link title for https://www.mozilla.org/Floorp/central/
 default-bookmarks-getting-started = Kezdő lépések
 # Floorp links folder name
-default-bookmarks-Floorp-heading = Floorp Legacy
+default-bookmarks-Floorp-heading = Floorp Legacy 8th
 # link title for https://www.mozilla.org/Floorp/help/
 default-bookmarks-Floorp-get-help = Segítség kérése
 # link title for https://www.mozilla.org/Floorp/customize/

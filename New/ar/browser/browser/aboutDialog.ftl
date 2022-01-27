@@ -39,6 +39,7 @@ warningDesc-version = { -brand-short-name } تجريبي و قد لا يكون 
 
 aboutdialog-help-user = مساعدة { -brand-product-name }
 aboutdialog-submit-feedback = أرسِل انطباعاتك
+iconprov = برنامج Floorp Legacy Icon Creator: <label data-l10n-name="iconprov-Link">@kotaten_kt</label>
 
 community-exp = <label data-l10n-name="community-exp-mozillaLink">{ -vendor-short-name }</label> هي <label data-l10n-name="community-exp-creditsLink">مجتمعٌ عالميّ</label> يعمل للمحافظة على انفتاح الوب و عموميتها و إتاحتها للجميع.
 

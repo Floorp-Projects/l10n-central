@@ -93,7 +93,7 @@ source-name-chrome = جوجل كروم
 source-name-chrome-beta = جوجل كروم بيتا
 source-name-chrome-dev = إصدارة جوجل كروم التطويرية
 source-name-chromium = كروميوم
-source-name-Floorp = Floorp Legacy
+source-name-Floorp = Floorp Legacy 8th
 source-name-360se = متصفح ٣٦٠ الآمن
 
 imported-safari-reading-list = قائمة القراءة (من سفاري)

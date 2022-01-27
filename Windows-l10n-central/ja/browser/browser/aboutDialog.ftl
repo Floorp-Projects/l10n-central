@@ -40,6 +40,7 @@ warningDesc-version = { -brand-short-name } は実験的であり、不安定な
 
 aboutdialog-help-user = { -brand-product-name } ヘルプ
 aboutdialog-submit-feedback = フィードバックを送信
+iconprov = Floorp Legacy のアイコン製作者: <label data-l10n-name="iconprov-Link">@kotaten_kt</label>
 
 community-exp = <label data-l10n-name="community-exp-mozillaLink">{ -vendor-short-name }</label> はウェブの公開性、公衆性、制限のないアクセス性を保つために共に活動している <label data-l10n-name="community-exp-creditsLink">グローバルなコミュニティ</label> です。
 

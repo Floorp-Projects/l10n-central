@@ -39,6 +39,7 @@ warningDesc-version = { -brand-short-name } 是实验性的测试版本，可能
 
 aboutdialog-help-user = { -brand-product-name } 帮助
 aboutdialog-submit-feedback = 提交反馈
+iconprov = Floorp Legacy 图标创建者: <label data-l10n-name="iconprov-Link">@kotaten_kt</label>
 
 community-exp = <label data-l10n-name="community-exp-mozillaLink">{ -vendor-short-name }</label> 是一个<label data-l10n-name="community-exp-creditsLink">全球社区</label>，携手致力于让互联网保持开放、公开且人人可用。
 

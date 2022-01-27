@@ -14,7 +14,7 @@ default-bookmarks-toolbarfolder-description = Thêm các dấu trang vào thư m
 # link title for https://www.mozilla.org/Floorp/central/
 default-bookmarks-getting-started = Bắt đầu
 # Floorp links folder name
-default-bookmarks-Floorp-heading = Floorp Legacy
+default-bookmarks-Floorp-heading = Floorp Legacy 8th
 # link title for https://www.mozilla.org/Floorp/help/
 default-bookmarks-Floorp-get-help = Nhận trợ giúp
 # link title for https://www.mozilla.org/Floorp/customize/

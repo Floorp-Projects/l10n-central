@@ -39,7 +39,7 @@ warningDesc-version = O { -brand-short-name } é experimental e poderá ser inst
 
 aboutdialog-help-user = Ajuda do { -brand-product-name }
 aboutdialog-submit-feedback = Enviar comentários
-
+iconprov = Criador de ícones do Floorp Legacy : <label data-l10n-name="iconprov-Link">@kotaten_kt</label>
 community-exp = <label data-l10n-name="community-exp-mozillaLink">A { -vendor-short-name }</label> é uma <label data-l10n-name="community-exp-creditsLink">comunidade global</label> que trabalha em conjunto para manter a Web aberta, pública e acessível a todos.
 
 community-2 = O { -brand-short-name } é desenhado pela <label data-l10n-name="community-mozillaLink">{ -vendor-short-name }</label>, uma <label data-l10n-name="community-creditsLink">comunidade global</label> que trabalha em conjunto para manter a Web aberta, pública e acessível a todos.

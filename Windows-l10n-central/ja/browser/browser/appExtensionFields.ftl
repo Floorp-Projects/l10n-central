@@ -8,12 +8,16 @@
 # "Auto" is short for automatic. It can be localized without limitations.
 extension-default-theme-name-auto = システムテーマ — 自動
 extension-default-theme-description = ボタンやメニュー、ウィンドウについてオペレーティングシステムの設定に従います。
-extension-firefox-compact-light-name = Light
+extension-firefox-compact-light-name = ライトテーマ
 extension-firefox-compact-light-description = 明るい配色のテーマです。
-extension-firefox-compact-dark-name = Dark
-extension-firefox-compact-dark-description = 暗い配色のテーマです。
+extension-firefox-compact-dark-name = ダークテーマ
+extension-firefox-compact-dark-description = 暗い配色のテーマです。Material UI に最適化されています。通称：マテリアルダーク
 extension-firefox-alpenglow-name = Firefox Alpenglow
 extension-firefox-alpenglow-description = カラフルな外観のボタン、メニュー、ウィンドウを使用します。
+extension-floorp-lepton-name = 水平タブ位置移動（システムテーマ）
+extension-floorp-lepton-description = 水平タブの位置を、ブックマークバーの下に移動します。
+extension-floorp-edge-name= 垂直タブに Floorp を最適化（システムテーマ）
+extension-floorp-edge-description= 垂直タブに Floorp を最適化します。水平タブは隠され、使えなくなります。
 
 ## Colorway Themes
 ## These themes are variants of a colorway. The colorway is specified in the
