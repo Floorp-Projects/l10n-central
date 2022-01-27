@@ -34,12 +34,12 @@ update-unsupported = 最新バージョンはご使用のシステムに対応�
 
 update-restarting = 再起動中です...
 
-channel-description = 現在ご利用中の Floorp の更新チャンネルは 安定版 です。{ " " }
+channel-description = 現在のアップデートチャンネルは <label data-l10n-name="current-channel"></label> です。{ " " }
 
 warningDesc-version = { -brand-short-name } は実験的であり、不安定な可能性があります。
 
 aboutdialog-help-user = { -brand-product-name } ヘルプ
-aboutdialog-submit-feedback = Ablaze にフィードバックを送信
+aboutdialog-submit-feedback = フィードバックを送信
 
 community-exp = <label data-l10n-name="community-exp-mozillaLink">{ -vendor-short-name }</label> はウェブの公開性、公衆性、制限のないアクセス性を保つために共に活動している <label data-l10n-name="community-exp-creditsLink">グローバルなコミュニティ</label> です。
 
@@ -47,16 +47,15 @@ community-2 = { -brand-short-name } をデザインしている <label data-l10n
 
 helpus = 参加しませんか？ <label data-l10n-name="helpus-donateLink">寄付</label> または <label data-l10n-name="helpus-getInvolvedLink">コミュニティへようこそ！</label>
 
-iconprov = Floorp Legacyのアイコン製作者: <label data-l10n-name="iconprov-Link">@kotaten_kt</label>
 bottomLinks-license = ライセンス情報
-bottomLinks-rights = Floorp のライセンスについて
+bottomLinks-rights = あなたの権利について
 bottomLinks-privacy = プライバシーポリシー
 
 # Example of resulting string: 66.0.1 (64-bit)
 # Variables:
 #   $version (String): version of Firefox, e.g. 66.0.1
 #   $bits (Number): bits of the architecture (32 or 64)
-aboutDialog-version = { $version } ({ $bits }-bit)
+aboutDialog-version = { $version } ({ $bits } ビット)
 
 # Example of resulting string: 66.0a1 (2019-01-16) (64-bit)
 # Variables:

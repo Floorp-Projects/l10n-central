@@ -558,9 +558,9 @@ bookmarks-recent-bookmarks-panel-subheader = 最近のブックマーク
 bookmarks-toolbar-chevron =
     .tooltiptext = 残りのブックマークを表示します
 bookmarks-sidebar-content =
-    .aria-label = ブックマーク & フィードリスト
+    .aria-label = ブックマーク
 bookmarks-menu-button =
-    .label = フィードリスト
+    .label = ブックマークメニュー
 bookmarks-other-bookmarks-menu =
     .label = 他のブックマーク
 bookmarks-mobile-bookmarks-menu =
@@ -586,8 +586,8 @@ bookmarks-tools-toolbar-visibility-panel =
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
-            [true] フィードリストをツールバーから削除
-           *[other] フィードリストをツールバーに追加
+            [true] ブックマークメニューをツールバーから削除
+           *[other] ブックマークメニューをツールバーに追加
         }
 bookmarks-search =
     .label = ブックマークを検索
@@ -735,6 +735,19 @@ edit-popup-settings =
 picture-in-picture-hide-toggle =
     .label = ピクチャーインピクチャーの切り替えボタンを隠す
     .accesskey = H
+
+## Since the default position for PiP controls does not change for RTL layout,
+## right-to-left languages should use "Left" and "Right" as in the English strings,
+
+picture-in-picture-move-toggle-right =
+    .label = ピクチャーインピクチャーの切り替えボタンを右側に移動
+    .accesskey = R
+
+picture-in-picture-move-toggle-left =
+    .label = ピクチャーインピクチャーの切り替えボタンを左側に移動
+    .accesskey = L
+
+##
 
 # Navigator Toolbox
 

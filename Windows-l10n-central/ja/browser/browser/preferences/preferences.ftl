@@ -97,7 +97,7 @@ extension-controlled-web-notifications = 拡張機能 <img data-l10n-name="icon"
 
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
-extension-controlled-privacy-containers = Floorp または拡張機能 <img data-l10n-name="icon"/> { $name } がコンテナータブを必要としています。
+extension-controlled-privacy-containers = 拡張機能 <img data-l10n-name="icon"/> { $name } がコンテナータブを必要としています。
 
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
@@ -420,13 +420,13 @@ update-application-title = { -brand-short-name } の更新
 
 update-application-description = 最高のパフォーマンスと安定性、セキュリティを提供するため { -brand-short-name } を最新の状態に保ちます。
 
-update-application-version = バージョン { $version } <a data-l10n-name="learn-more">Floorp の更新情報</a>
+update-application-version = バージョン { $version } <a data-l10n-name="learn-more">更新情報</a>
 
 update-history =
     .label = 更新履歴を表示...
     .accesskey = p
 
-update-application-allow-description = { -brand-short-name } の更新動作（更新は Floorp Updater によって通知されます）
+update-application-allow-description = { -brand-short-name } の更新動作
 
 update-application-auto =
     .label = 更新を自動的にインストールする (推奨)
@@ -573,7 +573,7 @@ home-restore-defaults =
 # "Firefox" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
-    .label = Firefox ホーム (既定)
+    .label = Firefox Home (既定)
 
 home-mode-choice-custom =
     .label = カスタム URL...
@@ -819,11 +819,11 @@ prefs-sync-now =
 sync-currently-syncing-heading = これらの項目を同期しています:
 
 sync-currently-syncing-bookmarks = ブックマーク
-sync-currently-syncing-history = 履歴
-sync-currently-syncing-tabs = 開いたタブ
+sync-currently-syncing-history = 表示履歴
+sync-currently-syncing-tabs = 開いているタブ
 sync-currently-syncing-logins-passwords = ログイン情報とパスワード
 sync-currently-syncing-addresses = 所在地フォーム
-sync-currently-syncing-creditcards = クレジットカード
+sync-currently-syncing-creditcards = クレジットカード情報
 sync-currently-syncing-addons = アドオン
 sync-currently-syncing-settings = 個人設定
 
@@ -850,7 +850,7 @@ sync-engine-history =
     .accesskey = r
 
 sync-engine-tabs =
-    .label = 開いたタブ
+    .label = 開いているタブ
     .tooltiptext = 同期した端末で開いているすべてのタブの一覧です
     .accesskey = t
 
@@ -1056,6 +1056,10 @@ sitedata-option-block-cross-site-tracking-cookies-including-social-media =
     .label = ソーシャルメディア Cookie を含むクロスサイトトラッキング Cookie
 sitedata-option-block-cross-site-cookies-including-social-media =
     .label = ソーシャルメディア Cookie を含むクロスサイト Cookie
+sitedata-option-block-cross-site-tracking-cookies =
+    .label = クロスサイトトラッキング Cookie
+sitedata-option-block-cross-site-cookies =
+    .label = クロスサイトトラッキング Cookie と、他のクロスサイト Cookie の隔離
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
     .label = クロスサイトトラッカーとソーシャルメディアトラッカー、および残存 Cookie を隔離
 sitedata-option-block-unvisited =
@@ -1148,6 +1152,16 @@ content-blocking-all-windows-tracking-content = すべてのウィンドウの�
 content-blocking-all-third-party-cookies = サードパーティ Cookie すべて
 content-blocking-cryptominers = 暗号通貨マイニング
 content-blocking-fingerprinters = フィンガープリント採取
+
+# "Test pilot" is used as a verb. Possible alternatives:
+# "Be the first to try", "Join an early experiment".
+content-blocking-etp-standard-tcp-rollout-checkbox =
+  .label = これまでにない最も強力なプライバシー保護機能を試す
+  .accesskey = T
+
+# "Contains" here means "isolates", "limits".
+content-blocking-etp-standard-tcp-rollout-description = 包括的 Cookie 保護機能により現在のサイトへの Cookie が制限されているため、トラッカーはサイトを横断してあなたを追跡する Cookie を利用できません。
+content-blocking-etp-standard-tcp-rollout-learn-more = 詳細情報
 
 content-blocking-warning-title = 注意！
 content-blocking-and-isolating-etp-warning-description = トラッカーをブロックし、残存 Cookie を隔離すると、一部のサイトの機能に影響がある可能性があります。すべてのコンテンツを読み込むには、トラッカーを許容してページを再読み込みします。

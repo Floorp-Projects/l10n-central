@@ -14,8 +14,8 @@
 #define bookmarks_toolbarfolder_description このフォルダの中身がブックマークツールバーに表示されます
 
 # LOCALIZATION NOTE (getting_started):
-# link title for https://support.ablaze.one/
-#define getting_started Floorp を使いこなそう
+# link title for https://www.mozilla.org/en-US/firefox/central/
+#define getting_started Firefox を使いこなそう
 
 # LOCALIZATION NOTE (firefox_heading):
 # Firefox links folder name

@@ -78,6 +78,15 @@ menu-file-open-file =
 menu-file-close =
     .label = 閉じる
     .accesskey = C
+# Variables:
+#  $tabCount (Number): the number of tabs that are affected by the action.
+menu-file-close-tab =
+    .label =
+        { $tabCount ->
+            [1] タブを閉じる
+           *[other] { $tabCount } 個のタブを閉じる
+        }
+    .accesskey = C
 menu-file-close-window =
     .label = ウィンドウを閉じる
     .accesskey = d
@@ -136,7 +145,7 @@ menu-view-sidebar =
     .label = サイドバー
     .accesskey = e
 menu-view-bookmarks =
-    .label = ブックマーク & フィードリスト
+    .label = ブックマーク
 menu-view-history-button =
     .label = 履歴
 menu-view-synced-tabs-sidebar =
@@ -309,7 +318,7 @@ menu-help-more-troubleshooting-info =
 menu-help-report-site-issue =
     .label = サイトの問題を報告...
 menu-help-feedback-page =
-    .label = Ablaze にフィードバックを送信...
+    .label = フィードバックを送信...
     .accesskey = S
 menu-help-enter-troubleshoot-mode2 =
     .label = トラブルシューティングモード...
