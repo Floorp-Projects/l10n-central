@@ -1,6 +1,0 @@
-repo: 28a6e5b67ef64a3807c17cf78ef6dad9b75dc8b8
-node: c1636a1a7507710a736e6ffe4faf18ea92f45c9a
-branch: default
-latesttag: GECKO_1_9_2_BASE
-latesttagdistance: 1170
-changessincelatesttag: 1175
