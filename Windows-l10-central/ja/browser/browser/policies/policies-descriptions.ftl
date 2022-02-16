@@ -31,7 +31,7 @@ policy-BlockAboutProfiles = about:profiles ページへのアクセスをブロ�
 
 policy-BlockAboutSupport = about:support ページへのアクセスをブロックします。
 
-policy-Bookmarks = ブックマークツールバー、ブックマークメニュー、または指定のフォルダーの中にブックマークを作成します。
+policy-Bookmarks = ブックマークツールバー、フィードリスト、または指定のフォルダーの中にブックマークを作成します。
 
 policy-CaptivePortal = キャプティブポータルサポートを有効または無効にします。
 

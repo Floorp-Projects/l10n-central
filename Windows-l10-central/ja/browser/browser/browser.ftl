@@ -560,7 +560,7 @@ bookmarks-toolbar-chevron =
 bookmarks-sidebar-content =
     .aria-label = ブックマーク
 bookmarks-menu-button =
-    .label = ブックマークメニュー
+    .label = フィードリスト
 bookmarks-other-bookmarks-menu =
     .label = 他のブックマーク
 bookmarks-mobile-bookmarks-menu =
@@ -586,8 +586,8 @@ bookmarks-tools-toolbar-visibility-panel =
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
-            [true] ブックマークメニューをツールバーから削除
-           *[other] ブックマークメニューをツールバーに追加
+            [true] フィードリストをツールバーから削除
+           *[other] フィードリストをツールバーに追加
         }
 bookmarks-search =
     .label = ブックマークを検索
