@@ -17,11 +17,11 @@ about-telemetry-next-ping = >>
 about-telemetry-page-title = Telemetry データ
 about-telemetry-current-store = 現在のストア:
 about-telemetry-more-information = 詳しい情報をお探しですか？
-about-telemetry-Floorp-data-doc = <a data-l10n-name="data-doc-link">Floorp Data Documentation</a> には、私たちのデータツールでの取り扱われ方についてのガイドが含まれます。
-about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">Floorp Telemetry クライアントドキュメント</a> には、コンセプト、API ドキュメント、データ参照についての定義が含まれます。
+about-telemetry-firefox-data-doc = <a data-l10n-name="data-doc-link">Firefox Data Documentation</a> には、私たちのデータツールでの取り扱われ方についてのガイドが含まれます。
+about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">Firefox Telemetry クライアントドキュメント</a> には、コンセプト、API ドキュメント、データ参照についての定義が含まれます。
 about-telemetry-telemetry-dashboard = <a data-l10n-name="dashboard-link">Telemetry ダッシュボード</a> では、Telemetry 経由で Mozilla が受信したデータが視覚化されています。
 about-telemetry-telemetry-probe-dictionary = <a data-l10n-name="probe-dictionary-link">Probe Dictionary</a> は、Telemetry により収集されたプローブの詳細と説明を提供します。
-about-telemetry-show-in-Floorp-json-viewer = JSON ビューアーで開く
+about-telemetry-show-in-Firefox-json-viewer = JSON ビューアーで開く
 about-telemetry-home-section = ホーム
 about-telemetry-general-data-section = 一般データ
 about-telemetry-environment-data-section = 環境データ
@@ -74,7 +74,7 @@ about-telemetry-ping-details = 情報の各ピースは “<a data-l10n-name="pi
 about-telemetry-data-details-current = 情報の各ピースは “<a data-l10n-name="ping-link">ping</a>” にバンドルして送信されます。あなたは現在のデータを調べています。
 # string used as a placeholder for the search field
 # More info about it can be found here:
-# https://Floorp-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
+# https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
 # Variables:
 #   $selectedTitle (String): the section name from the structure of the ping.
 about-telemetry-filter-placeholder =
@@ -84,7 +84,7 @@ about-telemetry-filter-all-placeholder =
 # Variables:
 #   $searchTerms (String): the searched terms
 about-telemetry-results-for-search = “{ $searchTerms }” の検索結果
-# More info about it can be found here: https://Floorp-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
+# More info about it can be found here: https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
 # Variables:
 #   $sectionName (String): the section name from the structure of the ping.
 #   $currentSearchText (String): the current text in the search input
@@ -137,7 +137,7 @@ about-telemetry-origin-origin = 生成元
 about-telemetry-origin-count = カウント
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
-about-telemetry-origins-explanation = <a data-l10n-name="origin-doc-link">Floorp 生成元 Telemetry</a> はデータを送信前にエンコードするため、{ $telemetryServerOwner } が対象をカウントできます。ただし、与えられた { -brand-product-name } がカウントに含まれるかどうかを知ることはできません。(<a data-l10n-name="prio-blog-link">詳細情報</a>)
+about-telemetry-origins-explanation = <a data-l10n-name="origin-doc-link">Firefox 生成元 Telemetry</a> はデータを送信前にエンコードするため、{ $telemetryServerOwner } が対象をカウントできます。ただし、与えられた { -brand-product-name } がカウントに含まれるかどうかを知ることはできません。(<a data-l10n-name="prio-blog-link">詳細情報</a>)
 # Variables:
 #  $process (String): type of process in subsection headers ( e.g. "content", "parent" )
 about-telemetry-process = { $process } プロセス

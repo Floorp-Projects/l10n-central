@@ -370,9 +370,9 @@ addon-permissions-learnmore = 許可設定についての詳細情報
 recommended-extensions-heading = おすすめの拡張機能
 recommended-themes-heading = おすすめのテーマ
 addon-sitepermissions-required = <span data-l10n-name="hostname">{ $hostname }</span> に以下の機能を許可します:
-# A recommendation for the Floorp Color theme shown at the bottom of the theme
-# list view. The "Floorp Color" name itself should not be translated.
-recommended-theme-1 = ご自分で作ってみませんか？ <a data-l10n-name="link">Floorp Color で独自のテーマを構築できます。</a>
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = ご自分で作ってみませんか？ <a data-l10n-name="link">Firefox Color で独自のテーマを構築できます。</a>
 
 ## Page headings
 

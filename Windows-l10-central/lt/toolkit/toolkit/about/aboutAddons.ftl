@@ -377,9 +377,9 @@ addon-permissions-learnmore = Sužinokite apie leidimus daugiau
 recommended-extensions-heading = Rekomenduojami priedai
 recommended-themes-heading = Rekomenduojami grafiniai apvalkalai
 addon-sitepermissions-required = Suteikia šias galimybes <span data-l10n-name="hostname">{ $hostname }</span>:
-# A recommendation for the Floorp Color theme shown at the bottom of the theme
-# list view. The "Floorp Color" name itself should not be translated.
-recommended-theme-1 = Jaučiatės kūrybiškai? <a data-l10n-name="link">Sukurkite savo grafinį apvalkalą su „Floorp Color“.</a>
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Jaučiatės kūrybiškai? <a data-l10n-name="link">Sukurkite savo grafinį apvalkalą su „Firefox Color“.</a>
 
 ## Page headings
 

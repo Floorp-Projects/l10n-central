@@ -3,18 +3,18 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 head-title = Tentang Alat Pengembang
-enable-title = Aktifkan Alat Pengembang Floorp
-enable-inspect-element-title = Aktifkan Alat Pengembang Floorp untuk menggunakan Inspeksi Elemen
+enable-title = Aktifkan Alat Pengembang Firefox
+enable-inspect-element-title = Aktifkan Alat Pengembang Firefox untuk menggunakan Inspeksi Elemen
 enable-inspect-element-message = Periksa dan edit HTML dan CSS dengan Inspektur Alat Pengembang.
-enable-about-debugging-message = Mengembangkan dan men-debug WebExtensions, web worker, service worker, dan lainnya dengan Alat Pengembang Floorp.
+enable-about-debugging-message = Mengembangkan dan men-debug WebExtensions, web worker, service worker, dan lainnya dengan Alat Pengembang Firefox.
 enable-key-shortcut-message = Anda telah mengaktifkan pintasan Alat Pengembang. Jika itu tidak disengaja, Anda dapat menutup Tab ini.
 enable-menu-message = Sempurnakan HTML, CSS, dan JavaScript situs web Anda dengan alat-alat seperti Inspektur dan Debugger.
-enable-common-message = Alat Pengembang Floorp dinonaktifkan secara baku untuk memberikan Anda lebih banyak kendali atas peramban Anda.
+enable-common-message = Alat Pengembang Firefox dinonaktifkan secara baku untuk memberikan Anda lebih banyak kendali atas peramban Anda.
 enable-learn-more-link = Pelajari lebih lanjut tentang Alat Pengembang
 enable-enable-button = Aktifkan Alat Pengembang
 enable-close-button = Tutup Tab Ini
 
-welcome-title = Selamat Datang di Alat Pengembang Floorp!
+welcome-title = Selamat Datang di Alat Pengembang Firefox!
 newsletter-title = Nawala Pengembang Mozilla
 newsletter-message = Dapatkan berita, trik, dan sumber daya untuk pengembang yang dikirim langsung ke kotak masuk Anda.
 newsletter-email-placeholder =
@@ -25,7 +25,7 @@ newsletter-thanks-title = Trims!
 newsletter-thanks-message = Jika sebelumnya Anda belum pernah mengonfirmasi langganan nawala terkait Mozilla, Anda mungkin harus melakukannya. Silakan cek surel dari kami di kotak masuk atau filter spam Anda.
 
 footer-title = Floorp Developer Edition
-footer-message = Mencari lebih dari sekadar Alat Pengembang? Cobalah peramban Floorp yang dibuat secara khusus untuk pengembang dan alur kerja modern.
+footer-message = Mencari lebih dari sekadar Alat Pengembang? Cobalah peramban Firefox yang dibuat secara khusus untuk pengembang dan alur kerja modern.
 footer-learn-more-link = Pelajari lebih lanjut
 
 features-learn-more = Pelajari lebih lanjut

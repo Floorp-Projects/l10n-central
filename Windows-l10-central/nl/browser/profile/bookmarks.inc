@@ -14,40 +14,40 @@
 #define bookmarks_toolbarfolder_description Voeg bladwijzers aan deze map toe om ze op de bladwijzerwerkbalk weer te geven
 
 # LOCALIZATION NOTE (getting_started):
-# link title for https://www.mozilla.org/en-US/Floorp/central/
+# link title for https://www.mozilla.org/en-US/firefox/central/
 #define getting_started Aan de slag
 
-# LOCALIZATION NOTE (Floorp_heading):
-# Floorp links folder name
-#define Floorp_heading Floorp Legacy Browser
+# LOCALIZATION NOTE (firefox_heading):
+# Firefox links folder name
+#define firefox_heading Mozilla Firefox
 
-# LOCALIZATION NOTE (Floorp_help):
-# link title for https://www.mozilla.org/en-US/Floorp/help/
-#define Floorp_help Hulp en handleidingen
+# LOCALIZATION NOTE (firefox_help):
+# link title for https://www.mozilla.org/en-US/firefox/help/
+#define firefox_help Hulp en handleidingen
 
-# LOCALIZATION NOTE (Floorp_get_help):
-# link title for https://www.mozilla.org/en-US/Floorp/help/
-#define Floorp_get_help Hulp verkrijgen
+# LOCALIZATION NOTE (firefox_get_help):
+# link title for https://www.mozilla.org/en-US/firefox/help/
+#define firefox_get_help Hulp verkrijgen
 
-# LOCALIZATION NOTE (Floorp_customize):
-# link title for https://www.mozilla.org/en-US/Floorp/customize/
-#define Floorp_customize Floorp aanpassen
+# LOCALIZATION NOTE (firefox_customize):
+# link title for https://www.mozilla.org/en-US/firefox/customize/
+#define firefox_customize Firefox aanpassen
 
-# LOCALIZATION NOTE (Floorp_community):
+# LOCALIZATION NOTE (firefox_community):
 # link title for https://www.mozilla.org/en-US/contribute/
-#define Floorp_community Meewerken
+#define firefox_community Meewerken
 
-# LOCALIZATION NOTE (Floorp_about):
+# LOCALIZATION NOTE (firefox_about):
 # link title for https://www.mozilla.org/en-US/about/
-#define Floorp_about Over Mozilla
+#define firefox_about Over Mozilla
 
 # LOCALIZATION NOTE (nightly_heading):
-# Floorp Nightly links folder name
-#define nightly_heading Floorp Nightly-bronnen
+# Firefox Nightly links folder name
+#define nightly_heading Firefox Nightly-bronnen
 
 # LOCALIZATION NOTE (nightly_blog):
 # Nightly builds only, link title for https://blog.nightly.mozilla.org/
-#define nightly_blog Floorp Nightly-blog
+#define nightly_blog Firefox Nightly-blog
 
 # LOCALIZATION NOTE (bugzilla):
 # Nightly builds only, link title for https://bugzilla.mozilla.org/
@@ -58,7 +58,7 @@
 #define mdn Mozilla Developer Network
 
 # LOCALIZATION NOTE (nightly_tester_tools):
-# Nightly builds only, link title for https://addons.mozilla.org/en-US/Floorp/addon/nightly-tester-tools/
+# Nightly builds only, link title for https://addons.mozilla.org/en-US/firefox/addon/nightly-tester-tools/
 #define nightly_tester_tools Nightly Tester Tools
 
 # LOCALIZATION NOTE (crashes):

@@ -14,40 +14,40 @@
 #define bookmarks_toolbarfolder_description Thêm các dấu trang vào thư mục này để hiển thị chúng trên thanh dấu trang
 
 # LOCALIZATION NOTE (getting_started):
-# link title for https://www.mozilla.org/en-US/Floorp/central/
+# link title for https://www.mozilla.org/en-US/firefox/central/
 #define getting_started Bắt đầu
 
-# LOCALIZATION NOTE (Floorp_heading):
-# Floorp links folder name
-#define Floorp_heading Floorp Legacy Browser
+# LOCALIZATION NOTE (firefox_heading):
+# Firefox links folder name
+#define firefox_heading Mozilla Firefox
 
-# LOCALIZATION NOTE (Floorp_help):
-# link title for https://www.mozilla.org/en-US/Floorp/help/
-#define Floorp_help Trợ giúp và Hướng dẫn
+# LOCALIZATION NOTE (firefox_help):
+# link title for https://www.mozilla.org/en-US/firefox/help/
+#define firefox_help Trợ giúp và Hướng dẫn
 
-# LOCALIZATION NOTE (Floorp_get_help):
-# link title for https://www.mozilla.org/en-US/Floorp/help/
-#define Floorp_get_help Nhận trợ giúp
+# LOCALIZATION NOTE (firefox_get_help):
+# link title for https://www.mozilla.org/en-US/firefox/help/
+#define firefox_get_help Nhận trợ giúp
 
-# LOCALIZATION NOTE (Floorp_customize):
-# link title for https://www.mozilla.org/en-US/Floorp/customize/
-#define Floorp_customize Tùy biến Floorp
+# LOCALIZATION NOTE (firefox_customize):
+# link title for https://www.mozilla.org/en-US/firefox/customize/
+#define firefox_customize Tùy biến Firefox
 
-# LOCALIZATION NOTE (Floorp_community):
+# LOCALIZATION NOTE (firefox_community):
 # link title for https://www.mozilla.org/en-US/contribute/
-#define Floorp_community Tham gia đóng góp
+#define firefox_community Tham gia đóng góp
 
-# LOCALIZATION NOTE (Floorp_about):
+# LOCALIZATION NOTE (firefox_about):
 # link title for https://www.mozilla.org/en-US/about/
-#define Floorp_about Giới thiệu về Chúng tôi
+#define firefox_about Giới thiệu về Chúng tôi
 
 # LOCALIZATION NOTE (nightly_heading):
-# Floorp Nightly links folder name
-#define nightly_heading Tài nguyên Floorp Nightly
+# Firefox Nightly links folder name
+#define nightly_heading Tài nguyên Firefox Nightly
 
 # LOCALIZATION NOTE (nightly_blog):
 # Nightly builds only, link title for https://blog.nightly.mozilla.org/
-#define nightly_blog Nhật ký Floorp Nightly
+#define nightly_blog Nhật ký Firefox Nightly
 
 # LOCALIZATION NOTE (bugzilla):
 # Nightly builds only, link title for https://bugzilla.mozilla.org/
@@ -58,7 +58,7 @@
 #define mdn Mạng lưới nhà phát triển của Mozilla
 
 # LOCALIZATION NOTE (nightly_tester_tools):
-# Nightly builds only, link title for https://addons.mozilla.org/en-US/Floorp/addon/nightly-tester-tools/
+# Nightly builds only, link title for https://addons.mozilla.org/en-US/firefox/addon/nightly-tester-tools/
 #define nightly_tester_tools Các công cụ thử nghiệm Nightly
 
 # LOCALIZATION NOTE (crashes):

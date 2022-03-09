@@ -15,10 +15,10 @@
 <!ENTITY prefEnableHTTP11Proxy.accesskey     "T">
 <!ENTITY prefPara                            "Zde lze podrobněji nastavit HTTP spojení pro vylepšení rychlosti nebo kompatibility. Některé proxy servery vyžadují např. použít HTTP/1.0.">
 <!ENTITY prefUseragent.label                 "Řetězec user agent">
-<!ENTITY prefFloorpStrict.label             "Identifikovat jako Floorp">
-<!ENTITY prefFloorpStrict.accesskey         "I">
-<!ENTITY prefFloorpNone.label               "Identifikovat jako SeaMonkey">
-<!ENTITY prefFloorpNone.accesskey           "M">
-<!ENTITY prefFloorpCompat2.label            "Identifikovat jako SeaMonkey a inzerovat kompatibilitu s Floorpem">
-<!ENTITY prefFloorpCompat2.accesskey        "F">
+<!ENTITY prefFirefoxStrict.label             "Identifikovat jako Firefox">
+<!ENTITY prefFirefoxStrict.accesskey         "I">
+<!ENTITY prefFirefoxNone.label               "Identifikovat jako SeaMonkey">
+<!ENTITY prefFirefoxNone.accesskey           "M">
+<!ENTITY prefFirefoxCompat2.label            "Identifikovat jako SeaMonkey a inzerovat kompatibilitu s Firefoxem">
+<!ENTITY prefFirefoxCompat2.accesskey        "F">
 <!ENTITY prefCompatWarning2.desc             "VAROVÁNÍ: vypnutí těchto voleb může způsobit, že webové stránky nebo služby nemusí fungovat správně.">

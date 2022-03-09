@@ -96,7 +96,7 @@ manifest-loaded-ok = 清单文件加载完毕。
 # load the manifest
 manifest-loaded-error = 载入清单文件时发生错误：
 
-# Text displayed as an error when there has been a Floorp DevTools error while
+# Text displayed as an error when there has been a Firefox DevTools error while
 # trying to load the manifest
 manifest-loaded-devtools-error = Floorp 开发者工具出错
 

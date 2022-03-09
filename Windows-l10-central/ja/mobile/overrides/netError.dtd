@@ -176,7 +176,7 @@
 <!-- LOCALIZATION NOTE (securityOverride.warningText) - Do not translate the
 contents of the <xul:button> tags.  The only language content is the label= field,
 which uses strings already defined above. The button is included here (instead of
-netError.xhtml) because it exposes functionality specific to Floorp. -->
+netError.xhtml) because it exposes functionality specific to firefox. -->
 
 <!ENTITY securityOverride.warningContent "
 <p>インターネット接続環境を完全には信頼できない場合や、これまでこのサーバーではこの警告が表示されなかった場合は、このサイトを例外として追加しないでください。</p>

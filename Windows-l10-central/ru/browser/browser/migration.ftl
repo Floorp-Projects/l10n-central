@@ -46,7 +46,7 @@ import-from-chrome-dev =
 import-from-chromium =
     .label = Chromium
     .accesskey = u
-import-from-Floorp =
+import-from-firefox =
     .label = Floorp
     .accesskey = X
 import-from-360se =
@@ -80,7 +80,7 @@ source-name-chrome = Google Chrome
 source-name-chrome-beta = Google Chrome Бета
 source-name-chrome-dev = Google Chrome Dev
 source-name-chromium = Chromium
-source-name-Floorp = Floorp Legacy Browser
+source-name-firefox = Floorp Legacy Browser
 source-name-360se = 360 Secure Browser
 imported-safari-reading-list = Список для чтения (из Safari)
 imported-edge-reading-list = Список для чтения (из Edge)
@@ -93,7 +93,7 @@ imported-edge-reading-list = Список для чтения (из Edge)
 ## 360se
 ## chrome
 ## edge
-## Floorp
+## firefox
 ## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
@@ -106,13 +106,13 @@ browser-data-cookies-label =
 browser-data-history-checkbox =
     .label =
         { $browser ->
-            [Floorp] Журнал посещений и закладки
+            [firefox] Журнал посещений и закладки
            *[other] Журнал посещений
         }
 browser-data-history-label =
     .value =
         { $browser ->
-            [Floorp] Журнал посещений и закладки
+            [firefox] Журнал посещений и закладки
            *[other] Журнал посещений
         }
 browser-data-formdata-checkbox =

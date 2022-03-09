@@ -11,17 +11,17 @@
 # Page title (ie tab title) for the Setup page
 about-debugging-page-title-setup-page = التنقيح - الإعداد
 # Page title (ie tab title) for the Runtime page
-# { $selectedRuntimeId } is the id of the current runtime, such as "this-Floorp", "localhost:6080", ...
+# { $selectedRuntimeId } is the id of the current runtime, such as "this-firefox", "localhost:6080", ...
 about-debugging-page-title-runtime-page = التنقيح - زمن التشغيل / { $selectedRuntimeId }
 
 # Sidebar strings
 
-# Display name of the runtime for the currently running instance of Floorp. Used in the
+# Display name of the runtime for the currently running instance of Firefox. Used in the
 # Sidebar and in the Setup page.
-about-debugging-this-Floorp-runtime-name = { -brand-shorter-name } هذا
-# Sidebar heading for selecting the currently running instance of Floorp
-about-debugging-sidebar-this-Floorp =
-    .name = { about-debugging-this-Floorp-runtime-name }
+about-debugging-this-firefox-runtime-name = { -brand-shorter-name } هذا
+# Sidebar heading for selecting the currently running instance of Firefox
+about-debugging-sidebar-this-firefox =
+    .name = { about-debugging-this-firefox-runtime-name }
 # Sidebar heading for connecting to some remote source
 about-debugging-sidebar-setup =
     .name = الإعداد
@@ -49,8 +49,8 @@ about-debugging-sidebar-item-connect-button-connection-not-responding = ما ز�
 # Text displayed as connection error in sidebar item when the connection has timed out.
 about-debugging-sidebar-item-connect-button-connection-timeout = انتهت المهلة للاتصال
 # Text displayed in sidebar items for remote devices where a compatible browser (eg
-# Floorp) has not been detected yet. Typically, Android phones connected via USB with
-# USB debugging enabled, but where Floorp is not started.
+# Firefox) has not been detected yet. Typically, Android phones connected via USB with
+# USB debugging enabled, but where Firefox is not started.
 about-debugging-sidebar-runtime-item-waiting-for-browser = ينتظر المتصفح…
 # Text displayed in sidebar items for remote devices that have been disconnected from the
 # computer.
@@ -79,8 +79,8 @@ about-debugging-refresh-usb-devices-button = أنعِش الأجهزة
 about-debugging-setup-title = الإعداد
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = اضبط الطريقة التي تريد بها الاتصال بجهازك لتنقيحه.
-# Explanatory text in the Setup page about what the 'This Floorp' page is for
-about-debugging-setup-this-Floorp2 = استعمل <a>{ about-debugging-this-Floorp-runtime-name }</a> لتنقّح الامتدادات وعمّال الخدمة في إصدارة { -brand-shorter-name } هذه.
+# Explanatory text in the Setup page about what the 'This Firefox' page is for
+about-debugging-setup-this-firefox2 = استعمل <a>{ about-debugging-this-firefox-runtime-name }</a> لتنقّح الامتدادات وعمّال الخدمة في إصدارة { -brand-shorter-name } هذه.
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = أوصِل جهازا
 # USB section of the Setup page
@@ -104,7 +104,7 @@ about-debugging-setup-usb-step-enable-dev-menu2 = فعّل قائمة ”مطو�
 # USB section step by step guide
 about-debugging-setup-usb-step-enable-debug2 = فعّل ”تصحيح أخطاء USB/‏USB Debugging“ في قائمة ”مطور البرامج/Developer“.
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug-Floorp2 = فعّل التنقيح عبر USB في متصفح Floorp على أجهزة أندرويد.
+about-debugging-setup-usb-step-enable-debug-firefox2 = فعّل التنقيح عبر USB في متصفح Firefox على أجهزة أندرويد.
 # USB section step by step guide
 about-debugging-setup-usb-step-plug-device = أوصِل جهاز أندرويد بهذا الحاسوب.
 # Text shown in the USB section of the setup page with a link to troubleshoot connection errors.
@@ -141,7 +141,7 @@ about-debugging-network-location-form-duplicate = المضيف ”{ $host-value 
 
 # Below are the titles for the various categories of debug targets that can be found
 # on "runtime" pages of about:debugging.
-# Title of the temporary extensions category (only available for "This Floorp" runtime).
+# Title of the temporary extensions category (only available for "This Firefox" runtime).
 about-debugging-runtime-temporary-extensions =
     .name = الامتدادات المؤقتة
 # Title of the extensions category.
@@ -169,20 +169,20 @@ about-debugging-runtime-service-workers-not-compatible = إعدادات المت
 # This string is displayed in the runtime page if the remote browser version is too old.
 # "Troubleshooting" link points to https://developer.mozilla.org/docs/Tools/about:debugging#Troubleshooting
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
-# { $minVersion } is the minimum version that is compatible with the current Floorp instance (same format)
+# { $minVersion } is the minimum version that is compatible with the current Firefox instance (same format)
 about-debugging-browser-version-too-old = إصدارة المتصفّح المتّصل قديمة ({ $runtimeVersion }). أدنى إصدارة مدعومة هي ({ $minVersion }). عملية الإعداد هذه غير مدعومة وقد لا تعمل أدوات المطوّرين بناء على ذلك. من فضلك حدّث المتصفّح المتّصل. <a>مواجهة الأعطال</a>
 # Dedicated message for a backward compatibility issue that occurs when connecting:
-# from Fx 70+ to the old Floorp for Android (aka Fennec) which uses Fx 68.
-about-debugging-browser-version-too-old-fennec = لا يمكن لإصدارة متصفّح Floorp هذه تنقيح Floorp لأندرويد (68). ننصح بتنزيل النسخة الليلية من Floorp لأندرويد على هاتفك لإجراء الاختبارات. <a>تفاصيل أكثر</a>
+# from Fx 70+ to the old Firefox for Android (aka Fennec) which uses Fx 68.
+about-debugging-browser-version-too-old-fennec = لا يمكن لإصدارة متصفّح Firefox هذه تنقيح Firefox لأندرويد (68). ننصح بتنزيل النسخة الليلية من Firefox لأندرويد على هاتفك لإجراء الاختبارات. <a>تفاصيل أكثر</a>
 # This string is displayed in the runtime page if the remote browser version is too recent.
 # "Troubleshooting" link points to https://developer.mozilla.org/docs/Tools/about:debugging#Troubleshooting
 # { $runtimeID } is the build ID of the remote browser (for instance "20181231", format is yyyyMMdd)
-# { $localID } is the build ID of the current Floorp instance (same format)
+# { $localID } is the build ID of the current Firefox instance (same format)
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
 # { $localVersion } is the version of your current browser (same format)
-about-debugging-browser-version-too-recent = إصدارة المتصفّح المتّصل ({ $runtimeVersion }، معرّف البناء { $runtimeID }) أحدث من إصدارة { -brand-shorter-name } هذه ({ $localVersion }، معرّف البناء { $localID }). عملية الإعداد هذه غير مدعومة وقد لا تعمل أدوات المطوّرين بناء على ذلك. من فضلك حدّث Floorp. <a>مواجهة الأعطال</a>
+about-debugging-browser-version-too-recent = إصدارة المتصفّح المتّصل ({ $runtimeVersion }، معرّف البناء { $runtimeID }) أحدث من إصدارة { -brand-shorter-name } هذه ({ $localVersion }، معرّف البناء { $localID }). عملية الإعداد هذه غير مدعومة وقد لا تعمل أدوات المطوّرين بناء على ذلك. من فضلك حدّث Firefox. <a>مواجهة الأعطال</a>
 # Displayed for runtime info in runtime pages.
-# { $name } is brand name such as "Floorp Nightly"
+# { $name } is brand name such as "Firefox Nightly"
 # { $version } is version such as "64.0a1"
 about-debugging-runtime-name = ‏{ $name } ‏({ $version })
 # Text of a button displayed in Runtime pages for remote runtimes.
@@ -204,15 +204,15 @@ about-debugging-debug-target-list-empty = لا شيء بعد.
 # button will open a DevTools toolbox that will allow inspecting the target.
 # A target can be an addon, a tab, a worker...
 about-debugging-debug-target-inspect-button = افحص
-# Text of a button displayed in the "This Floorp" page, in the Temporary Extension
+# Text of a button displayed in the "This Firefox" page, in the Temporary Extension
 # section. Clicking on the button will open a file picker to load a temporary extension
 about-debugging-tmp-extension-install-button = حمّل إضافة مؤقتا…
-# Text displayed when trying to install a temporary extension in the "This Floorp" page.
+# Text displayed when trying to install a temporary extension in the "This Firefox" page.
 about-debugging-tmp-extension-install-error = حدث عُطل أثناء تثبيت الإضافة مؤقتا.
-# Text of a button displayed for a temporary extension loaded in the "This Floorp" page.
+# Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will reload the extension.
 about-debugging-tmp-extension-reload-button = أعِد التحميل
-# Text of a button displayed for a temporary extension loaded in the "This Floorp" page.
+# Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will uninstall the extension and remove it from the page.
 about-debugging-tmp-extension-remove-button = أزِل
 # Message displayed in the file picker that opens to select a temporary extension to load

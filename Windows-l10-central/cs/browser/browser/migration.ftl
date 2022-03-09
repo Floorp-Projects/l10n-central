@@ -46,7 +46,7 @@ import-from-chrome-dev =
 import-from-chromium =
     .label = Chromium
     .accesskey = u
-import-from-Floorp =
+import-from-firefox =
     .label = Floorp
     .accesskey = F
 import-from-360se =
@@ -92,7 +92,7 @@ source-name-chrome = Google Chrome
 source-name-chrome-beta = Google Chrome Beta
 source-name-chrome-dev = Google Chrome Dev
 source-name-chromium = Chromium
-source-name-Floorp = Floorp Legacy Browser
+source-name-firefox = Floorp Legacy Browser
 source-name-360se = 360 Secure Browser
 imported-safari-reading-list = Seznam ke čtení (ze Safari)
 imported-edge-reading-list = Seznam ke čtení (z Edge)
@@ -105,7 +105,7 @@ imported-edge-reading-list = Seznam ke čtení (z Edge)
 ## 360se
 ## chrome
 ## edge
-## Floorp
+## firefox
 ## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
@@ -114,7 +114,7 @@ imported-edge-reading-list = Seznam ke čtení (z Edge)
 browser-data-cookies-checkbox =
     .label =
         { $browser ->
-            [Floorp] Cookies
+            [firefox] Cookies
             [chrome] Soubory cookie
             [edge] Soubory cookie
             [safari] Cookies
@@ -123,7 +123,7 @@ browser-data-cookies-checkbox =
 browser-data-cookies-label =
     .value =
         { $browser ->
-            [Floorp] Cookies
+            [firefox] Cookies
             [chrome] Soubory cookie
             [edge] Soubory cookie
             [safari] Cookies
@@ -132,7 +132,7 @@ browser-data-cookies-label =
 browser-data-history-checkbox =
     .label =
         { $browser ->
-            [Floorp] Historie a záložky
+            [firefox] Historie a záložky
             [chrome] Historie
             [edge] Historie
             [safari] Historie
@@ -141,7 +141,7 @@ browser-data-history-checkbox =
 browser-data-history-label =
     .value =
         { $browser ->
-            [Floorp] Historie a záložky
+            [firefox] Historie a záložky
             [chrome] Historie
             [edge] Historie
             [safari] Historie
@@ -150,7 +150,7 @@ browser-data-history-label =
 browser-data-formdata-checkbox =
     .label =
         { $browser ->
-            [Floorp] Uložené formuláře
+            [firefox] Uložené formuláře
             [chrome] Uložené formuláře
             [edge] Vyplňování formulářů
             [safari] Vyplňování formulářů
@@ -159,7 +159,7 @@ browser-data-formdata-checkbox =
 browser-data-formdata-label =
     .value =
         { $browser ->
-            [Floorp] Uložené formuláře
+            [firefox] Uložené formuláře
             [chrome] Uložené formuláře
             [edge] Vyplňování formulářů
             [safari] Vyplňování formulářů
@@ -170,7 +170,7 @@ browser-data-formdata-label =
 browser-data-passwords-checkbox =
     .label =
         { $browser ->
-            [Floorp] Uložené přihlašovací údaje a hesla
+            [firefox] Uložené přihlašovací údaje a hesla
             [chrome] Uložená hesla
             [edge] Uložená hesla
             [safari] Hesla
@@ -181,7 +181,7 @@ browser-data-passwords-checkbox =
 browser-data-passwords-label =
     .value =
         { $browser ->
-            [Floorp] Uložené přihlašovací údaje a hesla
+            [firefox] Uložené přihlašovací údaje a hesla
             [chrome] Uložená hesla
             [edge] Uložená hesla
             [safari] Hesla
@@ -190,7 +190,7 @@ browser-data-passwords-label =
 browser-data-bookmarks-checkbox =
     .label =
         { $browser ->
-            [Floorp] Záložky
+            [firefox] Záložky
             [chrome] Záložky
             [edge] Oblíbené položky
             [ie] Oblíbené
@@ -200,7 +200,7 @@ browser-data-bookmarks-checkbox =
 browser-data-bookmarks-label =
     .value =
         { $browser ->
-            [Floorp] Záložky
+            [firefox] Záložky
             [chrome] Záložky
             [edge] Oblíbené položky
             [ie] Oblíbené

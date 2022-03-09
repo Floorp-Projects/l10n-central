@@ -172,6 +172,8 @@ decrypt-and-copy-failures = { $failures } av { $total } meddelanden kunde inte d
 
 ## Spaces toolbar
 
+spaces-toolbar =
+    .toolbarname = Flikmeny
 spaces-toolbar-button-mail =
     .title = Växla till e-postfliken
 spaces-toolbar-button-address-book =
@@ -184,3 +186,38 @@ spaces-toolbar-button-chat =
     .title = Växla till chattfliken
 spaces-toolbar-button-settings =
     .title = Växla till fliken Inställningar
+spaces-toolbar-button-collapse =
+    .title = Komprimera flikmeny
+spaces-toolbar-button-reveal =
+    .title = Visa flikmenyn
+spaces-context-new-tab-item =
+    .label = Öppna i ny flik
+spaces-context-new-window-item =
+    .label = Öppna i nytt fönster
+# Variables:
+# $tabName (String) - The name of the tab this item will switch to.
+spaces-context-switch-tab-item =
+    .label = Växla till { $tabName }
+settings-context-open-settings-item =
+    .label = Öppna Inställningar
+settings-context-open-account-settings-item =
+    .label = Öppna Kontoinställningar
+settings-context-open-addons-item =
+    .label = Öppna Tillägg och teman
+
+## Spaces toolbar pinned tab menupopup
+
+spaces-toolbar-pinned-tab-button =
+    .tooltiptext = Öppna flikmenyn
+spaces-pinned-button-menuitem-mail =
+    .label = { spaces-toolbar-button-mail.title }
+spaces-pinned-button-menuitem-address-book =
+    .label = { spaces-toolbar-button-address-book.title }
+spaces-pinned-button-menuitem-calendar =
+    .label = { spaces-toolbar-button-calendar.title }
+spaces-pinned-button-menuitem-tasks =
+    .label = { spaces-toolbar-button-tasks.title }
+spaces-pinned-button-menuitem-chat =
+    .label = { spaces-toolbar-button-chat.title }
+spaces-pinned-button-menuitem-reveal =
+    .label = { spaces-toolbar-button-reveal.title }

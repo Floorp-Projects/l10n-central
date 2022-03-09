@@ -12,18 +12,18 @@
 about-debugging-page-title-setup-page = Debugowanie — konfiguracja
 
 # Page title (ie tab title) for the Runtime page
-# { $selectedRuntimeId } is the id of the current runtime, such as "this-Floorp", "localhost:6080", ...
+# { $selectedRuntimeId } is the id of the current runtime, such as "this-firefox", "localhost:6080", ...
 about-debugging-page-title-runtime-page = Debugowanie — środowisko/{ $selectedRuntimeId }
 
 # Sidebar strings
 
-# Display name of the runtime for the currently running instance of Floorp. Used in the
+# Display name of the runtime for the currently running instance of Firefox. Used in the
 # Sidebar and in the Setup page.
-about-debugging-this-Floorp-runtime-name = Ten { -brand-shorter-name }
+about-debugging-this-firefox-runtime-name = Ten { -brand-shorter-name }
 
-# Sidebar heading for selecting the currently running instance of Floorp
-about-debugging-sidebar-this-Floorp =
-    .name = { about-debugging-this-Floorp-runtime-name }
+# Sidebar heading for selecting the currently running instance of Firefox
+about-debugging-sidebar-this-firefox =
+    .name = { about-debugging-this-firefox-runtime-name }
 
 # Sidebar heading for connecting to some remote source
 about-debugging-sidebar-setup =
@@ -62,8 +62,8 @@ about-debugging-sidebar-item-connect-button-connection-not-responding = Połącz
 about-debugging-sidebar-item-connect-button-connection-timeout = Upłynął limit czasu połączenia
 
 # Text displayed in sidebar items for remote devices where a compatible browser (eg
-# Floorp) has not been detected yet. Typically, Android phones connected via USB with
-# USB debugging enabled, but where Floorp is not started.
+# Firefox) has not been detected yet. Typically, Android phones connected via USB with
+# USB debugging enabled, but where Firefox is not started.
 about-debugging-sidebar-runtime-item-waiting-for-browser = Oczekiwanie na przeglądarkę…
 
 # Text displayed in sidebar items for remote devices that have been disconnected from the
@@ -99,8 +99,8 @@ about-debugging-setup-title = Konfiguracja
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = Skonfiguruj metodę połączenia do zdalnego debugowania urządzenia.
 
-# Explanatory text in the Setup page about what the 'This Floorp' page is for
-about-debugging-setup-this-Floorp2 = Użyj „<a>{ about-debugging-this-Floorp-runtime-name }</a>” do debugowania rozszerzeń i wątków usługowych w tej wersji przeglądarki { -brand-shorter-name }.
+# Explanatory text in the Setup page about what the 'This Firefox' page is for
+about-debugging-setup-this-firefox2 = Użyj „<a>{ about-debugging-this-firefox-runtime-name }</a>” do debugowania rozszerzeń i wątków usługowych w tej wersji przeglądarki { -brand-shorter-name }.
 
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = Połącz z urządzeniem
@@ -134,7 +134,7 @@ about-debugging-setup-usb-step-enable-dev-menu2 = Włącz menu programisty na ur
 about-debugging-setup-usb-step-enable-debug2 = Włącz debugowanie przez USB w menu programisty Androida.
 
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug-Floorp2 = Włącz debugowanie przez USB w Firefoksie na urządzeniu z Androidem.
+about-debugging-setup-usb-step-enable-debug-firefox2 = Włącz debugowanie przez USB w Firefoksie na urządzeniu z Androidem.
 
 # USB section step by step guide
 about-debugging-setup-usb-step-plug-device = Podłącz urządzenie z Androidem do komputera.
@@ -181,7 +181,7 @@ about-debugging-network-location-form-duplicate = Host „{ $host-value }” jes
 
 # Below are the titles for the various categories of debug targets that can be found
 # on "runtime" pages of about:debugging.
-# Title of the temporary extensions category (only available for "This Floorp" runtime).
+# Title of the temporary extensions category (only available for "This Firefox" runtime).
 about-debugging-runtime-temporary-extensions =
     .name = Rozszerzenia tymczasowe
 # Title of the extensions category.
@@ -215,23 +215,23 @@ about-debugging-runtime-service-workers-not-compatible = Konfiguracja przegląda
 # This string is displayed in the runtime page if the remote browser version is too old.
 # "Troubleshooting" link points to https://developer.mozilla.org/docs/Tools/about:debugging#Troubleshooting
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
-# { $minVersion } is the minimum version that is compatible with the current Floorp instance (same format)
+# { $minVersion } is the minimum version that is compatible with the current Firefox instance (same format)
 about-debugging-browser-version-too-old = Połączona przeglądarka ma starą wersję ({ $runtimeVersion }). Minimalna obsługiwana wersja to { $minVersion }. Taka konfiguracja jest nieobsługiwana i może spowodować awarię narzędzi. Proszę uaktualnić połączoną przeglądarkę. <a>Rozwiązywanie problemów</a>.
 
 # Dedicated message for a backward compatibility issue that occurs when connecting:
-# from Fx 70+ to the old Floorp for Android (aka Fennec) which uses Fx 68.
+# from Fx 70+ to the old Firefox for Android (aka Fennec) which uses Fx 68.
 about-debugging-browser-version-too-old-fennec = Ta wersja Firefoksa nie może debugować Firefoksa na Androida (68). Do testowania zalecamy zainstalowanie na telefonie Firefoksa na Androida w wydaniu Nightly. <a>Więcej informacji</a>
 
 # This string is displayed in the runtime page if the remote browser version is too recent.
 # "Troubleshooting" link points to https://developer.mozilla.org/docs/Tools/about:debugging#Troubleshooting
 # { $runtimeID } is the build ID of the remote browser (for instance "20181231", format is yyyyMMdd)
-# { $localID } is the build ID of the current Floorp instance (same format)
+# { $localID } is the build ID of the current Firefox instance (same format)
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
 # { $localVersion } is the version of your current browser (same format)
 about-debugging-browser-version-too-recent = Połączona przeglądarka jest nowsza ({ $runtimeVersion }, identyfikator kompilacji { $runtimeID }) niż używana przeglądarka { -brand-shorter-name } ({ $localVersion }, identyfikator kompilacji { $localID }). Taka konfiguracja jest nieobsługiwana i może spowodować awarię narzędzi. Proszę uaktualnić Firefoksa. <a>Rozwiązywanie problemów</a>.
 
 # Displayed for runtime info in runtime pages.
-# { $name } is brand name such as "Floorp Nightly"
+# { $name } is brand name such as "Firefox Nightly"
 # { $version } is version such as "64.0a1"
 about-debugging-runtime-name = { $name } ({ $version })
 
@@ -266,18 +266,18 @@ about-debugging-debug-target-list-empty = Jeszcze nic nie ma.
 # A target can be an addon, a tab, a worker...
 about-debugging-debug-target-inspect-button = Zbadaj
 
-# Text of a button displayed in the "This Floorp" page, in the Temporary Extension
+# Text of a button displayed in the "This Firefox" page, in the Temporary Extension
 # section. Clicking on the button will open a file picker to load a temporary extension
 about-debugging-tmp-extension-install-button = Tymczasowo wczytaj dodatek…
 
-# Text displayed when trying to install a temporary extension in the "This Floorp" page.
+# Text displayed when trying to install a temporary extension in the "This Firefox" page.
 about-debugging-tmp-extension-install-error = Wystąpił błąd podczas tymczasowej instalacji dodatku.
 
-# Text of a button displayed for a temporary extension loaded in the "This Floorp" page.
+# Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will reload the extension.
 about-debugging-tmp-extension-reload-button = Wczytaj ponownie
 
-# Text of a button displayed for a temporary extension loaded in the "This Floorp" page.
+# Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will uninstall the extension and remove it from the page.
 about-debugging-tmp-extension-remove-button = Usuń
 

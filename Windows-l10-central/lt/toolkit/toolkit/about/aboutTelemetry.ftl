@@ -17,11 +17,11 @@ about-telemetry-next-ping = >>
 about-telemetry-page-title = Telemetrijos duomenys
 about-telemetry-current-store = Dabartinė saugykla:
 about-telemetry-more-information = Ieškote daugiau informacijos?
-about-telemetry-Floorp-data-doc = <a data-l10n-name="data-doc-link">„Floorp“ duomenų dokumentacijoje</a> rasite pagalbos apie tai, kaip dirbti su mūsų duomenų įrankiais.
-about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">„Floorp“ telemetrijos kliento dokumentacijoje</a> rasite sąvokų apibrėžimus, API dokumentaciją bei duomenų rodyklę.
+about-telemetry-firefox-data-doc = <a data-l10n-name="data-doc-link">„Firefox“ duomenų dokumentacijoje</a> rasite pagalbos apie tai, kaip dirbti su mūsų duomenų įrankiais.
+about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">„Firefox“ telemetrijos kliento dokumentacijoje</a> rasite sąvokų apibrėžimus, API dokumentaciją bei duomenų rodyklę.
 about-telemetry-telemetry-dashboard = <a data-l10n-name="dashboard-link">Telemetrijos skydeliai</a> leidžia jums aiškiai matyti „Mozillai“ siunčiamus duomenis.
 about-telemetry-telemetry-probe-dictionary = <a data-l10n-name="probe-dictionary-link">Zondų žodynas</a> pateikia telemetrijos surinktų zondų informaciją ir aprašus.
-about-telemetry-show-in-Floorp-json-viewer = Atverti JSON žiūrykle
+about-telemetry-show-in-Firefox-json-viewer = Atverti JSON žiūrykle
 about-telemetry-home-section = Pradžia
 about-telemetry-general-data-section =   Įprasti duomenys
 about-telemetry-environment-data-section = Aplinkos duomenys
@@ -79,7 +79,7 @@ about-telemetry-ping-details = Kiekviena informacijos dalis yra siunčiama sugru
 about-telemetry-data-details-current = Kiekviena informacijos dalis yra siunčiama sugrupuota į „<a data-l10n-name="ping-link">ryšio patikrinimus</a>“. Dabar žiūrite į dabartinius duomenis.
 # string used as a placeholder for the search field
 # More info about it can be found here:
-# https://Floorp-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
+# https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
 # Variables:
 #   $selectedTitle (String): the section name from the structure of the ping.
 about-telemetry-filter-placeholder =
@@ -89,7 +89,7 @@ about-telemetry-filter-all-placeholder =
 # Variables:
 #   $searchTerms (String): the searched terms
 about-telemetry-results-for-search = Rezultatai ieškant „{ $searchTerms }“
-# More info about it can be found here: https://Floorp-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
+# More info about it can be found here: https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
 # Variables:
 #   $sectionName (String): the section name from the structure of the ping.
 #   $currentSearchText (String): the current text in the search input
@@ -142,7 +142,7 @@ about-telemetry-origin-origin = kilmė
 about-telemetry-origin-count = kiekis
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
-about-telemetry-origins-explanation = Prieš persiųsdama duomenis, <a data-l10n-name="origin-doc-link">„Floorp Origin Telemetry“</a>  juos užšifruoja taip, kad „{ $telemetryServerOwner }“ galėtų suskaičiuoti dalykus, tačiau nežinotų ar kuris nors konkretus { -brand-product-name } patenka į tą kiekį. (<a data-l10n-name="prio-blog-link">sužinoti daugiau</a>)
+about-telemetry-origins-explanation = Prieš persiųsdama duomenis, <a data-l10n-name="origin-doc-link">„Firefox Origin Telemetry“</a>  juos užšifruoja taip, kad „{ $telemetryServerOwner }“ galėtų suskaičiuoti dalykus, tačiau nežinotų ar kuris nors konkretus { -brand-product-name } patenka į tą kiekį. (<a data-l10n-name="prio-blog-link">sužinoti daugiau</a>)
 # Variables:
 #  $process (String): type of process in subsection headers ( e.g. "content", "parent" )
 about-telemetry-process = { $process } procesas

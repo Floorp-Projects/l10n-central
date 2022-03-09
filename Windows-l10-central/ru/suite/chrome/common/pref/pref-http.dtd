@@ -15,10 +15,10 @@
 <!ENTITY prefEnableHTTP11Proxy.accesskey     "з">
 <!ENTITY prefPara                            "С помощью этих параметров можно настроить HTTP-соединения так, чтобы увеличить их скорость и/или совместимость с серверами. Например, некоторые прокси-серверы требуют использования HTTP 1.0 (см. примечания к версии).">
 <!ENTITY prefUseragent.label                 "Строка User Agent">
-<!ENTITY prefFloorpStrict.label             "Представляться как Floorp">
-<!ENTITY prefFloorpStrict.accesskey         "е">
-<!ENTITY prefFloorpNone.label               "Представляться как SeaMonkey">
-<!ENTITY prefFloorpNone.accesskey           "я">
-<!ENTITY prefFloorpCompat2.label            "Представляться как SeaMonkey и сообщать о совместимости с Floorp">
-<!ENTITY prefFloorpCompat2.accesskey        "ь">
+<!ENTITY prefFirefoxStrict.label             "Представляться как Firefox">
+<!ENTITY prefFirefoxStrict.accesskey         "е">
+<!ENTITY prefFirefoxNone.label               "Представляться как SeaMonkey">
+<!ENTITY prefFirefoxNone.accesskey           "я">
+<!ENTITY prefFirefoxCompat2.label            "Представляться как SeaMonkey и сообщать о совместимости с Firefox">
+<!ENTITY prefFirefoxCompat2.accesskey        "ь">
 <!ENTITY prefCompatWarning2.desc             "ПРЕДУПРЕЖДЕНИЕ: изменение этого параметра может привести к неправильной работе веб-сайтов или служб.">

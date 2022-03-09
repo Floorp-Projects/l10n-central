@@ -27,7 +27,7 @@ about-unloads-intro =
     Denne sida viser korleis { -brand-short-name } prioriterer mellom fanene, og kva for faner som vert frigjorde
     når fanefrigjering er nødvendig. Du kan manuelt frigjere faner
     ved å klikke på <em>Frigjør</em>-knappen nedanfor.
-# The link points to a Floorp documentation page, only available in English,
+# The link points to a Firefox documentation page, only available in English,
 # with title "Tab Unloading"
 about-unloads-learn-more =
     Sjå <a data-l10n-name="doc-link">Frigjer fane</a> for å lære meir om

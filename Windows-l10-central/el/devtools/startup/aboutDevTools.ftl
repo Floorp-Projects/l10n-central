@@ -3,17 +3,17 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 head-title = Σχετικά με τα εργαλεία ανάπτυξης
-enable-title = Ενεργοποίηση εργαλείων ανάπτυξης Floorp
-enable-inspect-element-title = Ενεργοποιήστε τα εργαλεία ανάπτυξης του Floorp για να χρησιμοποιήσετε την Επιθεώρηση στοιχείου
+enable-title = Ενεργοποίηση εργαλείων ανάπτυξης Firefox
+enable-inspect-element-title = Ενεργοποιήστε τα εργαλεία ανάπτυξης του Firefox για να χρησιμοποιήσετε την Επιθεώρηση στοιχείου
 enable-inspect-element-message = Εξετάστε και επεξεργαστείτε HTML και CSS με την Επιθεώρηση των εργαλείων ανάπτυξης.
-enable-about-debugging-message = Αναπτύξτε και διορθώστε WebExtensions, web worker, service worker και πολλά άλλα με τα εργαλεία ανάπτυξης του Floorp.
+enable-about-debugging-message = Αναπτύξτε και διορθώστε WebExtensions, web worker, service worker και πολλά άλλα με τα εργαλεία ανάπτυξης του Firefox.
 enable-key-shortcut-message = Ενεργοποιήσατε μια συντόμευση των εργαλείων ανάπτυξης. Αν το κάνατε κατά λάθος, μπορείτε να κλείσετε αυτή την καρτέλα.
 enable-menu-message = Τελειοποιήστε τα HTML, CSS και JavaScript του ιστοτόπου σας με εργαλεία όπως η Επιθεώρηση και ο Έλεγχος σφαλμάτων.
-enable-common-message = Τα εργαλεία ανάπτυξης του Floorp είναι ανενεργά από προεπιλογή για να έχετε περισσότερο έλεγχο στο πρόγραμμα περιήγησής σας.
+enable-common-message = Τα εργαλεία ανάπτυξης του Firefox είναι ανενεργά από προεπιλογή για να έχετε περισσότερο έλεγχο στο πρόγραμμα περιήγησής σας.
 enable-learn-more-link = Μάθετε περισσότερα για τα εργαλεία ανάπτυξης
 enable-enable-button = Ενεργοποίηση εργαλείων ανάπτυξης
 enable-close-button = Κλείσιμο καρτέλας
-welcome-title = Καλωσορίσατε στα εργαλεία ανάπτυξης του Floorp!
+welcome-title = Καλωσορίσατε στα εργαλεία ανάπτυξης του Firefox!
 newsletter-title = Ενημέρωση προγραμματιστών Mozilla
 newsletter-message = Λάβετε ειδήσεις, κόλπα και πόρους για προγραμματιστές απευθείας στα εισερχόμενά σας.
 newsletter-email-placeholder =
@@ -23,7 +23,7 @@ newsletter-subscribe-button = Εγγραφή
 newsletter-thanks-title = Ευχαριστούμε!
 newsletter-thanks-message = Αν δεν έχετε ήδη επιβεβαιώσει κάποια συνδρομή σε δελτίο ενημερώσεων της Mozilla, ίσως χρειαστεί να το κάνετε. Παρακαλώ ελέγξτε τα εισερχόμενα ή τα ανεπιθύμητα για ένα email από εμάς.
 footer-title = Floorp Developer Edition
-footer-message = Ψάχνετε κάτι παραπάνω από απλά εργαλεία ανάπτυξης; Δείτε την έκδοση του Floorp που αναπτύσσεται αποκλειστικά για προγραμματιστές και σύγχρονες ροές εργασίας.
+footer-message = Ψάχνετε κάτι παραπάνω από απλά εργαλεία ανάπτυξης; Δείτε την έκδοση του Firefox που αναπτύσσεται αποκλειστικά για προγραμματιστές και σύγχρονες ροές εργασίας.
 footer-learn-more-link = Μάθετε περισσότερα
 features-learn-more = Μάθετε περισσότερα
 features-inspector-title = Επιθεώρηση

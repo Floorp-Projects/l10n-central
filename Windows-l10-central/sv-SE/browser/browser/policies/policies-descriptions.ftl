@@ -4,7 +4,7 @@
 
 
 ## The Enterprise Policies feature is aimed at system administrators
-## who want to deploy these settings across several Floorp installations
+## who want to deploy these settings across several Firefox installations
 ## all at once. This is traditionally done through the Windows Group Policy
 ## feature, but the system also supports other forms of deployment.
 ## These are short descriptions for individual policies, to be displayed
@@ -32,10 +32,10 @@ policy-DisableBuiltinPDFViewer = Inaktivera PDF.js, den inbyggda PDF-visaren i {
 policy-DisableDefaultBrowserAgent = Förhindra att standardwebbläsaren agerar. Gäller endast Windows; andra plattformar har inte agenten.
 policy-DisableDeveloperTools = Blockera tillgång till utvecklarverktygen.
 policy-DisableFeedbackCommands = Inaktivera menyalternativen att skicka feedback från hjälpmenyn (Skicka in feedback och rapportera vilseledande webbplats).
-policy-DisableFloorpAccounts = Inaktivera { -fxaccount-brand-name }-baserade tjänster, inklusive Sync.
-# Floorp Screenshots is the name of the feature, and should not be translated.
-policy-DisableFloorpScreenshots = Inaktivera funktionen Floorp Screenshots
-policy-DisableFloorpStudies = Förhindra { -brand-short-name } att genomföra studier.
+policy-DisableFirefoxAccounts = Inaktivera { -fxaccount-brand-name }-baserade tjänster, inklusive Sync.
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Inaktivera funktionen Firefox Screenshots
+policy-DisableFirefoxStudies = Förhindra { -brand-short-name } att genomföra studier.
 policy-DisableForgetButton = Förhindra tillgång till knappen Glöm.
 policy-DisableFormHistory = Spara inte sök- och formulärhistorik.
 policy-DisablePrimaryPasswordCreation = Om det är sant kan ett huvudlösenord inte skapas.
@@ -64,7 +64,7 @@ policy-EncryptedMediaExtensions = Aktivera eller inaktivera krypterade medieutö
 policy-Extensions = Installera, avinstallera eller låsa tillägg. Installeringsalternativet tar webbadresser eller sökvägar som parametrar. Alternativen för borttagning och låsning använder tilläggs-ID.
 policy-ExtensionSettings = Hantera alla aspekter av tilläggsinstallation.
 policy-ExtensionUpdate = Aktivera eller inaktivera automatiska utökningsuppdateringar.
-policy-FloorpHome = Konfigurera Floorp startsida.
+policy-FirefoxHome = Konfigurera Firefox startsida.
 policy-FlashPlugin = Tillåt eller neka att insticksmodulen Flash används.
 policy-Handlers = Konfigurera standardprogramhanterare.
 policy-HardwareAcceleration = Om inaktiv, stäng av hårdvaruacceleration.

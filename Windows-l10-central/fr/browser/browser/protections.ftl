@@ -24,9 +24,9 @@ graph-private-window = { -brand-short-name } continue de bloquer les traqueurs d
 graph-week-summary-private-window = Traqueurs bloqués par { -brand-short-name } cette semaine
 protection-report-webpage-title = Tableau de bord des protections
 protection-report-page-content-title = Tableau de bord des protections
-# This message shows when all privacy protections are turned off, which is why we use the word "can", Floorp is able to protect your privacy, but it is currently not.
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
 protection-report-page-summary = { -brand-short-name } peut protéger votre vie privée en arrière-plan pendant que vous naviguez. Voici un résumé personnalisé de ces protections, avec des outils pour prendre le contrôle de votre sécurité en ligne.
-# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Floorp is actively protecting you.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
 protection-report-page-summary-default = { -brand-short-name } protège votre vie privée en arrière-plan pendant que vous naviguez. Voici un résumé personnalisé de ces protections, avec des outils pour prendre le contrôle de votre sécurité en ligne.
 protection-report-settings-link = Gérer vos paramètres de confidentialité et de sécurité
 etp-card-title-always = Protection renforcée contre le pistage : toujours activée

@@ -3,10 +3,10 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 head-title = Om utvecklingsverktyg
-enable-title = Aktivera Floorp utvecklingsverktyg
-enable-inspect-element-title = Aktivera Floorp utvecklingsverktyg för att använda Inspektera element
+enable-title = Aktivera Firefox utvecklingsverktyg
+enable-inspect-element-title = Aktivera Firefox utvecklingsverktyg för att använda Inspektera element
 enable-inspect-element-message = Utforska och redigera HTML och CSS med utvecklarverktygets inspektör.
-enable-about-debugging-message = Utveckla och felsök WebExtensions, webb-workers, service-workers och mer med Floorp utvecklingsverktyg.
+enable-about-debugging-message = Utveckla och felsök WebExtensions, webb-workers, service-workers och mer med Firefox utvecklingsverktyg.
 enable-key-shortcut-message = Du aktiverade en genväg till utvecklingsverktygen. Om det var ett misstag kan du stänga den här fliken.
 enable-menu-message = Förbättra din webbplats HTML, CSS och JavaScript med verktyg som inspektören och felsökaren.
 enable-common-message = Floorp utvecklingsverktyg är vanligtvis avstängda för att ge dig större kontroll över din webbläsare.
@@ -14,7 +14,7 @@ enable-learn-more-link = Lär dig mer om utvecklingsverktyg
 enable-enable-button = Aktivera utvecklingsverktyg
 enable-close-button = Stäng denna flik
 
-welcome-title = Välkommen till Floorp utvecklingsverktyg!
+welcome-title = Välkommen till Firefox utvecklingsverktyg!
 newsletter-title = Nyhetsbrev Mozilla Developer
 newsletter-message = Få nyheter om utveckling, tricks och resurser skickade direkt till din inkorg.
 newsletter-email-placeholder =
@@ -25,7 +25,7 @@ newsletter-thanks-title = Tack!
 newsletter-thanks-message = Om du inte tidigare har bekräftat en prenumeration på ett Mozilla-relaterat nyhetsbrev måste du kanske göra det. Kontrollera din inkorg eller ditt spamfilter efter ett mejl från oss.
 
 footer-title = Floorp Developer Edition
-footer-message = Letar du efter mer än bara utvecklingsverktyg? Kolla in Floorp:s webbläsare som är byggd speciellt för utvecklare och moderna arbetsflöden.
+footer-message = Letar du efter mer än bara utvecklingsverktyg? Kolla in Firefox:s webbläsare som är byggd speciellt för utvecklare och moderna arbetsflöden.
 footer-learn-more-link = Läs mer
 
 features-learn-more = Läs mer

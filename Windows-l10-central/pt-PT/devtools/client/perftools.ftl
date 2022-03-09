@@ -8,7 +8,7 @@
 ### file that are used for the profiler popup.
 
 perftools-intro-title = Definições do Profiler
-perftools-intro-description = As gravações lançam o profiler.Floorp.com num novo separador. Todos os dados são armazenados localmente, mas pode optar por os enviar para serem partilhados.
+perftools-intro-description = As gravações lançam o profiler.firefox.com num novo separador. Todos os dados são armazenados localmente, mas pode optar por os enviar para serem partilhados.
 
 ## All of the headings for the various sections.
 
@@ -24,7 +24,7 @@ perftools-heading-local-build = Compilação local
 ##
 
 perftools-description-intro =
-    As gravações lançam o <a>profiler.Floorp.com</a> num novo separador. Todos os dados são armazenados localmente, 
+    As gravações lançam o <a>profiler.firefox.com</a> num novo separador. Todos os dados são armazenados localmente, 
     mas pode optar por os enviar para serem partilhados.
 perftools-description-local-build =
     Se está criar um perfil uma compilação que foi realizada por si nesta  
@@ -121,14 +121,14 @@ perftools-onboarding-close-button =
 
 perftools-presets-web-developer-label = Programador Web
 perftools-presets-web-developer-description = Predefinição recomendada para a maioria das depurações de aplicações web, com pouca sobrecarga.
-perftools-presets-Floorp-platform-label = Plataforma Floorp
-perftools-presets-Floorp-platform-description = Predefinição recomendada para a depuração da plataforma interna do Floorp.
-perftools-presets-Floorp-front-end-label = Front-End do Floorp
-perftools-presets-Floorp-front-end-description = Predefinição recomendada para a depuração do front-end interno do Floorp.
-perftools-presets-Floorp-graphics-label = Gráficos do Floorp
-perftools-presets-Floorp-graphics-description = Predefinição recomendada para a investigação de desempenho gráfico do Floorp.
-perftools-presets-Floorp-label = { -brand-shorter-name }
-perftools-presets-Floorp-description = Predefinição recomendada para perfilar o { -brand-shorter-name }.
+perftools-presets-firefox-platform-label = Plataforma Firefox
+perftools-presets-firefox-platform-description = Predefinição recomendada para a depuração da plataforma interna do Firefox.
+perftools-presets-firefox-front-end-label = Front-End do Firefox
+perftools-presets-firefox-front-end-description = Predefinição recomendada para a depuração do front-end interno do Firefox.
+perftools-presets-firefox-graphics-label = Gráficos do Firefox
+perftools-presets-firefox-graphics-description = Predefinição recomendada para a investigação de desempenho gráfico do Firefox.
+perftools-presets-firefox-label = { -brand-shorter-name }
+perftools-presets-firefox-description = Predefinição recomendada para perfilar o { -brand-shorter-name }.
 perftools-presets-graphics-label = Gráficos
 perftools-presets-graphics-description = Predefinição para investigar bugs gráficos no { -brand-shorter-name }.
 perftools-presets-media-label = Multimédia

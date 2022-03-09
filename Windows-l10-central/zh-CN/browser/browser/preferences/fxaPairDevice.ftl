@@ -6,9 +6,9 @@ fxa-pair-device-dialog =
     .title = 绑定其他设备
     .style = width: 26em; min-height: 35em;
 
-fxa-qrcode-heading-step1 = 1. 若您尚未<a data-l10n-name="connect-another-device">在移动设备上安装 Floorp</a>，请先完成安装。
+fxa-qrcode-heading-step1 = 1. 若您尚未<a data-l10n-name="connect-another-device">在移动设备上安装 Firefox</a>，请先完成安装。
 
-fxa-qrcode-heading-step2 = 2. 打开您移动设备上的 Floorp。
+fxa-qrcode-heading-step2 = 2. 打开您移动设备上的 Firefox。
 
 fxa-qrcode-heading-step3 = 3. 打开<b>菜单</b>（<img data-l10n-name="ios-menu-icon"/> 或 <img data-l10n-name="android-menu-icon"/>），点按 <img data-l10n-name="settings-icon"/> <b>设置</b>并选择<b>开启同步</b>
 

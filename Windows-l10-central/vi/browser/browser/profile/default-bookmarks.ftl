@@ -11,27 +11,27 @@ default-bookmarks-title = Dấu trang
 default-bookmarks-heading = Dấu trang
 default-bookmarks-toolbarfolder = Thư mục thanh dấu trang
 default-bookmarks-toolbarfolder-description = Thêm các dấu trang vào thư mục này để hiển thị chúng trên thanh dấu trang
-# link title for https://www.mozilla.org/Floorp/central/
+# link title for https://www.mozilla.org/firefox/central/
 default-bookmarks-getting-started = Bắt đầu
-# Floorp links folder name
-default-bookmarks-Floorp-heading = Floorp Legacy Browser
-# link title for https://www.mozilla.org/Floorp/help/
-default-bookmarks-Floorp-get-help = Nhận trợ giúp
-# link title for https://www.mozilla.org/Floorp/customize/
-default-bookmarks-Floorp-customize = Tùy biến Floorp
+# Firefox links folder name
+default-bookmarks-firefox-heading = Floorp Legacy Browser
+# link title for https://www.mozilla.org/firefox/help/
+default-bookmarks-firefox-get-help = Nhận trợ giúp
+# link title for https://www.mozilla.org/firefox/customize/
+default-bookmarks-firefox-customize = Tùy biến Firefox
 # link title for https://www.mozilla.org/contribute/
-default-bookmarks-Floorp-community = Tham gia
+default-bookmarks-firefox-community = Tham gia
 # link title for https://www.mozilla.org/about/
-default-bookmarks-Floorp-about = Giới thiệu về chúng tôi
-# Floorp Nightly links folder name
-default-bookmarks-nightly-heading = Tài nguyên Floorp Nightly
+default-bookmarks-firefox-about = Giới thiệu về chúng tôi
+# Firefox Nightly links folder name
+default-bookmarks-nightly-heading = Tài nguyên Firefox Nightly
 # Nightly builds only, link title for https://blog.nightly.mozilla.org/
-default-bookmarks-nightly-blog = Nhật ký Floorp Nightly
+default-bookmarks-nightly-blog = Nhật ký Firefox Nightly
 # Nightly builds only, link title for https://bugzilla.mozilla.org/
 default-bookmarks-bugzilla = Trình theo dõi lỗi Mozilla
 # Nightly builds only, link title for https://developer.mozilla.org/
 default-bookmarks-mdn = Mạng lưới nhà phát triển Mozilla
-# Nightly builds only, link title for https://addons.mozilla.org/Floorp/addon/nightly-tester-tools/
+# Nightly builds only, link title for https://addons.mozilla.org/firefox/addon/nightly-tester-tools/
 default-bookmarks-nightly-tester-tools = Các công cụ thử nghiệm Nightly
 # Nightly builds only, link title for about:crashes
 default-bookmarks-crashes = Tất cả những sự cố của bạn

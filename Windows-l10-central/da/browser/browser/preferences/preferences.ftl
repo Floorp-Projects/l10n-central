@@ -359,6 +359,9 @@ update-application-warning-cross-user-setting = Denne indstilling vil gælde all
 update-application-use-service =
     .label = bruge en baggrundsservice til at installere opdateringer
     .accesskey = b
+update-application-suppress-prompts =
+    .label = Vis færre meddelelser om opdatering
+    .accesskey = o
 update-setting-write-failure-title2 = Fejl under lagring af indstillinger for opdatering
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -475,10 +478,10 @@ choose-bookmark =
     .label = Anvend bogmærke…
     .accesskey = b
 
-## Home Section - Floorp Home Content Customization
+## Home Section - Firefox Home Content Customization
 
-home-prefs-content-header = Indhold på Floorp' startside
-home-prefs-content-description = Vælg det indhold, du vil have vist på din startside i Floorp.
+home-prefs-content-header = Indhold på Firefox' startside
+home-prefs-content-description = Vælg det indhold, du vil have vist på din startside i Firefox.
 home-prefs-search-header =
     .label = Søgning på internettet
 home-prefs-topsites-header =
@@ -606,7 +609,7 @@ containers-settings-button =
 containers-remove-button =
     .label = Fjern
 
-## Floorp Account - Signed out. Note that "Sync" and "Floorp Account" are now
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Tag dit net med dig
@@ -622,9 +625,9 @@ sync-signedout-account-signin3 =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = Hent Floorp til <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> eller <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> for at synkronisere med din mobil-enhed
+sync-mobile-promo = Hent Firefox til <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> eller <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> for at synkronisere med din mobil-enhed
 
-## Floorp Account - Signed in
+## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Skift profilbillede
@@ -706,7 +709,7 @@ sync-engine-creditcards =
     .accesskey = e
 sync-engine-addons =
     .label = Tilføjelser
-    .tooltiptext = Tilføjelser og temaer til Floorp til computer
+    .tooltiptext = Tilføjelser og temaer til Firefox til computer
     .accesskey = T
 sync-engine-settings =
     .label = Indstillinger
@@ -786,7 +789,7 @@ forms-windows-sso-desc = Håndter konti i dine enhedsindstillinger
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = For at oprette en hovedadgangskode skal du indtaste dine login-oplysninger til Windows. Dette hjælper dig med at holde dine konti sikre.
 # This message can be seen by trying to add a Primary Password.
-# The macOS strings are preceded by the operating system with "Floorp is trying to "
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 primary-password-os-auth-dialog-message-macosx = oprette en hovedadgangskode
@@ -798,12 +801,12 @@ history-header = Historik
 # This label is followed, on the same line, by a dropdown list of options
 # (Remember history, etc.).
 # In English it visually creates a full sentence, e.g.
-# "Floorp will" + "Remember history".
+# "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
 #   - Simply as "Floorp", moving the verb into each option.
 #     This will result in "Floorp" + "Will remember history", etc.
-#   - As a stand-alone message, for example "Floorp history settings:".
+#   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = { -brand-short-name } vil:
     .accesskey = i
 history-remember-option-all =

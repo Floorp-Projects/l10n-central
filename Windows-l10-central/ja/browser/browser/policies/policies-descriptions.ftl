@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 ## The Enterprise Policies feature is aimed at system administrators
-## who want to deploy these settings across several Floorp installations
+## who want to deploy these settings across several Firefox installations
 ## all at once. This is traditionally done through the Windows Group Policy
 ## feature, but the system also supports other forms of deployment.
 ## These are short descriptions for individual policies, to be displayed
@@ -31,7 +31,7 @@ policy-BlockAboutProfiles = about:profiles ページへのアクセスをブロ�
 
 policy-BlockAboutSupport = about:support ページへのアクセスをブロックします。
 
-policy-Bookmarks = ブックマークツールバー、フィードリスト、または指定のフォルダーの中にブックマークを作成します。
+policy-Bookmarks = ブックマークツールバー、ブックマークメニュー、または指定のフォルダーの中にブックマークを作成します。
 
 policy-CaptivePortal = キャプティブポータルサポートを有効または無効にします。
 
@@ -53,12 +53,12 @@ policy-DisableDeveloperTools = 開発ツールへのアクセスをブロック�
 
 policy-DisableFeedbackCommands = ヘルプメニューのフィードバックの送信 (フィードバックと詐欺サイトの報告の送信) を無効にします。
 
-policy-DisableFloorpAccounts = Sync を含む { -fxaccount-brand-name } を利用したサービスを無効にします。
+policy-DisableFirefoxAccounts = Sync を含む { -fxaccount-brand-name } を利用したサービスを無効にします。
 
-# Floorp Screenshots is the name of the feature, and should not be translated.
-policy-DisableFloorpScreenshots = Floorp Screenshots 機能を無効にします。
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Floorp Screenshots 機能を無効にします。
 
-policy-DisableFloorpStudies = Shield 調査の実行を禁止します。
+policy-DisableFirefoxStudies = Shield 調査の実行を禁止します。
 
 policy-DisableForgetButton = [忘れる]ボタンへのアクセスを禁止します。
 
@@ -111,7 +111,7 @@ policy-ExtensionSettings = 拡張機能のインストール全般を管理し�
 
 policy-ExtensionUpdate = 拡張機能の自動更新を有効または無効にします。
 
-policy-FloorpHome = Floorp Home の設定を行います。
+policy-FirefoxHome = Floorp Home の設定を行います。
 
 policy-FlashPlugin = Flash プラグインの実行を許可、または拒否します。
 

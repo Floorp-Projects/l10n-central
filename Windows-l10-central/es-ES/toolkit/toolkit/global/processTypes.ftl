@@ -12,7 +12,7 @@ process-type-web = Contenido web
 # such as about:home
 process-type-privilegedabout = Acerca de - privilegiado
 # process used to run privileged mozilla pages,
-# such as accounts.Floorp.com
+# such as accounts.firefox.com
 process-type-privilegedmozilla = Contenido de Mozilla - privilegiado
 process-type-extension = Extensión
 # process used to open file:// URLs

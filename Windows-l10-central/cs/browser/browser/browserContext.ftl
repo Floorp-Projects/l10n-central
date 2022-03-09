@@ -72,7 +72,7 @@ toolbar-button-stop =
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
 
-## Floorp Account Button
+## Firefox Account Button
 
 toolbar-button-fxaccount =
     .label = { -fxaccount-brand-name(capitalization: "upper") }
@@ -368,7 +368,6 @@ main-context-menu-eme-learn-more =
 main-context-menu-open-link-in-container-tab =
     .label = Otevřít odkaz v novém panelu kontejneru { $containerName }
     .accesskey = T
-# FIXME(emilio): Every single letter has a conflicting accesskey, UX needed.
-main-context-menu-toggle-show-password =
+main-context-menu-reveal-password =
     .label = Zobrazit heslo
-    .accesskey = b
+    .accesskey = v

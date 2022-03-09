@@ -4,8 +4,8 @@
 
 
 ### For this feature, "installation" is used to mean "this discrete download of
-### Floorp" and "version" is used to mean "the specific revision number of a
-### given Floorp channel". These terms are not synonymous.
+### Firefox" and "version" is used to mean "the specific revision number of a
+### given Firefox channel". These terms are not synonymous.
 
 title = Důležité novinky
 heading =
@@ -23,10 +23,10 @@ changed-desc-profiles =
         [feminine] { -brand-short-name(case: "gen") }
         [neuter] { -brand-short-name(case: "gen") }
        *[other] aplikace { -brand-short-name }
-    } má nový profil. Profil je místo, kam Floorp ukládá data jako jsou vaše záložky, hesla a vaše nastavení.
-changed-desc-dedicated = Aby bylo možné snadno a bezpečně používat více instalací prohlížeče Floorp najednou (finální verzi i verze ESR, Beta, Developer Edition a Nightly), používá nyní tato instalace vlastní profil. Automaticky už tedy nesdílí vaše uložená data s ostatními instalacemi.
+    } má nový profil. Profil je místo, kam Firefox ukládá data jako jsou vaše záložky, hesla a vaše nastavení.
+changed-desc-dedicated = Aby bylo možné snadno a bezpečně používat více instalací prohlížeče Firefox najednou (finální verzi i verze ESR, Beta, Developer Edition a Nightly), používá nyní tato instalace vlastní profil. Automaticky už tedy nesdílí vaše uložená data s ostatními instalacemi.
 
-lost = <b>O žádná svá data a nastavení nepřijdete.</b> Vše je bezpečně uloženo v profilu a dostupné pro první spuštěnou instalaci Floorpu.
+lost = <b>O žádná svá data a nastavení nepřijdete.</b> Vše je bezpečně uloženo v profilu a dostupné pro první spuštěnou instalaci Firefoxu.
 
 options-title = Co mohu dělat dál?
 options-do-nothing =
@@ -35,8 +35,8 @@ options-do-nothing =
         [feminine] vaše { -brand-short-name }
         [neuter] vaše { -brand-short-name }
        *[other] vaše aplikace { -brand-short-name }
-    } bude používat samostatný profil a nebude sdílet žádná data s ostatními instalacemi prohlížeče Floorp.
-options-use-sync = Pokud chcete mít stejná data ve více instalacích Floorpu, použijte bezpečnou synchronizaci pomocí { -fxaccount-brand-name(case: "gen", capitalization: "lower") }.
+    } bude používat samostatný profil a nebude sdílet žádná data s ostatními instalacemi prohlížeče Firefox.
+options-use-sync = Pokud chcete mít stejná data ve více instalacích Firefoxu, použijte bezpečnou synchronizaci pomocí { -fxaccount-brand-name(case: "gen", capitalization: "lower") }.
 
 resources = Zdroje:
 support-link = Správa profilů - článek nápovědy
@@ -47,5 +47,5 @@ sync-input =
     .placeholder = E-mail
 sync-button = Pokračovat
 sync-terms = Pokračováním souhlasíte s <a data-l10n-name="terms">podmínkami poskytování služby</a> a <a data-l10n-name="privacy">zásadami ochrany osobních údajů</a>.
-sync-first = Používáte { -sync-brand-name(case: "acc") } poprvé? Pro synchronizaci svých dat se přihlaste stejným účtem ve všech instalacích Floorpu.
+sync-first = Používáte { -sync-brand-name(case: "acc") } poprvé? Pro synchronizaci svých dat se přihlaste stejným účtem ve všech instalacích Firefoxu.
 sync-learn = Zjistit více

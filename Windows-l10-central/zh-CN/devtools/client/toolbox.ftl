@@ -21,7 +21,7 @@ toolbox-meatball-menu-settings-label = 设置
 toolbox-meatball-menu-documentation-label = 文档…
 toolbox-meatball-menu-community-label = 社区…
 # This menu item is only available in the browser toolbox. It forces the popups/panels
-# to stay visible on blur, which is primarily useful for addon developers and Floorp
+# to stay visible on blur, which is primarily useful for addon developers and Firefox
 # contributors.
 toolbox-meatball-menu-noautohide-label = 不自动隐藏弹窗
 toolbox-meatball-menu-pseudo-locale-accented = 启用“重音符号”语言环境

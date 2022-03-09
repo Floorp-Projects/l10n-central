@@ -72,7 +72,7 @@ toolbar-button-stop =
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
 
-## Floorp Account Button
+## Firefox Account Button
 
 toolbar-button-fxaccount =
     .label = { -fxaccount-brand-name }
@@ -370,5 +370,8 @@ main-context-menu-open-link-in-container-tab =
     .accesskey = p
 # FIXME(emilio): Every single letter has a conflicting accesskey, UX needed.
 main-context-menu-toggle-show-password =
+    .label = Vis passord
+    .accesskey = V
+main-context-menu-reveal-password =
     .label = Vis passord
     .accesskey = V

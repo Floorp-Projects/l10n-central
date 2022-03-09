@@ -351,7 +351,7 @@ addon-badge-recommended2 =
 # We hard code "Mozilla" in the string below because the extensions are built
 # by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
-    .title = Officiellt tillägg byggt av Floorp Legacy Browser. Uppfyller säkerhets- och prestandastandarder
+    .title = Officiellt tillägg byggt av Mozilla Firefox. Uppfyller säkerhets- och prestandastandarder
     .aria-label = { addon-badge-line3.title }
 addon-badge-verified2 =
     .title = Denna tillägg har granskats för att uppfylla våra standarder för säkerhet och prestanda
@@ -370,9 +370,9 @@ addon-permissions-learnmore = Läs mer om behörigheter
 recommended-extensions-heading = Rekommenderade tillägg
 recommended-themes-heading = Rekommenderade teman
 addon-sitepermissions-required = Ger följande funktioner till <span data-l10n-name="hostname">{ $hostname }</span>:
-# A recommendation for the Floorp Color theme shown at the bottom of the theme
-# list view. The "Floorp Color" name itself should not be translated.
-recommended-theme-1 = Känner du dig kreativ? <a data-l10n-name="link">Skapa ditt egna tema med Floorp Color.</a>
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Känner du dig kreativ? <a data-l10n-name="link">Skapa ditt egna tema med Firefox Color.</a>
 
 ## Page headings
 

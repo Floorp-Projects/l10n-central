@@ -39,7 +39,7 @@ warningDesc-version = O { -brand-short-name } é experimental e poderá ser inst
 
 aboutdialog-help-user = Ajuda do { -brand-product-name }
 aboutdialog-submit-feedback = Enviar comentários
-iconprov = Criador de ícones do Floorp Legacy : <label data-l10n-name="iconprov-Link">@kotaten_kt</label>
+
 community-exp = <label data-l10n-name="community-exp-mozillaLink">A { -vendor-short-name }</label> é uma <label data-l10n-name="community-exp-creditsLink">comunidade global</label> que trabalha em conjunto para manter a Web aberta, pública e acessível a todos.
 
 community-2 = O { -brand-short-name } é desenhado pela <label data-l10n-name="community-mozillaLink">{ -vendor-short-name }</label>, uma <label data-l10n-name="community-creditsLink">comunidade global</label> que trabalha em conjunto para manter a Web aberta, pública e acessível a todos.
@@ -52,13 +52,13 @@ bottomLinks-privacy = Política de privacidade
 
 # Example of resulting string: 66.0.1 (64-bit)
 # Variables:
-#   $version (String): version of Floorp, e.g. 66.0.1
+#   $version (String): version of Firefox, e.g. 66.0.1
 #   $bits (Number): bits of the architecture (32 or 64)
 aboutDialog-version = { $version } ({ $bits }-bit)
 
 # Example of resulting string: 66.0a1 (2019-01-16) (64-bit)
 # Variables:
-#   $version (String): version of Floorp for Nightly builds, e.g. 66.0a1
+#   $version (String): version of Firefox for Nightly builds, e.g. 66.0a1
 #   $isodate (String): date in ISO format, e.g. 2019-01-16
 #   $bits (Number): bits of the architecture (32 or 64)
 aboutDialog-version-nightly = { $version } ({ $isodate }) ({ $bits }-bit)

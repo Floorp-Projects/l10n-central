@@ -96,9 +96,9 @@ manifest-loaded-ok = Манифест загружен.
 # load the manifest
 manifest-loaded-error = При загрузка манифеста произошла ошибка:
 
-# Text displayed as an error when there has been a Floorp DevTools error while
+# Text displayed as an error when there has been a Firefox DevTools error while
 # trying to load the manifest
-manifest-loaded-devtools-error = Ошибка инструментов разработчика Floorp
+manifest-loaded-devtools-error = Ошибка инструментов разработчика Firefox
 
 # Text displayed when the page has no manifest available
 manifest-non-existing = Не найден манифест для отладки.

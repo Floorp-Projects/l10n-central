@@ -68,7 +68,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = Plein écran
 
-## Floorp Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = Se connecter pour synchroniser…
@@ -85,7 +85,7 @@ appmenu-remote-tabs-tabsnotsyncing = Activez la synchronisation des onglets pour
 appmenu-remote-tabs-opensettings =
     .label = Paramètres
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Floorp for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Vous souhaitez afficher ici les onglets de vos autres appareils ?
 appmenu-remote-tabs-connectdevice =
     .label = Connecter un autre appareil
@@ -117,8 +117,8 @@ whatsnew-panel-footer-checkbox =
     .label = M’avertir des nouvelles fonctionnalités
     .accesskey = M
 
-## The Floorp Profiler – The popup is the UI to turn on the profiler, and record
-## performance profiles. To enable it go to profiler.Floorp.com and click
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
 profiler-popup-button-idle =
@@ -183,18 +183,18 @@ profiler-popup-capture-shortcut =
 profiler-popup-presets-web-developer-description = Réglage recommandé pour le débogage de la plupart des applications web, avec une surcharge faible.
 profiler-popup-presets-web-developer-label =
     .label = Développement web
-profiler-popup-presets-Floorp-platform-description = Réglage recommandé pour le débogage interne de la plateforme Floorp.
-profiler-popup-presets-Floorp-platform-label =
-    .label = Plateforme Floorp
-profiler-popup-presets-Floorp-front-end-description = Réglage recommandé pour le débogage interne de l’interface Floorp.
-profiler-popup-presets-Floorp-front-end-label =
-    .label = Interface Floorp
-profiler-popup-presets-Floorp-graphics-description = Réglage recommandé pour l’étude des performances graphiques de Floorp.
-profiler-popup-presets-Floorp-graphics-label =
-    .label = Performances graphiques de Floorp
+profiler-popup-presets-firefox-platform-description = Réglage recommandé pour le débogage interne de la plateforme Firefox.
+profiler-popup-presets-firefox-platform-label =
+    .label = Plateforme Firefox
+profiler-popup-presets-firefox-front-end-description = Réglage recommandé pour le débogage interne de l’interface Firefox.
+profiler-popup-presets-firefox-front-end-label =
+    .label = Interface Firefox
+profiler-popup-presets-firefox-graphics-description = Réglage recommandé pour l’étude des performances graphiques de Firefox.
+profiler-popup-presets-firefox-graphics-label =
+    .label = Performances graphiques de Firefox
 profiler-popup-presets-media-description = Réglage recommandé pour diagnostiquer les problèmes audio et vidéo.
-profiler-popup-presets-Floorp-description = Réglage recommandé pour le profilage de { -brand-shorter-name }.
-profiler-popup-presets-Floorp-label =
+profiler-popup-presets-firefox-description = Réglage recommandé pour le profilage de { -brand-shorter-name }.
+profiler-popup-presets-firefox-label =
     .label = { -brand-shorter-name }
 profiler-popup-presets-graphics-description = Réglage conçu pour examiner les bugs graphiques dans { -brand-shorter-name }.
 profiler-popup-presets-graphics-label =

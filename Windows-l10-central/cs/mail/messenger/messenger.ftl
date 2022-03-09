@@ -183,3 +183,47 @@ decrypt-and-copy-failures =
         [few] { $failures } z { $total } zpráv se nepodařilo dešifrovat a nemohly být zkopírovány.
        *[other] { $failures } z { $total } zpráv se nepodařilo dešifrovat a nemohlo být zkopírováno.
     }
+
+## Spaces toolbar
+
+spaces-toolbar-button-mail =
+    .title = Přepnout na panel s poštou
+spaces-toolbar-button-address-book =
+    .title = Přepnout na panel s kontakty
+spaces-toolbar-button-calendar =
+    .title = Přepnout na panel s kalendářem
+spaces-toolbar-button-tasks =
+    .title = Přepnout na panel s úkoly
+spaces-toolbar-button-chat =
+    .title = Přepnout na panel s chatem
+spaces-toolbar-button-settings =
+    .title = Přepnout na panel s nastavením
+spaces-context-new-tab-item =
+    .label = Otevřít v novém panelu
+spaces-context-new-window-item =
+    .label = Otevřít v novém okně
+# Variables:
+# $tabName (String) - The name of the tab this item will switch to.
+spaces-context-switch-tab-item =
+    .label = Přepnout na panel { $tabName }
+settings-context-open-settings-item =
+    .label = Otevřít nastavení
+settings-context-open-account-settings-item =
+    .label = Otevřít nastavení účtu
+settings-context-open-addons-item =
+    .label = Otevřít správce doplňků
+
+## Spaces toolbar pinned tab menupopup
+
+spaces-pinned-button-menuitem-mail =
+    .label = { spaces-toolbar-button-mail.title }
+spaces-pinned-button-menuitem-address-book =
+    .label = { spaces-toolbar-button-address-book.title }
+spaces-pinned-button-menuitem-calendar =
+    .label = { spaces-toolbar-button-calendar.title }
+spaces-pinned-button-menuitem-tasks =
+    .label = { spaces-toolbar-button-tasks.title }
+spaces-pinned-button-menuitem-chat =
+    .label = { spaces-toolbar-button-chat.title }
+spaces-pinned-button-menuitem-reveal =
+    .label = { spaces-toolbar-button-reveal.title }

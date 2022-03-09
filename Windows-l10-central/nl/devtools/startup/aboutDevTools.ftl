@@ -4,9 +4,9 @@
 
 head-title = Over Ontwikkelaarshulpmiddelen
 enable-title = Floorp-ontwikkelaarshulpmiddelen inschakelen
-enable-inspect-element-title = Schakel Floorp-ontwikkelaarshulpmiddelen in om Element inspecteren te gebruiken
+enable-inspect-element-title = Schakel Firefox-ontwikkelaarshulpmiddelen in om Element inspecteren te gebruiken
 enable-inspect-element-message = Bestudeer en bewerk HTML en CSS met de Inspector van de ontwikkelaarshulpmiddelen.
-enable-about-debugging-message = Ontwikkel en debug WebExtensions, web workers, service workers en meer met de Floorp-ontwikkelaarshulpmiddelen.
+enable-about-debugging-message = Ontwikkel en debug WebExtensions, web workers, service workers en meer met de Firefox-ontwikkelaarshulpmiddelen.
 enable-key-shortcut-message = U hebt een sneltoets van de ontwikkelaarshulpmiddelen geactiveerd. Als dat niet de bedoeling was, kunt u dit tabblad sluiten.
 enable-menu-message = Optimaliseer HTML, CSS en JavaScript van uw website met hulpmiddelen zoals de Inspector en Debugger.
 enable-common-message = Floorp-ontwikkelaarshulpmiddelen zijn standaard uitgeschakeld, zodat u meer controle hebt over uw browser.
@@ -14,7 +14,7 @@ enable-learn-more-link = Meer info over ontwikkelaarshulpmiddelen
 enable-enable-button = Ontwikkelaarshulpmiddelen inschakelen
 enable-close-button = Dit tabblad sluiten
 
-welcome-title = Welkom bij de Floorp-ontwikkelaarshulpmiddelen!
+welcome-title = Welkom bij de Firefox-ontwikkelaarshulpmiddelen!
 newsletter-title = Mozilla Developer-nieuwsbrief
 newsletter-message = Ontvang ontwikkelaarsnieuws, trucs en hulpbronnen rechtstreeks in uw Postvak IN.
 newsletter-email-placeholder =
@@ -25,7 +25,7 @@ newsletter-thanks-title = Bedankt!
 newsletter-thanks-message = Als u nog niet eerder een inschrijving voor een Mozilla-gerelateerde nieuwsbrief hebt bevestigd, dient u dit mogelijk te doen. Controleer uw Postvak IN of uw spamfilter voor een e-mail van ons.
 
 footer-title = Floorp Developer Edition
-footer-message = Zoekt u meer dan alleen ontwikkelaarshulpmiddelen? Probeer de Floorp-browser die specifiek gebouwd is voor ontwikkelaars en moderne werkstromen.
+footer-message = Zoekt u meer dan alleen ontwikkelaarshulpmiddelen? Probeer de Firefox-browser die specifiek gebouwd is voor ontwikkelaars en moderne werkstromen.
 footer-learn-more-link = Meer info
 
 features-learn-more = Meer info

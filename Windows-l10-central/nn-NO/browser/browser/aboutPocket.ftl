@@ -11,7 +11,6 @@
 # Placeholder text for tag input
 pocket-panel-saved-add-tags =
     .placeholder = Legg til etikettar
-
 pocket-panel-saved-error-generic = Eit problem oppstod ved lagring til { -pocket-brand-name }.
 pocket-panel-saved-error-tag-length = Etikettar er avgrensa til 25 teikn
 pocket-panel-saved-error-only-links = Berre lenker kan lagrast
@@ -35,10 +34,13 @@ pocket-panel-signup-learn-more = Les meir
 pocket-panel-signup-login = Logg inn
 pocket-panel-signup-signup-email = Logg inn med e-postadresse
 pocket-panel-signup-signup-cta = Registrer deg på { -pocket-brand-name }. Det er gratis.
-pocket-panel-signup-signup-Floorp = Registrer deg med { -brand-product-name }
+pocket-panel-signup-signup-firefox = Registrer deg med { -brand-product-name }
 pocket-panel-signup-tagline = Lagre artiklar og videoar frå { -brand-product-name } for å vise dei i { -pocket-brand-name } på kva som helst eining, når som helst.
 pocket-panel-signup-tagline-story-one = Trykk på { -pocket-brand-name }-knappen for å lagre artiklar, videoar eller sider frå { -brand-product-name }.
 pocket-panel-signup-tagline-story-two = Vis i { -pocket-brand-name }, på kva som helst eining, når som helst.
+pocket-panel-signup-cta-a = Din lagre-knapp for internett.
+pocket-panel-signup-cta-b = Klikk på { -pocket-brand-name }-knappen for å lagre artiklar, videoar og lenker. Sjå lista di på kva som helst eining, når som helst.
+pocket-panel-signup-cta-c = Sjå lista di på kva som helst eining, når som helst.
 
 ## about:pocket-home panel
 
@@ -48,3 +50,17 @@ pocket-panel-home-paragraph = Du kan bruke { -pocket-brand-name } for å utforsk
 pocket-panel-home-explore-popular-topics = Utforsk populære emne
 pocket-panel-home-discover-more = Oppdag meir
 pocket-panel-home-explore-more = Utforsk
+pocket-panel-home-most-recent-saves = Her er dei siste lagringane dine:
+pocket-panel-home-new-user-cta = Klikk på { -pocket-brand-name }-knappen for å lagre artiklar, videoar og lenker.
+pocket-panel-home-new-user-message = Sjå dei siste lagringane dine her.
+
+## Pocket panel header component
+
+pocket-panel-header-my-list = Vis lista mi
+pocket-panel-header-sign-in = Logg inn
+
+## Pocket panel buttons
+
+pocket-panel-button-show-all = Vis alle
+pocket-panel-button-add-tags = Legg til etikettar
+pocket-panel-button-activate = Aktiver { -pocket-brand-name } i { -brand-product-name }

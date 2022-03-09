@@ -55,7 +55,7 @@ cfr-doorhanger-extension-total-users =
        *[other] { $total } pengguna
     }
 
-## Floorp Accounts Message
+## Firefox Accounts Message
 
 cfr-doorhanger-bookmark-fxa-header = Sinkronkan markah Anda di mana saja.
 cfr-doorhanger-bookmark-fxa-body = Penemuan yang mantap! Sekarang jangan pergi tanpa markah ini di perangkat seluler Anda. Mulai dengan { -fxaccount-brand-name }.
@@ -135,10 +135,32 @@ spotlight-learn-more-expanded = Pelajari lebih lanjut
 # This header text can be explicitly wrapped.
 spotlight-public-wifi-vpn-header = Sepertinya Anda menggunakan Wi-Fi publik
 spotlight-public-wifi-vpn-body = Untuk menyembunyikan lokasi dan aktivitas penjelajahan Anda, pertimbangkan Jaringan Pribadi Virtual (VPN). Ini akan membantu Anda tetap terlindungi saat menjelajah di tempat umum seperti bandara dan kedai kopi.
+spotlight-public-wifi-vpn-primary-button = Tetap terjaga dengan { -mozilla-vpn-brand-name }
+    .accesskey = T
 spotlight-public-wifi-vpn-link = Jangan Sekarang
     .accesskey = J
 
 ## Total Cookie Protection Rollout
 
+# "Test pilot" is used as a verb. Possible alternatives: "Be the first to try",
+# "Join an early experiment". This header text can be explicitly wrapped.
+spotlight-total-cookie-protection-header =
+    Uji coba pengalaman privasi terkuat
+    kami yang pernah ada
+spotlight-total-cookie-protection-body = Perlindungan Kuki Total mencegah pelacak menggunakan kuki untuk menguntit Anda di web.
+# "Early access" for this feature rollout means it's a "feature preview" or
+# "soft launch" as not everybody will get it yet.
+spotlight-total-cookie-protection-expanded = { -brand-short-name } membangun pagar di sekitar kuki, dengan membatasi kuki di situs tempat Anda berada, sehingga pelacak tidak dapat menggunakannya untuk mengikuti Anda. Dengan akses awal, Anda akan membantu mengoptimalkan fitur ini agar kami dapat terus membangun web yang lebih baik untuk semua orang.
 spotlight-total-cookie-protection-primary-button = Aktifkan Perlindungan Kuki Total
 spotlight-total-cookie-protection-secondary-button = Jangan sekarang
+
+## Emotive Continuous Onboarding
+
+spotlight-better-internet-header = Internet yang lebih baik dimulai dari Anda
+spotlight-better-internet-body = Ketika Anda menggunakan { -brand-short-name }, Anda memilih Internet yang terbuka dan dapat diakses secara lebih baik untuk semua orang.
+spotlight-pin-primary-button =
+    { PLATFORM() ->
+        [macos] Sematkan ke Dock
+       *[other] Sematkan ke bilah tugas
+    }
+spotlight-pin-secondary-button = Jangan sekarang

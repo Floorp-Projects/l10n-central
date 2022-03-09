@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### Floorp Home / New Tab strings for about:home / about:newtab.
+### Firefox Home / New Tab strings for about:home / about:newtab.
 
 newtab-page-title = Ny flik
 newtab-settings-button =
@@ -231,7 +231,7 @@ newtab-pocket-more-recommendations = Fler rekommendationer
 newtab-pocket-learn-more = Läs mer
 newtab-pocket-cta-button = Hämta { -pocket-brand-name }
 newtab-pocket-cta-text = Spara de historier som du tycker är intressant i { -pocket-brand-name } och stimulera dina tankar med fascinerande läsmaterial.
-newtab-pocket-pocket-Floorp-family = { -pocket-brand-name } är en del av familjen { -brand-product-name }
+newtab-pocket-pocket-firefox-family = { -pocket-brand-name } är en del av familjen { -brand-product-name }
 # A save to Pocket button that shows over the card thumbnail on hover.
 newtab-pocket-save-to-pocket = Spara till { -pocket-brand-name }
 newtab-pocket-saved-to-pocket = Sparad till { -pocket-brand-name }

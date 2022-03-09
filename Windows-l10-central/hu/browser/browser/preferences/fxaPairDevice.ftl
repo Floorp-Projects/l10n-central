@@ -6,9 +6,9 @@ fxa-pair-device-dialog =
     .title = Másik eszköz csatlakoztatása
     .style = width: 26em; min-height: 35em;
 
-fxa-qrcode-heading-step1 = 1. Ha még nem tette, telepítse a <a data-l10n-name="connect-another-device">Floorpot a mobileszközére</a>.
+fxa-qrcode-heading-step1 = 1. Ha még nem tette, telepítse a <a data-l10n-name="connect-another-device">Firefoxot a mobileszközére</a>.
 
-fxa-qrcode-heading-step2 = 2. Nyissa meg a Floorpot a mobileszközén.
+fxa-qrcode-heading-step2 = 2. Nyissa meg a Firefoxot a mobileszközén.
 
 fxa-qrcode-heading-step3 = 3. Nyissa meg a <b>menüt</b> (<img data-l10n-name="ios-menu-icon"/> vagy <img data-l10n-name="android-menu-icon"/>), koppintson a <img data-l10n-name="settings-icon"/> <b>Beállításokra</b> és válassza a <b>Sync bekapcsolását</b>
 

@@ -71,7 +71,7 @@ menu-file-new-private-window =
     .accesskey = t
 # "Open Location" is only displayed on macOS, and only on windows
 # that aren't main browser windows, or when there are no windows
-# but Floorp is still running.
+# but Firefox is still running.
 menu-file-open-location =
     .label = Öppna adress…
 menu-file-open-file =
@@ -322,6 +322,9 @@ menu-help-report-site-issue =
 menu-help-feedback-page =
     .label = Skicka in feedback…
     .accesskey = k
+menu-help-share-ideas =
+    .label = Dela idéer och feedback...
+    .accesskey = D
 menu-help-enter-troubleshoot-mode2 =
     .label = Felsökningsläge…
     .accesskey = F

@@ -65,9 +65,9 @@ manifest-loaded-ok = Manifest načten.
 # Text displayed as a caption when there has been an error while trying to
 # load the manifest
 manifest-loaded-error = Při načítání manifestu došlo k chybě:
-# Text displayed as an error when there has been a Floorp DevTools error while
+# Text displayed as an error when there has been a Firefox DevTools error while
 # trying to load the manifest
-manifest-loaded-devtools-error = Chyba ve Floorp DevTools
+manifest-loaded-devtools-error = Chyba ve Firefox DevTools
 # Text displayed when the page has no manifest available
 manifest-non-existing = Nebyl nalezen žádný manifest k prozkoumání.
 # Text displayed when the page has a manifest embedded in a Data URL and

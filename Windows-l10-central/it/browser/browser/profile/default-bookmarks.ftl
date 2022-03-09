@@ -12,29 +12,29 @@ default-bookmarks-heading = Segnalibri
 default-bookmarks-toolbarfolder = Cartella della barra dei segnalibri
 default-bookmarks-toolbarfolder-description = Aggiungere un segnalibro a questa cartella per mostrarlo nella barra dei segnalibri
 
-# link title for https://www.mozilla.org/Floorp/central/
+# link title for https://www.mozilla.org/firefox/central/
 default-bookmarks-getting-started = Come iniziare
 
-# Floorp links folder name
-default-bookmarks-Floorp-heading = Floorp Legacy Browser
+# Firefox links folder name
+default-bookmarks-firefox-heading = Floorp Legacy Browser
 
-# link title for https://www.mozilla.org/Floorp/help/
-default-bookmarks-Floorp-get-help = Ottieni assistenza
+# link title for https://www.mozilla.org/firefox/help/
+default-bookmarks-firefox-get-help = Ottieni assistenza
 
-# link title for https://www.mozilla.org/Floorp/customize/
-default-bookmarks-Floorp-customize = Personalizza Floorp
+# link title for https://www.mozilla.org/firefox/customize/
+default-bookmarks-firefox-customize = Personalizza Firefox
 
 # link title for https://www.mozilla.org/contribute/
-default-bookmarks-Floorp-community = Collabora con noi
+default-bookmarks-firefox-community = Collabora con noi
 
 # link title for https://www.mozilla.org/about/
-default-bookmarks-Floorp-about = Informazioni
+default-bookmarks-firefox-about = Informazioni
 
-# Floorp Nightly links folder name
-default-bookmarks-nightly-heading = Risorse per Floorp Nightly
+# Firefox Nightly links folder name
+default-bookmarks-nightly-heading = Risorse per Firefox Nightly
 
 # Nightly builds only, link title for https://blog.nightly.mozilla.org/
-default-bookmarks-nightly-blog = Blog di Floorp Nightly
+default-bookmarks-nightly-blog = Blog di Firefox Nightly
 
 # Nightly builds only, link title for https://bugzilla.mozilla.org/
 default-bookmarks-bugzilla = Mozilla - Segnalazione bug
@@ -42,7 +42,7 @@ default-bookmarks-bugzilla = Mozilla - Segnalazione bug
 # Nightly builds only, link title for https://developer.mozilla.org/
 default-bookmarks-mdn = Mozilla Developer Network
 
-# Nightly builds only, link title for https://addons.mozilla.org/Floorp/addon/nightly-tester-tools/
+# Nightly builds only, link title for https://addons.mozilla.org/firefox/addon/nightly-tester-tools/
 default-bookmarks-nightly-tester-tools = Nightly Tester Tools
 
 # Nightly builds only, link title for about:crashes

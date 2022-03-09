@@ -29,7 +29,7 @@ about-unloads-intro =
     side viser, hvordan { -brand-short-name } prioriterer mellem faneblade, og 
     hvilket faneblad, der vil blive lukket ned, når nedlukning af faneblade udløses.
     Du kan udløse nedlukning af faneblade manuelt ved at klikke på knappen <em>Nedluk</em> nedenfor.
-# The link points to a Floorp documentation page, only available in English,
+# The link points to a Firefox documentation page, only available in English,
 # with title "Tab Unloading"
 about-unloads-learn-more =
     <a data-l10n-name="doc-link">Klik her</a> for at læse mere om

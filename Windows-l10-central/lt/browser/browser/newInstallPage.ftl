@@ -4,21 +4,21 @@
 
 
 ### For this feature, "installation" is used to mean "this discrete download of
-### Floorp" and "version" is used to mean "the specific revision number of a
-### given Floorp channel". These terms are not synonymous.
+### Firefox" and "version" is used to mean "the specific revision number of a
+### given Firefox channel". These terms are not synonymous.
 
 title = Svarbios naujienos
 heading = Pasikeitimai jūsų „{ -brand-short-name }“ profilyje
 
 changed-title = Kas pasikeitė?
-changed-desc-profiles = Ši „{ -brand-short-name }“ įdiegtis turi naują profilį. Profilis yra failų rinkinys, kur „Floorp“ saugo tokią informaciją, kaip adresyno įrašai, slaptažodžiai, vartotojo nuostatos.
-changed-desc-dedicated = Kad būtų paprasčiau ir saugiau naudotis skirtingomis „Floorp“ įdiegtimis („Floorp“, „Floorp ESR“, „Floorp Beta“, „Floorp Developer Edition“, ir „Floorp Nightly“), ši įdiegtis dabar turi atskirą profilį. Jis automatiškai nesidalina jūsų įrašyta informacija su kitomis „Floorp“ įdiegtimis.
+changed-desc-profiles = Ši „{ -brand-short-name }“ įdiegtis turi naują profilį. Profilis yra failų rinkinys, kur „Firefox“ saugo tokią informaciją, kaip adresyno įrašai, slaptažodžiai, vartotojo nuostatos.
+changed-desc-dedicated = Kad būtų paprasčiau ir saugiau naudotis skirtingomis „Firefox“ įdiegtimis („Firefox“, „Firefox ESR“, „Firefox Beta“, „Firefox Developer Edition“, ir „Firefox Nightly“), ši įdiegtis dabar turi atskirą profilį. Jis automatiškai nesidalina jūsų įrašyta informacija su kitomis „Firefox“ įdiegtimis.
 
-lost = <b>Jūs nepraradote jokių savo duomenų ar pritaikymų.</b> Jeigu jau esate įrašę informacijos į „Floorp“ šiame kompiuteryje, ji bus pasiekiama kitoje „Floorp“ įdiegtyje.
+lost = <b>Jūs nepraradote jokių savo duomenų ar pritaikymų.</b> Jeigu jau esate įrašę informacijos į „Firefox“ šiame kompiuteryje, ji bus pasiekiama kitoje „Firefox“ įdiegtyje.
 
 options-title = Kokie mano pasirinkimai?
-options-do-nothing = Jeigu nieko nedarysite, jūsų profilio duomenys iš „{ -brand-short-name }“ skirsis nuo kitų „Floorp“ įdiegčių profilių duomenų.
-options-use-sync = Jeigu norite, kad jūsų profilio duomenys būtų vienodi visose „Floorp“ įdiegtyse, galite naudoti „{ -fxaccount-brand-name }“ paskyrą jiems sinchronizuoti.
+options-do-nothing = Jeigu nieko nedarysite, jūsų profilio duomenys iš „{ -brand-short-name }“ skirsis nuo kitų „Firefox“ įdiegčių profilių duomenų.
+options-use-sync = Jeigu norite, kad jūsų profilio duomenys būtų vienodi visose „Firefox“ įdiegtyse, galite naudoti „{ -fxaccount-brand-name }“ paskyrą jiems sinchronizuoti.
 
 resources = Šaltiniai:
 support-link = Naudojimasis profilių tvarkytuve – pagalbos straipsnis
@@ -29,5 +29,5 @@ sync-input =
     .placeholder = El. paštas
 sync-button = Tęsti
 sync-terms = Tęsdami, išreiškiate sutikimą su <a data-l10n-name="terms">Paslaugos teikimo nuostatais</a> ir <a data-l10n-name="privacy">Privatumo pranešimu</a>.
-sync-first = Naudojate „{ -sync-brand-name }“ pirmą kartą? Norėdami sinchronizuoti savo informaciją, turėsite prisijungti kiekvienoje „Floorp“ įdiegtyje.
+sync-first = Naudojate „{ -sync-brand-name }“ pirmą kartą? Norėdami sinchronizuoti savo informaciją, turėsite prisijungti kiekvienoje „Firefox“ įdiegtyje.
 sync-learn = Sužinoti daugiau

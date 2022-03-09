@@ -31,7 +31,7 @@ this container is a toolbar. This avoids double-speaking. -->
 <!ENTITY fxa.menu.signin.label "Prisijungti prie „&brandProductName;“">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
-     for the Floorp Account toolbar menu screen.  -->
+     for the Firefox Account toolbar menu screen.  -->
 <!ENTITY fxa.service.sendTab.description "Akimirksniu persiųskite kortelę į bet kurį susietą įrenginį.">
 
 <!ENTITY printButton.label            "Spausdinti">
@@ -80,7 +80,7 @@ this container is a toolbar. This avoids double-speaking. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Įjunkite kortelių sinchronizavimą, norėdami peržiūrėti kituose įrenginiuose esančias korteles.">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
-     the account. We also show links to download Floorp for android/ios. -->
+     the account. We also show links to download Firefox for android/ios. -->
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Norite čia matyti savo korteles iš kitų įrenginių?">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Atverti sinchronizavimo nuostatas">
 <!ENTITY appMenuRemoteTabs.welcome.label "Peržiūrėkite kituose įrenginiuose esančias korteles.">

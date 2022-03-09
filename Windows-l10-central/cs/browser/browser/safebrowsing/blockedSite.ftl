@@ -45,7 +45,7 @@ safeb-blocked-phishing-page-learn-more =
         [feminine] v { -brand-short-name(case: "loc") }
         [neuter] v { -brand-short-name(case: "loc") }
        *[other] v aplikaci { -brand-short-name }
-    } na <a data-l10n-name='Floorp_support'>support.mozilla.org</a>.
+    } na <a data-l10n-name='firefox_support'>support.mozilla.org</a>.
 safeb-blocked-malware-page-error-desc-override-sumo = Stránka <span data-l10n-name='sitename'>{ $sitename }</span> byla <a data-l10n-name='error_desc_link'>nahlášena jako stránka se škodlivým softwarem</a>. Můžete se rozhodnout <a data-l10n-name='ignore_warning_link'>ignorovat riziko</a> a pokračovat na tuto nebezpečnou stránku.
 safeb-blocked-malware-page-error-desc-no-override-sumo = Stránka <span data-l10n-name='sitename'>{ $sitename }</span> byla <a data-l10n-name='error_desc_link'>nahlášena jako stránka se škodlivým softwarem</a>.
 safeb-blocked-malware-page-learn-more-sumo =
@@ -54,7 +54,7 @@ safeb-blocked-malware-page-learn-more-sumo =
         [feminine] v { -brand-short-name(case: "loc") }
         [neuter] v { -brand-short-name(case: "loc") }
        *[other] v aplikaci { -brand-short-name }
-    } na <a data-l10n-name='Floorp_support'>support.mozilla.org</a>.
+    } na <a data-l10n-name='firefox_support'>support.mozilla.org</a>.
 safeb-blocked-unwanted-page-error-desc-override = Stránka <span data-l10n-name='sitename'>{ $sitename }</span> byla <a data-l10n-name='error_desc_link'>nahlášena jako stránka se škodlivým softwarem</a>. Můžete se rozhodnout <a data-l10n-name='ignore_warning_link'>ignorovat riziko</a> a pokračovat na tuto nebezpečnou stránku.
 safeb-blocked-unwanted-page-error-desc-no-override = Stránka <span data-l10n-name='sitename'>{ $sitename }</span> byla <a data-l10n-name='error_desc_link'>nahlášena jako stránka se škodlivým softwarem</a>.
 safeb-blocked-unwanted-page-learn-more =
@@ -63,7 +63,7 @@ safeb-blocked-unwanted-page-learn-more =
         [feminine] v { -brand-short-name(case: "loc") }
         [neuter] v { -brand-short-name(case: "loc") }
        *[other] v aplikaci { -brand-short-name }
-    } na <a data-l10n-name='Floorp_support'>support.mozilla.org</a>.
+    } na <a data-l10n-name='firefox_support'>support.mozilla.org</a>.
 safeb-blocked-harmful-page-error-desc-override = Stránka <span data-l10n-name='sitename'>{ $sitename }</span> byla <a data-l10n-name='error_desc_link'>nahlášena jako stránka s potenciálně škodlivou aplikací</a>. Můžete se rozhodnout <a data-l10n-name='ignore_warning_link'>ignorovat riziko</a> a pokračovat na tuto nebezpečnou stránku.
 safeb-blocked-harmful-page-error-desc-no-override = Stránka <span data-l10n-name='sitename'>{ $sitename }</span> byla <a data-l10n-name='error_desc_link'>nahlášena jako stránka s potenciálně škodlivou aplikací</a>.
 safeb-blocked-harmful-page-learn-more =
@@ -72,7 +72,7 @@ safeb-blocked-harmful-page-learn-more =
         [feminine] v { -brand-short-name(case: "loc") }
         [neuter] v { -brand-short-name(case: "loc") }
        *[other] v aplikaci { -brand-short-name }
-    } na <a data-l10n-name='Floorp_support'>support.mozilla.org</a>.
+    } na <a data-l10n-name='firefox_support'>support.mozilla.org</a>.
 safeb-palm-notdeceptive =
     .label = Tato stránka není klamavá…
     .accesskey = l

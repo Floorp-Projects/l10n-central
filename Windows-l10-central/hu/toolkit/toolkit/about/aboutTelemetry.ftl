@@ -17,11 +17,11 @@ about-telemetry-next-ping = <i>
 about-telemetry-page-title = Telemetriai adatok
 about-telemetry-current-store = Jelenlegi bolt:
 about-telemetry-more-information = Több információt keres?
-about-telemetry-Floorp-data-doc = A <a data-l10n-name="data-doc-link">Floorp adatok dokumentáció</a> útmutatókat tartalmaz arról, hogyan dolgozzon az adateszközeinkkel.
-about-telemetry-telemetry-client-doc = A <a data-l10n-name="client-doc-link">Floorp telemetria ügyfél dokumentáció</a> fogalomdefiníciókat, API dokumentációkat és adathivatkozásokat tartalmaz.
+about-telemetry-firefox-data-doc = A <a data-l10n-name="data-doc-link">Firefox adatok dokumentáció</a> útmutatókat tartalmaz arról, hogyan dolgozzon az adateszközeinkkel.
+about-telemetry-telemetry-client-doc = A <a data-l10n-name="client-doc-link">Firefox telemetria ügyfél dokumentáció</a> fogalomdefiníciókat, API dokumentációkat és adathivatkozásokat tartalmaz.
 about-telemetry-telemetry-dashboard = A <a data-l10n-name="dashboard-link">Telemetria vezérlőpultokkal</a> vizualizálhatóak a Mozilla által kapott telemetria adatok.
 about-telemetry-telemetry-probe-dictionary = A <a data-l10n-name="probe-dictionary-link">Szonda szótár</a> részleteket és leírást ad a telemetria által gyűjtött szondákról.
-about-telemetry-show-in-Floorp-json-viewer = Megnyitás a JSON megjelenítővel
+about-telemetry-show-in-Firefox-json-viewer = Megnyitás a JSON megjelenítővel
 about-telemetry-home-section = Kezdőlap
 about-telemetry-general-data-section = Általános adatok
 about-telemetry-environment-data-section = Környezeti adatok
@@ -78,7 +78,7 @@ about-telemetry-ping-details = Minden információcsomag „<a data-l10n-name="p
 about-telemetry-data-details-current = Az információk „<a data-l10n-name="ping-link">pingekbe</a>” csomagolva kerülnek elküldésre. Ön a jelenlegi adatokat látja.
 # string used as a placeholder for the search field
 # More info about it can be found here:
-# https://Floorp-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
+# https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
 # Variables:
 #   $selectedTitle (String): the section name from the structure of the ping.
 about-telemetry-filter-placeholder =
@@ -88,7 +88,7 @@ about-telemetry-filter-all-placeholder =
 # Variables:
 #   $searchTerms (String): the searched terms
 about-telemetry-results-for-search = Találatok erre: „{ $searchTerms }”
-# More info about it can be found here: https://Floorp-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
+# More info about it can be found here: https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
 # Variables:
 #   $sectionName (String): the section name from the structure of the ping.
 #   $currentSearchText (String): the current text in the search input
@@ -141,7 +141,7 @@ about-telemetry-origin-origin = eredet
 about-telemetry-origin-count = darabszám
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
-about-telemetry-origins-explanation = A <a data-l10n-name="origin-doc-link">Floorp eredettel kapcsolatos telemetria</a> kódolja az adatokat az elküldés előtt, így a { $telemetryServerOwner } csak összeszámolhat dolgokat, de nem tudja, hogy pontosan mely { -brand-product-name } járult hozzá ahhoz a számhoz. (<a data-l10n-name="prio-blog-link">további információk</a>)
+about-telemetry-origins-explanation = A <a data-l10n-name="origin-doc-link">Firefox eredettel kapcsolatos telemetria</a> kódolja az adatokat az elküldés előtt, így a { $telemetryServerOwner } csak összeszámolhat dolgokat, de nem tudja, hogy pontosan mely { -brand-product-name } járult hozzá ahhoz a számhoz. (<a data-l10n-name="prio-blog-link">további információk</a>)
 # Variables:
 #  $process (String): type of process in subsection headers ( e.g. "content", "parent" )
 about-telemetry-process = { $process } folyamat

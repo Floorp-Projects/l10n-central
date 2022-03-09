@@ -92,6 +92,7 @@ onboarding-multistage-import-secondary-button-label = Teď ne
 # Info displayed in the footer of import settings screen during onboarding flow.
 # This supports welcome screen showing top sites imported from the user's default browser.
 onboarding-import-sites-disclaimer = Na tomto zařízení byly nalezeny následující stránky. { -brand-short-name } si neuloží a nebude synchronizovat dat uložená v jiném prohlížeči, dokud mu nepovolíte je importovat.
+return-to-amo-add-theme-label = Přidat motiv vzhledu
 
 ## Multistage onboarding strings (about:welcome pages)
 
@@ -122,13 +123,13 @@ onboarding-multistage-theme-secondary-button-label = Teď ne
 onboarding-multistage-theme-label-automatic = Automatický
 onboarding-multistage-theme-label-light = Světlý
 onboarding-multistage-theme-label-dark = Tmavý
-# "Floorp Alpenglow" here is the name of the theme, and should be kept in English.
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
 onboarding-multistage-theme-label-alpenglow = Floorp Alpenglow
 # "Hero Text" displayed on left side of welcome screen.
 # The "Fire" in "Fire starts here" plays on the "Fire" in "Floorp".
-# It also signals the passion users bring to Floorp, how they use
-# Floorp to pursue those passions, as well as the boldness in their
-# choice to use Floorp over a larger competitor browser.
+# It also signals the passion users bring to Firefox, how they use
+# Firefox to pursue those passions, as well as the boldness in their
+# choice to use Firefox over a larger competitor browser.
 # An alternative title for localization is: "It starts here".
 # This text can be formatted to span multiple lines as needed.
 mr1-welcome-screen-hero-text = Začínáme
@@ -136,7 +137,7 @@ mr1-welcome-screen-hero-text = Začínáme
 # of the person and shouldn't be translated.
 # In case your language needs to adapt the nouns to a gender, Soraya is a female name (she/her).
 # You can see the picture in about:welcome in Nightly 90.
-mr1-onboarding-welcome-image-caption = Soraya Osorio — návrhářka nábytku a fanynka Floorpu
+mr1-onboarding-welcome-image-caption = Soraya Osorio — návrhářka nábytku a fanynka Firefoxu
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = Vypnout animace
 
@@ -144,7 +145,7 @@ mr1-onboarding-reduce-motion-button-label = Vypnout animace
 ## match the OS' application context menu item action where Windows uses "pin"
 ## and "taskbar" while macOS "keep" and "Dock" (proper noun).
 
-# Title used on welcome page when Floorp is not pinned
+# Title used on welcome page when Firefox is not pinned
 mr1-onboarding-pin-header =
     { PLATFORM() ->
         [macos]
@@ -162,7 +163,7 @@ mr1-onboarding-pin-header =
                *[other] Mějte aplikaci { -brand-short-name } na dosah připnutou na své liště.
             }
     }
-# Primary button string used on welcome page when Floorp is not pinned.
+# Primary button string used on welcome page when Firefox is not pinned.
 mr1-onboarding-pin-primary-button-label =
     { PLATFORM() ->
         [macos] Připnout do docku
@@ -172,7 +173,7 @@ mr1-onboarding-pin-primary-button-label =
 ## Multistage MR1 onboarding strings (about:welcome pages)
 
 # This string will be used on welcome page primary button label
-# when Floorp is both pinned and default
+# when Firefox is both pinned and default
 mr1-onboarding-get-started-primary-button-label = Jdeme na to
 mr1-onboarding-welcome-header = Vítá vás { -brand-short-name }
 mr1-onboarding-set-default-pin-primary-button-label =
@@ -195,7 +196,7 @@ mr1-onboarding-set-default-pin-primary-button-label =
            *[other] ji
         } na lištu
 # This string will be used on welcome page primary button label
-# when Floorp is not default but already pinned
+# when Firefox is not default but already pinned
 mr1-onboarding-set-default-only-primary-button-label =
     Nastavit { -brand-short-name.gender ->
         [masculine] { -brand-short-name(case: "acc") }
@@ -207,7 +208,7 @@ mr1-onboarding-set-default-secondary-button-label = Teď ne
 mr1-onboarding-sign-in-button-label = Přihlásit se
 
 ## Title, subtitle and primary button string used on set default onboarding screen
-## when Floorp is not default browser
+## when Firefox is not default browser
 
 mr1-onboarding-default-header =
     Nastavit { -brand-short-name.gender ->
@@ -223,7 +224,7 @@ mr1-onboarding-default-primary-button-label = Nastavit jako výchozí prohlíže
 
 mr1-onboarding-import-header = Všechno, vždy a po ruce
 mr1-onboarding-import-subtitle = Importujte svá hesla, <br/>záložky a další
-# The primary import button label will depend on whether we can detect which browser was used to download Floorp.
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
 # Variables:
 #   $previous (Str) - Previous browser name, such as Edge, Chrome
 mr1-onboarding-import-primary-button-label-attribution = Importovat z prohlížeče { $previous }
@@ -354,18 +355,10 @@ mr2-onboarding-colorway-tooltip =
 # Selector description for colorway
 # Variables:
 #   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-description =
-    .aria-description = Vyzkoušet paletu barev { $colorwayName }.
-# Selector description for colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
 mr2-onboarding-colorway-label = Vyzkoušet paletu barev { $colorwayName }.
 # Tooltip displayed on hover of default themes
 mr2-onboarding-default-theme-tooltip =
     .title = Vyzkoušet výchozí vzhledy.
-# Selector description for default themes
-mr2-onboarding-default-theme-description =
-    .aria-description = Vyzkoušet výchozí vzhledy.
 # Selector description for default themes
 mr2-onboarding-default-theme-label = Vyzkoušet výchozí vzhledy.
 
@@ -374,3 +367,23 @@ mr2-onboarding-default-theme-label = Vyzkoušet výchozí vzhledy.
 mr2-onboarding-thank-you-header = Děkujeme, že jste si vybrali nás
 mr2-onboarding-thank-you-text = { -brand-short-name } je nezávislý prohlížeč od neziskové organizace. Společně se snažíme udělat web bezpečnější, zdravější a s větším ohledem na soukromí.
 mr2-onboarding-start-browsing-button-label = Začít prohlížet
+
+## Multistage live language reloading onboarding strings (about:welcome pages)
+##
+## The following language names are generated by the browser's Intl.DisplayNames API.
+##
+## Variables:
+##   $appLanguage (String) - The name of Firefox's language, e.g. "American English"
+##   $systemLanguage (String) - The name of the OS's language, e.g. "European Spanish"
+##   $negotiatedLanguage (String) - The name of the langpack's language, e.g. "European Spanish"
+
+onboarding-live-language-header = Výběr jazyka
+onboarding-live-language-subtitle = { -brand-short-name } používá jazyk { $appLanguage }, ale váš operační systém má nastavený jazyk { $systemLanguage }.
+onboarding-live-language-switch-button-label = Přepnout na jazyk { $negotiatedLanguage }
+onboarding-live-language-button-label-downloading = Stahování jazykového balíčku pro jazyk { $negotiatedLanguage }…
+onboarding-live-language-waiting-subtitle = Vypadá to, že { -brand-short-name } není ve stejném jazyce jako váš operační systém.
+onboarding-live-language-waiting-button = Získávání dostupných jazyků…
+onboarding-live-language-installing = Instalace jazykového balíčku pro jazyk { $negotiatedLanguage }…
+onboarding-live-language-secondary-cancel-download = Zrušit
+onboarding-live-language-not-now-button-label = Teď ne
+onboarding-live-language-skip-button-label = Přeskočit

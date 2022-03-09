@@ -29,7 +29,7 @@ about-unloads-intro =
     { -brand-short-name } την προτεραιότητα των καρτελών, καθώς και ποια καρτέλα
     θα εκφορτωθεί όταν ενεργοποιηθεί η λειτουργία. Μπορείτε να κάνετε χειροκίνητη
     εκφόρτωση καρτέλας με το κουμπί <em>Εκφόρτωση</em> παρακάτω.
-# The link points to a Floorp documentation page, only available in English,
+# The link points to a Firefox documentation page, only available in English,
 # with title "Tab Unloading"
 about-unloads-learn-more =
     Δείτε το <a data-l10n-name="doc-link">Tab Unloading</a> για να μάθετε περισσότερα

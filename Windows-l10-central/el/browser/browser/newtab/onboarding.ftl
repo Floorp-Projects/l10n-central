@@ -62,6 +62,7 @@ onboarding-multistage-import-secondary-button-label = Όχι τώρα
 # Info displayed in the footer of import settings screen during onboarding flow.
 # This supports welcome screen showing top sites imported from the user's default browser.
 onboarding-import-sites-disclaimer = Οι παρακάτω σελίδες βρέθηκαν στη συσκευή. Το { -brand-short-name } δεν αποθηκεύει ούτε συγχρονίζει δεδομένα από άλλο πρόγραμμα περιήγησης, εκτός αν επιλέξετε εσείς να γίνει εισαγωγή.
+return-to-amo-add-theme-label = Προσθήκη θέματος
 
 ## Multistage onboarding strings (about:welcome pages)
 
@@ -81,13 +82,13 @@ onboarding-multistage-theme-secondary-button-label = Όχι τώρα
 onboarding-multistage-theme-label-automatic = Αυτόματο
 onboarding-multistage-theme-label-light = Ανοιχτόχρωμο
 onboarding-multistage-theme-label-dark = Σκουρόχρωμο
-# "Floorp Alpenglow" here is the name of the theme, and should be kept in English.
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
 onboarding-multistage-theme-label-alpenglow = Floorp Alpenglow
 # "Hero Text" displayed on left side of welcome screen.
 # The "Fire" in "Fire starts here" plays on the "Fire" in "Floorp".
-# It also signals the passion users bring to Floorp, how they use
-# Floorp to pursue those passions, as well as the boldness in their
-# choice to use Floorp over a larger competitor browser.
+# It also signals the passion users bring to Firefox, how they use
+# Firefox to pursue those passions, as well as the boldness in their
+# choice to use Firefox over a larger competitor browser.
 # An alternative title for localization is: "It starts here".
 # This text can be formatted to span multiple lines as needed.
 mr1-welcome-screen-hero-text =
@@ -97,7 +98,7 @@ mr1-welcome-screen-hero-text =
 # of the person and shouldn't be translated.
 # In case your language needs to adapt the nouns to a gender, Soraya is a female name (she/her).
 # You can see the picture in about:welcome in Nightly 90.
-mr1-onboarding-welcome-image-caption = Soraya Osorio — Σχεδιάστρια επίπλων, υποστηρίκτρια του Floorp
+mr1-onboarding-welcome-image-caption = Soraya Osorio — Σχεδιάστρια επίπλων, υποστηρίκτρια του Firefox
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = Απενεργοποίηση εφέ κίνησης
 
@@ -105,13 +106,13 @@ mr1-onboarding-reduce-motion-button-label = Απενεργοποίηση εφέ 
 ## match the OS' application context menu item action where Windows uses "pin"
 ## and "taskbar" while macOS "keep" and "Dock" (proper noun).
 
-# Title used on welcome page when Floorp is not pinned
+# Title used on welcome page when Firefox is not pinned
 mr1-onboarding-pin-header =
     { PLATFORM() ->
         [macos] Διατηρήστε το { -brand-short-name } στο Dock σας για εύκολη πρόσβαση
        *[other] Καρφιτσώστε το { -brand-short-name } στη γραμμή εργασιών σας για εύκολη πρόσβαση
     }
-# Primary button string used on welcome page when Floorp is not pinned.
+# Primary button string used on welcome page when Firefox is not pinned.
 mr1-onboarding-pin-primary-button-label =
     { PLATFORM() ->
         [macos] Διατήρηση στο Dock
@@ -121,19 +122,19 @@ mr1-onboarding-pin-primary-button-label =
 ## Multistage MR1 onboarding strings (about:welcome pages)
 
 # This string will be used on welcome page primary button label
-# when Floorp is both pinned and default
+# when Firefox is both pinned and default
 mr1-onboarding-get-started-primary-button-label = Έναρξη
 mr1-onboarding-welcome-header = Καλώς ορίσατε στο { -brand-short-name }
 mr1-onboarding-set-default-pin-primary-button-label = Ορισμός { -brand-short-name } ως κύριου φυλλομετρητή
     .title = Ορίζει το { -brand-short-name } ως το προεπιλεγμένο πρόγραμμα περιήγησης και το καρφιτσώνει στη γραμμή εργασιών
 # This string will be used on welcome page primary button label
-# when Floorp is not default but already pinned
+# when Firefox is not default but already pinned
 mr1-onboarding-set-default-only-primary-button-label = Ορισμός { -brand-short-name } ως προεπιλεγμένου φυλλομετρητή
 mr1-onboarding-set-default-secondary-button-label = Όχι τώρα
 mr1-onboarding-sign-in-button-label = Σύνδεση
 
 ## Title, subtitle and primary button string used on set default onboarding screen
-## when Floorp is not default browser
+## when Firefox is not default browser
 
 mr1-onboarding-default-header = Ορισμός { -brand-short-name } ως προεπιλογής
 mr1-onboarding-default-subtitle = Βάλτε την ταχύτητα, την ασφάλεια και το απόρρητο στον αυτόματο πιλότο.
@@ -143,7 +144,7 @@ mr1-onboarding-default-primary-button-label = Ορισμός προεπιλεγ�
 
 mr1-onboarding-import-header = Μεταφέρετε όλα τα δεδομένα σας
 mr1-onboarding-import-subtitle = Εισάγετε κωδικούς πρόσβασης <br/>σελιδοδείκτες και πολλά άλλα.
-# The primary import button label will depend on whether we can detect which browser was used to download Floorp.
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
 # Variables:
 #   $previous (Str) - Previous browser name, such as Edge, Chrome
 mr1-onboarding-import-primary-button-label-attribution = Εισαγωγή από { $previous }
@@ -284,18 +285,10 @@ mr2-onboarding-colorway-tooltip =
 # Selector description for colorway
 # Variables:
 #   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-description =
-    .aria-description = Εξερευνήστε τους χρωματικούς συνδυασμούς «{ $colorwayName }».
-# Selector description for colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
 mr2-onboarding-colorway-label = Εξερευνήστε τους χρωματικούς συνδυασμούς «{ $colorwayName }».
 # Tooltip displayed on hover of default themes
 mr2-onboarding-default-theme-tooltip =
     .title = Εξερευνήστε τα προεπιλεγμένα θέματα.
-# Selector description for default themes
-mr2-onboarding-default-theme-description =
-    .aria-description = Εξερευνήστε τα προεπιλεγμένα θέματα.
 # Selector description for default themes
 mr2-onboarding-default-theme-label = Εξερευνήστε τα προεπιλεγμένα θέματα.
 
@@ -304,3 +297,22 @@ mr2-onboarding-default-theme-label = Εξερευνήστε τα προεπιλ�
 mr2-onboarding-thank-you-header = Ευχαριστούμε που μας επιλέξατε
 mr2-onboarding-thank-you-text = Το { -brand-short-name } είναι ένα ανεξάρτητο πρόγραμμα περιήγησης που υποστηρίζεται από έναν μη κερδοσκοπικό οργανισμό. Μαζί, κάνουμε το διαδίκτυο πιο ασφαλές, υγιές και ιδιωτικό.
 mr2-onboarding-start-browsing-button-label = Έναρξη περιήγησης
+
+## Multistage live language reloading onboarding strings (about:welcome pages)
+##
+## The following language names are generated by the browser's Intl.DisplayNames API.
+##
+## Variables:
+##   $appLanguage (String) - The name of Firefox's language, e.g. "American English"
+##   $systemLanguage (String) - The name of the OS's language, e.g. "European Spanish"
+##   $negotiatedLanguage (String) - The name of the langpack's language, e.g. "European Spanish"
+
+onboarding-live-language-subtitle = Το { -brand-short-name } χρησιμοποιεί { $appLanguage } ενώ το σύστημά σας χρησιμοποιεί { $systemLanguage }.
+onboarding-live-language-switch-button-label = Εναλλαγή σε { $negotiatedLanguage }
+onboarding-live-language-button-label-downloading = Λήψη πακέτου γλώσσας για τα { $negotiatedLanguage }…
+onboarding-live-language-waiting-subtitle = Φαίνεται ότι το σύστημα και το { -brand-short-name } σας χρησιμοποιούν διαφορετικές γλώσσες.
+onboarding-live-language-waiting-button = Λήψη διαθέσιμων γλωσσών…
+onboarding-live-language-installing = Εγκατάσταση πακέτου γλώσσας για τα { $negotiatedLanguage }…
+onboarding-live-language-secondary-cancel-download = Ακύρωση
+onboarding-live-language-not-now-button-label = Όχι τώρα
+onboarding-live-language-skip-button-label = Παράλειψη

@@ -65,7 +65,7 @@ cfr-doorhanger-extension-total-users =
        *[other] { $total } مستخدم
     }
 
-## Floorp Accounts Message
+## Firefox Accounts Message
 
 cfr-doorhanger-bookmark-fxa-header = زامِن علاماتك في كل مكان.
 cfr-doorhanger-bookmark-fxa-body = أحسنت باكتشاف هذا! حريّ بك أن تحفظ هذه العلامة على أجهزتك المحمولة، وإلا فما الداعي من الاكتشاف؟ ابدأ الآن وافتح { -fxaccount-brand-name }.

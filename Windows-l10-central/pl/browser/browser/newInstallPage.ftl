@@ -4,15 +4,15 @@
 
 
 ### For this feature, "installation" is used to mean "this discrete download of
-### Floorp" and "version" is used to mean "the specific revision number of a
-### given Floorp channel". These terms are not synonymous.
+### Firefox" and "version" is used to mean "the specific revision number of a
+### given Firefox channel". These terms are not synonymous.
 
 title = Ważna informacja
 heading = Zmiany w profilu programu { -brand-short-name }
 
 changed-title = Co się zmieniło?
-changed-desc-profiles = Ta instalacja programu { -brand-short-name } ma nowy profil. Profil to zestaw plików, w których Floorp zachowuje dane, takie jak zakładki, hasła i preferencje użytkownika.
-changed-desc-dedicated = Aby móc łatwiej i bezpieczniej przełączać się między instalacjami Firefoksa (w tym Firefoksa, Firefoksa ESR, Firefoksa Beta, Floorp Developer Edition i Floorp Nightly), ta instalacja ma teraz oddzielny profil. Zachowane dane nie są automatycznie współdzielone z pozostałymi instalacjami Firefoksa.
+changed-desc-profiles = Ta instalacja programu { -brand-short-name } ma nowy profil. Profil to zestaw plików, w których Firefox zachowuje dane, takie jak zakładki, hasła i preferencje użytkownika.
+changed-desc-dedicated = Aby móc łatwiej i bezpieczniej przełączać się między instalacjami Firefoksa (w tym Firefoksa, Firefoksa ESR, Firefoksa Beta, Firefox Developer Edition i Firefox Nightly), ta instalacja ma teraz oddzielny profil. Zachowane dane nie są automatycznie współdzielone z pozostałymi instalacjami Firefoksa.
 
 lost = <b>Żadne dane osobiste ani konfiguracja nie zostały utracone.</b> Jeśli już zachowano jakieś dane w Firefoksie na tym komputerze, to są one nadal dostępne w innej instalacji Firefoksa.
 

@@ -24,9 +24,9 @@ graph-private-window = A { -brand-short-name } továbbra is blokkolja a nyomköv
 graph-week-summary-private-window = Követők, melyet a { -brand-short-name } blokkolt a héten
 protection-report-webpage-title = Védelmi vezérlőpult
 protection-report-page-content-title = Védelmi vezérlőpult
-# This message shows when all privacy protections are turned off, which is why we use the word "can", Floorp is able to protect your privacy, but it is currently not.
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
 protection-report-page-summary = Amíg Ön böngészik, a { -brand-short-name } a színfalak mögött gondoskodik az adatvédelméről. Ez ezen védelmek személyre szabott összefoglalója, olyan eszközökkel, melyekkel átveheti az irányítást az online biztonsága felett.
-# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Floorp is actively protecting you.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
 protection-report-page-summary-default = Amíg Ön böngészik, a { -brand-short-name } a színfalak mögött gondoskodik az adatvédelméről. Ez ezen védelmek személyre szabott összefoglalója, olyan eszközökkel, melyekkel átveheti az irányítást az online biztonsága felett.
 protection-report-settings-link = Kezelje az adatvédelmi és biztonsági beállításait
 etp-card-title-always = Fokozott követés elleni védelem: Mindig bekapcsolva
@@ -97,7 +97,7 @@ monitor-sign-up-link = Iratkozzon fel az adatsértési figyelmeztetésekre
     .title = Iratkozzon fel az adatsértési figyelmeztetésekre a { -monitor-brand-name }on
 auto-scan = Automatikusan ellenőrizve ma
 monitor-emails-tooltip =
-    .title = Megfigyelt e-mail címek megtekintése a { -monitor-brand-short-name }on
+    .title = Megfigyelt e-mail-címek megtekintése a { -monitor-brand-short-name }on
 monitor-breaches-tooltip =
     .title = Ismert adatsértések megtekintése a { -monitor-brand-short-name }on
 monitor-passwords-tooltip =
@@ -107,8 +107,8 @@ monitor-passwords-tooltip =
 # your localization, because it would result in the number showing twice.
 info-monitored-emails =
     { $count ->
-        [one] Figyelt e-mail cím
-       *[other] Figyelt e-mail címek
+        [one] Figyelt e-mail-cím
+       *[other] Figyelt e-mail-cím
     }
 # This string is displayed after a large numeral that indicates the total number
 # of known data breaches. Don’t add $count to
@@ -124,7 +124,7 @@ info-known-breaches-found =
 info-known-breaches-resolved =
     { $count ->
         [one] Megoldottként megjelölt adatsértés
-       *[other] Megoldottként megjelölt adatsértések
+       *[other] Megoldottként megjelölt adatsértés
     }
 # This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to
@@ -132,7 +132,7 @@ info-known-breaches-resolved =
 info-exposed-passwords-found =
     { $count ->
         [one] Adatsértés során kikerült jelszó
-       *[other] Adatsértések során kikerült jelszavak
+       *[other] Adatsértések során kikerült jelszó
     }
 # This string is displayed after a large numeral that indicates the total number
 # of exposed passwords that are marked as resolved by the user. Don’t add $count
@@ -140,7 +140,7 @@ info-exposed-passwords-found =
 info-exposed-passwords-resolved =
     { $count ->
         [one] Megoldatlan adatsértésekben kikerült jelszó
-       *[other] Megoldatlan adatsértésekben kikerült jelszavak
+       *[other] Megoldatlan adatsértésekben kikerült jelszó
     }
 monitor-no-breaches-title = Jó hírek!
 monitor-no-breaches-description = Nincs ismert adatsértés. Ha ez megváltozik, tájékoztatni fogjuk.

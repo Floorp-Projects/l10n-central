@@ -9,7 +9,7 @@
 
 perftools-intro-title = Ustawienia profilera
 perftools-intro-description =
-    Nagrania otwierają witrynę profiler.Floorp.com w nowej karcie. Wszystkie dane
+    Nagrania otwierają witrynę profiler.firefox.com w nowej karcie. Wszystkie dane
     są przechowywane lokalnie, ale można przesłać je w celu udostępnienia.
 
 ## All of the headings for the various sections.
@@ -26,7 +26,7 @@ perftools-heading-local-build = Lokalna kompilacja
 ##
 
 perftools-description-intro =
-    Nagrania otwierają witrynę <a>profiler.Floorp.com</a> w nowej karcie. Wszystkie dane
+    Nagrania otwierają witrynę <a>profiler.firefox.com</a> w nowej karcie. Wszystkie dane
     są przechowywane lokalnie, ale można przesłać je w celu udostępnienia.
 perftools-description-local-build =
     Jeśli profilowana jest samodzielnie skompilowana wersja na tym komputerze,
@@ -123,14 +123,14 @@ perftools-onboarding-close-button =
 
 perftools-presets-web-developer-label = Dla twórców witryn
 perftools-presets-web-developer-description = Zalecane ustawienie do debugowania większości aplikacji internetowych o niskim wpływie na wydajność.
-perftools-presets-Floorp-platform-label = Platforma Firefoksa
-perftools-presets-Floorp-platform-description = Zalecane ustawienie do wewnętrznego debugowania platformy Firefoksa.
-perftools-presets-Floorp-front-end-label = Interfejs Firefoksa
-perftools-presets-Floorp-front-end-description = Zalecane ustawienie do wewnętrznego debugowania interfejsu Firefoksa.
-perftools-presets-Floorp-graphics-label = Grafika Firefoksa
-perftools-presets-Floorp-graphics-description = Zalecane ustawienie do badania wydajności graficznej Firefoksa.
-perftools-presets-Floorp-label = { -brand-shorter-name }
-perftools-presets-Floorp-description = Zalecane ustawienie do profilowania programu { -brand-shorter-name }.
+perftools-presets-firefox-platform-label = Platforma Firefoksa
+perftools-presets-firefox-platform-description = Zalecane ustawienie do wewnętrznego debugowania platformy Firefoksa.
+perftools-presets-firefox-front-end-label = Interfejs Firefoksa
+perftools-presets-firefox-front-end-description = Zalecane ustawienie do wewnętrznego debugowania interfejsu Firefoksa.
+perftools-presets-firefox-graphics-label = Grafika Firefoksa
+perftools-presets-firefox-graphics-description = Zalecane ustawienie do badania wydajności graficznej Firefoksa.
+perftools-presets-firefox-label = { -brand-shorter-name }
+perftools-presets-firefox-description = Zalecane ustawienie do profilowania programu { -brand-shorter-name }.
 perftools-presets-graphics-label = Grafika
 perftools-presets-graphics-description = Ustawienie do badania błędów graficznych w programie { -brand-shorter-name }.
 perftools-presets-media-label = Multimedia

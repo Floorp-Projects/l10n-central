@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### Floorp Home / New Tab strings for about:home / about:newtab.
+### Firefox Home / New Tab strings for about:home / about:newtab.
 
 newtab-page-title = Nauja kortelė
 newtab-settings-button =
@@ -231,7 +231,7 @@ newtab-pocket-more-recommendations = Daugiau rekomendacijų
 newtab-pocket-learn-more = Sužinoti daugiau
 newtab-pocket-cta-button = Gauti „{ -pocket-brand-name }“
 newtab-pocket-cta-text = Išsaugokite patinkančius straipsnius į „{ -pocket-brand-name }“, bei sužadinkite savo mintis stulbinančiomis istorijomis.
-newtab-pocket-pocket-Floorp-family = „{ -pocket-brand-name }“ yra „{ -brand-product-name }“ šeimos dalis
+newtab-pocket-pocket-firefox-family = „{ -pocket-brand-name }“ yra „{ -brand-product-name }“ šeimos dalis
 # A save to Pocket button that shows over the card thumbnail on hover.
 newtab-pocket-save-to-pocket = Įrašyti į „{ -pocket-brand-name }“
 newtab-pocket-saved-to-pocket = Įrašyta į „{ -pocket-brand-name }“

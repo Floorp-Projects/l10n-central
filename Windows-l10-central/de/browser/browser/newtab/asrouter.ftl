@@ -57,7 +57,7 @@ cfr-doorhanger-extension-total-users =
        *[other] { $total } Benutzer
     }
 
-## Floorp Accounts Message
+## Firefox Accounts Message
 
 cfr-doorhanger-bookmark-fxa-header = Synchronisieren Sie Ihre Lesezeichen, um sie überall verfügbar zu haben.
 cfr-doorhanger-bookmark-fxa-body = Jederzeit Zugriff auf dieses Lesezeichen - auch auf mobilen Geräten. Nutzen Sie dafür ein { -fxaccount-brand-name }.

@@ -35,7 +35,7 @@
 <!ENTITY leaveOnServer.accesskey "τ">
 <!ENTITY headersOnly.label "Λήψη μόνο κεφαλίδων">
 <!ENTITY headersOnly.accesskey "φ">
-<!ENTITY deleteByAgeFromServer.label "Για το περισσότερο">
+<!ENTITY deleteByAgeFromServer.label "Για έως">
 <!ENTITY deleteByAgeFromServer.accesskey "π">
 <!ENTITY daysEnd.label "ημέρες">
 <!ENTITY deleteOnServer2.label "Μέχρι να τα διαγράψω">
@@ -52,7 +52,7 @@
 <!-- LOCALIZATION NOTE (expungeOnExit.label) : do not translate two of "&quot;" in below line -->
 <!ENTITY expungeOnExit.label "Εκκαθάριση («Διαγραφή») εισερχομένων κατά την έξοδο">
 <!ENTITY expungeOnExit.accesskey "θ">
-<!ENTITY emptyTrashOnExit.label "Άδειασμα του κάδου απορριμμάτων κατά την έξοδο">
+<!ENTITY emptyTrashOnExit.label "Άδειασμα απορριμμάτων κατά την έξοδο">
 <!ENTITY emptyTrashOnExit.accesskey "δ">
 <!ENTITY loginAtStartup.label "Έλεγχος για νέα μηνύματα κατά την εκκίνηση">
 <!ENTITY loginAtStartup.accesskey "λ">

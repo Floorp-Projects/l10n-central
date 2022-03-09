@@ -9,7 +9,7 @@
 # attributes are used when the web content opened has no title:
 #
 # default - "Floorp Legacy Browser"
-# private - "Floorp Legacy Browser (Private Browsing)"
+# private - "Mozilla Firefox (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Variables:
@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Floorp Legacy Browser"
-# "private" - "Floorp Legacy Browser — (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -513,16 +513,16 @@ urlbar-result-action-search-tabs = Search Tabs
 
 ## Labels shown above groups of urlbar results
 
-# A label shown above the "Floorp Suggest" (bookmarks/history) group in the
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
 # urlbar results.
-urlbar-group-Floorp-suggest =
-    .label = { -Floorp-suggest-brand-name }
+urlbar-group-firefox-suggest =
+    .label = { -firefox-suggest-brand-name }
 # A label shown above the search suggestions group in the urlbar results. It
 # should use title case.
 # Variables
 #  $engine (String): the name of the search engine providing the suggestions
 urlbar-group-search-suggestions =
-    .label = { $engine } Suggestions
+    .label = { $engine } suggestions
 
 ## Full Screen and Pointer Lock UI
 

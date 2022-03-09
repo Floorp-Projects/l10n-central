@@ -12,7 +12,7 @@ process-type-web = Strony
 # such as about:home
 process-type-privilegedabout = Uprzywilejowane strony about:
 # process used to run privileged mozilla pages,
-# such as accounts.Floorp.com
+# such as accounts.firefox.com
 process-type-privilegedmozilla = Uprzywilejowane strony Mozilli
 process-type-extension = Rozszerzenie
 # process used to open file:// URLs

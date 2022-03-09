@@ -72,7 +72,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = Teljes képernyő
 
-## Floorp Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = Jelentkezzen be a Syncbe…
@@ -89,7 +89,7 @@ appmenu-remote-tabs-tabsnotsyncing = Kapcsolja be a lapszinkronizálást a más 
 appmenu-remote-tabs-opensettings =
     .label = Beállítások
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Floorp for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Szeretné a más eszközein megnyitott lapjait itt látni?
 appmenu-remote-tabs-connectdevice =
     .label = Másik eszköz csatlakoztatása
@@ -121,8 +121,8 @@ whatsnew-panel-footer-checkbox =
     .label = Értesítés az új funkciókról
     .accesskey = f
 
-## The Floorp Profiler – The popup is the UI to turn on the profiler, and record
-## performance profiles. To enable it go to profiler.Floorp.com and click
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
 profiler-popup-button-idle =
@@ -148,12 +148,12 @@ profiler-popup-settings =
     .value = Beállítások
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Beállítások szerkesztése…
-# This link takes the user to about:profiling, and is only visible with the Custom preset.
-profiler-popup-edit-settings-button =
-    .label = Beállítások szerkesztése…
 profiler-popup-disabled =
     A profilozó jelenleg le van tiltva, valószínűleg azért, mert nyitva van egy privát
     böngészési ablak.
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Beállítások szerkesztése…
 profiler-popup-recording-screen = Felvétel…
 # The profiler presets list is generated elsewhere, but the custom preset is defined
 # here only.
@@ -187,18 +187,8 @@ profiler-popup-capture-shortcut =
 profiler-popup-presets-web-developer-description = Ajánlott előbeállítás a legtöbb webalkalmazás hibakereséséhez, alacsony pluszköltséggel.
 profiler-popup-presets-web-developer-label =
     .label = Webfejlesztő
-profiler-popup-presets-Floorp-platform-description = Ajánlott előbeállítás a Floorp platform belső hibakereséséhez.
-profiler-popup-presets-Floorp-platform-label =
-    .label = Floorp platform
-profiler-popup-presets-Floorp-front-end-description = Ajánlott előbeállítás a Floorp kezelőfelületének belső hibakereséséhez.
-profiler-popup-presets-Floorp-front-end-label =
-    .label = Floorp kezelőfelület
-profiler-popup-presets-Floorp-graphics-description = Ajánlott előbeállítás a Floorp grafikus teljesítményének vizsgálatához.
-profiler-popup-presets-Floorp-graphics-label =
-    .label = Floorp grafika
-profiler-popup-presets-media-description = Ajánlott előbeállítás a hang- és videóproblémák diagnosztizálásához.
-profiler-popup-presets-Floorp-description = Javasolt előbeállítás a { -brand-shorter-name } profilozásához.
-profiler-popup-presets-Floorp-label =
+profiler-popup-presets-firefox-description = Javasolt előbeállítás a { -brand-shorter-name } profilozásához.
+profiler-popup-presets-firefox-label =
     .label = { -brand-shorter-name }
 profiler-popup-presets-graphics-description = Előbeállítás a { -brand-shorter-name } grafikai hibáinak kivizsgálásához.
 profiler-popup-presets-graphics-label =
@@ -246,6 +236,9 @@ appmenu-help-report-site-issue =
 appmenu-help-feedback-page =
     .label = Visszajelzés beküldése…
     .accesskey = V
+appmenu-help-share-ideas =
+    .label = Ötletek és visszajelzések megosztása…
+    .accesskey = o
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

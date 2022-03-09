@@ -68,7 +68,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = 全画面表示
 
-## Floorp Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = ログインして同期...
@@ -85,7 +85,7 @@ appmenu-remote-tabs-tabsnotsyncing = タブの同期をオンにすると、あ�
 appmenu-remote-tabs-opensettings =
     .label = 設定
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Floorp for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = 他の端末のタブを表示しますか？
 appmenu-remote-tabs-connectdevice =
     .label = 他の端末を接続
@@ -117,8 +117,8 @@ whatsnew-panel-footer-checkbox =
     .label = 新機能を通知する
     .accesskey = f
 
-## The Floorp Profiler – The popup is the UI to turn on the profiler, and record
-## performance profiles. To enable it go to profiler.Floorp.com and click
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
 profiler-popup-button-idle =
@@ -180,19 +180,9 @@ profiler-popup-capture-shortcut =
 profiler-popup-presets-web-developer-description = 一般的なウェブアプリをデバッグするための低負荷な推奨プリセットです。
 profiler-popup-presets-web-developer-label =
     .label = ウェブ開発
-profiler-popup-presets-Floorp-platform-description = Floorp のプラットフォーム内部をデバッグするための推奨プリセットです。
-profiler-popup-presets-Floorp-platform-label =
-    .label = Floorp プラットフォーム
-profiler-popup-presets-Floorp-front-end-description = Floorp のフロントエンド内部をデバッグするための推奨プリセットです。
-profiler-popup-presets-Floorp-front-end-label =
-    .label = Floorp フロントエンド
-profiler-popup-presets-Floorp-graphics-description = Floorp のグラフィック性能を調査するための推奨プリセットです。
-profiler-popup-presets-Floorp-graphics-label =
-    .label = Floorp グラフィック
-profiler-popup-presets-media-description = 音声と動画の問題を診断するための推奨プリセットです。
 
-profiler-popup-presets-Floorp-description = { -brand-shorter-name } のプロファイリングのための推奨プリセットです。
-profiler-popup-presets-Floorp-label =
+profiler-popup-presets-firefox-description = { -brand-shorter-name } のプロファイリングのための推奨プリセットです。
+profiler-popup-presets-firefox-label =
     .label = { -brand-shorter-name }
 
 profiler-popup-presets-graphics-description = { -brand-shorter-name } のグラフィックバグを調査するための推奨プリセットです。

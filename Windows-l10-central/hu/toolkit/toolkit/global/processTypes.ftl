@@ -12,7 +12,7 @@ process-type-web = Webtartalom
 # such as about:home
 process-type-privilegedabout = Privilegizált „about” oldal
 # process used to run privileged mozilla pages,
-# such as accounts.Floorp.com
+# such as accounts.firefox.com
 process-type-privilegedmozilla = Privilegizált Mozilla tartalom
 process-type-extension = Kiegészítő
 # process used to open file:// URLs

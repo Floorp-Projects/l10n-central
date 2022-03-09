@@ -17,11 +17,11 @@ about-telemetry-next-ping = >>
 about-telemetry-page-title = Data Telemetri
 about-telemetry-current-store = Penyimpanan Saat Ini:
 about-telemetry-more-information = Butuh informasi lebih lanjut?
-about-telemetry-Floorp-data-doc = <a data-l10n-name="data-doc-link">Floorp Data Documentation</a> berisi panduan tentang bagaimana bekerja dengan alat data kami.
-about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">Dokumentasi klien Floorp Telemetry</a> termasuk definisi untuk konsep, dokumentasi API, dan referensi data.
+about-telemetry-firefox-data-doc = <a data-l10n-name="data-doc-link">Firefox Data Documentation</a> berisi panduan tentang bagaimana bekerja dengan alat data kami.
+about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">Dokumentasi klien Firefox Telemetry</a> termasuk definisi untuk konsep, dokumentasi API, dan referensi data.
 about-telemetry-telemetry-dashboard = <a data-l10n-name="dashboard-link">Dasbor Telemetry</a> mengizinkan Anda memvisualkan data yang diterima Mozilla via Telemetry.
 about-telemetry-telemetry-probe-dictionary = <a data-l10n-name="probe-dictionary-link">Probe Dictionary</a> menyediakan rincian dan deskripsi tentang data-data pemeriksaan yang dikumpulkan oleh Telemetry.
-about-telemetry-show-in-Floorp-json-viewer = Buka di penampil JSON
+about-telemetry-show-in-Firefox-json-viewer = Buka di penampil JSON
 about-telemetry-home-section = Beranda
 about-telemetry-general-data-section =    Data Umum
 about-telemetry-environment-data-section = Data Lingkungan
@@ -77,7 +77,7 @@ about-telemetry-ping-details = Setiap potongan informasi dikirim tertutup ke “
 about-telemetry-data-details-current = Setiap potongan informasi dikirim tertutup ke “<a data-l10n-name="ping-link">ping</a>“. Anda sedang melihat data saat ini.
 # string used as a placeholder for the search field
 # More info about it can be found here:
-# https://Floorp-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
+# https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
 # Variables:
 #   $selectedTitle (String): the section name from the structure of the ping.
 about-telemetry-filter-placeholder =
@@ -87,7 +87,7 @@ about-telemetry-filter-all-placeholder =
 # Variables:
 #   $searchTerms (String): the searched terms
 about-telemetry-results-for-search = Hasil untuk “{ $searchTerms }”
-# More info about it can be found here: https://Floorp-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
+# More info about it can be found here: https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
 # Variables:
 #   $sectionName (String): the section name from the structure of the ping.
 #   $currentSearchText (String): the current text in the search input
@@ -140,7 +140,7 @@ about-telemetry-origin-origin = sumber
 about-telemetry-origin-count = jumlah
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
-about-telemetry-origins-explanation = <a data-l10n-name="origin-doc-link">Floorp Origin Telemetry</a> mengenkode data sebelum dikirim agar { $telemetryServerOwner } bisa menghitung, tetapi tidak bisa mengetahui apakah { -brand-product-name } yang disediakan telah atau tidak berkontribusi atas perhitungan. (<a data-l10n-name="prio-blog-link">pelajari lebih lanjut</a>)
+about-telemetry-origins-explanation = <a data-l10n-name="origin-doc-link">Firefox Origin Telemetry</a> mengenkode data sebelum dikirim agar { $telemetryServerOwner } bisa menghitung, tetapi tidak bisa mengetahui apakah { -brand-product-name } yang disediakan telah atau tidak berkontribusi atas perhitungan. (<a data-l10n-name="prio-blog-link">pelajari lebih lanjut</a>)
 # Variables:
 #  $process (String): type of process in subsection headers ( e.g. "content", "parent" )
 about-telemetry-process = { $process } proses

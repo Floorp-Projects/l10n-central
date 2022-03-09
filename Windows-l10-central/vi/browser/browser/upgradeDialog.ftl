@@ -24,7 +24,7 @@ upgrade-dialog-new-secondary-button = Không phải bây giờ
 # theme selection screen.
 upgrade-dialog-new-primary-win7-button = Ok, đã hiểu!
 
-## Pin Floorp screen
+## Pin Firefox screen
 ##
 ## These title, subtitle and button strings differ between platforms as they
 ## match the OS' application context menu item action where Windows uses "pin"
@@ -78,7 +78,7 @@ upgrade-dialog-start-secondary-button = Không phải bây giờ
 # This title can be explicitly wrapped to control which words are on which line.
 upgrade-dialog-colorway-title = Chọn bảng màu của bạn
 # This is shown to users with a custom home page, so they can switch to default.
-upgrade-dialog-colorway-home-checkbox = Chuyển sang Trang chủ Floorp với nền theo chủ đề
+upgrade-dialog-colorway-home-checkbox = Chuyển sang Trang chủ Firefox với nền theo chủ đề
 upgrade-dialog-colorway-primary-button = Lưu phối màu
 upgrade-dialog-colorway-secondary-button = Giữ chủ đề trước đó
 upgrade-dialog-colorway-theme-tooltip =

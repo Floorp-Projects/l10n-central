@@ -21,7 +21,7 @@ toolbox-meatball-menu-settings-label = Cài đặt
 toolbox-meatball-menu-documentation-label = Tài liệu…
 toolbox-meatball-menu-community-label = Cộng đồng…
 # This menu item is only available in the browser toolbox. It forces the popups/panels
-# to stay visible on blur, which is primarily useful for addon developers and Floorp
+# to stay visible on blur, which is primarily useful for addon developers and Firefox
 # contributors.
 toolbox-meatball-menu-noautohide-label = Vô hiệu hóa tự động ẩn popup
 

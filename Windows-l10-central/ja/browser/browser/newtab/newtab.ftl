@@ -2,7 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-### Floorp Home / New Tab strings for about:home / about:newtab.
+### Firefox Home / New Tab strings for about:home / about:newtab.
 
 newtab-page-title = 新しいタブ
 newtab-settings-button =
@@ -232,7 +232,7 @@ newtab-pocket-learn-more = 詳細
 newtab-pocket-cta-button = { -pocket-brand-name } を入手
 newtab-pocket-cta-text = お気に入りに記事を { -pocket-brand-name } に保存して、魅力的な読み物を思う存分楽しみましょう。
 
-newtab-pocket-pocket-Floorp-family = { -pocket-brand-name } は { -brand-product-name } ファミリーの一員です
+newtab-pocket-pocket-firefox-family = { -pocket-brand-name } は { -brand-product-name } ファミリーの一員です
 
 # A save to Pocket button that shows over the card thumbnail on hover.
 newtab-pocket-save-to-pocket = { -pocket-brand-name } に保存します

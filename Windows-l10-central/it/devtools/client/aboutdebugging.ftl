@@ -12,10 +12,10 @@ about-debugging-page-title-runtime-page = Debugging - Runtime / { $selectedRunti
 
 # Sidebar strings
 
-about-debugging-this-Floorp-runtime-name = Questo { -brand-shorter-name }
+about-debugging-this-firefox-runtime-name = Questo { -brand-shorter-name }
 
-about-debugging-sidebar-this-Floorp =
-  .name = { about-debugging-this-Floorp-runtime-name }
+about-debugging-sidebar-this-firefox =
+  .name = { about-debugging-this-firefox-runtime-name }
 
 about-debugging-sidebar-setup =
   .name = Impostazioni
@@ -61,7 +61,7 @@ about-debugging-setup-title = Impostazioni
 
 about-debugging-setup-intro = Configura il metodo di connessione da utilizzare per il debug remoto del dispositivo.
 
-about-debugging-setup-this-Floorp2 = Utilizza <a>{ about-debugging-this-Floorp-runtime-name }</a> per effettuare il debug di estensioni e service worker in questa versione di { -brand-shorter-name }.
+about-debugging-setup-this-firefox2 = Utilizza <a>{ about-debugging-this-firefox-runtime-name }</a> per effettuare il debug di estensioni e service worker in questa versione di { -brand-shorter-name }.
 
 about-debugging-setup-connect-heading = Connetti un dispositivo
 
@@ -83,7 +83,7 @@ about-debugging-setup-usb-step-enable-dev-menu2 = Attiva il menu “Opzioni svil
 
 about-debugging-setup-usb-step-enable-debug2 = Attiva “Debug USB” nel menu “Opzioni sviluppatori” sul dispositivo Android.
 
-about-debugging-setup-usb-step-enable-debug-Floorp2 = Attiva USB Debugging in Floorp sul dispositivo Android.
+about-debugging-setup-usb-step-enable-debug-firefox2 = Attiva USB Debugging in Firefox sul dispositivo Android.
 
 about-debugging-setup-usb-step-plug-device = Connetti il dispositivo Android al computer.
 
@@ -129,9 +129,9 @@ about-debugging-runtime-service-workers-not-compatible = La configurazione del b
 
 about-debugging-browser-version-too-old = Il browser connesso utilizza una versione obsoleta ({ $runtimeVersion }). La versione minima compatibile è ({ $minVersion }). Questa configurazione non è supportata e potrebbe impedire il corretto funzionamento degli strumenti di sviluppo. Aggiornare il browser connesso. <a>Risoluzione dei problemi</a>
 
-about-debugging-browser-version-too-old-fennec = Non è possibile utilizzare questa versione di Floorp per eseguire il debug di Floorp per Android (68). Per effettuare test è consigliato installare Floorp per Android Nightly sul telefono. <a>Ulteriori informazioni</a>
+about-debugging-browser-version-too-old-fennec = Non è possibile utilizzare questa versione di Firefox per eseguire il debug di Firefox per Android (68). Per effettuare test è consigliato installare Firefox per Android Nightly sul telefono. <a>Ulteriori informazioni</a>
 
-about-debugging-browser-version-too-recent = Il browser connesso ({ $runtimeVersion }, buildID { $runtimeID }) è più recente di quello in uso in { -brand-shorter-name } ({ $localVersion }, buildID { $localID }). Questa configurazione non è supportata e potrebbe impedire il corretto funzionamento degli strumenti di sviluppo. Aggiornare Floorp. <a>Risoluzione dei problemi</a>
+about-debugging-browser-version-too-recent = Il browser connesso ({ $runtimeVersion }, buildID { $runtimeID }) è più recente di quello in uso in { -brand-shorter-name } ({ $localVersion }, buildID { $localID }). Questa configurazione non è supportata e potrebbe impedire il corretto funzionamento degli strumenti di sviluppo. Aggiornare Firefox. <a>Risoluzione dei problemi</a>
 
 about-debugging-runtime-name = { $name } ({ $version })
 

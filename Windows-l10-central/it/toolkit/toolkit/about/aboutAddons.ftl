@@ -433,7 +433,7 @@ recommended-themes-heading = Temi consigliati
 
 addon-sitepermissions-required = Consente a <span data-l10n-name="hostname">{ $hostname }</span> di utilizzare le seguenti funzioni:
 
-recommended-theme-1 = Ti senti creativo? <a data-l10n-name="link">Disegna il tuo tema con Floorp Color</a>.
+recommended-theme-1 = Ti senti creativo? <a data-l10n-name="link">Disegna il tuo tema con Firefox Color</a>.
 
 ## Page headings
 

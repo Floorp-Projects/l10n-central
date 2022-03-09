@@ -372,9 +372,9 @@ addon-permissions-learnmore = Μάθετε περισσότερα σχετικά
 recommended-extensions-heading = Προτεινόμενες επεκτάσεις
 recommended-themes-heading = Προτεινόμενα θέματα
 addon-sitepermissions-required = Παραχωρεί τις εξής δυνατότητες στο <span data-l10n-name="hostname">{ $hostname }</span>:
-# A recommendation for the Floorp Color theme shown at the bottom of the theme
-# list view. The "Floorp Color" name itself should not be translated.
-recommended-theme-1 = Αισθάνεστε δημιουργικοί; <a data-l10n-name="link">Δημιουργήστε το δικό σας θέμα με το Floorp Color.</a>
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Αισθάνεστε δημιουργικοί; <a data-l10n-name="link">Δημιουργήστε το δικό σας θέμα με το Firefox Color.</a>
 
 ## Page headings
 

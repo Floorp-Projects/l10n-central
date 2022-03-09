@@ -94,3 +94,7 @@ experimental-features-multi-pip-description = 여러 화면 속 화면 창을 �
 experimental-features-ime-search =
     .label = 주소 표시줄: IME 입력 중 결과 표시
 experimental-features-ime-search-description = IME (Input Method Editor)는 표준 키보드를 사용하여 동아시아 또는 인도어에서 사용되는 것과 같은 복잡한 기호를 입력 할 수 있는 도구입니다. 이 실험을 활성화하면 IME를 사용하여 텍스트를 입력하는 동안 주소 표시줄 패널이 열려 검색 결과와 제안을 표시합니다. IME는 주소 표시줄 결과를 포함하는 패널을 표시할 수 있으므로, 이 설정은 이러한 유형의 패널을 사용하지 않는 IME에만 권장됩니다.
+# Firefox 100
+experimental-features-firefox-100 =
+    .label = { -brand-product-name } 100 사용자 에이전트 문자열
+experimental-features-firefox-100-description = { -brand-short-name }가 웹 사이트에 { -brand-product-name } 버전 100인 것처럼 가장하는 사용자 에이전트 문자열을 보내도록 합니다. 이 설정을 사용하여 { -brand-short-name }가 세 자리 버전 넘버에 도달할 때 웹 사이트가 깨지는지 테스트하세요. 실제 { -brand-product-name } 100은 2022년 5월에 출시될 예정이므로 지금 웹 사이트 테스트를 시작하세요!

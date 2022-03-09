@@ -29,7 +29,7 @@ about-unloads-intro =
     { -brand-short-name } đặt ưu tiên các thẻ và thẻ nào sẽ được dỡ xuống
     khi lệnh dỡ thẻ được kích hoạt. Bạn có thể kích hoạt dỡ thẻ theo cách
     thủ công bằng cách nhấp vào nút <em>Dỡ</em>.
-# The link points to a Floorp documentation page, only available in English,
+# The link points to a Firefox documentation page, only available in English,
 # with title "Tab Unloading"
 about-unloads-learn-more =
     Xem <a data-l10n-name="doc-link">Quản lý dỡ thẻ</a> để tìm hiểu thêm

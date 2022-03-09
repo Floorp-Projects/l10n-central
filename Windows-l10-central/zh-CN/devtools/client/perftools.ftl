@@ -8,7 +8,7 @@
 ### file that are used for the profiler popup.
 
 perftools-intro-title = 分析器设置
-perftools-intro-description = 记录过程将在新标签页中打开 profiler.Floorp.com。所有数据都存储在本地，您可以手动选择上传以进行共享。
+perftools-intro-description = 记录过程将在新标签页中打开 profiler.firefox.com。所有数据都存储在本地，您可以手动选择上传以进行共享。
 
 ## All of the headings for the various sections.
 
@@ -23,7 +23,7 @@ perftools-heading-local-build = 本地构建版本
 
 ##
 
-perftools-description-intro = 记录过程将在新标签页中打开 <a>profiler.Floorp.com</a>。所有数据都存储在本地，您可以手动选择上传以进行共享。
+perftools-description-intro = 记录过程将在新标签页中打开 <a>profiler.firefox.com</a>。所有数据都存储在本地，您可以手动选择上传以进行共享。
 perftools-description-local-build = 若您要对本机自行编译的构建版本进行测量，请将其 objdir 路径添加至下方列表，以便查询调试符号信息。
 
 ## The controls for the interval at which the profiler samples the code.
@@ -116,18 +116,18 @@ perftools-onboarding-close-button =
 
 perftools-presets-web-developer-label = Web 开发者
 perftools-presets-web-developer-description = 推荐在对大部分 Web 应用程序调试时使用，开销较少。
-perftools-presets-Floorp-platform-label = Floorp 平台
-perftools-presets-Floorp-platform-description = 推荐在 Floorp 内部平台调试时使用。
-perftools-presets-Floorp-front-end-label = Floorp 前端
-perftools-presets-Floorp-front-end-description = 推荐在 Floorp 内部前端调试时使用。
-perftools-presets-Floorp-graphics-label = Floorp 图形
-perftools-presets-Floorp-graphics-description = 推荐在排查 Floorp 图形性能问题时使用。
-perftools-presets-Floorp-label = { -brand-shorter-name }
-perftools-presets-Floorp-description = 推荐在分析 { -brand-shorter-name } 性能时使用。
+perftools-presets-firefox-platform-label = Floorp 平台
+perftools-presets-firefox-platform-description = 推荐在 Firefox 内部平台调试时使用。
+perftools-presets-firefox-front-end-label = Floorp 前端
+perftools-presets-firefox-front-end-description = 推荐在 Firefox 内部前端调试时使用。
+perftools-presets-firefox-graphics-label = Floorp 图形
+perftools-presets-firefox-graphics-description = 推荐在排查 Firefox 图形性能问题时使用。
+perftools-presets-firefox-label = { -brand-shorter-name }
+perftools-presets-firefox-description = 推荐在分析 { -brand-shorter-name } 性能时使用。
 perftools-presets-graphics-label = 图形
 perftools-presets-graphics-description = 推荐在排查 { -brand-shorter-name } 图形 Bug 时使用。
 perftools-presets-media-label = 媒体
-perftools-presets-media-description = 推荐在诊断 Floorp 音视频问题时使用。
+perftools-presets-media-description = 推荐在诊断 Firefox 音视频问题时使用。
 perftools-presets-media-description2 = 推荐在排查 { -brand-shorter-name } 音视频 Bug 时使用。
 perftools-presets-networking-label = 联网
 perftools-presets-networking-description = 推荐在排查 { -brand-shorter-name } 联网 Bug 时使用。

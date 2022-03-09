@@ -4,7 +4,7 @@
 
 
 ## The Enterprise Policies feature is aimed at system administrators
-## who want to deploy these settings across several Floorp installations
+## who want to deploy these settings across several Firefox installations
 ## all at once. This is traditionally done through the Windows Group Policy
 ## feature, but the system also supports other forms of deployment.
 ## These are short descriptions for individual policies, to be displayed
@@ -54,12 +54,12 @@ policy-DisableDeveloperTools = Toegang tot de ontwikkelaarshulpmiddelen blokkere
 
 policy-DisableFeedbackCommands = Opdrachten voor het verzenden van feedback vanuit het menu Help uitschakelen (Feedback verzenden en Misleidende website rapporteren).
 
-policy-DisableFloorpAccounts = Op { -fxaccount-brand-name } gebaseerde services uitschakelen, waaronder Sync.
+policy-DisableFirefoxAccounts = Op { -fxaccount-brand-name } gebaseerde services uitschakelen, waaronder Sync.
 
-# Floorp Screenshots is the name of the feature, and should not be translated.
-policy-DisableFloorpScreenshots = De Floorp Screenshots-functie uitschakelen.
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = De Firefox Screenshots-functie uitschakelen.
 
-policy-DisableFloorpStudies = Voorkomen dat { -brand-short-name } onderzoeken uitvoert.
+policy-DisableFirefoxStudies = Voorkomen dat { -brand-short-name } onderzoeken uitvoert.
 
 policy-DisableForgetButton = Toegang tot de knop Vergeten voorkomen.
 
@@ -112,7 +112,7 @@ policy-ExtensionSettings = Alle aspecten van installatie van extensies beheren.
 
 policy-ExtensionUpdate = Automatische extensie-updates inschakelen of uitschakelen.
 
-policy-FloorpHome = De startpagina van Floorp instellen.
+policy-FirefoxHome = De startpagina van Firefox instellen.
 
 policy-FlashPlugin = Gebruik van de Flash-plug-in toestaan of weigeren.
 

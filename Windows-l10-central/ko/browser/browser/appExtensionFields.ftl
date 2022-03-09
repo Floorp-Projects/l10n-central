@@ -19,6 +19,10 @@ extension-floorp-lepton-description = 가로 탭을 책갈피 막대의 맨 아�
 extension-floorp-edge-name= 수직 탭에 Floorp 최적화 (시스템 테마)
 extension-floorp-edge-description= 수직 탭에 Floorp를 최적화합니다. 수평 탭은 숨겨져 사용할 수 없게 됩니다.
 
+extension-floorp-Kanaze-name= Kanaze 프로젝트 테마
+extension-floorp-edge-description= Kanaze 프로젝트 캐릭터. 기간 한정 테마입니다. 홈페이지에서 자세한 내용을 부탁드립니다.
+
+
 ## Colorway Themes
 ## These themes are variants of a colorway. The colorway is specified in the
 ## $colorway-name variable.

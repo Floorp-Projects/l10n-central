@@ -17,11 +17,11 @@ about-telemetry-next-ping = >>
 about-telemetry-page-title = Dados de Telemetria
 about-telemetry-current-store = Armazenamento atual:
 about-telemetry-more-information = Procurando mais informações?
-about-telemetry-Floorp-data-doc = A <a data-l10n-name="data-doc-link">Documentação de dados do Floorp</a> contém guias sobre como trabalhar com nossas ferramentas de dados.
-about-telemetry-telemetry-client-doc = A <a data-l10n-name="client-doc-link">documentação do cliente de telemetria do Floorp</a> inclui definições de conceitos, documentação da API e referências de dados.
+about-telemetry-firefox-data-doc = A <a data-l10n-name="data-doc-link">Documentação de dados do Firefox</a> contém guias sobre como trabalhar com nossas ferramentas de dados.
+about-telemetry-telemetry-client-doc = A <a data-l10n-name="client-doc-link">documentação do cliente de telemetria do Firefox</a> inclui definições de conceitos, documentação da API e referências de dados.
 about-telemetry-telemetry-dashboard = Os <a data-l10n-name="dashboard-link">painéis de Telemetria</a> permitem visualizar os dados que a Mozilla recebe via Telemetria.
 about-telemetry-telemetry-probe-dictionary = O <a data-l10n-name="probe-dictionary-link">Dicionário de Sondagens</a> fornece detalhes e descrições das sondagens coletadas pela Telemetria.
-about-telemetry-show-in-Floorp-json-viewer = Abrir no visualizador de JSON
+about-telemetry-show-in-Firefox-json-viewer = Abrir no visualizador de JSON
 about-telemetry-home-section = Início
 about-telemetry-general-data-section = Dados gerais
 about-telemetry-environment-data-section = Dados do ambiente
@@ -78,7 +78,7 @@ about-telemetry-ping-details = Cada pedaço de informação é enviado empacotad
 about-telemetry-data-details-current = Cada pedaço de informação é enviado empacotado dentro de “<a data-l10n-name="ping-link">pings</a>“. Você está vendo os dados atuais.
 # string used as a placeholder for the search field
 # More info about it can be found here:
-# https://Floorp-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
+# https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
 # Variables:
 #   $selectedTitle (String): the section name from the structure of the ping.
 about-telemetry-filter-placeholder =
@@ -88,7 +88,7 @@ about-telemetry-filter-all-placeholder =
 # Variables:
 #   $searchTerms (String): the searched terms
 about-telemetry-results-for-search = Resultados para “{ $searchTerms }”
-# More info about it can be found here: https://Floorp-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
+# More info about it can be found here: https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
 # Variables:
 #   $sectionName (String): the section name from the structure of the ping.
 #   $currentSearchText (String): the current text in the search input
@@ -141,7 +141,7 @@ about-telemetry-origin-origin = origem
 about-telemetry-origin-count = contagem
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
-about-telemetry-origins-explanation = A <a data-l10n-name="origin-doc-link">Telemetria de origem do Floorp</a> codifica os dados antes de ser enviados, assim o { $telemetryServerOwner } pode contar coisas, mas não saber se algum { -brand-product-name } indicado contribuiu ou não para a contagem (<a data-l10n-name="prio-blog-link">saiba mais</a>).
+about-telemetry-origins-explanation = A <a data-l10n-name="origin-doc-link">Telemetria de origem do Firefox</a> codifica os dados antes de ser enviados, assim o { $telemetryServerOwner } pode contar coisas, mas não saber se algum { -brand-product-name } indicado contribuiu ou não para a contagem (<a data-l10n-name="prio-blog-link">saiba mais</a>).
 # Variables:
 #  $process (String): type of process in subsection headers ( e.g. "content", "parent" )
 about-telemetry-process = Processo { $process }

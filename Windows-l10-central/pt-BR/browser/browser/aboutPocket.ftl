@@ -34,10 +34,15 @@ pocket-panel-signup-learn-more = Saiba mais
 pocket-panel-signup-login = Entre
 pocket-panel-signup-signup-email = Cadastre-se por email
 pocket-panel-signup-signup-cta = Cadastre-se no { -pocket-brand-name }. É gratuito.
-pocket-panel-signup-signup-Floorp = Cadastre-se pelo { -brand-product-name }
+pocket-panel-signup-signup-firefox = Cadastre-se pelo { -brand-product-name }
 pocket-panel-signup-tagline = Salve artigos e vídeos do { -brand-product-name } para ver no { -pocket-brand-name } em qualquer dispositivo, quando quiser.
 pocket-panel-signup-tagline-story-one = Clique no botão { -pocket-brand-name } para salvar um artigo, vídeo ou página do { -brand-product-name }.
 pocket-panel-signup-tagline-story-two = Veja no { -pocket-brand-name } em qualquer dispositivo, quando quiser.
+pocket-panel-signup-cta-a = Seu botão de salvar na internet.
+pocket-panel-signup-cta-a-fix = Seu botão de salvar na internet
+pocket-panel-signup-cta-b = Clique no botão { -pocket-brand-name } para salvar artigos, vídeos e links. Veja sua lista em qualquer dispositivo, quando quiser.
+pocket-panel-signup-cta-b-short = Clique no botão { -pocket-brand-name } para salvar artigos, vídeos e links.
+pocket-panel-signup-cta-c = Veja sua lista em qualquer dispositivo, quando quiser.
 
 ## about:pocket-home panel
 
@@ -47,8 +52,18 @@ pocket-panel-home-paragraph = Você pode usar o { -pocket-brand-name } para expl
 pocket-panel-home-explore-popular-topics = Explorar tópicos populares
 pocket-panel-home-discover-more = Descubra mais
 pocket-panel-home-explore-more = Explorar
+pocket-panel-home-most-recent-saves = Aqui está o que você salvou mais recentemente:
+pocket-panel-home-most-recent-saves-loading = Carregando o que foi salvo recentemente…
+pocket-panel-home-new-user-cta = Clique no botão { -pocket-brand-name } para salvar artigos, vídeos e links.
+pocket-panel-home-new-user-message = Veja aqui o que você salvou mais recentemente.
 
 ## Pocket panel header component
 
 pocket-panel-header-my-list = Ver minha lista
 pocket-panel-header-sign-in = Entrar
+
+## Pocket panel buttons
+
+pocket-panel-button-show-all = Mostrar tudo
+pocket-panel-button-add-tags = Adicionar etiquetas
+pocket-panel-button-activate = Ativar o { -pocket-brand-name } no { -brand-product-name }

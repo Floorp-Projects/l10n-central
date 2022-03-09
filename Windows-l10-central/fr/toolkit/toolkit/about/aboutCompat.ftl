@@ -13,10 +13,10 @@ text-no-overrides = Aucun remplacement de l’agent utilisateur n’est utilisé
 text-title = about:compat
 
 ## Do not translate "SmartBlock". For reference, SmartBlock is a feature
-## of Floorp anti-tracking which fixes website breakage caused when
+## of Firefox anti-tracking which fixes website breakage caused when
 ## trackers are blocked, by acting just enough like those trackers to fix the
 ## breakage. SmartBlock also contains special fixes for sites broken by
-## Floorp's Total Cookie Protection feature.
+## Firefox's Total Cookie Protection feature.
 
 label-smartblock = Correctifs SmartBlock
 text-no-smartblock = Aucun correctif SmartBlock n’est utilisé

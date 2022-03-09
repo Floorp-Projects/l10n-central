@@ -72,7 +72,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = Helskärm
 
-## Floorp Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = Logga in för att synkronisera…
@@ -89,7 +89,7 @@ appmenu-remote-tabs-tabsnotsyncing = Slå på fliksynkronisering för att visa e
 appmenu-remote-tabs-opensettings =
     .label = Inställningar
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Floorp for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Vill du se dina flikar från andra enheter här?
 appmenu-remote-tabs-connectdevice =
     .label = Anslut en annan enhet
@@ -121,8 +121,8 @@ whatsnew-panel-footer-checkbox =
     .label = Meddela om nya funktioner
     .accesskey = f
 
-## The Floorp Profiler – The popup is the UI to turn on the profiler, and record
-## performance profiles. To enable it go to profiler.Floorp.com and click
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
 profiler-popup-button-idle =
@@ -148,12 +148,12 @@ profiler-popup-settings =
     .value = Inställningar
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Redigera inställningar…
-# This link takes the user to about:profiling, and is only visible with the Custom preset.
-profiler-popup-edit-settings-button =
-    .label = Redigera inställningar…
 profiler-popup-disabled =
     Profilen är för närvarande inaktiverad, troligtvis på grund av att ett privat webbläsarfönster
     är öppet.
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Redigera inställningar…
 profiler-popup-recording-screen = Spelar in…
 # The profiler presets list is generated elsewhere, but the custom preset is defined
 # here only.
@@ -187,18 +187,8 @@ profiler-popup-capture-shortcut =
 profiler-popup-presets-web-developer-description = Rekommenderad förinställning för de flesta webbappfelsökningar, med lite pålägg.
 profiler-popup-presets-web-developer-label =
     .label = Webbutvecklare
-profiler-popup-presets-Floorp-platform-description = Rekommenderad förinställning för intern felsökning av plattformar i Floorp.
-profiler-popup-presets-Floorp-platform-label =
-    .label = Floorp - Plattform
-profiler-popup-presets-Floorp-front-end-description = Rekommenderad förinställning för intern felsökning av front-end i Floorp.
-profiler-popup-presets-Floorp-front-end-label =
-    .label = Floorp - Front-End
-profiler-popup-presets-Floorp-graphics-description = Rekommenderad förinställning för utredning av grafikprestanda i Floorp.
-profiler-popup-presets-Floorp-graphics-label =
-    .label = Floorp - Grafik
-profiler-popup-presets-media-description = Rekommenderad förinställning för diagnos av ljud- och videoproblem.
-profiler-popup-presets-Floorp-description = Rekommenderad förinställning för profilering av { -brand-shorter-name }.
-profiler-popup-presets-Floorp-label =
+profiler-popup-presets-firefox-description = Rekommenderad förinställning för profilering av { -brand-shorter-name }.
+profiler-popup-presets-firefox-label =
     .label = { -brand-shorter-name }
 profiler-popup-presets-graphics-description = Förinställd för att undersöka grafikbuggar i { -brand-shorter-name }.
 profiler-popup-presets-graphics-label =
@@ -246,6 +236,9 @@ appmenu-help-report-site-issue =
 appmenu-help-feedback-page =
     .label = Skicka in feedback…
     .accesskey = k
+appmenu-help-share-ideas =
+    .label = Dela idéer och feedback...
+    .accesskey = D
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

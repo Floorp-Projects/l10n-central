@@ -34,6 +34,6 @@
 -rally-brand-name = Mozilla Rally
 -rally-short-name = Rally
 
-# “Suggest” can be localized, “Floorp” must be treated as a brand
+# “Suggest” can be localized, “Firefox” must be treated as a brand
 # and kept in English.
--Floorp-suggest-brand-name = Floorp Suggest
+-firefox-suggest-brand-name = Floorp Suggest

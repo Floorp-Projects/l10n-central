@@ -82,13 +82,13 @@ onboarding-multistage-theme-secondary-button-label = 暂时不要
 onboarding-multistage-theme-label-automatic = 自动
 onboarding-multistage-theme-label-light = 明亮
 onboarding-multistage-theme-label-dark = 深邃
-# "Floorp Alpenglow" here is the name of the theme, and should be kept in English.
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
 onboarding-multistage-theme-label-alpenglow = Floorp 染山霞
 # "Hero Text" displayed on left side of welcome screen.
 # The "Fire" in "Fire starts here" plays on the "Fire" in "Floorp".
-# It also signals the passion users bring to Floorp, how they use
-# Floorp to pursue those passions, as well as the boldness in their
-# choice to use Floorp over a larger competitor browser.
+# It also signals the passion users bring to Firefox, how they use
+# Firefox to pursue those passions, as well as the boldness in their
+# choice to use Firefox over a larger competitor browser.
 # An alternative title for localization is: "It starts here".
 # This text can be formatted to span multiple lines as needed.
 mr1-welcome-screen-hero-text = 星星之火 正将燎原
@@ -96,7 +96,7 @@ mr1-welcome-screen-hero-text = 星星之火 正将燎原
 # of the person and shouldn't be translated.
 # In case your language needs to adapt the nouns to a gender, Soraya is a female name (she/her).
 # You can see the picture in about:welcome in Nightly 90.
-mr1-onboarding-welcome-image-caption = 索拉娅·奥索里奥（Soraya Osorio）— 家具设计师、Floorp 粉丝
+mr1-onboarding-welcome-image-caption = 索拉娅·奥索里奥（Soraya Osorio）— 家具设计师、Firefox 粉丝
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = 关闭动画
 
@@ -104,13 +104,13 @@ mr1-onboarding-reduce-motion-button-label = 关闭动画
 ## match the OS' application context menu item action where Windows uses "pin"
 ## and "taskbar" while macOS "keep" and "Dock" (proper noun).
 
-# Title used on welcome page when Floorp is not pinned
+# Title used on welcome page when Firefox is not pinned
 mr1-onboarding-pin-header =
     { PLATFORM() ->
         [macos] 在您的程序坞中保留 { -brand-short-name }，方便访问
        *[other] 将 { -brand-short-name } 固定到您的任务栏，方便访问
     }
-# Primary button string used on welcome page when Floorp is not pinned.
+# Primary button string used on welcome page when Firefox is not pinned.
 mr1-onboarding-pin-primary-button-label =
     { PLATFORM() ->
         [macos] 在程序坞中保留
@@ -120,19 +120,19 @@ mr1-onboarding-pin-primary-button-label =
 ## Multistage MR1 onboarding strings (about:welcome pages)
 
 # This string will be used on welcome page primary button label
-# when Floorp is both pinned and default
+# when Firefox is both pinned and default
 mr1-onboarding-get-started-primary-button-label = 开始使用
 mr1-onboarding-welcome-header = 欢迎使用 { -brand-short-name }
 mr1-onboarding-set-default-pin-primary-button-label = 将 { -brand-short-name } 设为我的主浏览器
     .title = 将 { -brand-short-name } 设为默认浏览器，并固定到任务栏
 # This string will be used on welcome page primary button label
-# when Floorp is not default but already pinned
+# when Firefox is not default but already pinned
 mr1-onboarding-set-default-only-primary-button-label = 将 { -brand-short-name } 设为我的默认浏览器
 mr1-onboarding-set-default-secondary-button-label = 暂时不要
 mr1-onboarding-sign-in-button-label = 登录
 
 ## Title, subtitle and primary button string used on set default onboarding screen
-## when Floorp is not default browser
+## when Firefox is not default browser
 
 mr1-onboarding-default-header = 将 { -brand-short-name } 设为您的默认浏览器
 mr1-onboarding-default-subtitle = 自动获得快速、安全、私密的浏览体验。
@@ -142,7 +142,7 @@ mr1-onboarding-default-primary-button-label = 设为默认浏览器
 
 mr1-onboarding-import-header = 快速迁移
 mr1-onboarding-import-subtitle = 导入您的密码、书签等数据。
-# The primary import button label will depend on whether we can detect which browser was used to download Floorp.
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
 # Variables:
 #   $previous (Str) - Previous browser name, such as Edge, Chrome
 mr1-onboarding-import-primary-button-label-attribution = 从 { $previous } 导入
@@ -251,18 +251,10 @@ mr2-onboarding-colorway-tooltip =
 # Selector description for colorway
 # Variables:
 #   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-description =
-    .aria-description = 探索 { $colorwayName } 配色。
-# Selector description for colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
 mr2-onboarding-colorway-label = 探索 { $colorwayName } 配色。
 # Tooltip displayed on hover of default themes
 mr2-onboarding-default-theme-tooltip =
     .title = 探索默认主题。
-# Selector description for default themes
-mr2-onboarding-default-theme-description =
-    .aria-description = 探索默认主题。
 # Selector description for default themes
 mr2-onboarding-default-theme-label = 探索默认主题。
 
@@ -271,3 +263,23 @@ mr2-onboarding-default-theme-label = 探索默认主题。
 mr2-onboarding-thank-you-header = 感谢您选用
 mr2-onboarding-thank-you-text = { -brand-short-name } 是一款由非营利组织支持的独立浏览器。我们共同努力，让网络环境更安全、更健康、也更有隐私。
 mr2-onboarding-start-browsing-button-label = 开始上网冲浪
+
+## Multistage live language reloading onboarding strings (about:welcome pages)
+##
+## The following language names are generated by the browser's Intl.DisplayNames API.
+##
+## Variables:
+##   $appLanguage (String) - The name of Firefox's language, e.g. "American English"
+##   $systemLanguage (String) - The name of the OS's language, e.g. "European Spanish"
+##   $negotiatedLanguage (String) - The name of the langpack's language, e.g. "European Spanish"
+
+onboarding-live-language-header = 选择您的语言
+onboarding-live-language-subtitle = { -brand-short-name } 的是语言是 { $appLanguage }，而您的系统是 { $systemLanguage }。
+onboarding-live-language-switch-button-label = 切换为 { $negotiatedLanguage }
+onboarding-live-language-button-label-downloading = 正在下载“{ $negotiatedLanguage }”语言包…
+onboarding-live-language-waiting-subtitle = { -brand-short-name } 似乎与您的操作系统使用着不同的语言。
+onboarding-live-language-waiting-button = 正在获取可用的语言列表…
+onboarding-live-language-installing = 正在安装“{ $negotiatedLanguage }”语言包…
+onboarding-live-language-secondary-cancel-download = 取消
+onboarding-live-language-not-now-button-label = 暂时不要
+onboarding-live-language-skip-button-label = 跳过

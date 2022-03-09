@@ -9,7 +9,7 @@
 
 perftools-intro-title = Profilerings-indstillinger
 perftools-intro-description =
-    Optagelser starter profiler.Floorp.com i et nyt faneblad. Alle data gemmes
+    Optagelser starter profiler.firefox.com i et nyt faneblad. Alle data gemmes
     lokalt, men du kan vælge at uploade og dele dem.
 
 ## All of the headings for the various sections.
@@ -26,7 +26,7 @@ perftools-heading-local-build = Lokalt build
 ##
 
 perftools-description-intro =
-    Optagelser starter <a>profiler.Floorp.com</a> i et nyt faneblad. Alle data gemmes
+    Optagelser starter <a>profiler.firefox.com</a> i et nyt faneblad. Alle data gemmes
     lokalt, men du kan vælge at uploade og dele dem.
 perftools-description-local-build =
     Hvis du profilerer et build, du selv har kompileret på denne maskine
@@ -123,14 +123,14 @@ perftools-onboarding-close-button =
 
 perftools-presets-web-developer-label = Webudvikler
 perftools-presets-web-developer-description = Anbefalet forhåndsindstilling med lavt overhead for generel debugging af web-apps.
-perftools-presets-Floorp-platform-label = Floorp-platformen
-perftools-presets-Floorp-platform-description = Anbefalet forhåndsindstilling for intern debugging af Floorp-platformen.
-perftools-presets-Floorp-front-end-label = Floorp frontend
-perftools-presets-Floorp-front-end-description = Anbefalet forhåndsindstilling for intern debugging af Floorp' frontend.
-perftools-presets-Floorp-graphics-label = Floorp-grafik
-perftools-presets-Floorp-graphics-description = Anbefalet forhåndsindstilling for undersøgelse af grafik-ydelse i Floorp.
-perftools-presets-Floorp-label = { -brand-shorter-name }
-perftools-presets-Floorp-description = Anbefalet forhåndsindstilling for profilering af { -brand-shorter-name }.
+perftools-presets-firefox-platform-label = Floorp-platformen
+perftools-presets-firefox-platform-description = Anbefalet forhåndsindstilling for intern debugging af Firefox-platformen.
+perftools-presets-firefox-front-end-label = Floorp frontend
+perftools-presets-firefox-front-end-description = Anbefalet forhåndsindstilling for intern debugging af Firefox' frontend.
+perftools-presets-firefox-graphics-label = Floorp-grafik
+perftools-presets-firefox-graphics-description = Anbefalet forhåndsindstilling for undersøgelse af grafik-ydelse i Firefox.
+perftools-presets-firefox-label = { -brand-shorter-name }
+perftools-presets-firefox-description = Anbefalet forhåndsindstilling for profilering af { -brand-shorter-name }.
 perftools-presets-graphics-label = Grafik
 perftools-presets-graphics-description = Forhåndsindstilling for at undersøge grafik-problemer i { -brand-shorter-name }.
 perftools-presets-media-label = Medieindhold

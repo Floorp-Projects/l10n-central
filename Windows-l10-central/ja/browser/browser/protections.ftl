@@ -20,9 +20,9 @@ graph-week-summary-private-window = { -brand-short-name } が今週ブロック�
 # This should match the "appmenuitem-protection-dashboard-title" string in browser/appmenu.ftl.
 protection-report-webpage-title = プライバシー保護ダッシュボード
 protection-report-page-content-title = プライバシー保護ダッシュボード
-# This message shows when all privacy protections are turned off, which is why we use the word "can", Floorp is able to protect your privacy, but it is currently not.
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
 protection-report-page-summary = { -brand-short-name } はブラウジングの舞台裏でプライバシーを保護します。これはユーザーにパーソナライズされた保護結果の概要であり、オンラインセキュリティを制御するツールを含みます。
-# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Floorp is actively protecting you.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
 protection-report-page-summary-default = { -brand-short-name } はブラウジングの舞台裏でプライバシーを保護します。これはユーザーにパーソナライズされた保護結果の概要であり、オンラインセキュリティを制御するツールを含みます。
 
 protection-report-settings-link = プライバシーとセキュリティの設定を管理
@@ -53,7 +53,7 @@ fingerprinter-tab-title = フィンガープリント採取
 fingerprinter-tab-content = フィンガープリント採取はブラウザーとコンピューターから設定を集め、あなたのデジタル指紋を作成します。このデジタル指紋を使うと、様々なウェブサイトにまたがってあなたを追跡することができます。<a data-l10n-name="learn-more-link">詳細</a>
 
 cryptominer-tab-title = 暗号通貨マイニング
-cryptominer-tab-content = 暗号通貨マイニングは仮想通貨の採掘のために、あなたのシステムの計算リソースを利用します。暗号通貨マイニングスクリプトはあなたのバッテリーを消費し、コンピューターを遅くさせ、電気代を増やさせる可能性があります。<a data-l10n-name="learn-more-link">詳細</a>
+cryptominer-tab-content = 暗号通貨マイニングは仮想通貨の採掘のために、あなたのシステムの計算リソースを利用します。暗号通貨マイニングスクリプトは端末のバッテリーを消費し、コンピューターを遅くさせ、電気代を高くする可能性があります。<a data-l10n-name="learn-more-link">詳細</a>
 
 protections-close-button2 =
     .aria-label = 閉じる

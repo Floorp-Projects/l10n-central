@@ -82,13 +82,13 @@ onboarding-multistage-theme-secondary-button-label = Plus tard
 onboarding-multistage-theme-label-automatic = Automatique
 onboarding-multistage-theme-label-light = Clair
 onboarding-multistage-theme-label-dark = Sombre
-# "Floorp Alpenglow" here is the name of the theme, and should be kept in English.
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
 onboarding-multistage-theme-label-alpenglow = Floorp Alpenglow
 # "Hero Text" displayed on left side of welcome screen.
 # The "Fire" in "Fire starts here" plays on the "Fire" in "Floorp".
-# It also signals the passion users bring to Floorp, how they use
-# Floorp to pursue those passions, as well as the boldness in their
-# choice to use Floorp over a larger competitor browser.
+# It also signals the passion users bring to Firefox, how they use
+# Firefox to pursue those passions, as well as the boldness in their
+# choice to use Firefox over a larger competitor browser.
 # An alternative title for localization is: "It starts here".
 # This text can be formatted to span multiple lines as needed.
 mr1-welcome-screen-hero-text = C’est ici que tout commence
@@ -96,7 +96,7 @@ mr1-welcome-screen-hero-text = C’est ici que tout commence
 # of the person and shouldn't be translated.
 # In case your language needs to adapt the nouns to a gender, Soraya is a female name (she/her).
 # You can see the picture in about:welcome in Nightly 90.
-mr1-onboarding-welcome-image-caption = Soraya Osorio — créatrice de meubles, fan de Floorp
+mr1-onboarding-welcome-image-caption = Soraya Osorio — créatrice de meubles, fan de Firefox
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = Désactiver les animations
 
@@ -104,13 +104,13 @@ mr1-onboarding-reduce-motion-button-label = Désactiver les animations
 ## match the OS' application context menu item action where Windows uses "pin"
 ## and "taskbar" while macOS "keep" and "Dock" (proper noun).
 
-# Title used on welcome page when Floorp is not pinned
+# Title used on welcome page when Firefox is not pinned
 mr1-onboarding-pin-header =
     { PLATFORM() ->
         [macos] Ajoutez { -brand-short-name } à votre Dock pour un accès facile
        *[other] Épinglez { -brand-short-name } à votre barre des tâches pour un accès facile
     }
-# Primary button string used on welcome page when Floorp is not pinned.
+# Primary button string used on welcome page when Firefox is not pinned.
 mr1-onboarding-pin-primary-button-label =
     { PLATFORM() ->
         [macos] Ajouter au Dock
@@ -120,19 +120,19 @@ mr1-onboarding-pin-primary-button-label =
 ## Multistage MR1 onboarding strings (about:welcome pages)
 
 # This string will be used on welcome page primary button label
-# when Floorp is both pinned and default
+# when Firefox is both pinned and default
 mr1-onboarding-get-started-primary-button-label = Pour commencer
 mr1-onboarding-welcome-header = Bienvenue dans { -brand-short-name }
 mr1-onboarding-set-default-pin-primary-button-label = Faire de { -brand-short-name } mon navigateur principal
     .title = Fait de { -brand-short-name } votre navigateur par défaut et l’épingle à la barre des tâches
 # This string will be used on welcome page primary button label
-# when Floorp is not default but already pinned
+# when Firefox is not default but already pinned
 mr1-onboarding-set-default-only-primary-button-label = Faire de { -brand-short-name } mon navigateur par défaut
 mr1-onboarding-set-default-secondary-button-label = Plus tard
 mr1-onboarding-sign-in-button-label = Connexion
 
 ## Title, subtitle and primary button string used on set default onboarding screen
-## when Floorp is not default browser
+## when Firefox is not default browser
 
 mr1-onboarding-default-header = Faire de { -brand-short-name } votre navigateur par défaut
 mr1-onboarding-default-subtitle = Laissez vitesse, sécurité et vie privée se configurer automatiquement.
@@ -142,7 +142,7 @@ mr1-onboarding-default-primary-button-label = Définir comme navigateur par déf
 
 mr1-onboarding-import-header = Emportez tout avec vous
 mr1-onboarding-import-subtitle = Importez vos mots de passe, <br/>vos marque-pages et bien plus.
-# The primary import button label will depend on whether we can detect which browser was used to download Floorp.
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
 # Variables:
 #   $previous (Str) - Previous browser name, such as Edge, Chrome
 mr1-onboarding-import-primary-button-label-attribution = Importer depuis { $previous }

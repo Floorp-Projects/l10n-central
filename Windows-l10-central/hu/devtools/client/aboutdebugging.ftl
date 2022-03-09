@@ -12,18 +12,18 @@
 about-debugging-page-title-setup-page = Hibakeresés – Beállítás
 
 # Page title (ie tab title) for the Runtime page
-# { $selectedRuntimeId } is the id of the current runtime, such as "this-Floorp", "localhost:6080", ...
+# { $selectedRuntimeId } is the id of the current runtime, such as "this-firefox", "localhost:6080", ...
 about-debugging-page-title-runtime-page = Hibakeresés – Futtatókörnyezet / { $selectedRuntimeId }
 
 # Sidebar strings
 
-# Display name of the runtime for the currently running instance of Floorp. Used in the
+# Display name of the runtime for the currently running instance of Firefox. Used in the
 # Sidebar and in the Setup page.
-about-debugging-this-Floorp-runtime-name = Ez a { -brand-shorter-name }
+about-debugging-this-firefox-runtime-name = Ez a { -brand-shorter-name }
 
-# Sidebar heading for selecting the currently running instance of Floorp
-about-debugging-sidebar-this-Floorp =
-    .name = { about-debugging-this-Floorp-runtime-name }
+# Sidebar heading for selecting the currently running instance of Firefox
+about-debugging-sidebar-this-firefox =
+    .name = { about-debugging-this-firefox-runtime-name }
 
 # Sidebar heading for connecting to some remote source
 about-debugging-sidebar-setup =
@@ -62,8 +62,8 @@ about-debugging-sidebar-item-connect-button-connection-not-responding = A kapcso
 about-debugging-sidebar-item-connect-button-connection-timeout = A kapcsolat időtúllépés miatt megszakadt.
 
 # Text displayed in sidebar items for remote devices where a compatible browser (eg
-# Floorp) has not been detected yet. Typically, Android phones connected via USB with
-# USB debugging enabled, but where Floorp is not started.
+# Firefox) has not been detected yet. Typically, Android phones connected via USB with
+# USB debugging enabled, but where Firefox is not started.
 about-debugging-sidebar-runtime-item-waiting-for-browser = Várakozás a böngészőre…
 
 # Text displayed in sidebar items for remote devices that have been disconnected from the
@@ -99,8 +99,8 @@ about-debugging-setup-title = Beállítások
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = Állítsa be a kapcsolódási módot, amellyel távolról akar hibát keresni a készüléken.
 
-# Explanatory text in the Setup page about what the 'This Floorp' page is for
-about-debugging-setup-this-Floorp2 = Használja a <a>{ about-debugging-this-Floorp-runtime-name }</a> lehetőséget a kiegészítők és service workerek hibakeresésére a { -brand-shorter-name } ezen verzióján.
+# Explanatory text in the Setup page about what the 'This Firefox' page is for
+about-debugging-setup-this-firefox2 = Használja a <a>{ about-debugging-this-firefox-runtime-name }</a> lehetőséget a kiegészítők és service workerek hibakeresésére a { -brand-shorter-name } ezen verzióján.
 
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = Eszköz csatlakoztatása
@@ -134,7 +134,7 @@ about-debugging-setup-usb-step-enable-dev-menu2 = Engedélyezze a fejlesztői me
 about-debugging-setup-usb-step-enable-debug2 = Engedélyezze az USB-s hibakeresést az androidos fejlesztői menüben.
 
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug-Floorp2 = Engedélyezze az USB-s hibakeresést a Floorpban az androidos eszközén.
+about-debugging-setup-usb-step-enable-debug-firefox2 = Engedélyezze az USB-s hibakeresést a Firefoxban az androidos eszközén.
 
 # USB section step by step guide
 about-debugging-setup-usb-step-plug-device = Csatlakoztassa az androidos eszközt a számítógépéhez.
@@ -181,7 +181,7 @@ about-debugging-network-location-form-duplicate = A „{ $host-value }” gazdag
 
 # Below are the titles for the various categories of debug targets that can be found
 # on "runtime" pages of about:debugging.
-# Title of the temporary extensions category (only available for "This Floorp" runtime).
+# Title of the temporary extensions category (only available for "This Firefox" runtime).
 about-debugging-runtime-temporary-extensions =
     .name = Ideiglenes kiegészítők
 # Title of the extensions category.
@@ -215,23 +215,23 @@ about-debugging-runtime-service-workers-not-compatible = A böngésző beállít
 # This string is displayed in the runtime page if the remote browser version is too old.
 # "Troubleshooting" link points to https://developer.mozilla.org/docs/Tools/about:debugging#Troubleshooting
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
-# { $minVersion } is the minimum version that is compatible with the current Floorp instance (same format)
+# { $minVersion } is the minimum version that is compatible with the current Firefox instance (same format)
 about-debugging-browser-version-too-old = A csatlakoztatott böngésző régi verziójú ({ $runtimeVersion }). A minimális támogatott verzió: ({ $minVersion }). Ez egy nem támogatott összeállítás és a fejlesztői eszközök hibáját okozhatja. Frissítse a csatlakoztatott böngészőt. <a>Hibaelhárítás</a>
 
 # Dedicated message for a backward compatibility issue that occurs when connecting:
-# from Fx 70+ to the old Floorp for Android (aka Fennec) which uses Fx 68.
-about-debugging-browser-version-too-old-fennec = A Floorp ezen verziója nem tud hibát keresni a Floorp for Androidban (68). Javasoljuk, hogy a teszteléshez telepítse a Floorp for Android Nightlyt a telefonjára. <a>További részletek</a>
+# from Fx 70+ to the old Firefox for Android (aka Fennec) which uses Fx 68.
+about-debugging-browser-version-too-old-fennec = A Firefox ezen verziója nem tud hibát keresni a Firefox for Androidban (68). Javasoljuk, hogy a teszteléshez telepítse a Firefox for Android Nightlyt a telefonjára. <a>További részletek</a>
 
 # This string is displayed in the runtime page if the remote browser version is too recent.
 # "Troubleshooting" link points to https://developer.mozilla.org/docs/Tools/about:debugging#Troubleshooting
 # { $runtimeID } is the build ID of the remote browser (for instance "20181231", format is yyyyMMdd)
-# { $localID } is the build ID of the current Floorp instance (same format)
+# { $localID } is the build ID of the current Firefox instance (same format)
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
 # { $localVersion } is the version of your current browser (same format)
-about-debugging-browser-version-too-recent = A csatlakoztatott böngésző frissebb ({ $runtimeVersion }, összeállítási azonosító: { $runtimeID }) mint az Ön { -brand-shorter-name }a ({ $localVersion }, összeállítási azonosító: { $localID }). Ez egy nem támogatott összeállítás és a fejlesztői eszközök hibáját okozhatja. Frissítse a csatlakoztatott böngészőt. Frissítse a Floorpot. <a>Hibaelhárítás</a>
+about-debugging-browser-version-too-recent = A csatlakoztatott böngésző frissebb ({ $runtimeVersion }, összeállítási azonosító: { $runtimeID }) mint az Ön { -brand-shorter-name }a ({ $localVersion }, összeállítási azonosító: { $localID }). Ez egy nem támogatott összeállítás és a fejlesztői eszközök hibáját okozhatja. Frissítse a csatlakoztatott böngészőt. Frissítse a Firefoxot. <a>Hibaelhárítás</a>
 
 # Displayed for runtime info in runtime pages.
-# { $name } is brand name such as "Floorp Nightly"
+# { $name } is brand name such as "Firefox Nightly"
 # { $version } is version such as "64.0a1"
 about-debugging-runtime-name = { $name } ({ $version })
 
@@ -266,18 +266,18 @@ about-debugging-debug-target-list-empty = Még nincs.
 # A target can be an addon, a tab, a worker...
 about-debugging-debug-target-inspect-button = Vizsgálat
 
-# Text of a button displayed in the "This Floorp" page, in the Temporary Extension
+# Text of a button displayed in the "This Firefox" page, in the Temporary Extension
 # section. Clicking on the button will open a file picker to load a temporary extension
 about-debugging-tmp-extension-install-button = Ideiglenes kiegészítő betöltése…
 
-# Text displayed when trying to install a temporary extension in the "This Floorp" page.
+# Text displayed when trying to install a temporary extension in the "This Firefox" page.
 about-debugging-tmp-extension-install-error = Hiba történt az ideiglenes kiegészítő telepítésekor.
 
-# Text of a button displayed for a temporary extension loaded in the "This Floorp" page.
+# Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will reload the extension.
 about-debugging-tmp-extension-reload-button = Újratöltés
 
-# Text of a button displayed for a temporary extension loaded in the "This Floorp" page.
+# Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will uninstall the extension and remove it from the page.
 about-debugging-tmp-extension-remove-button = Eltávolítás
 

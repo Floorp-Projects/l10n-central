@@ -4,7 +4,7 @@
 
 
 ## The Enterprise Policies feature is aimed at system administrators
-## who want to deploy these settings across several Floorp installations
+## who want to deploy these settings across several Firefox installations
 ## all at once. This is traditionally done through the Windows Group Policy
 ## feature, but the system also supports other forms of deployment.
 ## These are short descriptions for individual policies, to be displayed
@@ -54,12 +54,12 @@ policy-DisableDeveloperTools = Блокирует доступ к инструм
 
 policy-DisableFeedbackCommands = Отключает команды отправки отзывов в меню Справка («Отправить отзыв...» и «Сообщить о поддельном сайте...»).
 
-policy-DisableFloorpAccounts = Отключает службы, основанные на { -fxaccount-brand-name(case: "prepositional") }, включая Синхронизацию.
+policy-DisableFirefoxAccounts = Отключает службы, основанные на { -fxaccount-brand-name(case: "prepositional") }, включая Синхронизацию.
 
-# Floorp Screenshots is the name of the feature, and should not be translated.
-policy-DisableFloorpScreenshots = Отключает функцию Floorp Screenshots.
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Отключает функцию Firefox Screenshots.
 
-policy-DisableFloorpStudies = Запрещает { -brand-short-name } выполнять исследования.
+policy-DisableFirefoxStudies = Запрещает { -brand-short-name } выполнять исследования.
 
 policy-DisableForgetButton = Закрывает доступ к кнопке «Забыть».
 
@@ -112,7 +112,7 @@ policy-ExtensionSettings = Управляет всеми аспектами ус
 
 policy-ExtensionUpdate = Включает или отключает автоматические обновления расширений.
 
-policy-FloorpHome = Настраивает домашнюю страницу Floorp.
+policy-FirefoxHome = Настраивает домашнюю страницу Firefox.
 
 policy-FlashPlugin = Разрешает или запрещает использование плагина Flash.
 

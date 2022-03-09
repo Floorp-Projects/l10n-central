@@ -9,7 +9,7 @@
 
 perftools-intro-title = Paramètres du profileur
 perftools-intro-description =
-    Les enregistrements lancent profiler.Floorp.com dans un nouvel onglet. Toutes les données sont stockées
+    Les enregistrements lancent profiler.firefox.com dans un nouvel onglet. Toutes les données sont stockées
     localement, mais vous pouvez choisir de les envoyer pour les partager.
 
 ## All of the headings for the various sections.
@@ -26,7 +26,7 @@ perftools-heading-local-build = Build local
 ##
 
 perftools-description-intro =
-    Les enregistrements lancent <a>profiler.Floorp.com</a> dans un nouvel onglet. Toutes les données sont stockées
+    Les enregistrements lancent <a>profiler.firefox.com</a> dans un nouvel onglet. Toutes les données sont stockées
     localement, mais vous pouvez choisir de les envoyer pour les partager.
 perftools-description-local-build = Si vous profilez une version que vous avez vous-même compilée, sur cette machine, veuillez ajouter le dossier « objdir » de votre compilation à la liste ci-dessous pour qu’il puisse être utilisé pour rechercher des informations sur les symboles.
 
@@ -120,14 +120,14 @@ perftools-onboarding-close-button =
 
 perftools-presets-web-developer-label = Développement web
 perftools-presets-web-developer-description = Réglage recommandé pour le débogage de la plupart des applications web, avec une surcharge faible.
-perftools-presets-Floorp-platform-label = Plateforme Floorp
-perftools-presets-Floorp-platform-description = Réglage recommandé pour le débogage interne de la plateforme Floorp.
-perftools-presets-Floorp-front-end-label = Interface Floorp
-perftools-presets-Floorp-front-end-description = Réglage recommandé pour le débogage interne de l’interface Floorp.
-perftools-presets-Floorp-graphics-label = Performances graphiques de Floorp
-perftools-presets-Floorp-graphics-description = Réglage recommandé pour l’étude des performances graphiques de Floorp.
-perftools-presets-Floorp-label = { -brand-shorter-name }
-perftools-presets-Floorp-description = Réglage recommandé pour le profilage de { -brand-shorter-name }.
+perftools-presets-firefox-platform-label = Plateforme Firefox
+perftools-presets-firefox-platform-description = Réglage recommandé pour le débogage interne de la plateforme Firefox.
+perftools-presets-firefox-front-end-label = Interface Firefox
+perftools-presets-firefox-front-end-description = Réglage recommandé pour le débogage interne de l’interface Firefox.
+perftools-presets-firefox-graphics-label = Performances graphiques de Firefox
+perftools-presets-firefox-graphics-description = Réglage recommandé pour l’étude des performances graphiques de Firefox.
+perftools-presets-firefox-label = { -brand-shorter-name }
+perftools-presets-firefox-description = Réglage recommandé pour le profilage de { -brand-shorter-name }.
 perftools-presets-graphics-label = Accélération graphique
 perftools-presets-graphics-description = Réglage conçu pour examiner les bugs graphiques dans { -brand-shorter-name }.
 perftools-presets-media-label = Multimédia

@@ -14,10 +14,6 @@ extension-firefox-compact-dark-name = Sombre
 extension-firefox-compact-dark-description = Un thème avec des couleurs sombres.
 extension-firefox-alpenglow-name = Floorp Alpenglow
 extension-firefox-alpenglow-description = Utiliser un thème coloré pour les boutons, les menus et les fenêtres.
-extension-floorp-lepton-name = Décalage de la position horizontale des onglets (thème système)
-extension-floorp-lepton-description = Déplacer les onglets horizontaux vers le bas de la barre de signets。
-extension-floorp-edge-name= Optimiser Floorp pour les onglets verticaux (thème système)
-extension-floorp-edge-description= Optimisez Floorp pour les onglets verticaux. Les onglets horizontaux seront cachés et inutilisables.
 
 ## Colorway Themes
 ## These themes are variants of a colorway. The colorway is specified in the

@@ -94,7 +94,7 @@ manifest-loaded-ok = マニフェストを読み込みました。
 # load the manifest
 manifest-loaded-error = マニフェストの読み込み中にエラーが発生しました:
 
-# Text displayed as an error when there has been a Floorp DevTools error while
+# Text displayed as an error when there has been a Firefox DevTools error while
 # trying to load the manifest
 manifest-loaded-devtools-error = Floorp 開発ツールエラー
 

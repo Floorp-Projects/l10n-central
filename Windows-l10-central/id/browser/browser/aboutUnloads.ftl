@@ -7,7 +7,15 @@
 ### feature.
 
 about-unloads-page-title = Pembongkaran Tab
-# The link points to a Floorp documentation page, only available in English,
+about-unloads-intro =
+    { -brand-short-name } memiliki fitur yang secara otomatis membongkar tab
+    untuk mencegah aplikasi rusak karena kekurangan memori
+    saat memori sistem yang tersedia hampir habis. Tab yang akan dibongkar
+    dipilih berdasarkan beberapa jenis data. Laman ini menunjukkan cara 
+    { -brand-short-name } memprioritaskan tab dan tab mana yang akan dibongkar
+    saat pembongkaran tab terpicu. Anda dapat memicu tab dibongkat secara manual
+    dengan mengeklik tombol <em>Bongkar</em> di bawah ini.
+# The link points to a Firefox documentation page, only available in English,
 # with title "Tab Unloading"
 about-unloads-learn-more =
     Lihat <a data-l10n-name="doc-link">Pembongkaran Tab</a> untuk mempelajari lebih lanjut tentang

@@ -82,7 +82,7 @@ toolbar-button-stop =
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
 
-## Floorp Account Button
+## Firefox Account Button
 
 toolbar-button-fxaccount =
     .label = { -fxaccount-brand-name(capitalization: "uppercase") }
@@ -453,10 +453,6 @@ main-context-menu-eme-learn-more =
 main-context-menu-open-link-in-container-tab =
     .label = Apri link in nuova scheda { $containerName }
     .accesskey = s
-
-main-context-menu-toggle-show-password =
-    .label = Mostra password
-    .accesskey = w
 
 main-context-menu-reveal-password =
     .label = Rivela password

@@ -17,11 +17,11 @@ about-telemetry-next-ping = >>
 about-telemetry-page-title = Dane telemetrii
 about-telemetry-current-store = Obecna przechowalnia:
 about-telemetry-more-information = Szukasz dalszych informacji?
-about-telemetry-Floorp-data-doc = <a data-l10n-name="data-doc-link">Floorp Data Documentation</a> zawiera przewodniki o tym, jak pracować z naszymi narzędziami danych
-about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">Dokumentacja klienta telemetrii programu Floorp</a> zawiera definicje konceptów, dokumentację API i odniesienia do danych
+about-telemetry-firefox-data-doc = <a data-l10n-name="data-doc-link">Firefox Data Documentation</a> zawiera przewodniki o tym, jak pracować z naszymi narzędziami danych
+about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">Dokumentacja klienta telemetrii programu Firefox</a> zawiera definicje konceptów, dokumentację API i odniesienia do danych
 about-telemetry-telemetry-dashboard = <a data-l10n-name="dashboard-link">Dashboardy telemetrii</a> pozwalają wizualizować dane, jakie Mozilla otrzymuje poprzez telemetrię
 about-telemetry-telemetry-probe-dictionary = <a data-l10n-name="probe-dictionary-link">Probe Dictionary</a> dostarcza szczegółów i opisów danych zbieranych na potrzeby telemetrii.
-about-telemetry-show-in-Floorp-json-viewer = Otwórz w przeglądarce JSON-a
+about-telemetry-show-in-Firefox-json-viewer = Otwórz w przeglądarce JSON-a
 about-telemetry-home-section = Start
 about-telemetry-general-data-section = Ogólne
 about-telemetry-environment-data-section = Dane środowiska
@@ -79,7 +79,7 @@ about-telemetry-ping-details = Wszystkie informacje są wysyłane wraz z <a dat
 about-telemetry-data-details-current = Wszystkie informacje są wysyłane wraz z <a data-l10n-name="ping-link">pingami</a>. Wyświetlane są bieżące dane.
 # string used as a placeholder for the search field
 # More info about it can be found here:
-# https://Floorp-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
+# https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
 # Variables:
 #   $selectedTitle (String): the section name from the structure of the ping.
 about-telemetry-filter-placeholder =
@@ -89,7 +89,7 @@ about-telemetry-filter-all-placeholder =
 # Variables:
 #   $searchTerms (String): the searched terms
 about-telemetry-results-for-search = Wyniki dla „{ $searchTerms }”
-# More info about it can be found here: https://Floorp-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
+# More info about it can be found here: https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
 # Variables:
 #   $sectionName (String): the section name from the structure of the ping.
 #   $currentSearchText (String): the current text in the search input

@@ -9,7 +9,7 @@
 
 perftools-intro-title = Настройки профайлера
 perftools-intro-description =
-    Запись запустит profiler.Floorp.com в новой вкладке. Все данные хранятся
+    Запись запустит profiler.firefox.com в новой вкладке. Все данные хранятся
     локально, но вы можете поделиться ими, выгрузив их.
 
 ## All of the headings for the various sections.
@@ -26,7 +26,7 @@ perftools-heading-local-build = Локальная сборка
 ##
 
 perftools-description-intro =
-    Запись запустит <a>profiler.Floorp.com</a> в новой вкладке. Все данные хранятся
+    Запись запустит <a>profiler.firefox.com</a> в новой вкладке. Все данные хранятся
     локально, но вы можете поделиться ими, выгрузив их.
 perftools-description-local-build =
     Если вы профилируете сборку, которую скомпилировали самостоятельно на этой
@@ -123,14 +123,14 @@ perftools-onboarding-close-button =
 
 perftools-presets-web-developer-label = Веб-разработка
 perftools-presets-web-developer-description = Рекомендуемые настройки для отладки большинства веб-приложений с низкими накладными расходами.
-perftools-presets-Floorp-platform-label = Платформа Floorp
-perftools-presets-Floorp-platform-description = Рекомендуемые настройки для внутренней отладки платформы Floorp.
-perftools-presets-Floorp-front-end-label = Клиентская часть Floorp
-perftools-presets-Floorp-front-end-description = Рекомендуемые настройки для внутренней отладки клиентской части Floorp.
-perftools-presets-Floorp-graphics-label = Графика Floorp
-perftools-presets-Floorp-graphics-description = Рекомендуемые настройки для исследования производительности графики Floorp.
-perftools-presets-Floorp-label = { -brand-shorter-name }
-perftools-presets-Floorp-description = Рекомендуемые настройки для профилирования { -brand-shorter-name }.
+perftools-presets-firefox-platform-label = Платформа Firefox
+perftools-presets-firefox-platform-description = Рекомендуемые настройки для внутренней отладки платформы Firefox.
+perftools-presets-firefox-front-end-label = Клиентская часть Firefox
+perftools-presets-firefox-front-end-description = Рекомендуемые настройки для внутренней отладки клиентской части Firefox.
+perftools-presets-firefox-graphics-label = Графика Firefox
+perftools-presets-firefox-graphics-description = Рекомендуемые настройки для исследования производительности графики Firefox.
+perftools-presets-firefox-label = { -brand-shorter-name }
+perftools-presets-firefox-description = Рекомендуемые настройки для профилирования { -brand-shorter-name }.
 perftools-presets-graphics-label = Графика
 perftools-presets-graphics-description = Настройки для выявления ошибок графики в { -brand-shorter-name }.
 perftools-presets-media-label = Медиа

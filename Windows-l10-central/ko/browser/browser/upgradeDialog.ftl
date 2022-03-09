@@ -24,7 +24,7 @@ upgrade-dialog-new-secondary-button = 나중에
 # theme selection screen.
 upgrade-dialog-new-primary-win7-button = 확인
 
-## Pin Floorp screen
+## Pin Firefox screen
 ##
 ## These title, subtitle and button strings differ between platforms as they
 ## match the OS' application context menu item action where Windows uses "pin"
@@ -77,7 +77,7 @@ upgrade-dialog-start-secondary-button = 나중에
 
 # This title can be explicitly wrapped to control which words are on which line.
 upgrade-dialog-colorway-title = 팔레트 선택
-upgrade-dialog-colorway-home-checkbox = 테마 배경이 있는 Floorp 홈으로 전환
+upgrade-dialog-colorway-home-checkbox = 테마 배경이 있는 Firefox 홈으로 전환
 upgrade-dialog-colorway-primary-button = 컬러웨이 저장
 upgrade-dialog-colorway-secondary-button = 이전 테마 유지
 upgrade-dialog-colorway-theme-tooltip =

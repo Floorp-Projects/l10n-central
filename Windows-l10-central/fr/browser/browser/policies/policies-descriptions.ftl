@@ -4,7 +4,7 @@
 
 
 ## The Enterprise Policies feature is aimed at system administrators
-## who want to deploy these settings across several Floorp installations
+## who want to deploy these settings across several Firefox installations
 ## all at once. This is traditionally done through the Windows Group Policy
 ## feature, but the system also supports other forms of deployment.
 ## These are short descriptions for individual policies, to be displayed
@@ -54,12 +54,12 @@ policy-DisableDeveloperTools = Bloquer l’accès aux outils de développement.
 
 policy-DisableFeedbackCommands = Désactiver les commandes permettant d’envoyer des commentaires dans le menu d’aide (Donner votre avis et Signaler un site trompeur).
 
-policy-DisableFloorpAccounts = Désactiver les services basés sur un { -fxaccount-brand-name }, y compris la synchronisation.
+policy-DisableFirefoxAccounts = Désactiver les services basés sur un { -fxaccount-brand-name }, y compris la synchronisation.
 
-# Floorp Screenshots is the name of the feature, and should not be translated.
-policy-DisableFloorpScreenshots = Désactiver la fonctionnalité Floorp Screenshots.
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Désactiver la fonctionnalité Firefox Screenshots.
 
-policy-DisableFloorpStudies = Empêcher { -brand-short-name } d’exécuter des études.
+policy-DisableFirefoxStudies = Empêcher { -brand-short-name } d’exécuter des études.
 
 policy-DisableForgetButton = Empêcher l’accès au bouton d’effacement des données.
 
@@ -112,7 +112,7 @@ policy-ExtensionSettings = Gérer tous les aspects de l’installation d’exten
 
 policy-ExtensionUpdate = Activer ou désactiver la mise à jour automatique des extensions.
 
-policy-FloorpHome = Configurer l’accueil de Floorp.
+policy-FirefoxHome = Configurer l’accueil de Firefox.
 
 policy-FlashPlugin = Autoriser ou non l’utilisation du plugin Flash.
 

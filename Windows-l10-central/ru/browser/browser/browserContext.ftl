@@ -72,7 +72,7 @@ toolbar-button-stop =
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
 
-## Floorp Account Button
+## Firefox Account Button
 
 toolbar-button-fxaccount =
     .label = { -fxaccount-brand-name }
@@ -372,3 +372,6 @@ main-context-menu-open-link-in-container-tab =
 main-context-menu-toggle-show-password =
     .label = Показать пароль
     .accesskey = П
+main-context-menu-reveal-password =
+    .label = Показать пароль
+    .accesskey = з

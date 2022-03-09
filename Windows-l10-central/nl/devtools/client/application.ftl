@@ -96,7 +96,7 @@ manifest-loaded-ok = Manifest geladen.
 # load the manifest
 manifest-loaded-error = Er is een fout opgetreden bij het laden van het manifest:
 
-# Text displayed as an error when there has been a Floorp DevTools error while
+# Text displayed as an error when there has been a Firefox DevTools error while
 # trying to load the manifest
 manifest-loaded-devtools-error = Floorp Devtools-fout
 

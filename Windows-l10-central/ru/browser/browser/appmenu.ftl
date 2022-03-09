@@ -72,10 +72,10 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = Полный экран
 
-## Floorp Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
-    .label = Войти в Синхронизацию…
+    .label = Войти для синхронизации…
 appmenu-remote-tabs-turn-on-sync =
     .label = Включить синхронизацию…
 # This is shown after the tabs list if we can display more tabs by clicking on the button
@@ -89,7 +89,7 @@ appmenu-remote-tabs-tabsnotsyncing = Включите синхронизацию
 appmenu-remote-tabs-opensettings =
     .label = Настройки
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Floorp for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Хотите увидеть здесь ваши вкладки с других устройств?
 appmenu-remote-tabs-connectdevice =
     .label = Подключить другое устройство
@@ -121,8 +121,8 @@ whatsnew-panel-footer-checkbox =
     .label = Уведомлять о новых функциях
     .accesskey = в
 
-## The Floorp Profiler – The popup is the UI to turn on the profiler, and record
-## performance profiles. To enable it go to profiler.Floorp.com and click
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
 profiler-popup-button-idle =
@@ -148,10 +148,10 @@ profiler-popup-settings =
     .value = Настройки
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Изменить настройки…
+profiler-popup-disabled = Профайлер в настоящее время отключён, скорее всего, из-за того, что открыто приватное окно.
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings-button =
     .label = Изменить настройки…
-profiler-popup-disabled = Профайлер в настоящее время отключён, скорее всего, из-за того, что открыто приватное окно.
 profiler-popup-recording-screen = Запись…
 # The profiler presets list is generated elsewhere, but the custom preset is defined
 # here only.
@@ -185,18 +185,8 @@ profiler-popup-capture-shortcut =
 profiler-popup-presets-web-developer-description = Рекомендуемые настройки для отладки большинства веб-приложений с низкими накладными расходами.
 profiler-popup-presets-web-developer-label =
     .label = Веб-разработка
-profiler-popup-presets-Floorp-platform-description = Рекомендуемые настройки для внутренней отладки платформы Floorp.
-profiler-popup-presets-Floorp-platform-label =
-    .label = Платформа Floorp
-profiler-popup-presets-Floorp-front-end-description = Рекомендуемые настройки для внутренней отладки клиентской части Floorp.
-profiler-popup-presets-Floorp-front-end-label =
-    .label = Клиентская часть Floorp
-profiler-popup-presets-Floorp-graphics-description = Рекомендуемые настройки для исследования производительности графики Floorp.
-profiler-popup-presets-Floorp-graphics-label =
-    .label = Графика Floorp
-profiler-popup-presets-media-description = Рекомендуемые настройки для диагностики проблем со звуком и видео.
-profiler-popup-presets-Floorp-description = Рекомендуемые настройки для профилирования { -brand-shorter-name }.
-profiler-popup-presets-Floorp-label =
+profiler-popup-presets-firefox-description = Рекомендуемые настройки для профилирования { -brand-shorter-name }.
+profiler-popup-presets-firefox-label =
     .label = { -brand-shorter-name }
 profiler-popup-presets-graphics-description = Настройки для выявления ошибок графики в { -brand-shorter-name }.
 profiler-popup-presets-graphics-label =
@@ -243,27 +233,30 @@ appmenu-help-report-site-issue =
     .label = Сообщить о проблеме с сайтом…
 appmenu-help-feedback-page =
     .label = Отправить отзыв…
-    .accesskey = т
+    .accesskey = О
+appmenu-help-share-ideas =
+    .label = Поделиться идеей или оставить отзыв…
+    .accesskey = д
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
 appmenu-help-enter-troubleshoot-mode2 =
     .label = Безопасный режим…
-    .accesskey = й
+    .accesskey = Б
 appmenu-help-exit-troubleshoot-mode =
     .label = Отключить безопасный режим
-    .accesskey = п
+    .accesskey = Б
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 
 appmenu-help-report-deceptive-site =
     .label = Сообщить о поддельном сайте…
-    .accesskey = б
+    .accesskey = п
 appmenu-help-not-deceptive =
     .label = Это не поддельный сайт…
-    .accesskey = е
+    .accesskey = п
 
 ## More Tools
 

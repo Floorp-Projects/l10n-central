@@ -80,7 +80,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = Celá obrazovka
 
-## Floorp Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = Přihlásit se k synchronizaci…
@@ -97,7 +97,7 @@ appmenu-remote-tabs-tabsnotsyncing = Zapněte synchronizaci panelů pro zobrazen
 appmenu-remote-tabs-opensettings =
     .label = Nastavení
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Floorp for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Chcete zde vidět své panely z ostatních zařízení?
 appmenu-remote-tabs-connectdevice =
     .label = Připojit další zařízení
@@ -135,8 +135,8 @@ whatsnew-panel-footer-checkbox =
     .label = Informovat o nových funkcích
     .accesskey = f
 
-## The Floorp Profiler – The popup is the UI to turn on the profiler, and record
-## performance profiles. To enable it go to profiler.Floorp.com and click
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
 profiler-popup-button-idle =
@@ -162,10 +162,10 @@ profiler-popup-settings =
     .value = Nastavení
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Úprava nastavení
+profiler-popup-disabled = Profiler je v tuto chvíli vypnutý, pravděpodobně protože máte otevřené okno anonymního prohlížení.
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings-button =
     .label = Úprava nastavení
-profiler-popup-disabled = Profiler je v tuto chvíli vypnutý, pravděpodobně protože máte otevřené okno anonymního prohlížení.
 profiler-popup-recording-screen = Nahrávání…
 # The profiler presets list is generated elsewhere, but the custom preset is defined
 # here only.
@@ -199,24 +199,14 @@ profiler-popup-capture-shortcut =
 profiler-popup-presets-web-developer-description = Doporučené nastavení s minimální režií pro ladění většiny webových aplikací.
 profiler-popup-presets-web-developer-label =
     .label = Nástroje pro webové vývojáře
-profiler-popup-presets-Floorp-platform-description = Doporučené nastavení pro interní platformy Floorpu.
-profiler-popup-presets-Floorp-platform-label =
-    .label = Floorp Platform
-profiler-popup-presets-Floorp-front-end-description = Doporučené nastavení pro ladění rozhraní Floorpu.
-profiler-popup-presets-Floorp-front-end-label =
-    .label = Floorp Front-End
-profiler-popup-presets-Floorp-graphics-description = Doporučené nastavení pro ladění grafického výkonu Floorpu.
-profiler-popup-presets-Floorp-graphics-label =
-    .label = Floorp Graphics
-profiler-popup-presets-media-description = Doporučené nastavení pro ladění problémů se zvukem a videem.
-profiler-popup-presets-Floorp-description =
+profiler-popup-presets-firefox-description =
     Doporučené nastavení pro profilování { -brand-shorter-name.gender ->
         [masculine] { -brand-shorter-name(case: "gen") }
         [feminine] { -brand-shorter-name(case: "gen") }
         [neuter] { -brand-shorter-name(case: "gen") }
        *[other] aplikace { -brand-shorter-name }
     }.
-profiler-popup-presets-Floorp-label =
+profiler-popup-presets-firefox-label =
     .label = { -brand-shorter-name }
 profiler-popup-presets-graphics-description =
     Doporučené nastavení pro ladění grafických chyb v { -brand-shorter-name.gender ->
@@ -288,6 +278,9 @@ appmenu-help-report-site-issue =
 appmenu-help-feedback-page =
     .label = Odeslat zpětnou vazbu…
     .accesskey = d
+appmenu-help-share-ideas =
+    .label = Sdílet nápad nebo zpětnou vazbu…
+    .accesskey = S
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

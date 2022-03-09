@@ -373,9 +373,9 @@ addon-permissions-learnmore = Tìm hiểu thêm về quyền hạn
 recommended-extensions-heading = Tiện ích mở rộng được đề xuất
 recommended-themes-heading = Chủ đề được đề xuất
 addon-sitepermissions-required = Cấp các khả năng sau cho <span data-l10n-name="hostname">{ $hostname }</span>:
-# A recommendation for the Floorp Color theme shown at the bottom of the theme
-# list view. The "Floorp Color" name itself should not be translated.
-recommended-theme-1 = Cảm thấy muốn sáng tạo? <a data-l10n-name="link">Xây dựng chủ đề của riêng bạn với Floorp Color.</a>
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Cảm thấy muốn sáng tạo? <a data-l10n-name="link">Xây dựng chủ đề của riêng bạn với Firefox Color.</a>
 
 ## Page headings
 

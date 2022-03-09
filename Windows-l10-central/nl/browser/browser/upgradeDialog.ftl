@@ -24,7 +24,7 @@ upgrade-dialog-new-secondary-button = Niet nu
 # theme selection screen.
 upgrade-dialog-new-primary-win7-button = OK, begrepen!
 
-## Pin Floorp screen
+## Pin Firefox screen
 ##
 ## These title, subtitle and button strings differ between platforms as they
 ## match the OS' application context menu item action where Windows uses "pin"
@@ -77,7 +77,7 @@ upgrade-dialog-start-secondary-button = Niet nu
 
 # This title can be explicitly wrapped to control which words are on which line.
 upgrade-dialog-colorway-title = Kies uw palet
-upgrade-dialog-colorway-home-checkbox = Overschakelen naar Floorp-startpagina met thema-achtergrond
+upgrade-dialog-colorway-home-checkbox = Overschakelen naar Firefox-startpagina met thema-achtergrond
 upgrade-dialog-colorway-primary-button = Kleurstelling opslaan
 upgrade-dialog-colorway-secondary-button = Vorige thema behouden
 upgrade-dialog-colorway-theme-tooltip =

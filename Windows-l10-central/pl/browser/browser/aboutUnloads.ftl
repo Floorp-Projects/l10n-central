@@ -29,7 +29,7 @@ about-unloads-intro =
     pokazuje, jak { -brand-short-name } ustala priorytety kart i która karta
     zostanie zwolniona po spełnieniu warunków. Można ręcznie wywołać
     zwolnienie karty klikając przycisk <em>Zwolnij</em> poniżej.
-# The link points to a Floorp documentation page, only available in English,
+# The link points to a Firefox documentation page, only available in English,
 # with title "Tab Unloading"
 about-unloads-learn-more =
     <a data-l10n-name="doc-link">Dokumentacja</a> zawiera więcej informacji

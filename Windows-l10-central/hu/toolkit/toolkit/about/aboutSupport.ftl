@@ -169,12 +169,12 @@ intl-regional-prefs = Területi beállítások
 
 ## Remote Debugging
 ##
-## The Floorp remote protocol provides low-level debugging interfaces
+## The Firefox remote protocol provides low-level debugging interfaces
 ## used to inspect state and control execution of documents,
 ## browser instrumentation, user interaction simulation,
 ## and for subscribing to browser-internal events.
 ##
-## See also https://Floorp-source-docs.mozilla.org/remote/
+## See also https://firefox-source-docs.mozilla.org/remote/
 
 remote-debugging-title = Távoli hibakeresés (Chromium protokoll)
 remote-debugging-accepting-connections = Kapcsolatok elfogadása

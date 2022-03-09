@@ -72,7 +72,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = ملء الشاشة
 
-## Floorp Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = لِج كي تبدأ المزامنة…
@@ -89,7 +89,7 @@ appmenu-remote-tabs-tabsnotsyncing = فعّل مزامنة الألسنة لعر
 appmenu-remote-tabs-opensettings =
     .label = الإعدادات
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Floorp for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = أتريد رؤية ألسنتك من الأجهزة الأخرى هنا؟
 appmenu-remote-tabs-connectdevice =
     .label = صِلْ جهازا آخر
@@ -121,8 +121,8 @@ whatsnew-panel-footer-checkbox =
     .label = أعلِمني بالميزات الجديدة
     .accesskey = ع
 
-## The Floorp Profiler – The popup is the UI to turn on the profiler, and record
-## performance profiles. To enable it go to profiler.Floorp.com and click
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
 profiler-popup-button-idle =
@@ -181,7 +181,7 @@ profiler-popup-capture-shortcut =
 
 profiler-popup-presets-web-developer-label =
     .label = مطوّري الوب
-profiler-popup-presets-Floorp-label =
+profiler-popup-presets-firefox-label =
     .label = { -brand-shorter-name }
 profiler-popup-presets-graphics-label =
     .label = الرسوميات

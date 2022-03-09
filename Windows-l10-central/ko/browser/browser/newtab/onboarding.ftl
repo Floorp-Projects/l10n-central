@@ -82,13 +82,13 @@ onboarding-multistage-theme-secondary-button-label = 나중에
 onboarding-multistage-theme-label-automatic = 자동
 onboarding-multistage-theme-label-light = 밝게
 onboarding-multistage-theme-label-dark = 어둡게
-# "Floorp Alpenglow" here is the name of the theme, and should be kept in English.
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
 onboarding-multistage-theme-label-alpenglow = Floorp Alpenglow
 # "Hero Text" displayed on left side of welcome screen.
 # The "Fire" in "Fire starts here" plays on the "Fire" in "Floorp".
-# It also signals the passion users bring to Floorp, how they use
-# Floorp to pursue those passions, as well as the boldness in their
-# choice to use Floorp over a larger competitor browser.
+# It also signals the passion users bring to Firefox, how they use
+# Firefox to pursue those passions, as well as the boldness in their
+# choice to use Firefox over a larger competitor browser.
 # An alternative title for localization is: "It starts here".
 # This text can be formatted to span multiple lines as needed.
 mr1-welcome-screen-hero-text = 시작
@@ -96,7 +96,7 @@ mr1-welcome-screen-hero-text = 시작
 # of the person and shouldn't be translated.
 # In case your language needs to adapt the nouns to a gender, Soraya is a female name (she/her).
 # You can see the picture in about:welcome in Nightly 90.
-mr1-onboarding-welcome-image-caption = Soraya Osorio — 가구 디자이너, Floorp 팬
+mr1-onboarding-welcome-image-caption = Soraya Osorio — 가구 디자이너, Firefox 팬
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = 애니메이션 끄기
 
@@ -104,13 +104,13 @@ mr1-onboarding-reduce-motion-button-label = 애니메이션 끄기
 ## match the OS' application context menu item action where Windows uses "pin"
 ## and "taskbar" while macOS "keep" and "Dock" (proper noun).
 
-# Title used on welcome page when Floorp is not pinned
+# Title used on welcome page when Firefox is not pinned
 mr1-onboarding-pin-header =
     { PLATFORM() ->
         [macos] 쉽게 접근할 수 있도록 { -brand-short-name }를 Dock에 넣기
        *[other] 쉽게 접근할 수 있도록 { -brand-short-name }를 작업 표시 줄에 고정
     }
-# Primary button string used on welcome page when Floorp is not pinned.
+# Primary button string used on welcome page when Firefox is not pinned.
 mr1-onboarding-pin-primary-button-label =
     { PLATFORM() ->
         [macos] Dock에 넣기
@@ -120,19 +120,19 @@ mr1-onboarding-pin-primary-button-label =
 ## Multistage MR1 onboarding strings (about:welcome pages)
 
 # This string will be used on welcome page primary button label
-# when Floorp is both pinned and default
+# when Firefox is both pinned and default
 mr1-onboarding-get-started-primary-button-label = 시작하기
 mr1-onboarding-welcome-header = { -brand-short-name }에 오신 것을 환영합니다
 mr1-onboarding-set-default-pin-primary-button-label = { -brand-short-name }를 기본 브라우저로 설정
     .title = { -brand-short-name }를 기본 브라우저로 설정하고 작업 표시줄에 고정
 # This string will be used on welcome page primary button label
-# when Floorp is not default but already pinned
+# when Firefox is not default but already pinned
 mr1-onboarding-set-default-only-primary-button-label = { -brand-short-name }를 기본 브라우저로 설정
 mr1-onboarding-set-default-secondary-button-label = 나중에
 mr1-onboarding-sign-in-button-label = 로그인
 
 ## Title, subtitle and primary button string used on set default onboarding screen
-## when Floorp is not default browser
+## when Firefox is not default browser
 
 mr1-onboarding-default-header = { -brand-short-name }를 기본 브라우저로 설정
 mr1-onboarding-default-subtitle = 탐색할 때 속도, 안전 및 개인 정보 보호 기능이 제공됩니다.
@@ -142,7 +142,7 @@ mr1-onboarding-default-primary-button-label = 기본 브라우저로 설정
 
 mr1-onboarding-import-header = 모든 것을 가져오기
 mr1-onboarding-import-subtitle = 비밀번호, 북마크 등을 <br/>가져옵니다.
-# The primary import button label will depend on whether we can detect which browser was used to download Floorp.
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
 # Variables:
 #   $previous (Str) - Previous browser name, such as Edge, Chrome
 mr1-onboarding-import-primary-button-label-attribution = { $previous }에서 가져오기
@@ -283,18 +283,10 @@ mr2-onboarding-colorway-tooltip =
 # Selector description for colorway
 # Variables:
 #   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-description =
-    .aria-description = { $colorwayName } 컬러웨이를 탐색합니다.
-# Selector description for colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
 mr2-onboarding-colorway-label = { $colorwayName } 컬러웨이를 탐색합니다.
 # Tooltip displayed on hover of default themes
 mr2-onboarding-default-theme-tooltip =
     .title = 기본 테마를 탐색합니다.
-# Selector description for default themes
-mr2-onboarding-default-theme-description =
-    .aria-description = 기본 테마를 탐색합니다.
 # Selector description for default themes
 mr2-onboarding-default-theme-label = 기본 테마를 탐색합니다.
 
@@ -303,3 +295,23 @@ mr2-onboarding-default-theme-label = 기본 테마를 탐색합니다.
 mr2-onboarding-thank-you-header = 저희를 선택해 주셔서 감사합니다.
 mr2-onboarding-thank-you-text = { -brand-short-name }는 비영리 단체가 지원하는 독립 브라우저입니다. 우리는 함께 웹을 안전하고, 건강하고, 더 사생활 보호를 하도록 만들고 있습니다.
 mr2-onboarding-start-browsing-button-label = 탐색 시작
+
+## Multistage live language reloading onboarding strings (about:welcome pages)
+##
+## The following language names are generated by the browser's Intl.DisplayNames API.
+##
+## Variables:
+##   $appLanguage (String) - The name of Firefox's language, e.g. "American English"
+##   $systemLanguage (String) - The name of the OS's language, e.g. "European Spanish"
+##   $negotiatedLanguage (String) - The name of the langpack's language, e.g. "European Spanish"
+
+onboarding-live-language-header = 언어를 선택하세요
+onboarding-live-language-subtitle = { -brand-short-name }는 { $appLanguage }을(를) 사용하는 반면 시스템은 { $systemLanguage }을(를) 사용하고 있습니다.
+onboarding-live-language-switch-button-label = { $negotiatedLanguage }(으)로 전환
+onboarding-live-language-button-label-downloading = { $negotiatedLanguage }용 언어 팩 다운로드 중…
+onboarding-live-language-waiting-subtitle = 시스템과 { -brand-short-name }가 서로 다른 언어를 사용하고 있는 것 같습니다.
+onboarding-live-language-waiting-button = 사용 가능한 언어를 가져오는 중…
+onboarding-live-language-installing = { $negotiatedLanguage }용 언어 팩 설치 중…
+onboarding-live-language-secondary-cancel-download = 취소
+onboarding-live-language-not-now-button-label = 나중에
+onboarding-live-language-skip-button-label = 건너뛰기

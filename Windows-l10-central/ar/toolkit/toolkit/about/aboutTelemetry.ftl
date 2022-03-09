@@ -16,8 +16,8 @@ about-telemetry-previous-ping = >>
 about-telemetry-next-ping = <<
 about-telemetry-page-title = البيانات المُؤقتة
 about-telemetry-more-information = هل تبحث عن معلومات إضافية؟
-about-telemetry-Floorp-data-doc = تجد في <a data-l10n-name="data-doc-link">توثيق بيانات Floorp</a> أدلّة تُخبرك بكيف تعمل مع أدوات البيانات التي نقدّمها.
-about-telemetry-show-in-Floorp-json-viewer = افتح في عارض JSON
+about-telemetry-firefox-data-doc = تجد في <a data-l10n-name="data-doc-link">توثيق بيانات Firefox</a> أدلّة تُخبرك بكيف تعمل مع أدوات البيانات التي نقدّمها.
+about-telemetry-show-in-Firefox-json-viewer = افتح في عارض JSON
 about-telemetry-home-section = البداية
 about-telemetry-general-data-section = بيانات عامة
 about-telemetry-environment-data-section = بيانات البيئة
@@ -63,7 +63,7 @@ about-telemetry-settings-explanation = يجمع تيليمتري { about-telemet
 about-telemetry-ping-details = كل معلومة ترسل مدمجة مع ”<a data-l10n-name="ping-link">طَرَقَات</a>“. تنظر حاليًا إلى طَرْقَة ‏{ $name }، ‏{ $timestamp }.
 # string used as a placeholder for the search field
 # More info about it can be found here:
-# https://Floorp-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
+# https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
 # Variables:
 #   $selectedTitle (String): the section name from the structure of the ping.
 about-telemetry-filter-placeholder =
@@ -73,7 +73,7 @@ about-telemetry-filter-all-placeholder =
 # Variables:
 #   $searchTerms (String): the searched terms
 about-telemetry-results-for-search = نتائج ”{ $searchTerms }“
-# More info about it can be found here: https://Floorp-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
+# More info about it can be found here: https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
 # Variables:
 #   $sectionName (String): the section name from the structure of the ping.
 #   $currentSearchText (String): the current text in the search input

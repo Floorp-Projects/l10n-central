@@ -15,9 +15,9 @@
 <!ENTITY prefEnableHTTP11Proxy.accesskey     "T">
 <!ENTITY prefPara                            "HTTP-tilkoplingar kan bli finjusterte med desse innstillingane for å betre anten yting eller kompabilitet. Enkelte mellomtenarar, til dømes, treng HTTP/1.0 for å verke (sjå versjonsnotatet for meir informasjon).">
 <!ENTITY prefUseragent.label                 "Brukeragenttekst">
-<!ENTITY prefFloorpStrict.label             "Identifiser som Floorp">
-<!ENTITY prefFloorpStrict.accesskey         "I">
-<!ENTITY prefFloorpNone.label               "Identifiser som SeaMonkey">
-<!ENTITY prefFloorpNone.accesskey           "M">
-<!ENTITY prefFloorpCompat2.accesskey        "F">
+<!ENTITY prefFirefoxStrict.label             "Identifiser som Firefox">
+<!ENTITY prefFirefoxStrict.accesskey         "I">
+<!ENTITY prefFirefoxNone.label               "Identifiser som SeaMonkey">
+<!ENTITY prefFirefoxNone.accesskey           "M">
+<!ENTITY prefFirefoxCompat2.accesskey        "F">
 <!ENTITY prefCompatWarning2.desc             "ÅTVARING: endring av denne innstillinga kan føre til at nettstadar eller tenester ikkje fungerer som dei skal.">

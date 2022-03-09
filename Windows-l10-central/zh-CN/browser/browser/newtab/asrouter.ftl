@@ -55,10 +55,10 @@ cfr-doorhanger-extension-total-users =
        *[other] { $total } 个用户
     }
 
-## Floorp Accounts Message
+## Firefox Accounts Message
 
 cfr-doorhanger-bookmark-fxa-header = 把书签随身带着走
-cfr-doorhanger-bookmark-fxa-body = 找到好网站了！接下来也把该书签同步至移动设备吧。开始使用 { -fxaccount-brand-name }。
+cfr-doorhanger-bookmark-fxa-body = 发现好网站了！接下来也把该书签同步至移动设备吧。开始使用 { -fxaccount-brand-name }。
 cfr-doorhanger-bookmark-fxa-link-text = 立即同步书签...
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = 关闭按钮
@@ -151,3 +151,16 @@ spotlight-total-cookie-protection-body = 全方位 Cookie 保护 - 阻止跟踪�
 spotlight-total-cookie-protection-expanded = { -brand-short-name } 可将每个网站的 Cookie 用“围栏”完全隔离，以阻止跟踪器借其实施跟踪。您可以通过抢先体验来帮助我们优化此功能，为每个人构建更好的网络环境。
 spotlight-total-cookie-protection-primary-button = 立即开启
 spotlight-total-cookie-protection-secondary-button = 暂时不要
+
+## Emotive Continuous Onboarding
+
+spotlight-better-internet-header = 更好的互联网，始于你我
+spotlight-better-internet-body = 当您使用 { -brand-short-name }，即代表您投票支持一个人人可用、处处可及，能够造福于所有人的的互联网。
+spotlight-peace-mind-header = 保护您是我的职责
+spotlight-peace-mind-body = { -brand-short-name } 为每位用户月均拦截超过 3,000 个跟踪器。您良好的互联网体验，不应受到任何破坏，尤其是影响隐私的跟踪器。
+spotlight-pin-primary-button =
+    { PLATFORM() ->
+        [macos] 在程序坞中保留
+       *[other] 固定到任务栏
+    }
+spotlight-pin-secondary-button = 暂时不要

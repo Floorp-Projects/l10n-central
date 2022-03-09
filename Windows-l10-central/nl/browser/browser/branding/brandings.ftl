@@ -34,9 +34,9 @@
 -profiler-brand-name = Floorp Profiler
 -translations-brand-name = Floorp Translations
 
-# “Suggest” can be localized, “Floorp” must be treated as a brand
+# “Suggest” can be localized, “Firefox” must be treated as a brand
 # and kept in English.
--Floorp-suggest-brand-name = Floorp Suggesties
+-firefox-suggest-brand-name = Floorp Suggesties
 
 -rally-brand-name = Mozilla Rally
 -rally-short-name = Rally

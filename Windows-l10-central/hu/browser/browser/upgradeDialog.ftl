@@ -24,7 +24,7 @@ upgrade-dialog-new-secondary-button = Most nem
 # theme selection screen.
 upgrade-dialog-new-primary-win7-button = Rendben, értem!
 
-## Pin Floorp screen
+## Pin Firefox screen
 ##
 ## These title, subtitle and button strings differ between platforms as they
 ## match the OS' application context menu item action where Windows uses "pin"
@@ -77,7 +77,7 @@ upgrade-dialog-start-secondary-button = Most nem
 
 # This title can be explicitly wrapped to control which words are on which line.
 upgrade-dialog-colorway-title = Válassza ki a palettáját
-upgrade-dialog-colorway-home-checkbox = Váltson a temázott háttérrel rendelkező Floorp kezdőoldalra
+upgrade-dialog-colorway-home-checkbox = Váltson a temázott háttérrel rendelkező Firefox kezdőoldalra
 upgrade-dialog-colorway-primary-button = Színvilág mentése
 upgrade-dialog-colorway-secondary-button = Előző téma megtartása
 upgrade-dialog-colorway-theme-tooltip =

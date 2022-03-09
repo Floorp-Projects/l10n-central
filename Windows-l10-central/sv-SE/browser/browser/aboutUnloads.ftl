@@ -27,7 +27,7 @@ about-unloads-intro =
     på flera attribut. Den här sidan visar hur { -brand-short-name } prioriterar
     flikar och vilken flik som kommer att frigöras. Du kan manuellt frigöra en
     flik genom att klicka på knappen <em>Frigör</em> nedan.
-# The link points to a Floorp documentation page, only available in English,
+# The link points to a Firefox documentation page, only available in English,
 # with title "Tab Unloading"
 about-unloads-learn-more =
     Se <a data-l10n-name="doc-link">Frigör flik</a> om du vill veta mer om

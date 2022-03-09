@@ -71,7 +71,7 @@ menu-file-new-private-window =
     .accesskey = е
 # "Open Location" is only displayed on macOS, and only on windows
 # that aren't main browser windows, or when there are no windows
-# but Floorp is still running.
+# but Firefox is still running.
 menu-file-open-location =
     .label = Открыть адрес…
 menu-file-open-file =
@@ -318,23 +318,26 @@ menu-get-help =
     .accesskey = ч
 menu-help-more-troubleshooting-info =
     .label = Информация для решения проблем
-    .accesskey = а
+    .accesskey = И
 menu-help-report-site-issue =
     .label = Сообщить о проблеме с сайтом…
 menu-help-feedback-page =
     .label = Отправить отзыв…
-    .accesskey = т
+    .accesskey = О
+menu-help-share-ideas =
+    .label = Поделиться идеями или оставить отзыв
+    .accesskey = д
 menu-help-enter-troubleshoot-mode2 =
     .label = Безопасный режим…
-    .accesskey = й
+    .accesskey = Б
 menu-help-exit-troubleshoot-mode =
     .label = Отключить безопасный режим
-    .accesskey = ю
+    .accesskey = Б
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =
     .label = Сообщить о поддельном сайте…
-    .accesskey = б
+    .accesskey = п
 menu-help-not-deceptive =
     .label = Это не поддельный сайт…
-    .accesskey = е
+    .accesskey = п

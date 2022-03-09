@@ -12,18 +12,18 @@
 about-debugging-page-title-setup-page = Derinimas – sąranka
 
 # Page title (ie tab title) for the Runtime page
-# { $selectedRuntimeId } is the id of the current runtime, such as "this-Floorp", "localhost:6080", ...
+# { $selectedRuntimeId } is the id of the current runtime, such as "this-firefox", "localhost:6080", ...
 about-debugging-page-title-runtime-page = Derinimas – įrenginio darinys / { $selectedRuntimeId }
 
 # Sidebar strings
 
-# Display name of the runtime for the currently running instance of Floorp. Used in the
+# Display name of the runtime for the currently running instance of Firefox. Used in the
 # Sidebar and in the Setup page.
-about-debugging-this-Floorp-runtime-name = Ši „{ -brand-shorter-name }“
+about-debugging-this-firefox-runtime-name = Ši „{ -brand-shorter-name }“
 
-# Sidebar heading for selecting the currently running instance of Floorp
-about-debugging-sidebar-this-Floorp =
-    .name = { about-debugging-this-Floorp-runtime-name }
+# Sidebar heading for selecting the currently running instance of Firefox
+about-debugging-sidebar-this-firefox =
+    .name = { about-debugging-this-firefox-runtime-name }
 
 # Sidebar heading for connecting to some remote source
 about-debugging-sidebar-setup =
@@ -62,8 +62,8 @@ about-debugging-sidebar-item-connect-button-connection-not-responding = Vis dar 
 about-debugging-sidebar-item-connect-button-connection-timeout = Baigėsi ryšiui skirtas laikas
 
 # Text displayed in sidebar items for remote devices where a compatible browser (eg
-# Floorp) has not been detected yet. Typically, Android phones connected via USB with
-# USB debugging enabled, but where Floorp is not started.
+# Firefox) has not been detected yet. Typically, Android phones connected via USB with
+# USB debugging enabled, but where Firefox is not started.
 about-debugging-sidebar-runtime-item-waiting-for-browser = Laukiama naršyklės…
 
 # Text displayed in sidebar items for remote devices that have been disconnected from the
@@ -99,8 +99,8 @@ about-debugging-setup-title = Sąranka
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = Konfigūruokite prisijungimo būdą, kuriuo norite derinti savo įrenginį per nuotolį.
 
-# Explanatory text in the Setup page about what the 'This Floorp' page is for
-about-debugging-setup-this-Floorp2 = Norėdami derinti priedus ir aptarnavimo scenarijus su šia „{ -brand-shorter-name }“ laida, naudokite <a>{ about-debugging-this-Floorp-runtime-name }</a>.
+# Explanatory text in the Setup page about what the 'This Firefox' page is for
+about-debugging-setup-this-firefox2 = Norėdami derinti priedus ir aptarnavimo scenarijus su šia „{ -brand-shorter-name }“ laida, naudokite <a>{ about-debugging-this-firefox-runtime-name }</a>.
 
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = Prijungti įrenginį
@@ -134,7 +134,7 @@ about-debugging-setup-usb-step-enable-dev-menu2 = Įjunkite programuotojo meniu 
 about-debugging-setup-usb-step-enable-debug2 = Įjunkite USB derinimą per „Android“ programuotojo meniu.
 
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug-Floorp2 = Įjunkite USB derinimą per „Android“ įrenginyje esančią „Floorp“.
+about-debugging-setup-usb-step-enable-debug-firefox2 = Įjunkite USB derinimą per „Android“ įrenginyje esančią „Firefox“.
 
 # USB section step by step guide
 about-debugging-setup-usb-step-plug-device = Prijunkite „Android“ įrenginį prie kompiuterio.
@@ -181,7 +181,7 @@ about-debugging-network-location-form-duplicate = Serverio adresas „{ $host-va
 
 # Below are the titles for the various categories of debug targets that can be found
 # on "runtime" pages of about:debugging.
-# Title of the temporary extensions category (only available for "This Floorp" runtime).
+# Title of the temporary extensions category (only available for "This Firefox" runtime).
 about-debugging-runtime-temporary-extensions =
     .name = Laikini priedai
 # Title of the extensions category.
@@ -215,23 +215,23 @@ about-debugging-runtime-service-workers-not-compatible = Jūsų naršyklės nuos
 # This string is displayed in the runtime page if the remote browser version is too old.
 # "Troubleshooting" link points to https://developer.mozilla.org/docs/Tools/about:debugging#Troubleshooting
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
-# { $minVersion } is the minimum version that is compatible with the current Floorp instance (same format)
+# { $minVersion } is the minimum version that is compatible with the current Firefox instance (same format)
 about-debugging-browser-version-too-old = Prijungto įrenginio darinio laida ({ $runtimeVersion }) yra senesnė negu minimali palaikoma ({ $minVersion }). Tokia konfigūracija nėra palaikoma ir gali sukelti saityno kūrėjo priemonių sutrikimus. Atnaujinkite susieto įrenginio darinį. <a>Problemų sprendimas</a>
 
 # Dedicated message for a backward compatibility issue that occurs when connecting:
-# from Fx 70+ to the old Floorp for Android (aka Fennec) which uses Fx 68.
-about-debugging-browser-version-too-old-fennec = Ši „Floorp“ laida negali būti naudojama „Floorp“ (68), skirtos „Android“, derinimui. Testavimui rekomenduojame savo telefone įdiegti „Floorp for Android Nightly“. <a>Daugiau informacijos</a>
+# from Fx 70+ to the old Firefox for Android (aka Fennec) which uses Fx 68.
+about-debugging-browser-version-too-old-fennec = Ši „Firefox“ laida negali būti naudojama „Firefox“ (68), skirtos „Android“, derinimui. Testavimui rekomenduojame savo telefone įdiegti „Firefox for Android Nightly“. <a>Daugiau informacijos</a>
 
 # This string is displayed in the runtime page if the remote browser version is too recent.
 # "Troubleshooting" link points to https://developer.mozilla.org/docs/Tools/about:debugging#Troubleshooting
 # { $runtimeID } is the build ID of the remote browser (for instance "20181231", format is yyyyMMdd)
-# { $localID } is the build ID of the current Floorp instance (same format)
+# { $localID } is the build ID of the current Firefox instance (same format)
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
 # { $localVersion } is the version of your current browser (same format)
 about-debugging-browser-version-too-recent = Prijungto įrenginio darinio laida yra naujesnė ({ $runtimeVersion }, buildID { $runtimeID }) negu jūsų „{ -brand-shorter-name }“ ({ $localVersion }, buildID { $localID }). Tokia konfigūracija nėra palaikoma ir gali sukelti saityno kūrėjo priemonių sutrikimus. <a>Problemų sprendimas</a>
 
 # Displayed for runtime info in runtime pages.
-# { $name } is brand name such as "Floorp Nightly"
+# { $name } is brand name such as "Firefox Nightly"
 # { $version } is version such as "64.0a1"
 about-debugging-runtime-name = „{ $name }“ ({ $version })
 
@@ -266,18 +266,18 @@ about-debugging-debug-target-list-empty = Kol kas nieko.
 # A target can be an addon, a tab, a worker...
 about-debugging-debug-target-inspect-button = Tirti
 
-# Text of a button displayed in the "This Floorp" page, in the Temporary Extension
+# Text of a button displayed in the "This Firefox" page, in the Temporary Extension
 # section. Clicking on the button will open a file picker to load a temporary extension
 about-debugging-tmp-extension-install-button = Įkelti laikiną priedą…
 
-# Text displayed when trying to install a temporary extension in the "This Floorp" page.
+# Text displayed when trying to install a temporary extension in the "This Firefox" page.
 about-debugging-tmp-extension-install-error = Laikino priedo diegimo metu įvyko klaida.
 
-# Text of a button displayed for a temporary extension loaded in the "This Floorp" page.
+# Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will reload the extension.
 about-debugging-tmp-extension-reload-button = Įkelti iš naujo
 
-# Text of a button displayed for a temporary extension loaded in the "This Floorp" page.
+# Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will uninstall the extension and remove it from the page.
 about-debugging-tmp-extension-remove-button = Pašalinti
 

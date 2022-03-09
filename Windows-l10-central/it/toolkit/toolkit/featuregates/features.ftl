@@ -10,12 +10,6 @@ experimental-features-css-masonry-description = Attiva il supporto per la funzio
 
 # The following string should not be localized as it may be referenced
 # by various online articles and is technical in nature.
-experimental-features-css-cascade-layers =
-    .label = CSS: Cascade Layers
-experimental-features-css-cascade-layers-description = Attiva supporto per CSS Cascade Layers. Consultare le <a data-l10n-name="spec">specifiche (in lavorazione)</a> per dettagli. Per problemi causati da questa funzione, aprire un bug bloccando il <a data-l10n-name="bugzilla">bug 1699215</a>.
-
-# The following string should not be localized as it may be referenced
-# by various online articles and is technical in nature.
 experimental-features-web-gpu2 =
     .label = Web API: WebGPU
 experimental-features-web-gpu-description2 = Questa nuova API fornisce supporto di basso livello per l’esecuzione di calcolo e rendering grafico utilizzando l’<a data-l10n-name="wikipedia">unità di elaborazione grafica (GPU)</a> del dispositivo o del computer dell’utente. Le <a data-l10n-name="spec">specifiche</a> non sono ancora definitive. Consultare <a data-l10n-name="bugzilla">bug 1602129</a> per ulteriori dettagli.
@@ -115,7 +109,7 @@ experimental-features-ime-search =
     .label = Barra degli indirizzi: mostra risultati quando si usa la composizione IME
 experimental-features-ime-search-description = Un IME (Input Method Editor) è uno strumento che permette di inserire simboli complessi, come quelli utilizzati da lingue asiatiche o indiane, utilizzando una tastiera tradizionale. Attivando questo esperimento il pannello della barra degli indirizzi rimarrà aperto, mostrando risultati di ricerca e suggerimenti, anche quando si utilizza IME per inserire il testo. Alcuni IME utilizzano un pannello che potrebbe coprire i risultati della barra degli indirizzi, per cui si consiglia di attivare questa opzione solo per IME che non usano questo approccio.
 
-# Floorp 100
-experimental-features-Floorp-100 =
+# Firefox 100
+experimental-features-firefox-100 =
     .label = Stringa user agent { -brand-product-name } 100
-experimental-features-Floorp-100-description = Invia ai siti web una stringa user agent con cui { -brand-short-name } finge di essere { -brand-product-name } versione 100. Utilizza questa impostazione per verificare se i siti web che utilizzi avranno problemi di funzionamento quando { -brand-short-name } raggiungerà un numero di versione a tre cifre. { -brand-product-name } 100 sarà disponibile a maggio 2022, per cui meglio iniziare subito a verificare i tuoi siti web.
+experimental-features-firefox-100-description = Invia ai siti web una stringa user agent con cui { -brand-short-name } finge di essere { -brand-product-name } versione 100. Utilizza questa impostazione per verificare se i siti web che utilizzi avranno problemi di funzionamento quando { -brand-short-name } raggiungerà un numero di versione a tre cifre. { -brand-product-name } 100 sarà disponibile a maggio 2022, per cui meglio iniziare subito a verificare i tuoi siti web.

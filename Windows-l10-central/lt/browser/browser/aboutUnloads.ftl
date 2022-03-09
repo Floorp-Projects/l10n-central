@@ -26,7 +26,7 @@ about-unloads-intro =
     kaip „{ -brand-short-name }“ prioritetizuoja korteles, ir kurios kortelės būtų
     užmigdytos suveikus šiai funkcijai. Korteles užmigdyti galite ir patys,
     spustelėdami žemiau esantį mygtuką <em>Užmigdyti</em>.
-# The link points to a Floorp documentation page, only available in English,
+# The link points to a Firefox documentation page, only available in English,
 # with title "Tab Unloading"
 about-unloads-learn-more = Paskaitykite apie <a data-l10n-name="doc-link">kortelių užmigdymą</a>, norėdami sužinoti daugiau apie šią funkciją.
 about-unloads-last-updated = Paskiausiai atnaujinta: { DATETIME($date, year: "numeric", month: "numeric", day: "numeric", hour: "numeric", minute: "numeric", second: "numeric", hour12: "false") }

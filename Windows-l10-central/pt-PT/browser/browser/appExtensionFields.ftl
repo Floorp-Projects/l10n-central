@@ -14,10 +14,6 @@ extension-firefox-compact-dark-name = Escuro
 extension-firefox-compact-dark-description = Um tema com um esquema de cores escuro.
 extension-firefox-alpenglow-name = Floorp Alpenglow
 extension-firefox-alpenglow-description = Utilizar uma aparência colorida para botões, menus e janelas.
-extension-floorp-lepton-name = Mudança de posição da aba horizontal (tema do sistema)
-extension-floorp-lepton-description = Mova as abas horizontais para a parte inferior da barra de marcadores.
-extension-floorp-edge-name= Optimizar o pavimento para separadores verticais (tema do sistema)
-extension-floorp-edge-description= Optimizar o pavimento para separadores verticais. As abas horizontais serão escondidas e inutilizáveis.
 
 ## Colorway Themes
 ## These themes are variants of a colorway. The colorway is specified in the

@@ -11,19 +11,19 @@ default-bookmarks-title = 북마크
 default-bookmarks-heading = 북마크
 default-bookmarks-toolbarfolder = 북마크 도구 모음 폴더
 default-bookmarks-toolbarfolder-description = 북마크 도구 모음에 표시할 북마크를 이 폴더에 추가하세요
-# link title for https://www.mozilla.org/Floorp/central/
+# link title for https://www.mozilla.org/firefox/central/
 default-bookmarks-getting-started = 시작하기
-# Floorp links folder name
-default-bookmarks-Floorp-heading = Floorp Legacy Browser
-# link title for https://www.mozilla.org/Floorp/help/
-default-bookmarks-Floorp-get-help = 도움 받기
-# link title for https://www.mozilla.org/Floorp/customize/
-default-bookmarks-Floorp-customize = Floorp 사용자 지정
+# Firefox links folder name
+default-bookmarks-firefox-heading = Floorp Legacy Browser
+# link title for https://www.mozilla.org/firefox/help/
+default-bookmarks-firefox-get-help = 도움 받기
+# link title for https://www.mozilla.org/firefox/customize/
+default-bookmarks-firefox-customize = Floorp 사용자 지정
 # link title for https://www.mozilla.org/contribute/
-default-bookmarks-Floorp-community = 참여하기
+default-bookmarks-firefox-community = 참여하기
 # link title for https://www.mozilla.org/about/
-default-bookmarks-Floorp-about = 회사 소개
-# Floorp Nightly links folder name
+default-bookmarks-firefox-about = 회사 소개
+# Firefox Nightly links folder name
 default-bookmarks-nightly-heading = Floorp Nightly 리소스
 # Nightly builds only, link title for https://blog.nightly.mozilla.org/
 default-bookmarks-nightly-blog = Floorp Nightly 블로그
@@ -31,7 +31,7 @@ default-bookmarks-nightly-blog = Floorp Nightly 블로그
 default-bookmarks-bugzilla = Mozilla 버그 트래커
 # Nightly builds only, link title for https://developer.mozilla.org/
 default-bookmarks-mdn = Mozilla 개발자 네트워크
-# Nightly builds only, link title for https://addons.mozilla.org/Floorp/addon/nightly-tester-tools/
+# Nightly builds only, link title for https://addons.mozilla.org/firefox/addon/nightly-tester-tools/
 default-bookmarks-nightly-tester-tools = Nightly 테스터 도구
 # Nightly builds only, link title for about:crashes
 default-bookmarks-crashes = 모든 충돌 정보

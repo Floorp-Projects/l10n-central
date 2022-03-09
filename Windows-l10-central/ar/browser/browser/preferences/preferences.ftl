@@ -462,7 +462,7 @@ home-restore-defaults =
 # "Floorp" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
-    .label = صفحة بداية Floorp (المبدئية)
+    .label = صفحة بداية Firefox (المبدئية)
 home-mode-choice-custom =
     .label = عناوين مخصصة…
 home-mode-choice-blank =
@@ -484,10 +484,10 @@ choose-bookmark =
     .label = استخدم علامة…
     .accesskey = ع
 
-## Home Section - Floorp Home Content Customization
+## Home Section - Firefox Home Content Customization
 
-home-prefs-content-header = محتوى Floorp الرئيسي
-home-prefs-content-description = اختر المحتوى الذي تريد عرضه في شاشة بداية Floorp.
+home-prefs-content-header = محتوى Firefox الرئيسي
+home-prefs-content-description = اختر المحتوى الذي تريد عرضه في شاشة بداية Firefox.
 home-prefs-search-header =
     .label = ابحث في الوِب
 home-prefs-topsites-header =
@@ -619,7 +619,7 @@ containers-settings-button =
 containers-remove-button =
     .label = أزِل
 
-## Floorp Account - Signed out. Note that "Sync" and "Floorp Account" are now
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = خُذ الوِب معك
@@ -635,9 +635,9 @@ sync-signedout-account-signin3 =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = نزّل Floorp لنظامي <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">أندرويد</a> أو <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">آي أو إس</a> للمزامنة مع هاتفك المحمول.
+sync-mobile-promo = نزّل Firefox لنظامي <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">أندرويد</a> أو <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">آي أو إس</a> للمزامنة مع هاتفك المحمول.
 
-## Floorp Account - Signed in
+## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = غيّر صورة الحساب
@@ -799,7 +799,7 @@ forms-windows-sso-desc = أدِر الحسابات في إعدادات الجه�
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = أدخِل معلومات ولوج وِندوز لتصنع كلمة سر رئيسية. يساعد هذا الأمر على حماية أمن حساباتك.
 # This message can be seen by trying to add a Primary Password.
-# The macOS strings are preceded by the operating system with "Floorp is trying to "
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 primary-password-os-auth-dialog-message-macosx = أنشِئ كلمة سر رئيسية
@@ -811,12 +811,12 @@ history-header = التأريخ
 # This label is followed, on the same line, by a dropdown list of options
 # (Remember history, etc.).
 # In English it visually creates a full sentence, e.g.
-# "Floorp will" + "Remember history".
+# "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
 #   - Simply as "Floorp", moving the verb into each option.
 #     This will result in "Floorp" + "Will remember history", etc.
-#   - As a stand-alone message, for example "Floorp history settings:".
+#   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = اجعل { -brand-short-name }
     .accesskey = ع
 history-remember-option-all =

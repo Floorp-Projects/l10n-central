@@ -128,7 +128,7 @@ ctrl-tab-recently-used-order =
     .label = Ctrl+Tab 단축키로 최근 사용한 순서대로 탭 순환
     .accesskey = T
 open-new-link-as-tabs =
-    .label = 링크를 새 창 대신 새 탭에 열기
+    .label = 링크를 새 창 대신 새 탭에서 열기
     .accesskey = w
 warn-on-close-multiple-tabs =
     .label = 여러 개의 탭을 닫을 때 경고
@@ -266,7 +266,7 @@ applications-use-app =
 # Variables:
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
-    .label = { $app-name } 사용(기본값)
+    .label = { $app-name } 사용 (기본값)
 applications-use-os-default =
     .label =
         { PLATFORM() ->
@@ -292,9 +292,9 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 # Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
-    .label = { $plugin-name } 사용({ -brand-short-name })
+    .label = { $plugin-name } 사용 ({ -brand-short-name })
 applications-open-inapp =
-    .label = { -brand-short-name }로 열기
+    .label = { -brand-short-name }에서 열기
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -347,6 +347,9 @@ update-application-warning-cross-user-setting = 이 설정은 이 { -brand-short
 update-application-use-service =
     .label = 업데이트 설치 시 백그라운드 작업으로 하기
     .accesskey = b
+update-application-suppress-prompts =
+    .label = 업데이트 알림 프롬프트 적게 표시
+    .accesskey = n
 update-setting-write-failure-title2 = 업데이트 설정 저장 중 오류 발생
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -392,6 +395,9 @@ browsing-use-autoscroll =
 browsing-use-smooth-scrolling =
     .label = 부드러운 스크롤 사용
     .accesskey = m
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = 항상 스크롤 막대 표시
+    .accesskey = o
 browsing-use-onscreen-keyboard =
     .label = 필요하면 터치 키보드 보여주기
     .accesskey = k
@@ -463,7 +469,7 @@ choose-bookmark =
     .label = 북마크 사용…
     .accesskey = B
 
-## Home Section - Floorp Home Content Customization
+## Home Section - Firefox Home Content Customization
 
 home-prefs-content-header = Floorp 홈 콘텐츠
 home-prefs-content-description = Floorp 홈 화면에서 원하는 콘텐츠를 선택하세요.
@@ -590,7 +596,7 @@ containers-settings-button =
 containers-remove-button =
     .label = 삭제
 
-## Floorp Account - Signed out. Note that "Sync" and "Floorp Account" are now
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = 웹과 함께 하세요.
@@ -606,9 +612,9 @@ sync-signedout-account-signin3 =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = 모바일 기기와 동기화하려면 <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> 또는 <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a>용 Floorp를 다운로드하세요.
+sync-mobile-promo = 모바일 기기와 동기화하려면 <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> 또는 <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a>용 Firefox를 다운로드하세요.
 
-## Floorp Account - Signed in
+## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = 프로필 사진 변경
@@ -770,7 +776,7 @@ forms-windows-sso-desc = 기기 설정에서 계정 관리
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = 기본 비밀번호를 만들려면, Windows 로그인 자격 증명을 입력하세요. 이는 계정의 보안을 보호하는데 도움이 됩니다.
 # This message can be seen by trying to add a Primary Password.
-# The macOS strings are preceded by the operating system with "Floorp is trying to "
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 primary-password-os-auth-dialog-message-macosx = 기본 비밀번호 만들기
@@ -782,12 +788,12 @@ history-header = 기록
 # This label is followed, on the same line, by a dropdown list of options
 # (Remember history, etc.).
 # In English it visually creates a full sentence, e.g.
-# "Floorp will" + "Remember history".
+# "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
 #   - Simply as "Floorp", moving the verb into each option.
 #     This will result in "Floorp" + "Will remember history", etc.
-#   - As a stand-alone message, for example "Floorp history settings:".
+#   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = { -brand-short-name }가
     .accesskey = w
 history-remember-option-all =

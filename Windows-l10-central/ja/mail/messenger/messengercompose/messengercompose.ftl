@@ -232,20 +232,23 @@ compose-tool-button-remove-text-styling =
 # A line of text describing how many uploaded files have been appended to this
 # message. Emphasis should be on sharing as opposed to attaching. This item is
 # used as a header to a list, hence the colon.
-# (^m^) メッセージ本文に挿入されるため en-US のまま。
-# ja: { $count } 個のファイルをこのメールにリンクしました:
 cloud-file-count-header =
     { $count ->
          [one] { $count } 個のファイルをこのメールにリンクしました:
         *[other] { $count } 個のファイルをこのメールにリンクしました:
     }
 # A text used in a footer, instructing the reader where to find additional
-# information about the used service providers.
-cloud-file-service-provider-footer =
-    { $count ->
-         [one] { $lastLink } についての詳細
-        *[other] { $firstLinks } および { $lastLink } についての詳細
-    }
+# information about the used service provider.
+# $link (string) - html a-tag for a link pointing to the web page of the provider
+cloud-file-service-provider-footer-single = { $link } についての詳細。
+# A text used in a footer, instructing the reader where to find additional
+# information about the used service providers. Links for the used providers are
+# split into a comma separated list of the first n-1 providers and a single entry
+# at the end.
+# $firstLinks (string) - comma separated list of html a-tags pointing to web pages
+#                        of the first n-1 used providers
+# $lastLink (string) - html a-tag pointing the web page of the n-th used provider
+cloud-file-service-provider-footer-multiple = { $firstLinks } および { $lastLink } についての詳細。
 # Tooltip for an icon, indicating that the link is protected by a password.
 cloud-file-tooltip-password-protected-link = リンク先がパスワードで保護されています
 # Used in a list of stats about a specific file
@@ -264,6 +267,9 @@ cloud-file-template-download-limit = ダウンロード回数制限:
 
 # Messages
 
+# $provider (string) - name of the online storage service that reported the error
+cloud-file-connection-error-title = 接続エラー
+cloud-file-connection-error = { -brand-short-name } はオフラインです。{ $provider } に接続できませんでした。
 # $provider (string) - name of the online storage service that reported the error
 # $filename (string) - name of the file that was uploaded and caused the error
 cloud-file-upload-error-with-custom-message-title = { $filename } ファイルの { $provider } へのアップロードに失敗しました

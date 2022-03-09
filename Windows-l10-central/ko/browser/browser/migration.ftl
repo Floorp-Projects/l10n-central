@@ -46,7 +46,7 @@ import-from-chrome-dev =
 import-from-chromium =
     .label = Chromium
     .accesskey = u
-import-from-Floorp =
+import-from-firefox =
     .label = Floorp
     .accesskey = X
 import-from-360se =
@@ -58,7 +58,7 @@ import-items-page-title = 가져올 항목
 import-items-description = 가져올 항목을 선택하세요:
 import-permissions-page-title = { -brand-short-name } 권한을 부여하세요.
 # Do not translate "Bookmarks.plist"; the file name is the same everywhere.
-import-permissions-description = macOS에서는 { -brand-short-name }가 Safari의 북마크에 액세스하도록 명시적으로 허용해야합니다. “계속”을 클릭하고 나타나는 파일 열기 패널에서 “Bookmarks.plist” 파일을 선택하세요.
+import-permissions-description = macOS에서는 { -brand-short-name }가 Safari의 북마크에 액세스하도록 명시적으로 허용해야 합니다. “계속”을 클릭하고 나타나는 파일 열기 패널에서 “Bookmarks.plist” 파일을 선택하세요.
 import-migrating-page-title = 가져오는 중…
 import-migrating-description = 다음 항목들을 가져오고 있습니다…
 import-select-profile-page-title = 프로필 선택
@@ -80,7 +80,7 @@ source-name-chrome = Google Chrome
 source-name-chrome-beta = Google Chrome Beta
 source-name-chrome-dev = Google Chrome Dev
 source-name-chromium = Chromium
-source-name-Floorp = Floorp Legacy Browser
+source-name-firefox = Floorp Legacy Browser
 source-name-360se = 360 Secure Browser
 imported-safari-reading-list = 구독 목록 (Safari로부터)
 imported-edge-reading-list = 구독 목록 (Edge로부터)
@@ -93,7 +93,7 @@ imported-edge-reading-list = 구독 목록 (Edge로부터)
 ## 360se
 ## chrome
 ## edge
-## Floorp
+## firefox
 ## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
@@ -106,13 +106,13 @@ browser-data-cookies-label =
 browser-data-history-checkbox =
     .label =
         { $browser ->
-            [Floorp] 방문 기록 및 북마크
+            [firefox] 방문 기록 및 북마크
            *[other] 방문 기록
         }
 browser-data-history-label =
     .value =
         { $browser ->
-            [Floorp] 방문 기록 및 북마크
+            [firefox] 방문 기록 및 북마크
            *[other] 방문 기록
         }
 browser-data-formdata-checkbox =

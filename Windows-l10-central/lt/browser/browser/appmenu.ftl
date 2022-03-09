@@ -72,7 +72,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = Visas ekranas
 
-## Floorp Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = Prisijungti sinchronizavimui…
@@ -89,7 +89,7 @@ appmenu-remote-tabs-tabsnotsyncing = Įjunkite kortelių sinchronizavimą, norė
 appmenu-remote-tabs-opensettings =
     .label = Nustatymai
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Floorp for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Norite čia matyti savo korteles iš kitų įrenginių?
 appmenu-remote-tabs-connectdevice =
     .label = Susieti kitą įrenginį
@@ -121,8 +121,8 @@ whatsnew-panel-footer-checkbox =
     .label = Pranešti apie naujas funkcijas
     .accesskey = f
 
-## The Floorp Profiler – The popup is the UI to turn on the profiler, and record
-## performance profiles. To enable it go to profiler.Floorp.com and click
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
 profiler-popup-button-idle =
@@ -185,8 +185,8 @@ profiler-popup-capture-shortcut =
 profiler-popup-presets-web-developer-description = Rekomenduojamas nustatymas daugelio saityno programų derinimui, su nedidelėmis sąnaudomis.
 profiler-popup-presets-web-developer-label =
     .label = Saityno kūrėjams
-profiler-popup-presets-Floorp-description = Rekomenduojamas nustatymas „{ -brand-shorter-name }“ profiliavimui.
-profiler-popup-presets-Floorp-label =
+profiler-popup-presets-firefox-description = Rekomenduojamas nustatymas „{ -brand-shorter-name }“ profiliavimui.
+profiler-popup-presets-firefox-label =
     .label = { -brand-shorter-name }
 profiler-popup-presets-graphics-description = Nustatymas „{ -brand-shorter-name }“ grafikos problemų diagnozavimui.
 profiler-popup-presets-graphics-label =

@@ -17,11 +17,11 @@ about-telemetry-next-ping = >>
 about-telemetry-page-title = 遥测数据
 about-telemetry-current-store = 当前存储：
 about-telemetry-more-information = 想详细了解吗？
-about-telemetry-Floorp-data-doc = <a data-l10n-name="data-doc-link">Floorp 数据文档</a>介绍了使用我们的数据工具的方式。
-about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">Floorp 遥测客户端文档</a>涵盖了数据收集的概念、API 文档以及数据格式的定义。
+about-telemetry-firefox-data-doc = <a data-l10n-name="data-doc-link">Firefox 数据文档</a>介绍了使用我们的数据工具的方式。
+about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">Firefox 遥测客户端文档</a>涵盖了数据收集的概念、API 文档以及数据格式的定义。
 about-telemetry-telemetry-dashboard = <a data-l10n-name="dashboard-link">遥测面板</a>用图形化展示了 Mozilla 通过遥测服务收集的数据。
 about-telemetry-telemetry-probe-dictionary = <a data-l10n-name="probe-dictionary-link">Probe Dictionary</a> 中提供遥测服务收集所探测资料的详细信息与说明。
-about-telemetry-show-in-Floorp-json-viewer = 在 JSON 查看器中打开
+about-telemetry-show-in-Firefox-json-viewer = 用 JSON 查看器打开
 about-telemetry-home-section = 主页
 about-telemetry-general-data-section = 常规数据
 about-telemetry-environment-data-section = 环境数据
@@ -77,7 +77,7 @@ about-telemetry-ping-details = 每组信息都将打包成“<a data-l10n-name="
 about-telemetry-data-details-current = 每组信息都会打包成“<a data-l10n-name="ping-link">Ping</a>”上传。您正在看的是当前数据。
 # string used as a placeholder for the search field
 # More info about it can be found here:
-# https://Floorp-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
+# https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
 # Variables:
 #   $selectedTitle (String): the section name from the structure of the ping.
 about-telemetry-filter-placeholder =
@@ -87,7 +87,7 @@ about-telemetry-filter-all-placeholder =
 # Variables:
 #   $searchTerms (String): the searched terms
 about-telemetry-results-for-search = “{ $searchTerms }“的搜索结果
-# More info about it can be found here: https://Floorp-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
+# More info about it can be found here: https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
 # Variables:
 #   $sectionName (String): the section name from the structure of the ping.
 #   $currentSearchText (String): the current text in the search input
@@ -140,7 +140,7 @@ about-telemetry-origin-origin = 起点
 about-telemetry-origin-count = 数量
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
-about-telemetry-origins-explanation = <a data-l10n-name="origin-doc-link">Floorp 起点遥测技术</a>会在数据发送之前对其进行编码，确保 { $telemetryServerOwner } 能统计数量的同时，无须知道是由谁的 { -brand-product-name } 上传了数据。（<a data-l10n-name="prio-blog-link">详细了解</a>）
+about-telemetry-origins-explanation = <a data-l10n-name="origin-doc-link">Firefox 起点遥测技术</a>会在数据发送之前对其进行编码，确保 { $telemetryServerOwner } 能统计数量的同时，无须知道是由谁的 { -brand-product-name } 上传了数据。（<a data-l10n-name="prio-blog-link">详细了解</a>）
 # Variables:
 #  $process (String): type of process in subsection headers ( e.g. "content", "parent" )
 about-telemetry-process = { $process } 进程

@@ -12,7 +12,7 @@ process-type-web = Contenu web
 # such as about:home
 process-type-privilegedabout = Pages « à propos » privilégiées
 # process used to run privileged mozilla pages,
-# such as accounts.Floorp.com
+# such as accounts.firefox.com
 process-type-privilegedmozilla = Contenus Mozilla privilégiés
 process-type-extension = Extension
 # process used to open file:// URLs
@@ -42,6 +42,8 @@ process-type-gpu = GPU
 process-type-socket = Socket
 # process used to decode media
 process-type-rdd = RDD
+# process used to run some IPC actor in their own sandbox
+process-type-utility = Acteur IPC en bac à sable
 
 ##
 ## Other

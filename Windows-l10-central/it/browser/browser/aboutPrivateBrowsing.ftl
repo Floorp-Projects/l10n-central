@@ -47,3 +47,8 @@ about-private-browsing-search-banner-description = {
   }
 about-private-browsing-search-banner-close-button =
     .aria-label = Chiudi
+
+about-private-browsing-dismiss-button =
+  .title = Rimuovi
+about-private-browsing-promo-close-button =
+  .title = Chiudi

@@ -22,9 +22,9 @@ graph-private-window = { -brand-short-name } terus memblokir pelacak di Jendela 
 graph-week-summary-private-window = Pelacak { -brand-short-name } diblokir pekan ini
 protection-report-webpage-title = Dasbor Perlindungan
 protection-report-page-content-title = Dasbor Perlindungan
-# This message shows when all privacy protections are turned off, which is why we use the word "can", Floorp is able to protect your privacy, but it is currently not.
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
 protection-report-page-summary = { -brand-short-name } dapat melindungi privasi Anda di balik layar ketika Anda menjelajah. Ini adalah ringkasan perlindungan tersebut yang dipersonalisasi, termasuk alat untuk mengendalikan keamanan daring Anda.
-# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Floorp is actively protecting you.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
 protection-report-page-summary-default = { -brand-short-name } melindungi privasi Anda di balik layar ketika Anda menjelajah. Ini adalah ringkasan dari perlindungan tersebut yang dipersonalisasi, termasuk peralatan untuk mengendalikan keamanan daring Anda.
 protection-report-settings-link = Kelola pengaturan privasi dan keamanan Anda.
 etp-card-title-always = Perlindungan Pelacakan yang Ditingkatkan: Selalu Aktif
@@ -56,6 +56,8 @@ mobile-app-links = Peramban { -brand-product-name } untuk <a data-l10n-name="and
 lockwise-title = Jangan pernah lupa kata sandi lagi
 lockwise-title-logged-in2 = Pengelolaan Kata Sandi
 lockwise-header-content = { -lockwise-brand-name } menyimpan sandi di peramban Anda dengan aman.
+passwords-title-logged-in = Kelola kata sandi Anda
+passwords-header-content = { -brand-product-name } menyimpan sandi di peramban Anda dengan aman.
 lockwise-header-content-logged-in = Simpan dan sinkronkan sandi dengan aman ke semua perangkat Anda.
 protection-report-save-passwords-button = Simpan Kata Sandi
     .title = Simpan Kata Sandi di { -lockwise-brand-short-name }

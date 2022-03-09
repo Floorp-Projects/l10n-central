@@ -12,7 +12,7 @@ process-type-web = Web-indhold
 # such as about:home
 process-type-privilegedabout = Priviligerede About-sider
 # process used to run privileged mozilla pages,
-# such as accounts.Floorp.com
+# such as accounts.firefox.com
 process-type-privilegedmozilla = Priviligeret Mozilla-indhold
 process-type-extension = Udvidelse
 # process used to open file:// URLs

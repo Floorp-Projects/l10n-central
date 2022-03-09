@@ -33,10 +33,14 @@ pocket-panel-signup-learn-more = 詳細
 pocket-panel-signup-login = ログイン
 pocket-panel-signup-signup-email = メールアドレスで新規登録
 pocket-panel-signup-signup-cta = { -pocket-brand-name } にユーザー登録しましょう。無料です。
-pocket-panel-signup-signup-Floorp = { -brand-product-name } で新規登録
+pocket-panel-signup-signup-firefox = { -brand-product-name } で新規登録
 pocket-panel-signup-tagline = { -brand-product-name } で記事や動画を保存すると、いつでもどこでも { -pocket-brand-name } で閲覧できます。
 pocket-panel-signup-tagline-story-one = { -brand-product-name } で { -pocket-brand-name } ボタンをクリックすると、様々な記事や動画やページを保存できます。
 pocket-panel-signup-tagline-story-two = { -pocket-brand-name } でいつでもどこでも閲覧できます。
+
+pocket-panel-signup-cta-a = インターネットの保存ボタンです。
+pocket-panel-signup-cta-b = { -pocket-brand-name } ボタンをクリックすると記事、動画、リンクを保存できます。いつでもどの端末からでも保存リストを開けます。
+pocket-panel-signup-cta-c = いつでもどの端末からでも保存リストを開けます。
 
 ## about:pocket-home panel
 
@@ -46,3 +50,18 @@ pocket-panel-home-paragraph = { -pocket-brand-name } でウェブページ、記
 pocket-panel-home-explore-popular-topics = 人気の記事を探す
 pocket-panel-home-discover-more = その他の記事を見る
 pocket-panel-home-explore-more = 探す
+
+pocket-panel-home-most-recent-saves = 最近保存したものはこちら:
+pocket-panel-home-new-user-cta = { -pocket-brand-name } ボタンをクリックすると記事、動画、リンクを保存できます。
+pocket-panel-home-new-user-message = 最近保存したものを表示します。
+
+## Pocket panel header component
+
+pocket-panel-header-my-list = マイリストを表示
+pocket-panel-header-sign-in = ログイン
+
+## Pocket panel buttons
+
+pocket-panel-button-show-all = すべて表示
+pocket-panel-button-add-tags = タグをつける
+pocket-panel-button-activate = { -brand-product-name } で { -pocket-brand-name } を有効化

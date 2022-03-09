@@ -21,9 +21,11 @@ toolbox-meatball-menu-settings-label = Einstellungen
 toolbox-meatball-menu-documentation-label = Dokumentation…
 toolbox-meatball-menu-community-label = Gemeinschaft…
 # This menu item is only available in the browser toolbox. It forces the popups/panels
-# to stay visible on blur, which is primarily useful for addon developers and Floorp
+# to stay visible on blur, which is primarily useful for addon developers and Firefox
 # contributors.
 toolbox-meatball-menu-noautohide-label = Popups nicht automatisch ausblenden
+toolbox-meatball-menu-pseudo-locale-accented = "accented"-Sprache aktivieren
+toolbox-meatball-menu-pseudo-locale-bidi = "bidi"-Sprache aktivieren
 
 ##
 

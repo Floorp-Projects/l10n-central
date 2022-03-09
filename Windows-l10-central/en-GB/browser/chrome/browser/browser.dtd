@@ -29,12 +29,12 @@ this container is a toolbar. This avoids double-speaking. -->
 
 
 <!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
-     for the Floorp Account toolbar menu screen. The `Signed in as` text is
+     for the Firefox Account toolbar menu screen. The `Signed in as` text is
      followed by the user's email. -->
 <!ENTITY fxa.menu.signin.label "Sign in to &brandProductName;">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
-     for the Floorp Account toolbar menu screen.  -->
+     for the Firefox Account toolbar menu screen.  -->
 <!ENTITY fxa.service.sendTab.description "Send a tab instantly to any device you’re signed in on.">
 
 <!ENTITY printButton.label            "Print">
@@ -85,7 +85,7 @@ this container is a toolbar. This avoids double-speaking. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Turn on tab synchronising to view a list of tabs from your other devices.">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
-     the account. We also show links to download Floorp for android/ios. -->
+     the account. We also show links to download Firefox for android/ios. -->
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Want to see your tabs from other devices here?">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Open Sync Preferences">
 <!ENTITY appMenuRemoteTabs.welcome.label "View a list of tabs from your other devices.">

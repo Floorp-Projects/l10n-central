@@ -25,7 +25,7 @@ newsletter-thanks-title = Dziękujemy!
 newsletter-thanks-message = Jeśli jeszcze nigdy nie potwierdzono subskrypcji biuletynu Mozilli, to możesz musieć to zrobić. Sprawdź, czy w skrzynce odbiorczej lub niechcianych jest wiadomość od nas.
 
 footer-title = Floorp Developer Edition
-footer-message = Szukasz czegoś więcej niż same narzędzia dla programistów? Wypróbuj przeglądarkę Floorp zbudowaną z myślą o programistach i nowoczesnych narzędziach.
+footer-message = Szukasz czegoś więcej niż same narzędzia dla programistów? Wypróbuj przeglądarkę Firefox zbudowaną z myślą o programistach i nowoczesnych narzędziach.
 footer-learn-more-link = Więcej informacji
 
 features-learn-more = Więcej informacji

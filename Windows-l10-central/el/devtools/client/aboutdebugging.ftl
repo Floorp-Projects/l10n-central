@@ -11,17 +11,17 @@
 # Page title (ie tab title) for the Setup page
 about-debugging-page-title-setup-page = Έλεγχος σφαλμάτων - Ρύθμιση
 # Page title (ie tab title) for the Runtime page
-# { $selectedRuntimeId } is the id of the current runtime, such as "this-Floorp", "localhost:6080", ...
+# { $selectedRuntimeId } is the id of the current runtime, such as "this-firefox", "localhost:6080", ...
 about-debugging-page-title-runtime-page = Έλεγχος σφαλμάτων - Εκτέλεση/{ $selectedRuntimeId }
 
 # Sidebar strings
 
-# Display name of the runtime for the currently running instance of Floorp. Used in the
+# Display name of the runtime for the currently running instance of Firefox. Used in the
 # Sidebar and in the Setup page.
-about-debugging-this-Floorp-runtime-name = { -brand-shorter-name }
-# Sidebar heading for selecting the currently running instance of Floorp
-about-debugging-sidebar-this-Floorp =
-    .name = { about-debugging-this-Floorp-runtime-name }
+about-debugging-this-firefox-runtime-name = { -brand-shorter-name }
+# Sidebar heading for selecting the currently running instance of Firefox
+about-debugging-sidebar-this-firefox =
+    .name = { about-debugging-this-firefox-runtime-name }
 # Sidebar heading for connecting to some remote source
 about-debugging-sidebar-setup =
     .name = Ρύθμιση
@@ -49,8 +49,8 @@ about-debugging-sidebar-item-connect-button-connection-not-responding = Η σύ�
 # Text displayed as connection error in sidebar item when the connection has timed out.
 about-debugging-sidebar-item-connect-button-connection-timeout = Το χρονικό όριο σύνδεσης έληξε
 # Text displayed in sidebar items for remote devices where a compatible browser (eg
-# Floorp) has not been detected yet. Typically, Android phones connected via USB with
-# USB debugging enabled, but where Floorp is not started.
+# Firefox) has not been detected yet. Typically, Android phones connected via USB with
+# USB debugging enabled, but where Firefox is not started.
 about-debugging-sidebar-runtime-item-waiting-for-browser = Αναμονή για το πρόγραμμα περιήγησης…
 # Text displayed in sidebar items for remote devices that have been disconnected from the
 # computer.
@@ -79,8 +79,8 @@ about-debugging-refresh-usb-devices-button = Ανανέωση συσκευών
 about-debugging-setup-title = Ρύθμιση
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = Ρυθμίστε τη μέθοδο σύνδεσης για απομακρυσμένο έλεγχο σφαλμάτων στη συσκευή σας.
-# Explanatory text in the Setup page about what the 'This Floorp' page is for
-about-debugging-setup-this-Floorp2 = Χρησιμοποιήστε την επιλογή <a>{ about-debugging-this-Floorp-runtime-name }</a> για να κάνετε έλεγχο σφαλμάτων στις επεκτάσεις και τα service worker σε αυτή την έκδοση του { -brand-shorter-name }.
+# Explanatory text in the Setup page about what the 'This Firefox' page is for
+about-debugging-setup-this-firefox2 = Χρησιμοποιήστε την επιλογή <a>{ about-debugging-this-firefox-runtime-name }</a> για να κάνετε έλεγχο σφαλμάτων στις επεκτάσεις και τα service worker σε αυτή την έκδοση του { -brand-shorter-name }.
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = Σύνδεση συσκευής
 # USB section of the Setup page
@@ -104,7 +104,7 @@ about-debugging-setup-usb-step-enable-dev-menu2 = Ενεργοποιήστε τ�
 # USB section step by step guide
 about-debugging-setup-usb-step-enable-debug2 = Ενεργοποιήστε το «Εντοπισμός σφαλμάτων μέσω USB» στο μενού προγραμματιστή Android.
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug-Floorp2 = Ενεργοποιήστε τον έλεγχο σφαλμάτων μέσω USB στο Floorp της Android συσκευής σας.
+about-debugging-setup-usb-step-enable-debug-firefox2 = Ενεργοποιήστε τον έλεγχο σφαλμάτων μέσω USB στο Firefox της Android συσκευής σας.
 # USB section step by step guide
 about-debugging-setup-usb-step-plug-device = Συνδέστε τη συσκευή Android στον υπολογιστή σας.
 # Text shown in the USB section of the setup page with a link to troubleshoot connection errors.
@@ -141,7 +141,7 @@ about-debugging-network-location-form-duplicate = Ο κεντρικός υπολ
 
 # Below are the titles for the various categories of debug targets that can be found
 # on "runtime" pages of about:debugging.
-# Title of the temporary extensions category (only available for "This Floorp" runtime).
+# Title of the temporary extensions category (only available for "This Firefox" runtime).
 about-debugging-runtime-temporary-extensions =
     .name = Προσωρινές επεκτάσεις
 # Title of the extensions category.
@@ -172,20 +172,20 @@ about-debugging-runtime-service-workers-not-compatible = Οι ρυθμίσεις
 # This string is displayed in the runtime page if the remote browser version is too old.
 # "Troubleshooting" link points to https://developer.mozilla.org/docs/Tools/about:debugging#Troubleshooting
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
-# { $minVersion } is the minimum version that is compatible with the current Floorp instance (same format)
+# { $minVersion } is the minimum version that is compatible with the current Firefox instance (same format)
 about-debugging-browser-version-too-old = Το συνδεδεμένο πρόγραμμα περιήγησης έχει παλιά έκδοση ({ $runtimeVersion }). Η ελάχιστη υποστηριζόμενη έκδοση είναι ({ $minVersion }).  Πρόκειται για μη υποστηριζόμενη ρύθμιση και ενδέχεται να προκαλέσει αποτυχία του DevTools. Παρακαλούμε ενημερώστε το συνδεδεμένο πρόγραμμα περιήγησης. <a>Αντιμετώπιση προβλημάτων</a>
 # Dedicated message for a backward compatibility issue that occurs when connecting:
-# from Fx 70+ to the old Floorp for Android (aka Fennec) which uses Fx 68.
-about-debugging-browser-version-too-old-fennec = Αυτή η έκδοση του Floorp δεν μπορεί να χρησιμοποιηθεί για έλεγχο σφαλμάτων στο Floorp για Android (68). Προτείνουμε να εγκαταστήσετε το Floorp για Android Nightly στο τηλέφωνό σας για δοκιμή. <a>Περισσότερες λεπτομέρειες</a>
+# from Fx 70+ to the old Firefox for Android (aka Fennec) which uses Fx 68.
+about-debugging-browser-version-too-old-fennec = Αυτή η έκδοση του Firefox δεν μπορεί να χρησιμοποιηθεί για έλεγχο σφαλμάτων στο Firefox για Android (68). Προτείνουμε να εγκαταστήσετε το Firefox για Android Nightly στο τηλέφωνό σας για δοκιμή. <a>Περισσότερες λεπτομέρειες</a>
 # This string is displayed in the runtime page if the remote browser version is too recent.
 # "Troubleshooting" link points to https://developer.mozilla.org/docs/Tools/about:debugging#Troubleshooting
 # { $runtimeID } is the build ID of the remote browser (for instance "20181231", format is yyyyMMdd)
-# { $localID } is the build ID of the current Floorp instance (same format)
+# { $localID } is the build ID of the current Firefox instance (same format)
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
 # { $localVersion } is the version of your current browser (same format)
-about-debugging-browser-version-too-recent = Το συνδεδεμένο πρόγραμμα περιήγησης είναι πιο πρόσφατο ({ $runtimeVersion }, buildID { $runtimeID }) από το { -brand-shorter-name } ({ $localVersion }, buildID { $localID }) σας. Πρόκειται για μη υποστηριζόμενη ρύθμιση και ενδέχεται να προκαλέσει αποτυχία του DevTools. Παρακαλούμε ενημερώστε το Floorp. <a>Αντιμετώπιση προβλημάτων</a>
+about-debugging-browser-version-too-recent = Το συνδεδεμένο πρόγραμμα περιήγησης είναι πιο πρόσφατο ({ $runtimeVersion }, buildID { $runtimeID }) από το { -brand-shorter-name } ({ $localVersion }, buildID { $localID }) σας. Πρόκειται για μη υποστηριζόμενη ρύθμιση και ενδέχεται να προκαλέσει αποτυχία του DevTools. Παρακαλούμε ενημερώστε το Firefox. <a>Αντιμετώπιση προβλημάτων</a>
 # Displayed for runtime info in runtime pages.
-# { $name } is brand name such as "Floorp Nightly"
+# { $name } is brand name such as "Firefox Nightly"
 # { $version } is version such as "64.0a1"
 about-debugging-runtime-name = { $name } ({ $version })
 # Text of a button displayed in Runtime pages for remote runtimes.
@@ -213,15 +213,15 @@ about-debugging-debug-target-list-empty = Τίποτα ακόμα.
 # button will open a DevTools toolbox that will allow inspecting the target.
 # A target can be an addon, a tab, a worker...
 about-debugging-debug-target-inspect-button = Επιθεώρηση
-# Text of a button displayed in the "This Floorp" page, in the Temporary Extension
+# Text of a button displayed in the "This Firefox" page, in the Temporary Extension
 # section. Clicking on the button will open a file picker to load a temporary extension
 about-debugging-tmp-extension-install-button = Φόρτωση προσωρινού προσθέτου…
-# Text displayed when trying to install a temporary extension in the "This Floorp" page.
+# Text displayed when trying to install a temporary extension in the "This Firefox" page.
 about-debugging-tmp-extension-install-error = Προέκυψε σφάλμα κατά την εγκατάσταση προσωρινού προσθέτου.
-# Text of a button displayed for a temporary extension loaded in the "This Floorp" page.
+# Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will reload the extension.
 about-debugging-tmp-extension-reload-button = Ανανέωση
-# Text of a button displayed for a temporary extension loaded in the "This Floorp" page.
+# Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will uninstall the extension and remove it from the page.
 about-debugging-tmp-extension-remove-button = Αφαίρεση
 # Message displayed in the file picker that opens to select a temporary extension to load

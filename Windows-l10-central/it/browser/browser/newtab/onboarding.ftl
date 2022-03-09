@@ -87,14 +87,14 @@ onboarding-multistage-theme-label-dark = Scuro
 onboarding-multistage-theme-label-alpenglow = Floorp Alpenglow
 # "Hero Text" displayed on left side of welcome screen.
 # The "Fire" in "Fire starts here" plays on the "Fire" in "Floorp".
-# It also signals the passion users bring to Floorp, how they use
-# Floorp to pursue those passions, as well as the boldness in their
-# choice to use Floorp over a larger competitor browser.
+# It also signals the passion users bring to Firefox, how they use
+# Firefox to pursue those passions, as well as the boldness in their
+# choice to use Firefox over a larger competitor browser.
 # An alternative title for localization is: "It starts here".
 mr1-welcome-screen-hero-text = Cominciamo da qui
 # Caption for background image in about:welcome. "Soraya Osorio" is the name
 # of the person and shouldn't be translated.
-mr1-onboarding-welcome-image-caption = Soraya Osorio — Designer di mobili, fan di Floorp
+mr1-onboarding-welcome-image-caption = Soraya Osorio — Designer di mobili, fan di Firefox
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = Disattiva animazioni
 
@@ -102,13 +102,13 @@ mr1-onboarding-reduce-motion-button-label = Disattiva animazioni
 ## match the OS' application context menu item action where Windows uses "pin"
 ## and "taskbar" while macOS "keep" and "Dock" (proper noun).
 
-# Title used on welcome page when Floorp is not pinned
+# Title used on welcome page when Firefox is not pinned
 mr1-onboarding-pin-header =
     { PLATFORM() ->
         [macos] Mantieni { -brand-short-name } nel Dock per un accesso più rapido
        *[other] Aggiungi { -brand-short-name } alla barra delle applicazioni per un accesso più rapido
     }
-# Primary button string used on welcome page when Floorp is not pinned.
+# Primary button string used on welcome page when Firefox is not pinned.
 mr1-onboarding-pin-primary-button-label =
     { PLATFORM() ->
         [macos] Mantieni nel Dock
@@ -118,7 +118,7 @@ mr1-onboarding-pin-primary-button-label =
 ## Multistage MR1 onboarding strings (about:welcome pages)
 
 # This string will be used on welcome page primary button label
-# when Floorp is both pinned and default
+# when Firefox is both pinned and default
 mr1-onboarding-get-started-primary-button-label = Inizia
 mr1-onboarding-welcome-header = Benvenuto in { -brand-short-name }
 mr1-onboarding-set-default-pin-primary-button-label = Imposta { -brand-short-name } come browser principale
@@ -128,7 +128,7 @@ mr1-onboarding-set-default-secondary-button-label = Non adesso
 mr1-onboarding-sign-in-button-label = Accedi
 
 ## Title, subtitle and primary button string used on set default onboarding screen
-## when Floorp is not default browser
+## when Firefox is not default browser
 
 mr1-onboarding-default-header = Imposta { -brand-short-name } come browser predefinito
 mr1-onboarding-default-subtitle = Velocità, sicurezza e privacy senza preoccupazioni.
@@ -138,7 +138,7 @@ mr1-onboarding-default-primary-button-label = Imposta come browser predefinito
 
 mr1-onboarding-import-header = Porta tutto con te
 mr1-onboarding-import-subtitle = Importa password, segnalibri<br/>e altro ancora.
-# The primary import button label will depend on whether we can detect which browser was used to download Floorp.
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
 # Variables:
 #   $previous (Str) - Previous browser name, such as Edge, Chrome
 mr1-onboarding-import-primary-button-label-attribution = Importa da { $previous }
@@ -283,18 +283,10 @@ mr2-onboarding-colorway-tooltip =
 # Selector description for colorway
 # Variables:
 #   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-description =
-    .aria-description = Scopri le tonalità { $colorwayName }.
-# Selector description for colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
 mr2-onboarding-colorway-label = Scopri le tonalità { $colorwayName }.
 # Tooltip displayed on hover of default themes
 mr2-onboarding-default-theme-tooltip =
     .title = Scopri i temi predefiniti.
-# Selector description for default themes
-mr2-onboarding-default-theme-description =
-    .aria-description = Scopri i temi predefiniti.
 # Selector description for default themes
 mr2-onboarding-default-theme-label = Scopri i temi predefiniti.
 
@@ -303,3 +295,24 @@ mr2-onboarding-default-theme-label = Scopri i temi predefiniti.
 mr2-onboarding-thank-you-header = Grazie per averci scelto
 mr2-onboarding-thank-you-text = { -brand-short-name } è un browser indipendente sostenuto da un’organizzazione senza fini di lucro. Insieme possiamo rendere il Web più sicuro, più sano e più rispettoso della privacy.
 mr2-onboarding-start-browsing-button-label = Inizia a navigare
+
+## Multistage live language reloading onboarding strings (about:welcome pages)
+##
+## The following language names are generated by the browser's Intl.DisplayNames API.
+##
+## Variables:
+##   $appLanguage (String) - The name of Firefox's language, e.g. "American English"
+##   $systemLanguage (String) - The name of the OS's language, e.g. "European Spanish"
+##   $negotiatedLanguage (String) - The name of the langpack's language, e.g. "European Spanish"
+
+onboarding-live-language-header = Scegli la tua lingua
+onboarding-live-language-subtitle = { -brand-short-name } sta utilizzando { $appLanguage } mentre il tuo sistema utilizza { $systemLanguage }.
+
+onboarding-live-language-switch-button-label = Passa a { $negotiatedLanguage }
+onboarding-live-language-button-label-downloading = Download del pacchetto lingua per { $negotiatedLanguage }…
+onboarding-live-language-waiting-subtitle = Sembra che il tuo sistema e { -brand-short-name } stiano utilizzando lingue diverse.
+onboarding-live-language-waiting-button = Recupero elenco delle lingue disponibili…
+onboarding-live-language-installing = Installazione del pacchetto lingua per { $negotiatedLanguage }…
+onboarding-live-language-secondary-cancel-download = Annulla
+onboarding-live-language-not-now-button-label = Non adesso
+onboarding-live-language-skip-button-label = Salta

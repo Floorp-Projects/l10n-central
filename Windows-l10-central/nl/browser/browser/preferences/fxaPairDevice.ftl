@@ -6,9 +6,9 @@ fxa-pair-device-dialog =
     .title = Een ander apparaat verbinden
     .style = width: 26em; min-height: 35em;
 
-fxa-qrcode-heading-step1 = 1. Installeer <a data-l10n-name="connect-another-device">Floorp op uw mobiele apparaat</a> als u dat nog niet hebt gedaan.
+fxa-qrcode-heading-step1 = 1. Installeer <a data-l10n-name="connect-another-device">Firefox op uw mobiele apparaat</a> als u dat nog niet hebt gedaan.
 
-fxa-qrcode-heading-step2 = 2. Open Floorp op uw mobiele apparaat.
+fxa-qrcode-heading-step2 = 2. Open Firefox op uw mobiele apparaat.
 
 fxa-qrcode-heading-step3 = 3. Open het <b>menu</b> (<img data-l10n-name="ios-menu-icon"/> of <img data-l10n-name="android-menu-icon"/>), tik op <img data-l10n-name="settings-icon"/> <b>Instellingen</b> en selecteer <b>Sync inschakelen</b>
 

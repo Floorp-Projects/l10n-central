@@ -9,7 +9,7 @@
 
 perftools-intro-title = Profiler-Einstellungen
 perftools-intro-description =
-    Aufnahmen öffnen profiler.Floorp.com in einem neuen Tab. Alle Daten werden lokal 
+    Aufnahmen öffnen profiler.firefox.com in einem neuen Tab. Alle Daten werden lokal 
     gespeichert, können aber zum Teilen hochgeladen werden.
 
 ## All of the headings for the various sections.
@@ -25,7 +25,7 @@ perftools-heading-local-build = Lokaler Build
 
 ##
 
-perftools-description-intro = Aufnahmen öffnen <a>profiler.Floorp.com</a> in einem neuen Tab. Alle Daten werden lokal gespeichert, können aber zum Teilen hochgeladen werden.
+perftools-description-intro = Aufnahmen öffnen <a>profiler.firefox.com</a> in einem neuen Tab. Alle Daten werden lokal gespeichert, können aber zum Teilen hochgeladen werden.
 perftools-description-local-build =
     Wenn Sie einen auf diesem Computer selbst kompilierten Build untersuchen,
     fügen Sie bitte das objdir des Build zur folgenden Liste hinzu, sodass es
@@ -121,14 +121,14 @@ perftools-onboarding-close-button =
 
 perftools-presets-web-developer-label = Web-Entwickler
 perftools-presets-web-developer-description = Empfohlene Voreinstellung für das Debuggen der meisten Web-Apps mit geringem Overhead.
-perftools-presets-Floorp-platform-label = Floorp-Plattform
-perftools-presets-Floorp-platform-description = Empfohlene Voreinstellung für das interne Debugging der Floorp-Plattform.
-perftools-presets-Floorp-front-end-label = Floorp-Frontend
-perftools-presets-Floorp-front-end-description = Empfohlene Voreinstellung für das interne Debugging des Floorp-Frontend.
-perftools-presets-Floorp-graphics-label = Floorp-Grafik
-perftools-presets-Floorp-graphics-description = Empfohlene Voreinstellung für das Untersuchen der Grafikleistung von Floorp.
-perftools-presets-Floorp-label = { -brand-shorter-name }
-perftools-presets-Floorp-description = Empfohlene Voreinstellung für die Leistungsanalyse von { -brand-shorter-name }.
+perftools-presets-firefox-platform-label = Floorp-Plattform
+perftools-presets-firefox-platform-description = Empfohlene Voreinstellung für das interne Debugging der Firefox-Plattform.
+perftools-presets-firefox-front-end-label = Floorp-Frontend
+perftools-presets-firefox-front-end-description = Empfohlene Voreinstellung für das interne Debugging des Firefox-Frontend.
+perftools-presets-firefox-graphics-label = Floorp-Grafik
+perftools-presets-firefox-graphics-description = Empfohlene Voreinstellung für das Untersuchen der Grafikleistung von Firefox.
+perftools-presets-firefox-label = { -brand-shorter-name }
+perftools-presets-firefox-description = Empfohlene Voreinstellung für die Leistungsanalyse von { -brand-shorter-name }.
 perftools-presets-graphics-label = Grafik
 perftools-presets-graphics-description = Voreinstellung zur Untersuchung von Grafikproblemen in { -brand-shorter-name }.
 perftools-presets-media-label = Medien

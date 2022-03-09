@@ -259,6 +259,18 @@ cloud-file-service-provider-footer =
         [one] Μάθετε περισσότερα σχετικά με το { $lastLink }.
        *[other] Μάθετε περισσότερα σχετικά με το { $firstLinks } και το { $lastLink }.
     }
+# A text used in a footer, instructing the reader where to find additional
+# information about the used service provider.
+# $link (string) - html a-tag for a link pointing to the web page of the provider
+cloud-file-service-provider-footer-single = Μάθετε περισσότερα σχετικά με το { $link }.
+# A text used in a footer, instructing the reader where to find additional
+# information about the used service providers. Links for the used providers are
+# split into a comma separated list of the first n-1 providers and a single entry
+# at the end.
+# $firstLinks (string) - comma separated list of html a-tags pointing to web pages
+#                        of the first n-1 used providers
+# $lastLink (string) - html a-tag pointing the web page of the n-th used provider
+cloud-file-service-provider-footer-multiple = Μάθετε περισσότερα σχετικά με το { $firstLinks } και το { $lastLink }.
 # Tooltip for an icon, indicating that the link is protected by a password.
 cloud-file-tooltip-password-protected-link = Σύνδεσμος με κωδικό πρόσβασης
 # Used in a list of stats about a specific file
@@ -279,6 +291,7 @@ cloud-file-template-download-limit = Όριο λήψεων:
 
 # $provider (string) - name of the online storage service that reported the error
 cloud-file-connection-error-title = Σφάλμα σύνδεσης
+cloud-file-connection-error = Το { -brand-short-name } είναι εκτός σύνδεσης. Δεν ήταν δυνατή η σύνδεση στο { $provider }.
 # $provider (string) - name of the online storage service that reported the error
 # $filename (string) - name of the file that was uploaded and caused the error
 cloud-file-upload-error-with-custom-message-title = Το ανέβασμα του { $filename } στο { $provider } απέτυχε

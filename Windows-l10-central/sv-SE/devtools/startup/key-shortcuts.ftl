@@ -6,9 +6,9 @@
 devtools-commandkey-toggle-toolbox = I
 # Alternative key pressed to open a toolbox with the default panel selected
 devtools-commandkey-toggle-toolbox-f12 = VK_F12
-# Key pressed to open the Browser Toolbox, used for debugging Floorp itself
+# Key pressed to open the Browser Toolbox, used for debugging Firefox itself
 devtools-commandkey-browser-toolbox = I
-# Key pressed to open the Browser Console, used for debugging Floorp itself
+# Key pressed to open the Browser Console, used for debugging Firefox itself
 devtools-commandkey-browser-console = J
 # Key pressed to toggle on the Responsive Design Mode
 devtools-commandkey-responsive-design-mode = M

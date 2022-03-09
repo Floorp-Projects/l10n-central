@@ -19,6 +19,9 @@ extension-floorp-lepton-description = 将水平标签移到书签栏的底部。
 extension-floorp-edge-name= 优化垂直标签的 Floorp（系统主题）。
 extension-floorp-edge-description= 优化垂直标签的 Floorp。 水平标签将被隐藏，无法使用。
 
+extension-floorp-Kanaze-name= 金泽项目主题
+extension-floorp-edge-description= 金泽项目的特点。 有限时间的主题。 更多信息请见网站。
+
 ## Colorway Themes
 ## These themes are variants of a colorway. The colorway is specified in the
 ## $colorway-name variable.

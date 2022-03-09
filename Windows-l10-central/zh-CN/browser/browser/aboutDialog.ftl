@@ -39,7 +39,6 @@ warningDesc-version = { -brand-short-name } 是实验性的测试版本，可能
 
 aboutdialog-help-user = { -brand-product-name } 帮助
 aboutdialog-submit-feedback = 提交反馈
-iconprov = Floorp Legacy 图标创建者: <label data-l10n-name="iconprov-Link">@kotaten_kt</label>
 
 community-exp = <label data-l10n-name="community-exp-mozillaLink">{ -vendor-short-name }</label> 是一个<label data-l10n-name="community-exp-creditsLink">全球社区</label>，携手致力于让互联网保持开放、公开且人人可用。
 
@@ -53,13 +52,13 @@ bottomLinks-privacy = 隐私政策
 
 # Example of resulting string: 66.0.1 (64-bit)
 # Variables:
-#   $version (String): version of Floorp, e.g. 66.0.1
+#   $version (String): version of Firefox, e.g. 66.0.1
 #   $bits (Number): bits of the architecture (32 or 64)
 aboutDialog-version = { $version } ({ $bits } 位)
 
 # Example of resulting string: 66.0a1 (2019-01-16) (64-bit)
 # Variables:
-#   $version (String): version of Floorp for Nightly builds, e.g. 66.0a1
+#   $version (String): version of Firefox for Nightly builds, e.g. 66.0a1
 #   $isodate (String): date in ISO format, e.g. 2019-01-16
 #   $bits (Number): bits of the architecture (32 or 64)
 aboutDialog-version-nightly = { $version } ({ $isodate }) ({ $bits } 位)

@@ -13,5 +13,5 @@ account-disconnected2 = 계정 연결 끊김
 # Menu item that sends a tab to all synced devices.
 account-send-to-all-devices = 모든 기기에 보내기
 
-# Menu item that links to the Floorp Accounts settings for connected devices.
+# Menu item that links to the Firefox Accounts settings for connected devices.
 account-manage-devices = 기기 관리…

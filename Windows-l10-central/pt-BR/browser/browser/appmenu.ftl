@@ -72,7 +72,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = Tela inteira
 
-## Floorp Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = Entrar no Sync…
@@ -89,7 +89,7 @@ appmenu-remote-tabs-tabsnotsyncing = Ative a sincronização de abas para ver um
 appmenu-remote-tabs-opensettings =
     .label = Configurações
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Floorp for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Quer ver aqui suas abas de outros dispositivos?
 appmenu-remote-tabs-connectdevice =
     .label = Conectar outro dispositivo
@@ -121,8 +121,8 @@ whatsnew-panel-footer-checkbox =
     .label = Me notificar sobre novos recursos
     .accesskey = f
 
-## The Floorp Profiler – The popup is the UI to turn on the profiler, and record
-## performance profiles. To enable it go to profiler.Floorp.com and click
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
 profiler-popup-button-idle =
@@ -148,10 +148,10 @@ profiler-popup-settings =
     .value = Configurações
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Editar configurações…
+profiler-popup-disabled = O profiler está desativado no momento, provavelmente devido a estar aberta uma janela de navegação privativa.
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings-button =
     .label = Editar configurações…
-profiler-popup-disabled = O profiler está desativado no momento, provavelmente devido a estar aberta uma janela de navegação privativa.
 profiler-popup-recording-screen = Gravando…
 # The profiler presets list is generated elsewhere, but the custom preset is defined
 # here only.
@@ -185,18 +185,8 @@ profiler-popup-capture-shortcut =
 profiler-popup-presets-web-developer-description = Ajuste prévio recomendado para depuração da maioria dos aplicativos web, com pouca sobrecarga.
 profiler-popup-presets-web-developer-label =
     .label = Desenvolvimento web
-profiler-popup-presets-Floorp-platform-description = Ajuste prévio recomendado para depuração de aspectos internos da plataforma Floorp.
-profiler-popup-presets-Floorp-platform-label =
-    .label = Plataforma Floorp
-profiler-popup-presets-Floorp-front-end-description = Ajuste prévio recomendado para depuração de aspectos internos da interface do usuário (front-end) do Floorp.
-profiler-popup-presets-Floorp-front-end-label =
-    .label = Interface do usuário do Floorp
-profiler-popup-presets-Floorp-graphics-description = Ajuste prévio recomendado para investigação de desempenho gráfico do Floorp.
-profiler-popup-presets-Floorp-graphics-label =
-    .label = Gráfico do Floorp
-profiler-popup-presets-media-description = Ajuste prévio recomendado para diagnosticar problemas de áudio e vídeo.
-profiler-popup-presets-Floorp-description = Predefinição recomendada para gravação de profile no { -brand-shorter-name }.
-profiler-popup-presets-Floorp-label =
+profiler-popup-presets-firefox-description = Predefinição recomendada para gravação de profile no { -brand-shorter-name }.
+profiler-popup-presets-firefox-label =
     .label = { -brand-shorter-name }
 profiler-popup-presets-graphics-description = Predefinição para investigar bugs gráficos no { -brand-shorter-name }.
 profiler-popup-presets-graphics-label =
@@ -244,6 +234,9 @@ appmenu-help-report-site-issue =
 appmenu-help-feedback-page =
     .label = Enviar opinião…
     .accesskey = n
+appmenu-help-share-ideas =
+    .label = Compartilhe ideias e comentários…
+    .accesskey = C
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

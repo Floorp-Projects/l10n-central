@@ -4,7 +4,7 @@
 
 
 ## The Enterprise Policies feature is aimed at system administrators
-## who want to deploy these settings across several Floorp installations
+## who want to deploy these settings across several Firefox installations
 ## all at once. This is traditionally done through the Windows Group Policy
 ## feature, but the system also supports other forms of deployment.
 ## These are short descriptions for individual policies, to be displayed
@@ -54,12 +54,12 @@ policy-DisableDeveloperTools = A fejlesztői eszközökhöz hozzáférés blokko
 
 policy-DisableFeedbackCommands = A visszajelzés küldési parancsok letiltása a Súgó menüben (Visszajelzés beküldése és Félrevezető oldal jelentése).
 
-policy-DisableFloorpAccounts = A { -fxaccount-brand-name } alapú szolgáltatások letiltása, beleértve a Syncet.
+policy-DisableFirefoxAccounts = A { -fxaccount-brand-name } alapú szolgáltatások letiltása, beleértve a Syncet.
 
-# Floorp Screenshots is the name of the feature, and should not be translated.
-policy-DisableFloorpScreenshots = A Floorp Screenshots funkció letiltása.
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = A Firefox Screenshots funkció letiltása.
 
-policy-DisableFloorpStudies = Annak a megakadályozása, hogy a { -brand-short-name } tanulmányokat futtasson.
+policy-DisableFirefoxStudies = Annak a megakadályozása, hogy a { -brand-short-name } tanulmányokat futtasson.
 
 policy-DisableForgetButton = Az Elfelejtés gombhoz hozzáférés megakadályozása.
 
@@ -112,7 +112,7 @@ policy-ExtensionSettings = Kezelje a kiegészítők telepítésének összes von
 
 policy-ExtensionUpdate = Az automatikus kiegészítőfrissítések engedélyezése vagy letiltása.
 
-policy-FloorpHome = A Floorp kezdőlap beállítása.
+policy-FirefoxHome = A Firefox kezdőlap beállítása.
 
 policy-FlashPlugin = A Flash bővítmény használatának engedélyezése vagy tiltása.
 

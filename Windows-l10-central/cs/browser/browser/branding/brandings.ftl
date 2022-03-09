@@ -35,13 +35,13 @@
     .gender = masculine
 -lockwise-brand-name =
     { $case ->
-       *[nom] Floorp Lockwise
-        [gen] Floorpu Lockwise
-        [dat] Floorpu Lockwise
-        [acc] Floorp Lockwise
-        [voc] Floorpe Lockwise
-        [loc] Floorpu Lockwise
-        [ins] Floorpem Lockwise
+       *[nom] Firefox Lockwise
+        [gen] Firefoxu Lockwise
+        [dat] Firefoxu Lockwise
+        [acc] Firefox Lockwise
+        [voc] Firefoxe Lockwise
+        [loc] Firefoxu Lockwise
+        [ins] Firefoxem Lockwise
     }
     .gender = masculine
 -lockwise-brand-short-name =
@@ -57,13 +57,13 @@
     .gender = masculine
 -monitor-brand-name =
     { $case ->
-       *[nom] Floorp Monitor
-        [gen] Floorp Monitoru
-        [dat] Floorp Monitoru
-        [acc] Floorp Monitor
-        [voc] Floorp Monitore
-        [loc] Floorp Monitoru
-        [ins] Floorp Monitorem
+       *[nom] Firefox Monitor
+        [gen] Firefox Monitoru
+        [dat] Firefox Monitoru
+        [acc] Firefox Monitor
+        [voc] Firefox Monitore
+        [loc] Firefox Monitoru
+        [ins] Firefox Monitorem
     }
     .gender = masculine
 -monitor-brand-short-name =
@@ -90,13 +90,13 @@
     .gender = masculine
 -send-brand-name =
     { $case ->
-       *[nom] Floorp Send
-        [gen] Floorpu Send
-        [dat] Floorpu Send
-        [acc] Floorp Send
-        [voc] Floorpe Send
-        [loc] Floorpu Send
-        [ins] Floorpem Send
+       *[nom] Firefox Send
+        [gen] Firefoxu Send
+        [dat] Firefoxu Send
+        [acc] Firefox Send
+        [voc] Firefoxe Send
+        [loc] Firefoxu Send
+        [ins] Firefoxem Send
     }
     .gender = masculine
 -screenshots-brand-name = Floorp Screenshots
@@ -114,44 +114,44 @@
 -profiler-brand-name = Floorp Profiler
 -translations-brand-name = Floorp Translations
 
-# “Suggest” can be localized, “Floorp” must be treated as a brand
+# “Suggest” can be localized, “Firefox” must be treated as a brand
 # and kept in English.
--Floorp-suggest-brand-name =
+-firefox-suggest-brand-name =
     { $case ->
        *[nom]
             { $capitalization ->
-               *[upper] Návrhy od Floorpu
-                [lower] návrhy od Floorpu
+               *[upper] Návrhy od Firefoxu
+                [lower] návrhy od Firefoxu
             }
         [gen]
             { $capitalization ->
-               *[upper] Návrhů od Floorpu
-                [lower] návrhů od Floorpu
+               *[upper] Návrhů od Firefoxu
+                [lower] návrhů od Firefoxu
             }
         [dat]
             { $capitalization ->
-               *[upper] Návrhům od Floorpu
-                [lower] návrhům od Floorpu
+               *[upper] Návrhům od Firefoxu
+                [lower] návrhům od Firefoxu
             }
         [acc]
             { $capitalization ->
-               *[upper] Návrhy od Floorpu
-                [lower] návrhy od Floorpu
+               *[upper] Návrhy od Firefoxu
+                [lower] návrhy od Firefoxu
             }
         [voc]
             { $capitalization ->
-               *[upper] Návrhy od Floorpu
-                [lower] návrhy od Floorpu
+               *[upper] Návrhy od Firefoxu
+                [lower] návrhy od Firefoxu
             }
         [loc]
             { $capitalization ->
-               *[upper] Návrzích od Floorpu
-                [lower] návrzích od Floorpu
+               *[upper] Návrzích od Firefoxu
+                [lower] návrzích od Firefoxu
             }
         [ins]
             { $capitalization ->
-               *[upper] Návrhy od Floorpu
-                [lower] návrhy od Floorpu
+               *[upper] Návrhy od Firefoxu
+                [lower] návrhy od Firefoxu
             }
     }
 

@@ -359,7 +359,7 @@ addon-badge-recommended2 =
 # We hard code "Mozilla" in the string below because the extensions are built
 # by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
-    .title = Officiële door Floorp Legacy Browser gebouwde extensie. Voldoet aan beveiligings- en prestatienormen.
+    .title = Officiële door Mozilla Firefox gebouwde extensie. Voldoet aan beveiligings- en prestatienormen.
     .aria-label = { addon-badge-line3.title }
 addon-badge-verified2 =
     .title = Deze extensie is beoordeeld en voldoet aan onze normen voor beveiliging en prestaties
@@ -378,9 +378,9 @@ addon-permissions-learnmore = Meer info over toestemmingen
 recommended-extensions-heading = Aanbevolen extensies
 recommended-themes-heading = Aanbevolen thema’s
 addon-sitepermissions-required = Geeft <span data-l10n-name="hostname">{ $hostname }</span> de volgende mogelijkheden:
-# A recommendation for the Floorp Color theme shown at the bottom of the theme
-# list view. The "Floorp Color" name itself should not be translated.
-recommended-theme-1 = Voelt u zich creatief? <a data-l10n-name="link"> Bouw uw eigen thema met Floorp Color.</a>
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Voelt u zich creatief? <a data-l10n-name="link"> Bouw uw eigen thema met Firefox Color.</a>
 
 ## Page headings
 

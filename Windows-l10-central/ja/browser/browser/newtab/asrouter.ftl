@@ -56,7 +56,7 @@ cfr-doorhanger-extension-rating =
 #   $total (Number) - The total number of users using the add-on
 cfr-doorhanger-extension-total-users = { $total } ユーザー
 
-## Floorp Accounts Message
+## Firefox Accounts Message
 
 cfr-doorhanger-bookmark-fxa-header = どこからでもブックマークを同期します。
 cfr-doorhanger-bookmark-fxa-body = 見つかっちゃった。ブックマークをこの端末だけに残しておかないで同期して。{ -fxaccount-brand-name } を始めましょう。

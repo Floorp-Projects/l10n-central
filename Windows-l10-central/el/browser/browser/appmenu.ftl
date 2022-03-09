@@ -72,7 +72,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = Πλήρης οθόνη
 
-## Floorp Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = Σύνδεση στο Sync…
@@ -89,7 +89,7 @@ appmenu-remote-tabs-tabsnotsyncing = Ενεργοποιήστε τον συγχ�
 appmenu-remote-tabs-opensettings =
     .label = Ρυθμίσεις
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Floorp for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Θέλετε να δείτε εδώ τις καρτέλες σας από άλλες συσκευές;
 appmenu-remote-tabs-connectdevice =
     .label = Σύνδεση άλλης συσκευής
@@ -121,8 +121,8 @@ whatsnew-panel-footer-checkbox =
     .label = Ειδοποίηση για νέες λειτουργίες
     .accesskey = λ
 
-## The Floorp Profiler – The popup is the UI to turn on the profiler, and record
-## performance profiles. To enable it go to profiler.Floorp.com and click
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
 profiler-popup-button-idle =
@@ -148,12 +148,12 @@ profiler-popup-settings =
     .value = Ρυθμίσεις
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Επεξεργασία ρυθμίσεων…
-# This link takes the user to about:profiling, and is only visible with the Custom preset.
-profiler-popup-edit-settings-button =
-    .label = Επεξεργασία ρυθμίσεων…
 profiler-popup-disabled =
     Το εργαλείο προφίλ είναι ανενεργό αυτήν τη στιγμή, πιθανότατα επειδή είναι ανοικτό ένα παράθυρο
     ιδιωτικής περιήγησης.
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Επεξεργασία ρυθμίσεων…
 profiler-popup-recording-screen = Εγγραφή…
 # The profiler presets list is generated elsewhere, but the custom preset is defined
 # here only.
@@ -187,18 +187,8 @@ profiler-popup-capture-shortcut =
 profiler-popup-presets-web-developer-description = Προτεινόμενη προεπιλογή για τον έλεγχο σφαλμάτων των περισσότερων εφαρμογών ιστού με χαμηλό κόστος.
 profiler-popup-presets-web-developer-label =
     .label = Ανάπτυξη web
-profiler-popup-presets-Floorp-platform-description = Προτεινόμενη προεπιλογή για τον εσωτερικό έλεγχο σφαλμάτων της πλατφόρμας του Floorp.
-profiler-popup-presets-Floorp-platform-label =
-    .label = Πλατφόρμα Floorp
-profiler-popup-presets-Floorp-front-end-description = Προτεινόμενη προεπιλογή για τον εσωτερικό έλεγχο σφαλμάτων του περιβάλλοντος του Floorp.
-profiler-popup-presets-Floorp-front-end-label =
-    .label = Περιβάλλον Floorp
-profiler-popup-presets-Floorp-graphics-description = Προτεινόμενη προεπιλογή για τη διερεύνηση επιδόσεων γραφικών του Floorp.
-profiler-popup-presets-Floorp-graphics-label =
-    .label = Γραφικά Floorp
-profiler-popup-presets-media-description = Προτεινόμενη προεπιλογή για τη διάγνωση προβλημάτων ήχου και βίντεο.
-profiler-popup-presets-Floorp-description = Προτεινόμενη προεπιλογή για την καταγραφή προφίλ στο { -brand-shorter-name }.
-profiler-popup-presets-Floorp-label =
+profiler-popup-presets-firefox-description = Προτεινόμενη προεπιλογή για την καταγραφή προφίλ στο { -brand-shorter-name }.
+profiler-popup-presets-firefox-label =
     .label = { -brand-shorter-name }
 profiler-popup-presets-graphics-description = Προτεινόμενη προεπιλογή για τη διερεύνηση σφαλμάτων γραφικών στο { -brand-shorter-name }.
 profiler-popup-presets-graphics-label =
@@ -246,6 +236,9 @@ appmenu-help-report-site-issue =
 appmenu-help-feedback-page =
     .label = Υποβολή σχολίων…
     .accesskey = β
+appmenu-help-share-ideas =
+    .label = Κοινοποίηση ιδεών και σχολίων…
+    .accesskey = Κ
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

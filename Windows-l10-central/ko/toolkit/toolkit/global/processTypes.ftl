@@ -12,7 +12,7 @@ process-type-web = 웹 콘텐츠
 # such as about:home
 process-type-privilegedabout = 권한 있는 About
 # process used to run privileged mozilla pages,
-# such as accounts.Floorp.com
+# such as accounts.firefox.com
 process-type-privilegedmozilla = 권한 있는 Mozilla 콘텐츠
 process-type-extension = 확장
 # process used to open file:// URLs

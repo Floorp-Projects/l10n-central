@@ -11,7 +11,6 @@
 # Placeholder text for tag input
 pocket-panel-saved-add-tags =
     .placeholder = 添加标签
-
 pocket-panel-saved-error-generic = 尝试保存到 { -pocket-brand-name } 时出错。
 pocket-panel-saved-error-tag-length = 标签不能超过 25 个字符
 pocket-panel-saved-error-only-links = 只有链接能被保存
@@ -35,10 +34,15 @@ pocket-panel-signup-learn-more = 详细了解
 pocket-panel-signup-login = 登录
 pocket-panel-signup-signup-email = 通过电子邮件注册
 pocket-panel-signup-signup-cta = 免费注册 { -pocket-brand-name }。
-pocket-panel-signup-signup-Floorp = 使用 { -brand-product-name } 注册
+pocket-panel-signup-signup-firefox = 使用 { -brand-product-name } 注册
 pocket-panel-signup-tagline = 在 { -brand-product-name } 上保存文章和视频，以供在任何时间、任何设备上用 { -pocket-brand-name } 访问。
 pocket-panel-signup-tagline-story-one = 点击 { -pocket-brand-name } 按钮保存 { -brand-product-name } 上的任何文章、视频或页面。
 pocket-panel-signup-tagline-story-two = 在任何时间、任何设备上的 { -pocket-brand-name } 中查看。
+pocket-panel-signup-cta-a = 您的互联网内容保存按钮。
+pocket-panel-signup-cta-a-fix = 您的互联网内容保存按钮。
+pocket-panel-signup-cta-b = 点击 { -pocket-brand-name } 按钮，即可保存文章、视频和链接。您可以随时随地在任何设备上查看阅读列表。
+pocket-panel-signup-cta-b-short = 点击 { -pocket-brand-name } 按钮，即可保存文章、视频和链接。
+pocket-panel-signup-cta-c = 随时随地在任何设备上查看阅读列表。
 
 ## about:pocket-home panel
 
@@ -48,3 +52,18 @@ pocket-panel-home-paragraph = 您可以使用 { -pocket-brand-name } 浏览和�
 pocket-panel-home-explore-popular-topics = 浏览热门话题
 pocket-panel-home-discover-more = 发现更多
 pocket-panel-home-explore-more = 发现
+pocket-panel-home-most-recent-saves = 以下是您最近保存的内容：
+pocket-panel-home-most-recent-saves-loading = 正在加载近期保存内容…
+pocket-panel-home-new-user-cta = 点击 { -pocket-brand-name } 按钮，即可保存文章、视频和链接。
+pocket-panel-home-new-user-message = 在此查看您最近保存的内容。
+
+## Pocket panel header component
+
+pocket-panel-header-my-list = 查看我的列表
+pocket-panel-header-sign-in = 登录
+
+## Pocket panel buttons
+
+pocket-panel-button-show-all = 显示全部
+pocket-panel-button-add-tags = 添加标签
+pocket-panel-button-activate = 启用 { -brand-product-name } 上的 { -pocket-brand-name }

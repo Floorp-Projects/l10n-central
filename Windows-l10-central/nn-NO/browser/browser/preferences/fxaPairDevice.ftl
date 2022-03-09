@@ -6,9 +6,9 @@ fxa-pair-device-dialog =
     .title = Kople til ei anna eining
     .style = width: 26em; min-height: 35em;
 
-fxa-qrcode-heading-step1 = 1. Om du ikkje allereie har han, installer <a data-l10n-name="connect-another-device">Floorp på mobileininga di</a>.
+fxa-qrcode-heading-step1 = 1. Om du ikkje allereie har han, installer <a data-l10n-name="connect-another-device">Firefox på mobileininga di</a>.
 
-fxa-qrcode-heading-step2 = 2. Opne Floorp på mobileininga di.
+fxa-qrcode-heading-step2 = 2. Opne Firefox på mobileininga di.
 
 fxa-qrcode-heading-step3 = 3. Opne <b>menyen</b> (<img data-l10n-name="ios-menu-icon"/> eller <img data-l10n-name="android-menu-icon"/>), trykk på <img data-l10n-name="settings-icon"/><b>Innstillingar</b> og vel <b>Slå på synkronisering</b>
 

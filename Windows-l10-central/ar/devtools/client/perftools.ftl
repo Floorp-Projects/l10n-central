@@ -9,7 +9,7 @@
 
 perftools-intro-title = إعدادات مُحلّل الأداء
 perftools-intro-description =
-    تفتح التسجيلات profiler.Floorp.com في لسان جديد. كلّ البيانات مخزّنة
+    تفتح التسجيلات profiler.firefox.com في لسان جديد. كلّ البيانات مخزّنة
     على جهازك، ولكن يمكنك رفعها إن أردت مشاركتها.
 
 ## All of the headings for the various sections.

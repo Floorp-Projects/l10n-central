@@ -72,7 +72,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = 全屏
 
-## Floorp Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = 登录以同步…
@@ -89,7 +89,7 @@ appmenu-remote-tabs-tabsnotsyncing = 打开标签页同步功能，就能看到�
 appmenu-remote-tabs-opensettings =
     .label = 设置
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Floorp for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = 想查看您在其他设备上的标签页吗？
 appmenu-remote-tabs-connectdevice =
     .label = 关联其他设备
@@ -121,8 +121,8 @@ whatsnew-panel-footer-checkbox =
     .label = 有新功能推出时通知我
     .accesskey = f
 
-## The Floorp Profiler – The popup is the UI to turn on the profiler, and record
-## performance profiles. To enable it go to profiler.Floorp.com and click
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
 profiler-popup-button-idle =
@@ -148,10 +148,10 @@ profiler-popup-settings =
     .value = 设置
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = 编辑设置…
+profiler-popup-disabled = 分析器当前已禁用，可能是因为打开了隐私浏览窗口。
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings-button =
     .label = 编辑设置…
-profiler-popup-disabled = 分析器当前已禁用，可能是因为打开了隐私浏览窗口。
 profiler-popup-recording-screen = 正在记录…
 # The profiler presets list is generated elsewhere, but the custom preset is defined
 # here only.
@@ -185,18 +185,8 @@ profiler-popup-capture-shortcut =
 profiler-popup-presets-web-developer-description = 推荐在对大部分 Web 应用程序调试时使用，开销较少。
 profiler-popup-presets-web-developer-label =
     .label = Web 开发者
-profiler-popup-presets-Floorp-platform-description = 推荐在 Floorp 内部平台调试时使用。
-profiler-popup-presets-Floorp-platform-label =
-    .label = Floorp 平台
-profiler-popup-presets-Floorp-front-end-description = 推荐在 Floorp 内部前端调试时使用。
-profiler-popup-presets-Floorp-front-end-label =
-    .label = Floorp 前端
-profiler-popup-presets-Floorp-graphics-description = 推荐在检查 Floorp 图形性能问题时使用。
-profiler-popup-presets-Floorp-graphics-label =
-    .label = Floorp 图形
-profiler-popup-presets-media-description = 推荐在诊断 Floorp 音视频问题时使用。
-profiler-popup-presets-Floorp-description = 推荐在分析 { -brand-shorter-name } 性能时使用。
-profiler-popup-presets-Floorp-label =
+profiler-popup-presets-firefox-description = 推荐在分析 { -brand-shorter-name } 性能时使用。
+profiler-popup-presets-firefox-label =
     .label = { -brand-shorter-name }
 profiler-popup-presets-graphics-description = 推荐在排查 { -brand-shorter-name } 图形 Bug 时使用。
 profiler-popup-presets-graphics-label =
@@ -243,6 +233,9 @@ appmenu-help-report-site-issue =
     .label = 反馈网站问题…
 appmenu-help-feedback-page =
     .label = 提交反馈…
+    .accesskey = S
+appmenu-help-share-ideas =
+    .label = 分享想法和意见反馈…
     .accesskey = S
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode

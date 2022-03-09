@@ -6,9 +6,9 @@ fxa-pair-device-dialog =
     .title = Hubungkan Perangkat Lainnya
     .style = width: 26em; min-height: 35em;
 
-fxa-qrcode-heading-step1 = 1. Jika belum, instal <a data-l10n-name="connect-another-device">Floorp pada perangkat seluler Anda</a>.
+fxa-qrcode-heading-step1 = 1. Jika belum, instal <a data-l10n-name="connect-another-device">Firefox pada perangkat seluler Anda</a>.
 
-fxa-qrcode-heading-step2 = 2. Buka Floorp di perangkat seluler Anda.
+fxa-qrcode-heading-step2 = 2. Buka Firefox di perangkat seluler Anda.
 
 fxa-qrcode-heading-step3 = 3. Buka <b>menu</b> (<img data-l10n-name="ios-menu-icon" /> atau <img data-l10n-name="android-menu-icon" />), ketuk <img data-l10n-name="settings-icon" /> <b>Pengaturan</b> dan pilih <b>Aktifkan Sinkronisasi</b>
 

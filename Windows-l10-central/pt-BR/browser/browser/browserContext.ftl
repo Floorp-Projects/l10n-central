@@ -5,8 +5,8 @@
 navbar-tooltip-instruction =
     .value =
         { PLATFORM() ->
-            [macos] Arrastar para baixo para mostrar o histórico
-           *[other] Clique com o botão direito ou clique e arraste para baixo para mostrar o histórico
+            [macos] Arraste para baixo para mostrar o histórico
+           *[other] Clique com o botão direito ou arraste para baixo para ver o histórico
         }
 
 ## Back
@@ -72,7 +72,7 @@ toolbar-button-stop =
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
 
-## Floorp Account Button
+## Firefox Account Button
 
 toolbar-button-fxaccount =
     .label = { -fxaccount-brand-name }

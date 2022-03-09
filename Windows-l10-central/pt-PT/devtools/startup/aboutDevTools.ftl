@@ -3,18 +3,18 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 head-title = Acerca das ferramentas de programador
-enable-title = Ativar ferramentas de programador do Floorp
-enable-inspect-element-title = Ativar ferramentas de programador do Floorp para utilizar Inspecionar elemento
+enable-title = Ativar ferramentas de programador do Firefox
+enable-inspect-element-title = Ativar ferramentas de programador do Firefox para utilizar Inspecionar elemento
 enable-inspect-element-message = Examine e edite HTML e CSS com o inspetor das ferramentas de programador.
-enable-about-debugging-message = Programe e depure WebExtensions, web workers, service workers e mais com as ferramentas de programador do Floorp.
+enable-about-debugging-message = Programe e depure WebExtensions, web workers, service workers e mais com as ferramentas de programador do Firefox.
 enable-key-shortcut-message = Ativou um atalho das ferramentas de programador. Se foi um engano, pode fechar este separador.
 enable-menu-message = Melhore o HTML, CSS e JavaScript do seu site com ferramentas como o Inspetor e Depurador.
-enable-common-message = As ferramentas de programador do Floorp estão desativadas por predefinição para lhe dar mais controlo sobre o seu navegador.
+enable-common-message = As ferramentas de programador do Firefox estão desativadas por predefinição para lhe dar mais controlo sobre o seu navegador.
 enable-learn-more-link = Saber mais acerca das ferramentas de programador
 enable-enable-button = Ativar ferramentas de programador
 enable-close-button = Fechar este separador
 
-welcome-title = Bem-vindo(a) às ferramentas de programação do Floorp!
+welcome-title = Bem-vindo(a) às ferramentas de programação do Firefox!
 newsletter-title = Newsletter Mozilla Developer
 newsletter-message = Obtenha noticias de programador, truques e recursos enviados diretamente para a sua caixa de entrada.
 newsletter-email-placeholder =
@@ -25,7 +25,7 @@ newsletter-thanks-title = Obrigado!
 newsletter-thanks-message = Se não confirmou previamente uma subscrição a uma newsletter relacionada com a Mozilla, pode ter de o fazer. Por favor verifique a sua caixa de entrada ou o seu filtro de spam por um email nosso.
 
 footer-title = Floorp Developer Edition
-footer-message = À procura de mais do que ferramentas de programador? Confira o navegador Floorp que é construído especificamente para programadores e fluxos de trabalho modernos.
+footer-message = À procura de mais do que ferramentas de programador? Confira o navegador Firefox que é construído especificamente para programadores e fluxos de trabalho modernos.
 footer-learn-more-link = Saber mais
 
 features-learn-more = Saber mais

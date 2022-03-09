@@ -17,11 +17,11 @@ about-telemetry-next-ping = >>
 about-telemetry-page-title = Telemetrická data
 about-telemetry-current-store = Současné úložiště:
 about-telemetry-more-information = Hledáte více informací?
-about-telemetry-Floorp-data-doc = <a data-l10n-name="data-doc-link">Dokumentace dat prohlížeče Floorp</a> obsahuje návody pro práci s našimi datovými nástroji.
-about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">Dokumentace klienta telemetrie pro prohlížeč Floorp</a> obsahuje definice pojmů, dokumentaci API a popisy dat.
+about-telemetry-firefox-data-doc = <a data-l10n-name="data-doc-link">Dokumentace dat prohlížeče Firefox</a> obsahuje návody pro práci s našimi datovými nástroji.
+about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">Dokumentace klienta telemetrie pro prohlížeč Firefox</a> obsahuje definice pojmů, dokumentaci API a popisy dat.
 about-telemetry-telemetry-dashboard = <a data-l10n-name="dashboard-link">Nástěnky telemetrie</a> umožňují zobrazovat data, které Mozilla získává z telemetrie.
 about-telemetry-telemetry-probe-dictionary = <a data-l10n-name="probe-dictionary-link">Probe Dictionary</a> poskytuje podrobnosti a popis sond sbíraných v rámci telemetrie.
-about-telemetry-show-in-Floorp-json-viewer = Otevřít v zobrazení JSONu
+about-telemetry-show-in-Firefox-json-viewer = Otevřít v zobrazení JSONu
 about-telemetry-home-section = Domů
 about-telemetry-general-data-section = Obecná data
 about-telemetry-environment-data-section = Data prostředí
@@ -79,7 +79,7 @@ about-telemetry-ping-details = Všechny informace jsou odesílány jako součás
 about-telemetry-data-details-current = Všechny informace jsou odesílány jako součást „<a data-l10n-name="ping-link">pings</a>“. Nyní se díváte na současná data.
 # string used as a placeholder for the search field
 # More info about it can be found here:
-# https://Floorp-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
+# https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
 # Variables:
 #   $selectedTitle (String): the section name from the structure of the ping.
 about-telemetry-filter-placeholder =
@@ -89,7 +89,7 @@ about-telemetry-filter-all-placeholder =
 # Variables:
 #   $searchTerms (String): the searched terms
 about-telemetry-results-for-search = Výsledky hledání „{ $searchTerms }“
-# More info about it can be found here: https://Floorp-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
+# More info about it can be found here: https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
 # Variables:
 #   $sectionName (String): the section name from the structure of the ping.
 #   $currentSearchText (String): the current text in the search input
@@ -143,7 +143,7 @@ about-telemetry-origin-count = počet
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-origins-explanation =
-    <a data-l10n-name="origin-doc-link">Floorp Origin Telemetry</a> kóduje před odesláním data tak, aby z nich mohl provozovatel serveru, { $telemetryServerOwner }, získávat různé součty, ale nemohl zjistit, které konkrétní instance { -brand-product-name.gender ->
+    <a data-l10n-name="origin-doc-link">Firefox Origin Telemetry</a> kóduje před odesláním data tak, aby z nich mohl provozovatel serveru, { $telemetryServerOwner }, získávat různé součty, ale nemohl zjistit, které konkrétní instance { -brand-product-name.gender ->
         [masculine] { -brand-product-name(case: "gen") }
         [feminine] { -brand-product-name(case: "gen") }
         [neuter] { -brand-product-name(case: "gen") }

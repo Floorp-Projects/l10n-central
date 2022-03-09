@@ -17,11 +17,11 @@ about-telemetry-next-ping = >>
 about-telemetry-page-title = Telemetry-data
 about-telemetry-current-store = Nuværende lager: 
 about-telemetry-more-information = Leder du efter mere information?
-about-telemetry-Floorp-data-doc = <a data-l10n-name="data-doc-link">Floorp Data Documentation</a> indeholder guider om, hvordan du kan arbejde med vores dataværktøjer
-about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">Floorp Telemetry client documentation</a> indeholder definitioner af koncepter, API-dokumentation og data-referencer.
+about-telemetry-firefox-data-doc = <a data-l10n-name="data-doc-link">Firefox Data Documentation</a> indeholder guider om, hvordan du kan arbejde med vores dataværktøjer
+about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">Firefox Telemetry client documentation</a> indeholder definitioner af koncepter, API-dokumentation og data-referencer.
 about-telemetry-telemetry-dashboard = <a data-l10n-name="dashboard-link">Telemetry dashboards</a> giver dig mulighed for at visualisere de data, Mozilla modtager via Telemetry.
 about-telemetry-telemetry-probe-dictionary = <a data-l10n-name="probe-dictionary-link">Probe Dictionary</a> viser detaljer og beskrivelser for data indsamlet af Telemetry.
-about-telemetry-show-in-Floorp-json-viewer = Åbn i JSON-vieweren
+about-telemetry-show-in-Firefox-json-viewer = Åbn i JSON-vieweren
 about-telemetry-home-section = Start
 about-telemetry-general-data-section = Generelle data
 about-telemetry-environment-data-section = Miljø-data
@@ -78,7 +78,7 @@ about-telemetry-ping-details = De enkelte informationer sendes samlet i "<a data
 about-telemetry-data-details-current = De enkelte informationer sendes samlet i "<a data-l10n-name="ping-link">pings</a>". Du kigger på de nuværende data.
 # string used as a placeholder for the search field
 # More info about it can be found here:
-# https://Floorp-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
+# https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
 # Variables:
 #   $selectedTitle (String): the section name from the structure of the ping.
 about-telemetry-filter-placeholder =
@@ -88,7 +88,7 @@ about-telemetry-filter-all-placeholder =
 # Variables:
 #   $searchTerms (String): the searched terms
 about-telemetry-results-for-search = Søgeresultater for "{ $searchTerms }"
-# More info about it can be found here: https://Floorp-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
+# More info about it can be found here: https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
 # Variables:
 #   $sectionName (String): the section name from the structure of the ping.
 #   $currentSearchText (String): the current text in the search input
@@ -141,7 +141,7 @@ about-telemetry-origin-origin = origin
 about-telemetry-origin-count = antal
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
-about-telemetry-origins-explanation = <a data-l10n-name="origin-doc-link">Floorp Origin Telemetry</a> koder data, før de bliver sendt. Det betyder, at { $telemetryServerOwner } kan tælle ting, men ikke vide, om en given installation af { -brand-product-name } bidrog til det samlede antal. <a data-l10n-name="prio-blog-link">Læs mere</a>
+about-telemetry-origins-explanation = <a data-l10n-name="origin-doc-link">Firefox Origin Telemetry</a> koder data, før de bliver sendt. Det betyder, at { $telemetryServerOwner } kan tælle ting, men ikke vide, om en given installation af { -brand-product-name } bidrog til det samlede antal. <a data-l10n-name="prio-blog-link">Læs mere</a>
 # Variables:
 #  $process (String): type of process in subsection headers ( e.g. "content", "parent" )
 about-telemetry-process = { $process }-proces

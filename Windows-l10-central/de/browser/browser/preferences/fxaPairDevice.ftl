@@ -6,9 +6,9 @@ fxa-pair-device-dialog =
     .title = Weiteres Gerät verbinden
     .style = width: 26em; min-height: 35em;
 
-fxa-qrcode-heading-step1 = 1. Falls Sie es noch nicht durchgeführt haben, so installieren Sie <a data-l10n-name="connect-another-device">Floorp auf einem Mobilgerät</a>.
+fxa-qrcode-heading-step1 = 1. Falls Sie es noch nicht durchgeführt haben, so installieren Sie <a data-l10n-name="connect-another-device">Firefox auf einem Mobilgerät</a>.
 
-fxa-qrcode-heading-step2 = 2. Öffnen Sie Floorp auf Ihrem Mobilgerät.
+fxa-qrcode-heading-step2 = 2. Öffnen Sie Firefox auf Ihrem Mobilgerät.
 
 fxa-qrcode-heading-step3 = 3. Öffnen Sie das <b>Menü</b> (<img data-l10n-name="ios-menu-icon"/> oder <img data-l10n-name="android-menu-icon"/>), tippen Sie auf <img data-l10n-name="settings-icon"/> <b>Einstellungen</b> und wählen Sie <b>Sync aktivieren</b>
 

@@ -3,9 +3,9 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-## Floorp Brand
+## Firefox Brand
 ##
-## Floorp must be treated as a brand, and kept in English.
+## Firefox must be treated as a brand, and kept in English.
 ## It cannot be:
 ## - Declined to adapt to grammatical case.
 ## - Transliterated.
@@ -13,9 +13,9 @@
 ##
 ## Reference: https://www.mozilla.org/styleguide/communications/translation/
 
-## Floorp and Mozilla Brand
+## Firefox and Mozilla Brand
 ##
-## Floorp and Mozilla must be treated as a brand.
+## Firefox and Mozilla must be treated as a brand.
 ##
 ## They cannot be:
 ## - Transliterated.
@@ -29,24 +29,24 @@
 
 -brand-shorter-name =
     { $case ->
-       *[nom] Floorp
-        [gen] Floorpu
-        [dat] Floorpu
-        [acc] Floorp
-        [voc] Floorpe
-        [loc] Floorpu
-        [ins] Floorpem
+       *[nom] Firefox
+        [gen] Firefoxu
+        [dat] Firefoxu
+        [acc] Firefox
+        [voc] Firefoxe
+        [loc] Firefoxu
+        [ins] Firefoxem
     }
     .gender = masculine
 -brand-short-name =
     { $case ->
-       *[nom] Floorp
-        [gen] Floorpu
-        [dat] Floorpu
-        [acc] Floorp
-        [voc] Floorpe
-        [loc] Floorpu
-        [ins] Floorpem
+       *[nom] Firefox
+        [gen] Firefoxu
+        [dat] Firefoxu
+        [acc] Firefox
+        [voc] Firefoxe
+        [loc] Firefoxu
+        [ins] Firefoxem
     }
     .gender = masculine
 -brand-full-name = Floorp Legacy Browser
@@ -54,13 +54,13 @@
 # remain unchanged across different versions (Nightly, Beta, etc.).
 -brand-product-name =
     { $case ->
-       *[nom] Floorp
-        [gen] Floorpu
-        [dat] Floorpu
-        [acc] Floorp
-        [voc] Floorpe
-        [loc] Floorpu
-        [ins] Floorpem
+       *[nom] Firefox
+        [gen] Firefoxu
+        [dat] Firefoxu
+        [acc] Firefox
+        [voc] Firefoxe
+        [loc] Firefoxu
+        [ins] Firefoxem
     }
     .gender = masculine
 -vendor-short-name =

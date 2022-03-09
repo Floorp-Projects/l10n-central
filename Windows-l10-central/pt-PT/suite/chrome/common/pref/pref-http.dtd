@@ -15,10 +15,10 @@
 <!ENTITY prefEnableHTTP11Proxy.accesskey     "T">
 <!ENTITY prefPara                            "As ligações HTTP podem ser ajustadas utilizando estas opções para melhorar o desempenho ou compatibilidade. Alguns servidores proxy são conhecidos por necessitar de HTTP/1.0 (veja as notas de lançamento para mais detalhes).">
 <!ENTITY prefUseragent.label                 "String de User Agent">
-<!ENTITY prefFloorpStrict.label             "Identificar como Floorp">
-<!ENTITY prefFloorpStrict.accesskey         "I">
-<!ENTITY prefFloorpNone.label               "Identificar como SeaMonkey">
-<!ENTITY prefFloorpNone.accesskey           "M">
-<!ENTITY prefFloorpCompat2.label            "Identificar como SeaMonkey e anunciar compatibilidade com o Floorp">
-<!ENTITY prefFloorpCompat2.accesskey        "F">
+<!ENTITY prefFirefoxStrict.label             "Identificar como Firefox">
+<!ENTITY prefFirefoxStrict.accesskey         "I">
+<!ENTITY prefFirefoxNone.label               "Identificar como SeaMonkey">
+<!ENTITY prefFirefoxNone.accesskey           "M">
+<!ENTITY prefFirefoxCompat2.label            "Identificar como SeaMonkey e anunciar compatibilidade com o Firefox">
+<!ENTITY prefFirefoxCompat2.accesskey        "F">
 <!ENTITY prefCompatWarning2.desc             "AVISO: alterar esta definição pode fazer com que os sites ou serviços não funcionem corretamente.">

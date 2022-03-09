@@ -9,7 +9,7 @@
 
 perftools-intro-title = Profilerinstellingen
 perftools-intro-description =
-    Opnames starten profiler.Floorp.com in een nieuw tabblad. Alle gegevens worden lokaal
+    Opnames starten profiler.firefox.com in een nieuw tabblad. Alle gegevens worden lokaal
     opgeslagen, maar u kunt ervoor kiezen ze te uploaden om ze te delen.
 
 ## All of the headings for the various sections.
@@ -26,7 +26,7 @@ perftools-heading-local-build = Lokale build
 ##
 
 perftools-description-intro =
-    Opnames starten <a>profiler.Floorp.com</a> in een nieuw tabblad. Alle gegevens worden lokaal
+    Opnames starten <a>profiler.firefox.com</a> in een nieuw tabblad. Alle gegevens worden lokaal
     opgeslagen, maar u kunt ervoor kiezen ze te uploaden om ze te delen.
 perftools-description-local-build =
     Als u een build profileert die u zelf, op deze machine, gecompileerd heeft,
@@ -123,14 +123,14 @@ perftools-onboarding-close-button =
 
 perftools-presets-web-developer-label = Webontwikkelaar
 perftools-presets-web-developer-description = Aanbevolen voorinstelling voor de meeste foutopsporing in web-apps, met lage overhead.
-perftools-presets-Floorp-platform-label = Floorp-platform
-perftools-presets-Floorp-platform-description = Aanbevolen voorinstelling voor interne foutopsporing in het Floorp-platform.
-perftools-presets-Floorp-front-end-label = Floorp-front-end
-perftools-presets-Floorp-front-end-description = Aanbevolen voorinstelling voor interne foutopsporing in het front-end van Floorp.
-perftools-presets-Floorp-graphics-label = Floorp-grafisch
-perftools-presets-Floorp-graphics-description = Aanbevolen voorinstelling voor onderzoek naar grafische prestaties van Floorp.
-perftools-presets-Floorp-label = { -brand-shorter-name }
-perftools-presets-Floorp-description = Aanbevolen voorinstelling voor profileren van { -brand-shorter-name }.
+perftools-presets-firefox-platform-label = Floorp-platform
+perftools-presets-firefox-platform-description = Aanbevolen voorinstelling voor interne foutopsporing in het Firefox-platform.
+perftools-presets-firefox-front-end-label = Floorp-front-end
+perftools-presets-firefox-front-end-description = Aanbevolen voorinstelling voor interne foutopsporing in het front-end van Firefox.
+perftools-presets-firefox-graphics-label = Floorp-grafisch
+perftools-presets-firefox-graphics-description = Aanbevolen voorinstelling voor onderzoek naar grafische prestaties van Firefox.
+perftools-presets-firefox-label = { -brand-shorter-name }
+perftools-presets-firefox-description = Aanbevolen voorinstelling voor profileren van { -brand-shorter-name }.
 perftools-presets-graphics-label = Grafisch
 perftools-presets-graphics-description = Voorinstelling voor het onderzoeken van grafische bugs in { -brand-shorter-name }.
 perftools-presets-media-label = Media

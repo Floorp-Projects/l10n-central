@@ -12,12 +12,15 @@ extension-firefox-compact-light-name = マテリアルライト
 extension-firefox-compact-light-description = 明るい配色のテーマです。
 extension-firefox-compact-dark-name = マテリアルダーク
 extension-firefox-compact-dark-description = 暗い配色のテーマです。
-extension-firefox-alpenglow-name = Floorp Alpenglow - 夕日 - 
+extension-firefox-alpenglow-name = Floorp Alpenglow
 extension-firefox-alpenglow-description = カラフルな外観のボタン、メニュー、ウィンドウを使用します。
 extension-floorp-lepton-name = 水平タブ位置移動（システムテーマ）
 extension-floorp-lepton-description = 水平タブの位置を、ブックマークバーの下に移動します。
 extension-floorp-edge-name= 垂直タブに Floorp を最適化（システムテーマ）
 extension-floorp-edge-description= 垂直タブに Floorp を最適化します。水平タブは隠され、使えなくなります。
+
+extension-floorp-Kanaze-name= Kanaze プロジェクトテーマ
+extension-floorp-edge-description= Kanaze プロジェクトのキャラクター。期間限定のテーマです。ホームページから詳細をどうぞ。
 
 ## Colorway Themes
 ## These themes are variants of a colorway. The colorway is specified in the

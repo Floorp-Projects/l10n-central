@@ -114,7 +114,7 @@ login-item-time-used = Ultimo utilizzo: { DATETIME($timeUsed, day: "numeric", mo
 
 about-logins-os-auth-dialog-caption = { -brand-full-name }
 
-## The macOS strings are preceded by the operating system with "Floorp is trying to "
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These
 ## notes are only valid for English. Please test in your respected locale.
 

@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### Floorp Home / New Tab strings for about:home / about:newtab.
+### Firefox Home / New Tab strings for about:home / about:newtab.
 
 newtab-page-title = 새 탭
 newtab-settings-button =
@@ -103,8 +103,8 @@ newtab-menu-topsites-placeholder-tooltip =
 ## Context Menu: These strings are displayed in a context menu and are meant as a call to action for a given page.
 
 newtab-menu-edit-topsites = 편집
-newtab-menu-open-new-window = 새 창에 열기
-newtab-menu-open-new-private-window = 새 사생활 보호 창에 열기
+newtab-menu-open-new-window = 새 창에서 열기
+newtab-menu-open-new-private-window = 새 사생활 보호 창에서 열기
 newtab-menu-dismiss = 닫기
 newtab-menu-pin = 고정
 newtab-menu-unpin = 고정 해제
@@ -231,7 +231,7 @@ newtab-pocket-more-recommendations = 더 많은 추천
 newtab-pocket-learn-more = 더 알아보기
 newtab-pocket-cta-button = { -pocket-brand-name } 받기
 newtab-pocket-cta-text = 좋아하는 이야기를 { -pocket-brand-name }에 저장하고 재미있게 읽어 보세요.
-newtab-pocket-pocket-Floorp-family = { -pocket-brand-name }은 { -brand-product-name } 제품군의 일부입니다.
+newtab-pocket-pocket-firefox-family = { -pocket-brand-name }은 { -brand-product-name } 제품군의 일부입니다.
 # A save to Pocket button that shows over the card thumbnail on hover.
 newtab-pocket-save-to-pocket = { -pocket-brand-name }에 저장
 newtab-pocket-saved-to-pocket = { -pocket-brand-name }에 저장

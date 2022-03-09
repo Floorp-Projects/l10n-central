@@ -9,7 +9,7 @@
 
 perftools-intro-title = Profilozó beállításai
 perftools-intro-description =
-    A rögzítések megnyitják a profiler.Floorp.com oldalt egy új lapon. Minden adat
+    A rögzítések megnyitják a profiler.firefox.com oldalt egy új lapon. Minden adat
     helyben lesz tárolva, de lehetősége lesz feltölteni, hogy megossza azt.
 
 ## All of the headings for the various sections.
@@ -26,7 +26,7 @@ perftools-heading-local-build = Helyi összeállítás
 ##
 
 perftools-description-intro =
-    A rögzítések megnyitják a <a>profiler.Floorp.com</a> oldalt egy új lapon. Minden adat
+    A rögzítések megnyitják a <a>profiler.firefox.com</a> oldalt egy új lapon. Minden adat
     helyben lesz tárolva, de lehetősége lesz feltölteni, hogy megossza azt.
 perftools-description-local-build =
     Ha egy olyan összeállítást profiloz, amelyet saját maga fordított le,
@@ -123,14 +123,14 @@ perftools-onboarding-close-button =
 
 perftools-presets-web-developer-label = Webfejlesztő
 perftools-presets-web-developer-description = Ajánlott előbeállítás a legtöbb webalkalmazás hibakereséséhez, alacsony pluszköltséggel.
-perftools-presets-Floorp-platform-label = Floorp platform
-perftools-presets-Floorp-platform-description = Ajánlott előbeállítás a Floorp platform belső hibakereséséhez.
-perftools-presets-Floorp-front-end-label = Floorp kezelőfelület
-perftools-presets-Floorp-front-end-description = Ajánlott előbeállítás a Floorp felületének belső hibakereséséhez.
-perftools-presets-Floorp-graphics-label = Floorp grafika
-perftools-presets-Floorp-graphics-description = Ajánlott előbeállítás a Floorp grafikus teljesítményének vizsgálatához.
-perftools-presets-Floorp-label = { -brand-shorter-name }
-perftools-presets-Floorp-description = Javasolt előbeállítás a { -brand-shorter-name } profilozásához.
+perftools-presets-firefox-platform-label = Floorp platform
+perftools-presets-firefox-platform-description = Ajánlott előbeállítás a Firefox platform belső hibakereséséhez.
+perftools-presets-firefox-front-end-label = Floorp kezelőfelület
+perftools-presets-firefox-front-end-description = Ajánlott előbeállítás a Firefox felületének belső hibakereséséhez.
+perftools-presets-firefox-graphics-label = Floorp grafika
+perftools-presets-firefox-graphics-description = Ajánlott előbeállítás a Firefox grafikus teljesítményének vizsgálatához.
+perftools-presets-firefox-label = { -brand-shorter-name }
+perftools-presets-firefox-description = Javasolt előbeállítás a { -brand-shorter-name } profilozásához.
 perftools-presets-graphics-label = Grafika
 perftools-presets-graphics-description = Előbeállítás a { -brand-shorter-name } grafikai hibák kivizsgálásához.
 perftools-presets-media-label = Média

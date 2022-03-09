@@ -96,9 +96,9 @@ manifest-loaded-ok = Η δήλωση φορτώθηκε.
 # load the manifest
 manifest-loaded-error = Προέκυψε σφάλμα κατά τη φόρτωσης της δήλωσης:
 
-# Text displayed as an error when there has been a Floorp DevTools error while
+# Text displayed as an error when there has been a Firefox DevTools error while
 # trying to load the manifest
-manifest-loaded-devtools-error = Σφάλμα Floorp DevTools
+manifest-loaded-devtools-error = Σφάλμα Firefox DevTools
 
 # Text displayed when the page has no manifest available
 manifest-non-existing = Δεν βρέθηκε δήλωση προς επιθεώρηση.

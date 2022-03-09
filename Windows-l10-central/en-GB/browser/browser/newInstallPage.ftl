@@ -4,18 +4,18 @@
 
 
 ### For this feature, "installation" is used to mean "this discrete download of
-### Floorp" and "version" is used to mean "the specific revision number of a
-### given Floorp channel". These terms are not synonymous.
+### Firefox" and "version" is used to mean "the specific revision number of a
+### given Firefox channel". These terms are not synonymous.
 
 title = Important News
 heading = Changes to your { -brand-short-name } profile
 changed-title = What changed?
-changed-desc-profiles = This installation of { -brand-short-name } has a new profile. A profile is the set of files where Floorp saves information such as bookmarks, passwords and user preferences.
-changed-desc-dedicated = In order to make it easier and safer to switch between installations of Floorp (including Floorp, Floorp ESR, Floorp Beta, Floorp Developer Edition and Floorp Nightly), this installation now has a dedicated profile. It does not automatically share your saved information with other Floorp installations.
-lost = <b>You have not lost any personal data or customisations.</b> If you’ve already saved information to Floorp on this computer, it is still available in another Floorp installation.
+changed-desc-profiles = This installation of { -brand-short-name } has a new profile. A profile is the set of files where Firefox saves information such as bookmarks, passwords and user preferences.
+changed-desc-dedicated = In order to make it easier and safer to switch between installations of Firefox (including Firefox, Firefox ESR, Firefox Beta, Firefox Developer Edition and Firefox Nightly), this installation now has a dedicated profile. It does not automatically share your saved information with other Firefox installations.
+lost = <b>You have not lost any personal data or customisations.</b> If you’ve already saved information to Firefox on this computer, it is still available in another Firefox installation.
 options-title = What are my options?
-options-do-nothing = If you do nothing, your profile data in { -brand-short-name } will be different from profile data in other installations of Floorp.
-options-use-sync = If you would like all of your profile data to be the same on all installations of Floorp, you can use a { -fxaccount-brand-name(capitalization: "sentence") } to keep them in synchronisation.
+options-do-nothing = If you do nothing, your profile data in { -brand-short-name } will be different from profile data in other installations of Firefox.
+options-use-sync = If you would like all of your profile data to be the same on all installations of Firefox, you can use a { -fxaccount-brand-name(capitalization: "sentence") } to keep them in synchronisation.
 resources = Resources:
 support-link = Using the Profile Manager - Support Article
 sync-header = Sign in or create a { -fxaccount-brand-name(capitalization: "sentence") }
@@ -24,5 +24,5 @@ sync-input =
     .placeholder = Email
 sync-button = Continue
 sync-terms = By proceeding, you agree to the <a data-l10n-name="terms">Terms of Service</a> and <a data-l10n-name="privacy">Privacy Notice</a>.
-sync-first = First time using { -sync-brand-name }? You’ll need to sign in to every installation of Floorp to synchronise your information.
+sync-first = First time using { -sync-brand-name }? You’ll need to sign in to every installation of Firefox to synchronise your information.
 sync-learn = Learn more

@@ -15,10 +15,10 @@
 <!ENTITY prefEnableHTTP11Proxy.accesskey     "T">
 <!ENTITY prefPara                            "Οι συνδέσεις HTTP μπορούν να βελτιστοποιηθούν με αυτές τις επιλογές για ενίσχυση επιδόσεων ή συμβατότητας. Ορισμένοι διακομιστές μεσολάβησης, για παράδειγμα, είναι γνωστοί για την απαίτηση HTTP/1.0 (δείτε τις σημειώσεις έκδοσης για λεπτομέρειες).">
 <!ENTITY prefUseragent.label                 "Συμβολοσειρά παράγοντα χρήστη">
-<!ENTITY prefFloorpStrict.label             "Αναγνώριση ως Floorp">
-<!ENTITY prefFloorpStrict.accesskey         "Α">
-<!ENTITY prefFloorpNone.label               "Αναγνώριση ως SeaMonkey">
-<!ENTITY prefFloorpNone.accesskey           "M">
-<!ENTITY prefFloorpCompat2.label            "Αναγνώριση ως SeaMonkey και γνωστοποίηση συμβατότητας με το Floorp">
-<!ENTITY prefFloorpCompat2.accesskey        "F">
+<!ENTITY prefFirefoxStrict.label             "Αναγνώριση ως Firefox">
+<!ENTITY prefFirefoxStrict.accesskey         "Α">
+<!ENTITY prefFirefoxNone.label               "Αναγνώριση ως SeaMonkey">
+<!ENTITY prefFirefoxNone.accesskey           "M">
+<!ENTITY prefFirefoxCompat2.label            "Αναγνώριση ως SeaMonkey και γνωστοποίηση συμβατότητας με το Firefox">
+<!ENTITY prefFirefoxCompat2.accesskey        "F">
 <!ENTITY prefCompatWarning2.desc             "ΠΡΟΕΙΔΟΠΟΙΗΣΗ: η αλλαγή αυτής της ρύθμισης ενδέχεται να προκαλέσει δυσλειτουργία ιστοτόπων ή υπηρεσιών.">

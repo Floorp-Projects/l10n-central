@@ -347,6 +347,9 @@ update-application-warning-cross-user-setting = Cài đặt này sẽ áp dụng
 update-application-use-service =
     .label = Sử dụng dịch vụ chạy nền để cài đặt các cập nhật
     .accesskey = n
+update-application-suppress-prompts =
+    .label = Hiển thị ít lời nhắc thông báo cập nhật hơn
+    .accesskey = n
 update-setting-write-failure-title2 = Lỗi khi lưu cài đặt Cập nhật
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -392,6 +395,9 @@ browsing-use-autoscroll =
 browsing-use-smooth-scrolling =
     .label = Cuộn uyển chuyển
     .accesskey = y
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Luôn hiển thị thanh cuộn
+    .accesskey = o
 browsing-use-onscreen-keyboard =
     .label = Hiển thị bàn phím cảm ứng khi cần thiết
     .accesskey = b
@@ -441,7 +447,7 @@ home-restore-defaults =
 # "Floorp" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
-    .label = Trang chủ Floorp (Mặc định)
+    .label = Trang chủ Firefox (Mặc định)
 home-mode-choice-custom =
     .label = Tùy chỉnh URL...
 home-mode-choice-blank =
@@ -463,10 +469,10 @@ choose-bookmark =
     .label = Sử dụng dấu trang…
     .accesskey = B
 
-## Home Section - Floorp Home Content Customization
+## Home Section - Firefox Home Content Customization
 
-home-prefs-content-header = Nội dung của Trang chủ Floorp
-home-prefs-content-description = Chọn nội dung mà bạn muốn thêm vào Trang chủ Floorp.
+home-prefs-content-header = Nội dung của Trang chủ Firefox
+home-prefs-content-description = Chọn nội dung mà bạn muốn thêm vào Trang chủ Firefox.
 home-prefs-search-header =
     .label = Tìm kiếm web
 home-prefs-topsites-header =
@@ -590,7 +596,7 @@ containers-settings-button =
 containers-remove-button =
     .label = Loại bỏ
 
-## Floorp Account - Signed out. Note that "Sync" and "Floorp Account" are now
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Mang trang web theo bạn
@@ -606,9 +612,9 @@ sync-signedout-account-signin3 =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = Tải Floorp cho <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> hoặc <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> để đồng bị với thiết bị di động của bạn.
+sync-mobile-promo = Tải Firefox cho <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> hoặc <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> để đồng bị với thiết bị di động của bạn.
 
-## Floorp Account - Signed in
+## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Đổi hình hồ sơ
@@ -690,7 +696,7 @@ sync-engine-creditcards =
     .accesskey = C
 sync-engine-addons =
     .label = Tiện ích
-    .tooltiptext = Tiện ích mở rộng và chủ đề của Floorp dành cho máy tính
+    .tooltiptext = Tiện ích mở rộng và chủ đề của Firefox dành cho máy tính
     .accesskey = A
 sync-engine-settings =
     .label = Cài đặt
@@ -770,7 +776,7 @@ forms-windows-sso-desc = Quản lý tài khoản trong cài đặt thiết bị 
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = Để tạo mật khẩu chính, hãy nhập thông tin đăng nhập Windows của bạn. Điều này giúp bảo vệ tính bảo mật của tài khoản của bạn.
 # This message can be seen by trying to add a Primary Password.
-# The macOS strings are preceded by the operating system with "Floorp is trying to "
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 primary-password-os-auth-dialog-message-macosx = tạo một mật khẩu chính
@@ -782,12 +788,12 @@ history-header = Lịch sử
 # This label is followed, on the same line, by a dropdown list of options
 # (Remember history, etc.).
 # In English it visually creates a full sentence, e.g.
-# "Floorp will" + "Remember history".
+# "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
 #   - Simply as "Floorp", moving the verb into each option.
 #     This will result in "Floorp" + "Will remember history", etc.
-#   - As a stand-alone message, for example "Floorp history settings:".
+#   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = { -brand-short-name } sẽ
     .accesskey = w
 history-remember-option-all =

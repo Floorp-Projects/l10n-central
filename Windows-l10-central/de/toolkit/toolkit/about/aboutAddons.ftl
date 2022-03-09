@@ -106,7 +106,7 @@ plugin-deprecation-description = Fehlt etwas? Einige Plugins werden nicht mehr v
 legacy-warning-show-legacy = Erweiterungen des alten Add-on-Typs anzeigen
 legacy-extensions =
     .value = Alter Add-on-Typ
-legacy-extensions-description = Diese Erweiterungen erfüllen nicht die aktuellen Standards von { -brand-short-name } und wurden deshalb deaktiviert. <label data-l10n-name="legacy-learn-more">Weitere Informationen über Änderungen bei der Unterstützung von Add-ons für Floorp</label>
+legacy-extensions-description = Diese Erweiterungen erfüllen nicht die aktuellen Standards von { -brand-short-name } und wurden deshalb deaktiviert. <label data-l10n-name="legacy-learn-more">Weitere Informationen über Änderungen bei der Unterstützung von Add-ons für Firefox</label>
 private-browsing-description2 =
     { -brand-short-name } ändert die Verwendung von Erweiterungen im Privaten Modus.
     Neu in { -brand-short-name } installierte Erweiterungen werden standardmäßig in privaten Fenstern nicht ausgeführt und haben keinen Zugriff auf die Online-Aktivitäten in diesen, außer die Erweiterung wird in den Einstellungen für die Verwendung im Privaten Modus freigegeben.
@@ -374,9 +374,9 @@ addon-permissions-learnmore = Weitere Informationen zu Berechtigungen
 recommended-extensions-heading = Empfohlene Erweiterungen
 recommended-themes-heading = Empfohlene Themes
 addon-sitepermissions-required = Gibt <span data-l10n-name="hostname">{ $hostname }</span> die folgenden Fähigkeiten:
-# A recommendation for the Floorp Color theme shown at the bottom of the theme
-# list view. The "Floorp Color" name itself should not be translated.
-recommended-theme-1 = Fühlen Sie sich inspiriert? <a data-l10n-name="link">Erstellen Sie eigene Themes mit Floorp Color.</a>
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Fühlen Sie sich inspiriert? <a data-l10n-name="link">Erstellen Sie eigene Themes mit Firefox Color.</a>
 
 ## Page headings
 

@@ -72,7 +72,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = Pantalla completa
 
-## Floorp Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = Iniciar sesión en Sync…
@@ -89,7 +89,7 @@ appmenu-remote-tabs-tabsnotsyncing = Active la sincronización de pestañas para
 appmenu-remote-tabs-opensettings =
     .label = Ajustes
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Floorp for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = ¿Quiere ver sus pestañas de otros dispositivos aquí?
 appmenu-remote-tabs-connectdevice =
     .label = Conectar otro dispositivo
@@ -121,8 +121,8 @@ whatsnew-panel-footer-checkbox =
     .label = Notificar sobre nuevas funciones
     .accesskey = f
 
-## The Floorp Profiler – The popup is the UI to turn on the profiler, and record
-## performance profiles. To enable it go to profiler.Floorp.com and click
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
 profiler-popup-button-idle =
@@ -148,12 +148,12 @@ profiler-popup-settings =
     .value = Ajustes
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Editar ajustes…
-# This link takes the user to about:profiling, and is only visible with the Custom preset.
-profiler-popup-edit-settings-button =
-    .label = Editar ajustes…
 profiler-popup-disabled =
     El perfilador está actualmente desactivado, probablemente debido a una ventana de navegación privada
      abierta.
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Editar ajustes…
 profiler-popup-recording-screen = Grabando…
 # The profiler presets list is generated elsewhere, but the custom preset is defined
 # here only.
@@ -187,18 +187,8 @@ profiler-popup-capture-shortcut =
 profiler-popup-presets-web-developer-description = Configuración recomendada para la depuración de la mayoría de aplicaciones web, con poca sobrecarga.
 profiler-popup-presets-web-developer-label =
     .label = Desarrollador web
-profiler-popup-presets-Floorp-platform-description = Configuración predeterminada recomendada para la depuración interna de la plataforma Floorp.
-profiler-popup-presets-Floorp-platform-label =
-    .label = Plataforma Floorp
-profiler-popup-presets-Floorp-front-end-description = Configuración predeterminada recomendada para la depuración interna de la interfaz de Floorp.
-profiler-popup-presets-Floorp-front-end-label =
-    .label = Interfaz de Floorp
-profiler-popup-presets-Floorp-graphics-description = Configuración predeterminada para la investigación de rendimiento gráfico de Floorp.
-profiler-popup-presets-Floorp-graphics-label =
-    .label = Gráficos de Floorp
-profiler-popup-presets-media-description = Configuración predeterminada para diagnosticar problemas de audio y vídeo.
-profiler-popup-presets-Floorp-description = Valor predeterminado recomendado para la creación de perfiles { -brand-shorter-name }.
-profiler-popup-presets-Floorp-label =
+profiler-popup-presets-firefox-description = Valor predeterminado recomendado para la creación de perfiles { -brand-shorter-name }.
+profiler-popup-presets-firefox-label =
     .label = { -brand-shorter-name }
 profiler-popup-presets-graphics-description = Preestablecido para investigar errores gráficos en { -brand-shorter-name }.
 profiler-popup-presets-graphics-label =
@@ -246,6 +236,9 @@ appmenu-help-report-site-issue =
 appmenu-help-feedback-page =
     .label = Enviar opinión…
     .accesskey = v
+appmenu-help-share-ideas =
+    .label = Compartir ideas y opiniones…
+    .accesskey = s
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

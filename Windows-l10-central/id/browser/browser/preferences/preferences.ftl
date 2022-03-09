@@ -116,6 +116,9 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = Pulihkan sesi sebelumnya
     .accesskey = P
+startup-restore-windows-and-tabs =
+    .label = Buka jendela dan tab sebelumnya
+    .accesskey = s
 startup-restore-warn-on-quit =
     .label = Memperingatkan Anda saat keluar dari peramban
 disable-extension =
@@ -344,6 +347,9 @@ update-application-warning-cross-user-setting = Pengaturan ini akan berlaku untu
 update-application-use-service =
     .label = Gunakan layanan latar belakang untuk memasang pemutakhiran
     .accesskey = l
+update-application-suppress-prompts =
+    .label = Tampilkan lebih sedikit permintaan pemberitahuan pembaruan
+    .accesskey = u
 update-setting-write-failure-title2 = Gagal menyimpan pengaturan Pemutakhiran
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -389,6 +395,9 @@ browsing-use-autoscroll =
 browsing-use-smooth-scrolling =
     .label = Geser dengan mulus
     .accesskey = m
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Selalu tampilkan bilah gulir
+    .accesskey = g
 browsing-use-onscreen-keyboard =
     .label = Tampilkan papan ketik sentuh saat diperlukan
     .accesskey = k
@@ -438,7 +447,7 @@ home-restore-defaults =
 # "Floorp" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
-    .label = Beranda Floorp (Baku)
+    .label = Beranda Firefox (Baku)
 home-mode-choice-custom =
     .label = URL Ubahsuai…
 home-mode-choice-blank =
@@ -460,10 +469,10 @@ choose-bookmark =
     .label = Gunakan Markah…
     .accesskey = h
 
-## Home Section - Floorp Home Content Customization
+## Home Section - Firefox Home Content Customization
 
-home-prefs-content-header = Konten Beranda Floorp
-home-prefs-content-description = Pilih konten yang ingin Anda tampilkan dalam Beranda Floorp.
+home-prefs-content-header = Konten Beranda Firefox
+home-prefs-content-description = Pilih konten yang ingin Anda tampilkan dalam Beranda Firefox.
 home-prefs-search-header =
     .label = Pencarian Web
 home-prefs-topsites-header =
@@ -587,7 +596,7 @@ containers-settings-button =
 containers-remove-button =
     .label = Hapus
 
-## Floorp Account - Signed out. Note that "Sync" and "Floorp Account" are now
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Bawalah Web bersama Anda
@@ -603,9 +612,9 @@ sync-signedout-account-signin3 =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = Unduh Floorp untuk <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> atau <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> untuk menyinkronkan dengan peranti seluler Anda.
+sync-mobile-promo = Unduh Firefox untuk <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> atau <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> untuk menyinkronkan dengan peranti seluler Anda.
 
-## Floorp Account - Signed in
+## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Ubah gambar profil
@@ -687,7 +696,7 @@ sync-engine-creditcards =
     .accesskey = K
 sync-engine-addons =
     .label = Pengaya
-    .tooltiptext = Ekstensi dan tema untuk Floorp desktop
+    .tooltiptext = Ekstensi dan tema untuk Firefox desktop
     .accesskey = y
 sync-engine-settings =
     .label = Pengaturan
@@ -767,7 +776,7 @@ forms-windows-sso-desc = Kelola akun di pengaturan perangkat Anda
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = Untuk membuat Sandi Utama, masukkan kredensial info masuk Windows Anda. Hal ini membantu melindungi keamanan akun Anda.
 # This message can be seen by trying to add a Primary Password.
-# The macOS strings are preceded by the operating system with "Floorp is trying to "
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 primary-password-os-auth-dialog-message-macosx = membuat Sandi Utama
@@ -779,12 +788,12 @@ history-header = Riwayat
 # This label is followed, on the same line, by a dropdown list of options
 # (Remember history, etc.).
 # In English it visually creates a full sentence, e.g.
-# "Floorp will" + "Remember history".
+# "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
 #   - Simply as "Floorp", moving the verb into each option.
 #     This will result in "Floorp" + "Will remember history", etc.
-#   - As a stand-alone message, for example "Floorp history settings:".
+#   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = { -brand-short-name }
     .accesskey = i
 history-remember-option-all =
@@ -931,6 +940,16 @@ content-blocking-all-windows-tracking-content = Melacak konten di seluruh jendel
 content-blocking-all-third-party-cookies = Semua kuki pihak ketiga
 content-blocking-cryptominers = Penambang Kripto
 content-blocking-fingerprinters = Pelacak Sidik
+# "Test pilot" is used as a verb. Possible alternatives:
+# "Be the first to try", "Join an early experiment".
+content-blocking-etp-standard-tcp-rollout-checkbox =
+    .label =
+        Uji coba pengalaman privasi terkuat kami
+        kami yang pernah ada
+    .accesskey = U
+# "Contains" here means "isolates", "limits".
+content-blocking-etp-standard-tcp-rollout-description = Perlindungan Kuki total membelenggu kuki situs tempat Anda berada, sehingga pelacak tidak dapat menggunakannya untuk mengikuti Anda antar-situs.
+content-blocking-etp-standard-tcp-rollout-learn-more = Pelajari lebih lanjut
 content-blocking-warning-title = Perhatian!
 content-blocking-and-isolating-etp-warning-description = Memblokir pelacak dan mengisolasi kuki dapat memengaruhi fungsionalitas beberapa situs. Muat ulang laman dengan pelacak untuk memuat semua konten.
 content-blocking-and-isolating-etp-warning-description-2 = Pengaturan ini mungkin menyebabkan beberapa situs web tidak menampilkan konten atau bekerja dengan baik. Jika situs rusak, Anda mungkin ingin menonaktifkan perlindungan pelacakan untuk situs tersebut untuk memuat semua konten.

@@ -72,7 +72,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = Fullskjerm
 
-## Floorp Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = Logg inn for å synkronisere…
@@ -89,7 +89,7 @@ appmenu-remote-tabs-tabsnotsyncing = Slå på fane-synkronisering for å sjå ei
 appmenu-remote-tabs-opensettings =
     .label = Innstillingar
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Floorp for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Vil du sjå faner frå dei andre einingane dine her?
 appmenu-remote-tabs-connectdevice =
     .label = Kople til ei anna eining
@@ -121,8 +121,8 @@ whatsnew-panel-footer-checkbox =
     .label = Varsle om nye funksjonar
     .accesskey = f
 
-## The Floorp Profiler – The popup is the UI to turn on the profiler, and record
-## performance profiles. To enable it go to profiler.Floorp.com and click
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
 profiler-popup-button-idle =
@@ -187,18 +187,18 @@ profiler-popup-capture-shortcut =
 profiler-popup-presets-web-developer-description = Tilrådd førehandsinnstilling for dei fleste feilsøkingar i nettappar, med lite tillegg.
 profiler-popup-presets-web-developer-label =
     .label = Nettsideutvikling
-profiler-popup-presets-Floorp-platform-description = Tilrådd førehandsinnstilling for intern feilsøking av Floorp-plattforma.
-profiler-popup-presets-Floorp-platform-label =
+profiler-popup-presets-firefox-platform-description = Tilrådd førehandsinnstilling for intern feilsøking av Firefox-plattforma.
+profiler-popup-presets-firefox-platform-label =
     .label = Floorp-plattform
-profiler-popup-presets-Floorp-front-end-description = Tilrådd førehandsinnstilling for feilsøking av Floorp grenseflate.
-profiler-popup-presets-Floorp-front-end-label =
+profiler-popup-presets-firefox-front-end-description = Tilrådd førehandsinnstilling for feilsøking av Firefox grenseflate.
+profiler-popup-presets-firefox-front-end-label =
     .label = Floorp grenseflate
-profiler-popup-presets-Floorp-graphics-description = Tilrådd førehandsinnstilling for undersøking av grafikkyting i Floorp.
-profiler-popup-presets-Floorp-graphics-label =
+profiler-popup-presets-firefox-graphics-description = Tilrådd førehandsinnstilling for undersøking av grafikkyting i Firefox.
+profiler-popup-presets-firefox-graphics-label =
     .label = Floorp-grafikk
 profiler-popup-presets-media-description = Tilrådde førehandsinnstillingar for diagnostisering av lyd- og videoproblem.
-profiler-popup-presets-Floorp-description = Tilrådd førehandsinnstilling for profilering { -brand-shorter-name }.
-profiler-popup-presets-Floorp-label =
+profiler-popup-presets-firefox-description = Tilrådd førehandsinnstilling for profilering { -brand-shorter-name }.
+profiler-popup-presets-firefox-label =
     .label = { -brand-shorter-name }
 profiler-popup-presets-graphics-description = Førehandsinnstilt for å undersøke grafikk-problem i { -brand-shorter-name }.
 profiler-popup-presets-graphics-label =

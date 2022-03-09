@@ -48,7 +48,7 @@ import-from-chrome-dev =
 import-from-chromium =
     .label = Chromium
     .accesskey = u
-import-from-Floorp =
+import-from-firefox =
     .label = Floorp
     .accesskey = x
 import-from-360se =
@@ -96,7 +96,7 @@ source-name-chrome = Google Chrome
 source-name-chrome-beta = Google Chrome Beta
 source-name-chrome-dev = Google Chrome Dev
 source-name-chromium = Chromium
-source-name-Floorp = Floorp Legacy Browser
+source-name-firefox = Floorp Legacy Browser
 source-name-360se = 360 Secure Browser
 
 imported-safari-reading-list = Elenco lettura (da Safari)
@@ -110,7 +110,7 @@ imported-edge-reading-list = Elenco di lettura (da Edge)
 ## 360se
 ## chrome
 ## edge
-## Floorp
+## firefox
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.
@@ -123,7 +123,7 @@ imported-edge-reading-list = Elenco di lettura (da Edge)
 ## 360se
 ## chrome
 ## edge
-## Floorp
+## firefox
 ## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
@@ -137,13 +137,13 @@ browser-data-cookies-label =
 browser-data-history-checkbox =
     .label =
         { $browser ->
-            [Floorp] Cronologia di navigazione e segnalibri
+            [firefox] Cronologia di navigazione e segnalibri
            *[other] Cronologia di navigazione
         }
 browser-data-history-label =
     .value =
         { $browser ->
-            [Floorp] Cronologia di navigazione e segnalibri
+            [firefox] Cronologia di navigazione e segnalibri
            *[other] Cronologia di navigazione
         }
 

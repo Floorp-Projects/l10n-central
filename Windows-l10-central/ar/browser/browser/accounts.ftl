@@ -13,5 +13,5 @@ account-disconnected2 = فُصل الحساب
 # Menu item that sends a tab to all synced devices.
 account-send-to-all-devices = أرسله إلى كل الأجهزة
 
-# Menu item that links to the Floorp Accounts settings for connected devices.
+# Menu item that links to the Firefox Accounts settings for connected devices.
 account-manage-devices = أدِر الأجهزة…

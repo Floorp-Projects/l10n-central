@@ -22,9 +22,9 @@ graph-private-window = { -brand-short-name } 将继续在隐私窗口中拦截�
 graph-week-summary-private-window = 本周 { -brand-short-name } 所拦截跟踪器
 protection-report-webpage-title = 保护信息面板
 protection-report-page-content-title = 保护信息面板
-# This message shows when all privacy protections are turned off, which is why we use the word "can", Floorp is able to protect your privacy, but it is currently not.
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
 protection-report-page-summary = 当您上网时，{ -brand-short-name } 会在后台保护您的隐私。以下是这些保护的个性化摘要，以及能够用来保护在线安全的各种工具。
-# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Floorp is actively protecting you.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
 protection-report-page-summary-default = 当您上网时，{ -brand-short-name } 会在后台保护您的隐私。以下是这些保护的个性化摘要，以及能够用来保护在线安全的各种工具。
 protection-report-settings-link = 管理您的隐私与安全设置
 etp-card-title-always = 增强型跟踪保护：始终开启

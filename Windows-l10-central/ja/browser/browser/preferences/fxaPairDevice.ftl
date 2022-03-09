@@ -6,9 +6,9 @@ fxa-pair-device-dialog =
     .title = 別の端末を接続
     .style = width: 26em; min-height: 35em;
 
-fxa-qrcode-heading-step1 = 1. まだなら、携帯端末に <a data-l10n-name="connect-another-device">Floorp</a> をインストールしてください。
+fxa-qrcode-heading-step1 = 1. まだなら、携帯端末に <a data-l10n-name="connect-another-device">Firefox</a> をインストールしてください。
 
-fxa-qrcode-heading-step2 = 2. 携帯端末の Floorp を起動してください。
+fxa-qrcode-heading-step2 = 2. 携帯端末の Firefox を起動してください。
 
 fxa-qrcode-heading-step3 = 3. <b>メニュー</b> (<img data-l10n-name="ios-menu-icon"/> または <img data-l10n-name="android-menu-icon"/>)を開いて、<img data-l10n-name="settings-icon"/> <b>設定</b>をタップし、<b>Sync を有効化</b>を選択します
 

@@ -29,7 +29,7 @@ about-unloads-intro =
     o { -brand-short-name } prioriza separadores e que separador será suspenso
     quando a suspensão de separadores for ativada. Pode despoletar a suspensão 
     de separadores manualmente ativando o botão <em>Suspender</em> abaixo.
-# The link points to a Floorp documentation page, only available in English,
+# The link points to a Firefox documentation page, only available in English,
 # with title "Tab Unloading"
 about-unloads-learn-more =
     Consulte <a data-l10n-name="doc-link">Suspensão de separadores</a> para saber mais sobre

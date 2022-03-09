@@ -359,6 +359,9 @@ update-application-warning-cross-user-setting = Denne innstillinga gjeld for all
 update-application-use-service =
     .label = Bruk ei bakgrunnsteneste for å installere oppdateringar
     .accesskey = B
+update-application-suppress-prompts =
+    .label = Vis færre oppdateringsvarsel
+    .accesskey = n
 update-setting-write-failure-title2 = Klarte ikkje å lagre oppdateringsinnstillingar
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -475,10 +478,10 @@ choose-bookmark =
     .label = Bruk bokmerke…
     .accesskey = u
 
-## Home Section - Floorp Home Content Customization
+## Home Section - Firefox Home Content Customization
 
-home-prefs-content-header = Innhald på: Floorp-startside
-home-prefs-content-description = Vel kva for innhald du vil ha på Floorp-startsida di.
+home-prefs-content-header = Innhald på: Firefox-startside
+home-prefs-content-description = Vel kva for innhald du vil ha på Firefox-startsida di.
 home-prefs-search-header =
     .label = Nettsøk
 home-prefs-topsites-header =
@@ -606,7 +609,7 @@ containers-settings-button =
 containers-remove-button =
     .label = Fjern
 
-## Floorp Account - Signed out. Note that "Sync" and "Floorp Account" are now
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Ta med deg nettet
@@ -622,9 +625,9 @@ sync-signedout-account-signin3 =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = Last ned Floorp for <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> eller  <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> for å synkronisere med mobileininga di.
+sync-mobile-promo = Last ned Firefox for <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> eller  <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> for å synkronisere med mobileininga di.
 
-## Floorp Account - Signed in
+## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Endre profilbilde
@@ -706,7 +709,7 @@ sync-engine-creditcards =
     .accesskey = K
 sync-engine-addons =
     .label = Tillegg
-    .tooltiptext = Tillegg og tema for Floorp desktop
+    .tooltiptext = Tillegg og tema for Firefox desktop
     .accesskey = T
 sync-engine-settings =
     .label = Innstillingar
@@ -786,7 +789,7 @@ forms-windows-sso-desc = Handter konton i einingsinnstillingane dine
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = Skriv inn innloggingsinformasjonen din for Windows for å lage eit hovudpassord. Dette vil gjere kontoen din tryggare.
 # This message can be seen by trying to add a Primary Password.
-# The macOS strings are preceded by the operating system with "Floorp is trying to "
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 primary-password-os-auth-dialog-message-macosx = lag eit hovudpassord
@@ -798,12 +801,12 @@ history-header = Historikk
 # This label is followed, on the same line, by a dropdown list of options
 # (Remember history, etc.).
 # In English it visually creates a full sentence, e.g.
-# "Floorp will" + "Remember history".
+# "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
 #   - Simply as "Floorp", moving the verb into each option.
 #     This will result in "Floorp" + "Will remember history", etc.
-#   - As a stand-alone message, for example "Floorp history settings:".
+#   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = { -brand-short-name } vil
     .accesskey = v
 history-remember-option-all =

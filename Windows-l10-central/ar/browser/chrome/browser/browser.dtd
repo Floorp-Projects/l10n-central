@@ -32,7 +32,7 @@ this container is a toolbar. This avoids double-speaking. -->
 <!ENTITY fxa.menu.signin.label "لِج إلى &brandProductName;">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
-     for the Floorp Account toolbar menu screen.  -->
+     for the Firefox Account toolbar menu screen.  -->
 <!ENTITY fxa.service.sendTab.description "أرسِل اللسان مباشرةً إلى أي جهاز ولجت فيه.">
 
 <!ENTITY printButton.label            "اطبع">
@@ -82,7 +82,7 @@ this container is a toolbar. This avoids double-speaking. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "فعّل مزامنة الألسنة لعرض قائمة بالألسنة من أجهزتك الأخرى.">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
-     the account. We also show links to download Floorp for android/ios. -->
+     the account. We also show links to download Firefox for android/ios. -->
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "أتريد رؤية ألسنتك من الأجهزة الأخرى هنا؟">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "افتح تفضيلات «تزامُن»">
 <!ENTITY appMenuRemoteTabs.welcome.label "اعرض قائمة بالألسنة من أجهزتك الأخرى.">

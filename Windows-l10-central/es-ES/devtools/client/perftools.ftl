@@ -9,7 +9,7 @@
 
 perftools-intro-title = Ajustes del perfilador
 perftools-intro-description =
-    Las grabaciones abren profiler.Floorp.com en una nueva pestaña. Todos los datos están almacenados
+    Las grabaciones abren profiler.firefox.com en una nueva pestaña. Todos los datos están almacenados
     localmente, pero puede elegir subirlos para compartirlos.
 
 ## All of the headings for the various sections.
@@ -26,7 +26,7 @@ perftools-heading-local-build = Compilación local
 ##
 
 perftools-description-intro =
-    Las grabaciones abren <a>profiler.Floorp.com</a> en una nueva pestaña. Todos los datos están almacenados
+    Las grabaciones abren <a>profiler.firefox.com</a> en una nueva pestaña. Todos los datos están almacenados
     localmente, pero puede elegir subirlos para compartirlos.
 perftools-description-local-build =
     Si está perfilando una compilación hecha por usted mismo en esta
@@ -123,14 +123,14 @@ perftools-onboarding-close-button =
 
 perftools-presets-web-developer-label = Desarrollador web
 perftools-presets-web-developer-description = Configuración recomendada para la depuración de la mayoría de aplicaciones web, con poca sobrecarga.
-perftools-presets-Floorp-platform-label = Plataforma Floorp
-perftools-presets-Floorp-platform-description = Configuración predeterminada recomendada para la depuración interna de la plataforma Floorp.
-perftools-presets-Floorp-front-end-label = Interfaz de Floorp
-perftools-presets-Floorp-front-end-description = Configuración predeterminada recomendada para la depuración interna de la interfaz de Floorp.
-perftools-presets-Floorp-graphics-label = Gráficos de Floorp
-perftools-presets-Floorp-graphics-description = Configuración predeterminada para la investigación de rendimiento gráfico de Floorp.
-perftools-presets-Floorp-label = { -brand-shorter-name }
-perftools-presets-Floorp-description = Valor predeterminado recomendado para la creación de perfiles { -brand-shorter-name }.
+perftools-presets-firefox-platform-label = Plataforma Firefox
+perftools-presets-firefox-platform-description = Configuración predeterminada recomendada para la depuración interna de la plataforma Firefox.
+perftools-presets-firefox-front-end-label = Interfaz de Firefox
+perftools-presets-firefox-front-end-description = Configuración predeterminada recomendada para la depuración interna de la interfaz de Firefox.
+perftools-presets-firefox-graphics-label = Gráficos de Firefox
+perftools-presets-firefox-graphics-description = Configuración predeterminada para la investigación de rendimiento gráfico de Firefox.
+perftools-presets-firefox-label = { -brand-shorter-name }
+perftools-presets-firefox-description = Valor predeterminado recomendado para la creación de perfiles { -brand-shorter-name }.
 perftools-presets-graphics-label = Gráficos
 perftools-presets-graphics-description = Preestablecido para investigar errores gráficos en { -brand-shorter-name }.
 perftools-presets-media-label = Multimedia

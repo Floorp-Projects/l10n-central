@@ -4,7 +4,7 @@
 
 
 ## The Enterprise Policies feature is aimed at system administrators
-## who want to deploy these settings across several Floorp installations
+## who want to deploy these settings across several Firefox installations
 ## all at once. This is traditionally done through the Windows Group Policy
 ## feature, but the system also supports other forms of deployment.
 ## These are short descriptions for individual policies, to be displayed
@@ -54,12 +54,12 @@ policy-DisableDeveloperTools = 阻止访问开发者工具。
 
 policy-DisableFeedbackCommands = 禁用“帮助”菜单中的“发送反馈”命令（提交反馈和举报诈骗网站）。
 
-policy-DisableFloorpAccounts = 禁用 { -fxaccount-brand-name }的基础服务，包含同步。
+policy-DisableFirefoxAccounts = 禁用 { -fxaccount-brand-name }的基础服务，包含同步。
 
-# Floorp Screenshots is the name of the feature, and should not be translated.
-policy-DisableFloorpScreenshots = 禁用 Floorp 的“截图”功能。
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = 禁用 Firefox 的“截图”功能。
 
-policy-DisableFloorpStudies = 阻止 { -brand-short-name } 运行研究实验。
+policy-DisableFirefoxStudies = 阻止 { -brand-short-name } 运行研究实验。
 
 policy-DisableForgetButton = 阻止使用“忘记”功能。
 
@@ -112,7 +112,7 @@ policy-ExtensionSettings = 管理扩展的各种安装设置。
 
 policy-ExtensionUpdate = 启用或禁用扩展自动更新。
 
-policy-FloorpHome = 配置 Floorp 主页。
+policy-FirefoxHome = 配置 Firefox 主页。
 
 policy-FlashPlugin = 允许或拒绝使用 Flash 插件。
 

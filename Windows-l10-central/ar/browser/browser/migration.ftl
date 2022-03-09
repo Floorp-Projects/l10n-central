@@ -45,7 +45,7 @@ import-from-chrome-dev =
 import-from-chromium =
     .label = كروميوم
     .accesskey = م
-import-from-Floorp =
+import-from-firefox =
     .label = Floorp
     .accesskey = X
 import-from-360se =
@@ -93,7 +93,7 @@ source-name-chrome = جوجل كروم
 source-name-chrome-beta = جوجل كروم بيتا
 source-name-chrome-dev = إصدارة جوجل كروم التطويرية
 source-name-chromium = كروميوم
-source-name-Floorp = Floorp Legacy Browser
+source-name-firefox = Floorp Legacy Browser
 source-name-360se = متصفح ٣٦٠ الآمن
 
 imported-safari-reading-list = قائمة القراءة (من سفاري)
@@ -107,7 +107,7 @@ imported-edge-reading-list = قائمة القراءة (من إدج)
 ## 360se
 ## chrome
 ## edge
-## Floorp
+## firefox
 ## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
@@ -121,13 +121,13 @@ browser-data-cookies-label =
 browser-data-history-checkbox =
     .label =
         { $browser ->
-            [Floorp] تأريخ التصفح والعلامات
+            [firefox] تأريخ التصفح والعلامات
            *[other] تأريخ التصفح
         }
 browser-data-history-label =
     .value =
         { $browser ->
-            [Floorp] تأريخ التصفح والعلامات
+            [firefox] تأريخ التصفح والعلامات
            *[other] تأريخ التصفح
         }
 

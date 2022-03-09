@@ -17,11 +17,11 @@ about-telemetry-next-ping = >>
 about-telemetry-page-title = Telemetry 데이터
 about-telemetry-current-store = 현재 저장소:
 about-telemetry-more-information = 자세한 정보를 찾고 계십니까?
-about-telemetry-Floorp-data-doc = <a data-l10n-name="data-doc-link">Floorp 데이터 문서</a>에 데이터 도구를 사용하는 방법에 대한 안내서가 포함되어 있습니다.
-about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">Floorp Telemetry 클라이언트 문서</a>에 개요, API 문서 및 데이터 참조에 대한 정의가 포함되어 있습니다.
+about-telemetry-firefox-data-doc = <a data-l10n-name="data-doc-link">Firefox 데이터 문서</a>에 데이터 도구를 사용하는 방법에 대한 안내서가 포함되어 있습니다.
+about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">Firefox Telemetry 클라이언트 문서</a>에 개요, API 문서 및 데이터 참조에 대한 정의가 포함되어 있습니다.
 about-telemetry-telemetry-dashboard = <a data-l10n-name="dashboard-link">Telemetry 대시보드</a>를 사용하면 Telemetry를 통해 Mozilla가 받는 데이터를 시각화 할 수 있습니다.
 about-telemetry-telemetry-probe-dictionary = <a data-l10n-name="probe-dictionary-link">프로브 사전</a>은 Telemetry에 의해 수집된 조사 내용에 대한 상세 정보와 설명을 제공합니다.
-about-telemetry-show-in-Floorp-json-viewer = JSON 뷰어에서 열기
+about-telemetry-show-in-Firefox-json-viewer = JSON 뷰어에서 열기
 about-telemetry-home-section = 홈
 about-telemetry-general-data-section = 일반 데이터
 about-telemetry-environment-data-section = 환경 데이터
@@ -77,7 +77,7 @@ about-telemetry-ping-details = 각 정보 조각들은 “<a data-l10n-name="pin
 about-telemetry-data-details-current = 각 정보는 "<a data-l10n-name="ping-link">핑</a>"에 묶여 전송됩니다. 현재의 데이터를 보고 계십니다.
 # string used as a placeholder for the search field
 # More info about it can be found here:
-# https://Floorp-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
+# https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
 # Variables:
 #   $selectedTitle (String): the section name from the structure of the ping.
 about-telemetry-filter-placeholder =
@@ -87,7 +87,7 @@ about-telemetry-filter-all-placeholder =
 # Variables:
 #   $searchTerms (String): the searched terms
 about-telemetry-results-for-search = “{ $searchTerms }”에 대한 결과
-# More info about it can be found here: https://Floorp-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
+# More info about it can be found here: https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
 # Variables:
 #   $sectionName (String): the section name from the structure of the ping.
 #   $currentSearchText (String): the current text in the search input
@@ -140,7 +140,7 @@ about-telemetry-origin-origin = origin
 about-telemetry-origin-count = 개수
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
-about-telemetry-origins-explanation = <a data-l10n-name="origin-doc-link">Floorp Origin Telemetry</a>는 전송되기 전에 데이터를 인코딩하여 { $telemetryServerOwner }가 항목의 수를 셀 수는 있지만, 주어진 { -brand-product-name }가 해당 카운트에 기여했는지 여부는 알 수 없습니다. (<a data-l10n-name="prio-blog-link">더 알아보기</a>)
+about-telemetry-origins-explanation = <a data-l10n-name="origin-doc-link">Firefox Origin Telemetry</a>는 전송되기 전에 데이터를 인코딩하여 { $telemetryServerOwner }가 항목의 수를 셀 수는 있지만, 주어진 { -brand-product-name }가 해당 카운트에 기여했는지 여부는 알 수 없습니다. (<a data-l10n-name="prio-blog-link">더 알아보기</a>)
 # Variables:
 #  $process (String): type of process in subsection headers ( e.g. "content", "parent" )
 about-telemetry-process = { $process } 프로세스

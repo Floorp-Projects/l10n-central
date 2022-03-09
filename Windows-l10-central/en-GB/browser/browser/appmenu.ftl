@@ -72,7 +72,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = Full screen
 
-## Floorp Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = Sign in to sync…
@@ -89,7 +89,7 @@ appmenu-remote-tabs-tabsnotsyncing = Turn on tab synchronising to view a list of
 appmenu-remote-tabs-opensettings =
     .label = Settings
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Floorp for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Want to see your tabs from other devices here?
 appmenu-remote-tabs-connectdevice =
     .label = Connect Another Device
@@ -121,8 +121,8 @@ whatsnew-panel-footer-checkbox =
     .label = Notify about new features
     .accesskey = f
 
-## The Floorp Profiler – The popup is the UI to turn on the profiler, and record
-## performance profiles. To enable it go to profiler.Floorp.com and click
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
 profiler-popup-button-idle =
@@ -148,12 +148,12 @@ profiler-popup-settings =
     .value = Settings
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Edit Settings…
-# This link takes the user to about:profiling, and is only visible with the Custom preset.
-profiler-popup-edit-settings-button =
-    .label = Edit Settings…
 profiler-popup-disabled =
     The profiler is currently disabled, most likely due to a Private Browsing window
     being open.
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Edit Settings…
 profiler-popup-recording-screen = Recording…
 # The profiler presets list is generated elsewhere, but the custom preset is defined
 # here only.
@@ -187,18 +187,8 @@ profiler-popup-capture-shortcut =
 profiler-popup-presets-web-developer-description = Recommended preset for most web app debugging, with low overhead.
 profiler-popup-presets-web-developer-label =
     .label = Web Developer
-profiler-popup-presets-Floorp-platform-description = Recommended preset for internal Floorp platform debugging.
-profiler-popup-presets-Floorp-platform-label =
-    .label = Floorp Platform
-profiler-popup-presets-Floorp-front-end-description = Recommended preset for internal Floorp front-end debugging.
-profiler-popup-presets-Floorp-front-end-label =
-    .label = Floorp Front-End
-profiler-popup-presets-Floorp-graphics-description = Recommended preset for Floorp graphics performance investigation.
-profiler-popup-presets-Floorp-graphics-label =
-    .label = Floorp Graphics
-profiler-popup-presets-media-description = Recommended preset for diagnosing audio and video problems.
-profiler-popup-presets-Floorp-description = Recommended preset for profiling { -brand-shorter-name }.
-profiler-popup-presets-Floorp-label =
+profiler-popup-presets-firefox-description = Recommended preset for profiling { -brand-shorter-name }.
+profiler-popup-presets-firefox-label =
     .label = { -brand-shorter-name }
 profiler-popup-presets-graphics-description = Preset for investigating graphics bugs in { -brand-shorter-name }.
 profiler-popup-presets-graphics-label =
@@ -245,6 +235,9 @@ appmenu-help-report-site-issue =
     .label = Report site issue…
 appmenu-help-feedback-page =
     .label = Submit feedback…
+    .accesskey = S
+appmenu-help-share-ideas =
+    .label = Share ideas and feedback…
     .accesskey = S
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode

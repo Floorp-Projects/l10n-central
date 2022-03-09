@@ -359,6 +359,9 @@ update-application-warning-cross-user-setting = This setting will apply to all W
 update-application-use-service =
     .label = Use a background service to install updates
     .accesskey = b
+update-application-suppress-prompts =
+    .label = Show fewer update notification prompts
+    .accesskey = n
 update-setting-write-failure-title2 = Error saving Update settings
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -404,6 +407,9 @@ browsing-use-autoscroll =
 browsing-use-smooth-scrolling =
     .label = Use smooth scrolling
     .accesskey = m
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Always show scrollbars
+    .accesskey = o
 browsing-use-onscreen-keyboard =
     .label = Show a touch keyboard when necessary
     .accesskey = c
@@ -475,10 +481,10 @@ choose-bookmark =
     .label = Use Bookmark…
     .accesskey = B
 
-## Home Section - Floorp Home Content Customization
+## Home Section - Firefox Home Content Customization
 
 home-prefs-content-header = Floorp Home Content
-home-prefs-content-description = Choose what content you want on your Floorp Home screen.
+home-prefs-content-description = Choose what content you want on your Firefox Home screen.
 home-prefs-search-header =
     .label = Web Search
 home-prefs-topsites-header =
@@ -606,7 +612,7 @@ containers-settings-button =
 containers-remove-button =
     .label = Remove
 
-## Floorp Account - Signed out. Note that "Sync" and "Floorp Account" are now
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Take Your Web With You
@@ -622,9 +628,9 @@ sync-signedout-account-signin3 =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = Download Floorp for <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> or <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> to synchronise with your mobile device.
+sync-mobile-promo = Download Firefox for <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> or <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> to synchronise with your mobile device.
 
-## Floorp Account - Signed in
+## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Change profile picture
@@ -706,7 +712,7 @@ sync-engine-creditcards =
     .accesskey = C
 sync-engine-addons =
     .label = Add-ons
-    .tooltiptext = Extensions and themes for Floorp desktop
+    .tooltiptext = Extensions and themes for Firefox desktop
     .accesskey = A
 sync-engine-settings =
     .label = Settings
@@ -786,7 +792,7 @@ forms-windows-sso-desc = Manage accounts in your device settings
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = To create a Primary Password, enter your Windows login credentials. This helps protect the security of your accounts.
 # This message can be seen by trying to add a Primary Password.
-# The macOS strings are preceded by the operating system with "Floorp is trying to "
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 primary-password-os-auth-dialog-message-macosx = create a Primary Password
@@ -798,12 +804,12 @@ history-header = History
 # This label is followed, on the same line, by a dropdown list of options
 # (Remember history, etc.).
 # In English it visually creates a full sentence, e.g.
-# "Floorp will" + "Remember history".
+# "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
 #   - Simply as "Floorp", moving the verb into each option.
 #     This will result in "Floorp" + "Will remember history", etc.
-#   - As a stand-alone message, for example "Floorp history settings:".
+#   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = { -brand-short-name } will
     .accesskey = w
 history-remember-option-all =

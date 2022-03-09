@@ -12,14 +12,14 @@
 about-debugging-page-title-setup-page = Ladění - nastavení
 
 # Page title (ie tab title) for the Runtime page
-# { $selectedRuntimeId } is the id of the current runtime, such as "this-Floorp", "localhost:6080", ...
+# { $selectedRuntimeId } is the id of the current runtime, such as "this-firefox", "localhost:6080", ...
 about-debugging-page-title-runtime-page = Ladění - běhové prostředí / { $selectedRuntimeId }
 
 # Sidebar strings
 
-# Display name of the runtime for the currently running instance of Floorp. Used in the
+# Display name of the runtime for the currently running instance of Firefox. Used in the
 # Sidebar and in the Setup page.
-about-debugging-this-Floorp-runtime-name =
+about-debugging-this-firefox-runtime-name =
     { -brand-shorter-name.gender ->
         [masculine] Tento { -brand-shorter-name }
         [feminine] Tato { -brand-shorter-name }
@@ -27,9 +27,9 @@ about-debugging-this-Floorp-runtime-name =
        *[other] Tato aplikace { -brand-shorter-name }
     }
 
-# Sidebar heading for selecting the currently running instance of Floorp
-about-debugging-sidebar-this-Floorp =
-    .name = { about-debugging-this-Floorp-runtime-name }
+# Sidebar heading for selecting the currently running instance of Firefox
+about-debugging-sidebar-this-firefox =
+    .name = { about-debugging-this-firefox-runtime-name }
 
 # Sidebar heading for connecting to some remote source
 about-debugging-sidebar-setup =
@@ -68,8 +68,8 @@ about-debugging-sidebar-item-connect-button-connection-not-responding = Připojo
 about-debugging-sidebar-item-connect-button-connection-timeout = Čas pro připojení vypršel
 
 # Text displayed in sidebar items for remote devices where a compatible browser (eg
-# Floorp) has not been detected yet. Typically, Android phones connected via USB with
-# USB debugging enabled, but where Floorp is not started.
+# Firefox) has not been detected yet. Typically, Android phones connected via USB with
+# USB debugging enabled, but where Firefox is not started.
 about-debugging-sidebar-runtime-item-waiting-for-browser = Čekání na prohlížeč…
 
 # Text displayed in sidebar items for remote devices that have been disconnected from the
@@ -105,8 +105,8 @@ about-debugging-setup-title = Nastavení
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = Nastavte si způsob připojení pro vzdálení ladění vašeho zařízení.
 
-# Explanatory text in the Setup page about what the 'This Floorp' page is for
-about-debugging-setup-this-Floorp2 = Použijte <a>{ about-debugging-this-Floorp-runtime-name }</a> pro ladění rozšíření a service workerů v této verzi { -brand-shorter-name(case: "loc") }
+# Explanatory text in the Setup page about what the 'This Firefox' page is for
+about-debugging-setup-this-firefox2 = Použijte <a>{ about-debugging-this-firefox-runtime-name }</a> pro ladění rozšíření a service workerů v této verzi { -brand-shorter-name(case: "loc") }
 
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = Připojit zařízení
@@ -146,7 +146,7 @@ about-debugging-setup-usb-step-enable-dev-menu2 = Zapněte nabídku vývojáře 
 about-debugging-setup-usb-step-enable-debug2 = Povolte ladění přes USB v nabídce pro vývojáře Androidu.
 
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug-Floorp2 = Povolte ladění přes USB ve Floorpu pro Android.
+about-debugging-setup-usb-step-enable-debug-firefox2 = Povolte ladění přes USB ve Firefoxu pro Android.
 
 # USB section step by step guide
 about-debugging-setup-usb-step-plug-device = Připojte zařízení s Androidem k vašemu počítači.
@@ -193,7 +193,7 @@ about-debugging-network-location-form-duplicate = Server „{ $host-value }“ j
 
 # Below are the titles for the various categories of debug targets that can be found
 # on "runtime" pages of about:debugging.
-# Title of the temporary extensions category (only available for "This Floorp" runtime).
+# Title of the temporary extensions category (only available for "This Firefox" runtime).
 about-debugging-runtime-temporary-extensions =
     .name = Dočasná rozšíření
 # Title of the extensions category.
@@ -227,23 +227,23 @@ about-debugging-runtime-service-workers-not-compatible = Konfigurace vašeho pro
 # This string is displayed in the runtime page if the remote browser version is too old.
 # "Troubleshooting" link points to https://developer.mozilla.org/docs/Tools/about:debugging#Troubleshooting
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
-# { $minVersion } is the minimum version that is compatible with the current Floorp instance (same format)
+# { $minVersion } is the minimum version that is compatible with the current Firefox instance (same format)
 about-debugging-browser-version-too-old = Připojený prohlížeč má starou verzi ({ $runtimeVersion }). Minimální podporovaná verze je ({ $minVersion }). Toto je nepodporovaná konfigurace a může způsobit nefunkčnost nástrojů pro vývojáře. Prosím aktualizujte připojený prohlížeč. <a> Poradce při potížích</a>
 
 # Dedicated message for a backward compatibility issue that occurs when connecting:
-# from Fx 70+ to the old Floorp for Android (aka Fennec) which uses Fx 68.
-about-debugging-browser-version-too-old-fennec = Tato verze Floorpu nemůže ladit Floorp pro Android (68). Pro testování doporučujeme do telefonu nainstalovat Floorp Nightly pro Android. <a>Více informací</a>
+# from Fx 70+ to the old Firefox for Android (aka Fennec) which uses Fx 68.
+about-debugging-browser-version-too-old-fennec = Tato verze Firefoxu nemůže ladit Firefox pro Android (68). Pro testování doporučujeme do telefonu nainstalovat Firefox Nightly pro Android. <a>Více informací</a>
 
 # This string is displayed in the runtime page if the remote browser version is too recent.
 # "Troubleshooting" link points to https://developer.mozilla.org/docs/Tools/about:debugging#Troubleshooting
 # { $runtimeID } is the build ID of the remote browser (for instance "20181231", format is yyyyMMdd)
-# { $localID } is the build ID of the current Floorp instance (same format)
+# { $localID } is the build ID of the current Firefox instance (same format)
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
 # { $localVersion } is the version of your current browser (same format)
-about-debugging-browser-version-too-recent = Připojený prohlížeč je novější ({ $runtimeVersion }, buildID { $runtimeID }) než váš { -brand-shorter-name } ({ $localVersion }, buildID { $localID }). Taková situace není podporována a může způsobit selhání nástrojů pro vývojáře. Aktualizujte prosím svůj Floorp. <a>Řešení potíží</a>
+about-debugging-browser-version-too-recent = Připojený prohlížeč je novější ({ $runtimeVersion }, buildID { $runtimeID }) než váš { -brand-shorter-name } ({ $localVersion }, buildID { $localID }). Taková situace není podporována a může způsobit selhání nástrojů pro vývojáře. Aktualizujte prosím svůj Firefox. <a>Řešení potíží</a>
 
 # Displayed for runtime info in runtime pages.
-# { $name } is brand name such as "Floorp Nightly"
+# { $name } is brand name such as "Firefox Nightly"
 # { $version } is version such as "64.0a1"
 about-debugging-runtime-name = { $name } ({ $version })
 
@@ -278,18 +278,18 @@ about-debugging-debug-target-list-empty = Ještě nic.
 # A target can be an addon, a tab, a worker...
 about-debugging-debug-target-inspect-button = Prozkoumat
 
-# Text of a button displayed in the "This Floorp" page, in the Temporary Extension
+# Text of a button displayed in the "This Firefox" page, in the Temporary Extension
 # section. Clicking on the button will open a file picker to load a temporary extension
 about-debugging-tmp-extension-install-button = Načíst dočasný doplněk…
 
-# Text displayed when trying to install a temporary extension in the "This Floorp" page.
+# Text displayed when trying to install a temporary extension in the "This Firefox" page.
 about-debugging-tmp-extension-install-error = Při instalaci dočasného doplňku došlo k chybě.
 
-# Text of a button displayed for a temporary extension loaded in the "This Floorp" page.
+# Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will reload the extension.
 about-debugging-tmp-extension-reload-button = Znovu načíst
 
-# Text of a button displayed for a temporary extension loaded in the "This Floorp" page.
+# Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will uninstall the extension and remove it from the page.
 about-debugging-tmp-extension-remove-button = Odebrat
 

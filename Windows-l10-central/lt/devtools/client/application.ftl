@@ -96,9 +96,9 @@ manifest-loaded-ok = Manifestas įkeltas.
 # load the manifest
 manifest-loaded-error = Įkeliant manifestą įvyko klaida:
 
-# Text displayed as an error when there has been a Floorp DevTools error while
+# Text displayed as an error when there has been a Firefox DevTools error while
 # trying to load the manifest
-manifest-loaded-devtools-error = „Floorp“ kūrėjų priemonių klaida
+manifest-loaded-devtools-error = „Firefox“ kūrėjų priemonių klaida
 
 # Text displayed when the page has no manifest available
 manifest-non-existing = Nerastas joks manifestas.

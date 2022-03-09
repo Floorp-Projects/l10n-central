@@ -43,7 +43,7 @@ appmenuitem-find-in-page =
 appmenuitem-zoom =
     .value = 확대/축소
 appmenuitem-more-tools =
-    .label = 더 많은 도구
+    .label = 기타 도구
 appmenuitem-help =
     .label = 도움말
 appmenuitem-exit2 =
@@ -72,7 +72,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = 전체 화면
 
-## Floorp Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = Sync에 로그인…
@@ -89,7 +89,7 @@ appmenu-remote-tabs-tabsnotsyncing = 다른 기기의 탭 목록을 보려면 �
 appmenu-remote-tabs-opensettings =
     .label = 설정
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Floorp for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = 다른 기기에서도 여기에서 열린 탭을 사용하시겠습니까?
 appmenu-remote-tabs-connectdevice =
     .label = 다른 기기 연결
@@ -121,8 +121,8 @@ whatsnew-panel-footer-checkbox =
     .label = 새 기능 알림
     .accesskey = f
 
-## The Floorp Profiler – The popup is the UI to turn on the profiler, and record
-## performance profiles. To enable it go to profiler.Floorp.com and click
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
 profiler-popup-button-idle =
@@ -148,12 +148,12 @@ profiler-popup-settings =
     .value = 설정
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = 설정 편집…
-# This link takes the user to about:profiling, and is only visible with the Custom preset.
-profiler-popup-edit-settings-button =
-    .label = 설정 편집…
 profiler-popup-disabled =
     프로파일러가 현재 비활성화되어 있습니다. 대부분의 경우 
     사생활 보호 창이 열려 있기 때문입니다.
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = 설정 편집…
 profiler-popup-recording-screen = 기록 중…
 # The profiler presets list is generated elsewhere, but the custom preset is defined
 # here only.
@@ -187,18 +187,8 @@ profiler-popup-capture-shortcut =
 profiler-popup-presets-web-developer-description = 오버헤드가 낮은 대부분의 웹 앱 디버깅에 권장되는 프리셋입니다.
 profiler-popup-presets-web-developer-label =
     .label = 웹 개발자
-profiler-popup-presets-Floorp-platform-description = 내부 Floorp 플랫폼 디버깅에 권장되는 프리셋입니다.
-profiler-popup-presets-Floorp-platform-label =
-    .label = Floorp 플랫폼
-profiler-popup-presets-Floorp-front-end-description = 내부 Floorp 프런트 엔드 디버깅에 권장되는 프리셋입니다.
-profiler-popup-presets-Floorp-front-end-label =
-    .label = Floorp 프런트 엔드
-profiler-popup-presets-Floorp-graphics-description = Floorp 그래픽 성능 조사에 권장되는 프리셋입니다.
-profiler-popup-presets-Floorp-graphics-label =
-    .label = Floorp 그래픽
-profiler-popup-presets-media-description = 오디오 및 비디오 문제 진단에 권장되는 프리셋입니다.
-profiler-popup-presets-Floorp-description = { -brand-shorter-name } 프로파일링에 권장되는 프리셋입니다.
-profiler-popup-presets-Floorp-label =
+profiler-popup-presets-firefox-description = { -brand-shorter-name } 프로파일링에 권장되는 프리셋입니다.
+profiler-popup-presets-firefox-label =
     .label = { -brand-shorter-name }
 profiler-popup-presets-graphics-description = { -brand-shorter-name }의 그래픽 버그를 조사하기 위한 프리셋입니다.
 profiler-popup-presets-graphics-label =
@@ -245,6 +235,9 @@ appmenu-help-report-site-issue =
     .label = 사이트 문제 보고…
 appmenu-help-feedback-page =
     .label = 의견 보내기…
+    .accesskey = S
+appmenu-help-share-ideas =
+    .label = 아이디어 공유 및 의견 보내기…
     .accesskey = S
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode

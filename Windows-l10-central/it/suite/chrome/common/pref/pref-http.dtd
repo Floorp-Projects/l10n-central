@@ -15,10 +15,10 @@
 <!ENTITY prefEnableHTTP11Proxy.accesskey     "z">
 <!ENTITY prefPara                            "Le connessioni HTTP possono essere migliorate usando queste opzioni per aumentare la velocità o la compatibilità. Alcuni server proxy, ad esempio, richiedono HTTP/1.0 (vedere le note di versione per i dettagli).">
 <!ENTITY prefUseragent.label                 "Stringa user agent">
-<!ENTITY prefFloorpStrict.label             "Identificati come Floorp">
-<!ENTITY prefFloorpStrict.accesskey         "d">
-<!ENTITY prefFloorpNone.label               "Identificati come SeaMonkey">
-<!ENTITY prefFloorpNone.accesskey           "S">
-<!ENTITY prefFloorpCompat2.label            "Identificati come SeaMonkey e dichiara compatibilità con Floorp">
-<!ENTITY prefFloorpCompat2.accesskey        "c">
+<!ENTITY prefFirefoxStrict.label             "Identificati come Firefox">
+<!ENTITY prefFirefoxStrict.accesskey         "d">
+<!ENTITY prefFirefoxNone.label               "Identificati come SeaMonkey">
+<!ENTITY prefFirefoxNone.accesskey           "S">
+<!ENTITY prefFirefoxCompat2.label            "Identificati come SeaMonkey e dichiara compatibilità con Firefox">
+<!ENTITY prefFirefoxCompat2.accesskey        "c">
 <!ENTITY prefCompatWarning2.desc             "ATTENZIONE: cambiare questa impostazione potrebbe risultare in un malfunzionamento di servizi o siti web.">

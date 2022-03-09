@@ -302,7 +302,7 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 applications-use-plugin-in =
     .label = 使用 { $plugin-name } （在 { -brand-short-name } 中）
 applications-open-inapp =
-    .label = 在 { -brand-short-name } 中打开
+    .label = 用 { -brand-short-name } 打开
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -355,6 +355,9 @@ update-application-warning-cross-user-setting = 此设置将影响使用这份 {
 update-application-use-service =
     .label = 使用后台服务静默安装更新
     .accesskey = b
+update-application-suppress-prompts =
+    .label = 减少更新通知提示
+    .accesskey = n
 update-setting-write-failure-title2 = 保存“更新”设置时出错
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -400,6 +403,9 @@ browsing-use-autoscroll =
 browsing-use-smooth-scrolling =
     .label = 使用平滑滚动
     .accesskey = m
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = 总是显示滚动条
+    .accesskey = o
 browsing-use-onscreen-keyboard =
     .label = 在需要时显示触摸键盘
     .accesskey = k
@@ -471,10 +477,10 @@ choose-bookmark =
     .label = 使用书签…
     .accesskey = B
 
-## Home Section - Floorp Home Content Customization
+## Home Section - Firefox Home Content Customization
 
 home-prefs-content-header = Floorp 主页内容
-home-prefs-content-description = 选择要在您的 Floorp 主页上显示的版块。
+home-prefs-content-description = 选择要在您的 Firefox 主页上显示的版块。
 home-prefs-search-header =
     .label = 网络搜索
 home-prefs-topsites-header =
@@ -598,7 +604,7 @@ containers-settings-button =
 containers-remove-button =
     .label = 移除
 
-## Floorp Account - Signed out. Note that "Sync" and "Floorp Account" are now
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = 让您个性化的网络体验随身相伴
@@ -614,9 +620,9 @@ sync-signedout-account-signin3 =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = 在 <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> 或者 <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> 上安装 Floorp，让您的个性体验随身相伴。
+sync-mobile-promo = 在 <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> 或者 <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> 上安装 Firefox，让您的个性体验随身相伴。
 
-## Floorp Account - Signed in
+## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = 更改头像
@@ -698,7 +704,7 @@ sync-engine-creditcards =
     .accesskey = C
 sync-engine-addons =
     .label = 附加组件
-    .tooltiptext = 用于 Floorp 桌面版的扩展和主题
+    .tooltiptext = 用于 Firefox 桌面版的扩展和主题
     .accesskey = A
 sync-engine-settings =
     .label = 设置
@@ -778,7 +784,7 @@ forms-windows-sso-desc = 在您的设备设置中管理账户
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = 请输入 Windows 登录凭据，以创建主密码。这有助于保护您的账户安全。
 # This message can be seen by trying to add a Primary Password.
-# The macOS strings are preceded by the operating system with "Floorp is trying to "
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 primary-password-os-auth-dialog-message-macosx = 创建主密码
@@ -790,12 +796,12 @@ history-header = 历史记录
 # This label is followed, on the same line, by a dropdown list of options
 # (Remember history, etc.).
 # In English it visually creates a full sentence, e.g.
-# "Floorp will" + "Remember history".
+# "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
 #   - Simply as "Floorp", moving the verb into each option.
 #     This will result in "Floorp" + "Will remember history", etc.
-#   - As a stand-alone message, for example "Floorp history settings:".
+#   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = { -brand-short-name } 将
     .accesskey = w
 history-remember-option-all =

@@ -8,7 +8,7 @@
 ### file that are used for the profiler popup.
 
 perftools-intro-title = Configurações do profiler
-perftools-intro-description = As gravações abrem o profiler.Floorp.com em uma nova aba. Todos os dados são armazenados localmente, mas você pode escolher enviar para compartilhar.
+perftools-intro-description = As gravações abrem o profiler.firefox.com em uma nova aba. Todos os dados são armazenados localmente, mas você pode escolher enviar para compartilhar.
 
 ## All of the headings for the various sections.
 
@@ -23,7 +23,7 @@ perftools-heading-local-build = Build local
 
 ##
 
-perftools-description-intro = As gravações abrem o <a>profiler.Floorp.com</a> em uma nova aba. Todos os dados são armazenados localmente, mas você pode escolher enviar para compartilhar.
+perftools-description-intro = As gravações abrem o <a>profiler.firefox.com</a> em uma nova aba. Todos os dados são armazenados localmente, mas você pode escolher enviar para compartilhar.
 perftools-description-local-build = Se você está gravando um profile de uma build que você mesmo compilou nesta máquina, adicione o objdir da sua build à lista abaixo para que ele possa ser usado para procurar informações de símbolos.
 
 ## The controls for the interval at which the profiler samples the code.
@@ -116,14 +116,14 @@ perftools-onboarding-close-button =
 
 perftools-presets-web-developer-label = Desenvolvimento web
 perftools-presets-web-developer-description = Ajuste prévio recomendado para depuração da maioria dos aplicativos web, com pouca sobrecarga.
-perftools-presets-Floorp-platform-label = Plataforma Floorp
-perftools-presets-Floorp-platform-description = Ajuste prévio recomendado para depuração de aspectos internos da plataforma Floorp.
-perftools-presets-Floorp-front-end-label = Interface do usuário do Floorp
-perftools-presets-Floorp-front-end-description = Ajuste prévio recomendado para depuração de aspectos internos da interface do usuário (front-end) do Floorp.
-perftools-presets-Floorp-graphics-label = Gráfico do Floorp
-perftools-presets-Floorp-graphics-description = Ajuste prévio recomendado para investigação de desempenho gráfico do Floorp.
-perftools-presets-Floorp-label = { -brand-shorter-name }
-perftools-presets-Floorp-description = Predefinição recomendada para gravação de profile no { -brand-shorter-name }.
+perftools-presets-firefox-platform-label = Plataforma Firefox
+perftools-presets-firefox-platform-description = Ajuste prévio recomendado para depuração de aspectos internos da plataforma Firefox.
+perftools-presets-firefox-front-end-label = Interface do usuário do Firefox
+perftools-presets-firefox-front-end-description = Ajuste prévio recomendado para depuração de aspectos internos da interface do usuário (front-end) do Firefox.
+perftools-presets-firefox-graphics-label = Gráfico do Firefox
+perftools-presets-firefox-graphics-description = Ajuste prévio recomendado para investigação de desempenho gráfico do Firefox.
+perftools-presets-firefox-label = { -brand-shorter-name }
+perftools-presets-firefox-description = Predefinição recomendada para gravação de profile no { -brand-shorter-name }.
 perftools-presets-graphics-label = Gráficos
 perftools-presets-graphics-description = Predefinição para investigar bugs gráficos no { -brand-shorter-name }.
 perftools-presets-media-label = Mídia

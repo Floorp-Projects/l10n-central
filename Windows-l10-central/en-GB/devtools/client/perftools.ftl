@@ -9,7 +9,7 @@
 
 perftools-intro-title = Profiler Settings
 perftools-intro-description =
-    Recordings launch profiler.Floorp.com in a new tab. All data is stored
+    Recordings launch profiler.firefox.com in a new tab. All data is stored
     locally, but you can choose to upload it for sharing.
 
 ## All of the headings for the various sections.
@@ -26,7 +26,7 @@ perftools-heading-local-build = Local build
 ##
 
 perftools-description-intro =
-    Recordings launch <a>profiler.Floorp.com</a> in a new tab. All data is stored
+    Recordings launch <a>profiler.firefox.com</a> in a new tab. All data is stored
     locally, but you can choose to upload it for sharing.
 perftools-description-local-build =
     If you’re profiling a build that you have compiled yourself, on this
@@ -123,14 +123,14 @@ perftools-onboarding-close-button =
 
 perftools-presets-web-developer-label = Web Developer
 perftools-presets-web-developer-description = Recommended preset for most web app debugging, with low overhead.
-perftools-presets-Floorp-platform-label = Floorp Platform
-perftools-presets-Floorp-platform-description = Recommended preset for internal Floorp platform debugging.
-perftools-presets-Floorp-front-end-label = Floorp Front-End
-perftools-presets-Floorp-front-end-description = Recommended preset for internal Floorp front-end debugging.
-perftools-presets-Floorp-graphics-label = Floorp Graphics
-perftools-presets-Floorp-graphics-description = Recommended preset for Floorp graphics performance investigation.
-perftools-presets-Floorp-label = { -brand-shorter-name }
-perftools-presets-Floorp-description = Recommended preset for profiling { -brand-shorter-name }.
+perftools-presets-firefox-platform-label = Floorp Platform
+perftools-presets-firefox-platform-description = Recommended preset for internal Firefox platform debugging.
+perftools-presets-firefox-front-end-label = Floorp Front-End
+perftools-presets-firefox-front-end-description = Recommended preset for internal Firefox front-end debugging.
+perftools-presets-firefox-graphics-label = Floorp Graphics
+perftools-presets-firefox-graphics-description = Recommended preset for Firefox graphics performance investigation.
+perftools-presets-firefox-label = { -brand-shorter-name }
+perftools-presets-firefox-description = Recommended preset for profiling { -brand-shorter-name }.
 perftools-presets-graphics-label = Graphics
 perftools-presets-graphics-description = Preset for investigating graphics bugs in { -brand-shorter-name }.
 perftools-presets-media-label = Media

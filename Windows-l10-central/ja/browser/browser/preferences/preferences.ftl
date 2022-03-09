@@ -450,6 +450,10 @@ update-application-use-service =
     .label = 更新のインストールにバックグラウンドサービスを使用する
     .accesskey = b
 
+update-application-suppress-prompts =
+    .label = 更新確認の通知頻度を少なくする
+    .accesskey = n
+
 update-setting-write-failure-title2 = 設定変更の保存エラー
 
 # Variables:
@@ -600,7 +604,7 @@ choose-bookmark =
     .label = ブックマークを使う...
     .accesskey = B
 
-## Home Section - Floorp Home Content Customization
+## Home Section - Firefox Home Content Customization
 
 home-prefs-content-header = Floorp Home コンテンツ
 home-prefs-content-description = Floorp Home に表示するコンテンツを選びましょう。
@@ -750,7 +754,7 @@ containers-settings-button =
 containers-remove-button =
     .label = 削除
 
-## Floorp Account - Signed out. Note that "Sync" and "Floorp Account" are now
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = ウェブを持ち歩こう
@@ -770,7 +774,7 @@ sync-signedout-account-signin3 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Floorp for <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> または <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> をダウンロードしてモバイル端末と同期しましょう。
 
-## Floorp Account - Signed in
+## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = プロフィール写真を変更します
@@ -871,7 +875,7 @@ sync-engine-creditcards =
 
 sync-engine-addons =
     .label = アドオン
-    .tooltiptext = デスクトップ版 Floorp の拡張機能とテーマです
+    .tooltiptext = デスクトップ版 Firefox の拡張機能とテーマです
     .accesskey = A
 
 sync-engine-settings =
@@ -960,7 +964,7 @@ forms-windows-sso-desc = 端末の設定でアカウントを管理します
 primary-password-os-auth-dialog-message-win = マスターパスワードを作成するには、Windows でのあなたの資格情報を入力してください。これはアカウントのセキュリティ保護に役立ちます。
 
 # This message can be seen by trying to add a Primary Password.
-# The macOS strings are preceded by the operating system with "Floorp is trying to "
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 primary-password-os-auth-dialog-message-macosx = マスターパスワードを作成
@@ -973,12 +977,12 @@ history-header = 履歴
 # This label is followed, on the same line, by a dropdown list of options
 # (Remember history, etc.).
 # In English it visually creates a full sentence, e.g.
-# "Floorp will" + "Remember history".
+# "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
 #   - Simply as "Floorp", moving the verb into each option.
 #     This will result in "Floorp" + "Will remember history", etc.
-#   - As a stand-alone message, for example "Floorp history settings:".
+#   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = { -brand-short-name } に
     .accesskey = w
 

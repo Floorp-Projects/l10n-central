@@ -6,9 +6,9 @@ fxa-pair-device-dialog =
     .title = Σύνδεση άλλης συσκευής
     .style = width: 26em; min-height: 35em;
 
-fxa-qrcode-heading-step1 = 1. Αν δεν το έχετε κάνει ήδη, εγκαταστήστε το <a data-l10n-name="connect-another-device">Floorp στην κινητή σας συσκευή</a>.
+fxa-qrcode-heading-step1 = 1. Αν δεν το έχετε κάνει ήδη, εγκαταστήστε το <a data-l10n-name="connect-another-device">Firefox στην κινητή σας συσκευή</a>.
 
-fxa-qrcode-heading-step2 = 2. Ανοίξτε το Floorp στην κινητή σας συσκευή.
+fxa-qrcode-heading-step2 = 2. Ανοίξτε το Firefox στην κινητή σας συσκευή.
 
 fxa-qrcode-heading-step3 = 3. Ανοίξτε το <b>μενού</b> (<img data-l10n-name="ios-menu-icon"/> ή <img data-l10n-name="android-menu-icon"/>), πατήστε το <img data-l10n-name="settings-icon"/> <b>Ρυθμίσεις</b> και επιλέξτε <b>Ενεργοποίηση Sync</b>
 

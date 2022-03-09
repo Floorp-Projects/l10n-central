@@ -96,9 +96,9 @@ manifest-loaded-ok = Manifest carregado.
 # load the manifest
 manifest-loaded-error = Houve um erro ao carregar o manifest:
 
-# Text displayed as an error when there has been a Floorp DevTools error while
+# Text displayed as an error when there has been a Firefox DevTools error while
 # trying to load the manifest
-manifest-loaded-devtools-error = Erro no Floorp DevTools
+manifest-loaded-devtools-error = Erro no Firefox DevTools
 
 # Text displayed when the page has no manifest available
 manifest-non-existing = Nenhum manifest encontrado para ser inspecionado.

@@ -24,9 +24,9 @@ graph-private-window = { -brand-short-name } fortsætter med at blokere sporings
 graph-week-summary-private-window = Sporings-mekanismer, { -brand-short-name } blokerede denne uge
 protection-report-webpage-title = Oversigt over beskyttelse
 protection-report-page-content-title = Oversigt over beskyttelse
-# This message shows when all privacy protections are turned off, which is why we use the word "can", Floorp is able to protect your privacy, but it is currently not.
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
 protection-report-page-summary = { -brand-short-name } kan beskytte dit privatliv, mens du bruger nettet. Dette viser dit personlige resume over, hvordan du er beskyttet - samt værktøj til at tage kontrol over din online identitet.
-# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Floorp is actively protecting you.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
 protection-report-page-summary-default = { -brand-short-name } beskytter dit privatliv på nettet. Denne side viser dit personlige resume over, hvordan du er beskyttet - samt værktøj til at tage kontrol over din online identitet.
 protection-report-settings-link = Håndter dine indstillinger for sikkerhed og privatlivs-beskyttelse
 etp-card-title-always = Udvidet beskyttelse mod sporing: Altid slået til

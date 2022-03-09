@@ -11,7 +11,7 @@ process-type-web = ウェブコンテンツ
 # such as about:home
 process-type-privilegedabout = 特権 About ページ
 # process used to run privileged mozilla pages,
-# such as accounts.Floorp.com
+# such as accounts.firefox.com
 process-type-privilegedmozilla = 特権 Mozilla コンテンツ
 process-type-extension = 拡張機能
 # process used to open file:// URLs
@@ -41,6 +41,8 @@ process-type-gpu = GPU
 process-type-socket = ソケット
 # process used to decode media
 process-type-rdd = RDD
+# process used to run some IPC actor in their own sandbox
+process-type-utility = サンドボックス化された IPC アクター
 
 ##
 ## Other

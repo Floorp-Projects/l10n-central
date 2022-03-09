@@ -28,12 +28,12 @@ this container is a toolbar. This avoids double-speaking. -->
 
 
 <!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
-     for the Floorp Account toolbar menu screen. The `Signed in as` text is
+     for the Firefox Account toolbar menu screen. The `Signed in as` text is
      followed by the user's email. -->
 <!ENTITY fxa.menu.signin.label			"&brandProductName; にログイン">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
-     for the Floorp Account toolbar menu screen.  -->
+     for the Firefox Account toolbar menu screen.  -->
 <!ENTITY fxa.service.sendTab.description	"ログインしている他の端末に今すぐタブを送ります。">
 
 <!ENTITY printButton.label			"印刷">
@@ -86,7 +86,7 @@ this container is a toolbar. This avoids double-speaking. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label	"タブの同期をオンにすると、あなたの他の端末のタブ一覧が表示されます。">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
-     the account. We also show links to download Floorp for android/ios. -->
+     the account. We also show links to download Firefox for android/ios. -->
 <!ENTITY appMenuRemoteTabs.noclients.subtitle	"他の端末のタブを表示しますか？">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label	"Sync の設定を開く">
 <!ENTITY appMenuRemoteTabs.welcome.label	"他の端末のタブ一覧を表示する。">

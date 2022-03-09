@@ -13,5 +13,5 @@ account-disconnected2 = A fiók leválasztva
 # Menu item that sends a tab to all synced devices.
 account-send-to-all-devices = Küldés minden eszközre
 
-# Menu item that links to the Floorp Accounts settings for connected devices.
+# Menu item that links to the Firefox Accounts settings for connected devices.
 account-manage-devices = Eszközök kezelése…

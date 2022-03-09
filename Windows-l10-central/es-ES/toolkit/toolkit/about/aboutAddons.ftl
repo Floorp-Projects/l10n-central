@@ -373,9 +373,9 @@ addon-permissions-learnmore = Saber más sobre los permisos
 recommended-extensions-heading = Extensiones recomendadas
 recommended-themes-heading = Temas recomendados
 addon-sitepermissions-required = Concede los siguientes permisos a <span data-l10n-name="hostname">{ $hostname }</span>:
-# A recommendation for the Floorp Color theme shown at the bottom of the theme
-# list view. The "Floorp Color" name itself should not be translated.
-recommended-theme-1 = ¿Se siente creativo? <a data-l10n-name="link">Cree su propio tema con Floorp Color.</a>
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = ¿Se siente creativo? <a data-l10n-name="link">Cree su propio tema con Firefox Color.</a>
 
 ## Page headings
 

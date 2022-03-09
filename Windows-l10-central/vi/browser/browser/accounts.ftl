@@ -13,5 +13,5 @@ account-disconnected2 = Đã ngắt kết nối tài khoản
 # Menu item that sends a tab to all synced devices.
 account-send-to-all-devices = Gửi tới tất cả các thiết bị
 
-# Menu item that links to the Floorp Accounts settings for connected devices.
+# Menu item that links to the Firefox Accounts settings for connected devices.
 account-manage-devices = Quản lý thiết bị…

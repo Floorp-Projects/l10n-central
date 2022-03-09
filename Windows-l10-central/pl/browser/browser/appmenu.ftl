@@ -72,7 +72,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = Tryb pełnoekranowy
 
-## Floorp Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = Zaloguj się do synchronizacji…
@@ -89,7 +89,7 @@ appmenu-remote-tabs-tabsnotsyncing = Włącz synchronizację kart, aby wyświetl
 appmenu-remote-tabs-opensettings =
     .label = Ustawienia
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Floorp for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Czy wyświetlić tutaj listę kart otwartych na innych urządzeniach?
 appmenu-remote-tabs-connectdevice =
     .label = Połącz inne urządzenie
@@ -121,8 +121,8 @@ whatsnew-panel-footer-checkbox =
     .label = Powiadamiaj o nowych funkcjach
     .accesskey = P
 
-## The Floorp Profiler – The popup is the UI to turn on the profiler, and record
-## performance profiles. To enable it go to profiler.Floorp.com and click
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
 profiler-popup-button-idle =
@@ -187,18 +187,18 @@ profiler-popup-capture-shortcut =
 profiler-popup-presets-web-developer-description = Zalecane ustawienie do debugowania większości aplikacji internetowych o niskim wpływie na wydajność.
 profiler-popup-presets-web-developer-label =
     .label = Dla twórców witryn
-profiler-popup-presets-Floorp-platform-description = Zalecane ustawienie do wewnętrznego debugowania platformy Firefoksa.
-profiler-popup-presets-Floorp-platform-label =
+profiler-popup-presets-firefox-platform-description = Zalecane ustawienie do wewnętrznego debugowania platformy Firefoksa.
+profiler-popup-presets-firefox-platform-label =
     .label = Platforma Firefoksa
-profiler-popup-presets-Floorp-front-end-description = Zalecane ustawienie do wewnętrznego debugowania interfejsu Firefoksa.
-profiler-popup-presets-Floorp-front-end-label =
+profiler-popup-presets-firefox-front-end-description = Zalecane ustawienie do wewnętrznego debugowania interfejsu Firefoksa.
+profiler-popup-presets-firefox-front-end-label =
     .label = Interfejs Firefoksa
-profiler-popup-presets-Floorp-graphics-description = Zalecane ustawienie do badania wydajności graficznej Firefoksa.
-profiler-popup-presets-Floorp-graphics-label =
+profiler-popup-presets-firefox-graphics-description = Zalecane ustawienie do badania wydajności graficznej Firefoksa.
+profiler-popup-presets-firefox-graphics-label =
     .label = Grafika Firefoksa
 profiler-popup-presets-media-description = Zalecane ustawienie do diagnozowania problemów z dźwiękiem i obrazem.
-profiler-popup-presets-Floorp-description = Zalecane ustawienie do profilowania programu { -brand-shorter-name }.
-profiler-popup-presets-Floorp-label =
+profiler-popup-presets-firefox-description = Zalecane ustawienie do profilowania programu { -brand-shorter-name }.
+profiler-popup-presets-firefox-label =
     .label = { -brand-shorter-name }
 profiler-popup-presets-graphics-description = Ustawienie do badania błędów graficznych w programie { -brand-shorter-name }.
 profiler-popup-presets-graphics-label =

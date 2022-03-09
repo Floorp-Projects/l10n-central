@@ -57,7 +57,7 @@ cfr-doorhanger-extension-total-users =
        *[other] { $total } brukarar
     }
 
-## Floorp Accounts Message
+## Firefox Accounts Message
 
 cfr-doorhanger-bookmark-fxa-header = Synkroniser bokmerka dine overalt.
 cfr-doorhanger-bookmark-fxa-body = Bra funn! Manglar du bokmerket på dei mobile einingane dine. Kom i gang med ein { -fxaccount-brand-name }.

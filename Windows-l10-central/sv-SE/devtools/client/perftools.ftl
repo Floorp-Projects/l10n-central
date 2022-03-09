@@ -9,7 +9,7 @@
 
 perftools-intro-title = Profilerarinställningar
 perftools-intro-description =
-    Inspelningar startar profiler.Floorp.com i en ny flik. All data lagras
+    Inspelningar startar profiler.firefox.com i en ny flik. All data lagras
     lokalt, men du kan välja att ladda upp den för delning.
 
 ## All of the headings for the various sections.
@@ -26,7 +26,7 @@ perftools-heading-local-build = Lokalt bygge
 ##
 
 perftools-description-intro =
-    Inspelningar startar <a>profiler.Floorp.com</a> i en ny flik. All data lagras
+    Inspelningar startar <a>profiler.firefox.com</a> i en ny flik. All data lagras
     lokalt, men du kan välja att ladda upp den för delning.
 perftools-description-local-build =
     Om du profilerar ett bygge som du själv har sammanställt, på denna
@@ -123,14 +123,14 @@ perftools-onboarding-close-button =
 
 perftools-presets-web-developer-label = Webbutvecklare
 perftools-presets-web-developer-description = Rekommenderad förinställning för de flesta webbappfelsökningar, med lite pålägg.
-perftools-presets-Floorp-platform-label = Floorp - Plattform
-perftools-presets-Floorp-platform-description = Rekommenderad förinställning för intern felsökning av plattformar i Floorp.
-perftools-presets-Floorp-front-end-label = Floorp - Front-End
-perftools-presets-Floorp-front-end-description = Rekommenderad förinställning för intern felsökning av front-end i Floorp.
-perftools-presets-Floorp-graphics-label = Floorp - Grafik
-perftools-presets-Floorp-graphics-description = Rekommenderad förinställning för utredning av grafikprestanda i Floorp.
-perftools-presets-Floorp-label = { -brand-shorter-name }
-perftools-presets-Floorp-description = Rekommenderad förinställning för profilering av { -brand-shorter-name }.
+perftools-presets-firefox-platform-label = Floorp - Plattform
+perftools-presets-firefox-platform-description = Rekommenderad förinställning för intern felsökning av plattformar i Firefox.
+perftools-presets-firefox-front-end-label = Floorp - Front-End
+perftools-presets-firefox-front-end-description = Rekommenderad förinställning för intern felsökning av front-end i Firefox.
+perftools-presets-firefox-graphics-label = Floorp - Grafik
+perftools-presets-firefox-graphics-description = Rekommenderad förinställning för utredning av grafikprestanda i Firefox.
+perftools-presets-firefox-label = { -brand-shorter-name }
+perftools-presets-firefox-description = Rekommenderad förinställning för profilering av { -brand-shorter-name }.
 perftools-presets-graphics-label = Grafik
 perftools-presets-graphics-description = Förinställd för att undersöka grafikbuggar i { -brand-shorter-name }.
 perftools-presets-media-label = Media

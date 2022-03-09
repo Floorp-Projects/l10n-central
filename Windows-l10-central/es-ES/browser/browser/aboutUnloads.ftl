@@ -29,7 +29,7 @@ about-unloads-intro =
     { -brand-short-name } prioriza las pestañas y qué pestaña se descargará
     cuando se active la descarga de pestañas. Puede descargar pestañas manualmente
     haciendo clic en el botón <em>Descargar</em>.
-# The link points to a Floorp documentation page, only available in English,
+# The link points to a Firefox documentation page, only available in English,
 # with title "Tab Unloading"
 about-unloads-learn-more =
     Vea <a data-l10n-name="doc-link">Descarga de pestañas</a> para saber más sobre

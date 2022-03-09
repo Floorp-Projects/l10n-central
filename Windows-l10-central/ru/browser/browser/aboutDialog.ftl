@@ -39,7 +39,6 @@ warningDesc-version = { -brand-short-name } является экспериме�
 
 aboutdialog-help-user = Справка { -brand-product-name }
 aboutdialog-submit-feedback = Отправить отзыв
-iconprov = Создатель иконок Floorp Legacy : <label data-l10n-name="iconprov-Link">@kotaten_kt</label>
 
 community-exp = <label data-l10n-name="community-exp-mozillaLink">{ -vendor-short-name }</label> является <label data-l10n-name="community-exp-creditsLink">глобальным сообществом</label>, работающим над тем, чтобы Интернет оставался открытым, публичным и доступным для всех и каждого.
 
@@ -53,13 +52,13 @@ bottomLinks-privacy = Политика приватности
 
 # Example of resulting string: 66.0.1 (64-bit)
 # Variables:
-#   $version (String): version of Floorp, e.g. 66.0.1
+#   $version (String): version of Firefox, e.g. 66.0.1
 #   $bits (Number): bits of the architecture (32 or 64)
 aboutDialog-version = { $version } ({ $bits } бита)
 
 # Example of resulting string: 66.0a1 (2019-01-16) (64-bit)
 # Variables:
-#   $version (String): version of Floorp for Nightly builds, e.g. 66.0a1
+#   $version (String): version of Firefox for Nightly builds, e.g. 66.0a1
 #   $isodate (String): date in ISO format, e.g. 2019-01-16
 #   $bits (Number): bits of the architecture (32 or 64)
 aboutDialog-version-nightly = { $version } ({ $isodate }) ({ $bits } бита)

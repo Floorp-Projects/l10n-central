@@ -68,7 +68,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = Schermo intero
 
-## Floorp Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = Accedi per sincronizzare…
@@ -85,7 +85,7 @@ appmenu-remote-tabs-tabsnotsyncing = Attiva la sincronizzazione delle schede per
 appmenu-remote-tabs-opensettings =
     .label = Impostazioni
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Floorp for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Come fare per visualizzare in questa sezione le schede da altri dispositivi?
 appmenu-remote-tabs-connectdevice =
     .label = Connetti un altro dispositivo
@@ -117,8 +117,8 @@ whatsnew-panel-footer-checkbox =
     .label = Notifica nuove funzionalità
     .accesskey = f
 
-## The Floorp Profiler – The popup is the UI to turn on the profiler, and record
-## performance profiles. To enable it go to profiler.Floorp.com and click
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
 profiler-popup-button-idle =
@@ -187,8 +187,8 @@ profiler-popup-presets-web-developer-label =
 profiler-popup-presets-custom-label =
     .label = Personalizzato
 
-profiler-popup-presets-Floorp-description = Preset consigliato per la profilazione di { -brand-shorter-name }.
-profiler-popup-presets-Floorp-label =
+profiler-popup-presets-firefox-description = Preset consigliato per la profilazione di { -brand-shorter-name }.
+profiler-popup-presets-firefox-label =
   .label = { -brand-shorter-name }
 
 profiler-popup-presets-graphics-description = Preset per la diagnosi di problemi grafici in { -brand-shorter-name }.
@@ -237,6 +237,9 @@ appmenu-help-report-site-issue =
 appmenu-help-feedback-page =
     .label = Invia feedback…
     .accesskey = k
+appmenu-help-share-ideas =
+    .label = Condividi idee e feedback…
+   .accesskey = k
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

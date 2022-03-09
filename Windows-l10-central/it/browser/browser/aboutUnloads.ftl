@@ -15,7 +15,7 @@ about-unloads-intro =
     alle schede e la prossima scheda che verrà scaricata. È possibile
     scaricare manualmente una scheda utilizzando il pulsante <em>Scarica</em>.
 
-# The link points to a Floorp documentation page, only available in English,
+# The link points to a Firefox documentation page, only available in English,
 # with title "Tab Unloading"
 about-unloads-learn-more =
     Consultare il documento <a data-l10n-name="doc-link">Tab Unloading</a>

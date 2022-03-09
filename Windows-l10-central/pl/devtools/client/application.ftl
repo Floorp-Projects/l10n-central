@@ -96,7 +96,7 @@ manifest-loaded-ok = Wczytano manifest.
 # load the manifest
 manifest-loaded-error = Wystąpił błąd podczas wczytywania manifestu:
 
-# Text displayed as an error when there has been a Floorp DevTools error while
+# Text displayed as an error when there has been a Firefox DevTools error while
 # trying to load the manifest
 manifest-loaded-devtools-error = Błąd narzędzi dla programistów
 

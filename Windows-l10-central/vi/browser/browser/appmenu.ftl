@@ -72,7 +72,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = Toàn màn hình
 
-## Floorp Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = Đăng nhập để đồng bộ hóa…
@@ -89,7 +89,7 @@ appmenu-remote-tabs-tabsnotsyncing = Bật đồng bộ thẻ để xem danh sá
 appmenu-remote-tabs-opensettings =
     .label = Cài đặt
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Floorp for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Muốn xem thẻ từ các thiết bị khác của bạn ở đây?
 appmenu-remote-tabs-connectdevice =
     .label = Kết nối thiết bị khác
@@ -121,8 +121,8 @@ whatsnew-panel-footer-checkbox =
     .label = Thông báo về các tính năng mới
     .accesskey = f
 
-## The Floorp Profiler – The popup is the UI to turn on the profiler, and record
-## performance profiles. To enable it go to profiler.Floorp.com and click
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
 profiler-popup-button-idle =
@@ -148,12 +148,12 @@ profiler-popup-settings =
     .value = Cài đặt
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Chỉnh sửa cài đặt…
-# This link takes the user to about:profiling, and is only visible with the Custom preset.
-profiler-popup-edit-settings-button =
-    .label = Chỉnh sửa cài đặt…
 profiler-popup-disabled =
     Profiler hiện bị vô hiệu hóa, rất có thể do cửa sổ Duyệt web riêng tư
     đang mở.
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Chỉnh sửa cài đặt…
 profiler-popup-recording-screen = Đang ghi…
 # The profiler presets list is generated elsewhere, but the custom preset is defined
 # here only.
@@ -187,18 +187,8 @@ profiler-popup-capture-shortcut =
 profiler-popup-presets-web-developer-description = Cài đặt trước được đề xuất cho hầu hết gỡ lỗi ứng dụng web, với chi phí thấp.
 profiler-popup-presets-web-developer-label =
     .label = Nhà phát triển Web
-profiler-popup-presets-Floorp-platform-description = Cấu hình được đề xuất để gỡ lỗi nền tảng Floorp nội bộ.
-profiler-popup-presets-Floorp-platform-label =
-    .label = Floorp Platform
-profiler-popup-presets-Floorp-front-end-description = Cấu hình được đề xuất để gỡ lỗi giao diện người dùng nội bộ của Floorp.
-profiler-popup-presets-Floorp-front-end-label =
-    .label = Floorp Front-End
-profiler-popup-presets-Floorp-graphics-description = Cấu hình được đề xuất để điều tra hiệu suất đồ họa của Floorp.
-profiler-popup-presets-Floorp-graphics-label =
-    .label = Floorp Graphics
-profiler-popup-presets-media-description = Cấu hình được đề xuất để chẩn đoán các vấn đề về âm thanh và video.
-profiler-popup-presets-Floorp-description = Giá trị đặt trước được đề xuất để kiểm tra hiệu suất { -brand-shorter-name }.
-profiler-popup-presets-Floorp-label =
+profiler-popup-presets-firefox-description = Giá trị đặt trước được đề xuất để kiểm tra hiệu suất { -brand-shorter-name }.
+profiler-popup-presets-firefox-label =
     .label = { -brand-shorter-name }
 profiler-popup-presets-graphics-description = Giá trị đặt trước để điều tra lỗi đồ họa trong { -brand-shorter-name }.
 profiler-popup-presets-graphics-label =
@@ -245,6 +235,9 @@ appmenu-help-report-site-issue =
     .label = Báo cáo vấn đề về trang…
 appmenu-help-feedback-page =
     .label = Gửi phản hồi…
+    .accesskey = S
+appmenu-help-share-ideas =
+    .label = Chia sẻ ý tưởng và phản hồi…
     .accesskey = S
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode

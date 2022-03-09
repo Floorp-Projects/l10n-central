@@ -9,7 +9,7 @@
 
 perftools-intro-title = 프로파일러 설정
 perftools-intro-description =
-    기록은 새 탭에서 profiler.Floorp.com을 시작합니다. 모든 데이터는 
+    기록은 새 탭에서 profiler.firefox.com을 시작합니다. 모든 데이터는 
     로컬에 저장되지만 공유를 위해 업로드하도록 선택할 수 있습니다.
 
 ## All of the headings for the various sections.
@@ -26,7 +26,7 @@ perftools-heading-local-build = 로컬 빌드
 ##
 
 perftools-description-intro =
-    기록은 새 탭에서 <a>profiler.Floorp.com</a>을 시작합니다. 모든 데이터는 
+    기록은 새 탭에서 <a>profiler.firefox.com</a>을 시작합니다. 모든 데이터는 
     로컬에 저장되지만 공유를 위해 업로드하도록 선택할 수 있습니다.
 perftools-description-local-build =
     직접 컴파일한 빌드를 프로파일링하는 경우
@@ -123,14 +123,14 @@ perftools-onboarding-close-button =
 
 perftools-presets-web-developer-label = 웹 개발자
 perftools-presets-web-developer-description = 오버헤드가 낮은 대부분의 웹 앱 디버깅에 권장되는 프리셋입니다.
-perftools-presets-Floorp-platform-label = Floorp 플랫폼
-perftools-presets-Floorp-platform-description = 내부 Floorp 플랫폼 디버깅에 권장되는 프리셋입니다.
-perftools-presets-Floorp-front-end-label = Floorp 프런트 엔드
-perftools-presets-Floorp-front-end-description = 내부 Floorp 프런트 엔드 디버깅에 권장되는 프리셋입니다.
-perftools-presets-Floorp-graphics-label = Floorp 그래픽
-perftools-presets-Floorp-graphics-description = Floorp 그래픽 성능 조사에 권장되는 프리셋입니다.
-perftools-presets-Floorp-label = { -brand-shorter-name }
-perftools-presets-Floorp-description = { -brand-shorter-name } 프로파일링에 권장되는 프리셋입니다.
+perftools-presets-firefox-platform-label = Floorp 플랫폼
+perftools-presets-firefox-platform-description = 내부 Firefox 플랫폼 디버깅에 권장되는 프리셋입니다.
+perftools-presets-firefox-front-end-label = Floorp 프런트 엔드
+perftools-presets-firefox-front-end-description = 내부 Firefox 프런트 엔드 디버깅에 권장되는 프리셋입니다.
+perftools-presets-firefox-graphics-label = Floorp 그래픽
+perftools-presets-firefox-graphics-description = Floorp 그래픽 성능 조사에 권장되는 프리셋입니다.
+perftools-presets-firefox-label = { -brand-shorter-name }
+perftools-presets-firefox-description = { -brand-shorter-name } 프로파일링에 권장되는 프리셋입니다.
 perftools-presets-graphics-label = 그래픽
 perftools-presets-graphics-description = { -brand-shorter-name }의 그래픽 버그를 조사하기 위한 프리셋입니다.
 perftools-presets-media-label = 미디어

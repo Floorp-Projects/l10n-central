@@ -362,6 +362,9 @@ update-application-warning-cross-user-setting = Этот параметр при
 update-application-use-service =
     .label = Использовать фоновую службу для установки обновлений
     .accesskey = ф
+update-application-suppress-prompts =
+    .label = Показывать меньше уведомлений об обновлениях
+    .accesskey = е
 update-setting-write-failure-title2 = Ошибка при сохранении настроек обновления
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -403,30 +406,33 @@ performance-default-content-process-count =
 browsing-title = Просмотр сайтов
 browsing-use-autoscroll =
     .label = Использовать автоматическую прокрутку
-    .accesskey = с
+    .accesskey = а
 browsing-use-smooth-scrolling =
     .label = Использовать плавную прокрутку
+    .accesskey = п
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Всегда показывать полосы прокрутки
     .accesskey = о
 browsing-use-onscreen-keyboard =
-    .label = При необходимости отображать сенсорную клавиатуру
-    .accesskey = н
+    .label = При необходимости показывать сенсорную клавиатуру
+    .accesskey = с
 browsing-use-cursor-navigation =
     .label = Всегда использовать клавиши курсора для навигации по страницам
     .accesskey = к
 browsing-search-on-start-typing =
     .label = Искать текст на странице по мере его набора
-    .accesskey = а
+    .accesskey = И
 browsing-picture-in-picture-toggle-enabled =
     .label = Включить управление видео «Картинка в картинке»
-    .accesskey = ю
+    .accesskey = а
 browsing-picture-in-picture-learn-more = Подробнее
 browsing-media-control =
-    .label = Управлять медиа через клавиатуру, гарнитуру или виртуальный интерфейс
-    .accesskey = п
+    .label = Управлять медиа с помощью клавиатуры, гарнитуры или виртуального интерфейса
+    .accesskey = У
 browsing-media-control-learn-more = Подробнее
 browsing-cfr-recommendations =
     .label = Рекомендовать расширения при просмотре
-    .accesskey = к
+    .accesskey = р
 browsing-cfr-features =
     .label = Рекомендовать функции при просмотре
     .accesskey = ф
@@ -439,7 +445,7 @@ network-proxy-connection-description = Настроить, как { -brand-short
 network-proxy-connection-learn-more = Подробнее
 network-proxy-connection-settings =
     .label = Настроить…
-    .accesskey = с
+    .accesskey = Н
 
 ## Home Section
 
@@ -456,7 +462,7 @@ home-restore-defaults =
 # "Floorp" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
-    .label = Домашняя страница Floorp (по умолчанию)
+    .label = Домашняя страница Firefox (по умолчанию)
 home-mode-choice-custom =
     .label = Мой URL...
 home-mode-choice-blank =
@@ -478,10 +484,10 @@ choose-bookmark =
     .label = Использовать закладку…
     .accesskey = в
 
-## Home Section - Floorp Home Content Customization
+## Home Section - Firefox Home Content Customization
 
-home-prefs-content-header = Домашняя страница Floorp
-home-prefs-content-description = Выберите, какое содержимое вы хотите видеть на домашней странице Floorp.
+home-prefs-content-header = Домашняя страница Firefox
+home-prefs-content-description = Выберите, какое содержимое вы хотите видеть на домашней странице Firefox.
 home-prefs-search-header =
     .label = Поиск в Интернете
 home-prefs-topsites-header =
@@ -610,7 +616,7 @@ containers-settings-button =
 containers-remove-button =
     .label = Удалить
 
-## Floorp Account - Signed out. Note that "Sync" and "Floorp Account" are now
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Возьмите свой Интернет с собой
@@ -626,9 +632,9 @@ sync-signedout-account-signin3 =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = Загрузите Floorp для <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> или <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS,</a> чтобы синхронизироваться со своим мобильным устройством.
+sync-mobile-promo = Загрузите Firefox для <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> или <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS,</a> чтобы синхронизироваться со своим мобильным устройством.
 
-## Floorp Account - Signed in
+## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Изменить фотографию в профиле
@@ -710,7 +716,7 @@ sync-engine-creditcards =
     .accesskey = н
 sync-engine-addons =
     .label = Дополнения
-    .tooltiptext = Расширения и темы для Floorp на компьютере
+    .tooltiptext = Расширения и темы для Firefox на компьютере
     .accesskey = п
 sync-engine-settings =
     .label = Настройки
@@ -790,7 +796,7 @@ forms-windows-sso-desc = Управление аккаунтами в настр
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = Чтобы создать мастер-пароль, введите ваши учётные данные для входа в Windows. Это поможет защитить безопасность ваших аккаунтов.
 # This message can be seen by trying to add a Primary Password.
-# The macOS strings are preceded by the operating system with "Floorp is trying to "
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 primary-password-os-auth-dialog-message-macosx = создать мастер-пароль
@@ -802,12 +808,12 @@ history-header = История
 # This label is followed, on the same line, by a dropdown list of options
 # (Remember history, etc.).
 # In English it visually creates a full sentence, e.g.
-# "Floorp will" + "Remember history".
+# "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
 #   - Simply as "Floorp", moving the verb into each option.
 #     This will result in "Floorp" + "Will remember history", etc.
-#   - As a stand-alone message, for example "Floorp history settings:".
+#   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = { -brand-short-name }
     .accesskey = i
 history-remember-option-all =

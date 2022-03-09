@@ -71,7 +71,7 @@ menu-file-new-private-window =
     .accesskey = v
 # "Open Location" is only displayed on macOS, and only on windows
 # that aren't main browser windows, or when there are no windows
-# but Floorp is still running.
+# but Firefox is still running.
 menu-file-open-location =
     .label = Opne adresse…
 menu-file-open-file =
@@ -230,7 +230,7 @@ menu-bookmarks-menu =
     .label = Bokmerke
     .accesskey = B
 menu-bookmarks-manage =
-    .label = Handter bokmerke
+    .label = Handsam bokmerke
 menu-bookmark-current-tab =
     .label = Bokmerk gjeldande fane
 menu-bookmark-edit =

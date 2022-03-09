@@ -57,7 +57,7 @@ cfr-doorhanger-extension-total-users =
        *[other] { $total } felhasználó
     }
 
-## Floorp Accounts Message
+## Firefox Accounts Message
 
 cfr-doorhanger-bookmark-fxa-header = Szinkronizálja a könyvjelzőit mindenhol.
 cfr-doorhanger-bookmark-fxa-body = Nagyszerű találat! Ne maradjon könyvjelzők nélkül a mobileszközein sem. Kezdjen egy { -fxaccount-brand-name }kal.
@@ -156,3 +156,16 @@ spotlight-total-cookie-protection-body = A Teljes sütivédelem megakadályozza,
 spotlight-total-cookie-protection-expanded = A { -brand-short-name } kerítést épít a sütik köré, oly módon korlátozva őket, hogy a nyomkövetők ne használhassák az Ön követésére. A korai hozzáféréssel segít nekünk optimalizálni a funkciót, így egy mindenki számára jobb webet építhetünk.
 spotlight-total-cookie-protection-primary-button = A Teljes sütivédelem bekapcsolása
 spotlight-total-cookie-protection-secondary-button = Most nem
+
+## Emotive Continuous Onboarding
+
+spotlight-better-internet-header = A jobb internet Önnel kezdődik
+spotlight-better-internet-body = Amikor a { -brand-short-name }ot használja, akkor egy nyílt és hozzáférhető internetre szavaz, amely jobb mindenki számára.
+spotlight-peace-mind-header = Fedezzük Önt
+spotlight-peace-mind-body = Minden hónapban, a { -brand-short-name } átlagosan 3.000 nyomkövetőt blokkol felhasználónként. Mert semmi nem állhat Ön és a jó internet közé, az adatvédelmi szempontból aggályos követők különösen nem.
+spotlight-pin-primary-button =
+    { PLATFORM() ->
+        [macos] A Dockban tartás
+       *[other] Rögzítés a tálcára
+    }
+spotlight-pin-secondary-button = Most nem

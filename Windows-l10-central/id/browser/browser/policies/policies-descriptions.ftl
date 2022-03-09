@@ -4,7 +4,7 @@
 
 
 ## The Enterprise Policies feature is aimed at system administrators
-## who want to deploy these settings across several Floorp installations
+## who want to deploy these settings across several Firefox installations
 ## all at once. This is traditionally done through the Windows Group Policy
 ## feature, but the system also supports other forms of deployment.
 ## These are short descriptions for individual policies, to be displayed
@@ -32,10 +32,10 @@ policy-DisableBuiltinPDFViewer = Nonaktifkan PDF.js, penampil PDF bawaan di { -b
 policy-DisableDefaultBrowserAgent = Cegah agen bawaan peramban untuk melakukan tindakan apapun. Hanya berlaku di Windows; platform lain tidak memiliki agen.
 policy-DisableDeveloperTools = Blokir akses ke alat pengembang.
 policy-DisableFeedbackCommands = Nonaktifkan perintah untuk mengirim umpan balik dari menu Bantuan (Kirim Saran dan Laporkan Situs Tipuan).
-policy-DisableFloorpAccounts = Nonaktifkan layanan berbasis { -fxaccount-brand-name }, termasuk Sync.
-# Floorp Screenshots is the name of the feature, and should not be translated.
-policy-DisableFloorpScreenshots = Nonaktifkan fitur Floorp Screenshots.
-policy-DisableFloorpStudies = Cegah { -brand-short-name } menjalankan kajian.
+policy-DisableFirefoxAccounts = Nonaktifkan layanan berbasis { -fxaccount-brand-name }, termasuk Sync.
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Nonaktifkan fitur Firefox Screenshots.
+policy-DisableFirefoxStudies = Cegah { -brand-short-name } menjalankan kajian.
 policy-DisableForgetButton = Cegah akses ke tombol Lupakan.
 policy-DisableFormHistory = Jangan ingat riwayat pencarian dan formulir.
 policy-DisablePrimaryPasswordCreation = Jika ya, Sandi Utama tidak bisa dibuat.
@@ -64,7 +64,7 @@ policy-EncryptedMediaExtensions = Aktifkan atau nonaktifkan Ekstensi Media Teren
 policy-Extensions = Memasang, mencopot, atau mengunci ekstensi. Opsi Memasang membutuhkan parameter URL atau jalur. Opsi Mencopot dan Mengunci membutuhkan ID ekstensi.
 policy-ExtensionSettings = Kelola semua aspek pemasangan ekstensi.
 policy-ExtensionUpdate = Aktifkan atau nonaktifkan pembaruan ekstensi otomatis.
-policy-FloorpHome = Atur Beranda Floorp.
+policy-FirefoxHome = Atur Beranda Firefox.
 policy-FlashPlugin = Izinkan atau tolak penggunaan plugin Flash.
 policy-Handlers = Konfigurasikan penanganan aplikasi baku.
 policy-HardwareAcceleration = Jika bernilai false, menonaktifkan akselerasi perangkat keras.

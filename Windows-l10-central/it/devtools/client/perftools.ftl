@@ -8,7 +8,7 @@
 
 perftools-intro-title = Impostazioni profiler
 perftools-intro-description =
-  L’avvio di una nuova registrazione apre profiler.Floorp.com in una nuova
+  L’avvio di una nuova registrazione apre profiler.firefox.com in una nuova
   scheda. Tutti i dati vengono conservati sul dispositivo, ma è possibile
   scegliere di pubblicarli per condividerli.
 
@@ -26,7 +26,7 @@ perftools-heading-local-build = Build locale
 ##
 
 perftools-description-intro =
-  L’avvio di una nuova registrazione apre <a>profiler.Floorp.com</a> in una
+  L’avvio di una nuova registrazione apre <a>profiler.firefox.com</a> in una
   nuova scheda. Tutti i dati vengono conservati sul dispositivo, ma è possibile
   scegliere di pubblicarli per condividerli.
 perftools-description-local-build =
@@ -125,8 +125,8 @@ perftools-onboarding-close-button =
 perftools-presets-web-developer-description = Preset consigliato per il debug della maggior parte delle applicazioni web, con overhead limitato.
 perftools-presets-web-developer-label = Sviluppo web
 
-perftools-presets-Floorp-label = { -brand-shorter-name }
-perftools-presets-Floorp-description = Preset consigliato per la profilazione di { -brand-shorter-name }.
+perftools-presets-firefox-label = { -brand-shorter-name }
+perftools-presets-firefox-description = Preset consigliato per la profilazione di { -brand-shorter-name }.
 
 perftools-presets-graphics-label = Grafica
 perftools-presets-graphics-description = Preset per la diagnosi di problemi grafici in { -brand-shorter-name }.

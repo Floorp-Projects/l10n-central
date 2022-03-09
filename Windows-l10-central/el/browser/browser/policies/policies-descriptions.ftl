@@ -4,7 +4,7 @@
 
 
 ## The Enterprise Policies feature is aimed at system administrators
-## who want to deploy these settings across several Floorp installations
+## who want to deploy these settings across several Firefox installations
 ## all at once. This is traditionally done through the Windows Group Policy
 ## feature, but the system also supports other forms of deployment.
 ## These are short descriptions for individual policies, to be displayed
@@ -54,12 +54,12 @@ policy-DisableDeveloperTools = Αποκλεισμός πρόσβασης στα 
 
 policy-DisableFeedbackCommands = Απενεργοποίηση εντολών για αποστολή σχολίων από το μενού «Βοήθεια» («Υποβολή σχολίων» και «Αναφορά παραπλανητικού ιστοτόπου»).
 
-policy-DisableFloorpAccounts = Απενεργοποίηση υπηρεσιών { -fxaccount-brand-name(case: "gen", capitalization: "lower") }, καθώς και του συγχρονισμού.
+policy-DisableFirefoxAccounts = Απενεργοποίηση υπηρεσιών { -fxaccount-brand-name(case: "gen", capitalization: "lower") }, καθώς και του συγχρονισμού.
 
-# Floorp Screenshots is the name of the feature, and should not be translated.
-policy-DisableFloorpScreenshots = Απενεργοποίηση λειτουργίας Floorp Screenshots.
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Απενεργοποίηση λειτουργίας Firefox Screenshots.
 
-policy-DisableFloorpStudies = Αποτροπή εκτέλεσης μελετών του { -brand-short-name }.
+policy-DisableFirefoxStudies = Αποτροπή εκτέλεσης μελετών του { -brand-short-name }.
 
 policy-DisableForgetButton = Αποτροπή πρόσβασης στο κουμπί "Διαγραφή".
 
@@ -112,7 +112,7 @@ policy-ExtensionSettings = Διαχείριση όλων των πτυχών τ�
 
 policy-ExtensionUpdate = Ενεργοποίηση ή απενεργοποίηση αυτόματων ενημερώσεων επεκτάσεων.
 
-policy-FloorpHome = Ρύθμιση παραμέτρων της Αρχικής Floorp.
+policy-FirefoxHome = Ρύθμιση παραμέτρων της Αρχικής Firefox.
 
 policy-FlashPlugin = Αποδοχή ή απόρριψη χρήσης του αρθρώματος Flash.
 

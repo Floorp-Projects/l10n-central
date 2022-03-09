@@ -82,13 +82,13 @@ onboarding-multistage-theme-secondary-button-label = Niet nu
 onboarding-multistage-theme-label-automatic = Automatisch
 onboarding-multistage-theme-label-light = Licht
 onboarding-multistage-theme-label-dark = Donker
-# "Floorp Alpenglow" here is the name of the theme, and should be kept in English.
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
 onboarding-multistage-theme-label-alpenglow = Floorp Alpenglow
 # "Hero Text" displayed on left side of welcome screen.
 # The "Fire" in "Fire starts here" plays on the "Fire" in "Floorp".
-# It also signals the passion users bring to Floorp, how they use
-# Floorp to pursue those passions, as well as the boldness in their
-# choice to use Floorp over a larger competitor browser.
+# It also signals the passion users bring to Firefox, how they use
+# Firefox to pursue those passions, as well as the boldness in their
+# choice to use Firefox over a larger competitor browser.
 # An alternative title for localization is: "It starts here".
 # This text can be formatted to span multiple lines as needed.
 mr1-welcome-screen-hero-text = Het vuur begint hier
@@ -96,7 +96,7 @@ mr1-welcome-screen-hero-text = Het vuur begint hier
 # of the person and shouldn't be translated.
 # In case your language needs to adapt the nouns to a gender, Soraya is a female name (she/her).
 # You can see the picture in about:welcome in Nightly 90.
-mr1-onboarding-welcome-image-caption = Soraya Osorio – Meubelontwerper, Floorp-fan
+mr1-onboarding-welcome-image-caption = Soraya Osorio – Meubelontwerper, Firefox-fan
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = Animaties uitschakelen
 
@@ -104,13 +104,13 @@ mr1-onboarding-reduce-motion-button-label = Animaties uitschakelen
 ## match the OS' application context menu item action where Windows uses "pin"
 ## and "taskbar" while macOS "keep" and "Dock" (proper noun).
 
-# Title used on welcome page when Floorp is not pinned
+# Title used on welcome page when Firefox is not pinned
 mr1-onboarding-pin-header =
     { PLATFORM() ->
         [macos] { -brand-short-name } aan uw Dock toevoegen voor eenvoudige toegang
        *[other] { -brand-short-name } aan uw taakbalk vastzetten voor eenvoudige toegang
     }
-# Primary button string used on welcome page when Floorp is not pinned.
+# Primary button string used on welcome page when Firefox is not pinned.
 mr1-onboarding-pin-primary-button-label =
     { PLATFORM() ->
         [macos] Aan Dock toevoegen
@@ -120,19 +120,19 @@ mr1-onboarding-pin-primary-button-label =
 ## Multistage MR1 onboarding strings (about:welcome pages)
 
 # This string will be used on welcome page primary button label
-# when Floorp is both pinned and default
+# when Firefox is both pinned and default
 mr1-onboarding-get-started-primary-button-label = Beginnen
 mr1-onboarding-welcome-header = Welkom bij { -brand-short-name }
 mr1-onboarding-set-default-pin-primary-button-label = { -brand-short-name } mijn voorkeursbrowser maken
     .title = Stelt { -brand-short-name } in als standaardbrowser en maakt het aan de taakbalk vast
 # This string will be used on welcome page primary button label
-# when Floorp is not default but already pinned
+# when Firefox is not default but already pinned
 mr1-onboarding-set-default-only-primary-button-label = { -brand-short-name } mijn voorkeursbrowser maken
 mr1-onboarding-set-default-secondary-button-label = Niet nu
 mr1-onboarding-sign-in-button-label = Aanmelden
 
 ## Title, subtitle and primary button string used on set default onboarding screen
-## when Floorp is not default browser
+## when Firefox is not default browser
 
 mr1-onboarding-default-header = { -brand-short-name } uw standaardbrowser maken
 mr1-onboarding-default-subtitle = Zet snelheid, veiligheid en privacy op de automatische piloot.
@@ -142,7 +142,7 @@ mr1-onboarding-default-primary-button-label = Standaardbrowser maken
 
 mr1-onboarding-import-header = Neem alles met u mee
 mr1-onboarding-import-subtitle = Importeer uw wachtwoorden, <br/>bladwijzers en meer.
-# The primary import button label will depend on whether we can detect which browser was used to download Floorp.
+# The primary import button label will depend on whether we can detect which browser was used to download Firefox.
 # Variables:
 #   $previous (Str) - Previous browser name, such as Edge, Chrome
 mr1-onboarding-import-primary-button-label-attribution = Importeren uit { $previous }
@@ -283,18 +283,10 @@ mr2-onboarding-colorway-tooltip =
 # Selector description for colorway
 # Variables:
 #   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-description =
-    .aria-description = Kleurstellingen { $colorwayName } ontdekken.
-# Selector description for colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
 mr2-onboarding-colorway-label = Kleurstellingen { $colorwayName } ontdekken.
 # Tooltip displayed on hover of default themes
 mr2-onboarding-default-theme-tooltip =
     .title = Standaardthema’s ontdekken.
-# Selector description for default themes
-mr2-onboarding-default-theme-description =
-    .aria-description = Standaardthema’s ontdekken.
 # Selector description for default themes
 mr2-onboarding-default-theme-label = Standaardthema’s ontdekken.
 
@@ -303,3 +295,23 @@ mr2-onboarding-default-theme-label = Standaardthema’s ontdekken.
 mr2-onboarding-thank-you-header = Bedankt dat u voor ons kiest
 mr2-onboarding-thank-you-text = { -brand-short-name } is een onafhankelijke browser die wordt ondersteund door een non-profitorganisatie. Samen maken we het internet veiliger, gezonder en meer privé.
 mr2-onboarding-start-browsing-button-label = Beginnen met surfen
+
+## Multistage live language reloading onboarding strings (about:welcome pages)
+##
+## The following language names are generated by the browser's Intl.DisplayNames API.
+##
+## Variables:
+##   $appLanguage (String) - The name of Firefox's language, e.g. "American English"
+##   $systemLanguage (String) - The name of the OS's language, e.g. "European Spanish"
+##   $negotiatedLanguage (String) - The name of the langpack's language, e.g. "European Spanish"
+
+onboarding-live-language-header = Kies uw taal
+onboarding-live-language-subtitle = { -brand-short-name } gebruikt { $appLanguage }, terwijl uw systeem { $systemLanguage } gebruikt.
+onboarding-live-language-switch-button-label = Overschakelen naar { $negotiatedLanguage }
+onboarding-live-language-button-label-downloading = Het taalpakket downloaden voor { $negotiatedLanguage }…
+onboarding-live-language-waiting-subtitle = Het lijkt erop dat uw systeem en { -brand-short-name } verschillende talen gebruiken.
+onboarding-live-language-waiting-button = Beschikbare talen ophalen...
+onboarding-live-language-installing = Het taalpakket voor { $negotiatedLanguage } installeren...
+onboarding-live-language-secondary-cancel-download = Annuleren
+onboarding-live-language-not-now-button-label = Niet nu
+onboarding-live-language-skip-button-label = Overslaan

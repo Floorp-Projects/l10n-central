@@ -12,7 +12,7 @@ process-type-web = Webový obsah
 # such as about:home
 process-type-privilegedabout = Privilegované about stránky
 # process used to run privileged mozilla pages,
-# such as accounts.Floorp.com
+# such as accounts.firefox.com
 process-type-privilegedmozilla = Privilegovaný obsah Mozilla
 process-type-extension = Rozšíření
 # process used to open file:// URLs
@@ -42,6 +42,8 @@ process-type-gpu = GPU
 process-type-socket = Socket
 # process used to decode media
 process-type-rdd = RDD
+# process used to run some IPC actor in their own sandbox
+process-type-utility = Sandboxovaný IPC Actor
 
 ##
 ## Other

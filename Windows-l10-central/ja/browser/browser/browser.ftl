@@ -8,8 +8,8 @@
 # These are the default window titles everywhere except macOS. The first two
 # attributes are used when the web content opened has no title:
 #
-# default - "Floorp レガシー ブラウザー"
-# private - "Floorp レガシー ブラウザー (Private Browsing)"
+# default - "Floorp Legacy Browser"
+# private - "Mozilla Firefox (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Variables:
@@ -22,8 +22,8 @@ browser-main-window =
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
-# "default" - "Floorp レガシー ブラウザー"
-# "private" - "Floorp レガシー ブラウザー — (Private Browsing)"
+# "default" - "Floorp Legacy Browser"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -417,19 +417,19 @@ urlbar-placeholder-search-mode-web-2 =
 #  $name (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-placeholder-search-mode-other-engine =
-    .placeholder = 検索語句を入力を入力します
+    .placeholder = 検索語句を入力します
     .aria-label = { $name } を検索
 # This placeholder is used when searching bookmarks.
 urlbar-placeholder-search-mode-other-bookmarks =
-    .placeholder = 検索語句を入力を入力します
+    .placeholder = 検索語句を入力します
     .aria-label = ブックマークを検索
 # This placeholder is used when searching history.
 urlbar-placeholder-search-mode-other-history =
-    .placeholder = 検索語句を入力を入力します
+    .placeholder = 検索語句を入力します
     .aria-label = 履歴を検索
 # This placeholder is used when searching open tabs.
 urlbar-placeholder-search-mode-other-tabs =
-    .placeholder = 検索語句を入力を入力します
+    .placeholder = 検索語句を入力します
     .aria-label = タブを検索
 # Variables
 #  $name (String): the name of the user's default search engine
@@ -509,10 +509,10 @@ urlbar-result-action-search-tabs = タブを検索
 
 ## Labels shown above groups of urlbar results
 
-# A label shown above the "Floorp Suggest" (bookmarks/history) group in the
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
 # urlbar results.
-urlbar-group-Floorp-suggest =
-  .label = { -Floorp-suggest-brand-name }
+urlbar-group-firefox-suggest =
+  .label = { -firefox-suggest-brand-name }
 
 # A label shown above the search suggestions group in the urlbar results. It
 # should use title case.
@@ -560,7 +560,7 @@ bookmarks-toolbar-chevron =
 bookmarks-sidebar-content =
     .aria-label = ブックマーク
 bookmarks-menu-button =
-    .label = フィードリスト
+    .label = ブックマークメニュー
 bookmarks-other-bookmarks-menu =
     .label = 他のブックマーク
 bookmarks-mobile-bookmarks-menu =
@@ -586,8 +586,8 @@ bookmarks-tools-toolbar-visibility-panel =
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
-            [true] フィードリストをツールバーから削除
-           *[other] フィードリストをツールバーに追加
+            [true] ブックマークメニューをツールバーから削除
+           *[other] ブックマークメニューをツールバーに追加
         }
 bookmarks-search =
     .label = ブックマークを検索
@@ -765,9 +765,7 @@ navbar-overflow =
 navbar-print =
     .label = 印刷
     .tooltiptext = このページを印刷します... ({ $shortcut })
-navbar-print-tab-modal-disabled =
-    .label = 印刷
-    .tooltiptext = このページを印刷します
+
 navbar-home =
     .label = ホーム
     .tooltiptext = { -brand-short-name } のホームページです

@@ -12,7 +12,7 @@ process-type-web = Nội dung web
 # such as about:home
 process-type-privilegedabout = Giới thiệu đặc quyền
 # process used to run privileged mozilla pages,
-# such as accounts.Floorp.com
+# such as accounts.firefox.com
 process-type-privilegedmozilla = Nội dung Mozilla đặc quyền
 process-type-extension = Tiện ích mở rộng
 # process used to open file:// URLs

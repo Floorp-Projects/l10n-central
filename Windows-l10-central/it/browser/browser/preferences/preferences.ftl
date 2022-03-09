@@ -449,6 +449,10 @@ update-application-use-service =
     .label = Utilizza un servizio di sistema per installare gli aggiornamenti
     .accesskey = U
 
+update-application-suppress-prompts =
+    .label = Visualizza meno notifiche per gli aggiornamenti
+    .accesskey = n
+
 update-setting-write-failure-title2 = Errore durante il salvataggio delle impostazioni
 
 update-setting-write-failure-message2 =
@@ -501,6 +505,10 @@ browsing-use-autoscroll =
 browsing-use-smooth-scrolling =
     .label = Utilizza lo scorrimento fluido
     .accesskey = a
+
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Mostra sempre le barre di scorrimento
+    .accesskey = o
 
 browsing-use-onscreen-keyboard =
     .label = Visualizza una tastiera touch quando necessario
@@ -566,7 +574,7 @@ home-restore-defaults =
 # "Floorp" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
-    .label = Pagina iniziale di Floorp (predefinita)
+    .label = Pagina iniziale di Firefox (predefinita)
 
 home-mode-choice-custom =
     .label = Indirizzi personalizzati…
@@ -593,10 +601,10 @@ choose-bookmark =
     .label = Usa un segnalibro…
     .accesskey = b
 
-## Home Section - Floorp Home Content Customization
+## Home Section - Firefox Home Content Customization
 
-home-prefs-content-header = Pagina iniziale di Floorp
-home-prefs-content-description = Scegli i contenuti da visualizzare nella pagina iniziale di Floorp.
+home-prefs-content-header = Pagina iniziale di Firefox
+home-prefs-content-description = Scegli i contenuti da visualizzare nella pagina iniziale di Firefox.
 
 home-prefs-search-header =
     .label = Ricerca sul Web
@@ -752,7 +760,7 @@ containers-remove-button =
 ## Sync Section - Signed out
 
 
-## Floorp Account - Signed out. Note that "Sync" and "Floorp Account" are now
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Il tuo Web, sempre con te
@@ -771,12 +779,12 @@ sync-signedout-account-signin3 =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = Scarica Floorp per <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> o <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> per sincronizzare con cellulari e tablet.
+sync-mobile-promo = Scarica Firefox per <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> o <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> per sincronizzare con cellulari e tablet.
 
 ## Sync Section - Signed in
 
 
-## Floorp Account - Signed in
+## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Cambia l’immagine del profilo
@@ -878,7 +886,7 @@ sync-engine-creditcards =
 
 sync-engine-addons =
     .label = Componenti aggiuntivi
-    .tooltiptext = Estensioni e temi per Floorp desktop
+    .tooltiptext = Estensioni e temi per Firefox desktop
     .accesskey = o
 
 sync-engine-settings =
@@ -975,12 +983,12 @@ history-header = Cronologia
 # This label is followed, on the same line, by a dropdown list of options
 # (Remember history, etc.).
 # In English it visually creates a full sentence, e.g.
-# "Floorp will" + "Remember history".
+# "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
 #   - Simply as "Floorp", moving the verb into each option.
 #     This will result in "Floorp" + "Will remember history", etc.
-#   - As a stand-alone message, for example "Floorp history settings:".
+#   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = Impostazioni cronologia:
     .accesskey = m
 

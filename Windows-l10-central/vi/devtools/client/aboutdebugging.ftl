@@ -11,17 +11,17 @@
 # Page title (ie tab title) for the Setup page
 about-debugging-page-title-setup-page = Trình gỡ lỗi - Cài đặt
 # Page title (ie tab title) for the Runtime page
-# { $selectedRuntimeId } is the id of the current runtime, such as "this-Floorp", "localhost:6080", ...
+# { $selectedRuntimeId } is the id of the current runtime, such as "this-firefox", "localhost:6080", ...
 about-debugging-page-title-runtime-page = Trình gỡ lỗi - Runtime / { $selectedRuntimeId }
 
 # Sidebar strings
 
-# Display name of the runtime for the currently running instance of Floorp. Used in the
+# Display name of the runtime for the currently running instance of Firefox. Used in the
 # Sidebar and in the Setup page.
-about-debugging-this-Floorp-runtime-name = { -brand-shorter-name } này
-# Sidebar heading for selecting the currently running instance of Floorp
-about-debugging-sidebar-this-Floorp =
-    .name = { about-debugging-this-Floorp-runtime-name }
+about-debugging-this-firefox-runtime-name = { -brand-shorter-name } này
+# Sidebar heading for selecting the currently running instance of Firefox
+about-debugging-sidebar-this-firefox =
+    .name = { about-debugging-this-firefox-runtime-name }
 # Sidebar heading for connecting to some remote source
 about-debugging-sidebar-setup =
     .name = Cài đặt
@@ -49,8 +49,8 @@ about-debugging-sidebar-item-connect-button-connection-not-responding = Kết n�
 # Text displayed as connection error in sidebar item when the connection has timed out.
 about-debugging-sidebar-item-connect-button-connection-timeout = Đã hết thời gian kết nối
 # Text displayed in sidebar items for remote devices where a compatible browser (eg
-# Floorp) has not been detected yet. Typically, Android phones connected via USB with
-# USB debugging enabled, but where Floorp is not started.
+# Firefox) has not been detected yet. Typically, Android phones connected via USB with
+# USB debugging enabled, but where Firefox is not started.
 about-debugging-sidebar-runtime-item-waiting-for-browser = Đang chờ trình duyệt...
 # Text displayed in sidebar items for remote devices that have been disconnected from the
 # computer.
@@ -79,8 +79,8 @@ about-debugging-refresh-usb-devices-button = Làm mới thiết bị
 about-debugging-setup-title = Cài đặt
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = Định cấu hình phương thức kết nối mà bạn muốn gỡ lỗi từ xa cho thiết bị của mình.
-# Explanatory text in the Setup page about what the 'This Floorp' page is for
-about-debugging-setup-this-Floorp2 = Sử dụng <a>{ about-debugging-this-Floorp-runtime-name }</a> để sửa lỗi các phần mở rộng và các trình làm việc dịch vụ trên phiên bản của { -brand-shorter-name }.
+# Explanatory text in the Setup page about what the 'This Firefox' page is for
+about-debugging-setup-this-firefox2 = Sử dụng <a>{ about-debugging-this-firefox-runtime-name }</a> để sửa lỗi các phần mở rộng và các trình làm việc dịch vụ trên phiên bản của { -brand-shorter-name }.
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = Kết nối thiết bị
 # USB section of the Setup page
@@ -104,7 +104,7 @@ about-debugging-setup-usb-step-enable-dev-menu2 = Bật menu Nhà phát triển 
 # USB section step by step guide
 about-debugging-setup-usb-step-enable-debug2 = Bật gỡ lỗi USB trong Menu dành cho nhà phát triển Android.
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug-Floorp2 = Bật gỡ lỗi USB trong Floorp trên thiết bị Android.
+about-debugging-setup-usb-step-enable-debug-firefox2 = Bật gỡ lỗi USB trong Firefox trên thiết bị Android.
 # USB section step by step guide
 about-debugging-setup-usb-step-plug-device = Kết nối thiết bị Android với máy tính của bạn.
 # Text shown in the USB section of the setup page with a link to troubleshoot connection errors.
@@ -141,7 +141,7 @@ about-debugging-network-location-form-duplicate = Máy chủ lưu trữ "{ $host
 
 # Below are the titles for the various categories of debug targets that can be found
 # on "runtime" pages of about:debugging.
-# Title of the temporary extensions category (only available for "This Floorp" runtime).
+# Title of the temporary extensions category (only available for "This Firefox" runtime).
 about-debugging-runtime-temporary-extensions =
     .name = Tiện ích mở rộng tạm thời
 # Title of the extensions category.
@@ -172,20 +172,20 @@ about-debugging-runtime-service-workers-not-compatible = Cấu hình trình duy�
 # This string is displayed in the runtime page if the remote browser version is too old.
 # "Troubleshooting" link points to https://developer.mozilla.org/docs/Tools/about:debugging#Troubleshooting
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
-# { $minVersion } is the minimum version that is compatible with the current Floorp instance (same format)
+# { $minVersion } is the minimum version that is compatible with the current Firefox instance (same format)
 about-debugging-browser-version-too-old = Trình duyệt được kết nối có phiên bản cũ ({ $runtimeVersion }). Phiên bản được hỗ trợ tối thiểu là ({ $minVersion }). Đây là một thiết lập không được hỗ trợ và có thể khiến DevTools bị lỗi. Vui lòng cập nhật trình duyệt được kết nối. <a>Khắc phục sự cố</a>
 # Dedicated message for a backward compatibility issue that occurs when connecting:
-# from Fx 70+ to the old Floorp for Android (aka Fennec) which uses Fx 68.
-about-debugging-browser-version-too-old-fennec = Phiên bản Floorp này không thể gỡ lỗi Floorp dành cho Android (68). Chúng tôi khuyên bạn nên cài đặt Floorp Nightly dành cho Android trên điện thoại để thử nghiệm. <a>Chi tiết khác</a>
+# from Fx 70+ to the old Firefox for Android (aka Fennec) which uses Fx 68.
+about-debugging-browser-version-too-old-fennec = Phiên bản Firefox này không thể gỡ lỗi Firefox dành cho Android (68). Chúng tôi khuyên bạn nên cài đặt Firefox Nightly dành cho Android trên điện thoại để thử nghiệm. <a>Chi tiết khác</a>
 # This string is displayed in the runtime page if the remote browser version is too recent.
 # "Troubleshooting" link points to https://developer.mozilla.org/docs/Tools/about:debugging#Troubleshooting
 # { $runtimeID } is the build ID of the remote browser (for instance "20181231", format is yyyyMMdd)
-# { $localID } is the build ID of the current Floorp instance (same format)
+# { $localID } is the build ID of the current Firefox instance (same format)
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
 # { $localVersion } is the version of your current browser (same format)
-about-debugging-browser-version-too-recent = Trình được kết nối gần đây ({ $runtimeVersion }, ID bản dựng { $runtimeID }) so với { -brand-shorter-name } ({ $localVersion }, ID bản dựng { $localID }). Đây là một thiết lập không được hỗ trợ và có thể khiến DevTools bị lỗi. Vui lòng cập nhật Floorp. <a>Khắc phục sự cố</a>
+about-debugging-browser-version-too-recent = Trình được kết nối gần đây ({ $runtimeVersion }, ID bản dựng { $runtimeID }) so với { -brand-shorter-name } ({ $localVersion }, ID bản dựng { $localID }). Đây là một thiết lập không được hỗ trợ và có thể khiến DevTools bị lỗi. Vui lòng cập nhật Firefox. <a>Khắc phục sự cố</a>
 # Displayed for runtime info in runtime pages.
-# { $name } is brand name such as "Floorp Nightly"
+# { $name } is brand name such as "Firefox Nightly"
 # { $version } is version such as "64.0a1"
 about-debugging-runtime-name = { $name } ({ $version })
 # Text of a button displayed in Runtime pages for remote runtimes.
@@ -213,15 +213,15 @@ about-debugging-debug-target-list-empty = Chưa có gì cả.
 # button will open a DevTools toolbox that will allow inspecting the target.
 # A target can be an addon, a tab, a worker...
 about-debugging-debug-target-inspect-button = Kiểm tra
-# Text of a button displayed in the "This Floorp" page, in the Temporary Extension
+# Text of a button displayed in the "This Firefox" page, in the Temporary Extension
 # section. Clicking on the button will open a file picker to load a temporary extension
 about-debugging-tmp-extension-install-button = Tải tiện ích tạm thời…
-# Text displayed when trying to install a temporary extension in the "This Floorp" page.
+# Text displayed when trying to install a temporary extension in the "This Firefox" page.
 about-debugging-tmp-extension-install-error = Có lỗi trong quá trình cài đặt tiện ích tạm thời.
-# Text of a button displayed for a temporary extension loaded in the "This Floorp" page.
+# Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will reload the extension.
 about-debugging-tmp-extension-reload-button = Tải lại
-# Text of a button displayed for a temporary extension loaded in the "This Floorp" page.
+# Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will uninstall the extension and remove it from the page.
 about-debugging-tmp-extension-remove-button = Xóa
 # Message displayed in the file picker that opens to select a temporary extension to load

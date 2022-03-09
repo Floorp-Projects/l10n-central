@@ -8,7 +8,7 @@
 about-unloads-page-title = タブの解放
 about-unloads-intro = { -brand-short-name } には、システムのメモリーの空き領域が少なくなったときに、メモリー不足によるアプリケーションのクラッシュを防ぐための自動的にタブを解放する機能があります。次に解放されるタブは、複数の属性から選択されます。このページは、タブが解放される時、{ -brand-short-name } がどのようにタブに優先度を付けて解放するかを表示します。以下の <em>解放</em> ボタンを押すと、手動でタブを解放できます。
 
-# The link points to a Floorp documentation page, only available in English,
+# The link points to a Firefox documentation page, only available in English,
 # with title "Tab Unloading"
 about-unloads-learn-more = このページと機能についての詳細は <a data-l10n-name="doc-link">Tab Unloading</a> を参照してください。
 

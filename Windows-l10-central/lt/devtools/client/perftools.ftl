@@ -9,7 +9,7 @@
 
 perftools-intro-title = Profiliuoklės nuostatos
 perftools-intro-description =
-    Įrašinėjimai paleidžia profiler.Floorp.com naujoje kortelėje. Visi duomenys
+    Įrašinėjimai paleidžia profiler.firefox.com naujoje kortelėje. Visi duomenys
     laikomi jūsų įrenginyje, tačiau galite juos įkelti dalinimuisi.
 
 ## All of the headings for the various sections.
@@ -26,7 +26,7 @@ perftools-heading-local-build = Vietinis darinys
 ##
 
 perftools-description-intro =
-    Įrašinėjimai paleidžia <a>profiler.Floorp.com</a> naujoje kortelėje. Visi duomenys
+    Įrašinėjimai paleidžia <a>profiler.firefox.com</a> naujoje kortelėje. Visi duomenys
     laikomi jūsų įrenginyje, tačiau galite juos įkelti dalinimuisi.
 perftools-description-local-build =
     Jei profiliuojate savo sukompiliuotą darinį šiame kompiuteryje, pridėkite
@@ -123,8 +123,8 @@ perftools-onboarding-close-button =
 
 perftools-presets-web-developer-label = Saityno kūrėjams
 perftools-presets-web-developer-description = Rekomenduojamas nustatymas daugelio saityno programų derinimui, su nedidelėmis sąnaudomis.
-perftools-presets-Floorp-label = { -brand-shorter-name }
-perftools-presets-Floorp-description = Rekomenduojamas nustatymas „{ -brand-shorter-name }“ profiliavimui.
+perftools-presets-firefox-label = { -brand-shorter-name }
+perftools-presets-firefox-description = Rekomenduojamas nustatymas „{ -brand-shorter-name }“ profiliavimui.
 perftools-presets-graphics-label = Grafika
 perftools-presets-graphics-description = Nustatymas „{ -brand-shorter-name }“ grafikos problemų diagnozavimui.
 perftools-presets-media-label = Medija

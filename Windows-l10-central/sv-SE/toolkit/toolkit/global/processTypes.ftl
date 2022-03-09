@@ -12,7 +12,7 @@ process-type-web = Webbinnehåll
 # such as about:home
 process-type-privilegedabout = Privilegierad About
 # process used to run privileged mozilla pages,
-# such as accounts.Floorp.com
+# such as accounts.firefox.com
 process-type-privilegedmozilla = Privilegierat Mozilla-innehåll
 process-type-extension = Utökning
 # process used to open file:// URLs

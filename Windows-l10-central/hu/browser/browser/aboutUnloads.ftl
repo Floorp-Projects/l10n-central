@@ -28,7 +28,7 @@ about-unloads-intro =
     bemutatja, hogy a { -brand-short-name } miként priorizálja a lapokat,
     és mely lap lesz kisöpörve, ha aktiválódik a funkció. A lap kisöprése
     kézileg is aktiválható a lenti <em>Kisöprés</em> gombbal.
-# The link points to a Floorp documentation page, only available in English,
+# The link points to a Firefox documentation page, only available in English,
 # with title "Tab Unloading"
 about-unloads-learn-more =
     Lásd a <a data-l10n-name="doc-link">Lapkisöprés</a> leírást, hogy

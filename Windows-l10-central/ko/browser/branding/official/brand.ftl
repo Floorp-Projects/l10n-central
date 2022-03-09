@@ -3,9 +3,9 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-## Floorp Brand
+## Firefox Brand
 ##
-## Floorp must be treated as a brand, and kept in English.
+## Firefox must be treated as a brand, and kept in English.
 ## It cannot be:
 ## - Declined to adapt to grammatical case.
 ## - Transliterated.
@@ -13,9 +13,9 @@
 ##
 ## Reference: https://www.mozilla.org/styleguide/communications/translation/
 
-## Floorp and Mozilla Brand
+## Firefox and Mozilla Brand
 ##
-## Floorp and Mozilla must be treated as a brand.
+## Firefox and Mozilla must be treated as a brand.
 ##
 ## They cannot be:
 ## - Transliterated.
@@ -33,5 +33,5 @@
 # This brand name can be used in messages where the product name needs to
 # remain unchanged across different versions (Nightly, Beta, etc.).
 -brand-product-name = Floorp
--vendor-short-name = Ablaze
-trademarkInfo = Floorp 및 Floorp 로고는 미국 Mozilla Foundation의 소유이며, 미국 및 그 외의 나라에 등록된 상표입니다.
+-vendor-short-name = Mozilla
+trademarkInfo = Floorp 및 Firefox 로고는 미국 Mozilla Foundation의 소유이며, 미국 및 그 외의 나라에 등록된 상표입니다.

@@ -29,7 +29,7 @@ about-unloads-intro =
     { -brand-short-name } Tabs priorisiert und welche Tabs entladen werden,
     wenn die Tab-Entladung ausgelöst wird. Sie können das Entladen von Tabs manuell
     auslösen, indem Sie unten auf die <em>Entladen</em>-Schaltfläche klicken.
-# The link points to a Floorp documentation page, only available in English,
+# The link points to a Firefox documentation page, only available in English,
 # with title "Tab Unloading"
 about-unloads-learn-more =
     Lesen Sie <a data-l10n-name="doc-link">Tabs entladen</a>, um mehr über

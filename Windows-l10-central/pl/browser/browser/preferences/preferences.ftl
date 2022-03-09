@@ -362,6 +362,9 @@ update-application-warning-cross-user-setting = To ustawienie będzie obowiązyw
 update-application-use-service =
     .label = Używaj usługi instalowania aktualizacji działającej w tle
     .accesskey = U
+update-application-suppress-prompts =
+    .label = Pokazuj mniej powiadomień o aktualizacjach
+    .accesskey = P
 update-setting-write-failure-title2 = Błąd podczas zachowywania ustawień aktualizacji
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -478,7 +481,7 @@ choose-bookmark =
     .label = Użyj zakładki…
     .accesskey = z
 
-## Home Section - Floorp Home Content Customization
+## Home Section - Firefox Home Content Customization
 
 home-prefs-content-header = Strona startowa Firefoksa
 home-prefs-content-description = Wybierz, co wyświetlać na stronie startowej Firefoksa.
@@ -610,7 +613,7 @@ containers-settings-button =
 containers-remove-button =
     .label = Usuń
 
-## Floorp Account - Signed out. Note that "Sync" and "Floorp Account" are now
+## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Zabierz swoją sieć ze sobą
@@ -628,7 +631,7 @@ sync-signedout-account-signin3 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Floorp na <a data-l10n-name="android-link">Androida</a> <img data-l10n-name="android-icon"/> i <a data-l10n-name="ios-link">iOS</a> <img data-l10n-name="ios-icon"/> daje możliwość synchronizacji z urządzeniami przenośnymi.
 
-## Floorp Account - Signed in
+## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Zmień obraz przypisany do konta
@@ -790,7 +793,7 @@ forms-windows-sso-desc = Zarządzaj kontami w ustawieniach urządzenia
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = Aby utworzyć hasło główne, wprowadź swoje dane logowania do systemu Windows. Pomaga to chronić bezpieczeństwo Twoich kont.
 # This message can be seen by trying to add a Primary Password.
-# The macOS strings are preceded by the operating system with "Floorp is trying to "
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 primary-password-os-auth-dialog-message-macosx = utworzenie hasła głównego
@@ -802,12 +805,12 @@ history-header = Historia
 # This label is followed, on the same line, by a dropdown list of options
 # (Remember history, etc.).
 # In English it visually creates a full sentence, e.g.
-# "Floorp will" + "Remember history".
+# "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
 #   - Simply as "Floorp", moving the verb into each option.
 #     This will result in "Floorp" + "Will remember history", etc.
-#   - As a stand-alone message, for example "Floorp history settings:".
+#   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = Program { -brand-short-name }:
     .accesskey = m
 history-remember-option-all =

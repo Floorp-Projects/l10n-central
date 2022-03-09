@@ -426,9 +426,9 @@ addon-permissions-learnmore = Zjistit více o oprávněních
 recommended-extensions-heading = Doporučená rozšíření
 recommended-themes-heading = Doporučené vzhledy
 addon-sitepermissions-required = Uděluje serveru <span data-l10n-name="hostname">{ $hostname }</span> následující oprávnění:
-# A recommendation for the Floorp Color theme shown at the bottom of the theme
-# list view. The "Floorp Color" name itself should not be translated.
-recommended-theme-1 = Jste tvořiví? <a data-l10n-name="link">Vyrobte si vlastní vzhled pomocí Floorp Color.</a>
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Jste tvořiví? <a data-l10n-name="link">Vyrobte si vlastní vzhled pomocí Firefox Color.</a>
 
 ## Page headings
 

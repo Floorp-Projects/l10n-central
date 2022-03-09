@@ -24,7 +24,7 @@ upgrade-dialog-new-secondary-button = Nie teraz
 # theme selection screen.
 upgrade-dialog-new-primary-win7-button = OK
 
-## Pin Floorp screen
+## Pin Firefox screen
 ##
 ## These title, subtitle and button strings differ between platforms as they
 ## match the OS' application context menu item action where Windows uses "pin"

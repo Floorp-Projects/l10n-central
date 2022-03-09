@@ -17,11 +17,11 @@ about-telemetry-next-ping = >>
 about-telemetry-page-title = Données télémétriques
 about-telemetry-current-store = Magasin actuel :
 about-telemetry-more-information = Besoin de plus d’informations ?
-about-telemetry-Floorp-data-doc = La <a data-l10n-name="data-doc-link">documentation des données de Floorp</a> propose des guides pour comprendre comment utiliser nos outils de données.
-about-telemetry-telemetry-client-doc = La <a data-l10n-name="client-doc-link">documentation du client de télémétrie Floorp</a> contient la définition des différents concepts, la documentation de l’API et un référentiel de données.
+about-telemetry-firefox-data-doc = La <a data-l10n-name="data-doc-link">documentation des données de Firefox</a> propose des guides pour comprendre comment utiliser nos outils de données.
+about-telemetry-telemetry-client-doc = La <a data-l10n-name="client-doc-link">documentation du client de télémétrie Firefox</a> contient la définition des différents concepts, la documentation de l’API et un référentiel de données.
 about-telemetry-telemetry-dashboard = Les <a data-l10n-name="dashboard-link">tableaux de bord de télémétrie</a> vous permettent de visualiser les données reçues par Mozilla grâce à la télémétrie.
 about-telemetry-telemetry-probe-dictionary = Le <a data-l10n-name="probe-dictionary-link">dictionnaire des échantillons</a> fournit des informations et des descriptions sur les échantillons collectés par télémétrie.
-about-telemetry-show-in-Floorp-json-viewer = Ouvrir dans la visionneuse JSON
+about-telemetry-show-in-Firefox-json-viewer = Ouvrir dans la visionneuse JSON
 about-telemetry-home-section = Accueil
 about-telemetry-general-data-section = Données générales
 about-telemetry-environment-data-section = Données de l’environnement
@@ -78,7 +78,7 @@ about-telemetry-ping-details = Chaque information est envoyée empaquetée dans 
 about-telemetry-data-details-current = Les informations sont envoyées dans des paquets appelés « <a data-l10n-name="ping-link">pings</a> ». Vous visualisez les données actuelles.
 # string used as a placeholder for the search field
 # More info about it can be found here:
-# https://Floorp-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
+# https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
 # Variables:
 #   $selectedTitle (String): the section name from the structure of the ping.
 about-telemetry-filter-placeholder =
@@ -88,7 +88,7 @@ about-telemetry-filter-all-placeholder =
 # Variables:
 #   $searchTerms (String): the searched terms
 about-telemetry-results-for-search = Résultats pour « { $searchTerms } »
-# More info about it can be found here: https://Floorp-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
+# More info about it can be found here: https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
 # Variables:
 #   $sectionName (String): the section name from the structure of the ping.
 #   $currentSearchText (String): the current text in the search input
@@ -141,7 +141,7 @@ about-telemetry-origin-origin = origine
 about-telemetry-origin-count = comptage
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
-about-telemetry-origins-explanation = <a data-l10n-name="origin-doc-link">Floorp Origin Telemetry</a> encode les données avant de les envoyer de façon à ce que { $telemetryServerOwner } puisse compter différentes choses, mais ne puisse pas savoir si tel { -brand-product-name } a contribué ou non à ce comptage. <a data-l10n-name="prio-blog-link">En savoir plus</a>
+about-telemetry-origins-explanation = <a data-l10n-name="origin-doc-link">Firefox Origin Telemetry</a> encode les données avant de les envoyer de façon à ce que { $telemetryServerOwner } puisse compter différentes choses, mais ne puisse pas savoir si tel { -brand-product-name } a contribué ou non à ce comptage. <a data-l10n-name="prio-blog-link">En savoir plus</a>
 # Variables:
 #  $process (String): type of process in subsection headers ( e.g. "content", "parent" )
 about-telemetry-process = Processus « { $process } »

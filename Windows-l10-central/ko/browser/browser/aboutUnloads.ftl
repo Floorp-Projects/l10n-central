@@ -28,7 +28,7 @@ about-unloads-intro =
     { -brand-short-name }가 탭의 우선 순위를 지정하는 방법과 어떤 탭이 
     언로드되는지 보여줍니다. 아래의 <em>언로드</em> 버튼을 클릭하여 
     탭 언로드를 수동으로 실행할 수 있습니다.
-# The link points to a Floorp documentation page, only available in English,
+# The link points to a Firefox documentation page, only available in English,
 # with title "Tab Unloading"
 about-unloads-learn-more =
     이 기능과 이 페이지에 대해 더 알아보려면 

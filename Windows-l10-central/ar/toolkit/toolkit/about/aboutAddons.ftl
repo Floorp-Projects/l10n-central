@@ -412,9 +412,9 @@ addon-permissions-empty = لا يطلب هذا الامتداد أيّ صلاح�
 recommended-extensions-heading = الامتدادات المقترحة
 recommended-themes-heading = السمات المقترحة
 
-# A recommendation for the Floorp Color theme shown at the bottom of the theme
-# list view. The "Floorp Color" name itself should not be translated.
-recommended-theme-1 = ترى فيك الإبداع؟ <a data-l10n-name="link">اصنع سمتك الخاصة باستعمال Floorp Color.</a>
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = ترى فيك الإبداع؟ <a data-l10n-name="link">اصنع سمتك الخاصة باستعمال Firefox Color.</a>
 
 ## Page headings
 

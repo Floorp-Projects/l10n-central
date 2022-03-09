@@ -72,7 +72,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = Layar Penuh
 
-## Floorp Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = Masuk ke Sinkronisasi…
@@ -89,7 +89,7 @@ appmenu-remote-tabs-tabsnotsyncing = Aktifkan sinkronisasi tab untuk melihat daf
 appmenu-remote-tabs-opensettings =
     .label = Pengaturan
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Floorp for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Ingin melihat tab dari perangkat Anda yang lain di sini?
 appmenu-remote-tabs-connectdevice =
     .label = Sambungkan Perangkat Lainnya
@@ -121,8 +121,8 @@ whatsnew-panel-footer-checkbox =
     .label = Beri tahu tentang fitur baru
     .accesskey = f
 
-## The Floorp Profiler – The popup is the UI to turn on the profiler, and record
-## performance profiles. To enable it go to profiler.Floorp.com and click
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
 profiler-popup-button-idle =
@@ -148,10 +148,10 @@ profiler-popup-settings =
     .value = Pengaturan
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Edit Pengaturan…
+profiler-popup-disabled = Profiler saat ini dimatikan, kemungkinan besar karena jendela Penjelajahan Pribadi terbuka.
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings-button =
     .label = Edit Pengaturan…
-profiler-popup-disabled = Profiler saat ini dimatikan, kemungkinan besar karena jendela Penjelajahan Pribadi terbuka.
 profiler-popup-recording-screen = Merekam…
 # The profiler presets list is generated elsewhere, but the custom preset is defined
 # here only.
@@ -185,8 +185,8 @@ profiler-popup-capture-shortcut =
 profiler-popup-presets-web-developer-description = Prasetel yang direkomendasikan untuk sebagian besar debugging aplikasi web, dengan overhead yang rendah.
 profiler-popup-presets-web-developer-label =
     .label = Pengembang Web
-profiler-popup-presets-Floorp-description = Prasetel yang disarankan untuk pembuatan profil { -brand-shorter-name }.
-profiler-popup-presets-Floorp-label =
+profiler-popup-presets-firefox-description = Prasetel yang disarankan untuk pembuatan profil { -brand-shorter-name }.
+profiler-popup-presets-firefox-label =
     .label = { -brand-shorter-name }
 profiler-popup-presets-graphics-description = Prasetel untuk menyelidiki bug grafis di { -brand-shorter-name }.
 profiler-popup-presets-graphics-label =
@@ -234,6 +234,9 @@ appmenu-help-report-site-issue =
 appmenu-help-feedback-page =
     .label = Kirim Saran…
     .accesskey = S
+appmenu-help-share-ideas =
+    .label = Bagikan ide dan umpan balik…
+    .accesskey = B
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

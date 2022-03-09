@@ -4,7 +4,7 @@
 
 
 ## The Enterprise Policies feature is aimed at system administrators
-## who want to deploy these settings across several Floorp installations
+## who want to deploy these settings across several Firefox installations
 ## all at once. This is traditionally done through the Windows Group Policy
 ## feature, but the system also supports other forms of deployment.
 ## These are short descriptions for individual policies, to be displayed
@@ -54,12 +54,12 @@ policy-DisableDeveloperTools = Blokuoti prieigą prie programuotojų priemonių.
 
 policy-DisableFeedbackCommands = Išjungti komandas, skirtas siųsti atsiliepimus iš „Žinyno“ meniu („Siųsti atsiliepimą“ ir „Pranešti apie apgaulingą svetainę“).
 
-policy-DisableFloorpAccounts = Išjungti „{ -fxaccount-brand-name }“ paremtas paslaugas, įskaitant „Sync“.
+policy-DisableFirefoxAccounts = Išjungti „{ -fxaccount-brand-name }“ paremtas paslaugas, įskaitant „Sync“.
 
-# Floorp Screenshots is the name of the feature, and should not be translated.
-policy-DisableFloorpScreenshots = Išjungti „Floorp“ ekrano nuotraukų funkcionalumą.
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Išjungti „Firefox“ ekrano nuotraukų funkcionalumą.
 
-policy-DisableFloorpStudies = Neleisti „{ -brand-short-name }“ vykdyti tyrimų.
+policy-DisableFirefoxStudies = Neleisti „{ -brand-short-name }“ vykdyti tyrimų.
 
 policy-DisableForgetButton = Blokuoti prieigą prie mygtuką „Pamiršti“.
 
@@ -112,7 +112,7 @@ policy-ExtensionSettings = Tvarkyti visus priedų įdiegimo aspektus.
 
 policy-ExtensionUpdate = Įjungti arba išjungti automatinius priedų naujinimus.
 
-policy-FloorpHome = Konfigūruoti „Floorp“ pradžios ekraną.
+policy-FirefoxHome = Konfigūruoti „Firefox“ pradžios ekraną.
 
 policy-FlashPlugin = Leisti arba drausti „Flash“ plėtinio naudojimą.
 

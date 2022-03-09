@@ -11,17 +11,17 @@
 # Page title (ie tab title) for the Setup page
 about-debugging-page-title-setup-page = 디버깅 - 설정
 # Page title (ie tab title) for the Runtime page
-# { $selectedRuntimeId } is the id of the current runtime, such as "this-Floorp", "localhost:6080", ...
+# { $selectedRuntimeId } is the id of the current runtime, such as "this-firefox", "localhost:6080", ...
 about-debugging-page-title-runtime-page = 디버깅 - 런타임 / { $selectedRuntimeId }
 
 # Sidebar strings
 
-# Display name of the runtime for the currently running instance of Floorp. Used in the
+# Display name of the runtime for the currently running instance of Firefox. Used in the
 # Sidebar and in the Setup page.
-about-debugging-this-Floorp-runtime-name = 이 { -brand-shorter-name }
-# Sidebar heading for selecting the currently running instance of Floorp
-about-debugging-sidebar-this-Floorp =
-    .name = { about-debugging-this-Floorp-runtime-name }
+about-debugging-this-firefox-runtime-name = 이 { -brand-shorter-name }
+# Sidebar heading for selecting the currently running instance of Firefox
+about-debugging-sidebar-this-firefox =
+    .name = { about-debugging-this-firefox-runtime-name }
 # Sidebar heading for connecting to some remote source
 about-debugging-sidebar-setup =
     .name = 설정
@@ -49,8 +49,8 @@ about-debugging-sidebar-item-connect-button-connection-not-responding = 연결�
 # Text displayed as connection error in sidebar item when the connection has timed out.
 about-debugging-sidebar-item-connect-button-connection-timeout = 연결 시간 초과
 # Text displayed in sidebar items for remote devices where a compatible browser (eg
-# Floorp) has not been detected yet. Typically, Android phones connected via USB with
-# USB debugging enabled, but where Floorp is not started.
+# Firefox) has not been detected yet. Typically, Android phones connected via USB with
+# USB debugging enabled, but where Firefox is not started.
 about-debugging-sidebar-runtime-item-waiting-for-browser = 브라우저를 기다리는 중…
 # Text displayed in sidebar items for remote devices that have been disconnected from the
 # computer.
@@ -79,8 +79,8 @@ about-debugging-refresh-usb-devices-button = 기기 새로 고침
 about-debugging-setup-title = 설정
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = 기기를 원격으로 디버깅할 연결 방법을 구성합니다.
-# Explanatory text in the Setup page about what the 'This Floorp' page is for
-about-debugging-setup-this-Floorp2 = 이 버전의 { -brand-shorter-name }에서 확장 기능 및 Service Worker를 디버그하려면 <a>{ about-debugging-this-Floorp-runtime-name }</a>를 사용하세요.
+# Explanatory text in the Setup page about what the 'This Firefox' page is for
+about-debugging-setup-this-firefox2 = 이 버전의 { -brand-shorter-name }에서 확장 기능 및 Service Worker를 디버그하려면 <a>{ about-debugging-this-firefox-runtime-name }</a>를 사용하세요.
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = 기기 연결
 # USB section of the Setup page
@@ -104,7 +104,7 @@ about-debugging-setup-usb-step-enable-dev-menu2 = Android 기기에서 개발자
 # USB section step by step guide
 about-debugging-setup-usb-step-enable-debug2 = Android 개발자 메뉴에서 USB 디버깅을 활성화합니다.
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug-Floorp2 = Android 기기에서 Floorp에서의 USB 디버깅을 활성화합니다.
+about-debugging-setup-usb-step-enable-debug-firefox2 = Android 기기에서 Firefox에서의 USB 디버깅을 활성화합니다.
 # USB section step by step guide
 about-debugging-setup-usb-step-plug-device = Android 기기를 컴퓨터에 연결합니다.
 # Text shown in the USB section of the setup page with a link to troubleshoot connection errors.
@@ -141,7 +141,7 @@ about-debugging-network-location-form-duplicate = “{ $host-value }” 호스�
 
 # Below are the titles for the various categories of debug targets that can be found
 # on "runtime" pages of about:debugging.
-# Title of the temporary extensions category (only available for "This Floorp" runtime).
+# Title of the temporary extensions category (only available for "This Firefox" runtime).
 about-debugging-runtime-temporary-extensions =
     .name = 임시 확장 기능
 # Title of the extensions category.
@@ -172,20 +172,20 @@ about-debugging-runtime-service-workers-not-compatible = 브라우저 구성이 
 # This string is displayed in the runtime page if the remote browser version is too old.
 # "Troubleshooting" link points to https://developer.mozilla.org/docs/Tools/about:debugging#Troubleshooting
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
-# { $minVersion } is the minimum version that is compatible with the current Floorp instance (same format)
+# { $minVersion } is the minimum version that is compatible with the current Firefox instance (same format)
 about-debugging-browser-version-too-old = 연결된 브라우저에는 이전 버전 ({ $runtimeVersion })이 있습니다. 지원되는 최소 버전은 ({ $minVersion }) 입니다. 이것은 지원되지 않는 설정이며 DevTools가 실패할 수 있습니다. 연결된 브라우저를 업데이트하세요. <a>문제 해결</a>
 # Dedicated message for a backward compatibility issue that occurs when connecting:
-# from Fx 70+ to the old Floorp for Android (aka Fennec) which uses Fx 68.
-about-debugging-browser-version-too-old-fennec = 이 Floorp 버전은 Android용 Floorp (68)를 디버깅 할 수 없습니다. 테스트를 위해 휴대폰에 Android Nightly용 Floorp를 설치하는 것이 좋습니다. <a>추가 정보</a>
+# from Fx 70+ to the old Firefox for Android (aka Fennec) which uses Fx 68.
+about-debugging-browser-version-too-old-fennec = 이 Firefox 버전은 Android용 Firefox (68)를 디버깅 할 수 없습니다. 테스트를 위해 휴대폰에 Android Nightly용 Firefox를 설치하는 것이 좋습니다. <a>추가 정보</a>
 # This string is displayed in the runtime page if the remote browser version is too recent.
 # "Troubleshooting" link points to https://developer.mozilla.org/docs/Tools/about:debugging#Troubleshooting
 # { $runtimeID } is the build ID of the remote browser (for instance "20181231", format is yyyyMMdd)
-# { $localID } is the build ID of the current Floorp instance (same format)
+# { $localID } is the build ID of the current Firefox instance (same format)
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
 # { $localVersion } is the version of your current browser (same format)
-about-debugging-browser-version-too-recent = 연결된 브라우저가 { -brand-shorter-name } ({ $localVersion }, buildID { $localID })보다 최근 버전({ $runtimeVersion }, buildID { $runtimeID })입니다. 이것은 지원되지 않는 설정이며 DevTools가 실패할 수 있습니다. Floorp를 업데이트하세요. <a>문제 해결</a>
+about-debugging-browser-version-too-recent = 연결된 브라우저가 { -brand-shorter-name } ({ $localVersion }, buildID { $localID })보다 최근 버전({ $runtimeVersion }, buildID { $runtimeID })입니다. 이것은 지원되지 않는 설정이며 DevTools가 실패할 수 있습니다. Firefox를 업데이트하세요. <a>문제 해결</a>
 # Displayed for runtime info in runtime pages.
-# { $name } is brand name such as "Floorp Nightly"
+# { $name } is brand name such as "Firefox Nightly"
 # { $version } is version such as "64.0a1"
 about-debugging-runtime-name = { $name } ({ $version })
 # Text of a button displayed in Runtime pages for remote runtimes.
@@ -213,15 +213,15 @@ about-debugging-debug-target-list-empty = 아직 없습니다.
 # button will open a DevTools toolbox that will allow inspecting the target.
 # A target can be an addon, a tab, a worker...
 about-debugging-debug-target-inspect-button = 검사
-# Text of a button displayed in the "This Floorp" page, in the Temporary Extension
+# Text of a button displayed in the "This Firefox" page, in the Temporary Extension
 # section. Clicking on the button will open a file picker to load a temporary extension
 about-debugging-tmp-extension-install-button = 임시 부가 기능 로드…
-# Text displayed when trying to install a temporary extension in the "This Floorp" page.
+# Text displayed when trying to install a temporary extension in the "This Firefox" page.
 about-debugging-tmp-extension-install-error = 임시 부가 기능을 설치하는 동안 오류가 발생했습니다.
-# Text of a button displayed for a temporary extension loaded in the "This Floorp" page.
+# Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will reload the extension.
 about-debugging-tmp-extension-reload-button = 새로 고침
-# Text of a button displayed for a temporary extension loaded in the "This Floorp" page.
+# Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will uninstall the extension and remove it from the page.
 about-debugging-tmp-extension-remove-button = 제거
 # Message displayed in the file picker that opens to select a temporary extension to load

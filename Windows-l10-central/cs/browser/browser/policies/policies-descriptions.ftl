@@ -4,7 +4,7 @@
 
 
 ## The Enterprise Policies feature is aimed at system administrators
-## who want to deploy these settings across several Floorp installations
+## who want to deploy these settings across several Firefox installations
 ## all at once. This is traditionally done through the Windows Group Policy
 ## feature, but the system also supports other forms of deployment.
 ## These are short descriptions for individual policies, to be displayed
@@ -60,12 +60,12 @@ policy-DisableDeveloperTools = Blokování přístupu k nástrojům pro vývojá
 
 policy-DisableFeedbackCommands = Blokování odeslání zpětné vazby z nabídky Nápověda (volby Odeslat zpětnou vazbu a Nahlásit klamavou stránku).
 
-policy-DisableFloorpAccounts = Vypnutí služeb používajících { -fxaccount-brand-name(case: "acc", capitalization: "lower") }, včetně Syncu.
+policy-DisableFirefoxAccounts = Vypnutí služeb používajících { -fxaccount-brand-name(case: "acc", capitalization: "lower") }, včetně Syncu.
 
-# Floorp Screenshots is the name of the feature, and should not be translated.
-policy-DisableFloorpScreenshots = Vypnutí funkce Floorp Screenshots.
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Vypnutí funkce Firefox Screenshots.
 
-policy-DisableFloorpStudies =
+policy-DisableFirefoxStudies =
     Zablokování spouštění studií { -brand-short-name.gender ->
         [masculine] { -brand-short-name(case: "gen") }
         [feminine] { -brand-short-name(case: "gen") }
@@ -130,7 +130,7 @@ policy-ExtensionSettings = Správa všech aspektů instalace rozšíření.
 
 policy-ExtensionUpdate = Vypnutí nebo zapnutí automatických aktualizací rozšíření.
 
-policy-FloorpHome = Nastavení domovské stránky prohlížeče.
+policy-FirefoxHome = Nastavení domovské stránky prohlížeče.
 
 policy-FlashPlugin = Povolení nebo zablokování zásuvného modulu Flash.
 

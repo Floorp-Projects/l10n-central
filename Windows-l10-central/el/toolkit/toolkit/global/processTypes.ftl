@@ -12,7 +12,7 @@ process-type-web = Διαδικτυακό περιεχόμενο
 # such as about:home
 process-type-privilegedabout = Προνομιακή σελίδα About
 # process used to run privileged mozilla pages,
-# such as accounts.Floorp.com
+# such as accounts.firefox.com
 process-type-privilegedmozilla = Προνομιακό περιεχόμενο Mozilla
 process-type-extension = Επέκταση
 # process used to open file:// URLs
@@ -42,6 +42,8 @@ process-type-gpu = GPU
 process-type-socket = Υποδοχή
 # process used to decode media
 process-type-rdd = RDD
+# process used to run some IPC actor in their own sandbox
+process-type-utility = Παράγων IPC σε sandbox
 
 ##
 ## Other

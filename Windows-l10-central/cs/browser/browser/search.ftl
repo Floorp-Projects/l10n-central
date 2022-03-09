@@ -42,3 +42,11 @@ searchbar-input =
     .placeholder = Vyhledat
 searchbar-icon =
     .tooltiptext = Vyhledat
+
+## Infobar shown when search engine is removed and replaced.
+## Variables
+## $oldEngine (String) - the search engine to be removed.
+## $newEngine (String) - the search engine to replace the removed search engine.
+
+remove-search-engine-message = <strong>Váš výchozí vyhledávač byl změněn.</strong> { -brand-short-name } už vyhledávač { $oldEngine } jako vestavěný nepodporuje. Vaším výchozím vyhledávačem je teď { $newEngine }, ale můžete ho změnit v nastavení. <label data-l10n-name="remove-search-engine-article">Zjistit více</label>
+remove-search-engine-button = OK

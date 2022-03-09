@@ -15,10 +15,10 @@
 <!ENTITY prefEnableHTTP11Proxy.accesskey     "T">
 <!ENTITY prefPara                            "A HTTP-kapcsolatok teljesítménye, illetve kompatibilitása finomhangolható ezekkel a beállításokkal. Bizonyos proxykiszolgálók például megkövetelik a HTTP/1.0-t (olvassa el a verzióinformációkat további részletekért).">
 <!ENTITY prefUseragent.label                 "Böngésző azonosító karakterlánc">
-<!ENTITY prefFloorpStrict.label             "Azonosítás Floorpként">
-<!ENTITY prefFloorpStrict.accesskey         "A">
-<!ENTITY prefFloorpNone.label               "Azonosítás SeaMonkeyként">
-<!ENTITY prefFloorpNone.accesskey           "M">
-<!ENTITY prefFloorpCompat2.label            "Azonosítás SeaMonkeyként, és Floorp kompatibilitás hirdetése">
-<!ENTITY prefFloorpCompat2.accesskey        "F">
+<!ENTITY prefFirefoxStrict.label             "Azonosítás Firefoxként">
+<!ENTITY prefFirefoxStrict.accesskey         "A">
+<!ENTITY prefFirefoxNone.label               "Azonosítás SeaMonkeyként">
+<!ENTITY prefFirefoxNone.accesskey           "M">
+<!ENTITY prefFirefoxCompat2.label            "Azonosítás SeaMonkeyként, és Firefox kompatibilitás hirdetése">
+<!ENTITY prefFirefoxCompat2.accesskey        "F">
 <!ENTITY prefCompatWarning2.desc             "FIGYELMEZTETÉS: e beállítások megváltoztatása azt eredményezheti, hogy a webhelyek vagy a szolgáltatások nem fognak megfelelően működni.">

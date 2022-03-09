@@ -8,7 +8,7 @@
 
 perftools-intro-title = プロファイラーの設定
 perftools-intro-description =
-  記録したデータは新しいタブの profiler.Floorp.com で開きます。データはすべてローカルに保存されますが、アップロードして共有することもできます。
+  記録したデータは新しいタブの profiler.firefox.com で開きます。データはすべてローカルに保存されますが、アップロードして共有することもできます。
 
 ## All of the headings for the various sections.
 
@@ -24,7 +24,7 @@ perftools-heading-local-build = ローカルビルド
 ##
 
 perftools-description-intro =
-  記録したデータは新しいタブの <a>profiler.Floorp.com</a> で開きます。データはすべてローカルに保存されますが、アップロードして共有することもできます。
+  記録したデータは新しいタブの <a>profiler.firefox.com</a> で開きます。データはすべてローカルに保存されますが、アップロードして共有することもできます。
 perftools-description-local-build =
   この端末で自身でビルドしたバイナリをプロファイリングする場合は、シンボル情報を利用可能にしてビルドした objdir を以下のリストに追加してください。
 
@@ -123,24 +123,13 @@ perftools-onboarding-close-button =
 perftools-presets-web-developer-label = ウェブ開発
 perftools-presets-web-developer-description = 一般的なウェブアプリをデバッグするための低負荷な推奨プリセットです。
 
-perftools-presets-Floorp-platform-label = Floorp プラットフォーム
-perftools-presets-Floorp-platform-description = Floorp のプラットフォーム内部をデバッグするための推奨プリセットです。
-
-perftools-presets-Floorp-front-end-label = Floorp フロントエンド
-perftools-presets-Floorp-front-end-description = Floorp のフロントエンド内部をデバッグするための推奨プリセットです。
-
-perftools-presets-Floorp-graphics-label = Floorp グラフィック
-perftools-presets-Floorp-graphics-description = Floorp のグラフィック性能を調査するための推奨プリセットです。
-
-perftools-presets-Floorp-label = { -brand-shorter-name }
-perftools-presets-Floorp-description = { -brand-shorter-name } のプロファイリングのための推奨プリセットです。
+perftools-presets-firefox-label = { -brand-shorter-name }
+perftools-presets-firefox-description = { -brand-shorter-name } のプロファイリングのための推奨プリセットです。
 
 perftools-presets-graphics-label = グラフィック
 perftools-presets-graphics-description = { -brand-shorter-name } のグラフィックバグを調査するための推奨プリセットです。
 
 perftools-presets-media-label = メディア
-perftools-presets-media-description = 音声と動画の問題を診断するための推奨プリセットです。
-
 perftools-presets-media-description2 = { -brand-shorter-name } の音声と動画のバグを調査するための推奨プリセットです。
 
 perftools-presets-networking-label = ネットワーク

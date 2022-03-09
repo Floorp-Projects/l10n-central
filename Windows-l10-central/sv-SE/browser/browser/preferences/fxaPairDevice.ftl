@@ -6,9 +6,9 @@ fxa-pair-device-dialog =
     .title = Anslut en annan enhet
     .style = width: 26em; min-height: 35em;
 
-fxa-qrcode-heading-step1 = 1. Om du inte redan har, installera <a data-l10n-name="connect-another-device">Floorp på din mobila enhet</a>.
+fxa-qrcode-heading-step1 = 1. Om du inte redan har, installera <a data-l10n-name="connect-another-device">Firefox på din mobila enhet</a>.
 
-fxa-qrcode-heading-step2 = 2. Öppna Floorp på din mobila enhet.
+fxa-qrcode-heading-step2 = 2. Öppna Firefox på din mobila enhet.
 
 fxa-qrcode-heading-step3 = 3. Öppna <b>menyn</b> (<img data-l10n-name="ios-menu-icon"/> eller <img data-l10n-name="android-menu-icon"/>), tryck på <img data-l10n-name="settings-icon"/> <b>Inställningar</b> och välj <b>Aktivera Sync</b>
 

@@ -4,7 +4,7 @@
 
 
 ## The Enterprise Policies feature is aimed at system administrators
-## who want to deploy these settings across several Floorp installations
+## who want to deploy these settings across several Firefox installations
 ## all at once. This is traditionally done through the Windows Group Policy
 ## feature, but the system also supports other forms of deployment.
 ## These are short descriptions for individual policies, to be displayed
@@ -54,12 +54,12 @@ policy-DisableDeveloperTools = Zugriff auf Entwicklerwerkzeuge deaktivieren
 
 policy-DisableFeedbackCommands = Feedback senden über "Hilfe"-Menü deaktivieren ("Feedback senden…" und "Betrügerische Website melden…")
 
-policy-DisableFloorpAccounts = { -fxaccount-brand-name }-basierte Dienste (z.B. Sync) deaktivieren
+policy-DisableFirefoxAccounts = { -fxaccount-brand-name }-basierte Dienste (z.B. Sync) deaktivieren
 
-# Floorp Screenshots is the name of the feature, and should not be translated.
-policy-DisableFloorpScreenshots = "Floorp Screenshots"-Funktion deaktivieren
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = "Firefox Screenshots"-Funktion deaktivieren
 
-policy-DisableFloorpStudies = { -brand-short-name } keine Studien durchführen lassen
+policy-DisableFirefoxStudies = { -brand-short-name } keine Studien durchführen lassen
 
 policy-DisableForgetButton = Zugriff auf "Vergessen"-Schaltfläche verhindern
 
@@ -85,7 +85,7 @@ policy-DisableSetAsDesktopBackground = "Als Hintergrundbild einrichten"-Menüein
 
 policy-DisableSystemAddonUpdate = Installieren und Aktualisieren von System-Add-ons durch den Browser deaktivieren
 
-policy-DisableTelemetry = Datenerhebung zur Verbesserung von Floorp (Telemetrie) deaktivieren
+policy-DisableTelemetry = Datenerhebung zur Verbesserung von Firefox (Telemetrie) deaktivieren
 
 policy-DisplayBookmarksToolbar = Lesezeichen-Symbolleiste standardmäßig anzeigen
 
@@ -112,7 +112,7 @@ policy-ExtensionSettings = Alle Einstellungen für die Erweiterungsinstallation 
 
 policy-ExtensionUpdate = Automatische Add-on-Updates aktivieren oder deaktivieren
 
-policy-FloorpHome = Floorp-Startseite konfigurieren
+policy-FirefoxHome = Floorp-Startseite konfigurieren
 
 policy-FlashPlugin = Flash-Plugin-Verwendung erlauben oder verbieten
 

@@ -2,9 +2,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-## Floorp and Mozilla Brand
+## Firefox and Mozilla Brand
 ##
-## Floorp and Mozilla must be treated as a brand.
+## Firefox and Mozilla must be treated as a brand.
 ##
 ## They cannot be:
 ## - Transliterated.
@@ -22,5 +22,5 @@
 # This brand name can be used in messages where the product name needs to
 # remain unchanged across different versions (Nightly, Beta, etc.).
 -brand-product-name = Floorp
--vendor-short-name = Ablaze
-trademarkInfo = Floorp Legacy ブラウザーのアイコン、Ablaze 製品群のアイコン等は、MPL2.0 でライセンスされていません。使用は控えてください。
+-vendor-short-name = Mozilla
+trademarkInfo = Floorp および Firefox ロゴは 米国 Mozilla Foundation の米国およびその他の国における商標です。

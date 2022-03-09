@@ -4,7 +4,7 @@
 
 
 ## The Enterprise Policies feature is aimed at system administrators
-## who want to deploy these settings across several Floorp installations
+## who want to deploy these settings across several Firefox installations
 ## all at once. This is traditionally done through the Windows Group Policy
 ## feature, but the system also supports other forms of deployment.
 ## These are short descriptions for individual policies, to be displayed
@@ -54,12 +54,12 @@ policy-DisableDeveloperTools = Blokker tilgang til utviklarverktøya.
 
 policy-DisableFeedbackCommands = Deaktiver kommandoar for å sende tilbakemelding frå Hjelp-menyen (Gje tilbakemelding og Rapporter villeiande nettstad).
 
-policy-DisableFloorpAccounts = Deaktiver { -fxaccount-brand-name }-baserte tenester, inkludert Sync.
+policy-DisableFirefoxAccounts = Deaktiver { -fxaccount-brand-name }-baserte tenester, inkludert Sync.
 
-# Floorp Screenshots is the name of the feature, and should not be translated.
-policy-DisableFloorpScreenshots = Deaktiver funksjonen Floorp Screenshots
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Deaktiver funksjonen Firefox Screenshots
 
-policy-DisableFloorpStudies = Hindre { -brand-short-name } frå å køyre undersøkingar.
+policy-DisableFirefoxStudies = Hindre { -brand-short-name } frå å køyre undersøkingar.
 
 policy-DisableForgetButton = Hindre tilgang til knappen Gløym.
 
@@ -112,7 +112,7 @@ policy-ExtensionSettings = Handter alle aspekt av utvidingsinstallasjonen.
 
 policy-ExtensionUpdate = Slå på eller slå av automatisk utvidingsoppdateringar.
 
-policy-FloorpHome = Konfigurer Floorp startside.
+policy-FirefoxHome = Konfigurer Firefox startside.
 
 policy-FlashPlugin = Tillat eller nekt bruk av programtillegget Flash.
 

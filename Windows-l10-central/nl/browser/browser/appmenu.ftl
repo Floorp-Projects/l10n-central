@@ -72,7 +72,7 @@ appmenuitem-zoom-reduce =
 appmenuitem-fullscreen =
     .label = Volledig scherm
 
-## Floorp Account toolbar button and Sync panel in App menu.
+## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
     .label = Aanmelden bij Sync…
@@ -89,7 +89,7 @@ appmenu-remote-tabs-tabsnotsyncing = Zet tabbladsynchronisatie aan om een lijst 
 appmenu-remote-tabs-opensettings =
     .label = Instellingen
 # This is shown when Sync is configured but this appears to be the only device attached to
-# the account. We also show links to download Floorp for android/ios.
+# the account. We also show links to download Firefox for android/ios.
 appmenu-remote-tabs-noclients = Wilt u hier uw tabbladen van andere apparaten zien?
 appmenu-remote-tabs-connectdevice =
     .label = Een ander apparaat verbinden
@@ -121,8 +121,8 @@ whatsnew-panel-footer-checkbox =
     .label = Berichten over nieuwe functies
     .accesskey = f
 
-## The Floorp Profiler – The popup is the UI to turn on the profiler, and record
-## performance profiles. To enable it go to profiler.Floorp.com and click
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
 ## "Enable Profiler Menu Button".
 
 profiler-popup-button-idle =
@@ -148,12 +148,12 @@ profiler-popup-settings =
     .value = Instellingen
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = Instellingen bewerken…
-# This link takes the user to about:profiling, and is only visible with the Custom preset.
-profiler-popup-edit-settings-button =
-    .label = Instellingen bewerken…
 profiler-popup-disabled =
     De profiler is momenteel uitgeschakeld, waarschijnlijk omdat een privévenster
     is geopend.
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings-button =
+    .label = Instellingen bewerken…
 profiler-popup-recording-screen = Opnemen…
 # The profiler presets list is generated elsewhere, but the custom preset is defined
 # here only.
@@ -187,18 +187,8 @@ profiler-popup-capture-shortcut =
 profiler-popup-presets-web-developer-description = Aanbevolen voorinstelling voor de meeste foutopsporing in web-apps, met lage overhead.
 profiler-popup-presets-web-developer-label =
     .label = Webontwikkelaar
-profiler-popup-presets-Floorp-platform-description = Aanbevolen voorinstelling voor interne foutopsporing in het Floorp-platform.
-profiler-popup-presets-Floorp-platform-label =
-    .label = Floorp-platform
-profiler-popup-presets-Floorp-front-end-description = Aanbevolen voorinstelling voor interne foutopsporing in het front-end van Floorp.
-profiler-popup-presets-Floorp-front-end-label =
-    .label = Floorp-front-end
-profiler-popup-presets-Floorp-graphics-description = Aanbevolen voorinstelling voor onderzoek naar grafische prestaties van Floorp.
-profiler-popup-presets-Floorp-graphics-label =
-    .label = Floorp-grafisch
-profiler-popup-presets-media-description = Aanbevolen voorinstelling voor het analyseren van audio- en videoproblemen.
-profiler-popup-presets-Floorp-description = Aanbevolen voorinstelling voor profileringen van { -brand-shorter-name }.
-profiler-popup-presets-Floorp-label =
+profiler-popup-presets-firefox-description = Aanbevolen voorinstelling voor profileringen van { -brand-shorter-name }.
+profiler-popup-presets-firefox-label =
     .label = { -brand-shorter-name }
 profiler-popup-presets-graphics-description = Voorinstelling voor het onderzoeken van grafische bugs in { -brand-shorter-name }.
 profiler-popup-presets-graphics-label =
@@ -246,6 +236,9 @@ appmenu-help-report-site-issue =
 appmenu-help-feedback-page =
     .label = Feedback verzenden…
     .accesskey = v
+appmenu-help-share-ideas =
+    .label = Ideeën en feedback delen…
+    .accesskey = f
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

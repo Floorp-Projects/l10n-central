@@ -167,3 +167,55 @@ no-reply-reply-anyway-button = 仍然回复
 ## error messages
 
 decrypt-and-copy-failures = 共计 { $total } 条消息，有 { $failures } 条因解密失败而未复制。
+
+## Spaces toolbar
+
+spaces-toolbar =
+    .toolbarname = 侧工具栏
+spaces-toolbar-button-mail =
+    .title = 切换到邮件页
+spaces-toolbar-button-address-book =
+    .title = 切换到通讯录页
+spaces-toolbar-button-calendar =
+    .title = 切换到日历页
+spaces-toolbar-button-tasks =
+    .title = 切换到任务页
+spaces-toolbar-button-chat =
+    .title = 切换到聊天页
+spaces-toolbar-button-settings =
+    .title = 切换到设置页
+spaces-toolbar-button-collapse =
+    .title = 折叠侧工具栏
+spaces-toolbar-button-reveal =
+    .title = 显示侧工具栏
+spaces-context-new-tab-item =
+    .label = 新建标签页打开
+spaces-context-new-window-item =
+    .label = 新建窗口打开
+# Variables:
+# $tabName (String) - The name of the tab this item will switch to.
+spaces-context-switch-tab-item =
+    .label = 切换到 { $tabName }
+settings-context-open-settings-item =
+    .label = 打开设置
+settings-context-open-account-settings-item =
+    .label = 打开账户设置
+settings-context-open-addons-item =
+    .label = 打开扩展和主题
+
+## Spaces toolbar pinned tab menupopup
+
+spaces-toolbar-pinned-tab-button =
+    .tooltiptext = 打开侧工具菜单
+spaces-pinned-button-menuitem-mail =
+    .label = { spaces-toolbar-button-mail.title }
+spaces-pinned-button-menuitem-address-book =
+    .label = { spaces-toolbar-button-address-book.title }
+spaces-pinned-button-menuitem-calendar =
+    .label = { spaces-toolbar-button-calendar.title }
+spaces-pinned-button-menuitem-tasks =
+    .label = { spaces-toolbar-button-tasks.title }
+spaces-pinned-button-menuitem-chat =
+    .label = { spaces-toolbar-button-chat.title }
+spaces-pinned-button-menuitem-reveal =
+    .label = { spaces-toolbar-button-reveal.title }
