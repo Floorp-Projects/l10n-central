@@ -219,7 +219,57 @@ containers-remove-cancel-button = 削除しない
 
 ## General Section - Language & Appearance
 
+
 language-and-appearance-header = 言語と外観
+
+preferences-web-appearance-header = ウェブサイトの外観
+
+preferences-web-appearance-description = 一部のウェブサイトでは、ユーザーの好みに合わせて配色を調整しています。そのようなサイトでは、どの配色を使用するかを選択してください。
+
+preferences-web-appearance-choice-browser = { -brand-short-name } のテーマ
+preferences-web-appearance-choice-system = システムテーマ
+preferences-web-appearance-choice-light = ライトテーマ
+preferences-web-appearance-choice-dark = ダークテーマ
+
+preferences-web-appearance-choice-tooltip-browser =
+  .title = ウェブサイトの背景とコンテンツの色に { -brand-short-name } のテーマ設定を利用する。
+preferences-web-appearance-choice-tooltip-system =
+  .title = ウェブサイトの背景とコンテンツに OS のシステム設定を利用する。
+preferences-web-appearance-choice-tooltip-light =
+  .title = ウェブサイトの背景やコンテンツには、ライトモードを使用する。
+preferences-web-appearance-choice-tooltip-dark =
+  .title = ウェブサイトの背景やコンテンツには、ライトモードを使用する。
+
+preferences-web-appearance-choice-input-browser =
+  .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+
+preferences-web-appearance-choice-input-system =
+  .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+
+preferences-web-appearance-choice-input-light =
+  .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+
+preferences-web-appearance-choice-input-dark =
+  .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+
+# Windows HCM や "Override colors: always" を使用しない場合、表示されることがあります。
+# システムカラー
+preferences-web-appearance-override-warning = カラーセレクトは、ウェブサイトの外観を優先します。 <a data-l10n-name="colors-link">色を調整</a>
+
+# このメッセージにはリンクが1つ含まれています。必要に応じて文中での移動が可能です
+# あなたの言語に適応させるため、変更しないでください。
+
+preferences-web-appearance-footer = { -brand-short-name } の外観を <a data-l10n-name="themes-link">アドオンとテーマの設定</a> で変更する
+
+preferences-colors-header = 色覚の設定
+
+preferences-colors-description = テキスト、ウェブサイトの背景、リンクの既定の色を { -brand-short-name } の設定を上書きする
+
+preferences-colors-manage-button =
+    .label = 色を調整…
+    .accesskey = C
+
+preferences-fonts-header = フォント
 
 fonts-and-colors-header = フォントと配色
 
@@ -772,7 +822,7 @@ sync-signedout-account-signin3 =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = Floorp for <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> または <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> をダウンロードしてモバイル端末と同期しましょう。
+sync-mobile-promo = Mozilla Firefox for <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> または <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> をダウンロードしてモバイル端末と同期しましょう。
 
 ## Firefox Account - Signed in
 
