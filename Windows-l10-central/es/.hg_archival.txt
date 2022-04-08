@@ -1,7 +1,0 @@
-repo: ceeb1fa3c0a6882a2624f7fa838f5ab09338f895
-node: 6c2f8a3e9499bbd56c4d480c9ce7dd2a75381ae3
-branch: default
-latesttag: Floorp_4_0b12_BUILD1
-latesttag: Floorp_4_0b12_RELEASE
-latesttagdistance: 2523
-changessincelatesttag: 2645
