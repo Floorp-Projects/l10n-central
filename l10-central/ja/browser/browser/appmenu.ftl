@@ -235,6 +235,9 @@ appmenu-help-feedback-page =
     .label = フィードバックを送信...
     .accesskey = S
 
+appmenu-help-share-ideas =
+    .label = フィードバックを送信...
+    .accesskey = S
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 

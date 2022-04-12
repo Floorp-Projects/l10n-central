@@ -1428,3 +1428,17 @@ choose-download-folder-title = ダウンロードフォルダーを選択:
 #   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
 save-files-to-cloud-storage =
     .label = { $service-name } にファイルを保存する
+
+# Floorp の固有設定
+floorp-preference = { -brand-short-name } の環境設定 (実験的機能)
+browser-design-settings = タブバーの設定（機能は並行して使えず、適用には再起動が必要です)
+
+operation-settings = { -brand-short-name } の操作設定 (適用には再起動が必要です)
+Mouse-side-button = { -brand-short-name } の操作をサイドボタン付きのマウスに最適化する
+
+hide-horizontality-tabs = 上部の水平タブを非表示にする
+verticalTab-setting = 垂直タブに最適化する
+move-tabbar-position = タブバーをブックマークの下に移動する
+
+treestyletabSettings-l10 = ツリー型垂直タブの動作設定　(適用には再起動が必要です)
+treestyletab-Settings = ツリー型垂直タブにマウスをフォーカスした際に展開するようにする
