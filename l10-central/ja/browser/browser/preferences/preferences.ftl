@@ -1442,3 +1442,9 @@ move-tabbar-position = タブバーをブックマークの下に移動する
 
 treestyletabSettings-l10 = ツリー型垂直タブの動作設定　(適用には再起動が必要です)
 treestyletab-Settings = ツリー型垂直タブにマウスをフォーカスした際に展開するようにする
+
+## Floorp アップデーターの設定
+
+floorp-updater = { -brand-short-name } アップデーターの設定
+enable-floorp-updater = { -brand-short-name } のアップデートを起動時にチェックする
+floorp-update-latest = 自動アップデートチェックで { -brand-short-name } が最新版の場合、最新版である旨の通知を表示する
