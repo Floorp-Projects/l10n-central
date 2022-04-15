@@ -1443,6 +1443,9 @@ move-tabbar-position = タブバーをブックマークの下に移動する
 treestyletabSettings-l10 = ツリー型垂直タブの動作設定　(適用には再起動が必要です)
 treestyletab-Settings = ツリー型垂直タブにマウスをフォーカスした際に展開するようにする
 
+bookmarks-bar-settings = ブックマークバーの設定 (適用には再起動は必要です)
+bookmarks-focus-mode = マウスをツールバーバーにフォーカスした場合、ブックマークバーを表示します。
+
 ## Floorp アップデーターの設定
 
 floorp-updater = { -brand-short-name } アップデーターの設定
