@@ -268,3 +268,17 @@ mr2-onboarding-default-theme-label = 既定のテーマを見てみます。
 mr2-onboarding-thank-you-header = ありがとうございます
 mr2-onboarding-thank-you-text = { -brand-short-name } は非営利を背景とする独立したブラウザーです。私たちはユーザーとともにウェブをより安全、健全にし、個人情報を保護していきます。
 mr2-onboarding-start-browsing-button-label = ブラウジングを開始
+
+fx100-thank-you-hero-text = Firefox 100 を祝いましょう！！
+fx100-thank-you-subtitle = このバージョンの { -brand-short-name } のリリースで Firefox はバージョン 100 になりました！祝いましょう！
+fx100-thank-you-pin-primary-button-label = { PLATFORM() ->
+    [macos] Keep { -brand-short-name } in Dock
+   *[other] { -brand-short-name } をタスクバーにピン止め
+}
+
+fx100-upgrade-thanks-header = 100 Thank-Yous
+# Message shown with a start-browsing button. Emphasis <em> should be for "you"
+# but "Thank" can be used instead if there's no "you" in the translation.
+fx100-upgrade-thank-you-body = Firefox が100回目のリリースを迎えました。MozillaでWebがうまくいくのは素晴らしいことです。お祝いしましょう!
+# Message shown with either a pin-to-taskbar or set-default button.
+fx100-upgrade-thanks-keep-body = Mozilla が次の 100 回目の Firefox リリースを迎えるために、ワンクリックで維持しましょう。
