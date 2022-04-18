@@ -1446,6 +1446,10 @@ treestyletab-Settings = ツリー型垂直タブにマウスをフォーカス�
 bookmarks-bar-settings = ブックマークバーの設定 (適用には再起動は必要です)
 bookmarks-focus-mode = マウスをツールバーバーにフォーカスした場合、ブックマークバーを表示します。
 
+material-effect = Mica For Everyone によるブラウザーのデザイン変更を許可する
+learn-more-material = 詳細情報
+other-preference = その他の設定
+
 ## Floorp アップデーターの設定
 
 floorp-updater = { -brand-short-name } アップデーターの設定
