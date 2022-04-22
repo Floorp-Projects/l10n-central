@@ -18,9 +18,9 @@
 
 -brand-shorter-name = Floorp
 -brand-short-name = Floorp
--brand-full-name = Floorp レガシー ブラウザー
-# This brand name can be used in messages where the product name needs to
+-brand-full-name = Floorp レガシーブラウザー
+# This brand name can be used in messages where the product name needs toあｓｄ
 # remain unchanged across different versions (Nightly, Beta, etc.).
 -brand-product-name = Floorp
--vendor-short-name = Mozilla
-trademarkInfo = Floorp および Firefox ロゴは 米国 Mozilla Foundation の米国およびその他の国における商標です。
+-vendor-short-name = Ablaze
+trademarkInfo = Ablaze および Floorp のロゴは著作権で保護されており無断使用は禁止されています。クリエイターパックをご利用ください。

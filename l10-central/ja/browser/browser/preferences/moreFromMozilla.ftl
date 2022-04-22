@@ -27,8 +27,6 @@ more-from-moz-qr-code-firefox-mobile-img =
     .alt = { -brand-product-name } モバイルのダウンロード QR コード
 more-from-moz-button-mozilla-vpn-2 = VPN を入手
 more-from-moz-learn-more-link = 詳細
-
-
 ## Floorp専用
 
 about-ablaze = Ablaze について
@@ -48,5 +46,4 @@ more-from-moz-category =
 more-from-moz-firefox-mobile-title = Floorp for Mobileの代替手段
 more-from-moz-firefox-mobile-description = モバイルデバイスには モバイル向け Firefox を使いましょう! Floorpとの同期が可能です
 more-from-moz-firefox-mobile-description-advanced = モバイル版 Firefox はアドオンでトラッカーをブロックし、プライバシーを守ることができます! Firefoxモバイルブラウザは、あなたが快適なインターネットを利用できるようにするために残業しています。
-
 ## Floorp 専用終わり

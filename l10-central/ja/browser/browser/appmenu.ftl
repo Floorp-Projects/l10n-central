@@ -144,10 +144,10 @@ profiler-popup-settings =
     .value = 設定
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings = 設定を編集...
+profiler-popup-disabled = プライベートウィンドウを開いているため、プロファイラーは現在無効です。
 # This link takes the user to about:profiling, and is only visible with the Custom preset.
 profiler-popup-edit-settings-button =
     .label = 設定を編集...
-profiler-popup-disabled = プライベートウィンドウを開いているため、プロファイラーは現在無効です。
 profiler-popup-recording-screen = 記録中...
 # The profiler presets list is generated elsewhere, but the custom preset is defined
 # here only.
@@ -236,8 +236,9 @@ appmenu-help-feedback-page =
     .accesskey = S
 
 appmenu-help-share-ideas =
-    .label = フィードバックを送信...
+    .label = 意見とフィードバックを共有...
     .accesskey = S
+
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
 

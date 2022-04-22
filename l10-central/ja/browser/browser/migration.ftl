@@ -49,7 +49,7 @@ import-from-chromium =
     .label = Chromium
     .accesskey = u
 import-from-firefox =
-    .label = Floorp
+    .label = Firefox
     .accesskey = x
 import-from-360se =
     .label = 360 Secure Browser
@@ -96,7 +96,7 @@ source-name-chrome = Google Chrome
 source-name-chrome-beta = Google Chrome Beta
 source-name-chrome-dev = Google Chrome Dev
 source-name-chromium = Chromium
-source-name-firefox = Floorp Legacy Browser
+source-name-firefox = Mozilla Firefox
 source-name-360se = 360 Secure Browser
 
 imported-safari-reading-list = リーディングリスト (Safari から)

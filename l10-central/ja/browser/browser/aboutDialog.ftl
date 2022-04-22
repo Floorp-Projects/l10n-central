@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 aboutDialog-title =
-    .title = { -brand-full-name } について
+    .title = { -brand-full-name } と { -vendor-short-name }について
 
 releaseNotes-link = 更新情報
 
@@ -34,21 +34,21 @@ update-unsupported = 最新バージョンはご使用のシステムに対応�
 
 update-restarting = 再起動中です...
 
-channel-description = 現在のアップデートチャンネルは <label data-l10n-name="current-channel"></label> です。{ " " }
+channel-description = このバージョンの { -brand-short-name } は最後の機能を搭載した { -brand-short-name } のバージョンです。
 
 warningDesc-version = { -brand-short-name } は実験的であり、不安定な可能性があります。
 
-aboutdialog-help-user = { -brand-product-name } ヘルプ
-aboutdialog-submit-feedback = フィードバックを送信
+aboutdialog-help-user = Firefox の機能のヘルプ
+aboutdialog-submit-feedback = { -vendor-short-name } にフィードバックを送信
 
-community-exp = <label data-l10n-name="community-exp-mozillaLink">{ -vendor-short-name }</label> はウェブの公開性、公衆性、制限のないアクセス性を保つために共に活動している <label data-l10n-name="community-exp-creditsLink">グローバルなコミュニティ</label> です。
+community-exp = <label data-l10n-name="community-exp-mozillaLink">{ -vendor-short-name }</label> は カスタム Linux・ブラウザー・検索エンジンを提供する、<label data-l10n-name="community-exp-creditsLink">日本の学生コミュニティ</label> です。
 
-community-2 = { -brand-short-name } を作成している <label data-l10n-name="community-mozillaLink">{ -vendor-short-name }</label> は、ウェブの公開性、公衆性、制限のないアクセス性を保つために共に活動している <label data-l10n-name="community-creditsLink">グローバルなコミュニティ</label> です。
+community-2 = <label data-l10n-name="community-exp-mozillaLink">{ -vendor-short-name }</label> は カスタム Linux・ブラウザー・検索エンジンを提供する、<label data-l10n-name="community-exp-creditsLink">日本の学生コミュニティ</label> です。
 
-helpus = 参加しませんか？ <label data-l10n-name="helpus-donateLink">寄付</label> または <label data-l10n-name="helpus-getInvolvedLink">コミュニティへようこそ！</label>
+helpus=参加しませんか？ <label data-l10n-name="helpus-donateLink">寄付</label> または <label data-l10n-name="helpus-getInvolvedLink">コミュニティへようこそ！</label>
 
-bottomLinks-license = ライセンス情報
-bottomLinks-rights = あなたの権利について
+bottomLinks-license = 利用規約
+bottomLinks-rights = { -brand-product-name } オープンソースプロジェクトについて
 bottomLinks-privacy = プライバシーポリシー
 
 iconprov = Floorp レガシーブラウザーのアイコン作成者： <label data-l10n-name="iconprov-Link">@CutterKnife_</label>様
@@ -57,7 +57,7 @@ iconprov = Floorp レガシーブラウザーのアイコン作成者： <label 
 # Variables:
 #   $version (String): version of Firefox, e.g. 66.0.1
 #   $bits (Number): bits of the architecture (32 or 64)
-aboutDialog-version = { $version } ({ $bits } ビット)
+aboutDialog-version = { $version } ({ $bits } ビット) 
 
 # Example of resulting string: 66.0a1 (2019-01-16) (64-bit)
 # Variables:

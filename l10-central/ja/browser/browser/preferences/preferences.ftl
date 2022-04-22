@@ -107,6 +107,26 @@ extension-controlled-websites-content-blocking-all-trackers = 拡張機能 <img 
 # are being controlled by an extension.
 extension-controlled-proxy-config = 拡張機能 <img data-l10n-name="icon"/> { $name } が { -brand-short-name } のインターネット接続方法の設定を変更しています。
 
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = <img data-l10n-name="icon"/> <strong>{ $name }</strong> がこの設定を制御しています。
+
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = <img data-l10n-name="icon"/> <strong>{ $name }</strong> がこの設定を制御しています。
+
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> がコンテナータブを必要としています。
+
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> がこの設定を制御しています。
+
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = <img data-l10n-name ="icon"/> <strong>{ $name }</strong> が { -brand-short-name } のインターネット接続方法を制御しています。
+
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -219,59 +239,45 @@ containers-remove-cancel-button = 削除しない
 
 ## General Section - Language & Appearance
 
-
 language-and-appearance-header = 言語と外観
+
+fonts-and-colors-header = フォントと配色
 
 preferences-web-appearance-header = ウェブサイトの外観
 
-preferences-web-appearance-description = 一部のウェブサイトでは、ユーザーの好みに合わせて配色を調整しています。そのようなサイトでは、どの配色を使用するかを選択してください。
+preferences-web-appearance-description = 一部のウェブサイトはあなたの設定をもとにカラースキームを適用します。これらのサイトでどのカラースキームを使用するか選択してください。
 
-preferences-web-appearance-choice-browser = { -brand-short-name } のテーマ
+preferences-web-appearance-choice-browser = { -brand-short-name } テーマ
 preferences-web-appearance-choice-system = システムテーマ
-preferences-web-appearance-choice-light = ライトテーマ
-preferences-web-appearance-choice-dark = ダークテーマ
+preferences-web-appearance-choice-light = Light
+preferences-web-appearance-choice-dark = Dark
 
 preferences-web-appearance-choice-tooltip-browser =
-  .title = ウェブサイトの背景とコンテンツの色に { -brand-short-name } のテーマ設定を利用する。
+  .title = { -brand-short-name } のテーマ設定をウェブサイトの背景と内容に適用させる。
 preferences-web-appearance-choice-tooltip-system =
-  .title = ウェブサイトの背景とコンテンツに OS のシステム設定を利用する。
+  .title = システムの設定をウェブサイトの背景と内容に適用させる。
 preferences-web-appearance-choice-tooltip-light =
-  .title = ウェブサイトの背景やコンテンツには、ライトモードを使用する。
+  .title = 明るい外観をウェブサイトの背景と内容に使用する。
 preferences-web-appearance-choice-tooltip-dark =
-  .title = ウェブサイトの背景やコンテンツには、ライトモードを使用する。
+  .title = 暗い外観をウェブサイトの背景と内容に使用する。
 
-preferences-web-appearance-choice-input-browser =
-  .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = 選択した配色でウェブサイトの外観を上書きします。<a data-l10n-name="colors-link">配色の管理</a>
 
-preferences-web-appearance-choice-input-system =
-  .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = <a data-l10n-name="themes-link">アドオンとテーマ</a> で { -brand-short-name } のテーマを管理する
 
-preferences-web-appearance-choice-input-light =
-  .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-colors-header = 配色
 
-preferences-web-appearance-choice-input-dark =
-  .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
-
-# Windows HCM や "Override colors: always" を使用しない場合、表示されることがあります。
-# システムカラー
-preferences-web-appearance-override-warning = カラーセレクトは、ウェブサイトの外観を優先します。 <a data-l10n-name="colors-link">色を調整</a>
-
-# このメッセージにはリンクが1つ含まれています。必要に応じて文中での移動が可能です
-# あなたの言語に適応させるため、変更しないでください。
-
-preferences-web-appearance-footer = { -brand-short-name } の外観を <a data-l10n-name="themes-link">アドオンとテーマの設定</a> で変更する
-
-preferences-colors-header = 色覚の設定
-
-preferences-colors-description = テキスト、ウェブサイトの背景、リンクの既定の色を { -brand-short-name } の設定を上書きする
+preferences-colors-description = ウェブサイトのテキスト、背景、リンクを、{ -brand-short-name } の既定の配色で上書きする。
 
 preferences-colors-manage-button =
-    .label = 色を調整…
+    .label = 配色の管理...
     .accesskey = C
 
 preferences-fonts-header = フォント
-
-fonts-and-colors-header = フォントと配色
 
 default-font = 既定のフォント
     .accesskey = D
@@ -563,6 +569,10 @@ browsing-use-smooth-scrolling =
     .label = スムーズスクロール機能を使用する
     .accesskey = m
 
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = スクロールバーを常に表示する
+    .accesskey = o
+
 browsing-use-onscreen-keyboard =
     .label = 必要であればタッチキーボードを表示する
     .accesskey = c
@@ -624,10 +634,10 @@ home-restore-defaults =
     .label = 既定値に戻す
     .accesskey = R
 
-# "Floorp" should be treated as a brand and kept in English,
+# "Firefox" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
-    .label = Floorp Home (既定)
+    .label = Firefox Home (既定)
 
 home-mode-choice-custom =
     .label = カスタム URL...
@@ -656,8 +666,8 @@ choose-bookmark =
 
 ## Home Section - Firefox Home Content Customization
 
-home-prefs-content-header = Floorp Home コンテンツ
-home-prefs-content-description = Floorp Home に表示するコンテンツを選びましょう。
+home-prefs-content-header = Firefox Home コンテンツ
+home-prefs-content-description = Firefox Home に表示するコンテンツを選びましょう。
 
 home-prefs-search-header =
     .label = ウェブ検索
@@ -822,7 +832,7 @@ sync-signedout-account-signin3 =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = Mozilla Firefox for <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> または <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> をダウンロードしてモバイル端末と同期しましょう。
+sync-mobile-promo = Firefox for <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> または <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> をダウンロードしてモバイル端末と同期しましょう。
 
 ## Firefox Account - Signed in
 
@@ -1030,8 +1040,8 @@ history-header = 履歴
 # "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
-#   - Simply as "Floorp", moving the verb into each option.
-#     This will result in "Floorp" + "Will remember history", etc.
+#   - Simply as "Firefox", moving the verb into each option.
+#     This will result in "Firefox" + "Will remember history", etc.
 #   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = { -brand-short-name } に
     .accesskey = w
@@ -1432,24 +1442,18 @@ save-files-to-cloud-storage =
 # Floorp の固有設定
 floorp-preference = { -brand-short-name } の環境設定 (実験的機能)
 browser-design-settings = タブバーの設定（機能は並行して使えず、適用には再起動が必要です)
-
 operation-settings = { -brand-short-name } の操作設定 (適用には再起動が必要です)
 Mouse-side-button = { -brand-short-name } の操作をサイドボタン付きのマウスに最適化する
-
 hide-horizontality-tabs = 上部の水平タブを非表示にする
 verticalTab-setting = 垂直タブに最適化する
 move-tabbar-position = タブバーをブックマークの下に移動する
-
 treestyletabSettings-l10 = ツリー型垂直タブの動作設定　(適用には再起動が必要です)
 treestyletab-Settings = ツリー型垂直タブにマウスをフォーカスした際に展開するようにする
-
 bookmarks-bar-settings = ブックマークバーの設定 (適用には再起動は必要です)
 bookmarks-focus-mode = マウスをツールバーバーにフォーカスした場合、ブックマークバーを表示します。
-
 material-effect = Mica For Everyone によるブラウザーのデザイン変更を許可する
 learn-more-material = 詳細情報
 other-preference = その他の設定
-
 ## Floorp アップデーターの設定
 
 floorp-updater = { -brand-short-name } アップデーターの設定
