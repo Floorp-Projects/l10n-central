@@ -1439,23 +1439,75 @@ choose-download-folder-title = ダウンロードフォルダーを選択:
 save-files-to-cloud-storage =
     .label = { $service-name } にファイルを保存する
 
-# Floorp の固有設定
-floorp-preference = { -brand-short-name } の環境設定 (実験的機能)
-browser-design-settings = タブバーの設定（機能は並行して使えず、適用には再起動が必要です)
-operation-settings = { -brand-short-name } の操作設定 (適用には再起動が必要です)
-Mouse-side-button = { -brand-short-name } の操作をサイドボタン付きのマウスに最適化する
-hide-horizontality-tabs = 上部の水平タブを非表示にする
-verticalTab-setting = 垂直タブに最適化する
-move-tabbar-position = タブバーをブックマークの下に移動する
-treestyletabSettings-l10 = ツリー型垂直タブの動作設定　(適用には再起動が必要です)
-treestyletab-Settings = ツリー型垂直タブにマウスをフォーカスした際に展開するようにする
-bookmarks-bar-settings = ブックマークバーの設定 (適用には再起動は必要です)
-bookmarks-focus-mode = マウスをツールバーバーにフォーカスした場合、ブックマークバーを表示します。
-material-effect = Mica For Everyone によるブラウザーのデザイン変更を許可する
+# Floorp の固有設定。Firefox のソースコードではありません。from 8.7.2
+
+floorp-preference = 実験的な環境設定
+browser-design-settings = タブバーの設定
+
+auto-reboot = 以下の設定を変更した場合、変更を適用するためにブラウザーが自動的に再起動されます。変更する前に、作業中のデータを保存してください。
+
+operation-settings = ブラウザーの操作設定
+Mouse-side-button = サイドボタンによるマウス操作にブラウザーを最適化
+
+None-mode = 
+ .label= 通常の動作設定
+
+hide-horizontality-tabs = 
+ .label=  タブバー非表示（上部に表示されるタブを非表示にします）
+
+verticalTab-setting = 
+ .label = 垂直タブにブラウザーを最適化
+
+move-tabbar-position =
+ .label = タブバーの位置をブックマークの下に移動
+
+treestyletabSettings-l10 = ツリースタイル垂直タブの設定
+treestyletab-Settings = ツリー型タブにマウスがフォーカスされた場合、展開するようにする
+
+bookmarks-bar-settings = ブックマークバーの設定
+bookmarks-focus-mode = マウスがツールバーにフォーカスされているときに、ブックマークバーを表示する
+
+material-effect = Mica for everyone によるブラウザーのデザイン変更を許可する
 learn-more-material = 詳細情報
 other-preference = その他の設定
-## Floorp アップデーターの設定
+
+## Updater
 
 floorp-updater = { -brand-short-name } アップデーターの設定
-enable-floorp-updater = { -brand-short-name } のアップデートを起動時にチェックする
-floorp-update-latest = 自動アップデートチェックで { -brand-short-name } が最新版の場合、最新版である旨の通知を表示する
+enable-floorp-updater = 起動時に、 { -brand-short-name } のアップデートを確認する
+floorp-update-latest = 起動時のアップデートチェックで、 { -brand-short-name } が最新版の場合、最新であることを通知する
+
+## system theme color
+
+system-color-settings = 使用中のテーマがライトモード・ダークモードの双方に対応している場合、テーマのデザインを選択できます。
+preferences-theme-appearance-header = システムテーマの設定
+
+system-theme-dark =
+ .label = ダークモードを優先する
+
+system-theme-light = 
+ .label = ライトモードを優先する
+ 
+system-theme-auto =  
+ .label = システムに追従する
+
+## user interface prefernces
+
+ui-preference = { -brand-short-name } のデザイン設定
+
+preferences-browser-appearance-header = { -brand-short-name } の外観を設定します。ここで設定を変更しても、テーマの設定には影響しません。ただし、テーマによっては互換性がない場合があります。
+
+firefox-proton =
+ .label = Firefox モダン Proton UI
+
+firefox-proton-fix =
+ .label = Firefox Proton UI Fix 
+
+firefox-photon = 
+ .label = Firefox レガシー Photon UI (Firefox Quantum) 
+
+floorp-legacy =  
+ .label = Floorp レガシー material UI 
+
+floorp-fluentUI =
+ .label = FluentUI
