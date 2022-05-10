@@ -1444,7 +1444,7 @@ save-files-to-cloud-storage =
 floorp-preference = 実験的な環境設定
 browser-design-settings = タブバーの設定
 
-auto-reboot = 以下の設定を変更した場合、変更を適用するためにブラウザーが自動的に再起動されます。変更する前に、作業中のデータを保存してください。
+auto-reboot = 以下の設定を変更した場合、変更を適用するためにブラウザーを再起動する必要があります。変更する前に、作業中のデータを保存してください。
 
 operation-settings = ブラウザーの操作設定
 Mouse-side-button = サイドボタンによるマウス操作にブラウザーを最適化
@@ -1461,15 +1461,24 @@ verticalTab-setting =
 move-tabbar-position =
  .label = タブバーの位置をブックマークの下に移動
 
+enable-classic-menu = 
+ .label = メニューボタンをクラシック表示に変更
+
 treestyletabSettings-l10 = ツリースタイル垂直タブの設定
 treestyletab-Settings = ツリー型タブにマウスがフォーカスされた場合、展開するようにする
 
 bookmarks-bar-settings = ブックマークバーの設定
 bookmarks-focus-mode = マウスがツールバーにフォーカスされているときに、ブックマークバーを表示する
+bookmarks-bottom-mode = ブラウザーの一番下にブックマークバーを表示
 
 material-effect = Mica for everyone によるブラウザーのデザイン変更を許可する
 learn-more-material = 詳細情報
 other-preference = その他の設定
+
+Search-positon-top = ページ上部に検索バーを表示する
+classic-menu-mode = クラシックスタイルのメニューを使用する（互換性がない場合があります）
+
+feature-requires-restart = この設定の変更には再起動が必要です
 
 ## Updater
 
@@ -1510,4 +1519,4 @@ floorp-legacy =
  .label = Floorp レガシー material UI 
 
 floorp-fluentUI =
- .label = FluentUI
+ .label = FluentUI (Microsoft)
