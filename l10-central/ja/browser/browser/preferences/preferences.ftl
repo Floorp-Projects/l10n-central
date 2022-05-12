@@ -1498,7 +1498,7 @@ system-theme-light =
  .label = ライトモードを優先する
  
 system-theme-auto =  
- .label = システムに追従する
+ .label = { -brand-short-name } の既定のモード
 
 ## user interface prefernces
 
