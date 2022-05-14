@@ -1202,6 +1202,7 @@ bookmarks-focus-mode = マウスがツールバーにフォーカスされてい
 bookmarks-bottom-mode = ブラウザーの一番下にブックマークバーを表示
 
 material-effect = Mica for everyone によるブラウザーのデザイン変更を許可する
+allow-auto-restart = 再起動が必要な設定変更時に自動的に再起動する
 learn-more-material = 詳細情報
 other-preference = その他の設定
 
