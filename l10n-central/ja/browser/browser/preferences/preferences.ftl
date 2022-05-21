@@ -1251,3 +1251,7 @@ floorp-legacy =
 
 floorp-fluentUI =
  .label = FluentUI (Microsoft)
+
+hide-horizontality-tabs = 水平タブバーの非表示
+verticalTab-setting = 垂直タブにブラウザーを最適化
+move-tabbar-position = タブバーの位置をブックマークの下に移動する

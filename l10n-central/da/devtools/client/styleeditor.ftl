@@ -8,6 +8,8 @@ styleeditor-new-button =
 styleeditor-import-button =
     .tooltiptext = Importer og tilføj et eksisterende style sheet til dokumentet
     .accesskey = I
+styleeditor-filter-input =
+    .placeholder = Filtrer style sheets
 styleeditor-visibility-toggle =
     .tooltiptext = Skift synlighed af style sheet
     .accesskey = G
@@ -28,3 +30,5 @@ styleeditor-copy-url =
 styleeditor-go-to-line =
     .label = Hop til linje…
     .accesskey = H
+# Label displayed when searching a term that is not found in any stylesheet path
+styleeditor-stylesheet-all-filtered = Et matchende stylesheet blev ikke fundet.

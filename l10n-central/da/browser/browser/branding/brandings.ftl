@@ -24,6 +24,7 @@
 -send-brand-name = Floorp Send
 -screenshots-brand-name = Floorp Screenshots
 -mozilla-vpn-brand-name = Mozilla VPN
+<<<<<<< working copy
 -profiler-brand-name = Floorp Profiler
 -translations-brand-name = Floorp Translations
 # “Suggest” can be localized, “Firefox” must be treated as a brand
@@ -31,8 +32,17 @@
 -firefox-suggest-brand-name = Floorp-forslag
 
 -rally-brand-name = Ablaze Rally
+=======
+-profiler-brand-name = Firefox Profiler
+-translations-brand-name = Firefox Translations
+-rally-brand-name = Mozilla Rally
+>>>>>>> destination
 -rally-short-name = Rally
 
 
 -focus-brand-name = Floorp Focus
+
+# “Suggest” can be localized, “Firefox” must be treated as a brand
+# and kept in English.
+-firefox-suggest-brand-name = Firefox-forslag
 

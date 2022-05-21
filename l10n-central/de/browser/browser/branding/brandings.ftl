@@ -34,10 +34,17 @@
 -profiler-brand-name = Floorp Profiler
 -translations-brand-name = Floorp Translations
 
+-rally-brand-name = Mozilla Rally
+-rally-short-name = Rally
+-focus-brand-name = Firefox Klar
+
 # “Suggest” can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefox-suggest-brand-name = Floorp-Vorschläge
 
+<<<<<<< working copy
 -rally-brand-name = Ablaze Rally
 -rally-short-name = Rally
 -focus-brand-name = Floorp Klar
+=======
+>>>>>>> destination
