@@ -10,7 +10,7 @@
 ## in the documentation section in about:policies.
 
 ## Floorp from 10.0.0
-from-policy-notice = These policy settings are set by { -brand-short-name } for Firefox modification. They are not restrictions on users by default. Please do not worry.
+from-policy-notice = これらのポリシーは、{ -brand-short-name } プロジェクトにより設定され、Firefox の改造・動作の変更に使用されています。デフォルトではユーザーを制限するものではありません。ご安心ください。
 
 
 policy-3rdparty = WebExtension が chrome.storage.managed を経由してアクセス可能なポリシーを設定します。
