@@ -1135,6 +1135,8 @@ save-files-to-cloud-storage =
 
 # Floorp の固有設定。Firefox のソースコードではありません。from 8.7.2
 
+notice-from-floorp-projects = { -brand-short-name } のポリシー管理に関する通知
+
 floorp-preference = 実験的な環境設定
 browser-design-settings = タブバーの設定
 

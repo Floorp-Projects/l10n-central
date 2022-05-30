@@ -9,6 +9,10 @@
 ## These are short descriptions for individual policies, to be displayed
 ## in the documentation section in about:policies.
 
+## Floorp from 10.0.0
+from-policy-notice = These policy settings are set by { -brand-short-name } for Firefox modification. They are not restrictions on users by default. Please do not worry.
+
+
 policy-3rdparty = WebExtension が chrome.storage.managed を経由してアクセス可能なポリシーを設定します。
 
 policy-AllowedDomainsForApps = Google Workspace へのアクセスを許可するドメインを定義します。
