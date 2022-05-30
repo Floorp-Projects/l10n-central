@@ -1986,3 +1986,6 @@ data/mail/messenger/preferences/permissions.ftl.i
 data/suite/chrome/mailnews/mailKeysOverlay.dtd.i
 data/suite/chrome/editor/dialogs/EditorPersonalDictionary.dtd.i
 data/mail/chrome/messenger/newFolderDialog.dtd.i
+data/mail/messenger/addressbook/vcard.ftl.i
+data/mail/messenger/appmenu.ftl.i
+data/mail/messenger/shortcuts.ftl.i
