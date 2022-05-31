@@ -593,7 +593,7 @@ choose-bookmark =
     .label = استخدم علامة…
     .accesskey = ع
 
-## Home Section - Firefox Home Content Customization
+## Home Section - Floorp Home Content Customization
 
 home-prefs-content-header = محتوى Firefox الرئيسي
 home-prefs-content-description = اختر المحتوى الذي تريد عرضه في شاشة بداية Firefox.

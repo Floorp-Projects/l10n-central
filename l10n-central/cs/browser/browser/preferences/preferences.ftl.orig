@@ -692,7 +692,7 @@ choose-bookmark =
     .label = Použít záložku…
     .accesskey = z
 
-## Home Section - Firefox Home Content Customization
+## Home Section - Floorp Home Content Customization
 
 home-prefs-content-header = Obsah domovské stránky Firefoxu
 home-prefs-content-description = Vyberte obsah, který chcete mít na výchozí domovské stránce Firefoxu.

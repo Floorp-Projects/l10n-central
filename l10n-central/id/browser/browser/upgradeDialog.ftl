@@ -78,7 +78,7 @@ upgrade-dialog-start-secondary-button = Jangan sekarang
 # This title can be explicitly wrapped to control which words are on which line.
 upgrade-dialog-colorway-title = Pilih palet Anda
 # This is shown to users with a custom home page, so they can switch to default.
-upgrade-dialog-colorway-home-checkbox = Beralih ke Firefox Home dengan latar belakang bertema
+upgrade-dialog-colorway-home-checkbox = Beralih ke Floorp Home dengan latar belakang bertema
 upgrade-dialog-colorway-primary-button = Simpan warna
 upgrade-dialog-colorway-secondary-button = Pertahankan tema sebelumnya
 upgrade-dialog-colorway-theme-tooltip =
