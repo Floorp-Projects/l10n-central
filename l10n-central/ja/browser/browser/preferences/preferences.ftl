@@ -1169,6 +1169,7 @@ bookmarks-bottom-mode = ブラウザーの一番下にブックマークバー�
 
 material-effect = Mica for everyone によるブラウザーのデザイン変更を許可する
 allow-auto-restart = 再起動が必要な設定変更時に自動的に再起動する
+enable-multitab = 多段タブを有効にする（Lepton と互換性なし・実験的）
 learn-more-material = 詳細情報
 other-preference = その他の設定
 
