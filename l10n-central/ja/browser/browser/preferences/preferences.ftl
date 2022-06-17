@@ -1169,6 +1169,7 @@ allow-auto-restart = 再起動が必要な設定変更時に自動的に再起�
 enable-multitab = 多段タブを有効にする（Lepton と互換性なし・実験的）
 learn-more-material = 詳細情報
 other-preference = その他の設定
+enable-userscript = userChrome.js のロードを有効にする
 
 Search-positon-top = ページ上部に検索バーを表示する
 classic-menu-mode = クラシックスタイルのメニューを使用する（互換性がない場合があります）
