@@ -632,10 +632,10 @@ home-restore-defaults =
     .label = 恢复默认设置
     .accesskey = R
 
-# "Firefox" should be treated as a brand and kept in English,
+# "Floorp" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
-    .label = Firefox 主页（默认）
+    .label = Floorp 主页（默认）
 
 home-mode-choice-custom =
     .label = 自定义网址…
@@ -664,7 +664,7 @@ choose-bookmark =
 
 ## Home Section - Firefox Home Content Customization
 
-home-prefs-content-header = Firefox 主页内容
+home-prefs-content-header = Floorp 主页内容
 home-prefs-content-description = 选择要在您的 Firefox 主页上显示的版块。
 
 home-prefs-search-header =
@@ -1028,8 +1028,8 @@ history-header = 历史记录
 # "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
-#   - Simply as "Firefox", moving the verb into each option.
-#     This will result in "Firefox" + "Will remember history", etc.
+#   - Simply as "Floorp", moving the verb into each option.
+#     This will result in "Floorp" + "Will remember history", etc.
 #   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = { -brand-short-name } 将
     .accesskey = w

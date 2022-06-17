@@ -9,6 +9,10 @@
 ## These are short descriptions for individual policies, to be displayed
 ## in the documentation section in about:policies.
 
+## Floorp from 10.0.0
+from-policy-notice = これらのポリシーは、{ -brand-short-name } プロジェクトにより設定され、Firefox の改造・動作の変更に使用されています。デフォルトではユーザーを制限するものではありません。ご安心ください。
+
+
 policy-3rdparty = WebExtension が chrome.storage.managed を経由してアクセス可能なポリシーを設定します。
 
 policy-AllowedDomainsForApps = Google Workspace へのアクセスを許可するドメインを定義します。
@@ -58,7 +62,7 @@ policy-DisableFeedbackCommands = ヘルプメニューのフィードバック�
 policy-DisableFirefoxAccounts = Sync を含む { -fxaccount-brand-name } を利用したサービスを無効にします。
 
 # Firefox Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = Firefox Screenshots 機能を無効にします。
+policy-DisableFirefoxScreenshots = Floorp Screenshots 機能を無効にします。
 
 policy-DisableFirefoxStudies = Shield 調査の実行を禁止します。
 
@@ -115,7 +119,7 @@ policy-ExtensionSettings = 拡張機能のインストール全般を管理し�
 
 policy-ExtensionUpdate = 拡張機能の自動更新を有効または無効にします。
 
-policy-FirefoxHome = Firefox Home の設定を行います。
+policy-FirefoxHome = Floorp Home の設定を行います。
 
 policy-FlashPlugin = Flash プラグインの実行を許可、または拒否します。
 

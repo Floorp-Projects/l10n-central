@@ -34,13 +34,13 @@ return-to-amo-add-theme-label = Добавить тему
 onboarding-welcome-steps-indicator =
     .aria-label = Начало работы: экран { $current } из { $total }
 # "Hero Text" displayed on left side of welcome screen.
-# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
+# The "Fire" in "Fire starts here" plays on the "Fire" in "Floorp".
 # It also signals the passion users bring to Firefox, how they use
 # Firefox to pursue those passions, as well as the boldness in their
 # choice to use Firefox over a larger competitor browser.
 # An alternative title for localization is: "It starts here".
 # This text can be formatted to span multiple lines as needed.
-mr1-welcome-screen-hero-text = Firefox начинается здесь
+mr1-welcome-screen-hero-text = Floorp начинается здесь
 # Caption for background image in about:welcome. "Soraya Osorio" is the name
 # of the person and shouldn't be translated.
 # In case your language needs to adapt the nouns to a gender, Soraya is a female name (she/her).

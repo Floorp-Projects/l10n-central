@@ -480,7 +480,7 @@ home-restore-defaults =
 # "Firefox" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
-    .label = Firefox Home (既定)
+    .label = Floorp Home (既定)
 home-mode-choice-custom =
     .label = カスタム URL...
 home-mode-choice-blank =
@@ -502,10 +502,10 @@ choose-bookmark =
     .label = ブックマークを使う...
     .accesskey = B
 
-## Home Section - Firefox Home Content Customization
+## Home Section - Floorp Home Content Customization
 
-home-prefs-content-header = Firefox Home コンテンツ
-home-prefs-content-description = Firefox Home に表示するコンテンツを選びましょう。
+home-prefs-content-header = Floorp Home コンテンツ
+home-prefs-content-description = Floorp Home に表示するコンテンツを選びましょう。
 home-prefs-search-header =
     .label = ウェブ検索
 home-prefs-shortcuts-header =
@@ -1125,3 +1125,97 @@ httpsonly-radio-disabled =
 desktop-folder-name = デスクトップ
 downloads-folder-name = ダウンロード
 choose-download-folder-title = ダウンロードフォルダーを選択:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = { $service-name } にファイルを保存する
+
+# Floorp の固有設定。Firefox のソースコードではありません。from 8.7.2
+
+notice-from-floorp-projects = { -brand-short-name } のポリシー管理に関する通知
+
+floorp-preference = 実験的な環境設定
+browser-design-settings = タブバーの設定
+
+auto-reboot = 以下の設定を変更した場合、変更を適用するためにブラウザーを再起動する必要があります。変更する前に、作業中のデータを保存してください。
+
+operation-settings = ブラウザーの操作設定
+Mouse-side-button = サイドボタンによるマウス操作にブラウザーを最適化
+
+None-mode = 
+ .label= 通常の動作設定
+
+hide-horizontality-tabs = 
+ .label=  タブバー非表示（上部に表示されるタブを非表示にします）
+
+verticalTab-setting = 
+ .label = 垂直タブにブラウザーを最適化
+
+move-tabbar-position =
+ .label = タブバーの位置をブックマークの下に移動
+
+enable-classic-menu = 
+ .label = メニューボタンをクラシック表示に変更
+
+treestyletabSettings-l10 = ツリースタイル垂直タブの設定
+treestyletab-Settings = ツリー型タブにマウスがフォーカスされた場合、展開するようにする
+
+bookmarks-bar-settings = ブックマークバーの設定
+bookmarks-focus-mode = マウスがツールバーにフォーカスされているときに、ブックマークバーを表示する
+bookmarks-bottom-mode = ブラウザーの一番下にブックマークバーを表示
+
+material-effect = Mica for everyone によるブラウザーのデザイン変更を許可する
+allow-auto-restart = 再起動が必要な設定変更時に自動的に再起動する
+enable-multitab = 多段タブを有効にする（Lepton と互換性なし・実験的）
+learn-more-material = 詳細情報
+other-preference = その他の設定
+
+Search-positon-top = ページ上部に検索バーを表示する
+classic-menu-mode = クラシックスタイルのメニューを使用する（互換性がない場合があります）
+
+feature-requires-restart = この設定の変更には再起動が必要です
+
+## Updater
+
+floorp-updater = { -brand-short-name } アップデーターの設定
+enable-floorp-updater = 起動時に、 { -brand-short-name } のアップデートを確認する
+floorp-update-latest = 起動時のアップデートチェックで、 { -brand-short-name } が最新版の場合、最新であることを通知する
+
+## system theme color
+
+system-color-settings = 使用中のテーマがライトモード・ダークモードの双方に対応している場合、テーマのデザインを選択できます。
+preferences-theme-appearance-header = システムテーマの設定
+
+system-theme-dark =
+ .label = ダークモードを優先する
+
+system-theme-light = 
+ .label = ライトモードを優先する
+ 
+system-theme-auto =  
+ .label = システムに追従する
+
+## user interface prefernces
+
+ui-preference = { -brand-short-name } のデザイン設定
+
+preferences-browser-appearance-header = { -brand-short-name } の外観を設定します。ここで設定を変更しても、テーマの設定には影響しません。ただし、テーマによっては互換性がない場合があります。
+
+firefox-proton =
+ .label = Firefox モダン Proton UI
+
+firefox-proton-fix =
+ .label = Firefox Proton UI Fix 
+
+firefox-photon = 
+ .label = Firefox レガシー Photon UI (Firefox Quantum) 
+
+floorp-legacy =  
+ .label = Floorp レガシー material UI 
+
+floorp-fluentUI =
+ .label = FluentUI (Microsoft)
+
+hide-horizontality-tabs = 水平タブバーの非表示
+verticalTab-setting = 垂直タブにブラウザーを最適化
+move-tabbar-position = タブバーの位置をブックマークの下に移動する

@@ -34,7 +34,7 @@ return-to-amo-add-theme-label = 安裝佈景主題
 onboarding-welcome-steps-indicator =
     .aria-label = 開始使用: 第 { $current } 畫面，全部共 { $total } 畫面
 # "Hero Text" displayed on left side of welcome screen.
-# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
+# The "Fire" in "Fire starts here" plays on the "Fire" in "Floorp".
 # It also signals the passion users bring to Firefox, how they use
 # Firefox to pursue those passions, as well as the boldness in their
 # choice to use Firefox over a larger competitor browser.

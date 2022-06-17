@@ -15,7 +15,7 @@ extension-firefox-compact-light-description = ชุดตกแต่งที�
 extension-firefox-compact-dark-name = มืด
 extension-firefox-compact-dark-description = ชุดตกแต่งที่มีแบบแผนชุดสีมืด
 
-extension-firefox-alpenglow-name = Firefox Alpenglow
+extension-firefox-alpenglow-name = Floorp Alpenglow
 extension-firefox-alpenglow-description = ใช้ลักษณะที่ปรากฏแบบสีสันสำหรับปุ่ม เมนู และหน้าต่าง
 
 ## Colorway Themes

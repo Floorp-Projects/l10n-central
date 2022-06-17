@@ -636,10 +636,10 @@ home-restore-defaults =
     .label = Restore Defaults
     .accesskey = R
 
-# "Firefox" should be treated as a brand and kept in English,
+# "Floorp" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
-    .label = Firefox Home (Default)
+    .label = Floorp Home (Default)
 
 home-mode-choice-custom =
     .label = Custom URLs…
@@ -668,7 +668,7 @@ choose-bookmark =
 
 ## Home Section - Firefox Home Content Customization
 
-home-prefs-content-header = Firefox Home Content
+home-prefs-content-header = Floorp Home Content
 home-prefs-content-description = Choose what content you want on your Firefox Home screen.
 
 home-prefs-search-header =
@@ -1036,8 +1036,8 @@ history-header = History
 # "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
-#   - Simply as "Firefox", moving the verb into each option.
-#     This will result in "Firefox" + "Will remember history", etc.
+#   - Simply as "Floorp", moving the verb into each option.
+#     This will result in "Floorp" + "Will remember history", etc.
 #   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = { -brand-short-name } will
     .accesskey = w

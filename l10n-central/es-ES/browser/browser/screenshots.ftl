@@ -50,7 +50,7 @@ screenshots-unshootable-page-error-details = No es una página web común, por l
 
 screenshots-empty-selection-error-title = Tu selección es demasiado pequeña
 
-screenshots-private-window-error-title = Firefox { -screenshots-brand-name } está desactivado en el modo de navegación privada
+screenshots-private-window-error-title = Floorp { -screenshots-brand-name } está desactivado en el modo de navegación privada
 screenshots-private-window-error-details = Sentimos las molestias. Estamos trabajando en esta característica para próximos lanzamientos.
 
 screenshots-generic-error-title = ¡Vaya! { -screenshots-brand-name } se ha vuelto loco.

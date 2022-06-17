@@ -14,7 +14,7 @@ default-bookmarks-toolbarfolder-description = Čia įdėti adresai bus rodomi na
 # link title for https://www.mozilla.org/firefox/central/
 default-bookmarks-getting-started = Naudojimasis naršykle
 # Firefox links folder name
-default-bookmarks-firefox-heading = Mozilla Firefox
+default-bookmarks-firefox-heading = Ablaze Floorp
 # link title for https://www.mozilla.org/firefox/help/
 default-bookmarks-firefox-get-help = Žinynas ir pagalba
 # link title for https://www.mozilla.org/firefox/customize/

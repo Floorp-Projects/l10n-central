@@ -636,10 +636,10 @@ home-restore-defaults =
     .label = Alapértelmezések visszaállítása
     .accesskey = A
 
-# "Firefox" should be treated as a brand and kept in English,
+# "Floorp" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
-    .label = Firefox kezdőlap (alapértelmezett)
+    .label = Floorp kezdőlap (alapértelmezett)
 
 home-mode-choice-custom =
     .label = Egyéni URL-ek…
@@ -668,7 +668,7 @@ choose-bookmark =
 
 ## Home Section - Firefox Home Content Customization
 
-home-prefs-content-header = Firefox kezdőlap tartalma
+home-prefs-content-header = Floorp kezdőlap tartalma
 home-prefs-content-description = Válassza ki milyen tartalmat szeretne a Firefox kezdőlapon.
 
 home-prefs-search-header =
@@ -1036,8 +1036,8 @@ history-header = Előzmények
 # "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
-#   - Simply as "Firefox", moving the verb into each option.
-#     This will result in "Firefox" + "Will remember history", etc.
+#   - Simply as "Floorp", moving the verb into each option.
+#     This will result in "Floorp" + "Will remember history", etc.
 #   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = A { -brand-short-name }
     .accesskey = A

@@ -17,13 +17,13 @@ default-bookmarks-toolbarfolder-description = Lesezeichen, die Sie in diesem Ord
 default-bookmarks-getting-started = Erste Schritte
 
 # Firefox links folder name
-default-bookmarks-firefox-heading = Mozilla Firefox
+default-bookmarks-firefox-heading = Ablaze Floorp
 
 # link title for https://www.mozilla.org/firefox/help/
 default-bookmarks-firefox-get-help = Hilfe erhalten
 
 # link title for https://www.mozilla.org/firefox/customize/
-default-bookmarks-firefox-customize = Firefox anpassen
+default-bookmarks-firefox-customize = Floorp anpassen
 
 # link title for https://www.mozilla.org/contribute/
 default-bookmarks-firefox-community = Mitmachen

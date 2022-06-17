@@ -18,4 +18,4 @@
 # This brand name can be used in messages where the product name needs to
 # remain unchanged across different versions (Daily, Beta, etc.).
 -brand-product-name = Thunderbird
--vendor-short-name = Mozilla
+-vendor-short-name = Ablaze
