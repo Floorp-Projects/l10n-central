@@ -64,10 +64,12 @@ app-basics-key-mozilla = Chiave per georilevazione di Mozilla
 app-basics-safe-mode = Modalità provvisoria
 app-basics-memory-size = Dimensione memoria (RAM)
 app-basics-disk-available = Spazio su disco disponibile
+
 # Variables:
 #   $value (number) - Amount of data being stored
 #   $unit (string) - The unit of data being stored (e.g. MB)
 app-basics-data-size = { $value } { $unit }
+
 show-dir-label =
     { PLATFORM() ->
         [macos] Mostra nel Finder
@@ -333,7 +335,6 @@ fission-status-experiment-treatment = Attivato da esperimento
 fission-status-disabled-by-e10s-env = Disattivato da ambiente
 fission-status-enabled-by-env = Attivato da ambiente
 fission-status-disabled-by-env = Disattivato da ambiente
-fission-status-disabled-by-safe-mode = Disattivato da modalità provvisoria
 fission-status-enabled-by-default = Attivato per impostaz. predefinita
 fission-status-disabled-by-default = Disattivato per impostaz. predefinita
 fission-status-enabled-by-user-pref = Attivato da utente

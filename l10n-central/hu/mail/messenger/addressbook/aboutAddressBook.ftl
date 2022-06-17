@@ -26,6 +26,8 @@ about-addressbook-books-context-properties =
     .label = Tulajdonságok
 about-addressbook-books-context-synchronize =
     .label = Szinkronizálás
+about-addressbook-books-context-edit =
+    .label = Szerkesztés
 about-addressbook-books-context-print =
     .label = Nyomtatás…
 about-addressbook-books-context-export =
@@ -53,8 +55,8 @@ about-addressbook-search =
     .placeholder = Keresés ebben: { $name }
 about-addressbook-search-all =
     .placeholder = Keresés az összes címjegyzékben
-about-addressbook-sort-button =
-    .title = A lista sorrendjének módosítása
+about-addressbook-sort-button2 =
+    .title = Megjelenítési lehetőségek felsorolása
 about-addressbook-name-format-display =
     .label = Megjelenő név
 about-addressbook-name-format-firstlast =
@@ -69,6 +71,38 @@ about-addressbook-sort-email-ascending =
     .label = Rendezés e-mail-cím szerint (A > Z)
 about-addressbook-sort-email-descending =
     .label = Rendezés e-mail-cím szerint (Z > A)
+about-addressbook-horizontal-layout =
+    .label = Váltás vízszintes elrendezésre
+about-addressbook-vertical-layout =
+    .label = Váltás függőleges elrendezésre
+
+## Card column headers
+## Each string is listed here twice, and the values should match.
+
+about-addressbook-column-header-generatedname = Név
+about-addressbook-column-label-generatedname =
+    .label = { about-addressbook-column-header-generatedname }
+about-addressbook-column-header-emailaddresses = E-mail-címek
+about-addressbook-column-label-emailaddresses =
+    .label = { about-addressbook-column-header-emailaddresses }
+about-addressbook-column-header-phonenumbers = Telefonszámok
+about-addressbook-column-label-phonenumbers =
+    .label = { about-addressbook-column-header-phonenumbers }
+about-addressbook-column-header-addresses = Címek
+about-addressbook-column-label-addresses =
+    .label = { about-addressbook-column-header-addresses }
+about-addressbook-column-header-title = Cím
+about-addressbook-column-label-title =
+    .label = { about-addressbook-column-header-title }
+about-addressbook-column-header-department = Részleg
+about-addressbook-column-label-department =
+    .label = { about-addressbook-column-header-department }
+about-addressbook-column-header-organization = Szervezet
+about-addressbook-column-label-organization =
+    .label = { about-addressbook-column-header-organization }
+about-addressbook-column-header-addrbook = Címjegyzék
+about-addressbook-column-label-addrbook =
+    .label = { about-addressbook-column-header-addrbook }
 about-addressbook-cards-context-write =
     .label = Írás
 about-addressbook-confirm-delete-mixed-title = Névjegyek és listák törlése
@@ -122,17 +156,43 @@ about-addressbook-confirm-delete-contacts =
        *[other] Biztos, hogy törli ezt a(z) { $count } listát?
     }
 
+## Card list placeholder
+## Shown when there are no cards in the list
+
+about-addressbook-placeholder-empty-book = Nem érhetők el névjegyek
+about-addressbook-placeholder-new-contact = Új névjegy
+about-addressbook-placeholder-search-only = Ez a címjegyzék csak keresés után jelenít meg névjegyeket
+about-addressbook-placeholder-searching = Keresés…
+about-addressbook-placeholder-no-search-results = Nem találhatók névjegyek
+
 ## Details
 
+about-addressbook-prefer-display-name = Megjelenő név előnyben részesítése az üzenetfejlécben levő helyett
+about-addressbook-write-action-button = Írás
+about-addressbook-event-action-button = Esemény
+about-addressbook-search-action-button = Keresés
 about-addressbook-begin-edit-contact-button = Szerkesztés
 about-addressbook-delete-edit-contact-button = Törlés
 about-addressbook-cancel-edit-contact-button = Mégse
 about-addressbook-save-edit-contact-button = Mentés
+about-addressbook-add-contact-to = Hozzáadás:
 about-addressbook-details-email-addresses-header = E-mail-címek
 about-addressbook-details-phone-numbers-header = Telefonszámok
-about-addressbook-details-home-address-header = Otthoni cím
-about-addressbook-details-work-address-header = Munkahelyi cím
+about-addressbook-details-addresses-header = Címek
+about-addressbook-details-notes-header = Jegyzetek
 about-addressbook-details-other-info-header = Egyéb információk
+about-addressbook-entry-type-work = Munkahelyi
+about-addressbook-entry-type-home = Otthoni
+about-addressbook-entry-type-fax = Fax
+about-addressbook-entry-type-cell = Mobil
+about-addressbook-entry-type-pager = Személyhívó
+about-addressbook-entry-name-birthday = Születésnap
+about-addressbook-entry-name-anniversary = Évforduló
+about-addressbook-entry-name-title = Cím
+about-addressbook-entry-name-role = Szerep
+about-addressbook-entry-name-organization = Szervezet
+about-addressbook-entry-name-website = Webhely
+about-addressbook-entry-name-time-zone = Időzóna
 about-addressbook-unsaved-changes-prompt-title = Nem mentett módosítások
 about-addressbook-unsaved-changes-prompt = Menti a módosításokat, mielőtt kilép a szerkesztési nézetből?
 

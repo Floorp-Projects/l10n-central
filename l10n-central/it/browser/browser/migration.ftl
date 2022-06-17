@@ -49,7 +49,7 @@ import-from-chromium =
     .label = Chromium
     .accesskey = u
 import-from-firefox =
-    .label = Floorp
+    .label = Firefox
     .accesskey = x
 import-from-360se =
     .label = 360 Secure Browser
@@ -81,23 +81,9 @@ import-done-description = I seguenti oggetti sono stati correttamente importati:
 
 import-close-source-browser = Assicurarsi che il browser selezionato sia chiuso prima di procedere.
 
-# Displays which browser the bookmarks are being imported from
-#
-# Variables:
-#   $source (String): The browser the user has chosen to import bookmarks from.
-imported-bookmarks-source = Da { $source }
-
 source-name-ie = Internet Explorer
 source-name-edge = Microsoft Edge
-source-name-edge-beta = Microsoft Edge Beta
-source-name-safari = Safari
-source-name-canary = Google Chrome Canary
 source-name-chrome = Google Chrome
-source-name-chrome-beta = Google Chrome Beta
-source-name-chrome-dev = Google Chrome Dev
-source-name-chromium = Chromium
-source-name-firefox = Ablaze Floorp
-source-name-360se = 360 Secure Browser
 
 imported-safari-reading-list = Elenco lettura (da Safari)
 imported-edge-reading-list = Elenco di lettura (da Edge)

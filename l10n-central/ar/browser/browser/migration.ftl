@@ -46,7 +46,7 @@ import-from-chromium =
     .label = كروميوم
     .accesskey = م
 import-from-firefox =
-    .label = Floorp
+    .label = Firefox
     .accesskey = X
 import-from-360se =
     .label = متصفح ٣٦٠ الآمن
@@ -81,14 +81,6 @@ import-close-source-browser = من فضلك تأكد من أن المتصفح ا
 source-name-ie = إنترنت إكسبلورر
 source-name-edge = ميكروسوفت إدج
 source-name-chrome = جوجل كروم
-<<<<<<< working copy
-source-name-chrome-beta = جوجل كروم بيتا
-source-name-chrome-dev = إصدارة جوجل كروم التطويرية
-source-name-chromium = كروميوم
-source-name-firefox = Ablaze Floorp
-source-name-360se = متصفح ٣٦٠ الآمن
-=======
->>>>>>> destination
 
 imported-safari-reading-list = قائمة القراءة (من سفاري)
 imported-edge-reading-list = قائمة القراءة (من إدج)

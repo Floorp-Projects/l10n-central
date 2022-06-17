@@ -35,6 +35,8 @@ detail-version =
     .label = Version
 detail-last-updated =
     .label = Sist oppdatert
+addon-detail-description-expand = Vis meir
+addon-detail-description-collapse = Vis mindre
 detail-contributions-description = Utviklaren av dette tillegget ber om at du hjelper til med å støtte vidare utvikling ved å gje eit lite bidrag.
 detail-contributions-button = Bidra
     .title = Bidra til utviklinga av dette tillegget
@@ -287,6 +289,7 @@ extension-enabled-heading = Slått på
 extension-disabled-heading = Slått av
 theme-enabled-heading = Slått på
 theme-disabled-heading = Slått av
+theme-disabled-heading2 = Lagra tema
 theme-monochromatic-heading = Fargesamansetjingar
 theme-monochromatic-subheading = Levande nye fargesamansetjingar frå { -brand-product-name }. Tilgjengeleg for ein avgrensa periode.
 plugin-enabled-heading = Slått på
@@ -352,7 +355,7 @@ addon-detail-private-browsing-disallow = Ikkje tillat
 addon-badge-recommended2 =
     .title = { -brand-product-name } tilrår berre utvidingar som oppfyller standardane våre for sikkerheit og yting
     .aria-label = { addon-badge-recommended2.title }
-# We hard code "Ablaze" in the string below because the extensions are built
+# We hard code "Mozilla" in the string below because the extensions are built
 # by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
     .title = Offisiell utviding utvikla av Mozilla. Oppfyller sikkerheits- og ytingsstandardar.

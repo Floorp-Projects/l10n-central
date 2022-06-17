@@ -82,9 +82,6 @@ menuitem-toggle-attachment-pane =
 toolbar-button-add-attachment =
     .label = Đính kèm
     .tooltiptext = Thêm một đính kèm ({ ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key })
-add-attachment-notification-reminder =
-    .label = Thêm đính kèm…
-    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 add-attachment-notification-reminder2 =
     .label = Thêm đính kèm…
     .accesskey = A
@@ -110,10 +107,6 @@ attachment-bucket-count-value =
         [1] { $count } đính kèm
        *[other] { $count } đính kèm
     }
-expand-attachment-pane-tooltip =
-    .tooltiptext = Hiển thị ngăn đính kèm ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-collapse-attachment-pane-tooltip =
-    .tooltiptext = Ẩn ngăn đính kèm ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-show =
     .title = Hiển thị ngăn đính kèm ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -151,6 +144,9 @@ encryption-options-openpgp =
 encryption-options-smime =
     .label = S/MIME
     .tooltiptext = Xem hoặc thay đổi cài đặt mã hóa S/MIME
+signing-toggle =
+    .label = Ký
+    .tooltiptext = Sử dụng chữ ký điện tử cho thư này
 menu-openpgp =
     .label = OpenPGP
     .accesskey = O
@@ -184,41 +180,14 @@ key-notification-resolve =
     .label = Giải quyết…
     .accesskey = R
     .tooltiptext = Mở trợ lý khóa OpenPGP
+can-encrypt-smime-notification = Có thể mã hóa đầu cuối S/MIME.
+can-encrypt-openpgp-notification = Có thể mã hóa đầu cuối OpenPGP.
+can-e2e-encrypt-button =
+    .label = Mã hóa
+    .accesskey = E
 
 ## Addressing Area
 
-to-compose-address-row-label =
-    .value = Đến
-#   $key (String) - the shortcut key for this field
-to-compose-show-address-row-menuitem =
-    .label = Trường { to-compose-address-row-label.value }
-    .accesskey = T
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-to-compose-show-address-row-label =
-    .value = { to-compose-address-row-label.value }
-    .tooltiptext = Hiện trường { to-compose-address-row-label.value } ({ to-compose-show-address-row-menuitem.acceltext })
-cc-compose-address-row-label =
-    .value = Cc
-#   $key (String) - the shortcut key for this field
-cc-compose-show-address-row-menuitem =
-    .label = Trường { cc-compose-address-row-label.value }
-    .accesskey = C
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-cc-compose-show-address-row-label =
-    .value = { cc-compose-address-row-label.value }
-    .tooltiptext = Hiện trường { cc-compose-address-row-label.value } ({ cc-compose-show-address-row-menuitem.acceltext })
-bcc-compose-address-row-label =
-    .value = Bcc
-#   $key (String) - the shortcut key for this field
-bcc-compose-show-address-row-menuitem =
-    .label = Trường { bcc-compose-address-row-label.value }
-    .accesskey = B
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-bcc-compose-show-address-row-label =
-    .value = { bcc-compose-address-row-label.value }
-    .tooltiptext = Hiện trường { bcc-compose-address-row-label.value } ({ bcc-compose-show-address-row-menuitem.acceltext })
-#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
-many-public-recipients-info = { $count } người nhận trong Đến và Cc sẽ thấy địa chỉ của nhau. Thay vào đó, bạn có thể tránh tiết lộ người nhận bằng cách sử dụng Bcc.
 to-address-row-label =
     .value = Đến
 #   $key (String) - the shortcut key for this field
@@ -386,3 +355,9 @@ link-preview-description = { -brand-short-name } có thể thêm bản xem trư�
 link-preview-autoadd = Tự động thêm bản xem trước liên kết khi có thể
 link-preview-replace-now = Thêm bản xem trước cho liên kết này?
 link-preview-yes-replace = Đồng ý
+
+## Dictionary selection popup
+
+spell-add-dictionaries =
+    .label = Thêm từ điển…
+    .accesskey = A

@@ -40,15 +40,18 @@ toolbar-context-menu-remove-extension =
 toolbar-context-menu-report-extension =
     .label = Extensie rapporteren
     .accesskey = r
-# Can appear on the same context menu as menubarCmd ("Menu Bar") and
-# personalbarCmd ("Bookmarks Toolbar"), so they should have different
-# access keys.
+# Can appear on the same context menu as toolbar-context-menu-menu-bar-cmd
+# ("Menu Bar") and personalbarCmd ("Bookmarks Toolbar"), so they should
+# have different access keys.
 toolbar-context-menu-pin-to-overflow-menu =
     .label = Vastmaken aan overloopmenu
     .accesskey = V
 toolbar-context-menu-auto-hide-downloads-button-2 =
     .label = Knop verbergen indien leeg
     .accesskey = v
+toolbar-context-menu-always-open-downloads-panel =
+    .label = Paneel tonen wanneer downloaden begint
+    .accesskey = t
 toolbar-context-menu-remove-from-toolbar =
     .label = Verwijderen van werkbalk
     .accesskey = w

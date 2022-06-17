@@ -35,6 +35,8 @@ detail-version =
     .label = Версия
 detail-last-updated =
     .label = Последнее обновление
+addon-detail-description-expand = Показать больше
+addon-detail-description-collapse = Показать меньше
 detail-contributions-description = Разработчик этого дополнения просит вас помочь поддержать его дальнейшее развитие, внеся небольшое пожертвование.
 detail-contributions-button = Поддержать
     .title = Внести вклад в разработку этого дополнения
@@ -288,8 +290,10 @@ extension-enabled-heading = Включены
 extension-disabled-heading = Отключены
 theme-enabled-heading = Включена
 theme-disabled-heading = Отключены
+theme-disabled-heading2 = Сохранённые темы
 theme-monochromatic-heading = Расцветки
 theme-monochromatic-subheading = Яркие новые расцветки от { -brand-product-name }. Доступны в течение ограниченного времени.
+theme-colorways-button = Попробуйте раскраски
 plugin-enabled-heading = Включены
 plugin-disabled-heading = Отключены
 dictionary-enabled-heading = Включены
@@ -354,7 +358,7 @@ addon-detail-private-browsing-disallow = Не разрешать
 addon-badge-recommended2 =
     .title = { -brand-product-name } рекомендует только те расширения, которые соответствуют нашим стандартам по безопасности и производительности
     .aria-label = { addon-badge-recommended2.title }
-# We hard code "Ablaze" in the string below because the extensions are built
+# We hard code "Mozilla" in the string below because the extensions are built
 # by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
     .title = Официальное расширение, созданное Mozilla. Соответствует стандартам безопасности и производительности.

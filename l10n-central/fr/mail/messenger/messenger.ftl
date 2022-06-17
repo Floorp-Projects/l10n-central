@@ -87,10 +87,6 @@ menu-file-save-as-file =
 
 ## AppMenu
 
-# Since v89 we dropped the platforms distinction between Options or Preferences
-# and consolidated everything with Preferences.
-appmenu-preferences =
-    .label = Préférences
 appmenu-save-as-file =
     .label = Fichier…
 appmenu-settings =
@@ -224,6 +220,12 @@ settings-context-open-account-settings-item =
     .label = Ouvrir les paramètres du compte
 settings-context-open-addons-item =
     .label = Ouvrir le gestionnaire de modules complémentaires et de thèmes
+settings-context-open-settings-item2 =
+    .label = Paramètres
+settings-context-open-account-settings-item2 =
+    .label = Paramètres des comptes
+settings-context-open-addons-item2 =
+    .label = Modules complémentaires et thèmes
 
 ## Spaces toolbar pinned tab menupopup
 

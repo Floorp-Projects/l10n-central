@@ -98,7 +98,7 @@ fonts-monospace = Моноширинный
 fonts-monospace-size = Размер
     .accesskey = м
 
-fonts-minsize = Наименьший размер шрифта
+fonts-minsize = Минимальный размер шрифта
     .accesskey = и
 
 fonts-minsize-none =
@@ -107,11 +107,6 @@ fonts-minsize-none =
 fonts-allow-own =
     .label = Разрешить веб-сайтам использовать свои шрифты вместо установленных выше
     .accesskey = в
-
-## Text Encodings
-##
-## Translate the encoding names as adjectives for an encoding, not as the name
-## of the language.
 
 # Variables:
 #   $name {string, "Arial"} - Name of the default font

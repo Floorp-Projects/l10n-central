@@ -46,3 +46,4 @@ openpgp-partially-encrypted =
 openpgp-reminder-partial-display = Nhắc nhở: Thông báo hiển thị bên dưới chỉ là một tập hợp con của thông báo gốc.
 openpgp-partial-verify-button = Xác minh
 openpgp-partial-decrypt-button = Giải mã
+openpgp-unexpected-key-for-you = Cảnh báo: Thư này chứa khóa OpenPGP không xác định đề cập đến một trong các địa chỉ email của riêng bạn. Nếu đây không phải là một trong những chìa khóa của riêng bạn, nó có thể là một nỗ lực để lừa những người trao đổi khác.

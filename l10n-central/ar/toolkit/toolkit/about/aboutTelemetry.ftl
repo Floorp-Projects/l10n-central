@@ -53,7 +53,7 @@ about-telemetry-upload-type =
        *[disabled] معطّل
     }
 # Variables:
-#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Ablaze"
+#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-page-subtitle = تظهر هذه الصفحة معلومات عن الأداء، و العتاد، و الاستخدام، و التخصيصات التي جمعتها أداة تليمتري. تُرسل هذه المعلومات إلى { $telemetryServerOwner } للمساعدة في تحسين { -brand-full-name }.
 about-telemetry-settings-explanation = يجمع تيليمتري { about-telemetry-data-type } و الرفع <a data-l10n-name="upload-link">{ about-telemetry-upload-type }</a>.
 # Variables:

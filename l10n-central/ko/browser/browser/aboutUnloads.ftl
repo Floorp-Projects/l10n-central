@@ -7,19 +7,6 @@
 ### feature.
 
 about-unloads-page-title = 탭 언로드
-about-unloads-intro-1 =
-    { -brand-short-name }에는 시스템의 사용 가능한 메모리가 부족할 때 
-    메모리 부족으로 인해 애플리케이션이 충돌하는 것을 방지하기 위해 
-    탭을 자동으로 언로드하는 기능이 있습니다. 언로드할 다음 탭은 여러 
-    속성을 기반으로 선택됩니다. 이 페이지는 탭 언로드가 실행될 때 
-    { -brand-short-name }가 탭의 우선 순위를 지정하는 방법과 어떤 탭이 
-    언로드되는지 보여줍니다.
-about-unloads-intro-2 =
-    기존 탭은 { -brand-short-name }가 언로드할 다음 탭을 선택하는데 사용한 것과 
-    동일한 순서로 아래 표에 표시됩니다. 프로세스 ID는 탭의 상단 프레임을 호스팅할 때 
-    <strong>굵게</strong> 표시되고, 프로세스가 다른 탭 간에 공유될 때 <em>기울임꼴</em>로 
-    표시됩니다. 아래의 <em>언로드</em> 버튼을 클릭하여 탭 언로드를 수동으로 실행할 
-    수 있습니다.
 about-unloads-intro =
     { -brand-short-name }에는 시스템의 사용 가능한 메모리가 부족할 때 
     메모리 부족으로 인해 애플리케이션이 충돌하는 것을 방지하기 위해 
@@ -37,7 +24,7 @@ about-unloads-last-updated = 마지막 업데이트: { DATETIME($date, year: "nu
 about-unloads-button-unload = 언로드
     .title = 가장 높은 우선 순위를 가진 탭 언로드
 about-unloads-no-unloadable-tab = 언로드할 수 있는 탭이 없습니다.
-about-unloads-column-priority = 우선순위
+about-unloads-column-priority = 우선 순위
 about-unloads-column-host = 호스트
 about-unloads-column-last-accessed = 마지막 액세스
 about-unloads-column-weight = 기본 가중치

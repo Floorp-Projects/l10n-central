@@ -30,7 +30,7 @@ videocontrols-closed-caption-off =
     .offlabel = Uit
 # This string is used as part of the Picture-in-Picture video toggle button when
 # the mouse is hovering it.
-videocontrols-picture-in-picture-label = Picture-in-Picture
+videocontrols-picture-in-picture-label = Picture-in-picture
 # This string is used as the label for a variation of the Picture-in-Picture video
 # toggle button when the mouse is hovering over the video.
 videocontrols-picture-in-picture-toggle-label = Picture-in-picture bekijken
@@ -44,7 +44,7 @@ videocontrols-error-decode = Video kan niet worden afgespeeld, omdat het bestand
 videocontrols-error-src-not-supported = Video-indeling of MIME-type wordt niet ondersteund.
 videocontrols-error-no-source = Geen video met ondersteunde indeling en MIME-type gevonden.
 videocontrols-error-generic = Video afspelen afgebroken vanwege een onbekende fout.
-videocontrols-status-picture-in-picture = Deze video wordt in Picture-in-Picture-modus afgespeeld.
+videocontrols-status-picture-in-picture = Deze video wordt in Picture-in-picture-modus afgespeeld.
 # This message shows the current position and total video duration
 #
 # Variables:

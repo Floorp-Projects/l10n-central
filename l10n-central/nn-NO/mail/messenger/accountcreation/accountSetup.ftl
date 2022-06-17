@@ -31,12 +31,12 @@ account-setup-password-label = Passord
     .title = Valfritt, vil berre brukast for å validere brukarnamnet
 account-provisioner-button = Få ei ny e-postadresse
     .accesskey = F
-account-setup-password-toggle =
-    .title = Vis/gøym passord
 account-setup-password-toggle-show =
     .title = Vis passordet i klartekt
 account-setup-password-toggle-hide =
     .title = Gøym passordet
+account-setup-exchange-label = Di innlogging:
+    .accesskey = D
 
 ## Action buttons
 
@@ -44,6 +44,8 @@ account-setup-button-cancel = Avbryt
     .accesskey = A
 account-setup-button-stop = Stopp
     .accesskey = S
+account-setup-button-continue = Fortset
+    .accesskey = F
 
 ## Notifications
 
@@ -60,15 +62,10 @@ account-setup-getting-started = Kom i gang
 
 ## Results area
 
-# Note: IMAP is the name of a protocol.
-account-setup-result-imap = IMAP
-# Note: POP3 is the name of a protocol.
-account-setup-result-pop = POP3
 account-setup-incoming-title = Innkomande
 account-setup-outgoing-title = Utgåande
 account-setup-username-title = Brukarnamn
 account-setup-exchange-title = Server
-account-setup-result-smtp = SMTP
 account-setup-result-no-encryption = Inga kryptering
 account-setup-result-ssl = SSL/TLS
 account-setup-result-starttls = STARTTLS
@@ -112,6 +109,23 @@ account-setup-addon-install-title = Installer
 ## Success view
 
 account-setup-settings-button = Kontoinnstillingar
+account-setup-button-finish = Fullfør
+    .accesskey = F
+account-setup-address-books-button = Adressebøker
+account-setup-calendars-button = Kalendrar
+account-setup-connect-link = Kople til
+account-setup-existing-address-book = Tilkopla
+    .title = Adresseboka er allereie tilkopla
+account-setup-existing-calendar = Tilkopla
+    .title = Kalender allereie tilkopla
 
 ## Calendar synchronization dialog
 
+calendar-dialog-cancel-button = Avbryt
+    .accesskey = A
+account-setup-calendar-name-label = Namn
+account-setup-calendar-name-input =
+    .placeholder = Min kalender
+account-setup-calendar-color-label = Farge
+account-setup-calendar-refresh-label = Oppdater
+account-setup-calendar-refresh-manual = Manuelt

@@ -105,8 +105,8 @@ disabled-unsigned-devinfo = Programuotojai, norintys atlikti savo priedų patikr
 plugin-deprecation-description = Kažko trūksta? Kai kurie papildiniai daugiau nepalaikomi „{ -brand-short-name }“. <label data-l10n-name="learn-more">Sužinoti daugiau.</label>
 legacy-warning-show-legacy = Rodyti pasenusius plėtinius
 legacy-extensions =
-    .value = Pasenę plėtiniai
-legacy-extensions-description = Šie plėtiniai neatitinka esamų „{ -brand-short-name }“ standartų, tad buvo išjungti. <label data-l10n-name="legacy-learn-more">Sužinokite apie priedų pokyčius</label>
+    .value = Pasenę priedai
+legacy-extensions-description = Šie priedai neatitinka esamų „{ -brand-short-name }“ standartų, tad buvo išjungti. <label data-l10n-name="legacy-learn-more">Sužinokite apie priedų pokyčius</label>
 private-browsing-description2 =
     „{ -brand-short-name }“ keičia priedų veikimą privačiojo naršymo languose. Visi nauji priedai, kuriuos pridėsite į
     „{ -brand-short-name }“, neveiks privačiojo naršymo languose. Nebent leisite tai per nuostatas, priedas
@@ -116,9 +116,9 @@ private-browsing-description2 =
 addon-category-discover = Rekomendacijos
 addon-category-discover-title =
     .title = Rekomendacijos
-addon-category-extension = Plėtiniai
+addon-category-extension = Priedai
 addon-category-extension-title =
-    .title = Plėtiniai
+    .title = Priedai
 addon-category-theme = Grafiniai apvalkalai
 addon-category-theme-title =
     .title = Grafiniai apvalkalai
@@ -355,7 +355,7 @@ addon-detail-private-browsing-disallow = Neleisti
 addon-badge-recommended2 =
     .title = „{ -brand-product-name }“ rekomenduoja tik mūsų saugumo ir našumo reikalavimus atitinkančius priedus
     .aria-label = { addon-badge-recommended2.title }
-# We hard code "Ablaze" in the string below because the extensions are built
+# We hard code "Mozilla" in the string below because the extensions are built
 # by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
     .title = Oficialus „Mozilla“ sukurtas priedas. Atitinka saugumo ir našumo standartus

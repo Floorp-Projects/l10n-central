@@ -35,6 +35,8 @@ detail-version =
     .label = 버전
 detail-last-updated =
     .label = 마지막 업데이트
+addon-detail-description-expand = 자세히 보기
+addon-detail-description-collapse = 간단히 보기
 detail-contributions-description = 이 부가 기능의 개발자가 여러분이 작은 기여로 지속적인 개발을 지원해 줄 것을 요청합니다.
 detail-contributions-button = 기여하기
     .title = 이 부가 기능의 개발에 기여하기
@@ -278,8 +280,10 @@ extension-enabled-heading = 사용함
 extension-disabled-heading = 사용 안 함
 theme-enabled-heading = 사용함
 theme-disabled-heading = 사용 안 함
+theme-disabled-heading2 = 저장된 테마
 theme-monochromatic-heading = 컬러웨이
 theme-monochromatic-subheading = { -brand-product-name }의 생동감 넘치는 새로운 컬러웨이입니다. 제한된 시간 동안 사용할 수 있습니다.
+theme-colorways-button = 컬러웨이 체험
 plugin-enabled-heading = 사용함
 plugin-disabled-heading = 사용 안 함
 dictionary-enabled-heading = 사용함
@@ -342,10 +346,10 @@ addon-detail-private-browsing-disallow = 허용 안 함
 addon-badge-recommended2 =
     .title = { -brand-product-name }는 보안 및 성능 표준을 충족하는 확장 기능만 추천함
     .aria-label = { addon-badge-recommended2.title }
-# We hard code "Ablaze" in the string below because the extensions are built
+# We hard code "Mozilla" in the string below because the extensions are built
 # by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
-    .title = Ablaze에서 만든 공식 확장 기능. 보안 및 성능 표준 충족
+    .title = Mozilla에서 만든 공식 확장 기능. 보안 및 성능 표준 충족
     .aria-label = { addon-badge-line3.title }
 addon-badge-verified2 =
     .title = 이 확장 기능은 보안 및 성능 표준을 충족하는 것으로 검토되었습니다

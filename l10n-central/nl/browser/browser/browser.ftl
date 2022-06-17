@@ -8,8 +8,8 @@
 # These are the default window titles everywhere except macOS. The first two
 # attributes are used when the web content opened has no title:
 #
-# default - "Ablaze Floorp"
-# private - "Ablaze Floorp (Private Browsing)"
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Variables:
@@ -22,8 +22,8 @@ browser-main-window =
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
-# "default" - "Ablaze Floorp"
-# "private" - "Ablaze Floorp — (Private Browsing)"
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -291,7 +291,7 @@ identity-clear-site-data =
 identity-connection-not-secure-security-view = U hebt een onbeveiligde verbinding met deze website.
 identity-connection-verified = U hebt een beveiligde verbinding met deze website.
 identity-ev-owner-label = Certificaat uitgegeven aan:
-identity-description-custom-root = Ablaze herkent deze certificaatuitgever niet. Hij is mogelijk vanuit uw besturingssysteem of door een beheerder toegevoegd. <label data-l10n-name="link">Meer info</label>
+identity-description-custom-root = Mozilla herkent deze certificaatuitgever niet. Hij is mogelijk vanuit uw besturingssysteem of door een beheerder toegevoegd. <label data-l10n-name="link">Meer info</label>
 identity-remove-cert-exception =
     .label = Uitzondering verwijderen
     .accesskey = w
@@ -521,7 +521,7 @@ urlbar-result-action-search-tabs = Tabbladen doorzoeken
 urlbar-group-firefox-suggest =
     .label = { -firefox-suggest-brand-name }
 # A label shown above the search suggestions group in the urlbar results. It
-# should use title case.
+# should use sentence case.
 # Variables
 #  $engine (String): the name of the search engine providing the suggestions
 urlbar-group-search-suggestions =
@@ -653,12 +653,6 @@ toolbar-settings-button =
             [macos] Instellingen openen ({ $shortcut })
            *[other] Instellingen openen
         }
-
-## More items
-
-more-menu-go-offline =
-    .label = Offline werken
-    .accesskey = f
 toolbar-overflow-customize-button =
     .label = Werkbalk aanpassen…
     .accesskey = a
@@ -704,12 +698,6 @@ panel-save-update-password = Wachtwoord
 addon-removal-title = { $name } verwijderen?
 addon-removal-abuse-report-checkbox = Deze extensie rapporteren aan { -vendor-short-name }
 
-## Remote / Synced tabs
-
-remote-tabs-manage-account =
-    .label = Account beheren
-remote-tabs-sync-now = Nu synchroniseren
-
 ##
 
 # "More" item in macOS share menu
@@ -737,7 +725,7 @@ edit-popup-settings =
     .label = Pop-upinstellingen beheren…
     .accesskey = b
 picture-in-picture-hide-toggle =
-    .label = Picture-in-Picture-knop verbergen
+    .label = Picture-in-picture-knop verbergen
     .accesskey = v
 
 ## Since the default position for PiP controls does not change for RTL layout,

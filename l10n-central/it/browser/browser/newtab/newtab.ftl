@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### Floorp Home / New Tab strings for about:home / about:newtab.
+### Firefox Home / New Tab strings for about:home / about:newtab.
 
 newtab-page-title = Nuova scheda
 newtab-settings-button =
@@ -37,11 +37,6 @@ newtab-search-box-handoff-input-no-engine =
     .title = Cerca o inserisci un indirizzo
     .aria-label = Cerca o inserisci un indirizzo
 
-newtab-search-box-search-the-web-input =
-    .placeholder = Cerca sul Web
-    .title = Cerca sul Web
-    .aria-label = Cerca sul Web
-
 newtab-search-box-text = Cerca sul Web
 newtab-search-box-input =
     .placeholder = Cerca sul Web
@@ -50,7 +45,6 @@ newtab-search-box-input =
 ## Top Sites - General form dialog.
 
 newtab-topsites-add-search-engine-header = Aggiungi motore di ricerca
-newtab-topsites-add-topsites-header = Nuovi sito principale
 newtab-topsites-add-shortcut-header = Nuova scorciatoia
 newtab-topsites-edit-topsites-header = Modifica sito principale
 newtab-topsites-edit-shortcut-header = Modifica scorciatoia
@@ -209,7 +203,6 @@ newtab-section-expand-section-label =
 ## Section Headers.
 
 newtab-section-header-topsites = Siti principali
-newtab-section-header-highlights = In evidenza
 newtab-section-header-recent-activity = Attività recente
 # Variables:
 #  $provider (String): Name of the corresponding content provider.

@@ -8,11 +8,6 @@ toolbar-context-menu-menu-bar =
 
 ## Tools Menu
 
-# Since v89 we dropped the platforms distinction between Options or Preferences
-# and consolidated everything with Preferences.
-menu-tools-preferences =
-    .label = Beállítások
-    .accesskey = B
 menu-tools-settings =
     .label = Beállítások
     .accesskey = B
@@ -55,6 +50,18 @@ menu-view-repair-text-encoding =
 
 ## View / Layout
 
+menu-font-size-label =
+    .label = Betűméret
+    .accesskey = m
+menuitem-font-size-enlarge =
+    .label = Betűméret növelése
+    .accesskey = n
+menuitem-font-size-reduce =
+    .label = Betűméret csökkentése
+    .accesskey = c
+menuitem-font-size-reset =
+    .label = Betűméret visszaállítása
+    .accesskey = v
 mail-uidensity-label =
     .label = Sűrűség
     .accesskey = S

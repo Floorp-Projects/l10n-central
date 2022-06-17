@@ -60,11 +60,6 @@ about-webrtc-ice-pair-bytes-sent = 보낸 바이트:
 about-webrtc-ice-pair-bytes-received = 받은 바이트:
 about-webrtc-ice-component-id = 컴포넌트 ID
 
-## "Avg." is an abbreviation for Average. These are used as data labels.
-
-about-webrtc-avg-bitrate-label = 평균 비트레이트:
-about-webrtc-avg-framerate-label = 평균 프레임레이트:
-
 ## These adjectives are used to label a line of statistics collected for a peer
 ## connection. The data represents either the local or remote end of the
 ## connection.
@@ -115,7 +110,7 @@ about-webrtc-raw-cand-show-msg = 원시 후보자 보기
     .title = 섹션 펼치기
 about-webrtc-raw-cand-hide-msg = 원시 후보자 감추기
     .title = 섹션 접기
-about-webrtc-priority = 우선순위
+about-webrtc-priority = 우선 순위
 about-webrtc-fold-show-msg = 상세 보기
     .title = 섹션 펼치기
 about-webrtc-fold-hide-msg = 상세 감추기

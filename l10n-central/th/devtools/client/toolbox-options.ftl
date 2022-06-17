@@ -34,6 +34,10 @@ options-show-user-agent-styles-tooltip =
 options-collapse-attrs-label = ตัดทอนแอตทริบิวต์ DOM
 options-collapse-attrs-tooltip =
     .title = ตัดทอนแอตทริบิวต์แบบยาวในตัวตรวจสอบ
+# The label for the checkbox option to enable the "drag to update" feature
+options-inspector-draggable-properties-label = คลิกและลากเพื่อแก้ไขค่าขนาด
+options-inspector-draggable-properties-tooltip =
+    .title = คลิกและลากเพื่อแก้ไขค่าขนาดในมุมมองกฎของตัวตรวจสอบ
 
 ## "Default Color Unit" options for the Inspector
 

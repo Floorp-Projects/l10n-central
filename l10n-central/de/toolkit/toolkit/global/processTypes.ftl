@@ -15,12 +15,8 @@ process-type-privilegedabout = about-Seite mit zusätzlichen Rechten
 
 # process used to run privileged mozilla pages,
 # such as accounts.firefox.com
-<<<<<<< working copy
-process-type-privilegedmozilla = Ablaze-Inhalt mit zusätzlichen Rechten
-=======
 process-type-privilegedmozilla = Mozilla-Inhalt mit zusätzlichen Rechten
 
->>>>>>> destination
 process-type-extension = Erweiterung
 
 # process used to open file:// URLs

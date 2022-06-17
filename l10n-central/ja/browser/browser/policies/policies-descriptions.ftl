@@ -9,10 +9,6 @@
 ## These are short descriptions for individual policies, to be displayed
 ## in the documentation section in about:policies.
 
-## Floorp from 10.0.0
-from-policy-notice = これらのポリシーは、{ -brand-short-name } プロジェクトにより設定され、Firefox の改造・動作の変更に使用されています。デフォルトではユーザーを制限するものではありません。ご安心ください。
-
-
 policy-3rdparty = WebExtension が chrome.storage.managed を経由してアクセス可能なポリシーを設定します。
 
 policy-AllowedDomainsForApps = Google Workspace へのアクセスを許可するドメインを定義します。
@@ -62,7 +58,7 @@ policy-DisableFeedbackCommands = ヘルプメニューのフィードバック�
 policy-DisableFirefoxAccounts = Sync を含む { -fxaccount-brand-name } を利用したサービスを無効にします。
 
 # Firefox Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = Floorp Screenshots 機能を無効にします。
+policy-DisableFirefoxScreenshots = Firefox Screenshots 機能を無効にします。
 
 policy-DisableFirefoxStudies = Shield 調査の実行を禁止します。
 
@@ -119,7 +115,7 @@ policy-ExtensionSettings = 拡張機能のインストール全般を管理し�
 
 policy-ExtensionUpdate = 拡張機能の自動更新を有効または無効にします。
 
-policy-FirefoxHome = Floorp Home の設定を行います。
+policy-FirefoxHome = Firefox Home の設定を行います。
 
 policy-FlashPlugin = Flash プラグインの実行を許可、または拒否します。
 
@@ -202,9 +198,13 @@ policy-SSLVersionMax = SSL の最高バージョンを設定します。
 
 policy-SSLVersionMin = SSL の最低バージョンを設定します。
 
+policy-StartDownloadsInTempDirectory = 既定のダウンロードディレクトリーではなく、ローカルの一時的な場所にダウンロードするよう強制します。
+
 policy-SupportMenu = ヘルプメニューにカスタムサポートメニューを追加します。
 
 policy-UserMessaging = 特定のメッセージをユーザーに表示させないようにします。
+
+policy-UseSystemPrintDialog = システムの印刷ダイアログで印刷します。
 
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = ウェブサイトを訪問済みにしません。書式の詳細はドキュメントをご覧ください。

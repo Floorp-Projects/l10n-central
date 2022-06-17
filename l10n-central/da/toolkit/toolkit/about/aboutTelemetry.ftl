@@ -67,7 +67,7 @@ about-telemetry-histogram-stats =
        *[other] { $sampleCount } prøver, gennemsnit = { $prettyAverage }, sum = { $sum }
     }
 # Variables:
-#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Ablaze"
+#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-page-subtitle = Denne side viser Telemetrys indsamlede data om ydelse, hardware, brug og tilpasninger. De indsamlede data sendes til { $telemetryServerOwner } for at hjælpe med at forbedre { -brand-full-name }.
 about-telemetry-settings-explanation = Telemetry indsamler { about-telemetry-data-type } og upload er <a data-l10n-name="upload-link">{ about-telemetry-upload-type }</a>.
 # Variables:
@@ -135,7 +135,7 @@ about-telemetry-origin-section = Origin Telemetry
 about-telemetry-origin-origin = origin
 about-telemetry-origin-count = antal
 # Variables:
-#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Ablaze"
+#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-origins-explanation = <a data-l10n-name="origin-doc-link">Firefox Origin Telemetry</a> koder data, før de bliver sendt. Det betyder, at { $telemetryServerOwner } kan tælle ting, men ikke vide, om en given installation af { -brand-product-name } bidrog til det samlede antal. <a data-l10n-name="prio-blog-link">Læs mere</a>
 # Variables:
 #  $process (String): type of process in subsection headers ( e.g. "content", "parent" )

@@ -22,10 +22,10 @@ more-from-moz-mozilla-rally-description = Panaudokite savo duomenis visų intern
 # This string is specific to the product Mozilla Rally which is US only.
 more-from-moz-mozilla-rally-description-advanced = Paaukokite savo duomenis moksliniams tyrimams, siekiantiems sukurti saugesnį, atviresnį internetą, kuris padėtų žmonėms, o ne „Big Tech“.
 # This string is specific to the product Mozilla Rally which is US only.
-more-from-moz-button-mozilla-rally =
-    .label = Prisijungti prie „{ -rally-short-name }“
+more-from-moz-button-mozilla-rally-2 = Prisijungti prie „{ -rally-short-name }“
 more-from-moz-qr-code-box-firefox-mobile-title = Atsisiųskite naudodami savo mobilųjį įrenginį. Nukreipkite kamerą į QR kodą. Kai pasirodys nuoroda, bakstelėkite ją.
 more-from-moz-qr-code-box-firefox-mobile-button = Nusiųsti el. laišką į telefoną
-more-from-moz-button-mozilla-vpn =
-    .label = Gauti VPN
+more-from-moz-qr-code-firefox-mobile-img =
+    .alt = QR kodas, skirtas atsisiųsti mobiliąją „{ -brand-product-name }“
+more-from-moz-button-mozilla-vpn-2 = Gauti VPN
 more-from-moz-learn-more-link = Sužinoti daugiau

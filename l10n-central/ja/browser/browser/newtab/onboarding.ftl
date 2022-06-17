@@ -31,23 +31,8 @@ return-to-amo-add-theme-label = テーマを追加
 #   $total (Int) - Total number of pages
 onboarding-welcome-steps-indicator =
     .aria-label = はじめる: { $current } / { $total } ページ
-<<<<<<< working copy
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "look" should stay inside the span.
-onboarding-multistage-theme-header = <span data-l10n-name="zap">テーマ</span>を選択してください
-onboarding-multistage-theme-subtitle = テーマで { -brand-short-name } をパーソナライズできます
-onboarding-multistage-theme-primary-button-label2 = 完了
-onboarding-multistage-theme-secondary-button-label = 後で
-# Automatic theme uses operating system color settings
-onboarding-multistage-theme-label-automatic = 自動
-onboarding-multistage-theme-label-light = Light
-onboarding-multistage-theme-label-dark = Dark
-# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
-onboarding-multistage-theme-label-alpenglow = Floorp Alpenglow
-=======
->>>>>>> destination
 # "Hero Text" displayed on left side of welcome screen.
-# The "Fire" in "Fire starts here" plays on the "Fire" in "Floorp".
+# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
 # It also signals the passion users bring to Firefox, how they use
 # Firefox to pursue those passions, as well as the boldness in their
 # choice to use Firefox over a larger competitor browser.
@@ -136,6 +121,8 @@ mr1-onboarding-theme-label-light = Light
 mr1-onboarding-theme-label-dark = Dark
 # "Alpenglow" here is the name of the theme, and should be kept in English.
 mr1-onboarding-theme-label-alpenglow = Alpenglow
+
+onboarding-theme-primary-button-label = 完了
 
 ## Please make sure to split the content of the title attribute into lines whose
 ## width corresponds to about 40 Latin characters, to ensure that the tooltip

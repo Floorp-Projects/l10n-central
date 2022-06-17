@@ -40,8 +40,6 @@
 <!ENTITY PrimaryEmail.accesskey         "E">
 <!ENTITY SecondEmail.label              "Email aggiuntiva:">
 <!ENTITY SecondEmail.accesskey          "i">
-<!ENTITY PreferMailFormat.label         "Formato preferito per i messaggi di posta:">
-<!ENTITY PreferMailFormat.accesskey     "o">
 <!ENTITY PlainText.label                "Testo semplice">
 <!ENTITY HTML.label                     "HTML">
 <!ENTITY Unknown.label                  "Sconosciuto">
@@ -86,8 +84,8 @@
 <!ENTITY Work.accesskey                 "L">
 <!ENTITY JobTitle.label                 "Titolo:">
 <!ENTITY JobTitle.accesskey             "i">
-<!ENTITY Department.label               "Dipartimento:">
-<!ENTITY Department.accesskey           "m">
+<!ENTITY Department.label               "Reparto:">
+<!ENTITY Department.accesskey           "R">
 <!ENTITY Company.label                  "Organizzazione:">
 <!ENTITY Company.accesskey              "n">
 <!ENTITY WorkAddress.label              "Indirizzo:">

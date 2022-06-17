@@ -8,11 +8,6 @@ toolbar-context-menu-menu-bar =
 
 ## Tools Menu
 
-# Since v89 we dropped the platforms distinction between Options or Preferences
-# and consolidated everything with Preferences.
-menu-tools-preferences =
-    .label = 首选项
-    .accesskey = P
 menu-tools-settings =
     .label = 设置
     .accesskey = e
@@ -55,6 +50,9 @@ menu-view-repair-text-encoding =
 
 ## View / Layout
 
+menu-font-size-label =
+    .label = 字号
+    .accesskey = o
 mail-uidensity-label =
     .label = 密度
     .accesskey = D

@@ -39,15 +39,18 @@ toolbar-context-menu-remove-extension =
 toolbar-context-menu-report-extension =
     .label = Laporkan Ekstensi
     .accesskey = o
-# Can appear on the same context menu as menubarCmd ("Menu Bar") and
-# personalbarCmd ("Bookmarks Toolbar"), so they should have different
-# access keys.
+# Can appear on the same context menu as toolbar-context-menu-menu-bar-cmd
+# ("Menu Bar") and personalbarCmd ("Bookmarks Toolbar"), so they should
+# have different access keys.
 toolbar-context-menu-pin-to-overflow-menu =
     .label = Letakkan di Menu Luapan
     .accesskey = P
 toolbar-context-menu-auto-hide-downloads-button-2 =
     .label = Sembunyikan Tombol Jika Kosong
     .accesskey = K
+toolbar-context-menu-always-open-downloads-panel =
+    .label = Tampilkan Panel Saat Unduhan Dimulai
+    .accesskey = T
 toolbar-context-menu-remove-from-toolbar =
     .label = Hapus dari Bilah Alat
     .accesskey = H

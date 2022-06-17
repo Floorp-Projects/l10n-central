@@ -21,6 +21,7 @@ perftools-heading-features-default = Fitur (Direkomendasikan secara baku)
 perftools-heading-features-disabled = Fitur Dinonaktifkan
 perftools-heading-features-experimental = Eksperimental
 perftools-heading-threads = Thread
+perftools-heading-threads-jvm = Utas JVM
 perftools-heading-local-build = Build lokal
 
 ##
@@ -48,9 +49,6 @@ perftools-devtools-settings-label = Pengaturan
 
 ## Various statuses that affect the current state of profiling, not typically displayed.
 
-perftools-status-private-browsing-notice =
-    Profiler dinonaktifkan saat Penjelajahan Pribadi diaktifkan.
-    Tutup semua Jendela Pribadi untuk mengaktifkan kembali profiler
 perftools-status-recording-stopped-by-another-tool = Rekaman dihentikan oleh alat lain.
 perftools-status-restart-required = Peramban harus dimulai ulang untuk mengaktifkan fitur ini.
 
@@ -96,6 +94,18 @@ perftools-thread-dns-resolver =
     .title = Resolusi DNS terjadi di thread ini
 perftools-thread-task-controller =
     .title = Utas kumpulan utas TaskController
+perftools-thread-jvm-gecko =
+    .title = Utas utama Gecko JVM
+perftools-thread-jvm-nimbus =
+    .title = Utas utama untuk SDK eksperimen Nimbus
+perftools-thread-jvm-default-dispatcher =
+    .title = Dispatcher baku untuk pustaka Kotlin coroutines
+perftools-thread-jvm-glean =
+    .title = Utas utama untuk SDK telemetri Glean
+perftools-thread-jvm-arch-disk-io =
+    .title = Dispatcher IO untuk pustaka Kotlin coroutines
+perftools-thread-jvm-pool =
+    .title = Utas yang dibuat di kumpulan utas yang tidak bernama
 
 ##
 
@@ -106,6 +116,10 @@ perftools-tools-threads-input-label =
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
 ## preferences are true.
+
+
+## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
+## devtools.performance.new-panel-onboarding preference is true.
 
 perftools-onboarding-message = <b>Baru</b>: { -profiler-brand-name } telah diintegrasikan ke dalam Alat Pengembang. <a>Pelajari lebih lanjut</a> tentang alat baru yang canggih ini.
 # `options-context-advanced-settings` is defined in toolbox-options.ftl

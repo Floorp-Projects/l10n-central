@@ -7,7 +7,7 @@ rights-intro = { -brand-full-name } er programvare basert på fri og open kjelde
 rights-intro-point-1 = { -brand-short-name } er gjort tilgjengeleg for deg under vilkåra i <a data-l10n-name="mozilla-public-license-link">Mozilla Public License</a>. Dette tyder at du kan bruke, kopiere og distribuere { -brand-short-name } til andre. Du kan også endre kjeldekoden til { -brand-short-name } som du vil, for å passe til dine behov. Mozilla Public License gjev deg også rett til å distribuere endra versjonar.
 rights-intro-point-2 =
     Du vert ikkje gitt varemerkerettar eller lisensar til varemerke som tilhøyrer
-    Ablaze & Floorp projects eller andre, noko som også gjeld Thunderbird-namnet og -logoen.
+    Mozilla Foundation eller andre, noko som også gjeld Thunderbird-namnet og -logoen.
     Meir informasjon om varemerke finn du
     <a data-l10n-name="mozilla-trademarks-link">her</a>.
 rights-intro-point-3 = Nokre funksjonar i { -brand-short-name }, som til dømes krasjrapporteraren, gjev deg høve til å gje tilbakemelding til { -vendor-short-name }. Ved å sende tilbakemelding gjev du { -vendor-short-name } løyve til å bruke tilbakemeldingane for å forbetre produkta sine, publisere tilbakemeldingane på nettstadane sine, og å distribuere tilbakemeldingane.
@@ -17,7 +17,6 @@ rights-intro-point-5 = Nokre { -brand-short-name }-funksjonar brukar nettbaserte
 rights-intro-point-5-unbranded = Dersom dette produktet omfattar informasjonstenester, så bør tenestevilkår for tenestene lenkast opp i <a data-l10n-name="mozilla-website-services-link">nettstadtenester</a>-seksjonen.
 rights-intro-point-6 = For å spele av forskjellige typar videoinnhald, lastar { -brand-short-name } ned dekrypteringsmodular frå tredjepartar.
 rights-webservices-header = { -brand-full-name } nettbaserte informasjonstenester
-rights-webservices = { -brand-full-name } brukar nettbaserte informasjonstenester («Tenester») for å gjere nokre av funksjonane tilgjengelege i den binære versjonen av { -brand-short-name }, under vilkår som er skildra nedanfor. Dersom du ikkje ønskjer å bruke ei eller fleire av tenestene, eller om du ikkje kan akseptere vilkåra, kan du slå av funksjonen eller tenesta/tenestene. Instruksjonar om korleis du slår av ein bestemt funksjon eller teneste finn du <a data-l10n-name="mozilla-disable-service-link">her</a>. Andre funksjonar og tenester kan slåast av i program-innstillingane.
 rights-locationawarebrowsing = <strong>Stad-medviten nettlesing:</strong>er alltid ein funksjon du må aktivt velje å slå på for at han skal brukast. Ingen stadinfo vert sendt utan at du gjev løyve til det. Dersom du ønskjer å slå av denne funksjonen heilt, følg desse stega:
 rights-locationawarebrowsing-term-1 = I adresselinja, skriv du inn <code>about:config</code>
 rights-locationawarebrowsing-term-2 = Skriv inn geo.enabled

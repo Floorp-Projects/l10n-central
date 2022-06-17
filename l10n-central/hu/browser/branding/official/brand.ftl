@@ -17,15 +17,15 @@
 ## For further details, consult:
 ## https://mozilla-l10n.github.io/styleguides/mozilla_general/#brands-copyright-and-trademark
 
--brand-shorter-name = Floorp
--brand-short-name = Floorp
--brand-full-name = Ablaze Floorp
+-brand-shorter-name = Firefox
+-brand-short-name = Firefox
+-brand-full-name = Mozilla Firefox
 # This brand name can be used in messages where the product name needs to
 # remain unchanged across different versions (Nightly, Beta, etc.).
--brand-product-name = Floorp
+-brand-product-name = Firefox
 -vendor-short-name =
     { $ending ->
        *[normal] Mozilla
         [accented] Mozillá
     }
-trademarkInfo = A Firefox és a Firefox logó a Ablaze & Floorp projects védjegye.
+trademarkInfo = A Firefox és a Firefox logó a Mozilla Foundation védjegye.

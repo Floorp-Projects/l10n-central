@@ -3,11 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### UI strings for the simplified onboarding / multistage about:welcome
-### Various strings use a non-breaking space to avoid a single dangling /
-### widowed word, so test on various window sizes if you also want this.
-
-
 ### UI strings for the MR1 onboarding / multistage about:welcome
 ### Various strings use a non-breaking space to avoid a single dangling /
 ### widowed word, so test on various window sizes if you also want this.
@@ -28,44 +23,6 @@ return-to-amo-subtitle = Bra, du har { -brand-short-name }
 #   $addon-name (String) - Name of the add-on
 return-to-amo-addon-title = Lat oss no hente <img data-l10n-name="icon"/> <b>{ $addon-name }</b>.
 return-to-amo-add-extension-label = Legg til utvidinga
-
-## Multistage 3-screen onboarding flow strings (about:welcome pages)
-
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
-onboarding-multistage-welcome-header = Velkomen til <span data-l10n-name="zap">{ -brand-short-name }</span>
-onboarding-multistage-welcome-subtitle = Den raske, trygge og private nettlesaren som er støtta av ein ideell organisasjon.
-onboarding-multistage-welcome-primary-button-label = Start oppsett
-onboarding-multistage-welcome-secondary-button-label = Logg inn
-onboarding-multistage-welcome-secondary-button-text = Har du allereie ein konto?
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "default" should stay inside the span.
-onboarding-multistage-set-default-header = Bruk { -brand-short-name } som <span data-l10n-name="zap">standard</span>
-onboarding-multistage-set-default-subtitle = Fart, sikkerheit og personvern kvar gong du surfar.
-onboarding-multistage-set-default-primary-button-label = Vel som standard
-onboarding-multistage-set-default-secondary-button-label = Ikkje no
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
-onboarding-multistage-pin-default-header = Start med å gjere <span data-l10n-name="zap">{ -brand-short-name }</span> tilgjengeleg med eitt klikk
-onboarding-multistage-pin-default-subtitle = Rask, sikker og privat nettlesing kvar gong du brukar nettet.
-# The "settings" here refers to "Windows 10 Settings App" and not the browser's
-onboarding-multistage-pin-default-waiting-subtitle = Vel { -brand-short-name } under nettlesar når innstillingane dine vert opna
-# The "settings" here refers to "Windows 10 Settings App" and not the browser's
-onboarding-multistage-pin-default-help-text = Dette vil feste { -brand-short-name } til oppgåvelinja og opne innstillingar
-onboarding-multistage-pin-default-primary-button-label = Vel { -brand-short-name } som primærnettlesar
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "more" should stay inside the span.
-onboarding-multistage-import-header = Importer passord, bokmerke og <span data-l10n-name="zap">meir</span>
-onboarding-multistage-import-subtitle = Kjem du frå ein annan nettlesar? Det er enkelt å ta alt med til { -brand-short-name }.
-onboarding-multistage-import-primary-button-label = Start Import
-onboarding-multistage-import-secondary-button-label = Ikkje no
-# Info displayed in the footer of import settings screen during onboarding flow.
-# This supports welcome screen showing top sites imported from the user's default browser.
-onboarding-import-sites-disclaimer =
-    Nettstadane som er oppførte her vart funne på denne eininga.
-    { -brand-short-name } lagrar eller synkroniserer
-    ikkje data frå ein annan nettlesar med mindre du
-    vel å importere dei.
 return-to-amo-add-theme-label = Legg til temaet
 
 ## Multistage onboarding strings (about:welcome pages)
@@ -76,20 +33,8 @@ return-to-amo-add-theme-label = Legg til temaet
 #   $total (Int) - Total number of pages
 onboarding-welcome-steps-indicator =
     .aria-label = Kome i gang: Skjermbilde { $current } av { $total }
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "look" should stay inside the span.
-onboarding-multistage-theme-header = Vel ein <span data-l10n-name="zap">utsjånad</span>
-onboarding-multistage-theme-subtitle = Tilpass { -brand-short-name } med eit tema.
-onboarding-multistage-theme-primary-button-label2 = Ferdig
-onboarding-multistage-theme-secondary-button-label = Ikkje no
-# Automatic theme uses operating system color settings
-onboarding-multistage-theme-label-automatic = Automatisk
-onboarding-multistage-theme-label-light = Lyst
-onboarding-multistage-theme-label-dark = Mørkt
-# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
-onboarding-multistage-theme-label-alpenglow = Floorp Alpenglow
 # "Hero Text" displayed on left side of welcome screen.
-# The "Fire" in "Fire starts here" plays on the "Fire" in "Floorp".
+# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
 # It also signals the passion users bring to Firefox, how they use
 # Firefox to pursue those passions, as well as the boldness in their
 # choice to use Firefox over a larger competitor browser.
@@ -138,7 +83,7 @@ mr1-onboarding-sign-in-button-label = Logg inn
 ## Title, subtitle and primary button string used on set default onboarding screen
 ## when Firefox is not default browser
 
-mr1-onboarding-default-header = Bruk { -brand-short-name } som standard
+mr1-onboarding-default-header = Bruk { -brand-short-name } som standardnettlesar
 mr1-onboarding-default-subtitle = Set fart, sikkerheit og personvern på autopilot.
 mr1-onboarding-default-primary-button-label = Bruk som standardnettlesar
 
@@ -176,60 +121,12 @@ mr1-onboarding-theme-label-light = Lyst
 mr1-onboarding-theme-label-dark = Mørkt
 # "Alpenglow" here is the name of the theme, and should be kept in English.
 mr1-onboarding-theme-label-alpenglow = Alpenglow
+onboarding-theme-primary-button-label = Ferdig
 
 ## Please make sure to split the content of the title attribute into lines whose
 ## width corresponds to about 40 Latin characters, to ensure that the tooltip
 ## doesn't become too long. Line breaks will be preserved when displaying the
 ## tooltip.
-
-
-## Please make sure to split the content of the title attribute into lines whose
-## width corresponds to about 40 Latin characters, to ensure that the tooltip
-## doesn't become too long. Line breaks will be preserved when displaying the
-## tooltip.
-
-# Tooltip displayed on hover of automatic theme
-onboarding-multistage-theme-tooltip-automatic-2 =
-    .title =
-        Arv utsjånad frå operativsystemet
-        for knapper, menyer og vinduer.
-# Input description for automatic theme
-onboarding-multistage-theme-description-automatic-2 =
-    .aria-description =
-        Arv utsjånad frå operativsystemet
-        for knapper, menyer og vinduer.
-# Tooltip displayed on hover of light theme
-onboarding-multistage-theme-tooltip-light-2 =
-    .title =
-        Bruk ein lys utsjånad for knappar,
-        menyer og vinduer.
-# Input description for light theme
-onboarding-multistage-theme-description-light =
-    .aria-description =
-        Bruk ein lys utsjånad for knappar,
-        menyer og vinduer.
-# Tooltip displayed on hover of dark theme
-onboarding-multistage-theme-tooltip-dark-2 =
-    .title =
-        Bruk ein mørk utsjånad for knappar,
-        menyer og vinduer.
-# Input description for dark theme
-onboarding-multistage-theme-description-dark =
-    .aria-description =
-        Bruk ein mørk utsjånad for knappar,
-        menyer og vinduer.
-# Tooltip displayed on hover of Alpenglow theme
-onboarding-multistage-theme-tooltip-alpenglow-2 =
-    .title =
-        Bruk ein fargerik utsjånad for knappar,
-        menyer og vinduer.
-# Input description for Alpenglow theme
-onboarding-multistage-theme-description-alpenglow =
-    .aria-description =
-        Bruk ein fargerik utsjånad for knappar,
-        menyer og vinduer.
-
-## Multistage MR1 onboarding strings (MR1 about:welcome pages)
 
 # Tooltip displayed on hover of system theme
 mr1-onboarding-theme-tooltip-system =
@@ -305,27 +202,13 @@ mr2-onboarding-start-browsing-button-label = Byrj surfinga
 ## The following language names are generated by the browser's Intl.DisplayNames API.
 ##
 ## Variables:
-##   $appLanguage (String) - The name of Firefox's language, e.g. "American English"
-##   $systemLanguage (String) - The name of the OS's language, e.g. "European Spanish"
-##   $negotiatedLanguage (String) - The name of the langpack's language, e.g. "European Spanish"
-
-
-## Multistage live language reloading onboarding strings (about:welcome pages)
-##
-## The following language names are generated by the browser's Intl.DisplayNames API.
-##
-## Variables:
 ##   $negotiatedLanguage (String) - The name of the langpack's language, e.g. "Español (ES)"
 
 onboarding-live-language-header = Vel ditt språk
-onboarding-live-language-subtitle = { -brand-short-name } brukar { $appLanguage } medan systemet ditt brukar { $systemLanguage }.
-onboarding-live-language-switch-button-label = Byt til { $negotiatedLanguage }
 onboarding-live-language-button-label-downloading = Lastar ned språkpakke for { $negotiatedLanguage }…
-onboarding-live-language-waiting-subtitle = Det ser ut til at systemet ditt og { -brand-short-name } brukar ulike språk.
 onboarding-live-language-waiting-button = Hentar tilgjengelege språk…
 onboarding-live-language-installing = Installerer språkpakken for { $negotiatedLanguage }…
 onboarding-live-language-secondary-cancel-download = Avbryt
-onboarding-live-language-not-now-button-label = Ikkje no
 onboarding-live-language-skip-button-label = Hopp over
 
 ## Firefox 100 Thank You screens

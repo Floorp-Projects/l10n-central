@@ -35,6 +35,8 @@ detail-version =
     .label = 版本
 detail-last-updated =
     .label = 最近更新時間
+addon-detail-description-expand = 顯示更多
+addon-detail-description-collapse = 顯示較少
 detail-contributions-description = 這個元件的開發者希望您透過小小的捐獻協助其後續開發。
 detail-contributions-button = 贊助
     .title = 贊助這個元件的開發
@@ -274,8 +276,10 @@ extension-enabled-heading = 啟用
 extension-disabled-heading = 停用
 theme-enabled-heading = 啟用
 theme-disabled-heading = 停用
+theme-disabled-heading2 = 儲存的佈景主題
 theme-monochromatic-heading = 配色
 theme-monochromatic-subheading = 活力滿點的 { -brand-product-name } 新配色，限時提供。
+theme-colorways-button = 嘗試 Colorways
 plugin-enabled-heading = 啟用
 plugin-disabled-heading = 停用
 dictionary-enabled-heading = 啟用
@@ -338,7 +342,7 @@ addon-detail-private-browsing-disallow = 不允許
 addon-badge-recommended2 =
     .title = { -brand-product-name } 僅推薦符合我們的安全性與效能標準的擴充套件
     .aria-label = { addon-badge-recommended2.title }
-# We hard code "Ablaze" in the string below because the extensions are built
+# We hard code "Mozilla" in the string below because the extensions are built
 # by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
     .title = 由 Mozilla 打造的官方附加元件，符合各種安全性與運作效能標準

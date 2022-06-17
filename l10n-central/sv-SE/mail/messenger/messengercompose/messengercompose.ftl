@@ -84,9 +84,6 @@ menuitem-toggle-attachment-pane =
 toolbar-button-add-attachment =
     .label = Bifoga
     .tooltiptext = Lägg till en bilaga ({ ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key })
-add-attachment-notification-reminder =
-    .label = Lägg till bilaga…
-    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 add-attachment-notification-reminder2 =
     .label = Lägg till bilaga…
     .accesskey = L
@@ -112,10 +109,6 @@ attachment-bucket-count-value =
         [1] { $count } bilaga
        *[other] { $count } bilagor
     }
-expand-attachment-pane-tooltip =
-    .tooltiptext = Visa bifogningsfönstret { ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key }()
-collapse-attachment-pane-tooltip =
-    .tooltiptext = Dölj bifogningsfönstret ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-show =
     .title = Visa bifogningsfönstret ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -159,6 +152,9 @@ encryption-options-openpgp =
 encryption-options-smime =
     .label = S/MIME
     .tooltiptext = Visa eller ändra krypteringsinställningar för S/MIME
+signing-toggle =
+    .label = Signera
+    .tooltiptext = Använd digital signering för detta meddelande
 menu-openpgp =
     .label = OpenPGP
     .accesskey = O
@@ -195,41 +191,14 @@ key-notification-resolve =
     .label = Lös…
     .accesskey = L
     .tooltiptext = Öppna nyckelassistenten för OpenPGP
+can-encrypt-smime-notification = S/MIME end-to-end kryptering är möjlig.
+can-encrypt-openpgp-notification = OpenPGP end-to-end kryptering är möjlig.
+can-e2e-encrypt-button =
+    .label = Kryptera
+    .accesskey = K
 
 ## Addressing Area
 
-to-compose-address-row-label =
-    .value = Till
-#   $key (String) - the shortcut key for this field
-to-compose-show-address-row-menuitem =
-    .label = Fältet { to-compose-address-row-label.value }
-    .accesskey = T
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-to-compose-show-address-row-label =
-    .value = { to-compose-address-row-label.value }
-    .tooltiptext = Visa fältet { to-compose-address-row-label.value } ({ to-compose-show-address-row-menuitem.acceltext })
-cc-compose-address-row-label =
-    .value = Kopia
-#   $key (String) - the shortcut key for this field
-cc-compose-show-address-row-menuitem =
-    .label = Fältet { cc-compose-address-row-label.value }
-    .accesskey = K
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-cc-compose-show-address-row-label =
-    .value = { cc-compose-address-row-label.value }
-    .tooltiptext = Visa fältet { cc-compose-address-row-label.value } ({ cc-compose-show-address-row-menuitem.acceltext })
-bcc-compose-address-row-label =
-    .value = Dold kopia
-#   $key (String) - the shortcut key for this field
-bcc-compose-show-address-row-menuitem =
-    .label = Fältet { bcc-compose-address-row-label.value }
-    .accesskey = D
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-bcc-compose-show-address-row-label =
-    .value = { bcc-compose-address-row-label.value }
-    .tooltiptext = Visa fältet { bcc-compose-address-row-label.value } ({ bcc-compose-show-address-row-menuitem.acceltext })
-#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
-many-public-recipients-info = { $count } mottagare i fältet Till och Kopia kan se varandras adresser. Du kan undvika att avslöja mottagare genom att använda Dold kopia istället.
 to-address-row-label =
     .value = Till
 #   $key (String) - the shortcut key for this field
@@ -400,3 +369,9 @@ link-preview-description = { -brand-short-name } kan lägga till en inbäddad f�
 link-preview-autoadd = Lägg automatiskt till förhandsvisningar av länk när det är möjligt
 link-preview-replace-now = Vill du lägga till en förhandsvisning för den här länken?
 link-preview-yes-replace = Ja
+
+## Dictionary selection popup
+
+spell-add-dictionaries =
+    .label = Lägg till ordlistor…
+    .accesskey = L

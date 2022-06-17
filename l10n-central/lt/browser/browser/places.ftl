@@ -8,6 +8,9 @@ places-open =
 places-open-in-tab =
     .label = Atverti naujoje kortelėje
     .accesskey = j
+places-open-in-container-tab =
+    .label = Atverti naujoje sudėtinėje kortelėje
+    .accesskey = i
 places-open-all-bookmarks =
     .label = Atverti visas korteles
     .accesskey = v
@@ -69,18 +72,6 @@ places-edit-bookmark =
 places-edit-generic =
     .label = Keisti…
     .accesskey = i
-places-edit-folder =
-    .label = Pervardyti aplanką…
-    .accesskey = e
-places-remove-folder =
-    .label =
-        { $count ->
-            [1] Pašalinti aplanką
-            [one] Pašalinti aplanką
-            [few] Pašalinti aplankus
-           *[other] Pašalinti aplankų
-        }
-    .accesskey = n
 places-edit-folder2 =
     .label = Redaguoti aplanką…
     .accesskey = e
@@ -102,17 +93,6 @@ managed-bookmarks-subfolder =
 # This label is used for the "Other Bookmarks" folder that appears in the bookmarks toolbar.
 other-bookmarks-folder =
     .label = Kiti adresyno įrašai
-# Variables:
-# $count (number) - The number of elements being selected for removal.
-places-remove-bookmark =
-    .label =
-        { $count ->
-            [1] Pašalinti įrašą
-            [one] Pašalinti įrašą
-            [few] Pašalinti įrašus
-           *[other] Pašalinti įrašų
-        }
-    .accesskey = l
 places-show-in-folder =
     .label = Rodyti aplanke
     .accesskey = d

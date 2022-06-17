@@ -13,6 +13,7 @@
 policy-3rdparty = WebExtension이 chrome.storage.managed를 통해 액세스할 수 있는 정책을 설정합니다.
 policy-AllowedDomainsForApps = Google Workspace에 액세스할 수 있는 도메인을 정의합니다.
 policy-AppAutoUpdate = 애플리케이션 자동 업데이트를 사용하거나 사용하지 않게 합니다.
+policy-AppUpdatePin = { -brand-short-name }가 지정된 버전 이상으로 업데이트되지 않도록 합니다.
 policy-AppUpdateURL = 사용자 지정 앱 업데이트 URL을 설정합니다.
 policy-Authentication = 통합 인증을 지원하는 웹 사이트를 위한 설정을 합니다.
 policy-AutoLaunchProtocolsFromOrigins = 사용자에게 메시지를 표시하지 않고 나열된 출처에서 사용할 수 있는 외부 프로토콜 목록을 정의합니다.
@@ -27,14 +28,14 @@ policy-CertificatesDescription = 인증서를 추가하거나 기본 제공 인�
 policy-Cookies = 웹 사이트의 쿠키 설정을 허용하거나 거부합니다.
 policy-DisabledCiphers = 암호화를 사용 안 합니다.
 policy-DefaultDownloadDirectory = 기본 다운로드 디렉터리를 설정합니다.
-policy-DisableAppUpdate = 브라우저가 업데이트 되지 않게 합니다.
+policy-DisableAppUpdate = 브라우저가 업데이트 되지 않도록 합니다.
 policy-DisableBuiltinPDFViewer = { -brand-short-name }에 내장된 PDF 뷰어인 PDF.js를 사용 안 합니다.
 policy-DisableDefaultBrowserAgent = 기본 브라우저 에이전트가 작업을 수행하지 못하도록 합니다. Windows에만 적용되며 다른 플랫폼에는 에이전트가 없습니다.
 policy-DisableDeveloperTools = 개발자 도구 접근을 차단합니다.
 policy-DisableFeedbackCommands = 도움말 메뉴의 의견 보내기 명령 (의견 보내기 및 가짜 사이트 신고)을 사용 안 합니다.
 policy-DisableFirefoxAccounts = 동기화를 포함한 { -fxaccount-brand-name } 기반의 서비스를 사용 안 합니다.
 # Firefox Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = Floorp 스크린샷 기능을 사용 안 합니다.
+policy-DisableFirefoxScreenshots = Firefox 스크린샷 기능을 사용 안 합니다.
 policy-DisableFirefoxStudies = { -brand-short-name } 연구 실행을 막습니다.
 policy-DisableForgetButton = Forget 버튼 접근을 막습니다.
 policy-DisableFormHistory = 검색과 양식 기록을 기억하지 않습니다.
@@ -47,7 +48,7 @@ policy-DisableProfileRefresh = about:support 페이지의 { -brand-short-name } 
 policy-DisableSafeMode = 안전 모드로 다시 시작하는 기능을 사용 안 합니다. 참고: 그룹 정책을 사용해서 Shift 키를 눌러서 안전 모드로 들어가는 방법을 비활성화하는 것은 Windows에서만 가능합니다.
 policy-DisableSecurityBypass = 사용자가 특정 보안 경고를 무시할 수 없게 합니다.
 policy-DisableSetAsDesktopBackground = 이미지를 바탕 화면 배경으로 설정하는 메뉴 명령을 사용 안 합니다.
-policy-DisableSystemAddonUpdate = 브라우저가 시스템 부가 기능의 설치 및 업데이트를 못하게 합니다.
+policy-DisableSystemAddonUpdate = 브라우저가 시스템 부가 기능의 설치 및 업데이트를 못하도록 합니다.
 policy-DisableTelemetry = 원격 분석 끄기
 policy-DisplayBookmarksToolbar = 기본으로 북마크 도구 모음을 표시합니다.
 policy-DisplayMenuBar = 기본으로 메뉴 모음을 표시합니다.
@@ -58,13 +59,14 @@ policy-DownloadDirectory = 다운로드 디렉터리를 설정하고 잠급니�
 policy-EnableTrackingProtection = 콘텐츠 차단을 사용하거나 사용하지 않게 하고 선택적으로 잠급니다.
 # “lock” means that the user won’t be able to change this setting
 policy-EncryptedMediaExtensions = 암호화된 미디어 확장 기능을 사용하거나 사용하지 않게 하고 선택적으로 잠급니다.
+policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = 도메인의 특정 파일 형식에 대해 파일 확장자를 기반으로 한 경고를 사용 안 합니다.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
 policy-Extensions = 확장 기능을 설치, 제거 또는 잠급니다. 설치 옵션은 URL 또는 경로를 매개 변수로 사용합니다. 제거 및 잠금 옵션은 확장 기능의 ID를 사용합니다.
 policy-ExtensionSettings = 확장 기능 설치의 모든 측면을 관리합니다.
 policy-ExtensionUpdate = 확장 기능 자동 업데이트를 사용하거나 사용하지 않게 합니다.
-policy-FirefoxHome = Floorp 홈을 구성합니다.
+policy-FirefoxHome = Firefox 홈을 구성합니다.
 policy-FlashPlugin = 플래시 플러그인의 사용을 허용하거나 거부합니다.
 policy-Handlers = 기본 애플리케이션 핸들러를 구성합니다.
 policy-HardwareAcceleration = False 값이면 하드웨어 가속 기능을 끕니다.
@@ -111,8 +113,10 @@ policy-SecurityDevices = PKCS #11 모듈을 설치합니다.
 policy-ShowHomeButton = 도구 모음에 홈 버튼을 표시합니다.
 policy-SSLVersionMax = 최대 SSL 버전을 설정합니다.
 policy-SSLVersionMin = 최소 SSL 버전을 설정합니다.
+policy-StartDownloadsInTempDirectory = 기본 다운로드 디렉터리가 아닌 로컬 임시 위치에서 강제로 다운로드를 시작합니다.
 policy-SupportMenu = 도움말 메뉴에 사용자 지정 지원 메뉴 항목을 추가합니다.
 policy-UserMessaging = 사용자에게 특정 메시지를 표시하지 않습니다.
+policy-UseSystemPrintDialog = 시스템 인쇄 대화 상자를 사용하여 인쇄합니다.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = 특정 웹 사이트 방문을 차단합니다. 자세한 형식에 대해서는 문서를 참고하세요.
 policy-Windows10SSO = Microsoft, 회사 및 학교 계정에 Windows Single Sign-On을 허용합니다.

@@ -21,6 +21,7 @@ perftools-heading-features-default = Funcionalidades (recomendadas activadas de 
 perftools-heading-features-disabled = Funcionalidades deshabilitadas
 perftools-heading-features-experimental = Experimental
 perftools-heading-threads = Hilos
+perftools-heading-threads-jvm = Subprocesos JVM
 perftools-heading-local-build = Compilación local
 
 ##
@@ -49,9 +50,6 @@ perftools-devtools-settings-label = Ajustes
 
 ## Various statuses that affect the current state of profiling, not typically displayed.
 
-perftools-status-private-browsing-notice =
-    El perfilador se desactiva cuando se activa la navegación privada.
-    Cierra todas las ventanas privadas para volver a activar el perfilador
 perftools-status-recording-stopped-by-another-tool = Otra herramienta detuvo la grabación.
 perftools-status-restart-required = Se debe reiniciar el navegador para habilitar esta función.
 
@@ -97,6 +95,18 @@ perftools-thread-dns-resolver =
     .title = La resolución de DNS ocurre en este hilo
 perftools-thread-task-controller =
     .title = Hilos del grupo de subprocesos de TaskController
+perftools-thread-jvm-gecko =
+    .title = El subproceso principal de Gecko JVM
+perftools-thread-jvm-nimbus =
+    .title = Los subprocesos principales para el SDK de experimentos de Nimbus
+perftools-thread-jvm-default-dispatcher =
+    .title = El despachador predeterminado para la biblioteca de rutinas de Kotlin
+perftools-thread-jvm-glean =
+    .title = Los subprocesos principales del SDK de telemetría de Glean
+perftools-thread-jvm-arch-disk-io =
+    .title = Despachador IO para la librería de rutinas de Kotlin
+perftools-thread-jvm-pool =
+    .title = Subprocesos creador en un conjunto de subprocesos sin nombre
 
 ##
 
@@ -107,6 +117,10 @@ perftools-tools-threads-input-label =
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
 ## preferences are true.
+
+
+## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
+## devtools.performance.new-panel-onboarding preference is true.
 
 perftools-onboarding-message = <b>Nuevo</b>: { -profiler-brand-name } ahora está integrado en las herramientas para desarrolladores. <a>Saber más</a> sobre esta poderosa herramienta.
 # `options-context-advanced-settings` is defined in toolbox-options.ftl
@@ -123,18 +137,11 @@ perftools-onboarding-close-button =
 
 perftools-presets-web-developer-label = Desarrollador web
 perftools-presets-web-developer-description = Configuración recomendada para la depuración de la mayoría de aplicaciones web, con poca sobrecarga.
-perftools-presets-firefox-platform-label = Plataforma Firefox
-perftools-presets-firefox-platform-description = Configuración predeterminada recomendada para la depuración interna de la plataforma Firefox.
-perftools-presets-firefox-front-end-label = Interfaz de Firefox
-perftools-presets-firefox-front-end-description = Configuración predeterminada recomendada para la depuración interna de la interfaz de Firefox.
-perftools-presets-firefox-graphics-label = Gráficos de Firefox
-perftools-presets-firefox-graphics-description = Configuración predeterminada para la investigación de rendimiento gráfico de Firefox.
 perftools-presets-firefox-label = { -brand-shorter-name }
 perftools-presets-firefox-description = Configuración preestablecida recomendada para crear perfiles de { -brand-shorter-name }.
 perftools-presets-graphics-label = Gráficos
 perftools-presets-graphics-description = Preestablecido para investigar errores gráficos en { -brand-shorter-name }.
 perftools-presets-media-label = Multimedia
-perftools-presets-media-description = Configuración predeterminada para diagnosticar problemas de audio y video.
 perftools-presets-media-description2 = Preestablecido para investigar errores de audio y video en { -brand-shorter-name }.
 perftools-presets-networking-label = Redes
 perftools-presets-networking-description = Preestablecido para investigar errores de red en { -brand-shorter-name }.

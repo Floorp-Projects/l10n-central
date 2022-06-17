@@ -21,6 +21,7 @@ perftools-heading-features-default = Λειτουργίες (Προτείνετ�
 perftools-heading-features-disabled = Ανενεργές λειτουργίες
 perftools-heading-features-experimental = Πειραματικό
 perftools-heading-threads = Νήματα
+perftools-heading-threads-jvm = Νήματα JVM
 perftools-heading-local-build = Τοπική έκδοση δομής
 
 ##
@@ -49,9 +50,6 @@ perftools-devtools-settings-label = Ρυθμίσεις
 
 ## Various statuses that affect the current state of profiling, not typically displayed.
 
-perftools-status-private-browsing-notice =
-    Το εργαλείο προφίλ απενεργοποιείται όταν είναι ενεργή η Ιδιωτική περιήγηση.
-    Κλείστε όλα τα Ιδιωτικά παράθυρα για εκ νέου ενεργοποίησή του
 perftools-status-recording-stopped-by-another-tool = Η εγγραφή τερματίστηκε από άλλο εργαλείο.
 perftools-status-restart-required = Θα πρέπει να επανεκκινήστε το πρόγραμμα περιήγησης για να ενεργοποιήσετε αυτή τη λειτουργία.
 
@@ -97,6 +95,12 @@ perftools-thread-dns-resolver =
     .title = Η ανάλυση DNS συμβαίνει σε αυτό το thread
 perftools-thread-task-controller =
     .title = Νήματα του TaskController pool
+perftools-thread-jvm-gecko =
+    .title = Το κύριο νήμα Gecko JVM
+perftools-thread-jvm-nimbus =
+    .title = Τα κύρια νήματα για το SDK πειραμάτων Nimbus
+perftools-thread-jvm-glean =
+    .title = Τα κύρια νήματα για το SDK τηλεμετρίας Glean
 
 ##
 
@@ -107,6 +111,10 @@ perftools-tools-threads-input-label =
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
 ## preferences are true.
+
+
+## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
+## devtools.performance.new-panel-onboarding preference is true.
 
 perftools-onboarding-message = <b>Νέο</b>: Το { -profiler-brand-name } έχει ενσωματωθεί στα Εργαλεία προγραμματιστών. <a>Μάθετε περισσότερα</a> σχετικά με αυτό το νέο ισχυρό εργαλείο.
 # `options-context-advanced-settings` is defined in toolbox-options.ftl

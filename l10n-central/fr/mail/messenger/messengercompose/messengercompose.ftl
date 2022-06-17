@@ -84,9 +84,6 @@ menuitem-toggle-attachment-pane =
 toolbar-button-add-attachment =
     .label = Joindre
     .tooltiptext = Ajouter une pièce jointe ({ ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key })
-add-attachment-notification-reminder =
-    .label = Ajouter une pièce jointe…
-    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 add-attachment-notification-reminder2 =
     .label = Ajouter une pièce jointe…
     .accesskey = j
@@ -112,10 +109,6 @@ attachment-bucket-count-value =
         [1] { $count } pièce jointe
        *[other] { $count } pièces jointes
     }
-expand-attachment-pane-tooltip =
-    .tooltiptext = Afficher le volet des pièces jointes ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-collapse-attachment-pane-tooltip =
-    .tooltiptext = Masquer le volet des pièces jointes ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-show =
     .title = Afficher le volet des pièces jointes ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -159,6 +152,9 @@ encryption-options-openpgp =
 encryption-options-smime =
     .label = S/MIME
     .tooltiptext = Voir ou modifier les paramètres de chiffrement S/MIME
+signing-toggle =
+    .label = Signer
+    .tooltiptext = Signer numériquement ce message
 menu-openpgp =
     .label = OpenPGP
     .accesskey = O
@@ -195,41 +191,12 @@ key-notification-resolve =
     .label = Résoudre…
     .accesskey = R
     .tooltiptext = Ouvrir l’assistant de clés OpenPGP
+can-e2e-encrypt-button =
+    .label = Chiffrer
+    .accesskey = C
 
 ## Addressing Area
 
-to-compose-address-row-label =
-    .value = Pour
-#   $key (String) - the shortcut key for this field
-to-compose-show-address-row-menuitem =
-    .label = Champ { to-compose-address-row-label.value }
-    .accesskey = p
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-to-compose-show-address-row-label =
-    .value = { to-compose-address-row-label.value }
-    .tooltiptext = Afficher le champ { to-compose-address-row-label.value } ({ to-compose-show-address-row-menuitem.acceltext })
-cc-compose-address-row-label =
-    .value = Copie à
-#   $key (String) - the shortcut key for this field
-cc-compose-show-address-row-menuitem =
-    .label = Champ { cc-compose-address-row-label.value }
-    .accesskey = C
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-cc-compose-show-address-row-label =
-    .value = { cc-compose-address-row-label.value }
-    .tooltiptext = Afficher le champ { cc-compose-address-row-label.value } ({ cc-compose-show-address-row-menuitem.acceltext })
-bcc-compose-address-row-label =
-    .value = Copie cachée à
-#   $key (String) - the shortcut key for this field
-bcc-compose-show-address-row-menuitem =
-    .label = Champ { bcc-compose-address-row-label.value }
-    .accesskey = h
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-bcc-compose-show-address-row-label =
-    .value = { bcc-compose-address-row-label.value }
-    .tooltiptext = Afficher le champ { bcc-compose-address-row-label.value } ({ bcc-compose-show-address-row-menuitem.acceltext })
-#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
-many-public-recipients-info = Les { $count } destinataires en « Pour » et « Copie à » verront les adresses des autres. Vous pouvez éviter de révéler les destinataires en utilisant plutôt « Copie cachée à ».
 to-address-row-label =
     .value = Pour
 #   $key (String) - the shortcut key for this field
@@ -400,3 +367,9 @@ link-preview-description = { -brand-short-name } peut ajouter un aperçu intégr
 link-preview-autoadd = Ajouter automatiquement un aperçu des liens lorsque cela est possible
 link-preview-replace-now = Ajouter un aperçu pour ce lien ?
 link-preview-yes-replace = Oui
+
+## Dictionary selection popup
+
+spell-add-dictionaries =
+    .label = Ajouter des dictionnaires…
+    .accesskey = A

@@ -75,19 +75,19 @@ restart-later = Perleisti vėliau
 
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
-extension-controlled-password-saving = Šią nuostatą valdo priedas <img data-l10n-name="icon"/> „{ $name }“.
+extension-controlling-password-saving = Šį nustatymą valdo <img data-l10n-name="icon"/> <strong>„{ $name }“</strong>.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
-extension-controlled-web-notifications = Šią nuostatą valdo priedas <img data-l10n-name="icon"/> „{ $name }“.
+extension-controlling-web-notifications = Šį nustatymą valdo <img data-l10n-name="icon"/> <strong>„{ $name }“</strong>.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
-extension-controlled-privacy-containers = Priedui „<img data-l10n-name="icon"/> { $name }“ reikia sudėtinio rodinio kortelių.
+extension-controlling-privacy-containers = <img data-l10n-name="icon"/> <strong>„{ $name }“</strong> reikalauja sudėtinio rodinio kortelių.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
-extension-controlled-websites-content-blocking-all-trackers = Šią nuostatą valdo priedas <img data-l10n-name="icon"/> „{ $name }“.
+extension-controlling-websites-content-blocking-all-trackers = Šį nustatymą valdo <img data-l10n-name="icon"/> <strong>„{ $name }“</strong>.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
-extension-controlled-proxy-config = Priedas „<img data-l10n-name="icon"/> { $name }“ valdo „{ -brand-short-name }“ jungimosi prie interneto būdą.
+extension-controlling-proxy-config = <img data-l10n-name ="icon"/> <strong>„{ $name }“</strong> valdo „{ -brand-short-name }“ jungimosi prie interneto būdą.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -113,9 +113,6 @@ is-not-default = „{ -brand-short-name }“ šiuo metu nėra numatytoji naršyk
 set-as-my-default-browser =
     .label = Paskirti numatytąja…
     .accesskey = n
-startup-restore-previous-session =
-    .label = Atkurti paskiausiąjį seansą
-    .accesskey = r
 startup-restore-windows-and-tabs =
     .label = Atverti ankstesnius langus ir korteles
     .accesskey = s
@@ -130,9 +127,6 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = Atverti saitus kortelėse, ne languose
     .accesskey = l
-warn-on-close-multiple-tabs =
-    .label = Įspėti prieš užveriant daugiau kaip vieną kortelę
-    .accesskey = d
 confirm-on-close-multiple-tabs =
     .label = Patvirtinti prieš užveriant keletą kortelių
     .accesskey = n
@@ -189,7 +183,40 @@ containers-remove-cancel-button = Palikti šį sudėtinį rodinį
 ## General Section - Language & Appearance
 
 language-and-appearance-header = Kalba ir išvaizda
-fonts-and-colors-header = Šriftai ir spalvos
+preferences-web-appearance-header = Svetainių išvaizda
+preferences-web-appearance-description = Kai kurios svetainės pritaiko savo spalvų schemą pagal jūsų nustatymus. Pasirinkite, kurią spalvų schemą norėtumėte naudoti tokioms svetainėms.
+preferences-web-appearance-choice-browser = „{ -brand-short-name }“ grafinis apvalkalas
+preferences-web-appearance-choice-system = Sistemos grafinis apvalkalas
+preferences-web-appearance-choice-light = Šviesi
+preferences-web-appearance-choice-dark = Tamsi
+preferences-web-appearance-choice-tooltip-browser =
+    .title = Priderinti jūsų „{ -brand-short-name }“ grafinio apvalkalo nustatymus svetainių fonui ir turiniui.
+preferences-web-appearance-choice-tooltip-system =
+    .title = Priderinti jūsų sistemos grafinio apvalkalo nustatymus svetainių fonui ir turiniui.
+preferences-web-appearance-choice-tooltip-light =
+    .title = Naudoti šviesias spalvas svetainių fonui ir turiniui.
+preferences-web-appearance-choice-tooltip-dark =
+    .title = Naudoti tamsias spalvas svetainių fonui ir turiniui.
+preferences-web-appearance-choice-input-browser =
+    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
+preferences-web-appearance-choice-input-system =
+    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = Jūsų spalvų pasirinkimai pakeičia svetainių išvaizdą. <a data-l10n-name="colors-link">Tvarkyti spalvas</a>
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = Tvarkykite { -brand-short-name } apvalkalus <a data-l10n-name="themes-link">prieduose ir grafiniuose apvalkaluose</a>
+preferences-colors-header = Spalvos
+preferences-colors-description = Pakeisti „{ -brand-short-name }“ numatytąsias spalvas tekstui, svetainių fonui, ir saitams.
+preferences-colors-manage-button =
+    .label = Tvarkyti spalvas…
+    .accesskey = s
+preferences-fonts-header = Šriftai
 default-font = Numatytasis šriftas
     .accesskey = u
 default-font-size = Dydis
@@ -197,9 +224,6 @@ default-font-size = Dydis
 advanced-fonts =
     .label = Kitkas…
     .accesskey = t
-colors-settings =
-    .label = Spalvos…
-    .accesskey = S
 # Zoom is a noun, and the message is used as header for a group of options
 preferences-zoom-header = Dydis
 preferences-default-zoom = Numatytasis dydis
@@ -242,9 +266,6 @@ check-user-spelling =
 
 files-and-applications-title = Failai ir programos
 download-header = Atsiuntimai
-download-save-to =
-    .label = Atsiunčiamus failus įrašyti į:
-    .accesskey = f
 download-save-where = Atsiunčiamus failus įrašyti į:
     .accesskey = f
 download-choose-folder =
@@ -336,6 +357,13 @@ applications-use-os-default-label =
 
 ##
 
+applications-handle-new-file-types-description = Ką „{ -brand-short-name }“ turėtų daryti su kitais failais?
+applications-save-for-new-types =
+    .label = Įrašyti failus
+    .accesskey = r
+applications-ask-before-handling =
+    .label = Paklausti, ar atverti, ar įrašyti failus
+    .accesskey = P
 drm-content-header = Skaitmeninių teisių valdymo (DRM) turinys
 play-drm-content =
     .label = Atkurti DRM valdomą turinį
@@ -364,6 +392,9 @@ update-application-warning-cross-user-setting = Ši nuostata bus pritaikyta viso
 update-application-use-service =
     .label = naujinimų įdiegimui naudoti fone veikiančią tarnybą
     .accesskey = f
+update-application-suppress-prompts =
+    .label = Rodyti mažiau pranešimų apie atnaujinimus
+    .accesskey = n
 update-setting-write-failure-title2 = Klaida įrašant naujinimų nuostatas
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -409,6 +440,9 @@ browsing-use-autoscroll =
 browsing-use-smooth-scrolling =
     .label = Slinkti tolygiai
     .accesskey = t
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = Visada rodyti slankjuostes
+    .accesskey = o
 browsing-use-onscreen-keyboard =
     .label = Rodyti jutiklinę klaviatūrą kai reikia
     .accesskey = k
@@ -455,7 +489,7 @@ home-newtabs-mode-label = Naujos kortelės
 home-restore-defaults =
     .label = Atstatyti numatytąsias
     .accesskey = A
-# "Floorp" should be treated as a brand and kept in English,
+# "Firefox" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
     .label = „Firefox“ pradžia (numatytoji)
@@ -480,17 +514,12 @@ choose-bookmark =
     .label = Tinklalapis iš adresyno…
     .accesskey = T
 
-## Home Section - Floorp Home Content Customization
+## Home Section - Firefox Home Content Customization
 
 home-prefs-content-header = „Firefox“ pradžios turinys
 home-prefs-content-description = Pasirinkite, kokį turinį norite matyti „Firefox“ pradžios ekrane
 home-prefs-search-header =
     .label = Paieška internete
-home-prefs-topsites-header =
-    .label = Lankomiausios svetainės
-home-prefs-topsites-description = Dažniausiai lankomos svetainės
-home-prefs-topsites-by-option-sponsored =
-    .label = Rėmėjų svetainės
 home-prefs-shortcuts-header =
     .label = Leistukai
 home-prefs-shortcuts-description = Jūsų įrašytos arba lankomos svetainės
@@ -502,7 +531,6 @@ home-prefs-shortcuts-by-option-sponsored =
 
 home-prefs-recommended-by-header =
     .label = Rekomenduoja „{ $provider }“
-home-prefs-recommended-by-description-update = Išskirtinis turinys iš viso interneto, atrinktas „{ $provider }“
 home-prefs-recommended-by-description-new = Išskirtinis turinys, kuruojamas „{ $provider }“, kuri yra „{ -brand-product-name }“ šeimos dalis
 
 ##
@@ -510,9 +538,6 @@ home-prefs-recommended-by-description-new = Išskirtinis turinys, kuruojamas „
 home-prefs-recommended-by-learn-more = Kaip tai veikia
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Rėmėjų straipsniai
-home-prefs-highlights-header =
-    .label = Akcentai
-home-prefs-highlights-description = Aplankytų bei išsaugotų svetainių rinkinys
 home-prefs-highlights-option-visited-pages =
     .label = Aplankyti tinklalapiai
 home-prefs-highlights-options-bookmarks =
@@ -530,7 +555,6 @@ home-prefs-recent-activity-description = Paskiausiai lankytos svetainės ir ži�
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = Iškarpos
-home-prefs-snippets-description = „{ -vendor-short-name }“ ir „{ -brand-product-name }“ naujienos
 home-prefs-snippets-description-new = Patarimai ir naujienos iš „{ -vendor-short-name }“ ir „{ -brand-product-name }“
 home-prefs-sections-rows-option =
     .label =
@@ -807,8 +831,8 @@ history-header = Žurnalas
 # "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
-#   - Simply as "Floorp", moving the verb into each option.
-#     This will result in "Floorp" + "Will remember history", etc.
+#   - Simply as "Firefox", moving the verb into each option.
+#     This will result in "Firefox" + "Will remember history", etc.
 #   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = „{ -brand-short-name }“ privalo
     .accesskey = p
@@ -864,14 +888,6 @@ sitedata-block-desc = Blokuojamas tipas
     .accesskey = t
 sitedata-option-block-cross-site-trackers =
     .label = Tarp svetainių veikiantys stebėjimo elementai
-sitedata-option-block-cross-site-and-social-media-trackers =
-    .label = Tarp svetainių veikiantys ir socialinių tinklų stebėjimo elementai
-sitedata-option-block-cross-site-tracking-cookies-including-social-media =
-    .label = Tarp svetainių veikiantys stebėjimo slapukai – įskaitant socialinių tinklų slapukus
-sitedata-option-block-cross-site-cookies-including-social-media =
-    .label = Tarp svetainių veikiantys slapukai – įskaitant socialinių tinklų slapukus
-sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
-    .label = Tarp svetainių veikiantys ir socialinių tinklų stebėjimo elementai, o likusius slapukus izoliuoti
 sitedata-option-block-cross-site-tracking-cookies =
     .label = Tarp svetainių veikiantys stebėjimo slapukai
 sitedata-option-block-cross-site-cookies =
@@ -965,7 +981,6 @@ content-blocking-etp-standard-tcp-rollout-checkbox =
 content-blocking-etp-standard-tcp-rollout-description = Visapusiška slapukų apsauga riboja slapukų pasiekimą jūsų lankomoje svetainėje, todėl stebėjimo elementai negali jų naudoti jūsų sekimui tarp svetainių.
 content-blocking-etp-standard-tcp-rollout-learn-more = Sužinoti daugiau
 content-blocking-warning-title = Dėmesio!
-content-blocking-and-isolating-etp-warning-description = Stebėjimo elementų blokavimas ir slapukų izoliavimas gali sutrikdyti kai kurių svetainių veikimą. Norėdami įkelti visą turinį, tinklalapį su stebėjimo elementais įkelkite iš naujo.
 content-blocking-and-isolating-etp-warning-description-2 = Ši nuostata gali sutrikdyti kai kurių svetainių veikimą. Jeigu atrodo, kad svetainė veikia netinkamai, galite pabandyti išjungti apsaugą nuo stebėjimo joje, kad būtų įkeltas visas turinys.
 content-blocking-warning-learn-how = Sužinoti kaip
 content-blocking-reload-description = Norėdami pritaikyti šiuos pakeitimus, turėsite įkelti savo korteles iš naujo.
@@ -1037,9 +1052,6 @@ permissions-autoplay-settings =
 permissions-block-popups =
     .label = Neleisti iškylančiųjų langų
     .accesskey = N
-permissions-block-popups-exceptions =
-    .label = Išimtys
-    .accesskey = I
 # "popup" is a misspelling that is more popular than the correct spelling of
 # "pop-up" so it's included as a search keyword, not displayed in the UI.
 permissions-block-popups-exceptions-button =
@@ -1129,7 +1141,3 @@ httpsonly-radio-disabled =
 desktop-folder-name = Darbalaukis
 downloads-folder-name = Atsiuntimų aplankas
 choose-download-folder-title = Atsiuntimų aplanko parinkimas
-# Variables:
-#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
-save-files-to-cloud-storage =
-    .label = Įrašyti failus į „{ $service-name }“

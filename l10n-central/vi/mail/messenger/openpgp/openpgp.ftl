@@ -54,6 +54,7 @@ openpgp-generate-key =
     .tooltiptext = Tạo khóa tuân thủ OpenPGP mới để mã hóa và/hoặc ký
 openpgp-advanced-prefs-button-label =
     .label = Nâng cao…
+openpgp-keygen-desc = <a data-l10n-name="openpgp-keygen-desc-link">LƯU Ý: Quá trình tạo khóa có thể mất đến vài phút để hoàn thành.</a> Không thoát ứng dụng khi đang trong quá trình tạo khóa. Tích cực duyệt hoặc thực hiện các thao tác sử dụng nhiều ổ đĩa trong quá trình tạo khóa sẽ bổ sung 'nhóm ngẫu nhiên' và tăng tốc quá trình. Bạn sẽ được thông báo khi quá trình tạo khóa hoàn tất.
 openpgp-key-created-label =
     .label = Đã tạo
 openpgp-key-expiry-label =
@@ -171,6 +172,9 @@ openpgp-key-man-reload =
 openpgp-key-man-change-expiry =
     .label = Thay đổi ngày hết hạn
     .accesskey = E
+openpgp-key-man-refresh-online =
+    .label = Làm mới trực tuyến
+    .accesskey = R
 openpgp-key-man-ignored-ids =
     .label = Địa chỉ email
 openpgp-key-man-del-key =
@@ -221,6 +225,7 @@ openpgp-key-man-key-details-key =
 openpgp-ign-addr-intro = Bạn chấp nhận sử dụng khóa này cho các địa chỉ email đã chọn sau:
 openpgp-key-details-title =
     .title = Thuộc tính khóa
+openpgp-key-details-doc-title = Thuộc tính khóa
 openpgp-key-details-signatures-tab =
     .label = Chứng chỉ
 openpgp-key-details-structure-tab =
@@ -231,6 +236,13 @@ openpgp-key-details-key-id-label = ID khóa
 openpgp-key-details-id-label =
     .label = ID
 openpgp-key-details-key-type-label = Kiểu
+openpgp-key-details-attr-ignored = Cảnh báo: Khóa này có thể không hoạt động như mong đợi vì một số thuộc tính của nó không an toàn và có thể bị bỏ qua.
+openpgp-key-details-attr-upgrade-sec = Bạn nên nâng cấp các thuộc tính không an toàn.
+openpgp-key-details-attr-upgrade-pub = Bạn nên yêu cầu chủ khóa này nâng cấp các thuộc tính không an toàn.
+openpgp-key-details-upgrade-unsafe =
+    .label = Nâng cấp thuộc tính không an toàn
+    .accesskey = P
+openpgp-key-details-upgrade-ok = Đã nâng cấp khóa thành công. Bạn nên chia sẻ khóa công khai đã nâng cấp với các đối tác của mình.
 openpgp-key-details-algorithm-label =
     .label = Thuật toán
 openpgp-key-details-size-label =
@@ -261,7 +273,6 @@ openpgp-acceptance-verified-label =
 key-accept-personal =
     Đối với khóa này, bạn có cả phần công khai và phần bí mật. Bạn có thể sử dụng nó như một chìa khóa cá nhân.
     Nếu khóa này được người khác đưa cho bạn, thì đừng sử dụng nó làm khóa cá nhân.
-key-personal-warning = Bạn đã tự tạo khóa này và quyền sở hữu khóa được hiển thị đề cập đến chính bạn hay không?
 openpgp-personal-no-label =
     .label = Không, đừng sử dụng nó làm khóa cá nhân của tôi.
 openpgp-personal-yes-label =
@@ -271,12 +282,13 @@ openpgp-copy-cmd-label =
 
 ## e2e encryption settings
 
+#   $identity (String) - the email address of the currently selected identity
+openpgp-description-no-key = { -brand-short-name } không có khóa OpenPGP cá nhân cho <b>{ $identity }</b>
 #   $count (Number) - the number of configured keys associated with the current identity
 #   $identity (String) - the email address of the currently selected identity
-openpgp-description =
+openpgp-description-has-keys =
     { $count ->
-        [0] Thunderbird không có khóa OpenPGP cá nhân cho <b>{ $identity }</b>
-       *[other] Thunderbird đã tìm thấy { $count } khóa cá nhân OpenPGP cho <b>{ $identity }</b>
+       *[other] { -brand-short-name } đã tìm thấy { $count } khóa OpenPGP cá nhân được liên kết với <b>{ $identity }</b>
     }
 #   $key (String) - the currently selected OpenPGP key
 openpgp-selection-status-have-key = Cấu hình hiện tại của bạn sử dụng ID khóa <b>{ $key }</b>
@@ -320,30 +332,42 @@ key-type-primary = khóa chính
 key-type-subkey = khóa con
 key-expiry-never = không bao giờ
 key-usage-encrypt = Mã hóa
+key-usage-authentication = Xác thực
 key-does-not-expire = Khóa không hết hạn
 key-expired-date = Khóa hết hạn vào { $keyExpiry }
 key-expired-simple = Khóa đã hết hạn
 key-revoked-simple = Khóa đã bị thu hồi
 key-do-you-accept = Bạn có chấp nhận khóa này để xác minh chữ ký số và mã hóa tin nhắn không?
-key-accept-warning = Tránh chấp nhận một khóa giả mạo. Sử dụng một kênh liên lạc khác ngoài email để xác minh dấu vân tay của khóa đối tác của bạn.
+key-verification = Xác minh dấu vân tay của khóa bằng kênh liên lạc an toàn không phải email để đảm bảo rằng đó thực sự là khóa của { $addr }.
 # Strings enigmailMsgComposeOverlay.js
 cannot-use-own-key-because = Không thể gửi tin nhắn vì có sự cố với khóa cá nhân của bạn. { $problem }
 cannot-encrypt-because-missing = Không thể gửi thư này bằng mã hóa đầu cuối vì có vấn đề với khóa của những người nhận sau: { $problem }
-# Strings in mimeDecrypt.jsm
-mime-decrypt-encrypted-part-attachment-label = Phần thư được mã hóa
+window-locked = Cửa sổ soạn thảo bị khóa; đã hủy gửi
 # Strings in mimeDecrypt.jsm
 mime-decrypt-encrypted-part-concealed-data = Đây là một phần tin nhắn được mã hóa. Bạn cần mở nó trong một cửa sổ riêng tư bằng cách nhấp vào đính kèm.
 # Strings in keyserver.jsm
 keyserver-error-aborted = Đã hủy
 keyserver-error-unknown = Đã có lỗi xảy ra
 keyserver-error-import-error = Không thể nhập khóa đã tải xuống.
-expiry-open-key-manager = Mở Trình quản lý khóa OpenPGP
-expiry-open-key-properties = Mở thuộc tính khóa
+# Strings in mimeWkdHandler.jsm
+wkd-message-body-req =
+    Nhà cung cấp dịch vụ email của bạn đã xử lý yêu cầu tải khóa công khai của bạn lên Thư mục khóa web OpenPGP.
+    Vui lòng xác nhận để hoàn tất việc xuất bản khóa công khai của bạn.
+wkd-message-body-process =
+    Đây là email liên quan đến quá trình xử lý tự động để tải khóa công khai của bạn lên Thư mục khóa web OpenPGP.
+    Bạn không cần phải thực hiện bất kỳ thao tác thủ công nào tại thời điểm này.
+# Strings in persistentCrypto.jsm
+converter-decrypt-body-failed =
+    Không thể giải mã thư có chủ đề
+    { $subject }.
+    Bạn muốn thử lại bằng một cụm mật khẩu khác hay bạn muốn bỏ qua tin nhắn?
 # Strings filters.jsm
 filter-folder-required = Bạn phải chọn một thư mục đích.
 filter-term-pgpencrypted-label = OpenPGP được mã hóa
+filter-key-not-found = Không thể tìm thấy khóa mã hóa cho ‘{ $desc }’.
 # Strings filtersWrapper.jsm
 filter-decrypt-move-label = Giải mã vĩnh viễn (OpenPGP)
+filter-encrypt-label = Mã hóa thành khóa (OpenPGP)
 # Strings in enigmailKeyImportInfo.js
 import-info-title =
     .title = Thành công! Các khóa đã được nhập
@@ -355,6 +379,17 @@ import-from-clip = Bạn có muốn nhập (các) khóa từ khay nhớ tạm kh
 import-from-url = Tải xuống khóa công khai từ URL này:
 copy-to-clipbrd-failed = Không thể sao chép (các) khóa đã chọn vào khay nhớ tạm.
 copy-to-clipbrd-ok = Đã sao chép (các) khóa vào khay nhớ tạm
+delete-secret-key =
+    CẢNH BÁO: Bạn sắp xóa khóa bí mật!
+    
+    Nếu bạn xóa khóa bí mật của mình, bạn sẽ không thể giải mã bất kỳ thông báo nào được mã hóa cho khóa đó nữa, cũng như không thể thu hồi nó.
+    
+    Bạn có thực sự muốn xóa CẢ HAI, khóa bí mật và khóa công khai
+    ‘{ $userId }’?
+delete-mix =
+    CẢNH BÁO: Bạn sắp xóa khóa bí mật!
+    Nếu bạn xóa khóa bí mật của mình, bạn sẽ không thể giải mã bất kỳ thư nào được mã hóa cho khóa đó nữa.
+    Bạn có thực sự muốn xóa CẢ HAI, khóa bí mật và khóa công khai đã chọn không?
 delete-pub-key =
     Bạn có muốn xóa khóa công khai không
     "{ $userId }"?
@@ -364,9 +399,47 @@ key-man-button-export-sec-key = Xuất &khóa bí mật
 key-man-button-export-pub-key = Chỉ xuất khóa &công khai
 key-man-button-refresh-all = &Làm mới tất cả các khóa
 key-man-loading-keys = Đang tải khóa, vui lòng đợi…
+no-key-selected = Bạn nên chọn ít nhất một khóa để thực hiện thao tác đã chọn
+export-secret-key = Bạn có muốn đưa khóa bí mật vào tập tin khóa OpenPGP đã lưu không?
+save-keys-ok = Khóa đã được lưu thành công
+save-keys-failed = Không thể lưu khóa
+refresh-key-warn = Cảnh báo: tùy thuộc vào số lượng khóa và tốc độ kết nối, việc làm mới tất cả các khóa có thể là một quá trình khá dài!
+general-error = Lỗi: { $reason }
+dlg-button-delete = Xóa (&D)
 
 ## Account settings export output
 
+openpgp-export-secret-success = <b>Đã xuất khóa bí mật!</b>
+openpgp-export-secret-fail = <b>Không thể xuất khóa bí mật đã chọn!</b>
+# Strings in keyObj.jsm
+key-ring-pub-key-revoked = Khóa { $userId } (ID khóa { $keyId }) đã bị thu hồi.
+key-ring-pub-key-expired = Khóa { $userId } (ID khóa { $keyId }) đã hết hạn.
+key-ring-no-secret-key = Dường như bạn không có khóa bí mật cho { $userId } (ID khóa { $keyId }) trên khóa của mình; bạn không thể sử dụng khóa để ký.
+key-ring-pub-key-not-for-signing = Không thể sử dụng khóa { $userId } (ID khóa { $keyId }) để ký.
+key-ring-pub-key-not-for-encryption = Không thể sử dụng khóa { $userId } (ID khóa { $keyId }) để mã hóa.
+key-ring-enc-sub-keys-revoked = Tất cả các khóa mã hóa con của khóa { $userId } (ID khóa { $keyId }) đã bị thu hồi.
+key-ring-enc-sub-keys-expired = Tất cả các khóa mã hóa con của khóa { $userId } (ID khóa { $keyId }) đã hết hạn.
+# Strings in gnupg-keylist.jsm
+keyring-photo = Hình ảnh
+user-att-photo = Thuộc tính người dùng (hình ảnh JPEG)
+# Strings in key.jsm
+already-revoked = Khóa này đã bị thu hồi trước đó.
+#   $keyId (String) - the id of the key being revoked
+revoke-key-already-revoked = Khóa 0x{ $keyId } đã bị thu hồi trước đó.
+key-man-button-revoke-key = Thu hồi khóa (&R)
+openpgp-key-revoke-success = Đã thu hồi khóa thành công.
+# Strings in keyRing.jsm & decryption.jsm
+key-man-button-import = Nhập (&I)
+delete-key-title = Xóa khóa OpenPGP
+key-in-use-title = Khóa OpenPGP hiện đang được sử dụng
+key-error-not-accepted-as-personal = Bạn chưa xác nhận rằng khóa có ID ‘{ $keySpec }’ là khóa cá nhân của bạn.
+# Strings used in enigmailKeyManager.js & windows.jsm
+need-online = Chức năng bạn đã chọn không khả dụng ở chế độ ngoại tuyến. Vui lòng truy cập trực tuyến và thử lại.
+# Strings used in keyRing.jsm & keyLookupHelper.jsm
+no-key-found = Chúng tôi không thể tìm thấy bất kỳ khóa nào phù hợp với từ khóa tìm kiếm được chỉ định.
+fail-key-import = Lỗi - nhập khóa không thành công
+file-write-failed = Không thể ghi vào tập tin { $output }
+confirm-permissive-import = Nhập không thành công. Khóa bạn đang cố gắng nhập có thể bị hỏng hoặc sử dụng các thuộc tính không xác định. Bạn có muốn cố gắng nhập các bộ phận chính xác không? Điều này có thể dẫn đến việc nhập các khóa không đầy đủ và không sử dụng được.
 # Strings used in trust.jsm
 key-valid-unknown = không rõ
 key-valid-invalid = không hợp lệ
@@ -414,7 +487,13 @@ key-not-trusted = Không đủ tin cậy cho khóa ‘{ $key }’
 key-not-found = Không tìm thấy khóa ‘{ $key }’
 key-revoked = Đã thu hồi khóa ‘{ $key }’
 key-expired = Khóa ‘{ $key }’ đã hết hạn
+msg-compose-internal-error = Đã xảy ra một lỗi nội bộ.
 keys-to-export = Chọn khóa OpenPGP để chèn
+msg-compose-partially-encrypted-inlinePGP =
+    Thư bạn đang trả lời chứa cả phần không được mã hóa và phần được mã hóa. Nếu ban đầu người gửi không thể giải mã một số phần thư, bạn có thể đang làm rò rỉ thông tin bí mật mà ban đầu người gửi không thể giải mã.
+    Vui lòng xem xét xóa tất cả văn bản được trích dẫn khỏi thư trả lời của bạn cho người gửi này.
+msg-compose-cannot-save-draft = Lỗi khi lưu bản nháp
+msg-compose-partially-encrypted-short = Cẩn thận với việc rò rỉ thông tin nhạy cảm - email được mã hóa một phần.
 sending-news =
     Thao tác gửi được mã hóa đã bị hủy bỏ.
     Không thể mã hóa thư này vì có người nhận trong nhóm tin. Vui lòng gửi lại tin nhắn mà không mã hóa.
@@ -423,14 +502,8 @@ send-to-news-warning =
     Điều này không được khuyến khích vì nó chỉ có ý nghĩa nếu tất cả các thành viên trong nhóm có thể giải mã thông điệp, tức là tin nhắn cần được mã hóa bằng khóa của tất cả những người tham gia nhóm. Vui lòng chỉ gửi tin nhắn này nếu bạn biết chính xác những gì bạn đang làm.
     Tiếp tục?
 save-attachment-header = Lưu tập tin đính kèm được giải mã
-no-temp-dir =
-    Không thể tìm thấy một thư mục tạm thời để ghi vào
-    Vui lòng đặt biến môi trường TEMP
 cannot-send-sig-because-no-own-key = Không thể ký điện tử thông báo này vì bạn chưa định cấu hình mã hóa đầu cuối cho <{ $key }>
 cannot-send-enc-because-no-own-key = Không thể gửi thư đã mã hóa này vì bạn chưa định cấu hình mã hóa đầy cuối cho <{ $key }>
-compose-menu-attach-key =
-    .label = Đính kèm khóa công khai của tôi
-    .accesskey = A
 # Strings used in decryption.jsm
 do-import-multiple =
     Nhập các khóa sau?

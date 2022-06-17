@@ -41,24 +41,9 @@ return-to-amo-add-theme-label = أضِف السمة
 #   $total (Int) - Total number of pages
 onboarding-welcome-steps-indicator =
     .aria-label = البداية: شاشة { $current } من أصل { $total }
-<<<<<<< working copy
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "look" should stay inside the span.
-onboarding-multistage-theme-header = اختر <span data-l10n-name="zap">مظهرًا</span>
-onboarding-multistage-theme-subtitle = خصّص { -brand-short-name } باستعمال سمة.
-onboarding-multistage-theme-primary-button-label2 = تمّ
-onboarding-multistage-theme-secondary-button-label = ليس الآن
-# Automatic theme uses operating system color settings
-onboarding-multistage-theme-label-automatic = تلقائي
-onboarding-multistage-theme-label-light = فاتحة
-onboarding-multistage-theme-label-dark = داكنة
-# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
-onboarding-multistage-theme-label-alpenglow = Floorp Alpenglow
-=======
 
->>>>>>> destination
 # "Hero Text" displayed on left side of welcome screen.
-# The "Fire" in "Fire starts here" plays on the "Fire" in "Floorp".
+# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
 # It also signals the passion users bring to Firefox, how they use
 # Firefox to pursue those passions, as well as the boldness in their
 # choice to use Firefox over a larger competitor browser.

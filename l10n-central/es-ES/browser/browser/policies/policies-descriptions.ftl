@@ -13,6 +13,7 @@
 policy-3rdparty = Establezca las políticas a las que puede acceder WebExtensions mediante chrome.storage.managed.
 policy-AllowedDomainsForApps = Definir dominios autorizados para acceder a Google Workspace.
 policy-AppAutoUpdate = Activar o desactivar la actualización automática de la aplicación.
+policy-AppUpdatePin = Impide que { -brand-short-name } se actualice más allá de la versión especificada.
 policy-AppUpdateURL = Establecer una URL personalizada de actualización de la aplicación.
 policy-Authentication = Configurar la autenticación integrada para sitios web que la admitan.
 policy-AutoLaunchProtocolsFromOrigins = Define una lista de protocolos externos que pueden ser usados desde los orígenes que aparecen en la lista sin que se pida confirmación al usuario.
@@ -58,6 +59,7 @@ policy-DownloadDirectory = Establecer y bloquear el directorio de descargas pred
 policy-EnableTrackingProtection = Activar o desactivar el bloqueo de contenido y bloquearlo opcionalmente.
 # “lock” means that the user won’t be able to change this setting
 policy-EncryptedMediaExtensions = Activar o desactivar extensiones de medios cifrados y, opcionalmente, bloquearlos.
+policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Desactiva las advertencias según la extensión del archivo para tipos de archivo específicos en los dominios.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -111,8 +113,10 @@ policy-SecurityDevices = Instalar módulos PKCS #11.
 policy-ShowHomeButton = Mostrar el botón de inicio en la barra de herramientas.
 policy-SSLVersionMax = Establecer la versión máxima de SSL.
 policy-SSLVersionMin = Establecer la versión mínima de SSL.
+policy-StartDownloadsInTempDirectory = Forzar que las descargas se inicien en una ubicación local temporal en vez del directorio de descargas predeterminado.
 policy-SupportMenu = Agrega un elemento de menú de soporte personalizado al menú de ayuda.
 policy-UserMessaging = No mostrar ciertos mensajes al usuario.
+policy-UseSystemPrintDialog = Imprimir usando el diálogo del sistema.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Bloquear sitios web para que no sean visitados. Consulte la documentación para obtener más detalles sobre el formato.
 policy-Windows10SSO = Permitir inicio de sesión único de Windows para cuentas Microsoft, profesionales y educativas.

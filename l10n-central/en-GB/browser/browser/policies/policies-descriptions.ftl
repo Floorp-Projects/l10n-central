@@ -13,6 +13,7 @@
 policy-3rdparty = Set policies that WebExtensions can access via chrome.storage.managed.
 policy-AllowedDomainsForApps = Define domains allowed to access Google Workspace.
 policy-AppAutoUpdate = Enable or disable automatic application update.
+policy-AppUpdatePin = Prevent { -brand-short-name } from being updated beyond the specified version.
 policy-AppUpdateURL = Set custom app update URL.
 policy-Authentication = Configure integrated authentication for web sites that support it.
 policy-AutoLaunchProtocolsFromOrigins = Define a list of external protocols that can be used from listed origins without prompting the user.
@@ -58,13 +59,14 @@ policy-DownloadDirectory = Set and lock the download directory.
 policy-EnableTrackingProtection = Enable or disable Content Blocking and optionally lock it.
 # “lock” means that the user won’t be able to change this setting
 policy-EncryptedMediaExtensions = Enable or disable Encrypted Media Extensions and optionally lock it.
+policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Disable warnings based on file extension for specific file types on domains.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
 policy-Extensions = Install, uninstall or lock extensions. The Install option takes URLs or paths as parameters. The Uninstall and Locked options take extension IDs.
 policy-ExtensionSettings = Manage all aspects of extension installation.
 policy-ExtensionUpdate = Enable or disable automatic extension updates.
-policy-FirefoxHome = Configure Floorp Home.
+policy-FirefoxHome = Configure Firefox Home.
 policy-FlashPlugin = Allow or deny usage of the Flash plugin.
 policy-Handlers = Configure default application handlers.
 policy-HardwareAcceleration = If false, turn off hardware acceleration.
@@ -111,8 +113,10 @@ policy-SecurityDevices = Install PKCS #11 modules.
 policy-ShowHomeButton = Show the home button on the toolbar.
 policy-SSLVersionMax = Set the maximum SSL version.
 policy-SSLVersionMin = Set the minimum SSL version.
+policy-StartDownloadsInTempDirectory = Force downloads to start off in a local, temporary location rather than the default download directory.
 policy-SupportMenu = Add a custom support menu item to the help menu.
 policy-UserMessaging = Don’t show certain messages to the user.
+policy-UseSystemPrintDialog = Print using the system print dialogue.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Block web sites from being visited. See documentation for more details on the format.
 policy-Windows10SSO = Allow Windows single sign-on for Microsoft, work, and school accounts.

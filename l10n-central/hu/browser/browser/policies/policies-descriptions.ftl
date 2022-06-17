@@ -13,6 +13,7 @@
 policy-3rdparty = Állítson be házirendeket, amelyeket a WebExtensionök a chrome.storage.managed segítségével érhetnek el.
 policy-AllowedDomainsForApps = Adja meg azokat a domaineket, amelyek hozzáférhetnek a Google Workspace-hez.
 policy-AppAutoUpdate = Az automatikus alkalmazásfrissítés engedélyezése vagy letiltása.
+policy-AppUpdatePin = A { -brand-short-name } megakadályozása abban, hogy a megadott verzión túl frissüljön.
 policy-AppUpdateURL = Egyéni alkalmazás-frissítési URL megadása.
 policy-Authentication = Integrált hitelesítés beállítása azokhoz a weboldalakhoz, melyek támogatják.
 policy-AutoLaunchProtocolsFromOrigins = Adjon meg egy listát azokról a külső protokollokról, amelyek a felhasználó megkérdezése nélkül használhatók a felsorolt eredetektől.
@@ -58,6 +59,7 @@ policy-DownloadDirectory = A letöltési könyvtár beállítása és zárolása
 policy-EnableTrackingProtection = A Tartalomblokkolás engedélyezése vagy letiltása, és válaszható módon, annak zárolása.
 # “lock” means that the user won’t be able to change this setting
 policy-EncryptedMediaExtensions = A Titkosított médiakiterjesztések engedélyezése vagy letiltása, és válaszható módon, annak zárolása.
+policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = A fájlok kiterjesztésén alapuló figyelmeztetések letiltása bizonyos fájltípusok és domainek esetén.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -111,8 +113,10 @@ policy-SecurityDevices = PKCS #11 modulok telepítése.
 policy-ShowHomeButton = A kezdőoldal gomb megjelenítése az eszköztáron.
 policy-SSLVersionMax = A legmagasabb SSL verzió beállítása.
 policy-SSLVersionMin = A legkisebb SSL verzió beállítása.
+policy-StartDownloadsInTempDirectory = A letöltések arra kényszerítése, hogy az alapértelmezett letöltési könyvtár helyett egy helyi, ideiglenes helyen induljanak el.
 policy-SupportMenu = Egyéni támogatási menüpont hozzáadása a súgó menühöz.
 policy-UserMessaging = Ne mutasson bizonyos üzeneteket a felhasználónak.
+policy-UseSystemPrintDialog = Nyomtatás a rendszer nyomtatási párbeszédablakával.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Weboldalak felkeresésének blokkolása. Lásd a dokumentációt a formátum részleteiért.
 policy-Windows10SSO = Lehetővé teszi a Windows egyszeri bejelentkezésének használatát a microsoftos, munkahelyi és iskolai fiókok számára.

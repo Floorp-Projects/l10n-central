@@ -3,26 +3,26 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 styleeditor-new-button =
-    .tooltiptext = Opret og tilføj et nyt style sheet til dokumentet
+    .tooltiptext = Opret og tilføj et nyt stylesheet til dokumentet
     .accesskey = N
 styleeditor-import-button =
-    .tooltiptext = Importer og tilføj et eksisterende style sheet til dokumentet
+    .tooltiptext = Importer og tilføj et eksisterende stylesheet til dokumentet
     .accesskey = I
 styleeditor-filter-input =
-    .placeholder = Filtrer style sheets
+    .placeholder = Filtrer stylesheets
 styleeditor-visibility-toggle =
-    .tooltiptext = Skift synlighed af style sheet
+    .tooltiptext = Skift synlighed af stylesheet
     .accesskey = G
 styleeditor-save-button = Gem
-    .tooltiptext = Gem dette style sheet til en fil
+    .tooltiptext = Gem dette stylesheet til en fil
     .accesskey = G
 styleeditor-options-button =
     .tooltiptext = Indstillinger for CSS-editor
 styleeditor-media-rules = @media-regler
 styleeditor-editor-textbox =
     .data-placeholder = Skriv CSS her.
-styleeditor-no-stylesheet = Denne side har intet style sheet.
-styleeditor-no-stylesheet-tip = Måske vil du <a data-l10n-name="append-new-stylesheet">tilføje et nyt style sheet</a>?
+styleeditor-no-stylesheet = Denne side har intet stylesheet.
+styleeditor-no-stylesheet-tip = Måske vil du <a data-l10n-name="append-new-stylesheet">tilføje et nyt stylesheet</a>?
 styleeditor-open-link-new-tab =
     .label = Åbn link i et nyt faneblad
 styleeditor-copy-url =

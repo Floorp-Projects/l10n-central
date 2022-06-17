@@ -39,15 +39,18 @@ toolbar-context-menu-remove-extension =
 toolbar-context-menu-report-extension =
     .label = 回報擴充套件
     .accesskey = o
-# Can appear on the same context menu as menubarCmd ("Menu Bar") and
-# personalbarCmd ("Bookmarks Toolbar"), so they should have different
-# access keys.
+# Can appear on the same context menu as toolbar-context-menu-menu-bar-cmd
+# ("Menu Bar") and personalbarCmd ("Bookmarks Toolbar"), so they should
+# have different access keys.
 toolbar-context-menu-pin-to-overflow-menu =
     .label = 釘選到收藏選單
     .accesskey = P
 toolbar-context-menu-auto-hide-downloads-button-2 =
     .label = 無內容時隱藏按鈕
     .accesskey = H
+toolbar-context-menu-always-open-downloads-panel =
+    .label = 開始下載時顯示面板
+    .accesskey = S
 toolbar-context-menu-remove-from-toolbar =
     .label = 自工具列移除
     .accesskey = R

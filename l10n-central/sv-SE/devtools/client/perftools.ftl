@@ -21,6 +21,7 @@ perftools-heading-features-default = Funktioner (rekommenderas som standard)
 perftools-heading-features-disabled = Inaktiverade Funktioner
 perftools-heading-features-experimental = Experimentell
 perftools-heading-threads = Trådar
+perftools-heading-threads-jvm = JVM trådar
 perftools-heading-local-build = Lokalt bygge
 
 ##
@@ -49,9 +50,6 @@ perftools-devtools-settings-label = Inställningar
 
 ## Various statuses that affect the current state of profiling, not typically displayed.
 
-perftools-status-private-browsing-notice =
-    Profilerar är inaktiverad när privat surfning är aktiverat.
-    Stäng alla privata fönster för att återaktivera profileraren
 perftools-status-recording-stopped-by-another-tool = Inspelningen stoppades av ett annat verktyg.
 perftools-status-restart-required = Webbläsaren måste startas om för att aktivera den här funktionen.
 
@@ -97,6 +95,18 @@ perftools-thread-dns-resolver =
     .title = DNS-upplösning sker på den här tråden
 perftools-thread-task-controller =
     .title = TaskController trådpoolstrådar
+perftools-thread-jvm-gecko =
+    .title = Den huvudsakliga Gecko JVM-tråden
+perftools-thread-jvm-nimbus =
+    .title = Huvudtrådarna för Nimbus experiment SDK
+perftools-thread-jvm-default-dispatcher =
+    .title = Standardavsändaren för Kotlin coroutines-biblioteket
+perftools-thread-jvm-glean =
+    .title = Huvudtrådarna för Glean telemetri SDK
+perftools-thread-jvm-arch-disk-io =
+    .title = IO-avsändaren för Kotlin coroutines-biblioteket
+perftools-thread-jvm-pool =
+    .title = Trådar skapade i en icke namngiven trådpool
 
 ##
 
@@ -107,6 +117,10 @@ perftools-tools-threads-input-label =
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
 ## preferences are true.
+
+
+## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
+## devtools.performance.new-panel-onboarding preference is true.
 
 perftools-onboarding-message = <b>Nytt</b>: { -profiler-brand-name } är nu integrerad i utvecklarverktyg. <a>Läs mer</a> om det här kraftfulla nya verktyget.
 # `options-context-advanced-settings` is defined in toolbox-options.ftl
@@ -123,18 +137,11 @@ perftools-onboarding-close-button =
 
 perftools-presets-web-developer-label = Webbutvecklare
 perftools-presets-web-developer-description = Rekommenderad förinställning för de flesta webbappfelsökningar, med lite pålägg.
-perftools-presets-firefox-platform-label = Floorp - Plattform
-perftools-presets-firefox-platform-description = Rekommenderad förinställning för intern felsökning av plattformar i Firefox.
-perftools-presets-firefox-front-end-label = Floorp - Front-End
-perftools-presets-firefox-front-end-description = Rekommenderad förinställning för intern felsökning av front-end i Firefox.
-perftools-presets-firefox-graphics-label = Floorp - Grafik
-perftools-presets-firefox-graphics-description = Rekommenderad förinställning för utredning av grafikprestanda i Firefox.
 perftools-presets-firefox-label = { -brand-shorter-name }
 perftools-presets-firefox-description = Rekommenderad förinställning för profilering av { -brand-shorter-name }.
 perftools-presets-graphics-label = Grafik
 perftools-presets-graphics-description = Förinställd för att undersöka grafikbuggar i { -brand-shorter-name }.
 perftools-presets-media-label = Media
-perftools-presets-media-description = Rekommenderad förinställning för diagnos av ljud- och videoproblem.
 perftools-presets-media-description2 = Förinställd för att undersöka ljud- och videobuggar i { -brand-shorter-name }.
 perftools-presets-networking-label = Nätverk
 perftools-presets-networking-description = Förinställd för att undersöka ljud- och videobuggar i { -brand-shorter-name }.

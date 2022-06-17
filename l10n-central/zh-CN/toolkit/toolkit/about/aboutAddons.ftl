@@ -35,6 +35,8 @@ detail-version =
     .label = 版本
 detail-last-updated =
     .label = 上次更新
+addon-detail-description-expand = 显示更多
+addon-detail-description-collapse = 显示更少
 detail-contributions-description = 此附加组件的开发者希望通过您的小额捐款，帮助支持其持续开发。
 detail-contributions-button = 捐助
     .title = 捐助此附加组件的开发
@@ -276,8 +278,10 @@ extension-enabled-heading = 已启用
 extension-disabled-heading = 已禁用
 theme-enabled-heading = 已启用
 theme-disabled-heading = 已禁用
+theme-disabled-heading2 = 保存的主题
 theme-monochromatic-heading = 配色
 theme-monochromatic-subheading = 元气满满的 { -brand-product-name } 新配色，限时提供。
+theme-colorways-button = 配色随心换
 plugin-enabled-heading = 已启用
 plugin-disabled-heading = 已禁用
 dictionary-enabled-heading = 已启用
@@ -340,7 +344,7 @@ addon-detail-private-browsing-disallow = 不允许
 addon-badge-recommended2 =
     .title = { -brand-product-name } 只推荐符合我们的安全和性能标准的扩展。
     .aria-label = { addon-badge-recommended2.title }
-# We hard code "Ablaze" in the string below because the extensions are built
+# We hard code "Mozilla" in the string below because the extensions are built
 # by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
     .title = 由 Mozilla 构建的官方扩展，符合安全和性能标准

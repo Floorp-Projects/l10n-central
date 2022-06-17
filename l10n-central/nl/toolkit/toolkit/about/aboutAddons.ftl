@@ -35,6 +35,8 @@ detail-version =
     .label = Versie
 detail-last-updated =
     .label = Laatst bijgewerkt
+addon-detail-description-expand = Meer tonen
+addon-detail-description-collapse = Minder tonen
 detail-contributions-description = De ontwikkelaar van deze add-on vraagt uw steun voor verdere ontwikkeling door middel van een kleine bijdrage.
 detail-contributions-button = Bijdragen
     .title = Bijdragen aan de ontwikkeling van deze add-on
@@ -291,8 +293,10 @@ extension-enabled-heading = Ingeschakeld
 extension-disabled-heading = Uitgeschakeld
 theme-enabled-heading = Ingeschakeld
 theme-disabled-heading = Uitgeschakeld
+theme-disabled-heading2 = Opgeslagen thema’s
 theme-monochromatic-heading = Kleurstellingen
 theme-monochromatic-subheading = Levendige nieuwe kleurstellingen van { -brand-product-name }. Beschikbaar gedurende een beperkte tijd.
+theme-colorways-button = Kleurstellingen proberen
 plugin-enabled-heading = Ingeschakeld
 plugin-disabled-heading = Uitgeschakeld
 dictionary-enabled-heading = Ingeschakeld
@@ -356,10 +360,10 @@ addon-detail-private-browsing-disallow = Niet toestaan
 addon-badge-recommended2 =
     .title = { -brand-product-name } beveelt alleen extensies aan die voldoen aan onze normen voor beveiliging en prestaties
     .aria-label = { addon-badge-recommended2.title }
-# We hard code "Ablaze" in the string below because the extensions are built
+# We hard code "Mozilla" in the string below because the extensions are built
 # by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
-    .title = Officiële door Ablaze Floorp gebouwde extensie. Voldoet aan beveiligings- en prestatienormen.
+    .title = Officiële door Mozilla Firefox gebouwde extensie. Voldoet aan beveiligings- en prestatienormen.
     .aria-label = { addon-badge-line3.title }
 addon-badge-verified2 =
     .title = Deze extensie is beoordeeld en voldoet aan onze normen voor beveiliging en prestaties

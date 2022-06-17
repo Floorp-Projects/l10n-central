@@ -26,6 +26,8 @@ about-addressbook-books-context-properties =
     .label = Ιδιότητες
 about-addressbook-books-context-synchronize =
     .label = Συγχρονισμός
+about-addressbook-books-context-edit =
+    .label = Επεξεργασία
 about-addressbook-books-context-print =
     .label = Εκτύπωση…
 about-addressbook-books-context-export =
@@ -53,8 +55,6 @@ about-addressbook-search =
     .placeholder = Αναζήτηση σε { $name }
 about-addressbook-search-all =
     .placeholder = Αναζήτηση σε όλα τα ευρετήρια
-about-addressbook-sort-button =
-    .title = Αλλαγή σειράς λίστας
 about-addressbook-name-format-display =
     .label = Εμφανιζόμενο όνομα
 about-addressbook-name-format-firstlast =
@@ -69,6 +69,34 @@ about-addressbook-sort-email-ascending =
     .label = Ταξινόμηση κατά διεύθυνση email (A > Z)
 about-addressbook-sort-email-descending =
     .label = Ταξινόμηση κατά διεύθυνση email (Z > A)
+
+## Card column headers
+## Each string is listed here twice, and the values should match.
+
+about-addressbook-column-header-generatedname = Όνομα
+about-addressbook-column-label-generatedname =
+    .label = { about-addressbook-column-header-generatedname }
+about-addressbook-column-header-emailaddresses = Διευθύνσεις email
+about-addressbook-column-label-emailaddresses =
+    .label = { about-addressbook-column-header-emailaddresses }
+about-addressbook-column-header-phonenumbers = Αριθμοί τηλεφώνου
+about-addressbook-column-label-phonenumbers =
+    .label = { about-addressbook-column-header-phonenumbers }
+about-addressbook-column-header-addresses = Διευθύνσεις
+about-addressbook-column-label-addresses =
+    .label = { about-addressbook-column-header-addresses }
+about-addressbook-column-header-title = Τίτλος
+about-addressbook-column-label-title =
+    .label = { about-addressbook-column-header-title }
+about-addressbook-column-header-department = Τμήμα
+about-addressbook-column-label-department =
+    .label = { about-addressbook-column-header-department }
+about-addressbook-column-header-organization = Οργανισμός
+about-addressbook-column-label-organization =
+    .label = { about-addressbook-column-header-organization }
+about-addressbook-column-header-addrbook = Ευρετήριο
+about-addressbook-column-label-addrbook =
+    .label = { about-addressbook-column-header-addrbook }
 about-addressbook-cards-context-write =
     .label = Σύνταξη
 about-addressbook-confirm-delete-mixed-title = Διαγραφή επαφών και λιστών
@@ -122,17 +150,39 @@ about-addressbook-confirm-delete-contacts =
        *[other] Θέλετε σίγουρα να διαγράψετε αυτές τις { $count } επαφές;
     }
 
+## Card list placeholder
+## Shown when there are no cards in the list
+
+about-addressbook-placeholder-new-contact = Νέα επαφή
+about-addressbook-placeholder-searching = Αναζήτηση…
+about-addressbook-placeholder-no-search-results = Δεν βρέθηκαν επαφές
+
 ## Details
 
+about-addressbook-write-action-button = Σύνταξη
+about-addressbook-event-action-button = Εκδήλωση
+about-addressbook-search-action-button = Αναζήτηση
 about-addressbook-begin-edit-contact-button = Επεξεργασία
 about-addressbook-delete-edit-contact-button = Διαγραφή
 about-addressbook-cancel-edit-contact-button = Ακύρωση
 about-addressbook-save-edit-contact-button = Αποθήκευση
+about-addressbook-add-contact-to = Προσθήκη σε:
 about-addressbook-details-email-addresses-header = Διευθύνσεις email
 about-addressbook-details-phone-numbers-header = Αριθμοί τηλεφώνου
-about-addressbook-details-home-address-header = Διεύθυνση οικίας
-about-addressbook-details-work-address-header = Διεύθυνση εργασίας
+about-addressbook-details-addresses-header = Διευθύνσεις
+about-addressbook-details-notes-header = Σημειώσεις
 about-addressbook-details-other-info-header = Άλλες πληροφορίες
+about-addressbook-entry-type-work = Εργασία
+about-addressbook-entry-type-home = Οικία
+about-addressbook-entry-type-fax = Φαξ
+about-addressbook-entry-type-pager = Βομβητής
+about-addressbook-entry-name-birthday = Γενέθλια
+about-addressbook-entry-name-anniversary = Επέτειος
+about-addressbook-entry-name-title = Τίτλος
+about-addressbook-entry-name-role = Ρόλος
+about-addressbook-entry-name-organization = Οργανισμός
+about-addressbook-entry-name-website = Ιστότοπος
+about-addressbook-entry-name-time-zone = Ζώνη ώρας
 about-addressbook-unsaved-changes-prompt-title = Μη αποθηκευμένες αλλαγές
 about-addressbook-unsaved-changes-prompt = Θέλετε να αποθηκεύσετε τις αλλαγές σας πριν αποχωρήσετε από την προβολή επεξεργασίας;
 

@@ -34,7 +34,6 @@ about-telemetry-events-section = Įvykiai
 about-telemetry-simple-measurements-section = Paprasti matavimai
 about-telemetry-slow-sql-section =   Lėti SQL sakiniai
 about-telemetry-addon-details-section = Priedų duomenys
-about-telemetry-captured-stacks-section = Įrašyti dėklai
 about-telemetry-late-writes-section = Vėlavę įrašymai
 about-telemetry-raw-payload-section = Neapdorotas turinys
 about-telemetry-raw = Pirminis JSON
@@ -69,7 +68,7 @@ about-telemetry-histogram-stats =
        *[other] { $sampleCount } ėminių, vidurkis = { $prettyAverage }, suma = { $sum }
     }
 # Variables:
-#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Ablaze"
+#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-page-subtitle = Šiame tinklalapyje rasite telemetrijai sukauptus duomenis apie kompiuterio aparatinę įrangą, programos našumą, tinklinimą ir naudojamas fukcijas. Ši informacija programos „{ -brand-full-name }“ tobulinimo tikslais siunčiama į „{ $telemetryServerOwner }“.
 about-telemetry-settings-explanation = Telemetrija renka { about-telemetry-data-type }, o jų perdavimas yra <a data-l10n-name="upload-link">{ about-telemetry-upload-type }</a>.
 # Variables:
@@ -123,10 +122,6 @@ about-telemetry-keys-header = Savybė
 about-telemetry-names-header = Pavadinimas
 about-telemetry-values-header = Reikšmė
 # Variables:
-#   $stackKey (String): the string key for this stack
-#   $capturedStacksCount (Integer):  the number of times this stack was captured
-about-telemetry-captured-stacks-title = „{ $stackKey }“ (įrašymų skaičius: { $capturedStacksCount })
-# Variables:
 #   $lateWriteCount (Integer): the number of the late writes
 about-telemetry-late-writes-title = Vėlavęs įrašymas Nr. { $lateWriteCount }
 about-telemetry-stack-title = Dėklas:
@@ -141,7 +136,7 @@ about-telemetry-origin-section = „Origin“ telemetrija
 about-telemetry-origin-origin = kilmė
 about-telemetry-origin-count = kiekis
 # Variables:
-#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Ablaze"
+#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-origins-explanation = Prieš persiųsdama duomenis, <a data-l10n-name="origin-doc-link">„Firefox Origin Telemetry“</a>  juos užšifruoja taip, kad „{ $telemetryServerOwner }“ galėtų suskaičiuoti dalykus, tačiau nežinotų ar kuris nors konkretus { -brand-product-name } patenka į tą kiekį. (<a data-l10n-name="prio-blog-link">sužinoti daugiau</a>)
 # Variables:
 #  $process (String): type of process in subsection headers ( e.g. "content", "parent" )

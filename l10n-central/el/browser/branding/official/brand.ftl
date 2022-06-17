@@ -28,11 +28,11 @@
 ## For further details, consult:
 ## https://mozilla-l10n.github.io/styleguides/mozilla_general/#brands-copyright-and-trademark
 
--brand-shorter-name = Floorp
--brand-short-name = Floorp
--brand-full-name = Ablaze Floorp
+-brand-shorter-name = Firefox
+-brand-short-name = Firefox
+-brand-full-name = Mozilla Firefox
 # This brand name can be used in messages where the product name needs to
 # remain unchanged across different versions (Nightly, Beta, etc.).
--brand-product-name = Floorp
--vendor-short-name = Ablaze
-trademarkInfo = Το Firefox και τα λογότυπά του αποτελούν εμπορικά σήματα του Ablaze & Floorp projects.
+-brand-product-name = Firefox
+-vendor-short-name = Mozilla
+trademarkInfo = Το Firefox και τα λογότυπά του αποτελούν εμπορικά σήματα του Mozilla Foundation.

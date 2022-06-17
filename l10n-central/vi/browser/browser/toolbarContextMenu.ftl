@@ -39,15 +39,18 @@ toolbar-context-menu-remove-extension =
 toolbar-context-menu-report-extension =
     .label = Báo cáo tiện ích mở rộng
     .accesskey = o
-# Can appear on the same context menu as menubarCmd ("Menu Bar") and
-# personalbarCmd ("Bookmarks Toolbar"), so they should have different
-# access keys.
+# Can appear on the same context menu as toolbar-context-menu-menu-bar-cmd
+# ("Menu Bar") and personalbarCmd ("Bookmarks Toolbar"), so they should
+# have different access keys.
 toolbar-context-menu-pin-to-overflow-menu =
     .label = Ghim vào menu gợi ý trên thanh địa chỉ
     .accesskey = P
 toolbar-context-menu-auto-hide-downloads-button-2 =
     .label = Ẩn nút khi danh sách trống
     .accesskey = H
+toolbar-context-menu-always-open-downloads-panel =
+    .label = Hiển thị bảng điều khiển khi bắt đầu tải xuống
+    .accesskey = S
 toolbar-context-menu-remove-from-toolbar =
     .label = Xóa khỏi thanh công cụ
     .accesskey = R

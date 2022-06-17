@@ -34,7 +34,6 @@ about-telemetry-events-section = 事件
 about-telemetry-simple-measurements-section = 简单指标
 about-telemetry-slow-sql-section = 慢 SQL 语句
 about-telemetry-addon-details-section = 附加组件详情
-about-telemetry-captured-stacks-section = 捕获到的堆栈
 about-telemetry-late-writes-section = 过慢写入
 about-telemetry-raw-payload-section = 原始载荷
 about-telemetry-raw = 原始 JSON
@@ -67,7 +66,7 @@ about-telemetry-histogram-stats =
        *[other] { $sampleCount } 个样本，平均 = { $prettyAverage }，合计 = { $sum }
     }
 # Variables:
-#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Ablaze"
+#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-page-subtitle = 本页展示遥测服务收集的有关性能、硬件、使用和定制情况的信息，这些信息被提交到 { $telemetryServerOwner } 以帮助改进 { -brand-full-name }。
 about-telemetry-settings-explanation = 遥测服务正在收集{ about-telemetry-data-type }，并且<a data-l10n-name="upload-link">{ about-telemetry-upload-type }</a>上传。
 # Variables:
@@ -121,10 +120,6 @@ about-telemetry-keys-header = 属性
 about-telemetry-names-header = 名称
 about-telemetry-values-header = 值
 # Variables:
-#   $stackKey (String): the string key for this stack
-#   $capturedStacksCount (Integer):  the number of times this stack was captured
-about-telemetry-captured-stacks-title = { $stackKey } (捕获次数：{ $capturedStacksCount })
-# Variables:
 #   $lateWriteCount (Integer): the number of the late writes
 about-telemetry-late-writes-title = 过慢写入 #{ $lateWriteCount }
 about-telemetry-stack-title = 堆栈:
@@ -139,7 +134,7 @@ about-telemetry-origin-section = 起点遥测
 about-telemetry-origin-origin = 起点
 about-telemetry-origin-count = 数量
 # Variables:
-#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Ablaze"
+#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-origins-explanation = <a data-l10n-name="origin-doc-link">Firefox 起点遥测技术</a>会在数据发送之前对其进行编码，确保 { $telemetryServerOwner } 能统计数量的同时，无须知道是由谁的 { -brand-product-name } 上传了数据。（<a data-l10n-name="prio-blog-link">详细了解</a>）
 # Variables:
 #  $process (String): type of process in subsection headers ( e.g. "content", "parent" )

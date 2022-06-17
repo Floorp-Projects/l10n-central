@@ -8,6 +8,6 @@
    This brand name can be used in messages where the product name needs to
    remain unchanged across different versions (Daily, Beta, etc.). -->
 <!ENTITY  brandProductName      "Thunderbird">
-<!ENTITY  vendorShortName       "Ablaze">
+<!ENTITY  vendorShortName       "Mozilla">
 <!ENTITY  trademarkInfo.part1   "A Mozilla Thunderbird és a Thunderbird logók 
-                                 a Ablaze & Floorp projects védjegyei.">
+                                 a Mozilla Foundation védjegyei.">

@@ -87,10 +87,6 @@ menu-file-save-as-file =
 
 ## AppMenu
 
-# Since v89 we dropped the platforms distinction between Options or Preferences
-# and consolidated everything with Preferences.
-appmenu-preferences =
-    .label = Inställningar
 appmenu-save-as-file =
     .label = Arkiv…
 appmenu-settings =
@@ -129,6 +125,10 @@ message-header-msg-flagged =
     .aria-label = Stjärnmärkt
 message-header-msg-not-flagged =
     .title = Ej stjärnmärkt meddelande
+# Variables:
+# $address (String) - The email address of the recipient this picture belongs to.
+message-header-recipient-avatar =
+    .alt = Profilbild för { $address }.
 
 ## Message header cutomize panel
 
@@ -142,6 +142,16 @@ message-header-button-style-text =
     .label = Text
 message-header-button-style-icons =
     .label = Ikoner
+message-header-show-sender-full-address =
+    .label = Visa alltid avsändarens fullständiga adress
+    .accesskey = f
+message-header-show-sender-full-address-description = E-postadressen kommer att visas under visningsnamnet.
+message-header-show-recipient-avatar =
+    .label = Visa avsändarens profilbild
+    .accesskey = p
+message-header-hide-label-column =
+    .label = Dölj kolumnen etiketter
+    .accesskey = e
 message-header-large-subject =
     .label = Stort ämne
     .accesskey = n
@@ -154,13 +164,6 @@ toolbar-context-menu-manage-extension =
 toolbar-context-menu-remove-extension =
     .label = Ta bort tillägg
     .accesskey = T
-
-## Message headers
-
-message-header-address-in-address-book-icon =
-    .alt = Adressen finns i adressboken
-message-header-address-not-in-address-book-icon =
-    .alt = Adressen finns inte i adressboken
 
 ## Add-on removal warning
 
@@ -218,12 +221,12 @@ spaces-context-new-window-item =
 # $tabName (String) - The name of the tab this item will switch to.
 spaces-context-switch-tab-item =
     .label = Växla till { $tabName }
-settings-context-open-settings-item =
-    .label = Öppna Inställningar
-settings-context-open-account-settings-item =
-    .label = Öppna Kontoinställningar
-settings-context-open-addons-item =
-    .label = Öppna Tillägg och teman
+settings-context-open-settings-item2 =
+    .label = Inställningar
+settings-context-open-account-settings-item2 =
+    .label = Kontoinställningar
+settings-context-open-addons-item2 =
+    .label = Tillägg och teman
 
 ## Spaces toolbar pinned tab menupopup
 
@@ -254,8 +257,6 @@ chat-button-unread-messages = { $count }
 
 ## Spaces toolbar customize panel
 
-spaces-context-customize =
-    .label = Anpassa…
 menuitem-customize-label =
     .label = Anpassa…
 spaces-customize-panel-title = Inställningar för flikmeny
@@ -269,7 +270,5 @@ spaces-customize-accent-background-color = Vald bakgrundsfärg för knapp
 spaces-customize-accent-text-color = Vald knappfärg
 spaces-customize-button-restore = Återställ standard
     .accesskey = t
-spaces-customize-button-save = Klar
-    .accesskey = K
 customize-panel-button-save = Klar
     .accesskey = K

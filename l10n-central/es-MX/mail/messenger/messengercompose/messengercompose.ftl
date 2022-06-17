@@ -84,9 +84,6 @@ menuitem-toggle-attachment-pane =
 toolbar-button-add-attachment =
     .label = Adjuntar
     .tooltiptext = Agregar un adjunto ({ ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key })
-add-attachment-notification-reminder =
-    .label = Agregar un archivo adjunto…
-    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 add-attachment-notification-reminder2 =
     .label = Agregar un archivo adjunto…
     .accesskey = A
@@ -113,10 +110,6 @@ attachment-bucket-count-value =
         [one] { $count } adjuntos
        *[other] { $count } adjuntos
     }
-expand-attachment-pane-tooltip =
-    .tooltiptext = Mostrar el panel de adjuntos ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-collapse-attachment-pane-tooltip =
-    .tooltiptext = Ocultar el panel de adjuntos ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-show =
     .title = Mostrar el panel de adjuntos ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -160,6 +153,9 @@ encryption-options-openpgp =
 encryption-options-smime =
     .label = S/MIME
     .tooltiptext = Ver o cambiar la configuración de cifrado de S/MIME
+signing-toggle =
+    .label = Firma
+    .tooltiptext = Usar firma digital para este mensaje
 menu-openpgp =
     .label = OpenPGP
     .accesskey = O
@@ -196,41 +192,14 @@ key-notification-resolve =
     .label = Resolver…
     .accesskey = R
     .tooltiptext = Abrir el asistente de claves de OpenPGP
+can-encrypt-smime-notification = Es posible usar el cifrado de extremo a extremo S/MIME.
+can-encrypt-openpgp-notification = Es posible usar el cifrado de extremo a extremo OpenPGP.
+can-e2e-encrypt-button =
+    .label = Cifrado
+    .accesskey = E
 
 ## Addressing Area
 
-to-compose-address-row-label =
-    .value = Para
-#   $key (String) - the shortcut key for this field
-to-compose-show-address-row-menuitem =
-    .label = Campo { to-compose-address-row-label.value }
-    .accesskey = C
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-to-compose-show-address-row-label =
-    .value = { to-compose-address-row-label.value }
-    .tooltiptext = Mostrar campo { to-compose-address-row-label.value } ({ to-compose-show-address-row-menuitem.acceltext })
-cc-compose-address-row-label =
-    .value = Cc
-#   $key (String) - the shortcut key for this field
-cc-compose-show-address-row-menuitem =
-    .label = Campo { cc-compose-address-row-label.value }
-    .accesskey = C
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-cc-compose-show-address-row-label =
-    .value = { cc-compose-address-row-label.value }
-    .tooltiptext = Mostrar campo { cc-compose-address-row-label.value } ({ cc-compose-show-address-row-menuitem.acceltext })
-bcc-compose-address-row-label =
-    .value = Cco
-#   $key (String) - the shortcut key for this field
-bcc-compose-show-address-row-menuitem =
-    .label = Campo { bcc-compose-address-row-label.value }
-    .accesskey = B
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-bcc-compose-show-address-row-label =
-    .value = { bcc-compose-address-row-label.value }
-    .tooltiptext = Mostrar { bcc-compose-address-row-label.value } del campo ({ bcc-compose-show-address-row-menuitem.acceltext })
-#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
-many-public-recipients-info = Los destinatarios { $count } en Para y Cc pueden ver la dirección de los demas. Puedes evitar revelar destinatarios utilizando Cco en su lugar.
 to-address-row-label =
     .value = Para
 #   $key (String) - the shortcut key for this field
@@ -401,3 +370,9 @@ link-preview-description = { -brand-short-name } puede agregar una vista previa 
 link-preview-autoadd = Agregar automáticamente vista previas de enlaces cuando sea posible
 link-preview-replace-now = ¿Agregar vista para este enlace?
 link-preview-yes-replace = Sí
+
+## Dictionary selection popup
+
+spell-add-dictionaries =
+    .label = Agregar diccionarios…
+    .accesskey = A

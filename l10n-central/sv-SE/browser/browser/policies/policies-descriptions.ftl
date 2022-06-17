@@ -13,6 +13,7 @@
 policy-3rdparty = Ange policyer som WebExtensions kan komma åt via chrome.storage.managed.
 policy-AllowedDomainsForApps = Definiera domäner som får åtkomst till Google Workspace.
 policy-AppAutoUpdate = Aktivera eller inaktivera automatisk applikationsuppdatering.
+policy-AppUpdatePin = Förhindra att { -brand-short-name } uppdateras utöver den angivna versionen.
 policy-AppUpdateURL = Ange anpassad URL för programuppdateringar.
 policy-Authentication = Ställ in integrerad autentisering för webbplatser som stödjer det.
 policy-AutoLaunchProtocolsFromOrigins = Definiera en lista över externa protokoll som kan användas från listade ursprung utan att uppmana användaren.
@@ -58,6 +59,7 @@ policy-DownloadDirectory = Ange och lås nedladdningskatalogen.
 policy-EnableTrackingProtection = Aktivera eller inaktivera Innehållsblockering med möjlighet att låsa valet.
 # “lock” means that the user won’t be able to change this setting
 policy-EncryptedMediaExtensions = Aktivera eller inaktivera krypterade medieutökningar och lås den eventuellt.
+policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Inaktivera varningar baserade på filtillägg för specifika filtyper på domäner.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -111,8 +113,10 @@ policy-SecurityDevices = Installera PKCS #11-moduler.
 policy-ShowHomeButton = Visa hemknappen i verktygsfältet.
 policy-SSLVersionMax = Ange den maximala SSL-versionen.
 policy-SSLVersionMin = Ange den lägsta SSL-versionen.
+policy-StartDownloadsInTempDirectory = Tvinga nedladdningar att starta på en lokal, tillfällig plats snarare än standardnedladdningskatalogen.
 policy-SupportMenu = Lägg till ett anpassat menyalternativ med hjälp i hjälpmenyn.
 policy-UserMessaging = Visa inte vissa meddelanden till användaren.
+policy-UseSystemPrintDialog = Skriv ut med hjälp av systemets utskriftsdialog.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Blockera besök på webbplatser. Läs dokumentationen för mer detaljer om hur de anges.
 policy-Windows10SSO = Tillåt Windows enkel inloggning för Microsoft-, arbets- och skolkonton.

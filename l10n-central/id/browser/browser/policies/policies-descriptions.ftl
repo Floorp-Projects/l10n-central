@@ -13,6 +13,7 @@
 policy-3rdparty = Tetapkan kebijakan yang dapat diakses WebExtensions melalui chrome.storage.managed.
 policy-AllowedDomainsForApps = Tentukan domain yang diizinkan untuk mengakses Google Workspace.
 policy-AppAutoUpdate = Aktifkan atau nonaktifkan pembaruan aplikasi otomatis.
+policy-AppUpdatePin = Cegah { -brand-short-name } agar tidak diperbarui di luar versi yang ditentukan.
 policy-AppUpdateURL = Atur URL pemutakhiran aplikasi khusus
 policy-Authentication = Atur autentikasi terintegrasi untuk situs lain yang mendukung.
 policy-AutoLaunchProtocolsFromOrigins = Menentukan daftar protokol eksternal yang dapat digunakan dari asal-usul terdaftar tanpa bertanya pada pengguna.
@@ -58,6 +59,7 @@ policy-DownloadDirectory = Atur dan kunci direktori unduhan.
 policy-EnableTrackingProtection = Aktifkan atau nonaktifkan Pemblokiran Konten dan kunci ia secara opsional.
 # “lock” means that the user won’t be able to change this setting
 policy-EncryptedMediaExtensions = Aktifkan atau nonaktifkan Ekstensi Media Terenkripsi dan kunci dia secara opsional.
+policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Nonaktifkan peringatan berdasarkan ekstensi berkas untuk tipe berkas tertentu pada domain.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -111,8 +113,10 @@ policy-SecurityDevices = Pasang modul PKCS #11.
 policy-ShowHomeButton = Tampilkan tombol beranda pada bilah alat.
 policy-SSLVersionMax = Tetapkan versi SSL maksimum.
 policy-SSLVersionMin = Tetapkan versi SSL minimum.
+policy-StartDownloadsInTempDirectory = Paksa unduhan untuk dimulai di lokasi lokal dan sementara, bukan direktori unduhan baku.
 policy-SupportMenu = Tambahkan item menu dukungan khusus pada menu bantuan.
 policy-UserMessaging = Jangan tampilkan pesan tertentu kepada pengguna.
+policy-UseSystemPrintDialog = Cetak menggunakan dialog sistem.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Blokir situs web agar tidak dikunjungi. Lihat dokumentasi lebih lanjut untuk formatnya.
 policy-Windows10SSO = Izinkan sistem masuk tunggal Windows untuk akun Microsoft, kantor, dan sekolah.

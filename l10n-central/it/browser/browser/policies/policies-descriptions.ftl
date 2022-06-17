@@ -15,6 +15,8 @@ policy-AllowedDomainsForApps = Definisce i domini con cui è consentito accedere
 
 policy-AppAutoUpdate = Attiva o disattiva aggiornamenti automatici dell’applicazione.
 
+policy-AppUpdatePin = Impedisce l’aggiornamento di { -brand-short-name } a una versione superiore a quella indicata.
+
 policy-AppUpdateURL = Imposta URL personalizzato per aggiornamento applicazione.
 
 policy-Authentication = Configura autenticazione integrata per i siti in cui è supportata.
@@ -188,9 +190,13 @@ policy-SSLVersionMax = Imposta la versione massima di SSL.
 
 policy-SSLVersionMin = Imposta la versione minima di SSL.
 
+policy-StartDownloadsInTempDirectory = Forza l’avvio dei download in una cartella temporanea locale invece della cartella predefinita per i download.
+
 policy-SupportMenu = Aggiungi una voce di menu personalizzata nel menu Aiuto.
 
 policy-UserMessaging = Non visualizzare determinati messaggi all’utente.
+
+policy-UseSystemPrintDialog = Stampa utilizzando la finestra di dialogo di sistema.
 
 policy-WebsiteFilter = Impedisci l’accesso a determinati siti web. Consulta la documentazione per ulteriori dettagli sul formato da utilizzare.
 

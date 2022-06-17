@@ -3,11 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### UI strings for the simplified onboarding / multistage about:welcome
-### Various strings use a non-breaking space to avoid a single dangling /
-### widowed word, so test on various window sizes if you also want this.
-
-
 ### UI strings for the MR1 onboarding / multistage about:welcome
 ### Various strings use a non-breaking space to avoid a single dangling /
 ### widowed word, so test on various window sizes if you also want this.
@@ -28,40 +23,6 @@ return-to-amo-subtitle = Nagyszerű, már van { -brand-short-name }a
 #   $addon-name (String) - Name of the add-on
 return-to-amo-addon-title = Most pedig szerezze be a(z) <img data-l10n-name="icon"/> <b>{ $addon-name } kiegészítőt.</b>
 return-to-amo-add-extension-label = Kiegészítő hozzáadása
-
-## Multistage 3-screen onboarding flow strings (about:welcome pages)
-
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
-onboarding-multistage-welcome-header = Üdvözli a <span data-l10n-name="zap">{ -brand-short-name }</span>
-onboarding-multistage-welcome-subtitle = A gyors, biztonságos és privát böngésző, amelyet egy nonprofit szervezet támogat.
-onboarding-multistage-welcome-primary-button-label = Beállítás indítása
-onboarding-multistage-welcome-secondary-button-label = Bejelentkezés
-onboarding-multistage-welcome-secondary-button-text = Van már fiókja?
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "default" should stay inside the span.
-onboarding-multistage-set-default-header = Legyen a { -brand-short-name } <span data-l10n-name="zap">az alapértelmezett böngészője</span>
-onboarding-multistage-set-default-subtitle = Gyorsaság, biztonság és adatvédelem minden böngészés során.
-onboarding-multistage-set-default-primary-button-label = Beállítás alapértelmezettként
-onboarding-multistage-set-default-secondary-button-label = Most nem
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
-onboarding-multistage-pin-default-header = Kezdje azzal, hogy a <span data-l10n-name="zap">{ -brand-short-name }</span> csak egy kattintásnyira legyen
-onboarding-multistage-pin-default-subtitle = Gyors, biztonságos és privát böngészés minden alkalommal, amikor a világhálót használja.
-# The "settings" here refers to "Windows 10 Settings App" and not the browser's
-onboarding-multistage-pin-default-waiting-subtitle = A beállítások megnyitásakor válassza a Webböngésző alatt a { -brand-short-name }ot
-# The "settings" here refers to "Windows 10 Settings App" and not the browser's
-onboarding-multistage-pin-default-help-text = Ez kitűzi a { -brand-short-name }ot a a tálcára, és megnyitja a beállításokat
-onboarding-multistage-pin-default-primary-button-label = Legyen a { -brand-short-name } az elsődleges böngészőm
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "more" should stay inside the span.
-onboarding-multistage-import-header = Jelszavak, könyvjelzők és <span data-l10n-name="zap">egyebek</span> importálása
-onboarding-multistage-import-subtitle = Egy másik böngészőből érkezett? Könnyen áthozhat mindent a { -brand-short-name }ba.
-onboarding-multistage-import-primary-button-label = Importálás indítása
-onboarding-multistage-import-secondary-button-label = Most nem
-# Info displayed in the footer of import settings screen during onboarding flow.
-# This supports welcome screen showing top sites imported from the user's default browser.
-onboarding-import-sites-disclaimer = Az itt felsorolt webhelyek találhatók ezen az eszközön. A { -brand-short-name } nem menti vagy szinkronizálja az adatokat egy másik böngészőből, kivéve, ha úgy dönt, hogy importálja azokat.
 return-to-amo-add-theme-label = Téma hozzáadása
 
 ## Multistage onboarding strings (about:welcome pages)
@@ -72,20 +33,8 @@ return-to-amo-add-theme-label = Téma hozzáadása
 #   $total (Int) - Total number of pages
 onboarding-welcome-steps-indicator =
     .aria-label = Első lépések: { $current }. képernyő / { $total }
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "look" should stay inside the span.
-onboarding-multistage-theme-header = Válasszon egy <span data-l10n-name="zap">megjelenést</span>
-onboarding-multistage-theme-subtitle = Tegye egyedivé a { -brand-short-name }ot egy témával.
-onboarding-multistage-theme-primary-button-label2 = Kész
-onboarding-multistage-theme-secondary-button-label = Most nem
-# Automatic theme uses operating system color settings
-onboarding-multistage-theme-label-automatic = Automatikus
-onboarding-multistage-theme-label-light = Világos
-onboarding-multistage-theme-label-dark = Sötét
-# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
-onboarding-multistage-theme-label-alpenglow = Floorp Alpenglow
 # "Hero Text" displayed on left side of welcome screen.
-# The "Fire" in "Fire starts here" plays on the "Fire" in "Floorp".
+# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
 # It also signals the passion users bring to Firefox, how they use
 # Firefox to pursue those passions, as well as the boldness in their
 # choice to use Firefox over a larger competitor browser.
@@ -172,60 +121,12 @@ mr1-onboarding-theme-label-light = Világos
 mr1-onboarding-theme-label-dark = Sötét
 # "Alpenglow" here is the name of the theme, and should be kept in English.
 mr1-onboarding-theme-label-alpenglow = Alpesi fény
+onboarding-theme-primary-button-label = Kész
 
 ## Please make sure to split the content of the title attribute into lines whose
 ## width corresponds to about 40 Latin characters, to ensure that the tooltip
 ## doesn't become too long. Line breaks will be preserved when displaying the
 ## tooltip.
-
-
-## Please make sure to split the content of the title attribute into lines whose
-## width corresponds to about 40 Latin characters, to ensure that the tooltip
-## doesn't become too long. Line breaks will be preserved when displaying the
-## tooltip.
-
-# Tooltip displayed on hover of automatic theme
-onboarding-multistage-theme-tooltip-automatic-2 =
-    .title =
-        Az operációs rendszer megjelenésének öröklése a
-        gomboknál, menüknél és ablakoknál.
-# Input description for automatic theme
-onboarding-multistage-theme-description-automatic-2 =
-    .aria-description =
-        Az operációs rendszer megjelenésének öröklése a
-        gomboknál, menüknél és ablakoknál.
-# Tooltip displayed on hover of light theme
-onboarding-multistage-theme-tooltip-light-2 =
-    .title =
-        Világos megjelenés használata a gombokhoz,
-        menükhöz és ablakokhoz.
-# Input description for light theme
-onboarding-multistage-theme-description-light =
-    .aria-description =
-        Világos megjelenés használata a gombokhoz,
-        menükhöz és ablakokhoz.
-# Tooltip displayed on hover of dark theme
-onboarding-multistage-theme-tooltip-dark-2 =
-    .title =
-        Sötét megjelenés használata a gombokhoz,
-        menükhöz és ablakokhoz.
-# Input description for dark theme
-onboarding-multistage-theme-description-dark =
-    .aria-description =
-        Sötét megjelenés használata a gombokhoz,
-        menükhöz és ablakokhoz.
-# Tooltip displayed on hover of Alpenglow theme
-onboarding-multistage-theme-tooltip-alpenglow-2 =
-    .title =
-        Színes megjelenés használata a gombokhoz,
-        menükhöz és ablakokhoz.
-# Input description for Alpenglow theme
-onboarding-multistage-theme-description-alpenglow =
-    .aria-description =
-        Színes megjelenés használata a gombokhoz,
-        menükhöz és ablakokhoz.
-
-## Multistage MR1 onboarding strings (MR1 about:welcome pages)
 
 # Tooltip displayed on hover of system theme
 mr1-onboarding-theme-tooltip-system =
@@ -301,27 +202,13 @@ mr2-onboarding-start-browsing-button-label = Böngészés megkezdése
 ## The following language names are generated by the browser's Intl.DisplayNames API.
 ##
 ## Variables:
-##   $appLanguage (String) - The name of Firefox's language, e.g. "American English"
-##   $systemLanguage (String) - The name of the OS's language, e.g. "European Spanish"
-##   $negotiatedLanguage (String) - The name of the langpack's language, e.g. "European Spanish"
-
-
-## Multistage live language reloading onboarding strings (about:welcome pages)
-##
-## The following language names are generated by the browser's Intl.DisplayNames API.
-##
-## Variables:
 ##   $negotiatedLanguage (String) - The name of the langpack's language, e.g. "Español (ES)"
 
 onboarding-live-language-header = Válassza ki a nyelvét
-onboarding-live-language-subtitle = A { -brand-short-name } nyelve { $appLanguage }, míg az operációs rendszeré { $systemLanguage }.
-onboarding-live-language-switch-button-label = Váltás erre: { $negotiatedLanguage }
 onboarding-live-language-button-label-downloading = A(z) { $negotiatedLanguage } nyelvi csomag letöltése…
-onboarding-live-language-waiting-subtitle = Úgy tűnik, hogy a rendszer és a { -brand-short-name } különböző nyelveket használ.
 onboarding-live-language-waiting-button = Elérhető nyelvek lekérése…
 onboarding-live-language-installing = A(z) { $negotiatedLanguage } nyelvi csomag telepítése…
 onboarding-live-language-secondary-cancel-download = Mégse
-onboarding-live-language-not-now-button-label = Most nem
 onboarding-live-language-skip-button-label = Kihagyás
 
 ## Firefox 100 Thank You screens

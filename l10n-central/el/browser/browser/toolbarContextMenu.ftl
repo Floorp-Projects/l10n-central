@@ -39,15 +39,18 @@ toolbar-context-menu-remove-extension =
 toolbar-context-menu-report-extension =
     .label = Αναφορά επέκτασης
     .accesskey = φ
-# Can appear on the same context menu as menubarCmd ("Menu Bar") and
-# personalbarCmd ("Bookmarks Toolbar"), so they should have different
-# access keys.
+# Can appear on the same context menu as toolbar-context-menu-menu-bar-cmd
+# ("Menu Bar") and personalbarCmd ("Bookmarks Toolbar"), so they should
+# have different access keys.
 toolbar-context-menu-pin-to-overflow-menu =
     .label = Καρφίτσωμα στο αναδυόμενο μενού
     .accesskey = Κ
 toolbar-context-menu-auto-hide-downloads-button-2 =
     .label = Απόκρυψη κουμπιού όταν είναι κενό
     .accesskey = Α
+toolbar-context-menu-always-open-downloads-panel =
+    .label = Εμφάνιση πίνακα κατά την έναρξη της λήψης
+    .accesskey = Ε
 toolbar-context-menu-remove-from-toolbar =
     .label = Αφαίρεση από τη γραμμή εργαλείων
     .accesskey = Α

@@ -87,10 +87,6 @@ menu-file-save-as-file =
 
 ## AppMenu
 
-# Since v89 we dropped the platforms distinction between Options or Preferences
-# and consolidated everything with Preferences.
-appmenu-preferences =
-    .label = Beállítások
 appmenu-save-as-file =
     .label = Fájl…
 appmenu-settings =
@@ -129,6 +125,10 @@ message-header-msg-flagged =
     .aria-label = Csillagozott
 message-header-msg-not-flagged =
     .title = Nem csillagozott üzenet
+# Variables:
+# $address (String) - The email address of the recipient this picture belongs to.
+message-header-recipient-avatar =
+    .alt = { $address } profilképe.
 
 ## Message header cutomize panel
 
@@ -142,6 +142,16 @@ message-header-button-style-text =
     .label = Szöveg
 message-header-button-style-icons =
     .label = Ikonok
+message-header-show-sender-full-address =
+    .label = A feladó teljes címének megjelenítése mindig
+    .accesskey = c
+message-header-show-sender-full-address-description = Az e-mail-cím a megjelenő név alatt fog megjelenni.
+message-header-show-recipient-avatar =
+    .label = A feladó profilképének megjelenítése
+    .accesskey = p
+message-header-hide-label-column =
+    .label = Címkék oszlop elrejtése
+    .accesskey = r
 message-header-large-subject =
     .label = Nagy tárgy
     .accesskey = t
@@ -154,13 +164,6 @@ toolbar-context-menu-manage-extension =
 toolbar-context-menu-remove-extension =
     .label = Kiegészítő eltávolítása
     .accesskey = t
-
-## Message headers
-
-message-header-address-in-address-book-icon =
-    .alt = A cím a címjegyzékben található
-message-header-address-not-in-address-book-icon =
-    .alt = A cím nem szerepel a címjegyzékben
 
 ## Add-on removal warning
 
@@ -218,12 +221,12 @@ spaces-context-new-window-item =
 # $tabName (String) - The name of the tab this item will switch to.
 spaces-context-switch-tab-item =
     .label = Váltás erre: { $tabName }
-settings-context-open-settings-item =
-    .label = Beállítások megnyitása
-settings-context-open-account-settings-item =
-    .label = Fiókbeállítások megnyitása
-settings-context-open-addons-item =
-    .label = Kiegészítők és témák megnyitása
+settings-context-open-settings-item2 =
+    .label = Beállítások
+settings-context-open-account-settings-item2 =
+    .label = Fiókbeállítások
+settings-context-open-addons-item2 =
+    .label = Kiegészítők és témák
 
 ## Spaces toolbar pinned tab menupopup
 
@@ -254,8 +257,6 @@ chat-button-unread-messages = { $count }
 
 ## Spaces toolbar customize panel
 
-spaces-context-customize =
-    .label = Testreszabás…
 menuitem-customize-label =
     .label = Testreszabás…
 spaces-customize-panel-title = Helyek eszköztár beállításai
@@ -269,7 +270,5 @@ spaces-customize-accent-background-color = Kiválasztott gomb háttérszíne
 spaces-customize-accent-text-color = Kiválasztott gomb színe
 spaces-customize-button-restore = Alapértelmezések helyreállítása
     .accesskey = h
-spaces-customize-button-save = Kész
-    .accesskey = K
 customize-panel-button-save = Kész
     .accesskey = K

@@ -87,10 +87,6 @@ menu-file-save-as-file =
 
 ## AppMenu
 
-# Since v89 we dropped the platforms distinction between Options or Preferences
-# and consolidated everything with Preferences.
-appmenu-preferences =
-    .label = Προτιμήσεις
 appmenu-save-as-file =
     .label = Αρχείο…
 appmenu-settings =
@@ -129,6 +125,10 @@ message-header-msg-flagged =
     .aria-label = Με αστέρι
 message-header-msg-not-flagged =
     .title = Μήνυμα χωρίς αστέρι
+# Variables:
+# $address (String) - The email address of the recipient this picture belongs to.
+message-header-recipient-avatar =
+    .alt = Εικόνα προφίλ του { $address }.
 
 ## Message header cutomize panel
 
@@ -142,6 +142,9 @@ message-header-button-style-text =
     .label = Κείμενο
 message-header-button-style-icons =
     .label = Εικονίδια
+message-header-hide-label-column =
+    .label = Απόκρυψη στήλης ετικετών
+    .accesskey = π
 message-header-large-subject =
     .label = Μεγάλο θέμα
     .accesskey = γ
@@ -154,13 +157,6 @@ toolbar-context-menu-manage-extension =
 toolbar-context-menu-remove-extension =
     .label = Αφαίρεση επέκτασης
     .accesskey = φ
-
-## Message headers
-
-message-header-address-in-address-book-icon =
-    .alt = Η διεύθυνση βρίσκεται στο ευρετήριο
-message-header-address-not-in-address-book-icon =
-    .alt = Η διεύθυνση δεν βρίσκεται στο ευρετήριο
 
 ## Add-on removal warning
 
@@ -218,12 +214,12 @@ spaces-context-new-window-item =
 # $tabName (String) - The name of the tab this item will switch to.
 spaces-context-switch-tab-item =
     .label = Εναλλαγή σε { $tabName }
-settings-context-open-settings-item =
-    .label = Άνοιγμα ρυθμίσεων
-settings-context-open-account-settings-item =
-    .label = Άνοιγμα ρυθμίσεων λογαριασμού
-settings-context-open-addons-item =
-    .label = Άνοιγμα προσθέτων και θεμάτων
+settings-context-open-settings-item2 =
+    .label = Ρυθμίσεις
+settings-context-open-account-settings-item2 =
+    .label = Ρυθμίσεις λογαριασμού
+settings-context-open-addons-item2 =
+    .label = Πρόσθετα και θέματα
 
 ## Spaces toolbar pinned tab menupopup
 
@@ -254,8 +250,6 @@ chat-button-unread-messages = { $count }
 
 ## Spaces toolbar customize panel
 
-spaces-context-customize =
-    .label = Προσαρμογή…
 menuitem-customize-label =
     .label = Προσαρμογή…
 spaces-customize-panel-title = Ρυθμίσεις γραμμής χώρων
@@ -269,7 +263,5 @@ spaces-customize-accent-background-color = Επιλεγμένο χρώμα φό�
 spaces-customize-accent-text-color = Επιλεγμένο χρώμα κουμπιού
 spaces-customize-button-restore = Επαναφορά προεπιλογών
     .accesskey = φ
-spaces-customize-button-save = Τέλος
-    .accesskey = Τ
 customize-panel-button-save = Τέλος
     .accesskey = Τ

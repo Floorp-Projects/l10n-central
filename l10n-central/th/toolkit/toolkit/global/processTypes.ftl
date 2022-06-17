@@ -17,9 +17,6 @@ process-type-privilegedmozilla = เนื้อหา Mozilla ที่มี�
 process-type-extension = ส่วนขยาย
 # process used to open file:// URLs
 process-type-file = ไฟล์ในเครื่อง
-# process used to isolate webpages that requested special
-# permission to allocate large amounts of memory
-process-type-weblargeallocation = การจัดสรรขนาดใหญ่
 # process used to isolate a webpage from other web pages
 # to improve security
 process-type-webisolated = เนื้อหาเว็บที่ถูกคัดแยก
@@ -42,6 +39,8 @@ process-type-gpu = GPU
 process-type-socket = ซ็อกเก็ต
 # process used to decode media
 process-type-rdd = RDD
+# process used to run some IPC actor in their own sandbox
+process-type-utility = Sandboxed IPC Actor
 
 ##
 ## Other

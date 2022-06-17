@@ -39,15 +39,18 @@ toolbar-context-menu-remove-extension =
 toolbar-context-menu-report-extension =
     .label = Rapportera tillägg
     .accesskey = R
-# Can appear on the same context menu as menubarCmd ("Menu Bar") and
-# personalbarCmd ("Bookmarks Toolbar"), so they should have different
-# access keys.
+# Can appear on the same context menu as toolbar-context-menu-menu-bar-cmd
+# ("Menu Bar") and personalbarCmd ("Bookmarks Toolbar"), so they should
+# have different access keys.
 toolbar-context-menu-pin-to-overflow-menu =
     .label = Fäst på spillmeny
     .accesskey = F
 toolbar-context-menu-auto-hide-downloads-button-2 =
     .label = Dölj knapp när den är tom
     .accesskey = D
+toolbar-context-menu-always-open-downloads-panel =
+    .label = Visa panelen när nedladdningen börjar
+    .accesskey = V
 toolbar-context-menu-remove-from-toolbar =
     .label = Ta bort från verktygsfält
     .accesskey = T

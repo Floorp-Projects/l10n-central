@@ -84,9 +84,6 @@ menuitem-toggle-attachment-pane =
 toolbar-button-add-attachment =
     .label = Επισύναψη
     .tooltiptext = Προσθήκη συνημμένου ({ ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key })
-add-attachment-notification-reminder =
-    .label = Προσθήκη συνημμένου…
-    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 add-attachment-notification-reminder2 =
     .label = Προσθήκη συνημμένου…
     .accesskey = Π
@@ -112,10 +109,6 @@ attachment-bucket-count-value =
         [1] { $count } συνημμένο
        *[other] { $count } συνημμένα
     }
-expand-attachment-pane-tooltip =
-    .tooltiptext = Εμφάνιση του πίνακα συνημμένων ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-collapse-attachment-pane-tooltip =
-    .tooltiptext = Απόκρυψη του πίνακα συνημμένων ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-show =
     .title = Εμφάνιση πίνακα συνημμένων ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -195,41 +188,12 @@ key-notification-resolve =
     .label = Επίλυση…
     .accesskey = λ
     .tooltiptext = Άνοιγμα βοηθού κλειδιών OpenPGP
+can-e2e-encrypt-button =
+    .label = Κρυπτογράφηση
+    .accesskey = Κ
 
 ## Addressing Area
 
-to-compose-address-row-label =
-    .value = Προς
-#   $key (String) - the shortcut key for this field
-to-compose-show-address-row-menuitem =
-    .label = Πεδίο «{ to-compose-address-row-label.value }»
-    .accesskey = Π
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-to-compose-show-address-row-label =
-    .value = { to-compose-address-row-label.value }
-    .tooltiptext = Εμφάνιση πεδίου «{ to-compose-address-row-label.value }» ({ to-compose-show-address-row-menuitem.acceltext })
-cc-compose-address-row-label =
-    .value = Κοιν.
-#   $key (String) - the shortcut key for this field
-cc-compose-show-address-row-menuitem =
-    .label = Πεδίο «{ cc-compose-address-row-label.value }»
-    .accesskey = δ
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-cc-compose-show-address-row-label =
-    .value = { cc-compose-address-row-label.value }
-    .tooltiptext = Εμφάνιση πεδίου «{ cc-compose-address-row-label.value }» ({ cc-compose-show-address-row-menuitem.acceltext })
-bcc-compose-address-row-label =
-    .value = Κρυφή κοιν.
-#   $key (String) - the shortcut key for this field
-bcc-compose-show-address-row-menuitem =
-    .label = Πεδίο «{ bcc-compose-address-row-label.value }»
-    .accesskey = ο
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-bcc-compose-show-address-row-label =
-    .value = { bcc-compose-address-row-label.value }
-    .tooltiptext = Εμφάνιση πεδίου «{ bcc-compose-address-row-label.value }» ({ bcc-compose-show-address-row-menuitem.acceltext })
-#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
-many-public-recipients-info = Οι { $count } παραλήπτες στα πεδία «Προς» και «Κοιν.» θα βλέπουν τις διευθύνσεις των υπολοίπων. Μπορείτε να αποφύγετε την αποκάλυψη των παραληπτών με το πεδίο «Κρυφή κοιν.».
 to-address-row-label =
     .value = Προς
 #   $key (String) - the shortcut key for this field
@@ -400,3 +364,9 @@ link-preview-description = Το { -brand-short-name } μπορεί να προσ
 link-preview-autoadd = Αυτόματη προσθήκη προεπισκοπήσεων συνδέσμων όταν είναι δυνατό
 link-preview-replace-now = Προσθήκη προεπισκόπησης συνδέσμου για αυτόν τον σύνδεσμο;
 link-preview-yes-replace = Ναι
+
+## Dictionary selection popup
+
+spell-add-dictionaries =
+    .label = Προσθήκη λεξικών…
+    .accesskey = Π

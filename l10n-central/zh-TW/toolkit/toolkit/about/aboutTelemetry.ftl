@@ -34,7 +34,6 @@ about-telemetry-events-section = 事件
 about-telemetry-simple-measurements-section = 簡易測量
 about-telemetry-slow-sql-section = 慢速的 SQL 陳述句
 about-telemetry-addon-details-section = 附加元件詳情
-about-telemetry-captured-stacks-section = 捕捉到的堆疊
 about-telemetry-late-writes-section = 慢速寫入
 about-telemetry-raw-payload-section = 原始酬載
 about-telemetry-raw = 原始 JSON
@@ -67,7 +66,7 @@ about-telemetry-histogram-stats =
        *[other] { $sampleCount } 個樣本、平均 = { $prettyAverage }、加總 = { $sum }
     }
 # Variables:
-#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Ablaze"
+#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-page-subtitle = 此頁面顯示 Telemetry 所收集到效能、硬體設定、使用程度、以及自訂選項的相關資訊。此資訊將會傳送到 { $telemetryServerOwner } 以幫助改善 { -brand-full-name }。
 about-telemetry-settings-explanation = Telemetry 正在收集{ about-telemetry-data-type }，已<a data-l10n-name="upload-link">{ about-telemetry-upload-type }</a>上傳。
 # Variables:
@@ -121,10 +120,6 @@ about-telemetry-keys-header = 屬性
 about-telemetry-names-header = 名稱
 about-telemetry-values-header = 值
 # Variables:
-#   $stackKey (String): the string key for this stack
-#   $capturedStacksCount (Integer):  the number of times this stack was captured
-about-telemetry-captured-stacks-title = { $stackKey }（捕捉到的數量: { $capturedStacksCount }）
-# Variables:
 #   $lateWriteCount (Integer): the number of the late writes
 about-telemetry-late-writes-title = 慢速寫入 #{ $lateWriteCount }
 about-telemetry-stack-title = 堆疊:
@@ -139,7 +134,7 @@ about-telemetry-origin-section = Origin Telemetry
 about-telemetry-origin-origin = 來源
 about-telemetry-origin-count = 數量
 # Variables:
-#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Ablaze"
+#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-origins-explanation = <a data-l10n-name="origin-doc-link">Firefox Origin Telemetry</a> 會在送出資料前為資料編碼，這樣 { $telemetryServerOwner } 才可以計數，但不知道是由哪一套 { -brand-product-name } 所送出的資料。（<a data-l10n-name="prio-blog-link">了解更多資訊</a>）
 # Variables:
 #  $process (String): type of process in subsection headers ( e.g. "content", "parent" )

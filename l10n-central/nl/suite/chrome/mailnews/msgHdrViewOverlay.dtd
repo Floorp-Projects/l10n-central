@@ -23,8 +23,10 @@
 <!ENTITY inReplyToField.label "In-antwoord-op: ">
 <!ENTITY originalWebsite.label "Website: ">
 
-<!ENTITY editMessage.label                 "Concept bewerken…">
-<!ENTITY editMessage.accesskey             "C">
+<!ENTITY editDraft.label                   "Concept bewerken…">
+<!ENTITY editDraft.accesskey               "w">
+<!ENTITY editTemplate.label                "Sjabloon bewerken…">
+<!ENTITY editTemplate.accesskey            "w">
 
 <!ENTITY attachmentsTree.label             "Bijlagen:">
 <!ENTITY attachmentsTree.accesskey         "n">

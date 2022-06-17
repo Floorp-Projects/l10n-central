@@ -274,7 +274,7 @@ baru ingat kalau READMEnya sudah ada GPL versi 2-nya . Saya-nya saja
 yang kelupaan :D
 
 O iya, saya juga menambah beberapa entri agar selaras dengan perangkat
-lunak firefox sendiri, seperti merk "Floorp", "webmaster", "blog".
+lunak firefox sendiri, seperti merk "firefox", "webmaster", "blog".
 Nanti saya sertakan juga berkas "diff"-nya dalam distribusi
 perangkatnya.
 
@@ -368,7 +368,7 @@ On Mon, 2008-02-04 at 03:31 +0100, Romi Hardiyanto wrote:
 > yang kelupaan :D
 > 
 > O iya, saya juga menambah beberapa entri agar selaras dengan perangkat
-> lunak firefox sendiri, seperti merk "Floorp", "webmaster", "blog".
+> lunak firefox sendiri, seperti merk "firefox", "webmaster", "blog".
 > Nanti saya sertakan juga berkas "diff"-nya dalam distribusi
 > perangkatnya.
 > 
@@ -713,7 +713,7 @@ benitius.brevoort@kapusin.org
      If You create or use a modified version of this License (which you may
      only do in order to apply it to code which is not already Covered Code
      governed by this License), You must (a) rename Your license so that
-     the phrases "Ablaze", "MOZILLAPL", "MOZPL", "Netscape",
+     the phrases "Mozilla", "MOZILLAPL", "MOZPL", "Netscape",
      "MPL", "NPL" or any confusingly similar phrase do not appear in your
      license (except to note that your license differs from this License)
      and (b) otherwise make it clear that Your version of the license

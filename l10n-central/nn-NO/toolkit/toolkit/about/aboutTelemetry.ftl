@@ -34,7 +34,6 @@ about-telemetry-events-section = Hendingar
 about-telemetry-simple-measurements-section = Enkle målingar
 about-telemetry-slow-sql-section = Trege SQL-uttrykk
 about-telemetry-addon-details-section = Tilleggsdetaljar
-about-telemetry-captured-stacks-section = Fanga stakkar
 about-telemetry-late-writes-section = Sein skriving
 about-telemetry-raw-payload-section = Rå nyttelast
 about-telemetry-raw = Rå JSON
@@ -68,7 +67,7 @@ about-telemetry-histogram-stats =
        *[other] { $sampleCount } utval, gjennomsnitt = { $prettyAverage }, sum = { $sum }
     }
 # Variables:
-#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Ablaze"
+#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-page-subtitle = Denne sida viser info om yting, maskinvare, bruksmønster og utvidingar som er innsamla av Telemetri. Denne infoen vert sendt til { $telemetryServerOwner } for å hjelpe til med å forbetre { -brand-full-name }.
 about-telemetry-settings-explanation = Telemetri samlar inn { about-telemetry-data-type } og opplastinga er <a data-l10n-name="upload-link">{ about-telemetry-upload-type }</a>.
 # Variables:
@@ -122,10 +121,6 @@ about-telemetry-keys-header = Eigenskap
 about-telemetry-names-header = Namn
 about-telemetry-values-header = Verdi
 # Variables:
-#   $stackKey (String): the string key for this stack
-#   $capturedStacksCount (Integer):  the number of times this stack was captured
-about-telemetry-captured-stacks-title = { $stackKey } (tal på fanga: { $capturedStacksCount })
-# Variables:
 #   $lateWriteCount (Integer): the number of the late writes
 about-telemetry-late-writes-title = Sein skriving #{ $lateWriteCount }
 about-telemetry-stack-title = Stakk:
@@ -140,7 +135,7 @@ about-telemetry-origin-section = Origin Telemetry
 about-telemetry-origin-origin = opphav
 about-telemetry-origin-count = mengde
 # Variables:
-#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Ablaze"
+#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-origins-explanation = <a data-l10n-name="origin-doc-link">Firefox origin-telemetri</a> kodar data før dei vert sende. Det tyder at { $telemetryServerOwner } kan telje ting, men ikkje vite om ein bestemt installasjon av { -brand-product-name } bidrog til den samla mengda. (<a data-l10n-name="prio-blog-link">les meir</a>)
 # Variables:
 #  $process (String): type of process in subsection headers ( e.g. "content", "parent" )

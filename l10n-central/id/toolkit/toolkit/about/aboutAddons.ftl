@@ -35,6 +35,8 @@ detail-version =
     .label = Versi
 detail-last-updated =
     .label = Terakhir Diperbarui
+addon-detail-description-expand = Tampilkan lebih banyak
+addon-detail-description-collapse = Tampilkan lebih sedikit
 detail-contributions-description = Pengembang pengaya ini memohon bantuan dukungan Anda untuk membantu kesinambungan pengembangan pengaya dengan memberikan kontribusi kecil.
 detail-contributions-button = Berkontribusi
     .title = Berkontribusi dalam pengembangan pengaya ini
@@ -283,8 +285,10 @@ extension-enabled-heading = Aktif
 extension-disabled-heading = Nonaktif
 theme-enabled-heading = Aktif
 theme-disabled-heading = Nonaktif
+theme-disabled-heading2 = Tema Tersimpan
 theme-monochromatic-heading = Warna
 theme-monochromatic-subheading = Warna baru yang semarak dari { -brand-product-name }. Tersedia untuk waktu terbatas.
+theme-colorways-button = Coba Colorways
 plugin-enabled-heading = Aktif
 plugin-disabled-heading = Nonaktif
 dictionary-enabled-heading = Aktif
@@ -347,7 +351,7 @@ addon-detail-private-browsing-disallow = Jangan Izinkan
 addon-badge-recommended2 =
     .title = { -brand-product-name } hanya menyarankan ekstensi yang memenuhi standar keamanan dan kinerja kami.
     .aria-label = { addon-badge-recommended2.title }
-# We hard code "Ablaze" in the string below because the extensions are built
+# We hard code "Mozilla" in the string below because the extensions are built
 # by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
     .title = Ekstensi resmi yang dibuat oleh Mozilla, memenuhi standar keamanan dan kinerja

@@ -175,6 +175,9 @@ openpgp-key-man-reload =
 openpgp-key-man-change-expiry =
     .label = 更改到期日
     .accesskey = E
+openpgp-key-man-refresh-online =
+    .label = 從網路重新整理
+    .accesskey = R
 openpgp-key-man-ignored-ids =
     .label = 電子郵件地址
 openpgp-key-man-del-key =
@@ -225,6 +228,7 @@ openpgp-key-man-key-details-key =
 openpgp-ign-addr-intro = 您接受將此金鑰用於驗證下列選擇的電子郵件地址:
 openpgp-key-details-title =
     .title = 金鑰屬性
+openpgp-key-details-doc-title = 金鑰屬性
 openpgp-key-details-signatures-tab =
     .label = 憑證
 openpgp-key-details-structure-tab =
@@ -233,12 +237,19 @@ openpgp-key-details-uid-certified-col =
     .label = 使用者 ID / 認證者
 openpgp-key-details-key-id-label = 金鑰 ID
 openpgp-key-details-user-id2-label = 聲稱的金鑰擁有者
+openpgp-key-details-user-id3-label = 聲稱的金鑰擁有者
 openpgp-key-details-id-label =
     .label = ID
 openpgp-key-details-key-type-label = 類型
 openpgp-key-details-key-part-label =
     .label = 金鑰部分
 openpgp-key-details-attr-ignored = 警告: 由於這把金鑰的部份屬性不安全且將被忽略，可能無法正常使用。
+openpgp-key-details-attr-upgrade-sec = 您應該將不安全的屬性升級。
+openpgp-key-details-attr-upgrade-pub = 您應該請這把金鑰的擁有者將不安全的屬性升級。
+openpgp-key-details-upgrade-unsafe =
+    .label = 升級不安全的屬性
+    .accesskey = P
+openpgp-key-details-upgrade-ok = 已成功升級金鑰。請與其他往來通訊的人員交換升級過的公鑰。
 openpgp-key-details-algorithm-label =
     .label = 演算法
 openpgp-key-details-size-label =
@@ -256,7 +267,6 @@ openpgp-key-details-legend-secret-missing = 有 (!) 標示的金鑰表示缺少�
 openpgp-key-details-sel-action =
     .label = 選擇操作…
     .accesskey = S
-openpgp-key-details-also-known-label = 金鑰擁有者聲稱的其他身分:
 openpgp-card-details-close-window-label =
     .buttonlabelaccept = 關閉
 openpgp-acceptance-label =
@@ -270,7 +280,6 @@ openpgp-acceptance-unverified-label =
 openpgp-acceptance-verified-label =
     .label = 接受，我已經確認過金鑰指紋正確。
 key-accept-personal = 您有這把金鑰的公鑰與私鑰部分，可以將其用作個人金鑰。若這把金鑰是由別人提供給您的，那麼就請勿將其用作個人金鑰。
-key-personal-warning = 您是否自行建立了這把金鑰，而且顯示的擁有者資訊也是您自己？
 openpgp-personal-no-label =
     .label = 否，不要把這把金鑰當成我的個人金鑰。
 openpgp-personal-yes-label =
@@ -280,13 +289,6 @@ openpgp-copy-cmd-label =
 
 ## e2e encryption settings
 
-#   $count (Number) - the number of configured keys associated with the current identity
-#   $identity (String) - the email address of the currently selected identity
-openpgp-description =
-    { $count ->
-        [0] Thunderbird 沒有用於 <b>{ $identity }</b> 的 OpenPGP 個人金鑰
-       *[other] Thunderbird 找到 { $count } 把 <b>{ $identity }</b> 的 OpenPGP 個人金鑰
-    }
 #   $identity (String) - the email address of the currently selected identity
 openpgp-description-no-key = { -brand-short-name } 沒有 <b>{ $identity }</b> 的私人 OpenPGP 金鑰
 #   $count (Number) - the number of configured keys associated with the current identity
@@ -351,7 +353,6 @@ key-expired-date = 金鑰已於 { $keyExpiry } 過期
 key-expired-simple = 金鑰已經過期
 key-revoked-simple = 金鑰已被撤銷
 key-do-you-accept = 您要接受將此金鑰用來驗證數位簽章與加密訊息嗎？
-key-accept-warning = 請先使用電子郵件以外的通訊管道驗證對方的金鑰指紋，不要接受惡意金鑰。
 key-verification = 請使用電子郵件以外的安全通訊方式確認金鑰指紋，以確保這的確是 { $addr } 的金鑰。
 # Strings enigmailMsgComposeOverlay.js
 cannot-use-own-key-because = 您的個人金鑰有問題，無法傳送訊息。{ $problem }
@@ -373,16 +374,6 @@ wkd-message-body-req = 您的電子郵件服務供應商處理了您要將公鑰
 wkd-message-body-process = 這是一封關於自動將公鑰上傳到 OpenPGP 網頁金鑰目錄的郵件。您暫時還不必做任何事。
 # Strings in persistentCrypto.jsm
 converter-decrypt-body-failed = 無法解密主旨為 { $subject } 的訊息。您想要使用不同密語再試一次，或是跳過此訊息？
-# Strings in gpg.jsm
-unknown-signing-alg = 未知的簽章演算法（ID: { $id }）
-unknown-hash-alg = 未知的加密雜湊值（ID: { $id }）
-# Strings in keyUsability.jsm
-expiry-key-expires-soon = 您的金鑰 { $desc } 將於 { $days } 天內到期。建議您打一把新的金鑰，並且設定好對應帳號來使用。
-expiry-keys-expire-soon = 您的下列金鑰將於 { $days } 天內到期: { $desc }。建議您打新的金鑰，並且設定好對應帳號來使用。
-expiry-key-missing-owner-trust = 您的私鑰 { $desc } 缺少信任設定。建議您到金鑰屬性中，將「金鑰信任程度」設定為「完全信任」。
-expiry-keys-missing-owner-trust = 下列私鑰缺少信任設定: { $desc }。建議您到金鑰屬性中，將「金鑰信任程度」設定為「完全信任」。
-expiry-open-key-manager = 開啟 OpenPGP 金鑰管理員
-expiry-open-key-properties = 開啟金鑰屬性
 # Strings filters.jsm
 filter-folder-required = 您必須指定目的資料夾。
 filter-decrypt-move-warn-experimental = 警告: 過濾器動作「永久解密」可能會毀損訊息。我們強烈建議您先試用「建立解密副本」過濾器，小心測試結果，只在確認都沒問題的情況才使用此過濾器。
@@ -476,6 +467,9 @@ key-error-not-accepted-as-personal = 您並未確認 ID 為「{ $keySpec }」的
 need-online = 您選擇的功能無法於離線模式使用。請先上線然後再試一次。
 # Strings used in keyRing.jsm & keyLookupHelper.jsm
 no-key-found = 找不到任何符合搜尋條件的金鑰。
+# Strings used in keyRing.jsm & keyLookupHelper.jsm
+no-key-found2 = 找不到任何符合搜尋條件的可用金鑰。
+no-update-found = 您已經擁有在網路上找到的金鑰。
 # Strings used in keyRing.jsm & GnuPGCryptoAPI.jsm
 fail-key-extract = 錯誤 - 金鑰抽取指令執行失敗
 # Strings used in keyRing.jsm
@@ -548,16 +542,9 @@ minimal-line-wrapping = 您將換行長度設為 { $width } 字元。若需正�
 sending-news = 加密傳送操作中斷。因為有新聞群組收件者，無法加密此訊息。請解除加密再重新寄出。
 send-to-news-warning = 警告: 您即將傳送加密的郵件到新聞群組中。由於只有在群組中的所有成員都能夠解密訊息時才能閱讀（也就是說，必須使用群組中的所有成員的金鑰加密訊息），否則這個動作並不合理。請只在您真的知道現在在做什麼的時候才寄出這封信。確定要繼續嗎？
 save-attachment-header = 儲存解密附件
-no-temp-dir = 找不到可以寫入的暫用資料夾，請設定 TEMP 環境變數
 possibly-pgp-mime = 可能是 PGP/MIME 加密或簽署過的訊息，請使用「解密 / 驗證」功能來驗證
 cannot-send-sig-because-no-own-key = 由於您還沒有設定 <{ $key }> 的端到端加密，無法數位簽署此訊息
 cannot-send-enc-because-no-own-key = 由於您還沒有設定 <{ $key }> 的端到端加密，無法加密寄出此訊息
-compose-menu-attach-key =
-    .label = 附加我的公鑰
-    .accesskey = A
-compose-menu-encrypt-subject =
-    .label = 主旨加密
-    .accesskey = b
 # Strings used in decryption.jsm
 do-import-multiple = 要匯入下列金鑰嗎？{ $key }
 do-import-one = 要匯入 { $name }（{ $id }）嗎？

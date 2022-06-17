@@ -67,7 +67,7 @@ about-telemetry-histogram-stats =
        *[other] { $sampleCount } Messungen, Durchschnitt = { $prettyAverage }, Summe = { $sum }
     }
 # Variables:
-#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Ablaze"
+#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-page-subtitle = Diese Seite zeigt durch Telemetrie gesammelte Informationen über Performanz, Hardware, Benutzung und vom Benutzer gemachte Änderungen an. Diese Informationen werden an { $telemetryServerOwner } gesendet, um { -brand-full-name } zu verbessern.
 about-telemetry-settings-explanation = Telemetrie sammelt { about-telemetry-data-type } und das Hochladen ist <a data-l10n-name="upload-link">{ about-telemetry-upload-type }</a>.
 # Variables:
@@ -135,7 +135,7 @@ about-telemetry-origin-section = Quellen-Telemetrie
 about-telemetry-origin-origin = Quelle
 about-telemetry-origin-count = Anzahl
 # Variables:
-#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Ablaze"
+#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-origins-explanation = Die <a data-l10n-name="origin-doc-link">Quellen-Telemetrie von Firefox</a> kodiert Daten vor dem Senden, sodass { $telemetryServerOwner } etwas zählen aber nicht bestimmen kann, ob eine bestimmte { -brand-product-name }-Installation zu der Zählung beigetragen hat. <a data-l10n-name="prio-blog-link">Weitere Informationen</a>
 # Variables:
 #  $process (String): type of process in subsection headers ( e.g. "content", "parent" )

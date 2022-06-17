@@ -26,6 +26,8 @@ about-addressbook-books-context-properties =
     .label = Proprietà
 about-addressbook-books-context-synchronize =
     .label = Sincronizza
+about-addressbook-books-context-edit =
+    .label = Modifica
 about-addressbook-books-context-print =
     .label = Stampa…
 about-addressbook-books-context-export =
@@ -53,8 +55,8 @@ about-addressbook-search =
     .placeholder = Cerca in { $name }
 about-addressbook-search-all =
     .placeholder = Cerca in tutte le rubriche
-about-addressbook-sort-button =
-    .title = Cambia ordine dell’elenco
+about-addressbook-sort-button2 =
+    .title = Opzioni visualizzazione elenco
 about-addressbook-name-format-display =
     .label = Nome visualizzato
 about-addressbook-name-format-firstlast =
@@ -69,6 +71,38 @@ about-addressbook-sort-email-ascending =
     .label = Ordina per indirizzo email (A > Z)
 about-addressbook-sort-email-descending =
     .label = Ordina per indirizzo email (Z > A)
+about-addressbook-horizontal-layout =
+    .label = Passa alla disposizione orizzontale
+about-addressbook-vertical-layout =
+    .label = Passa alla disposizione verticale
+
+## Card column headers
+## Each string is listed here twice, and the values should match.
+
+about-addressbook-column-header-generatedname = Nome
+about-addressbook-column-label-generatedname =
+    .label = { about-addressbook-column-header-generatedname }
+about-addressbook-column-header-emailaddresses = Indirizzi email
+about-addressbook-column-label-emailaddresses =
+    .label = { about-addressbook-column-header-emailaddresses }
+about-addressbook-column-header-phonenumbers = Numeri di telefono
+about-addressbook-column-label-phonenumbers =
+    .label = { about-addressbook-column-header-phonenumbers }
+about-addressbook-column-header-addresses = Indirizzi
+about-addressbook-column-label-addresses =
+    .label = { about-addressbook-column-header-addresses }
+about-addressbook-column-header-title = Titolo
+about-addressbook-column-label-title =
+    .label = { about-addressbook-column-header-title }
+about-addressbook-column-header-department = Reparto
+about-addressbook-column-label-department =
+    .label = { about-addressbook-column-header-department }
+about-addressbook-column-header-organization = Organizzazione
+about-addressbook-column-label-organization =
+    .label = { about-addressbook-column-header-organization }
+about-addressbook-column-header-addrbook = Rubrica
+about-addressbook-column-label-addrbook =
+    .label = { about-addressbook-column-header-addrbook }
 about-addressbook-cards-context-write =
     .label = Scrivi
 about-addressbook-confirm-delete-mixed-title = Elimina contatti e liste
@@ -122,17 +156,43 @@ about-addressbook-confirm-delete-contacts =
        *[other] Eliminare questi { $count } contatti?
     }
 
+## Card list placeholder
+## Shown when there are no cards in the list
+
+about-addressbook-placeholder-empty-book = Nessun contatto disponibile
+about-addressbook-placeholder-new-contact = Nuovo contatto
+about-addressbook-placeholder-search-only = Per questa rubrica verranno visualizzati i contatti solo dopo una ricerca
+about-addressbook-placeholder-searching = Ricerca in corso…
+about-addressbook-placeholder-no-search-results = Nessun contatto trovato
+
 ## Details
 
+about-addressbook-prefer-display-name = Preferisci il nome visualizzato all’intestazione del messaggio
+about-addressbook-write-action-button = Scrivi
+about-addressbook-event-action-button = Evento
+about-addressbook-search-action-button = Cerca
 about-addressbook-begin-edit-contact-button = Modifica
 about-addressbook-delete-edit-contact-button = Elimina
 about-addressbook-cancel-edit-contact-button = Annulla
 about-addressbook-save-edit-contact-button = Salva
+about-addressbook-add-contact-to = Aggiungi a:
 about-addressbook-details-email-addresses-header = Indirizzi email
 about-addressbook-details-phone-numbers-header = Numeri di telefono
-about-addressbook-details-home-address-header = Indirizzo di casa
-about-addressbook-details-work-address-header = Indirizzo di lavoro
+about-addressbook-details-addresses-header = Indirizzi
+about-addressbook-details-notes-header = Note
 about-addressbook-details-other-info-header = Altre informazioni
+about-addressbook-entry-type-work = Lavoro
+about-addressbook-entry-type-home = Casa
+about-addressbook-entry-type-fax = Fax
+about-addressbook-entry-type-cell = Cellulare
+about-addressbook-entry-type-pager = Cercapersone
+about-addressbook-entry-name-birthday = Compleanno
+about-addressbook-entry-name-anniversary = Anniversario
+about-addressbook-entry-name-title = Qualifica
+about-addressbook-entry-name-role = Ruolo
+about-addressbook-entry-name-organization = Organizzazione
+about-addressbook-entry-name-website = Sito web
+about-addressbook-entry-name-time-zone = Fuso orario
 about-addressbook-unsaved-changes-prompt-title = Modifiche non salvate
 about-addressbook-unsaved-changes-prompt = Salvare le modifiche prima di uscire dalla modalità di modifica?
 

@@ -21,6 +21,7 @@ perftools-heading-features-default = Funkciók (alapértelmezés szerint ajánlo
 perftools-heading-features-disabled = Letiltott funkciók
 perftools-heading-features-experimental = Kísérleti
 perftools-heading-threads = Szálak
+perftools-heading-threads-jvm = JVM szálak
 perftools-heading-local-build = Helyi összeállítás
 
 ##
@@ -49,9 +50,6 @@ perftools-devtools-settings-label = Beállítások
 
 ## Various statuses that affect the current state of profiling, not typically displayed.
 
-perftools-status-private-browsing-notice =
-    A profilozó le van tiltva, ha a privát böngészés engedélyezett.
-    A profilozó újbóli engedélyezéséhez zárjon be minden privát ablakot.
 perftools-status-recording-stopped-by-another-tool = A felvételt egy másik eszköz leállította.
 perftools-status-restart-required = A funkció bekapcsolásához újra kell indítani a böngészőt.
 
@@ -97,6 +95,18 @@ perftools-thread-dns-resolver =
     .title = A DNS-feloldás ezen a szálon történik
 perftools-thread-task-controller =
     .title = TaskController thread pool szálak
+perftools-thread-jvm-gecko =
+    .title = A fő Gecko JVM szál
+perftools-thread-jvm-nimbus =
+    .title = A Nimbus kísérletek SDK-jának fő szálai
+perftools-thread-jvm-default-dispatcher =
+    .title = A Kotlin korutin programkönyvtár alapértelmezett diszpécsere
+perftools-thread-jvm-glean =
+    .title = A Glean telemetriai SDK fő szálai
+perftools-thread-jvm-arch-disk-io =
+    .title = A Kotlin korutin programkönyvtár IO diszpécsere
+perftools-thread-jvm-pool =
+    .title = Névtelen szálkészletben létrehozott szálak
 
 ##
 
@@ -107,6 +117,10 @@ perftools-tools-threads-input-label =
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
 ## preferences are true.
+
+
+## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
+## devtools.performance.new-panel-onboarding preference is true.
 
 perftools-onboarding-message = <b>Új</b>: A { -profiler-brand-name } mostantól a Fejlesztői eszközökbe integrált. <a>Tudjon meg többet</a> erről a hatékony új eszközről.
 # `options-context-advanced-settings` is defined in toolbox-options.ftl
@@ -123,18 +137,11 @@ perftools-onboarding-close-button =
 
 perftools-presets-web-developer-label = Webfejlesztő
 perftools-presets-web-developer-description = Ajánlott előbeállítás a legtöbb webalkalmazás hibakereséséhez, alacsony pluszköltséggel.
-perftools-presets-firefox-platform-label = Floorp platform
-perftools-presets-firefox-platform-description = Ajánlott előbeállítás a Firefox platform belső hibakereséséhez.
-perftools-presets-firefox-front-end-label = Floorp kezelőfelület
-perftools-presets-firefox-front-end-description = Ajánlott előbeállítás a Firefox felületének belső hibakereséséhez.
-perftools-presets-firefox-graphics-label = Floorp grafika
-perftools-presets-firefox-graphics-description = Ajánlott előbeállítás a Firefox grafikus teljesítményének vizsgálatához.
 perftools-presets-firefox-label = { -brand-shorter-name }
 perftools-presets-firefox-description = Javasolt előbeállítás a { -brand-shorter-name } profilozásához.
 perftools-presets-graphics-label = Grafika
 perftools-presets-graphics-description = Előbeállítás a { -brand-shorter-name } grafikai hibák kivizsgálásához.
 perftools-presets-media-label = Média
-perftools-presets-media-description = Ajánlott előbeállítás a hang- és videóproblémák diagnosztizálásához.
 perftools-presets-media-description2 = Előbeállítás a { -brand-shorter-name } hang- és videóhibáinak kivizsgálásához.
 perftools-presets-networking-label = Hálózat
 perftools-presets-networking-description = Előbeállítás a { -brand-shorter-name } hálózati hibák kivizsgálásához.

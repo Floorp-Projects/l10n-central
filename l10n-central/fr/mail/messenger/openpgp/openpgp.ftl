@@ -181,6 +181,9 @@ openpgp-key-man-reload =
 openpgp-key-man-change-expiry =
     .label = Modifier la date d’expiration
     .accesskey = M
+openpgp-key-man-refresh-online =
+    .label = Actualiser en ligne
+    .accesskey = A
 openpgp-key-man-ignored-ids =
     .label = Adresses électroniques
 openpgp-key-man-del-key =
@@ -231,6 +234,7 @@ openpgp-key-man-key-details-key =
 openpgp-ign-addr-intro = Vous acceptez d’utiliser cette clé pour les adresses électroniques sélectionnées suivantes :
 openpgp-key-details-title =
     .title = Propriétés de la clé
+openpgp-key-details-doc-title = Propriétés de la clé
 openpgp-key-details-signatures-tab =
     .label = Certifications
 openpgp-key-details-structure-tab =
@@ -239,12 +243,19 @@ openpgp-key-details-uid-certified-col =
     .label = Identifiant utilisateur / Certifié par
 openpgp-key-details-key-id-label = Identifiant de clé
 openpgp-key-details-user-id2-label = Propriétaire présumé de la clé
+openpgp-key-details-user-id3-label = Propriétaire de clé revendiqué
 openpgp-key-details-id-label =
     .label = Identifiant
 openpgp-key-details-key-type-label = Type
 openpgp-key-details-key-part-label =
     .label = Partie de clé
 openpgp-key-details-attr-ignored = Attention : Cette clé pourrait ne pas fonctionner comme prévu, car certaines de ses propriétés ne sont pas sûres et pourraient être ignorées.
+openpgp-key-details-attr-upgrade-sec = Vous devriez mettre à niveau les propriétés non sécurisées.
+openpgp-key-details-attr-upgrade-pub = Vous devriez demander au propriétaire de cette clé de mettre à niveau les propriétés non sécurisées.
+openpgp-key-details-upgrade-unsafe =
+    .label = Mettre à niveau les propriétés non sécurisées
+    .accesskey = M
+openpgp-key-details-upgrade-ok = La clé a été correctement mise à niveau. Vous devez partager la clé publique mise à niveau avec vos correspondants.
 openpgp-key-details-algorithm-label =
     .label = Algorithme
 openpgp-key-details-size-label =
@@ -262,7 +273,6 @@ openpgp-key-details-legend-secret-missing = Pour les clés marquées d’un (!),
 openpgp-key-details-sel-action =
     .label = Sélectionner une action…
     .accesskey = S
-openpgp-key-details-also-known-label = Identités alternatives présumées du propriétaire principal :
 openpgp-card-details-close-window-label =
     .buttonlabelaccept = Fermer
 openpgp-acceptance-label =
@@ -278,7 +288,6 @@ openpgp-acceptance-verified-label =
 key-accept-personal =
     Pour cette clé, vous disposez à la fois de la partie publique et de la partie secrète. Vous pouvez l’utiliser en tant que clé personnelle.
     Si cette clé vous a été fournie par quelqu’un d’autre, ne l’utilisez pas comme clé personnelle.
-key-personal-warning = Avez-vous créé cette clé vous-même et la propriété de la clé fait-elle référence à vous-même ?
 openpgp-personal-no-label =
     .label = Non, ne pas l’utiliser comme clé personnelle.
 openpgp-personal-yes-label =
@@ -288,14 +297,6 @@ openpgp-copy-cmd-label =
 
 ## e2e encryption settings
 
-#   $count (Number) - the number of configured keys associated with the current identity
-#   $identity (String) - the email address of the currently selected identity
-openpgp-description =
-    { $count ->
-        [0] Thunderbird ne possède aucune clé personnelle OpenPGP pour <b>{ $identity }</b>
-        [one] Thunderbird a trouvé une clé personnelle OpenPGP associée avec <b>{ $identity }</b>
-       *[other] Thunderbird a trouvé { $count } clés personnelles OpenPGP associées avec <b>{ $identity }</b>
-    }
 #   $identity (String) - the email address of the currently selected identity
 openpgp-description-no-key = { -brand-short-name } ne dispose pas de clé personnelle OpenPGP pour <b>{ $identity }</b>
 #   $count (Number) - the number of configured keys associated with the current identity
@@ -361,7 +362,6 @@ key-expired-date = La clé a expiré le { $keyExpiry }
 key-expired-simple = La clé a expiré
 key-revoked-simple = La clé a été révoquée
 key-do-you-accept = Acceptez-vous cette clé pour vérifier les signatures numériques et pour chiffrer les messages ?
-key-accept-warning = Assurez-vous de n’accepter que des clés authentiques. Utilisez un canal de communication alternatif au courriel pour vérifier l’empreinte de la clé de votre correspondant.
 key-verification = Vérifiez l’empreinte numérique de la clé à l’aide d’un canal de communication sécurisé autre que le courrier électronique pour vous assurer qu’il s’agit bien de la clé de { $addr }.
 # Strings enigmailMsgComposeOverlay.js
 cannot-use-own-key-because = Impossible d’envoyer le message, car il y a un problème avec votre clé personnelle. { $problem }
@@ -390,37 +390,6 @@ converter-decrypt-body-failed =
     Impossible de déchiffrer le message dont le sujet est
     « { $subject } ».
     Voulez-vous recommencer avec une phrase de passe différente ou plutôt ignorer ce message ?
-# Strings in gpg.jsm
-unknown-signing-alg = Algorithme de signature inconnu (Identifiant : { $id })
-unknown-hash-alg = Empreinte cryptographique inconnue (Identifiant : { $id })
-# Strings in keyUsability.jsm
-expiry-key-expires-soon =
-    { $days ->
-        [one]
-            Votre clé { $desc } va expirer dans moins d’un jour.
-            Nous vous recommandons de créer une nouvelle paire de clés et de configurer les comptes associés pour l’utiliser.
-       *[other]
-            Votre clé { $desc } va expirer dans moins de { $days } jours.
-            Nous vous recommandons de créer une nouvelle paire de clés et de configurer les comptes associés pour l’utiliser.
-    }
-expiry-keys-expire-soon =
-    { $days ->
-        [one]
-            Les clés suivantes vont expirer dans moins d’un jour : { $desc }.
-            Nous vous recommandons de créer de nouvelles paires de clés et de configurer les comptes associés pour les utiliser.
-       *[other]
-            Les clés suivantes vont expirer dans moins de { $days } jours : { $desc }.
-            Nous vous recommandons de créer de nouvelles paires de clés et de configurer les comptes associés pour les utiliser.
-    }
-expiry-key-missing-owner-trust =
-    Votre clé privée { $desc } ne possède pas de déclaration de confiance.
-    Nous vous recommandons de définir « Vous comptez sur des certifications » sur « absolue » dans les propriétés de cette clé.
-expiry-keys-missing-owner-trust =
-    Vos clés privées suivantes ne possèdent pas de déclaration de confiance.
-    { $desc }.
-    Nous vous recommandons de définir « Vous comptez sur des certifications » sur « absolue » dans les propriétés de ces clés.
-expiry-open-key-manager = Ouvrir le gestionnaire de clés OpenPGP
-expiry-open-key-properties = Ouvrir les propriétés de la clé
 # Strings filters.jsm
 filter-folder-required = Vous devez sélectionner un dossier cible.
 filter-decrypt-move-warn-experimental =
@@ -537,6 +506,9 @@ key-error-not-accepted-as-personal = Vous n’avez pas confirmé que la clé ave
 need-online = La fonction que vous avez sélectionnée n’est pas disponible en mode hors connexion. Veuillez vous connecter et réessayer.
 # Strings used in keyRing.jsm & keyLookupHelper.jsm
 no-key-found = Nous n’avons trouvé aucune clé correspondant aux critères de recherche spécifiés.
+# Strings used in keyRing.jsm & keyLookupHelper.jsm
+no-key-found2 = Nous n’avons trouvé aucune clé utilisable correspondant aux critères de recherche spécifiés.
+no-update-found = Vous disposez déjà des clés découvertes en ligne.
 # Strings used in keyRing.jsm & GnuPGCryptoAPI.jsm
 fail-key-extract = Erreur – échec de la commande d’extraction de clé
 # Strings used in keyRing.jsm
@@ -622,18 +594,9 @@ send-to-news-warning =
     Cela est déconseillé, car il ne serait logique de le faire que si tous les membres du forum peuvent déchiffrer le courriel, c.-à-d. que le courriel doit être chiffré avec les clés de tous les membres du forum. Veuillez n’envoyer ce courriel que si vous savez exactement ce que vous faites.
     Continuer ?
 save-attachment-header = Enregistrer la pièce jointe déchiffrée
-no-temp-dir =
-    Impossible de trouver un répertoire temporaire dans lequel écrire.
-    Veuillez définir la variable d’environnement TEMP
 possibly-pgp-mime = Message potentiellement chiffré ou signé via PGP/MIME ; utilisez la fonction « Déchiffrer/Vérifier » pour vous en assurer
 cannot-send-sig-because-no-own-key = Impossible de signer numériquement ce message, car vous n’avez pas encore configuré le chiffrement de bout en bout pour <{ $key }>
 cannot-send-enc-because-no-own-key = Impossible d’envoyer ce message chiffré, car vous n’avez pas encore configuré le chiffrement de bout en bout pour <{ $key }>
-compose-menu-attach-key =
-    .label = Joindre ma clé publique
-    .accesskey = J
-compose-menu-encrypt-subject =
-    .label = Chiffrement du sujet
-    .accesskey = h
 # Strings used in decryption.jsm
 do-import-multiple = Importer les clés suivantes ? { $key }
 do-import-one = Importer { $name } ({ $id }) ?

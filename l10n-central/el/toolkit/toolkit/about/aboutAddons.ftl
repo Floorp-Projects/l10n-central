@@ -35,6 +35,8 @@ detail-version =
     .label = Έκδοση
 detail-last-updated =
     .label = Τελευταία ενημέρωση
+addon-detail-description-expand = Εμφάνιση περισσότερων
+addon-detail-description-collapse = Εμφάνιση λιγότερων
 detail-contributions-description = Ο προγραμματιστής αυτού του προσθέτου σάς ζητά να συνεισφέρετε στην ανάπτυξή του με μια μικρή δωρεά.
 detail-contributions-button = Συνεισφορά
     .title = Συνεισφορά στην ανάπτυξη αυτού του προσθέτου
@@ -285,8 +287,10 @@ extension-enabled-heading = Ενεργές
 extension-disabled-heading = Ανενεργές
 theme-enabled-heading = Ενεργά
 theme-disabled-heading = Ανενεργά
+theme-disabled-heading2 = Αποθηκευμένα θέματα
 theme-monochromatic-heading = Χρωματικοί συνδυασμοί
 theme-monochromatic-subheading = Νέοι, δυναμικοί χρωματικοί συνδυασμοί από το { -brand-product-name }. Διαθέσιμοι για περιορισμένο χρονικό διάστημα.
+theme-colorways-button = Δοκιμή χρωματικών συνδυασμών
 plugin-enabled-heading = Ενεργά
 plugin-disabled-heading = Ανενεργά
 dictionary-enabled-heading = Ενεργά
@@ -350,7 +354,7 @@ addon-detail-private-browsing-disallow = Απόρριψη
 addon-badge-recommended2 =
     .title = Το { -brand-product-name } προτείνει μόνο επεκτάσεις που πληρούν τα πρότυπα ασφαλείας και επιδόσεών μας
     .aria-label = { addon-badge-recommended2.title }
-# We hard code "Ablaze" in the string below because the extensions are built
+# We hard code "Mozilla" in the string below because the extensions are built
 # by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
     .title = Επίσημη επέκταση από τη Mozilla. Πληροί τα πρότυπα ασφαλείας και επιδόσεων

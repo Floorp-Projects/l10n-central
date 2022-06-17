@@ -181,6 +181,9 @@ openpgp-key-man-reload =
 openpgp-key-man-change-expiry =
     .label = Ändra utgångsdatum
     .accesskey = n
+openpgp-key-man-refresh-online =
+    .label = Uppdatera online
+    .accesskey = U
 openpgp-key-man-ignored-ids =
     .label = E-postadresser
 openpgp-key-man-del-key =
@@ -231,6 +234,7 @@ openpgp-key-man-key-details-key =
 openpgp-ign-addr-intro = Du accepterar att använda denna nyckel för följande valda e-postadresser:
 openpgp-key-details-title =
     .title = Nyckelegenskaper
+openpgp-key-details-doc-title = Nyckelegenskaper
 openpgp-key-details-signatures-tab =
     .label = Certifieringar
 openpgp-key-details-structure-tab =
@@ -239,12 +243,19 @@ openpgp-key-details-uid-certified-col =
     .label = Användar-ID / Certifierat av
 openpgp-key-details-key-id-label = Nyckel-ID
 openpgp-key-details-user-id2-label = Påstådd nyckelägare
+openpgp-key-details-user-id3-label = Påstådd nyckelägare
 openpgp-key-details-id-label =
     .label = ID
 openpgp-key-details-key-type-label = Typ
 openpgp-key-details-key-part-label =
     .label = Nyckeldel
 openpgp-key-details-attr-ignored = Varning: Den här nyckeln kanske inte fungerar som förväntat, eftersom vissa av dess egenskaper är osäkra och kan ignoreras.
+openpgp-key-details-attr-upgrade-sec = Du bör uppgradera de osäkra egenskaperna.
+openpgp-key-details-attr-upgrade-pub = Du bör be ägaren av denna nyckel att uppgradera de osäkra egenskaperna.
+openpgp-key-details-upgrade-unsafe =
+    .label = Uppgradera osäkra egenskaper
+    .accesskey = e
+openpgp-key-details-upgrade-ok = Nyckeln har uppgraderats. Du bör dela den uppgraderade publika nyckeln med dina korrespondenter.
 openpgp-key-details-algorithm-label =
     .label = Algoritm
 openpgp-key-details-size-label =
@@ -262,7 +273,6 @@ openpgp-key-details-legend-secret-missing = För nycklar markerade med (!) är d
 openpgp-key-details-sel-action =
     .label = Välj åtgärd…
     .accesskey = V
-openpgp-key-details-also-known-label = Påstådda alternativa identiteter för nyckelägaren:
 openpgp-card-details-close-window-label =
     .buttonlabelaccept = Stäng
 openpgp-acceptance-label =
@@ -278,7 +288,6 @@ openpgp-acceptance-verified-label =
 key-accept-personal =
     För denna nyckel har du både den publika och den hemliga delen. Du kan använda den som en personlig nyckel.
     Om du fick den här nyckeln av någon annan, använd inte den som en personlig nyckel.
-key-personal-warning = Skapade du den här nyckeln själv och det visade ägarskapet av nyckeln hänvisar till dig själv?
 openpgp-personal-no-label =
     .label = Nej, använd inte den som min personliga nyckel.
 openpgp-personal-yes-label =
@@ -288,14 +297,6 @@ openpgp-copy-cmd-label =
 
 ## e2e encryption settings
 
-#   $count (Number) - the number of configured keys associated with the current identity
-#   $identity (String) - the email address of the currently selected identity
-openpgp-description =
-    { $count ->
-        [0] Thunderbird har inte en personlig OpenPGP-nyckel för <b>{ $identity }</b>
-        [one] Thunderbird hittade { $count } personlig OpenPGP-nyckel associerad med <b>{ $identity }</b>
-       *[other] Thunderbird hittade { $count } personliga OpenPGP-nycklar associerade med <b>{ $identity }</b>
-    }
 #   $identity (String) - the email address of the currently selected identity
 openpgp-description-no-key = { -brand-short-name } har ingen personlig OpenPGP-nyckel för <b>{ $identity }</b>
 #   $count (Number) - the number of configured keys associated with the current identity
@@ -361,7 +362,6 @@ key-expired-date = Nyckeln upphörde { $keyExpiry }
 key-expired-simple = Nyckeln har upphört
 key-revoked-simple = Nyckeln återkallades
 key-do-you-accept = Accepterar du den här nyckeln för att verifiera digitala signaturer och för att kryptera meddelanden?
-key-accept-warning = Undvik att acceptera en skurknyckel. Använd en annan kommunikationskanal än e-post för att verifiera fingeravtrycket på din korrespondents nyckel.
 key-verification = Verifiera nyckelns fingeravtryck med en annan säker kommunikationskanal än e-post för att säkerställa att det verkligen är nyckeln till { $addr }.
 # Strings enigmailMsgComposeOverlay.js
 cannot-use-own-key-because = Det går inte att skicka meddelandet eftersom det finns ett problem med din personliga nyckel. { $problem }
@@ -390,25 +390,6 @@ converter-decrypt-body-failed =
     Det gick inte att dekryptera meddelandet med ämnet
     { $subject }.
     Vill du försöka igen med en annan lösenfras eller vill du hoppa över meddelandet?
-# Strings in gpg.jsm
-unknown-signing-alg = Okänd signeringsalgoritm (ID: { $id })
-unknown-hash-alg = Okänd kryptografisk hash (ID: { $id })
-# Strings in keyUsability.jsm
-expiry-key-expires-soon =
-    Din nyckel { $desc } upphör om mindre än { $days } dagar.
-    Vi rekommenderar att du skapar ett nytt nyckelpar och konfigurerar motsvarande konton för att använda den.
-expiry-keys-expire-soon =
-    Följande nycklar upphör om mindre än { $days } dagar: { $desc }.
-    Vi rekommenderar att du skapar nya nycklar och konfigurerar motsvarande konton för att använda dem.
-expiry-key-missing-owner-trust =
-    Din hemliga nyckel { $desc } saknar förtroende.
-    Vi rekommenderar att du ställer in "Du litar på certifieringar" till "ultimat" i nyckelegenskaper.
-expiry-keys-missing-owner-trust =
-    Följande av dina hemliga nycklar saknar förtroende.
-    { $desc }.
-    Vi rekommenderar att du ställer in "Du litar på certifieringar" till "ultimat" i nyckelegenskaper.
-expiry-open-key-manager = Öppna OpenPGP-nyckelhanterare
-expiry-open-key-properties = Öppna nyckelegenskaper
 # Strings filters.jsm
 filter-folder-required = Du måste välja en målmapp.
 filter-decrypt-move-warn-experimental =
@@ -526,6 +507,9 @@ key-error-not-accepted-as-personal = Du har inte bekräftat att nyckeln med ID '
 need-online = Funktionen du har valt är inte tillgänglig i offline-läge. Gå online och försök igen.
 # Strings used in keyRing.jsm & keyLookupHelper.jsm
 no-key-found = Vi kunde inte hitta någon nyckel som matchar de angivna sökkriterierna.
+# Strings used in keyRing.jsm & keyLookupHelper.jsm
+no-key-found2 = Vi kunde inte hitta någon användbar nyckel som matchade de angivna sökkriterierna.
+no-update-found = Du har redan nycklarna som upptäcktes online.
 # Strings used in keyRing.jsm & GnuPGCryptoAPI.jsm
 fail-key-extract = Fel - nyckelutvinning misslyckades
 # Strings used in keyRing.jsm
@@ -611,18 +595,9 @@ send-to-news-warning =
     Detta är inte klockt eftersom det bara är vettigt om alla medlemmar i gruppen kan dekryptera meddelandet, dvs meddelandet måste krypteras med tangenterna för alla gruppdeltagare. Skicka detta meddelande bara om du vet exakt vad du gör.
     Fortsätt?
 save-attachment-header = Spara dekrypterad bilaga
-no-temp-dir =
-    Det gick inte att hitta en tillfällig katalog att skriva till
-    Ställ in TEMP-miljövariabeln
 possibly-pgp-mime = Eventuellt PGP/MIME-krypterat eller signerat meddelande; använd 'Dekryptera/verifiera'-funktionen för att verifiera
 cannot-send-sig-because-no-own-key = Det här meddelandet kan inte signeras digitalt, eftersom du ännu inte har konfigurerat end-to-end kryptering för <{ $key }>
 cannot-send-enc-because-no-own-key = Det går inte att skicka det här meddelandet krypterat eftersom du inte har konfigurerat end-to-end kryptering för <{ $key }>
-compose-menu-attach-key =
-    .label = Bifoga min publika nyckel
-    .accesskey = B
-compose-menu-encrypt-subject =
-    .label = Ämneskryptering
-    .accesskey = m
 # Strings used in decryption.jsm
 do-import-multiple =
     Importera följande nycklar?

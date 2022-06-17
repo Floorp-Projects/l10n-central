@@ -49,6 +49,7 @@ about-processes-socket-process = เครือข่าย ({ $pid })
 about-processes-remote-sandbox-broker-process = ตัวกลาง Sandbox ระยะไกล ({ $pid })
 about-processes-fork-server-process = ฟอร์คเซิร์ฟเวอร์ ({ $pid })
 about-processes-preallocated-process = จัดสรรล่วงหน้า ({ $pid })
+about-processes-utility-process = โปรแกรมอรรถประโยชน์ ({ $pid })
 # Unknown process names
 # Variables:
 #    $pid (String) The process id of this process, assigned by the OS.
@@ -62,10 +63,8 @@ about-processes-unknown-process = อื่น ๆ : { $type } ({ $pid })
 
 about-processes-web-isolated-process = { $origin } ({ $pid })
 about-processes-web-serviceworker = { $origin } ({ $pid }, serviceworker)
-about-processes-web-large-allocation-process = { $origin } ({ $pid }, ขนาดใหญ่)
 about-processes-with-coop-coep-process = { $origin } ({ $pid }, ถูกแยก cross-origin)
 about-processes-web-isolated-process-private = { $origin } — ส่วนตัว ({ $pid })
-about-processes-web-large-allocation-process-private = { $origin } — ส่วนตัว ({ $pid }, ขนาดใหญ่)
 about-processes-with-coop-coep-process-private = { $origin } — ส่วนตัว ({ $pid }, ถูกแยก cross-origin)
 
 ## Details within processes
@@ -114,6 +113,9 @@ about-processes-frame-name-one = เฟรมย่อย: { $url }
 #   $number (Number) The number of subframes in this group. Always ≥ 1.
 #   $shortUrl (String) The shared prefix for the subframes in the group.
 about-processes-frame-name-many = เฟรมย่อย ({ $number }): { $shortUrl }
+# Utility process actor names
+about-processes-utility-actor-unknown = ตัวดำเนินการที่ไม่รู้จัก
+about-processes-utility-actor-audio-decoder = ตัวถอดรหัสเสียง
 
 ## Displaying CPU (percentage and total)
 ## Variables:
@@ -129,9 +131,6 @@ about-processes-cpu = { NUMBER($percent, maximumSignificantDigits: 2, style: "pe
     .title = เวลาของ CPU ทั้งหมด: { NUMBER($total, maximumFractionDigits: 0) }{ $unit }
 # Special case: data is not available yet.
 about-processes-cpu-user-and-kernel-not-ready = (กำลังวัด)
-# Special case: process or thread is currently idle.
-about-processes-cpu-idle = ไม่ได้ใช้งาน
-    .title = เวลาที่ใช้งาน CPU ทั้งหมด: { NUMBER($total, maximumFractionDigits: 2) } { $unit }
 # Special case: process or thread is almost idle (using less than 0.1% of a CPU core).
 # This case only occurs on Windows where the precision of the CPU times is low.
 about-processes-cpu-almost-idle = < 0.1%

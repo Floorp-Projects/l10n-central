@@ -35,6 +35,8 @@ detail-version =
     .label = Phiên bản
 detail-last-updated =
     .label = Cập nhật lần cuối
+addon-detail-description-expand = Hiện nhiều hơn
+addon-detail-description-collapse = Hiện ít hơn
 detail-contributions-description = Nhà phát triển tiện ích này đề nghị bạn hỗ trợ một khoản tài chính nhỏ cho việc phát triển.
 detail-contributions-button = Đóng góp
     .title = Đóng góp cho sự phát triển của tiện ích mở rộng này
@@ -287,8 +289,10 @@ extension-enabled-heading = Đã bật
 extension-disabled-heading = Đã vô hiệu hóa
 theme-enabled-heading = Đã bật
 theme-disabled-heading = Đã tắt
+theme-disabled-heading2 = Chủ đề đã lưu
 theme-monochromatic-heading = Màu
 theme-monochromatic-subheading = Các phối màu mới sống động từ { -brand-product-name }. Có sẵn trong một thời gian giới hạn.
+theme-colorways-button = Thử Colorways
 plugin-enabled-heading = Đã bật
 plugin-disabled-heading = Đã tắt
 dictionary-enabled-heading = Đã bật
@@ -351,7 +355,7 @@ addon-detail-private-browsing-disallow = Không cho phép
 addon-badge-recommended2 =
     .title = { -brand-product-name } chỉ đề xuất các tiện ích mở rộng đáp ứng các tiêu chuẩn của chúng tôi về bảo mật và hiệu suất
     .aria-label = { addon-badge-recommended2.title }
-# We hard code "Ablaze" in the string below because the extensions are built
+# We hard code "Mozilla" in the string below because the extensions are built
 # by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
     .title = Tiện ích mở rộng chính thức do Mozilla xây dựng. Đáp ứng các tiêu chuẩn về bảo mật và hiệu suất.

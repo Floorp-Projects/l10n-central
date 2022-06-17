@@ -60,11 +60,6 @@ about-webrtc-ice-pair-bytes-sent = จำนวนไบต์ที่ส่ง
 about-webrtc-ice-pair-bytes-received = จำนวนไบต์ที่รับ:
 about-webrtc-ice-component-id = ID ส่วนประกอบ
 
-## "Avg." is an abbreviation for Average. These are used as data labels.
-
-about-webrtc-avg-bitrate-label = บิตเรตเฉลี่ย:
-about-webrtc-avg-framerate-label = เฟรมเรตเฉลี่ย:
-
 ## These adjectives are used to label a line of statistics collected for a peer
 ## connection. The data represents either the local or remote end of the
 ## connection.
@@ -185,6 +180,20 @@ about-webrtc-aec-logging-off-state-msg = ไฟล์บันทึกที่
 
 ##
 
+# This is the total number of frames encoded or decoded over an RTP stream.
+# Variables:
+#  $frames (Number) - The number of frames encoded or decoded.
+about-webrtc-frames =
+    { $frames ->
+       *[other] { $frames } เฟรม
+    }
+# This is the number of audio channels encoded or decoded over an RTP stream.
+# Variables:
+#  $channels (Number) - The number of channels encoded or decoded.
+about-webrtc-channels =
+    { $channels ->
+       *[other] { $channels } ช่องสัญญาณ
+    }
 # This is the total number of packets received on the PeerConnection.
 # Variables:
 #  $packets (Number) - The number of packets received.

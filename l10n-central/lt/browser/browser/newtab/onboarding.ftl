@@ -3,11 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### UI strings for the simplified onboarding / multistage about:welcome
-### Various strings use a non-breaking space to avoid a single dangling /
-### widowed word, so test on various window sizes if you also want this.
-
-
 ### UI strings for the MR1 onboarding / multistage about:welcome
 ### Various strings use a non-breaking space to avoid a single dangling /
 ### widowed word, so test on various window sizes if you also want this.
@@ -28,40 +23,6 @@ return-to-amo-subtitle = Puiku, jūs turite „{ -brand-short-name }“
 #   $addon-name (String) - Name of the add-on
 return-to-amo-addon-title = Dabar įdiekime jums <img data-l10n-name="icon"/> <b>„{ $addon-name }“</b>.
 return-to-amo-add-extension-label = Įdiegti priedą
-
-## Multistage 3-screen onboarding flow strings (about:welcome pages)
-
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
-onboarding-multistage-welcome-header = Sveiki, čia <span data-l10n-name="zap">„{ -brand-short-name }“</span>
-onboarding-multistage-welcome-subtitle = Sparti, saugi, ir privati naršyklė, kurią palaiko ne pelno siekianti įmonė.
-onboarding-multistage-welcome-primary-button-label = Pradėti sąranką
-onboarding-multistage-welcome-secondary-button-label = Prisijunkite
-onboarding-multistage-welcome-secondary-button-text = Turite paskyrą?
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "default" should stay inside the span.
-onboarding-multistage-set-default-header = Padarykite „{ -brand-short-name }“ jūsų <span data-l10n-name="zap">numatytąja</span>
-onboarding-multistage-set-default-subtitle = Greitis, saugumas, ir privatumas kiekvieno naršymo metu.
-onboarding-multistage-set-default-primary-button-label = Padaryti numatytąja
-onboarding-multistage-set-default-secondary-button-label = Ne dabar
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
-onboarding-multistage-pin-default-header = Pradžiai padarykite <span data-l10n-name="zap">„{ -brand-short-name }“</span> pasiekiamą vienu paspaudimu
-onboarding-multistage-pin-default-subtitle = Spartus, saugus, ir privatus naršymas kiekvieną kartą.
-# The "settings" here refers to "Windows 10 Settings App" and not the browser's
-onboarding-multistage-pin-default-waiting-subtitle = Atsivėrus nustatymams, pasirinkite „{ -brand-short-name }“ ties naršykle (angl. „Web browser“)
-# The "settings" here refers to "Windows 10 Settings App" and not the browser's
-onboarding-multistage-pin-default-help-text = Tai padarius, „{ -brand-short-name }“ bus įsegta į užduočių juostą, ir bus atverti nustatymai
-onboarding-multistage-pin-default-primary-button-label = Paskirti „{ -brand-short-name }“ mano pagrindine naršykle
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "more" should stay inside the span.
-onboarding-multistage-import-header = Importuokite savo slaptažodžius, <br/>adresyną, ir <span data-l10n-name="zap">daugiau</span>
-onboarding-multistage-import-subtitle = Pereinate iš kitos naršyklės? Labai paprasta viską perkelti į „{ -brand-short-name }“.
-onboarding-multistage-import-primary-button-label = Pradėti importavimą
-onboarding-multistage-import-secondary-button-label = Ne dabar
-# Info displayed in the footer of import settings screen during onboarding flow.
-# This supports welcome screen showing top sites imported from the user's default browser.
-onboarding-import-sites-disclaimer = Čia išvardintos svetainės buvo rastos šiame įrenginyje. „{ -brand-short-name }“ nesaugo ir nesinchronizuoja duomenų iš kitų naršyklių, nebent juos importuojate.
 return-to-amo-add-theme-label = Pridėti grafinį apvalkalą
 
 ## Multistage onboarding strings (about:welcome pages)
@@ -72,20 +33,8 @@ return-to-amo-add-theme-label = Pridėti grafinį apvalkalą
 #   $total (Int) - Total number of pages
 onboarding-welcome-steps-indicator =
     .aria-label = Pradžia: žingsnis { $current } iš { $total }
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "look" should stay inside the span.
-onboarding-multistage-theme-header = Pasirinkite <span data-l10n-name="zap">išvaizdą</span>
-onboarding-multistage-theme-subtitle = Individualizuokite „{ -brand-short-name }“ su grafiniu apvalkalu.
-onboarding-multistage-theme-primary-button-label2 = Gerai
-onboarding-multistage-theme-secondary-button-label = Ne dabar
-# Automatic theme uses operating system color settings
-onboarding-multistage-theme-label-automatic = Automatinis
-onboarding-multistage-theme-label-light = Šviesus
-onboarding-multistage-theme-label-dark = Tamsus
-# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
-onboarding-multistage-theme-label-alpenglow = „Firefox Alpenglow“
 # "Hero Text" displayed on left side of welcome screen.
-# The "Fire" in "Fire starts here" plays on the "Fire" in "Floorp".
+# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
 # It also signals the passion users bring to Firefox, how they use
 # Firefox to pursue those passions, as well as the boldness in their
 # choice to use Firefox over a larger competitor browser.
@@ -178,55 +127,6 @@ mr1-onboarding-theme-label-alpenglow = Alpenglow
 ## doesn't become too long. Line breaks will be preserved when displaying the
 ## tooltip.
 
-
-## Please make sure to split the content of the title attribute into lines whose
-## width corresponds to about 40 Latin characters, to ensure that the tooltip
-## doesn't become too long. Line breaks will be preserved when displaying the
-## tooltip.
-
-# Tooltip displayed on hover of automatic theme
-onboarding-multistage-theme-tooltip-automatic-2 =
-    .title =
-        Paveldėti jūsų operacinės sistemos spalvas
-        mygtukams, meniu elementams, ir langams.
-# Input description for automatic theme
-onboarding-multistage-theme-description-automatic-2 =
-    .aria-description =
-        Paveldėti jūsų operacinės sistemos spalvas
-        mygtukams, meniu elementams, ir langams.
-# Tooltip displayed on hover of light theme
-onboarding-multistage-theme-tooltip-light-2 =
-    .title =
-        Naudoti šviesias spalvas mygtukams,
-        meniu elementams, ir langams.
-# Input description for light theme
-onboarding-multistage-theme-description-light =
-    .aria-description =
-        Naudoti šviesias spalvas mygtukams,
-        meniu elementams, ir langams.
-# Tooltip displayed on hover of dark theme
-onboarding-multistage-theme-tooltip-dark-2 =
-    .title =
-        Naudoti tamsias spalvas mygtukams,
-        meniu elementams, ir langams.
-# Input description for dark theme
-onboarding-multistage-theme-description-dark =
-    .aria-description =
-        Naudoti tamsias spalvas mygtukams,
-        meniu elementams, ir langams.
-# Tooltip displayed on hover of Alpenglow theme
-onboarding-multistage-theme-tooltip-alpenglow-2 =
-    .title =
-        Naudoti įvairiaspalvę išvaizdą mygtukams,
-        meniu elementams, ir langams.
-# Input description for Alpenglow theme
-onboarding-multistage-theme-description-alpenglow =
-    .aria-description =
-        Naudoti įvairiaspalvę išvaizdą mygtukams,
-        meniu elementams, ir langams.
-
-## Multistage MR1 onboarding strings (MR1 about:welcome pages)
-
 # Tooltip displayed on hover of system theme
 mr1-onboarding-theme-tooltip-system =
     .title =
@@ -283,18 +183,10 @@ mr2-onboarding-colorway-tooltip =
 # Selector description for colorway
 # Variables:
 #   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-description =
-    .aria-description = Atraskite „{ $colorwayName }“ spalvų rinkinius.
-# Selector description for colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
 mr2-onboarding-colorway-label = Atraskite „{ $colorwayName }“ spalvų rinkinius.
 # Tooltip displayed on hover of default themes
 mr2-onboarding-default-theme-tooltip =
     .title = Atraskite numatytuosius grafinius apvalkalus.
-# Selector description for default themes
-mr2-onboarding-default-theme-description =
-    .aria-description = Atraskite numatytuosius grafinius apvalkalus.
 # Selector description for default themes
 mr2-onboarding-default-theme-label = Atraskite numatytuosius grafinius apvalkalus.
 
@@ -303,3 +195,43 @@ mr2-onboarding-default-theme-label = Atraskite numatytuosius grafinius apvalkalu
 mr2-onboarding-thank-you-header = Ačiū, kad pasirinkote mus
 mr2-onboarding-thank-you-text = „{ -brand-short-name }“ yra nepriklausoma naršyklė, remiama ne pelno siekiančios organizacijos. Kartu mes kuriame saugesnį, sveikesnį, privatesnį internetą.
 mr2-onboarding-start-browsing-button-label = Pradėti naršymą
+
+## Multistage live language reloading onboarding strings (about:welcome pages)
+##
+## The following language names are generated by the browser's Intl.DisplayNames API.
+##
+## Variables:
+##   $negotiatedLanguage (String) - The name of the langpack's language, e.g. "Español (ES)"
+
+onboarding-live-language-header = Pasirinkite savo kalbą
+onboarding-live-language-button-label-downloading = Atsiunčiamas { $negotiatedLanguage } kalbos paketas…
+onboarding-live-language-waiting-button = Gaunamos galimos kalbos…
+onboarding-live-language-installing = Diegiamas { $negotiatedLanguage } kalbos paketas…
+onboarding-live-language-secondary-cancel-download = Atsisakyti
+onboarding-live-language-skip-button-label = Praleisti
+
+## Firefox 100 Thank You screens
+
+# "Hero Text" displayed on left side of welcome screen. This text can be
+# formatted to span multiple lines as needed. The <span data-l10n-name="zap">
+# </span> in this string allows a "zap" underline style to be automatically
+# added to the text inside it. "Yous" should stay inside the zap span, but
+# "Thank" can be put inside instead if there's no "you" in the translation.
+# The English text would normally be "100 Thank-Yous" i.e., plural noun, but for
+# aesthetics of splitting it across multiple lines, the hyphen is omitted.
+fx100-thank-you-hero-text =
+    100
+    Padėkų
+    <span data-l10n-name="zap">Jums</span>
+fx100-thank-you-subtitle = Tai mūsų 100-asis leidimas! Dėkojame, kad padedate mums kurti geresnį ir sveikesnį internetą.
+fx100-thank-you-pin-primary-button-label =
+    { PLATFORM() ->
+        [macos] Laikyti „{ -brand-short-name }“ užduočių juostoje
+       *[other] Įsegti „{ -brand-short-name }“ į užduočių juostą
+    }
+fx100-upgrade-thanks-header = 100 padėkų jums
+# Message shown with a start-browsing button. Emphasis <em> should be for "you"
+# but "Thank" can be used instead if there's no "you" in the translation.
+fx100-upgrade-thank-you-body = Tai 100-asis „{ -brand-short-name }“ leidimas. Dėkojame <em>jums</em>, kad padedate mums kurti geresnį ir sveikesnį internetą.
+# Message shown with either a pin-to-taskbar or set-default button.
+fx100-upgrade-thanks-keep-body = Tai mūsų 100-asis leidimas! Ačiū, kad esate mūsų bendruomenės dalis. Likite su „{ -brand-short-name }“ dar kitam 100.

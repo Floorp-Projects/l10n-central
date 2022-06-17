@@ -84,9 +84,6 @@ menuitem-toggle-attachment-pane =
 toolbar-button-add-attachment =
     .label = Melléklet
     .tooltiptext = Melléklet hozzáadása ({ ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key })
-add-attachment-notification-reminder =
-    .label = Melléklet hozzáadása…
-    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 add-attachment-notification-reminder2 =
     .label = Melléklet hozzáadása…
     .accesskey = a
@@ -113,10 +110,6 @@ attachment-bucket-count-value =
         [one] { $count } melléklet
        *[other] { $count } melléklet
     }
-expand-attachment-pane-tooltip =
-    .tooltiptext = A mellékletek ablaktábla megjelenítése ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
-collapse-attachment-pane-tooltip =
-    .tooltiptext = A mellékletek ablaktábla elrejtése ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-show =
     .title = A mellékletek ablaktábla megjelenítése ({ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key })
 attachment-area-hide =
@@ -160,6 +153,9 @@ encryption-options-openpgp =
 encryption-options-smime =
     .label = S/MIME
     .tooltiptext = Az S/MIME titkosítás beállítások megtekintése vagy módosítása
+signing-toggle =
+    .label = Aláírás
+    .tooltiptext = Digitális aláírás használata ehhez az üzenethez
 menu-openpgp =
     .label = OpenPGP
     .accesskey = O
@@ -196,41 +192,14 @@ key-notification-resolve =
     .label = Feloldás
     .accesskey = F
     .tooltiptext = Az OpenPGP kulcssegéd megnyitása
+can-encrypt-smime-notification = Az S/MIME végpontok közötti titkosítás lehetséges.
+can-encrypt-openpgp-notification = Az OpenPGP végpontok közötti titkosítás lehetséges.
+can-e2e-encrypt-button =
+    .label = Titkosítás
+    .accesskey = T
 
 ## Addressing Area
 
-to-compose-address-row-label =
-    .value = Címzett
-#   $key (String) - the shortcut key for this field
-to-compose-show-address-row-menuitem =
-    .label = { to-compose-address-row-label.value } mező
-    .accesskey = C
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-to-compose-show-address-row-label =
-    .value = { to-compose-address-row-label.value }
-    .tooltiptext = A { to-compose-address-row-label.value } mező megjelenítése ({ to-compose-show-address-row-menuitem.acceltext })
-cc-compose-address-row-label =
-    .value = Másolatot kap
-#   $key (String) - the shortcut key for this field
-cc-compose-show-address-row-menuitem =
-    .label = { cc-compose-address-row-label.value } mező
-    .accesskey = M
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-cc-compose-show-address-row-label =
-    .value = { cc-compose-address-row-label.value }
-    .tooltiptext = A { cc-compose-address-row-label.value } mező megjelenítése ({ cc-compose-show-address-row-menuitem.acceltext })
-bcc-compose-address-row-label =
-    .value = Rejtett másolatot kap
-#   $key (String) - the shortcut key for this field
-bcc-compose-show-address-row-menuitem =
-    .label = { bcc-compose-address-row-label.value } mező
-    .accesskey = R
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-bcc-compose-show-address-row-label =
-    .value = { bcc-compose-address-row-label.value }
-    .tooltiptext = A { bcc-compose-address-row-label.value } mező megjelenítése ({ bcc-compose-show-address-row-menuitem.acceltext })
-#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
-many-public-recipients-info = A címzett és másolatot kapó { $count } partner látni fogja egymás címét. Elkerülheti a címzettek közzétételét, ha helyette titkos másolatot használ.
 to-address-row-label =
     .value = Címzett
 #   $key (String) - the shortcut key for this field
@@ -401,3 +370,9 @@ link-preview-description = A { -brand-short-name } beágyazott előnézetet adha
 link-preview-autoadd = Hivatkozások előnézetének automatikus hozzáadása, ha lehetséges
 link-preview-replace-now = Hozzáad egy előnézetet ehhez a hivatkozáshoz?
 link-preview-yes-replace = Igen
+
+## Dictionary selection popup
+
+spell-add-dictionaries =
+    .label = Szótárak hozzáadása…
+    .accesskey = a

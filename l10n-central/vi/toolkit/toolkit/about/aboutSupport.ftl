@@ -38,8 +38,8 @@ app-basics-update-channel = Kênh cập nhật
 # as in "Folder for updates". "Update" is a noun, not a verb.
 app-basics-update-dir =
     { PLATFORM() ->
-        [linux] Cập nhật thư mục
-       *[other] Cập nhật thư mục
+        [linux] Thư mục chứa bản cập nhật
+       *[other] Thư mục chứa bản cập nhật
     }
 app-basics-update-history = Lịch sử cập nhật
 app-basics-show-update-history = Hiển thị lịch sử cập nhật
@@ -62,7 +62,7 @@ app-basics-memory-use = Sử dụng bộ nhớ
 app-basics-performance = Hiệu suất
 app-basics-service-workers = Các Service Worker đã đăng ký
 app-basics-third-party = Module của bên thứ ba
-app-basics-profiles = Tiểu sử
+app-basics-profiles = Hồ sơ
 app-basics-launcher-process-status = Quá trình khởi chạy
 app-basics-multi-process-support = Các cửa sổ đa tiến trình
 app-basics-fission-support = Fission Windows
@@ -309,7 +309,6 @@ fission-status-experiment-treatment = Đã bật bởi thử nghiệm
 fission-status-disabled-by-e10s-env = Đã tắt bởi môi trường
 fission-status-enabled-by-env = Đã bật bởi môi trường
 fission-status-disabled-by-env = Đã tắt bởi môi trường
-fission-status-disabled-by-safe-mode = Đã tắt bởi chế độ an toàn
 fission-status-enabled-by-default = Đã bật theo mặc định
 fission-status-disabled-by-default = Đã tắt theo mặc định
 fission-status-enabled-by-user-pref = Đã bật bởi người dùng

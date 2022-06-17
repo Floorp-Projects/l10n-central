@@ -26,6 +26,8 @@ about-addressbook-books-context-properties =
     .label = Eigenschappen
 about-addressbook-books-context-synchronize =
     .label = Synchroniseren
+about-addressbook-books-context-edit =
+    .label = Bewerken
 about-addressbook-books-context-print =
     .label = Afdrukken…
 about-addressbook-books-context-export =
@@ -53,8 +55,8 @@ about-addressbook-search =
     .placeholder = { $name } doorzoeken
 about-addressbook-search-all =
     .placeholder = Alle adresboeken doorzoeken
-about-addressbook-sort-button =
-    .title = Lijstvolgorde wijzigen
+about-addressbook-sort-button2 =
+    .title = Weergaveopties vermelden
 about-addressbook-name-format-display =
     .label = Weergavenaam
 about-addressbook-name-format-firstlast =
@@ -69,6 +71,38 @@ about-addressbook-sort-email-ascending =
     .label = Sorteren op e-mailadres (A > Z)
 about-addressbook-sort-email-descending =
     .label = Sorteren op e-mailadres (Z > A)
+about-addressbook-horizontal-layout =
+    .label = Overschakelen naar horizontale opmaak
+about-addressbook-vertical-layout =
+    .label = Overschakelen naar verticale opmaak
+
+## Card column headers
+## Each string is listed here twice, and the values should match.
+
+about-addressbook-column-header-generatedname = Naam
+about-addressbook-column-label-generatedname =
+    .label = { about-addressbook-column-header-generatedname }
+about-addressbook-column-header-emailaddresses = E-mailadressen
+about-addressbook-column-label-emailaddresses =
+    .label = { about-addressbook-column-header-emailaddresses }
+about-addressbook-column-header-phonenumbers = Telefoonnummers
+about-addressbook-column-label-phonenumbers =
+    .label = { about-addressbook-column-header-phonenumbers }
+about-addressbook-column-header-addresses = Adressen
+about-addressbook-column-label-addresses =
+    .label = { about-addressbook-column-header-addresses }
+about-addressbook-column-header-title = Titel
+about-addressbook-column-label-title =
+    .label = { about-addressbook-column-header-title }
+about-addressbook-column-header-department = Afdeling
+about-addressbook-column-label-department =
+    .label = { about-addressbook-column-header-department }
+about-addressbook-column-header-organization = Organisatie
+about-addressbook-column-label-organization =
+    .label = { about-addressbook-column-header-organization }
+about-addressbook-column-header-addrbook = Adresboek
+about-addressbook-column-label-addrbook =
+    .label = { about-addressbook-column-header-addrbook }
 about-addressbook-cards-context-write =
     .label = Opstellen
 about-addressbook-confirm-delete-mixed-title = Contacten en lijsten verwijderen
@@ -122,17 +156,43 @@ about-addressbook-confirm-delete-contacts =
        *[other] Weet u zeker dat u deze { $count } contacten wilt verwijderen?
     }
 
+## Card list placeholder
+## Shown when there are no cards in the list
+
+about-addressbook-placeholder-empty-book = Geen contacten beschikbaar
+about-addressbook-placeholder-new-contact = Nieuw contact
+about-addressbook-placeholder-search-only = Dit adresboek toont alleen contacten na een zoekopdracht
+about-addressbook-placeholder-searching = Zoeken…
+about-addressbook-placeholder-no-search-results = Geen contacten gevonden
+
 ## Details
 
+about-addressbook-prefer-display-name = Weergavenaam boven berichtkop verkiezen
+about-addressbook-write-action-button = Opstellen
+about-addressbook-event-action-button = Gebeurtenis
+about-addressbook-search-action-button = Zoeken
 about-addressbook-begin-edit-contact-button = Bewerken
 about-addressbook-delete-edit-contact-button = Verwijderen
 about-addressbook-cancel-edit-contact-button = Annuleren
 about-addressbook-save-edit-contact-button = Opslaan
+about-addressbook-add-contact-to = Toevoegen aan:
 about-addressbook-details-email-addresses-header = E-mailadressen
 about-addressbook-details-phone-numbers-header = Telefoonnummers
-about-addressbook-details-home-address-header = Adres
-about-addressbook-details-work-address-header = Werkadres
+about-addressbook-details-addresses-header = Adressen
+about-addressbook-details-notes-header = Opmerkingen
 about-addressbook-details-other-info-header = Andere informatie
+about-addressbook-entry-type-work = Werk
+about-addressbook-entry-type-home = Thuis
+about-addressbook-entry-type-fax = Fax
+about-addressbook-entry-type-cell = Mobiel
+about-addressbook-entry-type-pager = Pieper
+about-addressbook-entry-name-birthday = Verjaardag
+about-addressbook-entry-name-anniversary = Jubileum
+about-addressbook-entry-name-title = Titel
+about-addressbook-entry-name-role = Rol
+about-addressbook-entry-name-organization = Organisatie
+about-addressbook-entry-name-website = Website
+about-addressbook-entry-name-time-zone = Tijdzone
 about-addressbook-unsaved-changes-prompt-title = Niet-opgeslagen wijzigingen
 about-addressbook-unsaved-changes-prompt = Wilt u uw wijzigingen opslaan voordat u de bewerkingsweergave verlaat?
 

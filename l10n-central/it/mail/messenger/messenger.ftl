@@ -87,10 +87,6 @@ menu-file-save-as-file =
 
 ## AppMenu
 
-# Since v89 we dropped the platforms distinction between Options or Preferences
-# and consolidated everything with Preferences.
-appmenu-preferences =
-    .label = Preferenze
 appmenu-save-as-file =
     .label = File…
 appmenu-settings =
@@ -129,6 +125,10 @@ message-header-msg-flagged =
     .aria-label = Speciale
 message-header-msg-not-flagged =
     .title = Messaggio non contrassegnato come speciale
+# Variables:
+# $address (String) - The email address of the recipient this picture belongs to.
+message-header-recipient-avatar =
+    .alt = Immagine del profilo per { $address }.
 
 ## Message header cutomize panel
 
@@ -142,6 +142,16 @@ message-header-button-style-text =
     .label = Testo
 message-header-button-style-icons =
     .label = Icone
+message-header-show-sender-full-address =
+    .label = Mostra sempre l’indirizzo completo del mittente
+    .accesskey = M
+message-header-show-sender-full-address-description = L’indirizzo email verrà mostrato sotto il nome visualizzato.
+message-header-show-recipient-avatar =
+    .label = Mostra l’immagine del profilo del mittente
+    .accesskey = o
+message-header-hide-label-column =
+    .label = Nascondi colonna etichette
+    .accesskey = e
 message-header-large-subject =
     .label = Oggetto grande
     .accesskey = O
@@ -154,13 +164,6 @@ toolbar-context-menu-manage-extension =
 toolbar-context-menu-remove-extension =
     .label = Rimuovi estensione
     .accesskey = R
-
-## Message headers
-
-message-header-address-in-address-book-icon =
-    .alt = L’indirizzo è presente nella rubrica
-message-header-address-not-in-address-book-icon =
-    .alt = L’indirizzo non è presente nella rubrica
 
 ## Add-on removal warning
 
@@ -218,12 +221,12 @@ spaces-context-new-window-item =
 # $tabName (String) - The name of the tab this item will switch to.
 spaces-context-switch-tab-item =
     .label = Passa a { $tabName }
-settings-context-open-settings-item =
-    .label = Apri impostazioni
-settings-context-open-account-settings-item =
-    .label = Apri impostazioni dell’account
-settings-context-open-addons-item =
-    .label = Apri componenti aggiuntivi e temi
+settings-context-open-settings-item2 =
+    .label = Impostazioni
+settings-context-open-account-settings-item2 =
+    .label = Impostazioni account
+settings-context-open-addons-item2 =
+    .label = Componenti aggiuntivi e temi
 
 ## Spaces toolbar pinned tab menupopup
 
@@ -254,8 +257,6 @@ chat-button-unread-messages = { $count }
 
 ## Spaces toolbar customize panel
 
-spaces-context-customize =
-    .label = Personalizza…
 menuitem-customize-label =
     .label = Personalizza…
 spaces-customize-panel-title = Impostazioni della barra degli spazi
@@ -269,7 +270,5 @@ spaces-customize-accent-background-color = Colore di sfondo del pulsante selezio
 spaces-customize-accent-text-color = Colore del pulsante selezionato
 spaces-customize-button-restore = Ripristina predefiniti
     .accesskey = r
-spaces-customize-button-save = Fatto
-    .accesskey = F
 customize-panel-button-save = Fatto
     .accesskey = F

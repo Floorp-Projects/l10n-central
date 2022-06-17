@@ -181,6 +181,9 @@ openpgp-key-man-reload =
 openpgp-key-man-change-expiry =
     .label = Change Expiration Date
     .accesskey = E
+openpgp-key-man-refresh-online =
+    .label = Refresh Online
+    .accesskey = R
 openpgp-key-man-ignored-ids =
     .label = Email addresses
 openpgp-key-man-del-key =
@@ -231,6 +234,7 @@ openpgp-key-man-key-details-key =
 openpgp-ign-addr-intro = You accept using this key for the following selected email addresses:
 openpgp-key-details-title =
     .title = Key Properties
+openpgp-key-details-doc-title = Key Properties
 openpgp-key-details-signatures-tab =
     .label = Certifications
 openpgp-key-details-structure-tab =
@@ -239,12 +243,19 @@ openpgp-key-details-uid-certified-col =
     .label = User ID / Certified by
 openpgp-key-details-key-id-label = Key ID
 openpgp-key-details-user-id2-label = Alleged Key Owner
+openpgp-key-details-user-id3-label = Claimed Key Owner
 openpgp-key-details-id-label =
     .label = ID
 openpgp-key-details-key-type-label = Type
 openpgp-key-details-key-part-label =
     .label = Key Part
 openpgp-key-details-attr-ignored = Warning: This key might not work as expected, because some of its properties are unsafe and might be ignored.
+openpgp-key-details-attr-upgrade-sec = You should upgrade the unsafe properties.
+openpgp-key-details-attr-upgrade-pub = You should ask the owner of this key to upgrade the unsafe properties.
+openpgp-key-details-upgrade-unsafe =
+    .label = Upgrade Unsafe Properties
+    .accesskey = P
+openpgp-key-details-upgrade-ok = The key was successfully upgraded. You should share the upgraded public key with your correspondents.
 openpgp-key-details-algorithm-label =
     .label = Algorithm
 openpgp-key-details-size-label =
@@ -262,7 +273,6 @@ openpgp-key-details-legend-secret-missing = For keys marked with (!) the secret 
 openpgp-key-details-sel-action =
     .label = Select action…
     .accesskey = S
-openpgp-key-details-also-known-label = Alleged Alternative Identities of the Key Owner:
 openpgp-card-details-close-window-label =
     .buttonlabelaccept = Close
 openpgp-acceptance-label =
@@ -278,7 +288,6 @@ openpgp-acceptance-verified-label =
 key-accept-personal =
     For this key, you have both the public and the secret part. You may use it as a personal key.
     If this key was given to you by someone else, then don't use it as a personal key.
-key-personal-warning = Did you create this key yourself, and the displayed key ownership refers to yourself?
 openpgp-personal-no-label =
     .label = No, don't use it as my personal key.
 openpgp-personal-yes-label =
@@ -288,14 +297,6 @@ openpgp-copy-cmd-label =
 
 ## e2e encryption settings
 
-#   $count (Number) - the number of configured keys associated with the current identity
-#   $identity (String) - the email address of the currently selected identity
-openpgp-description =
-    { $count ->
-        [0] Thunderbird doesn't have a personal OpenPGP key for <b>{ $identity }</b>
-        [one] Thunderbird found { $count } personal OpenPGP key associated with <b>{ $identity }</b>
-       *[other] Thunderbird found { $count } personal OpenPGP keys associated with <b>{ $identity }</b>
-    }
 #   $identity (String) - the email address of the currently selected identity
 openpgp-description-no-key = { -brand-short-name } doesn’t have a personal OpenPGP key for <b>{ $identity }</b>
 #   $count (Number) - the number of configured keys associated with the current identity
@@ -361,7 +362,6 @@ key-expired-date = The key expired on { $keyExpiry }
 key-expired-simple = The key has expired
 key-revoked-simple = The key was revoked
 key-do-you-accept = Do you accept this key for verifying digital signatures and for encrypting messages?
-key-accept-warning = Avoid accepting a rogue key. Use a communication channel other than email to verify the fingerprint of your correspondent's key.
 key-verification = Verify the fingerprint of the key using a secure communication channel other than email to make sure that it’s really the key of { $addr }.
 # Strings enigmailMsgComposeOverlay.js
 cannot-use-own-key-because = Unable to send the message, because there is a problem with your personal key. { $problem }
@@ -390,25 +390,6 @@ converter-decrypt-body-failed =
     Could not decrypt message with subject
     { $subject }.
     Do you want to retry with a different passphrase or do you want to skip the message?
-# Strings in gpg.jsm
-unknown-signing-alg = Unknown signing algorithm (ID: { $id })
-unknown-hash-alg = Unknown cryptographic hash (ID: { $id })
-# Strings in keyUsability.jsm
-expiry-key-expires-soon =
-    Your key { $desc } will expire in less than { $days } days.
-    We recommend that you create a new key pair and configure the corresponding accounts to use it.
-expiry-keys-expire-soon =
-    Your following keys will expire in less than { $days } days:{ $desc }.
-    We recommend that you create new keys and configure the corresponding accounts to use them.
-expiry-key-missing-owner-trust =
-    Your secret key { $desc } has missing trust.
-    We recommend that you set "You rely on certifications" to "ultimate" in key properties.
-expiry-keys-missing-owner-trust =
-    The following of your secret keys have missing trust.
-    { $desc }.
-    We recommend that you set "You rely on certifications" to "ultimate" in key properties.
-expiry-open-key-manager = Open OpenPGP Key Manager
-expiry-open-key-properties = Open Key Properties
 # Strings filters.jsm
 filter-folder-required = You must select a target folder.
 filter-decrypt-move-warn-experimental =
@@ -526,6 +507,9 @@ key-error-not-accepted-as-personal = You have not confirmed that the key with ID
 need-online = The function you have selected is not available in offline mode. Please go online and try again.
 # Strings used in keyRing.jsm & keyLookupHelper.jsm
 no-key-found = We could not find any key matching the specified search criteria.
+# Strings used in keyRing.jsm & keyLookupHelper.jsm
+no-key-found2 = We couldn’t find any usable key matching the specified search criteria.
+no-update-found = You already have the keys that were discovered online.
 # Strings used in keyRing.jsm & GnuPGCryptoAPI.jsm
 fail-key-extract = Error - key extraction command failed
 # Strings used in keyRing.jsm
@@ -611,18 +595,9 @@ send-to-news-warning =
     This is discouraged because it only makes sense if all members of the group can decrypt the message, i.e. the message needs to be encrypted with the keys of all group participants. Please send this message only if you know exactly what you are doing.
     Continue?
 save-attachment-header = Save decrypted attachment
-no-temp-dir =
-    Could not find a temporary directory to write to
-    Please set the TEMP environment variable
 possibly-pgp-mime = Possibly PGP/MIME encrypted or signed message; use 'Decrypt/Verify' function to verify
 cannot-send-sig-because-no-own-key = Cannot digitally sign this message, because you haven't yet configured end-to-end encryption for <{ $key }>
 cannot-send-enc-because-no-own-key = Cannot send this message encrypted, because you haven't yet configured end-to-end encryption for <{ $key }>
-compose-menu-attach-key =
-    .label = Attach My Public Key
-    .accesskey = A
-compose-menu-encrypt-subject =
-    .label = Subject Encryption
-    .accesskey = b
 # Strings used in decryption.jsm
 do-import-multiple =
     Import the following keys?

@@ -83,9 +83,6 @@ menuitem-toggle-attachment-pane =
 toolbar-button-add-attachment =
     .label = 附件
     .tooltiptext = 新增附件（{ ctrl-cmd-shift-pretty-prefix }{ trigger-attachment-picker-key }）
-add-attachment-notification-reminder =
-    .label = 新增附件…
-    .tooltiptext = { toolbar-button-add-attachment.tooltiptext }
 add-attachment-notification-reminder2 =
     .label = 新增附件…
     .accesskey = A
@@ -111,10 +108,6 @@ attachment-bucket-count-value =
         [1] { $count } 個附件
        *[other] { $count } 個附件
     }
-expand-attachment-pane-tooltip =
-    .tooltiptext = 顯示附件窗格（{ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key }）
-collapse-attachment-pane-tooltip =
-    .tooltiptext = 隱藏附件窗格（{ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key }）
 attachment-area-show =
     .title = 顯示附件窗格（{ ctrl-cmd-shift-pretty-prefix }{ toggle-attachment-pane-key }）
 attachment-area-hide =
@@ -156,6 +149,9 @@ encryption-options-openpgp =
 encryption-options-smime =
     .label = S/MIME
     .tooltiptext = 檢視或變更 S/MIME 加密設定
+signing-toggle =
+    .label = 簽署
+    .tooltiptext = 對此訊息進行數位簽署
 menu-openpgp =
     .label = OpenPGP
     .accesskey = O
@@ -192,41 +188,14 @@ key-notification-resolve =
     .label = 解決…
     .accesskey = R
     .tooltiptext = 開啟 OpenPGP 金鑰助理
+can-encrypt-smime-notification = 可使用 S/MIME 端到端加密。
+can-encrypt-openpgp-notification = 可使用 OpenPGP 端到端加密。
+can-e2e-encrypt-button =
+    .label = 加密
+    .accesskey = E
 
 ## Addressing Area
 
-to-compose-address-row-label =
-    .value = 給
-#   $key (String) - the shortcut key for this field
-to-compose-show-address-row-menuitem =
-    .label = 「{ to-compose-address-row-label.value }」欄位
-    .accesskey = T
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-to-compose-show-address-row-label =
-    .value = { to-compose-address-row-label.value }
-    .tooltiptext = 顯示「{ to-compose-address-row-label.value }」欄位（{ to-compose-show-address-row-menuitem.acceltext }）
-cc-compose-address-row-label =
-    .value = 副本
-#   $key (String) - the shortcut key for this field
-cc-compose-show-address-row-menuitem =
-    .label = 「{ cc-compose-address-row-label.value }」欄位
-    .accesskey = C
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-cc-compose-show-address-row-label =
-    .value = { cc-compose-address-row-label.value }
-    .tooltiptext = 顯示「{ cc-compose-address-row-label.value }」欄位（{ cc-compose-show-address-row-menuitem.acceltext }）
-bcc-compose-address-row-label =
-    .value = 密件副本
-#   $key (String) - the shortcut key for this field
-bcc-compose-show-address-row-menuitem =
-    .label = 「{ bcc-compose-address-row-label.value }」欄位
-    .accesskey = B
-    .acceltext = { ctrl-cmd-shift-pretty-prefix }{ $key }
-bcc-compose-show-address-row-label =
-    .value = { bcc-compose-address-row-label.value }
-    .tooltiptext = 顯示「{ bcc-compose-address-row-label.value }」欄位（{ bcc-compose-show-address-row-menuitem.acceltext }）
-#   $count (Number) - the count of addresses in the "To" and "Cc" fields.
-many-public-recipients-info = 「給」與「副本」收件者共有 { $count } 位，都可看到彼此的收件信箱。您可以改用「密件副本」來避免揭露收件者資訊。
 to-address-row-label =
     .value = 給
 #   $key (String) - the shortcut key for this field
@@ -396,3 +365,9 @@ link-preview-description = 貼上鏈結時，{ -brand-short-name } 可嵌入鏈�
 link-preview-autoadd = 可用時，自動新增鏈結預覽
 link-preview-replace-now = 要新增此鏈結的預覽圖嗎？
 link-preview-yes-replace = 好的
+
+## Dictionary selection popup
+
+spell-add-dictionaries =
+    .label = 新增字典…
+    .accesskey = A

@@ -75,21 +75,6 @@ restart-later = Khởi động lại sau
 
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
-extension-controlled-password-saving = Một tiện ích mở rộng, <img data-l10n-name="icon"/> { $name }, đang kiểm soát cài đặt này.
-# This string is shown to notify the user that their notifications permission
-# is being controlled by an extension.
-extension-controlled-web-notifications = Một tiện ích mở rộng, <img data-l10n-name="icon"/> { $name }, đang kiểm soát cài đặt này.
-# This string is shown to notify the user that Container Tabs
-# are being enabled by an extension.
-extension-controlled-privacy-containers = Một tiện ích mở rộng, <img data-l10n-name="icon"/> { $name }, yêu cầu ngăn chứa thẻ.
-# This string is shown to notify the user that their content blocking "All Detected Trackers"
-# preferences are being controlled by an extension.
-extension-controlled-websites-content-blocking-all-trackers = Một tiện ích mở rộng, <img data-l10n-name="icon"/> { $name }, đang kiểm soát cài đặt này.
-# This string is shown to notify the user that their proxy configuration preferences
-# are being controlled by an extension.
-extension-controlled-proxy-config = Một tiện ích mở rộng, <img data-l10n-name="icon"/> { $name }, đang kiểm soát cách { -brand-short-name } kết nối internet.
-# This string is shown to notify the user that the password manager setting
-# is being controlled by an extension
 extension-controlling-password-saving = <img data-l10n-name="icon"/> <strong>{ $name }</strong> kiểm soát cài đặt này.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
@@ -128,9 +113,6 @@ is-not-default = { -brand-short-name } không phải là trình duyệt mặc đ
 set-as-my-default-browser =
     .label = Đặt làm mặc định…
     .accesskey = D
-startup-restore-previous-session =
-    .label = Khôi phục phiên làm việc trước
-    .accesskey = s
 startup-restore-windows-and-tabs =
     .label = Mở các cửa sổ và thẻ trước đó
     .accesskey = s
@@ -145,9 +127,6 @@ ctrl-tab-recently-used-order =
 open-new-link-as-tabs =
     .label = Mở đường dẫn ở thẻ thay vì ở cửa sổ mới
     .accesskey = w
-warn-on-close-multiple-tabs =
-    .label = Cảnh báo bạn khi đóng nhiều thẻ một lúc
-    .accesskey = m
 confirm-on-close-multiple-tabs =
     .label = Xác nhận trước khi đóng nhiều thẻ
     .accesskey = m
@@ -189,7 +168,6 @@ containers-remove-cancel-button = Không xóa ngăn chứa này
 ## General Section - Language & Appearance
 
 language-and-appearance-header = Ngôn ngữ và chủ đề
-fonts-and-colors-header = Phông & Màu sắc
 preferences-web-appearance-header = Diện mạo trang web
 preferences-web-appearance-description = Một số trang web điều chỉnh bảng màu của họ dựa trên tùy chỉnh của bạn. Chọn bảng màu mà bạn muốn sử dụng cho các trang web đó.
 preferences-web-appearance-choice-browser = Chủ đề { -brand-short-name }
@@ -231,9 +209,6 @@ default-font-size = Kích thước
 advanced-fonts =
     .label = Nâng cao…
     .accesskey = o
-colors-settings =
-    .label = Màu sắc…
-    .accesskey = M
 # Zoom is a noun, and the message is used as header for a group of options
 preferences-zoom-header = Thu phóng
 preferences-default-zoom = Thu phóng mặc định
@@ -276,9 +251,6 @@ check-user-spelling =
 
 files-and-applications-title = Tập tin và ứng dụng
 download-header = Tải xuống
-download-save-to =
-    .label = Lưu các tập tin vào
-    .accesskey = v
 download-save-where = Lưu tập tin vào
     .accesskey = v
 download-choose-folder =
@@ -502,7 +474,7 @@ home-newtabs-mode-label = Thẻ mới
 home-restore-defaults =
     .label = Khôi phục về mặc định
     .accesskey = R
-# "Floorp" should be treated as a brand and kept in English,
+# "Firefox" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
     .label = Trang chủ Firefox (Mặc định)
@@ -527,17 +499,12 @@ choose-bookmark =
     .label = Sử dụng dấu trang…
     .accesskey = B
 
-## Home Section - Floorp Home Content Customization
+## Home Section - Firefox Home Content Customization
 
 home-prefs-content-header = Nội dung của Trang chủ Firefox
 home-prefs-content-description = Chọn nội dung mà bạn muốn thêm vào Trang chủ Firefox.
 home-prefs-search-header =
     .label = Tìm kiếm web
-home-prefs-topsites-header =
-    .label = Các trang Web hàng đầu
-home-prefs-topsites-description = Những trang bạn truy cập nhiều nhất
-home-prefs-topsites-by-option-sponsored =
-    .label = Các trang hàng đầu được tài trợ
 home-prefs-shortcuts-header =
     .label = Lối tắt
 home-prefs-shortcuts-description = Các trang web bạn lưu hoặc truy cập
@@ -549,7 +516,6 @@ home-prefs-shortcuts-by-option-sponsored =
 
 home-prefs-recommended-by-header =
     .label = Được đề xuất bởi { $provider }
-home-prefs-recommended-by-description-update = Nội dung đặc biệt trên web, được quản lý bởi { $provider }
 home-prefs-recommended-by-description-new = Nội dung đặc biệt do { $provider }, một phần của { -brand-product-name }, quản lý
 
 ##
@@ -557,9 +523,6 @@ home-prefs-recommended-by-description-new = Nội dung đặc biệt do { $provi
 home-prefs-recommended-by-learn-more = Nó hoạt động như thế nào
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Bài viết quảng cáo
-home-prefs-highlights-header =
-    .label = Nổi bật
-home-prefs-highlights-description = Một lựa chọn các trang web mà bạn đã lưu hoặc truy cập
 home-prefs-highlights-option-visited-pages =
     .label = Trang đã truy cập
 home-prefs-highlights-options-bookmarks =
@@ -577,7 +540,6 @@ home-prefs-recent-activity-description = Tuyển chọn các trang và nội dun
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = Ghi chú nhỏ
-home-prefs-snippets-description = Cập nhật từ { -vendor-short-name } và { -brand-product-name }
 home-prefs-snippets-description-new = Mẹo và tin tức từ { -vendor-short-name } và { -brand-product-name }
 home-prefs-sections-rows-option =
     .label = { $num } hàng
@@ -849,8 +811,8 @@ history-header = Lịch sử
 # "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
-#   - Simply as "Floorp", moving the verb into each option.
-#     This will result in "Floorp" + "Will remember history", etc.
+#   - Simply as "Firefox", moving the verb into each option.
+#     This will result in "Firefox" + "Will remember history", etc.
 #   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = { -brand-short-name } sẽ
     .accesskey = w
@@ -872,7 +834,7 @@ history-remember-search-option =
     .label = Ghi nhớ lịch sử biểu mẫu và tìm kiếm
     .accesskey = f
 history-clear-on-close-option =
-    .label = Xóa lịch sử khi { -brand-short-name } đóng
+    .label = Xóa lịch sử khi đóng { -brand-short-name }
     .accesskey = r
 history-clear-on-close-settings =
     .label = Cài đặt…
@@ -906,14 +868,6 @@ sitedata-block-desc = Loại bị chặn
     .accesskey = T
 sitedata-option-block-cross-site-trackers =
     .label = Trình theo dõi trên nhiều trang web
-sitedata-option-block-cross-site-and-social-media-trackers =
-    .label = Trình theo dõi trên nhiều trang web và truyền thông xã hội
-sitedata-option-block-cross-site-tracking-cookies-including-social-media =
-    .label = Cookie theo dõi trên nhiều trang web — bao gồm cookie truyền thông xã hội
-sitedata-option-block-cross-site-cookies-including-social-media =
-    .label = Cookie trên nhiều trang web — bao gồm cookie trên mạng xã hội
-sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
-    .label = Trình theo dõi trên nhiều trang web và mạng xã hội, đồng thời cô lập các cookie còn lại
 sitedata-option-block-cross-site-tracking-cookies =
     .label = Cookie theo dõi trên nhiều trang web
 sitedata-option-block-cross-site-cookies =
@@ -1007,7 +961,6 @@ content-blocking-etp-standard-tcp-rollout-checkbox =
 content-blocking-etp-standard-tcp-rollout-description = Trình chống cookie chung chứa các cookie cho trang web bạn đang truy cập, vì vậy, trình theo dõi không thể sử dụng chúng để theo dõi bạn giữa các trang web.
 content-blocking-etp-standard-tcp-rollout-learn-more = Tìm hiểu thêm
 content-blocking-warning-title = Hãy cân nhắc!
-content-blocking-and-isolating-etp-warning-description = Chặn trình theo dõi và cô lập cookie có thể ảnh hưởng đến chức năng của một số trang web. Tải lại một trang với trình theo dõi để tải tất cả nội dung.
 content-blocking-and-isolating-etp-warning-description-2 = Cài đặt này có thể khiến một số trang web không hiển thị nội dung hoặc hoạt động không chính xác. Nếu trang web có vẻ bị hỏng, bạn có thể muốn tắt trình chống theo dõi để trang web đó tải tất cả nội dung.
 content-blocking-warning-learn-how = Tìm hiểu cách thức
 content-blocking-reload-description = Bạn sẽ cần tải lại các thẻ của mình để áp dụng những thay đổi này.
@@ -1079,9 +1032,6 @@ permissions-autoplay-settings =
 permissions-block-popups =
     .label = Chặn các cửa sổ bật lên
     .accesskey = B
-permissions-block-popups-exceptions =
-    .label = Ngoại trừ…
-    .accesskey = E
 # "popup" is a misspelling that is more popular than the correct spelling of
 # "pop-up" so it's included as a search keyword, not displayed in the UI.
 permissions-block-popups-exceptions-button =
@@ -1171,7 +1121,3 @@ httpsonly-radio-disabled =
 desktop-folder-name = Bàn làm việc
 downloads-folder-name = Tải xuống
 choose-download-folder-title = Chọn thư mục tải xuống:
-# Variables:
-#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
-save-files-to-cloud-storage =
-    .label = Lưu tập tin vào { $service-name }

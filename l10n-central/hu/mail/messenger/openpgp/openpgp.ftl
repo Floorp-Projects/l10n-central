@@ -181,6 +181,9 @@ openpgp-key-man-reload =
 openpgp-key-man-change-expiry =
     .label = Lejárati dátum módosítása
     .accesskey = L
+openpgp-key-man-refresh-online =
+    .label = Frissítés online
+    .accesskey = r
 openpgp-key-man-ignored-ids =
     .label = E-mail-címek
 openpgp-key-man-del-key =
@@ -231,6 +234,7 @@ openpgp-key-man-key-details-key =
 openpgp-ign-addr-intro = Ön elfogadja ennek a kulcsnak a használatát a következő kiválasztott e-mail-címekhez:
 openpgp-key-details-title =
     .title = Kulcs tulajdonságai
+openpgp-key-details-doc-title = Kulcs tulajdonságai
 openpgp-key-details-signatures-tab =
     .label = Tanúsítványok
 openpgp-key-details-structure-tab =
@@ -239,12 +243,19 @@ openpgp-key-details-uid-certified-col =
     .label = Felhasználói azonosító / hitelesítette
 openpgp-key-details-key-id-label = Kulcsazonosító
 openpgp-key-details-user-id2-label = Állítólagos kulcstulajdonos
+openpgp-key-details-user-id3-label = Állítólagos kulcstulajdonos
 openpgp-key-details-id-label =
     .label = Azonosító
 openpgp-key-details-key-type-label = Típus
 openpgp-key-details-key-part-label =
     .label = Kulcsrész
 openpgp-key-details-attr-ignored = Figyelmeztetés: Előfordulhat, hogy ez a kulcs nem a várt módon működik, mert egyes tulajdonságai nem biztonságosak, és figyelmen kívül lesznek hagyva.
+openpgp-key-details-attr-upgrade-sec = Frissítenie kellene a nem biztonságos tulajdonságokat.
+openpgp-key-details-attr-upgrade-pub = Kérje meg a kulcs tulajdonosát, hogy frissítse a nem biztonságos tulajdonságokat.
+openpgp-key-details-upgrade-unsafe =
+    .label = Nem biztonságos tulajdonságok frissítése
+    .accesskey = b
+openpgp-key-details-upgrade-ok = A kulcs sikeresen frissítve. A frissített nyilvános kulcsot meg kell osztania a levelezőpartnereivel.
 openpgp-key-details-algorithm-label =
     .label = Algoritmus
 openpgp-key-details-size-label =
@@ -262,7 +273,6 @@ openpgp-key-details-legend-secret-missing = A (!) jelű kulcsoknál a titkos kul
 openpgp-key-details-sel-action =
     .label = Válasszon műveletet…
     .accesskey = V
-openpgp-key-details-also-known-label = A kulcstulajdonos állítólagos alternatív személyazonosságai:
 openpgp-card-details-close-window-label =
     .buttonlabelaccept = Bezárás
 openpgp-acceptance-label =
@@ -278,7 +288,6 @@ openpgp-acceptance-verified-label =
 key-accept-personal =
     Ennél a kulcsnál megvan a nyilvános és a titkos rész is. Használhatja személyes kulcsként.
     Ha ezt a kulcsot valaki más adta Önnek, akkor ne használja személyes kulcsként.
-key-personal-warning = Ön készítette ezt a kulcsot, és a megjelenített kulcstulajdon Önre vonatkozik?
 openpgp-personal-no-label =
     .label = Nem, ne használja személyes kulcsként.
 openpgp-personal-yes-label =
@@ -288,14 +297,6 @@ openpgp-copy-cmd-label =
 
 ## e2e encryption settings
 
-#   $count (Number) - the number of configured keys associated with the current identity
-#   $identity (String) - the email address of the currently selected identity
-openpgp-description =
-    { $count ->
-        [0] A Thunderbird nem rendelkezik OpenPGP-kulccsal a következőhöz: <b>{ $identity }</b>
-        [one] A Thunderbird { $count } személyes OpenPGP-kulcsot köt a következőhöz: <b>{ $identity }</b>
-       *[other] A Thunderbird { $count } személyes OpenPGP-kulcsot köt a következőhöz: <b>{ $identity }</b>
-    }
 #   $identity (String) - the email address of the currently selected identity
 openpgp-description-no-key = A { -brand-short-name } nem rendelkezik személyes OpenPGP-kulccsal a következőhöz: <b>{ $identity }</b>
 #   $count (Number) - the number of configured keys associated with the current identity
@@ -361,7 +362,6 @@ key-expired-date = A kulcs ekkor lejárt: { $keyExpiry }
 key-expired-simple = A kulcs lejárt
 key-revoked-simple = A kulcsot visszavonták
 key-do-you-accept = Elfogadja ezt a kulcsot a digitális aláírások ellenőrzéséhez és az üzenetek titkosításához?
-key-accept-warning = Kerülje le a hamis kulcsok elfogadását. Használjon egy az e-mailtől eltérő kommunikációs csatornát a levelezőpartner kulcsának ujjlenyomatának ellenőrzéséhez.
 key-verification = Ellenőrizze a kulcs ujjlenyomatát az e-mailtől eltérő biztonságos kommunikációs csatornával, hogy megbizonyosodjon arról, hogy ez valóban a(z) { $addr } kulcsa.
 # Strings enigmailMsgComposeOverlay.js
 cannot-use-own-key-because = Az üzenet nem küldhető el, mert probléma van a személyes kulcsával. { $problem }
@@ -390,25 +390,6 @@ converter-decrypt-body-failed =
     Nem sikerült visszafejteni a következő tárgyú üzenetet:
     { $subject }.
     Újrapróbálkozik egy másik jelszóval, vagy ki akarja hagyni az üzenetet?
-# Strings in gpg.jsm
-unknown-signing-alg = Ismeretlen aláírási algoritmus (azonosító: { $id })
-unknown-hash-alg = Ismeretlen kriptográfiai ujjlenyomat (azonosító: { $id })
-# Strings in keyUsability.jsm
-expiry-key-expires-soon =
-    A(z) { $desc } kulcsa kevesebb, mint { $days } nap múlva lejár.
-    Javasoljuk, hogy hozzon létre egy új kulcspárt, és konfigurálja a megfelelő fiókokat annak használatához.
-expiry-keys-expire-soon =
-    A következő kulcsok kevesebb, mint { $days } napon belül lejárnak: { $desc }.
-    Javasoljuk, hogy hozzon létre új kulcsokat, és konfigurálja a megfelelő fiókokat azok használatához.
-expiry-key-missing-owner-trust =
-    A(z) { $desc } titkos kulcs nem eléggé megbízható.
-    Javasoljuk, hogy a kulcstulajdonságokban állítsa be a „Tanúsítványokra támaszkodik” értékét „teljesen megbízhatóra”.
-expiry-keys-missing-owner-trust =
-    A következő titkos kulcsok nem eléggé megbízhatók.
-    { $desc }.
-    Javasoljuk, hogy a kulcstulajdonságokban állítsa be a „Tanúsítványokra támaszkodik” értékét „teljesen megbízhatóra”.
-expiry-open-key-manager = OpenPGP-kulcskezelő megnyitása
-expiry-open-key-properties = Kulcstulajdonságok megnyitása
 # Strings filters.jsm
 filter-folder-required = Ki kell választania a célmappát.
 filter-decrypt-move-warn-experimental =
@@ -526,6 +507,9 @@ key-error-not-accepted-as-personal = Nem erősítette meg, hogy a(z) „{ $keySp
 need-online = A kiválasztott funkció offline módban nem érhető el. Kapcsolódjon és próbálja újra.
 # Strings used in keyRing.jsm & keyLookupHelper.jsm
 no-key-found = Nem található olyan kulcs, amely megfelelne a keresési feltételeknek.
+# Strings used in keyRing.jsm & keyLookupHelper.jsm
+no-key-found2 = Nem található olyan használható kulcs, amely megfelelne a keresési feltételeknek.
+no-update-found = Már megvannak az online felfedezett kulcsok.
 # Strings used in keyRing.jsm & GnuPGCryptoAPI.jsm
 fail-key-extract = Hiba – a kulcskinyerési parancs sikertelen
 # Strings used in keyRing.jsm
@@ -611,18 +595,9 @@ send-to-news-warning =
     Ez nem javasolt, mert csak akkor van értelme, ha a csoport összes tagja vissza tudja fejteni az üzenetet, azaz az üzenetet az összes résztvevő kulcsával titkosítani kell. Csak akkor küldje el ezt a levelet, ha pontosan tudja mit csinál.
     Folytatja?
 save-attachment-header = Visszafejtett melléklet mentése
-no-temp-dir =
-    Nem található ideiglenes könyvtár, amelybe írni lehetne
-    Állítsa be a TEMP környezeti változót
 possibly-pgp-mime = Lehet, hogy PGP/MIME segítségével titkosított vagy aláírt üzenet; az ellenőrzéshez használja a „Visszafejtés/Ellenőrzés” funkciót
 cannot-send-sig-because-no-own-key = Nem lehet digitálisan aláírni ezt az üzenetet, mert még nem állította be a végpontok közti titkosítást a(z) <{ $key }> számára
 cannot-send-enc-because-no-own-key = Nem küldheti el titkosítva ezt az üzenetet, mert még nem állította be a végpontok közti titkosítást a(z) <{ $key }> számára
-compose-menu-attach-key =
-    .label = Saját nyilvános kulcs mellékelése
-    .accesskey = m
-compose-menu-encrypt-subject =
-    .label = Tárgy titkosítása
-    .accesskey = T
 # Strings used in decryption.jsm
 do-import-multiple =
     Importálja a következő kulcsokat?

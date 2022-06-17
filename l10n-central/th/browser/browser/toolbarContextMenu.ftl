@@ -39,15 +39,18 @@ toolbar-context-menu-remove-extension =
 toolbar-context-menu-report-extension =
     .label = รายงานส่วนขยาย
     .accesskey = ร
-# Can appear on the same context menu as menubarCmd ("Menu Bar") and
-# personalbarCmd ("Bookmarks Toolbar"), so they should have different
-# access keys.
+# Can appear on the same context menu as toolbar-context-menu-menu-bar-cmd
+# ("Menu Bar") and personalbarCmd ("Bookmarks Toolbar"), so they should
+# have different access keys.
 toolbar-context-menu-pin-to-overflow-menu =
     .label = ปักหมุดไปยังเมนูล้น
     .accesskey = ป
 toolbar-context-menu-auto-hide-downloads-button-2 =
     .label = ซ่อนปุ่มเมื่อว่างเปล่า
     .accesskey = ซ
+toolbar-context-menu-always-open-downloads-panel =
+    .label = แสดงแผงเมื่อเริ่มดาวน์โหลด
+    .accesskey = ส
 toolbar-context-menu-remove-from-toolbar =
     .label = เอาออกจากแถบเครื่องมือ
     .accesskey = อ

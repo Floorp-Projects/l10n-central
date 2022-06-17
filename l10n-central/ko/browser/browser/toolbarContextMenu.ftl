@@ -39,15 +39,18 @@ toolbar-context-menu-remove-extension =
 toolbar-context-menu-report-extension =
     .label = 확장 기능 신고
     .accesskey = o
-# Can appear on the same context menu as menubarCmd ("Menu Bar") and
-# personalbarCmd ("Bookmarks Toolbar"), so they should have different
-# access keys.
+# Can appear on the same context menu as toolbar-context-menu-menu-bar-cmd
+# ("Menu Bar") and personalbarCmd ("Bookmarks Toolbar"), so they should
+# have different access keys.
 toolbar-context-menu-pin-to-overflow-menu =
-    .label = 더보기 메뉴에 고정
+    .label = 도구 더보기 메뉴에 고정
     .accesskey = P
 toolbar-context-menu-auto-hide-downloads-button-2 =
     .label = 비어있을 때 버튼 숨기기
     .accesskey = H
+toolbar-context-menu-always-open-downloads-panel =
+    .label = 다운로드 시작 시 패널 표시
+    .accesskey = S
 toolbar-context-menu-remove-from-toolbar =
     .label = 도구 모음에서 제거
     .accesskey = R

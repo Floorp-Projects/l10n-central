@@ -26,6 +26,8 @@ about-addressbook-books-context-properties =
     .label = 屬性
 about-addressbook-books-context-synchronize =
     .label = 同步
+about-addressbook-books-context-edit =
+    .label = 編輯
 about-addressbook-books-context-print =
     .label = 列印…
 about-addressbook-books-context-export =
@@ -53,8 +55,8 @@ about-addressbook-search =
     .placeholder = 搜尋 { $name }
 about-addressbook-search-all =
     .placeholder = 搜尋所有通訊錄
-about-addressbook-sort-button =
-    .title = 更改清單順序
+about-addressbook-sort-button2 =
+    .title = 清單顯示選項
 about-addressbook-name-format-display =
     .label = 顯示名稱
 about-addressbook-name-format-firstlast =
@@ -69,6 +71,38 @@ about-addressbook-sort-email-ascending =
     .label = 依照電子郵件地址排序（升冪）
 about-addressbook-sort-email-descending =
     .label = 依照電子郵件地址排序（降冪）
+about-addressbook-horizontal-layout =
+    .label = 切換為水平版面配置
+about-addressbook-vertical-layout =
+    .label = 切換為垂直版面配置
+
+## Card column headers
+## Each string is listed here twice, and the values should match.
+
+about-addressbook-column-header-generatedname = 姓名
+about-addressbook-column-label-generatedname =
+    .label = { about-addressbook-column-header-generatedname }
+about-addressbook-column-header-emailaddresses = 電子郵件地址
+about-addressbook-column-label-emailaddresses =
+    .label = { about-addressbook-column-header-emailaddresses }
+about-addressbook-column-header-phonenumbers = 電話號碼
+about-addressbook-column-label-phonenumbers =
+    .label = { about-addressbook-column-header-phonenumbers }
+about-addressbook-column-header-addresses = 地址
+about-addressbook-column-label-addresses =
+    .label = { about-addressbook-column-header-addresses }
+about-addressbook-column-header-title = 頭銜
+about-addressbook-column-label-title =
+    .label = { about-addressbook-column-header-title }
+about-addressbook-column-header-department = 部門
+about-addressbook-column-label-department =
+    .label = { about-addressbook-column-header-department }
+about-addressbook-column-header-organization = 公司
+about-addressbook-column-label-organization =
+    .label = { about-addressbook-column-header-organization }
+about-addressbook-column-header-addrbook = 通訊錄
+about-addressbook-column-label-addrbook =
+    .label = { about-addressbook-column-header-addrbook }
 about-addressbook-cards-context-write =
     .label = 寫信
 about-addressbook-confirm-delete-mixed-title = 刪除通訊錄與群組
@@ -119,17 +153,43 @@ about-addressbook-confirm-delete-contacts =
        *[other] 您確定要刪除下列 { $count } 位聯絡人嗎？
     }
 
+## Card list placeholder
+## Shown when there are no cards in the list
+
+about-addressbook-placeholder-empty-book = 無聯絡人
+about-addressbook-placeholder-new-contact = 新增聯絡人
+about-addressbook-placeholder-search-only = 進行搜尋後才會顯示此通訊錄的聯絡人
+about-addressbook-placeholder-searching = 搜尋中…
+about-addressbook-placeholder-no-search-results = 找不到聯絡人
+
 ## Details
 
+about-addressbook-prefer-display-name = 在郵件檔頭上方顯示姓名
+about-addressbook-write-action-button = 寫信
+about-addressbook-event-action-button = 事件
+about-addressbook-search-action-button = 搜尋
 about-addressbook-begin-edit-contact-button = 編輯
 about-addressbook-delete-edit-contact-button = 刪除
 about-addressbook-cancel-edit-contact-button = 取消
 about-addressbook-save-edit-contact-button = 儲存
+about-addressbook-add-contact-to = 新增到:
 about-addressbook-details-email-addresses-header = 電子郵件地址
 about-addressbook-details-phone-numbers-header = 電話號碼
-about-addressbook-details-home-address-header = 住家地址
-about-addressbook-details-work-address-header = 商務地址
+about-addressbook-details-addresses-header = 通訊錄
+about-addressbook-details-notes-header = 附註
 about-addressbook-details-other-info-header = 其他資訊
+about-addressbook-entry-type-work = 商務
+about-addressbook-entry-type-home = 住家
+about-addressbook-entry-type-fax = 傳真
+about-addressbook-entry-type-cell = 手機
+about-addressbook-entry-type-pager = 呼叫器
+about-addressbook-entry-name-birthday = 生日
+about-addressbook-entry-name-anniversary = 週年紀念日
+about-addressbook-entry-name-title = 頭銜
+about-addressbook-entry-name-role = 角色
+about-addressbook-entry-name-organization = 公司
+about-addressbook-entry-name-website = 網站
+about-addressbook-entry-name-time-zone = 時區
 about-addressbook-unsaved-changes-prompt-title = 未儲存修改
 about-addressbook-unsaved-changes-prompt = 您想要在離開編輯畫面前儲存變更嗎？
 

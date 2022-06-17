@@ -303,9 +303,15 @@
 <!ENTITY forwardAsInline.accesskey "i">
 <!ENTITY forwardAsAttachmentCmd.label "Adjunto">
 <!ENTITY forwardAsAttachmentCmd.accesskey "a">
-<!ENTITY editMsgAsNewCmd.label "Editar mensaje como nuevo">
-<!ENTITY editMsgAsNewCmd.accesskey "E">
-<!ENTITY editMsgAsNewCmd.key "e">
+<!ENTITY editAsNewMsgCmd.label "Editar como mensaje nuevo">
+<!ENTITY editAsNewMsgCmd.accesskey "E">
+<!ENTITY editAsNewMsgCmd.key "e">
+<!ENTITY editDraftMsgCmd.label "Editar borrador de mensaje">
+<!ENTITY editDraftMsgCmd.accesskey "b">
+<!ENTITY editTemplateMsgCmd.label "Editar plantilla">
+<!ENTITY editTemplateMsgCmd.accesskey "T">
+<!ENTITY newMsgFromTemplateCmd.label "Nuevo mensaje desde plantilla">
+<!ENTITY newMsgFromTemplateCmd.keycode "VK_RETURN">
 <!ENTITY createFilter.label "Crear filtro a partir del mensaje…">
 <!ENTITY createFilter.accesskey "f">
 <!ENTITY archiveMsgCmd.label "Archivar">
@@ -451,8 +457,12 @@
 <!ENTITY contextOpenNewWindow.accesskey "v">
 <!ENTITY contextOpenNewTab.label "Abrir el mensaje en una pestaña nueva">
 <!ENTITY contextOpenNewTab.accesskey "T">
-<!ENTITY contextEditAsNew.label "Editar como nuevo…">
-<!ENTITY contextEditAsNew.accesskey "e">
+<!ENTITY contextEditMsgAsNew.label "Editar como mensaje nuevo">
+<!ENTITY contextEditMsgAsNew.accesskey "E">
+<!ENTITY contextEditDraftMsg.label "Editar borrador de mensaje">
+<!ENTITY contextEditTemplate.label "Editar plantilla">
+<!ENTITY contextEditTemplate.accesskey "T">
+<!ENTITY contextNewMsgFromTemplate.label "Nuevo mensaje desde plantilla">
 <!ENTITY contextReplySender.label "Responder sólo al remitente">
 <!ENTITY contextReplySender.accesskey "O">
 <!ENTITY contextReplyList.label "Responder a la lista">

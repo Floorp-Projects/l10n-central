@@ -114,8 +114,8 @@ font-monospace-label =
     .accesskey = ш
 
 font-min-size-label =
-    .value = Наименьший размер шрифта:
-    .accesskey = е
+    .value = Минимальный размер шрифта:
+    .accesskey = и
 
 min-size-none =
     .label = Нет

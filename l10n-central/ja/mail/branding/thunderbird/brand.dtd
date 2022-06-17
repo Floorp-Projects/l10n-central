@@ -8,5 +8,5 @@
    This brand name can be used in messages where the product name needs to
    remain unchanged across different versions (Daily, Beta, etc.). -->
 <!ENTITY  brandProductName      "Thunderbird">
-<!ENTITY  vendorShortName       "Ablaze">
-<!ENTITY  trademarkInfo.part1   "Mozilla Thunderbird および Thunderbird ロゴは 米国 Ablaze & Floorp projects の米国およびその他の国における商標または登録商標です。">
+<!ENTITY  vendorShortName       "Mozilla">
+<!ENTITY  trademarkInfo.part1   "Mozilla Thunderbird および Thunderbird ロゴは 米国 Mozilla Foundation の米国およびその他の国における商標または登録商標です。">

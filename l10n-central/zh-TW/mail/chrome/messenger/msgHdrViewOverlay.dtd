@@ -6,7 +6,7 @@
 <!ENTITY fromField4.label "從">
 <!ENTITY senderField4.label "寄件者">
 <!ENTITY author.label "作者">
-<!ENTITY organizationField4.label "組織">
+<!ENTITY organizationField4.label "公司">
 <!ENTITY replyToField4.label "回覆至">
 
 <!ENTITY subjectField4.label "主旨">
@@ -18,7 +18,7 @@
 <!ENTITY dateField4.label "日期">
 <!ENTITY userAgentField4.label "使用者代理字串">
 <!ENTITY referencesField4.label "參考資料">
-<!ENTITY messageIdField4.label "郵件 ID">
+<!ENTITY messageIdField4.label "郵件編號">
 <!ENTITY inReplyToField4.label "回覆給">
 <!ENTITY originalWebsite4.label "網站">
 

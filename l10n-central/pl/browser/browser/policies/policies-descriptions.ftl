@@ -13,6 +13,7 @@
 policy-3rdparty = Ustawienie zasad, do których rozszerzenia WebExtension mają dostęp przez „chrome.storage.managed”.
 policy-AllowedDomainsForApps = Określenie domen, które mają dostęp do Google Workspace.
 policy-AppAutoUpdate = Włączenie lub wyłączenie automatycznego aktualizowania aplikacji.
+policy-AppUpdatePin = Uniemożliwienie programowi { -brand-short-name } aktualizowania poza podaną wersję.
 policy-AppUpdateURL = Ustawienie niestandardowego adresu URL aktualizacji programu.
 policy-Authentication = Konfiguracja zintegrowanego uwierzytelniania dla witryn, które je obsługują.
 policy-AutoLaunchProtocolsFromOrigins = Określenie listy zewnętrznych protokołów, które mogą być używane z wymienionych źródeł bez pytania użytkownika.
@@ -58,6 +59,7 @@ policy-DownloadDirectory = Ustawienie i zablokowanie katalogu pobierania.
 policy-EnableTrackingProtection = Włączenie lub wyłączenie blokowania treści i opcjonalnie jej blokada.
 # “lock” means that the user won’t be able to change this setting
 policy-EncryptedMediaExtensions = Włączenie lub wyłączenie Encrypted Media Extensions i opcjonalnie ich blokada.
+policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Wyłączenie ostrzeżeń na podstawie rozszerzenia pliku dla podanych typów plików w domenach.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -111,8 +113,10 @@ policy-SecurityDevices = Instalacja modułów PKCS #11.
 policy-ShowHomeButton = Wyświetlanie przycisku strony domowej na pasku narzędzi.
 policy-SSLVersionMax = Ustawienie maksymalnej wersji SSL.
 policy-SSLVersionMin = Ustawienie minimalnej wersji SSL.
+policy-StartDownloadsInTempDirectory = Wymuszenie rozpoczynania pobierania w lokalnym, tymczasowym położeniu zamiast w domyślnym katalogu pobierania.
 policy-SupportMenu = Dodanie niestandardowego elementu menu pomocy.
 policy-UserMessaging = Wyłączenie wyświetlania użytkownikowi pewnych komunikatów.
+policy-UseSystemPrintDialog = Drukowanie za pomocą systemowego okna drukowania.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Blokowanie odwiedzania witryn. Dokumentacja zawiera więcej informacji o formacie.
 policy-Windows10SSO = Zezwalanie na pojedyncze logowanie Windows do kont Microsoft, służbowych i szkolnych.

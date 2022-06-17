@@ -9,19 +9,9 @@ experimental-features-css-masonry2 =
 experimental-features-css-masonry-description = Maakt ondersteuning voor de experimentele functie CSS Masonry Layout mogelijk. Lees de <a data-l10n-name="explainer">uitleg</a> voor een globale beschrijving van de functie. Plaats een opmerking in <a data-l10n-name="w3c-issue">dit GitHub-issue</a> of <a data-l10n-name="bug">deze bug</a> om feedback te leveren.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
-experimental-features-css-cascade-layers =
-    .label = CSS: Cascade Layers
-experimental-features-css-cascade-layers-description = Schakelt ondersteuning voor CSS Cascade Layers in. Lees de <a data-l10n-name="spec">specificatie-in-wording</a> voor details. Meld bugs die <a data-l10n-name="bugzilla">bug 1699215</a> blokkeren voor bugs in relatie tot deze functie.
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
 experimental-features-web-gpu2 =
     .label = Web API: WebGPU
 experimental-features-web-gpu-description2 = Deze nieuwe API biedt ondersteuning op laag niveau voor het uitvoeren van berekeningen en grafische weergave met behulp van de <a data-l10n-name="wikipedia">Graphics Processing Unit (GPU)</a> van het apparaat of de computer van de gebruiker. De <a data-l10n-name="spec">specificatie</a> is nog steeds in ontwikkeling. Zie <a data-l10n-name="bugzilla">bug 1602129</a> voor meer details.
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-media-avif =
-    .label = Media: AVIF
-experimental-features-media-avif-description = Als deze functie is ingeschakeld, ondersteunt { -brand-short-name } het AV1 Image File (AVIF)-formaat. Dit is een bestandsformaat voor stilstaande beelden dat gebruik maakt van de mogelijkheden van de AV1-videocompressie-algoritmen om de afbeeldingsgrootte te verkleinen. Zie <a data-l10n-name="bugzilla">bug 1443863</a> voor meer details.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-media-jxl =
@@ -29,21 +19,9 @@ experimental-features-media-jxl =
 experimental-features-media-jxl-description = Als deze functie is ingeschakeld, ondersteunt { -brand-short-name } de JPEG XL (JXL)-indeling. Dit is een verbeterde bestandsindeling voor afbeeldingen die een verliesvrije overgang van traditionele JPEG-bestanden ondersteunt. Zie <a data-l10n-name="bugzilla">bug 1539075</a> voor meer details.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
-experimental-features-web-api-inputmode =
-    .label = Web API: inputmode
-# "inputmode" and "contenteditable" are technical terms and shouldn't be translated.
-experimental-features-web-api-inputmode-description = Onze implementatie van het globale attribuut <a data-l10n-name="mdn-inputmode">inputmode</a> is bijgewerkt volgens <a data-l10n-name="whatwg">de WHATWG-specificatie</a>, maar we moeten ook nog andere wijzigingen aanbrengen, zoals het beschikbaar maken van bewerkbare inhoud. Zie <a data-l10n-name="bugzilla">bug 1205133</a> voor meer details.
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
 experimental-features-css-constructable-stylesheets =
     .label = CSS: Constructable Stylesheets
 experimental-features-css-constructable-stylesheets-description = De toevoeging van een constructor aan de <a data-l10n-name="mdn-cssstylesheet">CSSStyleSheet</a>-interface en een aantal gerelateerde wijzigingen, maakt het mogelijk om direct nieuwe stylesheets te maken zonder het blad toe te voegen aan de HTML. Dit maakt het veel gemakkelijker om herbruikbare stylesheets te maken voor gebruik met <a data-l10n-name="mdn-shadowdom">Shadow DOM</a>. Zie <a data-l10n-name="bugzilla">bug 1520690</a> voor meer details.
-experimental-features-devtools-color-scheme-simulation =
-    .label = Developer Tools: Color Scheme Simulation
-experimental-features-devtools-color-scheme-simulation-description = Voegt een optie toe om verschillende kleurenschema’s te simuleren, zodat u <a data-l10n-name="mdn-preferscolorscheme">@prefers-colour-scheme</a>-mediaquery’s kunt testen. Met behulp van deze mediaquery, kan uw stylesheet reageren op de vraag of de gebruiker de voorkeur geeft aan een lichte of donkere gebruikersinterface. Met deze functie kunt u uw code testen zonder dat u de instellingen in uw browser (of besturingssysteem, als de browser een systeembrede kleurenschema volgt) hoeft te wijzigen. Zie <a data-l10n-name="bugzilla1">bug 1550804</a> en <a data-l10n-name="bugzilla2">bug 1137699</a> voor meer details.
-experimental-features-devtools-execution-context-selector =
-    .label = Developer Tools: Execution Context Selector
-experimental-features-devtools-execution-context-selector-description = Deze functie geeft een knop weer op de opdrachtregel van de console waarmee u de context kunt wijzigen waarin de expressie die u invoert, wordt uitgevoerd. Zie <a data-l10n-name="bugzilla1">bug 1605154</a> en <a data-l10n-name="bugzilla2">bug 1605153</a> voor meer details.
 experimental-features-devtools-compatibility-panel =
     .label = Developer Tools: Compatibility Panel
 experimental-features-devtools-compatibility-panel-description = Een zijpaneel voor de Page Inspector dat informatie toont over de compatibiliteitsstatus van de browser in uw app. Zie <a data-l10n-name="bugzilla">bug 1584464</a> voor meer details.
@@ -74,27 +52,15 @@ experimental-features-devtools-serviceworker-debugger-support-description = Scha
 experimental-features-webrtc-global-mute-toggles =
     .label = WebRTC Global Mute-schakelaars
 experimental-features-webrtc-global-mute-toggles-description = Voegt bedieningselementen toe aan de algemene deelindicator van WebRTC, waarmee gebruikers hun microfoon- en camerafeeds algemeen kunnen dempen.
-# Win32k Lockdown
-experimental-features-win32k-lockdown =
-    .label = Win32k-vergrendeling
-experimental-features-win32k-lockdown-description = Het gebruik van Win32k-API’s in browsertabbladen uitschakelen. Biedt een betere beveiliging, maar kan op dit moment instabiel of gevoelig voor fouten zijn. (Alleen Windows)
 # JS JIT Warp project
 experimental-features-js-warp =
     .label = JavaScript JIT: Warp
 experimental-features-js-warp-description = Warp inschakelen, een project om de prestaties van JavaScript en geheugengebruik te verbeteren.
-# Fission is the name of the feature and should not be translated.
-experimental-features-fission =
-    .label = Fission (website-isolatie)
-experimental-features-fission-description = Fission (website-isolatie) is een experimentele functie in { -brand-short-name } die een extra beschermingslaag biedt tegen beveiligingsbugs. Door elke website in een apart proces te isoleren, maakt Fission het moeilijker voor kwaadwillende websites om toegang te verkrijgen tot informatie van andere door u bezochte pagina’s. Dit is een grote wijziging in de architectuur van { -brand-short-name } en we stellen het op prijs als u het test en alle problemen die u tegenkomt rapporteert. Voor meer details, zie <a data-l10n-name="wiki">de wiki</a>.
-# Support for having multiple Picture-in-Picture windows open simultaneously
-experimental-features-multi-pip =
-    .label = Ondersteuning voor meerdere Picture-in-picture
-experimental-features-multi-pip-description = Experimentele ondersteuning voor gelijktijdig openen van meerdere Picture-in-Picturevensters.
 # Search during IME
 experimental-features-ime-search =
     .label = Adresbalk: resultaten tonen tijdens opstellen met IME
 experimental-features-ime-search-description = Een IME (Input Method Editor) is een hulpmiddel waarmee u complexe symbolen, zoals in Oost-Aziatische of Indische geschreven talen worden gebruikt, met een standaard toetsenbord kunt invoeren. Als u dit experiment inschakelt, blijft het adresbalkpaneel open, waarbij zoekresultaten en -suggesties worden getoond, terwijl u IME gebruikt om tekst in te voeren. Merk op dat de IME een paneel kan tonen dat de adresbalkresultaten afdekt; daarom wordt deze voorkeur alleen gesuggereerd voor IME waarbij dit type paneel niet wordt gebruikt.
-# Firefox 100
-experimental-features-firefox-100 =
-    .label = User-Agent-tekenreeks { -brand-product-name } 100
-experimental-features-firefox-100-description = Zorg ervoor dat { -brand-short-name } websites een User-Agent-tekenreeks stuurt die zich voordoet als { -brand-product-name } versie 100. Gebruik deze instelling om te testen of websites niet meer werken wanneer het versienummer van  { -brand-short-name } uit drie cijfers bestaat. De echte { -brand-product-name } 100 staat gepland voor mei 2022, dus begin nu met het testen van uw websites!
+# Text recognition for images
+experimental-features-text-recognition =
+    .label = Tekstherkenning
+experimental-features-text-recognition-description = Functies inschakelen om tekst in afbeeldingen te herkennen.

@@ -21,6 +21,7 @@ perftools-heading-features-default = Functies (standaard aan aanbevolen)
 perftools-heading-features-disabled = Uitgeschakelde functies
 perftools-heading-features-experimental = Experimenteel
 perftools-heading-threads = Threads
+perftools-heading-threads-jvm = JVM-threads
 perftools-heading-local-build = Lokale build
 
 ##
@@ -49,9 +50,6 @@ perftools-devtools-settings-label = Instellingen
 
 ## Various statuses that affect the current state of profiling, not typically displayed.
 
-perftools-status-private-browsing-notice =
-    De profiler is uitgeschakeld als privénavigatie is ingeschakeld.
-    Sluit alle privévensters om de profiler opnieuw in te schakelen
 perftools-status-recording-stopped-by-another-tool = De opname is door een ander hulpmiddel gestopt.
 perftools-status-restart-required = De browser moet opnieuw worden gestart om deze functie in te schakelen.
 
@@ -97,6 +95,18 @@ perftools-thread-dns-resolver =
     .title = Op deze thread vindt DNS-omzetting plaats
 perftools-thread-task-controller =
     .title = TaskController-threadpoolthreads
+perftools-thread-jvm-gecko =
+    .title = De belangrijkste Gecko JVM-thread
+perftools-thread-jvm-nimbus =
+    .title = De belangrijkste threads voor de Nimbus-experimenten-SDK
+perftools-thread-jvm-default-dispatcher =
+    .title = De standaard dispatcher voor de Kotlin-coroutines-bibliotheek
+perftools-thread-jvm-glean =
+    .title = De belangrijkste threads voor de Glean-telemetrie-SDK
+perftools-thread-jvm-arch-disk-io =
+    .title = De IO-dispatcher voor de Kotlin-coroutines-bibliotheek
+perftools-thread-jvm-pool =
+    .title = Threads gemaakt in een naamloze thread-pool
 
 ##
 
@@ -107,6 +117,10 @@ perftools-tools-threads-input-label =
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
 ## preferences are true.
+
+
+## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
+## devtools.performance.new-panel-onboarding preference is true.
 
 perftools-onboarding-message = <b>Nieuw</b>: { -profiler-brand-name } is nu geïntegreerd in de Ontwikkelaarshulpmiddelen. <a>Meer info</a> over dit krachtige nieuwe hulpmiddel.
 # `options-context-advanced-settings` is defined in toolbox-options.ftl
@@ -123,18 +137,11 @@ perftools-onboarding-close-button =
 
 perftools-presets-web-developer-label = Webontwikkelaar
 perftools-presets-web-developer-description = Aanbevolen voorinstelling voor de meeste foutopsporing in web-apps, met lage overhead.
-perftools-presets-firefox-platform-label = Floorp-platform
-perftools-presets-firefox-platform-description = Aanbevolen voorinstelling voor interne foutopsporing in het Firefox-platform.
-perftools-presets-firefox-front-end-label = Floorp-front-end
-perftools-presets-firefox-front-end-description = Aanbevolen voorinstelling voor interne foutopsporing in het front-end van Firefox.
-perftools-presets-firefox-graphics-label = Floorp-grafisch
-perftools-presets-firefox-graphics-description = Aanbevolen voorinstelling voor onderzoek naar grafische prestaties van Firefox.
 perftools-presets-firefox-label = { -brand-shorter-name }
 perftools-presets-firefox-description = Aanbevolen voorinstelling voor profileren van { -brand-shorter-name }.
 perftools-presets-graphics-label = Grafisch
 perftools-presets-graphics-description = Voorinstelling voor het onderzoeken van grafische bugs in { -brand-shorter-name }.
 perftools-presets-media-label = Media
-perftools-presets-media-description = Aanbevolen voorinstelling voor het analyseren van audio- en videoproblemen.
 perftools-presets-media-description2 = Voorinstelling voor het onderzoeken van audio- en videobugs in { -brand-shorter-name }.
 perftools-presets-networking-label = Netwerk
 perftools-presets-networking-description = Voorinstelling voor het onderzoeken van netwerkbugs in { -brand-shorter-name }.

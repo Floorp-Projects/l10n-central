@@ -8,11 +8,6 @@ toolbar-context-menu-menu-bar =
 
 ## Tools Menu
 
-# Since v89 we dropped the platforms distinction between Options or Preferences
-# and consolidated everything with Preferences.
-menu-tools-preferences =
-    .label = Προτιμήσεις
-    .accesskey = Π
 menu-tools-settings =
     .label = Ρυθμίσεις
     .accesskey = θ
@@ -55,6 +50,12 @@ menu-view-repair-text-encoding =
 
 ## View / Layout
 
+menu-font-size-label =
+    .label = Μέγεθος γραμματοσειράς
+    .accesskey = θ
+menuitem-font-size-reset =
+    .label = Επαναφορά μεγέθους γραμματοσειράς
+    .accesskey = π
 mail-uidensity-label =
     .label = Πυκνότητα
     .accesskey = Π

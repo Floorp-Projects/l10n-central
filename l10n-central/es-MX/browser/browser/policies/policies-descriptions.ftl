@@ -13,6 +13,7 @@
 policy-3rdparty = Establece políticas a las que WebExtensions pueda acceder a través de chrome.storage.managed.
 policy-AllowedDomainsForApps = Define los dominios autorizados para acceder a Google Workspace.
 policy-AppAutoUpdate = Activar o desactivar la actualización automática de la aplicación.
+policy-AppUpdatePin = Previene que { -brand-short-name } sea actualizado más allá de la versión especificada.
 policy-AppUpdateURL = Establecer la URL de actualización de la aplicación personalizada.
 policy-Authentication = Configurar la autenticación integrada para sitios web que lo admitan.
 policy-AutoLaunchProtocolsFromOrigins = Define una lista de protocolos externos que pueden ser usados desde los orígenes que aparecen en la lista sin que se le pregunte al usuario.
@@ -58,13 +59,14 @@ policy-DownloadDirectory = Establece y asegura el directorio de descarga
 policy-EnableTrackingProtection = Habilitar o deshabilitar el bloqueo de contenido y bloquearlo opcionalmente.
 # “lock” means that the user won’t be able to change this setting
 policy-EncryptedMediaExtensions = Habilitar o deshabilitar extensiones de medios cifrados y opcionalmente, bloquearlos.
+policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Deshabilitar las advertencias según la extensión del archivo para tipos de archivo específicos en los dominios.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
 policy-Extensions = Instalar, desinstalar o bloquear extensiones. La opción Instalar toma direcciones URL o rutas como parámetros. Las opciones desinstalar y bloquear toman ID de extensión.
 policy-ExtensionSettings = Administra todos los aspectos de la instalación de extensiones
 policy-ExtensionUpdate = Habilitar o deshabilitar actualizaciones automáticas de extensiones.
-policy-FirefoxHome = Configura Floorp Home.
+policy-FirefoxHome = Configura Firefox Home.
 policy-FlashPlugin = Permitir o denegar el uso del complemento Flash.
 policy-Handlers = Configurar gestores de aplicación predeterminados.
 policy-HardwareAcceleration = Si es "false", desactivar aceleración de hardware.
@@ -111,8 +113,10 @@ policy-SecurityDevices = Instalar módulos PKCS #11.
 policy-ShowHomeButton = Muestra el botón de inicio en la barra de herramientas.
 policy-SSLVersionMax = Establecer la versión máxima de SSL.
 policy-SSLVersionMin = Establecer la versión mínima de SSL.
+policy-StartDownloadsInTempDirectory = Forzar las descargas para que comiencen en una ubicación temporal local en lugar del directorio de descarga predeterminado.
 policy-SupportMenu = Agregar un elemento personalizado de asistencia al menú de ayuda.
 policy-UserMessaging = No mostrar ciertos mensajes al usuario.
+policy-UseSystemPrintDialog = Imprimir utilizando el cuadro de diálogo de impresión del sistema.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Bloquear sitios web de ser visitado. Consulta la documentación para obtener más detalles sobre el formato.
 policy-Windows10SSO = Permitir inicio de sesión único de Windows para cuentas de Microsoft, el trabajo y la escuela.

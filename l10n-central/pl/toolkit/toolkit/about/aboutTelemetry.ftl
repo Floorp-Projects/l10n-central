@@ -34,7 +34,6 @@ about-telemetry-events-section = Zdarzenia
 about-telemetry-simple-measurements-section = Proste pomiary
 about-telemetry-slow-sql-section = Powolne polecenia SQL
 about-telemetry-addon-details-section = Szczegóły dodatków
-about-telemetry-captured-stacks-section = Przechwycone stosy
 about-telemetry-late-writes-section = Późne zapisy
 about-telemetry-raw-payload-section = Nieprzetworzona zawartość
 about-telemetry-raw = Nieprzetworzony JSON
@@ -69,7 +68,7 @@ about-telemetry-histogram-stats =
        *[many] { $sampleCount } próbek, średnia = { $prettyAverage }, suma = { $sum }
     }
 # Variables:
-#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Ablaze"
+#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-page-subtitle = Na tej stronie wyświetlane są zebrane informacje o wydajności, charakterystyce sprzętu, wykorzystaniu funkcji i modyfikacjach programu. Informacje te są wysyłane do organizacji { $telemetryServerOwner } w celu ulepszenia programu { -brand-full-name }.
 about-telemetry-settings-explanation = Telemetria rejestruje dane { about-telemetry-data-type } i ich przesyłanie jest <a data-l10n-name="upload-link">{ about-telemetry-upload-type }</a>.
 # Variables:
@@ -123,10 +122,6 @@ about-telemetry-keys-header = Własność
 about-telemetry-names-header = Nazwa
 about-telemetry-values-header = Wartość
 # Variables:
-#   $stackKey (String): the string key for this stack
-#   $capturedStacksCount (Integer):  the number of times this stack was captured
-about-telemetry-captured-stacks-title = { $stackKey } (przechwyceń: { $capturedStacksCount })
-# Variables:
 #   $lateWriteCount (Integer): the number of the late writes
 about-telemetry-late-writes-title = Późny zapis #{ $lateWriteCount }
 about-telemetry-stack-title = Stos:
@@ -141,7 +136,7 @@ about-telemetry-origin-section = Telemetria pochodzenia
 about-telemetry-origin-origin = pochodzenie
 about-telemetry-origin-count = liczba
 # Variables:
-#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Ablaze"
+#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-origins-explanation = <a data-l10n-name="origin-doc-link">Telemetria pochodzenia Firefoksa</a> szyfruje dane przed wysłaniem tak, że { $telemetryServerOwner } może policzyć rzeczy, ale nie wie, czy dany { -brand-product-name } dołożył się do tej liczby (<a data-l10n-name="prio-blog-link">Więcej informacji</a>).
 # Variables:
 #  $process (String): type of process in subsection headers ( e.g. "content", "parent" )

@@ -35,6 +35,8 @@ detail-version =
     .label = Version
 detail-last-updated =
     .label = Last Updated
+addon-detail-description-expand = Show more
+addon-detail-description-collapse = Show less
 detail-contributions-description = The developer of this add-on asks that you help support its continued development by making a small contribution.
 detail-contributions-button = Contribute
     .title = Contribute to the development of this add-on
@@ -287,8 +289,10 @@ extension-enabled-heading = Enabled
 extension-disabled-heading = Disabled
 theme-enabled-heading = Enabled
 theme-disabled-heading = Disabled
+theme-disabled-heading2 = Saved Themes
 theme-monochromatic-heading = Colourways
 theme-monochromatic-subheading = Vibrant new colourways from { -brand-product-name }. Available for a limited time.
+theme-colorways-button = Try Colourways
 plugin-enabled-heading = Enabled
 plugin-disabled-heading = Disabled
 dictionary-enabled-heading = Enabled
@@ -352,7 +356,7 @@ addon-detail-private-browsing-disallow = Don’t Allow
 addon-badge-recommended2 =
     .title = { -brand-product-name } only recommends extensions that meet our standards for security and performance
     .aria-label = { addon-badge-recommended2.title }
-# We hard code "Ablaze" in the string below because the extensions are built
+# We hard code "Mozilla" in the string below because the extensions are built
 # by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
     .title = Official extension built by Mozilla. Meets security and performance standards

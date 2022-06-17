@@ -7,12 +7,6 @@
 <!ENTITY pref.content.title                     "Inhoud">
 <!ENTITY pref.content.description               "Deze instellingen bepalen hoe de inhoud van websites en berichten in &brandShortName; verschijnt.">
 
-<!ENTITY siteIcons.label                        "Websitepictogrammen">
-<!ENTITY useSiteIcons.label                     "Websitepictogrammen tonen">
-<!ENTITY useSiteIcons.accesskey                 "W">
-<!ENTITY useFavIcons2.label                     "De favicon van de server proberen te gebruiken als de pagina er geen definieert">
-<!ENTITY useFavIcons2.accesskey                 "P">
-
 <!ENTITY scrolling.label                        "Scrollen">
 <!ENTITY useAutoScroll.label                    "Automatisch scrollen gebruiken">
 <!ENTITY useAutoScroll.accesskey                "m">
@@ -29,7 +23,6 @@
 <!ENTITY maxZoom.label                          "tot en met">
 <!ENTITY maxZoom.accesskey                      "t">
 <!ENTITY percent.label                          "&#37;">
-
 <!ENTITY defaultZoom.label                      "Standaard zoom">
 <!ENTITY defaultZoom.accesskey                  "z">
 
@@ -38,11 +31,9 @@
 <!ENTITY siteSpecific.label                     "Zoomniveau op paginabasis onthouden">
 <!ENTITY siteSpecific.accesskey                 "o">
 <!ENTITY showZoomStatusPanel.label              "Zoombediening in de statusbalk tonen">
+<!ENTITY showZoomStatusPanel.accesskey          "Z">
 <!ENTITY enableAutomaticImageResizing.label     "Formaat van grote afbeeldingen aanpassen aan browservenster">
 <!ENTITY enableAutomaticImageResizing.accesskey "F">
 
 <!ENTITY allowHWAccel.label                     "Hardwareversnelling gebruiken wanneer beschikbaar">
 <!ENTITY allowHWAccel.accesskey                 "v">
-<!ENTITY blockAutoRefresh.label                 "Mij waarschuwen wanneer websites proberen de pagina door te sturen of te herladen">
-<!ENTITY blockAutoRefresh.accesskey             "r">
-

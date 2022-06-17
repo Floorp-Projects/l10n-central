@@ -159,3 +159,16 @@ spotlight-total-cookie-protection-body = Visapusiška slapukų apsauga neleidži
 spotlight-total-cookie-protection-expanded = „{ -brand-short-name }“ pastato užtvarą aplink slapukus, ribodama jų pasiekimą jūsų lankomoje svetainėje, todėl stebėjimo elementai negali jų naudoti jūsų sekimui. Išbandydami iš anksto, padėsite optimizuoti šį funkcionalumą, kad galėtume kurti visiems geresnį internetą.
 spotlight-total-cookie-protection-primary-button = Įjungti visapusišką slapukų apsaugą
 spotlight-total-cookie-protection-secondary-button = Ne dabar
+
+## Emotive Continuous Onboarding
+
+spotlight-better-internet-header = Geresnis internetas prasideda nuo jūsų
+spotlight-better-internet-body = Kai naudojate „{ -brand-short-name }“, balsuojate už atvirą ir prieinamą internetą, kuris būtų geresnis visiems.
+spotlight-peace-mind-header = Mes su jumis
+spotlight-peace-mind-body = Kiekvieną mėnesį „{ -brand-short-name }“ blokuoja vidutiniškai daugiau nei 3000 stebėjimo elementų, tenkančių vienam naudotojui. Nes niekas, ypač privatumo trikdžiai, tokie kaip sekimo elementai, neturėtų įsiterpti tarp jūsų ir gerojo interneto.
+spotlight-pin-primary-button =
+    { PLATFORM() ->
+        [macos] Laikyti užduočių juostoje
+       *[other] Įsegti į užduočių juostą
+    }
+spotlight-pin-secondary-button = Ne dabar

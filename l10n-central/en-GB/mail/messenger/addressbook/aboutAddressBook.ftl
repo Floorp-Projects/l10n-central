@@ -26,6 +26,8 @@ about-addressbook-books-context-properties =
     .label = Properties
 about-addressbook-books-context-synchronize =
     .label = Synchronise
+about-addressbook-books-context-edit =
+    .label = Edit
 about-addressbook-books-context-print =
     .label = Print…
 about-addressbook-books-context-export =
@@ -53,8 +55,8 @@ about-addressbook-search =
     .placeholder = Search { $name }
 about-addressbook-search-all =
     .placeholder = Search all address books
-about-addressbook-sort-button =
-    .title = Change the list order
+about-addressbook-sort-button2 =
+    .title = List display options
 about-addressbook-name-format-display =
     .label = Display Name
 about-addressbook-name-format-firstlast =
@@ -69,6 +71,38 @@ about-addressbook-sort-email-ascending =
     .label = Sort by e-mail address (A > Z)
 about-addressbook-sort-email-descending =
     .label = Sort by e-mail address (Z > A)
+about-addressbook-horizontal-layout =
+    .label = Switch to horizontal layout
+about-addressbook-vertical-layout =
+    .label = Switch to vertical layout
+
+## Card column headers
+## Each string is listed here twice, and the values should match.
+
+about-addressbook-column-header-generatedname = Name
+about-addressbook-column-label-generatedname =
+    .label = { about-addressbook-column-header-generatedname }
+about-addressbook-column-header-emailaddresses = Email Addresses
+about-addressbook-column-label-emailaddresses =
+    .label = { about-addressbook-column-header-emailaddresses }
+about-addressbook-column-header-phonenumbers = Phone Numbers
+about-addressbook-column-label-phonenumbers =
+    .label = { about-addressbook-column-header-phonenumbers }
+about-addressbook-column-header-addresses = Addresses
+about-addressbook-column-label-addresses =
+    .label = { about-addressbook-column-header-addresses }
+about-addressbook-column-header-title = Title
+about-addressbook-column-label-title =
+    .label = { about-addressbook-column-header-title }
+about-addressbook-column-header-department = Department
+about-addressbook-column-label-department =
+    .label = { about-addressbook-column-header-department }
+about-addressbook-column-header-organization = Organisation
+about-addressbook-column-label-organization =
+    .label = { about-addressbook-column-header-organization }
+about-addressbook-column-header-addrbook = Address Book
+about-addressbook-column-label-addrbook =
+    .label = { about-addressbook-column-header-addrbook }
 about-addressbook-cards-context-write =
     .label = Write
 about-addressbook-confirm-delete-mixed-title = Delete Contacts and Lists
@@ -122,17 +156,43 @@ about-addressbook-confirm-delete-contacts =
        *[other] Are you sure you want to delete these { $count } contacts?
     }
 
+## Card list placeholder
+## Shown when there are no cards in the list
+
+about-addressbook-placeholder-empty-book = No contacts available
+about-addressbook-placeholder-new-contact = New Contact
+about-addressbook-placeholder-search-only = This address book shows contacts only after a search
+about-addressbook-placeholder-searching = Searching…
+about-addressbook-placeholder-no-search-results = No contacts found
+
 ## Details
 
+about-addressbook-prefer-display-name = Prefer display name over message header
+about-addressbook-write-action-button = Write
+about-addressbook-event-action-button = Event
+about-addressbook-search-action-button = Search
 about-addressbook-begin-edit-contact-button = Edit
 about-addressbook-delete-edit-contact-button = Delete
 about-addressbook-cancel-edit-contact-button = Cancel
 about-addressbook-save-edit-contact-button = Save
+about-addressbook-add-contact-to = Add to:
 about-addressbook-details-email-addresses-header = Email Addresses
 about-addressbook-details-phone-numbers-header = Phone Numbers
-about-addressbook-details-home-address-header = Home Address
-about-addressbook-details-work-address-header = Work Address
+about-addressbook-details-addresses-header = Addresses
+about-addressbook-details-notes-header = Notes
 about-addressbook-details-other-info-header = Other Information
+about-addressbook-entry-type-work = Work
+about-addressbook-entry-type-home = Home
+about-addressbook-entry-type-fax = Fax
+about-addressbook-entry-type-cell = Mobile
+about-addressbook-entry-type-pager = Pager
+about-addressbook-entry-name-birthday = Birthday
+about-addressbook-entry-name-anniversary = Anniversary
+about-addressbook-entry-name-title = Title
+about-addressbook-entry-name-role = Role
+about-addressbook-entry-name-organization = Organisation
+about-addressbook-entry-name-website = Web site
+about-addressbook-entry-name-time-zone = Time Zone
 about-addressbook-unsaved-changes-prompt-title = Unsaved Changes
 about-addressbook-unsaved-changes-prompt = Do you want to save your changes before leaving the edit view?
 

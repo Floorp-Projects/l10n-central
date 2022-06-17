@@ -635,20 +635,12 @@ home-newtabs-mode-label = Nye faneblade
 home-restore-defaults =
     .label = Gendan standarder
     .accesskey = G
-<<<<<<< working copy
-# "Floorp" should be treated as a brand and kept in English,
-=======
 
 # "Firefox" should be treated as a brand and kept in English,
->>>>>>> destination
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
-<<<<<<< working copy
-    .label = Floorp-startside (standard)
-=======
     .label = Firefox-startside (standard)
 
->>>>>>> destination
 home-mode-choice-custom =
     .label = Tilpassede URL'er…
 
@@ -674,7 +666,7 @@ choose-bookmark =
     .label = Anvend bogmærke…
     .accesskey = b
 
-## Home Section - Floorp Home Content Customization
+## Home Section - Firefox Home Content Customization
 
 home-prefs-content-header = Indhold på Firefox' startside
 home-prefs-content-description = Vælg det indhold, du vil have vist på din startside i Firefox.
@@ -1044,8 +1036,8 @@ history-header = Historik
 # "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
-#   - Simply as "Floorp", moving the verb into each option.
-#     This will result in "Floorp" + "Will remember history", etc.
+#   - Simply as "Firefox", moving the verb into each option.
+#     This will result in "Firefox" + "Will remember history", etc.
 #   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = { -brand-short-name } vil:
     .accesskey = i

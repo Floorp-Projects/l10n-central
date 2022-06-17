@@ -35,6 +35,8 @@ detail-version =
     .label = Version
 detail-last-updated =
     .label = Senast uppdaterad
+addon-detail-description-expand = Visa mer
+addon-detail-description-collapse = Visa mindre
 detail-contributions-description = Skaparen av det här tillägget ber dig om ett litet bidrag för att stödja den fortsatta utvecklingen.
 detail-contributions-button = Bidra
     .title = Bidra till utvecklingen av detta tillägg
@@ -283,8 +285,10 @@ extension-enabled-heading = Aktiverad
 extension-disabled-heading = Inaktiverad
 theme-enabled-heading = Aktiverad
 theme-disabled-heading = Inaktiverad
+theme-disabled-heading2 = Sparade teman
 theme-monochromatic-heading = Colorways
 theme-monochromatic-subheading = Levande nya colorways från { -brand-product-name }. Tillgängliga under en begränsad tid.
+theme-colorways-button = Prova Colorways
 plugin-enabled-heading = Aktiverad
 plugin-disabled-heading = Inaktiverad
 dictionary-enabled-heading = Aktiverad
@@ -348,10 +352,10 @@ addon-detail-private-browsing-disallow = Tillåt inte
 addon-badge-recommended2 =
     .title = { -brand-product-name } rekommenderar endast tillägg som uppfyller våra standarder för säkerhet och prestanda
     .aria-label = { addon-badge-recommended2.title }
-# We hard code "Ablaze" in the string below because the extensions are built
+# We hard code "Mozilla" in the string below because the extensions are built
 # by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
-    .title = Officiellt tillägg byggt av Ablaze Floorp. Uppfyller säkerhets- och prestandastandarder
+    .title = Officiellt tillägg byggt av Mozilla Firefox. Uppfyller säkerhets- och prestandastandarder
     .aria-label = { addon-badge-line3.title }
 addon-badge-verified2 =
     .title = Denna tillägg har granskats för att uppfylla våra standarder för säkerhet och prestanda

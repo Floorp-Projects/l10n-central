@@ -23,24 +23,24 @@
 ## https://mozilla-l10n.github.io/styleguides/mozilla_general/#brands-copyright-and-trademark
 
 -facebook-container-brand-name = Facebook Container
--lockwise-brand-name = Floorp Lockwise
+-lockwise-brand-name = Firefox Lockwise
 -lockwise-brand-short-name = Lockwise
--monitor-brand-name = Floorp Monitor
+-monitor-brand-name = Firefox Monitor
 -monitor-brand-short-name = Monitor
 -pocket-brand-name = Pocket
--send-brand-name = Floorp Send
--screenshots-brand-name = Floorp Screenshots
+-send-brand-name = Firefox Send
+-screenshots-brand-name = Firefox Screenshots
 -mozilla-vpn-brand-name = Mozilla VPN
--profiler-brand-name = Floorp Profiler
--translations-brand-name = Floorp Translations
+-profiler-brand-name = Firefox Profiler
+-translations-brand-name = Firefox Translations
 
-# “Suggest” can be localized, “Firefox” must be treated as a brand
-# and kept in English.
--firefox-suggest-brand-name = Floorp 建议
-
--rally-brand-name = Ablaze Rally
+-rally-brand-name = Mozilla Rally
 -rally-short-name = Rally
 
 
--focus-brand-name = Floorp Focus
+-focus-brand-name = Firefox Focus
+
+# “Suggest” can be localized, “Firefox” must be treated as a brand
+# and kept in English.
+-firefox-suggest-brand-name = Firefox 建议
 

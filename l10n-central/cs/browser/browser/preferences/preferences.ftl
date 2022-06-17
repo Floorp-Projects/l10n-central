@@ -782,12 +782,8 @@ home-newtabs-mode-label = V novém panelu
 home-restore-defaults =
     .label = Obnovit výchozí
     .accesskey = O
-<<<<<<< working copy
-# "Floorp" should be treated as a brand and kept in English,
-=======
 
 # "Firefox" should be treated as a brand and kept in English,
->>>>>>> destination
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
     .label = Výchozí domovskou stránku Firefoxu
@@ -817,7 +813,7 @@ choose-bookmark =
     .label = Použít záložku…
     .accesskey = z
 
-## Home Section - Floorp Home Content Customization
+## Home Section - Firefox Home Content Customization
 
 home-prefs-content-header = Obsah domovské stránky Firefoxu
 home-prefs-content-description = Vyberte obsah, který chcete mít na výchozí domovské stránce Firefoxu.
@@ -1199,8 +1195,8 @@ history-header = Historie prohlížení
 # "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
-#   - Simply as "Floorp", moving the verb into each option.
-#     This will result in "Floorp" + "Will remember history", etc.
+#   - Simply as "Firefox", moving the verb into each option.
+#     This will result in "Firefox" + "Will remember history", etc.
 #   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = Historii prohlížených stránek
     .accesskey = i

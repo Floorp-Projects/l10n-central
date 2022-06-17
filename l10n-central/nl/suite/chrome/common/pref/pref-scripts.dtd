@@ -4,8 +4,8 @@
 
 <!-- extracted from content/pref-scripts.xul -->
 
-<!--LOCALIZATION NOTE : FILE The 'Scripts & Plugins' preferences dialog -->
-<!ENTITY pref.scripts.title              "Scripts &amp; plug-ins">
+<!--LOCALIZATION NOTE : FILE The 'Scripts' preferences dialog -->
+<!ENTITY pref.scripts2.title             "Scripts">
 
 <!ENTITY navigator.label                 "Browser">
 <!ENTITY navigator.accesskey             "B">
@@ -27,13 +27,3 @@
 <!ENTITY debugStrictJavascript.accesskey  "S">
 <!ENTITY debugConsoleJavascript.label     "JavaScript-fouten en -waarschuwingen vanuit chrome tonen">
 <!ENTITY debugConsoleJavascript.accesskey "c">
-
-<!ENTITY enablePlugins.label             "Plug-ins inschakelen voor">
-<!ENTITY enablePluginForSuite.label      "Suite">
-<!ENTITY enablePluginForSuite.accesskey  "u">
-
-<!ENTITY whenPageRequiresPlugins.label   "Wanneer een pagina een plug-in vereist">
-<!ENTITY activateAllPlugins.label        "Alle plug-ins standaard activeren">
-<!ENTITY activateAllPlugins.accesskey    "d">
-<!ENTITY warnPluginsRequired.label       "Waarschuw me als er extra plug-ins geïnstalleerd moeten worden">
-<!ENTITY warnPluginsRequired.accesskey   "W">

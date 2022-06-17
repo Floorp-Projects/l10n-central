@@ -8,8 +8,8 @@
 # These are the default window titles everywhere except macOS. The first two
 # attributes are used when the web content opened has no title:
 #
-# default - "Ablaze Floorp"
-# private - "Ablaze Floorp (Private Browsing)"
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Variables:
@@ -22,8 +22,8 @@ browser-main-window =
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
-# "default" - "Ablaze Floorp"
-# "private" - "Ablaze Floorp — (Private Browsing)"
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -262,7 +262,7 @@ identity-header-security-with-host =
 identity-connection-not-secure = Conexión no segura
 identity-connection-secure = Conexión segura
 identity-connection-failure = Fallo de conexión
-identity-connection-internal = Esta es un página { -brand-short-name } segura.
+identity-connection-internal = Esta es una página de { -brand-short-name } segura.
 identity-connection-file = Esta página está almacenada en tu computadora.
 identity-extension-page = Esta página se carga desde una extensión.
 identity-active-blocked = { -brand-short-name } bloqueó partes de esta página que no eran seguras.
@@ -291,7 +291,7 @@ identity-clear-site-data =
 identity-connection-not-secure-security-view = No se estableció una conexión segura con este sitio.
 identity-connection-verified = Se estableció una conexión segura con este sitio.
 identity-ev-owner-label = Certificado emitido a nombre de:
-identity-description-custom-root = Ablaze no reconoce a este emisor de certificados. El sistema operativo o algún administrador puede haberlo añadido. <label data-l10n-name="link">Saber más</label>
+identity-description-custom-root = Mozilla no reconoce a este emisor de certificados. El sistema operativo o algún administrador puede haberlo añadido. <label data-l10n-name="link">Saber más</label>
 identity-remove-cert-exception =
     .label = Eliminar excepción
     .accesskey = E
@@ -521,7 +521,7 @@ urlbar-result-action-search-tabs = Buscar pestañas
 urlbar-group-firefox-suggest =
     .label = { -firefox-suggest-brand-name }
 # A label shown above the search suggestions group in the urlbar results. It
-# should use title case.
+# should use sentence case.
 # Variables
 #  $engine (String): the name of the search engine providing the suggestions
 urlbar-group-search-suggestions =
@@ -653,12 +653,6 @@ toolbar-settings-button =
             [macos] Abrir ajustes ({ $shortcut })
            *[other] Abrir ajustes
         }
-
-## More items
-
-more-menu-go-offline =
-    .label = Trabajar sin conexión
-    .accesskey = x
 toolbar-overflow-customize-button =
     .label = Personalizar barra de herramientas…
     .accesskey = C
@@ -703,12 +697,6 @@ panel-save-update-password = Contraseña
 #  $name (String): The name of the addon that will be removed.
 addon-removal-title = ¿Eliminar { $name }?
 addon-removal-abuse-report-checkbox = Informar de esta extensión a { -vendor-short-name }
-
-## Remote / Synced tabs
-
-remote-tabs-manage-account =
-    .label = Administrar cuenta
-remote-tabs-sync-now = Sincronizar ahora
 
 ##
 

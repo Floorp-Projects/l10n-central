@@ -14,12 +14,8 @@ extension-firefox-compact-light-description = Vzhled se světlým barevným tém
 
 extension-firefox-compact-dark-name = Tmavý
 extension-firefox-compact-dark-description = Vzhled s tmavým barevným tématem.
-<<<<<<< working copy
-extension-firefox-alpenglow-name = Floorp Alpenglow
-=======
 
 extension-firefox-alpenglow-name = Firefox Alpenglow
->>>>>>> destination
 extension-firefox-alpenglow-description = Vzhled s barevným tématem pro tlačítka, nabídky a okna.
 
 ## Colorway Themes

@@ -35,6 +35,8 @@ detail-version =
     .label = Wersja
 detail-last-updated =
     .label = Ostatnia aktualizacja
+addon-detail-description-expand = Więcej
+addon-detail-description-collapse = Mniej
 detail-contributions-description = Autor tego dodatku prosi o wsparcie niewielką kwotą jego dalszego rozwoju.
 detail-contributions-button = Wspomóż
     .title = Wspomóż rozwój tego dodatku
@@ -287,8 +289,10 @@ extension-enabled-heading = Włączone
 extension-disabled-heading = Wyłączone
 theme-enabled-heading = Włączone
 theme-disabled-heading = Wyłączone
+theme-disabled-heading2 = Zachowane motywy
 theme-monochromatic-heading = Kolorystyka
 theme-monochromatic-subheading = Energiczne nowe kolorystyki od przeglądarki { -brand-product-name }. Dostępne przez ograniczony czas.
+theme-colorways-button = Wypróbuj kolorystykę
 plugin-enabled-heading = Włączone
 plugin-disabled-heading = Wyłączone
 dictionary-enabled-heading = Włączone
@@ -353,7 +357,7 @@ addon-detail-private-browsing-disallow = nie zezwalaj
 addon-badge-recommended2 =
     .title = { -brand-product-name } poleca wyłącznie rozszerzenia spełniające nasze standardy bezpieczeństwa i wydajności
     .aria-label = { addon-badge-recommended2.title }
-# We hard code "Ablaze" in the string below because the extensions are built
+# We hard code "Mozilla" in the string below because the extensions are built
 # by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
     .title = Oficjalne rozszerzenie zbudowane przez Mozillę. Spełnia standardy bezpieczeństwa i wydajności.

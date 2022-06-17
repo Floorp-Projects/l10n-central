@@ -35,6 +35,8 @@ detail-version =
     .label = รุ่น
 detail-last-updated =
     .label = อัปเดตล่าสุด
+addon-detail-description-expand = แสดงเพิ่มเติม
+addon-detail-description-collapse = แสดงน้อยลง
 detail-contributions-description = นักพัฒนาส่วนเสริมนี้ใคร่ขอให้คุณช่วยสนับสนุนการพัฒนาอย่างต่อเนื่องโดยการสมทบทุนสักเล็กน้อย
 detail-contributions-button = มีส่วนร่วม
     .title = มีส่วนร่วมกับการพัฒนาส่วนเสริมนี้
@@ -286,8 +288,10 @@ extension-enabled-heading = ถูกเปิดใช้งาน
 extension-disabled-heading = ถูกปิดใช้งาน
 theme-enabled-heading = ถูกเปิดใช้งาน
 theme-disabled-heading = ถูกปิดใช้งาน
+theme-disabled-heading2 = ชุดตกแต่งที่บันทึกไว้
 theme-monochromatic-heading = ชุดรูปแบบสี
 theme-monochromatic-subheading = ชุดรูปแบบใหม่ที่สดใสจาก { -brand-product-name } มีให้ใช้ในช่วงเวลาจำกัด
+theme-colorways-button = ลอง Colorways
 plugin-enabled-heading = ถูกเปิดใช้งาน
 plugin-disabled-heading = ถูกปิดใช้งาน
 dictionary-enabled-heading = ถูกเปิดใช้งาน
@@ -350,7 +354,7 @@ addon-detail-private-browsing-disallow = ไม่อนุญาต
 addon-badge-recommended2 =
     .title = { -brand-product-name } แนะนำเฉพาะส่วนขยายที่ตรงตามมาตรฐานของเราเท่านั้นเพื่อความปลอดภัยและประสิทธิภาพ
     .aria-label = { addon-badge-recommended2.title }
-# We hard code "Ablaze" in the string below because the extensions are built
+# We hard code "Mozilla" in the string below because the extensions are built
 # by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
     .title = ส่วนขยายอย่างเป็นทางการที่สร้างขึ้นโดย Mozilla ซึ่งตรงตามมาตรฐานความปลอดภัยและประสิทธิภาพ

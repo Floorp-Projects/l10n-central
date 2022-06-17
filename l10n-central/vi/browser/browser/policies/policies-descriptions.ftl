@@ -13,6 +13,7 @@
 policy-3rdparty = Đặt chính sách mà WebExtensions có thể truy cập thông qua chrome.storage.managed.
 policy-AllowedDomainsForApps = Xác định các miền được phép truy cập Google Workspace.
 policy-AppAutoUpdate = Bật hoặc tắt cập nhật chương trình tự động.
+policy-AppUpdatePin = Ngăn không cho cập nhật { -brand-short-name } ngoài phiên bản đã chỉ định.
 policy-AppUpdateURL = Thiết lập URL cập nhật của ứng dụng tùy chỉnh.
 policy-Authentication = Cấu hình các phương thức xác thực tích hợp sẵn cho các trang web có hỗ trợ.
 policy-AutoLaunchProtocolsFromOrigins = Xác định danh sách các giao thức bên ngoài có thể được sử dụng từ các origin được liệt kê mà không cần nhắc người dùng.
@@ -58,6 +59,7 @@ policy-DownloadDirectory = Đặt và khóa thư mục tải xuống.
 policy-EnableTrackingProtection = Kích hoạt hoặc vô hiệu hóa chặn nội dung và tùy chọn khóa nó.
 # “lock” means that the user won’t be able to change this setting
 policy-EncryptedMediaExtensions = Kích hoạt hoặc vô hiệu hóa tiện ích mở rộng phương tiện được mã hóa và tùy chọn khóa nó.
+policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Tắt cảnh báo dựa trên phần mở rộng của tập tin cho các loại tập tin cụ thể trên miền.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -111,8 +113,10 @@ policy-SecurityDevices = Cài đặt các mô-đun PKCS # 11.
 policy-ShowHomeButton = Hiển thị nút trang chủ trên thanh công cụ.
 policy-SSLVersionMax = Chỉnh phiên bản SSL tối đa.
 policy-SSLVersionMin = Chỉnh phiên bản SSL tối thiểu.
+policy-StartDownloadsInTempDirectory = Buộc bắt đầu tải xuống ở một vị trí cục bộ, tạm thời thay vì thư mục tải xuống mặc định.
 policy-SupportMenu = Thêm một mục menu hỗ trợ tùy chỉnh vào menu trợ giúp.
 policy-UserMessaging = Không hiển thị một số thông điệp nhất định cho người dùng.
+policy-UseSystemPrintDialog = In bằng hộp thoại in hệ thống.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Chặn các trang web không được truy cập. Xem tài liệu để biết thêm chi tiết về định dạng.
 policy-Windows10SSO = Cho phép Windows đăng nhập một lần cho tài khoản Microsoft, cơ quan và trường học.

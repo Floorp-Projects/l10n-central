@@ -13,6 +13,7 @@
 policy-3rdparty = Beleidsregels instellen zodat WebExtensions via chrome.storage.managed toegang kunnen krijgen.
 policy-AllowedDomainsForApps = Definieer domeinen die toegang hebben tot Google Workspace.
 policy-AppAutoUpdate = Automatische applicatie-update in- of uitschakelen.
+policy-AppUpdatePin = Voorkomen dat { -brand-short-name } wordt geüpdatet voorbij de opgegeven versie.
 policy-AppUpdateURL = Aangepaste app-update-URL instellen.
 policy-Authentication = Geïntegreerde authenticatie configureren voor websites die dit ondersteunen.
 policy-AutoLaunchProtocolsFromOrigins = Definieer een lijst met externe protocollen die vanuit vermelde bronnen kunnen worden gebruikt zonder de gebruiker te vragen.
@@ -58,6 +59,7 @@ policy-DownloadDirectory = De downloadmap instellen en vergrendelen.
 policy-EnableTrackingProtection = Inhoudsblokkering inschakelen of uitschakelen en optioneel vergrendelen.
 # “lock” means that the user won’t be able to change this setting
 policy-EncryptedMediaExtensions = Versleutelde media-extensies in- of uitschakelen en optioneel vergrendelen.
+policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Waarschuwingen uitschakelen op basis van bestandsextensies voor specifieke bestandstypen op domeinen.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -96,7 +98,7 @@ policy-PasswordManagerExceptions = Voorkomen dat { -brand-short-name } wachtwoor
 # PDF.js and PDF should not be translated
 policy-PDFjs = PDF.js, de in { -brand-short-name } ingebouwde PDF-lezer, uitschakelen of instellen.
 policy-Permissions2 = Toestemmingen voor camera, microfoon, locatie, notificaties en automatisch afspelen configureren.
-policy-PictureInPicture = Picture-in-Picture in- of uitschakelen.
+policy-PictureInPicture = Picture-in-picture in- of uitschakelen.
 policy-PopupBlocking = Toestaan dat bepaalde websites standaard pop-ups weergeven.
 policy-Preferences = De waarde voor een subset van voorkeuren instellen en vergrendelen.
 policy-PromptForDownloadLocation = Vragen waar gedownloade bestanden moeten worden opgeslagen.
@@ -111,8 +113,10 @@ policy-SecurityDevices = PKCS #11-modules installeren.
 policy-ShowHomeButton = De startpaginaknop op de werkbalk tonen.
 policy-SSLVersionMax = De maximale SSL-versie instellen.
 policy-SSLVersionMin = De minimale SSL-versie instellen.
+policy-StartDownloadsInTempDirectory = Afdwingen dat downloads starten in een lokale, tijdelijke locatie in plaats van de standaard downloadmap.
 policy-SupportMenu = Een aangepast menu-item voor ondersteuning aan het menu Help toevoegen.
 policy-UserMessaging = Bepaalde berichten niet aan de gebruiker tonen.
+policy-UseSystemPrintDialog = Afdrukken via het afdrukdialoogvenster van het systeem.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Het bezoeken van websites blokkeren. Zie de documentatie voor meer informatie over de notatie.
 policy-Windows10SSO = Windows-single-sign-on toestaan voor Microsoft- werk- en schoolaccounts.

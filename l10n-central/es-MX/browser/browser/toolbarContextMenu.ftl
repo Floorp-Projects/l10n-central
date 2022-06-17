@@ -40,15 +40,18 @@ toolbar-context-menu-remove-extension =
 toolbar-context-menu-report-extension =
     .label = Denunciar extensión
     .accesskey = o
-# Can appear on the same context menu as menubarCmd ("Menu Bar") and
-# personalbarCmd ("Bookmarks Toolbar"), so they should have different
-# access keys.
+# Can appear on the same context menu as toolbar-context-menu-menu-bar-cmd
+# ("Menu Bar") and personalbarCmd ("Bookmarks Toolbar"), so they should
+# have different access keys.
 toolbar-context-menu-pin-to-overflow-menu =
     .label = Anclar al menú de desbordamiento
     .accesskey = P
 toolbar-context-menu-auto-hide-downloads-button-2 =
     .label = Ocultar botón cuando está vacío
     .accesskey = O
+toolbar-context-menu-always-open-downloads-panel =
+    .label = Mostrar panel cuando la descarga comience
+    .accesskey = S
 toolbar-context-menu-remove-from-toolbar =
     .label = Quitar de la barra de herramientas
     .accesskey = Q

@@ -68,7 +68,7 @@ about-telemetry-histogram-stats =
        *[other] { $sampleCount } vzorků
     }, průměr = { $prettyAverage }, součet = { $sum }
 # Variables:
-#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Ablaze"
+#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-page-subtitle = Tato stránka zobrazuje data o výkonu, hardwaru, používání a přizpůsobení aplikace. Tyto informace jsou anonymně odesílány organizaci { $telemetryServerOwner } a slouží k vylepšování aplikace { -brand-full-name }.
 about-telemetry-settings-explanation = Telemetrie sbírá { about-telemetry-data-type } a její odesílání <a data-l10n-name="upload-link">{ about-telemetry-upload-type }</a>.
 # Variables:
@@ -136,7 +136,7 @@ about-telemetry-origin-section = Origin telemetrie
 about-telemetry-origin-origin = origin
 about-telemetry-origin-count = počet
 # Variables:
-#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Ablaze"
+#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-origins-explanation =
     <a data-l10n-name="origin-doc-link">Firefox Origin Telemetry</a> kóduje před odesláním data tak, aby z nich mohl provozovatel serveru, { $telemetryServerOwner }, získávat různé součty, ale nemohl zjistit, které konkrétní instance { -brand-product-name.gender ->
         [masculine] { -brand-product-name(case: "gen") }

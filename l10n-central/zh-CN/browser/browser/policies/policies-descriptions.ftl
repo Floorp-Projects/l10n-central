@@ -13,6 +13,7 @@
 policy-3rdparty = 设置 WebExtension 可通过 chrome.storage.managed 存取的策略。
 policy-AllowedDomainsForApps = 定义允许访问 Google Workspace 的域。
 policy-AppAutoUpdate = 启用或禁用应用程序自动更新。
+policy-AppUpdatePin = 阻止 { -brand-short-name } 更新超过特定版本。
 policy-AppUpdateURL = 设置自定义的应用程序更新网址。
 policy-Authentication = 为支持的网站配置集成身份验证。
 policy-AutoLaunchProtocolsFromOrigins = 定义一组外部协议列表，可不提示用户直接从列出的来源使用。
@@ -58,6 +59,7 @@ policy-DownloadDirectory = 设置并锁定下载目录。
 policy-EnableTrackingProtection = 启用或禁用内容拦截，并可选择锁定该功能。
 # “lock” means that the user won’t be able to change this setting
 policy-EncryptedMediaExtensions = 启用或禁用“加密媒体扩展（EME）”，并可选择锁定该功能。
+policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = 针对指定域名的特定文件类型，禁用文件扩展名警告。
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -111,8 +113,10 @@ policy-SecurityDevices = 安装 PKCS #11 模块。
 policy-ShowHomeButton = 在工具栏显示“主页”按钮
 policy-SSLVersionMax = 设置最高 SSL 版本。
 policy-SSLVersionMin = 设置最低 SSL 版本。
+policy-StartDownloadsInTempDirectory = 强制下载至本地临时文件夹，而非默认下载路径。
 policy-SupportMenu = 向帮助菜单自选添加技术支持项目。
 policy-UserMessaging = 不向用户显示某些消息。
+policy-UseSystemPrintDialog = 使用系统打印对话框打印。
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = 阻止访问某些网站。参阅文档了解该格式的更多详情。
 policy-Windows10SSO = 允许面向 Microsoft 账户（个人/工作/学校）的 Windows 单点登录。

@@ -40,8 +40,6 @@
 <!ENTITY PrimaryEmail.accesskey         "л">
 <!ENTITY SecondEmail.label              "Доп. адрес электронной почты:">
 <!ENTITY SecondEmail.accesskey          "п">
-<!ENTITY PreferMailFormat.label         "Предпочитает получать почту в формате:">
-<!ENTITY PreferMailFormat.accesskey     "р">
 <!ENTITY PlainText.label                "Простой текст">
 <!ENTITY HTML.label                     "HTML">
 <!ENTITY Unknown.label                  "Неизвестно">
@@ -66,8 +64,8 @@
 <!ENTITY HomeAddress2.accesskey         "">
 <!ENTITY HomeCity.label                 "Город:">
 <!ENTITY HomeCity.accesskey             "р">
-<!ENTITY HomeState.label                "Область, край:">
-<!ENTITY HomeState.accesskey            "б">
+<!ENTITY HomeState.label                "Регион:">
+<!ENTITY HomeState.accesskey            "н">
 <!ENTITY HomeZipCode.label              "Почтовый индекс:">
 <!ENTITY HomeZipCode.accesskey          "и">
 <!ENTITY HomeCountry.label              "Страна:">
@@ -96,8 +94,8 @@
 <!ENTITY WorkAddress2.accesskey         "">
 <!ENTITY WorkCity.label                 "Город:">
 <!ENTITY WorkCity.accesskey             "р">
-<!ENTITY WorkState.label                "Область, край:">
-<!ENTITY WorkState.accesskey            "б">
+<!ENTITY WorkState.label                "Регион:">
+<!ENTITY WorkState.accesskey            "н">
 <!ENTITY WorkZipCode.label              "Почтовый индекс:">
 <!ENTITY WorkZipCode.accesskey          "и">
 <!ENTITY WorkCountry.label              "Страна:">

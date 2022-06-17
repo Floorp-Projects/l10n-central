@@ -21,6 +21,7 @@ perftools-heading-features-default = 기능 (기본적으로 권장됨)
 perftools-heading-features-disabled = 비활성화된 기능
 perftools-heading-features-experimental = 실험
 perftools-heading-threads = 스레드
+perftools-heading-threads-jvm = JVM 스레드
 perftools-heading-local-build = 로컬 빌드
 
 ##
@@ -49,9 +50,6 @@ perftools-devtools-settings-label = 설정
 
 ## Various statuses that affect the current state of profiling, not typically displayed.
 
-perftools-status-private-browsing-notice =
-    프로파일러는 사생활 보호 모드가 활성화되면 비활성화됩니다.
-    프로파일러를 다시 활성화하려면 모든 사생활 보호 창을 닫으세요.
 perftools-status-recording-stopped-by-another-tool = 다른 도구에 의해 기록이 중지되었습니다.
 perftools-status-restart-required = 이 기능을 사용하려면 브라우저를 다시 시작해야 합니다.
 
@@ -97,6 +95,18 @@ perftools-thread-dns-resolver =
     .title = 이 스레드에서 DNS 확인 발생
 perftools-thread-task-controller =
     .title = TaskController 스레드 풀 스레드
+perftools-thread-jvm-gecko =
+    .title = 메인 Gecko JVM 스레드
+perftools-thread-jvm-nimbus =
+    .title = Nimbus 실험 SDK의 메인 스레드
+perftools-thread-jvm-default-dispatcher =
+    .title = Kotlin 코루틴 라이브러리의 기본 디스패처
+perftools-thread-jvm-glean =
+    .title = Glean 원격 분석 SDK의 메인 스레드
+perftools-thread-jvm-arch-disk-io =
+    .title = Kotlin 코루틴 라이브러리의 IO 디스패처
+perftools-thread-jvm-pool =
+    .title = 이름 없는 스레드 풀에서 생성된 스레드
 
 ##
 
@@ -107,6 +117,10 @@ perftools-tools-threads-input-label =
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
 ## preferences are true.
+
+
+## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
+## devtools.performance.new-panel-onboarding preference is true.
 
 perftools-onboarding-message = <b>새 기능</b>: { -profiler-brand-name }가 이제 개발자 도구에 통합되었습니다. 이 강력한 새 도구에 대해 <a>더 알아보세요</a>.
 # `options-context-advanced-settings` is defined in toolbox-options.ftl
@@ -123,18 +137,11 @@ perftools-onboarding-close-button =
 
 perftools-presets-web-developer-label = 웹 개발자
 perftools-presets-web-developer-description = 오버헤드가 낮은 대부분의 웹 앱 디버깅에 권장되는 프리셋입니다.
-perftools-presets-firefox-platform-label = Floorp 플랫폼
-perftools-presets-firefox-platform-description = 내부 Firefox 플랫폼 디버깅에 권장되는 프리셋입니다.
-perftools-presets-firefox-front-end-label = Floorp 프런트 엔드
-perftools-presets-firefox-front-end-description = 내부 Firefox 프런트 엔드 디버깅에 권장되는 프리셋입니다.
-perftools-presets-firefox-graphics-label = Floorp 그래픽
-perftools-presets-firefox-graphics-description = Floorp 그래픽 성능 조사에 권장되는 프리셋입니다.
 perftools-presets-firefox-label = { -brand-shorter-name }
 perftools-presets-firefox-description = { -brand-shorter-name } 프로파일링에 권장되는 프리셋입니다.
 perftools-presets-graphics-label = 그래픽
 perftools-presets-graphics-description = { -brand-shorter-name }의 그래픽 버그를 조사하기 위한 프리셋입니다.
 perftools-presets-media-label = 미디어
-perftools-presets-media-description = 오디오 및 비디오 문제 진단에 권장되는 프리셋입니다.
 perftools-presets-media-description2 = { -brand-shorter-name }의 오디오 및 비디오 버그를 조사하기 위한 프리셋입니다.
 perftools-presets-networking-label = 네트워킹
 perftools-presets-networking-description = { -brand-shorter-name }의 네트워킹 버그를 조사하기 위한 프리셋입니다.

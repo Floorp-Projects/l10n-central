@@ -21,6 +21,7 @@ perftools-heading-features-default = Функции (рекомендованн�
 perftools-heading-features-disabled = Отключённые функции
 perftools-heading-features-experimental = Экспериментальные
 perftools-heading-threads = Потоки
+perftools-heading-threads-jvm = Потоки JVM
 perftools-heading-local-build = Локальная сборка
 
 ##
@@ -49,9 +50,6 @@ perftools-devtools-settings-label = Настройки
 
 ## Various statuses that affect the current state of profiling, not typically displayed.
 
-perftools-status-private-browsing-notice =
-    Профайлер отключается, когда включён приватный режим.
-    Закройте все приватные окна, чтобы заново включить профайлер
 perftools-status-recording-stopped-by-another-tool = Запись была остановлена другим инструментом.
 perftools-status-restart-required = Для включения этой функции необходимо перезапустить браузер.
 
@@ -97,6 +95,18 @@ perftools-thread-dns-resolver =
     .title = В этом потоке происходит разрешение DNS
 perftools-thread-task-controller =
     .title = Потоки пула потоков TaskController
+perftools-thread-jvm-gecko =
+    .title = Основной поток Gecko JVM
+perftools-thread-jvm-nimbus =
+    .title = Основные потоки для SDK экспериментов Nimbus
+perftools-thread-jvm-default-dispatcher =
+    .title = Диспетчер по умолчанию для библиотеки сопрограмм Kotlin
+perftools-thread-jvm-glean =
+    .title = Основные потоки для SDK телеметрии Glean
+perftools-thread-jvm-arch-disk-io =
+    .title = Диспетчер ввода-вывода для библиотеки сопрограмм Kotlin
+perftools-thread-jvm-pool =
+    .title = Потоки, созданные в безымянном пуле потоков
 
 ##
 
@@ -107,6 +117,10 @@ perftools-tools-threads-input-label =
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
 ## preferences are true.
+
+
+## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
+## devtools.performance.new-panel-onboarding preference is true.
 
 perftools-onboarding-message = <b>Новое</b>:  В Инструменты разработчика теперь интегрирован { -profiler-brand-name }. <a>Узнайте больше</a> об этом новом, мощном инструменте.
 # `options-context-advanced-settings` is defined in toolbox-options.ftl
@@ -123,18 +137,11 @@ perftools-onboarding-close-button =
 
 perftools-presets-web-developer-label = Веб-разработка
 perftools-presets-web-developer-description = Рекомендуемые настройки для отладки большинства веб-приложений с низкими накладными расходами.
-perftools-presets-firefox-platform-label = Платформа Firefox
-perftools-presets-firefox-platform-description = Рекомендуемые настройки для внутренней отладки платформы Firefox.
-perftools-presets-firefox-front-end-label = Клиентская часть Firefox
-perftools-presets-firefox-front-end-description = Рекомендуемые настройки для внутренней отладки клиентской части Firefox.
-perftools-presets-firefox-graphics-label = Графика Firefox
-perftools-presets-firefox-graphics-description = Рекомендуемые настройки для исследования производительности графики Firefox.
 perftools-presets-firefox-label = { -brand-shorter-name }
 perftools-presets-firefox-description = Рекомендуемые настройки для профилирования { -brand-shorter-name }.
 perftools-presets-graphics-label = Графика
 perftools-presets-graphics-description = Настройки для выявления ошибок графики в { -brand-shorter-name }.
 perftools-presets-media-label = Медиа
-perftools-presets-media-description = Рекомендуемые настройки для диагностики проблем со звуком и видео.
 perftools-presets-media-description2 = Настройки для выявления ошибок аудио и видео в { -brand-shorter-name }.
 perftools-presets-networking-label = Сеть
 perftools-presets-networking-description = Настройки для выявления сетевых ошибок в { -brand-shorter-name }.

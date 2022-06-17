@@ -49,7 +49,7 @@ import-from-chromium =
     .label = Chromium
     .accesskey = u
 import-from-firefox =
-    .label = Floorp
+    .label = Firefox
     .accesskey = F
 import-from-360se =
     .label = 360 Secure Browser
@@ -96,15 +96,7 @@ import-close-source-browser = Před pokračováním se prosím ujistěte, že je
 source-name-ie = Internet Explorer
 source-name-edge = Microsoft Edge
 source-name-chrome = Google Chrome
-<<<<<<< working copy
-source-name-chrome-beta = Google Chrome Beta
-source-name-chrome-dev = Google Chrome Dev
-source-name-chromium = Chromium
-source-name-firefox = Ablaze Floorp
-source-name-360se = 360 Secure Browser
-=======
 
->>>>>>> destination
 imported-safari-reading-list = Seznam ke čtení (ze Safari)
 imported-edge-reading-list = Seznam ke čtení (z Edge)
 

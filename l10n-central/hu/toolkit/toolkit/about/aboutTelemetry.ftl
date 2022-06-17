@@ -34,7 +34,6 @@ about-telemetry-events-section = Események
 about-telemetry-simple-measurements-section = Egyszerű mérési eszközök
 about-telemetry-slow-sql-section = Lassú SQL utasítások
 about-telemetry-addon-details-section = Kiegészítő részletei
-about-telemetry-captured-stacks-section = Rögzített vermek
 about-telemetry-late-writes-section = Késői írások
 about-telemetry-raw-payload-section = Nyers teher
 about-telemetry-raw = Nyers JSON
@@ -68,7 +67,7 @@ about-telemetry-histogram-stats =
        *[other] { $sampleCount } minta, átlag = { $prettyAverage }, összeg = { $sum }
     }
 # Variables:
-#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Ablaze"
+#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-page-subtitle = Ez az oldal megjeleníti a telemetria által gyűjtött teljesítmény-, hardver-, és funkcióhasználati adatokat és testreszabásokat. Ezek az információk a { $telemetryServerOwner }nak a { -brand-full-name } tökéletesítése érdekében kerülnek elküldésre.
 about-telemetry-settings-explanation = A telemetria { about-telemetry-data-type } gyűjt, és a feltöltés <a data-l10n-name="upload-link">{ about-telemetry-upload-type }</a>.
 # Variables:
@@ -122,10 +121,6 @@ about-telemetry-keys-header = Tulajdonság
 about-telemetry-names-header = Név
 about-telemetry-values-header = Érték
 # Variables:
-#   $stackKey (String): the string key for this stack
-#   $capturedStacksCount (Integer):  the number of times this stack was captured
-about-telemetry-captured-stacks-title = { $stackKey } (rögzítések száma: { $capturedStacksCount })
-# Variables:
 #   $lateWriteCount (Integer): the number of the late writes
 about-telemetry-late-writes-title = { $lateWriteCount }. utolsó írás
 about-telemetry-stack-title = Verem:
@@ -140,7 +135,7 @@ about-telemetry-origin-section = Eredettel kapcsolatos telemetria
 about-telemetry-origin-origin = eredet
 about-telemetry-origin-count = darabszám
 # Variables:
-#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Ablaze"
+#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-origins-explanation = A <a data-l10n-name="origin-doc-link">Firefox eredettel kapcsolatos telemetria</a> kódolja az adatokat az elküldés előtt, így a { $telemetryServerOwner } csak összeszámolhat dolgokat, de nem tudja, hogy pontosan mely { -brand-product-name } járult hozzá ahhoz a számhoz. (<a data-l10n-name="prio-blog-link">további információk</a>)
 # Variables:
 #  $process (String): type of process in subsection headers ( e.g. "content", "parent" )

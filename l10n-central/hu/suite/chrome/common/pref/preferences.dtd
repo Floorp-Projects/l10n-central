@@ -38,14 +38,13 @@
 <!ENTITY images.label "Képek">
 <!ENTITY popups.label "Felugró ablakok">
 <!ENTITY passwords.label "Jelszavak">
-<!ENTITY masterpass.label "Mesterjelszó">
 <!ENTITY ssltls.label "SSL/TLS">
 <!ENTITY certs.label "Tanúsítványok">
 
 <!ENTITY sync.label "Szinkronizálás">
 
 <!ENTITY advance.label "Speciális">
-<!ENTITY scriptsAndWindows.label "Parancsfájlok és bővítmények">
+<!ENTITY scriptsAndWindows2.label "Parancsfájlok">
 <!ENTITY keynav.label "Navigálás a billentyűzettel">
 <!ENTITY findAsYouType.label "Gépelőkeresés">
 <!ENTITY cache.label "Gyorsítótár">
@@ -54,7 +53,6 @@
 <!ENTITY httpnetworking.label "HTTP-beállítások">
 <!ENTITY smart.label "Szoftvertelepítés">
 <!ENTITY mousewheel.label "Egérgörgő">
-
 <!ENTITY debugging.label "Hibakeresés">
 
 <!ENTITY focusSearch.key "f">

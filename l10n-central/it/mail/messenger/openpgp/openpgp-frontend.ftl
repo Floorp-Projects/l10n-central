@@ -61,3 +61,4 @@ openpgp-reminder-partial-display = Promemoria: il messaggio mostrato di seguito 
 openpgp-partial-verify-button = Verifica
 openpgp-partial-decrypt-button = Decritta
 
+openpgp-unexpected-key-for-you = Attenzione: questo messaggio contiene una chiave OpenPGP sconosciuta che fa riferimento a uno dei tuoi indirizzi email. Se questa non è una delle tue chiavi, potrebbe trattarsi di un tentativo di ingannare altri corrispondenti.

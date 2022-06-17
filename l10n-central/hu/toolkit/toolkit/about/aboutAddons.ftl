@@ -35,6 +35,8 @@ detail-version =
     .label = Verzió
 detail-last-updated =
     .label = Utoljára frissítve
+addon-detail-description-expand = Több megjelenítése
+addon-detail-description-collapse = Kevesebb megjelenítése
 detail-contributions-description = A kiegészítő fejlesztője azt kéri, hogy egy csekély összeggel támogassa a további fejlesztést.
 detail-contributions-button = Közreműködés
     .title = Közreműködés ezen kiegészítő fejlesztésében
@@ -289,8 +291,10 @@ extension-enabled-heading = Engedélyezve
 extension-disabled-heading = Tiltva
 theme-enabled-heading = Engedélyezve
 theme-disabled-heading = Tiltva
+theme-disabled-heading2 = Mentett témák
 theme-monochromatic-heading = Színvilágok
 theme-monochromatic-subheading = Élénk új színvilágok a { -brand-product-name }tól. Korlátozott ideig elérhető.
+theme-colorways-button = Próbálja ki a színvilágokat
 plugin-enabled-heading = Engedélyezve
 plugin-disabled-heading = Tiltva
 dictionary-enabled-heading = Engedélyezve
@@ -354,7 +358,7 @@ addon-detail-private-browsing-disallow = Tiltás
 addon-badge-recommended2 =
     .title = A { -brand-product-name } csak olyan kiegészítőket ajánl, amelyek megfelelnek a biztonsági és a teljesítménybeli követelményeinknek.
     .aria-label = { addon-badge-recommended2.title }
-# We hard code "Ablaze" in the string below because the extensions are built
+# We hard code "Mozilla" in the string below because the extensions are built
 # by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
     .title = Hivatalos, a Mozilla által készített kiegészítő. Megfelel a biztonsági és teljesítményi előírásoknak.

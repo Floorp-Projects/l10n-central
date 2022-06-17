@@ -69,6 +69,35 @@ about-addressbook-sort-email-ascending =
     .label = 按电子邮件地址排序（A > Z）
 about-addressbook-sort-email-descending =
     .label = 按电子邮件地址排序（Z > A）
+about-addressbook-horizontal-layout =
+    .label = 切换为水平布局
+about-addressbook-vertical-layout =
+    .label = 切换为垂直布局
+
+## Card column headers
+## Each string is listed here twice, and the values should match.
+
+about-addressbook-column-header-generatedname = 名称
+about-addressbook-column-label-generatedname =
+    .label = { about-addressbook-column-header-generatedname }
+about-addressbook-column-header-emailaddresses = 电子邮件地址
+about-addressbook-column-label-emailaddresses =
+    .label = { about-addressbook-column-header-emailaddresses }
+about-addressbook-column-header-phonenumbers = 手机号码
+about-addressbook-column-label-phonenumbers =
+    .label = { about-addressbook-column-header-phonenumbers }
+about-addressbook-column-header-addresses = 地址
+about-addressbook-column-label-addresses =
+    .label = { about-addressbook-column-header-addresses }
+about-addressbook-column-header-department = 部门
+about-addressbook-column-label-department =
+    .label = { about-addressbook-column-header-department }
+about-addressbook-column-header-organization = 公司
+about-addressbook-column-label-organization =
+    .label = { about-addressbook-column-header-organization }
+about-addressbook-column-header-addrbook = 通讯录
+about-addressbook-column-label-addrbook =
+    .label = { about-addressbook-column-header-addrbook }
 about-addressbook-cards-context-write =
     .label = 写邮件
 about-addressbook-confirm-delete-mixed-title = 删除联系人和列表
@@ -130,6 +159,8 @@ about-addressbook-details-phone-numbers-header = 手机号码
 about-addressbook-details-home-address-header = 家庭地址
 about-addressbook-details-work-address-header = 工作地址
 about-addressbook-details-other-info-header = 其他信息
+about-addressbook-entry-name-birthday = 生日
+about-addressbook-entry-name-anniversary = 周年纪念
 about-addressbook-unsaved-changes-prompt-title = 未保存更改
 about-addressbook-unsaved-changes-prompt = 您想要在离开编辑视图前保存更改吗？
 

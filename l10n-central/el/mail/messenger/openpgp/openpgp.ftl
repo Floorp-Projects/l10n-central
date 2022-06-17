@@ -231,6 +231,7 @@ openpgp-key-man-key-details-key =
 openpgp-ign-addr-intro = Αποδέχεστε τη χρήση αυτού του κλειδιού για τις εξής επιλεγμένες διευθύνσεις email:
 openpgp-key-details-title =
     .title = Ιδιότητες κλειδιού
+openpgp-key-details-doc-title = Ιδιότητες κλειδιού
 openpgp-key-details-signatures-tab =
     .label = Πιστοποιητικά
 openpgp-key-details-structure-tab =
@@ -245,6 +246,10 @@ openpgp-key-details-key-type-label = Τύπος
 openpgp-key-details-key-part-label =
     .label = Τμήμα Κλειδιού
 openpgp-key-details-attr-ignored = Προειδοποίηση: Αυτό το κλειδί ενδέχεται να μην λειτουργεί όπως αναμένεται, επειδή ορισμένες από τις ιδιότητές του δεν είναι ασφαλείς και ενδέχεται να αγνοηθούν.
+openpgp-key-details-attr-upgrade-sec = Θα πρέπει να αναβαθμίσετε τις επισφαλείς ιδιότητες.
+openpgp-key-details-upgrade-unsafe =
+    .label = Αναβάθμιση επισφαλών ιδιοτήτων
+    .accesskey = β
 openpgp-key-details-algorithm-label =
     .label = Αλγόριθμος
 openpgp-key-details-size-label =
@@ -262,7 +267,6 @@ openpgp-key-details-legend-secret-missing = Για τα κλειδιά με (!),
 openpgp-key-details-sel-action =
     .label = Επιλέξτε ενέργεια…
     .accesskey = Ε
-openpgp-key-details-also-known-label = Εικαζόμενες Εναλλακτικές Ταυτότητες του Κατόχου του Κλειδιού:
 openpgp-card-details-close-window-label =
     .buttonlabelaccept = Κλείσιμο
 openpgp-acceptance-label =
@@ -278,7 +282,6 @@ openpgp-acceptance-verified-label =
 key-accept-personal =
     Για αυτό το κλειδί, έχετε τόσο το δημόσιο όσο και το μυστικό μέρος. Μπορείτε να το χρησιμοποιήσετε ως προσωπικό κλειδί.
     Εάν αυτό το κλειδί σάς δόθηκε από κάποιον τρίτο, τότε μην το χρησιμοποιήσετε ως προσωπικό κλειδί.
-key-personal-warning = Δημιουργήσατε εσείς αυτό το κλειδί και η ιδιοκτησία κλειδιού που εμφανίζεται αναφέρεται σε εσάς;
 openpgp-personal-no-label =
     .label = Όχι, να μην χρησιμοποιηθεί ως προσωπικό κλειδί μου.
 openpgp-personal-yes-label =
@@ -288,14 +291,6 @@ openpgp-copy-cmd-label =
 
 ## e2e encryption settings
 
-#   $count (Number) - the number of configured keys associated with the current identity
-#   $identity (String) - the email address of the currently selected identity
-openpgp-description =
-    { $count ->
-        [0] Το Thunderbird δεν έχει προσωπικό κλειδί OpenPGP για το <b>{ $identity }</b>
-        [one] Το Thunderbird βρήκε { $count } προσωπικό κλειδί OpenPGP που σχετίζεται με το <b>{ $identity }</b>
-       *[other] Το Thunderbird βρήκε { $count } προσωπικά κλειδιά OpenPGP που σχετίζονται με το <b>{ $identity }</b>
-    }
 #   $identity (String) - the email address of the currently selected identity
 openpgp-description-no-key = Το { -brand-short-name } δεν έχει προσωπικό κλειδί OpenPGP για <b>{ $identity }</b>
 #   $count (Number) - the number of configured keys associated with the current identity
@@ -361,7 +356,6 @@ key-expired-date = Το κλειδί έληξε στις { $keyExpiry }
 key-expired-simple = Το κλειδί έχει λήξει
 key-revoked-simple = Το κλειδί ανακλήθηκε
 key-do-you-accept = Αποδέχεστε αυτό το κλειδί για την επαλήθευση ψηφιακών υπογραφών και για την κρυπτογράφηση μηνυμάτων;
-key-accept-warning = Να αποφεύγετε την αποδοχή άγνωστου-μη έμπιστου κλειδιού. Χρησιμοποιήστε ένα κανάλι επικοινωνίας διαφορετικό της ηλεκτρονικής αλληλογραφίας για να επαληθεύσετε το δακτυλικό αποτύπωμα του κλειδιού του επιστολογράφου σας.
 key-verification = Επαληθεύστε το αποτύπωμα του κλειδιού μέσω ενός ασφαλούς καναλιού επικοινωνίας, εκτός του ηλεκτρονικού ταχυδρομείου, ώστε να βεβαιωθείτε ότι πρόκειται πράγματι για το κλειδί του { $addr }.
 # Strings enigmailMsgComposeOverlay.js
 cannot-use-own-key-because = Δεν είναι δυνατή η αποστολή του μηνύματος, επειδή υπάρχει πρόβλημα με το προσωπικό σας κλειδί. { $problem }
@@ -390,25 +384,6 @@ converter-decrypt-body-failed =
     Δεν ήταν δυνατή η αποκρυπτογράφηση του μηνύματος με θέμα
     «{ $subject }».
     Θέλετε να δοκιμάσετε με διαφορετική φράση πρόσβασης ή να παραλείψετε το μήνυμα;
-# Strings in gpg.jsm
-unknown-signing-alg = Άγνωστος αλγόριθμος υπογραφής (Αναγνωριστικό: { $id })
-unknown-hash-alg = Άγνωστος κρυπτογραφικός κατακερματισμός (Αναγνωριστικό: { $id })
-# Strings in keyUsability.jsm
-expiry-key-expires-soon =
-    Το κλειδί σας { $desc } θα λήξει σε λιγότερο από { $days } ημέρες.
-    Σας συνιστούμε να δημιουργήσετε ένα νέο ζεύγος κλειδιών και να διαμορφώσετε τους αντίστοιχους λογαριασμούς που να το χρησιμοποιούν.
-expiry-keys-expire-soon =
-    Τα ακόλουθα κλειδιά σας θα λήξουν σε λιγότερο από { $days } ημέρες: { $desc }.
-    Σας συνιστούμε να δημιουργήσετε νέα κλειδιά και να διαμορφώσετε τους αντίστοιχους λογαριασμούς που να τα χρησιμοποιούν.
-expiry-key-missing-owner-trust =
-    Το μυστικό κλειδί σας { $desc } δεν έχει σχέση εμπιστοσύνης.
-    Σας συνιστούμε να ορίσετε το "Βασίζεται σε πιστοποιήσεις" σε "απόλυτο" στις ιδιότητες του κλειδιού.
-expiry-keys-missing-owner-trust =
-    Τα ακόλουθα από τα μυστικά σας κλειδιά δεν έχουν σχέση εμπιστοσύνης.
-    { $desc }.
-    Σας συνιστούμε να ορίσετε το "Βασίζεται σε πιστοποιήσεις" σε "απόλυτο" στις ιδιότητες των κλειδιών.
-expiry-open-key-manager = Άνοιγμα διαχείρισης κλειδιών OpenPGP
-expiry-open-key-properties = Άνοιγμα Ιδιοτήτων Κλειδιού
 # Strings filters.jsm
 filter-folder-required = Πρέπει να επιλέξετε έναν φάκελο προορισμού.
 filter-decrypt-move-warn-experimental =
@@ -611,18 +586,9 @@ send-to-news-warning =
     Αυτό αποθαρρύνεται επειδή έχει νόημα μόνο αν όλα τα μέλη της ομάδας μπορούν να αποκρυπτογραφήσουν το μήνυμα, δηλαδή το μήνυμα πρέπει να κρυπτογραφηθεί με τα κλειδιά όλων των συμμετεχόντων στην ομάδα. Στείλτε αυτό το μήνυμα μόνο εάν γνωρίζετε ακριβώς τι κάνετε.
     Θέλετε να συνεχίσετε;
 save-attachment-header = Αποθήκευση αποκρυπτογραφημένου συνημμένου
-no-temp-dir =
-    Δεν ήταν δυνατή η εύρεση ενός προσωρινού καταλόγου για εγγραφή
-    Καθορίστε τη μεταβλητή περιβάλλοντος TEMP
 possibly-pgp-mime = Πιθανόν κρυπτογραφημένο ή υπογεγραμμένο μήνυμα κατά PGP / MIME· χρησιμοποιήστε τη λειτουργία 'Αποκρυπτογράφηση/Επαλήθευση' για επιβεβαίωση
 cannot-send-sig-because-no-own-key = Δεν είναι δυνατή η ψηφιακή υπογραφή αυτού του μηνύματος, επειδή δεν έχετε ρυθμίσει ακόμα την κρυπτογράφηση από άκρο σε άκρο για <{ $key }>
 cannot-send-enc-because-no-own-key = Δεν είναι δυνατή η αποστολή αυτού του μηνύματος ως κρυπτογραφημένο, επειδή δεν έχετε ρυθμίσει ακόμα την κρυπτογράφηση από άκρο σε άκρο για <{ $key }>
-compose-menu-attach-key =
-    .label = Επισύναψη δημόσιου κλειδιού
-    .accesskey = Ε
-compose-menu-encrypt-subject =
-    .label = Κρυπτογράφηση θέματος
-    .accesskey = π
 # Strings used in decryption.jsm
 do-import-multiple =
     Εισαγωγή των ακόλουθων κλειδιών;
