@@ -1222,3 +1222,33 @@ floorp-fluentUI =
 hide-horizontality-tabs = 水平タブバーの非表示
 verticalTab-setting = 垂直タブにブラウザーを最適化
 move-tabbar-position = タブバーの位置をブックマークの下に移動する
+
+## BlockMoreTracker
+
+block-tracker = より多くのユーザーを追跡する広告や見えないトラッカーを撃破しましょう。
+block-more-tracker = より多くのトラッカーによる追跡を遮断する
+
+view-at-AMO = AMO で見る
+uBlock-Origin = uBlock Origin
+about-uboori = uBlock Origin は広告やトラッカー、悪意あるサイトや詐欺からユーザーを保護します。一般的なものよりも軽量です。
+
+Privacy-Badger = Privacy Badger
+about-PBadger = Privacy Badger は、非表示のトラッカーをブロックすることを自動的に学習し、それに基づいてトラッカーを能動的にブロックします。
+
+Duck-Duck-Go = DuckDuckGo Privacy Essentials
+about-DDG = 検索エンジンを DuckDuckGo に置き換え、訪問したサイトのトラッカーをブロックし、そのサイトを評価します。
+
+## Fingerprint
+
+fingerprint-header = 指紋採取・IP アドレス漏洩対策
+block-fingerprint = 指紋採取は、Webサイトがデバイス情報などの情報を収集し、プロファイルを作成し、個人情報を収集するプロセスです。既定のブロッカーを超えて個人情報の漏洩をさらに減らすための設定を提供します
+enable-firefox-fingerprint-protections = Firefox による強力な指紋採取対策機能を有効にする
+about-firefox-fingerprint-protection = この設定を有効にすると、サイトにライトモードが強制され、一部の Api や機能が無効になります。まれにサイトが破損します。 
+html5-canvas-prompt-settings = HTML5 Canvas 画像を使用するサイトの使用許可を自動的に拒否する
+canvas-prompt = 既定では、使用許可の通知はプロンプトで表示されません。
+disable-webgl = WebGL を無効にする
+about-webgl = WebGL はグラフィックを描画する際に必要な機能で、お使いの GPU の情報が漏洩します
+Canvas-Blocker = Canvas Blocker
+about-CB = このアドオンを使用すると、ユーザーはWebサイトが一部の Javascript API を使用してフィンガープリントを作成するのを防ぐことができます。
+WebRTC-connection =WebRTCは、リアルタイムの通話を提供する標準です。 この設定を無効にすると、Discord などを使用できなくなります。VPN との併用を推奨します。
+WebRTC = WebRTC 接続を有効にする
