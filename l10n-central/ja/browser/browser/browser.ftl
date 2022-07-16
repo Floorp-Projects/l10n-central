@@ -784,3 +784,7 @@ data-reporting-notification-message = ユーザー体験の向上のため、{ -
 data-reporting-notification-button =
     .label = 共有するデータを選択
     .accesskey = C
+
+## ボスが来た
+rest-mode = 休憩モード
+rest-mode-description = ブラウザーは停止中です。OK または、任意のキーを押して再開します。

@@ -1130,7 +1130,7 @@ choose-download-folder-title = ダウンロードフォルダーを選択:
 save-files-to-cloud-storage =
     .label = { $service-name } にファイルを保存する
 
-# Floorp の固有設定。Firefox のソースコードではありません。from 8.7.2
+# Floorp の固有設定
 
 notice-from-floorp-projects = { -brand-short-name } のポリシー管理に関する通知
 
@@ -1141,6 +1141,8 @@ auto-reboot = 以下の設定を変更した場合、変更を適用するため
 
 operation-settings = ブラウザーの操作設定
 Mouse-side-button = サイドボタンによるマウス操作にブラウザーを最適化
+enable-tab-scroll-change = スクロールでタブを切り替える
+enable-doble-click-block = ダブルクリックでタブを閉じる
 
 None-mode = 
  .label= 通常の動作設定
@@ -1202,10 +1204,10 @@ system-theme-auto =
 
 ui-preference = { -brand-short-name } のデザイン設定
 
-preferences-browser-appearance-header = { -brand-short-name } の外観を設定します。ここで設定を変更しても、テーマの設定には影響しません。ただし、テーマによっては互換性がない場合があります。
+preferences-browser-appearance-description  = { -brand-short-name } の外観を設定します。ここで設定を変更しても、テーマの設定には影響しません。ただし、テーマによっては互換性がない場合があります。
 
 firefox-proton =
- .label = Firefox モダン Proton UI
+ .label = Firefox Proton UI
 
 firefox-proton-fix =
  .label = Firefox Proton UI Fix 
@@ -1214,14 +1216,15 @@ firefox-photon =
  .label = Firefox レガシー Photon UI (Firefox Quantum) 
 
 floorp-legacy =  
- .label = Floorp レガシー material UI 
+ .label = material UI・サポート対象外
 
 floorp-fluentUI =
- .label = FluentUI (Microsoft)
+ .label = Fluent UI
 
 hide-horizontality-tabs = 水平タブバーの非表示
 verticalTab-setting = 垂直タブにブラウザーを最適化
 move-tabbar-position = タブバーの位置をブックマークの下に移動する
+tabbar-preference = タブバー
 
 ## BlockMoreTracker
 
@@ -1233,7 +1236,7 @@ uBlock-Origin = uBlock Origin
 about-uboori = uBlock Origin は広告やトラッカー、悪意あるサイトや詐欺からユーザーを保護します。一般的なものよりも軽量です。
 
 Privacy-Badger = Privacy Badger
-about-PBadger = Privacy Badger は、非表示のトラッカーをブロックすることを自動的に学習し、それに基づいてトラッカーを能動的にブロックします。
+about-PBadger = Privacy Badger は、非表示のトラッカーをブロックすることを学習し、それに基づいてトラッカーを能動的にブロックします。
 
 Duck-Duck-Go = DuckDuckGo Privacy Essentials
 about-DDG = 検索エンジンを DuckDuckGo に置き換え、訪問したサイトのトラッカーをブロックし、そのサイトを評価します。
@@ -1249,6 +1252,6 @@ canvas-prompt = 既定では、使用許可の通知はプロンプトで表示�
 disable-webgl = WebGL を無効にする
 about-webgl = WebGL はグラフィックを描画する際に必要な機能で、お使いの GPU の情報が漏洩します
 Canvas-Blocker = Canvas Blocker
-about-CB = このアドオンを使用すると、ユーザーはWebサイトが一部の Javascript API を使用してフィンガープリントを作成するのを防ぐことができます。
+about-CB = このアドオンを使用すると、ユーザーはWebサイトが指紋採取を実行するのを防止することができます。
 WebRTC-connection =WebRTCは、リアルタイムの通話を提供する標準です。 この設定を無効にすると、Discord などを使用できなくなります。VPN との併用を推奨します。
 WebRTC = WebRTC 接続を有効にする
