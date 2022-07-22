@@ -65,6 +65,6 @@ aboutDialog-version = { $version } ({ $bits } ビット)
 aboutDialog-version-nightly = { $version } ({ $isodate }) ({ $bits } ビット)
 
 
-about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> は、日本で開発される国産ブラウザーです。Firefox をベースとしており、 <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label> の下でウェブをよりよくするために開発されています。 貢献したいですか？<label data-l10n-name="helpus-donateLink">寄付</label>をご検討ください。
+about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> は、日本で開発される国産ブラウザーです。Firefox をベースとしており、 <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label> の下でウェブをよりよくするために開発されています。 参加したいですか？<label data-l10n-name="helpus-donateLink">寄付</label>をご検討ください。
 icon-creator = アイコン作成者：<label data-l10n-name="browser-logo-twitter">@CutterKnife_ 様</label> と <label data-l10n-name="brand-logo-twitter">@mwxdxx 様</label> 
-contributors = <label data-l10n-name="about-contributor">開発者やその他の貢献者・寄稿者</label> もご確認ください。
+contributors = <label data-l10n-name="about-contributor">開発者やその他の貢献者・寄稿者</label> もご確認ください
