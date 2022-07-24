@@ -1255,3 +1255,14 @@ Canvas-Blocker = Canvas Blocker
 about-CB = このアドオンを使用すると、ユーザーはWebサイトが指紋採取を実行するのを防止することができます。
 WebRTC-connection =WebRTCは、リアルタイムの通話を提供する標準です。 この設定を無効にすると、Discord などを使用できなくなります。VPN との併用を推奨します。
 WebRTC = WebRTC 接続を有効にする
+
+## download mgr
+download-notification-preferences = ダウンロード通知
+start-always-notify =
+ .label = 開始時に通知する
+finish-always-notify = 
+ .label = 終了時に通知する
+always-notify =
+ .label = 開始時、終了時に通知する
+do-not-notify =
+ .label = ダウンロード通知を有効にしない
