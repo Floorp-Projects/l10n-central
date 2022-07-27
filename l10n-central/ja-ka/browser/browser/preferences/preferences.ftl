@@ -1253,7 +1253,7 @@ disable-webgl = WebGL を無効にする
 about-webgl = WebGL はグラフィックを描画する際に必要な機能で、お使いの GPU の情報が漏洩します
 Canvas-Blocker = Canvas Blocker
 about-CB = このアドオンを使用すると、ユーザーはWebサイトが指紋採取を実行するのを防止することができます。
-WebRTC-connection =WebRTCは、リアルタイムの通話を提供する標準です。 この設定を無効にすると、Discord などを使用できなくなります。VPN との併用を推奨します。
+WebRTC-connection = WebRTCは、リアルタイムの通話を提供する標準です。この設定を無効にすると、Discord などを使用できなくなります。VPN との併用を推奨します。
 WebRTC = WebRTC 接続を有効にする
 
 ## download mgr

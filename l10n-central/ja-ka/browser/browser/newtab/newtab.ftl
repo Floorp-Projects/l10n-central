@@ -22,18 +22,18 @@ newtab-search-box-search-button =
 
 # Variables
 #  $engine (String): the name of the user's default search engine
-newtab-search-box-handoff-text = { $engine } で検索、または URL を入力します
-newtab-search-box-handoff-text-no-engine = 検索語句、または URL を入力します
+newtab-search-box-handoff-text = { $engine } で検索するために、ワードかアドレス書いて
+newtab-search-box-handoff-text-no-engine = 検索ワードか URL 書いて
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-input =
-    .placeholder = { $engine } で検索、または URL を入力します
-    .title = { $engine } で検索、または URL を入力します
-    .aria-label = { $engine } で検索、または URL を入力します
+    .placeholder = { $engine } で検索するために、ワード書いて
+    .title = { $engine } で検索するために、ワード書いて
+    .aria-label = { $engine } で検索するために、ワード書いて
 newtab-search-box-handoff-input-no-engine =
-    .placeholder = 検索語句、または URL を入力します
-    .title = 検索語句、または URL を入力します
-    .aria-label = 検索語句、または URL を入力します
+    .placeholder = { $engine } で検索するために、ワード書いて
+    .title = 検索ワードか URL 書いて
+    .aria-label = 検索ワードか URL 書いて
 
 newtab-search-box-text = ウェブを検索
 newtab-search-box-input =
@@ -44,15 +44,15 @@ newtab-search-box-input =
 
 newtab-topsites-add-search-engine-header = 検索エンジンを追加
 newtab-topsites-add-shortcut-header = 新しいショートカット
-newtab-topsites-edit-topsites-header = トップサイトを編集
-newtab-topsites-edit-shortcut-header = ショートカットを編集
+newtab-topsites-edit-topsites-header = トップサイトをえでぃっと
+newtab-topsites-edit-shortcut-header = ショートカットをえでぃっと
 newtab-topsites-title-label = タイトル
 newtab-topsites-title-input =
     .placeholder = タイトルを入力
 newtab-topsites-url-label = URL
 newtab-topsites-url-input =
     .placeholder = URL を入力するか貼り付け
-newtab-topsites-url-validation = 正しい URL を入力してください
+newtab-topsites-url-validation = 正しいアドレスを入力してくだされ
 newtab-topsites-image-url-label = カスタム画像 URL
 newtab-topsites-use-image-link = カスタム画像を使用...
 newtab-topsites-image-validation = 画像を読み込めませんでした。別の URL を試してください。
