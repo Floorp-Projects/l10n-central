@@ -4,7 +4,7 @@
 
 # Variables:
 # $organizer (String) - The participant that created the original invitation.
-calendar-invitation-panel-intro = { $organizer } があなたを招待しています: 
+calendar-invitation-panel-intro = { $organizer } があなたを招待しとるで:
 # Variables:
 # $summary (String) - A short summary or title of the event.
 calendar-invitation-panel-title = { $summary }
@@ -12,7 +12,7 @@ calendar-invitation-panel-action-button = 保存
 calendar-invitation-panel-accept-button = 承諾
 calendar-invitation-panel-decline-button = 辞退
 calendar-invitation-panel-tentative-button = 仮承諾
-calendar-invitation-panel-reply-status = * 未確定またはまだ返答していません
+calendar-invitation-panel-reply-status = * 未確定またはまだ返答しとらへん
 calendar-invitation-panel-prop-title-when = 日時:
 calendar-invitation-panel-prop-title-location = 場所:
 # Variables:

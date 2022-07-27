@@ -5,8 +5,8 @@
 
 <!-- Calendar Invitations Dialog -->
 <!ENTITY calendar.invitations.dialog.invitations.text			"参加依頼">
-<!ENTITY calendar.invitations.dialog.statusmessage.updating.text	"参加依頼リストを更新しています。">
-<!ENTITY calendar.invitations.dialog.statusmessage.noinvitations.text	"確認していない参加依頼は見つかりませんでした。">
+<!ENTITY calendar.invitations.dialog.statusmessage.updating.text	"参加依頼リストを更新してるで。">
+<!ENTITY calendar.invitations.dialog.statusmessage.noinvitations.text	"確認していない参加依頼は見つ枯れへんかったで。">
 
 <!-- Calendar Invitations List -->
 <!ENTITY calendar.invitations.list.accept.button.label			"承諾">

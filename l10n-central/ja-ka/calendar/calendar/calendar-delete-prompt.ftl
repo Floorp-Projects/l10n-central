@@ -7,8 +7,8 @@ calendar-delete-event-prompt-title = { $count ->
   *[other] 複数の予定の削除
 }
 calendar-delete-event-prompt-message = { $count ->
-  [one] この予定を削除してもよろしいですか？
-  *[other] これら { $count } 件の予定を削除してもよろしいですか？
+  [one] この予定を削除してもええか？
+  *[other] これら { $count } 件の予定を削除してもええか？
 }
 
 calendar-delete-task-prompt-title = { $count ->
@@ -16,8 +16,8 @@ calendar-delete-task-prompt-title = { $count ->
   *[other] 複数の ToDo の削除
 }
 calendar-delete-task-prompt-message = { $count ->
-  [one] この ToDo を削除してもよろしいですか？
-  *[other] これら { $count } 件の ToDo を削除してもよろしいですか？
+  [one] この ToDo を削除してもええか？
+  *[other] これら { $count } 件の ToDo を削除してもええか？
 }
 
 calendar-delete-item-prompt-title = { $count ->
@@ -25,8 +25,8 @@ calendar-delete-item-prompt-title = { $count ->
   *[other] 複数の項目の削除
 }
 calendar-delete-item-prompt-message = { $count ->
-  [one] この項目を削除してもよろしいですか？
-  *[other] これら { $count } 件の項目を削除してもよろしいですか？
+  [one] この項目を削除してもええか？
+  *[other] これら { $count } 件の項目を削除してもええか？
 }
 
-calendar-delete-prompt-disable-message = 次回からは確認しない
+calendar-delete-prompt-disable-message = 次回からは確認せえへん
