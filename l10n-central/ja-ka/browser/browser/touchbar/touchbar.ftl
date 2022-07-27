@@ -8,14 +8,14 @@ back = 戻る
 forward = 進む
 reload = 再読み込み
 home = ホーム
-fullscreen = 全画面表示
-touchbar-fullscreen-exit = 全画面表示を終了
+fullscreen = 全画面表示にするで
+touchbar-fullscreen-exit = 全画面表示を終了するで
 find = 検索
 new-tab = 新しいタブ
 add-bookmark = ブックマークに追加
 reader-view = リーダービュー
 # Meant to match the string displayed in an empty URL bar.
-open-location = URL または検索語句を入力
+open-location = URL または検索語句を入力してくれ
 share = 共有
 close-window = ウィンドウを閉じる
 open-sidebar = サイドバー

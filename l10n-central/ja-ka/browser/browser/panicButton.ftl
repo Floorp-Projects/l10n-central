@@ -2,8 +2,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-panic-button-open-new-window = 新しいウィンドウを開きます
-panic-button-undo-warning = この操作は元に戻すことができません。
+panic-button-open-new-window = 新しいウィンドウを開くで
+panic-button-undo-warning = この操作は元にもどせへんで
 panic-button-forget-button =
     .label = 忘れる
 
@@ -26,6 +26,6 @@ panic-button-day =
 ## words "Cookies", "History", "Tabs" and "Windows". The translation should do the same.
 
 panic-button-action-desc = この操作は:
-panic-button-delete-cookies = 最近の <strong>Cookies</strong> を削除します
-panic-button-delete-history = 最近の <strong>履歴</strong> を削除します
-panic-button-delete-tabs-and-windows = すべての <strong>タブ</strong> と <strong>ウィンドウ</strong> を閉じます
+panic-button-delete-cookies = 最近の <strong>Cookies</strong> を削除するで
+panic-button-delete-history = 最近の <strong>履歴</strong> を削除するで
+panic-button-delete-tabs-and-windows = すべての <strong>タブ</strong> と <strong>ウィンドウ</strong> を閉じるわ

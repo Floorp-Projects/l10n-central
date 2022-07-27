@@ -792,18 +792,18 @@ forms-master-pw-fips-desc = パスワードを変えられへんかったわ。�
 forms-windows-sso =
     .label = Microsoft アカウント、職場または学校アカウントで Windows のシングルサインオンを許可するかい？
 forms-windows-sso-learn-more-link = 詳細情報
-forms-windows-sso-desc = 端末の設定でアカウントを管理します
+forms-windows-sso-desc = 端末の設定でアカウントを管理するで
 
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Primary Password.
-primary-password-os-auth-dialog-message-win = マスターパスワードを作成するには、Windows でのあなたの資格情報を入力してください。これはアカウントのセキュリティ保護に役立ちます。
+primary-password-os-auth-dialog-message-win = マスターパスワードを作りたいなら、Windows でのあなたの資格情報を入れてくれへん？これはアカウントのセキュリティを守るのに役に立つで。
 
 # This message can be seen by trying to add a Primary Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
-primary-password-os-auth-dialog-message-macosx = マスターパスワードを作成
+primary-password-os-auth-dialog-message-macosx = マスターパスワードを作るで
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -821,45 +821,45 @@ history-header = 履歴
 history-remember-label = { -brand-short-name } に
     .accesskey = w
 history-remember-option-all =
-    .label = 履歴を記憶させる
+    .label = 履歴を覚えさせるで
 history-remember-option-never =
-    .label = 履歴を一切記憶させない
+    .label = 履歴を一個も覚えさないで
 history-remember-option-custom =
-    .label = 記憶させる履歴を詳細設定する
+    .label = 覚えさせる履歴を詳細設定するわ
 history-remember-description = { -brand-short-name } は表示したページの履歴、ファイルのダウンロード履歴、検索やフォームの入力履歴を保存します。
 history-dontremember-description = { -brand-short-name } はプライベートブラウジング中と同様に、表示したページの履歴などのプライバシーデータを一切保存しません。
 history-private-browsing-permanent =
-    .label = 常にプライベートブラウジングモード
+    .label = 常にプライベートブラウジングモードにするで
     .accesskey = p
 history-remember-browser-option =
-    .label = 表示したページとファイルのダウンロードの履歴を残す
+    .label = 表示したページとファイルのダウンロードの履歴を残すで
     .accesskey = b
 history-remember-search-option =
-    .label = 検索やフォームの入力履歴を記憶させる
+    .label = 検索やフォームの入力履歴を覚えさせるで
     .accesskey = f
 history-clear-on-close-option =
-    .label = { -brand-short-name } の終了時に履歴を消去する
+    .label = { -brand-short-name } の終了時に履歴綺麗さっぱりほかすで
     .accesskey = r
 history-clear-on-close-settings =
     .label = 設定...
     .accesskey = t
 history-clear-button =
-    .label = 履歴を消去...
+    .label = 履歴をほかす
     .accesskey = s
 
 ## Privacy Section - Site Data
 
 sitedata-header = Cookie とサイトデータ
-sitedata-total-size-calculating = サイトデータとキャッシュのサイズを計算しています...
+sitedata-total-size-calculating = サイトデータとキャッシュのサイズを計算してみるわ
 # Variables:
 #   $value (Number) - Value of the unit (for example: 4.6, 500)
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
-sitedata-total-size = 保存された Cookie とサイトデータとキャッシュのディスク使用量は現在 { $value } { $unit } です。
+sitedata-total-size = 保存された Cookie とサイトデータとキャッシュのディスク使用量は今んとこ { $value } { $unit } やで。
 sitedata-learn-more = 詳細情報
 sitedata-delete-on-close =
-    .label = { -brand-short-name } を閉じたときに Cookie とサイトデータを削除する
+    .label = { -brand-short-name } を閉じたときに Cookie とサイトデータを綺麗さっぱりほかす
     .accesskey = c
-sitedata-delete-on-close-private-browsing = 永続プライベートブラウジングモードでは、Cookie とサイトデータは { -brand-short-name } の終了時に必ず消去されます。
+sitedata-delete-on-close-private-browsing = 永続プライベートブラウジングモードやと、Cookie とサイトデータは { -brand-short-name } の終了時に必ず消されるで。
 sitedata-allow-cookies-option =
     .label = Cookie とサイトデータを保存する
     .accesskey = A
@@ -879,11 +879,11 @@ sitedata-option-block-cross-site-cookies =
 sitedata-option-block-unvisited =
     .label = 未訪問のウェブサイトの Cookie
 sitedata-option-block-all-third-party =
-    .label = すべてのサードパーティ Cookie (ウェブサイトが動作しない可能性があります)
+    .label = すべてのサードパーティ Cookie (ウェブサイト動かなくなっちゃうかもやで)
 sitedata-option-block-all =
-    .label = すべての Cookie (ウェブサイトが動作しなくなります)
+    .label = すべての Cookie (ウェブサイトが動かなくなるで)
 sitedata-clear =
-    .label = データを消去...
+    .label = データをほかす...
     .accesskey = l
 sitedata-settings =
     .label = データを管理...
@@ -903,7 +903,7 @@ addressbar-locbar-bookmarks-option =
     .label = ブックマーク
     .accesskey = k
 addressbar-locbar-openpage-option =
-    .label = 開いているタブ
+    .label = 開いとるタブ
     .accesskey = O
 # Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
 addressbar-locbar-shortcuts-option =
@@ -920,9 +920,9 @@ addressbar-suggestions-settings = 検索エンジンの検索候補の設定を�
 ## Privacy Section - Content Blocking
 
 content-blocking-enhanced-tracking-protection = 強化型トラッキング防止機能
-content-blocking-section-top-level-description = トラッカーはあなたの習慣や興味に関する情報を収集するために、オンラインであなたを追跡します。{ -brand-short-name } はこれらのトラッカーや悪意のあるスクリプトの多くをブロックします。
+content-blocking-section-top-level-description = トラッカーはあんたの習慣や興味に関する情報を集めるために、オンラインであんたを追跡してくるで。{ -brand-short-name } はこういうトラッカーや悪意のあるスクリプトの多くをブロックするで。
 content-blocking-learn-more = 詳細情報
-content-blocking-fpi-incompatibility-warning = { -brand-short-name } の Cookie の設定の一部を上書きするファーストパーティ分離 (FPI) を使用しています。
+content-blocking-fpi-incompatibility-warning = { -brand-short-name } の Cookie の設定の一部を上書きするファーストパーティ分離 (FPI) を使っとるで。
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -940,34 +940,34 @@ enhanced-tracking-protection-setting-custom =
 
 ##
 
-content-blocking-etp-standard-desc = 保護と性能をバランスよく。ページが正しく機能するように読み込みます。
-content-blocking-etp-strict-desc = より強固な保護ですが、一部のサイトやコンテンツが機能しなくなる可能性があります。
-content-blocking-etp-custom-desc = ブロックするトラッカーとスクリプトを選択します。
-content-blocking-etp-blocking-desc = { -brand-short-name } は以下のものをブロックします:
+content-blocking-etp-standard-desc = 保護と性能をバランスよく。ページが正しく機能するように読み込みこむで。
+content-blocking-etp-strict-desc = より強固な保護ができるけど、一部のサイトやコンテンツが動かなくなるかもやで。
+content-blocking-etp-custom-desc = ブロックするトラッカーとスクリプトを自分で選ぶ。
+content-blocking-etp-blocking-desc = { -brand-short-name } は以下のものをブロックするわ:
 content-blocking-private-windows = プライベートウィンドウのトラッキングコンテンツ
-content-blocking-cross-site-cookies-in-all-windows = すべてのウィンドウのクロスサイト Cookie (トラッキング Cookie 含む)
+content-blocking-cross-site-cookies-in-all-windows = 全部のウィンドウのクロスサイト Cookie (トラッキング Cookie 含む)
 content-blocking-cross-site-tracking-cookies = クロスサイトトラッキング Cookie
 content-blocking-all-cross-site-cookies-private-windows = プライベートウィンドウのクロスサイト Cookie
-content-blocking-cross-site-tracking-cookies-plus-isolate = クロスサイトトラッキング Cookie と残存 Cookie の隔離
+content-blocking-cross-site-tracking-cookies-plus-isolate = クロスサイトトラッキング Cookie と残っとる Cookie の隔離
 content-blocking-social-media-trackers = ソーシャルメディアトラッカー
-content-blocking-all-cookies = すべての Cookie
-content-blocking-unvisited-cookies = 未訪問のサイトの Cookie
-content-blocking-all-windows-tracking-content = すべてのウィンドウのトラッキングコンテンツ
-content-blocking-all-third-party-cookies = サードパーティ Cookie すべて
+content-blocking-all-cookies = 全部の Cookie
+content-blocking-unvisited-cookies = 訪れてないのサイトの Cookie
+content-blocking-all-windows-tracking-content = 全部のウィンドウのトラッキングコンテンツ
+content-blocking-all-third-party-cookies = サードパーティ Cookie 全部
 content-blocking-cryptominers = 暗号通貨マイニング
 content-blocking-fingerprinters = フィンガープリント採取
 # "Test pilot" is used as a verb. Possible alternatives:
 # "Be the first to try", "Join an early experiment".
 content-blocking-etp-standard-tcp-rollout-checkbox =
-    .label = これまでにない最も強力なプライバシー保護機能を試す
+    .label = これまでにないいっちばん強いプライバシー保護機能を試す
     .accesskey = T
 # "Contains" here means "isolates", "limits".
-content-blocking-etp-standard-tcp-rollout-description = 包括的 Cookie 保護機能により現在のサイトへの Cookie が制限されているため、トラッカーはサイトを横断してあなたを追跡する Cookie を利用できません。
+content-blocking-etp-standard-tcp-rollout-description = 包括的 Cookie 保護機能により現在のサイトへの Cookie が制限されとるから、トラッカーはサイトを横断してあなたを追跡する Cookie を利用できひんで。
 content-blocking-etp-standard-tcp-rollout-learn-more = 詳細情報
 content-blocking-warning-title = 注意！
-content-blocking-and-isolating-etp-warning-description-2 = この設定では、一部のウェブサイトが表示されないか正しく動作しない可能性があります。サイトが動作しない場合は、トラッキング防止機能をオフにして再読み込みするとよいでしょう。
+content-blocking-and-isolating-etp-warning-description-2 = この設定では、一部のウェブサイトが動かないか正しく動かないかもしれないで。サイトが動かんときは、トラッキング防止機能をオフにして再読み込みするとええで。
 content-blocking-warning-learn-how = 詳細情報
-content-blocking-reload-description = これらの変更を適用するには、タブを再読み込みする必要があります。
+content-blocking-reload-description = 変更を適用するには、タブを再読み込みする必要があるで。
 content-blocking-reload-tabs-button =
     .label = すべてのタブを再読み込み
     .accesskey = R
@@ -1027,14 +1027,14 @@ permissions-notification-settings =
     .accesskey = t
 permissions-notification-link = 詳細情報
 permissions-notification-pause =
-    .label = { -brand-short-name } を再起動するまで通知を一時停止
+    .label = { -brand-short-name } を再起動するまで通知を一旦止めるで
     .accesskey = n
 permissions-autoplay = 自動再生
 permissions-autoplay-settings =
     .label = 設定...
     .accesskey = t
 permissions-block-popups =
-    .label = ポップアップウィンドウをブロックする
+    .label = ポップアップウィンドウをブロックするわ
     .accesskey = B
 # "popup" is a misspelling that is more popular than the correct spelling of
 # "pop-up" so it's included as a search keyword, not displayed in the UI.
@@ -1043,7 +1043,7 @@ permissions-block-popups-exceptions-button =
     .accesskey = E
     .searchkeywords = popups
 permissions-addon-install-warning =
-    .label = アドオンのインストールを求められたときに警告する
+    .label = アドオンのインストールを求められたときに警告するわ
     .accesskey = W
 permissions-addon-exceptions =
     .label = 許可サイト...
@@ -1052,24 +1052,24 @@ permissions-addon-exceptions =
 ## Privacy Section - Data Collection
 
 collection-header = { -brand-short-name } のデータ収集と利用について
-collection-description = 私たちはユーザーに選択肢を提供し、{ -brand-short-name } をすべての人に提供し改善するために必要なものだけを収集するよう努力しています。私たちは、個人情報を受け取る前に、常にユーザーの許可を求めます。
+collection-description = 私たちはユーザーに選択肢を提供し、{ -brand-short-name } をすべての人に提供しより良くするために必要なものだけを集めるようにがんばっとるで。ワイらは個人情報を聞く前に、常にユーザーの許可を求めるで。
 collection-privacy-notice = 個人情報保護方針
-collection-health-report-telemetry-disabled = { -vendor-short-name } への技術的な対話データの送信の許可を取り消しました。過去のデータは 30 日以内にすべて削除されます。
+collection-health-report-telemetry-disabled = { -vendor-short-name } への技術的な対話データの送信の許可を取り消したで。過去のデータは 30 日以内に全部消されるで。
 collection-health-report-telemetry-disabled-link = 詳細情報
 collection-health-report =
-    .label = { -brand-short-name } が技術的な対話データを { -vendor-short-name } へ送信することを許可する
+    .label = { -brand-short-name } が技術的な対話データを { -vendor-short-name } へ送信することを許可するで
     .accesskey = r
 collection-health-report-link = 詳細情報
 collection-studies =
-    .label = { -brand-short-name } に調査のインストールと実行を許可する
-collection-studies-link = { -brand-short-name } 調査を確認する
+    .label = { -brand-short-name } に調査のインストールと実行を許可するで
+collection-studies-link = { -brand-short-name } 調査を確認するで
 addon-recommendations =
-    .label = { -brand-short-name } にパーソナライズされた拡張機能のおすすめを許可する
+    .label = { -brand-short-name } にパーソナライズされた拡張機能のおすすめを許可するで
 addon-recommendations-link = 詳細情報
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
-collection-health-report-disabled = このビルド設定ではヘルスレポートが無効化されています
-collection-backlogged-crash-reports-with-link = { -brand-short-name } があなたに代わって未送信のクラッシュレポートを送信することを許可する <a data-l10n-name="crash-reports-link">詳細情報</a>
+collection-health-report-disabled = このビルド設定ではヘルスレポートが無効化されてとるわ
+collection-backlogged-crash-reports-with-link = { -brand-short-name } があなたに代わって未送信のクラッシュレポートを送ってもええか？ <a data-l10n-name="crash-reports-link">詳細情報</a>
     .accesskey = c
 
 ## Privacy Section - Security
@@ -1080,45 +1080,44 @@ collection-backlogged-crash-reports-with-link = { -brand-short-name } があな�
 security-header = セキュリティ
 security-browsing-protection = 詐欺コンテンツと危険なソフトウェアからの防護
 security-enable-safe-browsing =
-    .label = 危険な詐欺コンテンツをブロックする
+    .label = 危険な詐欺コンテンツをブロックするわ
     .accesskey = B
 security-enable-safe-browsing-link = 詳細情報
 security-block-downloads =
-    .label = 危険なファイルのダウンロードをブロックする
+    .label = 危険なファイルのダウンロードをブロックするわ
     .accesskey = d
 security-block-uncommon-software =
-    .label = 不要な危険ソフトウェアを警告する
+    .label = 不要な危険ソフトウェアを警告するわ
     .accesskey = c
 
 ## Privacy Section - Certificates
 
 certs-header = 証明書
 certs-enable-ocsp =
-    .label = OCSP レスポンダーサーバーに問い合わせて証明書の現在の正当性を確認する
+    .label = OCSP レスポンダーサーバーに問い合わせて証明書の現在の正当性を確認するわ
     .accesskey = Q
 certs-view =
-    .label = 証明書を表示...
+    .label = 証明書を表示するで
     .accesskey = C
 certs-devices =
     .label = セキュリティデバイス...
     .accesskey = D
 space-alert-over-5gb-settings-button =
-    .label = 設定を開く
+    .label = 設定を開くで
     .accesskey = O
-space-alert-over-5gb-message2 = <strong>{ -brand-short-name } を実行するためのディスク領域が足りません。</strong>ウェブサイトが正しく表示されない可能性があります。[設定] > [プライバシーとセキュリティ] > [Cookie とサイトデータ] から、保存されたデータを削除してください。
-space-alert-under-5gb-message2 = <strong>{ -brand-short-name } を実行するためのディスク領域が足りません。</strong>ウェブサイトが正しく表示されない可能性があります。快適なブラウジングのために、[詳細情報] のリンク先を読み、ディスク使用量を最適化してください。
+space-alert-over-5gb-message2 = <strong>{ -brand-short-name } を実行するためのディスク領域が足りんかったわ。</strong>ウェブサイトが正しく表示されないかもしれんわ。[設定] > [プライバシーとセキュリティ] > [Cookie とサイトデータ] から、いらんデータを消してくれ。
+space-alert-under-5gb-message2 = <strong>{ -brand-short-name } を実行するためのディスク領域が足りんかったわ。</strong>ウェブサイトが正しく表示されないかもしれんわ。快適なブラウジングのために、[詳細情報] のリンク先を読み、ディスク使用量をもうちょい開けてくれ。
 
 ## Privacy Section - HTTPS-Only
 
 httpsonly-header = HTTPS-Only モード
-httpsonly-description = HTTPS は { -brand-short-name } とあなたが訪れるウェブサイトとの間に、暗号化された安全な接続を提供します。多くのウェブサイトは HTTPS に対応しており、HTTPS-Only モードを有効にすると { -brand-short-name } はすべての接続を HTTPS に切り替えます。
-httpsonly-learn-more = 詳細
+httpsonly-description = HTTPS は { -brand-short-name } とあんたが訪れるウェブサイトとの間に、暗号化された安全な接続を提供するで。多くのウェブサイトは HTTPS に対応しとるから、HTTPS-Only モードを有効にすると { -brand-short-name } はすべての接続を HTTPS に切り替えまするで
 httpsonly-radio-enabled =
-    .label = すべてのウィンドウで HTTPS-Only モードを有効にする
+    .label = すべてのウィンドウで HTTPS-Only モードを有効にするわ
 httpsonly-radio-enabled-pbm =
-    .label = プライベートウィンドウのみ HTTPS-Only モードを有効にする
+    .label = プライベートウィンドウのみ HTTPS-Only モードを有効にするわ
 httpsonly-radio-disabled =
-    .label = HTTPS-Only モードを有効にしない
+    .label = HTTPS-Only モードを有効にせえへん
 
 ## The following strings are used in the Download section of settings
 
@@ -1128,7 +1127,7 @@ choose-download-folder-title = ダウンロードフォルダーを選択:
 # Variables:
 #   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
 save-files-to-cloud-storage =
-    .label = { $service-name } にファイルを保存する
+    .label = { $service-name } にファイルを保存するわ
 
 # Floorp の固有設定
 
@@ -1137,12 +1136,12 @@ notice-from-floorp-projects = { -brand-short-name } のポリシー管理に関�
 floorp-preference = 実験的な環境設定
 browser-design-settings = タブバーの設定
 
-auto-reboot = 以下の設定を変更した場合、変更を適用するためにブラウザーを再起動する必要があります。変更する前に、作業中のデータを保存してください。
+auto-reboot = 以下の設定を変更した場合、変更を適用するためにブラウザーを再起動する必要があります。変更する前に、作業中のデータを保存してくれへん？
 
 operation-settings = ブラウザーの操作設定
-Mouse-side-button = サイドボタンによるマウス操作にブラウザーを最適化
+Mouse-side-button = サイドボタンによるマウス操作にブラウザーを最適化をするで
 enable-tab-scroll-change = スクロールでタブを切り替える
-enable-doble-click-block = ダブルクリックでタブを閉じる
+enable-doble-click-block = ダブルクリックでタブを閉じるで
 
 None-mode = 
  .label= 通常の動作設定
@@ -1163,48 +1162,48 @@ treestyletabSettings-l10 = ツリースタイル垂直タブの設定
 treestyletab-Settings = ツリー型タブにマウスがフォーカスされた場合、展開するようにする
 
 bookmarks-bar-settings = ブックマークバーの設定
-bookmarks-focus-mode = マウスがツールバーにフォーカスされているときに、ブックマークバーを表示する
+bookmarks-focus-mode = マウスがツールバーにフォーカスされているときに、ブックマークバーを表示するかい？
 bookmarks-bottom-mode = ブラウザーの一番下にブックマークバーを表示
 
 material-effect = Mica for everyone によるブラウザーのデザイン変更を許可する
 allow-auto-restart = 再起動が必要な設定変更時に自動的に再起動する
-enable-multitab = 多段タブを有効にする（Lepton と互換性なし・実験的）
+enable-multitab = 多段タブを有効にする（Lepton と互換性がないで・実験的や）
 learn-more-material = 詳細情報
 other-preference = その他の設定
 
-enable-userscript = レガシーな機能のローダーを有効にする
-about-legacy-components = この機能を有効にすると、予期しないバグやエラーが発生する可能性があります
+enable-userscript = レガシーな機能のローダーを有効にするわ
+about-legacy-components = この機能を使うと、ようわからんバグやエラーが発生するかもしれんで
 
-Search-positon-top = ページ上部に検索バーを表示する
-classic-menu-mode = クラシックスタイルのメニューを使用する（互換性がない場合があります）
+Search-positon-top = ページ上部に検索バーを表示するわ
+classic-menu-mode = クラシックスタイルのメニューを使用するで（互換性がないかもしれん）
 
-feature-requires-restart = この設定の変更には再起動が必要です
+feature-requires-restart = この設定の変更には再起動がいるで
 
 ## Updater
 
 floorp-updater = { -brand-short-name } アップデーターの設定
-enable-floorp-updater = 起動時に、 { -brand-short-name } のアップデートを確認する
-floorp-update-latest = 起動時のアップデートチェックで、 { -brand-short-name } が最新版の場合、最新であることを通知する
+enable-floorp-updater = 起動時に、 { -brand-short-name } のアップデートを確認するわ
+floorp-update-latest = 起動時のアップデートチェックで、 { -brand-short-name } が最新版のなら、最新であることをお知らせするで
 
 ## system theme color
 
-system-color-settings = 使用中のテーマがライトモード・ダークモードの双方に対応している場合、テーマのデザインを選択できます。
+system-color-settings = 使用中のテーマがライトモード・ダークモードの双方に対応しているなら、テーマのデザインを選択できるで。
 preferences-theme-appearance-header = システムテーマの設定
 
 system-theme-dark =
- .label = ダークモードを優先する
+ .label = ダークモードを優先するわ
 
 system-theme-light = 
- .label = ライトモードを優先する
+ .label = ライトモードを優先するわ
  
 system-theme-auto =  
- .label = システムに追従する
+ .label = システムに追従するわ
 
 ## user interface prefernces
 
 ui-preference = { -brand-short-name } のデザイン設定
 
-preferences-browser-appearance-description  = { -brand-short-name } の外観を設定します。ここで設定を変更しても、テーマの設定には影響しません。ただし、テーマによっては互換性がない場合があります。
+preferences-browser-appearance-description  = { -brand-short-name } の外観を設定で。ここで設定を変えても、テーマの設定には影響せえへんで。やけど、テーマによっては互換性がないかもしれんで。
 
 firefox-proton =
  .label = Firefox Proton UI
@@ -1216,53 +1215,53 @@ firefox-photon =
  .label = Firefox レガシー Photon UI (Firefox Quantum) 
 
 floorp-legacy =  
- .label = material UI・サポート対象外
+ .label = material UI・サポート対象外や
 
 floorp-fluentUI =
  .label = Fluent UI
 
-hide-horizontality-tabs = 水平タブバーの非表示
-verticalTab-setting = 垂直タブにブラウザーを最適化
-move-tabbar-position = タブバーの位置をブックマークの下に移動する
+hide-horizontality-tabs = 水平タブバーの非表示にするで
+verticalTab-setting = 垂直タブにブラウザーを最適化するで
+move-tabbar-position = タブバーの位置をブックマークの下に移動するで
 tabbar-preference = タブバー
 
 ## BlockMoreTracker
 
-block-tracker = より多くのユーザーを追跡する広告や見えないトラッカーを撃破しましょう。
-block-more-tracker = より多くのトラッカーによる追跡を遮断する
+block-tracker = より多くのユーザーを追跡する広告や見えないトラッカーを打ち払っちまおうぜ!
+block-more-tracker = より多くのトラッカーによる追跡を叩き切る
 
 view-at-AMO = AMO で見る
 uBlock-Origin = uBlock Origin
-about-uboori = uBlock Origin は広告やトラッカー、悪意あるサイトや詐欺からユーザーを保護します。一般的なものよりも軽量です。
+about-uboori = uBlock Origin は広告やトラッカー、悪意あるサイトや詐欺からユーザーを守ってくれるで。一般的なものよりも軽めやで
 
 Privacy-Badger = Privacy Badger
-about-PBadger = Privacy Badger は、非表示のトラッカーをブロックすることを学習し、それに基づいてトラッカーを能動的にブロックします。
+about-PBadger = Privacy Badger は、非表示のトラッカーをブロックすることを勉強してって、それに基づいてトラッカーを能動的にブロックしてくれる賢いやつや。
 
 Duck-Duck-Go = DuckDuckGo Privacy Essentials
-about-DDG = 検索エンジンを DuckDuckGo に置き換え、訪問したサイトのトラッカーをブロックし、そのサイトを評価します。
+about-DDG = 検索エンジンを DuckDuckGo に置き換え、訪問したサイトのトラッカーをブロックし、そのサイトを評価していくで。
 
 ## Fingerprint
 
 fingerprint-header = 指紋採取・IP アドレス漏洩対策
-block-fingerprint = 指紋採取は、Webサイトがデバイス情報などの情報を収集し、プロファイルを作成し、個人情報を収集するプロセスです。既定のブロッカーを超えて個人情報の漏洩をさらに減らすための設定を提供します
-enable-firefox-fingerprint-protections = Firefox による強力な指紋採取対策機能を有効にする
-about-firefox-fingerprint-protection = この設定を有効にすると、サイトにライトモードが強制され、一部の Api や機能が無効になります。まれにサイトが破損します。 
-html5-canvas-prompt-settings = HTML5 Canvas 画像を使用するサイトの使用許可を自動的に拒否する
-canvas-prompt = 既定では、使用許可の通知はプロンプトで表示されません。
+block-fingerprint = 指紋採取は、Webサイトがデバイス情報などの情報を集めて、プロファイルを作って、個人情報を集めるプロセスや。既定のブロッカーを超えて個人情報の漏洩をさらにふせぐための設定を提供しとるで
+enable-firefox-fingerprint-protections = Firefox による強力な指紋採取対策機能を使うで
+about-firefox-fingerprint-protection = この設定を有効にすると、サイトにライトモードが強制され、一部の Api や機能が無効になっちゃうで。まれにサイトがぶっ壊れちゃうで。 
+html5-canvas-prompt-settings = HTML5 Canvas 画像を使用するサイトの使用許可を自動的にことわるで
+canvas-prompt = 既定では、使用許可の通知はプロンプトで出て来ないで
 disable-webgl = WebGL を無効にする
-about-webgl = WebGL はグラフィックを描画する際に必要な機能で、お使いの GPU の情報が漏洩します
+about-webgl = WebGL はグラフィックを描画する際に必要な機能で、お使いの GPU の情報が漏れちゃうで
 Canvas-Blocker = Canvas Blocker
 about-CB = このアドオンを使用すると、ユーザーはWebサイトが指紋採取を実行するのを防止することができます。
-WebRTC-connection = WebRTCは、リアルタイムの通話を提供する標準です。この設定を無効にすると、Discord などを使用できなくなります。VPN との併用を推奨します。
+WebRTC-connection = WebRTCは、リアルタイムの通話を提供する標準です。この設定を無効にすると、Discord などを使用できなくなっちゃうで。VPN と一緒に使うのがおすすめやで。
 WebRTC = WebRTC 接続を有効にする
 
 ## download mgr
 download-notification-preferences = ダウンロード通知
 start-always-notify =
- .label = 開始時に通知する
+ .label = 開始時に通知するで
 finish-always-notify = 
- .label = 終了時に通知する
+ .label = 終了時に通知するで
 always-notify =
- .label = 開始時、終了時に通知する
+ .label = 開始時、終了時に通知するで
 do-not-notify =
- .label = ダウンロード通知を有効にしない
+ .label = ダウンロード通知を有効にしないで

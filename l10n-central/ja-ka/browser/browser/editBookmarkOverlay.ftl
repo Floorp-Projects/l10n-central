@@ -19,9 +19,9 @@ bookmark-overlay-location-2 =
 bookmark-overlay-choose =
     .label = 選択...
 bookmark-overlay-folders-expander =
-    .tooltiptext = すべてのブックマークフォルダーを表示します
+    .tooltiptext = すべてのブックマークフォルダーを表示するで
     .tooltiptextdown = { bookmark-overlay-folders-expander.tooltiptext }
-    .tooltiptextup = 一覧を閉じます
+    .tooltiptextup = 一覧を閉じるで
 bookmark-overlay-new-folder-button =
     .label = 新しいフォルダー
     .accesskey = o
@@ -31,15 +31,15 @@ bookmark-overlay-tags-2 =
     .accesskey = T
 
 bookmark-overlay-tags-empty-description =
-    .placeholder = カンマ区切りで複数入力できます
+    .placeholder = カンマ区切りで複数入力できるで
 bookmark-overlay-tags-expander =
-    .tooltiptext = 既存のタグ一覧を表示します
+    .tooltiptext = 既存のタグ一覧を出すで
     .tooltiptextdown = { bookmark-overlay-tags-expander.tooltiptext }
-    .tooltiptextup = 一覧を閉じます
+    .tooltiptextup = 一覧を閉じるで
 
 bookmark-overlay-keyword-2 =
     .value = キーワード
     .accesskey = K
 
-bookmark-overlay-tags-caption-label = タグはブックマークの整理とアドレスバーからの検索に使用します
-bookmark-overlay-keyword-caption-label-2 = キーワードはアドレスバーから直接ブックマークを開くのに使用します
+bookmark-overlay-tags-caption-label = タグはブックマークの整理とアドレスバーからの検索に使うで
+bookmark-overlay-keyword-caption-label-2 = キーワードはアドレスバーから直接ブックマークを開くのに使うで

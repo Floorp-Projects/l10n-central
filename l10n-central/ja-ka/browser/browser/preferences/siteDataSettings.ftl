@@ -21,7 +21,7 @@ site-data-column-last-used =
 # This label is used in the "Host" column for local files, which have no host.
 site-data-local-file-host = (ローカルファイル)
 site-data-remove-selected =
-    .label = 選択したサイトデータを削除
+    .label = 選択したサイトデータをほかす
     .accesskey = R
 site-data-settings-dialog =
     .buttonlabelaccept = 変更を保存するで
@@ -34,24 +34,24 @@ site-storage-usage =
 site-storage-persistent =
     .value = { site-storage-usage.value } (永続)
 site-data-remove-all =
-    .label = すべて削除
+    .label = すべてほかす
     .accesskey = e
 site-data-remove-shown =
-    .label = 表示されたサイトデータをすべて削除
+    .label = 表示されたサイトデータをすべてほかす
     .accesskey = e
 
 ## Removing
 
 site-data-removing-dialog =
     .title = { site-data-removing-header }
-    .buttonlabelaccept = 削除
+    .buttonlabelaccept = ほかす
 
-site-data-removing-header = Cookie とサイトデータの削除
+site-data-removing-header = Cookie とサイトデータのほかす
 
-site-data-removing-desc = Cookie とサイトデータを削除すると、ウェブサイトからログアウトされてしまうで。本当に消してもええ？
+site-data-removing-desc = Cookie とサイトデータをほかすと、ウェブサイトからログアウトされてしまうで。本当にほかしてもええか？
 
 # Variables:
 #   $baseDomain (String) - The single domain for which data is being removed
-site-data-removing-single-desc = Cookie とサイトデータを削除すると、ウェブサイトからログアウトされてしまうで。本当に <strong>{ $baseDomain }</strong> の Cookie とサイトデータを消してもええ？
+site-data-removing-single-desc = Cookie とサイトデータをほかすと、ウェブサイトからログアウトされてしまうで。本当に <strong>{ $baseDomain }</strong> の Cookie とサイトデータを消してもええ？
 
 site-data-removing-table = 次のウェブサイトの Cookie とサイトデータが消されちゃうで

@@ -114,7 +114,7 @@ menu-edit-find-again =
     .label = 次を検索
     .accesskey = g
 menu-edit-bidi-switch-text-direction =
-    .label = テキストの記述方向を切り替える
+    .label = テキストの記述方向を切り替えるで
     .accesskey = w
 
 ## View Menu
@@ -184,7 +184,7 @@ menu-view-show-all-tabs =
     .label = すべてのタブを表示
     .accesskey = A
 menu-view-bidi-switch-page-direction =
-    .label = ページの記述方向を切り替える
+    .label = ページの記述方向を切り替えるで
     .accesskey = D
 
 ## History Menu
@@ -316,8 +316,8 @@ menu-help-exit-troubleshoot-mode =
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =
-    .label = 詐欺サイトを報告...
+    .label = 詐欺サイトを報告するわ
     .accesskey = D
 menu-help-not-deceptive =
-    .label = 詐欺サイトの誤報告を指摘...
+    .label = 詐欺サイトの誤報告を指摘するわ
     .accesskey = d

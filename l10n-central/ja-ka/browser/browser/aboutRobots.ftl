@@ -13,17 +13,17 @@ page-title = まるちぷるたいたんぱー！
 # Movie: Logan's Run... Box (cyborg): "Welcome Humans! I am ready for you."
 error-title-text = ニンゲンノミナサン、ヨウコソ！
 # Movie: The Day The Earth Stood Still. Spoken by Klaatu.
-error-short-desc-text = ロボットは人間の友達です！
+error-short-desc-text = ロボットは人間の友達やで！
 # Various books by Isaac Asimov. http://en.wikipedia.org/wiki/Three_Laws_of_Robotics
-error-long-desc1 = ロボットは良心回路を持っているので、人間に危害を与えません。
+error-long-desc1 = ロボットは良心回路を持っとるから、人間に危害を与えんはずや。
 # Movie: Blade Runner. Batty: "I've seen things you people wouldn’t believe..."
-error-long-desc2 = ロボットは航空力学を無視して空を飛べます。
+error-long-desc2 = ロボットは航空力学を無視して空を飛べるで。
 # Book: Hitchhiker’s Guide To The Galaxy. What the Sirius Cybernetics Corporation calls robots.
-error-long-desc3 = ロボットは持ち主の脳波レベルを測定できます。
+error-long-desc3 = ロボットは持ち主の脳波レベルを測定できるで。
 # TV: Futurama. Bender's first line is "Bite my shiny metal ass."
-error-long-desc4 = ロボットとアンドロイドは違う、と主張しているロボットもいます。
+error-long-desc4 = ロボットとアンドロイドはちゃうと言っとるしているロボットもいるで。
 # TV: Battlestar Galactica (2004 series). From the opening text.
-error-trailer-desc-text = ロボットがやらねば誰がやる！
+error-trailer-desc-text = ロボットがやらんかったら誰がやるんや！
 # Book: Hitchhiker's Guide To The Galaxy. Arthur presses a button and it warns him.
 error-try-again = 再試行
     .label2 = バーイチャ!

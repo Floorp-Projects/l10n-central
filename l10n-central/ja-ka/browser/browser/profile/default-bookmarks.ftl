@@ -10,25 +10,25 @@ default-bookmarks-title = ブックマーク
 default-bookmarks-heading = ブックマーク
 
 default-bookmarks-toolbarfolder = ブックマークツールバーフォルダー
-default-bookmarks-toolbarfolder-description = このフォルダーの中身がブックマークツールバーに表示されます
+default-bookmarks-toolbarfolder-description = このフォルダーの中身がブックマークツールバーに出てくるで
 
 # link title for https://www.mozilla.org/firefox/central/
-default-bookmarks-getting-started = Floorp を使いこなそう
+default-bookmarks-getting-started = Floorp を使いこなそうぜ!
 
 # Firefox links folder name
 default-bookmarks-firefox-heading = Ablaze Floorp
 
 # link title for https://www.mozilla.org/firefox/help/
-default-bookmarks-firefox-get-help = ヘルプを表示
+default-bookmarks-firefox-get-help = ヘルプを出すで
 
 # link title for https://www.mozilla.org/firefox/customize/
-default-bookmarks-firefox-customize = Floorp をカスタマイズしてみよう
+default-bookmarks-firefox-customize = Floorp をカスタマイズしてみようぜ!
 
 # link title for https://www.mozilla.org/contribute/
-default-bookmarks-firefox-community = Mozilla のコミュニティ
+default-bookmarks-firefox-community = Mozilla のコミュニティやで
 
 # link title for https://www.mozilla.org/about/
-default-bookmarks-firefox-about = Mozilla について
+default-bookmarks-firefox-about = Mozilla ってなんぞや
 
 # Firefox Nightly links folder name
 default-bookmarks-nightly-heading = Floorp Nightly Resources

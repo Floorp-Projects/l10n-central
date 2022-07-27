@@ -6,13 +6,13 @@
 ## App Menu
 
 appmenuitem-banner-update-downloading =
-    .label = { -brand-shorter-name } の更新をダウンロード中
+    .label = { -brand-shorter-name } の更新をダウンロードしとるで
 appmenuitem-banner-update-available =
     .label = 更新可能 — 今すぐダウンロード
 appmenuitem-banner-update-manual =
     .label = 更新可能 — 今すぐダウンロード
 appmenuitem-banner-update-unsupported =
-    .label = 更新不可 — システムの互換性なし
+    .label = 更新不可 — システムの互換性はないみたいや
 appmenuitem-banner-update-restart =
     .label = 更新可能 — 今すぐ再起動
 appmenuitem-new-tab =
@@ -42,10 +42,10 @@ appmenuitem-help =
 appmenuitem-exit2 =
     .label = 終了
 appmenu-menu-button-closed2 =
-    .tooltiptext = アプリケーションメニューを開きます
+    .tooltiptext = アプリケーションメニューを開くわ
     .label = { -brand-short-name }
 appmenu-menu-button-opened2 =
-    .tooltiptext = アプリケーションメニューを閉じます
+    .tooltiptext = アプリケーションメニューを閉じるわ
     .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
@@ -70,20 +70,20 @@ appmenu-remote-tabs-turn-on-sync =
 # This is shown after the tabs list if we can display more tabs by clicking on the button
 appmenu-remote-tabs-showmore =
     .label = さらにタブを表示
-    .tooltiptext = この端末からのタブをさらに表示します
+    .tooltiptext = この端末からのタブをさらに出すで
 # This is shown beneath the name of a device when that device has no open tabs
 appmenu-remote-tabs-notabs = タブがありません
 # This is shown when Sync is configured but syncing tabs is disabled.
-appmenu-remote-tabs-tabsnotsyncing = タブの同期をオンにすると、あなたの他の端末のタブ一覧が表示されます。
+appmenu-remote-tabs-tabsnotsyncing = タブの同期をオンにすると、あなたの他の端末のタブ一覧が出てくるで。
 appmenu-remote-tabs-opensettings =
     .label = 設定
 # This is shown when Sync is configured but this appears to be the only device attached to
 # the account. We also show links to download Firefox for android/ios.
-appmenu-remote-tabs-noclients = 他の端末のタブを表示しますか？
+appmenu-remote-tabs-noclients = 他の端末のタブを表示してもええか？
 appmenu-remote-tabs-connectdevice =
     .label = 他の端末を接続
 appmenu-remote-tabs-welcome = 他の端末のタブ一覧を表示する。
-appmenu-remote-tabs-unverified = あなたのアカウントは検証する必要があります。
+appmenu-remote-tabs-unverified = あなたのアカウントは検証する必要があるで。
 appmenuitem-fxa-toolbar-sync-now2 = 今すぐ同期
 appmenuitem-fxa-sign-in = { -brand-product-name } にログイン
 appmenuitem-fxa-manage-account = アカウントを管理
@@ -115,20 +115,20 @@ whatsnew-panel-footer-checkbox =
 
 profiler-popup-button-idle =
     .label = プロファイラー
-    .tooltiptext = パフォーマンスプロファイルを記録します
+    .tooltiptext = パフォーマンスプロファイルを記録するで
 profiler-popup-button-recording =
     .label = プロファイラー
-    .tooltiptext = プロファイラーがプロファイルを記録中です
+    .tooltiptext = プロファイラーがプロファイルを記録しとるで
 profiler-popup-button-capturing =
     .label = プロファイラー
-    .tooltiptext = プロファイラーがプロファイルをキャプチャ中です
+    .tooltiptext = プロファイラーがプロファイルをキャプチャしとるで
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
     .aria-label = 詳細な情報を表示
 profiler-popup-description-title =
     .value = 記録、分析、共有
-profiler-popup-description = プロファイルを公開してあなたのチームと共有し、パフォーマンス問題に協力しましょう。
+profiler-popup-description = プロファイルを公開してあんたのチームと共有して、パフォーマンス問題に協力せえへん？
 profiler-popup-learn-more-button =
     .label = 詳細
 profiler-popup-settings =
@@ -161,23 +161,23 @@ profiler-popup-capture-shortcut =
 # devtools/client/performance-new/popup/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
-profiler-popup-presets-web-developer-description = 一般的なウェブアプリをデバッグするための低負荷な推奨プリセットです。
+profiler-popup-presets-web-developer-description = 一般的なウェブアプリをデバッグするための低負荷な推奨プリセットやで。
 profiler-popup-presets-web-developer-label =
     .label = ウェブ開発
 
-profiler-popup-presets-firefox-description = { -brand-shorter-name } のプロファイリングのための推奨プリセットです。
+profiler-popup-presets-firefox-description = { -brand-shorter-name } のプロファイリングのための推奨プリセットやで。
 profiler-popup-presets-firefox-label =
     .label = { -brand-shorter-name }
 
-profiler-popup-presets-graphics-description = { -brand-shorter-name } のグラフィックバグを調査するための推奨プリセットです。
+profiler-popup-presets-graphics-description = { -brand-shorter-name } のグラフィックバグを調査するための推奨プリセットやで。
 profiler-popup-presets-graphics-label =
     .label = グラフィック
 
-profiler-popup-presets-media-description2 = { -brand-shorter-name } の音声と動画のバグを調査するための推奨プリセットです。
+profiler-popup-presets-media-description2 = { -brand-shorter-name } の音声と動画のバグを調査するための推奨プリセットやで。
 profiler-popup-presets-media-label =
     .label = メディア
 
-profiler-popup-presets-networking-description = { -brand-shorter-name } のネットワークバグを調査するための推奨プリセットです。
+profiler-popup-presets-networking-description = { -brand-shorter-name } のネットワークバグを調査するための推奨プリセットやで。
 profiler-popup-presets-networking-label =
     .label = ネットワーク
 
@@ -188,12 +188,12 @@ profiler-popup-presets-custom-label =
 
 appmenu-manage-history =
     .label = 履歴を管理
-appmenu-reopen-all-tabs = タブをすべて開きなおす
-appmenu-reopen-all-windows = ウィンドウをすべて開きなおす
+appmenu-reopen-all-tabs = タブをすべて開きなおすわ
+appmenu-reopen-all-windows = ウィンドウをすべて開きなおすわ
 appmenu-restore-session =
-    .label = 以前のセッションを復元
+    .label = 以前のセッションを復元するわ
 appmenu-clear-history =
-    .label = 最近の履歴を消去...
+    .label = 最近の履歴をほかす
 appmenu-recent-history-subheader = 最近の履歴
 appmenu-recently-closed-tabs =
     .label = 最近閉じたタブ

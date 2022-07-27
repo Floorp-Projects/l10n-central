@@ -5,17 +5,17 @@
 # Variables:
 # $hostname (String) - Hostname of the website with SSL error.
 # $errorMessage (String) - Error message corresponding to the type of error we are experiencing.
-ssl-connection-error = { $hostname } への接続中にエラーが発生しました。{ $errorMessage }
+ssl-connection-error = { $hostname } への接続中にエラーがおきたわ。{ $errorMessage }
 # Variables:
 # $error (string) - NSS error code string that specifies type of cert error. e.g. unknown issuer, invalid cert, etc.
 cert-error-code-prefix = エラーコード: { $error }
-psmerr-ssl-disabled = SSL プロトコルが無効になっているため、安全な接続ができませんでした。
-psmerr-ssl2-disabled = サイトが古くて安全でないバージョンの SSL プロトコルを使用しているため、安全な接続ができませんでした。
+psmerr-ssl-disabled = SSL プロトコルが無効になっているため、安全な接続ができひんかったわ。
+psmerr-ssl2-disabled = サイトが古くて安全でないバージョンの SSL プロトコルを使用しているため、安全な接続ができひんかったわ。
 # This is a multi-line message.
 psmerr-hostreusedissuerandserial =
     無効な証明書を受信しました。サーバー管理者またはメール送信者に次の情報を知らせてください:
     
-    あなたのサーバー証明書は認証局によって発行された他の証明書と同じシリアル番号を持っています。一意なシリアル番号を持つ新しい証明書を取得してください。
+    あなたのサーバー証明書は認証局によって発行された他の証明書と同じシリアル番号を持っています。一意なシリアル番号を持つ新しい証明書を取ってきてくれへん？
 ssl-error-export-only-server = Unable to communicate securely. Peer does not support high-grade encryption.
 ssl-error-us-only-server = Unable to communicate securely. Peer requires high-grade encryption which is not supported.
 ssl-error-no-cypher-overlap = Cannot communicate securely with peer: no common encryption algorithm(s).

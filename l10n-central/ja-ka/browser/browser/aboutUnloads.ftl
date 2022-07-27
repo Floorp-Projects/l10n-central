@@ -18,16 +18,16 @@ about-unloads-last-updated =
         hour: "numeric", minute: "numeric", second: "numeric",
         hour12: "false") }
 about-unloads-button-unload = 解放
-    .title = 最も優先度の高いタブを解放します
-about-unloads-no-unloadable-tab = 解放できるタブはありません。
+    .title = 最も優先度の高いタブを解放してみる
+about-unloads-no-unloadable-tab = 解放できるタブはなかったで
 
 about-unloads-column-priority = 優先度
 about-unloads-column-host = ホスト
 about-unloads-column-last-accessed = 最終アクセス日時
 about-unloads-column-weight = 基本ウエイト
-    .title = タブはまずこの値で並べ替えられます。これは音声の再生や WebRTC など、一部の特別な属性から算出されます。
+    .title = タブはまずこの値で並べ替えられるで。これは音声の再生や WebRTC など、一部の特別な属性から算出されるで。
 about-unloads-column-sortweight = 二次ウエイト
-    .title = 基本ウエイトで並べ替えられた後、利用可能であれば、この値でタブが並べ替えられます。この値はタブのメモリー消費量とプロセス数から算出されます。
+    .title = 基本ウエイトで並べ替えられた後、利用可能であれば、この値でタブが並べ替えられるで。この値はタブのメモリー消費量とプロセス数から算出されるで。
 about-unloads-column-memory = メモリー
     .title = タブの推定メモリー消費量
 about-unloads-column-processes = プロセス ID

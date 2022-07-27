@@ -111,11 +111,11 @@ urlbar-tip-icon-description =
 ## Variables:
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
-urlbar-search-tips-onboard = 少ない入力でたくさん見つかる: アドレスバーから { $engineName } ですぐ検索します。
-urlbar-search-tips-redirect-2 = アドレスバーで検索を始めると、{ $engineName } からの検索候補と閲覧履歴が表示されます。
+urlbar-search-tips-onboard = 少ない入力でたくさん見つかる: アドレスバーから { $engineName } ですぐ検索するで。
+urlbar-search-tips-redirect-2 = アドレスバーで検索を始めると、{ $engineName } からの検索候補と閲覧履歴が出されるで。
 # Prompts users to use the Urlbar when they are typing in the domain of a
 # search engine, e.g. google.com or amazon.com.
-urlbar-tabtosearch-onboard = このショートカットを選択すると、より素早く検索できます。
+urlbar-tabtosearch-onboard = このショートカットを選択すると、より素早く検索できるで。
 
 ## Local search mode indicator labels in the urlbar
 
@@ -126,37 +126,37 @@ urlbar-search-mode-history = 履歴
 ##
 
 urlbar-geolocation-blocked =
-    .tooltiptext = このウェブサイトでの位置情報の共有をブロックしました。
+    .tooltiptext = このウェブサイトでの位置情報の共有をブロックしたで。
 urlbar-xr-blocked =
-    .tooltiptext = このウェブサイトの VR デバイスへのアクセスをブロックしました。
+    .tooltiptext = このウェブサイトの VR デバイスへのアクセスをブロックしたで。
 urlbar-web-notifications-blocked =
-    .tooltiptext = このウェブサイトからの通知をブロックしました。
+    .tooltiptext = このウェブサイトからの通知をブロックしたで。
 urlbar-camera-blocked =
-    .tooltiptext = このウェブサイトでのカメラの共有をブロックしました。
+    .tooltiptext = このウェブサイトでのカメラの共有をブロックしたで。
 urlbar-microphone-blocked =
-    .tooltiptext = このウェブサイトでのマイクの共有をブロックしました。
+    .tooltiptext = このウェブサイトでのマイクの共有をブロックしたで。
 urlbar-screen-blocked =
-    .tooltiptext = このウェブサイトでの画面の共有をブロックしました。
+    .tooltiptext = このウェブサイトでの画面の共有をブロックしたで。
 urlbar-persistent-storage-blocked =
-    .tooltiptext = このウェブサイトの永続ストレージの使用をブロックしました。
+    .tooltiptext = このウェブサイトの永続ストレージの使用をブロックしたで。
 urlbar-popup-blocked =
-    .tooltiptext = このウェブサイトのポップアップをブロックしました。
+    .tooltiptext = このウェブサイトのポップアップをブロックしたで。
 urlbar-autoplay-media-blocked =
-    .tooltiptext = このウェブサイトの音声付きメディアの自動再生をブロックしました。
+    .tooltiptext = このウェブサイトの音声付きメディアの自動再生をブロックしたで。
 urlbar-canvas-blocked =
-    .tooltiptext = このウェブサイトの Canvas データの抽出をブロックしました。
+    .tooltiptext = このウェブサイトの Canvas データの抽出をブロックしたで。
 urlbar-midi-blocked =
-    .tooltiptext = このウェブサイトの MIDI へのアクセスをブロックしました。
+    .tooltiptext = このウェブサイトの MIDI へのアクセスをブロックしたで。
 urlbar-install-blocked =
-    .tooltiptext = このウェブサイトのアドオンのインストールをブロックしました。
+    .tooltiptext = このウェブサイトのアドオンのインストールをブロックしたで。
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
-    .tooltiptext = このページのブックマークを編集します ({ $shortcut })
+    .tooltiptext = このページのブックマークを編集するで ({ $shortcut })
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
-    .tooltiptext = このページをブックマークに追加します ({ $shortcut })
+    .tooltiptext = このページをブックマークに追加するで ({ $shortcut })
 
 ## Page Action Context Menu
 
@@ -255,18 +255,18 @@ identity-site-information = { $host } のサイト情報
 #  $host (String): the hostname of the site that is being displayed.
 identity-header-security-with-host =
     .title = { $host } への接続の安全性
-identity-connection-not-secure = 安全でない接続
-identity-connection-secure = 安全な接続
-identity-connection-failure = 接続失敗
-identity-connection-internal = このページは { -brand-short-name } の安全な内部ページです。
-identity-connection-file = これはあなたのコンピューターに保存されているページです。
+identity-connection-not-secure = 安全でない接続や
+identity-connection-secure = 安全な接続や
+identity-connection-failure = 接続失敗や
+identity-connection-internal = このページは { -brand-short-name } の安全な内部ページやで。
+identity-connection-file = これはあなたのコンピューターに保存されているページやで。
 identity-extension-page = このページは拡張機能から読み込まれています。
-identity-active-blocked = このページの一部が安全でないため { -brand-short-name } がブロックしました。
-identity-custom-root = Mozilla が承認していない発行者の証明書で検証された接続です。
-identity-passive-loaded = このページの一部 (画像など) は安全ではありません。
-identity-active-loaded = このページでの保護は無効に設定されています。
-identity-weak-encryption = このページは脆弱な暗号を使用しています。
-identity-insecure-login-forms = このページのログインフォームは安全ではありません。
+identity-active-blocked = このページの一部が安全でないため { -brand-short-name } がブロックしたで。
+identity-custom-root = Mozilla が承認していない発行者の証明書で検証された接続やで。
+identity-passive-loaded = このページの一部 (画像など) は安全ではなかったわ。
+identity-active-loaded = このページでの保護は無効に設定されとるで。
+identity-weak-encryption = このページは脆弱な暗号を使っとるで。
+identity-insecure-login-forms = このページのログインフォームは安全ではなかったわ。
 identity-https-only-connection-upgraded = (HTTPS で接続中)
 identity-https-only-label = HTTPS-Only モード
 identity-https-only-dropdown-on =
@@ -275,42 +275,42 @@ identity-https-only-dropdown-off =
     .label = オフ
 identity-https-only-dropdown-off-temporarily =
     .label = 一時的にオフ
-identity-https-only-info-turn-on2 = このサイトで { -brand-short-name } に可能な限り接続をアップグレードさせたい場合は、HTTPS-Only モードをオンにしてください。
-identity-https-only-info-turn-off2 = ページが動作しない場合は HTTPS-Only モードをオフにして、安全でない HTTP 接続でこのサイトを再読み込みするとよいでしょう。
-identity-https-only-info-no-upgrade = 接続を HTTP からアップグレードできません。
+identity-https-only-info-turn-on2 = このサイトで { -brand-short-name } に可能な限り接続をアップグレードさせたいなら、HTTPS-Only モードをオンにするとええで。
+identity-https-only-info-turn-off2 = ページが動作しない場合は HTTPS-Only モードをオフにして、安全でない HTTP 接続でこのサイトを再読み込みするでええで。
+identity-https-only-info-no-upgrade = 接続を HTTP からアップグレードできひんかったわ。
 identity-permissions-storage-access-header = クロスサイト Cookie
-identity-permissions-storage-access-hint = 以下のサイトが、あなたがこのサイトにいる間、クロスサイト Cookie とサイトデータにアクセスできます。
+identity-permissions-storage-access-hint = 以下のサイトが、あなたがこのサイトにいる間、クロスサイト Cookie とサイトデータにアクセスできるで。
 identity-permissions-storage-access-learn-more = 詳細情報
 identity-permissions-reload-hint = 変更内容を適用するには、ページの再読み込みが必要です。
 identity-clear-site-data =
     .label = Cookie とサイトデータを消去...
-identity-connection-not-secure-security-view = このサイトとの接続は安全ではありません。
-identity-connection-verified = このサイトとの接続は安全です。
+identity-connection-not-secure-security-view = このサイトとの接続は安全ではないで。
+identity-connection-verified = このサイトとの接続は安全やで。
 identity-ev-owner-label = 証明書の発行先:
-identity-description-custom-root = Mozilla はこの証明書の発行者を承認していません。OS またはシステム管理者により追加された可能性があります。 <label data-l10n-name="link">詳細情報</label>
+identity-description-custom-root = Mozilla はこの証明書の発行者を承認しとらんみたいや。OS またはシステム管理者により追加された可能性があるわ。 <label data-l10n-name="link">詳細情報</label>
 identity-remove-cert-exception =
     .label = 例外から削除
     .accesskey = R
-identity-description-insecure = このサイトへの接続は秘密が保たれません。このサイトに送信した情報 (パスワードやメッセージ、クレジットカード情報など) が第三者に盗み見られる可能性があります。
-identity-description-insecure-login-forms = このページに入力したログイン情報は安全に送信されません。第三者に盗み見られる可能性があります。
-identity-description-weak-cipher-intro = このウェブサイトとの接続には脆弱な暗号が使用されており、秘密が保たれません。
-identity-description-weak-cipher-risk = 第三者にあなたの情報を盗み見られたりウェブサイトの動作を不正に改変される可能性があります。
-identity-description-active-blocked = { -brand-short-name } がこのページ上の安全でないコンテンツをブロックしました。 <label data-l10n-name="link">詳細情報</label>
-identity-description-passive-loaded = この接続は安全でないため、サイトと共有したあなたの情報が第三者に盗み見られる可能性があります。
-identity-description-passive-loaded-insecure = このウェブサイトには安全でないコンテンツ (画像など) が含まれています。 <label data-l10n-name="link">詳細情報</label>
-identity-description-passive-loaded-mixed = { -brand-short-name } が一部のコンテンツをブロックしていますが、ページ上には安全でないコンテンツ (画像など) が含まれています。 <label data-l10n-name="link">詳細情報</label>
-identity-description-active-loaded = このウェブサイトには安全でないコンテンツ (スクリプトなど) が含まれており、サイトとの接続は秘密が保たれません。
-identity-description-active-loaded-insecure = このサイトと共有したあなたの情報 (パスワードやメッセージ、クレジットカード情報など) が第三者に盗み見られる可能性があります。
+identity-description-insecure = このサイトへの接続は秘密が保たれんみたいやわ。このサイトに送信した情報 (パスワードやメッセージ、クレジットカード情報とか) が第三者に盗み見られる可能性があるわ。
+identity-description-insecure-login-forms = このページに入力したログイン情報は安全に送信されへんみたいや。第三者に盗み見られる可能性があるで。
+identity-description-weak-cipher-intro = このウェブサイトとの接続には脆弱な暗号が使っとるから、秘密が保たれんみたいやわ。
+identity-description-weak-cipher-risk = 第三者にあなたの情報を盗み見られたりウェブサイトの動作を不正に改変される可能性があるで。
+identity-description-active-blocked = { -brand-short-name } がこのページ上の安全でないコンテンツをブロックしたで。 <label data-l10n-name="link">詳細情報</label>
+identity-description-passive-loaded = この接続は安全でないため、サイトと共有したあなたの情報が第三者に盗み見られるかもしれんで。
+identity-description-passive-loaded-insecure = このウェブサイトには安全でないコンテンツ (画像とか) が入っとるかもしれん。 <label data-l10n-name="link">詳細情報</label>
+identity-description-passive-loaded-mixed = { -brand-short-name } が一部のコンテンツをブロックしとるけど、ページ上には安全でないコンテンツ (画像とか) が入っとるかもしれん。 <label data-l10n-name="link">詳細情報</label>
+identity-description-active-loaded = このウェブサイトには安全でないコンテンツ (スクリプトとか) が含まれており、サイトとの接続は秘密が保たれません。
+identity-description-active-loaded-insecure = このサイトと共有したあなたの情報 (パスワードやメッセージ、クレジットカード情報とか) が第三者に盗み見られるかもしれんで。
 identity-learn-more =
     .value = 詳細情報
 identity-disable-mixed-content-blocking =
-    .label = このセッションのみ保護を無効にする
+    .label = このセッションのみ保護をなかったことにしたる
     .accesskey = D
 identity-enable-mixed-content-blocking =
-    .label = 保護を有効にする
+    .label = 保護を有効にしたる
     .accesskey = E
 identity-more-info-link-text =
-    .label = 詳細を表示
+    .label = 細けえことを出す
 
 ## Window controls
 
@@ -358,8 +358,8 @@ browser-tab-unblock =
 
 browser-import-button2 =
     .label = ブックマークをインポートする...
-    .tooltiptext = ブックマークを他のブラウザーから { -brand-short-name } にインポートします。
-bookmarks-toolbar-empty-message = ブックマークをこのブックマークツールバーに配置すると、素早くアクセスできます。<a data-l10n-name="manage-bookmarks">ブックマークを管理...</a>
+    .tooltiptext = ブックマークを他のブラウザーから { -brand-short-name } にインポートするで。
+bookmarks-toolbar-empty-message = ブックマークをこのブックマークツールバーに置いたると、素早くアクセスできるで。<a data-l10n-name="manage-bookmarks">ブックマークを管理...</a>
 
 ## WebRTC Pop-up notifications
 
@@ -375,19 +375,19 @@ popup-select-microphone-icon =
     .tooltiptext = マイク
 popup-select-speaker-icon =
     .tooltiptext = スピーカー
-popup-all-windows-shared = 画面に表示されているすべてのウィンドウを共有します。
+popup-all-windows-shared = 画面に表示されているすべてのウィンドウを共有するわ。
 popup-screen-sharing-block =
     .label = ブロック
     .accesskey = B
 popup-screen-sharing-always-block =
     .label = 常にブロック
     .accesskey = w
-popup-mute-notifications-checkbox = 共有中はウェブサイトからの通知を無効にする
+popup-mute-notifications-checkbox = 共有中はウェブサイトからの通知を無効にするわ
 
 ## WebRTC window or screen share tab switch warning
 
-sharing-warning-window = { -brand-short-name } を共有しています。新しいタブ に切り替えると、他の人にも見えます。
-sharing-warning-screen = 全画面を共有しています。新しいタブ に切り替えると、他の人にも見えます。
+sharing-warning-window = { -brand-short-name } を共有しとるで。新しいタブ に切り替えちゃうと、他の人にも見えちゃうで
+sharing-warning-screen = 全画面を共有しとるで。新しいタブ に切り替えちゃうと、他の人にも見えちゃうで。
 sharing-warning-proceed-to-tab =
     .label = タブに移動
 sharing-warning-disable-for-session =
@@ -395,21 +395,21 @@ sharing-warning-disable-for-session =
 
 ## DevTools F12 popup
 
-enable-devtools-popup-description = F12 ショートカットを使うには、最初にメニューのウェブ開発から開発ツールを開いてください。
+enable-devtools-popup-description = F12 ショートカットを使いてえなら、最初にメニューのウェブ開発から開発ツールを開いてくれへん？
 
 ## URL Bar
 
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
-    .placeholder = URL または検索語句を入力します
+    .placeholder = URL または検索語句を入れてくれ
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
 #  $name (String): the name of a search engine that searches the entire Web
 #  (e.g. Google).
 urlbar-placeholder-search-mode-web-2 =
-    .placeholder = ウェブを検索します
+    .placeholder = ウェブを検索してくるわ
     .aria-label = { $name } で検索
 # This placeholder is used in search mode with search engines that search a
 # specific site (e.g., Amazon).
@@ -417,38 +417,38 @@ urlbar-placeholder-search-mode-web-2 =
 #  $name (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-placeholder-search-mode-other-engine =
-    .placeholder = 検索語句を入力します
+    .placeholder = 検索語句を入れてくれ
     .aria-label = { $name } を検索
 # This placeholder is used when searching bookmarks.
 urlbar-placeholder-search-mode-other-bookmarks =
-    .placeholder = 検索語句を入力します
+    .placeholder = 検索語句を入れてくれ
     .aria-label = ブックマークを検索
 # This placeholder is used when searching history.
 urlbar-placeholder-search-mode-other-history =
-    .placeholder = 検索語句を入力します
+    .placeholder = 検索語句を入れてくれ
     .aria-label = 履歴を検索
 # This placeholder is used when searching open tabs.
 urlbar-placeholder-search-mode-other-tabs =
-    .placeholder = 検索語句を入力します
+    .placeholder = 検索語句を入れてくれ
     .aria-label = タブを検索
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
-    .placeholder = { $name } で検索、または URL を入力します
+    .placeholder = { $name } で検索、または URL を入れてくれ
 # Variables
 #  $component (String): the name of the component which forces remote control.
 #    Example: "DevTools", "Marionette", "RemoteAgent".
 urlbar-remote-control-notification-anchor2 =
-    .tooltiptext = ブラウザーがリモート制御下にあります (制御元: { $component })
+    .tooltiptext = ブラウザーがリモート制御下にあるで (制御元: { $component })
 urlbar-permissions-granted =
-    .tooltiptext = このウェブサイトで追加の権限を許可しました。
+    .tooltiptext = このウェブサイトで追加の権限を許可したで。
 urlbar-switch-to-tab =
     .value = タブを表示:
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = 拡張機能:
 urlbar-go-button =
-    .tooltiptext = アドレスバーに入力された URL へ移動します
+    .tooltiptext = アドレスバーに入力された URL へ行くで
 urlbar-page-action-button =
     .tooltiptext = ページ操作
 
@@ -476,13 +476,13 @@ urlbar-result-action-visit = 開く
 # Variables
 #  $engine (String): the name of a search engine that searches the entire Web
 #  (e.g. Google).
-urlbar-result-action-before-tabtosearch-web = Tab キーを押すと { $engine } でウェブを検索します
+urlbar-result-action-before-tabtosearch-web = Tab キーを押すと { $engine } でウェブを検索したる
 # Directs a user to press the Tab key to perform a search with the specified
 # engine.
 # Variables
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
-urlbar-result-action-before-tabtosearch-other = Tab キーを押すと { $engine } を検索します
+urlbar-result-action-before-tabtosearch-other = Tab キーを押すと { $engine } を検索するで
 # Variables
 #  $engine (String): the name of a search engine that searches the entire Web
 #  (e.g. Google).
@@ -525,24 +525,24 @@ urlbar-group-search-suggestions =
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
 # Variables
 #  $domain (String): the domain that is full screen, e.g. "mozilla.org"
-fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> は現在全画面表示モードです。
-fullscreen-warning-no-domain = このページは現在全画面表示モードです。
-fullscreen-exit-button = 全画面表示モードを終了 (Esc)
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> は現在全画面表示モードやで。
+fullscreen-warning-no-domain = このページは現在全画面表示モードやで。
+fullscreen-exit-button = 全画面表示モードを終わる (Esc)
 # "esc" is lowercase on mac keyboards, but uppercase elsewhere.
-fullscreen-exit-mac-button = 全画面表示モードを終了 (esc)
+fullscreen-exit-mac-button = 全画面表示モードを終わる (esc)
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
 # Variables
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
-pointerlock-warning-domain = マウスポインターは現在、 <span data-l10n-name="domain">{ $domain }</span> が制御しています。制御を取り戻すには、ESC キーを押してください。
-pointerlock-warning-no-domain = マウスポインターは現在、このページが制御しています。制御を取り戻すには、ESC キーを押してください。
+pointerlock-warning-domain = マウスポインターは今、 <span data-l10n-name="domain">{ $domain }</span> が制御しとるで。制御を取り戻すには、ESC キーを押してくれへん？
+pointerlock-warning-no-domain = マウスポインターは今、このページが制御しとるで。制御を取り戻すには、ESC キーを押してくれへん？
 
 ## Subframe crash notification
 
-crashed-subframe-message = <strong>このページの一部がクラッシュしました。</strong> { -brand-product-name } にこの問題を知らせて素早く修正するために、レポートを送信してください。
+crashed-subframe-message = <strong>このページの一部がクラッシュしたみたいやわ。</strong> { -brand-product-name } にこの問題を知らせて素早く修正するために、レポートを送ってくれへん？
 # The string for crashed-subframe-title.title should match crashed-subframe-message,
 # but without any markup.
 crashed-subframe-title =
-    .title = このページの一部がクラッシュしました。{ -brand-product-name } にこの問題を知らせて素早く修正するために、レポートを送信してください。
+    .title = このページの一部がクラッシュしたみたいやわ。{ -brand-product-name } にこの問題を知らせて素早く修正するために、レポートを送ってくれへん？
 crashed-subframe-learnmore-link =
     .value = 詳細
 crashed-subframe-submit =
@@ -555,7 +555,7 @@ bookmarks-manage-bookmarks =
     .label = ブックマークを管理
 bookmarks-recent-bookmarks-panel-subheader = 最近のブックマーク
 bookmarks-toolbar-chevron =
-    .tooltiptext = 残りのブックマークを表示します
+    .tooltiptext = 残りのブックマークを表示するわ
 bookmarks-sidebar-content =
     .aria-label = ブックマーク
 bookmarks-menu-button =
@@ -585,7 +585,7 @@ bookmarks-tools-toolbar-visibility-panel =
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
-            [true] ブックマークメニューをツールバーから削除
+            [true] ブックマークメニューをツールバーからほかす
            *[other] ブックマークメニューをツールバーに追加
         }
 bookmarks-search =
@@ -665,7 +665,7 @@ toolbar-button-open-file =
     .tooltiptext = ファイルを開きます ({ $shortcut })
 toolbar-button-synced-tabs =
     .label = 同期タブ
-    .tooltiptext = 他の端末のタブを表示します
+    .tooltiptext = 他の端末のタブを出したる
 # Variables
 # $shortcut (string) - Keyboard shortcut to open a new private browsing window
 toolbar-button-new-private-window =
@@ -674,7 +674,7 @@ toolbar-button-new-private-window =
 
 ## EME notification panel
 
-eme-notifications-drm-content-playing = このサイトの音声や映像には DRM ソフトウェアが使われており、{ -brand-short-name } での視聴が制限される可能性があります。
+eme-notifications-drm-content-playing = このサイトの音声や映像には DRM ソフトウェアが使われとるから、{ -brand-short-name } での視聴が制限されるかもしれんな。
 eme-notifications-drm-content-playing-manage = 設定を管理
 eme-notifications-drm-content-playing-manage-accesskey = M
 eme-notifications-drm-content-playing-dismiss = 閉じる
@@ -689,7 +689,7 @@ panel-save-update-password = パスワード
 
 # Variables:
 #  $name (String): The name of the addon that will be removed.
-addon-removal-title = { $name } を削除しますか？
+addon-removal-title = { $name } をほかしてもええか？
 addon-removal-abuse-report-checkbox = この拡張機能を { -vendor-short-name } に報告する
 
 ##
@@ -750,17 +750,17 @@ navbar-overflow =
 #   $shortcut (String): keyboard shortcut to print the page
 navbar-print =
     .label = 印刷
-    .tooltiptext = このページを印刷します... ({ $shortcut })
+    .tooltiptext = このページを印刷するで ({ $shortcut })
 navbar-home =
     .label = ホーム
-    .tooltiptext = { -brand-short-name } のホームページです
+    .tooltiptext = { -brand-short-name } のホームページやで
 navbar-library =
     .label = ブラウジングライブラリー
-    .tooltiptext = 履歴や保存したブックマークなどを表示します
+    .tooltiptext = 履歴や保存したブックマークなどを出す
 navbar-search =
     .title = 検索
 navbar-accessibility-indicator =
-    .tooltiptext = アクセシビリティ機能が有効です
+    .tooltiptext = アクセシビリティ機能が有効やで
 # Name for the tabs toolbar as spoken by screen readers. The word
 # "toolbar" is appended automatically and should not be included in
 # in the string
@@ -769,22 +769,22 @@ tabs-toolbar =
 tabs-toolbar-new-tab =
     .label = 新しいタブ
 tabs-toolbar-list-all-tabs =
-    .label = タブを一覧表示する
-    .tooltiptext = タブを一覧表示します
+    .label = タブ一覧を出す
+    .tooltiptext = タブ一覧を出したる
 
 ## Infobar shown at startup to suggest session-restore
 
 # <img data-l10n-name="icon"/> will be replaced by the application menu icon
-restore-session-startup-suggestion-message = <strong>前回のタブを開きますか？</strong> { -brand-short-name } アプリケーションメニュー<img data-l10n-name="icon"/>の履歴から前回のセッションを復元できます。
+restore-session-startup-suggestion-message = <strong>前回のタブを開いてもええか？</strong> { -brand-short-name } アプリケーションメニュー<img data-l10n-name="icon"/>の履歴から前回のセッションを復元できるで。
 restore-session-startup-suggestion-button = 方法を確認
 
 ## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
 
-data-reporting-notification-message = ユーザー体験の向上のため、{ -brand-short-name } は自動的にいくつかのデータを { -vendor-short-name } に送信します。
+data-reporting-notification-message = ユーザー体験の向上のため、{ -brand-short-name } は自動的にいくつかのデータを { -vendor-short-name } に送るで。
 data-reporting-notification-button =
     .label = 共有するデータを選択
     .accesskey = C
 
 ## ボスが来た
 rest-mode = 休憩モード
-rest-mode-description = ブラウザーは停止中です。OK または、任意のキーを押して再開します。
+rest-mode-description = ブラウザーは停止中や。OK または、任意のキーを押して再開できるで。
