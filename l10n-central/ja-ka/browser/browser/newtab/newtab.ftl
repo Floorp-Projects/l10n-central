@@ -22,7 +22,7 @@ newtab-search-box-search-button =
 
 # Variables
 #  $engine (String): the name of the user's default search engine
-newtab-search-box-handoff-text = { $engine } で検索するために、ワードかアドレス書いて
+newtab-search-box-handoff-text = { $engine } で検索するために、検索ワードかアドレス書いて
 newtab-search-box-handoff-text-no-engine = 検索ワードか URL 書いて
 # Variables
 #  $engine (String): the name of the user's default search engine
@@ -55,7 +55,7 @@ newtab-topsites-url-input =
 newtab-topsites-url-validation = 正しいアドレスを入力してくだされ
 newtab-topsites-image-url-label = カスタム画像 URL
 newtab-topsites-use-image-link = カスタム画像を使用...
-newtab-topsites-image-validation = 画像を読み込めませんでした。別の URL を試してください。
+newtab-topsites-image-validation = 画像を読み込めんかったわ。別の URL を試してくだせぇ。
 
 ## Top Sites - General form dialog buttons. These are verbs/actions.
 
@@ -67,9 +67,9 @@ newtab-topsites-add-button = 追加
 
 ## Top Sites - Delete history confirmation dialog.
 
-newtab-confirm-delete-history-p1 = 本当にこのページに関して保存されているあらゆる情報を履歴から削除しますか？
+newtab-confirm-delete-history-p1 = 本当にこのページについて保存されとる全部の情報を履歴から削除してもええか？
 # "This action" refers to deleting a page from history.
-newtab-confirm-delete-history-p2 = この操作は取り消せません。
+newtab-confirm-delete-history-p2 = この操作は取り消せんで。
 
 ## Top Sites - Sponsored label
 
@@ -79,8 +79,8 @@ newtab-topsite-sponsored = 広告
 
 # General tooltip for context menus.
 newtab-menu-section-tooltip =
-    .title = メニューを開きます
-    .aria-label = メニューを開きます
+    .title = メニューを開くで
+    .aria-label = メニューを開くで
 # Tooltip for dismiss button
 newtab-dismiss-button-tooltip =
     .title = 削除
@@ -89,8 +89,8 @@ newtab-dismiss-button-tooltip =
 # Variables:
 #  $title (String): The label or hostname of the site. This is for screen readers when the context menu button is focused/active.
 newtab-menu-content-tooltip =
-    .title = メニューを開きます
-    .aria-label = { $title } のコンテキストメニューを開く
+    .title = メニューを開くで
+    .aria-label = { $title } のコンテキストメニューを開くわ
 # Tooltip on an empty topsite box to open the New Top Site dialog.
 newtab-menu-topsites-placeholder-tooltip =
     .title = このサイトを編集
@@ -99,11 +99,11 @@ newtab-menu-topsites-placeholder-tooltip =
 ## Context Menu: These strings are displayed in a context menu and are meant as a call to action for a given page.
 
 newtab-menu-edit-topsites = 編集
-newtab-menu-open-new-window = 新しいウィンドウで開く
-newtab-menu-open-new-private-window = 新しいプライベートウィンドウで開く
+newtab-menu-open-new-window = 新しいウィンドウで開くわ
+newtab-menu-open-new-private-window = 新しいプライベートウィンドウで開くわ
 newtab-menu-dismiss = 閉じる
-newtab-menu-pin = ピン留め
-newtab-menu-unpin = ピン留めを外す
+newtab-menu-pin = ピン留めするわ
+newtab-menu-unpin = ピン留めを外すわ
 newtab-menu-delete-history = 履歴から削除
 newtab-menu-save-to-pocket = { -pocket-brand-name } に保存
 newtab-menu-delete-pocket = { -pocket-brand-name } から削除
@@ -114,11 +114,11 @@ newtab-menu-show-privacy-info = 私たちのスポンサーとあなたのプラ
 
 newtab-privacy-modal-button-done = 完了
 newtab-privacy-modal-button-manage = スポンサーコンテンツの設定を管理
-newtab-privacy-modal-header = プライバシーは重要です。
+newtab-privacy-modal-header = プライバシーは重要や。
 newtab-privacy-modal-paragraph-2 =
-    盛り上がる魅力あるストーリーに加えて、選ばれたスポンサーからあなたの興味を引きそうな厳選コンテンツを提供します。
-    <strong>ブラウジングデータに { -brand-product-name } の個人情報のコピーが残ることはありません。</strong>私たちとスポンサーのどちらもその情報を見ることはありませんので、ご安心ください。
-newtab-privacy-modal-link = 新しいタブページでのプライバシーの仕組みついて
+    盛り上がる魅力あるストーリーと、選ばれたスポンサーからあなたの興味を引きそうな厳選コンテンツを提供しますわ。
+    <strong>ブラウジングデータに { -brand-product-name } の個人情報のコピーが残ることはありまへん。</strong>私たちとスポンサーのどちらもその情報を見ることはないんで安心してくれ。
+newtab-privacy-modal-link = 新しいタブページでのプライバシーの仕組みはどうなってんねん
 
 ##
 
