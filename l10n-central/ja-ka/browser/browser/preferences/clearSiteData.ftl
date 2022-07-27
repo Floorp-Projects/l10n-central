@@ -5,7 +5,7 @@
 clear-site-data-window =
     .title = データを消去
     .style = width: 35em
-clear-site-data-description = { -brand-short-name } に保存した Cookie とサイトデータをすべて消去すると、ウェブサイトからログアウトされることがあります。また、オフラインのウェブコンテンツが削除されます。キャッシュデータの消去は、ログイン状態には影響しません。
+clear-site-data-description = { -brand-short-name } に保存した Cookie とサイトデータをぜんぶ消してしもうたら、ウェブサイトからログアウトされることがあるで。あと、オフラインのウェブコンテンツが消されちゃうで。キャッシュデータの消去は、ログイン状態には影響せんから安心してくれ。
 clear-site-data-close-key =
     .key = w
 # The parameters in parentheses in this string describe disk usage
@@ -24,7 +24,7 @@ clear-site-data-cookies-with-data =
 clear-site-data-cookies-empty =
     .label = Cookie とサイトデータ
     .accesskey = S
-clear-site-data-cookies-info = 消去すると、ウェブサイトからログアウトされることがあります
+clear-site-data-cookies-info = 消しちゃうと、ウェブサイトからログアウトされることがあるで
 # The parameters in parentheses in this string describe disk usage
 # in the format ($amount $unit), e.g. "Cached Web Content (24 KB)"
 # Variables:
@@ -41,7 +41,7 @@ clear-site-data-cache-with-data =
 clear-site-data-cache-empty =
     .label = ウェブコンテンツのキャッシュ
     .accesskey = W
-clear-site-data-cache-info = ウェブサイトの画像とデータの再読み込みが必要になります
+clear-site-data-cache-info = ウェブサイトの画像とデータの再読み込みが必要になっちゃうで
 clear-site-data-dialog =
     .buttonlabelaccept = 消去
     .buttonaccesskeyaccept = l

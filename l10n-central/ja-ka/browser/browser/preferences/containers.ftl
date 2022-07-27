@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 containers-window-new =
-    .title = 新しいコンテナーを追加する
+    .title = 新しいコンテナーを追加するで
     .style = width: 45em
 # Variables
 #   $name (String) - Name of the container
@@ -27,7 +27,7 @@ containers-name-label = 名前
     .accesskey = N
     .style = { -containers-labels-style }
 containers-name-text =
-    .placeholder = コンテナー名を入力してください
+    .placeholder = コンテナー名を入れてくれへん？
 containers-icon-label = アイコン
     .accesskey = I
     .style = { -containers-labels-style }
@@ -35,7 +35,7 @@ containers-color-label = 色
     .accesskey = o
     .style = { -containers-labels-style }
 containers-dialog =
-    .buttonlabelaccept = 完了
+    .buttonlabelaccept = 終ったで
     .buttonaccesskeyaccept = D
 containers-color-blue =
     .label = 青

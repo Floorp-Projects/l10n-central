@@ -13,15 +13,15 @@ colors-window =
 colors-close-key =
     .key = w
 
-colors-page-override = ウェブページが指定した配色を選択した配色で上書きする
+colors-page-override = ウェブページが選んだ色をあんたが選んだ色で上書きするで
     .accesskey = O
 
 colors-page-override-option-always =
-    .label = 常に上書き
+    .label = 常に上書きするで
 colors-page-override-option-auto =
-    .label = 高コントラストなテーマのみ
+    .label = 高コントラストなテーマのみするで
 colors-page-override-option-never =
-    .label = 上書きしない
+    .label = 上書きせえへんで
 
 colors-text-and-background = テキストと背景の色
 
@@ -32,11 +32,11 @@ colors-background = 背景
     .accesskey = B
 
 colors-use-system =
-    .label = システムの配色を使用する
+    .label = システムの配色を使用するで
     .accesskey = s
 
 colors-underline-links =
-    .label = リンクに下線を表示する
+    .label = リンクに下線を表示するで
     .accesskey = U
 
 colors-links-header = リンクの色

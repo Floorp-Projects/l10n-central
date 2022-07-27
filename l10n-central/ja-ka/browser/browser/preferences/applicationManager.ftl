@@ -12,11 +12,11 @@ app-manager-remove =
 
 # Variables:
 #   $type (String) - the URI scheme of the link (e.g. mailto:)
-app-manager-handle-protocol = { $type } リンクを取り扱うプログラムには次のものが登録されています。
+app-manager-handle-protocol = { $type } リンクを取り扱うプログラムにはこんなものが登録されとるで。
 
 # Variables:
 #   $type (String) - the MIME type (e.g. application/binary)
-app-manager-handle-file = { $type } ファイルを取り扱うプログラムには次のものが登録されています。
+app-manager-handle-file = { $type } ファイルを取り扱うプログラムにはこんなものが登録されとるで。
 
 ## These strings are followed, on a new line,
 ## by the URL or path of the application.
