@@ -1156,8 +1156,8 @@ verticalTab-setting =
 move-tabbar-position =
  .label = タブバーの位置をブックマークの下に移動
 
-enable-classic-menu =
- .label = メニューボタンをクラシック表示に変更
+tabbar-on-bottom = 
+ .label = ウインドウの最下部に表示しとく
 
 treestyletabSettings-l10 = ツリースタイル垂直タブの設定
 treestyletab-Settings = ツリー型タブにマウスがフォーカスされた場合、展開しとくようにしとく
