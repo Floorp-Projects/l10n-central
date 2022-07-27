@@ -18,7 +18,7 @@ calendar-ics-file-dialog-message-2 = ファイルからインポート:
 calendar-ics-file-dialog-calendar-menu-label = カレンダーにインポート:
 
 calendar-ics-file-dialog-items-loading-message =
-  .value = 項目を読み込んでいます...
+  .value = 項目を読み込んでるで...
 
 calendar-ics-file-dialog-search-input =
   .placeholder = 項目の絞り込み...
@@ -36,21 +36,21 @@ calendar-ics-file-dialog-sort-title-ascending =
 calendar-ics-file-dialog-sort-title-descending =
   .label = 件名で並べ替える (Z > A)
 
-calendar-ics-file-dialog-progress-message = インポートしています...
+calendar-ics-file-dialog-progress-message = インポートしてるで...
 
-calendar-ics-file-import-success = インポートが完了しました。
-calendar-ics-file-import-error = エラーが発生したためインポートに失敗しました。
+calendar-ics-file-import-success = インポートが完了したで。
+calendar-ics-file-import-error = エラーが発生したためインポートに失敗したで。
 
 calendar-ics-file-import-complete = インポート完了。
 calendar-ics-file-import-duplicates =
   { $duplicatesCount ->
-    [one] 1 件の項目が対象のカレンダーに既に存在しているため無視されました。
-   *[other] { $duplicatesCount } 件の項目が対象のカレンダーに既に存在しているため無視されました。
+    [one] 1 件の項目が対象のカレンダーにもう存在しているから無視されたで。
+   *[other] { $duplicatesCount } 件の項目が対象のカレンダーにもう存在しているから無視されたで。
   }
 calendar-ics-file-import-errors =
   { $errorsCount ->
-    [one] 1 件の項目がインポートに失敗しました。詳細はエラーコンソールを確認してください。
-   *[other] { $errorsCount } 件の項目がインポートに失敗しました。詳細はエラーコンソールを確認してください。
+    [one] 1 件の項目がインポートに失敗したで。詳細はエラーコンソールを確認してや。
+   *[other] { $errorsCount } 件の項目がインポートに失敗したで。詳細はエラーコンソールを確認してや。
   }
 
-calendar-ics-file-dialog-no-calendars = 予定または ToDo をインポートできるカレンダーがありません。
+calendar-ics-file-dialog-no-calendars = 予定または ToDo をインポートできるカレンダーがあらへん。

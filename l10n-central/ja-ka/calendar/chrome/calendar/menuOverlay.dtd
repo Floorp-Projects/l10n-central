@@ -18,15 +18,15 @@
 <!ENTITY calendar.publish.label			"予定を公開...">
 <!ENTITY calendar.publish.accesskey		"b">
 
-<!ENTITY calendar.deletecalendar.label		"選択したカレンダーを消去...">
+<!ENTITY calendar.deletecalendar.label		"選んだカレンダーを消去...">
 <!ENTITY calendar.deletecalendar.accesskey	"D">
-<!ENTITY calendar.unsubscribecalendar.label	"選択したカレンダーを購読解除...">
+<!ENTITY calendar.unsubscribecalendar.label	"選んだカレンダーを購読解除...">
 <!ENTITY calendar.unsubscribecalendar.accesskey	"U">
 
 <!-- LOCALIZATION NOTE (calendar.removecalendar.label): Removing the calendar
       is the general action of removing it, while deleting means to clear the
       data and unsubscribing means just taking it out of the calendar list. -->
-<!ENTITY calendar.removecalendar.label		"選択したカレンダーを削除...">
+<!ENTITY calendar.removecalendar.label		"選んだカレンダーを削除...">
 <!ENTITY calendar.removecalendar.accesskey	"R">
 
 <!ENTITY calendar.menu.customize.label		"カスタマイズ...">

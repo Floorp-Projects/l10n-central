@@ -15,7 +15,7 @@ new-tab = 新しいタブ
 add-bookmark = ブックマークに追加
 reader-view = リーダービュー
 # Meant to match the string displayed in an empty URL bar.
-open-location = URL または検索語句を入力
+open-location = URL か検索語句を入力
 share = 共有
 close-window = ウィンドウを閉じる
 open-sidebar = サイドバー

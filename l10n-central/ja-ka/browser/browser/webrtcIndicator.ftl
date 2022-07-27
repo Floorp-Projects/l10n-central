@@ -11,9 +11,9 @@
 # titles. It is not normally visible anywhere.
 webrtc-indicator-title = { -brand-short-name } — 共有インジケーター
 
-webrtc-sharing-window = 他のプログラムのウィンドウを共有しています。
-webrtc-sharing-browser-window = { -brand-short-name } を共有してます。
-webrtc-sharing-screen = 全画面を共有しています。
+webrtc-sharing-window = 他のプログラムのウィンドウを共有しとるで。
+webrtc-sharing-browser-window = { -brand-short-name } を共有しとるで。
+webrtc-sharing-screen = 全画面を共有しとるで。
 webrtc-stop-sharing-button = 共有を停止
 webrtc-microphone-unmuted =
   .title = マイクをオフにする
@@ -30,8 +30,8 @@ webrtc-minimize =
 # device sharing state in the OS notification area. We do not use these strings
 # on macOS, as global menu bar items do not have native tooltips.
 webrtc-camera-system-menu =
-  .label = カメラを共有しています。クリックすると共有を制御します。
+  .label = カメラを共有しとるで。クリックすると共有を制御するで。
 webrtc-microphone-system-menu =
-  .label = マイクを共有しています。クリックすると共有を制御します。
+  .label = マイクを共有しとるで。クリックすると共有を制御するで。
 webrtc-screen-system-menu =
-  .label = ウィンドウまたは画面をを共有しています。クリックすると共有を制御します。
+  .label = ウィンドウまたは画面をを共有しとるで。クリックすると共有を制御するで。

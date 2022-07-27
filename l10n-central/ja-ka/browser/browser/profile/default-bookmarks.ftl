@@ -10,7 +10,7 @@ default-bookmarks-title = ブックマーク
 default-bookmarks-heading = ブックマーク
 
 default-bookmarks-toolbarfolder = ブックマークツールバーフォルダー
-default-bookmarks-toolbarfolder-description = このフォルダーの中身がブックマークツールバーに表示されます
+default-bookmarks-toolbarfolder-description = このフォルダーの中身がブックマークツールバーに表示されるで
 
 # link title for https://www.mozilla.org/firefox/central/
 default-bookmarks-getting-started = Floorp を使いこなそう

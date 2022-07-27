@@ -8,7 +8,7 @@ set-desktop-background-accept =
     .label = デスクトップの背景に設定
 open-desktop-prefs =
     .label = デスクトップの設定を開く
-set-background-preview-unavailable = プレビューは利用できません
+set-background-preview-unavailable = プレビューは利用できやんねん
 # This refers to the wallpaper "spanning" multiple monitors when the
 # user has more than one. Only some of the entire image will be on
 # each monitor. This should ideally match the wording in Windows' own
@@ -24,6 +24,6 @@ set-background-center =
 set-background-stretch =
     .label = 拡大して表示
 set-background-fill =
-    .label = ページ幅に合わせる
+    .label = ページ幅に合わせとく
 set-background-fit =
-    .label = 画面サイズに合わせる
+    .label = 画面サイズに合わせとく

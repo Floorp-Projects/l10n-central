@@ -69,7 +69,7 @@ item-site-settings =
 item-offline-apps =
     .label = ウェブサイトのオフライン作業用データ
     .accesskey = O
-sanitize-everything-undo-warning = この操作は取り消せません。
+sanitize-everything-undo-warning = この操作は取り消せへんで。
 window-close =
     .key = w
 sanitize-button-ok =
@@ -81,8 +81,8 @@ sanitize-button-clearing =
 # Warning that appears when "Time range to clear" is set to "Everything" in Clear
 # Recent History dialog, provided that the user has not modified the default set
 # of history items to clear.
-sanitize-everything-warning = すべての履歴が消去されます。
+sanitize-everything-warning = すべての履歴が消されるで。
 # Warning that appears when "Time range to clear" is set to "Everything" in Clear
 # Recent History dialog, provided that the user has modified the default set of
 # history items to clear.
-sanitize-selected-warning = 選択した項目の履歴がすべて消去されます。
+sanitize-selected-warning = 選択した項目の履歴がすべて消されるで。

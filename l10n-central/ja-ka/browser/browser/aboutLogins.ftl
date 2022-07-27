@@ -18,12 +18,12 @@ fxaccounts-avatar-button =
 ## The ⋯ menu that is in the top corner of the page
 
 menu =
-  .title = メニューを開きます
+  .title = メニューを開くで
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = 他のブラウザーからインポート...
 about-logins-menu-menuitem-import-from-a-file = ファイルからインポート...
 about-logins-menu-menuitem-export-logins = ログイン情報をエクスポート...
-about-logins-menu-menuitem-remove-all-logins = ログイン情報をすべて消去...
+about-logins-menu-menuitem-remove-all-logins = ログイン情報を全部消去...
 menu-menuitem-preferences =
   { PLATFORM() ->
       [windows] オプション
@@ -44,12 +44,12 @@ login-list-username-reverse-option = ユーザー名 (降順)
 about-logins-login-list-alerts-option = 警告
 login-list-last-changed-option = 最終更新日時
 login-list-last-used-option = 最終利用日時
-login-list-intro-title = ログイン情報はありません
-login-list-intro-description = { -brand-product-name } にパスワードを保存すると、ここに表示されます。
-about-logins-login-list-empty-search-title = ログイン情報はありません
-about-logins-login-list-empty-search-description = 検索条件に一致するログイン情報はありません。
+login-list-intro-title = ログイン情報はあらへん
+login-list-intro-description = { -brand-product-name } にパスワードを保存すると、ここに表示されるねん。
+about-logins-login-list-empty-search-title = ログイン情報はあらへん
+about-logins-login-list-empty-search-description = 検索条件に一致するログイン情報はあらへん。
 login-list-item-title-new-login = 新しいログイン情報
-login-list-item-subtitle-new-login = 認証情報を入力してください
+login-list-item-subtitle-new-login = 認証情報を入力してや
 login-list-item-subtitle-missing-username = (ユーザー名なし)
 about-logins-list-item-breach-icon =
   .title = 漏洩したウェブサイト
@@ -64,14 +64,14 @@ about-logins-list-section-week = 直近 1 週間
 
 ## Introduction screen
 
-about-logins-login-intro-heading-logged-out2 = 保存したログイン情報をお探しですか？ 同期をオンにするか、インポートしましょう。
-about-logins-login-intro-heading-logged-in = 同期したログイン情報はありません。
-login-intro-description = 別の端末の { -brand-product-name } に保存したログイン情報は、以下の手順で取得できます:
-login-intro-instructions-fxa = ログイン情報を保存した端末で { -fxaccount-brand-name } を作成、またはログインしてください。
-login-intro-instructions-fxa-settings = [設定] > [同期] > [同期をオンにする...] で、ログイン情報とパスワードのチェックボックスを選択してください。
-login-intro-instructions-fxa-passwords-help = <a data-l10n-name="passwords-help-link">パスワードのサポート記事</a> で詳細なヘルプを確認できます。
-about-logins-intro-browser-only-import = 他のブラウザーにログイン情報が保存されている場合は、<a data-l10n-name="import-link">それらを { -brand-product-name } にインポートできます</a>。
-about-logins-intro-import2 = { -brand-product-name } 以外のブラウザーでログイン情報を保存した場合は、<a data-l10n-name="import-browser-link">そのブラウザーから</a> または <a data-l10n-name="import-file-link">ファイルから</a> インポートできます。
+about-logins-login-intro-heading-logged-out2 = 保存したログイン情報探しとるん？ 同期をオンにするか、インポートしましょう。
+about-logins-login-intro-heading-logged-in = 同期したログイン情報はあらへん。
+login-intro-description = ちゃう端末の { -brand-product-name } に保存したログイン情報は、以下の手順で取得できるで:
+login-intro-instructions-fxa = ログイン情報を保存した端末で { -fxaccount-brand-name } を作成、それかログインしてや。
+login-intro-instructions-fxa-settings = [設定] > [同期] > [同期をオンにする...] で、ログイン情報とパスワードのチェックボックスを選択してや。
+login-intro-instructions-fxa-passwords-help = <a data-l10n-name="passwords-help-link">パスワードのサポート記事</a> で詳細なヘルプを確認できるで。
+about-logins-intro-browser-only-import = ちゃうブラウザーにログイン情報が保存されているんやったら、<a data-l10n-name="import-link">そいつらを { -brand-product-name } にインポートできるで</a>。
+about-logins-intro-import2 = { -brand-product-name } じゃないのブラウザーでログイン情報を保存したんやったら、<a data-l10n-name="import-browser-link">そのブラウザーから</a> または <a data-l10n-name="import-file-link">ファイルから</a> インポートできるで。
 
 ## Login
 
@@ -79,19 +79,19 @@ login-item-new-login-title = 新しいログイン情報を作成
 login-item-edit-button = 編集
 about-logins-login-item-remove-button = 消去
 login-item-origin-label = ウェブサイトの URL
-login-item-tooltip-message = ログインするウェブサイトの正確な URL と一致することを確認してください。
+login-item-tooltip-message = ログインするウェブサイトの正確な URL と一致することを確認してや。
 login-item-origin =
   .placeholder = https://www.example.com
 login-item-username-label = ユーザー名
 about-logins-login-item-username =
   .placeholder = (ユーザー名なし)
 login-item-copy-username-button-text = コピー
-login-item-copied-username-button-text = コピーしました！
+login-item-copied-username-button-text = コピーしたで！
 login-item-password-label = パスワード
 login-item-password-reveal-checkbox =
   .aria-label = パスワードを表示
 login-item-copy-password-button-text = コピー
-login-item-copied-password-button-text = コピーしました！
+login-item-copied-password-button-text = コピーしたで！
 login-item-save-changes-button = 変更を保存
 login-item-save-new-button = 保存
 login-item-cancel-button = キャンセル
@@ -108,32 +108,32 @@ about-logins-os-auth-dialog-caption = { -brand-full-name }
 ## notes are only valid for English. Please test in your respected locale.
 
 # This message can be seen when attempting to edit a login in about:logins on Windows.
-about-logins-edit-login-os-auth-dialog-message-win = ログイン情報を編集するには、Windows でのあなたの資格情報を入力してください。これはアカウントのセキュリティ保護に役立ちます。
+about-logins-edit-login-os-auth-dialog-message-win = ログイン情報を編集するんやったら、Windows でのあんたの資格情報を入力してや。これはアカウントのセキュリティ保護に役立つで。
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = 保存したログイン情報を編集
 
 # This message can be seen when attempting to reveal a password in about:logins on Windows.
-about-logins-reveal-password-os-auth-dialog-message-win = ログイン情報を表示するには、Windows でのあなたの資格情報を入力してください。これはアカウントのセキュリティ保護に役立ちます。
+about-logins-reveal-password-os-auth-dialog-message-win = ログイン情報を表示するんやったら、Windows でのあんたの資格情報を入力してや。これはアカウントのセキュリティ保護に役立つで。
 # This message can be seen when attempting to reveal a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-reveal-password-os-auth-dialog-message-macosx = 保存したパスワードを表示
 
 # This message can be seen when attempting to copy a password in about:logins on Windows.
-about-logins-copy-password-os-auth-dialog-message-win = ログイン情報をコピーするには、Windows でのあなたの資格情報を入力してください。これはアカウントのセキュリティ保護に役立ちます。
+about-logins-copy-password-os-auth-dialog-message-win = ログイン情報をコピーするんやったら、Windows でのあんたの資格情報を入力してや。これはアカウントのセキュリティ保護に役立つで。
 # This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = 保存したパスワードをコピー
 
 # This message can be seen when attempting to export a password in about:logins on Windows.
-about-logins-export-password-os-auth-dialog-message-win = ログイン情報をエクスポートするには、Windows でのあなたの資格情報を入力してください。これはアカウントのセキュリティ保護に役立ちます。
+about-logins-export-password-os-auth-dialog-message-win = ログイン情報をエクスポートするんやったら、Windows でのあんたの資格情報を入力してや。これはアカウントのセキュリティ保護に役立つで。
 # This message can be seen when attempting to export a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-export-password-os-auth-dialog-message-macosx = 保存したログイン情報とパスワードをエクスポート
 
 ## Primary Password notification
 
-about-logins-primary-password-notification-message = 保存したログイン情報とパスワードを確認するには、マスターパスワードを入力してください
+about-logins-primary-password-notification-message = 保存したログイン情報とパスワードを確認するんやったら、マスターパスワードを入力してや
 master-password-reload-button =
   .label = ログイン
   .accesskey = L
@@ -144,56 +144,56 @@ confirmation-dialog-cancel-button = キャンセル
 confirmation-dialog-dismiss-button =
   .title = キャンセル
 
-about-logins-confirm-remove-dialog-title = このログイン情報を消去しますか？
-confirm-delete-dialog-message = この操作は元に戻せません。
+about-logins-confirm-remove-dialog-title = このログイン情報を消去するんか？
+confirm-delete-dialog-message = この操作は元に戻せへんで。
 about-logins-confirm-remove-dialog-confirm-button = 消去
 
 about-logins-confirm-remove-all-dialog-confirm-button-label =
   { $count ->
      [1] 消去
-    *[other] すべて消去
+    *[other] 全部消去
   }
 
 about-logins-confirm-remove-all-dialog-checkbox-label =
   { $count ->
-     [1] はい、このログイン情報を消去します
-    *[other] はい、これらのログイン情報を消去します
+     [1] うん、このログイン情報を消去するわ
+    *[other] うん、これらのログイン情報を消去するわ
   }
 
 about-logins-confirm-remove-all-dialog-title =
   { $count ->
-     [one] { $count } 個のログイン情報を消去しますか？
-    *[other] { $count } 個のログイン情報をすべて消去しますか？
+     [one] { $count } 個のログイン情報を消去するんか？
+    *[other] { $count } 個のログイン情報を全部消去するんか？
   }
-about-logins-confirm-remove-all-dialog-message = { -brand-short-name } に保存したログイン情報と、ここ表示される情報漏洩の警告が消去されます。この操作は元に戻せません。
+about-logins-confirm-remove-all-dialog-message = { -brand-short-name } に保存したログイン情報と、ここ表示される情報漏洩の警告が消去されんで。この操作は元に戻せへんで。
 
 about-logins-confirm-remove-all-sync-dialog-title =
   { $count ->
-     [one] すべての端末から { $count } 個のログイン情報を消去しますか？
-    *[other] すべての端末から { $count } 個のログイン情報をすべて消去しますか？
+     [one] 全部の端末から { $count } 個のログイン情報を消去するんか？
+    *[other] 全部の端末から { $count } 個のログイン情報を全部消去するんか？
   }
 about-logins-confirm-remove-all-sync-dialog-message=
   { $count ->
-     [1] { -fxaccount-brand-name } と同期した端末すべての { -brand-short-name } に保存したログイン情報が消去されます。ここ表示される情報漏洩の警告も消去されます。この操作は元に戻せません。
-    *[other] { -fxaccount-brand-name } と同期した端末すべての { -brand-short-name } に保存したログイン情報がすべて消去されます。ここ表示される情報漏洩の警告も消去されます。この操作は元に戻せません。
+     [1] { -fxaccount-brand-name } と同期した端末全部の { -brand-short-name } に保存したログイン情報が消去されんで。ここ表示される情報漏洩の警告も消去されんで。この操作は元に戻せへんで。
+    *[other] { -fxaccount-brand-name } と同期した端末全部の { -brand-short-name } に保存したログイン情報が全部消去されんで。ここ表示される情報漏洩の警告も消去されんで。この操作は元に戻せへんで。
   }
 
 about-logins-confirm-export-dialog-title = ログイン情報とパスワードをエクスポート
-about-logins-confirm-export-dialog-message = あなたのパスワードは可読テキストとして保存されます。(例: BadP@ssw0rd) エクスポートされたファイルを開ける人なら誰でも内容を読み取ることが可能になります。
+about-logins-confirm-export-dialog-message = あんたのパスワードは可読テキストとして保存されんで。(例: BadP@ssw0rd) エクスポートされたファイルを開ける人やったら誰でも内容を読み取ることができるようになんねん。
 about-logins-confirm-export-dialog-confirm-button = エクスポート...
 
 about-logins-alert-import-title = インポート完了
 about-logins-alert-import-message = インポート結果を表示
 
-confirm-discard-changes-dialog-title = 未保存の変更を破棄しますか？
-confirm-discard-changes-dialog-message = 変更内容はすべて失われます。
+confirm-discard-changes-dialog-title = 未保存の変更を破棄するんか？
+confirm-discard-changes-dialog-message = 変更内容は全部失われるで。
 confirm-discard-changes-dialog-confirm-button = 破棄
 
 ## Breach Alert notification
 
 about-logins-breach-alert-title = ウェブサイトからの情報漏洩
-breach-alert-text = ログイン情報の最後の更新の後に、このサイトからパスワードの漏洩、または盗難がありました。アカウントの保護のため、パスワードを変更してください。
-about-logins-breach-alert-date = この漏洩は { DATETIME($date, day: "numeric", month: "long", year: "numeric") } に発生しました。
+breach-alert-text = ログイン情報の最後の更新の後に、このサイトからパスワードの漏洩、それか盗難があったんや。アカウントの保護のため、パスワードを変更してや。
+about-logins-breach-alert-date = この漏洩は { DATETIME($date, day: "numeric", month: "long", year: "numeric") } に発生したで。
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
 about-logins-breach-alert-link = { $hostname } に移動
@@ -202,7 +202,7 @@ about-logins-breach-alert-learn-more-link = 詳細
 ## Vulnerable Password notification
 
 about-logins-vulnerable-alert-title = 脆弱なパスワード
-about-logins-vulnerable-alert-text2 = このパスワードは、データ漏洩があったと思われる別のアカウントでも使用されています。認証情報の使いまわしは、あなたのアカウントすべてを危険にさらします。パスワードを変更してください。
+about-logins-vulnerable-alert-text2 = このパスワードは、データ漏洩があったと思われる別のアカウントでも使用されてるねん。認証情報の使いまわしは、あんたのアカウント全部を危険にさらするわ。パスワードを変更してや。
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
 about-logins-vulnerable-alert-link = { $hostname } に移動
@@ -214,10 +214,10 @@ about-logins-vulnerable-alert-learn-more-link = 詳細
 # a new login that is identical to an existing saved login.
 # Variables:
 #   $loginTitle (String) - The title of the website associated with the login.
-about-logins-error-message-duplicate-login-with-link = そのユーザー名は { $loginTitle } では登録済みです。<a data-l10n-name="duplicate-link">既存の登録ユーザーに移動しますか？</a>
+about-logins-error-message-duplicate-login-with-link = そのユーザー名は { $loginTitle } では登録済みやで。<a data-l10n-name="duplicate-link">既存の登録ユーザーに移動するんか？</a>
 
 # This is a generic error message.
-about-logins-error-message-default = このパスワードの保存中にエラーが発生しました。
+about-logins-error-message-default = このパスワードの保存中にエラーが発生したで。
 
 ## Login Export Dialog
 
@@ -260,46 +260,46 @@ about-logins-import-dialog-items-modified =
 
 about-logins-import-dialog-items-no-change =
   { $count ->
-     *[other] <span>ログイン情報の重複:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(インポートされませんでした)</span>
+     *[other] <span>ログイン情報の重複:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(インポートされへんかった)</span>
   }
 about-logins-import-dialog-items-error =
   { $count ->
-      *[other] <span>エラー:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(インポートされませんでした)</span>
+      *[other] <span>エラー:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(インポートされへんかった)</span>
   }
 about-logins-import-dialog-done = 完了
 
 about-logins-import-dialog-error-title = インポートエラー
-about-logins-import-dialog-error-conflicting-values-title = 一つのログイン情報に衝突する複数の値があります
-about-logins-import-dialog-error-conflicting-values-description = 例えば、一つのログイン情報に複数の username, password, URL があります。
-about-logins-import-dialog-error-file-format-title = ファイルフォーマットに問題があります
-about-logins-import-dialog-error-file-format-description = ヘッダーの列が正しくないか不足しています。ファイルに username, password, URL の列が含まれているか確認してください。
-about-logins-import-dialog-error-file-permission-title = ファイルを読み込めませんでした
-about-logins-import-dialog-error-file-permission-description = { -brand-short-name } には指定のファイルを読み込む権限がありません。ファイルの権限を変更して試してください。
-about-logins-import-dialog-error-unable-to-read-title = ファイルを解析できませんでした
-about-logins-import-dialog-error-unable-to-read-description = CSV ファイルまたは TSV ファイルの内容を確認してください。
-about-logins-import-dialog-error-no-logins-imported = ログイン情報はインポートされませんでした
+about-logins-import-dialog-error-conflicting-values-title = 一つのログイン情報に衝突する複数の値があるで
+about-logins-import-dialog-error-conflicting-values-description = 例えば、一つのログイン情報に複数の username, password, URL があるで。
+about-logins-import-dialog-error-file-format-title = ファイルフォーマットに問題があるで
+about-logins-import-dialog-error-file-format-description = ヘッダーの列が正しくないか不足してるで。ファイルに username, password, URL の列が含まれているか確認してや。
+about-logins-import-dialog-error-file-permission-title = ファイルを読み込めへんかったんや
+about-logins-import-dialog-error-file-permission-description = { -brand-short-name } には指定のファイルを読み込む権限があらへんねん。ファイルの権限を変更して試してや。
+about-logins-import-dialog-error-unable-to-read-title = ファイルを解析できへんかった
+about-logins-import-dialog-error-unable-to-read-description = CSV ファイルか、 TSV ファイルの内容を確認してや。
+about-logins-import-dialog-error-no-logins-imported = ログイン情報はインポートされへんかったわ
 about-logins-import-dialog-error-learn-more = 詳細
 about-logins-import-dialog-error-try-import-again = インポートを再試行...
 about-logins-import-dialog-error-cancel = キャンセル
 
 about-logins-import-report-title = インポート結果
-about-logins-import-report-description = ログイン情報とパスワードが { -brand-short-name } にインポートされました。
+about-logins-import-report-description = ログイン情報とパスワードが { -brand-short-name } にインポートされへんかった。
 
 #
 # Variables:
 #  $number (number) - The number of the row
 about-logins-import-report-row-index = { $number } 行
-about-logins-import-report-row-description-no-change = 重複: 既存のログイン情報と同一です
-about-logins-import-report-row-description-modified = 既存のログイン情報を更新しました
-about-logins-import-report-row-description-added = 新しいログイン情報を追加しました
-about-logins-import-report-row-description-error = エラー: 列がありません
+about-logins-import-report-row-description-no-change = 重複: 既存のログイン情報と同一やで
+about-logins-import-report-row-description-modified = 既存のログイン情報を更新したで
+about-logins-import-report-row-description-added = 新しいログイン情報を追加したで
+about-logins-import-report-row-description-error = エラー: 列があらへんで
 
 ##
 ## Variables:
 ##  $field (String) - The name of the field from the CSV file for example url, username or password
 
-about-logins-import-report-row-description-error-multiple-values = エラー: 複数の { $field } があります
-about-logins-import-report-row-description-error-missing-field = エラー: { $field } がありません
+about-logins-import-report-row-description-error-multiple-values = エラー: 複数の { $field } があるで
+about-logins-import-report-row-description-error-missing-field = エラー: { $field } があらへんで
 
 ##
 ## Variables:
@@ -315,11 +315,11 @@ about-logins-import-report-modified =
   }
 about-logins-import-report-no-change =
   { $count ->
-      *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">重複</div> <div data-l10n-name="not-imported">(インポートされませんでした)</div>
+      *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">重複</div> <div data-l10n-name="not-imported">(インポートされへんかった)</div>
   }
 about-logins-import-report-error =
   { $count ->
-      *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">エラー</div> <div data-l10n-name="not-imported">(インポートされませんでした)</div>
+      *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">エラー</div> <div data-l10n-name="not-imported">(インポートされへんかった)</div>
   }
 
 ## Logins import report page

@@ -100,14 +100,14 @@ security-view-identity-validity =
 security-view-privacy =
     .value = プライバシーと履歴
 
-security-view-privacy-history-value = 昨日までにこのサイトを表示したことがあるか
-security-view-privacy-sitedata-value = このサイトはコンピューターに情報を保存しているか
+security-view-privacy-history-value = 昨日までにこのサイトを表示したことがあんのか
+security-view-privacy-sitedata-value = このサイトはコンピューターに情報を保存しとるんか
 
 security-view-privacy-clearsitedata =
     .label = Cookie とサイトデータを消去
     .accesskey = C
 
-security-view-privacy-passwords-value = このサイトのパスワードを保存しているか
+security-view-privacy-passwords-value = このサイトのパスワードを保存しとるんか
 
 security-view-privacy-viewpasswords =
     .label = パスワードを表示...
@@ -124,11 +124,11 @@ help-button =
 ##   $value (number) - Amount of data being stored
 ##   $unit (string) - The unit of data being stored (Usually KB)
 
-security-site-data-cookies = はい、Cookie と { $value } { $unit } のサイトデータ
-security-site-data-only = はい、{ $value } { $unit } のサイトデータ
+security-site-data-cookies = うん、Cookie と { $value } { $unit } のサイトデータ
+security-site-data-only = うん、{ $value } { $unit } のサイトデータ
 
-security-site-data-cookies-only = はい、Cookie のみ
-security-site-data-no = いいえ
+security-site-data-cookies-only = うん、Cookie のみ
+security-site-data-no = いや
 
 ##
 
@@ -148,8 +148,8 @@ media-link = アイコン
 media-input = 入力
 media-video = 動画
 media-audio = 音声
-saved-passwords-yes = はい
-saved-passwords-no = いいえ
+saved-passwords-yes = うん
+saved-passwords-no = いや
 
 no-page-title =
     .value = ページタイトルなし:
@@ -158,13 +158,13 @@ general-quirks-mode =
 general-strict-mode =
     .value = Standards Compliant (標準準拠) モード
 page-info-security-no-owner =
-    .value = 検証され信頼できる運営者情報はありません
-media-select-folder = 画像を保存するフォルダーを選択してください
+    .value = 検証され信頼できる運営者情報はあらへん
+media-select-folder = 画像を保存するフォルダーを選択してや
 media-unknown-not-cached =
     .value = 不明 (キャッシュなし)
 permissions-use-default =
     .label = 標準設定を使用する
-security-no-visits = いいえ
+security-no-visits = いや
 
 # This string is used to display the number of meta tags
 # in the General Tab
@@ -179,8 +179,8 @@ general-meta-tags =
 #   $visits (number) - The number of previous visits
 security-visits-number =
     { $visits ->
-        [0] いいえ
-       *[other] はい、{ $visits } 回
+        [0] いや
+       *[other] うん、{ $visits } 回
     }
 
 # This string is used to display the size of a media file

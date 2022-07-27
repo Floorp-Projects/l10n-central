@@ -7,7 +7,7 @@
 
 # The overflow menu is the menu that appears if you click the chevron (>> button) in the location bar.
 customize-menu-unpin-from-overflowmenu =
-    .label = オーバーフローメニューからピン留めを外す
+    .label = オーバーフローメニューからピン留めを外しとく
     .accesskey = U
 customize-menu-add-to-toolbar =
     .label = ツールバーに追加
@@ -19,7 +19,7 @@ customize-menu-add-to-overflowmenu =
 ## Forget Button
 
 # The forget button can be added to the toolbar or overflow menu via the cutomization menu.
-panic-button-thankyou-msg1 = 最近の履歴を消去しました。
-panic-button-thankyou-msg2 = 安全なブラウジングをお楽しみください！
+panic-button-thankyou-msg1 = 最近の履歴を消したで。
+panic-button-thankyou-msg2 = 安全なブラウジングを楽しんでや！
 panic-button-thankyou-button =
     .label = OK

@@ -8,15 +8,15 @@
 <!ENTITY lightning.toolbar.task.name.accesskey	"T">
 
 <!ENTITY lightning.toolbar.sync.label		"同期">
-<!ENTITY lightning.toolbar.sync.tooltip		"カレンダーを更新して変更を同期します">
+<!ENTITY lightning.toolbar.sync.tooltip		"カレンダーを更新して変更を同期してや">
 <!ENTITY lightning.toolbar.delete.label		"削除">
-<!ENTITY lightning.toolbar.delete.tooltip	"選択した予定または ToDo を削除します">
+<!ENTITY lightning.toolbar.delete.tooltip	"選択した予定または ToDo を削除してや">
 <!ENTITY lightning.toolbar.edit.label		"編集">
-<!ENTITY lightning.toolbar.edit.tooltip		"選択した予定または ToDo を編集します">
+<!ENTITY lightning.toolbar.edit.tooltip		"選択した予定または ToDo を編集してや">
 <!ENTITY lightning.toolbar.gototoday.label	"今日に移動">
-<!ENTITY lightning.toolbar.gototoday.tooltip	"今日の日付へ移動します">
+<!ENTITY lightning.toolbar.gototoday.tooltip	"今日の日付へ移動してや">
 <!ENTITY lightning.toolbar.print.label		"印刷">
-<!ENTITY lightning.toolbar.print.tooltip	"予定または ToDo を印刷します">
+<!ENTITY lightning.toolbar.print.tooltip	"予定または ToDo を印刷してや">
 
 <!-- Mode Toolbar -->
 <!ENTITY lightning.toolbar.calendar.label	"カレンダー">
@@ -28,9 +28,9 @@
 
 <!-- Toolbar write button -->
 <!ENTITY lightning.toolbar.newevent.label	"予定">
-<!ENTITY lightning.toolbar.newevent.tooltip	"新しい予定を作成します">
+<!ENTITY lightning.toolbar.newevent.tooltip	"新しい予定を作成してや">
 <!ENTITY lightning.toolbar.newtask.label	"ToDo">
-<!ENTITY lightning.toolbar.newtask.tooltip	"新しい ToDo を作成します">
+<!ENTITY lightning.toolbar.newtask.tooltip	"新しい ToDo を作成してや">
 
 <!-- Calendar and Task Mode Toolbar -->
 <!ENTITY lightning.toolbar.day.label		"日表示">
@@ -44,8 +44,8 @@
 <!-- LOCALIZATION NOTE: the same as appmenuButton.label and appmenuButton1.tooltip
      from messenger.dtd -->
 <!ENTITY lightning.toolbar.appmenuButton.label		"アプリメニュー">
-<!ENTITY lightning.toolbar.appmenuButton1.tooltip	"&brandShortName; のメニューを表示します">
+<!ENTITY lightning.toolbar.appmenuButton1.tooltip	"&brandShortName; のメニューを表示してや">
 <!ENTITY lightning.toolbar.calendarmenu.label		"カレンダーペイン">
 <!ENTITY lightning.toolbar.calendarmenu.accesskey	"P">
-<!ENTITY lightning.toolbar.calendarpane.label		"カレンダーペインを表示します">
+<!ENTITY lightning.toolbar.calendarpane.label		"カレンダーペインを表示してや">
 <!ENTITY lightning.toolbar.calendarpane.accesskey	"P">

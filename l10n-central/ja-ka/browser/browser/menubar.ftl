@@ -150,13 +150,13 @@ menu-view-full-zoom-actual-size =
     .label = 等倍
     .accesskey = A
 menu-view-full-zoom-toggle =
-    .label = 文字サイズのみ変更
+    .label = 文字サイズだけ変える
     .accesskey = T
 menu-view-page-style-menu =
     .label = スタイルシート
     .accesskey = y
 menu-view-page-style-no-style =
-    .label = スタイルシートを使用しない
+    .label = スタイルシートを使わへん
     .accesskey = n
 menu-view-page-basic-style =
     .label = 標準スタイルシート
@@ -311,7 +311,7 @@ menu-help-enter-troubleshoot-mode2 =
     .label = トラブルシューティングモード...
     .accesskey = M
 menu-help-exit-troubleshoot-mode =
-    .label = トラブルシューティングモードをオフにする
+    .label = トラブルシューティングモードをオフにしとく
     .accesskey = M
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.

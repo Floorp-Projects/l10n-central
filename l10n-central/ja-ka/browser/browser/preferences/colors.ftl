@@ -19,7 +19,7 @@ colors-page-override = ウェブページが指定した配色を選択した配
 colors-page-override-option-always =
     .label = 常に上書き
 colors-page-override-option-auto =
-    .label = 高コントラストなテーマのみ
+    .label = 高コントラストなテーマだけ
 colors-page-override-option-never =
     .label = 上書きしない
 

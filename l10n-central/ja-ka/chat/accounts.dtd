@@ -15,8 +15,8 @@
 <!ENTITY accountManager.close.commandkey	"a">
 <!-- This title must be short, displayed with a big font size -->
 <!ENTITY accountManager.noAccount.title		"アカウントが設定されていません">
-<!ENTITY accountManager.noAccount.description	"[&accountManager.newAccount.label;] ボタンをクリックし、&brandShortName; に従ってアカウントを設定してください。">
-<!ENTITY account.autoSignOn.label		"起動時に自動ログインする">
+<!ENTITY accountManager.noAccount.description	"[&accountManager.newAccount.label;] ボタンをクリックし、&brandShortName; に従ってアカウントを設定してや。">
+<!ENTITY account.autoSignOn.label		"起動時に自動ログインしとく">
 <!ENTITY account.autoSignOn.accesskey		"S">
 <!ENTITY account.connect.label			"接続">
 <!ENTITY account.connect.accesskey		"o">

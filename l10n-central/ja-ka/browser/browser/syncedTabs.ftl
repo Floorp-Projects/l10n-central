@@ -3,12 +3,12 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 synced-tabs-sidebar-title = 同期タブ
-synced-tabs-sidebar-noclients-subtitle = 他の端末のタブを表示しますか？
-synced-tabs-sidebar-intro = 他の端末のタブの一覧を表示できます。
-synced-tabs-sidebar-unverified = あなたのアカウントは検証する必要があります。
-synced-tabs-sidebar-notabs = タブがありません
+synced-tabs-sidebar-noclients-subtitle = 他の端末のタブを表示するか？
+synced-tabs-sidebar-intro = 他の端末のタブの一覧を表示できるで。
+synced-tabs-sidebar-unverified = あなたのアカウントは検証する必要があるで。
+synced-tabs-sidebar-notabs = タブがあらへん
 synced-tabs-sidebar-open-settings = 同期の設定を開く
-synced-tabs-sidebar-tabsnotsyncing = タブの同期をオンにすると、他の端末のタブの一覧を表示できます。
+synced-tabs-sidebar-tabsnotsyncing = タブの同期をオンにしたら、他の端末のタブの一覧を表示できるで。
 synced-tabs-sidebar-connect-another-device = 他の端末を接続
 synced-tabs-sidebar-search =
     .placeholder = 同期したタブを検索
@@ -40,4 +40,4 @@ synced-tabs-context-sync-now =
     .label = 今すぐ同期
     .accesskey = S
 synced-tabs-fxa-sign-in = ログインして同期
-synced-tabs-turn-on-sync = 同期をオンにする
+synced-tabs-turn-on-sync = 同期をオンにしとく

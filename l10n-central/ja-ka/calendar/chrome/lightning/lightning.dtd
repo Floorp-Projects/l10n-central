@@ -38,13 +38,13 @@
      These strings are used in the calendar wizard and the calendar properties dialog, but are only
      displayed when setting/using a caldav calendar -->
 <!ENTITY lightning.calendarproperties.email.label		"メール:">
-<!ENTITY lightning.calendarproperties.forceEmailScheduling.label	"メールクライアント側のスケジュールを優先する">
+<!ENTITY lightning.calendarproperties.forceEmailScheduling.label	"メールクライアント側のスケジュールを優先しとく">
 <!-- LOCALIZATON NOTE(lightning.calendarproperties.forceEmailScheduling.tooltiptext1,
      lightning.calendarproperties.forceEmailScheduling.tooltiptext2)
      - tooltiptext1 is used in the calendar wizard when setting a new caldav calendar
      - tooltiptext2 is used in the calendar properties dialog for caldav calendars -->
-<!ENTITY lightning.calendarproperties.forceEmailScheduling.tooltiptext1	"今のところ、カレンダーサーバーで予定を管理している場合、このカレンダーをプロパティダイアログでセットアップした後にしか有効にできません。">
-<!ENTITY lightning.calendarproperties.forceEmailScheduling.tooltiptext2	"このオプションは、カレンダーサーバーで予定を管理している場合のみ利用可能です。有効にすると、予定をサーバーではなくメールクライアント側で処理できるようにします。">
+<!ENTITY lightning.calendarproperties.forceEmailScheduling.tooltiptext1	"今のところ、カレンダーサーバーで予定を管理しとるんやったら、このカレンダーをプロパティダイアログでセットアップした後にしか有効にできやん。">
+<!ENTITY lightning.calendarproperties.forceEmailScheduling.tooltiptext2	"このオプションは、カレンダーサーバーで予定を管理しとるんやったら利用可能です。有効にしとくと、予定をサーバーではなくメールクライアント側で処理できるようにしてや。">
 
 <!-- The notifications settings in the properties dialog -->
 <!ENTITY lightning.calendarproperties.notifications.label	"通知">
@@ -52,46 +52,46 @@
 
 <!-- iMIP Bar (meeting support) -->
 <!ENTITY lightning.imipbar.btnAccept.label			"参加">
-<!ENTITY lightning.imipbar.btnAccept2.tooltiptext		"招待を承諾します">
+<!ENTITY lightning.imipbar.btnAccept2.tooltiptext		"招待を承諾してや">
 <!ENTITY lightning.imipbar.btnAcceptRecurrences.label		"すべて参加">
-<!ENTITY lightning.imipbar.btnAcceptRecurrences2.tooltiptext	"すべての招待を承諾して参加します">
+<!ENTITY lightning.imipbar.btnAcceptRecurrences2.tooltiptext	"すべての招待を承諾して参加してや">
 <!ENTITY lightning.imipbar.btnAdd.label				"追加">
-<!ENTITY lightning.imipbar.btnAdd.tooltiptext			"カレンダーに予定を追加します">
+<!ENTITY lightning.imipbar.btnAdd.tooltiptext			"カレンダーに予定を追加してや">
 <!ENTITY lightning.imipbar.btnDecline.label			"辞退">
-<!ENTITY lightning.imipbar.btnDecline2.tooltiptext		"招待を辞退します">
+<!ENTITY lightning.imipbar.btnDecline2.tooltiptext		"招待を辞退してや">
 <!ENTITY lightning.imipbar.btnDeclineRecurrences.label		"すべて辞退">
-<!ENTITY lightning.imipbar.btnDeclineRecurrences2.tooltiptext	"すべての招待を辞退します">
+<!ENTITY lightning.imipbar.btnDeclineRecurrences2.tooltiptext	"すべての招待を辞退してや">
 <!ENTITY lightning.imipbar.btnDeclineCounter.label		"拒否">
-<!ENTITY lightning.imipbar.btnDeclineCounter.tooltiptext	"対案を拒否します">
+<!ENTITY lightning.imipbar.btnDeclineCounter.tooltiptext	"対案を拒否してや">
 <!ENTITY lightning.imipbar.btnDelete.label			"削除">
-<!ENTITY lightning.imipbar.btnDelete.tooltiptext		"カレンダーから削除します">
+<!ENTITY lightning.imipbar.btnDelete.tooltiptext		"カレンダーから削除してや">
 <!ENTITY lightning.imipbar.btnDetails.label			"詳細...">
-<!ENTITY lightning.imipbar.btnDetails.tooltiptext		"予定の詳細を表示します">
+<!ENTITY lightning.imipbar.btnDetails.tooltiptext		"予定の詳細を表示してや">
 <!ENTITY lightning.imipbar.btnDoNotShowImipBar.label		"今後はこれらのメッセージを表示しない">
 <!ENTITY lightning.imipbar.btnGoToCalendar.label		"カレンダー">
-<!ENTITY lightning.imipbar.btnGoToCalendar.tooltiptext		"カレンダータブへ移動します">
+<!ENTITY lightning.imipbar.btnGoToCalendar.tooltiptext		"カレンダータブへ移動してや">
 <!ENTITY lightning.imipbar.btnMore.label			"その他">
-<!ENTITY lightning.imipbar.btnMore.tooltiptext			"クリックするとその他のオプションを表示します">
+<!ENTITY lightning.imipbar.btnMore.tooltiptext			"クリックしとくとその他のオプションを表示してや">
 <!ENTITY lightning.imipbar.btnReconfirm2.label			"再確認">
-<!ENTITY lightning.imipbar.btnReconfirm.tooltiptext		"主催者に再確認のメールを送信します">
+<!ENTITY lightning.imipbar.btnReconfirm.tooltiptext		"主催者に再確認のメールを送信してや">
 <!ENTITY lightning.imipbar.btnReschedule.label			"予定変更">
-<!ENTITY lightning.imipbar.btnReschedule.tooltiptext		"予定を組み直します">
+<!ENTITY lightning.imipbar.btnReschedule.tooltiptext		"予定を組み直してや">
 <!ENTITY lightning.imipbar.btnSaveCopy.label			"コピーを保存">
-<!ENTITY lightning.imipbar.btnSaveCopy.tooltiptext		"主催者への返信とは別に、予定のコピーをカレンダーに保存します。参加者のリストは消去されます。">
+<!ENTITY lightning.imipbar.btnSaveCopy.tooltiptext		"主催者への返信とは別に、予定のコピーをカレンダーに保存してや。参加者のリストは消されるで。">
 <!ENTITY lightning.imipbar.btnTentative.label			"仮承諾">
-<!ENTITY lightning.imipbar.btnTentative2.tooltiptext		"招待を仮承諾します">
+<!ENTITY lightning.imipbar.btnTentative2.tooltiptext		"招待を仮承諾してや">
 <!ENTITY lightning.imipbar.btnTentativeRecurrences.label	"すべて仮承諾">
-<!ENTITY lightning.imipbar.btnTentativeRecurrences2.tooltiptext	"すべての招待を仮承諾します">
+<!ENTITY lightning.imipbar.btnTentativeRecurrences2.tooltiptext	"すべての招待を仮承諾してや">
 <!ENTITY lightning.imipbar.btnUpdate.label			"更新">
-<!ENTITY lightning.imipbar.btnUpdate.tooltiptext		"カレンダーの予定を更新します">
-<!ENTITY lightning.imipbar.description				"メッセージに参加依頼が含まれています。">
+<!ENTITY lightning.imipbar.btnUpdate.tooltiptext		"カレンダーの予定を更新してや">
+<!ENTITY lightning.imipbar.description				"メッセージに参加依頼が含まれとんねん。">
 
 <!ENTITY lightning.imipbar.btnSend.label			"返答を今すぐ送信">
-<!ENTITY lightning.imipbar.btnSend.tooltiptext			"返答を主催者へ送信します">
-<!ENTITY lightning.imipbar.btnSendSeries.tooltiptext		"一連の招待の返答を主催者へ送信します">
+<!ENTITY lightning.imipbar.btnSend.tooltiptext			"返答を主催者へ送信してや">
+<!ENTITY lightning.imipbar.btnSendSeries.tooltiptext		"一連の招待の返答を主催者へ送信してや">
 <!ENTITY lightning.imipbar.btnDontSend.label			"返答を送信しない">
-<!ENTITY lightning.imipbar.btnDontSend.tooltiptext		"返答を主催者へ送信せずに参加状態を変更します">
-<!ENTITY lightning.imipbar.btnDontSendSeries.tooltiptext	"返答を主催者へ送信せずに一連の招待の参加状態を変更します">
+<!ENTITY lightning.imipbar.btnDontSend.tooltiptext		"返答を主催者へ送信せずに参加状態を変更してや">
+<!ENTITY lightning.imipbar.btnDontSendSeries.tooltiptext	"返答を主催者へ送信せずに一連の招待の参加状態を変更してや">
 
 <!-- Lightning specific keybindings -->
 <!ENTITY lightning.keys.event.showCalendar.key		"C">
@@ -103,7 +103,7 @@
 
 <!-- Account Central page -->
 <!-- (^a^) mail/chrome/messenger/msgAccountCentral.dtd と表現をそろえる -->
-<!ENTITY lightning.acctCentral.newCalendar.label	"新しいカレンダーを作成する">
+<!ENTITY lightning.acctCentral.newCalendar.label	"新しいカレンダーを作成しとく">
 
 <!-- today-pane-specific -->
 <!ENTITY todaypane.showMinimonth.label			"日付選択を表示">
