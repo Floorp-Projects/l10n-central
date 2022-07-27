@@ -6,7 +6,7 @@
 
 site-data-settings-window =
     .title = Cookie とサイトデータを管理
-site-data-settings-description = 次のウェブサイトがコンピューターに Cookie とサイトデータを格納しています。{ -brand-short-name } はユーザーが削除するまで永続ストレージでウェブサイトからのデータを保持します。空き領域が必要になると非永続ストレージではウェブサイトからのデータが削除されます。
+site-data-settings-description = 次のウェブサイトがコンピュータに Cookie とサイトデータ格納しとんのや。 { -brand-short-nane } はユーザが消すまで永続ストレージでウェブサイトからのデータ保持しよんねん。空き領域が必要になってきたら日永続ストレージやとウェブサイトからデータ消されるわ。
 site-data-search-textbox =
     .placeholder = ウェブサイトを検索
     .accesskey = S
@@ -48,10 +48,10 @@ site-data-removing-dialog =
 
 site-data-removing-header = Cookie とサイトデータの削除
 
-site-data-removing-desc = Cookie とサイトデータを削除すると、ウェブサイトからログアウトされます。本当に削除してもよろしいですか？
+site-data-removing-desc = Cookie とサイトデータ消したら、ウェブサイトからログアウトされるわ。ホンマに消してもええか？
 
 # Variables:
 #   $baseDomain (String) - The single domain for which data is being removed
-site-data-removing-single-desc = Cookie とサイトデータを削除すると、ウェブサイトからログアウトされます。本当に <strong>{ $baseDomain }</strong> の Cookie とサイトデータを削除してもよろしいですか？
+site-data-removing-single-desc = Cookie とサイトデータを消したら、ウェブサイトからログアウトされるねん。ホンマに<strong>{ $baseDomain }</strong> の Cookie とサイトデータ消してもええんか？
 
-site-data-removing-table = 次のウェブサイトの Cookie とサイトデータが削除されます
+site-data-removing-table = 次のウェブサイトの Cookie とサイトデータが消されんねん

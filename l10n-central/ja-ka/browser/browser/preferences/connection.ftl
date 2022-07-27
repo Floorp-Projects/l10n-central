@@ -19,13 +19,13 @@ connection-disable-extension =
 connection-proxy-configure = インターネット接続に使用するプロキシーの設定
 
 connection-proxy-option-no =
-    .label = プロキシーを使用しない
+    .label = プロキシーを使わへん
     .accesskey = y
 connection-proxy-option-system =
-    .label = システムのプロキシー設定を利用する
+    .label = システムのプロキシー設定を使う
     .accesskey = U
 connection-proxy-option-auto =
-    .label = このネットワークのプロキシー設定を自動検出する
+    .label = このネットワークのプロキシー設定を自動検出やっとく
     .accesskey = w
 connection-proxy-option-manual =
     .label = 手動でプロキシーを設定する
@@ -61,7 +61,7 @@ connection-proxy-noproxy = プロキシーなしで接続
 connection-proxy-noproxy-desc = 例: .mozilla.org, .net.nz, 192.168.1.0/24
 
 # Do not translate "localhost", "127.0.0.1/8" and "::1". (You can translate "and".)
-connection-proxy-noproxy-localhost-desc-2 = localhost, 127.0.0.1/8, ::1 へは常にプロキシーなしで接続します。
+connection-proxy-noproxy-localhost-desc-2 = localhost, 127.0.0.1/8, ::1 へは常にプロキシーなしで接続するで。
 
 connection-proxy-autotype =
     .label = 自動プロキシー設定スクリプト URL
@@ -72,9 +72,9 @@ connection-proxy-reload =
     .accesskey = e
 
 connection-proxy-autologin =
-    .label = パスワードを保存してある場合は認証を確認しない
+    .label = パスワードを保存してある場合は認証を確認せえへん
     .accesskey = i
-    .tooltip = このオプションは、プロキシーへのパスワードが保存してある場合、確認することなく認証を行います。認証に失敗した場合は確認を行います。
+    .tooltip = このオプションは、プロキシーへのパスワードが保存してある場合、確認せんと認証すんねん。認証に失敗したら確認するで。
 
 connection-proxy-socks-remote-dns =
     .label = SOCKS v5 を使用するときは DNS もプロキシーを使用する
@@ -91,11 +91,11 @@ connection-dns-over-https-url-resolver = プロバイダーを使用
 #   $name (String) - Display name or URL for the DNS over HTTPS provider
 connection-dns-over-https-url-item-default =
     .label = { $name } (既定)
-    .tooltiptext = DNS over HTTPS の解決に既定の URL を使用します
+    .tooltiptext = DNS over HTTPS の解決に既定の URL を使用するで
 
 connection-dns-over-https-url-custom =
     .label = URL を指定:
     .accesskey = C
-    .tooltiptext = DNS over HTTPS の解決に使用する URL を入力します
+    .tooltiptext = DNS over HTTPS の解決に使用する URL を入力するで
 
 connection-dns-over-https-custom-label = URL を指定

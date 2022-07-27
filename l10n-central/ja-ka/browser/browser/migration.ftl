@@ -7,11 +7,11 @@ migration-wizard =
 
 import-from =
     { PLATFORM() ->
-        [windows] オプション、ブックマーク、履歴、パスワード、その他のデータをインポートする対象を選んでください:
-       *[other] 設定、ブックマーク、履歴、パスワード、その他のデータをインポートする対象を選んでください:
+        [windows] オプション、ブックマーク、履歴、パスワード、とかのデータをインポートする対象を選んでや:
+       *[other] 設定、ブックマーク、履歴、パスワード、とかのデータをインポートする対象を選んでや:
     }
 
-import-from-bookmarks = ブックマークをインポートする対象を選んでください:
+import-from-bookmarks = ブックマークをインポートする対象を選んでや:
 import-from-ie =
     .label = Microsoft Internet Explorer
     .accesskey = M
@@ -55,17 +55,17 @@ import-from-360se =
     .label = 360 Secure Browser
     .accesskey = 3
 
-no-migration-sources = ブックマーク、履歴やパスワードなどのインポートする設定やデータを持つプログラムが見つかりませんでした。
+no-migration-sources = ブックマーク、履歴やパスワードなどのインポートする設定やデータを持つプログラムが見つからへんかった。
 
 import-source-page-title = 設定とデータのインポート
 import-items-page-title = インポートする項目
 
-import-items-description = インポートする項目を選択してください:
+import-items-description = インポートする項目を選択してや:
 
 import-permissions-page-title = { -brand-short-name } に権限が必要
 
 # Do not translate "Bookmarks.plist"; the file name is the same everywhere.
-import-permissions-description = macOS で Safari のブックマークにアクセスするには、{ -brand-short-name } に明示的な許可が必要です。[続行] をクリックして、表示されるファイルを開くダイアログで “Bookmarks.plist” ファイルを選択してください。
+import-permissions-description = macOS で Safari のブックマークにアクセスするんやったら、{ -brand-short-name } に明示的な許可が必要や。[続行] をクリックして、表示されるファイルを開くダイアログで “Bookmarks.plist” ファイルを選択してや。
 
 import-migrating-page-title = インポートしています...
 
@@ -73,13 +73,13 @@ import-migrating-description = 次の項目を現在インポートしていま�
 
 import-select-profile-page-title = プロファイルの選択
 
-import-select-profile-description = インポートするプロファイルを選択してください:
+import-select-profile-description = インポートするプロファイルを選択してや:
 
 import-done-page-title = インポート完了
 
-import-done-description = 次のデータが正常にインポートされました:
+import-done-description = 次のデータが正常にインポートされたんや:
 
-import-close-source-browser = 続ける前に、選択したブラウザーが閉じられていることを確認してください。
+import-close-source-browser = 続ける前に、選択したブラウザーが閉じられていることを確認してや。
 
 source-name-ie = Internet Explorer
 source-name-edge = Microsoft Edge
@@ -146,9 +146,9 @@ browser-data-bookmarks-label =
   }
 
 browser-data-otherdata-checkbox =
-  .label = その他のデータ
+  .label = とかのデータ
 browser-data-otherdata-label =
-  .label = その他のデータ
+  .label = とかのデータ
 
 browser-data-session-checkbox =
   .label = ウィンドウとタブ

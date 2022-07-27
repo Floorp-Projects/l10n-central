@@ -23,4 +23,4 @@
 # remain unchanged across different versions (Nightly, Beta, etc.).
 -brand-product-name = Floorp
 -vendor-short-name = Ablaze
-trademarkInfo = Floorp および、Ablaze ロゴは保護されており、無断使用は認められまへん。クリエイターパックを使うたってな。
+trademarkInfo = Floorp および、Ablaze ロゴは保護されており、無断使用は認められへんで。クリエイターパックを使うたってな。

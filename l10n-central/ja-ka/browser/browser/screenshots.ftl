@@ -4,12 +4,12 @@
 
 screenshot-toolbarbutton =
   .label = スクリーンショット
-  .tooltiptext = スクリーンショットを撮影します
+  .tooltiptext = スクリーンショットを撮影するで
 
 screenshot-shortcut =
   .key = S
 
-screenshots-instructions = ページをドラッグまたはクリックして範囲を選択してください。ESC キーを押すとキャンセルできます。
+screenshots-instructions = ページをドラッグまたはクリックして範囲を選択してや。ESC キーを押すとキャンセルできるで。
 screenshots-cancel-button = キャンセル
 screenshots-save-visible-button = 表示範囲を保存
 screenshots-save-page-button = ページ全体を保存
@@ -33,19 +33,19 @@ screenshots-meta-key =
         [macos] ⌘
        *[other] Ctrl
     }
-screenshots-notification-link-copied-title = リンクをコピーしました
-screenshots-notification-link-copied-details = ショットへのリンクがクリップボードへコピーされました。{ screenshots-meta-key }+V キーで貼り付けできます。
-screenshots-notification-image-copied-title = ショットをコピーしました
-screenshots-notification-image-copied-details = ショットがクリップボードへコピーされました。{ screenshots-meta-key }+V キーで貼り付けできます。
-screenshots-request-error-title = 問題が発生しました。
-screenshots-request-error-details = 申し訳ありませんが、ショットを保存できませんでした。また後で試してください。
-screenshots-connection-error-title = Screenshots ライブラリーに接続できません。
-screenshots-connection-error-details = お使いのインターネット接続を確認してください。インターネットへ接続できる場合は、{ -screenshots-brand-name } サービスに一時的な問題が発生しているものと思われます。
-screenshots-login-error-details = { -screenshots-brand-name } サービスに問題があるため、ショットを保存できませんでした。また後で試してください。
-screenshots-unshootable-page-error-title = このページはスクリーンショットを撮れません。
-screenshots-unshootable-page-error-details = これは通常のウェブページでないため、スクリーンショットを撮ることができません。
-screenshots-empty-selection-error-title = 選択範囲が小さすぎます
-screenshots-private-window-error-title = { -screenshots-brand-name } はプライベートブラウジングモードでは使用できません
-screenshots-private-window-error-details = ご不便をおかけして申し訳ありません。今後のリリースでこの機能を提供できるよう取り組んでいます。
-screenshots-generic-error-title = { -screenshots-brand-name } に問題が発生しました。
-screenshots-generic-error-details = 何か問題が発生したようです。再度試すか、別のページのショットを撮ってみてください。
+screenshots-notification-link-copied-title = リンクをコピーしたで
+screenshots-notification-link-copied-details = ショットへのリンクがクリップボードへコピーされたで。{ screenshots-meta-key }+V キーで貼り付けできんで。
+screenshots-notification-image-copied-title = ショットをコピーしたで
+screenshots-notification-image-copied-details = ショットがクリップボードへコピーされたで。{ screenshots-meta-key }+V キーで貼り付けできんで。
+screenshots-request-error-title = 問題が発生したで。
+screenshots-request-error-details = ホンマに悪いんやけど、ショットを保存できやんかった。また後で試してや。
+screenshots-connection-error-title = Screenshots ライブラリーに接続できへんのや。
+screenshots-connection-error-details = お使いのインターネット接続を確認してホンマに悪いんやけど。インターネットへ接続できるんやったら、{ -screenshots-brand-name } サービスに一時的な問題が発生しているんとちゃうかな。
+screenshots-login-error-details = { -screenshots-brand-name } サービスに問題があるため、ショットを保存できやんかった。また後で試してや。
+screenshots-unshootable-page-error-title = このページはスクリーンショットを撮れへんのや。
+screenshots-unshootable-page-error-details = これは通常のウェブページでないため、スクリーンショットを撮ることができへんのや。
+screenshots-empty-selection-error-title = 選択範囲が小さすぎんねん
+screenshots-private-window-error-title = { -screenshots-brand-name } はプライベートブラウジングモードでは使用できへんねん
+screenshots-private-window-error-details = ご不便をおかけして申し訳ありへんのや。今後のリリースでこの機能を提供できるよう取り組んでいくで。
+screenshots-generic-error-title = { -screenshots-brand-name } に問題が発生したで。
+screenshots-generic-error-details = 何か問題が発生したようです。再度試すか、別のページのショットを撮ってみてや。
