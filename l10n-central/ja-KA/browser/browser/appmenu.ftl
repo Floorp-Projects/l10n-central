@@ -6,13 +6,13 @@
 ## App Menu
 
 appmenuitem-banner-update-downloading =
-    .label = { -brand-shorter-name } の更新をダウンロード中
+    .label = { -brand-shorter-name } の更新をダウンロードしとるで
 appmenuitem-banner-update-available =
     .label = 更新可能 — 今すぐダウンロード
 appmenuitem-banner-update-manual =
     .label = 更新可能 — 今すぐダウンロード
 appmenuitem-banner-update-unsupported =
-    .label = 更新不可 — システムの互換性なし
+    .label = 更新不可 — システムの互換性はないみたいや
 appmenuitem-banner-update-restart =
     .label = 更新可能 — 今すぐ再起動
 appmenuitem-new-tab =
@@ -42,10 +42,10 @@ appmenuitem-help =
 appmenuitem-exit2 =
     .label = 終了
 appmenu-menu-button-closed2 =
-    .tooltiptext = アプリケーションメニューを開くで
+    .tooltiptext = アプリケーションメニューを開くわ
     .label = { -brand-short-name }
 appmenu-menu-button-opened2 =
-    .tooltiptext = アプリケーションメニューを閉くで
+    .tooltiptext = アプリケーションメニューを閉じるわ
     .label = { -brand-short-name }
 # Settings is now used to access the browser settings across all platforms,
 # instead of Options or Preferences.
@@ -66,24 +66,24 @@ appmenuitem-fullscreen =
 appmenu-remote-tabs-sign-into-sync =
     .label = ログインして同期...
 appmenu-remote-tabs-turn-on-sync =
-    .label = 同期をオンにしとく...
+    .label = 同期をオンにする...
 # This is shown after the tabs list if we can display more tabs by clicking on the button
 appmenu-remote-tabs-showmore =
-    .label = もっとタブを表示
-    .tooltiptext = この端末からのタブをもっと表示しとく
+    .label = さらにタブを表示
+    .tooltiptext = この端末からのタブをさらに出すで
 # This is shown beneath the name of a device when that device has no open tabs
 appmenu-remote-tabs-notabs = タブがありません
 # This is shown when Sync is configured but syncing tabs is disabled.
-appmenu-remote-tabs-tabsnotsyncing = タブの同期をオンにしたら、あなたの他の端末のタブ一覧が表示されるで。
+appmenu-remote-tabs-tabsnotsyncing = タブの同期をオンにすると、あなたの他の端末のタブ一覧が出てくるで。
 appmenu-remote-tabs-opensettings =
     .label = 設定
 # This is shown when Sync is configured but this appears to be the only device attached to
 # the account. We also show links to download Firefox for android/ios.
-appmenu-remote-tabs-noclients = 他の端末のタブを表示しとくか？
+appmenu-remote-tabs-noclients = 他の端末のタブを表示してもええか？
 appmenu-remote-tabs-connectdevice =
     .label = 他の端末を接続
-appmenu-remote-tabs-welcome = 他の端末のタブ一覧を表示しとく。
-appmenu-remote-tabs-unverified = あなたのアカウントは検証しとく必要があるで。
+appmenu-remote-tabs-welcome = 他の端末のタブ一覧を表示する。
+appmenu-remote-tabs-unverified = あなたのアカウントは検証する必要があるで。
 appmenuitem-fxa-toolbar-sync-now2 = 今すぐ同期
 appmenuitem-fxa-sign-in = { -brand-product-name } にログイン
 appmenuitem-fxa-manage-account = アカウントを管理
@@ -96,7 +96,7 @@ appmenu-fxa-last-sync = 最終同期: { $time }
 appmenu-fxa-sync-and-save-data2 = 同期してデータを保存
 appmenu-fxa-signed-in-label = ログイン
 appmenu-fxa-setup-sync =
-    .label = 同期をオンにしとく...
+    .label = 同期をオンにする...
 appmenuitem-save-page =
     .label = 名前を付けてページを保存...
 
@@ -106,7 +106,7 @@ whatsnew-panel-header = 新着情報
 # Checkbox displayed at the bottom of the What's New panel, allowing users to
 # enable/disable What's New notifications.
 whatsnew-panel-footer-checkbox =
-    .label = 新機能を通知しとく
+    .label = 新機能を通知する
     .accesskey = f
 
 ## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
@@ -115,20 +115,20 @@ whatsnew-panel-footer-checkbox =
 
 profiler-popup-button-idle =
     .label = プロファイラー
-    .tooltiptext = パフォーマンスプロファイルを記録しとく
+    .tooltiptext = パフォーマンスプロファイルを記録するで
 profiler-popup-button-recording =
     .label = プロファイラー
-    .tooltiptext = プロファイラーがプロファイルを記録中やねん
+    .tooltiptext = プロファイラーがプロファイルを記録しとるで
 profiler-popup-button-capturing =
     .label = プロファイラー
-    .tooltiptext = プロファイラーがプロファイルをキャプチャ中やねん
+    .tooltiptext = プロファイラーがプロファイルをキャプチャしとるで
 profiler-popup-title =
     .value = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
     .aria-label = 詳細な情報を表示
 profiler-popup-description-title =
     .value = 記録、分析、共有
-profiler-popup-description = プロファイルを公開してあなたのチームと共有し、パフォーマンス問題に協力しようや。
+profiler-popup-description = プロファイルを公開してあんたのチームと共有して、パフォーマンス問題に協力せえへん？
 profiler-popup-learn-more-button =
     .label = 詳細
 profiler-popup-settings =
@@ -161,23 +161,23 @@ profiler-popup-capture-shortcut =
 # devtools/client/performance-new/popup/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
-profiler-popup-presets-web-developer-description = 一般的なウェブアプリをデバッグしとくための低負荷な推奨プリセットやねん。
+profiler-popup-presets-web-developer-description = 一般的なウェブアプリをデバッグするための低負荷な推奨プリセットやで。
 profiler-popup-presets-web-developer-label =
     .label = ウェブ開発
 
-profiler-popup-presets-firefox-description = { -brand-shorter-name } のプロファイリングのための推奨プリセットやねん。
+profiler-popup-presets-firefox-description = { -brand-shorter-name } のプロファイリングのための推奨プリセットやで。
 profiler-popup-presets-firefox-label =
     .label = { -brand-shorter-name }
 
-profiler-popup-presets-graphics-description = { -brand-shorter-name } のグラフィックバグを調査しとくための推奨プリセットやねん。
+profiler-popup-presets-graphics-description = { -brand-shorter-name } のグラフィックバグを調査するための推奨プリセットやで。
 profiler-popup-presets-graphics-label =
     .label = グラフィック
 
-profiler-popup-presets-media-description2 = { -brand-shorter-name } の音声と動画のバグを調査しとくための推奨プリセットやねん。
+profiler-popup-presets-media-description2 = { -brand-shorter-name } の音声と動画のバグを調査するための推奨プリセットやで。
 profiler-popup-presets-media-label =
     .label = メディア
 
-profiler-popup-presets-networking-description = { -brand-shorter-name } のネットワークバグを調査しとくための推奨プリセットやねん。
+profiler-popup-presets-networking-description = { -brand-shorter-name } のネットワークバグを調査するための推奨プリセットやで。
 profiler-popup-presets-networking-label =
     .label = ネットワーク
 
@@ -188,12 +188,12 @@ profiler-popup-presets-custom-label =
 
 appmenu-manage-history =
     .label = 履歴を管理
-appmenu-reopen-all-tabs = タブをすべて開きなおす
-appmenu-reopen-all-windows = ウィンドウをすべて開きなおす
+appmenu-reopen-all-tabs = タブをすべて開きなおすわ
+appmenu-reopen-all-windows = ウィンドウをすべて開きなおすわ
 appmenu-restore-session =
-    .label = 以前のセッションを復元
+    .label = 以前のセッションを復元するわ
 appmenu-clear-history =
-    .label = 最近の履歴を消去...
+    .label = 最近の履歴をほかす
 appmenu-recent-history-subheader = 最近の履歴
 appmenu-recently-closed-tabs =
     .label = 最近閉じたタブ
@@ -227,7 +227,7 @@ appmenu-help-enter-troubleshoot-mode2 =
     .label = トラブルシューティングモード...
     .accesskey = M
 appmenu-help-exit-troubleshoot-mode =
-    .label = トラブルシューティングモードをオフにしとく
+    .label = トラブルシューティングモードをオフにする
     .accesskey = M
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
@@ -249,5 +249,5 @@ appmenu-developer-tools-extensions =
     .label = 開発者用拡張機能
 
 ## Floorp panel
-open-profile-dir =
+open-profile-dir = 
     .label = プロファイルディレクトリを開く

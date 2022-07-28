@@ -5,4 +5,4 @@
 # This string is used to display the option to open blocked popup(s) in site permission management panels.
 # Variables:
 #   $count (String) - Number of blocked pop-ups
-site-permissions-open-blocked-popups = ブロックされた { $count } 個のポップアップを開いとく...
+site-permissions-open-blocked-popups = ブロックされた { $count } 個のポップアップを開くわ

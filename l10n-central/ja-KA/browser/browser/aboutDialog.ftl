@@ -16,36 +16,36 @@ update-updateButton =
     .accesskey = R
 
 update-checkingForUpdates = ソフトウェアの更新を確認...
-update-downloading = <img data-l10n-name="icon"/>更新をダウンロードしとる — <label data-l10n-name="download-status"/>
-update-downloading-message = 更新をダウンロードしとる — <label data-l10n-name="download-status"/>
+update-downloading = <img data-l10n-name="icon"/>更新をダウンロードしとるで — <label data-l10n-name="download-status"/>
+update-downloading-message = 更新をダウンロード中 — <label data-l10n-name="download-status"/>
 update-applying = 更新を適用中...
 
-update-failed = 更新に失敗したわ。<label data-l10n-name="failed-link">最新バージョンをダウンロード</label>
+update-failed = 更新に失敗しました。<label data-l10n-name="failed-link">最新バージョンをダウンロード</label>
 update-failed-main =
-    更新に失敗したわ。<a data-l10n-name="failed-link-main">最新バージョンをダウンロード</a>
+    更新に失敗しました。<a data-l10n-name="failed-link-main">最新バージョンをダウンロード</a>
 
-update-adminDisabled = システム管理者により、更新が無効化されとんねん
+update-adminDisabled = システム管理者により、更新が無効化されてとるで
 update-noUpdatesFound = { -brand-short-name } は最新バージョンやで
-update-otherInstanceHandlingUpdates = { -brand-short-name } はちゃうプロセスで更新中やで
+update-otherInstanceHandlingUpdates = { -brand-short-name } は別のプロセスで更新中やで
 
-update-manual = 更新が利用可能やで <label data-l10n-name="manual-link"/>
+update-manual = 更新が利用可能です <label data-l10n-name="manual-link"/>
 
-update-unsupported = 最新バージョンはご使用のシステムに対応してへんねん。<label data-l10n-name="unsupported-link">詳細</label>
+update-unsupported = 最新バージョンはご使用のシステムに対応していません。<label data-l10n-name="unsupported-link">詳細</label>
 
-update-restarting = 再起動中やで...
+update-restarting = 再起動中です...
 
-channel-description = 今のアップデートチャンネルは <label data-l10n-name="current-channel"></label> やで。{ " " }
+channel-description = 現在のアップデートチャンネルは <label data-l10n-name="current-channel"></label> です。{ " " }
 
-warningDesc-version = { -brand-short-name } は実験的で、不安定かもしれへんで。
+warningDesc-version = { -brand-short-name } は実験的であり、不安定なことがあるで。
 
 aboutdialog-help-user = { -brand-product-name } ヘルプ
-aboutdialog-submit-feedback = フィードバックを送信
+aboutdialog-submit-feedback = フィードバックを送る
 
-community-exp = <label data-l10n-name="community-exp-mozillaLink">{ -vendor-short-name }</label> はウェブの公開性、公衆性、制限のないアクセス性を保つために共に活動しとる <label data-l10n-name="community-exp-creditsLink">グローバルなコミュニティ</label> やねん。
+community-exp = <label data-l10n-name="community-exp-mozillaLink">{ -vendor-short-name }</label> はウェブの公開性、公衆性、制限のないアクセス性を保つために共に活動しとる <label data-l10n-name="community-exp-creditsLink">グローバルなコミュニティ</label> やで。
 
-community-2 = { -brand-short-name } をデザインしとる <label data-l10n-name="community-mozillaLink">{ -vendor-short-name }</label> は、ウェブの公開性、公衆性、制限のないアクセス性を保つために共に活動しとる <label data-l10n-name="community-creditsLink">グローバルなコミュニティ</label> やねん。
+community-2 = { -brand-short-name } をデザインしている <label data-l10n-name="community-mozillaLink">{ -vendor-short-name }</label> は、ウェブの公開性、公衆性、制限のないアクセス性を保つために共に活動しとる <label data-l10n-name="community-creditsLink">グローバルなコミュニティ</label>やで。
 
-helpus = 参加せえへんか？ <label data-l10n-name="helpus-donateLink">寄付</label> か <label data-l10n-name="helpus-getInvolvedLink">コミュニティへようこそ！</label>
+helpus = 参加しませんか？ <label data-l10n-name="helpus-donateLink">寄付</label> または <label data-l10n-name="helpus-getInvolvedLink">コミュニティへようこそ！</label>
 
 bottomLinks-license = ライセンス情報
 bottomLinks-rights = あんたの権利について
@@ -65,6 +65,6 @@ aboutDialog-version = { $version } ({ $bits } ビット)
 aboutDialog-version-nightly = { $version } ({ $isodate }) ({ $bits } ビット)
 
 
-about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> は、日本で開発されとる国産ブラウザーやで。Firefox をベースにしてて、 <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label> の下でウェブをよりよくするために開発されとるんや。 参加したいんか？<label data-l10n-name="helpus-donateLink">寄付</label>を検討してや。
-icon-creator = アイコン作成者：<label data-l10n-name="browser-logo-twitter">@CutterKnife_ 様</label> と <label data-l10n-name="brand-logo-twitter">@mwxdxx 様</label>
-contributors = <label data-l10n-name="about-contributor">開発者とかの貢献者・寄稿者</label> も確認してや
+about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> は、日本で開発される国産ブラウザーやで。Firefox がベースとなっとって、 <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label> の下でウェブをよりよくするために作られとるで。 参加したいですか？<label data-l10n-name="helpus-donateLink">寄付</label>を検討してくれ。
+icon-creator = アイコン作成者：<label data-l10n-name="browser-logo-twitter">@CutterKnife_ 様</label> と <label data-l10n-name="brand-logo-twitter">@mwxdxx 様</label> 
+contributors = <label data-l10n-name="about-contributor">開発者やその他の貢献者・寄稿者</label> も確認してくれ

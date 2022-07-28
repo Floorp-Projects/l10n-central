@@ -17,6 +17,6 @@ spotlight-ios-marketplace-button =
 ## Firefox Focus promo message strings
 
 spotlight-focus-promo-title = { -focus-brand-name } を入手
-spotlight-focus-promo-subtitle = QR コードをスキャンしてダウンロードしようや。
+spotlight-focus-promo-subtitle = QR コードをスキャンしてダウンロードせえへん？
 spotlight-focus-promo-qr-code =
     .alt = QR コードをスキャンして { -focus-brand-name } を入手

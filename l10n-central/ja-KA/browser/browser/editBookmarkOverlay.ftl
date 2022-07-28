@@ -33,9 +33,9 @@ bookmark-overlay-tags-2 =
 bookmark-overlay-tags-empty-description =
     .placeholder = カンマ区切りで複数入力できるで
 bookmark-overlay-tags-expander =
-    .tooltiptext = 既存のタグ一覧を表示するで
+    .tooltiptext = 既存のタグ一覧を出すで
     .tooltiptextdown = { bookmark-overlay-tags-expander.tooltiptext }
-    .tooltiptextup = 一覧を閉じます
+    .tooltiptextup = 一覧を閉じるで
 
 bookmark-overlay-keyword-2 =
     .value = キーワード

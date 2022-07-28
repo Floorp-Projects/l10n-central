@@ -105,7 +105,7 @@ fonts-minsize-none =
     .label = なし
 
 fonts-allow-own =
-    .label = ウェブページが指定したフォントを優先しとく
+    .label = ウェブページが指定したフォントを優先するかい？
     .accesskey = A
 
 # Variables:

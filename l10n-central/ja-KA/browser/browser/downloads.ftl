@@ -152,20 +152,20 @@ downloads-open-file =
 ##   $seconds (number) - Amount of seconds left till the file opens.
 ##   $minutes (number) - Amount of minutes till the file opens.
 
-downloading-file-opens-in-hours-and-minutes = { $hours } 時間 { $minutes } 分後に開くで...
-downloading-file-opens-in-minutes = { $minutes } 分後に開くで...
-downloading-file-opens-in-minutes-and-seconds = { $minutes } 分 { $seconds } 秒後に開くで...
-downloading-file-opens-in-seconds = { $seconds } 秒後に開くで...
-downloading-file-opens-in-some-time = ダウンロードが完了したら開くで...
+downloading-file-opens-in-hours-and-minutes = { $hours } 時間 { $minutes } 分後に開ける感じやわ
+downloading-file-opens-in-minutes = { $minutes } 分後に開ける感じやわ
+downloading-file-opens-in-minutes-and-seconds = { $minutes } 分 { $seconds } 秒後に開ける感じやわ
+downloading-file-opens-in-seconds = { $seconds } 秒後に開ける感じやわ
+downloading-file-opens-in-some-time = ダウンロードが完了したら開ける感じやわ
 downloading-file-click-to-open =
-  .value = ダウンロードが完了したら開くで
+  .value = ダウンロードが完了したら開くわ
 
 ##
 
 # Displayed when hovering a download which is able to be retried by users,
 # indicates that it's possible to download this file again.
 downloads-retry-download =
-    .value = ダウンロードを再試行
+    .value = ダウンロードをもう一回試す
 # Displayed when hovering a download which is able to be cancelled by users,
 # indicates that it's possible to cancel and stop the download.
 downloads-cancel-download =
@@ -187,27 +187,27 @@ downloads-details =
 ##   $url (string) - The url of the suspicious site, stripped of http, https and www prefix.
 
 downloads-files-not-downloaded = { $num ->
-    [one] ファイルのダウンロードを中止したで。
-   *[other] {$num} 個のファイルのダウンロードを中止したで。
+    [one] ファイルのダウンロードを中止しました。
+   *[other] {$num} 個のファイルのダウンロードを中止しました。
 }
-downloads-blocked-from-url = { $url } からのダウンロードをブロックしたで。
-downloads-blocked-download-detailed-info = { $url } は複数のファイルを自動的にダウンロードさせようとしたんや。このサイトは壊れているか、スパムファイルをあなたの端末に保存させようしとんのやな。
+downloads-blocked-from-url = { $url } からのダウンロードをブロックしました。
+downloads-blocked-download-detailed-info = { $url } は複数のファイルを自動的にダウンロードさせようとしてきたわ。このサイトは壊れとるか、スパムファイルをあなたの端末に保存させようとしとるで。
 
 ##
 
 downloads-clear-downloads-button =
     .label = ダウンロード履歴を消去
-    .tooltiptext = 完了、キャンセル、失敗したすべてのダウンロード履歴を消去しとる
+    .tooltiptext = 完了、キャンセル、失敗したすべてのダウンロード履歴をほかす
 # This string is shown when there are no items in the Downloads view, when it
 # is displayed inside a browser tab.
 downloads-list-empty =
-    .value = ダウンロードはあらへん。
+    .value = ダウンロードはありません。
 # This string is shown when there are no items in the Downloads Panel.
 downloads-panel-empty =
-    .value = このセッションでのダウンロードはあらへん。
+    .value = このセッションでのダウンロードはありません。
 
 # This is displayed in an item at the bottom of the Downloads Panel when there
 # are more downloads than can fit in the list in the panel.
 #   $count (number) - number of files being downloaded that are not shown in the
 #                     panel list.
-downloads-more-downloading = 他に { $count } 個のファイルをダウンロード中や
+downloads-more-downloading = 他に { $count } 個のファイルをダウンロード中

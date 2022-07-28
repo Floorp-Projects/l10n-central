@@ -54,7 +54,7 @@ about-debugging-sidebar-item-connect-button-connection-failed = 接続失敗
 
 # Text displayed in connection warning on sidebar item of the runtime when connecting to
 # the runtime is taking too much time.
-about-debugging-sidebar-item-connect-button-connection-not-responding = 接続は保留中です。ターゲットとなるブラウザーのメッセージを確認してや
+about-debugging-sidebar-item-connect-button-connection-not-responding = 接続は保留中です。ターゲットとなるブラウザーのメッセージを確認してください
 
 # Text displayed as connection error in sidebar item when the connection has timed out.
 about-debugging-sidebar-item-connect-button-connection-timeout = 接続タイムアウト
@@ -214,7 +214,7 @@ about-debugging-runtime-service-workers-not-compatible = このブラウザー�
 # "Troubleshooting" link points to https://firefox-source-docs.mozilla.org/devtools-user/about_colon_debugging/
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
 # { $minVersion } is the minimum version that is compatible with the current Firefox instance (same format)
-about-debugging-browser-version-too-old = 接続したブラウザーのバージョン ({ $runtimeVersion }) が古いです。サポートされている最低バージョンは ({ $minVersion }) です。この組み合わせはサポートされてないため、開発ツールでエラーが発生する可能性があります。接続ブラウザーを更新してや。<a>トラブルシューティング</a>
+about-debugging-browser-version-too-old = 接続したブラウザーのバージョン ({ $runtimeVersion }) が古いです。サポートされている最低バージョンは ({ $minVersion }) です。この組み合わせはサポートされてないため、開発ツールでエラーが発生する可能性があります。接続ブラウザーを更新してください。<a>トラブルシューティング</a>
 
 # Dedicated message for a backward compatibility issue that occurs when connecting:
 # from Fx 70+ to the old Firefox for Android (aka Fennec) which uses Fx 68.
@@ -226,7 +226,7 @@ about-debugging-browser-version-too-old-fennec = このバージョンの Firefo
 # { $localID } is the build ID of the current Firefox instance (same format)
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
 # { $localVersion } is the version of your current browser (same format)
-about-debugging-browser-version-too-recent = 接続したブラウザー ({ $runtimeVersion }, ビルド ID { $runtimeID }) が、実行中の { -brand-shorter-name } ({ $localVersion }, ビルド ID { $localID }) よりも新しいです。この組み合わせはサポートされてないため、開発ツールでエラーが発生する可能性があります。Firefox を更新してや。<a>トラブルシューティング</a>
+about-debugging-browser-version-too-recent = 接続したブラウザー ({ $runtimeVersion }, ビルド ID { $runtimeID }) が、実行中の { -brand-shorter-name } ({ $localVersion }, ビルド ID { $localID }) よりも新しいです。この組み合わせはサポートされてないため、開発ツールでエラーが発生する可能性があります。Firefox を更新してください。<a>トラブルシューティング</a>
 
 # Displayed for runtime info in runtime pages.
 # { $name } is brand name such as "Firefox Nightly"
@@ -289,7 +289,7 @@ about-debugging-tmp-extension-terminate-bgscript-button = バックグラウン�
 # (triggered by the button using "about-debugging-tmp-extension-install-button")
 # manifest.json .xpi and .zip should not be localized.
 # Note: this message is only displayed in Windows and Linux platforms.
-about-debugging-tmp-extension-install-message = manifest.json ファイルか .xpi/.zip ファイルを選択してや
+about-debugging-tmp-extension-install-message = manifest.json ファイルか .xpi/.zip ファイルを選択してください
 
 # This string is displayed as a message about the add-on having a temporaryID.
 about-debugging-tmp-extension-temporary-id = この WebExtension は一時的な ID です。<a>詳細</a>

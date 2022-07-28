@@ -19,7 +19,7 @@ return-to-amo-subtitle = { -brand-short-name } をインストールしたで
 #
 # Variables:
 #   $addon-name (String) - Name of the add-on
-return-to-amo-addon-title = <img data-l10n-name="icon"/> <b>{ $addon-name }</b> をインストールしてみましょう。
+return-to-amo-addon-title = <img data-l10n-name="icon"/> <b>{ $addon-name }</b> をインストールしてみいひん?
 return-to-amo-add-extension-label = 拡張機能を追加
 return-to-amo-add-theme-label = テーマを追加
 
@@ -47,7 +47,7 @@ mr1-welcome-screen-hero-text =
 # You can see the picture in about:welcome in Nightly 90.
 mr1-onboarding-welcome-image-caption = Soraya Osorio — 家具デザイナー、Firefox ファン
 # This button will open system settings to turn on prefers-reduced-motion
-mr1-onboarding-reduce-motion-button-label = アニメーションを切ったる
+mr1-onboarding-reduce-motion-button-label = アニメーションをオフにするわ
 
 ## Title and primary button strings differ between platforms as they
 ## match the OS' application context menu item action where Windows uses "pin"
@@ -56,8 +56,8 @@ mr1-onboarding-reduce-motion-button-label = アニメーションを切ったる
 # Title used on welcome page when Firefox is not pinned
 mr1-onboarding-pin-header =
     { PLATFORM() ->
-        [macos] すぐアクセスできるよう { -brand-short-name } を Dock に追加しようや
-       *[other] すぐアクセスできるよう { -brand-short-name } をタスクバーにピン留めしようや
+        [macos] すぐアクセスできるよう { -brand-short-name } を Dock に追加しいひん?
+       *[other] すぐアクセスできるよう { -brand-short-name } をタスクバーにピン留めしいひん?
     }
 # Primary button string used on welcome page when Firefox is not pinned.
 mr1-onboarding-pin-primary-button-label =
@@ -70,37 +70,37 @@ mr1-onboarding-pin-primary-button-label =
 
 # This string will be used on welcome page primary button label
 # when Firefox is both pinned and default
-mr1-onboarding-get-started-primary-button-label = はじめよか
+mr1-onboarding-get-started-primary-button-label = はじめましょう
 mr1-onboarding-welcome-header = { -brand-short-name } にようこそ
-mr1-onboarding-set-default-pin-primary-button-label = { -brand-short-name } を優先ブラウザーに設定しとく
-    .title = { -brand-short-name } を既定のブラウザーに設定して、タスクバーにピン留めしようや
+mr1-onboarding-set-default-pin-primary-button-label = { -brand-short-name } を優先ブラウザーに設定しいひん?
+    .title = { -brand-short-name } を既定のブラウザーに設定して、タスクバーにピン留めせえへん?
 # This string will be used on welcome page primary button label
 # when Firefox is not default but already pinned
-mr1-onboarding-set-default-only-primary-button-label = { -brand-short-name } を既定のブラウザーに設定しとく
+mr1-onboarding-set-default-only-primary-button-label = { -brand-short-name } を既定のブラウザーに設定しいひん?
 mr1-onboarding-set-default-secondary-button-label = 後で
 mr1-onboarding-sign-in-button-label = ログイン
 
 ## Title, subtitle and primary button string used on set default onboarding screen
 ## when Firefox is not default browser
 
-mr1-onboarding-default-header = { -brand-short-name } を既定のブラウザーに設定
-mr1-onboarding-default-subtitle = 高速、安全、プライベートなブラウザーに任せてや。
-mr1-onboarding-default-primary-button-label = 既定のブラウザーに設定しとく
+mr1-onboarding-default-header = { -brand-short-name } を既定のブラウザーにしいひん?
+mr1-onboarding-default-subtitle = 高速、安全、プライベートなブラウザーに任してくれへん?
+mr1-onboarding-default-primary-button-label = 既定のブラウザーに設定しいひん?
 
 ## Multistage MR1 onboarding strings (about:welcome pages)
 
-mr1-onboarding-import-header = すべて持ってこれるで
-mr1-onboarding-import-subtitle = パスワードとかブックマークとかを<br/>インポートできるで。
+mr1-onboarding-import-header = すべて持ってこられるで
+mr1-onboarding-import-subtitle = パスワードやブックマークなどを<br/>インポートできるで。
 # The primary import button label will depend on whether we can detect which browser was used to download Firefox.
 # Variables:
 #   $previous (Str) - Previous browser name, such as Edge, Chrome
-mr1-onboarding-import-primary-button-label-attribution = { $previous } からインポート
+mr1-onboarding-import-primary-button-label-attribution = { $previous } からインポートするわ
 # This string will be used in cases where we can't detect the previous browser name.
-mr1-onboarding-import-primary-button-label-no-attribution = 前のブラウザーからインポート
+mr1-onboarding-import-primary-button-label-no-attribution = 以前のブラウザーからインポートするわ
 mr1-onboarding-import-secondary-button-label = 後で
 mr2-onboarding-colorway-header = カラーテーマ
-mr2-onboarding-colorway-subtitle = 新しいカラーテーマが期間限定で利用できるねん。
-mr2-onboarding-colorway-primary-button-label = カラーテーマを保存
+mr2-onboarding-colorway-subtitle = 新しいカラーテーマが期間限定で利用できるで。
+mr2-onboarding-colorway-primary-button-label = カラーテーマを保存するわ
 mr2-onboarding-colorway-secondary-button-label = 後で
 mr2-onboarding-colorway-label-soft = Soft
 mr2-onboarding-colorway-label-balanced = Balance
@@ -165,23 +165,23 @@ mr2-onboarding-theme-description =
 # Variables:
 #   $colorwayName (String) - Name of colorway
 mr2-onboarding-colorway-tooltip =
-    .title = { $colorwayName } のカラーテーマを見てみるで。
+    .title = { $colorwayName } のカラーテーマを使うで。
 
 # Selector description for colorway
 # Variables:
 #   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-label = { $colorwayName } のカラーテーマを見てみます
+mr2-onboarding-colorway-label = { $colorwayName } のカラーテーマを見てみいひん?
 # Tooltip displayed on hover of default themes
 mr2-onboarding-default-theme-tooltip =
-    .title = 既定のテーマを見てみます。
+    .title = 既定のテーマを見てみいひん?
 
 # Selector description for default themes
-mr2-onboarding-default-theme-label = 既定のテーマを見てみます。
+mr2-onboarding-default-theme-label = 既定のテーマを見てみいひん?
 
 ## Strings for Thank You page
 
-mr2-onboarding-thank-you-header = ありがとうな
-mr2-onboarding-thank-you-text = { -brand-short-name } は非営利を背景とする独立したブラウザーや。私らはユーザーとともにウェブをより安全、健全にし、個人情報を保護していくで。
+mr2-onboarding-thank-you-header = ありがとうございます
+mr2-onboarding-thank-you-text = { -brand-short-name } は非営利を背景とする独立したブラウザーやで。私たちはユーザーとともにウェブをより安全、健全にして個人情報を保護行きたいと思っとるで。
 mr2-onboarding-start-browsing-button-label = ブラウジングを開始
 
 ## Multistage live language reloading onboarding strings (about:welcome pages)
@@ -191,13 +191,13 @@ mr2-onboarding-start-browsing-button-label = ブラウジングを開始
 ## Variables:
 ##   $negotiatedLanguage (String) - The name of the langpack's language, e.g. "Español (ES)"
 
-onboarding-live-language-header = 言語を選択してや
+onboarding-live-language-header = 言語を選択してくれへん?
 
-onboarding-live-language-button-label-downloading = { $negotiatedLanguage } の言語パックをダウンロードしとるで...
-onboarding-live-language-waiting-button = 利用可能な言語を取ってきとるで...
-onboarding-live-language-installing = { $negotiatedLanguage } の言語パックをインストール...
-onboarding-live-language-secondary-cancel-download = やめる
-onboarding-live-language-skip-button-label = 飛ばす
+onboarding-live-language-button-label-downloading = { $negotiatedLanguage } の言語パックをダウンロードしとるで
+onboarding-live-language-waiting-button = 利用可能な言語を取得中しとるで
+onboarding-live-language-installing = { $negotiatedLanguage } の言語パックをインストールしとるで
+onboarding-live-language-secondary-cancel-download = キャンセル
+onboarding-live-language-skip-button-label = スキップ
 
 ## Firefox 100 Thank You screens
 
@@ -212,15 +212,15 @@ fx100-thank-you-hero-text =
   100
   Thank
   <span data-l10n-name="zap">You</span>
-fx100-thank-you-subtitle = 100 番目のリリースやねん！ よりよい健全なインターネットの構築へのご協力に感謝するな。
+fx100-thank-you-subtitle = 100 番目のリリースやで！ よりよい健全なインターネットの構築への協力に感謝するで。
 fx100-thank-you-pin-primary-button-label = { PLATFORM() ->
-    [macos] { -brand-short-name } を Dock に追加
-   *[other] { -brand-short-name } をタスクバーにピン留め
+    [macos] { -brand-short-name } を Dock に追加するで
+   *[other] { -brand-short-name } をタスクバーにピン留めするで
 }
 
 fx100-upgrade-thanks-header = 100 Thank You
 # Message shown with a start-browsing button. Emphasis <em> should be for "you"
 # but "Thank" can be used instead if there's no "you" in the translation.
-fx100-upgrade-thank-you-body = { -brand-short-name } の 100 番目のリリースやねん。よりよい健全なインターネットの構築へのご協力に感謝するな。
+fx100-upgrade-thank-you-body = { -brand-short-name } の 100 番目のリリースやで！ よりよい健全なインターネットの構築への協力に感謝するで。
 # Message shown with either a pin-to-taskbar or set-default button.
-fx100-upgrade-thanks-keep-body = 100 番目のリリースやねん！ 私らのコミュニティへの参加に感謝するな。次の 100 番目まで { -brand-short-name } を 1 クリックで使えるようにしとこうや。
+fx100-upgrade-thanks-keep-body = 100 番目のリリースやで！ わいらのコミュニティへの参加に感謝やで。次の 100 番目まで { -brand-short-name } を 1 クリックで使えるようにしいひん?

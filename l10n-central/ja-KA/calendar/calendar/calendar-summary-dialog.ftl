@@ -10,9 +10,9 @@ calendar-summary-dialog-edit-menu-button =
   .label = 編集
 
 edit-button-context-menu-this-occurrence =
-  .label = この項目だけを編集
+  .label = この項目のみを編集
   .accesskey = t
 
 edit-button-context-menu-all-occurrences =
-  .label = 全部の項目を編集
+  .label = すべての項目を編集
   .accesskey = a

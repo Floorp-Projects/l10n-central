@@ -3,8 +3,8 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 calendar-event-reminder-icon-display =
-    .alt = アラームを表示するで
+    .alt = アラームを表示します
 calendar-event-reminder-icon-email =
-    .alt = メールを送信するで
+    .alt = メールを送信します
 calendar-event-reminder-icon-audio =
-    .alt = 音声アラームを再生するで
+    .alt = 音声アラームを再生します

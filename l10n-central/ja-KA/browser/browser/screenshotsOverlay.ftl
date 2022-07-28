@@ -3,6 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 screenshots-overlay-cancel-button = キャンセル
-screenshots-overlay-instructions = ページ内をドラッグかクリックして範囲を選択してや。ESC キーを押すとキャンセルでんねん。
+screenshots-overlay-instructions = ページ内をドラッグまたはクリックして範囲を選択してくれへん？ESC キーを押すとキャンセルできるで。
 screenshots-overlay-download-button = ダウンロード
 screenshots-overlay-copy-button = コピー

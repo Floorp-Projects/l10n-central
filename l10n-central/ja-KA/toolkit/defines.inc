@@ -1,1 +1,1 @@
-#define MOZ_LANG_TITLE Japanese Kansaiben
+#define MOZ_LANG_TITLE Japanese

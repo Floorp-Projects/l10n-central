@@ -7,17 +7,17 @@
 
 # "Auto" is short for automatic. It can be localized without limitations.
 extension-default-theme-name-auto = システムテーマ — 自動
-extension-default-theme-description = ボタンやメニュー、ウィンドウについてオペレーティングシステムの設定に従うで。
+extension-default-theme-description = ボタンやメニュー、ウィンドウについてオペレーティングシステムの設定に従うわ。
 extension-firefox-compact-light-name = Light
-extension-firefox-compact-light-description = 明るい配色のテーマやな。
+extension-firefox-compact-light-description = 明るい配色のテーマやで。
 extension-firefox-compact-dark-name = Dark
-extension-firefox-compact-dark-description = 暗い配色のテーマやな。
+extension-firefox-compact-dark-description = 暗い配色のテーマやで。
 extension-firefox-alpenglow-name = Floorp Alpenglow
-extension-firefox-alpenglow-description = カラフルな外観のボタン、メニュー、ウィンドウを使うで。
+extension-firefox-alpenglow-description = カラフルな外観のボタン、メニュー、ウィンドウを使うわ。
 extension-floorp-material-name=マテリアルテーマ
-extension-floorp-material-description= ボタンやメニュー、ウィンドウについてオペレーティングシステムの設定に従うで。
+extension-floorp-material-description= ボタンやメニュー、ウィンドウについてオペレーティングシステムの設定に従うわ。
 extension-floorp-photon-name=Firefox Photon Theme
-extension-floorp-photon-description= ボタンやメニュー、ウィンドウについてオペレーティングシステムの設定に従うで。
+extension-floorp-photon-description= ボタンやメニュー、ウィンドウについてオペレーティングシステムの設定に従うわ。
 
 ## Colorway Themes
 ## These themes are variants of a colorway. The colorway is specified in the

@@ -7,6 +7,6 @@
 <!ENTITY providerUninstall.accept.accesskey		"U">
 <!ENTITY providerUninstall.cancel.label			"アドオンを無効化"><!-- en-US: "Keep Addon" -->
 <!ENTITY providerUninstall.cancel.accesskey		"K">
-<!ENTITY providerUninstall.preName.label		"次のアドオンをアンインストールまたは無効にするで:">
-<!ENTITY providerUninstall.postName.label		"以下のカレンダーが無効になるで。">
-<!ENTITY providerUninstall.reinstallNote.label		"このプロバイダーアドオンを再インストールするわけとちゃうかったら、このプロバイダーのカレンダーを登録解除してや。">
+<!ENTITY providerUninstall.preName.label		"次のアドオンをアンインストールまたは無効にします:">
+<!ENTITY providerUninstall.postName.label		"以下のカレンダーが無効になります。">
+<!ENTITY providerUninstall.reinstallNote.label		"このプロバイダーアドオンを再インストールするのでなければ、このプロバイダーのカレンダーを登録解除してください。">

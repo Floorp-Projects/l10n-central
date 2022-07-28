@@ -5,9 +5,9 @@
 restore-page-tab-title = セッションの復元
 # The title is intended to be apologetic and disarming, expressing dismay
 # and regret that we are unable to restore the session for the user
-restore-page-error-title = 迷惑をかけてしもて申し訳あらへん。
-restore-page-problem-desc = 前回のブラウジングセッションをちゃんと復元できへんかった。もういっぺん試すには [セッションを復元] を選択してや。
-restore-page-try-this = まだセッションを復元できないんやったら、どれかのタブが問題の原因になっとる。前回のタブの一覧を見て、復元する必要のないタブのチェックマークを外してから復元してや。
+restore-page-error-title = 迷惑をかけてすまんな
+restore-page-problem-desc = 前回のブラウジングセッションを正常に復元できひんかったわ。もう一度試すには [セッションを復元] を押してくれへん？
+restore-page-try-this = まだセッションを復元できないときは、いずれかのタブが問題の原因になってるみたいやわ。前回のタブの一覧を見て、復元する必要のないタブのチェックマークを外してもう一回復元してみてくれへん？
 restore-page-hide-tabs = 前回のタブを表示
 restore-page-show-tabs = 前回のタブを隠す
 # When tabs are distributed across multiple windows, this message is used as a
@@ -35,6 +35,6 @@ welcome-back-page-info = { -brand-short-name } の準備ができたで。
 welcome-back-restore-button =
     .label = 復元
     .accesskey = L
-welcome-back-restore-all-label = ウィンドウとタブをすべて復元するで
-welcome-back-restore-some-label = 復元するウィンドウとタブを選択するで
-welcome-back-page-info-link = アドオンとカスタマイズした設定を消したで。ブラウザー設定を既定値に戻したんや。それでも問題が解決せえへんかったら、<a data-l10n-name="link-more">ヘルプをみてや。</a>
+welcome-back-restore-all-label = ウィンドウとタブをすべて復元する
+welcome-back-restore-some-label = 復元するウィンドウとタブを選択する
+welcome-back-page-info-link = アドオンとカスタマイズした設定を削除したで。ブラウザー設定を既定値に戻したで。それでも問題が解決しないせえへんなら、<a data-l10n-name="link-more">ヘルプを見てみてくれへん？</a>

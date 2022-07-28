@@ -6,11 +6,11 @@
 ### feature.
 
 about-unloads-page-title = タブの解放
-about-unloads-intro = { -brand-short-name } には、システムのメモリーの空き領域が少なくなったときに、メモリー不足によるアプリケーションのクラッシュを防ぐための自動的にタブを解放する機能があるねん。次解放されるタブは、複数の属性から選択されるねん。このページは、タブが解放される時、{ -brand-short-name } がどのようにタブに優先度を付けて解放するかを表示するで。以下の <em>解放</em> ボタンを押すと、手動でタブを解放できるで。
+about-unloads-intro = { -brand-short-name } には、システムのメモリーの空き領域が少なくなったときに、メモリー不足によるアプリケーションのクラッシュを防ぐための自動的にタブを解放する機能があります。次に解放されるタブは、複数の属性から選択されます。このページは、タブが解放される時、{ -brand-short-name } がどのようにタブに優先度を付けて解放するかを表示します。以下の <em>解放</em> ボタンを押すと、手動でタブを解放できます。
 
 # The link points to a Firefox documentation page, only available in English,
 # with title "Tab Unloading"
-about-unloads-learn-more = このページと機能についての詳細は <a data-l10n-name="doc-link">Tab Unloading</a> を参照してや。
+about-unloads-learn-more = このページと機能についての詳細は <a data-l10n-name="doc-link">Tab Unloading</a> を参照してください。
 
 about-unloads-last-updated =
     最終更新日時: { DATETIME($date,
@@ -18,16 +18,16 @@ about-unloads-last-updated =
         hour: "numeric", minute: "numeric", second: "numeric",
         hour12: "false") }
 about-unloads-button-unload = 解放
-    .title = 最も優先度の高いタブを解放するで
-about-unloads-no-unloadable-tab = 解放できるタブはないねん。
+    .title = 最も優先度の高いタブを解放してみる
+about-unloads-no-unloadable-tab = 解放できるタブはなかったで
 
 about-unloads-column-priority = 優先度
 about-unloads-column-host = ホスト
 about-unloads-column-last-accessed = 最終アクセス日時
 about-unloads-column-weight = 基本ウエイト
-    .title = タブはまずこの値で並べ替えられるで。これは音声の再生や WebRTC など、一部の特別な属性から算出されるねん。
+    .title = タブはまずこの値で並べ替えられるで。これは音声の再生や WebRTC など、一部の特別な属性から算出されるで。
 about-unloads-column-sortweight = 二次ウエイト
-    .title = 基本ウエイトで並べ替えられた後、利用可能であるんやったら、この値でタブが並べ替えられるで。この値はタブのメモリー消費量とプロセス数から算出されるねん。
+    .title = 基本ウエイトで並べ替えられた後、利用可能であれば、この値でタブが並べ替えられるで。この値はタブのメモリー消費量とプロセス数から算出されるで。
 about-unloads-column-memory = メモリー
     .title = タブの推定メモリー消費量
 about-unloads-column-processes = プロセス ID

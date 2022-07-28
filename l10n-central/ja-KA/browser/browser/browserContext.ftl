@@ -5,8 +5,8 @@
 navbar-tooltip-instruction =
     .value =
         { PLATFORM() ->
-            [macos] 長押しで履歴を表示するで
-           *[other] 右クリック、または長押しで履歴を表示するで
+            [macos] 長押しで履歴を表示します
+           *[other] 右クリック、または長押しで履歴を表示します
         }
 
 ## Back
@@ -14,7 +14,7 @@ navbar-tooltip-instruction =
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the Go Back command.
 main-context-menu-back-2 =
-    .tooltiptext = 前のページへ戻るで ({ $shortcut })
+    .tooltiptext = 前のページへ戻ります ({ $shortcut })
     .aria-label = 戻る
     .accesskey = B
 
@@ -33,7 +33,7 @@ toolbar-button-back-2 =
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the Go Forward command.
 main-context-menu-forward-2 =
-    .tooltiptext = 次のページへ進むで ({ $shortcut })
+    .tooltiptext = 次のページへ進みます ({ $shortcut })
     .aria-label = 進む
     .accesskey = F
 
@@ -62,11 +62,11 @@ toolbar-button-reload =
 ## Stop
 
 main-context-menu-stop =
-    .aria-label = やめとく
+    .aria-label = 中止
     .accesskey = S
 # This menuitem is only visible on macOS
 main-context-menu-stop-mac =
-    .label = やめとく
+    .label = 中止
     .accesskey = S
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
@@ -93,7 +93,7 @@ main-context-menu-page-save =
 main-context-menu-bookmark-add =
     .aria-label = このページをブックマーク
     .accesskey = m
-    .tooltiptext = このページをブックマークに追加するで
+    .tooltiptext = このページをブックマークに追加します
 
 # This menuitem is only visible on macOS
 # Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
@@ -114,19 +114,19 @@ main-context-menu-bookmark-edit-mac =
 main-context-menu-bookmark-add-with-shortcut =
     .aria-label = このページをブックマーク
     .accesskey = m
-    .tooltiptext = このページをブックマークに追加するで ({ $shortcut })
+    .tooltiptext = このページをブックマークに追加します ({ $shortcut })
 main-context-menu-bookmark-change =
     .aria-label = このブックマークを編集
     .accesskey = m
-    .tooltiptext = このページのブックマークを編集するで
+    .tooltiptext = このページのブックマークを編集します
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 main-context-menu-bookmark-change-with-shortcut =
     .aria-label = このブックマークを編集
     .accesskey = m
-    .tooltiptext = このページのブックマークを編集するで ({ $shortcut })
+    .tooltiptext = このページのブックマークを編集します ({ $shortcut })
 main-context-menu-open-link =
-    .label = 選んだ URL を開く
+    .label = 選択した URL を開く
     .accesskey = O
 main-context-menu-open-link-new-tab =
     .label = リンクを新しいタブで開く
@@ -320,7 +320,7 @@ main-context-menu-use-saved-password =
 ##
 
 main-context-menu-suggest-strong-password =
-    .label = 安全なパスワードを生成...
+    .label = 安全なパスワードを作る
     .accesskey = S
 
 main-context-menu-manage-logins2 =
@@ -364,10 +364,10 @@ main-context-menu-frame-view-info =
     .label = フレームの情報を表示
     .accesskey = I
 main-context-menu-print-selection =
-    .label = 選んだ部分を印刷
+    .label = 選択した部分を印刷
     .accesskey = r
 main-context-menu-view-selection-source =
-    .label = 選んだ部分のソースを表示
+    .label = 選択した部分のソースを表示
     .accesskey = e
 
 main-context-menu-take-screenshot =

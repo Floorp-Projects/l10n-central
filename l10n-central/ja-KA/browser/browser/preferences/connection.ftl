@@ -16,19 +16,19 @@ connection-close-key =
 connection-disable-extension =
     .label = 拡張機能を無効化
 
-connection-proxy-configure = インターネット接続に使用するプロキシーの設定
+connection-proxy-configure = インターネット接続に使うプロキシーの設定やで
 
 connection-proxy-option-no =
     .label = プロキシーを使わへん
     .accesskey = y
 connection-proxy-option-system =
-    .label = システムのプロキシー設定を使う
+    .label = システムのプロキシー設定を使うで
     .accesskey = U
 connection-proxy-option-auto =
-    .label = このネットワークのプロキシー設定を自動検出やっとく
+    .label = このネットワークのプロキシー設定を自動検出するで
     .accesskey = w
 connection-proxy-option-manual =
-    .label = 手動でプロキシーを設定する
+    .label = 手動でプロキシーを設定するで
     .accesskey = M
 
 connection-proxy-http = HTTP プロキシー
@@ -36,7 +36,7 @@ connection-proxy-http = HTTP プロキシー
 connection-proxy-http-port = ポート
     .accesskey = P
 connection-proxy-https-sharing =
-    .label = このプロキシーを HTTPS でも使用する
+    .label = このプロキシーを HTTPS でも使用するかい？
     .accesskey = s
 
 connection-proxy-https = HTTPS プロキシー
@@ -55,7 +55,7 @@ connection-proxy-socks4 =
 connection-proxy-socks5 =
     .label = SOCKS v5
     .accesskey = v
-connection-proxy-noproxy = プロキシーなしで接続
+connection-proxy-noproxy = プロキシーなしで接続するで
     .accesskey = N
 
 connection-proxy-noproxy-desc = 例: .mozilla.org, .net.nz, 192.168.1.0/24
@@ -72,16 +72,16 @@ connection-proxy-reload =
     .accesskey = e
 
 connection-proxy-autologin =
-    .label = パスワードを保存してある場合は認証を確認せえへん
+    .label = パスワードを保存してあるなら認証を確認せえへん
     .accesskey = i
-    .tooltip = このオプションは、プロキシーへのパスワードが保存してある場合、確認せんと認証すんねん。認証に失敗したら確認するで。
+    .tooltip = このオプションは、プロキシーへのパスワードが保存してるとき、確認しいひんで認証を行います。認証に失敗した場合は確認をするで。
 
 connection-proxy-socks-remote-dns =
-    .label = SOCKS v5 を使用するときは DNS もプロキシーを使用する
+    .label = SOCKS v5 を使用するときは DNS もプロキシーを使用するで
     .accesskey = D
 
 connection-dns-over-https =
-    .label = DNS over HTTPS を有効にする
+    .label = DNS over HTTPS を有効にするで
     .accesskey = b
 
 connection-dns-over-https-url-resolver = プロバイダーを使用
@@ -91,11 +91,11 @@ connection-dns-over-https-url-resolver = プロバイダーを使用
 #   $name (String) - Display name or URL for the DNS over HTTPS provider
 connection-dns-over-https-url-item-default =
     .label = { $name } (既定)
-    .tooltiptext = DNS over HTTPS の解決に既定の URL を使用するで
+    .tooltiptext = DNS over HTTPS の解決に既定の URL を使うで
 
 connection-dns-over-https-url-custom =
     .label = URL を指定:
     .accesskey = C
-    .tooltiptext = DNS over HTTPS の解決に使用する URL を入力するで
+    .tooltiptext = DNS over HTTPS の解決に使用する URL を入れてくれへん？
 
 connection-dns-over-https-custom-label = URL を指定

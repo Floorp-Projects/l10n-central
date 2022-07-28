@@ -10,7 +10,7 @@
 ## in the documentation section in about:policies.
 
 ## Floorp from 10.0.0
-from-policy-notice = これらのポリシーは、{ -brand-short-name } プロジェクトにより設定され、Firefox の改造・動作の変更に使用されるで。デフォルトではユーザーを制限するものじゃないねん。安心してや。
+from-policy-notice = これらのポリシーは、{ -brand-short-name } プロジェクトにより設定されて、Firefox の改造・動作の変更に使われてるで。デフォルトではユーザーを制限するものじゃないで。安心してくれ。
 
 
 policy-3rdparty = WebExtension が chrome.storage.managed を経由してアクセス可能なポリシーを設定するで。
@@ -21,11 +21,11 @@ policy-AppAutoUpdate = アプリケーションの自動更新を有効または
 
 policy-AppUpdatePin = { -brand-short-name } が指定のバージョン以降に更新されるのを抑止するで。
 
-policy-AppUpdateURL = アプリケーションのカスタム更新 URL を設定すんねん。
+policy-AppUpdateURL = アプリケーションのカスタム更新 URL を設定するで。
 
-policy-Authentication = ウェブサイトが対応する統合認証の設定を行うんや。
+policy-Authentication = ウェブサイトが対応する統合認証の設定をするで。
 
-policy-AutoLaunchProtocolsFromOrigins = ユーザーに確認せんと、列挙された生成元から利用できる外部プロトコルのリストを定義するで。
+policy-AutoLaunchProtocolsFromOrigins = ユーザーに確認せずに、列挙された生成元から利用できる外部プロトコルのリストを定義するで。
 
 policy-BackgroundAppUpdate2 = バックグラウンド更新を有効または無効にするで。
 
@@ -37,23 +37,23 @@ policy-BlockAboutProfiles = about:profiles ページへのアクセスをブロ�
 
 policy-BlockAboutSupport = about:support ページへのアクセスをブロックするで。
 
-policy-Bookmarks = ブックマークツールバー、ブックマークメニュー、それか指定のフォルダーの中にブックマークを作成するで。
+policy-Bookmarks = ブックマークツールバー、ブックマークメニュー、または指定のフォルダーの中にブックマークを作成するで。
 
-policy-CaptivePortal = キャプティブポータルサポートを有効か無効にするで。
+policy-CaptivePortal = キャプティブポータルサポートを有効または無効にするで。
 
-policy-CertificatesDescription = 証明書を追加、もしくは組み込みの証明書を利用するで。
+policy-CertificatesDescription = 証明書を追加、または組み込みの証明書を利用するで。
 
 policy-Cookies = ウェブサイトの Cookie の保存を許可するか拒否するか設定するで。
 
 policy-DisabledCiphers = 暗号を無効にするで。
 
-policy-DefaultDownloadDirectory = 既定のダウンロードディレクトリを設定するで。
+policy-DefaultDownloadDirectory = 既定のダウンロードディレクトリーを設定するで。
 
 policy-DisableAppUpdate = ブラウザの更新を禁止するで。
 
 policy-DisableBuiltinPDFViewer = { -brand-short-name } 組み込みの PDF ビューアーの PDF.js を無効にするで。
 
-policy-DisableDefaultBrowserAgent = Default Browser Agent のアクションをすべて禁止すんねん。Windows のみ有効やねん。他のプラットフォームはエージェントがないねん。
+policy-DisableDefaultBrowserAgent = Default Browser Agent のアクションをすべて禁止するで。Windows のみ有効やで。他のプラットフォームはエージェントがないんで安心してくれ。
 
 policy-DisableDeveloperTools = 開発ツールへのアクセスをブロックするで。
 
@@ -68,11 +68,11 @@ policy-DisableFirefoxStudies = Shield 調査の実行を禁止するで。
 
 policy-DisableForgetButton = [忘れる]ボタンへのアクセスを禁止するで。
 
-policy-DisableFormHistory = 検索とフォームの履歴を記憶せんようにするで。
+policy-DisableFormHistory = 検索とフォームの履歴を記憶しないようにするで。
 
-policy-DisablePrimaryPasswordCreation = true にしたら、マスターパスワードを作成できへんようにするで。
+policy-DisablePrimaryPasswordCreation = true にすると、マスターパスワードを作成できないようにするで。
 
-policy-DisablePasswordReveal = 保存されたパスワードの表示を許可せんようにすんで。
+policy-DisablePasswordReveal = 保存されたパスワードの表示を許可しないようにするで。
 
 policy-DisablePocket = ウェブページを Pocket に保存する機能を無効にするで。
 
@@ -82,9 +82,9 @@ policy-DisableProfileImport = メニューコマンド [他のブラウザーか
 
 policy-DisableProfileRefresh = about:support ページの [{ -brand-short-name } をリフレッシュ] ボタンを無効にするで。
 
-policy-DisableSafeMode = セーフモードで再起動する機能を無効にするで。注意: Shift キーでセーフモードを起動する機能は、Windows でグループポリシーを利用する時だけ無効にできるで。
+policy-DisableSafeMode = セーフモードで再起動する機能を無効にするで。注意: Shift キーでセーフモードを起動する機能は、Windows でグループポリシーを利用する場合のみ無効にできるで。
 
-policy-DisableSecurityBypass = ユーザーが特定のセキュリティ警告を回避できへんにするで。
+policy-DisableSecurityBypass = ユーザーが特定のセキュリティ警告を回避できないようにするで。
 
 policy-DisableSetAsDesktopBackground = メニューコマンド [デスクトップの背景に設定] を無効にするで。
 
@@ -100,32 +100,32 @@ policy-DNSOverHTTPS = DNS over HTTPS の設定を指示するで。
 
 policy-DontCheckDefaultBrowser = 起動時に既定のブラウザーか確認する機能を無効にするで。
 
-policy-DownloadDirectory = ダウンロードディレクトリーを設定して、ロックするで。
+policy-DownloadDirectory = ダウンロードディレクトリーを設定し、ロックするで。
 
 # “lock” means that the user won’t be able to change this setting
-policy-EnableTrackingProtection = コンテンツブロッキングを有効または無効にして、任意で設定をロックするで。
+policy-EnableTrackingProtection = コンテンツブロッキングを有効または無効にし、任意で設定をロックするで。
 
 # “lock” means that the user won’t be able to change this setting
-policy-EncryptedMediaExtensions = Encrypted Media Extensions を有効または無効にして、任意で設定をロックするで。
+policy-EncryptedMediaExtensions = Encrypted Media Extensions を有効または無効にし、任意で設定をロックするで。
 
 policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = 指定のドメインで指定のファイル形式のダウンロード警告を無効にするで。
 
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
-policy-Extensions = 拡張機能をインストール、削除、それかロックするで。インストールは URL とパスを指定するねん。削除とロックは拡張機能の ID を指定するんや。
+policy-Extensions = 拡張機能をインストール、削除、またはロックするで。インストールは URL とパスを指定するで。削除とロックは拡張機能の ID を指定するで。
 
 policy-ExtensionSettings = 拡張機能のインストール全般を管理するで。
 
 policy-ExtensionUpdate = 拡張機能の自動更新を有効または無効にするで。
 
-policy-FirefoxHome = Floorp Home の設定を行うで。
+policy-FirefoxHome = Floorp Home の設定を行います。
 
 policy-FlashPlugin = Flash プラグインの実行を許可、または拒否するで。
 
 policy-Handlers = 既定のアプリケーションハンドラーを設定するで。
 
-policy-HardwareAcceleration = false にすると、ハードウェアアクセラレーションをオフにするで。
+policy-HardwareAcceleration = false にしたら、ハードウェアアクセラレーションをオフにするで。
 
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = ホームページを設定して、任意でロックするで。
@@ -138,15 +138,15 @@ policy-LegacyProfiles = インストレーションごとにプロファイル�
 
 policy-LegacySameSiteCookieBehaviorEnabled = 従来の SameSite Cookie の動作設定を既定で有効にするで。
 
-policy-LegacySameSiteCookieBehaviorEnabledForDomainList = 特定のサイトやったら従来の SameSite Cookie の動作に戻するで。
+policy-LegacySameSiteCookieBehaviorEnabledForDomainList = 特定のサイトでは従来の SameSite Cookie の動作に戻するで。
 
 ##
 
 policy-LocalFileLinks = 特定のウェブサイトにローカルファイルへのリンクを許可するで。
 
-policy-ManagedBookmarks = システム管理者により管理されたブックマークのリストを設定するで。ユーザーはこのブックマークを変更できへんで。
+policy-ManagedBookmarks = システム管理者により管理されたブックマークのリストを設定するで。ユーザーはこのブックマークを変更できひんくなるで。
 
-policy-ManualAppUpdateOnly = 更新を手動だけにして、更新の通知をユーザーには通知せえへんようにするで。
+policy-ManualAppUpdateOnly = 更新を手動だけにして、更新の通知をあんたには通知せえへんようにするで。
 
 policy-PrimaryPassword = マスターパスワードの使用を要求または抑止するで。
 
@@ -154,15 +154,15 @@ policy-NetworkPrediction = 先読み機能 (DNS プリフェッチ) を有効ま
 
 policy-NewTabPage = 新しいタブページを有効または無効にするで。
 
-policy-NoDefaultBookmarks = { -brand-short-name } の初期ブックマークとスマートブックマーク (よく見るページ、最近付けたタグ) の作成を無効にするで。注意: このポリシーはプロファイルの初回起動より前に設定てないと有効になれへんで。
+policy-NoDefaultBookmarks = { -brand-short-name } の初期ブックマークとスマートブックマーク (よく見るページ、最近付けたタグ) の作成を無効にするで。このポリシーはプロファイルの初回起動より前に設定されとる場合のみ有効やで。
 
 policy-OfferToSaveLogins = { -brand-short-name } に保存したログイン情報とパスワードを利用する設定を強制するで。値は true か false を設定するで。
 
 policy-OfferToSaveLoginsDefault = { -brand-short-name } に保存したログイン情報とパスワードを利用する設定の既定値を設定するで。値は true か false を設定するで。
 
-policy-OverrideFirstRunPage = 初回起動時に表示されるページを上書きするで。初回起動時のページを無効にするんやったら、このポリシーの設定をブランクにするで。
+policy-OverrideFirstRunPage = 初回起動時に出されるページを上書きするで。初回起動時のページを無効にする場合は、このポリシーの設定をブランクにするで。
 
-policy-OverridePostUpdatePage = 更新後に表示される更新情報ページを上書きするで。更新後のページを無効にするには、このポリシーの設定をブランクにするで。
+policy-OverridePostUpdatePage = 更新後に出される更新情報ページを上書きするで。更新後のページを無効にするには、このポリシーの設定をブランクにするで。
 
 policy-PasswordManagerEnabled = パスワードのパスワードマネージャーへの保存を有効にするで。
 
@@ -185,9 +185,9 @@ policy-Proxy = プロキシーの設定を指示するで。
 
 policy-RequestedLocales = アプリケーションに要求される言語リストと優先順位を設定するで。
 
-policy-SanitizeOnShutdown2 = 終了時にナビゲーションデータを消去するで。
+policy-SanitizeOnShutdown2 = 終わるときにナビゲーションデータを消去するで。
 
-policy-SearchBar = 検索バーの既定の位置を設定するで。ユーザーによる設定の変更は許可されんねん。
+policy-SearchBar = 検索バーの既定の位置を設定するで。ユーザーによる設定の変更は許可されるで。
 
 policy-SearchEngines = 検索エンジンの設定を指示するで。このポリシーは延長サポート版 (ESR) のみ有効やで。
 
@@ -202,7 +202,7 @@ policy-SSLVersionMax = SSL の最高バージョンを設定するで。
 
 policy-SSLVersionMin = SSL の最低バージョンを設定するで。
 
-policy-StartDownloadsInTempDirectory = 既定のダウンロードディレクトリーではなく、ローカルの一時的な場所にダウンロードするよう強制するで。
+policy-StartDownloadsInTempDirectory = 既定のダウンロードディレクトリーじゃなくて、ローカルの一時的な場所にダウンロードするよう強制するで。
 
 policy-SupportMenu = ヘルプメニューにカスタムサポートメニューを追加するで。
 
@@ -211,6 +211,6 @@ policy-UserMessaging = 特定のメッセージをユーザーに表示させな
 policy-UseSystemPrintDialog = システムの印刷ダイアログで印刷するで。
 
 # “format” refers to the format used for the value of this policy.
-policy-WebsiteFilter = ウェブサイトを訪問済みにしません。書式の詳細はドキュメントをご覧ください。
+policy-WebsiteFilter = ウェブサイトを訪問済みにせえへんようにするで。書式の詳細はドキュメントを見てくれへん？
 
 policy-Windows10SSO = Microsoft アカウント、職場または学校アカウントで Windows のシングルサインオンを許可するで。

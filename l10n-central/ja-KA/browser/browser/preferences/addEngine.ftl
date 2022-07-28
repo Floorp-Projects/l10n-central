@@ -3,20 +3,20 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 add-engine-window =
-    .title = 検索エンジンを増やす
+    .title = 検索エンジンを追加
     .style = width: 32em;
 
-add-engine-button = カスタム検索エンジンを増やす
+add-engine-button = カスタム検索エンジンを追加するで
 
 add-engine-name = 検索エンジン名
 
 add-engine-alias = 別名
 
-add-engine-url = 検索エンジンの URL を入力するで。%s は検索語句に置き換わるで
+add-engine-url = 検索エンジンの URL を入力してくれへん? %s は検索語句に置き換わるで
 
 add-engine-dialog =
-    .buttonlabelaccept = 検索エンジンを増やす
+    .buttonlabelaccept = 検索エンジンを追加するで
     .buttonaccesskeyaccept = A
 
-engine-name-exists = その名前の検索エンジンはもうあるで
-engine-alias-exists = その別名の検索エンジンはもうあるで
+engine-name-exists = その名前の検索エンジンはすでに存在しとるで
+engine-alias-exists = その別名の検索エンジンはすでに存在しとるで

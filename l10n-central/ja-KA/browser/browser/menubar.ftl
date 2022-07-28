@@ -114,7 +114,7 @@ menu-edit-find-again =
     .label = 次を検索
     .accesskey = g
 menu-edit-bidi-switch-text-direction =
-    .label = テキストの記述方向を切り替える
+    .label = テキストの記述方向を切り替えるで
     .accesskey = w
 
 ## View Menu
@@ -150,13 +150,13 @@ menu-view-full-zoom-actual-size =
     .label = 等倍
     .accesskey = A
 menu-view-full-zoom-toggle =
-    .label = 文字サイズだけ変える
+    .label = 文字サイズのみ変更
     .accesskey = T
 menu-view-page-style-menu =
     .label = スタイルシート
     .accesskey = y
 menu-view-page-style-no-style =
-    .label = スタイルシートを使わへん
+    .label = スタイルシートを使用しない
     .accesskey = n
 menu-view-page-basic-style =
     .label = 標準スタイルシート
@@ -184,7 +184,7 @@ menu-view-show-all-tabs =
     .label = すべてのタブを表示
     .accesskey = A
 menu-view-bidi-switch-page-direction =
-    .label = ページの記述方向を切り替える
+    .label = ページの記述方向を切り替えるで
     .accesskey = D
 
 ## History Menu
@@ -311,13 +311,13 @@ menu-help-enter-troubleshoot-mode2 =
     .label = トラブルシューティングモード...
     .accesskey = M
 menu-help-exit-troubleshoot-mode =
-    .label = トラブルシューティングモードをオフにしとく
+    .label = トラブルシューティングモードをオフにする
     .accesskey = M
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =
-    .label = 詐欺サイトを報告...
+    .label = 詐欺サイトを報告するわ
     .accesskey = D
 menu-help-not-deceptive =
-    .label = 詐欺サイトの誤報告を指摘...
+    .label = 詐欺サイトの誤報告を指摘するわ
     .accesskey = d

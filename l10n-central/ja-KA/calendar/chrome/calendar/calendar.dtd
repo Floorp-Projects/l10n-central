@@ -6,17 +6,17 @@
 <!ENTITY calendar.calendar.label			"カレンダー">
 <!ENTITY calendar.calendar.accesskey			"C">
 
-<!ENTITY calendar.newevent.button.tooltip		"新しい予定を作成しとくで" >
-<!ENTITY calendar.newtask.button.tooltip		"新しい ToDo を作成しとくで" >
+<!ENTITY calendar.newevent.button.tooltip		"新しい予定を作成します" >
+<!ENTITY calendar.newtask.button.tooltip		"新しい ToDo を作成します" >
 
 <!ENTITY calendar.unifinder.showcompletedtodos.label	"完了した ToDo を表示">
 
 <!ENTITY calendar.today.button.label			"今日">
 <!ENTITY calendar.tomorrow.button.label			"明日">
 
-<!ENTITY calendar.events.filter.all.label		"全部の予定">
+<!ENTITY calendar.events.filter.all.label		"すべての予定">
 <!ENTITY calendar.events.filter.today.label		"今日の予定">
-<!ENTITY calendar.events.filter.future.label		"今後全部の予定">
+<!ENTITY calendar.events.filter.future.label		"今後すべての予定">
 <!ENTITY calendar.events.filter.current.label		"選択した日の予定">
 <!ENTITY calendar.events.filter.currentview.label	"現在のビューの予定">
 <!ENTITY calendar.events.filter.next7Days.label		"1 週間後までの予定">
@@ -28,40 +28,40 @@
    - This label and tooltip is used for the column with the checkbox in the
    - task tree view. -->
 <!ENTITY calendar.unifinder.tree.done.label		"完了">
-<!ENTITY calendar.unifinder.tree.done.tooltip2		"完了マークで並べ替えるで">
+<!ENTITY calendar.unifinder.tree.done.tooltip2		"完了マークで並べ替えます">
 <!ENTITY calendar.unifinder.tree.priority.label		"重要度">
-<!ENTITY calendar.unifinder.tree.priority.tooltip2	"重要度で並べ替えるで">
+<!ENTITY calendar.unifinder.tree.priority.tooltip2	"重要度で並べ替えます">
 <!ENTITY calendar.unifinder.tree.title.label		"件名">
-<!ENTITY calendar.unifinder.tree.title.tooltip2		"件名で並べ替えるで">
+<!ENTITY calendar.unifinder.tree.title.tooltip2		"件名で並べ替えます">
 <!ENTITY calendar.unifinder.tree.percentcomplete.label	"&#37; 完了">
-<!ENTITY calendar.unifinder.tree.percentcomplete.tooltip2	"進行状況で並べ替えるで">
+<!ENTITY calendar.unifinder.tree.percentcomplete.tooltip2	"進行状況で並べ替えます">
 <!ENTITY calendar.unifinder.tree.startdate.label	"開始日時">
-<!ENTITY calendar.unifinder.tree.startdate.tooltip2	"開始日時で並べ替えるで">
+<!ENTITY calendar.unifinder.tree.startdate.tooltip2	"開始日時で並べ替えます">
 <!ENTITY calendar.unifinder.tree.enddate.label		"終了日時">
-<!ENTITY calendar.unifinder.tree.enddate.tooltip2	"終了日時で並べ替えるで">
+<!ENTITY calendar.unifinder.tree.enddate.tooltip2	"終了日時で並べ替えます">
 <!ENTITY calendar.unifinder.tree.duedate.label		"締切日時">
-<!ENTITY calendar.unifinder.tree.duedate.tooltip2	"締切日時で並べ替えるで">
+<!ENTITY calendar.unifinder.tree.duedate.tooltip2	"締切日時で並べ替えます">
 <!ENTITY calendar.unifinder.tree.completeddate.label	"完了日時">
-<!ENTITY calendar.unifinder.tree.completeddate.tooltip2	"完了日時で並べ替えるで">
+<!ENTITY calendar.unifinder.tree.completeddate.tooltip2	"完了日時で並べ替えます">
 <!ENTITY calendar.unifinder.tree.categories.label	"カテゴリー">
-<!ENTITY calendar.unifinder.tree.categories.tooltip2	"カテゴリー名で並べ替えるで">
+<!ENTITY calendar.unifinder.tree.categories.tooltip2	"カテゴリー名で並べ替えます">
 <!ENTITY calendar.unifinder.tree.location.label		"場所">
-<!ENTITY calendar.unifinder.tree.location.tooltip2	"場所で並べ替えるで">
+<!ENTITY calendar.unifinder.tree.location.tooltip2	"場所で並べ替えます">
 <!ENTITY calendar.unifinder.tree.status.label		"状態">
-<!ENTITY calendar.unifinder.tree.status.tooltip2	"状態で並べ替えるで">
+<!ENTITY calendar.unifinder.tree.status.tooltip2	"状態で並べ替えます">
 <!ENTITY calendar.unifinder.tree.calendarname.label	"カレンダー名">
-<!ENTITY calendar.unifinder.tree.calendarname.tooltip2	"カレンダー名で並べ替えるで">
+<!ENTITY calendar.unifinder.tree.calendarname.tooltip2	"カレンダー名で並べ替えます">
 <!ENTITY calendar.unifinder.tree.duration.label		"締切まで"><!-- (^a^) 残り時間、締切までの時間、締切まであと -->
-<!ENTITY calendar.unifinder.tree.duration.tooltip2	"締切までの時間で並べ替えるで">
-<!ENTITY calendar.unifinder.close.tooltip		"予定検索と予定リストを閉じるで">
+<!ENTITY calendar.unifinder.tree.duration.tooltip2	"締切までの時間で並べ替えます">
+<!ENTITY calendar.unifinder.close.tooltip		"予定検索と予定リストを閉じます">
 
-<!ENTITY calendar.today.button.tooltip			"今日に移動しとくで" >
-<!ENTITY calendar.todaypane.button.tooltip		"Today ペインを表示しとくで" >
+<!ENTITY calendar.today.button.tooltip			"今日に移動します" >
+<!ENTITY calendar.todaypane.button.tooltip		"Today ペインを表示します" >
 
-<!ENTITY calendar.day.button.tooltip			"日表示に切り替えるで" >
-<!ENTITY calendar.week.button.tooltip			"週表示に切り替えるで" >
-<!ENTITY calendar.month.button.tooltip			"月表示に切り替えるで" >
-<!ENTITY calendar.multiweek.button.tooltip		"多週表示に切り替えるで" >
+<!ENTITY calendar.day.button.tooltip			"日表示に切り替えます" >
+<!ENTITY calendar.week.button.tooltip			"週表示に切り替えます" >
+<!ENTITY calendar.month.button.tooltip			"月表示に切り替えます" >
+<!ENTITY calendar.multiweek.button.tooltip		"多週表示に切り替えます" >
 
 <!-- (^a^) 基準は、今日/今週/今月 ではなくて 選択されている日/週/月 -->
 <!ENTITY calendar.nextday.label				"次の日" >
@@ -77,12 +77,12 @@
 <!ENTITY calendar.nextmonth.accesskey			"x" >
 <!ENTITY calendar.prevmonth.accesskey			"s" >
 
-<!ENTITY calendar.navigation.nextday.tooltip		"翌日へ進みるで" >
-<!ENTITY calendar.navigation.prevday.tooltip		"前日へ戻りるで" >
-<!ENTITY calendar.navigation.nextweek.tooltip		"翌週へ進みるで" >
-<!ENTITY calendar.navigation.prevweek.tooltip		"前週へ戻りるで" >
-<!ENTITY calendar.navigation.nextmonth.tooltip		"翌月へ進みるで" >
-<!ENTITY calendar.navigation.prevmonth.tooltip		"前月へ戻りるで" >
+<!ENTITY calendar.navigation.nextday.tooltip		"翌日へ進みます" >
+<!ENTITY calendar.navigation.prevday.tooltip		"前日へ戻ります" >
+<!ENTITY calendar.navigation.nextweek.tooltip		"翌週へ進みます" >
+<!ENTITY calendar.navigation.prevweek.tooltip		"前週へ戻ります" >
+<!ENTITY calendar.navigation.nextmonth.tooltip		"翌月へ進みます" >
+<!ENTITY calendar.navigation.prevmonth.tooltip		"前月へ戻ります" >
 
 <!ENTITY calendar.newevent.button.label			"新しい予定" >
 <!ENTITY calendar.newtask.button.label			"新しい ToDo" >
@@ -91,7 +91,7 @@
 <!ENTITY calendar.week.button.label			"週" >
 <!ENTITY calendar.month.button.label			"月" >
 <!ENTITY calendar.multiweek.button.label		"多週" >
-<!ENTITY calendar.onlyworkday.checkbox.label		"勤務日dake表示" >
+<!ENTITY calendar.onlyworkday.checkbox.label		"勤務日のみ表示" >
 <!ENTITY calendar.onlyworkday.checkbox.accesskey	"r" >
 <!ENTITY calendar.displaytodos.checkbox.label		"ToDo を表示" >
 <!ENTITY calendar.displaytodos.checkbox.accesskey	"k" >
@@ -106,7 +106,7 @@
 <!ENTITY calendar.list.header.label			"カレンダー">
 
 <!ENTITY calendar.task.filter.title.label		"表示">
-<!ENTITY calendar.task.filter.all.label			"全部">
+<!ENTITY calendar.task.filter.all.label			"すべて">
 <!ENTITY calendar.task.filter.all.accesskey		"A">
 <!ENTITY calendar.task.filter.today.label		"今日">
 <!ENTITY calendar.task.filter.today.accesskey		"T">
@@ -142,9 +142,9 @@
 <!ENTITY calendar.task-details.start.label		"着手日時">
 <!ENTITY calendar.task-details.due.label		"締切日時">
 
-<!ENTITY calendar.task.category.button.tooltip		"ToDo をカテゴリーに分けるで">
-<!ENTITY calendar.task.complete.button.tooltip		"選択した ToDo を完了にしとくで">
-<!ENTITY calendar.task.priority.button.tooltip		"重要度を変更しとくで">
+<!ENTITY calendar.task.category.button.tooltip		"ToDo をカテゴリーに分けます">
+<!ENTITY calendar.task.complete.button.tooltip		"選択した ToDo を完了にします">
+<!ENTITY calendar.task.priority.button.tooltip		"重要度を変更します">
 
 <!ENTITY calendar.task.text-filter.textbox.emptytext.base1		"ToDo の絞り込み #1"><!-- #1: emptytext.keylabel.* -->
 <!ENTITY calendar.task.text-filter.textbox.emptytext.keylabel.nonmac	"&lt;Ctrl+Shift+K&gt;">
@@ -173,11 +173,11 @@
 <!ENTITY calendar.context.button.accesskey		"T">
 <!ENTITY calendar.context.attendance.menu.label		"参加">
 <!ENTITY calendar.context.attendance.menu.accesskey	"d">
-<!ENTITY calendar.context.attendance.occurrence.label	"この予定dake">
-<!ENTITY calendar.context.attendance.all2.label		"全部完了にしとく">
+<!ENTITY calendar.context.attendance.occurrence.label	"この予定のみ">
+<!ENTITY calendar.context.attendance.all2.label		"すべて完了にする">
 <!ENTITY calendar.context.attendance.send.label		"通知を今すぐ送信">
 <!ENTITY calendar.context.attendance.send.accesskey	"S">
-<!ENTITY calendar.context.attendance.dontsend.label	"通知を送信せえん">
+<!ENTITY calendar.context.attendance.dontsend.label	"通知を送信しない">
 <!ENTITY calendar.context.attendance.dontsend.accesskey	"D">
 
 <!ENTITY calendar.context.attendance.occ.accepted.accesskey	"A">
@@ -220,7 +220,7 @@
 
 <!ENTITY percnt						"&#38;#37;" ><!--=percent sign-->
 
-<!ENTITY calendar.context.markcompleted.label		"完了にしとく">
+<!ENTITY calendar.context.markcompleted.label		"完了にする">
 <!ENTITY calendar.context.markcompleted.accesskey	"o">
 
 <!ENTITY progress.level.0				"0&percnt; 完了">
@@ -293,7 +293,7 @@
 <!-- LOCALIZATION NOTE (calendar.context.showonly.accesskey)
      This is the access key used for the showOnlyCalendar string -->
 <!ENTITY calendar.context.showonly.accesskey		"O">
-<!ENTITY calendar.context.showall.label			"全部のカレンダーを表示">
+<!ENTITY calendar.context.showall.label			"すべてのカレンダーを表示">
 <!ENTITY calendar.context.showall.accesskey		"A">
 
 <!ENTITY calendar.context.convertmenu.label		"変換">
@@ -320,11 +320,11 @@
 <!ENTITY calendar.alarm.location.label			"場所:" >
 <!ENTITY calendar.alarm.details.label			"詳細..." >
 
-<!ENTITY calendar.alarm.snoozefor.label			"再通知しとく" > <!-- TODO -->
-<!ENTITY calendar.alarm.snoozeallfor.label		"全部再通知しとく" > <!-- TODO -->
+<!ENTITY calendar.alarm.snoozefor.label			"再通知する" > <!-- TODO -->
+<!ENTITY calendar.alarm.snoozeallfor.label		"すべて再通知する" > <!-- TODO -->
 <!ENTITY calendar.alarm.title.label			"カレンダーアラーム" >
-<!ENTITY calendar.alarm.dismiss.label			"停止しとく" >
-<!ENTITY calendar.alarm.dismissall.label		"全部停止しとく" >
+<!ENTITY calendar.alarm.dismiss.label			"停止する" >
+<!ENTITY calendar.alarm.dismissall.label		"すべて停止する" >
 
 <!ENTITY calendar.alarm.snooze.5minutes.label		"5 分" >
 <!ENTITY calendar.alarm.snooze.10minutes.label		"10 分" >
@@ -339,7 +339,7 @@
      This string is not seen in the UI, it is read by screen readers when the
      user focuses the "Cancel" button in the "Snooze for..." popup of the alarm
      dialog. -->
-<!ENTITY calendar.alarm.snooze.cancel			"再通知をキャンセルしとくで">
+<!ENTITY calendar.alarm.snooze.cancel			"再通知をキャンセルします">
 
 <!-- Calendar Server Dialog -->
 <!ENTITY calendar.server.dialog.title.edit		"カレンダーの編集">
@@ -355,10 +355,10 @@
 <!ENTITY calendarproperties.refreshInterval.manual.label	"手動">
 <!ENTITY calendarproperties.name.label			"名前:">
 <!ENTITY calendarproperties.readonly.label		"読み込み専用">
-<!ENTITY calendarproperties.firealarms.label		"アラーム通知しとく">
+<!ENTITY calendarproperties.firealarms.label		"アラーム通知する">
 <!ENTITY calendarproperties.cache3.label		"オフラインサポート">
-<!ENTITY calendarproperties.enabled2.label		"このカレンダーを有効にしとく">
-<!ENTITY calendarproperties.forceDisabled.label		"このカレンダーのプロバイダーが見つからへんかったわ。対象のアドオンが無効にされているかアンインストールされているで。">
+<!ENTITY calendarproperties.enabled2.label		"このカレンダーを有効にする">
+<!ENTITY calendarproperties.forceDisabled.label		"このカレンダーのプロバイダーが見つかりませんでした。対象のアドオンが無効にされているかアンインストールされています。">
 <!ENTITY calendarproperties.unsubscribe.label		"登録解除">
 <!ENTITY calendarproperties.unsubscribe.accesskey	"U">
 
@@ -375,10 +375,10 @@
 <!ENTITY calendar.error.detail				"詳細...">
 <!ENTITY calendar.error.code				"エラーコード:">
 <!ENTITY calendar.error.description			"説明:">
-<!ENTITY calendar.error.title				"エラーが発生ししたで">
+<!ENTITY calendar.error.title				"エラーが発生しました">
 
 <!-- Extract buttons in message header -->
 <!ENTITY calendar.extract.event.button			"予定に追加">
 <!ENTITY calendar.extract.task.button			"ToDo に追加">
-<!ENTITY calendar.extract.event.button.tooltip		"メッセージからカレンダー情報を抽出し、カレンダーの予定に追加しとくで">
-<!ENTITY calendar.extract.task.button.tooltip		"メッセージからカレンダー情報を抽出し、カレンダーの ToDo に追加しとくで">
+<!ENTITY calendar.extract.event.button.tooltip		"メッセージからカレンダー情報を抽出し、カレンダーの予定に追加します">
+<!ENTITY calendar.extract.task.button.tooltip		"メッセージからカレンダー情報を抽出し、カレンダーの ToDo に追加します">

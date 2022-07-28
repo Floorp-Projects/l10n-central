@@ -4,7 +4,7 @@
 
 <!ENTITY event.title.label				"項目の編集">
 
-<!ENTITY event.dialog.keepDurationButton.tooltip	"終了日時を変更しても期間の長さを維持するで">
+<!ENTITY event.dialog.keepDurationButton.tooltip	"終了日時を変更しても期間の長さを維持します">
 <!ENTITY event.dialog.keepDurationButton.accesskey	"K">
 
 <!ENTITY newevent.from.label				"開始日時">
@@ -37,10 +37,10 @@
 <!ENTITY event.attendees.notify.accesskey		"f">
 <!ENTITY event.attendees.notifyundisclosed.label	"参加者ごとに招待メールを分ける">
 <!ENTITY event.attendees.notifyundisclosed.accesskey	"x">
-<!ENTITY event.attendees.notifyundisclosed.tooltip	"このオプションは、参加者ごとに個別の招待メールを送信するで。各招待メールには受信した参加者のみが含まれて、他の参加者の識別情報は非公開になるで。">
-<!ENTITY event.attendees.disallowcounter.label		"対案を許可せえへん">
+<!ENTITY event.attendees.notifyundisclosed.tooltip	"このオプションは、参加者ごとに個別の招待メールを送信します。各招待メールには受信した参加者のみが含まれ、他の参加者の識別情報は非公開になります。">
+<!ENTITY event.attendees.disallowcounter.label		"対案を許可しない">
 <!ENTITY event.attendees.disallowcounter.accesskey	"a">
-<!ENTITY event.attendees.disallowcounter.tooltip	"対案を承諾せえへんことを示すで">
+<!ENTITY event.attendees.disallowcounter.tooltip	"対案を承諾しないことを示します">
 
 <!-- Keyboard Shortcuts -->
 <!ENTITY event.dialog.new.message.key2			"N">
@@ -100,7 +100,7 @@
 <!ENTITY  event.menu.edit.copy.accesskey		"C">
 <!ENTITY  event.menu.edit.paste.label			"貼り付け">
 <!ENTITY  event.menu.edit.paste.accesskey		"P">
-<!ENTITY  event.menu.edit.select.all.label		"全部選択">
+<!ENTITY  event.menu.edit.select.all.label		"すべて選択">
 <!ENTITY  event.menu.edit.select.all.accesskey		"A">
 
 <!ENTITY  event.menu.view.label				"表示">
@@ -149,7 +149,7 @@
 <!ENTITY event.email.attendees.accesskey		"A">
 <!ENTITY event.email.tentative.attendees.label		"未確定な参加者にメッセージを作成...">
 <!ENTITY event.email.tentative.attendees.accesskey	"U">
-<!ENTITY event.remove.attendees.label2			"全部の参加者を削除">
+<!ENTITY event.remove.attendees.label2			"すべての参加者を削除">
 <!ENTITY event.remove.attendees.accesskey		"r">
 <!ENTITY event.remove.attendee.label			"参加者を削除">
 <!ENTITY event.remove.attendee.accesskey		"e">
@@ -161,15 +161,15 @@
 <!ENTITY  event.toolbar.attendees.label			"参加者を追加">
 <!ENTITY  event.toolbar.privacy.label			"プライバシー">
 
-<!ENTITY  event.toolbar.save.tooltip2			"保存するで">
-<!ENTITY  event.toolbar.saveandclose.tooltip		"保存して閉じるで">
-<!ENTITY  event.toolbar.delete.tooltip			"削除するで">
-<!ENTITY  event.toolbar.attendees.tooltip		"参加者を追加するで">
-<!ENTITY  event.toolbar.attachments.tooltip		"URL を添付するで">
-<!ENTITY  event.toolbar.privacy.tooltip			"プライバシー設定を変更するで">
-<!ENTITY  event.toolbar.priority.tooltip		"重要度を変更するで">
-<!ENTITY  event.toolbar.status.tooltip			"状態を変更するで">
-<!ENTITY  event.toolbar.freebusy.tooltip		"空き時間情報の設定を切り替えるで">
+<!ENTITY  event.toolbar.save.tooltip2			"保存します">
+<!ENTITY  event.toolbar.saveandclose.tooltip		"保存して閉じます">
+<!ENTITY  event.toolbar.delete.tooltip			"削除します">
+<!ENTITY  event.toolbar.attendees.tooltip		"参加者を追加します">
+<!ENTITY  event.toolbar.attachments.tooltip		"URL を添付します">
+<!ENTITY  event.toolbar.privacy.tooltip			"プライバシー設定を変更します">
+<!ENTITY  event.toolbar.priority.tooltip		"重要度を変更します">
+<!ENTITY  event.toolbar.status.tooltip			"状態を変更します">
+<!ENTITY  event.toolbar.freebusy.tooltip		"空き時間情報の設定を切り替えます">
 
 <!-- Counter box -->
 <!-- LOCALIZATON NOTE(counter.button.*)
@@ -180,10 +180,10 @@
    - illustrates how it might look like: https://bugzilla.mozilla.org/attachment.cgi?id=8810121 -->
 <!ENTITY counter.button.proposal.label			"提案を適用">
 <!ENTITY counter.button.proposal.accesskey		"p">
-<!ENTITY counter.button.proposal.tooltip2		"予定フィールドに対案からの値が設定され、変更部分が全部の参加者に通知されるで">
+<!ENTITY counter.button.proposal.tooltip2		"予定フィールドに対案からの値が設定され、変更部分がすべての参加者に通知されます">
 <!ENTITY counter.button.original.label			"元のデータを適用">
 <!ENTITY counter.button.original.accesskey		"r">
-<!ENTITY counter.button.original.tooltip2		"予定フィールドに対案が作られる前の元の予定からの値が設定されるで。">
+<!ENTITY counter.button.original.tooltip2		"予定フィールドに対案が作られる前の元の予定からの値が設定されます。">
 
 <!-- Main page -->
 <!ENTITY event.title.textbox.label			"件名:">
@@ -228,14 +228,14 @@
 <!ENTITY event.attachments.popup.remove.accesskey	"R">
 <!ENTITY event.attachments.popup.open.label		"開く">
 <!ENTITY event.attachments.popup.open.accesskey		"O">
-<!ENTITY event.attachments.popup.removeAll.label	"全部削除">
+<!ENTITY event.attachments.popup.removeAll.label	"すべて削除">
 <!ENTITY event.attachments.popup.removeAll.accesskey	"A">
 <!ENTITY event.attachments.popup.attachPage.label	"URL を添付..."><!-- (^a^) event.menu.options.attachments.label と同じ -->
 <!ENTITY event.attachments.popup.attachPage.accesskey	"g">
 <!ENTITY event.url.label				"関連リンク:">
 <!ENTITY event.priority2.label				"重要度:">
 
-<!ENTITY event.reminder.none.label			"通知せえへん">
+<!ENTITY event.reminder.none.label			"通知しない">
 <!ENTITY event.reminder.0minutes.before.label		"0 分前">
 <!ENTITY event.reminder.5minutes.before.label		"5 分前">
 <!ENTITY event.reminder.15minutes.before.label		"15 分前">
@@ -406,14 +406,14 @@
 
 <!-- Summary dialog -->
 <!ENTITY summary.dialog.saveclose.label			"保存して閉じる">
-<!ENTITY summary.dialog.saveclose.tooltiptext		"変更を保存し参加状態を変更せずにウィンドウを閉じ、返答を送信するで">
+<!ENTITY summary.dialog.saveclose.tooltiptext		"変更を保存し参加状態を変更せずにウィンドウを閉じ、返答を送信します">
 <!ENTITY summary.dialog.accept.label			"承諾">
-<!ENTITY summary.dialog.accept.tooltiptext		"招待を承諾するで">
+<!ENTITY summary.dialog.accept.tooltiptext		"招待を承諾します">
 <!ENTITY summary.dialog.tentative.label			"仮承諾">
-<!ENTITY summary.dialog.tentative.tooltiptext		"招待を承諾するでが未確定です">
+<!ENTITY summary.dialog.tentative.tooltiptext		"招待を承諾しますが未確定です">
 <!ENTITY summary.dialog.decline.label			"辞退">
-<!ENTITY summary.dialog.decline.tooltiptext		"招待を辞退するで">
-<!ENTITY summary.dialog.dontsend.label			"返答を送信せえへん">
-<!ENTITY summary.dialog.dontsend.tooltiptext		"返答を主催者へ送信せずに参加状態を変更し、ウィンドウを閉じるで">
+<!ENTITY summary.dialog.decline.tooltiptext		"招待を辞退します">
+<!ENTITY summary.dialog.dontsend.label			"返答を送信しない">
+<!ENTITY summary.dialog.dontsend.tooltiptext		"返答を主催者へ送信せずに参加状態を変更し、ウィンドウを閉じます">
 <!ENTITY summary.dialog.send.label			"今すぐ返答を送信">
-<!ENTITY summary.dialog.send.tooltiptext		"返答を主催者へ送信してウィンドウを閉じるで">
+<!ENTITY summary.dialog.send.tooltiptext		"返答を主催者へ送信してウィンドウを閉じます">
