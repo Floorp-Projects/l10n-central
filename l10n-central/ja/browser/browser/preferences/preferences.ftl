@@ -1134,7 +1134,6 @@ save-files-to-cloud-storage =
 
 notice-from-floorp-projects = { -brand-short-name } のポリシー管理に関する通知
 
-floorp-preference = 実験的な環境設定
 browser-design-settings = タブバーの設定
 
 auto-reboot = 以下の設定を変更した場合、変更を適用するためにブラウザーを再起動する必要があります。変更する前に、作業中のデータを保存してください。
@@ -1162,7 +1161,7 @@ tabbar-on-bottom =
 treestyletabSettings-l10 = ツリースタイル垂直タブの設定
 treestyletab-Settings = ツリー型タブにマウスがフォーカスされた場合、展開するようにする
 
-bookmarks-bar-settings = ブックマークバーの設定
+bookmarks-bar-settings = ブックマークバーの設定（並行使用不可）
 bookmarks-focus-mode = マウスがツールバーにフォーカスされているときに、ブックマークバーを表示する
 bookmarks-bottom-mode = ブラウザーの一番下にブックマークバーを表示
 
@@ -1176,7 +1175,6 @@ enable-userscript = レガシーな機能のローダーを有効にする
 about-legacy-components = この機能を有効にすると、予期しないバグやエラーが発生する可能性があります
 
 Search-positon-top = ページ上部に検索バーを表示する
-classic-menu-mode = クラシックスタイルのメニューを使用する（互換性がない場合があります）
 
 feature-requires-restart = この設定の変更には再起動が必要です
 
