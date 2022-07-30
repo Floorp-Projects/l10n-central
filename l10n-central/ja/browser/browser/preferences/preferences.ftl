@@ -1266,3 +1266,9 @@ always-notify =
  .label = 開始時、終了時に通知する
 do-not-notify =
  .label = ダウンロード通知を有効にしない
+
+## Translate
+floorp-translater = 組み込みのウェブページ翻訳機能の設定
+click-to-option =
+    .label = 設定を開く...
+    .accesskey = O
