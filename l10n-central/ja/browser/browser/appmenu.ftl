@@ -251,3 +251,5 @@ appmenu-developer-tools-extensions =
 ## Floorp panel
 open-profile-dir = 
     .label = プロファイルディレクトリを開く
+appmenuitem-reboot =
+    .label = 再起動

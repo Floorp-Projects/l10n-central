@@ -1272,7 +1272,5 @@ floorp-translater = 組み込みのウェブページ翻訳機能の設定
 click-to-option =
     .label = 設定を開く...
     .accesskey = O
-appmenuitem-reboot =
- .label = 再起動
 
 profiles-button-label = プロファイルを管理
