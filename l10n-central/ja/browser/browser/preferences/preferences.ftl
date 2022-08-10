@@ -1138,16 +1138,20 @@ browser-design-settings = タブバーの設定
 
 auto-reboot = 以下の設定を変更した場合、変更を適用するためにブラウザーを再起動する必要があります。変更する前に、作業中のデータを保存してください。
 
-operation-settings = ブラウザーの操作設定
-Mouse-side-button = サイドボタンによるマウス操作にブラウザーを最適化
-enable-tab-scroll-change = スクロールでタブを切り替える
-enable-doble-click-block = ダブルクリックでタブを閉じる
+operation-settings =
+ .label= ブラウザーの操作設定
+Mouse-side-button =
+ .label= サイドボタンによるマウス操作にブラウザーを最適化
+enable-tab-scroll-change =
+ .label= スクロールでタブを切り替える
+enable-doble-click-block =
+ .label= ダブルクリックでタブを閉じる
 
 None-mode = 
  .label= 通常の動作設定
 
 hide-horizontality-tabs = 
- .label=  タブバー非表示（上部に表示されるタブを非表示にします）
+ .label= タブバー非表示（上部に表示されるタブを非表示にします）
 
 verticalTab-setting = 
  .label = 垂直タブにブラウザーを最適化
@@ -1161,28 +1165,37 @@ tabbar-on-bottom =
 treestyletabSettings-l10 = ツリースタイル垂直タブの設定
 treestyletab-Settings = ツリー型タブにマウスがフォーカスされた場合、展開するようにする
 
-bookmarks-bar-settings = ブックマークバーの設定（並行使用不可）
-bookmarks-focus-mode = マウスがツールバーにフォーカスされているときに、ブックマークバーを表示する
-bookmarks-bottom-mode = ブラウザーの一番下にブックマークバーを表示
+bookmarks-bar-settings =
+ .label= ブックマークバーの設定
+bookmarks-focus-mode =
+ .label= マウスがツールバーにフォーカスされているときに、ブックマークバーを表示
+bookmarks-bottom-mode =
+ .label= ブラウザーの一番下にブックマークバーを表示
 
 material-effect = Mica for everyone によるブラウザーのデザイン変更を許可する
-allow-auto-restart = 再起動が必要な設定変更時に自動的に再起動する
-enable-multitab = 多段タブを有効にする（Lepton と互換性なし・実験的）
+allow-auto-restart =
+ .label= 再起動が必要な設定変更時に自動的に再起動
+enable-multitab =
+ .label= 多段タブを有効にしとく（Lepton と互換性なし・実験的）
 learn-more-material = 詳細情報
 other-preference = その他の設定
 
-enable-userscript = レガシーな機能のローダーを有効にする
+enable-userscript =
+ .label= レガシーな機能のローダーを有効にする
 about-legacy-components = この機能を有効にすると、予期しないバグやエラーが発生する可能性があります
 
-Search-positon-top = ページ上部に検索バーを表示する
+Search-positon-top = 
+ .label= ページ上部に検索バーを表示する
 
 feature-requires-restart = この設定の変更には再起動が必要です
 
 ## Updater
 
 floorp-updater = { -brand-short-name } アップデーターの設定
-enable-floorp-updater = 起動時に、 { -brand-short-name } のアップデートを確認する
-floorp-update-latest = 起動時のアップデートチェックで、 { -brand-short-name } が最新版の場合、最新であることを通知する
+enable-floorp-updater =
+ .label=  起動時に、 { -brand-short-name } のアップデートを確認する
+floorp-update-latest = 
+ .label= 起動時のアップデートチェックで、 { -brand-short-name } が最新版の場合、最新であることを通知する
 
 ## system theme color
 
