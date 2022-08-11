@@ -1165,6 +1165,7 @@ tabbar-on-bottom =
 
 treestyletabSettings-l10 = ツリースタイル垂直タブの設定
 treestyletab-Settings = ツリー型タブにマウスがフォーカスされた場合、展開しとくようにしとく
+treestyletab-open-option = ツリー型タブ本体の設定
 
 bookmarks-bar-settings =
  .label= ブックマークバーの設定
