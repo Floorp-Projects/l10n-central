@@ -1164,7 +1164,8 @@ tabbar-on-bottom =
  .label = ウインドウの最下部に表示しとく
 
 treestyletabSettings-l10 = ツリースタイル垂直タブの設定
-treestyletab-Settings = ツリー型タブにマウスがフォーカスされた場合、展開しとくようにしとく
+treestyletab-Settings =
+ .label = ツリー型タブにマウスがフォーカスされた場合、展開しとくようにしとく
 treestyletab-open-option = ツリー型タブ本体の設定
 
 bookmarks-bar-settings =
@@ -1258,16 +1259,20 @@ about-DDG = 検索エンジンを DuckDuckGo に置き換え、訪問したサ�
 
 fingerprint-header = 指紋採取・IP アドレス漏洩対策
 block-fingerprint = 指紋採取は、Webサイトがデバイス情報などの情報を収集し、プロファイルを作成し、個人情報を収集しとくプロセスやで。既定のブロッカーを超えて個人情報の漏洩をさらに減らすからの設定を提供すんで
-enable-firefox-fingerprint-protections = Firefox による強力な指紋採取対策機能を有効にしとく
+enable-firefox-fingerprint-protections =
+ .label = Firefox による強力な指紋採取対策機能を有効にしとく
 about-firefox-fingerprint-protection = この設定を有効にしたら、サイトにライトモードが強制され、一部の Api や機能が無効になるんや。まれにサイトが破損すんで。
-html5-canvas-prompt-settings = HTML5 Canvas 画像を使用しとくサイトの使用許可を自動的に拒否しとく
+html5-canvas-prompt-settings =
+ .label = HTML5 Canvas 画像を使用しとくサイトの使用許可を自動的に拒否しとく
 canvas-prompt = 既定では、使用許可の通知はプロンプトで表示されへん。
-disable-webgl = WebGL を無効にしとく
+disable-webgl =
+ .label = WebGL を無効にしとく
 about-webgl = WebGL はグラフィックを描画しとく際に必要な機能で、お使いの GPU の情報が漏洩すんで
 Canvas-Blocker = Canvas Blocker
 about-CB = このアドオンを使用したら、ユーザーはWebサイトが指紋採取を実行しとくのを防止しとくことがでくで。
-WebRTC-connection = WebRTCは、リアルタイムの通話を提供しとく標準やで。この設定を無効にしたら、Discord などを使えんくなる。VPN との併用を推奨するで。
-WebRTC = WebRTC 接続を有効にしとく
+WebRTC-connection = WebRTCは、リアルタイムの通話を提供しとく規格やで。この設定を無効にしたら、Discord などを使えんくなる。VPN との併用を推奨するで。
+WebRTC =
+ .label = WebRTC 接続を有効にしとく
 
 ## download mgr
 download-notification-preferences = ダウンロード通知
