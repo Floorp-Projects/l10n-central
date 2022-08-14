@@ -1168,8 +1168,7 @@ treestyletab-Settings =
  .label = ツリー型タブにマウスがフォーカスされた場合、展開しとくようにしとく
 treestyletab-open-option = ツリー型タブ本体の設定
 
-bookmarks-bar-settings =
- .label= ブックマークバーの設定
+bookmarks-bar-settings = ブックマークバーの設定
 bookmarks-focus-mode =
  .label= マウスがツールバーにフォーカスされているときに、ブックマークバーを表示しとく
 bookmarks-bottom-mode =
@@ -1259,8 +1258,7 @@ about-DDG = 検索エンジンを DuckDuckGo に置き換え、訪問したサ�
 
 fingerprint-header = 指紋採取・IP アドレス漏洩対策
 block-fingerprint = 指紋採取は、Webサイトがデバイス情報などの情報を収集し、プロファイルを作成し、個人情報を収集しとくプロセスやで。既定のブロッカーを超えて個人情報の漏洩をさらに減らすからの設定を提供すんで
-enable-firefox-fingerprint-protections =
- .label = Firefox による強力な指紋採取対策機能を有効にしとく
+enable-firefox-fingerprint-protections = Firefox による強力な指紋採取対策機能を有効にしとく
 about-firefox-fingerprint-protection = この設定を有効にしたら、サイトにライトモードが強制され、一部の Api や機能が無効になるんや。まれにサイトが破損すんで。
 html5-canvas-prompt-settings =
  .label = HTML5 Canvas 画像を使用しとくサイトの使用許可を自動的に拒否しとく
@@ -1293,7 +1291,7 @@ click-to-option =
 
 profiles-button-label = プロファイルを管理
 
-## useagent
+## useragent
 UserAgent-preference = UserAgent
 default-useragent-mode =
  .label = Firefox のユーザーエージェントを使用する（既定）

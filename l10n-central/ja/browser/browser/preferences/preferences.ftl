@@ -1167,14 +1167,14 @@ treestyletab-Settings =
  .label = ツリー型タブにマウスがフォーカスされた場合、展開するようにする
 treestyletab-open-option = ツリー型タブ本体の設定
 
-bookmarks-bar-settings =
- .label= ブックマークバーの設定
+bookmarks-bar-settings = ブックマークバーの設定
 bookmarks-focus-mode =
  .label= マウスがツールバーにフォーカスされているときに、ブックマークバーを表示
 bookmarks-bottom-mode =
  .label= ブラウザーの一番下にブックマークバーを表示
 
-material-effect = Mica for everyone によるブラウザーのデザイン変更を許可する
+material-effect =
+ .label= Mica for everyone によるブラウザーのデザイン変更を許可する
 allow-auto-restart =
  .label= 再起動が必要な設定変更時に自動的に再起動
 enable-multitab =
@@ -1258,8 +1258,7 @@ about-DDG = 検索エンジンを DuckDuckGo に置き換え、訪問したサ�
 
 fingerprint-header = 指紋採取・IP アドレス漏洩対策
 block-fingerprint = 指紋採取は、Webサイトがデバイス情報などの情報を収集し、プロファイルを作成し、個人情報を収集するプロセスです。既定のブロッカーを超えて個人情報の漏洩をさらに減らすための設定を提供します
-enable-firefox-fingerprint-protections =
- .label = Firefox による強力な指紋採取対策機能を有効にする
+enable-firefox-fingerprint-protections = Firefox による強力な指紋採取対策機能を有効にする
 about-firefox-fingerprint-protection = この設定を有効にすると、サイトにライトモードが強制され、一部の API や機能が無効になります。まれにサイトが破損します。 
 html5-canvas-prompt-settings =
  .label = HTML5 Canvas 画像を使用するサイトの使用許可を自動的に拒否する
@@ -1292,3 +1291,22 @@ click-to-option =
     .accesskey = O
 
 profiles-button-label = プロファイルを管理
+
+## useragent
+UserAgent-preference = ユーザーエージェント
+default-useragent-mode =
+ .label = Firefox のユーザーエージェントを使用する（既定）
+windows-chrome-useragent-mode =
+ .label = Windows 上の Chrome に偽装
+macOS-chrome-useragent-mode =
+ .label = macOS 上の Chrome に偽装
+linux-chrome-useragent-mode =
+ .label = Linux 上の Chrome に偽装
+mobile-chrome-useragent-mode =
+ .label = モバイル OS に偽装 
+
+## DMR UI
+download-mgr-UI =
+ .label = より見やすいダウンロードマネージャのインターフェースを使用する
+downloading-red-color =
+ .label = ダウンロード中、ダウンロードマネージャのアイコンを赤色で強調表示する
