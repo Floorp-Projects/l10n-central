@@ -33,7 +33,7 @@ about-ablaze = Ablaze ってなんぞや
 ablaze-twitter = Ablaze の URL : Twitter <label data-l10n-name="ablaze-twitter-id">@Ablaze_MIRAI</label>　Github : <label data-l10n-name="ablaze-github-id">@Ablaze-MIRAI</label>　alexandriteOS  : <label data-l10n-name="alexandriteos-url">公式サイト</label>
 about-ablaze-sub = AblazeはFloorpプロジェクトの上にあるグループで、Floorpを開発しており、FloorpプロジェクトはFloorpのサポートを受けながら、ここで運営されとるんやで。他にも、AlexandriteOSなどのプロジェクトもやっとるで。
 about-floorp = Floorp プロジェクトってなんぞや
-about-floorp-sub = Floorpプロジェクトは Ablaze 傘下のプロジェクトで、Floorp Legacy ブラウザは開発製品で、Mozillaが開発したFirefoxブラウザをベースとしとるで。このプロジェクトは、すべて非営利で開発されてとるで。より充実したブラウジングを楽しんでくれ。ソースコードは、下のGithubリンクから見れるで。
+about-floorp-sub = Floorpプロジェクトは Ablaze 傘下のプロジェクトで、Floorp Legacy ブラウザは開発製品で、Mozillaが開発したFirefoxブラウザをベースとしとるで。このプロジェクトは、すべて非営利で開発されてとるで。より充実したブラウジングを楽しんでくれ。ソースコードは、下のGithubリンクから見られるで。
 floorp-twitter = Floorp の URL : Twitter <label data-l10n-name="floorp-twitter-id">@Floorp_Browser</label>　Github : <label data-l10n-name="floorp-github-id">@Floorp-Projects</label>　Floorp のサイト : <label data-l10n-name="floorp-official-url">公式サイト</label>
 about-floorp-sub-sub = Ablaze Floorp
 about-legacy = Ablaze Floorp ってなんぞや
