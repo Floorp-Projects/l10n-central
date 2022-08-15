@@ -940,7 +940,7 @@ enhanced-tracking-protection-setting-custom =
 
 ##
 
-content-blocking-etp-standard-desc = 保護と性能をバランスよくな。ページが正しく機能しとくように読み込無で。
+content-blocking-etp-standard-desc = 保護と性能をバランスよくな。ページが正しく機能しとくように読み込むで。
 content-blocking-etp-strict-desc = より強固な保護やけど、一部のサイトやコンテンツが機能しなくなるかもしれへん。
 content-blocking-etp-custom-desc = ブロックしとくトラッカーとスクリプトを選択すんで。
 content-blocking-etp-blocking-desc = { -brand-short-name } は以下のものをブロックすんで:
