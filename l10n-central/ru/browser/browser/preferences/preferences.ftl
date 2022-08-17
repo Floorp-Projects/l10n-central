@@ -1310,7 +1310,7 @@ mobile-chrome-useragent-mode =
  .label = Выдавать себя за телефон
 
 ## DMR UI
- download-mgr-UI =
+download-mgr-UI =
  .label = Использовать менеджер загрузок "Simple UI"
 downloading-red-color =
  .label = Выделять иконку менеджера загрузок красным цветом во время скачивания  
