@@ -5,6 +5,19 @@
 
 ## These strings are used in the about:preferences moreFromMozilla page
 
+
+about-floorp = Про проект Floorp
+about-floorp-sub = Проект Floorp - это проект в рамках Ablaze, а браузер Floorp Legacy - продукт его разработки, основанный на браузере Firefox, разработанном компанией Mozilla. Проект развивается полностью на некоммерческой основе. Исходный код можно найти на Github по ссылке ниже.
+about-floorp-sub-sub = Floorp 
+about-floorp-browser = Об проектах Floorp
+ablaze-floorp = Ablaze Floorp 10 -Catostylus Mosaicus-
+about-floorp-discription = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> является одним из отечественных браузеров, разработанных в Японии. Он основан на Firefox и продолжает работать под управлением <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>, чтобы улучшить сеть. Хотите помочь? <label data-l10n-name="helpus-donateLink">Сделать пожертвование</label>
+
+about-ablaze = Об Ablbaze
+ablaze-twitter = Ссылки на Ablaze : Twitter <label data-l10n-name="ablaze-twitter-id">@Ablaze_MIRAI</label>　Github : <label data-l10n-name="ablaze-github-id">@Ablaze-MIRAI</label>　alexandriteOS  : <label data-l10n-name="alexandriteos-url">official site</label> 
+about-ablaze-sub = Ablaze - группа на вершине проекта Floorp, которая развивает Floorp. Мы также занимаемся другими проектами, такими как NekoLinux и AlexandriteOS.
+
+
 more-from-moz-title = Больше от { -vendor-short-name }
 more-from-moz-category =
     .tooltiptext = Больше от { -vendor-short-name }
