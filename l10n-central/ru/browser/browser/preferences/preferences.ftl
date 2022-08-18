@@ -1135,9 +1135,182 @@ httpsonly-radio-enabled-pbm =
     .label = Включить режим «Только HTTPS» только в приватных окнах
 httpsonly-radio-disabled =
     .label = Не включать режим «Только HTTPS»
+e Download section of settings
 
-## The following strings are used in the Download section of settings
-
+## The following strings are used in th
 desktop-folder-name = Рабочий стол
 downloads-folder-name = Загрузки
 choose-download-folder-title = Выберите папку для загрузок:
+
+
+# Floorp の固有設定。Firefox のソースコードではありません。from 8.7.2
+
+floorp-preference = Експериментальные настройки
+
+browser-design-settings = Настройки панели вкладок
+auto-reboot = Если вы измените какие-либо из приведенных ниже настроек, ваш браузер будет перезапущен, чтобы применить изменения. Пожалуйста, сохраните данные, с которыми вы работаете, прежде чем вносить какие-либо изменения.
+enable-multitab = 
+ .label = Включить многоуровневые вкладки 
+enable-tab-scroll-change = 
+ .label = Переключать вкладки с помощью прокрутки
+enable-doble-click-block = 
+ .label = Двойной щелчок для закрытия вкладки
+operation-settings = 
+  .label = Настройки работы браузера
+Mouse-side-button = 
+  .label = Браузер оптимизирован для работы с мышью с боковыми кнопками
+
+tabbar-preference = Панель вкладок
+
+None-mode = 
+ .label= Обычный режим
+hide-horizontality-tabs = 
+ .label= Скрыть горизонтальность панели вкладок
+verticalTab-setting = 
+ .label = Оптимизировать браузер для работы с вертикальными вкладками
+ move-tabbar-position =
+ .label = Переместить панель с вкладками под панель закладок
+ tabbar-on-bottom = 
+ .label = Отобразить в нижней части браузера
+
+ treestyletabSettings-l10 = Настройки вертикальных вкладки в стиле древа
+treestyletab-Settings = 
+ .label = Разворачивать при фокусе мыши
+treestyletab-open-option = Настройки TreeStyleTab
+
+bookmarks-bar-settings = Настройки панели закладок (нельзя использовать параллельно)
+bookmarks-focus-mode =
+ .label = Показывать панель закладок, когда мышь сфокусирована на панели инструментов
+bookmarks-bottom-mode =
+ .label = Панель закладок в нижней части браузера
+
+material-effect =
+ .label = Разрешить "Mica for Everyone" изменять дизайн браузера 
+other-preference = Другие предпочтения
+
+enable-userscript = 
+ .label = Включить устаревшие компоненты
+about-legacy-components = Включение этой функции может привести к неожиданным ошибкам или фатальным сбоям
+
+
+Search-positon-top =
+ .label = Отображать строку поиска в верхней части страницы
+allow-auto-restart =
+ .label = Автоматический перезапуск при изменении настроек, требующих перезапуска
+
+## macOS version use legacy update system 
+floorp-updater = Настройки программы обновления { -brand-short-name }
+enable-floorp-updater = 
+ .label = Проверять наличия обновлений { -brand-short-name } при запуске
+floorp-update-latest = 
+ .label = Уведомление о наличии обновлений { -brand-short-name } при автоматической проверке обновлений
+
+system-color-settings = Both light and dark modes are available for this theme, and the design can be specified.
+preferences-theme-appearance-header = Установка системной темы
+
+system-theme-dark =
+ .label = Применить темный режим
+system-theme-light = 
+ .label = Применить светлый режим
+ 
+system-theme-auto =  
+ .label = Стандартный режим
+
+## user interface prefernces
+
+ui-preference = Внешний вид браузера
+preferences-browser-appearance-description = You can choose from a selection of great designs written by Floorp third parties. Some designs may not be compatible with your configuration.
+firefox-proton =
+ .label = Firefox modern Proton UI
+firefox-proton-fix =
+ .label = Firefox Proton FIX UI
+firefox-photon = 
+ .label = Firefox Legacy Photon UI
+ 
+floorp-legacy =  
+ .label = Floorp Legacy material UI・Unsupported
+floorp-fluentUI =
+ .label = fluentUI
+floorp-gnomeUI =
+ .label = Gnome Theme
+ 
+waterfox-lepton =
+ .label = Firefox Lepton UI
+
+## BlockMoreTracker
+
+privacy-hub-header = Центр конфиденциальности
+
+block-more-tracker = Блокируйте больше рекламы и трекеров
+block-tracker = Узнайте, как блокировать больше рекламы и трекеров
+
+view-at-AMO = Посмотреть на AMO
+uBlock-Origin = uBlock Origin
+about-uboori = uBlock Origin блокирует рекламу, разнообразные трекеры и прочие опасные сайты.
+
+Privacy-Badger = Privacy Badger
+about-PBadger = Privacy Badger автоматически учится блокировать скрытые трекеры на основе их поведения на веб-сайтах.
+
+Duck-Duck-Go = DuckDuckGo Privacy Essentials
+about-DDG = DuckDuckGo Privacy Essentials заменяет поисковую систему по умолчанию на DuckDuckGo, блокируя при этом трекеры на посещаемых сайтах.
+
+## Fingerprint
+
+fingerprint-header = Противодействие фингерпринтингу и утечке IP-адресов
+block-fingerprint = Fingerprinting - это процесс, с помощью которого веб-сайт собирает личные данные и информацию об устройстве. Этот раздел содержит настройки для дальнейшего усиления этой защиты помимо блокировки по умолчанию.
+enable-firefox-fingerprint-protections = Включить надежную защиту от фингерпринтинга.
+about-firefox-fingerprint-protection = Включение защиты Firefox включает принудительный светлый режим, деактивацию некоторых API и т.д. Работа некоторых сайтов может быть нарушена.
+fingerprint-Protection =
+ .label = Защита от фингерпринтинга
+html5-canvas-prompt-settings = 
+ .label = Автоматическое одобрение запросов на подтверждение доступа к данным изображения HTML5
+canvas-prompt = Автоматически отклонять запрос на чтение холста
+disable-webgl =
+ .label =  Отключить WebGL
+about-webgl = WebGL - это API Javascript, используемый для рендеринга графики, который может использоваться для идентификации GPU.
+Canvas-Blocker = Canvas Blocker
+about-CB = Это дополнение подменяет данные, используемые методами распознавания отпечатка браузера.
+WebRTC-connection = WebRTC - стандарт, обеспечивающий звонки в реальном времени. Если вы отключите эту настройку, вы не сможете использовать Discord и т.д.
+WebRTC = 
+ .label = Включить WebRTC-подключение
+ 
+## download mgr
+download-notification-preferences = Уведомление о загрузке
+start-always-notify =
+ .label = Уведомлять только в начале
+finish-always-notify = 
+ .label = Уведомлять только при завершении
+always-notify =
+ .label = Уведомлять и в начале, и в конце
+do-not-notify =
+ .label = Не включать уведомления
+floorp-translater = Настройки переводчика
+click-to-option =
+    .label = Открыть настройки...
+    .accesskey = O
+
+## sidebar
+profiles-button-label = Управление профилями
+
+appmenuitem-reboot =
+ .label = Перезагрузить браузер
+
+## useagent
+
+UserAgent-preference = UserAgent
+default-useragent-mode =
+ .label = Использовать пользовательский агент Firefox (по умолчанию)
+windows-chrome-useragent-mode =
+ .label = Подделывать пользовательский агент на Chrome под Windows
+macOS-chrome-useragent-mode = 
+ .label = Подделывать пользовательский агент на Chrome под macOS
+linux-chrome-useragent-mode = 
+ .label = Подделывать пользовательский агент на Chrome под Linux
+mobile-chrome-useragent-mode =
+ .label = Выдавать себя за телефон
+
+## DMR UI
+download-mgr-UI =
+ .label = Использовать менеджер загрузок "Simple UI"
+downloading-red-color =
+ .label = Выделять иконку менеджера загрузок красным цветом во время скачивания  

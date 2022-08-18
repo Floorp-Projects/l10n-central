@@ -69,6 +69,7 @@ policy-ExtensionUpdate = Включает или отключает автома
 policy-FirefoxHome = Настраивает домашнюю страницу Firefox.
 policy-FlashPlugin = Разрешает или запрещает использование плагина Flash.
 policy-Handlers = Настраивает обработчики приложений по умолчанию.
+policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Принудительная прямая навигация по сайтам интрасети вместо поиска при вводе однословных записей в адресной строке.
 policy-HardwareAcceleration = Отключает аппаратное ускорение, если установлена в false.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Устанавливает домашнюю страницу и, по желанию, блокирует её смену.
