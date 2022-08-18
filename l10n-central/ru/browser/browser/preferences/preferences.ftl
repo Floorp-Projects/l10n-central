@@ -1135,9 +1135,9 @@ httpsonly-radio-enabled-pbm =
     .label = Включить режим «Только HTTPS» только в приватных окнах
 httpsonly-radio-disabled =
     .label = Не включать режим «Только HTTPS»
-e Download section of settings
 
-## The following strings are used in th
+## The following strings are used in the Download section of settings
+
 desktop-folder-name = Рабочий стол
 downloads-folder-name = Загрузки
 choose-download-folder-title = Выберите папку для загрузок:
