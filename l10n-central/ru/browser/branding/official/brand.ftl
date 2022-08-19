@@ -34,4 +34,4 @@
 # remain unchanged across different versions (Nightly, Beta, etc.).
 -brand-product-name = Floorp
 -vendor-short-name = Ablaze
-trademarkInfo = Floorp и логотипы Firefox являются товарными знаками Mozilla Foundation.
+trademarkInfo = Floorp и логотипы Floorp являются товарными знаками Ablaze.

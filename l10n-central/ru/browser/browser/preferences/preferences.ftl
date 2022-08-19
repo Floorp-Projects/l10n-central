@@ -1158,14 +1158,14 @@ enable-doble-click-block =
 operation-settings = 
   .label = Настройки работы браузера
 Mouse-side-button = 
-  .label = Браузер оптимизирован для работы с мышью с боковыми кнопками
+  .label = Оптимизировать браузер для работы с мышью с боковыми кнопками
 
 tabbar-preference = Панель вкладок
 
 None-mode = 
  .label= Обычный режим
 hide-horizontality-tabs = 
- .label= Скрыть горизонтальность панели вкладок
+ .label= Скрыть горизонтальную панель вкладок
 verticalTab-setting = 
  .label = Оптимизировать браузер для работы с вертикальными вкладками
  move-tabbar-position =
@@ -1173,7 +1173,7 @@ verticalTab-setting =
  tabbar-on-bottom = 
  .label = Отобразить в нижней части браузера
 
- treestyletabSettings-l10 = Настройки вертикальных вкладки в стиле древа
+treestyletabSettings-l10 = Настройки вертикальных вкладки в стиле древа
 treestyletab-Settings = 
  .label = Разворачивать при фокусе мыши
 treestyletab-open-option = Настройки TreeStyleTab
@@ -1194,9 +1194,9 @@ about-legacy-components = Включение этой функции может 
 
 
 Search-positon-top =
- .label = Отображать строку поиска в верхней части страницы
+ .label = Отображать поисковую строку в верхней части страницы
 allow-auto-restart =
- .label = Автоматический перезапуск при изменении настроек, требующих перезапуска
+ .label = Автоматический перезапуск при изменении настроек требующих перезапуска
 
 ## macOS version use legacy update system 
 floorp-updater = Настройки программы обновления { -brand-short-name }
@@ -1212,7 +1212,6 @@ system-theme-dark =
  .label = Применить темный режим
 system-theme-light = 
  .label = Применить светлый режим
- 
 system-theme-auto =  
  .label = Стандартный режим
 
@@ -1301,13 +1300,13 @@ UserAgent-preference = UserAgent
 default-useragent-mode =
  .label = Использовать пользовательский агент Firefox (по умолчанию)
 windows-chrome-useragent-mode =
- .label = Подделывать пользовательский агент на Chrome под Windows
+ .label = Изменить пользовательский агент на Chrome под Windows
 macOS-chrome-useragent-mode = 
- .label = Подделывать пользовательский агент на Chrome под macOS
+ .label = Изменить пользовательский агент на Chrome под macOS
 linux-chrome-useragent-mode = 
- .label = Подделывать пользовательский агент на Chrome под Linux
+ .label = Изменить пользовательский агент на Chrome под Linux
 mobile-chrome-useragent-mode =
- .label = Выдавать себя за телефон
+ .label = Изменить пользовательский агент на Chrome под Android
 
 ## DMR UI
 download-mgr-UI =
