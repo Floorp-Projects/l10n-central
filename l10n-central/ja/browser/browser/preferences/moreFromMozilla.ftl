@@ -27,24 +27,22 @@ more-from-moz-qr-code-firefox-mobile-img =
     .alt = { -brand-product-name } モバイルのダウンロード QR コード
 more-from-moz-button-mozilla-vpn-2 = VPN を入手
 more-from-moz-learn-more-link = 詳細
+
 ## Floorp専用
+
+about-floorp = Floorp プロジェクトについて
+about-floorp-discription = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> 日本で開発される独立した１つのブラウザーです。Firefox をベースに <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label> の下で開発されています。協力したいですか？ <label data-l10n-name="helpus-donateLink">寄付</label>をご検討ください！
+
+more-from-moz-category =
+  .tooltiptext = Floorp について 
+more-from-moz-title = Ablaze Floorp について
+about-floorp-sub-sub = Floorp
+about-floorp-browser = Floorp プロジェクトについて 
+ablaze-floorp = Ablaze Floorp 10 -Catostylus Mosaicus-
+
+icon-creator = アイコン作成者：<label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> と <label data-l10n-name="brand-logo-twitter">@mwxdxx</label>
+contributors = <label data-l10n-name="about-contributor">貢献者・開発者のリスト/label>もご確認ください！
 
 about-ablaze = Ablaze について
 ablaze-twitter = Ablaze の URL : Twitter <label data-l10n-name="ablaze-twitter-id">@Ablaze_MIRAI</label>　Github : <label data-l10n-name="ablaze-github-id">@Ablaze-MIRAI</label>　alexandriteOS  : <label data-l10n-name="alexandriteos-url">公式サイト</label>
 about-ablaze-sub = AblazeはFloorpプロジェクトの上にあるグループで、Floorpを開発しており、FloorpプロジェクトはFloorpのサポートを受けながら、ここで運営されているのです。その他にも、AlexandriteOSなどのプロジェクトも運営しています。
-about-floorp = Floorp プロジェクトについて
-about-floorp-sub = Floorpプロジェクトは Ablaze 傘下のプロジェクトであり、Floorp Legacy ブラウザはその開発製品であり、Mozillaが開発したFirefoxブラウザをベースとしています。このプロジェクトは、すべて非営利で開発されています。より充実したブラウジングをお楽しみください。ソースコードは、下記のGithubリンクからご覧いただけます。
-floorp-twitter = Floorp の URL : Twitter <label data-l10n-name="floorp-twitter-id">@Floorp_Browser</label>　Github : <label data-l10n-name="floorp-github-id">@Floorp-Projects</label>　Floorp のサイト : <label data-l10n-name="floorp-official-url">公式サイト</label>
-about-floorp-sub-sub = Ablaze Floorp
-about-legacy = Ablaze Floorp について
-about-floorp-legacy-sub = Copyright 2022 Floorp Projects & Ablaze. All rights reserved.
-floorp-legacy-links = Floorp はオープンソース プロジェクト<label data-l10n-name="firefox-url">Firefox</label> やその他の <label data-l10n-name="github-floorp">オープンソースソフトウェア</label>によって実現されました。
-floorp-legacy-links = Floorp はオープンソース プロジェクト <label data-l10n-name="ablaze-twitter-id">Firefox</label>や、その他の<label data-l10n-name="ablaze-github-id">オープンソース ソフトウェアと貢献者</label>によって実現されました。
-more-from-moz-title = Ablaze と Floorp について
-more-from-moz-category =
-  .tooltiptext = Floorp レガシーブラウザ について
-more-from-moz-firefox-mobile-title = Floorp for Mobileの代替手段
-more-from-moz-firefox-mobile-description = モバイルデバイスには モバイル向け Firefox を使いましょう! Floorpとの同期が可能です
-more-from-moz-firefox-mobile-description-advanced = モバイル版 Firefox はアドオンでトラッカーをブロックし、プライバシーを守ることができます! Firefoxモバイルブラウザは、あなたが快適なインターネットを利用できるようにするために残業しています。
-
-## Floorp 専用終わり
