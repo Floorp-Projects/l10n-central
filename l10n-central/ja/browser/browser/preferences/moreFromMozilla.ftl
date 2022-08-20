@@ -31,7 +31,7 @@ more-from-moz-learn-more-link = 詳細
 ## Floorp専用
 
 about-floorp = Floorp プロジェクトについて
-about-floorp-discription = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> 日本で開発される独立した１つのブラウザーです。Firefox をベースに <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label> の下で開発されています。協力したいですか？ <label data-l10n-name="helpus-donateLink">寄付</label>をご検討ください！
+about-floorp-discription = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> は日本で開発される独立した１つのブラウザーです。Firefox をベースに <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label> の下で開発されています。協力したいですか？ <label data-l10n-name="helpus-donateLink">寄付</label> をご検討ください！
 
 more-from-moz-category =
   .tooltiptext = Floorp について 
