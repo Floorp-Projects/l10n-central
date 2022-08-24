@@ -1218,7 +1218,7 @@ system-theme-auto =
 ## User Interface Preferences
 
 ui-preference = Внешний вид браузера
-preferences-browser-appearance-description = You can choose from a selection of great designs written by Floorp third parties. Some designs may not be compatible with your configuration.
+preferences-browser-appearance-description = Вы можете выбрать один из замечательных дизайнов Floorp написанных сторонними разработчиками. Некоторые дизайны могут быть несовместимы с вашей конфигурацией.
 firefox-proton =
  .label = Firefox modern Proton UI
 firefox-proton-fix =
