@@ -59,7 +59,7 @@ pane-experimental-reset =
     .label = Alapértelmezések visszaállítása
     .accesskey = v
 
-help-button-label = { -brand-short-name } támogatás
+help-button-label = Firefox támogatás
 addons-button-label = Kiegészítők és témák
 
 focus-search =

@@ -59,7 +59,7 @@ pane-experimental-reset =
     .label = 기본값으로 복원
     .accesskey = R
 
-help-button-label = { -brand-short-name } 도움말
+help-button-label = Firefox 도움말
 addons-button-label = 확장 기능 및 테마
 
 focus-search =

@@ -59,7 +59,7 @@ pane-experimental-reset =
     .label = Restaurar predeterminados
     .accesskey = R
 
-help-button-label = Asistencia de { -brand-short-name }
+help-button-label = Asistencia de Firefox
 addons-button-label = Extensiones y temas
 
 focus-search =

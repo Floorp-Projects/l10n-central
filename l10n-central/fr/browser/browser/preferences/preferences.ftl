@@ -59,7 +59,7 @@ pane-experimental-reset =
     .label = Configuration par défaut
     .accesskey = d
 
-help-button-label = Assistance de { -brand-short-name }
+help-button-label = Assistance de Firefox
 addons-button-label = Extensions et thèmes
 
 focus-search =

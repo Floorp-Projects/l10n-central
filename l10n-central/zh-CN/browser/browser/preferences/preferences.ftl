@@ -59,7 +59,7 @@ pane-experimental-reset =
     .label = 恢复默认设置
     .accesskey = R
 
-help-button-label = { -brand-short-name } 帮助
+help-button-label = Firefox 帮助
 addons-button-label = 扩展和主题
 
 focus-search =

@@ -59,7 +59,7 @@ pane-experimental-reset =
     .label = Återställ standard
     .accesskey = t
 
-help-button-label = Support { -brand-short-name }
+help-button-label = Support Firefox
 addons-button-label = Tillägg & teman
 
 focus-search =

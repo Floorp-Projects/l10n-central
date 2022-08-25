@@ -59,7 +59,7 @@ pane-experimental-reset =
     .label = Pulihkan Bawaan
     .accesskey = B
 
-help-button-label = Dukungan { -brand-short-name }
+help-button-label = Dukungan Firefox
 addons-button-label = Ekstensi & Tema
 
 focus-search =

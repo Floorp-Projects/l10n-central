@@ -59,7 +59,7 @@ pane-experimental-reset =
     .label = 回復為預設值
     .accesskey = R
 
-help-button-label = { -brand-short-name } 技術支援
+help-button-label = Firefox 技術支援
 addons-button-label = 擴充套件與佈景主題
 
 focus-search =

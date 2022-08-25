@@ -59,7 +59,7 @@ pane-experimental-reset =
     .label = Επαναφορά προεπιλογών
     .accesskey = Ε
 
-help-button-label = Υποστήριξη { -brand-short-name }
+help-button-label = Υποστήριξη Firefox
 addons-button-label = Επεκτάσεις & θέματα
 
 focus-search =

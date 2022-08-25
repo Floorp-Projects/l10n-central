@@ -59,7 +59,7 @@ pane-experimental-reset =
     .label = Gendan standarder
     .accesskey = G
 
-help-button-label = Hjælp til { -brand-short-name }
+help-button-label = Hjælp til Firefox
 addons-button-label = Udvidelser og temaer
 
 focus-search =

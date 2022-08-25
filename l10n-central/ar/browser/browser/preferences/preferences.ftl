@@ -59,7 +59,7 @@ pane-experimental-reset =
     .label = استعد المبدئيات
     .accesskey = س
 
-help-button-label = دعم { -brand-short-name }
+help-button-label = دعم Firefox
 addons-button-label = الامتدادات والسمات
 
 focus-search =
