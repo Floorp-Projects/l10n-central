@@ -1186,6 +1186,9 @@ enable-userscript =
  .label= レガシーな機能のローダーを有効にしとく
 about-legacy-components = この機能を有効にしたら、予期しへんバグやエラーが発生しとくかもしれへん
 
+browser-rest-mode =
+ .label = 休憩モードのショートカットキーを有効にしとく
+
 Search-positon-top =
  .label= ページ上部に検索バーを表示しとく
 

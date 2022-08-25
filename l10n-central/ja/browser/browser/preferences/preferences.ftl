@@ -1186,6 +1186,9 @@ enable-userscript =
  .label= レガシーな機能のローダーを有効にする
 about-legacy-components = この機能を有効にすると、予期しないバグやエラーが発生する可能性があります
 
+browser-rest-mode =
+ .label = 休憩モードのショートカットキーを有効にする
+
 Search-positon-top = 
  .label= ページ上部に検索バーを表示する
 
@@ -1268,8 +1271,7 @@ disable-webgl =
 about-webgl = WebGL はグラフィックを描画する際に必要な機能で、お使いの GPU の情報が漏洩します
 Canvas-Blocker = Canvas Blocker
 about-CB = このアドオンを使用すると、ユーザーはWebサイトが指紋採取を実行するのを防止することができます。
-WebRTC-connection =
- .label = WebRTCは、リアルタイムの通話を提供する規格です。 この設定を無効にすると、Discord などを使用できなくなります。VPN との併用を推奨します。
+WebRTC-connection = WebRTCは、リアルタイムの通話を提供する規格です。 この設定を無効にすると、Discord などを使用できなくなります。VPN との併用を推奨します。
 WebRTC =
  .label = WebRTC 接続を有効にする
 
