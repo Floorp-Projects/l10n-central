@@ -1315,3 +1315,7 @@ download-mgr-UI =
  .label = Использовать менеджер загрузок "Simple UI"
 downloading-red-color =
  .label = Выделять иконку менеджера загрузок красным цветом во время скачивания  
+
+sidebar-preferences = Боковая панель
+view-sidebar2-right = 
+ .label = Отображать боковую панель менеджера браузера справа
