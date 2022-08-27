@@ -1319,3 +1319,6 @@ downloading-red-color =
 sidebar-preferences = Боковая панель
 view-sidebar2-right = 
  .label = Отображать боковую панель менеджера браузера справа
+ 
+enable-sidebar2 =
+ .label = Включить боковую панель менеджера браузера 
