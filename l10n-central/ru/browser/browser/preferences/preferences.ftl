@@ -1321,4 +1321,17 @@ view-sidebar2-right =
  .label = Отображать боковую панель менеджера браузера справа
  
 enable-sidebar2 =
- .label = Включить боковую панель менеджера браузера 
+ .label = Включить боковую панель менеджера браузера
+ 
+sidebar-mode = Выберите режим боковой панели
+AllInOne-mode =
+ .label = Режим управления браузером
+bookmark-mode =
+ .label = Режим закладок
+history-mode =
+ .label = Режим истории
+downloads-mode =
+ .label = Режим загрузок
+syncedtabs-mode =
+ .label = Режим синхронизированных вкладок
+ 
