@@ -1309,4 +1309,23 @@ mobile-chrome-useragent-mode =
 
 ## DMR UI
 download-mgr-UI =
-    .label = より見やすいダウンロードマネージャのインターフェースを使用する
+    .label = より見やすいダウンロードマネージャのインターフェースを使用しとく
+
+sidebar-preferences = サイドバー
+view-sidebar2-right = 
+ .label = ブラウザーマネージャーサイドバーを右側に表示しとく
+enable-sidebar2 =
+ .label = ブラウザーマネージャーサイドバーを有効にしとく
+
+sidebar-mode = ブラウザーマネージャーサイドバーのモード
+
+AllInOne-mode =
+ .label = ブラウザー管理ツールを表示しとく
+bookmark-mode =
+  .label = ブックマークサイドバーを表示しとく
+history-mode =
+ .label = 履歴サイドバーを表示しとく
+downloads-mode =
+ .label = ダウンロードマネージャーサイドバーを表示しとく
+syncedtabs-mode =
+ .label = 同期タブサイドバーを表示しとく

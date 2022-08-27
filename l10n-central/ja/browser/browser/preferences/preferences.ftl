@@ -1312,3 +1312,22 @@ download-mgr-UI =
  .label = より見やすいダウンロードマネージャのインターフェースを使用する
 downloading-red-color =
  .label = ダウンロード中、ダウンロードマネージャのアイコンを赤色で強調表示する
+
+sidebar-preferences = サイドバー
+view-sidebar2-right = 
+ .label = ブラウザーマネージャーサイドバーを右側に表示する
+enable-sidebar2 =
+ .label = ブラウザーマネージャーサイドバーを有効にする
+
+sidebar-mode = ブラウザーマネージャーサイドバーのモード
+
+AllInOne-mode =
+ .label = ブラウザー管理ツールを表示
+bookmark-mode =
+  .label = ブックマークサイドバーを表示
+history-mode =
+ .label = 履歴サイドバーを表示
+downloads-mode =
+ .label = ダウンロードマネージャーサイドバーを表示
+syncedtabs-mode =
+ .label = 同期タブサイドバーを表示
