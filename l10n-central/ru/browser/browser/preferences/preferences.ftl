@@ -1245,7 +1245,7 @@ privacy-hub-header = Центр конфиденциальности
 block-more-tracker = Блокируйте больше рекламы и трекеров
 block-tracker = Данный раздел содержит расширения помогающие блокировать рекламу и трекеры
 
-view-at-AMO = Посмотреть на AMO
+view-at-AMO = Подробнее на AMO
 uBlock-Origin = uBlock Origin
 about-uboori = uBlock Origin блокирует рекламу, разнообразные трекеры и прочие опасные сайты.
 
