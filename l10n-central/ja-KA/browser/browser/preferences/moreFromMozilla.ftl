@@ -41,7 +41,7 @@ about-floorp-browser = Floorp プロジェクトについて
 ablaze-floorp = Ablaze Floorp 10 -Catostylus Mosaicus-
 
 icon-creator = アイコン作成者：<label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> と <label data-l10n-name="brand-logo-twitter">@mwxdxx</label>
-contributors = <label data-l10n-name="about-contributor">貢献者・開発者のリスト/label>もご確認ください！
+contributors = <label data-l10n-name="about-contributor">貢献者・開発者のリスト</label>もご確認ください！
 
 about-ablaze = Ablaze について
 ablaze-twitter = Ablaze の URL : Twitter <label data-l10n-name="ablaze-twitter-id">@Ablaze_MIRAI</label>　Github : <label data-l10n-name="ablaze-github-id">@Ablaze-MIRAI</label>　alexandriteOS  : <label data-l10n-name="alexandriteos-url">公式サイト</label>
