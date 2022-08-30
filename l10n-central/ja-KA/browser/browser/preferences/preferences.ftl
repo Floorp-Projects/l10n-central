@@ -1329,3 +1329,6 @@ downloads-mode =
  .label = ダウンロードマネージャーサイドバーを表示しとく
 syncedtabs-mode =
  .label = 同期タブサイドバーを表示しとく
+
+browser-rest-mode =
+ .label = 休憩モードのショートカットキーを有効にしとく

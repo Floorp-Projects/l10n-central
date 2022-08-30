@@ -788,3 +788,7 @@ data-reporting-notification-button =
 ## ボスが来た
 rest-mode = 休憩モード
 rest-mode-description = ブラウザーは停止中です。OK または、任意のキーを押して再開します。
+
+Sidebar2 =
+  .label = ブラウザーマネージャーサイドバー
+  .tooltiptext = ブラウザーマネージャーサイドバーの表示/非表示を切り替える
