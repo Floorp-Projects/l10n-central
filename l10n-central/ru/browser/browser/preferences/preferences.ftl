@@ -1334,6 +1334,3 @@ downloads-mode =
  .label = Режим загрузок
 syncedtabs-mode =
  .label = Режим синхронизированных вкладок
- 
-browser-rest-mode =
- .label = Включить клавишу быстрого доступа к режиму отдыха 
