@@ -1327,8 +1327,11 @@ history-mode =
  .label = 履歴サイドバーを表示しとく
 downloads-mode =
  .label = ダウンロードマネージャーサイドバーを表示しとく
-syncedtabs-mode =
- .label = 同期タブサイドバーを表示しとく
+treestyletab-mode =
+ .label = ツリー型タブを表示しとく
+CustomURL-mode =
+ .label = カスタムサイトモードを表示しとく
+about-customurl = カスタムサイトモードの URL 指定は、about:config の "floorp.browser.sidebar2.customurl" を編集すんで
 
 browser-rest-mode =
  .label = 休憩モードのショートカットキーを有効にしとく
