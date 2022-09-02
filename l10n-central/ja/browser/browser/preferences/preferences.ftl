@@ -1333,7 +1333,15 @@ treestyletab-mode =
  .label = ツリー型タブを表示する
 CustomURL-mode =
  .label = カスタムサイトモードを表示しとく
-about-customurl = カスタムサイトモードの URL 指定は、about:config の "floorp.browser.sidebar2.customurl" を編集してください
+
+set-customurl = カスタムサイト用の URL を入力してください (例: https://www.mozilla.org)
+seted-url = 次の URL に設定されました：
+## seted-url + "" + URL 
+
+custom-URL-option = カスタム URL の設定
+set-custom-URL-button = 
+    .label = カスタム URL を設定...
+    .accesskey = S
 
 browser-rest-mode =
  .label = 休憩モードのショートカットキーを有効にする
