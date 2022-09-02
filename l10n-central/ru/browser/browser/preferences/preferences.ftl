@@ -1336,4 +1336,13 @@ treestyletab-mode =
  .label = Режим вкладок в форме древа
 CustomURL-mode =
  .label = Режим пользовательского URL
- about-customurl = Для изменения URL, на который нужно ссылаться, отредактируйте параметр "floorp.browser.sidebar2.customurl" в about:config 
+
+set-customurl = Укажите пользовательский URL (пример: https://www.mozilla.org)
+seted-url = Задать URL на
+## seted-url + "" + URL 
+
+custom-URL-option = Задайте пользовательский URL
+set-custom-URL-button = 
+    .label = Задать пользовательский URL...
+    .accesskey = S
+    
