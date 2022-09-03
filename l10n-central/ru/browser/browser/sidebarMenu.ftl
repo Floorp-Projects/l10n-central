@@ -16,3 +16,10 @@ sidebar-menu-close =
 
 sidebar-close-button =
     .tooltiptext = Закрыть боковую панель
+
+sidebar-back-button =
+  .tooltiptext = Назад
+sidebar-forward-button =
+  .tooltiptext = Вперёд
+sidebar-reload-button = 
+  .tooltiptext = Перезагрузить
