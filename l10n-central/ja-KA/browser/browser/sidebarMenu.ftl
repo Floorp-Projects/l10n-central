@@ -12,3 +12,12 @@ sidebar-menu-close =
     .label = サイドバーを閉じるわ
 sidebar-close-button =
     .tooltiptext = サイドバーを閉じるで
+    
+sidebar-back-button =
+  .tooltiptext = 戻る
+
+sidebar-forward-button =
+  .tooltiptext = 進む
+
+sidebar-reload-button = 
+  .tooltiptext = 再読み込み
