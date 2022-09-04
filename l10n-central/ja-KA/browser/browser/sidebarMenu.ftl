@@ -21,3 +21,21 @@ sidebar-forward-button =
 
 sidebar-reload-button = 
   .tooltiptext = 再読み込み
+
+show-browser-manager-sidebar =
+  .tooltiptext = ブラウザーマネージャーモードのサイドバーを表示するで
+
+show-bookmarks-sidebar =
+  .tooltiptext = ブックマークのサイドバーを表示するで
+
+show-history-sidebar =
+  .tooltiptext = 履歴のサイドバーを表示するで
+
+show-download-sidebar =
+  .tooltiptext = ダウンロードのサイドバーを表示するで
+
+show-TST-sidebar =
+  .tooltiptext = ツリー型タブのサイドバーを表示するで
+
+show-CustomURL-sidebar =
+  .tooltiptext = カスタム URL のサイドバーを表示するで
