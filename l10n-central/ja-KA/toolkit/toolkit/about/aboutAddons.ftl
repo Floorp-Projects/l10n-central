@@ -410,3 +410,7 @@ details-notification-blocked-link = 詳細情報
 details-notification-softblocked = { $name } はセキュリティまたは安定性の問題を引き起こすことが知られています。
 details-notification-softblocked-link = 詳細情報
 details-notification-gmp-pending = { $name } はすぐにインストールされます。
+
+dual-theme-enable-addon-button = 有効化 (Sub Theme)
+dual-theme-disable-addon-button = 無効化 (Sub Theme)
+dual-theme-enabled-heading = 有効 (Sub Theme)
