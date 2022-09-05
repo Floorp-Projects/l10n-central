@@ -42,4 +42,7 @@ show-TST-sidebar =
   .tooltiptext = Показать боковую панель в стиле древа
 
 show-CustomURL-sidebar =
-  .tooltiptext = Показать боковую панель с пользовательскими URL
+  .label = Показать боковую панель с пользовательскими URL
+
+Edit-Custom-URL =
+ .label = Изменить пользовательский URL 
