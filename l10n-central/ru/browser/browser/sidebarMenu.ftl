@@ -19,7 +19,27 @@ sidebar-close-button =
 
 sidebar-back-button =
   .tooltiptext = Назад
+
 sidebar-forward-button =
   .tooltiptext = Вперёд
+
 sidebar-reload-button = 
   .tooltiptext = Перезагрузить
+
+show-browser-manager-sidebar =
+  .tooltiptext = Показать боковую панель менеджера браузера
+
+show-bookmark-sidebar =
+  .tooltiptext = Показать боковую панель закладок
+
+show-history-sidebar =
+  .tooltiptext = Показать боковую панель истории
+
+show-download-sidebar =
+  .tooltiptext = Показать боковую панель загрузок
+
+show-TST-sidebar =
+  .tooltiptext = Показать боковую панель в стиле древа
+
+show-CustomURL-sidebar =
+  .tooltiptext = Показать боковую панель с пользовательскими URL
