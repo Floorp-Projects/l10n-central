@@ -38,4 +38,7 @@ show-TST-sidebar =
   .tooltiptext = ツリー型タブのサイドバーを表示するで
 
 show-CustomURL-sidebar =
-  .tooltiptext = カスタム URL のサイドバーを表示するで
+ .label = カスタム URL サイドバーを表示するで
+
+Edit-Custom-URL =
+ .label = カスタム URL サイドバーの URL を編集しとく
