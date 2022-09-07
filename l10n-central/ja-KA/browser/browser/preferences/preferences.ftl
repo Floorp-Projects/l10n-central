@@ -1335,3 +1335,7 @@ about-customurl = カスタムサイトモードの URL 指定は、about:config
 
 browser-rest-mode =
  .label = 休憩モードのショートカットキーを有効にしとく
+ 
+ ## DualTheme
+dualtheme-enable =
+ .label = デュアルテーマを有効にしとく
