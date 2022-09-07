@@ -1345,3 +1345,8 @@ set-custom-URL-button =
 
 browser-rest-mode =
  .label = 休憩モードのショートカットキーを有効にする
+ 
+ 
+## DualTheme
+dualtheme-enable =
+ .label = デュアルテーマを有効にする
