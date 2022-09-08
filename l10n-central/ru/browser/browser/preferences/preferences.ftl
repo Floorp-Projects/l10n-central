@@ -1163,7 +1163,7 @@ Mouse-side-button =
 tabbar-preference = Панель вкладок
 
 None-mode = 
- .label= Обычный режим
+ .label= Стандартный режим
 hide-horizontality-tabs = 
  .label= Скрыть горизонтальную панель вкладок
 verticalTab-setting = 
