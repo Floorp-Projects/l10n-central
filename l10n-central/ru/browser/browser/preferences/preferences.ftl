@@ -1207,8 +1207,7 @@ enable-floorp-updater =
 floorp-update-latest = 
  .label = Уведомление о наличии обновлений { -brand-short-name } при автоматической проверке обновлений
 
-system-color-settings = Both light and dark modes are available for this theme, and the design can be specified.
-preferences-theme-appearance-header = Установка системной темы
+system-color-settings = Для этой темы доступен как светлый, так и темный дизайн
 
 system-theme-dark =
  .label = Применить темный режим
