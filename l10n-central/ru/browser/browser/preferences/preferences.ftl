@@ -1195,6 +1195,10 @@ about-legacy-components = Включение этой функции может 
 browser-rest-mode =
  .label = Включить горячую клавишу отвечающую за режим отдыха
 
+## DualTheme
+dualtheme-enable =
+ .label = Включить двойную тему 
+
 Search-positon-top =
  .label = Отображать поисковую строку в верхней части страницы
 allow-auto-restart =
