@@ -1329,9 +1329,6 @@ downloads-mode =
  .label = ダウンロードマネージャーサイドバーを表示しとく
 treestyletab-mode =
  .label = ツリー型タブを表示しとく
-CustomURL-mode =
- .label = カスタムサイトモードを表示しとく
-about-customurl = カスタムサイトモードの URL 指定は、about:config の "floorp.browser.sidebar2.customurl" を編集すんで
 
 browser-rest-mode =
  .label = 休憩モードのショートカットキーを有効にしとく
@@ -1339,3 +1336,8 @@ browser-rest-mode =
  ## DualTheme
 dualtheme-enable =
  .label = デュアルテーマを有効にしとく
+
+disable-bg-newtab =
+ .label = { -brand-short-name } Home で背景を無効にしとく
+
+how-to-disable-ntbg = この設定の変更を適用するには { -brand-short-name } Home で "Ctrl + Shift + R" を同時押しし、スーパーリロードする必要があるで

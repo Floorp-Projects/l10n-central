@@ -1331,12 +1331,6 @@ downloads-mode =
  .label = ダウンロードマネージャーサイドバーを表示
 treestyletab-mode =
  .label = ツリー型タブを表示する
-CustomURL-mode =
- .label = カスタムサイトモードを表示しとく
-
-set-customurl = カスタムサイト用の URL を入力してください (例: https://www.mozilla.org)
-seted-url = 次の URL に設定されました：
-## seted-url + "" + URL 
 
 custom-URL-option = カスタム URL の設定
 set-custom-URL-button = 
@@ -1350,3 +1344,8 @@ browser-rest-mode =
 ## DualTheme
 dualtheme-enable =
  .label = デュアルテーマを有効にする
+
+disable-bg-newtab =
+ .label = { -brand-short-name } Home で背景を無効にする
+
+how-to-disable-ntbg = この設定の変更を適用するには { -brand-short-name } Home で "Ctrl + Shift + R" を同時押しし、スーパーリロードする必要があります
