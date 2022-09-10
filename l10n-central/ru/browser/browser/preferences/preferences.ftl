@@ -1350,4 +1350,7 @@ custom-URL-option = Задайте пользовательский URL
 set-custom-URL-button = 
     .label = Задать пользовательский URL...
     .accesskey = S
-    
+
+disable-bg-newtab =
+ .label = Отключить фоновое изображение на стартовой странице { -brand-short-name }
+how-to-disable-ntbg = Чтобы применить эту настройку, необходимо нажать "Ctrl + Shift + R" на стартовой странице { -brand-short-name }.
