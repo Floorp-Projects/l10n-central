@@ -1339,12 +1339,6 @@ downloads-mode =
  .label = Режим загрузок
 treestyletab-mode =
  .label = Режим вкладок в форме древа
-CustomURL-mode =
- .label = Режим пользовательского URL
-
-set-customurl = Укажите пользовательский URL (пример: https://www.mozilla.org)
-seted-url = Задать URL на
-## seted-url + "" + URL 
 
 custom-URL-option = Задайте пользовательский URL
 set-custom-URL-button = 
