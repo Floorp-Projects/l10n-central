@@ -1185,7 +1185,7 @@ bookmarks-bottom-mode =
  .label = Панель закладок в нижней части браузера
 
 material-effect =
- .label = Разрешить "Mica for Everyone" изменять дизайн браузера 
+ .label = Разрешить Mica for Everyone изменять дизайн браузера 
 other-preference = Другие предпочтения
 
 enable-userscript = 
