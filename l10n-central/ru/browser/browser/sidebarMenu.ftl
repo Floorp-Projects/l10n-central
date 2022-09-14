@@ -45,4 +45,13 @@ show-CustomURL-sidebar =
   .label = Показать боковую панель с пользовательскими URL
 
 Edit-Custom-URL =
- .label = Изменить пользовательский URL 
+ .label = Изменить пользовательский URL
+
+sidebar-addons-button =
+  .tooltiptext = Открыть менеджер дополнений
+
+sidebar-passwords-button =
+  .tooltiptext = Открыть менеджер паролей
+
+sidebar-preferences-button =
+  .tooltiptext = Открыть настройки браузера
