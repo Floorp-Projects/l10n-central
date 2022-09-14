@@ -1168,9 +1168,9 @@ hide-horizontality-tabs =
  .label= Скрыть горизонтальную панель вкладок
 verticalTab-setting = 
  .label = Оптимизировать браузер для работы с вертикальными вкладками
- move-tabbar-position =
+move-tabbar-position =
  .label = Переместить панель с вкладками под панель закладок
- tabbar-on-bottom = 
+tabbar-on-bottom = 
  .label = Отобразить в нижней части браузера
 
 treestyletabSettings-l10 = Настройки вертикальных вкладки в стиле древа
