@@ -1168,9 +1168,9 @@ hide-horizontality-tabs =
  .label= Скрыть горизонтальную панель вкладок
 verticalTab-setting = 
  .label = Оптимизировать браузер для работы с вертикальными вкладками
- move-tabbar-position =
+move-tabbar-position =
  .label = Переместить панель с вкладками под панель закладок
- tabbar-on-bottom = 
+tabbar-on-bottom = 
  .label = Отобразить в нижней части браузера
 
 treestyletabSettings-l10 = Настройки вертикальных вкладки в стиле древа
@@ -1185,7 +1185,7 @@ bookmarks-bottom-mode =
  .label = Панель закладок в нижней части браузера
 
 material-effect =
- .label = Разрешить "Mica for Everyone" изменять дизайн браузера 
+ .label = Разрешить Mica for Everyone изменять дизайн браузера 
 other-preference = Другие предпочтения
 
 enable-userscript = 
@@ -1339,15 +1339,12 @@ downloads-mode =
  .label = Режим загрузок
 treestyletab-mode =
  .label = Режим вкладок в форме древа
-CustomURL-mode =
- .label = Режим пользовательского URL
-
-set-customurl = Укажите пользовательский URL (пример: https://www.mozilla.org)
-seted-url = Задать URL на
-## seted-url + "" + URL 
 
 custom-URL-option = Задайте пользовательский URL
 set-custom-URL-button = 
     .label = Задать пользовательский URL...
     .accesskey = S
-    
+
+disable-bg-newtab =
+ .label = Отключить фоновое изображение на стартовой странице { -brand-short-name }
+how-to-disable-ntbg = Чтобы применить эту настройку, необходимо нажать "Ctrl + Shift + R" на стартовой странице { -brand-short-name }.
