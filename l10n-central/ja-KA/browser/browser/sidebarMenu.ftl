@@ -22,6 +22,9 @@ sidebar-forward-button =
 sidebar-reload-button = 
   .tooltiptext = 再読み込み
 
+sidebar-muteAndUnmute-button =
+  .tooltiptext = ミュート・ミュート解除を切り替える
+
 show-browser-manager-sidebar =
   .tooltiptext = ブラウザーマネージャーモードのサイドバーを表示するで
 
