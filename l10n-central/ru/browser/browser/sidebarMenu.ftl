@@ -44,12 +44,6 @@ show-download-sidebar =
 show-TST-sidebar =
   .tooltiptext = Показать боковую панель в стиле древа
 
-show-CustomURL-sidebar =
-  .label = Показать боковую панель с пользовательскими URL
-
-Edit-Custom-URL =
- .label = Изменить пользовательский URL
-
 sidebar-addons-button =
   .tooltiptext = Открыть менеджер дополнений
 
@@ -58,3 +52,6 @@ sidebar-passwords-button =
 
 sidebar-preferences-button =
   .tooltiptext = Открыть настройки браузера
+
+sidebar-keepWidth-button =
+  .tooltiptext = Сохранять ширину боковой панели
