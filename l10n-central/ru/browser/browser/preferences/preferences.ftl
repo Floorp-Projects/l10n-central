@@ -1329,7 +1329,7 @@ enable-sidebar2 =
  .label = Включить боковую панель менеджера браузера
 
 sidebar2-restore =
- .label = Восстановливать режим боковой панели при перезапуске { -brand-short-name } или загрузке нового окна
+ .label = Восстанавливать режим боковой панели при перезапуске { -brand-short-name } или загрузке нового окна
 
 custom-URL-option = Задайте URL веб-панели
 set-custom-URL-button = 
