@@ -21,6 +21,9 @@ sidebar-forward-button =
 sidebar-reload-button = 
   .tooltiptext = 再読み込み
 
+sidebar-keepWidth-button =
+  .tooltiptext = このパネルでの横幅を記憶する
+
 show-browser-manager-sidebar =
   .tooltiptext = ブラウザマネージャーモードサイドバーを表示
 
@@ -35,9 +38,3 @@ show-download-sidebar =
 
 show-TST-sidebar =
   .tooltiptext = ツリー型タブサイドバーを表示
-
-show-CustomURL-sidebar =
- .label = カスタム URL サイドバーを表示
-
-Edit-Custom-URL =
- .label = カスタム URL サイドバーの URL を編集

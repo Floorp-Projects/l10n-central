@@ -1319,27 +1319,16 @@ view-sidebar2-right =
 enable-sidebar2 =
  .label = ブラウザーマネージャーサイドバーを有効にする
 
-sidebar-mode = ブラウザーマネージャーサイドバーのモード
+sidebar2-restore =
+ .label = { -brand-short-name } の再起動・新しいウインドウを開いたときに、ブラウザーマネージャーサイドバーの内容を復元する
 
-AllInOne-mode =
- .label = ブラウザー管理ツールを表示
-bookmark-mode =
-  .label = ブックマークサイドバーを表示
-history-mode =
- .label = 履歴サイドバーを表示
-downloads-mode =
- .label = ダウンロードマネージャーサイドバーを表示
-treestyletab-mode =
- .label = ツリー型タブを表示する
-
-custom-URL-option = カスタム URL の設定
+custom-URL-option = ウェブパネルの URL 設定
 set-custom-URL-button = 
     .label = カスタム URL を設定...
     .accesskey = S
 
 browser-rest-mode =
  .label = 休憩モードのショートカットキーを有効にする
- 
  
 ## DualTheme
 dualtheme-enable =
