@@ -22,6 +22,9 @@ sidebar-forward-button =
 sidebar-reload-button = 
   .tooltiptext = 再読み込み
 
+sidebar-keepWidth-button =
+  .tooltiptext = このパネルでの横幅を記憶しとく
+
 sidebar-muteAndUnmute-button =
   .tooltiptext = ミュート・ミュート解除を切り替える
 

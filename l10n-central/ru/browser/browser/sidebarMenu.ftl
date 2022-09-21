@@ -26,6 +26,9 @@ sidebar-forward-button =
 sidebar-reload-button = 
   .tooltiptext = Перезагрузить
 
+sidebar-muteAndUnmute-button =
+  .tooltiptext = Отключить/включить звук на боковой панели
+
 show-browser-manager-sidebar =
   .tooltiptext = Показать боковую панель менеджера браузера
 
