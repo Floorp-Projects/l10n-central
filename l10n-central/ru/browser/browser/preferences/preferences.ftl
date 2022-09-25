@@ -1327,22 +1327,13 @@ view-sidebar2-right =
  
 enable-sidebar2 =
  .label = Включить боковую панель менеджера браузера
- 
-sidebar-mode = Выберите режим боковой панели
-AllInOne-mode =
- .label = Режим управления браузером
-bookmark-mode =
- .label = Режим закладок
-history-mode =
- .label = Режим истории
-downloads-mode =
- .label = Режим загрузок
-treestyletab-mode =
- .label = Режим вкладок в форме древа
 
-custom-URL-option = Задайте пользовательский URL
+sidebar2-restore =
+ .label = Восстанавливать режим боковой панели при перезапуске { -brand-short-name } или загрузке нового окна
+
+custom-URL-option = Задайте URL веб-панели
 set-custom-URL-button = 
-    .label = Задать пользовательский URL...
+    .label = Задать пользовательские URL...
     .accesskey = S
 
 disable-bg-newtab =
