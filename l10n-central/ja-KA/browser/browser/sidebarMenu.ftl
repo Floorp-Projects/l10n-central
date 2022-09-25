@@ -2,17 +2,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-sidebar-menu-bookmarks =
-    .label = ブックマーク
-sidebar-menu-history =
-    .label = 履歴
-sidebar-menu-synced-tabs =
-    .label = 同期タブ
-sidebar-menu-close =
-    .label = サイドバーを閉じるわ
 sidebar-close-button =
-    .tooltiptext = サイドバーを閉じるで
-    
+  .tooltiptext = サイドバーを閉じる
+
 sidebar-back-button =
   .tooltiptext = 戻る
 
@@ -22,29 +14,32 @@ sidebar-forward-button =
 sidebar-reload-button = 
   .tooltiptext = 再読み込み
 
-sidebar-keepWidth-button =
-  .tooltiptext = このパネルでの横幅を記憶しとく
-
 sidebar-muteAndUnmute-button =
-  .tooltiptext = ミュート・ミュート解除を切り替える
+  .tooltiptext = サイドバーをミュート/ミュート解除
 
 show-browser-manager-sidebar =
-  .tooltiptext = ブラウザーマネージャーモードのサイドバーを表示するで
+  .tooltiptext = ブラウザー管理ツール
 
-show-bookmarks-sidebar =
-  .tooltiptext = ブックマークのサイドバーを表示するで
+show-bookmark-sidebar =
+  .tooltiptext = ブックマークサイドバー
 
 show-history-sidebar =
-  .tooltiptext = 履歴のサイドバーを表示するで
+  .tooltiptext = 履歴サイドバー
 
 show-download-sidebar =
-  .tooltiptext = ダウンロードのサイドバーを表示するで
-
+  .tooltiptext = ダウンロードサイドバー
+  
 show-TST-sidebar =
-  .tooltiptext = ツリー型タブのサイドバーを表示するで
+  .tooltiptext = ツリー型タブサイドバー
 
-show-CustomURL-sidebar =
- .label = カスタム URL サイドバーを表示するで
+sidebar-addons-button =
+  .tooltiptext = アドオンマネージャーを開く
 
-Edit-Custom-URL =
- .label = カスタム URL サイドバーの URL を編集しとく
+sidebar-passwords-button =
+  .tooltiptext = パスワードマネージャーを開く
+
+sidebar-preferences-button =
+  .tooltiptext = { -brand-short-name } の設定を開く
+
+sidebar-keepWidth-button =
+  .tooltiptext = 現在のパネルサイズを記憶する
