@@ -1313,7 +1313,7 @@ macOS-chrome-useragent-mode =
 linux-chrome-useragent-mode = 
  .label = Изменить пользовательский агент на Chrome под Linux
 mobile-chrome-useragent-mode =
- .label = Изменить пользовательский агент на Chrome под Android
+ .label = Изменить пользовательский агент на Chrome под IOS
 
 ## DMR UI
 download-mgr-UI =
