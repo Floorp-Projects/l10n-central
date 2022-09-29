@@ -792,3 +792,6 @@ rest-mode-description = ブラウザーは停止中や。OK または、任意�
 Sidebar2 =
   .label = ブラウザーマネージャーサイドバー
   .tooltiptext = ブラウザーマネージャーサイドバーの表示/非表示を切り替えとく
+
+sidebar2-mute-and-unmute =
+  .label = このウェブパネルの音声をミュート/ミュート解除を切り替えとく
