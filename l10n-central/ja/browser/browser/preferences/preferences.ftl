@@ -1178,7 +1178,7 @@ material-effect =
 allow-auto-restart =
  .label= 再起動が必要な設定変更時に自動的に再起動
 enable-multitab =
- .label= 多段タブを有効にしとく（Lepton と互換性なし・実験的）
+ .label= 多段タブを有効にする（Lepton と互換性なし・実験的）
 learn-more-material = 詳細情報
 other-preference = その他の設定
 
