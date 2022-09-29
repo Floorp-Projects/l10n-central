@@ -1338,3 +1338,14 @@ disable-bg-newtab =
  .label = { -brand-short-name } Home で背景を無効にしとく
 
 how-to-disable-ntbg = この設定の変更を適用するには { -brand-short-name } Home で "Ctrl + Shift + R" を同時押しし、スーパーリロードする必要があるで
+
+newtab-background = { -brand-short-name } Homeの背景
+
+newtab-background-random-image =
+    .label = Unsplashの写真をランダムで表示
+
+newtab-background-gradation =
+    .label = グラデーション
+
+newtab-background-not-background =
+    .label = 背景無し
