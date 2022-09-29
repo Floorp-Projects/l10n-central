@@ -1512,7 +1512,7 @@ firefox-photon =
  .label = Firefox 传统 Photon UI
  
 floorp-legacy =  
- .label = Floorp 传统材质 UI ・ 不支持
+ .label = Floorp 传统材质 UI ・ （不支持）
 
 floorp-fluentUI =
  .label = Fluent UI
