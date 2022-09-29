@@ -325,3 +325,31 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = 这不是诈骗网站…
     .accesskey = d
+
+
+# Floorp
+
+css-menu =
+    .label = CSS
+    .accesskey = C
+rebuild-css =
+    .label = 重新载入所有 CSS
+    .accesskey = R
+make-browsercss-file =
+    .label = 新建 CSS 样式
+    .accesskey = M
+open-css-folder =
+    .label = 打开样式文件夹
+    .accesskey = O
+edit-userChromeCss-editor =
+    .label = 修改 userChrome.css
+edit-userContentCss-editor =
+    .label = 修改 userContent.css
+test-chrome-css =
+    .label = 测试 userChrome.css
+    .accesskey = C
+test-content-css =
+    .label = 测试 userContent.css
+    .accesskey = W
+not-found-editor-path = 编辑器路径不存在
+set-pref-description = 此操作需要一个存在的编辑器。请打开“about:config”并把“view_source.editor.path”设置为编辑器路径
