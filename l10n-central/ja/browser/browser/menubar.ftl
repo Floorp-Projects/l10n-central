@@ -321,3 +321,37 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = 詐欺サイトの誤報告を指摘...
     .accesskey = d
+
+# Floorp
+
+css-menu =
+    .label = CSS
+    .accesskey = C
+
+rebuild-css =
+    .label = ブラウザー CSS を再構築
+    .accesskey = R
+
+make-browsercss-file =
+    .label = ブラウザー CSS ファイルを作成
+    .accesskey = M
+
+open-css-folder =
+    .label = CSS フォルダーを開く
+    .accesskey = O
+
+edit-userChromeCss-editor =
+    .label = userChrome.css を編集
+
+edit-userContentCss-editor =
+    .label = userContent.css を編集
+
+test-chrome-css =
+    .label = Chrome ツールバー CSS をテスト
+    .accesskey = C
+test-content-css =
+    .label = 内部サイト用 content CSS をテスト
+    .accesskey = W
+
+not-found-editor-path = テキストエディターのパスが見つかりませんでした。
+set-pref-description = この機能を使用するには、VScode などのエディターへのパスを "about:config" の "view_source.editor.path"  に設定する必要があります。
