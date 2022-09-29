@@ -1424,7 +1424,7 @@ auto-reboot = 确认修改选项？需要重启才能使该选项生效。请在
 enable-multitab = 
  .label = 启用多级标签 
 enable-tab-scroll-change = 
- .label = 通过滚动切换标签
+ .label = 通过滚轮切换标签
 enable-doble-click-block = 
  .label = 双击关闭标签
 operation-settings = 
@@ -1461,7 +1461,7 @@ bookmarks-bottom-mode =
  .label = 书签栏显示在浏览器窗口底部
 
 material-effect =
- .label = 允许 Mica for Everyone 修改浏览器设计
+ .label = 允许 Mica for Everyone 修改浏览器外观
 other-preference = 其他选项
 
 enable-userscript = 
@@ -1485,8 +1485,8 @@ floorp-update-latest =
 
 ## system theme color
 
-system-color-settings = 这个主题有浅色和深色两种模式，而且可以指定设计。
-preferences-theme-appearance-header = 设置系统主题
+system-color-settings = 主题有浅色和深色两种模式，而且可以指定主题。
+preferences-theme-appearance-header = 主题模式
 
 system-theme-dark =
  .label = 暗黑模式
@@ -1500,7 +1500,7 @@ system-theme-auto =
 ## user interface prefernces
 
 ui-preference = 浏览器外观
-preferences-browser-appearance-description = 你可以从第三方编写的优秀 Floorp 设计中进行选择。有些设计可能与您的配置不兼容。
+preferences-browser-appearance-description = 你可以从第三方编写的优秀 Floorp 外观中进行选择。有些外观可能与您的配置文件不兼容。
 
 firefox-proton =
  .label = Firefox 现代 Proton UI
@@ -1512,7 +1512,7 @@ firefox-photon =
  .label = Firefox 传统 Photon UI
  
 floorp-legacy =  
- .label = Floorp 传统材质 UI ・ （不支持）
+ .label = Floorp 传统材质 UI・（不支持）
 
 floorp-fluentUI =
  .label = Fluent UI
@@ -1535,7 +1535,7 @@ uBlock-Origin = uBlock Origin
 about-uboori = uBlock Origin 拦截广告、大量跟踪器和其他危险网站。
 
 Privacy-Badger = Privacy Badger
-about-PBadger = Privacy Badger 自动学习，根据各个网站上的行为来阻止隐藏的跟踪器。
+about-PBadger = Privacy Badger 自动学习各个网站上的行为来阻止隐藏的跟踪器。
 
 Duck-Duck-Go = DuckDuckGo Privacy Essentials
 about-DDG = DuckDuckGo Privacy Essentials 用 DuckDuckGo 替换默认搜索引擎，同时拦截所访问网站的跟踪器。
@@ -1543,9 +1543,9 @@ about-DDG = DuckDuckGo Privacy Essentials 用 DuckDuckGo 替换默认搜索引�
 ## Fingerprint
 
 fingerprint-header = 抵制指纹和 IP 地址泄漏
-block-fingerprint = 指纹是一种跟踪机制，依赖于你的浏览器和操作系统的独特功能。本节包含一些设置，以进一步加强这种保护，超出默认的拦截。
-enable-firefox-fingerprint-protections = 启用对指纹的有力保护
-about-firefox-fingerprint-protection =  启用 Firefox 提供的更强大的保护，但可能导致某些网站异常。
+block-fingerprint = 指纹是一种跟踪机制，依赖于你的浏览器和操作系统的特性。本节包含部分设置，超出默认设置，以进一步加强指纹保护。
+enable-firefox-fingerprint-protections = 启用指纹保护
+about-firefox-fingerprint-protection =  启用 { -brand-short-name } 提供的更强大的保护，但可能导致某些网站异常。
 fingerprint-Protection =
  .label =  防指纹保护措施
 html5-canvas-prompt-settings =
@@ -1555,7 +1555,7 @@ disable-webgl =
  .label =  禁用 WebGL
 about-webgl = WebGL 是用于渲染图形的 Javascript API，可用于识别 GPU。
 Canvas-Blocker = Canvas Blocker
-about-CB = 这个扩展虚拟了指纹技术读取的数据。
+about-CB = Canvas Blocker 虚拟通过指纹技术读取的数据。
 WebRTC-connection = WebRTC 是一种提供实时调用的标准。 如果禁用此设置，您将无法使用 Discord 等。
 WebRTC = 
  .label = 启用 WebRTC 连接
@@ -1600,11 +1600,11 @@ mobile-chrome-useragent-mode =
 download-mgr-UI =
  .label = 使用简化的下载管理器
 downloading-red-color =
- .label = 在下载过程中显示红色下载管理器图标  
+ .label = 在下载过程中红色高亮下载管理器图标
 
-sidebar-preferences = 侧边栏
+sidebar-preferences = 侧边工具栏（类似 Opera）
 view-sidebar2-right = 
- .label = 在浏览器右侧显示侧边工具栏（类似 Opera）
+ .label = 显示在浏览器窗口右侧
 enable-sidebar2 =
  .label = 启用侧边工具栏
 
