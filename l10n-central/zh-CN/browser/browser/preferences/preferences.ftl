@@ -72,10 +72,12 @@ close-button =
 
 feature-enable-requires-restart = 必须重启 { -brand-short-name } 才能启用此功能。
 feature-disable-requires-restart = 必须重启 { -brand-short-name } 才能禁用此功能。
+feature-requires-restart = 该设置需要重启浏览器才能生效
 should-restart-title = 重启 { -brand-short-name }
 should-restart-ok = 立即重启 { -brand-short-name }
 cancel-no-restart-button = 取消
 restart-later = 稍后重启浏览器
+feature-change-requires-restart = 必须重启 { -brand-short-name } 才能修改此选项
 
 ## Extension Control Notifications
 ##
@@ -1465,7 +1467,7 @@ material-effect =
 other-preference = 其他选项
 
 enable-userscript = 
- .label = 启用旧组件
+ .label = 启用旧版组件
 about-legacy-components = 启用此功能可能会导致意外错误或致命错误
 
 Search-positon-top =
@@ -1485,7 +1487,7 @@ floorp-update-latest =
 
 ## system theme color
 
-system-color-settings = 主题有浅色和深色两种模式，而且可以指定主题。
+system-color-settings = 主题有浅色和深色两种模式，任君选择。
 preferences-theme-appearance-header = 主题模式
 
 system-theme-dark =
@@ -1503,16 +1505,16 @@ ui-preference = 浏览器外观
 preferences-browser-appearance-description = 你可以从第三方编写的优秀 Floorp 外观中进行选择。有些外观可能与您的配置文件不兼容。
 
 firefox-proton =
- .label = Firefox 现代 Proton UI
+ .label = Firefox modern Proton UI
 
 firefox-proton-fix =
  .label = Firefox Proton FIX UI
 
 firefox-photon = 
- .label = Firefox 传统 Photon UI
+ .label = Firefox Legacy Photon UI
  
 floorp-legacy =  
- .label = Floorp 传统材质 UI・（不支持）
+ .label = Floorp Legacy material UI・（不支持）
 
 floorp-fluentUI =
  .label = Fluent UI
