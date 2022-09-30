@@ -794,4 +794,4 @@ Sidebar2 =
   .tooltiptext = ブラウザーマネージャーサイドバーの表示/非表示を切り替えとく
 
 sidebar2-mute-and-unmute =
-  .label = このウェブパネルの音声をミュート/ミュート解除を切り替えとく
+  .label = このパネルのミュート状態を切り替えとく
