@@ -795,3 +795,6 @@ Sidebar2 =
 
 sidebar2-mute-and-unmute =
   .label = このパネルのミュート状態を切り替えとく
+
+sidebar2-unload-panel =
+  .label = このパネルをアンロードしとく

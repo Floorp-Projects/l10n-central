@@ -1349,3 +1349,18 @@ newtab-background-gradation =
 
 newtab-background-not-background =
     .label = 背景無し
+
+no-container = 
+    .label = コンテナーなし -既定-
+
+container-1 = 
+    .label = コンテナー 1 -個人-
+
+container-2 = 
+    .label = コンテナー 2 -仕事-
+
+container-3 =
+    .label = コンテナー 3 -銀行取引- 
+
+container-4 =
+    .label = コンテナー 4 -ショッピング-
