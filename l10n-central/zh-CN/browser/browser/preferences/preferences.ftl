@@ -1487,7 +1487,7 @@ floorp-update-latest =
 
 ## system theme color
 
-system-color-settings = 主题有浅色和深色两种模式，而且可以指定主题。
+system-color-settings = 主题有浅色和深色两种模式，任君选择。
 preferences-theme-appearance-header = 主题模式
 
 system-theme-dark =
@@ -1505,16 +1505,16 @@ ui-preference = 浏览器外观
 preferences-browser-appearance-description = 你可以从第三方编写的优秀 Floorp 外观中进行选择。有些外观可能与您的配置文件不兼容。
 
 firefox-proton =
- .label = Firefox 现代 Proton UI
+ .label = Firefox modern Proton UI
 
 firefox-proton-fix =
  .label = Firefox Proton FIX UI
 
 firefox-photon = 
- .label = Firefox 传统 Photon UI
+ .label = Firefox Legacy Photon UI
  
 floorp-legacy =  
- .label = Floorp 传统材质 UI・（不支持）
+ .label = Floorp Legacy material UI・（不支持）
 
 floorp-fluentUI =
  .label = Fluent UI
