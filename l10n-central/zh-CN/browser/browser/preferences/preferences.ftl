@@ -72,10 +72,12 @@ close-button =
 
 feature-enable-requires-restart = 必须重启 { -brand-short-name } 才能启用此功能。
 feature-disable-requires-restart = 必须重启 { -brand-short-name } 才能禁用此功能。
+feature-requires-restart = 该设置需要重启浏览器才能生效
 should-restart-title = 重启 { -brand-short-name }
 should-restart-ok = 立即重启 { -brand-short-name }
 cancel-no-restart-button = 取消
 restart-later = 稍后重启浏览器
+feature-change-requires-restart = 必须重启 { -brand-short-name } 才能修改此选项
 
 ## Extension Control Notifications
 ##
@@ -1465,7 +1467,7 @@ material-effect =
 other-preference = 其他选项
 
 enable-userscript = 
- .label = 启用旧组件
+ .label = 启用旧版组件
 about-legacy-components = 启用此功能可能会导致意外错误或致命错误
 
 Search-positon-top =
