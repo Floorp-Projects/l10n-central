@@ -1339,3 +1339,29 @@ set-custom-URL-button =
 disable-bg-newtab =
  .label = Отключить фоновое изображение на стартовой странице { -brand-short-name }
 how-to-disable-ntbg = Чтобы применить эту настройку, необходимо нажать "Ctrl + Shift + R" на стартовой странице { -brand-short-name }.
+
+newtab-background = Фоновое изображение на домашней странице { -brand-short-name }
+
+newtab-background-random-image =
+ .label = Случайное изображение с Unsplash
+
+newtab-background-gradation =
+ .label = Градация
+
+newtab-background-not-background =
+ .label = Отключить фоновое изображение
+    
+no-container = 
+ .label = Без контейнера -Default-
+
+container-1 = 
+ .label = Контейнер 1 -Личный-
+
+container-2 = 
+ .label = Контейнер 2 -Рабочий-
+
+container-3 =
+ .label = Контейнер 3 -Банк-
+
+container-4 =
+ .label = Container 4 -Покупки-
