@@ -865,5 +865,5 @@ Sidebar2 =
 sidebar2-mute-and-unmute =
   .label = Отключить/включить звук на этой панели
 
-  sidebar2-unload-panel =
+sidebar2-unload-panel =
   .label = Выгрузить эту панель
