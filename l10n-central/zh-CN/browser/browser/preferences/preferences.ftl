@@ -1424,7 +1424,7 @@ browser-design-settings = 标签栏设置
 
 auto-reboot = 确认修改选项？需要重启才能使该选项生效。请在进行任何更改之前保存您正在使用的数据。
 enable-multitab = 
- .label = 启用多级标签 
+ .label = 启用多行标签 
 enable-tab-scroll-change = 
  .label = 通过滚轮切换标签
 enable-doble-click-block = 
