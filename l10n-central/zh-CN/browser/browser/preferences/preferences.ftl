@@ -1476,7 +1476,7 @@ allow-auto-restart =
  .label = 更改需要重新启动的设置时自动重新启动
 
 browser-rest-mode =
- .label = 启用 Rest 模式快捷键
+ .label = 启用老板键（F9)
 
 ## macOS version use legacy update system 
 floorp-updater = { -brand-short-name } 更新设置
