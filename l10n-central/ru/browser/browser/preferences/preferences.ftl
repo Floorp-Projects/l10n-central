@@ -1352,7 +1352,7 @@ newtab-background-not-background =
  .label = Отключить фоновое изображение
     
 no-container = 
- .label = Без контейнера -Default-
+ .label = Без контейнера -По умолчанию-
 
 container-1 = 
  .label = Контейнер 1 -Личный-
