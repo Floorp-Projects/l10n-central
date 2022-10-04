@@ -1424,7 +1424,7 @@ browser-design-settings = 标签栏设置
 
 auto-reboot = 确认修改选项？需要重启才能使该选项生效。请在进行任何更改之前保存您正在使用的数据。
 enable-multitab = 
- .label = 启用多级标签 
+ .label = 启用多行标签 
 enable-tab-scroll-change = 
  .label = 通过滚轮切换标签
 enable-doble-click-block = 
@@ -1476,7 +1476,7 @@ allow-auto-restart =
  .label = 更改需要重新启动的设置时自动重新启动
 
 browser-rest-mode =
- .label = 启用 Rest 模式快捷键
+ .label = 启用老板键（F9)
 
 ## macOS version use legacy update system 
 floorp-updater = { -brand-short-name } 更新设置

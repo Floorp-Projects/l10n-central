@@ -843,3 +843,16 @@ data-reporting-notification-message = { -brand-short-name } 会自动向 { -vend
 data-reporting-notification-button =
     .label = 我要选择提供哪些信息
     .accesskey = C
+## 老板来了
+rest-mode = 休息一下
+rest-mode-description = 浏览器崩溃了，点击确定或者按下回车键继续
+
+Sidebar2 =
+  .label = 侧边工具栏
+  .tooltiptext = 显示/隐藏侧边工具栏
+
+sidebar2-mute-and-unmute =
+  .label = 静音/恢复
+
+sidebar2-unload-panel =
+  .label = 关闭面板
