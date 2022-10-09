@@ -45,4 +45,3 @@ contributors = <label data-l10n-name="about-contributor">貢献者・開発者�
 
 about-ablaze = Ablaze について
 ablaze-twitter = Ablaze の URL : Twitter <label data-l10n-name="ablaze-twitter-id">@Ablaze_MIRAI</label>　Github : <label data-l10n-name="ablaze-github-id">@Ablaze-MIRAI</label>　alexandriteOS  : <label data-l10n-name="alexandriteos-url">公式サイト</label>
-about-ablaze-sub = AblazeはFloorpプロジェクトの上にあるグループで、Floorpを開発しており、FloorpプロジェクトはFloorpのサポートを受けながら、ここで運営されているのです。その他にも、AlexandriteOSなどのプロジェクトも運営しています。

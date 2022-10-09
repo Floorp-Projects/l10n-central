@@ -7,7 +7,6 @@
 
 
 about-floorp = Об проекте Floorp
-about-floorp-sub = Floorp является проектом в рамках Ablaze, а браузер Floorp Legacy - продукт его разработки, основанный на браузере Firefox, разработанном компанией Mozilla. Проект развивается полностью на некоммерческой основе. Исходный код можно найти на Github по ссылке ниже.
 about-floorp-sub-sub = Floorp 
 about-floorp-browser = Об проектах Floorp
 ablaze-floorp = Ablaze Floorp 10 -Catostylus Mosaicus-
