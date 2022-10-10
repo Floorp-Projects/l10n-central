@@ -155,6 +155,11 @@ spotlight-total-cookie-protection-expanded = あなたが訪問したサイト�
 spotlight-total-cookie-protection-primary-button = 包括的 Cookie 保護をオンにする
 spotlight-total-cookie-protection-secondary-button = 後で
 
+cfr-total-cookie-protection-header = ありがとうございます。{ -brand-short-name } はこれまでよりプライベートで安全になりました
+# "Early access" for this feature rollout means it's a "feature preview" or
+# "soft launch". Only those who received it and accepted are shown this message.
+cfr-total-cookie-protection-body = 包括的 Cookie 保護機能はこれまでにない最も強力なプライバシー保護機能です。すべての { -brand-short-name } ユーザーの既定の設定になりました。あなたのような早期アクセス参加者がなければ実現できなかったでしょう。より良いインターネットの構築への協力に感謝します。
+
 ## Emotive Continuous Onboarding
 
 spotlight-better-internet-header = より良いインターネットはあなたとともに始まります
@@ -166,3 +171,49 @@ spotlight-pin-primary-button = { PLATFORM() ->
    *[other] タスクバーにピン留め
 }
 spotlight-pin-secondary-button = 後で
+
+## MR2022 Background Update Windows native toast notification strings.
+##
+## These strings will be displayed by the Windows operating system in
+## a native toast, like:
+##
+## <b>multi-line title</b>
+## multi-line text
+## <img>
+## [ primary button ] [ secondary button ]
+##
+## The button labels are fitted into narrow fixed-width buttons by
+## Windows and therefore must be as narrow as possible.
+
+mr2022-background-update-toast-title = 新しい { -brand-short-name } です。プライバシーを強化し、トラッカーに対策しました。妥協はしません。
+mr2022-background-update-toast-text = 最新の { -brand-short-name } を今すぐ試してみましょう。今までで最も強力なトラッキング防止機能に更新されました。
+
+# This button label will be fitted into a narrow fixed-width button by
+# Windows. Try to not exceed the width of the English text (compare it
+# using a variable font like Arial): the button can only fit 1-2
+# additional characters, exceeding characters will be truncated.
+mr2022-background-update-toast-primary-button-label = 今すぐ { -brand-shorter-name } を開く
+
+# This button label will be fitted into a narrow fixed-width button by
+# Windows. Try to not exceed the width of the English text (compare it using a
+# variable font like Arial): the button can only fit 1-2 additional characters,
+# exceeding characters will be truncated.
+mr2022-background-update-toast-secondary-button-label = 後で通知
+
+## Firefox View CFR
+
+firefoxview-cfr-primarybutton = 試してみる
+  .accesskey = T
+firefoxview-cfr-secondarybutton = 後で
+  .accesskey = N
+firefoxview-cfr-header = { -firefoxview-brand-name } で最近閉じたタブを取り戻しましょう
+firefoxview-cfr-body = 加えて、端末の壁をシームレスに飛び越えたり、ブラウザーに鮮やかな色彩を合わせることもできます。
+
+## Firefox View Spotlight
+
+firefoxview-spotlight-promo-title = { -firefoxview-brand-name } のご紹介
+
+# “Poof” refers to the expression to convey when something or someone suddenly disappears, or in this case, reappears. For example, “Poof, it’s gone.”
+firefoxview-spotlight-promo-subtitle = 携帯端末で開いているタブを開きたい？ 開けます。今閉じたサイトが必要でしたか？ ご安心ください。{ -firefoxview-brand-name } で戻せます。
+firefoxview-spotlight-promo-primarybutton = 使い方について
+firefoxview-spotlight-promo-secondarybutton = スキップ

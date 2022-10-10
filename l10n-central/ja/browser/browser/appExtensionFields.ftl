@@ -12,12 +12,8 @@ extension-firefox-compact-light-name = Light
 extension-firefox-compact-light-description = 明るい配色のテーマです。
 extension-firefox-compact-dark-name = Dark
 extension-firefox-compact-dark-description = 暗い配色のテーマです。
-extension-firefox-alpenglow-name = Floorp Alpenglow
+extension-firefox-alpenglow-name = Firefox Alpenglow
 extension-firefox-alpenglow-description = カラフルな外観のボタン、メニュー、ウィンドウを使用します。
-extension-floorp-material-name=マテリアルテーマ
-extension-floorp-material-description= ボタンやメニュー、ウィンドウについてオペレーティングシステムの設定に従います。
-extension-floorp-photon-name=Firefox Photon Theme
-extension-floorp-photon-description= ボタンやメニュー、ウィンドウについてオペレーティングシステムの設定に従います。
 
 ## Colorway Themes
 ## These themes are variants of a colorway. The colorway is specified in the
@@ -25,8 +21,8 @@ extension-floorp-photon-description= ボタンやメニュー、ウィンドウ�
 ## Variables
 ##   $colorway-name (String) The name of a colorway (e.g. Graffiti, Elemental).
 
-extension-colorways-soft-name={ $colorway-name } — Soft
-extension-colorways-balanced-name={ $colorway-name } — Balanced
+extension-colorways-soft-name={ $colorway-name } — 穏やか
+extension-colorways-balanced-name={ $colorway-name } — バランス
 # "Bold" is used in the sense of bravery or courage, not in the sense of
 # emphasized text.
-extension-colorways-bold-name={ $colorway-name } — Bold
+extension-colorways-bold-name={ $colorway-name } — 大胆

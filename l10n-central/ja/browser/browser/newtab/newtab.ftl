@@ -242,6 +242,10 @@ newtab-pocket-last-card-desc = 後でもう一度確認してください。
 newtab-pocket-last-card-image =
     .alt = 最後まで読みました
 
+# A save to Pocket button that shows over the card thumbnail on hover.
+newtab-pocket-save = 保存
+newtab-pocket-saved = 保存しました
+
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.
 
@@ -256,7 +260,8 @@ newtab-custom-row-selector = { $num } 行
 newtab-custom-sponsored-sites = 広告ショートカット
 newtab-custom-pocket-title = { -pocket-brand-name } のおすすめ
 newtab-custom-pocket-subtitle = { -brand-product-name } ファミリーを構成する { -pocket-brand-name } が厳選した注目のコンテンツ
-newtab-custom-pocket-sponsored = 広告ストーリー
+newtab-custom-pocket-sponsored = 広告記事
+newtab-custom-pocket-show-recent-saves = 最近保存したものを表示
 newtab-custom-recent-title = 最近のアクティビティ
 newtab-custom-recent-subtitle = 最近のサイトとコンテンツの抜粋
 newtab-custom-close-button = 閉じる

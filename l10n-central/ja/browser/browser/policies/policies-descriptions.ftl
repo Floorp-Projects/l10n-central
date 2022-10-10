@@ -9,10 +9,6 @@
 ## These are short descriptions for individual policies, to be displayed
 ## in the documentation section in about:policies.
 
-## Floorp from 10.0.0
-from-policy-notice = これらのポリシーは、{ -brand-short-name } プロジェクトにより設定され、Linux のみで有効です。心配する必要はありません。
-
-
 policy-3rdparty = WebExtension が chrome.storage.managed を経由してアクセス可能なポリシーを設定します。
 
 policy-AllowedDomainsForApps = Google Workspace へのアクセスを許可するドメインを定義します。
@@ -62,7 +58,7 @@ policy-DisableFeedbackCommands = ヘルプメニューのフィードバック�
 policy-DisableFirefoxAccounts = Sync を含む { -fxaccount-brand-name } を利用したサービスを無効にします。
 
 # Firefox Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = Floorp Screenshots 機能を無効にします。
+policy-DisableFirefoxScreenshots = Firefox Screenshots 機能を無効にします。
 
 policy-DisableFirefoxStudies = Shield 調査の実行を禁止します。
 
@@ -119,9 +115,13 @@ policy-ExtensionSettings = 拡張機能のインストール全般を管理し�
 
 policy-ExtensionUpdate = 拡張機能の自動更新を有効または無効にします。
 
-policy-FirefoxHome = Floorp Home の設定を行います。
+policy-FirefoxHome = Firefox Home の設定を行います。
+
+policy-FirefoxHome2 = { -firefox-home-brand-name } の設定を行います。
 
 policy-FlashPlugin = Flash プラグインの実行を許可、または拒否します。
+
+policy-GoToIntranetSiteForSingleWordEntryInAddressBar = アドレスバーに単語を入力すると、検索の代わりにイントラネットサイトへの案内を強制します。
 
 policy-Handlers = 既定のアプリケーションハンドラーを設定します。
 
@@ -175,7 +175,7 @@ policy-Permissions2 = カメラ、マイク、位置情報、通知、自動再�
 
 policy-PictureInPicture = ピクチャーインピクチャーを有効または無効にします。
 
-policy-PopupBlocking = 特定のウェブサイトのポッポアップ表示を既定で許可します。
+policy-PopupBlocking = 特定のウェブサイトのポップアップ表示を既定で許可します。
 
 policy-Preferences = 設定のサブセットに対する値を設定してロックします。
 
