@@ -282,8 +282,3 @@ appmenu-customizetoolbar =
 appmenu-developer-tools-subheader = 浏览器工具
 appmenu-developer-tools-extensions =
     .label = 面向开发者的扩展
-## Floorp panel
-open-profile-dir = 
-    .label = 打开配置文件夹
-appmenuitem-reboot =
-    .label = 重启
