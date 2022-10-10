@@ -1199,6 +1199,10 @@ browser-rest-mode =
 dualtheme-enable =
  .label = Включить двойную тему 
 
+dual-theme-enable-addon-button = Включить (Субтема)
+dual-theme-disable-addon-button = Отключить (Субтема)
+dual-theme-enabled-heading = Включено (Субтема)
+
 Search-positon-top =
  .label = Отображать поисковую строку в верхней части страницы
 allow-auto-restart =
@@ -1365,3 +1369,5 @@ container-3 =
 
 container-4 =
  .label = Container 4 -Покупки-
+
+feature-requires-restart = Для изменения настроек требуется перезагрузка
