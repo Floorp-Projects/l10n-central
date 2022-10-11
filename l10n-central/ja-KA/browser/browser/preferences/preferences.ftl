@@ -1325,8 +1325,6 @@ set-custom-URL-button =
     .label = カスタム URL を設定...
     .accesskey = S
 
- .label = ツリー型タブを表示しとく
-
 browser-rest-mode =
  .label = 休憩モードのショートカットキーを有効にしとく
  
