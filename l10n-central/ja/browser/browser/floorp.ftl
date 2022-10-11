@@ -28,7 +28,7 @@ Mouse-side-button =
 tabbar-preference = タブバーの設定
 
 None-mode = 
- .label= 通常モード（変更を加えません）
+ .label= 通常モード（変更なし）
 
 hide-horizontality-tabs = 
  .label= 水平タブを隠す
@@ -48,6 +48,7 @@ treestyletab-Settings =
 treestyletab-open-option = ツリー型タブアドオンの設定
 
 bookmarks-bar-settings = ブックマークバーの設定（設定の併用不可）
+operation-settings = ブラウザーの操作設定
 bookmarks-focus-mode =
  .label = ブックマークバーをフォーカスされた場合に表示
 bookmarks-bottom-mode =
@@ -95,25 +96,36 @@ ui-preference = ユーザーインターフェイスの設定
 preferences-browser-appearance-description = ブラウザーの外観設定を決められます。完全テーマのように、５つのデザインの中からブラウザーの外観を変更することができます。
 
 firefox-proton =
- .label = Firefox Proton のデザインを使用する
+ .label = Firefox Proton デザイン
 
 firefox-proton-fix =
- .label = Firefox Proton FIX のデザインを使用する
+ .label = Firefox Proton FIX デザイン
 
 firefox-photon = 
- .label = Firefox Photon のデザインを使用する
+ .label = Firefox Photon デザイン
  
 floorp-legacy =  
- .label = Floorp Legacy のデザインを使用する（サポート対象外）
+ .label = Floorp Legacy デザイン（サポート対象外）
 
 floorp-fluentUI =
- .label = Microsoft Fluent UI のデザインを使用する
+ .label = Microsoft Fluent UI デザイン
 
 floorp-gnomeUI =
- .label = GNOME テーマのデザインを使用する（システムテーマが必要）
+ .label = GNOME デスクトップのデザイン（システムテーマ & GTK が必要）
 
 waterfox-lepton =
- .label = Lepton（Firefox UI FIX） のデザインを使用する
+ .label = Lepton（Firefox UI FIX） のデザイン
+
+memory-and-performance = メモリとパフォーマンスの設定
+
+min-memory = 
+    .label = メモリ使用量を最小限にする
+
+balance-memory = 
+    .label = パフォーマンスとメモリ使用量のバランスを取る
+
+max-memory = 
+    .label = 最高パフォーマンスを得るためにメモリ使用量を最大限にする（既定） 
 
 ## BlockMoreTracker
 
