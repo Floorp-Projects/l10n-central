@@ -854,16 +854,3 @@ data-reporting-notification-message = { -brand-short-name } автоматиче
 data-reporting-notification-button =
     .label = Выбрать, чем мне поделиться
     .accesskey = В
-
-## boss has coming
-rest-mode = Делаем перерыв...
-rest-mode-description = Браузер остановлен. Нажмите OK или любую другую клавишу для возобновления работы.
-Sidebar2 =
-  .label = Боковая панель менеджера браузера
-  .tooltiptext = Изменить видимость боковой панели
-
-sidebar2-mute-and-unmute =
-  .label = Отключить/включить звук на этой панели
-
-sidebar2-unload-panel =
-  .label = Выгрузить эту панель

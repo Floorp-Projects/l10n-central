@@ -282,9 +282,3 @@ appmenu-customizetoolbar =
 appmenu-developer-tools-subheader = Инструменты браузера
 appmenu-developer-tools-extensions =
     .label = Расширения для разработчиков
-
-## Floorp panel
-open-profile-dir = 
-    .label = Открыть директорию профиля
-appmenuitem-reboot =
-    .label = Перезапустить браузер

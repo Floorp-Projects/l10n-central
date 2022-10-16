@@ -1,0 +1,327 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+###################################################################### about:Dialog #################################################################################
+
+about-floorp = Об проекте { -brand-product-name }
+icon-creator = Создатели логотипа:  <label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> и <label data-l10n-name="brand-logo-twitter">@mwxdxx.</label>
+contributors = Список <label data-l10n-name="about-contributor">контрибьюторов и разработчиков</label>
+
+######################################################################### Themes #########################################################################
+
+extension-floorp-material-name = Тема материала
+extension-floorp-material-description = Следовать дизайну операционной системы для кнопок, меню и окон
+
+extension-floorp-photon-name = Тема Photon
+extension-floorp-photon-description = Следовать дизайну операционной системы для кнопок, меню и окон
+
+#################################################################### about:preferences ####################################################################
+
+feature-requires-restart = Для изменения настроек требуется перезагрузка
+
+floorp-preference = Экспериментальные настройки
+browser-design-settings = Настройки панели вкладок
+
+auto-reboot = Если вы измените какие-либо из приведенных ниже настроек, ваш браузер будет перезапущен, чтобы применить изменения. Пожалуйста, сохраните данные, с которыми вы работаете, прежде чем вносить какие-либо изменения.
+enable-multitab = 
+ .label = Включить многоуровневые вкладки
+enable-tab-scroll-change = 
+ .label = Переключать вкладки с помощью прокрутки
+enable-doble-click-block = 
+ .label = Использовать двойной щелчок для закрытия вкладки
+operation-settings = 
+  .label = Настройки работы браузера
+Mouse-side-button = 
+  .label = Оптимизировать браузер для работы с мышью с боковыми кнопками
+
+tabbar-preference = Панель вкладок
+
+None-mode = 
+ .label= Стандартный режим
+hide-horizontality-tabs = 
+ .label= Скрыть горизонтальную панель вкладок
+verticalTab-setting = 
+ .label = Оптимизировать браузер для работы с вертикальными вкладками
+move-tabbar-position =
+ .label = Переместить панель с вкладками под панель закладок
+tabbar-on-bottom = 
+ .label = Отобразить в нижней части браузера
+
+treestyletabSettings-l10 = Настройки вертикальных вкладки в стиле древа
+treestyletab-Settings = 
+ .label = Разворачивать при фокусе мыши
+treestyletab-open-option = Настройки TreeStyleTab
+
+bookmarks-bar-settings = Настройки панели закладок (нельзя использовать параллельно)
+bookmarks-focus-mode =
+ .label = Показывать панель закладок, когда мышь сфокусирована на панели инструментов
+bookmarks-bottom-mode =
+ .label = Панель закладок в нижней части браузера
+
+material-effect =
+ .label = Разрешить Mica for Everyone изменять дизайн браузера 
+other-preference = Другие настройки
+
+operation-settings = Управление браузером
+
+enable-userscript = 
+ .label = Включить устаревшие компоненты
+about-legacy-components = Включение этой функции может привести к неожиданным ошибкам или фатальным сбоям
+
+Search-positon-top =
+ .label = Отображать поисковую строку в верхней части страницы
+allow-auto-restart =
+ .label = Автоматический перезапуск при изменении настроек требующих перезапуска
+
+browser-rest-mode =
+ .label = Включить горячую клавишу отвечающую за режим отдыха
+
+floorp-updater = Настройки программы обновления { -brand-short-name }
+enable-floorp-updater = 
+ .label = Проверять наличия обновлений { -brand-short-name } при запуске
+floorp-update-latest = 
+ .label = Уведомление о наличии обновлений { -brand-short-name } при автоматической проверке обновлений
+
+## system theme color
+
+system-color-settings = Для этой темы доступен как светлый, так и темный дизайн
+preferences-theme-appearance-header = Установка системной темы
+system-theme-dark =
+ .label = Применить темный режим
+system-theme-light = 
+ .label = Применить светлый режим
+system-theme-auto =  
+ .label = Стандартный режим
+
+ui-preference = Внешний вид браузера
+preferences-browser-appearance-description = Вы можете выбрать один из замечательных дизайнов Floorp написанных сторонними разработчиками. Некоторые дизайны могут быть несовместимы с вашей конфигурацией.
+firefox-proton =
+ .label = Firefox modern Proton UI
+firefox-proton-fix =
+ .label = Firefox Proton FIX UI
+firefox-photon = 
+ .label = Firefox Legacy Photon UI
+floorp-legacy =  
+ .label = Floorp Legacy material UI・Unsupported
+floorp-fluentUI =
+ .label = fluentUI
+floorp-gnomeUI =
+ .label = Gnome Theme
+waterfox-lepton =
+ .label = Firefox Lepton UI
+
+## Protection Against Fingerprinting
+
+privacy-hub-header = Центр конфиденциальности
+block-more-tracker = Блокируйте больше рекламы и трекеров
+block-tracker = Данный раздел содержит расширения помогающие блокировать рекламу и трекеры
+
+view-at-AMO = Подробнее на AMO
+uBlock-Origin = uBlock Origin
+about-uboori = uBlock Origin блокирует рекламу, разнообразные трекеры и прочие опасные сайты.
+
+Privacy-Badger = Privacy Badger
+about-PBadger = Privacy Badger автоматически учится блокировать скрытые трекеры на основе их поведения на веб-сайтах.
+
+Duck-Duck-Go = DuckDuckGo Privacy Essentials
+about-DDG = DuckDuckGo Privacy Essentials заменяет поисковую систему по умолчанию на DuckDuckGo, блокируя при этом трекеры на посещаемых сайтах.
+
+fingerprint-header = Противодействие фингерпринтингу и утечке IP-адреса
+block-fingerprint = Фингерпринтинг - механизм слежки опирающийся на уникальные особенности браузера и операционной системы. Этот раздел содержит настройки для дальнейшего усиления этой защиты помимо блокировки по умолчанию.
+enable-firefox-fingerprint-protections = Включить надежную защиту от фингерпринтинга.
+about-firefox-fingerprint-protection = Включение защиты Firefox включает принудительный светлый режим, деактивацию некоторых API и т.д. Работа некоторых сайтов может быть нарушена.
+fingerprint-Protection =
+ .label = Защита от фингерпринтинга
+html5-canvas-prompt-settings = 
+ .label = Автоматически скрывать запросы на подтверждение доступа к данным изображения HTML5
+canvas-prompt = Автоматически скрывать запрос на чтение холста.
+disable-webgl =
+ .label =  Отключить WebGL
+about-webgl = WebGL - API Javascript используемый для рендеринга графики, который может использоваться для идентификации GPU.
+Canvas-Blocker = Canvas Blocker
+about-CB = Дополнение подменяющее данные браузера используемые для создания фингерпринта.
+WebRTC-connection = WebRTC - стандарт отвечающий за звонки в реальном времени. Если вы отключите эту настройку, вы не сможете использовать Discord и т.д.
+WebRTC = 
+ .label = Включить WebRTC-подключение
+
+## Download Manager
+download-notification-preferences = Уведомление о загрузке
+start-always-notify =
+ .label = Уведомлять только в начале
+finish-always-notify = 
+ .label = Уведомлять только при завершении
+always-notify =
+ .label = Уведомлять и в начале, и в конце
+do-not-notify =
+ .label = Не включать уведомления
+floorp-translater = Настройки переводчика
+click-to-option =
+ .label = Открыть настройки...
+ .accesskey = O
+
+## sidebar
+profiles-button-label = Управление профилями
+floorp-help-button-label = Поддержка { -brand-short-name }
+
+appmenuitem-reboot =
+ .label = Перезагрузить браузер
+
+UserAgent-preference = Пользовательский Агент
+default-useragent-mode =
+ .label = Использовать пользовательский агент Firefox (по умолчанию)
+windows-chrome-useragent-mode =
+ .label = Изменить пользовательский агент на Chrome под Windows
+macOS-chrome-useragent-mode = 
+ .label = Изменить пользовательский агент на Chrome под macOS
+linux-chrome-useragent-mode = 
+ .label = Изменить пользовательский агент на Chrome под Linux
+mobile-chrome-useragent-mode =
+ .label = Изменить пользовательский агент на Chrome под IOS
+
+## DMR UI
+download-mgr-UI =
+ .label = Использовать менеджер загрузок "Simple UI"
+downloading-red-color =
+ .label = Выделять иконку менеджера загрузок красным цветом во время скачивания
+
+sidebar-preferences = Боковая панель
+view-sidebar2-right = 
+ .label = Отображать боковую панель менеджера браузера справа
+enable-sidebar2 =
+ .label = Включить боковую панель менеджера браузера
+sidebar2-restore =
+ .label = Восстанавливать режим боковой панели при перезапуске { -brand-short-name } или загрузке нового окна
+
+custom-URL-option = Задайте URL веб-панели
+set-custom-URL-button = 
+ .label = Задать пользовательские URL...
+ .accesskey = S
+
+# Containers
+no-container = 
+ .label = Без контейнера -По умолчанию-
+container-1 = 
+ .label = Контейнер 1 -Личный-
+container-2 = 
+ .label = Контейнер 2 -Рабочий-
+container-3 =
+ .label = Контейнер 3 -Банк-
+container-4 =
+ .label = Container 4 -Покупки-
+
+memory-and-performance = Настройки памяти и производительности
+min-memory = 
+ .label = Минимальное использование памяти (низкая производительность)
+balance-memory = 
+ .label = Баланс использования памяти и производительности
+max-memory = 
+ .label = Лучшая скорость и производительность (высокое потребление памяти) 
+
+## DualTheme
+dualtheme-enable =
+ .label = Включить двойную тему 
+
+# Old and maybe obsolete
+dual-theme-enable-addon-button = Включить (Субтема)
+dual-theme-disable-addon-button = Отключить (Субтема)
+dual-theme-enabled-heading = Включено (Субтема)
+
+newtab-background = Фоновое изображение на домашней странице { -brand-short-name }
+newtab-background-random-image =
+ .label = Случайное изображение с Unsplash
+newtab-background-gradation =
+ .label = Градация
+newtab-background-not-background =
+ .label = Отключить фоновое изображение
+
+
+rest-mode = Делаем перерыв...
+rest-mode-description = Браузер остановлен. Нажмите OK или любую другую клавишу для возобновления работы.
+
+Sidebar2 =
+ .label = Боковая панель менеджера браузера
+ .tooltiptext = Изменить видимость боковой панели
+sidebar2-mute-and-unmute =
+ .label = Отключить/включить звук на этой панели
+sidebar2-unload-panel =
+ .label = Выгрузить эту панель
+sidebar-close-button =
+ .tooltiptext = Закрыть боковую панель
+sidebar-back-button =
+ .tooltiptext = Назад
+sidebar-forward-button =
+ .tooltiptext = Вперёд
+sidebar-reload-button = 
+ .tooltiptext = Перезагрузить
+sidebar-muteAndUnmute-button =
+ .tooltiptext = Отключить/включить звук на боковой панели
+
+show-browser-manager-sidebar =
+ .tooltiptext = Показать боковую панель менеджера браузера
+show-bookmark-sidebar =
+ .tooltiptext = Показать боковую панель закладок
+show-history-sidebar =
+ .tooltiptext = Показать боковую панель истории
+show-download-sidebar =
+ .tooltiptext = Показать боковую панель загрузок
+show-TST-sidebar =
+ .tooltiptext = Показать боковую панель в стиле древа
+show-CustomURL-sidebar =
+ .label = Показать боковую панель пользовательских URL
+Edit-Custom-URL =
+ .label = Редактировать пользовательский URL в боковой панели
+
+sidebar-addons-button =
+ .tooltiptext = Открыть менеджер дополнений
+sidebar-passwords-button =
+ .tooltiptext = Открыть менеджер паролей
+sidebar-preferences-button =
+ .tooltiptext = Открыть настройки браузера
+sidebar-keepWidth-button =
+ .tooltiptext = Сохранять ширину боковой панели
+
+#################################################################### menu panel ############################################################
+
+open-profile-dir = 
+ .label = Открыть директорию c текущим профилем
+appmenuitem-reboot =
+ .label = Перезапустить браузер
+
+####################################################################### menu ###############################################################
+
+css-menu =
+ .label = CSS
+ .accesskey = C
+
+rebuild-css =
+ .label = Пересобрать CSS-файлы браузера
+ .accesskey = R
+make-browsercss-file =
+ .label = Создать CSS файл браузера
+ .accesskey = M
+open-css-folder =
+ .label = Открыть папку с CSS файлами
+ .accesskey = O
+edit-userChromeCss-editor =
+ .label = Редактировать userChrome.css
+edit-userContentCss-editor =
+ .label = Редактировать userContent.css
+test-chrome-css =
+ .label = Простестировать Chrome CSS
+ .accesskey = C
+test-content-css =
+ .label = Простестировать Content CSS
+ .accesskey = W
+
+not-found-editor-path = Путь к редактору не найден
+set-pref-description = Эта операция требует указания пути к редактору. Задайте "view_source.editor.path" в "about:config"
+
+# Other stuff (May be obsolete too)
+
+disable-bg-newtab =
+ .label = Отключить фоновое изображение на стартовой странице { -brand-short-name }
+how-to-disable-ntbg = Чтобы применить эту настройку, необходимо нажать "Ctrl + Shift + R" на стартовой странице { -brand-short-name }.
+
+
+feature-requires-restart = Для изменения настроек требуется перезагрузка
