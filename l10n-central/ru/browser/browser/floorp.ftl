@@ -46,7 +46,7 @@ verticalTab-setting =
 move-tabbar-position =
  .label = Переместить панель с вкладками под панель закладок
 tabbar-on-bottom = 
- .label = Отобразить в нижней части браузера
+ .label = Отображать в нижней части браузера
 
 treestyletabSettings-l10 = Настройки вертикальных вкладки в стиле древа
 treestyletab-Settings = 
