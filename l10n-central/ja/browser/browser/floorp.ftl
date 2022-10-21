@@ -249,7 +249,7 @@ newtab-background-not-background =
 
 ## lepton preferences
 
-about-lepton = { -brand-short-name } を Lepton を使用してカスタマイズします。設定の変更は、{ -brand-short-name } の再起動後に適用されます。
+about-lepton = { -brand-short-name } を Lepton を使用してカスタマイズします。設定の変更に、{ -brand-short-name } の再起動は必要ありません。代わりに Floorp は Lepton を再適用します。
 
 lepton-preference-button =
     .label = Lepton の設定を開く
