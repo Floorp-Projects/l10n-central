@@ -101,8 +101,8 @@ firefox-proton =
 firefox-proton-fix =
  .label = Firefox Proton FIX デザイン
 
-firefox-photon = 
- .label = Firefox Photon デザイン
+firefox-photon-lepton = 
+ .label = Firefox Photon・Lepton デザイン
  
 floorp-legacy =  
  .label = Floorp Legacy デザイン（サポート対象外）
@@ -245,6 +245,93 @@ newtab-background-gradation =
 
 newtab-background-not-background =
     .label = 背景を表示しない
+
+
+## lepton preferences
+
+about-lepton = { -brand-short-name } を Lepton を使用してカスタマイズします。設定の変更は、{ -brand-short-name } の再起動後に適用されます。
+
+lepton-preference-button =
+    .label = Lepton の設定を開く
+    .accesskey = L
+
+lepton-header = Lepton の設定
+
+lepton-preference = Lepton の UI 設定
+photon-mode = 
+    .label = Photon UI モード
+
+lepton-mode = 
+    .label = Lepton UI モード
+
+autohide-preference = 自動非表示のカスタマイズ
+
+floorp-lepton-enable-tab-autohide =
+    .label = タブバーの自動非表示を有効にする
+floorp-lepton-enable-navbar-autohide =
+    .label = ナビゲーションバーの自動非表示を有効にする
+floorp-lepton-enable-sidebar-autohide =
+    .label = サイドバーの自動非表示を有効にする
+floorp-lepton-enable-urlbar-autohide =
+    .label = URL バーの自動非表示を有効にする
+floorp-lepton-enable-back-button-autohide =
+    .label = 「戻る」ボタンの自動非表示を有効にする
+floorp-lepton-enable-forward-button-autohide =
+    .label = 「進む」ボタンの自動非表示を有効にする
+floorp-lepton-enable-page-action-button-autohide =
+    .label = アドオンのページアクションボタンの自動非表示を有効にする
+floorp-lepton-enable-toolbar-overlap =
+    .label = ツールバーを URL バーと重ねる
+floorp-lepton-enable-toolbar-overlap-allow-layout-shift-autohide =
+    .label = ツールバーを URL バーと重ねる (自動非表示を有効にするとレイアウトがずれる場合があります)
+
+hide-preference = 非表示のカスタマイズ
+
+floorp-lepton-enable-tab_icon-hide =
+    .label = タブのアイコンを非表示にする
+floorp-lepton-enable-tabbar-hide =
+    .label = タブバーを非表示にする
+floorp-lepton-enable-navbar-hide =
+    .label = ナビゲーションバーを非表示にする
+floorp-lepton-enable-sidebar_header-hide =
+    .label = サイドバーのヘッダーを非表示にする
+floorp-lepton-enable-urlbar_iconbox-hide =
+    .label = URL バーのアイコンボックスを非表示にする
+floorp-lepton-enable-bookmarkbar_icon-hide =
+    .label = ブックマークバーのアイコンを非表示にする
+floorp-lepton-enable-bookmarkbar_label-hide =
+    .label = ブックマークバーのラベル名を非表示にする
+floorp-lepton-enable-disabled_menu-hide =
+    .label = 無効なコンテストメニュー・メニューを非表示にする
+
+positon-preferences = 位置のカスタマイズ
+
+floorp-lepton-enable-centered-tab =
+    .label = タブ名を中央に配置する
+floorp-lepton-enable-centered-urlbar =
+    .label = URL バーを中央に配置する
+floorp-lepton-enable-centered-bookmarkbar =
+    .label = ブックマークバーを中央に配置する
+
+urlbar-preferences = URLバーのカスタマイズ
+
+floorp-lepton-enable-urlbar-icon-move-to-left =
+    .label = URL バーのアイコンを左に移動する
+floorp-lepton-enable-urlname-go_button_when_typing =
+    .label = URL バーで入力中は「移動」ボタンを表示する
+floorp-lepton-enable-always-show-page_action =
+    .label = アドオンのページアクションボタンを常に表示する
+
+tabbar-preferences = タブバーのカスタマイズ
+
+floorp-lepton-enable-tabbar-positon-as-titlebar =
+    .label = タブバーをタイトルバーの位置に配置する
+floorp-lepton-enable-tabbar-as-urlbar =
+    .label = タブバーを URL バーの位置に配置する
+
+lepton-sidebar-preferences = サイドバーのカスタマイズ
+floorp-lepton-enable-overlap-sidebar =
+    .label = サイドバーをウェブサイトビューワーの上にオーバーラップする
 
 ################################################################### browser ###############################################################
 
