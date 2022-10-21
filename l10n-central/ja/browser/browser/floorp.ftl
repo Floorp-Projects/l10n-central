@@ -342,6 +342,9 @@ Sidebar2 =
   .label = ブラウザーマネージャーサイドバー
   .tooltiptext = サイドバーの表示を切り替える
 
+sidebar2-mute-and-unmute =
+  .label = サイドバーの音声をミュート/ミュート解除する
+ 
 sidebar2-unload-panel =
   .label = このパネルをアンロードする
 
