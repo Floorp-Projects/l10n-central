@@ -100,8 +100,8 @@ firefox-proton =
  .label = Firefox modern Proton UI
 firefox-proton-fix =
  .label = Firefox Proton FIX UI
-firefox-photon = 
- .label = Firefox Legacy Photon UI
+firefox-photon-lepton = 
+ .label = Firefox Photon・Lepton UI
 floorp-legacy =  
  .label = Floorp Legacy material UI・Unsupported
 floorp-fluentUI =
@@ -227,6 +227,12 @@ dual-theme-enable-addon-button = Включить (Субтема)
 dual-theme-disable-addon-button = Отключить (Субтема)
 dual-theme-enabled-heading = Включено (Субтема)
 
+##################################################################### migration  ###############################################################
+
+import-from-vivaldi =
+    .label = Vivaldi
+    .accesskey = V
+
 newtab-background = Фоновое изображение на домашней странице { -brand-short-name }
 newtab-background-random-image =
  .label = Случайное изображение с Unsplash
@@ -235,6 +241,79 @@ newtab-background-gradation =
 newtab-background-not-background =
  .label = Отключить фоновое изображение
 
+about-lepton = Настройте { -brand-short-name } с помощью Lepton
+
+lepton-preference-button =
+    .label = Настройки Lepton...
+    .accesskey = L
+
+lepton-header = Настройки Lepton
+
+lepton-preference = Настройки дизайна Lepton
+photon-mode = 
+    .label = Режим Photon
+lepton-mode = 
+    .label = Режим Lepton
+
+autohide-preference = Автоматически скрывать элементы
+floorp-lepton-enable-tab-autohide =
+    .label = Включить автоматическое скрытие панели вкладок
+floorp-lepton-enable-navbar-autohide =
+    .label = Включить автоматическое скрытие панели навигации
+floorp-lepton-enable-sidebar-autohide =
+    .label = Включить автоматическое скрытие боковой панели
+floorp-lepton-enable-urlbar-autohide =
+    .label = Включить автоматическое скрытие панели URL
+floorp-lepton-enable-back-button-autohide =
+    .label = Включить автоматическое скрытие кнопки "Назад"
+floorp-lepton-enable-forward-button-autohide =
+    .label = Включить автоматическое скрытие кнопки "Вперед"
+floorp-lepton-enable-page-action-button-autohide =
+    .label = Включить автоматическое скрытие кнопки действия аддона адресной панели
+floorp-lepton-enable-toolbar-overlap =
+    .label = Включить оверлей панели инструментов
+floorp-lepton-enable-toolbar-overlap-allow-layout-shift-autohide =
+    .label = Включить автоматическое скрытие панели инструментов при отображении содержимого ltr
+hide-preference = Управление элементами дисплея
+floorp-lepton-enable-tab_icon-hide =
+    .label = Скрыть значки вкладок
+floorp-lepton-enable-tabbar-hide =
+    .label = Скрыть панель вкладок
+floorp-lepton-enable-navbar-hide =
+    .label = Скрыть панель навигации
+floorp-lepton-enable-sidebar_header-hide =
+    .label = Скрыть заголовок боковой панели
+floorp-lepton-enable-urlbar_iconbox-hide =
+    .label = Скрыть значки панели URL
+floorp-lepton-enable-bookmarkbar_icon-hide =
+    .label = Скрыть значки панели закладок
+floorp-lepton-enable-bookmarkbar_label-hide =
+    .label = Скрыть надписи на панели закладок
+floorp-lepton-enable-disabled_menu-hide =
+    .label = Скрыть отключенное контекстное меню
+positon-preferences = Настройка положения
+floorp-lepton-enable-centered-tab =
+    .label = Центрированная надпись Tab
+floorp-lepton-enable-centered-urlbar =
+    .label = Центрированная панель URL
+floorp-lepton-enable-centered-bookmarkbar =
+    .label = Центрированная панель закладок
+urlbar-preferences = Панель URL
+floorp-lepton-enable-urlbar-icon-move-to-left =
+    .label = Переместить иконки панели URL на левую сторону
+floorp-lepton-enable-urlname-go_button_when_typing =
+    .label = При вводе текста уменьшать пространство панели URL и показывать кнопку "Перейти"
+floorp-lepton-enable-always-show-page_action =
+    .label = Сократить пространство панели URL и всегда отображать кнопку действия аддона на панели адресов
+tabbar-preferences = Панель вкладок
+floorp-lepton-enable-tabbar-positon-as-titlebar =
+    .label = Панель вкладок в панели заголовка
+floorp-lepton-enable-tabbar-as-urlbar =
+    .label = Панель вкладок в панели URL
+lepton-sidebar-preferences = Боковая панель
+floorp-lepton-enable-overlap-sidebar =
+    .label = Показывать перекрытие боковой панели основным средством просмотра
+## tool attribute
 
 rest-mode = Делаем перерыв...
 rest-mode-description = Браузер остановлен. Нажмите OK или любую другую клавишу для возобновления работы.
