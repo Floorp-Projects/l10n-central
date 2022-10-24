@@ -115,6 +115,9 @@ floorp-gnomeUI =
 
 waterfox-lepton =
  .label = Lepton（Firefox UI FIX） のデザイン
+ 
+floorp-fluerialUI =
+ .label = Floorp Fluerial UI デザイン
 
 memory-and-performance = メモリとパフォーマンスの設定
 
