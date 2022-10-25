@@ -108,6 +108,8 @@ floorp-fluentUI =
  .label = fluentUI
 floorp-gnomeUI =
  .label = Gnome Theme
+floorp-fluerialUI =
+ .label = Floorp Fluerial UI
 waterfox-lepton =
  .label = Firefox Lepton UI
 
