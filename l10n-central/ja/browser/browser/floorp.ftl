@@ -213,7 +213,7 @@ sidebar-preferences = ブラウザーマネージャーサイドバーの設定
 view-sidebar2-right = 
  .label = サイドバーを右側に表示する
 enable-sidebar2 =
- .label = ブラウザーマネージャーサイドバー有効にする
+ .label = ブラウザーマネージャーサイドバーを有効にする
 
 sidebar2-restore =
  .label = サイドバーを再起動時・新しいウインドウ作成時に復元する
