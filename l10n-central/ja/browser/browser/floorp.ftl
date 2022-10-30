@@ -393,6 +393,9 @@ sidebar-preferences-button =
 sidebar-keepWidth-button =
   .tooltiptext = このパネルで現在のサイズを記憶する
 
+sidebar2-keep-width-for-global =
+  .label = 現在のサイズをすべてのウェブパネルに対して記憶する
+
 #################################################################### menu panel ############################################################
 
 open-profile-dir = 
