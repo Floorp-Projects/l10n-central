@@ -351,6 +351,9 @@ sidebar2-mute-and-unmute =
 sidebar2-unload-panel =
   .label = このパネルをアンロードする
 
+sidebar2-change-ua-panel =
+  .label = このパネルでユーザーエージェントをモバイル/デスクトップに切り替える
+
 sidebar-close-button =
   .tooltiptext = サイドバーを閉じる
 
@@ -394,7 +397,7 @@ sidebar-keepWidth-button =
   .tooltiptext = このパネルで現在のサイズを記憶する
 
 sidebar2-keep-width-for-global =
-  .label = 現在のサイズをすべてのウェブパネルに対して記憶する
+  .label = 現在のサイズを固有サイズを持たないすべてのウェブパネルに対して記憶する
 
 #################################################################### menu panel ############################################################
 
