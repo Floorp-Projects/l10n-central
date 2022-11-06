@@ -59,6 +59,10 @@ bookmarks-focus-mode =
 bookmarks-bottom-mode =
  .label = Панель закладок в нижней части браузера
 
+nav-bar-settings = Настройки панели навигации
+show-nav-bar-bottom =
+ .label = Отображать панель навигации внизу { -brand-short-name }
+
 material-effect =
  .label = Разрешить Mica for Everyone изменять дизайн браузера 
 other-preference = Другие настройки
