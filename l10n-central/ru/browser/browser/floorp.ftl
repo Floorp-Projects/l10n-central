@@ -44,7 +44,7 @@ hide-horizontality-tabs =
 verticalTab-setting = 
  .label = Оптимизировать браузер для работы с вертикальными вкладками
 move-tabbar-position =
- .label = Переместить панель с вкладками под панель закладок
+ .label = Отображать панель вкладок в нижней части панели инструментов
 tabbar-on-bottom = 
  .label = Отображать в нижней части браузера
 
@@ -58,6 +58,10 @@ bookmarks-focus-mode =
  .label = Показывать панель закладок, когда мышь сфокусирована на панели инструментов
 bookmarks-bottom-mode =
  .label = Панель закладок в нижней части браузера
+
+nav-bar-settings = Настройки панели навигации
+show-nav-bar-bottom =
+ .label = Отображать панель навигации внизу { -brand-short-name }
 
 material-effect =
  .label = Разрешить Mica for Everyone изменять дизайн браузера 
@@ -108,6 +112,8 @@ floorp-fluentUI =
  .label = fluentUI
 floorp-gnomeUI =
  .label = Gnome Theme
+floorp-fluerialUI =
+ .label = Floorp Fluerial UI
 waterfox-lepton =
  .label = Firefox Lepton UI
 
@@ -327,6 +333,8 @@ sidebar2-unload-panel =
  .label = Выгрузить эту панель
 sidebar-close-button =
  .tooltiptext = Закрыть боковую панель
+sidebar2-change-ua-panel =
+  .label = Переключить пользовательский агент на мобильную/десктопную версию на этой панели
 sidebar-back-button =
  .tooltiptext = Назад
 sidebar-forward-button =
@@ -359,6 +367,9 @@ sidebar-preferences-button =
  .tooltiptext = Открыть настройки браузера
 sidebar-keepWidth-button =
  .tooltiptext = Сохранять ширину боковой панели
+
+sidebar2-keep-width-for-global =
+ .label = Установить текущий размер панели для всех веб-панелей, не имеющих уникального размера
 
 #################################################################### menu panel ############################################################
 

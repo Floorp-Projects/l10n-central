@@ -54,6 +54,10 @@ bookmarks-focus-mode =
 bookmarks-bottom-mode =
  .label = ブックマークバーをウインドウの下部に表示
 
+nav-bar-settings = ナビゲーションバーの設定
+show-nav-bar-bottom =
+ .label = ナビゲーションバーをウインドウの下部に表示
+
 material-effect =
  .label = Mica for Everyone によるマテリアルデザインの効果を有効にする
 other-preference = その他の設定
@@ -213,7 +217,7 @@ sidebar-preferences = ブラウザーマネージャーサイドバーの設定
 view-sidebar2-right = 
  .label = サイドバーを右側に表示する
 enable-sidebar2 =
- .label = ブラウザーマネージャーサイドバー有効にする
+ .label = ブラウザーマネージャーサイドバーを有効にする
 
 sidebar2-restore =
  .label = サイドバーを再起動時・新しいウインドウ作成時に復元する
@@ -223,16 +227,36 @@ set-custom-URL-button =
     .label = カスタム URL を設定
     .accesskey = S
 
-no-container = 
-    .label = コンテナーなし -デフォルト-
-container-1 = 
-    .label = コンテナー1 -個人-
-container-2 = 
-    .label = コンテナー2 -仕事-
-container-3 =
-    .label = コンテナー3 -銀行取引-
-container-4 =
-    .label = コンテナー4 -ショッピング-
+bsb-header = ブラウザーマネージャーサイドバー
+bsb-context = コンテナタブを選択する
+bsb-userAgent-label = 
+  .label = ユーザーエージェントをモバイルに切り替える
+bsb-width = ウェブパネルの幅 (もし0ならグローバル値が使われます)
+bsb-page = 開くページ
+
+bsb-add = ブラウザマネージャーサイドバーのウェブパネルを追加する
+bsb-setting = ウェブパネルの設定
+bsb-add-title = 
+ .title = { bsb-add }
+bsb-setting-title = 
+ .title = { bsb-setting }
+bsb-browser-manager-sidebar =
+  .label = { sidebar2-browser-manager-sidebar }
+bsb-bookmark-sidebar =
+  .label = { sidebar2-bookmark-sidebar }
+bsb-history-sidebar =
+  .label = { sidebar2-history-sidebar }
+bsb-download-sidebar =
+  .label = { sidebar2-download-sidebar }
+bsb-TST-sidebar =
+  .label = { sidebar2-TST-sidebar }
+bsb-website = 
+  .label = ウェブサイト
+sidebar2-pref-delete =
+ .label = 削除
+sidebar2-pref-setting =
+ .label = 設定
+sidebar2-global-widht = ウェブパネルの幅のグローバル値
 
 ## DualTheme
 dualtheme-enable =
@@ -351,6 +375,9 @@ sidebar2-mute-and-unmute =
 sidebar2-unload-panel =
   .label = このパネルをアンロードする
 
+sidebar2-change-ua-panel =
+  .label = このパネルでユーザーエージェントをモバイル/デスクトップに切り替える
+
 sidebar-close-button =
   .tooltiptext = サイドバーを閉じる
 
@@ -365,21 +392,31 @@ sidebar-reload-button =
 
 sidebar-muteAndUnmute-button =
   .tooltiptext = サイドバーの音声をミュート/ミュート解除する
+  
+sidebar2-browser-manager-sidebar = ブラウザマネージャーツール
 
 show-browser-manager-sidebar =
-  .tooltiptext = ブラウザーマネージャーツールを表示する
- 
+  .tooltiptext = { sidebar2-browser-manager-sidebar }を表示する
+
+sidebar2-bookmark-sidebar = ブックマーク
+
 show-bookmark-sidebar =
-  .tooltiptext = ブックマークサイドバーを表示する
+  .tooltiptext = { sidebar2-bookmark-sidebar }サイドバーを表示する
+
+sidebar2-history-sidebar = 履歴
 
 show-history-sidebar =
-  .tooltiptext = 履歴サイドバーを表示する
+  .tooltiptext = { sidebar2-history-sidebar }サイドバーを表示する
+
+sidebar2-download-sidebar = ダウンロード
 
 show-download-sidebar =
-  .tooltiptext = ダウンロードサイドバーを表示する
+  .tooltiptext = { sidebar2-download-sidebar }を表示する
+
+sidebar2-TST-sidebar = TST
 
 show-TST-sidebar =
-  .tooltiptext = TST サイドバーを表示する
+  .tooltiptext = { sidebar2-TST-sidebar } サイドバーを表示する
 
 sidebar-addons-button =
   .tooltiptext = アドオンマネージャーを開く
@@ -392,6 +429,9 @@ sidebar-preferences-button =
 
 sidebar-keepWidth-button =
   .tooltiptext = このパネルで現在のサイズを記憶する
+
+sidebar2-keep-width-for-global =
+  .label = 現在のサイズをウェブパネルの幅のグローバル値として設定する
 
 #################################################################### menu panel ############################################################
 
