@@ -256,7 +256,7 @@ sidebar2-pref-delete =
  .label = 削除
 sidebar2-pref-setting =
  .label = 設定
-sidebar2-global-widht = ウェブパネルの幅のグローバル値
+sidebar2-global-width = ウェブパネルの幅のグローバル値
 
 ## DualTheme
 dualtheme-enable =
