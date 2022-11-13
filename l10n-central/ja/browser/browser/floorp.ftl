@@ -408,7 +408,7 @@ sidebar2-history-sidebar = 履歴
 show-history-sidebar =
   .tooltiptext = { sidebar2-history-sidebar }サイドバーを表示する
 
-sidebar2-history-sidebar = ダウンロード
+sidebar2-download-sidebar = ダウンロード
 
 show-download-sidebar =
   .tooltiptext = { sidebar2-download-sidebar }を表示する
