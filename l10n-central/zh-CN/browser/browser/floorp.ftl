@@ -232,7 +232,6 @@ bsb-width = 面板宽度 (如果设置为0, 则使用全局宽度)
 bsb-page = 需要打开的网页
 
 bsb-add = 添加面板到侧边工具栏
-
 bsb-setting = 面板设置
 
 bsb-website = 
@@ -242,19 +241,8 @@ sidebar2-pref-delete =
  .label = 删除
 sidebar2-pref-setting =
  .label = 设置
-
 sidebar2-global-width = 侧边工具栏全局面板宽度
 
-no-container = 
-    .label = 无身份
-container-1 = 
-    .label = 私人
-container-2 = 
-    .label = 办公
-container-3 =
-    .label = 金融
-container-4 =
-    .label = 购物
 
 ## DualTheme
 dualtheme-enable =
