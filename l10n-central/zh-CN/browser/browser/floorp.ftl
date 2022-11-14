@@ -188,8 +188,6 @@ click-to-option =
 ## sidebar
 profiles-button-label = 管理配置文件
 floorp-help-button-label = { -brand-short-name } 支持
-appmenuitem-reboot =
- .label = 重启
 
 ## useagent
 
