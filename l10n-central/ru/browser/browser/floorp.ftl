@@ -204,17 +204,37 @@ set-custom-URL-button =
  .label = Задать пользовательские URL...
  .accesskey = S
 
-# Containers
-no-container = 
- .label = Без контейнера -По умолчанию-
-container-1 = 
- .label = Контейнер 1 -Личный-
-container-2 = 
- .label = Контейнер 2 -Рабочий-
-container-3 =
- .label = Контейнер 3 -Банк-
-container-4 =
- .label = Container 4 -Покупки-
+bsb-header = Боковая панель менеджера браузера
+bsb-context = Выбрать вкладки для контейнера
+bsb-userAgent-label = 
+  .label = Изменить пользовательский агент на мобильную версию
+bsb-width = Ширина (Если этот параметр равен 0, используются глобальные значения)
+bsb-page = Страница для открытия
+
+bsb-add = Добавить веб-панель на боковую панель менеджера браузера
+bsb-setting = Настройки веб панели
+bsb-add-title = 
+ .title = { bsb-add }
+bsb-setting-title = 
+ .title = { bsb-setting }
+bsb-browser-manager-sidebar =
+  .label = { sidebar2-browser-manager-sidebar }
+bsb-bookmark-sidebar =
+  .label = { sidebar2-bookmark-sidebar }
+bsb-history-sidebar =
+  .label = { sidebar2-history-sidebar }
+bsb-download-sidebar =
+  .label = { sidebar2-download-sidebar }
+bsb-TST-sidebar =
+  .label = { sidebar2-TST-sidebar }
+bsb-website = 
+  .label = Сайт
+sidebar2-pref-delete =
+ .label = Удалить
+sidebar2-pref-setting =
+ .label = Найстройки
+
+sidebar2-global-width = Глобальное значение ширины веб-панели
 
 memory-and-performance = Настройки памяти и производительности
 min-memory = 
@@ -344,16 +364,30 @@ sidebar-reload-button =
 sidebar-muteAndUnmute-button =
  .tooltiptext = Отключить/включить звук на боковой панели
 
+# Implementation from the main branch is not used because of the peculiarities of the Russian language
+
+sidebar2-browser-manager-sidebar = Менеджер браузера
 show-browser-manager-sidebar =
  .tooltiptext = Показать боковую панель менеджера браузера
+
+sidebar2-bookmark-sidebar = Закладки
 show-bookmark-sidebar =
  .tooltiptext = Показать боковую панель закладок
+
+sidebar2-history-sidebar = История
 show-history-sidebar =
  .tooltiptext = Показать боковую панель истории
+
+sidebar2-download-sidebar = Загрузки
+
+show-download-sidebar = Загрузки
 show-download-sidebar =
  .tooltiptext = Показать боковую панель загрузок
+
+sidebar2-TST-sidebar = Вкладки в стиле древа
 show-TST-sidebar =
  .tooltiptext = Показать боковую панель в стиле древа
+
 show-CustomURL-sidebar =
  .label = Показать боковую панель пользовательских URL
 Edit-Custom-URL =
