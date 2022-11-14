@@ -4,12 +4,14 @@
 
 ###################################################################### about:Dialog #################################################################################
 
-# This file contains the code for the about:Dialog page. It is a simple page that displays the dialog
+about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label>是日本开发浏览器之一。 基于 Firefox 开发并由 <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label> 运营，旨在促进网络发展。 想支持我们？ <label data-l10n-name="helpus-donateLink">点此捐款</label>
+icon-creator = 图标作者 <label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> 和 <label data-l10n-name="brand-logo-twitter">@mwxdxx.</label>
+contributors =  <label data-l10n-name="about-contributor">点此</label> 查看贡献者和开发者列表
 
-# NEED LOCALIZE
 #################################################################### about:preferences ####################################################################
 
-auto-reboot = 确认修改选项？需要重启才能使该选项生效。请在进行任何更改之前保存您正在使用的数据。
+feature-requires-restart = 确认修改选项？需要重启才能使该选项生效。请在进行任何更改之前保存您正在使用的数据。
+floorp-preference = { -brand-product-name } 实验设置
 enable-multitab = 
  .label = 启用多行标签 
 enable-tab-scroll-change = 
@@ -44,10 +46,15 @@ treestyletab-Settings =
 treestyletab-open-option = 更多设置
 
 bookmarks-bar-settings = 书签栏设置（不能同时生效）
+operation-settings = 浏览器操作设置
 bookmarks-focus-mode =
  .label = 书签栏自动隐藏
 bookmarks-bottom-mode =
  .label = 书签栏显示在浏览器窗口底部
+
+nav-bar-settings = 导航栏设置
+show-nav-bar-bottom =
+ .label =  在 { -brand-short-name } 窗口底部显示导航栏
 
 material-effect =
  .label = 允许 Mica for Everyone 修改浏览器外观
@@ -89,29 +96,42 @@ system-theme-auto =
 ## user interface prefernces
 
 ui-preference = 浏览器外观
-preferences-browser-appearance-description = 你可以从第三方编写的优秀 Floorp 外观中进行选择。有些外观可能与您的配置文件不兼容。
+preferences-browser-appearance-description = 你可以从第三方编写的优秀 Floorp 外观中进行选择。有些设计可能与您的配置文件不兼容。
 
 firefox-proton =
- .label = Firefox modern Proton UI
+ .label = Firefox Proton 设计
 
 firefox-proton-fix =
- .label = Firefox Proton FIX UI
+ .label = Firefox Proton FIX 设计
 
-firefox-photon = 
- .label = Firefox Legacy Photon UI
+firefox-photon-lepton = 
+ .label = Firefox Photon・Lepton 设计
  
 floorp-legacy =  
- .label = Floorp Legacy material UI・（不支持）
+ .label = Floorp 传统设计（未来的版本可能不支持）
 
 floorp-fluentUI =
- .label = Fluent UI
+ .label = Microsoft Fluent UI 设计
 
 floorp-gnomeUI =
- .label = Gnome 主题
+ .label = GNOME 桌面设计（依赖于系统主题和 GTK）
  
 waterfox-lepton =
- .label = Firefox Lepton UI
+ .label = Lepton 设计（Firefox UI FIX）
+ 
+floorp-fluerialUI =
+ .label = Floorp Fluerial UI设计
 
+memory-and-performance = 内存和性能设置
+
+min-memory = 
+    .label = 最小内存使用
+
+balance-memory = 
+    .label = 平衡性能和内存使用
+
+max-memory = 
+    .label = 尽可能使用更多内存以获得最佳性能（默认）
 ## BlockMoreTracker
 
 privacy-hub-header = 隐私中心
@@ -173,7 +193,7 @@ appmenuitem-reboot =
 
 ## useagent
 
-UserAgent-preference = UserAgent
+UserAgent-preference = User Agent
 default-useragent-mode =
  .label = 使用 Firefox User Agent (默认)
 windows-chrome-useragent-mode =
@@ -204,19 +224,128 @@ custom-URL-option = 设置侧边工具栏快捷网址
 set-custom-URL-button = 
     .label = 设置快捷网址...
     .accesskey = S
+bsb-header = 侧边工具栏快捷网址设置
+bsb-context = 选择容器身份
+bsb-userAgent-label = 
+  .label = 使用移动端 User Agent 
+bsb-width = 面板宽度 (如果设置为0, 则使用全局宽度)
+bsb-page = 需要打开的网页
 
-disable-bg-newtab =
- .label = 禁用 { -brand-short-name } 主页的背景图
+bsb-add = 添加面板到侧边工具栏
+bsb-setting = 面板设置
 
-how-to-disable-ntbg = 如果需要使设置生效, 请在 { -brand-short-name } 主页按下 "Ctrl + Shift + R"。
+bsb-website = 
+  .label = 网站
+
+sidebar2-pref-delete =
+ .label = 删除
+sidebar2-pref-setting =
+ .label = 设置
+sidebar2-global-width = 侧边工具栏全局面板宽度
+
 
 ## DualTheme
 dualtheme-enable =
- .label = 启用多重主题
+ .label = 启用双重主题
 
+newtab-background = { -brand-short-name } 主页背景设置
+
+newtab-background-random-image =
+    .label = 使用随机的 Unsplash 图片
+
+newtab-background-gradation =
+    .label = 渐变色
+
+newtab-background-not-background =
+    .label = 不显示背景
+## lepton preferences
+
+about-lepton = 使用 Lepton 自定义 { -brand-short-name }，变更无需重启 { -brand-short-name }。
+
+lepton-preference-button =
+    .label = Lepton UI 设置
+    .accesskey = L
+
+lepton-header = Lepton UI 设置
+
+lepton-preference = Lepton UI 设置
+photon-mode = 
+    .label = Photon UI 模式
+
+lepton-mode = 
+    .label = Lepton UI 模式
+
+autohide-preference = 自动隐藏设置
+
+floorp-lepton-enable-tab-autohide =
+    .label = 自动隐藏标签栏
+floorp-lepton-enable-navbar-autohide =
+    .label = 自动隐藏导航栏
+floorp-lepton-enable-sidebar-autohide =
+    .label = 自动隐藏侧边栏
+floorp-lepton-enable-urlbar-autohide =
+    .label = 自动隐藏地址栏
+floorp-lepton-enable-back-button-autohide =
+    .label = 自动隐藏【后退】
+floorp-lepton-enable-forward-button-autohide =
+    .label = 进洞隐藏【前进】
+floorp-lepton-enable-page-action-button-autohide =
+    .label = 自动隐藏地址栏内工具按钮
+floorp-lepton-enable-toolbar-overlap =
+    .label = 导航工具栏和地址栏显示同一行
+floorp-lepton-enable-toolbar-overlap-allow-layout-shift-autohide =
+    .label =  (启用后可能会引起界面布局异常)
+
+hide-preference = 隐藏组件设置
+
+floorp-lepton-enable-tab_icon-hide =
+    .label = 隐藏标签图标
+floorp-lepton-enable-tabbar-hide =
+    .label = 隐藏标签栏
+floorp-lepton-enable-navbar-hide =
+    .label = 隐藏导航栏
+floorp-lepton-enable-sidebar_header-hide =
+    .label = 隐藏侧边栏标题
+floorp-lepton-enable-urlbar_iconbox-hide =
+    .label = 隐藏地址栏内工具按钮
+floorp-lepton-enable-bookmarkbar_icon-hide =
+    .label = 隐藏书签工具栏书签布标
+floorp-lepton-enable-bookmarkbar_label-hide =
+    .label = 隐藏书签工具栏书签文本
+floorp-lepton-enable-disabled_menu-hide =
+    .label = 隐藏被禁用的右键菜单项目
+
+positon-preferences = 位置设置
+
+floorp-lepton-enable-centered-tab =
+    .label = 标签栏标题居中
+floorp-lepton-enable-centered-urlbar =
+    .label = 地址栏文本居中
+floorp-lepton-enable-centered-bookmarkbar =
+    .label = 书签工具栏居中
+
+urlbar-preferences = 地址栏设置
+
+floorp-lepton-enable-urlbar-icon-move-to-left =
+    .label = 地址栏工具移动到左边
+floorp-lepton-enable-urlname-go_button_when_typing =
+    .label = 在地址栏栏中渐入时，显示 【前往】按钮。
+floorp-lepton-enable-always-show-page_action =
+    .label = 总是显示地址栏工具按钮
+
+tabbar-preferences = 标签栏设置
+
+floorp-lepton-enable-tabbar-positon-as-titlebar =
+    .label = 标签栏作为标题栏显示
+floorp-lepton-enable-tabbar-as-urlbar =
+    .label = 标签栏移动到地址栏右侧
+
+lepton-sidebar-preferences = 侧边栏设置
+floorp-lepton-enable-overlap-sidebar =
+    .label = 侧边栏悬浮
 ################################################################### browser・Sidebar ###############################################################
 
-## 老板来了
+
 rest-mode = 休息一下
 rest-mode-description = 浏览器崩溃了，点击确定或者按下回车键继续
 
@@ -259,13 +388,6 @@ show-download-sidebar =
 
 show-TST-sidebar =
   .tooltiptext = 显示垂直标签侧边栏
-
-show-CustomURL-sidebar =
- .label = 在侧边栏中显示自定义 URL
-
-Edit-Custom-URL =
- .label = 在侧边栏中修改自定义 URL
-
 sidebar-addons-button =
   .tooltiptext = 打开扩展管理
 
@@ -280,33 +402,6 @@ sidebar-keepWidth-button =
 
 #################################################################### menu panel ############################################################
 
-
-css-menu =
-    .label = CSS
-    .accesskey = C
-rebuild-css =
-    .label = 重新载入所有 CSS
-    .accesskey = R
-make-browsercss-file =
-    .label = 新建 CSS 样式
-    .accesskey = M
-open-css-folder =
-    .label = 打开样式文件夹
-    .accesskey = O
-edit-userChromeCss-editor =
-    .label = 修改 userChrome.css
-edit-userContentCss-editor =
-    .label = 修改 userContent.css
-test-chrome-css =
-    .label = 测试 userChrome.css
-    .accesskey = C
-test-content-css =
-    .label = 测试 userContent.css
-    .accesskey = W
-not-found-editor-path = 编辑器路径不存在
-set-pref-description = 此操作需要一个存在的编辑器。请打开“about:config”并把“view_source.editor.path”设置为编辑器路径
-
-#################################################################### menu panel ###############################################################
 
 open-profile-dir = 
     .label = 打开配置文件夹
@@ -337,5 +432,13 @@ test-chrome-css =
 test-content-css =
     .label = 测试 userContent.css
     .accesskey = W
+    
 not-found-editor-path = 编辑器路径不存在
 set-pref-description = 此操作需要一个存在的编辑器。请打开 “about:config” 并把 “view_source.editor.path” 设置为编辑器路径
+
+################################################################### about:addons ###############################################################
+
+# DualTheme
+dual-theme-enable-addon-button = 激活（子主题）
+dual-theme-disable-addon-button =  禁用（子主题）
+dual-theme-enabled-heading = 已激活（子主题）
