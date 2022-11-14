@@ -357,6 +357,9 @@ sidebar2-mute-and-unmute =
 sidebar2-unload-panel =
   .label = 关闭面板
 
+sidebar2-change-ua-panel =
+  .label = 切换 User Agent 【桌面/移动端】
+
 sidebar-close-button =
   .tooltiptext = 关闭侧栏
     
