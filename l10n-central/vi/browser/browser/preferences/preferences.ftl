@@ -499,7 +499,7 @@ choose-bookmark =
     .label = Sử dụng dấu trang…
     .accesskey = B
 
-## Home Section - Firefox Home Content Customization
+## Home Section - Floorp HomeContent Customization
 
 home-prefs-content-header = Nội dung của Trang chủ Firefox
 home-prefs-content-description = Chọn nội dung mà bạn muốn thêm vào Trang chủ Firefox.

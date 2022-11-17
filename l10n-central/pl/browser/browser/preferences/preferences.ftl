@@ -669,7 +669,7 @@ choose-bookmark =
     .label = Użyj zakładki…
     .accesskey = z
 
-## Home Section - Firefox Home Content Customization
+## Home Section - Floorp HomeContent Customization
 
 home-prefs-content-header = Strona startowa Firefoksa
 home-prefs-content-description = Wybierz, co wyświetlać na stronie startowej Firefoksa.

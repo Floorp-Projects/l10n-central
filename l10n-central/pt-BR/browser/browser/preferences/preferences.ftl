@@ -511,7 +511,7 @@ choose-bookmark =
     .label = Usar favorito…
     .accesskey = f
 
-## Home Section - Firefox Home Content Customization
+## Home Section - Floorp HomeContent Customization
 
 home-prefs-content-header = Conteúdo da página inicial do Firefox
 home-prefs-content-description = Escolha que conteúdo você quer na página inicial do Firefox.

@@ -654,7 +654,7 @@ choose-bookmark =
     .label = 使用書籤…
     .accesskey = B
 
-## Home Section - Firefox Home Content Customization
+## Home Section - Floorp HomeContent Customization
 
 home-prefs-content-header = Floorp 首頁內容
 home-prefs-content-description = 選擇要在您的 Firefox 首頁顯示哪些內容。
