@@ -433,6 +433,12 @@ sidebar-keepWidth-button =
 sidebar2-keep-width-for-global =
   .label = 現在のサイズをウェブパネルの幅のグローバル値として設定する
 
+bsb-context-add = 
+  .label = このページをブラウザマネージャーサイドバーに追加
+bsb-context-link-add = 
+  .label = リンク先をブラウザマネージャーサイドバーに追加
+
+
 #################################################################### menu panel ############################################################
 
 open-profile-dir = 
