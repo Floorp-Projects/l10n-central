@@ -393,6 +393,9 @@ show-CustomURL-sidebar =
 Edit-Custom-URL =
  .label = Редактировать пользовательский URL в боковой панели
 
+sidebar-add-button =
+  .tooltiptext = { bsb-add }
+
 sidebar-addons-button =
  .tooltiptext = Открыть менеджер дополнений
 sidebar-passwords-button =
@@ -404,6 +407,15 @@ sidebar-keepWidth-button =
 
 sidebar2-keep-width-for-global =
  .label = Установить текущий размер панели для всех веб-панелей, не имеющих уникального размера
+
+bsb-context-add = 
+    .label = Добавить текущую страницу на веб панель
+
+bsb-context-link-add = 
+  .label = Добавить ссылку на веб панель
+
+sidebar2-delete-panel =
+  .label = Удалить эту панель
 
 #################################################################### menu panel ############################################################
 
