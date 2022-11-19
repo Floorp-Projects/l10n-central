@@ -231,7 +231,20 @@ bsb-page = 需要打开的网页
 
 bsb-add = 添加面板到侧边工具栏
 bsb-setting = 面板设置
-
+bsb-add-title = 
+ .title = { bsb-add }
+bsb-setting-title = 
+ .title = { bsb-setting }
+bsb-browser-manager-sidebar =
+  .label = { sidebar2-browser-manager-sidebar }
+bsb-bookmark-sidebar =
+  .label = { sidebar2-bookmark-sidebar }
+bsb-history-sidebar =
+  .label = { sidebar2-history-sidebar }
+bsb-download-sidebar =
+  .label = { sidebar2-download-sidebar }
+bsb-TST-sidebar =
+  .label = { sidebar2-TST-sidebar }
 bsb-website = 
   .label = 网站
 
@@ -401,6 +414,13 @@ sidebar-preferences-button =
 sidebar-keepWidth-button =
   .tooltiptext = 保持面板宽度
 
+sidebar2-keep-width-for-global =
+  .label = 将当前面板大小设置为面板的全局宽度
+
+bsb-context-add = 
+  .label = 添加当前页面到侧边工具栏
+bsb-context-link-add = 
+  .label = 添加当前链接到侧边工具栏
 #################################################################### menu panel ############################################################
 
 
