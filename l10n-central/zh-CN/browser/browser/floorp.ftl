@@ -188,8 +188,6 @@ click-to-option =
 ## sidebar
 profiles-button-label = 管理配置文件
 floorp-help-button-label = { -brand-short-name } 支持
-appmenuitem-reboot =
- .label = 重启
 
 ## useagent
 
@@ -233,7 +231,20 @@ bsb-page = 需要打开的网页
 
 bsb-add = 添加面板到侧边工具栏
 bsb-setting = 面板设置
-
+bsb-add-title = 
+ .title = { bsb-add }
+bsb-setting-title = 
+ .title = { bsb-setting }
+bsb-browser-manager-sidebar =
+  .label = { sidebar2-browser-manager-sidebar }
+bsb-bookmark-sidebar =
+  .label = { sidebar2-bookmark-sidebar }
+bsb-history-sidebar =
+  .label = { sidebar2-history-sidebar }
+bsb-download-sidebar =
+  .label = { sidebar2-download-sidebar }
+bsb-TST-sidebar =
+  .label = { sidebar2-TST-sidebar }
 bsb-website = 
   .label = 网站
 
@@ -288,7 +299,7 @@ floorp-lepton-enable-urlbar-autohide =
 floorp-lepton-enable-back-button-autohide =
     .label = 自动隐藏【后退】
 floorp-lepton-enable-forward-button-autohide =
-    .label = 进洞隐藏【前进】
+    .label = 自动隐藏【前进】
 floorp-lepton-enable-page-action-button-autohide =
     .label = 自动隐藏地址栏内工具按钮
 floorp-lepton-enable-toolbar-overlap =
@@ -359,6 +370,9 @@ sidebar2-mute-and-unmute =
 sidebar2-unload-panel =
   .label = 关闭面板
 
+sidebar2-change-ua-panel =
+  .label = 切换 User Agent 【桌面/移动端】
+
 sidebar-close-button =
   .tooltiptext = 关闭侧栏
     
@@ -400,6 +414,13 @@ sidebar-preferences-button =
 sidebar-keepWidth-button =
   .tooltiptext = 保持面板宽度
 
+sidebar2-keep-width-for-global =
+  .label = 将当前面板大小设置为面板的全局宽度
+
+bsb-context-add = 
+  .label = 添加当前页面到侧边工具栏
+bsb-context-link-add = 
+  .label = 添加当前链接到侧边工具栏
 #################################################################### menu panel ############################################################
 
 
