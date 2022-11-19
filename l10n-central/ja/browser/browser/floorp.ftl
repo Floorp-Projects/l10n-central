@@ -379,7 +379,7 @@ sidebar2-change-ua-panel =
   .label = このパネルでユーザーエージェントをモバイル/デスクトップに切り替える
   
 sidebar2-delete-panel =
-  .label = このパネルを削除
+  .label = このパネルをサイドバーから削除
 
 sidebar-close-button =
   .tooltiptext = サイドバーを閉じる
