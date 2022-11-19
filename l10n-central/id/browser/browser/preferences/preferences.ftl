@@ -654,7 +654,7 @@ choose-bookmark =
     .label = Gunakan Markah…
     .accesskey = h
 
-## Home Section - Firefox Home Content Customization
+## Home Section - Floorp HomeContent Customization
 
 home-prefs-content-header = Konten Beranda Firefox
 home-prefs-content-description = Pilih konten yang ingin Anda tampilkan dalam Beranda Firefox.

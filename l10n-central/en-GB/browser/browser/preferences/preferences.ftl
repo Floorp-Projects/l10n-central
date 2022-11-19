@@ -666,10 +666,10 @@ choose-bookmark =
     .label = Use Bookmark…
     .accesskey = B
 
-## Home Section - Firefox Home Content Customization
+## Home Section - Floorp HomeContent Customization
 
 home-prefs-content-header = Floorp Home Content
-home-prefs-content-description = Choose what content you want on your Firefox Home screen.
+home-prefs-content-description = Choose what content you want on your Floorp Homescreen.
 
 home-prefs-search-header =
     .label = Web Search

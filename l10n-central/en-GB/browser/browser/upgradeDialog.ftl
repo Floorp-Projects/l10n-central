@@ -30,7 +30,7 @@ upgrade-dialog-start-secondary-button = Not now
 
 # This title can be explicitly wrapped to control which words are on which line.
 upgrade-dialog-colorway-title = Pick your palette
-upgrade-dialog-colorway-home-checkbox = Switch to Firefox Home with themed background
+upgrade-dialog-colorway-home-checkbox = Switch to Floorp Homewith themed background
 upgrade-dialog-colorway-primary-button = Save colourway
 upgrade-dialog-colorway-secondary-button = Keep previous theme
 upgrade-dialog-colorway-theme-tooltip =

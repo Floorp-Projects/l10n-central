@@ -666,7 +666,7 @@ choose-bookmark =
     .label = Bladwijzer gebruiken…
     .accesskey = B
 
-## Home Section - Firefox Home Content Customization
+## Home Section - Floorp HomeContent Customization
 
 home-prefs-content-header = Inhoud van Firefox-startpagina
 home-prefs-content-description = Kies welke inhoud u op uw Firefox-startscherm wilt laten weergeven.

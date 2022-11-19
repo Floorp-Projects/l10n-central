@@ -514,7 +514,7 @@ choose-bookmark =
     .label = Tinklalapis iš adresyno…
     .accesskey = T
 
-## Home Section - Firefox Home Content Customization
+## Home Section - Floorp HomeContent Customization
 
 home-prefs-content-header = „Firefox“ pradžios turinys
 home-prefs-content-description = Pasirinkite, kokį turinį norite matyti „Firefox“ pradžios ekrane

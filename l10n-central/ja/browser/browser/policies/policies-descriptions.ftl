@@ -115,7 +115,7 @@ policy-ExtensionSettings = 拡張機能のインストール全般を管理し�
 
 policy-ExtensionUpdate = 拡張機能の自動更新を有効または無効にします。
 
-policy-FirefoxHome = Firefox Home の設定を行います。
+policy-FirefoxHome = Floorp Homeの設定を行います。
 
 policy-FirefoxHome2 = { -firefox-home-brand-name } の設定を行います。
 

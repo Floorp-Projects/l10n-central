@@ -256,7 +256,7 @@ sidebar2-pref-delete =
  .label = 削除
 sidebar2-pref-setting =
  .label = 設定
-sidebar2-global-widht = ウェブパネルの幅のグローバル値
+sidebar2-global-width = ウェブパネルの幅のグローバル値
 
 ## DualTheme
 dualtheme-enable =
@@ -377,6 +377,9 @@ sidebar2-unload-panel =
 
 sidebar2-change-ua-panel =
   .label = このパネルでユーザーエージェントをモバイル/デスクトップに切り替える
+  
+sidebar2-delete-panel =
+  .label = このパネルを削除
 
 sidebar-close-button =
   .tooltiptext = サイドバーを閉じる
@@ -432,6 +435,12 @@ sidebar-keepWidth-button =
 
 sidebar2-keep-width-for-global =
   .label = 現在のサイズをウェブパネルの幅のグローバル値として設定する
+
+bsb-context-add = 
+  .label = このページをブラウザマネージャーサイドバーに追加
+bsb-context-link-add = 
+  .label = リンク先をブラウザマネージャーサイドバーに追加
+
 
 #################################################################### menu panel ############################################################
 

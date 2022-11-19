@@ -666,7 +666,7 @@ choose-bookmark =
     .label = Bruk bokmerke…
     .accesskey = u
 
-## Home Section - Firefox Home Content Customization
+## Home Section - Floorp HomeContent Customization
 
 home-prefs-content-header = Innhald på: Firefox-startside
 home-prefs-content-description = Vel kva for innhald du vil ha på Firefox-startsida di.
