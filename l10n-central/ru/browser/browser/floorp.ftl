@@ -25,7 +25,9 @@ browser-design-settings = Настройки панели вкладок
 
 auto-reboot = Если вы измените какие-либо из приведенных ниже настроек, ваш браузер будет перезапущен, чтобы применить изменения. Пожалуйста, сохраните данные, с которыми вы работаете, прежде чем вносить какие-либо изменения.
 enable-multitab = 
- .label = Включить многоуровневые вкладки
+ .label = Включить многорядные вкладки
+multirow-tabs-value =
+ .label = Количество строк при включении многорядных вкладок 
 enable-tab-scroll-change = 
  .label = Переключать вкладки с помощью прокрутки
 enable-doble-click-block = 
@@ -235,6 +237,16 @@ sidebar2-pref-setting =
  .label = Найстройки
 
 sidebar2-global-width = Глобальное значение ширины веб-панели
+
+use-icon-provider-option = Use Icon Provider
+use-icon-provider-option-google =
+ .label = Google
+use-icon-provider-option-duckduckgo =
+ .label = DuckDuckGo
+use-icon-provider-option-yandex =
+ .label = Yandex (Доступен в Китае)
+use-icon-provider-option-hatena =
+ .label = Hatena (Доступен в Китае)
 
 memory-and-performance = Настройки памяти и производительности
 min-memory = 
