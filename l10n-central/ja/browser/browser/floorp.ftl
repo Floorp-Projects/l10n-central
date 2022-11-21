@@ -16,8 +16,7 @@ floorp-preference = { -brand-product-name } の実験的な設定
 
 enable-multitab = 
  .label = 多段タブを有効にする
-multirow-tabs-value =
- .label = 多段タブの有効化時の行制限数
+multirow-tabs-value = 多段タブの有効化時の行制限数
 enable-tab-scroll-change = 
  .label = タブをスクロールで切り替える
 enable-doble-click-block = 
