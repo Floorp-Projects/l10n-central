@@ -83,6 +83,9 @@ allow-auto-restart =
 browser-rest-mode =
  .label = Включить горячую клавишу отвечающую за режим отдыха
 
+disable-fullscreen-notification =
+ .label = Отключить уведомление о полноэкранном видео
+
 floorp-updater = Настройки программы обновления { -brand-short-name }
 enable-floorp-updater = 
  .label = Проверять наличия обновлений { -brand-short-name } при запуске
@@ -268,8 +271,12 @@ dual-theme-enabled-heading = Включено (Субтема)
 ##################################################################### migration  ###############################################################
 
 import-from-vivaldi =
-    .label = Vivaldi
-    .accesskey = V
+ .label = Vivaldi
+ .accesskey = V
+
+status-bar =
+ .label = Статусная строка
+ .accesskey = S
 
 newtab-background = Фоновое изображение на домашней странице { -brand-short-name }
 newtab-background-random-image =
