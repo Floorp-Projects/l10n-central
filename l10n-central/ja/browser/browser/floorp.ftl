@@ -491,3 +491,9 @@ set-pref-description = この操作には、テキストエディターへのパ
 dual-theme-enable-addon-button = 有効化（サブテーマ）
 dual-theme-disable-addon-button = 無効化 (サブテーマ)
 dual-theme-enabled-heading = 有効（サブテーマ）
+
+##################################################################### toolbar ###############################################################
+
+status-bar =
+  .label = ステータスバー
+  .accesskey = S
