@@ -73,7 +73,10 @@ allow-auto-restart =
  .label = 再起動が必要な設定を適用するための自動再起動を許可する
 
 browser-rest-mode =
- .label = ブラウザーの休憩モードを有効にする
+ .label = 休憩モードのショートカットキー有効にする
+
+disable-fullscreen-notification =
+ .label = 動画閲覧時のフルスクリーン通知を無効にする
 
 floorp-updater = { -brand-short-name } のアップデーター設定
 enable-floorp-updater = 
@@ -258,6 +261,20 @@ sidebar2-pref-delete =
 sidebar2-pref-setting =
  .label = 設定
 sidebar2-global-width = ウェブパネルの幅のグローバル値
+
+use-icon-provider-option = ウェブパネルのアイコン提供元
+
+use-icon-provider-option-google =
+ .label = Google
+
+use-icon-provider-option-duckduckgo =
+ .label = DuckDuckGo
+
+use-icon-provider-option-yandex =
+ .label = Yandex (中国本土で利用可能)
+
+use-icon-provider-option-hatena =
+ .label = Hatena (中国本土で利用可能)
 
 ## DualTheme
 dualtheme-enable =
