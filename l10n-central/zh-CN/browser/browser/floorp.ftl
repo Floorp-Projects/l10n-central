@@ -5,7 +5,7 @@
 ###################################################################### about:Dialog #################################################################################
 
 about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label>是日本开发浏览器之一。 基于 Firefox 开发并由 <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label> 运营，旨在促进网络发展。 想支持我们？ <label data-l10n-name="helpus-donateLink">点此捐款</label>
-icon-creator = 图标作者 <label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> 和 <label data-l10n-name="brand-logo-twitter">@mwxdxx.</label>
+icon-creator = 图标作者： <label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> 和 <label data-l10n-name="brand-logo-twitter">@mwxdxx.</label>
 contributors =  <label data-l10n-name="about-contributor">点此</label> 查看贡献者和开发者列表
 
 #################################################################### about:preferences ####################################################################
@@ -72,7 +72,8 @@ allow-auto-restart =
 browser-rest-mode =
  .label = 启用老板键（F9)
 
-## macOS version use legacy update system 
+disable-fullscreen-notification =
+ .label = 观看视频时禁用全屏通知
 floorp-updater = { -brand-short-name } 更新设置
 enable-floorp-updater = 
  .label = 启动时检查 { -brand-short-name } 更新
@@ -254,7 +255,18 @@ sidebar2-pref-setting =
  .label = 设置
 sidebar2-global-width = 侧边工具栏全局面板宽度
 
+use-icon-provider-option = 侧边栏工具图标提供商
+use-icon-provider-option-google =
+ .label = Google
 
+use-icon-provider-option-duckduckgo =
+ .label = DuckDuckGo
+
+use-icon-provider-option-yandex =
+ .label = Yandex (中国大陆可用)
+
+use-icon-provider-option-hatena =
+ .label = Hatena (中国大陆可用)
 ## DualTheme
 dualtheme-enable =
  .label = 启用双重主题
@@ -372,6 +384,8 @@ sidebar2-unload-panel =
 
 sidebar2-change-ua-panel =
   .label = 切换 User Agent 【桌面/移动端】
+sidebar2-delete-panel =
+  .label = 从侧边栏中删除此面板
 
 sidebar-close-button =
   .tooltiptext = 关闭侧栏
@@ -387,19 +401,24 @@ sidebar-reload-button =
 
 sidebar-muteAndUnmute-button =
   .tooltiptext = 侧边栏静音/恢复
+sidebar2-browser-manager-sidebar = 足迹
 
 show-browser-manager-sidebar =
   .tooltiptext = 显示足迹侧边栏
 
+sidebar2-bookmark-sidebar = 书签
 show-bookmark-sidebar =
   .tooltiptext = 显示书签侧边栏
 
+sidebar2-history-sidebar = 历史
 show-history-sidebar =
   .tooltiptext = 显示历史侧边栏
 
+sidebar2-download-sidebar = 下载
 show-download-sidebar =
   .tooltiptext = 显示下载侧边栏
 
+sidebar2-TST-sidebar = 垂直标签栏
 show-TST-sidebar =
   .tooltiptext = 显示垂直标签侧边栏
 sidebar-addons-button =
