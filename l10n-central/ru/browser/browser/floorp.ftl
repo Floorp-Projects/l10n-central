@@ -471,9 +471,11 @@ test-content-css =
 
 not-found-editor-path = Путь к редактору не найден
 set-pref-description = Эта операция требует указания пути к редактору. Задайте "view_source.editor.path" в "about:config"
+rebuild-complete = Пересборка завершена.
+please-enter-filename = Пожалуйста, введите имя файла.
+confirmed-update = Подтверждено обновление "{ $leafName }".
 
-# Other stuff (May be obsolete too)
-
+# Other stuff (May be obsolete)
 disable-bg-newtab =
  .label = Отключить фоновое изображение на стартовой странице { -brand-short-name }
 how-to-disable-ntbg = Чтобы применить эту настройку, необходимо нажать "Ctrl + Shift + R" на стартовой странице { -brand-short-name }.
