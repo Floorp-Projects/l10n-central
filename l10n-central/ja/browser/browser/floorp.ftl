@@ -14,6 +14,7 @@ feature-requires-restart = この機能を変更するには { -brand-short-name
 
 floorp-preference = { -brand-product-name } の実験的な設定
 
+tab-width = タブの最小幅
 enable-multitab = 
  .label = 多段タブを有効にする
 multirow-tabs-value = 多段タブの有効化時の行制限数
