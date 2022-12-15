@@ -476,6 +476,10 @@ rebuild-complete = Пересборка завершена.
 please-enter-filename = Пожалуйста, введите имя файла.
 confirmed-update = Подтверждено обновление "{ $leafName }".
 
+################################################################### Undo-Closed-Tab ###############################################################
+
+undo-closed-tab = Отменить закрытие вкладки
+
 # Other stuff (May be obsolete)
 disable-bg-newtab =
  .label = Отключить фоновое изображение на стартовой странице { -brand-short-name }
