@@ -522,3 +522,35 @@ dual-theme-enabled-heading = 有効（サブテーマ）
 status-bar =
   .label = ステータスバー
   .accesskey = S
+
+##################################################################### Gesturefly ###############################################################
+
+gf-floorp-open-tree-style-tab-name = [Floorp] ツリー型タブを開く
+gf-floorp-open-tree-style-tab-description = Floorpのツリー型タブをサイドバーを開きます。
+
+gf-floorp-open-bookmarks-sidebar-name = [Floorp] サイドバーでブックマークを開く
+gf-floorp-open-bookmarks-sidebar-description = Floorpのサイドバーのブックマークを開きます。
+
+gf-floorp-open-history-sidebar-name = [Floorp] サイドバーで履歴を開く
+gf-floorp-open-history-sidebar-description = Floorpのサイドバーの履歴を開きます。
+
+gf-floorp-open-synctabs-sidebar-name = [Floorp] サイドバーで同期タブを開く
+gf-floorp-open-synctabs-sidebar-description = Floorpのサイドバーの同期タブを開きます。
+
+gf-floorp-close-sidebar-name = [Floorp] サイドバーを閉じる
+gf-floorp-close-sidebar-description = Floorpのサイドバーを閉じます。
+
+gf-floorp-open-browser-manager-sidebar-name = [Floorp] BMSを開く
+gf-floorp-open-browser-manager-sidebar-description = Floorpのブラウザマネージャーサイドバーを開きます。
+
+gf-floorp-close-browser-manager-sidebar-name = [Floorp] BMSを閉じる
+gf-floorp-close-browser-manager-sidebar-description = Floorpのブラウザマネージャーサイドバーを閉じます。
+
+gf-floorp-show-statusbar-name = [Floorp] ステータスバーを表示する
+gf-floorp-show-statusbar-description = Floorpのステータスバーを表示します。
+
+gf-floorp-hide-statusbar-name = [Floorp] ステータスバーを非表示にする
+gf-floorp-hide-statusbar-description = Floorpのステータスバーを非表示にします。
+
+gf-floorp-toggle-statusbar-name = [Floorp] ステータスバーの表示を切り替え
+gf-floorp-toggle-statusbar-description = ステータスバーを表示または非表示にします。
