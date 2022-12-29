@@ -258,7 +258,7 @@ sidebar2-pref-delete =
  .label = 删除
 sidebar2-pref-setting =
  .label = 设置
- sidebar2-global-width = 侧边工具栏全局面板宽度
+sidebar2-global-width = 侧边工具栏全局面板宽度
 
 use-icon-provider-option = 侧边栏工具图标提供商
 use-icon-provider-option-google =
