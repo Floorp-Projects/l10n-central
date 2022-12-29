@@ -8,12 +8,25 @@ about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name
 icon-creator = 图标作者： <label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> 和 <label data-l10n-name="brand-logo-twitter">@mwxdxx.</label>
 contributors =  <label data-l10n-name="about-contributor">点此</label> 查看贡献者和开发者列表
 
+
+extension-floorp-material-name= 材质主题
+extension-floorp-material-description=跟随操作系统的按钮菜单和窗口样式
+
+extension-floorp-photon-name= Firefox Photon 主题
+extension-floorp-photon-description=跟随操作系统的按钮菜单和窗口样式
 #################################################################### about:preferences ####################################################################
 
 feature-requires-restart = 确认修改选项？需要重启才能使该选项生效。请在进行任何更改之前保存您正在使用的数据。
-floorp-preference = { -brand-product-name } 实验设置
+floorp-preference = 实验性设置
+browser-design-settings = 标签栏设置
+auto-reboot = 如果您更改以下任何设置，您的浏览器将重新启动以应用更改。 在进行任何更改之前，请保存您正在使用的数据。
+tab-width = 标签最小宽度
 enable-multitab = 
  .label = 启用多行标签 
+multirow-tabs-value = 启用多行标签后标签的行数
+enable-tab-sleep = 
+ .label = 启用标签休眠
+tab-sleep-timeout-value = 多久后休眠未激活标签 (秒)
 enable-tab-scroll-change = 
  .label = 通过滚轮切换标签
 enable-doble-click-block = 
@@ -46,7 +59,7 @@ treestyletab-Settings =
 treestyletab-open-option = 更多设置
 
 bookmarks-bar-settings = 书签栏设置（不能同时生效）
-operation-settings = 浏览器操作设置
+
 bookmarks-focus-mode =
  .label = 书签栏自动隐藏
 bookmarks-bottom-mode =
@@ -60,6 +73,7 @@ material-effect =
  .label = 允许 Mica for Everyone 修改浏览器外观
 other-preference = 其他选项
 
+operation-settings = 浏览器操作
 enable-userscript = 
  .label = 启用旧版组件
 about-legacy-components = 启用此功能可能会导致意外错误或致命错误
@@ -113,6 +127,8 @@ floorp-legacy =
 
 floorp-fluentUI =
  .label = Microsoft Fluent UI 设计
+floorp-fluerialUI =
+ .label = Floorp Fluerial UI
 
 floorp-gnomeUI =
  .label = GNOME 桌面设计（依赖于系统主题和 GTK）
@@ -120,19 +136,6 @@ floorp-gnomeUI =
 waterfox-lepton =
  .label = Lepton 设计（Firefox UI FIX）
  
-floorp-fluerialUI =
- .label = Floorp Fluerial UI设计
-
-memory-and-performance = 内存和性能设置
-
-min-memory = 
-    .label = 最小内存使用
-
-balance-memory = 
-    .label = 平衡性能和内存使用
-
-max-memory = 
-    .label = 尽可能使用更多内存以获得最佳性能（默认）
 ## BlockMoreTracker
 
 privacy-hub-header = 隐私中心
@@ -190,6 +193,8 @@ click-to-option =
 profiles-button-label = 管理配置文件
 floorp-help-button-label = { -brand-short-name } 支持
 
+appmenuitem-reboot =
+ .label = 重启
 ## useagent
 
 UserAgent-preference = User Agent
@@ -267,6 +272,16 @@ use-icon-provider-option-yandex =
 
 use-icon-provider-option-hatena =
  .label = Hatena (中国大陆可用)
+memory-and-performance = 内存性能设置
+
+min-memory = 
+    .label = 最小内存使用 (低性能)
+
+balance-memory = 
+    .label = 平衡性能和内存使用
+
+max-memory = 
+    .label = 最佳速度和性能 (高内存使用) 
 ## DualTheme
 dualtheme-enable =
  .label = 启用双重主题
@@ -421,6 +436,14 @@ show-download-sidebar =
 sidebar2-TST-sidebar = 垂直标签栏
 show-TST-sidebar =
   .tooltiptext = 显示垂直标签侧边栏
+show-CustomURL-sidebar =
+ .label = 在侧边栏中显示自定义 URL
+
+Edit-Custom-URL =
+ .label = 在侧边栏中修改自定义 URL
+
+sidebar-add-button =
+  .tooltiptext = { bsb-add }
 sidebar-addons-button =
   .tooltiptext = 打开扩展管理
 
@@ -475,10 +498,59 @@ test-content-css =
     
 not-found-editor-path = 编辑器路径不存在
 set-pref-description = 此操作需要一个存在的编辑器。请打开 “about:config” 并把 “view_source.editor.path” 设置为编辑器路径
+rebuild-complete = Rebuild 完成
+please-enter-filename = 请输入一个名字
+confirmed-update = 确认 "{ $leafName }" 的更新。
 
+################################################################### Undo-Closed-Tab ###############################################################
+
+undo-closed-tab = 撤销关闭标签页
 ################################################################### about:addons ###############################################################
 
 # DualTheme
 dual-theme-enable-addon-button = 激活（子主题）
 dual-theme-disable-addon-button =  禁用（子主题）
 dual-theme-enabled-heading = 已激活（子主题）
+##################################################################### migration  ###############################################################
+
+import-from-vivaldi =
+    .label = Vivaldi
+    .accesskey = V
+
+##################################################################### toolbar ###############################################################
+
+status-bar =
+    .label = 状态栏
+     .accesskey = S
+##################################################################### Gesturefy ###############################################################
+
+gf-floorp-open-tree-style-tab-name = [Floorp] 打开垂直标签栏
+gf-floorp-open-tree-style-tab-description = 在侧边栏中打开垂直标签栏
+
+gf-floorp-open-bookmarks-sidebar-name = [Floorp] 打开侧边栏书签面板
+gf-floorp-open-bookmarks-sidebar-description = 在侧边栏中打开书签面板
+
+gf-floorp-open-history-sidebar-name = [Floorp] 打开侧边栏历史面板
+gf-floorp-open-history-sidebar-description = 在侧边栏中打开历史面板
+
+gf-floorp-open-synctabs-sidebar-name = [Floorp] 打开侧边栏同步标签页
+gf-floorp-open-synctabs-sidebar-description = 在侧边栏打开同步标签页
+
+gf-floorp-close-sidebar-name = [Floorp] 关闭侧边栏
+gf-floorp-close-sidebar-description = 关闭侧边栏
+
+
+gf-floorp-open-browser-manager-sidebar-name = [Floorp] 打开侧边工具栏
+gf-floorp-open-browser-manager-sidebar-description = 打开侧边工具栏
+
+gf-floorp-close-browser-manager-sidebar-name = [Floorp] 关闭侧边工具栏
+gf-floorp-close-browser-manager-sidebar-description = 关闭侧边工具栏
+
+gf-floorp-show-statusbar-name = [Floorp] 显示状态栏
+gf-floorp-show-statusbar-description = 显示状态栏
+
+gf-floorp-hide-statusbar-name = [Floorp] 隐藏状态栏
+gf-floorp-hide-statusbar-description = 隐藏状态栏
+
+gf-floorp-toggle-statusbar-name = [Floorp] 切换状态栏
+gf-floorp-toggle-statusbar-description = 切换状态栏显示状态
