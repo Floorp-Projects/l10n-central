@@ -554,3 +554,13 @@ gf-floorp-hide-statusbar-description = Floorpのステータスバーを非表�
 
 gf-floorp-toggle-statusbar-name = [Floorp] ステータスバーの表示を切り替え
 gf-floorp-toggle-statusbar-description = ステータスバーを表示または非表示にします。
+
+##################################################################### Floorp System Update Portable Version ###############################################################
+
+update-portable-notification-found-title = Floorpの最新バージョンがリリースされました。
+update-portable-notification-found-message = ダウンロードしています...
+update-portable-notification-success-title = アップデートが完了しました！
+update-portable-notification-success-message = アップデートが完了しました！新しいバージョンのFloorpをお楽しみください。
+update-portable-notification-failed-title = アップデートに失敗しました。
+update-portable-notification-failed-redirector-message = アップデートに失敗しました。ブラウザを再起動すると、問題が解決する場合があります。
+update-portable-notification-failed-prepare-message = アップデートの準備に失敗しました。
