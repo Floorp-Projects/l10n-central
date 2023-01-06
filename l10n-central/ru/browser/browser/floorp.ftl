@@ -513,3 +513,15 @@ gf-floorp-hide-statusbar-name = [Floorp] Скрывать строку сост�
 gf-floorp-hide-statusbar-description = Скрывать строку состояния
 gf-floorp-toggle-statusbar-name = [Floorp] Отображать или скрывать строку состояния
 gf-floorp-toggle-statusbar-description = Отображать или скрывать строку состояния
+
+##################################################################### Floorp System Update Portable Version ###############################################################
+
+update-portable-notification-found-title = Найдены обновления!
+update-portable-notification-found-message = Загружаем обновления...
+update-portable-notification-ready-title = Обновления готовы к установке!
+update-portable-notification-ready-message = Обновления будут установлены во время следующего запуска браузера.
+update-portable-notification-success-title = Обновление прошло успешно!
+update-portable-notification-success-message = Обновление прошло успешно! Надеюсь, вам понравится новая версия Floorp!
+update-portable-notification-failed-title = Не удалось установить обновление.
+update-portable-notification-failed-redirector-message = Не удалось установить обновление. Перезапуск браузера может решить проблему.
+update-portable-notification-failed-prepare-message = Не удалось подготовить обновление.
