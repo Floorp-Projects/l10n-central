@@ -404,8 +404,6 @@ show-history-sidebar =
  .tooltiptext = Показать боковую панель истории
 
 sidebar2-download-sidebar = Загрузки
-
-show-download-sidebar = Загрузки
 show-download-sidebar =
  .tooltiptext = Показать боковую панель загрузок
 
