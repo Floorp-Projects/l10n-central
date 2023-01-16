@@ -367,7 +367,7 @@ urlbar-preferences = 地址栏设置
 floorp-lepton-enable-urlbar-icon-move-to-left =
     .label = 地址栏工具移动到左边
 floorp-lepton-enable-urlname-go_button_when_typing =
-    .label = 在地址栏栏中渐入时，显示 【前往】按钮。
+    .label = 在地址栏栏中输入时，显示 【前往】按钮。
 floorp-lepton-enable-always-show-page_action =
     .label = 总是显示地址栏工具按钮
 
@@ -554,3 +554,15 @@ gf-floorp-hide-statusbar-description = 隐藏状态栏
 
 gf-floorp-toggle-statusbar-name = [Floorp] 切换状态栏
 gf-floorp-toggle-statusbar-description = 切换状态栏显示状态
+
+##################################################################### Floorp System Update Portable Version ###############################################################
+
+update-portable-notification-found-title = 发现新版本！
+update-portable-notification-found-message = 下载更新中...
+update-portable-notification-ready-title = 更新已下载！
+update-portable-notification-ready-message = 下次启动浏览器时，将自动更新。
+update-portable-notification-success-title = 更新成功！
+update-portable-notification-success-message = 更新成功！希望你喜欢新版本的Floorp！
+update-portable-notification-failed-title = 更新失败。
+update-portable-notification-failed-redirector-message = 更新失败。也许重启浏览器能解决这个问题，
+update-portable-notification-failed-prepare-message = 准备更新失败。
