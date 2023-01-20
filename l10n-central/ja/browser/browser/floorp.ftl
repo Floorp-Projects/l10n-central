@@ -334,7 +334,7 @@ floorp-lepton-enable-page-action-button-autohide =
 floorp-lepton-enable-toolbar-overlap =
     .label = ツールバーを URL バーと重ねる
 floorp-lepton-enable-toolbar-overlap-allow-layout-shift-autohide =
-    .label = ツールバーを URL バーと重ねる (自動非表示を有効にするとレイアウトがずれる場合があります)
+    .label = ツールバーを URL バーと重ねる (自動非表示を有効にするとレイアウトが崩れる場合があります)
 
 hide-preference = 非表示のカスタマイズ
 
