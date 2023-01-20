@@ -80,6 +80,8 @@ perftools-thread-render-backend =
   .title = WebRender の RenderBackend スレッドです
 perftools-thread-paint-worker =
   .title = メインスレッド外描画が有効なときに描画処理が発生するスレッドです
+perftools-thread-timer =
+  .title = スレッド制御タイマー (setTimeout, setInterval, nsITimer) です
 perftools-thread-style-thread =
   .title = 複数に分割されるスタイル計算のスレッドです
 pref-thread-stream-trans =
@@ -92,7 +94,6 @@ perftools-thread-dns-resolver =
   .title = DNS の名前解決が行われるスレッドです
 perftools-thread-task-controller =
   .title = タスクコントローラのスレッドプールにあるスレッドです
-
 perftools-thread-jvm-gecko =
   .title = メイン Gecko JVM スレッドです
 perftools-thread-jvm-nimbus =
@@ -115,16 +116,9 @@ perftools-tools-threads-input-label =
   .title = プロファイリングを有効にするスレッド名をコンマ区切りのリストで入力します。名前はスレッド名が含まれる部分一致である必要があります。空白を区別します。
 
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
-## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
-## preferences are true.
-
-## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## devtools.performance.new-panel-onboarding preference is true.
 
 perftools-onboarding-message = <b>新機能</b>: { -profiler-brand-name } が開発ツールに統合されました。この強力な新しいツールについては <a>こちら</a> をご覧ください。
-
-# `options-context-advanced-settings` is defined in toolbox-options.ftl
-perftools-onboarding-reenable-old-panel = (期間限定ですが、<a>{ options-context-advanced-settings }</a> から元のパフォーマンスパネルも利用可能です)
 
 perftools-onboarding-close-button =
   .aria-label = 導入メッセージを閉じる
@@ -149,6 +143,10 @@ perftools-presets-media-description2 = { -brand-shorter-name } の音声と動�
 
 perftools-presets-networking-label = ネットワーク
 perftools-presets-networking-description = { -brand-shorter-name } のネットワークバグを調査するための推奨プリセットです。
+
+# "Power" is used in the sense of energy (electricity used by the computer).
+perftools-presets-power-label = 消費電力
+perftools-presets-power-description = { -brand-shorter-name } の消費電力のバグを少ないオーバーヘッドで調査するための推奨プリセットです。
 
 perftools-presets-custom-label = カスタム
 

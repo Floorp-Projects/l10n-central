@@ -5,5 +5,7 @@
 select-bookmark-window =
     .title = ホームページの設定
     .style = width: 32em;
-
+select-bookmark-window2 =
+    .title = ホームページの設定
+    .style = min-width: 32em;
 select-bookmark-desc = ホームページに設定するブックマークを選んでくれへん？フォルダーを選ぶと、選んだフォルダーの直下にあるブックマークを全部のタブを使って一気に開くようになるで。

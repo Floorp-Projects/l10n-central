@@ -5,7 +5,7 @@
 # The question portion of the following message should have the <strong> and </strong> tags surrounding it.
 default-browser-notification-message = <strong>{ -brand-short-name } を既定のブラウザーに設定してもええか？</strong> { -brand-short-name } でいつでも高速、安全、プライベートに。
 default-browser-notification-button =
-    .label = 既定のブラウザーにする
+    .label = 既定のブラウザーに設定する
     .accesskey = S
 
 ## These strings are used for the default browser prompt. There are 2 variations

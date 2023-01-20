@@ -47,7 +47,7 @@ pane-experimental-description2 = 高度な設定を変更したら、{ -brand-sh
 pane-experimental-reset =
     .label = 既定値に戻す
     .accesskey = R
-help-button-label = Firefox サポート
+help-button-label = { -brand-short-name } サポート
 addons-button-label = 拡張機能とテーマ
 focus-search =
     .key = f
@@ -161,7 +161,7 @@ containers-disable-alert-cancel-button = このままにしとく
 containers-remove-alert-title = このコンテナーを消すんか？
 # Variables:
 #   $count (Number) - Number of tabs that will be closed.
-containers-remove-alert-msg = このコンテナーを消したら { $count } 個のコンテナータブが閉じらレルで。このコンテナーを消してもええんか？
+containers-remove-alert-msg = このコンテナーを消したら { $count } 個のコンテナータブが閉じられるで。このコンテナーを消してもええんか？
 containers-remove-ok-button = このコンテナーを消しとく
 containers-remove-cancel-button = 削除せえへん
 
@@ -172,12 +172,15 @@ preferences-web-appearance-header = ウェブサイトの外観
 preferences-web-appearance-description = 一部のウェブサイトはあなたの設定をもとにカラースキームを適用すんで。これらのサイトでどのカラースキームを使用しとくか選択してや。
 preferences-web-appearance-choice-browser = { -brand-short-name } テーマ
 preferences-web-appearance-choice-system = システムテーマ
+preferences-web-appearance-choice-auto = 自動
 preferences-web-appearance-choice-light = Light
 preferences-web-appearance-choice-dark = Dark
 preferences-web-appearance-choice-tooltip-browser =
     .title = { -brand-short-name } のテーマ設定をウェブサイトの背景と内容に適用させる。
 preferences-web-appearance-choice-tooltip-system =
     .title = システムの設定をウェブサイトの背景と内容に適用させる。
+preferences-web-appearance-choice-tooltip-auto =
+    .title = システムの設定と { -brand-short-name } のテーマをもとに、ウェブサイトの背景と内容を自動的に設定する。
 preferences-web-appearance-choice-tooltip-light =
     .title = 明るい外観をウェブサイトの背景と内容に使用しとく。
 preferences-web-appearance-choice-tooltip-dark =
@@ -186,6 +189,8 @@ preferences-web-appearance-choice-input-browser =
     .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
 preferences-web-appearance-choice-input-system =
     .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-auto =
+    .aria-description = { preferences-web-appearance-choice-tooltip-auto.title }
 preferences-web-appearance-choice-input-light =
     .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
 preferences-web-appearance-choice-input-dark =
@@ -343,15 +348,12 @@ applications-use-os-default-label =
 ##
 
 applications-handle-new-file-types-description = 他のファイルは { -brand-short-name } でどうやって扱うん？
-
 applications-save-for-new-types =
     .label = ファイルを保存しとく
     .accesskey = S
-
 applications-ask-before-handling =
     .label = ファイルを開くか保存しとくかを確認しとく
     .accesskey = A
-
 drm-content-header = デジタル著作権管理 (DRM) コンテンツ
 play-drm-content =
     .label = DRM 制御のコンテンツを再生
@@ -480,7 +482,9 @@ home-restore-defaults =
 # "Firefox" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
-    .label = Floorp Home (既定)
+    .label = Floorp Home(既定)
+home-mode-choice-default-fx =
+    .label = { -firefox-home-brand-name } (既定)
 home-mode-choice-custom =
     .label = カスタム URL...
 home-mode-choice-blank =
@@ -502,10 +506,12 @@ choose-bookmark =
     .label = ブックマークを使う...
     .accesskey = B
 
-## Home Section - Floorp Home Content Customization
+## Home Section - Floorp HomeContent Customization
 
-home-prefs-content-header = Floorp Home コンテンツ
-home-prefs-content-description = Floorp Home に表示しとくコンテンツを選ぼうや。
+home-prefs-content-header = Floorp Homeコンテンツ
+home-prefs-content-description = Floorp Homeに表示しとくコンテンツを選ぼうや。
+home-prefs-content-header2 = { -firefox-home-brand-name } コンテンツ
+home-prefs-content-description2 = { -firefox-home-brand-name } に表示しとくコンテンツを選ぼうや。
 home-prefs-search-header =
     .label = ウェブ検索
 home-prefs-shortcuts-header =
@@ -526,6 +532,8 @@ home-prefs-recommended-by-description-new = { -brand-product-name } ファミリ
 home-prefs-recommended-by-learn-more = 使い方
 home-prefs-recommended-by-option-sponsored-stories =
     .label = 広告記事
+home-prefs-recommended-by-option-recent-saves =
+    .label = 最近保存したものを表示
 home-prefs-highlights-option-visited-pages =
     .label = 訪れたページ
 home-prefs-highlights-options-bookmarks =
@@ -543,7 +551,7 @@ home-prefs-recent-activity-description = 最近のサイトとコンテンツの
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = スニペット
-home-prefs-snippets-description-new = { -vendor-short-name } と { -brand-product-name } に関しとくヒントと最新情報
+home-prefs-snippets-description-new = { -vendor-short-name } と { -brand-product-name } に関するヒントと最新情報
 home-prefs-sections-rows-option =
     .label = { $num } 行
 
@@ -589,7 +597,7 @@ search-restore-default =
     .label = 既定の検索エンジンを復元
     .accesskey = D
 search-remove-engine =
-    .label = 消
+    .label = ほかす
     .accesskey = R
 search-add-engine =
     .label = 追加
@@ -617,13 +625,13 @@ containers-new-tab-check =
 containers-settings-button =
     .label = 設定
 containers-remove-button =
-    .label = 消
+    .label = ほかす
 
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = ウェブを持ち歩こう
-sync-signedout-description2 = ブックマークやページの表示履歴、タブ、パスワード、アドオン、設定を、お持ちの全部の端末間で同期でくで。
+sync-signedout-description2 = ブックマークやページの表示履歴、タブ、パスワード、アドオン、設定を、お持ちの全部の端末間で同期できるで。
 sync-signedout-account-signin3 =
     .label = ログインして同期...
     .accesskey = i
@@ -646,7 +654,7 @@ sync-sign-out =
     .accesskey = g
 sync-manage-account = アカウントの管理
     .accesskey = o
-sync-signedin-unverified = { $email } は認証されていへん。
+sync-signedin-unverified = { $email } は認証されてへん。
 sync-signedin-login-failure = { $email } に再接続しとくんやったらログインしてや。
 sync-resend-verification =
     .label = 認証メールを再送信
@@ -691,6 +699,13 @@ sync-change-options =
 sync-choose-what-to-sync-dialog =
     .title = 同期しとく項目を選択
     .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = 変更を保存
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra2 = 切断...
+    .buttonaccesskeyextra2 = D
+sync-choose-what-to-sync-dialog2 =
+    .title = 同期する項目を選択
+    .style = min-width: 36em; min-height: 35em;
     .buttonlabelaccept = 変更を保存
     .buttonaccesskeyaccept = S
     .buttonlabelextra2 = 切断...
@@ -915,7 +930,11 @@ addressbar-locbar-topsites-option =
 addressbar-locbar-engines-option =
     .label = 検索エンジン
     .accesskey = a
+addressbar-locbar-quickactions-option =
+    .label = クイックアクション
+    .accesskey = Q
 addressbar-suggestions-settings = 検索エンジンの検索候補の設定を変更
+addressbar-quickactions-learn-more = 詳細情報
 
 ## Privacy Section - Content Blocking
 
@@ -946,6 +965,7 @@ content-blocking-etp-custom-desc = ブロックしとくトラッカーとスク
 content-blocking-etp-blocking-desc = { -brand-short-name } は以下のものをブロックすんで:
 content-blocking-private-windows = プライベートウィンドウのトラッキングコンテンツ
 content-blocking-cross-site-cookies-in-all-windows = 全部のウィンドウのクロスサイト Cookie (トラッキング Cookie 含む)
+content-blocking-cross-site-cookies-in-all-windows2 = 全部のウィンドウのクロスサイト Cookie
 content-blocking-cross-site-tracking-cookies = クロスサイトトラッキング Cookie
 content-blocking-all-cross-site-cookies-private-windows = プライベートウィンドウのクロスサイト Cookie
 content-blocking-cross-site-tracking-cookies-plus-isolate = クロスサイトトラッキング Cookie と残存 Cookie の隔離
@@ -964,6 +984,7 @@ content-blocking-etp-standard-tcp-rollout-checkbox =
 # "Contains" here means "isolates", "limits".
 content-blocking-etp-standard-tcp-rollout-description = 包括的 Cookie 保護機能により現在のサイトへの Cookie が制限されているから、トラッカーはサイトを横断してあなたを追跡しとく。 Cookie を利用できへん。
 content-blocking-etp-standard-tcp-rollout-learn-more = 詳細情報
+content-blocking-etp-standard-tcp-title = 包括的 Cookie 保護機能が含まれとる。これまででいっちゃん強力なプライバシー保護機能やで
 content-blocking-warning-title = 注意！
 content-blocking-and-isolating-etp-warning-description-2 = この設定では、一部のウェブサイトが表示されへんか正しく動作しへんかもしれへん。サイトが動作せえへん場合は、トラッキング防止機能をオフにして再読み込みしといたらええと思う。
 content-blocking-warning-learn-how = 詳細情報
@@ -1071,6 +1092,12 @@ addon-recommendations-link = 詳細情報
 collection-health-report-disabled = このビルド設定ではヘルスレポートが無効化されとんで
 collection-backlogged-crash-reports-with-link = { -brand-short-name } があなたに代わって未送信のクラッシュレポートを送信しとくことを許可しとく <a data-l10n-name="crash-reports-link">詳細情報</a>
     .accesskey = c
+privacy-segmentation-section-header = ブラウジング体験を向上させる新機能
+privacy-segmentation-section-description = よりよいユーザー体験のために、あなたのデータを使用する機能を提案されたとき:
+privacy-segmentation-radio-off =
+    .label = { -brand-product-name } のおすすめを利用する
+privacy-segmentation-radio-on =
+    .label = 詳細情報を表示する
 
 ## Privacy Section - Security
 ##
@@ -1125,240 +1152,3 @@ httpsonly-radio-disabled =
 desktop-folder-name = デスクトップ
 downloads-folder-name = ダウンロード
 choose-download-folder-title = ダウンロードフォルダーを選択:
-# Variables:
-#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
-save-files-to-cloud-storage =
-    .label = { $service-name } にファイルを保存しとく
-
-# Floorp の固有設定
-
-notice-from-floorp-projects = { -brand-short-name } のポリシー管理に関しとく通知
-
-floorp-preference = 実験的な環境設定
-browser-design-settings = タブバーの設定
-
-auto-reboot = 以下の設定を変更したら、変更を適用しとくからブラウザーを再起動しとく必要があんねん。変更しとく前に、作業中のデータを保存してや。
-
-operation-settings =
- .label= ブラウザーの操作設定
-Mouse-side-button =
- .label= サイドボタンによるマウス操作にブラウザーを最適化
-enable-tab-scroll-change =
- .label= スクロールでタブを切り替える
-enable-doble-click-block =
- .label= ダブルクリックでタブを閉じる
-
-None-mode =
- .label= 通常の動作設定
-
-hide-horizontality-tabs =
- .label= タブバー非表示（上部に表示されるタブを非表示にすんで）
-
-verticalTab-setting =
- .label = 垂直タブにブラウザーを最適化
-
-move-tabbar-position =
- .label = タブバーの位置をブックマークの下に移動
-
-tabbar-on-bottom = 
- .label = ウインドウの最下部に表示しとく
-
-treestyletabSettings-l10 = ツリースタイル垂直タブの設定
-treestyletab-Settings =
- .label = ツリー型タブにマウスがフォーカスされた場合、展開しとくようにしとく
-treestyletab-open-option = ツリー型タブ本体の設定
-
-bookmarks-bar-settings = ブックマークバーの設定
-bookmarks-focus-mode =
- .label= マウスがツールバーにフォーカスされているときに、ブックマークバーを表示しとく
-bookmarks-bottom-mode =
- .label= ブラウザーの一番下にブックマークバーを表示
-
-material-effect = Mica for everyone によるブラウザーのデザイン変更を許可しとく
-allow-auto-restart =
- .label= 再起動が必要な設定変更時に自動的に再起動しとく
-enable-multitab =
- .label= 多段タブを有効にしとく（Lepton と互換性なし・実験的）
-learn-more-material = 詳細情報
-other-preference = その他の設定
-
-enable-userscript =
- .label= レガシーな機能のローダーを有効にしとく
-about-legacy-components = この機能を有効にしたら、予期しへんバグやエラーが発生しとくかもしれへん
-
-browser-rest-mode =
- .label = 休憩モードのショートカットキーを有効にしとく
-
-Search-positon-top =
- .label= ページ上部に検索バーを表示しとく
-
-feature-requires-restart = この設定の変更には再起動せんとあかんで
-
-## Updater
-
-floorp-updater = { -brand-short-name } アップデーターの設定
-enable-floorp-updater =
- .label= 起動時に、 { -brand-short-name } のアップデートを確認しとく
-floorp-update-latest =
- .label= 起動時のアップデートチェックで、 { -brand-short-name } が最新版の場合、最新であることを通知しとく
-
-## system theme color
-
-system-color-settings = 使用中のテーマがライトモード・ダークモードの双方に対応している場合、テーマのデザインを選択でくで。
-preferences-theme-appearance-header = システムテーマの設定
-
-system-theme-dark =
- .label = ダークモードを優先しとく
-
-system-theme-light =
- .label = ライトモードを優先しとく
-
-system-theme-auto =
- .label = システムに追従しとく
-
-## user interface prefernces
-
-ui-preference = { -brand-short-name } のデザイン設定
-
-preferences-browser-appearance-description  = { -brand-short-name } の外観を設定すんで。ここで設定を変更しても、テーマの設定には影響しへん。ただし、テーマによっては互換性がへん場合があります。
-
-firefox-proton =
- .label = Firefox Proton UI
-
-firefox-proton-fix =
- .label = Firefox Proton UI Fix
-
-firefox-photon =
- .label = Firefox レガシー Photon UI (Firefox Quantum)
-
-floorp-legacy =
- .label = material UI・サポート対象外
-
-floorp-fluentUI =
- .label = Fluent UI
-
-hide-horizontality-tabs = 水平タブバーの非表示
-verticalTab-setting = 垂直タブにブラウザーを最適化
-move-tabbar-position = タブバーの位置をブックマークの下に移動しとく
-tabbar-preference = タブバー
-
-## BlockMoreTracker
-
-block-tracker = より多くのユーザーを追跡しよる広告や見えへんトラッカーを撃破しようや。
-block-more-tracker = より多くのトラッカーによる追跡を遮断しとく
-
-view-at-AMO = AMO で見る
-uBlock-Origin = uBlock Origin
-about-uboori = uBlock Origin は広告やトラッカー、悪意あるサイトや詐欺からユーザーを保護すんで。一般的なものよりも軽量やで。
-
-Privacy-Badger = Privacy Badger
-about-PBadger = Privacy Badger は、非表示のトラッカーをブロックしとくことを学習して、それに基づいてトラッカーを能動的にブロックすんで。
-
-Duck-Duck-Go = DuckDuckGo Privacy Essentials
-about-DDG = 検索エンジンを DuckDuckGo に置き換え、訪問したサイトのトラッカーをブロックし、そのサイトを評価すんで。
-
-## Fingerprint
-
-fingerprint-header = 指紋採取・IP アドレス漏洩対策
-block-fingerprint = 指紋採取は、Webサイトがデバイス情報などの情報を収集し、プロファイルを作成し、個人情報を収集しとくプロセスやで。既定のブロッカーを超えて個人情報の漏洩をさらに減らすからの設定を提供すんで
-enable-firefox-fingerprint-protections = Firefox による強力な指紋採取対策機能を有効にしとく
-about-firefox-fingerprint-protection = この設定を有効にしたら、サイトにライトモードが強制され、一部の Api や機能が無効になるんや。まれにサイトが破損すんで。
-html5-canvas-prompt-settings =
- .label = HTML5 Canvas 画像を使用しとくサイトの使用許可を自動的に拒否しとく
-canvas-prompt = 既定では、使用許可の通知はプロンプトで表示されへん。
-disable-webgl =
- .label = WebGL を無効にしとく
-about-webgl = WebGL はグラフィックを描画しとく際に必要な機能で、お使いの GPU の情報が漏洩すんで
-Canvas-Blocker = Canvas Blocker
-about-CB = このアドオンを使用したら、ユーザーはWebサイトが指紋採取を実行しとくのを防止しとくことがでくで。
-WebRTC-connection = WebRTCは、リアルタイムの通話を提供しとく規格やで。この設定を無効にしたら、Discord などを使えんくなる。VPN との併用を推奨するで。
-WebRTC =
- .label = WebRTC 接続を有効にしとく
-
-## download mgr
-download-notification-preferences = ダウンロード通知
-start-always-notify =
- .label = 開始時に通知しとく
-finish-always-notify =
- .label = 終了時に通知しとく
-always-notify =
- .label = 開始時、終了時に通知しとく
-do-not-notify =
- .label = ダウンロード通知を有効にしへん
-
-## Translate
-floorp-translater = 組み込みのウェブページ翻訳機能の設定
-click-to-option =
-    .label = 設定を開く...
-    .accesskey = O
-
-profiles-button-label = プロファイルを管理
-
-## useragent
-UserAgent-preference = UserAgent
-default-useragent-mode =
- .label = Firefox のユーザーエージェントを使用する（既定）
-windows-chrome-useragent-mode =
- .label = Windows 上の Chrome に偽装
-macOS-chrome-useragent-mode =
- .label = macOS 上の Chrome に偽装
-linux-chrome-useragent-mode =
- .label = Linux 上の Chrome に偽装
-mobile-chrome-useragent-mode =
- .label = モバイル OS に偽装 
-
-## DMR UI
-download-mgr-UI =
-    .label = より見やすいダウンロードマネージャのインターフェースを使用しとく
-
-sidebar-preferences = サイドバー
-view-sidebar2-right = 
- .label = ブラウザーマネージャーサイドバーを右側に表示しとく
-enable-sidebar2 =
- .label = ブラウザーマネージャーサイドバーを有効にしとく
-
-sidebar2-restore =
- .label = { -brand-short-name } の再起動・新しいウインドウを開いたときに、ブラウザーマネージャーサイドバーの内容を復元しとく
-
-custom-URL-option = ウェブパネルの URL 設定
-set-custom-URL-button = 
-    .label = カスタム URL を設定...
-    .accesskey = S
-
-browser-rest-mode =
- .label = 休憩モードのショートカットキーを有効にしとく
- 
- ## DualTheme
-dualtheme-enable =
- .label = デュアルテーマを有効にしとく
-
-disable-bg-newtab =
- .label = { -brand-short-name } Home で背景を無効にしとく
-
-how-to-disable-ntbg = この設定の変更を適用するには { -brand-short-name } Home で "Ctrl + Shift + R" を同時押しし、スーパーリロードする必要があるで
-
-newtab-background = { -brand-short-name } Homeの背景
-
-newtab-background-random-image =
-    .label = Unsplashの写真をランダムで表示
-
-newtab-background-gradation =
-    .label = グラデーション
-
-newtab-background-not-background =
-    .label = 背景無し
-
-no-container = 
-    .label = コンテナーなし -既定-
-
-container-1 = 
-    .label = コンテナー 1 -個人-
-
-container-2 = 
-    .label = コンテナー 2 -仕事-
-
-container-3 =
-    .label = コンテナー 3 -銀行取引- 
-
-container-4 =
-    .label = コンテナー 4 -ショッピング-

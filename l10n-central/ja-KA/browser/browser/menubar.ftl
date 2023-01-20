@@ -221,6 +221,10 @@ menu-bookmark-current-tab =
     .label = 現在のタブをブックマーク
 menu-bookmark-edit =
     .label = このブックマークを編集
+menu-bookmark-tab =
+    .label = 現在のタブをブックマーク...
+menu-edit-bookmark =
+    .label = このブックマークを編集...
 menu-bookmarks-all-tabs =
     .label = すべてのタブをブックマーク...
 menu-bookmarks-toolbar =
@@ -321,37 +325,3 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = 詐欺サイトの誤報告を指摘するわ
     .accesskey = d
-
-# Floorp
-
-css-menu =
-    .label = CSS
-    .accesskey = C
-
-rebuild-css =
-    .label = ブラウザー CSS を再構築しよか
-    .accesskey = R
-
-make-browsercss-file =
-    .label = ブラウザー CSS ファイルを作成しとく
-    .accesskey = M
-
-open-css-folder =
-    .label = CSS フォルダーを開いとく
-    .accesskey = O
-
-edit-userChromeCss-editor =
-    .label = userChrome.css を編集しとく
-
-edit-userContentCss-editor =
-    .label = userContent.css を編集しとく
-
-test-chrome-css =
-    .label = Chrome ツールバー CSS をテストしとく
-    .accesskey = C
-test-content-css =
-    .label = 内部サイト用 content CSS をテストしとく
-    .accesskey = W
-
-not-found-editor-path = なにも見つからへんわ
-set-pref-description = この機能を使用するにはな、VScode などのエディターへのパスを "about:config" の "view_source.editor.path" に設定する必要があるんだわ。

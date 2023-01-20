@@ -22,16 +22,16 @@ newtab-search-box-search-button =
 
 # Variables
 #  $engine (String): the name of the user's default search engine
-newtab-search-box-handoff-text = { $engine } で検索するために、検索ワードかアドレス書いて
+newtab-search-box-handoff-text = { $engine } で検索するために、検索ワードか URL 書いて
 newtab-search-box-handoff-text-no-engine = 検索ワードか URL 書いて
 # Variables
 #  $engine (String): the name of the user's default search engine
 newtab-search-box-handoff-input =
-    .placeholder = { $engine } で検索するために、ワード書いて
-    .title = { $engine } で検索するために、ワード書いて
-    .aria-label = { $engine } で検索するために、ワード書いて
+    .placeholder = { $engine } で検索するために、ワードか URL 書いて
+    .title = { $engine } で検索するために、ワードか URL 書いて
+    .aria-label = { $engine } で検索するために、ワードか URL 書いて
 newtab-search-box-handoff-input-no-engine =
-    .placeholder = { $engine } で検索するために、ワード書いて
+    .placeholder = { $engine } で検索するために、ワードか URL 書いて
     .title = 検索ワードか URL 書いて
     .aria-label = 検索ワードか URL 書いて
 
@@ -242,6 +242,10 @@ newtab-pocket-last-card-desc = 後でもう一度確認してくれへん?
 newtab-pocket-last-card-image =
     .alt = 最後まで詠んだで
 
+# A save to Pocket button that shows over the card thumbnail on hover.
+newtab-pocket-save = 保存
+newtab-pocket-saved = 保存しました
+
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.
 
@@ -256,7 +260,8 @@ newtab-custom-row-selector = { $num } 行
 newtab-custom-sponsored-sites = 広告ショートカット
 newtab-custom-pocket-title = { -pocket-brand-name } のおすすめ
 newtab-custom-pocket-subtitle = { -brand-product-name } ファミリーを構成で { -pocket-brand-name } が厳選した注目のコンテンツはこれや
-newtab-custom-pocket-sponsored = 広告ストーリー
+newtab-custom-pocket-sponsored = 広告記事
+newtab-custom-pocket-show-recent-saves = 最近保存したものを表示
 newtab-custom-recent-title = 最近のアクティビティ
 newtab-custom-recent-subtitle = 最近のサイトとコンテンツの抜粋やで
 newtab-custom-close-button = 閉じるで

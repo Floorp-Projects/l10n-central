@@ -123,9 +123,10 @@ other-action-redirect-msg =
 message-header-msg-flagged =
     .title = スター付き
     .aria-label = スター付き
-message-header-msg-not-flagged =
-    .title = スターなし
-    .aria-label = スターなし
+# Variables:
+# $address (String) - The email address of the recipient this picture belongs to.
+message-header-recipient-avatar =
+    .alt = { $address } のプロファイル写真
 
 ## Message header cutomize panel
 
@@ -139,6 +140,16 @@ message-header-button-style-text =
     .label = テキストのみ
 message-header-button-style-icons =
     .label = アイコンのみ
+message-header-show-sender-full-address =
+    .label = 常に送信者の完全アドレスを表示する
+    .accesskey = f
+message-header-show-sender-full-address-description = メールアドレスが表示名の下に表示されます。
+message-header-show-recipient-avatar =
+    .label = 送信者のプロファイル写真を表示する
+    .accesskey = p
+message-header-hide-label-column =
+    .label = ラベル列を隠す
+    .accesskey = l
 message-header-large-subject =
     .label = 件名を拡大表示する
     .accesskey = s
@@ -152,13 +163,6 @@ toolbar-context-menu-remove-extension =
     .label = 拡張機能を削除
     .accesskey = v
 
-## Message headers
-
-message-header-address-in-address-book-icon =
-    .alt = このアドレスはアドレス帳に登録されています
-message-header-address-not-in-address-book-icon =
-    .alt = このアドレスはアドレス帳に登録されていません
-
 ## Add-on removal warning
 
 # Variables:
@@ -166,11 +170,9 @@ message-header-address-not-in-address-book-icon =
 addon-removal-title = { $name } を削除しますか？
 addon-removal-confirmation-button = 削除
 addon-removal-confirmation-message = { $name } とその設定およびデータを { -brand-short-name } から削除しますか？
-
 caret-browsing-prompt-title = キャレットブラウジング
 caret-browsing-prompt-text = F7 キーを押すとキャレットブラウジングのオンとオフを切り替えられます。この機能は、移動可能なカーソルをコンテンツ内に配置して、キーボードでテキストを選択できるようにします。キャレットブラウジングをオンにしますか？
 caret-browsing-prompt-check-text = 今後は確認しない
-
 repair-text-encoding-button =
     .label = テキストエンコーディングを修復
     .tooltiptext = メッセージ本文の適切なテキストエンコーディングを推定します
@@ -218,12 +220,6 @@ spaces-context-new-window-item =
 # $tabName (String) - The name of the tab this item will switch to.
 spaces-context-switch-tab-item =
     .label = { $tabName }に切り替える
-settings-context-open-settings-item =
-    .label = 設定を開く
-settings-context-open-account-settings-item =
-    .label = アカウント設定を開く
-settings-context-open-addons-item =
-    .label = アドオンマネージャーを開く
 settings-context-open-settings-item2 =
     .label = 設定
 settings-context-open-account-settings-item2 =
@@ -235,18 +231,18 @@ settings-context-open-addons-item2 =
 
 spaces-toolbar-pinned-tab-button =
     .tooltiptext = スペースメニュー
-spaces-pinned-button-menuitem-mail =
-    .label = メールタブを表示
-spaces-pinned-button-menuitem-address-book =
-    .label = アドレス帳タブを表示
-spaces-pinned-button-menuitem-calendar =
-    .label = カレンダータブを表示
-spaces-pinned-button-menuitem-tasks =
-    .label = ToDo タブを表示
-spaces-pinned-button-menuitem-chat =
-    .label = チャットタブを表示
-spaces-pinned-button-menuitem-settings =
-    .label = 設定を開く
+spaces-pinned-button-menuitem-mail2 =
+    .label = { spaces-toolbar-button-mail2.title }
+spaces-pinned-button-menuitem-address-book2 =
+    .label = { spaces-toolbar-button-address-book2.title }
+spaces-pinned-button-menuitem-calendar2 =
+    .label = { spaces-toolbar-button-calendar2.title }
+spaces-pinned-button-menuitem-tasks2 =
+    .label = { spaces-toolbar-button-tasks2.title }
+spaces-pinned-button-menuitem-chat2 =
+    .label = { spaces-toolbar-button-chat2.title }
+spaces-pinned-button-menuitem-settings2 =
+    .label = 設定
 spaces-pinned-button-menuitem-show =
     .label = スペースツールバーを表示
 # Variables:

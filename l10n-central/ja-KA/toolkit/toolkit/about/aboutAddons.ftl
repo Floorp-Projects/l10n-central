@@ -285,15 +285,21 @@ preferences-addon-button =
     }
 details-addon-button = 詳細
 release-notes-addon-button = リリースノート
-permissions-addon-button = 許可設定
+permissions-addon-button = 権限
 extension-enabled-heading = 有効
 extension-disabled-heading = 無効
 theme-enabled-heading = 有効
 theme-disabled-heading = 無効
-theme-disabled-heading2 = 保存したテーマ
-theme-monochromatic-heading = カラーテーマ
-theme-monochromatic-subheading = { -brand-product-name } の新しいカラーテーマが期間限定で利用できます。
-theme-colorways-button = カラーテーマを試す
+theme-disabled-heading2 = 保存されたテーマ
+theme-monochromatic-heading = Colorway
+theme-monochromatic-subheading = { -brand-product-name } から鮮やかで刺激的なテーマコレクション Colorway の新作が期間限定で登場。
+# Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
+theme-colorways-button = Colorway を試す
+# Refers to the button label for the colorways card when a user has a colorway theme enabled.
+theme-colorways-button-colorway-enabled = Colorway を変更
+# Variables:
+#   $expiryDate (string) - date on which the colorway collection expires. When formatting this, you may omit the year, only exposing the month and day, as colorway collections will always expire within a year.
+colorway-collection-expiry-label = { DATETIME($expiryDate, month: "long", day: "numeric") } まで
 plugin-enabled-heading = 有効
 plugin-disabled-heading = 無効
 dictionary-enabled-heading = 有効
@@ -366,10 +372,10 @@ available-updates-heading = 更新可能
 recent-updates-heading = 最近の更新
 release-notes-loading = 読み込み中...
 release-notes-error = リリースノートの読み込み中にエラーが発生しました。
-addon-permissions-empty = この拡張機能は許可設定を必要としません。
-addon-permissions-required = 中核機能に必要な許可設定:
-addon-permissions-optional = 追加機能の任意の許可設定:
-addon-permissions-learnmore = 許可設定についての詳細情報
+addon-permissions-empty = この拡張機能は権限を必要としません。
+addon-permissions-required = 中核機能に必要な権限:
+addon-permissions-optional = 追加機能の任意の権限:
+addon-permissions-learnmore = 権限についての詳細情報
 recommended-extensions-heading = おすすめの拡張機能
 recommended-themes-heading = おすすめのテーマ
 addon-sitepermissions-required = <span data-l10n-name="hostname">{ $hostname }</span> に以下の機能を許可します:
@@ -401,6 +407,7 @@ addon-page-options-button =
 # Variables:
 #   $version (String): application version.
 details-notification-incompatible = { $name } は { -brand-short-name } { $version } と互換性がありません。
+details-notification-incompatible-link = 詳細情報
 details-notification-unsigned-and-disabled = { $name } は { -brand-short-name } での使用が検証できないため無効化されています。
 details-notification-unsigned-and-disabled-link = 詳細情報
 details-notification-unsigned = { $name } は { -brand-short-name } での使用が検証できません。配布元を確認して慎重に使用してください。
@@ -410,7 +417,3 @@ details-notification-blocked-link = 詳細情報
 details-notification-softblocked = { $name } はセキュリティまたは安定性の問題を引き起こすことが知られています。
 details-notification-softblocked-link = 詳細情報
 details-notification-gmp-pending = { $name } はすぐにインストールされます。
-
-dual-theme-enable-addon-button = 有効化 (Sub Theme)
-dual-theme-disable-addon-button = 無効化 (Sub Theme)
-dual-theme-enabled-heading = 有効 (Sub Theme)

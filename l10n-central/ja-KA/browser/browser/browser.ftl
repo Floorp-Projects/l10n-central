@@ -8,7 +8,7 @@
 # These are the default window titles everywhere except macOS. The first two
 # attributes are used when the web content opened has no title:
 #
-# default - "Ablaze Floorp"
+# default - "Mozilla Firefox"
 # private - "Mozilla Firefox (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
@@ -22,7 +22,7 @@ browser-main-window =
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
-# "default" - "Ablaze Floorp"
+# "default" - "Mozilla Firefox"
 # "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
@@ -38,11 +38,46 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } — (プライベートブラウジング)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } — (プライベートブラウジング)
+# These are the default window titles everywhere except macOS. The first two
+# attributes are used when the web content opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-window-titles =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } プライベートブラウジング
+    .data-content-title-default = { $content-title } — { -brand-full-name }
+    .data-content-title-private = { $content-title } — { -brand-full-name } プライベートブラウジング
+# These are the default window titles on macOS. The first two are for use when
+# there is no content title:
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox — (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Do not use the brand name in the last two attributes, as we do on non-macOS.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-mac-window-titles =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } — プライベートブラウジング
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } — プライベートブラウジング
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
 # `browser-main-window` and `browser-main-window-mac`.
 browser-main-window-title = { -brand-full-name }
+private-browsing-shortcut-text = { -brand-short-name } プライベートブラウジング
+private-browsing-shortcut-text-2 = { -brand-shortcut-name } プライベートブラウジング
 
 ##
 
@@ -122,6 +157,7 @@ urlbar-tabtosearch-onboard = このショートカットを選択すると、よ
 urlbar-search-mode-bookmarks = ブックマーク
 urlbar-search-mode-tabs = タブ
 urlbar-search-mode-history = 履歴
+urlbar-search-mode-actions = アクション
 
 ##
 
@@ -164,6 +200,12 @@ page-action-manage-extension =
     .label = 拡張機能を管理...
 page-action-remove-extension =
     .label = 拡張機能を削除
+page-action-manage-extension2 =
+    .label = 拡張機能を管理...
+    .accesskey = E
+page-action-remove-extension2 =
+    .label = 拡張機能を削除
+    .accesskey = v
 
 ## Auto-hide Context Menu
 
@@ -222,6 +264,68 @@ search-one-offs-tabs =
     .tooltiptext = タブ ({ $restrict })
 search-one-offs-history =
     .tooltiptext = 履歴 ({ $restrict })
+search-one-offs-actions =
+    .tooltiptext = アクション ({ $restrict })
+
+## QuickActions are shown in the urlbar as the user types a matching string
+## The -cmd- strings are comma separated list of keywords that will match
+## the action.
+
+# Opens the about:addons page in the home / recommendations section
+quickactions-addons = アドオンを表示
+quickactions-cmd-addons = add-ons, extensions, themes
+quickactions-cmd-addons2 = add-ons
+# Opens the bookmarks library window
+quickactions-bookmarks = ブックマークを表示
+quickactions-cmd-bookmarks = bookmarks
+# Opens a SUMO article explaining how to clear history
+quickactions-clearhistory = 履歴を消去
+quickactions-cmd-clearhistory = clear history
+# Opens about:downloads page
+quickactions-downloads = ダウンロードを開く
+quickactions-cmd-downloads = downloads
+# Opens about:addons page in the extensions section
+quickactions-extensions = 拡張機能を管理
+quickactions-cmd-extensions = extensions
+# Opens the devtools web inspector
+quickactions-inspector = インスペクターを開く
+quickactions-cmd-inspector = inspector, devtools
+# Opens about:logins
+quickactions-logins = ログイン情報を表示
+quickactions-cmd-logins = logins, passwords
+# Opens about:addons page in the plugins section
+quickactions-plugins = プラグインを管理
+quickactions-cmd-plugins = plugins
+# Opens the print dialog
+quickactions-print = 印刷
+quickactions-cmd-print = print
+# Opens a new private browsing window
+quickactions-private = プライベートブラウジングウィンドウを開く
+quickactions-cmd-private = private browsing
+# Opens a SUMO article explaining how to refresh
+quickactions-refresh = { -brand-short-name } をリフレッシュ
+quickactions-cmd-refresh = refresh
+# Restarts the browser
+quickactions-restart = { -brand-short-name } を再起動
+quickactions-cmd-restart = restart
+# Opens the screenshot tool
+quickactions-screenshot2 = スクリーンショットを撮影
+quickactions-cmd-screenshot = screenshot
+# Opens about:preferences
+quickactions-settings = 設定を開く
+quickactions-cmd-settings = settings, preferences, options
+# Opens about:addons page in the themes section
+quickactions-themes = テーマを管理
+quickactions-cmd-themes = themes
+# Opens a SUMO article explaining how to update the browser
+quickactions-update = { -brand-short-name } を更新
+quickactions-cmd-update = update
+# Opens the view-source UI with current pages source
+quickactions-viewsource = ソースを表示
+quickactions-cmd-viewsource = view source, source
+# Tooltip text for the help button shown in the result.
+quickactions-learn-more =
+    .title = クイックアクションについての詳細
 
 ## Bookmark Panel
 
@@ -375,6 +479,9 @@ popup-select-microphone-icon =
     .tooltiptext = マイク
 popup-select-speaker-icon =
     .tooltiptext = スピーカー
+popup-select-window-or-screen =
+    .label = ウィンドウまたは画面:
+    .accesskey = W
 popup-all-windows-shared = 画面に表示されているすべてのウィンドウを共有するわ。
 popup-screen-sharing-block =
     .label = ブロック
@@ -396,6 +503,7 @@ sharing-warning-disable-for-session =
 ## DevTools F12 popup
 
 enable-devtools-popup-description = F12 ショートカットを使いてえなら、最初にメニューのウェブ開発から開発ツールを開いてくれへん？
+enable-devtools-popup-description2 = F12 ショートカットを使いてえなら、最初にメニューのブラウザーツールから開発ツールを開いてくれへん？
 
 ## URL Bar
 
@@ -431,6 +539,10 @@ urlbar-placeholder-search-mode-other-history =
 urlbar-placeholder-search-mode-other-tabs =
     .placeholder = 検索語句を入れてくれ
     .aria-label = タブを検索
+# This placeholder is used when searching quick actions.
+urlbar-placeholder-search-mode-other-actions =
+    .placeholder = 検索語句を入力します
+    .aria-label = アクションを検索
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
@@ -506,6 +618,7 @@ urlbar-result-action-calculator-result = = { $result }
 urlbar-result-action-search-bookmarks = ブックマークを検索
 urlbar-result-action-search-history = 履歴を検索
 urlbar-result-action-search-tabs = タブを検索
+urlbar-result-action-search-actions = アクションを検索
 
 ## Labels shown above groups of urlbar results
 
@@ -514,11 +627,14 @@ urlbar-result-action-search-tabs = タブを検索
 urlbar-group-firefox-suggest =
     .label = { -firefox-suggest-brand-name }
 # A label shown above the search suggestions group in the urlbar results. It
-# should use title case.
+# should use sentence case.
 # Variables
 #  $engine (String): the name of the search engine providing the suggestions
 urlbar-group-search-suggestions =
     .label = { $engine } の検索候補
+# A label shown above Quick Actions in the urlbar results.
+urlbar-group-quickactions =
+    .label = クイックアクション
 
 ## Full Screen and Pointer Lock UI
 
@@ -594,6 +710,8 @@ bookmarks-tools =
     .label = ブックマークツール
 bookmarks-bookmark-edit-panel =
     .label = このブックマークを編集
+bookmarks-subview-edit-bookmark =
+    .label = このブックマークを編集...
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -610,6 +728,9 @@ bookmarks-toolbar-placeholder-button =
 # "Bookmark" is a verb, as in "Add current tab to bookmarks".
 bookmarks-current-tab =
     .label = 現在のタブをブックマークに追加
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-subview-bookmark-tab =
+    .label = 現在のタブをブックマークに追加...
 
 ## Library Panel items
 
@@ -646,7 +767,6 @@ toolbar-settings-button =
             [macos] 設定を開きます ({ $shortcut })
            *[other] 設定を開きます
         }
-
 toolbar-overflow-customize-button =
     .label = ツールバーをカスタマイズ...
     .accesskey = C
@@ -784,17 +904,11 @@ data-reporting-notification-message = ユーザー体験の向上のため、{ -
 data-reporting-notification-button =
     .label = 共有するデータを選択
     .accesskey = C
+# Label for the indicator shown in the private browsing window titlebar.
+private-browsing-indicator-label = プライベートブラウジング
 
-## ボスが来た
-rest-mode = 休憩モード
-rest-mode-description = ブラウザーは停止中や。OK または、任意のキーを押して再開できるで。
+## Unified extensions (toolbar) button
 
-Sidebar2 =
-  .label = ブラウザーマネージャーサイドバー
-  .tooltiptext = ブラウザーマネージャーサイドバーの表示/非表示を切り替えとく
-
-sidebar2-mute-and-unmute =
-  .label = このパネルのミュート状態を切り替えとく
-
-sidebar2-unload-panel =
-  .label = このパネルをアンロードしとく
+unified-extensions-button =
+    .label = 拡張機能
+    .tooltiptext = 拡張機能

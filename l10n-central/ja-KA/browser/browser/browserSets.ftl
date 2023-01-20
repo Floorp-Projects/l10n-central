@@ -180,7 +180,7 @@ full-zoom-enlarge-shortcut =
 full-zoom-enlarge-shortcut-alt =
     .key = =
 
-# jisキーボードでは + を入力するときにshiftを同時押ししなければいけないから ; やから拡大できるようにする
+# jisキーボードでは + を入力するときにshiftを同時押ししなければならないため ; でも拡大できるようにする
 full-zoom-enlarge-shortcut-alt2 =
     .key = ;
 

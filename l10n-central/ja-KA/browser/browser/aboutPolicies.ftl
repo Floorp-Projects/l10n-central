@@ -9,8 +9,8 @@ active-policies-tab = 有効
 errors-tab = エラー
 documentation-tab = ドキュメント
 
-no-specified-policies-message = エンタープライズポリシーサービスは有効火傷、有効なポリシーがあらへん。
-inactive-message = エンタープライズポリシーサービスが無効やdえ。
+no-specified-policies-message = エンタープライズポリシーサービスは有効やけど、有効なポリシーがあらへん。
+inactive-message = エンタープライズポリシーサービスが無効やで。
 
 policy-name = ポリシー名
 policy-value = 値

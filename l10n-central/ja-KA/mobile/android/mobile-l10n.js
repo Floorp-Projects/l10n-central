@@ -5,6 +5,6 @@
 #filter substitution
 
 
-pref("intl.accept_languages", "ja-ka");
+pref("intl.accept_languages", "ja"); // この設定は変更せんといて。フィンガープリントの原因になる。
 pref("intl.charset.default", "UTF-8");
 pref("intl.charset.detector", "ja_parallel_state_machine");
