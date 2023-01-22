@@ -17,6 +17,27 @@ menu-addons-and-themes =
 
 ## Help Menu
 
+menu-help-help-title =
+    .label = Ayuda
+    .accesskey = A
+menu-help-get-help =
+    .label = Obtener ayuda
+    .accesskey = a
+menu-help-explore-features =
+    .label = Explorar características
+    .accesskey = c
+menu-help-shortcuts =
+    .label = Atajos de teclado
+    .accesskey = A
+menu-help-get-involved =
+    .label = Involúcrate
+    .accesskey = I
+menu-help-donation =
+    .label = Hacer una donación
+    .accesskey = d
+menu-help-share-feedback =
+    .label = Compartir ideas y comentarios
+    .accesskey = S
 menu-help-enter-troubleshoot-mode =
     .label = Modo de resolución de problemas…
     .accesskey = r
@@ -26,6 +47,12 @@ menu-help-exit-troubleshoot-mode =
 menu-help-more-troubleshooting-info =
     .label = Más información para solucionar problemas
     .accesskey = M
+menu-help-troubleshooting-info =
+    .label = Información para solucionar problemas
+    .accesskey = I
+menu-help-about-product =
+    .label = Acerca de { -brand-short-name }
+    .accesskey = A
 
 ## Mail Toolbar
 
@@ -74,6 +101,12 @@ mail-uidensity-normal =
 mail-uidensity-touch =
     .label = Táctil
     .accesskey = T
+mail-uidensity-default =
+    .label = Predeterminado
+    .accesskey = D
+mail-uidensity-relaxed =
+    .label = Relajado
+    .accesskey = R
 menu-spaces-toolbar-button =
     .label = Barra de herramientas de espacios
     .accesskey = B

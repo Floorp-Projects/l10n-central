@@ -8,7 +8,7 @@
 # These are the default window titles everywhere except macOS. The first two
 # attributes are used when the web content opened has no title:
 #
-# default - "Ablaze Floorp"
+# default - "Mozilla Firefox"
 # private - "Mozilla Firefox (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
@@ -22,7 +22,7 @@ browser-main-window =
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
-# "default" - "Ablaze Floorp"
+# "default" - "Mozilla Firefox"
 # "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
@@ -38,11 +38,45 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Navegación privada)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Navegación privada)
+# These are the default window titles everywhere except macOS. The first two
+# attributes are used when the web content opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-window-titles =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = Navegación privada con { -brand-full-name }
+    .data-content-title-default = { $content-title } — { -brand-full-name }
+    .data-content-title-private = Navegación privada con { $content-title } — { -brand-full-name }
+# These are the default window titles on macOS. The first two are for use when
+# there is no content title:
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox — (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Do not use the brand name in the last two attributes, as we do on non-macOS.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-mac-window-titles =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = Navegación privada con { -brand-full-name }
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = Navegación privada con { $content-title }
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
 # `browser-main-window` and `browser-main-window-mac`.
 browser-main-window-title = { -brand-full-name }
+private-browsing-shortcut-text = Navegación privada con { -brand-short-name }
 
 ##
 
@@ -122,6 +156,7 @@ urlbar-tabtosearch-onboard = Seleccione este acceso directo para encontrar más 
 urlbar-search-mode-bookmarks = Marcadores
 urlbar-search-mode-tabs = Pestañas
 urlbar-search-mode-history = Historial
+urlbar-search-mode-actions = Acciones
 
 ##
 
@@ -164,6 +199,12 @@ page-action-manage-extension =
     .label = Administrar extensión…
 page-action-remove-extension =
     .label = Eliminar extensión
+page-action-manage-extension2 =
+    .label = Administrar extensión…
+    .accesskey = E
+page-action-remove-extension2 =
+    .label = Eliminar extensión
+    .accesskey = v
 
 ## Auto-hide Context Menu
 
@@ -222,6 +263,68 @@ search-one-offs-tabs =
     .tooltiptext = Pestañas ({ $restrict })
 search-one-offs-history =
     .tooltiptext = Historial ({ $restrict })
+search-one-offs-actions =
+    .tooltiptext = Acciones ({ $restrict })
+
+## QuickActions are shown in the urlbar as the user types a matching string
+
+
+## QuickActions are shown in the urlbar as the user types a matching string
+## The -cmd- strings are comma separated list of keywords that will match
+## the action.
+
+# Opens the about:addons page in the home / recommendations section
+quickactions-addons = Ver complementos
+quickactions-cmd-addons = complementos, extensiones, temas
+quickactions-cmd-addons2 = complementos
+# Opens the bookmarks library window
+quickactions-bookmarks = Ver Marcadores
+quickactions-cmd-bookmarks = marcadores
+# Opens a SUMO article explaining how to clear history
+quickactions-clearhistory = Limpiar historial
+quickactions-cmd-clearhistory = limpiar historial
+# Opens about:downloads page
+quickactions-downloads = Abrir descargas
+quickactions-cmd-downloads = descargas
+# Opens about:addons page in the extensions section
+quickactions-extensions = Administrar extensiones
+quickactions-cmd-extensions = extensiones
+# Opens the devtools web inspector
+quickactions-inspector = Abrir inspector
+quickactions-cmd-inspector = inspector, herramientas de desarrollo
+# Opens about:logins
+quickactions-logins = Ver inicios de sesión
+quickactions-cmd-logins = inicios de sesión, contraseñas
+# Opens about:addons page in the plugins section
+quickactions-plugins = Administrar plugins
+quickactions-cmd-plugins = plugins
+# Opens the print dialog
+quickactions-print = Imprimir
+quickactions-cmd-print = imprimir
+# Opens a new private browsing window
+quickactions-private = Abrir ventana de navegación privada
+quickactions-cmd-private = navegación privada
+# Opens a SUMO article explaining how to refresh
+quickactions-refresh = Recargar { -brand-short-name }
+quickactions-cmd-refresh = actualizar
+# Restarts the browser
+quickactions-restart = Reiniciar { -brand-short-name }
+quickactions-cmd-restart = reiniciar
+# Opens the screenshot tool
+quickactions-screenshot2 = Tomar captura de pantalla
+quickactions-cmd-screenshot = captura de pantalla
+# Opens about:preferences
+quickactions-settings = Abrir ajustes
+quickactions-cmd-settings = ajustes, preferencias, opciones
+# Opens about:addons page in the themes section
+quickactions-themes = Administrar temas
+quickactions-cmd-themes = temas
+# Opens a SUMO article explaining how to update the browser
+quickactions-update = Actualizar { -brand-short-name }
+quickactions-cmd-update = actualizar
+# Opens the view-source UI with current pages source
+quickactions-viewsource = Ver fuente
+quickactions-cmd-viewsource = ver fuente, fuente
 
 ## Bookmark Panel
 
@@ -438,6 +541,10 @@ urlbar-placeholder-search-mode-other-history =
 urlbar-placeholder-search-mode-other-tabs =
     .placeholder = Ingresa los términos de búsqueda
     .aria-label = Buscar en las pestañas
+# This placeholder is used when searching quick actions.
+urlbar-placeholder-search-mode-other-actions =
+    .placeholder = Ingresar términos de búsqueda
+    .aria-label = Buscar acciones
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
@@ -513,6 +620,7 @@ urlbar-result-action-calculator-result = = { $result }
 urlbar-result-action-search-bookmarks = Buscar marcadores
 urlbar-result-action-search-history = Buscar Historial
 urlbar-result-action-search-tabs = Buscar pestañas
+urlbar-result-action-search-actions = Buscar acciones
 
 ## Labels shown above groups of urlbar results
 
@@ -526,6 +634,9 @@ urlbar-group-firefox-suggest =
 #  $engine (String): the name of the search engine providing the suggestions
 urlbar-group-search-suggestions =
     .label = Sugerencias de { $engine }
+# A label shown above Quick Actions in the urlbar results.
+urlbar-group-quickactions =
+    .label = Acciones rápidas
 
 ## Full Screen and Pointer Lock UI
 
@@ -601,6 +712,8 @@ bookmarks-tools =
     .label = Herramientas de marcadores
 bookmarks-bookmark-edit-panel =
     .label = Modificar este marcador
+bookmarks-subview-edit-bookmark =
+    .label = Editar este marcador…
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -617,6 +730,9 @@ bookmarks-toolbar-placeholder-button =
 # "Bookmark" is a verb, as in "Add current tab to bookmarks".
 bookmarks-current-tab =
     .label = Agregar pestaña actual a Marcadores
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-subview-bookmark-tab =
+    .label = Agregar pestaña actual a marcadores…
 
 ## Library Panel items
 
@@ -790,3 +906,11 @@ data-reporting-notification-message = { -brand-short-name } envía automáticame
 data-reporting-notification-button =
     .label = Elegir qué compartir
     .accesskey = c
+# Label for the indicator shown in the private browsing window titlebar.
+private-browsing-indicator-label = Navegación privada
+
+## Unified extensions (toolbar) button
+
+unified-extensions-button =
+    .label = Extensiones
+    .tooltiptext = Extensiones
