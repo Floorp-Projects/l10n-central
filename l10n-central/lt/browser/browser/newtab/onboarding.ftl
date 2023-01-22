@@ -34,7 +34,7 @@ return-to-amo-add-theme-label = Pridėti grafinį apvalkalą
 onboarding-welcome-steps-indicator =
     .aria-label = Pradžia: žingsnis { $current } iš { $total }
 # "Hero Text" displayed on left side of welcome screen.
-# The "Fire" in "Fire starts here" plays on the "Fire" in "Floorp".
+# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
 # It also signals the passion users bring to Firefox, how they use
 # Firefox to pursue those passions, as well as the boldness in their
 # choice to use Firefox over a larger competitor browser.
@@ -121,6 +121,7 @@ mr1-onboarding-theme-label-light = Šviesus
 mr1-onboarding-theme-label-dark = Tamsus
 # "Alpenglow" here is the name of the theme, and should be kept in English.
 mr1-onboarding-theme-label-alpenglow = Alpenglow
+onboarding-theme-primary-button-label = Atlikta
 
 ## Please make sure to split the content of the title attribute into lines whose
 ## width corresponds to about 40 Latin characters, to ensure that the tooltip
