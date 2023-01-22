@@ -5,9 +5,6 @@
 clear-site-data-window =
     .title = データを消去
     .style = width: 35em
-clear-site-data-window2 =
-    .title = データを消去
-    .style = min-width: 35em
 clear-site-data-description = { -brand-short-name } に保存した Cookie とサイトデータを全部消したら、ウェブサイトからログアウトされることもあるかもやな。あと、オフラインのウェブコンテンツが消されるで。キャッシュデータを消すんは、ログイン状態には影響せえへんねん。
 clear-site-data-close-key =
     .key = w

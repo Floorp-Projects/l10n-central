@@ -242,10 +242,6 @@ newtab-pocket-last-card-desc = 後でもう一度確認してくれへん?
 newtab-pocket-last-card-image =
     .alt = 最後まで詠んだで
 
-# A save to Pocket button that shows over the card thumbnail on hover.
-newtab-pocket-save = 保存
-newtab-pocket-saved = 保存しました
-
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.
 
