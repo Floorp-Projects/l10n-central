@@ -2,6 +2,7 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
+<!-- Context Menu -->
 <!ENTITY openLinkCmdInTab.label       "Открыть ссылку в новой вкладке">
 <!ENTITY openLinkCmdInTab.accesskey   "к">
 <!ENTITY openLinkCmd.label            "Открыть ссылку в новом окне">
@@ -14,7 +15,7 @@
 <!ENTITY openFrameCmd.accesskey       "н">
 <!ENTITY openFrameCmdInTab.label      "Открыть фрейм в новой вкладке">
 <!ENTITY openFrameCmdInTab.accesskey  "к">
-<!ENTITY keywordfield.label           "Добавить краткое имя для данного поиска…">
+<!ENTITY keywordfield.label           "Добавить ключевое слово для этого запроса…">
 <!ENTITY keywordfield.accesskey       "с">
 <!ENTITY showOnlyThisFrameCmd.label     "Показать только этот фрейм">
 <!ENTITY showOnlyThisFrameCmd.accesskey "о">
@@ -99,10 +100,10 @@
 <!ENTITY mediaPlay.accesskey          "с">
 <!ENTITY mediaPause.label             "Приостановить">
 <!ENTITY mediaPause.accesskey         "с">
-<!ENTITY mediaMute.label              "Убрать звук">
-<!ENTITY mediaMute.accesskey          "б">
-<!ENTITY mediaUnmute.label            "Восстановить звук">
-<!ENTITY mediaUnmute.accesskey        "т">
+<!ENTITY mediaMute.label              "Отключить звук">
+<!ENTITY mediaMute.accesskey          "ю">
+<!ENTITY mediaUnmute.label            "Включить звук">
+<!ENTITY mediaUnmute.accesskey        "ю">
 <!ENTITY mediaPlaybackRate.label        "Скорость воспроизведения">
 <!ENTITY mediaPlaybackRate.accesskey    "к">
 <!ENTITY mediaPlaybackRate050.label     "Замедленное движение (½×)">
@@ -120,9 +121,9 @@
 <!-- LOCALIZATION NOTE: The access keys for "Show Controls" and
 "Hide Controls" are the same because the two context-menu
 items are mutually exclusive. -->
-<!ENTITY mediaShowControls.label      "Показать пульт управления">
+<!ENTITY mediaShowControls.label      "Показать элементы управления">
 <!ENTITY mediaShowControls.accesskey  "а">
-<!ENTITY mediaHideControls.label      "Скрыть пульт управления">
+<!ENTITY mediaHideControls.label      "Скрыть элементы управления">
 <!ENTITY mediaHideControls.accesskey  "к">
 <!ENTITY videoFullScreen.label        "Полный экран">
 <!ENTITY videoFullScreen.accesskey    "э">

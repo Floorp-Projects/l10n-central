@@ -47,7 +47,7 @@ pane-experimental-description2 = Изменение расширенных на�
 pane-experimental-reset =
     .label = Восстановить значения по умолчанию
     .accesskey = с
-help-button-label = Поддержка Firefox
+help-button-label = Поддержка { -brand-short-name }
 addons-button-label = Расширения и темы
 focus-search =
     .key = f
@@ -187,12 +187,15 @@ preferences-web-appearance-header = Внешний вид сайтов
 preferences-web-appearance-description = Некоторые веб-сайты адаптируют свою цветовую схему в зависимости от ваших предпочтений. Выберите цветовую схему, которую вы хотите использовать для этих сайтов.
 preferences-web-appearance-choice-browser = Тема { -brand-short-name }
 preferences-web-appearance-choice-system = Системная тема
+preferences-web-appearance-choice-auto = Автоматически
 preferences-web-appearance-choice-light = Светлая
 preferences-web-appearance-choice-dark = Тёмная
 preferences-web-appearance-choice-tooltip-browser =
     .title = Применять настройки темы { -brand-short-name } к фону и содержимому веб-сайтов.
 preferences-web-appearance-choice-tooltip-system =
     .title = Применять системные настройки к фону и содержимому веб-сайтов.
+preferences-web-appearance-choice-tooltip-auto =
+    .title = Автоматически менять фон и содержимое веб-сайтов в зависимости от ваших системных настроек и темы { -brand-short-name }.
 preferences-web-appearance-choice-tooltip-light =
     .title = Использовать светлый вид для фона и содержимого веб-сайтов.
 preferences-web-appearance-choice-tooltip-dark =
@@ -201,6 +204,8 @@ preferences-web-appearance-choice-input-browser =
     .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
 preferences-web-appearance-choice-input-system =
     .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-auto =
+    .aria-description = { preferences-web-appearance-choice-tooltip-auto.title }
 preferences-web-appearance-choice-input-light =
     .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
 preferences-web-appearance-choice-input-dark =
@@ -489,10 +494,12 @@ home-newtabs-mode-label = Новые вкладки
 home-restore-defaults =
     .label = Восстановить по умолчанию
     .accesskey = о
-# "Floorp" should be treated as a brand and kept in English,
+# "Firefox" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
     .label = Домашняя страница Firefox (по умолчанию)
+home-mode-choice-default-fx =
+    .label = { -firefox-home-brand-name(case: "nominative") } (По умолчанию)
 home-mode-choice-custom =
     .label = Мой URL...
 home-mode-choice-blank =
@@ -514,10 +521,12 @@ choose-bookmark =
     .label = Использовать закладку…
     .accesskey = в
 
-## Home Section - Floorp HomeContent Customization
+## Home Section - Firefox Home Content Customization
 
 home-prefs-content-header = Домашняя страница Firefox
 home-prefs-content-description = Выберите, какое содержимое вы хотите видеть на домашней странице Firefox.
+home-prefs-content-header2 = Содержимое { -firefox-home-brand-name(case: "genitive") }
+home-prefs-content-description2 = Выберите, какое содержимое вы хотите видеть на экране { -firefox-home-brand-name(case: "genitive") }.
 home-prefs-search-header =
     .label = Поиск в Интернете
 home-prefs-shortcuts-header =
@@ -538,6 +547,8 @@ home-prefs-recommended-by-description-new = Особый контент, кур�
 home-prefs-recommended-by-learn-more = Как это работает
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Статьи спонсоров
+home-prefs-recommended-by-option-recent-saves =
+    .label = Отображать последние сохранения
 home-prefs-highlights-option-visited-pages =
     .label = Посещённые страницы
 home-prefs-highlights-options-bookmarks =
@@ -601,7 +612,7 @@ search-one-click-desc = Выберите альтернативные поиск
 search-choose-engine-column =
     .label = Поисковая система
 search-choose-keyword-column =
-    .label = Краткое имя
+    .label = Ключевое слово
 search-restore-default =
     .label = Восстановить поисковые системы по умолчанию
     .accesskey = а
@@ -614,11 +625,11 @@ search-add-engine =
 search-find-more-link = Найти другие поисковые системы
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
-search-keyword-warning-title = Краткое имя уже используется
+search-keyword-warning-title = Ключевое слово уже используется
 # Variables:
 #   $name (String) - Name of a search engine.
-search-keyword-warning-engine = Вы выбрали краткое имя, которое в данный момент используется { $name }. Выберите другое.
-search-keyword-warning-bookmark = Вы выбрали краткое имя, которое в данный момент используется одной из закладок. Выберите другое.
+search-keyword-warning-engine = Выбранное ключевое слово уже используется «{ $name }». Пожалуйста, выберите другое.
+search-keyword-warning-bookmark = Выбранное ключевое слово уже используется одной из закладок. Пожалуйста, выберите другое.
 
 ## Containers Section
 
@@ -788,23 +799,23 @@ forms-saved-logins =
     .label = Сохранённые логины…
     .accesskey = х
 forms-primary-pw-use =
-    .label = Использовать мастер-пароль
-    .accesskey = о
+    .label = Использовать основной пароль
+    .accesskey = с
 forms-primary-pw-learn-more-link = Подробнее
 # This string uses the former name of the Primary Password feature
 # ("Master Password" in English) so that the preferences can be found
 # when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
-    .label = Сменить мастер-пароль…
-    .accesskey = м
+    .label = Изменить мастер-пароль…
+    .accesskey = з
 forms-primary-pw-change =
-    .label = Сменить мастер-пароль…
-    .accesskey = м
+    .label = Изменить основной пароль…
+    .accesskey = з
 # Leave this message empty if the translation for "Primary Password" matches
 # "Master Password" in your language. If you're editing the FTL file directly,
 # use { "" } as the value.
-forms-primary-pw-former-name = { "" }
-forms-primary-pw-fips-title = Вы работаете в режиме соответствия FIPS. При работе в этом режиме необходимо установить мастер-пароль.
+forms-primary-pw-former-name = Ранее — мастер-пароль
+forms-primary-pw-fips-title = Сейчас вы находитесь в режиме FIPS. Для работы в этом режиме необходимо установить основной пароль.
 forms-master-pw-fips-desc = Смена пароля не удалась
 forms-windows-sso =
     .label = Разрешить единый вход Windows для учётных записей Microsoft, учётных записей на работе и в учебных заведениях
@@ -814,12 +825,12 @@ forms-windows-sso-desc = Управление аккаунтами в настр
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Primary Password.
-primary-password-os-auth-dialog-message-win = Чтобы создать мастер-пароль, введите ваши учётные данные для входа в Windows. Это поможет защитить безопасность ваших аккаунтов.
+primary-password-os-auth-dialog-message-win = Чтобы создать основной пароль, введите ваши учётные данные для входа в Windows. Это поможет защитить безопасность ваших аккаунтов.
 # This message can be seen by trying to add a Primary Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
-primary-password-os-auth-dialog-message-macosx = создать мастер-пароль
+primary-password-os-auth-dialog-message-macosx = создать основной пароль
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -831,8 +842,8 @@ history-header = История
 # "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
-#   - Simply as "Floorp", moving the verb into each option.
-#     This will result in "Floorp" + "Will remember history", etc.
+#   - Simply as "Firefox", moving the verb into each option.
+#     This will result in "Firefox" + "Will remember history", etc.
 #   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = { -brand-short-name }
     .accesskey = i
@@ -931,7 +942,11 @@ addressbar-locbar-topsites-option =
 addressbar-locbar-engines-option =
     .label = из поисковых систем
     .accesskey = ы
+addressbar-locbar-quickactions-option =
+    .label = Быстрые действия
+    .accesskey = ы
 addressbar-suggestions-settings = Изменить настройки для предложений поисковых систем
+addressbar-quickactions-learn-more = Подробнее
 
 ## Privacy Section - Content Blocking
 
@@ -962,6 +977,7 @@ content-blocking-etp-custom-desc = Выберите, какие трекеры �
 content-blocking-etp-blocking-desc = { -brand-short-name } блокирует следующее:
 content-blocking-private-windows = Отслеживающее содержимое в приватных окнах
 content-blocking-cross-site-cookies-in-all-windows = Межсайтовые куки во всех окнах (включая отслеживающие куки)
+content-blocking-cross-site-cookies-in-all-windows2 = Межсайтовые куки во всех окнах
 content-blocking-cross-site-tracking-cookies = Межсайтовые отслеживающие куки
 content-blocking-all-cross-site-cookies-private-windows = Межсайтовые куки в приватных окнах
 content-blocking-cross-site-tracking-cookies-plus-isolate = Межсайтовые отслеживающие куки, а также изолировать оставшиеся куки
@@ -980,6 +996,7 @@ content-blocking-etp-standard-tcp-rollout-checkbox =
 # "Contains" here means "isolates", "limits".
 content-blocking-etp-standard-tcp-rollout-description = Полная защита от кук ограничивает работу кук сайтом, на котором вы находитесь, чтобы трекеры не могли использовать их для слежки за вами от сайта к сайту.
 content-blocking-etp-standard-tcp-rollout-learn-more = Подробнее
+content-blocking-etp-standard-tcp-title = Включает Полную защиту от кук, нашу самую мощную функцию защиты приватности.
 content-blocking-warning-title = Осторожно!
 content-blocking-and-isolating-etp-warning-description-2 = Эта настройка может вызвать ошибки отображения содержимого или нарушение корректной работы некоторых веб-сайтов. Если кажется, что сайт не работает, вам, возможно, понадобится отключить защиту от отслеживания на этом сайте, чтобы загрузить всё его содержимое.
 content-blocking-warning-learn-how = Подробнее
@@ -1087,6 +1104,12 @@ addon-recommendations-link = Подробнее
 collection-health-report-disabled = Для этой конфигурации сборки отправка данных отключена
 collection-backlogged-crash-reports-with-link = Разрешить { -brand-short-name } отправлять от вашего имени накопившиеся сообщения о падениях <a data-l10n-name="crash-reports-link">Подробнее</a>
     .accesskey = ш
+privacy-segmentation-section-header = Новые функции, улучшающие ваш веб-сёрфинг
+privacy-segmentation-section-description = Когда мы предлагаем функции, которые используют ваши данные, чтобы улучшить персонализацию браузера:
+privacy-segmentation-radio-off =
+    .label = Использовать рекомендации { -brand-product-name }
+privacy-segmentation-radio-on =
+    .label = Показать подробную информацию
 
 ## Privacy Section - Security
 ##
