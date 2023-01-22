@@ -76,6 +76,8 @@ perftools-thread-render-backend =
     .title = WebRender 的 RenderBackend 執行緒
 perftools-thread-paint-worker =
     .title = 開啟非主執行緒繪製（off-main-thread painting）時，進行繪製的執行緒
+perftools-thread-timer =
+    .title = 執行緒處理計時器（setTimeout、setInterval、nsITimer）
 perftools-thread-style-thread =
     .title = 樣式計算會拆分於多個執行緒中進行
 pref-thread-stream-trans =
@@ -108,16 +110,9 @@ perftools-tools-threads-input-label =
     .title = 下列執行緒名稱是要在 Profiler 當中測量效能的清單（用逗號分隔）。名稱必須與要列入測量的執行緒名稱部分符合，是否有空白視為不同。
 
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
-## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
-## preferences are true.
-
-
-## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## devtools.performance.new-panel-onboarding preference is true.
 
 perftools-onboarding-message = <b>全新</b>: 現在起，已將 { -profiler-brand-name } 整合進開發者工具。了解這個全新強大工具的<a>更多資訊</a>。
-# `options-context-advanced-settings` is defined in toolbox-options.ftl
-perftools-onboarding-reenable-old-panel = （短時間內您還是可以透過<a>{ options-context-advanced-settings }</a>使用原本的效能面板）
 perftools-onboarding-close-button =
     .aria-label = 關閉功能介紹訊息
 
@@ -138,6 +133,9 @@ perftools-presets-media-label = 媒體
 perftools-presets-media-description2 = 於 { -brand-shorter-name } 診斷影音 Bug 時的預設值。
 perftools-presets-networking-label = 網路連線
 perftools-presets-networking-description = 於 { -brand-shorter-name } 診斷網路連線 Bug 時的預設值。
+# "Power" is used in the sense of energy (electricity used by the computer).
+perftools-presets-power-label = 電源
+perftools-presets-power-description = 於 { -brand-shorter-name } 診斷耗電量時的預設值，額外負荷較低。
 perftools-presets-custom-label = 自訂
 
 ##

@@ -17,6 +17,27 @@ menu-addons-and-themes =
 
 ## Help Menu
 
+menu-help-help-title =
+    .label = 說明
+    .accesskey = H
+menu-help-get-help =
+    .label = 取得幫助
+    .accesskey = H
+menu-help-explore-features =
+    .label = 探索功能
+    .accesskey = F
+menu-help-shortcuts =
+    .label = 快速鍵
+    .accesskey = K
+menu-help-get-involved =
+    .label = 參與我們
+    .accesskey = G
+menu-help-donation =
+    .label = 捐款給我們
+    .accesskey = D
+menu-help-share-feedback =
+    .label = 分享想法與意見回饋
+    .accesskey = S
 menu-help-enter-troubleshoot-mode =
     .label = 疑難排解模式…
     .accesskey = T
@@ -26,6 +47,12 @@ menu-help-exit-troubleshoot-mode =
 menu-help-more-troubleshooting-info =
     .label = 更多疑難排解資訊
     .accesskey = M
+menu-help-troubleshooting-info =
+    .label = 疑難排解資訊
+    .accesskey = I
+menu-help-about-product =
+    .label = 關於 { -brand-short-name }
+    .accesskey = A
 
 ## Mail Toolbar
 
@@ -74,6 +101,12 @@ mail-uidensity-normal =
 mail-uidensity-touch =
     .label = 觸控
     .accesskey = T
+mail-uidensity-default =
+    .label = 預設
+    .accesskey = D
+mail-uidensity-relaxed =
+    .label = 放寬
+    .accesskey = R
 menu-spaces-toolbar-button =
     .label = 按鈕空間
     .accesskey = S

@@ -64,3 +64,6 @@ experimental-features-ime-search-description = 東亞與印度語系使用者須
 experimental-features-text-recognition =
     .label = 文字辨識
 experimental-features-text-recognition-description = 開啟辨識圖片中文字的相關功能。
+experimental-features-accessibility-cache =
+    .label = 輔助功能快取
+experimental-features-accessibility-cache-description = 將所有 { -brand-short-name } 主程序的所有文件當中的輔助功能資訊快取起來。此功能可幫助改善螢幕閱讀器或其他使用輔助功能 API 的應用程式的運作效能。
