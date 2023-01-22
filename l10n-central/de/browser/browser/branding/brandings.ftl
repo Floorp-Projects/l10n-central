@@ -3,13 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-## The following feature names must be treated as a brand, and kept in English.
-## They cannot be:
-## - Declined to adapt to grammatical case.
-## - Transliterated.
-## - Translated.
-
-
 ## The following feature names must be treated as a brand.
 ##
 ## They cannot be:
@@ -23,22 +16,25 @@
 ## https://mozilla-l10n.github.io/styleguides/mozilla_general/#brands-copyright-and-trademark
 
 -facebook-container-brand-name = Facebook Container
--lockwise-brand-name = Floorp Lockwise
+-lockwise-brand-name = Firefox Lockwise
 -lockwise-brand-short-name = Lockwise
--monitor-brand-name = Floorp Monitor
+-monitor-brand-name = Firefox Monitor
 -monitor-brand-short-name = Monitor
 -pocket-brand-name = Pocket
--send-brand-name = Floorp Send
--screenshots-brand-name = Floorp Screenshots
+-send-brand-name = Firefox Send
+-screenshots-brand-name = Firefox Screenshots
 -mozilla-vpn-brand-name = Mozilla VPN
--profiler-brand-name = Floorp Profiler
--translations-brand-name = Floorp Translations
-
+-profiler-brand-name = Firefox Profiler
+-translations-brand-name = Firefox Translations
 -rally-brand-name = Mozilla Rally
 -rally-short-name = Rally
--focus-brand-name = Floorp Klar
-
+-focus-brand-name = Firefox Klar
 # “Suggest” can be localized, “Firefox” must be treated as a brand
 # and kept in English.
--firefox-suggest-brand-name = Floorp-Vorschläge
-
+-firefox-suggest-brand-name = Firefox-Vorschläge
+# ”Home" can be localized, “Firefox” must be treated as a brand
+# and kept in English.
+-firefox-home-brand-name = Firefox-Startseite
+# View" can be localized, “Firefox” must be treated as a brand
+# and kept in English.
+-firefoxview-brand-name = Firefox View
