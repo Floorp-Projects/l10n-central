@@ -6,6 +6,8 @@
 # Display Name
 
 vcard-displayname = Nom à afficher
+vcard-displayname-placeholder =
+    .placeholder = { vcard-displayname }
 
 # Type selection
 
@@ -61,12 +63,20 @@ vcard-tz-add = Ajouter un fuseau horaire
 # IMPP vCard field
 
 vcard-impp-header = Comptes de messagerie instantanée
+vcard-impp2-header = Messagerie instantanée
 vcard-impp-add = Ajouter un compte de messagerie instantanée
 vcard-impp-label = Compte de messagerie instantanée
+vcard-impp-select = Protocole
+vcard-impp-option-other = Autre
+vcard-impp-input-label = URI
+vcard-impp-input-title = URI pour la messagerie instantanée
 
 # BDAY and ANNIVERSARY vCard field
 
+vcard-bday-anniversary-header = Dates spéciales
+vcard-bday-anniversary-add = Ajouter une date spéciale
 vcard-bday-label = Anniversaire
+vcard-anniversary-label = Date d’anniversaire
 vcard-date-day = Jour
 vcard-date-month = Mois
 vcard-date-year = Année
@@ -76,8 +86,12 @@ vcard-date-year = Année
 vcard-adr-header = Adresses
 vcard-adr-add = Ajouter une adresse
 vcard-adr-label = Adresse
+vcard-adr-delivery-label = Étiquette de livraison
+vcard-adr-street = Adresse postale
 # Or "Locality"
 vcard-adr-locality = Ville
+# Or "Region"
+vcard-adr-region = Département/région
 # The term "ZIP code" only applies in USA. Most locales should use "Postal code" only.
 vcard-adr-code = Code postal
 vcard-adr-country = Pays
@@ -89,6 +103,13 @@ vcard-note-add = Ajouter une note
 
 # TITLE, ROLE and ORGANIZATION vCard fields
 
+vcard-org-header = Propriétés organisationnelles
+vcard-org-add = Ajouter des propriétés organisationnelles
 vcard-org-title = Fonction
-vcard-org-role = Fonction
+vcard-org-role = Rôle
 vcard-org-org = Société
+
+# Custom properties
+
+vcard-custom-header = Propriétés personnalisées
+vcard-custom-add = Ajouter des propriétés personnalisées

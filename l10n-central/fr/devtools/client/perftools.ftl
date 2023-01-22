@@ -80,6 +80,8 @@ perftools-thread-render-backend =
     .title = Le thread RenderBackend de WebRender
 perftools-thread-paint-worker =
     .title = Lorsque la peinture hors fil d’exécution principal (off-main-thread painting) est activée, le fil sur lequel la peinture se produit
+perftools-thread-timer =
+    .title = Minuteurs gérés par le thread (setTimeout, setInterval, nsITimer)
 perftools-thread-style-thread =
     .title = Le traitement du style est partagé entre plusieurs threads.
 pref-thread-stream-trans =
@@ -96,6 +98,14 @@ perftools-thread-jvm-gecko =
     .title = Le thread principal de Gecko JVM
 perftools-thread-jvm-nimbus =
     .title = Threads principaux du SDK de l’expérimentation Nimbus
+perftools-thread-jvm-default-dispatcher =
+    .title = Le répartiteur par défaut pour la bibliothèque de coroutines Kotlin
+perftools-thread-jvm-glean =
+    .title = Threads principaux du SDK de télémétrie Glean
+perftools-thread-jvm-arch-disk-io =
+    .title = Le répartiteur E/S pour la bibliothèque de coroutines Kotlin
+perftools-thread-jvm-pool =
+    .title = Threads créés dans un pool de threads sans nom
 
 ##
 
@@ -104,16 +114,9 @@ perftools-tools-threads-input-label =
     .title = Ces noms de fil d’exécution sont une liste séparée par des virgules utilisée pour activer le profilage des fils dans le profileur. Le nom ne doit correspondre que partiellement au nom du fil à inclure. Il est sensible aux espaces.
 
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
-## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
-## preferences are true.
-
-
-## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## devtools.performance.new-panel-onboarding preference is true.
 
 perftools-onboarding-message = <b>Nouveau</b> : le { -profiler-brand-name } est à présent intégré dans les outils de développement. <a>En savoir plus</a> sur ce nouvel outil puissant.
-# `options-context-advanced-settings` is defined in toolbox-options.ftl
-perftools-onboarding-reenable-old-panel = (Pour une durée limitée, vous pouvez accéder au panneau de performances d’origine via <a>{ options-context-advanced-settings }</a>)
 perftools-onboarding-close-button =
     .aria-label = Fermer le message d’intégration
 
@@ -134,6 +137,9 @@ perftools-presets-media-label = Multimédia
 perftools-presets-media-description2 = Réglage conçu pour examiner les bugs audio et vidéo dans { -brand-shorter-name }.
 perftools-presets-networking-label = Réseau
 perftools-presets-networking-description = Réglage conçu pour examiner les bugs réseau dans { -brand-shorter-name }.
+# "Power" is used in the sense of energy (electricity used by the computer).
+perftools-presets-power-label = Énergie
+perftools-presets-power-description = Réglage conçu pour examiner les bugs liés à la consommation d’énergie dans { -brand-shorter-name }, avec une surcharge faible.
 perftools-presets-custom-label = Personnalisé
 
 ##

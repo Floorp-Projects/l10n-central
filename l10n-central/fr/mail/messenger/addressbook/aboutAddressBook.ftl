@@ -45,16 +45,18 @@ about-addressbook-confirm-delete-book = Voulez-vous vraiment supprimer { $name }
 about-addressbook-confirm-remove-remote-book-title = Supprimer le carnet d’adresses
 # Variables:
 # $name (String) - Name of the remote address book to be removed.
-about-addressbook-confirm-remove-remote-book = Voulez-vous vraiment supprimer{ $name } ?
+about-addressbook-confirm-remove-remote-book = Voulez-vous vraiment supprimer { $name } ?
 
 ## Cards
 
 # Variables:
 # $name (String) - Name of the address book that will be searched.
 about-addressbook-search =
-    .placeholder = Rechercher { $name }
+    .placeholder = Rechercher dans { $name }
 about-addressbook-search-all =
     .placeholder = Rechercher dans tous les carnets d’adresses
+about-addressbook-sort-button2 =
+    .title = Options d’affichage de la liste
 about-addressbook-name-format-display =
     .label = Nom à afficher
 about-addressbook-name-format-firstlast =
@@ -157,12 +159,15 @@ about-addressbook-confirm-delete-contacts =
 ## Card list placeholder
 ## Shown when there are no cards in the list
 
+about-addressbook-placeholder-empty-book = Aucun contact disponible
 about-addressbook-placeholder-new-contact = Nouveau contact
+about-addressbook-placeholder-search-only = Ce carnet d’adresses affiche uniquement les contacts lorsque vous effectuez une recherche
 about-addressbook-placeholder-searching = Recherche…
 about-addressbook-placeholder-no-search-results = Aucun contact trouvé
 
 ## Details
 
+about-addressbook-prefer-display-name = Préférer le nom à afficher plutôt que l’en-tête de message
 about-addressbook-write-action-button = Écrire
 about-addressbook-event-action-button = Évènement
 about-addressbook-search-action-button = Rechercher
@@ -175,16 +180,18 @@ about-addressbook-details-email-addresses-header = Adresses électroniques
 about-addressbook-details-phone-numbers-header = Numéros de téléphone
 about-addressbook-details-addresses-header = Adresses
 about-addressbook-details-notes-header = Notes
+about-addressbook-details-impp-header = Messagerie instantanée
 about-addressbook-details-other-info-header = Autres informations
 about-addressbook-entry-type-work = Professionnel
-about-addressbook-entry-type-home = Accueil
+about-addressbook-entry-type-home = Domicile
 about-addressbook-entry-type-fax = Fax
+# Or "Mobile"
 about-addressbook-entry-type-cell = Téléphone portable
 about-addressbook-entry-type-pager = Pager
 about-addressbook-entry-name-birthday = Anniversaire
 about-addressbook-entry-name-anniversary = Date d’anniversaire
 about-addressbook-entry-name-title = Fonction
-about-addressbook-entry-name-role = Fonction
+about-addressbook-entry-name-role = Rôle
 about-addressbook-entry-name-organization = Société
 about-addressbook-entry-name-website = Site web
 about-addressbook-entry-name-time-zone = Fuseau horaire
