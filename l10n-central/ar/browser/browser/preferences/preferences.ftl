@@ -59,7 +59,7 @@ pane-experimental-reset =
     .label = استعد المبدئيات
     .accesskey = س
 
-help-button-label = دعم Firefox
+help-button-label = دعم { -brand-short-name }
 addons-button-label = الامتدادات والسمات
 
 focus-search =
@@ -559,7 +559,7 @@ home-restore-defaults =
     .label = استعد المبدئيات
     .accesskey = س
 
-# "Floorp" should be treated as a brand and kept in English,
+# "Firefox" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
     .label = صفحة بداية Firefox (المبدئية)
@@ -589,7 +589,7 @@ choose-bookmark =
     .label = استخدم علامة…
     .accesskey = ع
 
-## Home Section - Floorp HomeContent Customization
+## Home Section - Firefox Home Content Customization
 
 home-prefs-content-header = محتوى Firefox الرئيسي
 home-prefs-content-description = اختر المحتوى الذي تريد عرضه في شاشة بداية Firefox.
@@ -963,8 +963,8 @@ history-header = التأريخ
 # "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
-#   - Simply as "Floorp", moving the verb into each option.
-#     This will result in "Floorp" + "Will remember history", etc.
+#   - Simply as "Firefox", moving the verb into each option.
+#     This will result in "Firefox" + "Will remember history", etc.
 #   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = اجعل { -brand-short-name }
     .accesskey = ع
