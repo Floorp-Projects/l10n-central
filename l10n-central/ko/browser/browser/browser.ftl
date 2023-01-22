@@ -8,7 +8,7 @@
 # These are the default window titles everywhere except macOS. The first two
 # attributes are used when the web content opened has no title:
 #
-# default - "Ablaze Floorp"
+# default - "Mozilla Firefox"
 # private - "Mozilla Firefox (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
@@ -19,11 +19,10 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (사생활 보호 모드)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (사생활 보호 모드)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
-# "default" - "Ablaze Floorp"
+# "default" - "Mozilla Firefox"
 # "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
@@ -39,12 +38,45 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (사생활 보호 모드)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (사생활 보호 모드)
-
+# These are the default window titles everywhere except macOS. The first two
+# attributes are used when the web content opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-window-titles =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } 사생활 보호 모드
+    .data-content-title-default = { $content-title } — { -brand-full-name }
+    .data-content-title-private = { $content-title } — { -brand-full-name } 사생활 보호 모드
+# These are the default window titles on macOS. The first two are for use when
+# there is no content title:
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox — (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Do not use the brand name in the last two attributes, as we do on non-macOS.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-mac-window-titles =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } — 사생활 보호 모드
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } — 사생활 보호 모드
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
 # `browser-main-window` and `browser-main-window-mac`.
 browser-main-window-title = { -brand-full-name }
+private-browsing-shortcut-text = { -brand-short-name } 사생활 보호 모드
 
 ##
 
@@ -115,7 +147,6 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = 입력은 더 적게하고 더 많이 찾기: 주소 표시줄에서 바로 { $engineName } 검색해 보세요.
 urlbar-search-tips-redirect-2 = 주소 표시줄에서 검색을 시작하여 { $engineName }의 제안 및 방문 기록을 확인하세요.
-
 # Prompts users to use the Urlbar when they are typing in the domain of a
 # search engine, e.g. google.com or amazon.com.
 urlbar-tabtosearch-onboard = 더 빨리 찾으려면 여기에서 하세요.
@@ -125,6 +156,7 @@ urlbar-tabtosearch-onboard = 더 빨리 찾으려면 여기에서 하세요.
 urlbar-search-mode-bookmarks = 북마크
 urlbar-search-mode-tabs = 탭
 urlbar-search-mode-history = 기록
+urlbar-search-mode-actions = 작업
 
 ##
 
@@ -152,12 +184,10 @@ urlbar-midi-blocked =
     .tooltiptext = 이 사이트의 MIDI 접근을 차단하였습니다.
 urlbar-install-blocked =
     .tooltiptext = 이 사이트의 부가 기능 설치를 차단했습니다.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = 북마크 편집 ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -169,6 +199,12 @@ page-action-manage-extension =
     .label = 확장 기능 관리…
 page-action-remove-extension =
     .label = 확장 기능 제거
+page-action-manage-extension2 =
+    .label = 확장 기능 관리…
+    .accesskey = E
+page-action-remove-extension2 =
+    .label = 확장 기능 제거
+    .accesskey = v
 
 ## Auto-hide Context Menu
 
@@ -184,10 +220,8 @@ full-screen-exit =
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = 이번만 검색:
-
 search-one-offs-change-settings-compact-button =
     .tooltiptext = 검색 설정 변경
-
 search-one-offs-context-open-new-tab =
     .label = 새 탭에 검색
     .accesskey = T
@@ -197,14 +231,12 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = 사생활 보호 창의 기본 검색 엔진으로 설정
     .accesskey = P
-
 # Search engine one-off buttons with an @alias shortcut/keyword.
 # Variables:
 #  $engineName (String): The name of the engine.
 #  $alias (String): The @alias shortcut/keyword.
 search-one-offs-engine-with-alias =
     .tooltiptext = { $engineName } ({ $alias })
-
 # Shown when adding new engines from the address bar shortcut buttons or context
 # menu, or from the search bar shortcut buttons.
 # Variables:
@@ -231,6 +263,68 @@ search-one-offs-tabs =
     .tooltiptext = 탭 ({ $restrict })
 search-one-offs-history =
     .tooltiptext = 기록 ({ $restrict })
+search-one-offs-actions =
+    .tooltiptext = 작업 ({ $restrict })
+
+## QuickActions are shown in the urlbar as the user types a matching string
+
+
+## QuickActions are shown in the urlbar as the user types a matching string
+## The -cmd- strings are comma separated list of keywords that will match
+## the action.
+
+# Opens the about:addons page in the home / recommendations section
+quickactions-addons = 부가 기능
+quickactions-cmd-addons = 부가 기능, 확장 기능, 테마
+quickactions-cmd-addons2 = 부가 기능
+# Opens the bookmarks library window
+quickactions-bookmarks = 북마크
+quickactions-cmd-bookmarks = 북마크
+# Opens a SUMO article explaining how to clear history
+quickactions-clearhistory = 기록 지우기
+quickactions-cmd-clearhistory = 기록 지우기
+# Opens about:downloads page
+quickactions-downloads = 다운로드
+quickactions-cmd-downloads = 다운로드
+# Opens about:addons page in the extensions section
+quickactions-extensions = 확장 기능 관리
+quickactions-cmd-extensions = 확장 기능
+# Opens the devtools web inspector
+quickactions-inspector = 검사기
+quickactions-cmd-inspector = 검사기, devtools
+# Opens about:logins
+quickactions-logins = 로그인
+quickactions-cmd-logins = 로그인, 비밀번호
+# Opens about:addons page in the plugins section
+quickactions-plugins = 플러그인 관리
+quickactions-cmd-plugins = 플러그인
+# Opens the print dialog
+quickactions-print = 인쇄
+quickactions-cmd-print = 인쇄
+# Opens a new private browsing window
+quickactions-private = 사생활 보호 창
+quickactions-cmd-private = 사생활 보호 모드
+# Opens a SUMO article explaining how to refresh
+quickactions-refresh = { -brand-short-name } 새로 고침
+quickactions-cmd-refresh = 새로 고침
+# Restarts the browser
+quickactions-restart = { -brand-short-name } 다시 시작
+quickactions-cmd-restart = 다시 시작
+# Opens the screenshot tool
+quickactions-screenshot2 = 스크린샷 찍기
+quickactions-cmd-screenshot = 스크린샷
+# Opens about:preferences
+quickactions-settings = 설정
+quickactions-cmd-settings = 설정, 설정, 옵션
+# Opens about:addons page in the themes section
+quickactions-themes = 테마 관리
+quickactions-cmd-themes = 테마
+# Opens a SUMO article explaining how to update the browser
+quickactions-update = { -brand-short-name } 업데이트
+quickactions-cmd-update = 업데이트
+# Opens the view-source UI with current pages source
+quickactions-viewsource = 소스
+quickactions-cmd-viewsource = 소스 보기, 소스
 
 ## Bookmark Panel
 
@@ -249,7 +343,6 @@ bookmark-panel-show-editor-checkbox =
     .accesskey = S
 bookmark-panel-save-button =
     .label = 저장
-
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -270,14 +363,13 @@ identity-connection-secure = 안전한 연결
 identity-connection-failure = 연결 실패
 identity-connection-internal = 안전한 { -brand-short-name } 페이지입니다.
 identity-connection-file = 이 페이지는 컴퓨터에 저장되어 있습니다.
-identity-extension-page = 이 페이지는 확장 기능으로부터 로드되었습니다.
+identity-extension-page = 이 페이지는 확장 기능이 로드했습니다.
 identity-active-blocked = { -brand-short-name }가 안전하지 않은 페이지의 일부를 차단했습니다.
 identity-custom-root = Mozilla에서 인식하지 못하는 인증서 발급자가 연결을 확인했습니다.
 identity-passive-loaded = 페이지의 일부(이미지 등)가 안전하지 않습니다.
 identity-active-loaded = 이 페이지에서 보호를 비활성화하셨습니다.
 identity-weak-encryption = 이 페이지는 약한 암호화를 사용합니다.
 identity-insecure-login-forms = 이 페이지에 입력된 로그인 정보는 노출될 수 있습니다.
-
 identity-https-only-connection-upgraded = (HTTPS로 업그레이드됨)
 identity-https-only-label = HTTPS 전용 모드
 identity-https-only-dropdown-on =
@@ -289,11 +381,9 @@ identity-https-only-dropdown-off-temporarily =
 identity-https-only-info-turn-on2 = { -brand-short-name }가 가능한 경우 연결을 업그레이드하도록 하려면 이 사이트에 대해 HTTPS 전용 모드를 켜세요.
 identity-https-only-info-turn-off2 = 페이지가 손상된 것 같으면 이 사이트가 안전하지 않은 HTTP를 사용하여 다시 로드되도록 HTTPS 전용 모드를 끌 수 있습니다.
 identity-https-only-info-no-upgrade = HTTP에서 연결을 업그레이드할 수 없습니다.
-
 identity-permissions-storage-access-header = 교차 사이트 쿠키
 identity-permissions-storage-access-hint = 이 당사자는 사용자가 이 사이트에 있는 동안 교차 사이트 쿠키 및 사이트 데이터를 사용할 수 있습니다.
 identity-permissions-storage-access-learn-more = 더 알아보기
-
 identity-permissions-reload-hint = 변경 사항을 적용하려면 페이지를 다시 로드해야할 수도 있습니다.
 identity-clear-site-data =
     .label = 쿠키 및 사이트 데이터 지우기…
@@ -304,16 +394,16 @@ identity-description-custom-root = Mozilla는 이 인증서 발급자를 인식�
 identity-remove-cert-exception =
     .label = 예외 제거
     .accesskey = R
-identity-description-insecure = 이 사이트의 연결이 보호되지 않습니다. 전송하는 정보(비밀번호, 메시지, 신용 카드 번호 등)를 다른사람이 볼 수 있습니다.
+identity-description-insecure = 이 사이트의 연결은 비공개가 아닙니다. 전송하는 정보(예: 비밀번호, 메시지, 신용 카드 등)를 다른 사람이 볼 수 있습니다.
 identity-description-insecure-login-forms = 이 페이지에 입력한 로그인 정보는 안전하지 않고 손상될 수 있습니다.
-identity-description-weak-cipher-intro = 이 사이트의 연결이 약한 암호화를 사용하고 있어서 보호되지 않습니다.
+identity-description-weak-cipher-intro = 이 사이트의 연결은 약한 암호화를 사용하며 비공개가 아닙니다.
 identity-description-weak-cipher-risk = 다른 사람이 정보를 보거나 웹 사이트의 동작을 바꿀 수 있습니다.
 identity-description-active-blocked = { -brand-short-name }가 안전하지 않은 페이지의 일부분을 차단했습니다. <label data-l10n-name="link">더 알아보기</label>
-identity-description-passive-loaded = 연결이 안전하지 않아서 사용자가 공유하는 정보를 다른 사람이 볼 수 있습니다.
+identity-description-passive-loaded = 이 사이트의 연결은 비공개가 아니므로 사용자가 공유하는 정보를 다른 사람들이 볼 수 있습니다.
 identity-description-passive-loaded-insecure = 이 웹 사이트는 안전하지 않은 콘텐츠(이미지 등)을 포함하고 있습니다. <label data-l10n-name="link">더 알아보기</label>
 identity-description-passive-loaded-mixed = { -brand-short-name }가 일부 콘텐츠를 차단했지만 아직 안전하지 않은 콘텐츠(이미지 등)가 있습니다. <label data-l10n-name="link">더 알아보기</label>
-identity-description-active-loaded = 이 웹 사이트는 안전하지 않은 콘텐츠(스크립트 등)를 포함하고 있고 사용자의 연결이 보호되지 않습니다.
-identity-description-active-loaded-insecure = 이 사이트에 공유하는 정보(비밀번호, 메시지, 신용 카드 번호 등)를 다른사람이 볼 수 있습니다.
+identity-description-active-loaded = 이 웹 사이트는 안전하지 않은 콘텐츠(스크립트 등)가 포함되어 있으며 이 사이트의 연결은 비공개가 아닙니다.
+identity-description-active-loaded-insecure = 이 사이트에 공유하는 정보(예: 비밀번호, 메시지, 신용 카드 등)를 다른 사람이 볼 수 있습니다.
 identity-learn-more =
     .value = 더 알아보기
 identity-disable-mixed-content-blocking =
@@ -356,13 +446,11 @@ browser-tab-mute =
         [1] 탭 음소거
        *[other] 탭 { $count }개 음소거
     }
-
 browser-tab-unmute =
     { $count ->
         [1] 탭 음소거 해제
        *[other] 탭 { $count }개 음소거 해제
     }
-
 browser-tab-unblock =
     { $count ->
         [1] 탭 재생
@@ -374,7 +462,6 @@ browser-tab-unblock =
 browser-import-button2 =
     .label = 북마크 가져오기…
     .tooltiptext = 다른 브라우저에서 { -brand-short-name }로 북마크를 가져옵니다.
-
 bookmarks-toolbar-empty-message = 빠르게 접근하려면, 여기 북마크 도구 모음에 북마크를 놓으세요. <a data-l10n-name="manage-bookmarks">북마크 관리…</a>
 
 ## WebRTC Pop-up notifications
@@ -392,15 +479,12 @@ popup-select-microphone-icon =
 popup-select-speaker-icon =
     .tooltiptext = 스피커
 popup-all-windows-shared = 화면에 표시되어 있는 모든 창을 공유합니다.
-
 popup-screen-sharing-block =
     .label = 차단
     .accesskey = B
-
 popup-screen-sharing-always-block =
     .label = 항상 차단
     .accesskey = w
-
 popup-mute-notifications-checkbox = 공유하는 동안 웹 사이트 알림 음소거
 
 ## WebRTC window or screen share tab switch warning
@@ -422,7 +506,6 @@ enable-devtools-popup-description = F12 단축키를 사용하려면, 먼저 웹
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = 검색어 또는 주소 입력
-
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -431,7 +514,6 @@ urlbar-placeholder =
 urlbar-placeholder-search-mode-web-2 =
     .placeholder = 웹 검색
     .aria-label = { $name } 검색
-
 # This placeholder is used in search mode with search engines that search a
 # specific site (e.g., Amazon).
 # Variables
@@ -440,27 +522,26 @@ urlbar-placeholder-search-mode-web-2 =
 urlbar-placeholder-search-mode-other-engine =
     .placeholder = 검색어 입력
     .aria-label = { $name } 검색
-
 # This placeholder is used when searching bookmarks.
 urlbar-placeholder-search-mode-other-bookmarks =
     .placeholder = 검색어 입력
     .aria-label = 북마크 검색
-
 # This placeholder is used when searching history.
 urlbar-placeholder-search-mode-other-history =
     .placeholder = 검색어 입력
-    .aria-label = 방문 기록 검색
-
+    .aria-label = 기록 검색
 # This placeholder is used when searching open tabs.
 urlbar-placeholder-search-mode-other-tabs =
     .placeholder = 검색어 입력
     .aria-label = 탭 검색
-
+# This placeholder is used when searching quick actions.
+urlbar-placeholder-search-mode-other-actions =
+    .placeholder = 검색어 입력
+    .aria-label = 작업 검색
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
     .placeholder = { $name } 검색 또는 주소 입력
-
 # Variables
 #  $component (String): the name of the component which forces remote control.
 #    Example: "DevTools", "Marionette", "RemoteAgent".
@@ -470,11 +551,9 @@ urlbar-permissions-granted =
     .tooltiptext = 이 웹 사이트에 추가 권한을 부여했습니다.
 urlbar-switch-to-tab =
     .value = 탭 전환:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = 확장 기능:
-
 urlbar-go-button =
     .tooltiptext = 주소 표시줄의 주소로 이동
 urlbar-page-action-button =
@@ -534,6 +613,7 @@ urlbar-result-action-calculator-result = = { $result }
 urlbar-result-action-search-bookmarks = 북마크 검색
 urlbar-result-action-search-history = 기록 검색
 urlbar-result-action-search-tabs = 탭 검색
+urlbar-result-action-search-actions = 작업 검색
 
 ## Labels shown above groups of urlbar results
 
@@ -541,13 +621,15 @@ urlbar-result-action-search-tabs = 탭 검색
 # urlbar results.
 urlbar-group-firefox-suggest =
     .label = { -firefox-suggest-brand-name }
-
 # A label shown above the search suggestions group in the urlbar results. It
-# should use title case.
+# should use sentence case.
 # Variables
 #  $engine (String): the name of the search engine providing the suggestions
 urlbar-group-search-suggestions =
     .label = { $engine } 제안
+# A label shown above Quick Actions in the urlbar results.
+urlbar-group-quickactions =
+    .label = 빠른 작업
 
 ## Full Screen and Pointer Lock UI
 
@@ -556,12 +638,9 @@ urlbar-group-search-suggestions =
 #  $domain (String): the domain that is full screen, e.g. "mozilla.org"
 fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> 사이트가 전체 화면 모드입니다
 fullscreen-warning-no-domain = 이 문서는 전체 화면 모드입니다
-
-
 fullscreen-exit-button = 전체 화면 종료 (Esc)
 # "esc" is lowercase on mac keyboards, but uppercase elsewhere.
 fullscreen-exit-mac-button = 전체 화면 종료 (esc)
-
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
 # Variables
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
@@ -571,7 +650,6 @@ pointerlock-warning-no-domain = 이 문서가 포인터를 제어하려 합니�
 ## Subframe crash notification
 
 crashed-subframe-message = <strong>이 페이지의 일부가 손상되었습니다.</strong> { -brand-product-name }에게 이 문제를 알리고 더 빨리 해결하려면 보고서를 제출하세요.
-
 # The string for crashed-subframe-title.title should match crashed-subframe-message,
 # but without any markup.
 crashed-subframe-title =
@@ -627,7 +705,8 @@ bookmarks-tools =
     .label = 북마크 도구
 bookmarks-bookmark-edit-panel =
     .label = 이 북마크 편집
-
+bookmarks-subview-edit-bookmark =
+    .label = 이 북마크 편집…
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -641,10 +720,12 @@ bookmarks-toolbar-placeholder =
     .title = 북마크 도구 모음 항목
 bookmarks-toolbar-placeholder-button =
     .label = 북마크 도구 모음 항목
-
 # "Bookmark" is a verb, as in "Add current tab to bookmarks".
 bookmarks-current-tab =
     .label = 현재 탭 북마크
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-subview-bookmark-tab =
+    .label = 현재 탭 북마크…
 
 ## Library Panel items
 
@@ -672,7 +753,6 @@ repair-text-encoding-button =
 toolbar-addons-themes-button =
     .label = 부가 기능 및 테마
     .tooltiptext = 부가 기능 및 테마 관리 ({ $shortcut })
-
 # Variables:
 #  $shortcut (String): keyboard shortcut to open settings (only on macOS)
 toolbar-settings-button =
@@ -682,33 +762,25 @@ toolbar-settings-button =
             [macos] 설정 열기 ({ $shortcut })
            *[other] 설정 열기
         }
-
-## More items
-
 toolbar-overflow-customize-button =
     .label = 도구 모음 사용자 지정…
     .accesskey = C
-
 toolbar-button-email-link =
     .label = 메일로 링크 보내기
     .tooltiptext = 메일로 이 페이지의 링크 보내기
-
 # Variables:
 #  $shortcut (String): keyboard shortcut to save a copy of the page
 toolbar-button-save-page =
     .label = 페이지 저장
     .tooltiptext = 이 페이지 저장 ({ $shortcut })
-
 # Variables:
 #  $shortcut (String): keyboard shortcut to open a local file
 toolbar-button-open-file =
     .label = 파일 열기
     .tooltiptext = 파일 열기 ({ $shortcut })
-
 toolbar-button-synced-tabs =
     .label = 동기화된 탭
     .tooltiptext = 다른 기기의 탭 보기
-
 # Variables
 # $shortcut (string) - Keyboard shortcut to open a new private browsing window
 toolbar-button-new-private-window =
@@ -735,8 +807,6 @@ panel-save-update-password = 비밀번호
 addon-removal-title = { $name } 부가 기능을 제거하시겠습니까?
 addon-removal-abuse-report-checkbox = 이 확장 기능을 { -vendor-short-name }에 신고
 
-## Remote / Synced tabs
-
 ##
 
 # "More" item in macOS share menu
@@ -751,7 +821,6 @@ ui-tour-info-panel-close =
 popups-infobar-allow =
     .label = { $uriHost }의 팝업 허용
     .accesskey = p
-
 popups-infobar-block =
     .label = { $uriHost }의 팝업 차단
     .accesskey = p
@@ -761,11 +830,9 @@ popups-infobar-block =
 popups-infobar-dont-show-message =
     .label = 팝업이 차단될 때 이 메시지를 표시하지 않음
     .accesskey = D
-
 edit-popup-settings =
     .label = 팝업 설정 관리…
     .accesskey = M
-
 picture-in-picture-hide-toggle =
     .label = 화면 속 화면 전환 버튼 숨기기
     .accesskey = H
@@ -776,7 +843,6 @@ picture-in-picture-hide-toggle =
 picture-in-picture-move-toggle-right =
     .label = 화면 속 화면 전환 버튼을 오른쪽으로 이동
     .accesskey = R
-
 picture-in-picture-move-toggle-left =
     .label = 화면 속 화면 전환 버튼을 왼쪽으로 이동
     .accesskey = L
@@ -791,42 +857,32 @@ picture-in-picture-move-toggle-left =
 # this container is a toolbar. This avoids double-speaking.
 navbar-accessible =
     .aria-label = 탐색
-
 navbar-downloads =
     .label = 다운로드
-
 navbar-overflow =
     .tooltiptext = 도구 더보기…
-
 # Variables:
 #   $shortcut (String): keyboard shortcut to print the page
 navbar-print =
     .label = 인쇄
     .tooltiptext = 이 페이지 인쇄… ({ $shortcut })
-
 navbar-home =
     .label = 홈
     .tooltiptext = { -brand-short-name } 홈 페이지
-
 navbar-library =
     .label = 라이브러리
     .tooltiptext = 기록, 저장된 북마크 등 보기
-
 navbar-search =
     .title = 검색
-
 navbar-accessibility-indicator =
     .tooltiptext = 접근성 기능 활성화됨
-
 # Name for the tabs toolbar as spoken by screen readers. The word
 # "toolbar" is appended automatically and should not be included in
 # in the string
 tabs-toolbar =
     .aria-label = 브라우저 탭
-
 tabs-toolbar-new-tab =
     .label = 새 탭
-
 tabs-toolbar-list-all-tabs =
     .label = 탭 전체 목록
     .tooltiptext = 탭 전체 목록
@@ -843,3 +899,11 @@ data-reporting-notification-message = 여러분이 보다 나은 경험을 할 �
 data-reporting-notification-button =
     .label = 공유할 데이터 선택
     .accesskey = C
+# Label for the indicator shown in the private browsing window titlebar.
+private-browsing-indicator-label = 사생활 보호 모드
+
+## Unified extensions (toolbar) button
+
+unified-extensions-button =
+    .label = 확장 기능
+    .tooltiptext = 확장 기능
