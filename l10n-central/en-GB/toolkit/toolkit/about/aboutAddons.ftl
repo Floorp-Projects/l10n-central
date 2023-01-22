@@ -292,7 +292,17 @@ theme-disabled-heading = Disabled
 theme-disabled-heading2 = Saved Themes
 theme-monochromatic-heading = Colourways
 theme-monochromatic-subheading = Vibrant new colourways from { -brand-product-name }. Available for a limited time.
+# Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
 theme-colorways-button = Try Colourways
+colorway-collection-independent-voices-subheading = Make { -brand-short-name } feel a little more you.
+# Variables:
+#   $expiryDate (string) - date on which the colorway collection expires.
+colorway-collection-expiry-date-span = Expires { DATETIME($expiryDate, month: "long", day: "numeric") }
+# Refers to the button label for the colorways card when a user has a colorway theme enabled.
+theme-colorways-button-colorway-enabled = Change Colourway
+# Variables:
+#   $expiryDate (string) - date on which the colorway collection expires. When formatting this, you may omit the year, only exposing the month and day, as colorway collections will always expire within a year.
+colorway-collection-expiry-label = Expires { DATETIME($expiryDate, month: "long", day: "numeric") }
 plugin-enabled-heading = Enabled
 plugin-disabled-heading = Disabled
 dictionary-enabled-heading = Enabled
@@ -406,6 +416,7 @@ addon-page-options-button =
 # Variables:
 #   $version (String): application version.
 details-notification-incompatible = { $name } is incompatible with { -brand-short-name } { $version }.
+details-notification-incompatible-link = More Information
 details-notification-unsigned-and-disabled = { $name } could not be verified for use in { -brand-short-name } and has been disabled.
 details-notification-unsigned-and-disabled-link = More Information
 details-notification-unsigned = { $name } could not be verified for use in { -brand-short-name }. Proceed with caution.
