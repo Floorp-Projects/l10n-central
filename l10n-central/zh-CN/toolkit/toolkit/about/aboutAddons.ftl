@@ -281,7 +281,17 @@ theme-disabled-heading = 已禁用
 theme-disabled-heading2 = 保存的主题
 theme-monochromatic-heading = 配色
 theme-monochromatic-subheading = 元气满满的 { -brand-product-name } 新配色，限时提供。
+# Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
 theme-colorways-button = 配色随心换
+colorway-collection-independent-voices-subheading = 活力十足的 { -brand-short-name }。
+# Variables:
+#   $expiryDate (string) - date on which the colorway collection expires.
+colorway-collection-expiry-date-span = { DATETIME($expiryDate, month: "long", day: "numeric") }到期
+# Refers to the button label for the colorways card when a user has a colorway theme enabled.
+theme-colorways-button-colorway-enabled = 更改配色
+# Variables:
+#   $expiryDate (string) - date on which the colorway collection expires. When formatting this, you may omit the year, only exposing the month and day, as colorway collections will always expire within a year.
+colorway-collection-expiry-label = { DATETIME($expiryDate, month: "long", day: "numeric") }到期
 plugin-enabled-heading = 已启用
 plugin-disabled-heading = 已禁用
 dictionary-enabled-heading = 已启用
@@ -394,6 +404,7 @@ addon-page-options-button =
 # Variables:
 #   $version (String): application version.
 details-notification-incompatible = { $name } 不兼容 { -brand-short-name } { $version }。
+details-notification-incompatible-link = 更多信息
 details-notification-unsigned-and-disabled = { $name } 未通过针对是否适用于 { -brand-short-name } 的验证，现已被禁用。
 details-notification-unsigned-and-disabled-link = 了解详情
 details-notification-unsigned = { $name } 未通过针对是否适用于 { -brand-short-name } 的验证。请谨慎。

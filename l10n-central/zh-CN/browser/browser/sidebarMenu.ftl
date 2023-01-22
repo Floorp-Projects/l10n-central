@@ -3,13 +3,16 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 sidebar-menu-bookmarks =
-  .label = 书签
+    .label = 书签
 
 sidebar-menu-history =
-  .label = 历史
+    .label = 历史
 
 sidebar-menu-synced-tabs =
-  .label = 受同步的标签页
+    .label = 受同步的标签页
 
 sidebar-menu-close =
-  .label = 关闭侧栏
+    .label = 关闭侧栏
+
+sidebar-close-button =
+    .tooltiptext = 关闭侧栏

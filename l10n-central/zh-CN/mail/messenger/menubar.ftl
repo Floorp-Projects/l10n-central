@@ -17,6 +17,27 @@ menu-addons-and-themes =
 
 ## Help Menu
 
+menu-help-help-title =
+    .label = 帮助
+    .accesskey = H
+menu-help-get-help =
+    .label = 获取帮助
+    .accesskey = H
+menu-help-explore-features =
+    .label = 探索功能
+    .accesskey = F
+menu-help-shortcuts =
+    .label = 键盘快捷键
+    .accesskey = K
+menu-help-get-involved =
+    .label = 参与进来
+    .accesskey = G
+menu-help-donation =
+    .label = 向我们捐款
+    .accesskey = D
+menu-help-share-feedback =
+    .label = 分享想法和反馈
+    .accesskey = S
 menu-help-enter-troubleshoot-mode =
     .label = 排障模式…
     .accesskey = T
@@ -26,6 +47,12 @@ menu-help-exit-troubleshoot-mode =
 menu-help-more-troubleshooting-info =
     .label = 更多排障信息
     .accesskey = M
+menu-help-troubleshooting-info =
+    .label = 排障信息
+    .accesskey = I
+menu-help-about-product =
+    .label = 关于 { -brand-short-name }
+    .accesskey = A
 
 ## Mail Toolbar
 
@@ -53,6 +80,15 @@ menu-view-repair-text-encoding =
 menu-font-size-label =
     .label = 字号
     .accesskey = o
+menuitem-font-size-enlarge =
+    .label = 增大字号
+    .accesskey = I
+menuitem-font-size-reduce =
+    .label = 减小字号
+    .accesskey = D
+menuitem-font-size-reset =
+    .label = 重置字号
+    .accesskey = R
 mail-uidensity-label =
     .label = 密度
     .accesskey = D

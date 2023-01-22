@@ -76,6 +76,8 @@ perftools-thread-render-backend =
     .title = WebRender 的 RenderBackend 线程
 perftools-thread-paint-worker =
     .title = 启用非主线程绘制时，进行绘制的线程
+perftools-thread-timer =
+    .title = 线程处理定时器（setTimeout、setInterval、nsITimer）
 perftools-thread-style-thread =
     .title = 样式计算会拆分在多个线程中进行
 pref-thread-stream-trans =
@@ -108,16 +110,9 @@ perftools-tools-threads-input-label =
     .title = 下方列表是要在分析器中测量性能的线程名称（以逗号分隔）。名称须与要测量的线程的名称部分匹配，且对空格敏感。
 
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
-## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
-## preferences are true.
-
-
-## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## devtools.performance.new-panel-onboarding preference is true.
 
 perftools-onboarding-message = <b>新变化</b>：{ -profiler-brand-name }现已集成于开发者工具。<a>详细了解</a>这个功能强大的新工具。
-# `options-context-advanced-settings` is defined in toolbox-options.ftl
-perftools-onboarding-reenable-old-panel = （短期内，您仍可以通过<a>{ options-context-advanced-settings }</a>访问旧的“性能”面板）
 perftools-onboarding-close-button =
     .aria-label = 关闭导览消息
 
@@ -129,7 +124,7 @@ perftools-onboarding-close-button =
 # The same labels and descriptions are also defined in appmenu.ftl.
 
 perftools-presets-web-developer-label = Web 开发者
-perftools-presets-web-developer-description = 推荐在对大部分 Web 应用程序调试时使用，开销较少。
+perftools-presets-web-developer-description = 推荐在调试大部分 Web 应用程序时使用，开销较少。
 perftools-presets-firefox-label = { -brand-shorter-name }
 perftools-presets-firefox-description = 推荐在分析 { -brand-shorter-name } 性能时使用。
 perftools-presets-graphics-label = 图形
@@ -138,6 +133,9 @@ perftools-presets-media-label = 媒体
 perftools-presets-media-description2 = 推荐在排查 { -brand-shorter-name } 音视频 Bug 时使用。
 perftools-presets-networking-label = 联网
 perftools-presets-networking-description = 推荐在排查 { -brand-shorter-name } 联网 Bug 时使用。
+# "Power" is used in the sense of energy (electricity used by the computer).
+perftools-presets-power-label = 功率
+perftools-presets-power-description = 推荐在排查 { -brand-shorter-name } 耗电 Bug 时使用，开销较少。
 perftools-presets-custom-label = 自定义
 
 ##
