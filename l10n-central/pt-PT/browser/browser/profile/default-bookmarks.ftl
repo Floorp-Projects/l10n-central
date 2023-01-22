@@ -17,7 +17,7 @@ default-bookmarks-toolbarfolder-description = Adicione os marcadores a esta past
 default-bookmarks-getting-started = Começar
 
 # Firefox links folder name
-default-bookmarks-firefox-heading = Ablaze Floorp
+default-bookmarks-firefox-heading = Mozilla Firefox
 
 # link title for https://www.mozilla.org/firefox/help/
 default-bookmarks-firefox-get-help = Obter ajuda
