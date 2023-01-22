@@ -4,16 +4,16 @@
 
 <!-- extracted from AccountManager.xhtml -->
 
-<!ENTITY accountManagerTitle.label "Configurações da conta">
+<!ENTITY accountManagerTitle.label "Configurações de contas">
 <!ENTITY  accountManagerCloseButton.label "Fechar">
 
 <!ENTITY accountActionsButton.label "Ações de contas">
 <!ENTITY accountActionsButton.accesskey "A">
 <!ENTITY addMailAccountButton.label "Adicionar conta de email…">
 <!ENTITY addMailAccountButton.accesskey "N">
-<!ENTITY addIMAccountButton.label "Nova conta de conversa…">
+<!ENTITY addIMAccountButton.label "Adicionar conta de conversa…">
 <!ENTITY addIMAccountButton.accesskey "v">
-<!ENTITY addFeedAccountButton.label "Nova conta RSS…">
+<!ENTITY addFeedAccountButton.label "Adicionar conta de canal de informações…">
 <!ENTITY addFeedAccountButton.accesskey "R">
 <!ENTITY setDefaultButton.label "Definir como padrão">
 <!ENTITY setDefaultButton.accesskey "D">
@@ -21,5 +21,3 @@
 <!ENTITY removeButton.accesskey "R">
 
 <!ENTITY addonsButton.label "Extensões e Temas">
-
-<!-- AccountManager.xhtml -->

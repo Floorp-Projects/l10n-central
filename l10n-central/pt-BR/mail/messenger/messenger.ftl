@@ -46,8 +46,8 @@ redirect-msg-button =
 ## Folder Pane
 
 folder-pane-toolbar =
-    .toolbarname = Barra de ferramentas do painel de pastas
-    .accesskey = B
+    .toolbarname = Barra do painel de pastas
+    .accesskey = p
 folder-pane-toolbar-options-button =
     .tooltiptext = Opções do painel de pastas
 folder-pane-header-label = Pastas
@@ -192,9 +192,9 @@ decrypt-and-copy-failures = { $failures } de { $total } mensagens não puderam s
 ## Spaces toolbar
 
 spaces-toolbar-element =
-    .toolbarname = Barra de espaços
-    .aria-label = Barra de espaços
-    .aria-description = Barra de ferramentas vertical para alternar entre espaços diferentes. Use as teclas de setas para navegar nos botões disponíveis.
+    .toolbarname = Barra de áreas
+    .aria-label = Barra de áreas
+    .aria-description = Barra de ferramentas vertical para alternar entre áreas diferentes. Use as teclas de setas para navegar nos botões disponíveis.
 spaces-toolbar-button-mail2 =
     .title = Email
 spaces-toolbar-button-address-book2 =
@@ -206,13 +206,13 @@ spaces-toolbar-button-tasks2 =
 spaces-toolbar-button-chat2 =
     .title = Conversa
 spaces-toolbar-button-overflow =
-    .title = Mais espaços…
+    .title = Mais áreas…
 spaces-toolbar-button-settings2 =
     .title = Configurações
 spaces-toolbar-button-hide =
-    .title = Ocultar barra de espaços
+    .title = Ocultar barra de áreas
 spaces-toolbar-button-show =
-    .title = Exibir barra de espaços
+    .title = Exibir barra de áreas
 spaces-context-new-tab-item =
     .label = Abrir em nova aba
 spaces-context-new-window-item =
@@ -224,14 +224,14 @@ spaces-context-switch-tab-item =
 settings-context-open-settings-item2 =
     .label = Configurações
 settings-context-open-account-settings-item2 =
-    .label = Configurações da conta
+    .label = Configurações de contas
 settings-context-open-addons-item2 =
     .label = Extensões e temas
 
 ## Spaces toolbar pinned tab menupopup
 
 spaces-toolbar-pinned-tab-button =
-    .tooltiptext = Abrir menu de espaços
+    .tooltiptext = Menu de áreas
 spaces-pinned-button-menuitem-mail =
     .label = { spaces-toolbar-button-mail.title }
 spaces-pinned-button-menuitem-address-book =
@@ -243,6 +243,18 @@ spaces-pinned-button-menuitem-tasks =
 spaces-pinned-button-menuitem-chat =
     .label = { spaces-toolbar-button-chat.title }
 spaces-pinned-button-menuitem-settings =
+    .label = { spaces-toolbar-button-settings2.title }
+spaces-pinned-button-menuitem-mail2 =
+    .label = { spaces-toolbar-button-mail2.title }
+spaces-pinned-button-menuitem-address-book2 =
+    .label = { spaces-toolbar-button-address-book2.title }
+spaces-pinned-button-menuitem-calendar2 =
+    .label = { spaces-toolbar-button-calendar2.title }
+spaces-pinned-button-menuitem-tasks2 =
+    .label = { spaces-toolbar-button-tasks2.title }
+spaces-pinned-button-menuitem-chat2 =
+    .label = { spaces-toolbar-button-chat2.title }
+spaces-pinned-button-menuitem-settings2 =
     .label = { spaces-toolbar-button-settings2.title }
 spaces-pinned-button-menuitem-show =
     .label = { spaces-toolbar-button-show.title }
@@ -259,7 +271,7 @@ chat-button-unread-messages = { $count }
 
 menuitem-customize-label =
     .label = Personalizar…
-spaces-customize-panel-title = Configurações da barra de espaços
+spaces-customize-panel-title = Configurações da barra de áreas
 spaces-customize-background-color = Cor de fundo
 spaces-customize-icon-color = Cor dos botões
 # The background color used on the buttons of the spaces toolbar when they are

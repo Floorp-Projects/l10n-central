@@ -83,7 +83,7 @@ update-in-progress-ok-button = &Descartar
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Continuar
-account-button = Configurações da conta
+account-button = Configurações de contas
 open-addons-sidebar-button = Extensões e temas
 
 ## OS Authentication dialog
@@ -546,7 +546,7 @@ passwords-description = O { -brand-short-name } pode memorizar nomes de usuário
 passwords-button =
     .label = Senhas memorizadas…
     .accesskey = S
-primary-password-description = Uma senha principal protege todas as suas senhas, mas você deve digitá-la uma vez por sessão.
+primary-password-description = Uma senha principal protege todas as suas senhas, mas você deve digitar uma vez por sessão.
 primary-password-label =
     .label = Usar uma senha principal
     .accesskey = U
@@ -560,10 +560,10 @@ junk-label =
     .label = Ao marcar mensagens como spam:
     .accesskey = A
 junk-move-label =
-    .label = Movê-las para a pasta “Spam” da conta
+    .label = Mover para a pasta “Spam” da conta
     .accesskey = o
 junk-delete-label =
-    .label = Excluí-las
+    .label = Excluir
     .accesskey = x
 junk-read-label =
     .label = Marcar como lidas as mensagens definidas como spam
@@ -644,13 +644,13 @@ notification-empty =
 notification-type-label =
     .label =
         { PLATFORM() ->
-            [macos] Animar o ícone da dock
-           *[other] Piscar o item da barra de tarefas
+            [macos] Animar o ícone no dock
+           *[other] Piscar o item na barra de tarefas
         }
     .accesskey =
         { PLATFORM() ->
             [macos] o
-           *[other] f
+           *[other] P
         }
 chat-play-sound-label =
     .label = Reproduzir um som

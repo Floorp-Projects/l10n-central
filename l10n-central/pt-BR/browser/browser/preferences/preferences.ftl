@@ -47,7 +47,7 @@ pane-experimental-description2 = Alterar configurações avançadas pode afetar 
 pane-experimental-reset =
     .label = Restaurar padrão
     .accesskey = R
-help-button-label = Suporte Firefox
+help-button-label = Suporte { -brand-short-name }
 addons-button-label = Extensões e Temas
 focus-search =
     .key = f
@@ -486,10 +486,12 @@ home-newtabs-mode-label = Novas abas
 home-restore-defaults =
     .label = Restaurar padrão
     .accesskey = R
-# "Floorp" should be treated as a brand and kept in English,
+# "Firefox" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
     .label = Página inicial do Firefox (padrão)
+home-mode-choice-default-fx =
+    .label = { -firefox-home-brand-name } (padrão)
 home-mode-choice-custom =
     .label = URLs personalizadas...
 home-mode-choice-blank =
@@ -511,10 +513,12 @@ choose-bookmark =
     .label = Usar favorito…
     .accesskey = f
 
-## Home Section - Floorp HomeContent Customization
+## Home Section - Firefox Home Content Customization
 
 home-prefs-content-header = Conteúdo da página inicial do Firefox
 home-prefs-content-description = Escolha que conteúdo você quer na página inicial do Firefox.
+home-prefs-content-header2 = Conteúdo da { -firefox-home-brand-name }
+home-prefs-content-description2 = Escolha que conteúdo você quer na { -firefox-home-brand-name }.
 home-prefs-search-header =
     .label = Campo de pesquisa na web
 home-prefs-shortcuts-header =
@@ -535,6 +539,8 @@ home-prefs-recommended-by-description-new = Conteúdo excepcional selecionado pe
 home-prefs-recommended-by-learn-more = Como funciona
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Histórias patrocinadas
+home-prefs-recommended-by-option-recent-saves =
+    .label = Mostrar salvamentos recentes
 home-prefs-highlights-option-visited-pages =
     .label = Páginas visitadas
 home-prefs-highlights-options-bookmarks =
@@ -827,8 +833,8 @@ history-header = Histórico
 # "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
-#   - Simply as "Floorp", moving the verb into each option.
-#     This will result in "Floorp" + "Will remember history", etc.
+#   - Simply as "Firefox", moving the verb into each option.
+#     This will result in "Firefox" + "Will remember history", etc.
 #   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = O { -brand-short-name } irá
     .accesskey = i
@@ -927,7 +933,11 @@ addressbar-locbar-topsites-option =
 addressbar-locbar-engines-option =
     .label = Mecanismos de pesquisa
     .accesskey = a
+addressbar-locbar-quickactions-option =
+    .label = Ações rápidas
+    .accesskey = A
 addressbar-suggestions-settings = Alterar preferências de sugestões de mecanismos de pesquisa
+addressbar-quickactions-learn-more = Saiba mais
 
 ## Privacy Section - Content Blocking
 
@@ -956,15 +966,16 @@ content-blocking-etp-standard-desc = Balanceado entre proteção e desempenho. P
 content-blocking-etp-strict-desc = Proteção reforçada, mas pode atrapalhar alguns sites ou conteúdos.
 content-blocking-etp-custom-desc = Escolha que rastreadores e scripts bloquear.
 content-blocking-etp-blocking-desc = { -brand-short-name } bloqueia o seguinte:
-content-blocking-private-windows = Conteúdo de rastreamento em janelas privativas
+content-blocking-private-windows = Conteúdo com rastreamento em janelas privativas
 content-blocking-cross-site-cookies-in-all-windows = Cookies entre sites em todas as janelas (inclui cookies de rastreamento)
+content-blocking-cross-site-cookies-in-all-windows2 = Cookies entre sites em todas as janelas
 content-blocking-cross-site-tracking-cookies = Cookies de rastreamento entre sites
 content-blocking-all-cross-site-cookies-private-windows = Cookies entre sites em janelas privativas
 content-blocking-cross-site-tracking-cookies-plus-isolate = Cookies de rastreamento entre sites e isolar os cookies restantes
 content-blocking-social-media-trackers = Rastreadores de mídias sociais
 content-blocking-all-cookies = Todos os cookies
 content-blocking-unvisited-cookies = Cookies de sites não visitados
-content-blocking-all-windows-tracking-content = Conteúdo de rastreamento em todas as janelas
+content-blocking-all-windows-tracking-content = Conteúdo com rastreamento em todas as janelas
 content-blocking-all-third-party-cookies = Todos os cookies de terceiros
 content-blocking-cryptominers = Criptomineradores
 content-blocking-fingerprinters = Fingerprinters (rastreadores de identidade digital)
@@ -976,6 +987,7 @@ content-blocking-etp-standard-tcp-rollout-checkbox =
 # "Contains" here means "isolates", "limits".
 content-blocking-etp-standard-tcp-rollout-description = A proteção total contra cookies isola os cookies do site em que você está, assim os rastreadores não conseguem usá-los para te seguir de um site para outro.
 content-blocking-etp-standard-tcp-rollout-learn-more = Saiba mais
+content-blocking-etp-standard-tcp-title = Inclui a proteção total contra cookies, nosso recurso de privacidade mais poderoso já feito
 content-blocking-warning-title = Atenção!
 content-blocking-and-isolating-etp-warning-description-2 = Esta configuração pode fazer com que alguns sites não exibam conteúdo ou não funcionem corretamente. Se um site parece ter sido afetado, você pode desativar a proteção contra rastreamento nesse site para carregar todo o conteúdo.
 content-blocking-warning-learn-how = Saiba como
@@ -984,7 +996,7 @@ content-blocking-reload-tabs-button =
     .label = Recarregar todas as abas
     .accesskey = R
 content-blocking-tracking-content-label =
-    .label = Conteúdo de rastreamento
+    .label = Conteúdo com rastreamento
     .accesskey = C
 content-blocking-tracking-protection-option-all-windows =
     .label = Em todas as janelas
@@ -1055,7 +1067,7 @@ permissions-block-popups-exceptions-button =
     .accesskey = E
     .searchkeywords = popup
 permissions-addon-install-warning =
-    .label = Avisar quando sites tentarem instalar extensões
+    .label = Avisar quando um site tentar instalar extensões
     .accesskey = A
 permissions-addon-exceptions =
     .label = Exceções…
@@ -1083,6 +1095,12 @@ addon-recommendations-link = Saiba mais
 collection-health-report-disabled = O relatório de dados está desativado nesta configuração
 collection-backlogged-crash-reports-with-link = Permitir que o { -brand-short-name } envie, em seu nome, relatórios acumulados de falhas <a data-l10n-name="crash-reports-link">Saiba mais</a>
     .accesskey = f
+privacy-segmentation-section-header = Novos recursos que aprimoram sua navegação
+privacy-segmentation-section-description = Quando oferecemos recursos que usam seus dados para oferecer uma experiência de uso mais pessoal:
+privacy-segmentation-radio-off =
+    .label = Usar recomendações do { -brand-product-name }
+privacy-segmentation-radio-on =
+    .label = Mostrar informações detalhadas
 
 ## Privacy Section - Security
 ##
