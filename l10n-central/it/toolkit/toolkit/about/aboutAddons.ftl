@@ -343,11 +343,9 @@ theme-monochromatic-heading = Tonalità
 theme-monochromatic-subheading = Nuove vibranti tonalità da { -brand-product-name }. Disponibili per un periodo limitato.
 
 theme-colorways-button = Prova nuove tonalità
+theme-colorways-button-colorway-enabled = Cambia tonalità
 
-colorway-collection-independent-voices-subheading = Rendi { -brand-short-name } un po' più tuo.
-# Variables:
-#   $expiryDate (string) - date on which the colorway collection expires.
-colorway-collection-expiry-date-span = Scadenza { DATETIME($expiryDate, month: "long", day: "numeric") }
+colorway-collection-expiry-label = Scade il { DATETIME($expiryDate, month: "long", day: "numeric") }
 
 plugin-enabled-heading = Attivi
 plugin-disabled-heading = Disattivati
@@ -466,6 +464,8 @@ addon-page-options-button =
 # Variables:
 #   $version (String): application version.
 details-notification-incompatible = { $name } non è compatibile con { -brand-short-name } { $version }.
+
+details-notification-incompatible-link = Ulteriori informazioni
 
 details-notification-unsigned-and-disabled = { $name } è stato disattivato in quanto non è verificato per l’utilizzo in { -brand-short-name }.
 details-notification-unsigned-and-disabled-link = Ulteriori informazioni

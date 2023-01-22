@@ -8,7 +8,7 @@
 # These are the default window titles everywhere except macOS. The first two
 # attributes are used when the web content opened has no title:
 #
-# default - "Ablaze Floorp"
+# default - "Mozilla Firefox"
 # private - "Mozilla Firefox (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
@@ -19,11 +19,16 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (Navigazione anonima)
     .data-content-title-default = { $content-title } – { -brand-full-name }
     .data-content-title-private = { $content-title } – { -brand-full-name } (Navigazione anonima)
+browser-main-window-window-titles =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } Navigazione anonima
+    .data-content-title-default = { $content-title } – { -brand-full-name }
+    .data-content-title-private = { $content-title } – { -brand-full-name } Navigazione anonima
 
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
-# "default" – "Ablaze Floorp"
+# "default" – "Mozilla Firefox"
 # "private" – "Mozilla Firefox – (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
@@ -39,12 +44,19 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } – (Navigazione anonima)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } – (Navigazione anonima)
+browser-main-window-mac-window-titles =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } – Navigazione anonima
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } – Navigazione anonima
 
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
 # `browser-main-window` and `browser-main-window-mac`.
 browser-main-window-title = { -brand-full-name }
+
+private-browsing-shortcut-text = { -brand-short-name } – Navigazione anonima
 
 ##
 
@@ -122,6 +134,7 @@ urlbar-tabtosearch-onboard = Seleziona questa scorciatoia per trovare ciò che t
 urlbar-search-mode-bookmarks = Segnalibri
 urlbar-search-mode-tabs = Schede
 urlbar-search-mode-history = Cronologia
+urlbar-search-mode-actions = Azioni
 
 ##
 
@@ -166,6 +179,12 @@ page-action-manage-extension =
     .label = Gestisci estensione…
 page-action-remove-extension =
     .label = Rimuovi estensione
+page-action-manage-extension2 =
+    .label = Gestisci estensione…
+    .accesskey = G
+page-action-remove-extension2 =
+    .label = Rimuovi estensione
+    .accesskey = v
 
 ## Auto-hide Context Menu
 
@@ -228,6 +247,46 @@ search-one-offs-tabs =
     .tooltiptext = Schede ({ $restrict })
 search-one-offs-history =
     .tooltiptext = Cronologia ({ $restrict })
+search-one-offs-actions =
+    .tooltiptext = Azioni ({ $restrict })
+
+## QuickActions are shown in the urlbar as the user types a matching string
+
+quickactions-addons = Visualizza componenti aggiuntivi
+quickactions-cmd-addons = componenti aggiuntivi, estensioni, temi
+quickactions-cmd-addons2 = componenti aggiuntivi
+quickactions-extensions = Gestisci estensioni
+quickactions-cmd-extensions = estensioni
+quickactions-plugins = Gestisci plugin
+quickactions-cmd-plugins = plugin
+quickactions-themes = Gestisci temi
+quickactions-cmd-themes = temi
+quickactions-bookmarks = Visualizza segnalibri
+quickactions-cmd-bookmarks = segnalibri
+quickactions-clearhistory = Cancella cronologia
+quickactions-cmd-clearhistory = cancella cronologia
+quickactions-downloads = Apri download
+quickactions-cmd-downloads = download
+quickactions-inspector = Apri Analisi pagina
+quickactions-cmd-inspector = analisi pagina, devtools, sviluppatori
+quickactions-logins = Visualizza credenziali
+quickactions-cmd-logins = credenziali, password
+quickactions-print = Stampa
+quickactions-cmd-print = stampa
+quickactions-private = Apri finestra in Navigazione anonima
+quickactions-cmd-private = navigazione anonima, incognito
+quickactions-refresh = Ripristina { -brand-short-name }
+quickactions-cmd-refresh = ripristina
+quickactions-restart = Riavvia { -brand-short-name }
+quickactions-cmd-restart = riavvia
+quickactions-screenshot2 = Cattura schermata
+quickactions-cmd-screenshot = schermata, screenshot
+quickactions-settings = Apri impostazioni
+quickactions-cmd-settings = impostazioni, preferenze, opzioni
+quickactions-update = Aggiorna { -brand-short-name }
+quickactions-cmd-update = aggiorna
+quickactions-viewsource = Visualizza sorgente
+quickactions-cmd-viewsource = visualizza sorgente, sorgente
 
 ## Bookmark Panel
 
@@ -455,6 +514,11 @@ urlbar-placeholder-search-mode-other-tabs =
     .placeholder = Immetti i termini di ricerca
     .aria-label = Cerca nelle schede
 
+# This placeholder is used when searching quick actions.
+urlbar-placeholder-search-mode-other-actions =
+  .placeholder = Immetti i termini di ricerca
+  .aria-label = Cerca nelle azioni
+
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
@@ -533,6 +597,7 @@ urlbar-result-action-calculator-result = = { $result }
 urlbar-result-action-search-bookmarks = Cerca nei segnalibri
 urlbar-result-action-search-history = Cerca nella cronologia
 urlbar-result-action-search-tabs = Cerca nelle schede
+urlbar-result-action-search-actions = Cerca nelle azioni
 
 ## Labels shown above groups of urlbar results
 
@@ -547,6 +612,10 @@ urlbar-group-firefox-suggest =
 #  $engine (String): the name of the search engine providing the suggestions
 urlbar-group-search-suggestions =
     .label = Suggerimenti da { $engine }
+
+# A label shown above Quick Actions in the urlbar results.
+urlbar-group-quickactions =
+  .label = Azioni rapide
 
 ## Full Screen and Pointer Lock UI
 
@@ -626,6 +695,8 @@ bookmarks-tools =
     .label = Strumenti per i segnalibri
 bookmarks-bookmark-edit-panel =
     .label = Modifica segnalibro
+bookmarks-subview-edit-bookmark =
+    .label = Modifica segnalibro…
 
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
@@ -644,6 +715,8 @@ bookmarks-toolbar-placeholder-button =
 # "Bookmark" is a verb, as in "Add current tab to bookmarks".
 bookmarks-current-tab =
     .label = Aggiungi scheda corrente ai segnalibri
+bookmarks-subview-bookmark-tab =
+    .label = Aggiungi scheda corrente ai segnalibri…
 
 ## Library Panel items
 
@@ -842,3 +915,11 @@ data-reporting-notification-message = Alcune informazioni vengono inviate automa
 data-reporting-notification-button =
     .label = Scegli cosa condividere
     .accesskey = S
+
+private-browsing-indicator-label = Navigazione anonima
+
+## Unified extensions (toolbar) button
+
+unified-extensions-button =
+    .label = Estensioni
+    .tooltiptext = Estensioni

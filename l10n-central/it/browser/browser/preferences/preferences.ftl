@@ -51,7 +51,7 @@ pane-experimental-reset =
     .label = Ripristina predefiniti
     .accesskey = R
 
-help-button-label = Supporto per Firefox
+help-button-label = Supporto per { -brand-short-name }
 addons-button-label = Estensioni e temi
 
 focus-search =
@@ -211,6 +211,7 @@ preferences-web-appearance-description = Alcuni siti web possono adattare il pro
 
 preferences-web-appearance-choice-browser = Tema di { -brand-short-name }
 preferences-web-appearance-choice-system = Tema di sistema
+preferences-web-appearance-choice-auto = Automatico
 preferences-web-appearance-choice-light = Chiaro
 preferences-web-appearance-choice-dark = Scuro
 
@@ -218,10 +219,15 @@ preferences-web-appearance-choice-tooltip-browser =
     .title = Segui il tema di { -brand-short-name } per lo sfondo e i contenuti dei siti.
 preferences-web-appearance-choice-tooltip-system =
     .title = Segui le impostazioni del sistema per lo sfondo e i contenuti dei siti.
+preferences-web-appearance-choice-tooltip-auto =
+  .title = Cambia automaticamente i colori dello sfondo e dei contenuti dei siti in base alle impostazioni del sistema e del tema di { -brand-short-name }.
 preferences-web-appearance-choice-tooltip-light =
     .title = Preferisci una combinazione di colori chiara per lo sfondo e i contenuti dei siti.
 preferences-web-appearance-choice-tooltip-dark =
     .title = Preferisci una combinazione di colori scura per lo sfondo e i contenuti dei siti.
+
+preferences-web-appearance-choice-input-auto =
+  .aria-description = { preferences-web-appearance-choice-tooltip-auto.title }
 
 preferences-web-appearance-choice-input-browser =
     .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
@@ -493,7 +499,7 @@ update-setting-write-failure-title2 = Errore durante il salvataggio delle impost
 
 update-setting-write-failure-message2 =
     Si è verificato un errore e questa modifica non è stata salvata. Per aggiornare le impostazioni è necessario avere i permessi di scrittura sul file indicato in seguito. Dovrebbe essere possibile correggere il problema assegnando al gruppo Utenti il pieno controllo di questo file.
-    
+
     Impossibile scrivere il file: { $path }
 
 update-in-progress-title = Aggiornamento in corso
@@ -607,10 +613,12 @@ home-restore-defaults =
     .label = Ripristina predefiniti
     .accesskey = R
 
-# "Floorp" should be treated as a brand and kept in English,
+# "Firefox" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
     .label = Pagina iniziale di Firefox (predefinita)
+home-mode-choice-default-fx =
+    .label = { -firefox-home-brand-name } (predefinita)
 
 home-mode-choice-custom =
     .label = Indirizzi personalizzati…
@@ -637,10 +645,12 @@ choose-bookmark =
     .label = Usa un segnalibro…
     .accesskey = b
 
-## Home Section - Floorp HomeContent Customization
+## Home Section - Firefox Home Content Customization
 
 home-prefs-content-header = Pagina iniziale di Firefox
 home-prefs-content-description = Scegli i contenuti da visualizzare nella pagina iniziale di Firefox.
+home-prefs-content-header2 = Contenuti per { -firefox-home-brand-name }
+home-prefs-content-description2 = Scegli i contenuti da visualizzare in { -firefox-home-brand-name }.
 
 home-prefs-search-header =
     .label = Ricerca sul Web
@@ -662,6 +672,8 @@ home-prefs-recommended-by-description-new = Contenuti eccezionali a cura di { $p
 home-prefs-recommended-by-learn-more = Come funziona
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Articoli sponsorizzati
+home-prefs-recommended-by-option-recent-saves =
+    .label = Mostra elementi salvati di recente
 
 home-prefs-highlights-option-visited-pages =
     .label = Pagine visitate
@@ -997,8 +1009,8 @@ history-header = Cronologia
 # "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
-#   - Simply as "Floorp", moving the verb into each option.
-#     This will result in "Floorp" + "Will remember history", etc.
+#   - Simply as "Firefox", moving the verb into each option.
+#     This will result in "Firefox" + "Will remember history", etc.
 #   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = Impostazioni cronologia:
     .accesskey = m
@@ -1119,8 +1131,13 @@ addressbar-locbar-topsites-option =
 addressbar-locbar-engines-option =
     .label = Motori di ricerca
     .accesskey = M
+addressbar-locbar-quickactions-option =
+    .label = Azioni rapide
+    .accesskey = z
 
 addressbar-suggestions-settings = Modifica le impostazioni relative ai suggerimenti dei motori di ricerca
+
+addressbar-quickactions-learn-more = Ulteriori informazioni
 
 ## Privacy Section - Content Blocking
 
@@ -1154,6 +1171,7 @@ content-blocking-etp-blocking-desc = { -brand-short-name } blocca i seguenti ele
 
 content-blocking-private-windows = Contenuti traccianti in finestre anonime
 content-blocking-cross-site-cookies-in-all-windows = Cookie intersito in tutte le finestre (inclusi cookie traccianti)
+content-blocking-cross-site-cookies-in-all-windows2 = Cookie intersito in tutte le finestre
 content-blocking-cross-site-tracking-cookies = Cookie traccianti intersito
 content-blocking-all-cross-site-cookies-private-windows = Cookie traccianti intersito in finestre anonime
 content-blocking-cross-site-tracking-cookies-plus-isolate = Cookie traccianti intersito, isola i cookie restanti
@@ -1174,6 +1192,8 @@ content-blocking-etp-standard-tcp-rollout-checkbox =
 # "Contains" here means "isolates", "limits".
 content-blocking-etp-standard-tcp-rollout-description = La Protezione totale per i cookie isola i cookie del sito in cui ti trovi. In questo modo non è possibile utilizzarli per seguirti da un sito all’altro.
 content-blocking-etp-standard-tcp-rollout-learn-more = Ulteriori informazioni
+
+content-blocking-etp-standard-tcp-title = Include Protezione totale per i cookie, lo strumento più potente per la protezione della privacy che abbiamo mai realizzato
 
 content-blocking-warning-title = Attenzione
 content-blocking-and-isolating-etp-warning-description-2 = Questa impostazione potrebbe causare in alcuni siti la mancata visualizzazione di contenuti o altri problemi di funzionamento. Se una pagina non viene visualizzata correttamente, provare a disattivare la protezione antitracciamento per quel sito per ricaricare tutti i contenuti.
@@ -1302,6 +1322,16 @@ collection-health-report-disabled = L’invio dei dati è stato disattivato nell
 
 collection-backlogged-crash-reports-with-link = Consenti a { -brand-short-name } di inviare segnalazioni di arresto anomalo in sospeso <a data-l10n-name="crash-reports-link">Ulteriori informazioni</a>
     .accesskey = C
+
+privacy-segmentation-section-header = Nuove funzioni per migliorare la navigazione
+
+privacy-segmentation-section-description = Quando introduciamo nuove funzioni che utilizzano i tuoi dati per offrire un’esperienza più personale:
+
+privacy-segmentation-radio-off =
+    .label = Usa le impostazioni consigliate da { -brand-product-name }
+
+privacy-segmentation-radio-on =
+    .label = Mostra informazioni dettagliate
 
 ## Privacy Section - Security
 ##
