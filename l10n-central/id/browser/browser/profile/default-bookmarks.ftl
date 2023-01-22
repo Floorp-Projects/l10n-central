@@ -17,7 +17,7 @@ default-bookmarks-toolbarfolder-description = Tambahkan markah pada folder ini a
 default-bookmarks-getting-started = Memulai
 
 # Firefox links folder name
-default-bookmarks-firefox-heading = Ablaze Floorp
+default-bookmarks-firefox-heading = Mozilla Firefox
 
 # link title for https://www.mozilla.org/firefox/help/
 default-bookmarks-firefox-get-help = Dapatkan Bantuan

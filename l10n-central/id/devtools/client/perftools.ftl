@@ -82,6 +82,8 @@ perftools-thread-render-backend =
     .title = Thread RenderBackend WebRender
 perftools-thread-paint-worker =
     .title = Saat proses painting di luar utas utama diaktifkan, utas tempat proses painting terjadi
+perftools-thread-timer =
+    .title = Timer penanganan utas (setTimeout, setInterval, nsITimer)
 perftools-thread-style-thread =
     .title = Komputasi gaya dibagi menjadi beberapa thread
 pref-thread-stream-trans =
@@ -99,11 +101,11 @@ perftools-thread-jvm-gecko =
 perftools-thread-jvm-nimbus =
     .title = Utas utama untuk SDK eksperimen Nimbus
 perftools-thread-jvm-default-dispatcher =
-    .title = Dispatcher baku untuk pustaka Kotlin coroutines
+    .title = Dispatcher baku untuk pustaka coroutine Kotlin
 perftools-thread-jvm-glean =
     .title = Utas utama untuk SDK telemetri Glean
 perftools-thread-jvm-arch-disk-io =
-    .title = Dispatcher IO untuk pustaka Kotlin coroutines
+    .title = Dispatcher IO untuk pustaka coroutine Kotlin
 perftools-thread-jvm-pool =
     .title = Utas yang dibuat di kumpulan utas yang tidak bernama
 
@@ -114,16 +116,9 @@ perftools-tools-threads-input-label =
     .title = Nama utas ini berupa daftar yang dipisahkan karakter koma, yang akan digunakan untuk mengaktifkan profiling utas pada profiler. Pencocokan nama juga akan dilakukan secara bagian, tidak secara lengkap pada utas yang disertakan. Karakter spasi pada nama berpengaruh.
 
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
-## both devtools.performance.new-panel-onboarding & devtools.performance.new-panel-enabled
-## preferences are true.
-
-
-## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## devtools.performance.new-panel-onboarding preference is true.
 
 perftools-onboarding-message = <b>Baru</b>: { -profiler-brand-name } telah diintegrasikan ke dalam Alat Pengembang. <a>Pelajari lebih lanjut</a> tentang alat baru yang canggih ini.
-# `options-context-advanced-settings` is defined in toolbox-options.ftl
-perftools-onboarding-reenable-old-panel = (Untuk waktu yang terbatas, Anda dapat mengakses panel Kinerja lawas melalui <a>{ options-context-advanced-settings }</a>)
 perftools-onboarding-close-button =
     .aria-label = Tutup pesan orientasi
 
@@ -144,6 +139,9 @@ perftools-presets-media-label = Media
 perftools-presets-media-description2 = Prasetel untuk menyelidiki bug audio dan video di { -brand-shorter-name }.
 perftools-presets-networking-label = Jaringan
 perftools-presets-networking-description = Prasetel untuk menyelidiki bug jaringan di { -brand-shorter-name }.
+# "Power" is used in the sense of energy (electricity used by the computer).
+perftools-presets-power-label = Daya
+perftools-presets-power-description = Prasetel untuk menyelidiki bug penggunaan daya di { -brand-shorter-name }, dengan overhead rendah.
 perftools-presets-custom-label = Khusus
 
 ##
