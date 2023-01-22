@@ -292,6 +292,10 @@ theme-disabled-heading2 = Temas guardados
 theme-monochromatic-heading = Combinaciones de colores
 theme-monochromatic-subheading = Nuevas combinaciones de vibrantes colores de { -brand-product-name }. Disponible por tiempo limitado.
 theme-colorways-button = Probar Colorways
+colorway-collection-independent-voices-subheading = Haga que { -brand-short-name } sea un poco más como usted.
+# Variables:
+#   $expiryDate (string) - date on which the colorway collection expires.
+colorway-collection-expiry-date-span = Caducidad { DATETIME($expiryDate, month: "long", day: "numeric") }
 plugin-enabled-heading = Habilitado
 plugin-disabled-heading = Deshabilitado
 dictionary-enabled-heading = Habilitado
@@ -405,6 +409,7 @@ addon-page-options-button =
 # Variables:
 #   $version (String): application version.
 details-notification-incompatible = { $name } es incompatible con { -brand-short-name } { $version }.
+details-notification-incompatible-link = Más información
 details-notification-unsigned-and-disabled = { $name } no ha podido ser verificado para su uso en { -brand-short-name } y ha sido desactivado.
 details-notification-unsigned-and-disabled-link = Más información
 details-notification-unsigned = { $name } no se ha podido verificar para su uso en { -brand-short-name }. Proceda con precaución.

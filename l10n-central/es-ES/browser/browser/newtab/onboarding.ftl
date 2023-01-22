@@ -34,7 +34,7 @@ return-to-amo-add-theme-label = Añadir el tema
 onboarding-welcome-steps-indicator =
     .aria-label = Primeros pasos: pantalla { $current } de { $total }
 # "Hero Text" displayed on left side of welcome screen.
-# The "Fire" in "Fire starts here" plays on the "Fire" in "Floorp".
+# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
 # It also signals the passion users bring to Firefox, how they use
 # Firefox to pursue those passions, as well as the boldness in their
 # choice to use Firefox over a larger competitor browser.

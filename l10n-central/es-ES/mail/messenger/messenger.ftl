@@ -40,8 +40,8 @@ quick-filter-toolbarbutton =
     .label = Filtro rápido
     .tooltiptext = Filtrar mensajes
 redirect-msg-button =
-    .label = Reenviar
-    .tooltiptext = Reenvía el mensaje seleccionado
+    .label = Redirigir
+    .tooltiptext = Redirige el mensaje seleccionado
 
 ## Folder Pane
 
@@ -79,7 +79,7 @@ folder-toolbar-toggle-folder-compact-view =
 ## Menu
 
 redirect-msg-menuitem =
-    .label = Reenviar
+    .label = Redirigir
     .accesskey = R
 menu-file-save-as-file =
     .label = Archivo…
@@ -100,12 +100,12 @@ appmenu-help-exit-troubleshoot-mode =
 appmenu-help-more-troubleshooting-info =
     .label = Más información sobre la resolución de problemas
 appmenu-redirect-msg =
-    .label = Reenviar
+    .label = Redirigir
 
 ## Context menu
 
 context-menu-redirect-msg =
-    .label = Reenviar
+    .label = Redirigir
 mail-context-delete-messages =
     .label =
         { $count ->
@@ -119,13 +119,14 @@ context-menu-decrypt-to-folder =
 ## Message header pane
 
 other-action-redirect-msg =
-    .label = Reenviar
+    .label = Redirigir
 message-header-msg-flagged =
     .title = Con estrella
     .aria-label = Con estrella
-message-header-msg-not-flagged =
-    .title = Sin estrella
-    .aria-label = Sin estrella
+# Variables:
+# $address (String) - The email address of the recipient this picture belongs to.
+message-header-recipient-avatar =
+    .alt = Foto de perfil de { $address }.
 
 ## Message header cutomize panel
 
@@ -139,6 +140,16 @@ message-header-button-style-text =
     .label = Texto
 message-header-button-style-icons =
     .label = Iconos
+message-header-show-sender-full-address =
+    .label = Mostrar siempre la dirección completa del remitente
+    .accesskey = i
+message-header-show-sender-full-address-description = La dirección de correo electrónico se mostrará debajo del nombre para mostrar.
+message-header-show-recipient-avatar =
+    .label = Mostrar la foto de perfil del remitente
+    .accesskey = p
+message-header-hide-label-column =
+    .label = Ocultar la columna de etiquetas
+    .accesskey = l
 message-header-large-subject =
     .label = Tema grande
     .accesskey = T
@@ -151,13 +162,6 @@ toolbar-context-menu-manage-extension =
 toolbar-context-menu-remove-extension =
     .label = Eliminar extensión
     .accesskey = n
-
-## Message headers
-
-message-header-address-in-address-book-icon =
-    .alt = La dirección está en la libreta de direcciones
-message-header-address-not-in-address-book-icon =
-    .alt = La dirección no está en la libreta de direcciones
 
 ## Add-on removal warning
 
@@ -215,12 +219,6 @@ spaces-context-new-window-item =
 # $tabName (String) - The name of the tab this item will switch to.
 spaces-context-switch-tab-item =
     .label = Cambiar a { $tabName }
-settings-context-open-settings-item =
-    .label = Abrir ajustes
-settings-context-open-account-settings-item =
-    .label = Abrir ajustes de la cuenta
-settings-context-open-addons-item =
-    .label = Abrir complementos y temas
 settings-context-open-settings-item2 =
     .label = Ajustes
 settings-context-open-account-settings-item2 =
@@ -232,17 +230,17 @@ settings-context-open-addons-item2 =
 
 spaces-toolbar-pinned-tab-button =
     .tooltiptext = Menú de espacios
-spaces-pinned-button-menuitem-mail =
+spaces-pinned-button-menuitem-mail2 =
     .label = { spaces-toolbar-button-mail2.title }
-spaces-pinned-button-menuitem-address-book =
+spaces-pinned-button-menuitem-address-book2 =
     .label = { spaces-toolbar-button-address-book2.title }
-spaces-pinned-button-menuitem-calendar =
+spaces-pinned-button-menuitem-calendar2 =
     .label = { spaces-toolbar-button-calendar2.title }
-spaces-pinned-button-menuitem-tasks =
+spaces-pinned-button-menuitem-tasks2 =
     .label = { spaces-toolbar-button-tasks2.title }
-spaces-pinned-button-menuitem-chat =
+spaces-pinned-button-menuitem-chat2 =
     .label = { spaces-toolbar-button-chat2.title }
-spaces-pinned-button-menuitem-settings =
+spaces-pinned-button-menuitem-settings2 =
     .label = { spaces-toolbar-button-settings2.title }
 spaces-pinned-button-menuitem-show =
     .label = { spaces-toolbar-button-show.title }
