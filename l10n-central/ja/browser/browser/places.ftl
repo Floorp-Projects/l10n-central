@@ -90,6 +90,7 @@ other-bookmarks-folder =
 places-show-in-folder =
     .label = フォルダーで表示
     .accesskey = F
+
 # Variables:
 # $count (number) - The number of elements being selected for removal.
 places-delete-bookmark =
@@ -106,9 +107,6 @@ places-forget-about-this-site-forget = 消去
 places-library =
     .title = ブラウジングライブラリー
     .style = width:750px; height:500px;
-places-library2 =
-    .title = ブラウジングライブラリー
-    .style = min-width:750px; min-height:500px;
 places-organize-button =
     .label = 管理
     .tooltiptext = 履歴とブックマークを管理します

@@ -115,7 +115,7 @@ policy-ExtensionSettings = 拡張機能のインストール全般を管理し�
 
 policy-ExtensionUpdate = 拡張機能の自動更新を有効または無効にします。
 
-policy-FirefoxHome = Floorp Homeの設定を行います。
+policy-FirefoxHome = Firefox Home の設定を行います。
 
 policy-FirefoxHome2 = { -firefox-home-brand-name } の設定を行います。
 
@@ -175,7 +175,7 @@ policy-Permissions2 = カメラ、マイク、位置情報、通知、自動再�
 
 policy-PictureInPicture = ピクチャーインピクチャーを有効または無効にします。
 
-policy-PopupBlocking = 特定のウェブサイトのポップアップ表示を既定で許可します。
+policy-PopupBlocking = 特定のウェブサイトのポッポアップ表示を既定で許可します。
 
 policy-Preferences = 設定のサブセットに対する値を設定してロックします。
 

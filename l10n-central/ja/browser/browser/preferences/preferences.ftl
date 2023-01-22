@@ -172,15 +172,12 @@ preferences-web-appearance-header = ウェブサイトの外観
 preferences-web-appearance-description = 一部のウェブサイトはあなたの設定をもとにカラースキームを適用します。これらのサイトでどのカラースキームを使用するか選択してください。
 preferences-web-appearance-choice-browser = { -brand-short-name } テーマ
 preferences-web-appearance-choice-system = システムテーマ
-preferences-web-appearance-choice-auto = 自動
 preferences-web-appearance-choice-light = Light
 preferences-web-appearance-choice-dark = Dark
 preferences-web-appearance-choice-tooltip-browser =
     .title = { -brand-short-name } のテーマ設定をウェブサイトの背景と内容に適用させる。
 preferences-web-appearance-choice-tooltip-system =
     .title = システムの設定をウェブサイトの背景と内容に適用させる。
-preferences-web-appearance-choice-tooltip-auto =
-    .title = システムの設定と { -brand-short-name } のテーマをもとに、ウェブサイトの背景と内容を自動的に設定する。
 preferences-web-appearance-choice-tooltip-light =
     .title = 明るい外観をウェブサイトの背景と内容に使用する。
 preferences-web-appearance-choice-tooltip-dark =
@@ -189,8 +186,6 @@ preferences-web-appearance-choice-input-browser =
     .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
 preferences-web-appearance-choice-input-system =
     .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
-preferences-web-appearance-choice-input-auto =
-    .aria-description = { preferences-web-appearance-choice-tooltip-auto.title }
 preferences-web-appearance-choice-input-light =
     .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
 preferences-web-appearance-choice-input-dark =
@@ -482,7 +477,7 @@ home-restore-defaults =
 # "Firefox" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
-    .label = Floorp Home(既定)
+    .label = Firefox Home (既定)
 home-mode-choice-default-fx =
     .label = { -firefox-home-brand-name } (既定)
 home-mode-choice-custom =
@@ -506,10 +501,10 @@ choose-bookmark =
     .label = ブックマークを使う...
     .accesskey = B
 
-## Home Section - Floorp HomeContent Customization
+## Home Section - Firefox Home Content Customization
 
-home-prefs-content-header = Floorp Homeコンテンツ
-home-prefs-content-description = Floorp Homeに表示するコンテンツを選びましょう。
+home-prefs-content-header = Firefox Home コンテンツ
+home-prefs-content-description = Firefox Home に表示するコンテンツを選びましょう。
 home-prefs-content-header2 = { -firefox-home-brand-name } コンテンツ
 home-prefs-content-description2 = { -firefox-home-brand-name } に表示するコンテンツを選びましょう。
 home-prefs-search-header =
@@ -703,13 +698,6 @@ sync-choose-what-to-sync-dialog =
     .buttonaccesskeyaccept = S
     .buttonlabelextra2 = 切断...
     .buttonaccesskeyextra2 = D
-sync-choose-what-to-sync-dialog2 =
-    .title = 同期する項目を選択
-    .style = min-width: 36em; min-height: 35em;
-    .buttonlabelaccept = 変更を保存
-    .buttonaccesskeyaccept = S
-    .buttonlabelextra2 = 切断...
-    .buttonaccesskeyextra2 = D
 sync-engine-bookmarks =
     .label = ブックマーク
     .accesskey = m
@@ -813,6 +801,7 @@ forms-windows-sso-desc = 端末の設定でアカウントを管理します
 
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = マスターパスワードを作成するには、Windows でのあなたの資格情報を入力してください。これはアカウントのセキュリティ保護に役立ちます。
+
 # This message can be seen by trying to add a Primary Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These

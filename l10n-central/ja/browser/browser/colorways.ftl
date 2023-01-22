@@ -4,27 +4,27 @@
 
 ## Colorway collections
 
-colorway-collection-independent-voices = 揺るぎない声
-colorway-collection-independent-voices-description = カラーにはカルチャーを変える力があります。テーマコレクション Colorway の最新作は世界をより良い場所にしていく声を称賛します。
+colorway-collection-independent-voices = インディペンデント・ボイス
+colorway-collection-independent-voices-description = カラーはカルチャーを変えることができます。最新のカラーテーマは世界をより良い場所にする声を賞賛します。
 # Used as a subheading for the colorway collection card in about:addons
-colorway-collection-independent-voices-short-description = カラーはカルチャーを変えられる。
+colorway-collection-independent-voices-short-description = カラーでカルチャーが変わる。
 
 ## Colorway names and descriptions
 
-playmaker-colorway-name = Playmaker
-playmaker-colorway-description = 勝利への道を切り開け。あなたのプレーは周囲を巻き込みゲームを盛り上げる。
+playmaker-colorway-name = プレーメーカー
+playmaker-colorway-description = 仲間とともに勝機を掴め！
 
-expressionist-colorway-name = Expressionist
-expressionist-colorway-description = 内なる感情を世界に刻め。あなたの表現に映る歪みが人の心をかき乱す。
+expressionist-colorway-name = エクスプレショニスト
+expressionist-colorway-description = これこそ孤高にして至高の創造。
 
-visionary-colorway-name = Visionary
-visionary-colorway-description = 現状に疑問を投げかけろ。より良い未来に人を動かすのはあなたのビジョンだ。
+visionary-colorway-name = ビジョナリー
+visionary-colorway-description = こままではダメだ！誰かが変えなきゃいかンのだ！
 
-activist-colorway-name = Activist
-activist-colorway-description = 今いる世界をより良い場所に変えていけ。あなたの活動が人を導き同志へ変える。
+activist-colorway-name = アクティビスト
+activist-colorway-description = さあ、新天地へ向かおう！
 
-dreamer-colorway-name = Dreamer
-dreamer-colorway-description = 大胆に幸運を引き寄せろ。夢を掲げるあなたの姿は人の勇気を呼び覚ます。
+dreamer-colorway-name = ドリーマー
+dreamer-colorway-description = 運も実力のうち。
 
-innovator-colorway-name = Innovator
-innovator-colorway-description = あらゆる場所で機会を掴め。あなたがもたらす革新は周囲の人生を震わせる。
+innovator-colorway-name = イノベーター
+innovator-colorway-description = チャンスはいくらでもある。これからだ！

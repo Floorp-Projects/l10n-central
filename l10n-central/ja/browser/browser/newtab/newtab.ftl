@@ -2,7 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-### Floorp Home/ New Tab strings for about:home / about:newtab.
+### Firefox Home / New Tab strings for about:home / about:newtab.
 
 newtab-page-title = 新しいタブ
 newtab-settings-button =
@@ -241,10 +241,6 @@ newtab-pocket-last-card-title = 最後まで読みました！
 newtab-pocket-last-card-desc = 後でもう一度確認してください。
 newtab-pocket-last-card-image =
     .alt = 最後まで読みました
-
-# A save to Pocket button that shows over the card thumbnail on hover.
-newtab-pocket-save = 保存
-newtab-pocket-saved = 保存しました
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.

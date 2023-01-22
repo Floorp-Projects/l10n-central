@@ -28,21 +28,3 @@ more-from-moz-qr-code-firefox-mobile-img =
     .alt = { -brand-product-name } モバイルのダウンロード QR コード
 more-from-moz-button-mozilla-vpn-2 = VPN を入手
 more-from-moz-learn-more-link = 詳細
-
-## Floorp専用
-
-about-floorp = Floorp プロジェクトについて
-about-floorp-description = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> は日本で開発される独立した１つのブラウザーです。Firefox をベースに <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label> の下で開発されています。協力したいですか？ <label data-l10n-name="helpus-donateLink">寄付</label> をご検討ください！
-
-more-from-moz-category =
-  .tooltiptext = Floorp について 
-more-from-moz-title = Ablaze Floorp について
-about-floorp-sub-sub = Floorp
-about-floorp-browser = Floorp プロジェクトについて 
-ablaze-floorp = Ablaze Floorp 10 -Catostylus Mosaicus-
-
-icon-creator = アイコン作成者：<label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> と <label data-l10n-name="brand-logo-twitter">@mwxdxx</label>
-contributors = <label data-l10n-name="about-contributor">貢献者・開発者のリスト</label>もご確認ください！
-
-about-ablaze = Ablaze について
-ablaze-twitter = Ablaze の URL : Twitter <label data-l10n-name="ablaze-twitter-id">@Ablaze_MIRAI</label>　Github : <label data-l10n-name="ablaze-github-id">@Ablaze-MIRAI</label>　alexandriteOS  : <label data-l10n-name="alexandriteos-url">公式サイト</label>
