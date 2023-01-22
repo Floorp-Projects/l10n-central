@@ -47,7 +47,7 @@ pane-experimental-description2 = Thay đổi cài đặt cấu hình nâng cao c
 pane-experimental-reset =
     .label = Khôi phục về mặc định
     .accesskey = R
-help-button-label = Hỗ trợ Firefox
+help-button-label = Hỗ trợ { -brand-short-name }
 addons-button-label = Tiện ích mở rộng & chủ đề
 focus-search =
     .key = f
@@ -108,7 +108,7 @@ startup-header = Khởi động
 always-check-default =
     .label = Luôn kiểm tra xem { -brand-short-name } có phải trình duyệt mặc định không
     .accesskey = y
-is-default = { -brand-short-name } đang là trình duyệt mặc định
+is-default = { -brand-short-name } đang là trình duyệt mặc định của bạn
 is-not-default = { -brand-short-name } không phải là trình duyệt mặc định
 set-as-my-default-browser =
     .label = Đặt làm mặc định…
@@ -172,12 +172,15 @@ preferences-web-appearance-header = Diện mạo trang web
 preferences-web-appearance-description = Một số trang web điều chỉnh bảng màu của họ dựa trên tùy chỉnh của bạn. Chọn bảng màu mà bạn muốn sử dụng cho các trang web đó.
 preferences-web-appearance-choice-browser = Chủ đề { -brand-short-name }
 preferences-web-appearance-choice-system = Chủ đề hệ thống
+preferences-web-appearance-choice-auto = Tự động
 preferences-web-appearance-choice-light = Sáng
 preferences-web-appearance-choice-dark = Tối
 preferences-web-appearance-choice-tooltip-browser =
     .title = Khớp cài đặt chủ đề { -brand-short-name } của bạn cho nền và nội dung trang web.
 preferences-web-appearance-choice-tooltip-system =
     .title = Phù hợp với cài đặt hệ thống của bạn cho hình nền và nội dung trang web.
+preferences-web-appearance-choice-tooltip-auto =
+    .title = Tự động thay đổi hình nền và nội dung trang web dựa trên cài đặt hệ thống và chủ đề { -brand-short-name } của bạn.
 preferences-web-appearance-choice-tooltip-light =
     .title = Sử dụng giao diện sáng cho hình nền và nội dung trang web.
 preferences-web-appearance-choice-tooltip-dark =
@@ -186,6 +189,8 @@ preferences-web-appearance-choice-input-browser =
     .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
 preferences-web-appearance-choice-input-system =
     .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-auto =
+    .aria-description = { preferences-web-appearance-choice-tooltip-auto.title }
 preferences-web-appearance-choice-input-light =
     .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
 preferences-web-appearance-choice-input-dark =
@@ -474,10 +479,12 @@ home-newtabs-mode-label = Thẻ mới
 home-restore-defaults =
     .label = Khôi phục về mặc định
     .accesskey = R
-# "Floorp" should be treated as a brand and kept in English,
+# "Firefox" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
     .label = Trang chủ Firefox (Mặc định)
+home-mode-choice-default-fx =
+    .label = { -firefox-home-brand-name } (Mặc định)
 home-mode-choice-custom =
     .label = Tùy chỉnh URL...
 home-mode-choice-blank =
@@ -499,10 +506,12 @@ choose-bookmark =
     .label = Sử dụng dấu trang…
     .accesskey = B
 
-## Home Section - Floorp HomeContent Customization
+## Home Section - Firefox Home Content Customization
 
 home-prefs-content-header = Nội dung của Trang chủ Firefox
 home-prefs-content-description = Chọn nội dung mà bạn muốn thêm vào Trang chủ Firefox.
+home-prefs-content-header2 = Nội dung { -firefox-home-brand-name }
+home-prefs-content-description2 = Chọn nội dung bạn muốn trên màn hình { -firefox-home-brand-name } của mình.
 home-prefs-search-header =
     .label = Tìm kiếm web
 home-prefs-shortcuts-header =
@@ -523,6 +532,8 @@ home-prefs-recommended-by-description-new = Nội dung đặc biệt do { $provi
 home-prefs-recommended-by-learn-more = Nó hoạt động như thế nào
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Bài viết quảng cáo
+home-prefs-recommended-by-option-recent-saves =
+    .label = Hiển thị các mục đã lưu gần đây
 home-prefs-highlights-option-visited-pages =
     .label = Trang đã truy cập
 home-prefs-highlights-options-bookmarks =
@@ -811,8 +822,8 @@ history-header = Lịch sử
 # "Firefox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
-#   - Simply as "Floorp", moving the verb into each option.
-#     This will result in "Floorp" + "Will remember history", etc.
+#   - Simply as "Firefox", moving the verb into each option.
+#     This will result in "Firefox" + "Will remember history", etc.
 #   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = { -brand-short-name } sẽ
     .accesskey = w
@@ -911,7 +922,11 @@ addressbar-locbar-topsites-option =
 addressbar-locbar-engines-option =
     .label = Công cụ tìm kiếm
     .accesskey = t
+addressbar-locbar-quickactions-option =
+    .label = Hành động nhanh
+    .accesskey = Q
 addressbar-suggestions-settings = Thay đổi tùy chỉnh phần gợi ý của công cụ tìm kiếm
+addressbar-quickactions-learn-more = Tìm hiểu thêm
 
 ## Privacy Section - Content Blocking
 
@@ -942,6 +957,7 @@ content-blocking-etp-custom-desc = Chọn trình theo dõi và tập lệnh đ�
 content-blocking-etp-blocking-desc = { -brand-short-name } chặn những điều sau:
 content-blocking-private-windows = Trình theo dõi nội dung trong cửa sổ riêng tư
 content-blocking-cross-site-cookies-in-all-windows = Cookie trên nhiều trang web trong tất cả các cửa sổ (bao gồm cookie theo dõi)
+content-blocking-cross-site-cookies-in-all-windows2 = Cookie trên nhiều trang web trong tất cả các cửa sổ
 content-blocking-cross-site-tracking-cookies = Cookie theo dõi trên nhiều trang web
 content-blocking-all-cross-site-cookies-private-windows = Cookie trên nhiều trang web trong cửa sổ riêng tư
 content-blocking-cross-site-tracking-cookies-plus-isolate = Cookie theo dõi trên nhiều trang web và cô lập các cookie còn lại
@@ -960,6 +976,7 @@ content-blocking-etp-standard-tcp-rollout-checkbox =
 # "Contains" here means "isolates", "limits".
 content-blocking-etp-standard-tcp-rollout-description = Trình chống cookie chung chứa các cookie cho trang web bạn đang truy cập, vì vậy, trình theo dõi không thể sử dụng chúng để theo dõi bạn giữa các trang web.
 content-blocking-etp-standard-tcp-rollout-learn-more = Tìm hiểu thêm
+content-blocking-etp-standard-tcp-title = Bao gồm Trình chống cookie chung, tính năng bảo mật mạnh mẽ nhất từ trước đến nay của chúng tôi
 content-blocking-warning-title = Hãy cân nhắc!
 content-blocking-and-isolating-etp-warning-description-2 = Cài đặt này có thể khiến một số trang web không hiển thị nội dung hoặc hoạt động không chính xác. Nếu trang web có vẻ bị hỏng, bạn có thể muốn tắt trình chống theo dõi để trang web đó tải tất cả nội dung.
 content-blocking-warning-learn-how = Tìm hiểu cách thức
@@ -1067,6 +1084,12 @@ addon-recommendations-link = Tìm hiểu thêm
 collection-health-report-disabled = Dữ liệu báo cáo bị vô hiệu hóa với cấu hình này
 collection-backlogged-crash-reports-with-link = Cho phép { -brand-short-name } thay mặt bạn gửi báo cáo sự cố tồn đọng <a data-l10n-name="crash-reports-link">Tìm hiểu thêm</a>
     .accesskey = c
+privacy-segmentation-section-header = Các tính năng mới nâng cao khả năng duyệt web của bạn
+privacy-segmentation-section-description = Khi chúng tôi cung cấp các tính năng sử dụng dữ liệu của bạn để mang lại cho bạn trải nghiệm cá nhân hơn:
+privacy-segmentation-radio-off =
+    .label = Sử dụng các đề xuất của { -brand-product-name }
+privacy-segmentation-radio-on =
+    .label = Hiển thị thông tin chi tiết
 
 ## Privacy Section - Security
 ##

@@ -17,6 +17,27 @@ menu-addons-and-themes =
 
 ## Help Menu
 
+menu-help-help-title =
+    .label = Trợ giúp
+    .accesskey = H
+menu-help-get-help =
+    .label = Nhận trợ giúp
+    .accesskey = H
+menu-help-explore-features =
+    .label = Khám phá tính năng
+    .accesskey = F
+menu-help-shortcuts =
+    .label = Phím tắt bàn phím
+    .accesskey = K
+menu-help-get-involved =
+    .label = Tham gia
+    .accesskey = G
+menu-help-donation =
+    .label = Quyên góp tài chính
+    .accesskey = D
+menu-help-share-feedback =
+    .label = Chia sẻ ý tưởng và phản hồi
+    .accesskey = S
 menu-help-enter-troubleshoot-mode =
     .label = Chế độ xử lý sự cố…
     .accesskey = T
@@ -26,6 +47,12 @@ menu-help-exit-troubleshoot-mode =
 menu-help-more-troubleshooting-info =
     .label = Thông tin xử lý sự cố khác
     .accesskey = M
+menu-help-troubleshooting-info =
+    .label = Thông tin xử lý sự cố
+    .accesskey = I
+menu-help-about-product =
+    .label = Về { -brand-short-name }
+    .accesskey = A
 
 ## Mail Toolbar
 
@@ -74,6 +101,12 @@ mail-uidensity-normal =
 mail-uidensity-touch =
     .label = Chạm
     .accesskey = T
+mail-uidensity-default =
+    .label = Mặc định
+    .accesskey = D
+mail-uidensity-relaxed =
+    .label = Thoải mái
+    .accesskey = R
 menu-spaces-toolbar-button =
     .label = Thanh công cụ Spaces
     .accesskey = S

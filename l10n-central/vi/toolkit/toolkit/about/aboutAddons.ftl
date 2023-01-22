@@ -292,7 +292,13 @@ theme-disabled-heading = Đã tắt
 theme-disabled-heading2 = Chủ đề đã lưu
 theme-monochromatic-heading = Màu
 theme-monochromatic-subheading = Các phối màu mới sống động từ { -brand-product-name }. Có sẵn trong một thời gian giới hạn.
-theme-colorways-button = Thử Colorways
+# Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
+theme-colorways-button = Thử đường màu
+# Refers to the button label for the colorways card when a user has a colorway theme enabled.
+theme-colorways-button-colorway-enabled = Thay đổi phối màu
+# Variables:
+#   $expiryDate (string) - date on which the colorway collection expires. When formatting this, you may omit the year, only exposing the month and day, as colorway collections will always expire within a year.
+colorway-collection-expiry-label = Hết hạn vào { DATETIME($expiryDate, month: "long", day: "numeric") }
 plugin-enabled-heading = Đã bật
 plugin-disabled-heading = Đã tắt
 dictionary-enabled-heading = Đã bật
@@ -405,6 +411,7 @@ addon-page-options-button =
 # Variables:
 #   $version (String): application version.
 details-notification-incompatible = { $name } không tương thích với { -brand-short-name } { $version }.
+details-notification-incompatible-link = Thông tin chi tiết
 details-notification-unsigned-and-disabled = Không thể kiểm tra tính tương thích của { $name } với { -brand-short-name } nên nó đã bị vô hiệu hóa.
 details-notification-unsigned-and-disabled-link = Thông tin chi tiết
 details-notification-unsigned = Không thể kiểm tra tính tương thích của { $name } với { -brand-short-name }. Bạn nên cẩn thận.
