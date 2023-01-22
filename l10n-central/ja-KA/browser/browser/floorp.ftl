@@ -384,6 +384,11 @@ lepton-sidebar-preferences = サイドバーのカスタマイズ
 floorp-lepton-enable-overlap-sidebar =
     .label = サイドバーをウェブサイトビューワーの上にオーバーラップしとく
 
+floorp-home-mode-choice-default =
+    .label = Floorp Home (既定)
+floorp-home-prefs-content-header = Floorp Home コンテンツ
+floorp-home-prefs-content-description = Floorp Home に表示しとくコンテンツを選ぼうや。
+
 ################################################################### browser ###############################################################
 
 rest-mode = 休憩中
