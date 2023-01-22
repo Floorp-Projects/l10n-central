@@ -2,7 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-addons-page-title = Handter tillegg
+addons-page-title = Handsam tillegg
 search-header =
     .placeholder = Søk på addons.mozilla.org
     .searchbuttonlabel = Søk
@@ -196,7 +196,7 @@ addon-open-about-debugging = Feilsøk tillegg
 ## Extension shortcut management
 
 # This is displayed in the page options menu
-addon-manage-extensions-shortcuts = Handter snarvegar for tillegg
+addon-manage-extensions-shortcuts = Handsam snarvegar for tillegg
     .accesskey = H
 shortcuts-no-addons = Du har ingen utvidinga aktiverte.
 shortcuts-no-commands = Følgjande utvidingar har ikkje snarvegar:
@@ -257,7 +257,7 @@ install-extension-button = Legg til i { -brand-product-name }
 install-theme-button = Installer tema
 # The label of the button that appears after installing an add-on. Upon click,
 # the detailed add-on view is opened, from where the add-on can be managed.
-manage-addon-button = Handter
+manage-addon-button = Handsam
 find-more-addons = Finn fleire tillegg
 find-more-themes = Finn fleire tema
 # This is a label for the button to open the "more options" menu, it is only
@@ -292,6 +292,17 @@ theme-disabled-heading = Slått av
 theme-disabled-heading2 = Lagra tema
 theme-monochromatic-heading = Fargesamansetjingar
 theme-monochromatic-subheading = Levande nye fargesamansetjingar frå { -brand-product-name }. Tilgjengeleg for ein avgrensa periode.
+# Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
+theme-colorways-button = Prøv Colorways
+colorway-collection-independent-voices-subheading = Gjer { -brand-short-name } litt meir personleg.
+# Variables:
+#   $expiryDate (string) - date on which the colorway collection expires.
+colorway-collection-expiry-date-span = Går ut { DATETIME($expiryDate, month: "long", day: "numeric") }
+# Refers to the button label for the colorways card when a user has a colorway theme enabled.
+theme-colorways-button-colorway-enabled = Endre fargesamansetjing
+# Variables:
+#   $expiryDate (string) - date on which the colorway collection expires. When formatting this, you may omit the year, only exposing the month and day, as colorway collections will always expire within a year.
+colorway-collection-expiry-label = Går ut { DATETIME($expiryDate, month: "long", day: "numeric") }
 plugin-enabled-heading = Slått på
 plugin-disabled-heading = Slått av
 dictionary-enabled-heading = Slått på
@@ -383,15 +394,15 @@ recommended-theme-1 = Er du i det kreative hjørnet? <a data-l10n-name="link">By
 
 ## Page headings
 
-extension-heading = Handter utvidingane dine
-theme-heading = Handter temaa dine
-plugin-heading = Handter programtillegga dine
-dictionary-heading = Handter ordbøkene dine
-locale-heading = Handter språka dine
-updates-heading = Handter oppdateringar
-sitepermission-heading = Handter nettstadløyva dine
+extension-heading = Handsam utvidingane dine
+theme-heading = Handsam temaa dine
+plugin-heading = Handsam programtillegga dine
+dictionary-heading = Handsam ordbøkene dine
+locale-heading = Handsam språka dine
+updates-heading = Handsam oppdateringar
+sitepermission-heading = Handsam nettstadløyva dine
 discover-heading = Tilpass { -brand-short-name }
-shortcuts-heading = Handter snarvegar for utvidingar
+shortcuts-heading = Handsam snarvegar for utvidingar
 default-heading-search-label = Finn fleire tillegg
 addons-heading-search-input =
     .placeholder = Søk på addons.mozilla.org
@@ -405,6 +416,7 @@ addon-page-options-button =
 # Variables:
 #   $version (String): application version.
 details-notification-incompatible = { $name } er ikkje kompatibel med { -brand-short-name } { $version }.
+details-notification-incompatible-link = Meir informasjon
 details-notification-unsigned-and-disabled = { $name } har ikkje blitt stadfesta for bruk i { -brand-short-name } og er slått av.
 details-notification-unsigned-and-disabled-link = Meir informasjon
 details-notification-unsigned = { $name } kunne ikkje stadfestast for bruk i { -brand-short-name }. Fortset med varsemd.

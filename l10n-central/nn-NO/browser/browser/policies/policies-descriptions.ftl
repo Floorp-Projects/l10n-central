@@ -18,7 +18,7 @@ policy-AppUpdateURL = Spesifiser eigendefinert programoppdateringsadresse.
 policy-Authentication = Konfigurer integrert godkjenning for nettsider som støttar det.
 policy-AutoLaunchProtocolsFromOrigins = Definer ei liste over eksterne protokollar som kan brukast frå spesifiserte kjelder uan å spørje brukaren.
 policy-BackgroundAppUpdate2 = Slå på eller av bakgrunnsoppdateraren.
-policy-BlockAboutAddons = Blokker tilgang til Tilleggshandteraren (about:addons)
+policy-BlockAboutAddons = Blokker tilgang til Tilleggshandsamaren (about:addons)
 policy-BlockAboutConfig = Blokker tilgang til about:config-sida.
 policy-BlockAboutProfiles = Blokker tilgang til about:profiles-sida.
 policy-BlockAboutSupport = Blokker tilgang til about:support-sida.
@@ -59,15 +59,18 @@ policy-DownloadDirectory = Spesifiser og lås netlastingskatalogen.
 policy-EnableTrackingProtection = Aktiver eller deaktiver innhaldsblokkering med moglegheit til å låse valet.
 # “lock” means that the user won’t be able to change this setting
 policy-EncryptedMediaExtensions = Aktiver eller deaktiver Encrypted Media Extension med høve til å låse valet.
+policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Slå av åtvaringar basert på filetternamn for spesifikke filtypar på domene.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
 policy-Extensions = Installere, avinstallere eller låse tillegg. Installeringsalternativet tar nettadresser eller baner som parameter. Avinstallerings- og Låse-alternativa tek tilleggs-ID som parameter.
-policy-ExtensionSettings = Handter alle aspekt av utvidingsinstallasjonen.
+policy-ExtensionSettings = Handsam alle aspekt av utvidingsinstallasjonen.
 policy-ExtensionUpdate = Slå på eller slå av automatisk utvidingsoppdateringar.
 policy-FirefoxHome = Konfigurer Firefox startside.
+policy-FirefoxHome2 = Konfigurer { -firefox-home-brand-name }.
 policy-FlashPlugin = Tillat eller nekt bruk av programtillegget Flash.
-policy-Handlers = Konfigurer standard applikasjonshandterarar.
+policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Tving direkte navigering på intranettet i staden for å søkje når du skriv inn enkeltord i adressefeltet.
+policy-Handlers = Konfigurer standard applikasjonshandsamar.
 policy-HardwareAcceleration = Om inaktiv, slå av maskinvareakselerasjon.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Still inn og eventuelt lås startsida.
@@ -92,7 +95,7 @@ policy-OfferToSaveLogins = Tving innstillinga til å tillate { -brand-short-name
 policy-OfferToSaveLoginsDefault = Spesifiser standardverdien for å tillate { -brand-short-name } å kunne hugse lagra innloggingar og passord. Både true- og false-verdiar er godkjende.
 policy-OverrideFirstRunPage = Erstatt sida som vert vist ved første oppstart. La policyen vere tom, viss sida ved første oppstart skal deaktiverast.
 policy-OverridePostUpdatePage = Byt ut «Kva er nytt»-sida som vert vist etter ei oppdatering. La policyen stå tom viss sida etter ei oppdatering skal deaktiverast.
-policy-PasswordManagerEnabled = Slå på lagring av passord til passordhandteraren.
+policy-PasswordManagerEnabled = Slå på lagring av passord til passordhandsamaren.
 policy-PasswordManagerExceptions = Hindre { -brand-short-name } frå å lagre passord for bestemte nettstadar.
 # PDF.js and PDF should not be translated
 policy-PDFjs = Deaktiver eller konfigurer PDF.js, det innebygde PDF-visingsprogrammet i { -brand-short-name }.
@@ -112,8 +115,10 @@ policy-SecurityDevices = Installer PKCS #11-modular.
 policy-ShowHomeButton = Vis heimknappen på verktøylinja.
 policy-SSLVersionMax = Still inn den maksimale SSL-versjonen.
 policy-SSLVersionMin = Still inn den minimale SSL-versjonen.
+policy-StartDownloadsInTempDirectory = Tving nedlastinger til å starte på ei lokal, mellombels plassering i staden for standard nedlastingskatalog.
 policy-SupportMenu = Legg til eit tilpassa menyelement med hjelp i hjelpemenyen.
 policy-UserMessaging = Ikkje vis visse meldingar til brukaren.
+policy-UseSystemPrintDialog = Skriv ut ved hjelp av utskriftsdialogvindauget til systemet.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Blokker besøk på nettstadar. Les dokumentasjonen for detaljer om formatet.
 policy-Windows10SSO = Tillat Windows enkel pålogging for Microsoft, arbeids- og skulekontoar.

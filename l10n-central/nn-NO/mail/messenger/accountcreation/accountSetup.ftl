@@ -6,6 +6,8 @@ account-setup-tab-title = Kontoinnstillingar
 
 ## Header
 
+account-setup-secondary-description = { -brand-product-name } vil automatiskt søkje etter ein fungerande og tilrådd serverkonfigurasjon.
+account-setup-success-title = Kontoen er oppretta
 
 ## Form fields
 
@@ -35,6 +37,8 @@ account-setup-password-toggle-show =
     .title = Vis passordet i klartekt
 account-setup-password-toggle-hide =
     .title = Gøym passordet
+account-setup-remember-password = Hugs passord
+    .accesskey = H
 account-setup-exchange-label = Di innlogging:
     .accesskey = D
 
@@ -58,6 +62,7 @@ account-setup-step2-image =
 account-setup-step5-image =
     .title = Konto opretta
 account-setup-selection-error = Treng du hjelp?
+account-setup-forum-help = Brukarstøtteforum
 account-setup-getting-started = Kom i gang
 
 ## Results area
@@ -75,18 +80,27 @@ account-setup-result-starttls = STARTTLS
 
 ## Manual configuration area
 
+account-setup-incoming-server-legend = Innkomande tenar
+account-setup-protocol-label = Protokoll:
 
 ## Incoming/Outgoing SSL Authentication options
 
+ssl-encrypted-password-option = Kryptert passord
 
 ## Incoming/Outgoing SSL options
 
 ssl-noencryption-option = Ingen
+account-setup-auth-label = Godkjenningsmetode:
 account-setup-username-label = Brukarnamn:
 
 ## Warning insecure server dialog
 
 account-setup-insecure-title = Åtvaring!
+account-setup-insecure-incoming-title = Innkomande innstillingar:
+account-setup-insecure-outgoing-title = Utgåande innstillingar:
+# Variables:
+#  $server (String): The name of the hostname of the server the user was trying to connect to.
+account-setup-warning-cleartext = <b>{ $server }</b> brukar ikkje kryptering.
 insecure-dialog-cancel-button = Endre innstillingar
     .accesskey = n
 insecure-dialog-confirm-button = Stadfest
@@ -94,6 +108,7 @@ insecure-dialog-confirm-button = Stadfest
 
 ## Warning Exchange confirmation dialog
 
+exchange-dialog-confirm-button = Innlogging
 exchange-dialog-cancel-button = Avbryt
 
 ## Dismiss account creation dialog
@@ -109,6 +124,13 @@ account-setup-addon-install-title = Installer
 ## Success view
 
 account-setup-settings-button = Kontoinnstillingar
+account-setup-encryption-button = Ende-til-ende-kryptering
+account-setup-signature-button = Legg til ein signatur
+account-setup-dictionaries-button = Last ned ordlister
+account-setup-address-book-carddav-button = Kople til ei CardDAV-adressebok
+account-setup-address-book-ldap-button = Kople til ei LDAP-adressebok
+account-setup-calendar-button = Kople til ein ekstern kalender
+account-setup-linked-services-title = Kople til dei tilknytte tenestene dine
 account-setup-button-finish = Fullfør
     .accesskey = F
 account-setup-address-books-button = Adressebøker

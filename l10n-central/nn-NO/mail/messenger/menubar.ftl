@@ -2,12 +2,21 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-
-## View Menu
+toolbar-context-menu-menu-bar =
+    .toolbarname = Menylinje
+    .accesskey = M
 
 ## Tools Menu
 
+menu-tools-settings =
+    .label = Innstillingar
+    .accesskey = I
+menu-addons-and-themes =
+    .label = Tillegg og tema
+    .accesskey = T
+
 ## Help Menu
+
 
 ## Mail Toolbar
 
@@ -26,7 +35,9 @@ toolbar-undelete-button =
 
 ## View
 
+
 ## View / Layout
+
 
 ## File
 

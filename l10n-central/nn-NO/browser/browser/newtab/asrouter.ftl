@@ -12,33 +12,25 @@ cfr-doorhanger-feature-heading = Tilrådd funksjon
 
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Kvifor ser eg dette
-
 cfr-doorhanger-extension-cancel-button = Ikkje no
     .accesskey = n
-
 cfr-doorhanger-extension-ok-button = Legg til no
     .accesskey = e
-
-cfr-doorhanger-extension-manage-settings-button = Handter tilrådingsinnstillingar
+cfr-doorhanger-extension-manage-settings-button = Handsam tilrådingsinnstillingar
     .accesskey = H
-
 cfr-doorhanger-extension-never-show-recommendation = Ikkje vis meg denne tilrådinga
     .accesskey = s
-
 cfr-doorhanger-extension-learn-more-link = Les meir
-
 # This string is used on a new line below the add-on name
 # Variables:
 #   $name (String) - Add-on author name
 cfr-doorhanger-extension-author = av { $name }
-
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Tilråding
 cfr-doorhanger-extension-notification2 = Tilråding
     .tooltiptext = Utvidingstilråding
     .a11y-announcement = Utvidingstilråding tilgjengeleg
-
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-feature-notification = Tilråding
@@ -85,11 +77,9 @@ cfr-protections-panel-link-text = Les meir
 # This string is used by screen readers to offer a text based alternative for
 # the notification icon
 cfr-badge-reader-label-newfeature = Ny funksjon:
-
 cfr-whatsnew-button =
     .label = Kva er nytt
     .tooltiptext = Kva er nytt
-
 cfr-whatsnew-release-notes-link-text = Les versjonsnotatet
 
 ## Enhanced Tracking Protection Milestones
@@ -99,7 +89,7 @@ cfr-whatsnew-release-notes-link-text = Les versjonsnotatet
 #   $date (Datetime) - The date we began recording the count of blocked trackers
 cfr-doorhanger-milestone-heading2 =
     { $blockedCount ->
-       *[other] { -brand-short-name } blokkerte over <b>{ $blockedCount }</b>sporarar sidan { DATETIME($date, month: "long", year: "numeric") }!
+       *[other] { -brand-short-name } blokkerte over <b>{ $blockedCount }</b> sporarar sidan { DATETIME($date, month: "long", year: "numeric") }!
     }
 cfr-doorhanger-milestone-ok-button = Vis alle
     .accesskey = s
@@ -165,6 +155,10 @@ spotlight-total-cookie-protection-body = Totalt vern mot infokapslar stoppar spo
 spotlight-total-cookie-protection-expanded = { -brand-short-name }byggjer eit gjerde rundt infokapslar, og avgrensar dei til nettstaden du er på, slik at sporarar ikkje kan bruke dei til å følgje deg. Med tidleg tilgang hjelper du til med å optimalisere denne funksjonen slik at vi kan fortsetje å byggje eit betre nett for alle.
 spotlight-total-cookie-protection-primary-button = Slå på total vern mot infokapslar
 spotlight-total-cookie-protection-secondary-button = Ikkje no
+cfr-total-cookie-protection-header = Takka vere deg er { -brand-short-name } meir privat og sikrare enn nokon gong
+# "Early access" for this feature rollout means it's a "feature preview" or
+# "soft launch". Only those who received it and accepted are shown this message.
+cfr-total-cookie-protection-body = Totalt vern mot infokapslar er vårt sterkaste personvern til no – og det er no ei standardinnstilling for { -brand-short-name }-brukarar overalt. Vi kunne ikkje ha gjort det utan deltakarar med tidleg tilgang som deg. Så takk for at du hjelper oss med å skape eit betre, meir privat internett.
 
 ## Emotive Continuous Onboarding
 
