@@ -17,6 +17,27 @@ menu-addons-and-themes =
 
 ## Help Menu
 
+menu-help-help-title =
+    .label = Súgó
+    .accesskey = S
+menu-help-get-help =
+    .label = Segítség kérése
+    .accesskey = S
+menu-help-explore-features =
+    .label = Funkciók felfedezése
+    .accesskey = F
+menu-help-shortcuts =
+    .label = Gyorsbillentyűk
+    .accesskey = b
+menu-help-get-involved =
+    .label = Csatlakozzon
+    .accesskey = C
+menu-help-donation =
+    .label = Támogasson
+    .accesskey = T
+menu-help-share-feedback =
+    .label = Ötletek és visszajelzések megosztása
+    .accesskey = v
 menu-help-enter-troubleshoot-mode =
     .label = Hibakeresési mód…
     .accesskey = H
@@ -26,6 +47,12 @@ menu-help-exit-troubleshoot-mode =
 menu-help-more-troubleshooting-info =
     .label = Több hibakeresési információ
     .accesskey = T
+menu-help-troubleshooting-info =
+    .label = Hibakeresési információ
+    .accesskey = H
+menu-help-about-product =
+    .label = A { -brand-short-name } névjegye
+    .accesskey = n
 
 ## Mail Toolbar
 
@@ -74,6 +101,12 @@ mail-uidensity-normal =
 mail-uidensity-touch =
     .label = Érintőképernyős
     .accesskey = r
+mail-uidensity-default =
+    .label = Alapértelmezett
+    .accesskey = A
+mail-uidensity-relaxed =
+    .label = Laza
+    .accesskey = L
 menu-spaces-toolbar-button =
     .label = Helyek eszköztár
     .accesskey = H

@@ -17,13 +17,13 @@ default-bookmarks-toolbarfolder-description = A mappához adott könyvjelzők me
 default-bookmarks-getting-started = Kezdő lépések
 
 # Firefox links folder name
-default-bookmarks-firefox-heading = Ablaze Floorp
+default-bookmarks-firefox-heading = Mozilla Firefox
 
 # link title for https://www.mozilla.org/firefox/help/
 default-bookmarks-firefox-get-help = Segítség kérése
 
 # link title for https://www.mozilla.org/firefox/customize/
-default-bookmarks-firefox-customize = Floorp testreszabása
+default-bookmarks-firefox-customize = Firefox testreszabása
 
 # link title for https://www.mozilla.org/contribute/
 default-bookmarks-firefox-community = Csatlakozzon
@@ -32,10 +32,10 @@ default-bookmarks-firefox-community = Csatlakozzon
 default-bookmarks-firefox-about = Rólunk
 
 # Firefox Nightly links folder name
-default-bookmarks-nightly-heading = Floorp Nightly erőforrások
+default-bookmarks-nightly-heading = Firefox Nightly erőforrások
 
 # Nightly builds only, link title for https://blog.nightly.mozilla.org/
-default-bookmarks-nightly-blog = Floorp Nightly blog
+default-bookmarks-nightly-blog = Firefox Nightly blog
 
 # Nightly builds only, link title for https://bugzilla.mozilla.org/
 default-bookmarks-bugzilla = Mozilla hibakövető
