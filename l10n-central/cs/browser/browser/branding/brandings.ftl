@@ -92,7 +92,7 @@
         [ins] Firefoxem Send
     }
     .gender = masculine
--screenshots-brand-name = Floorp Screenshots
+-screenshots-brand-name = Firefox Screenshots
 -mozilla-vpn-brand-name =
     { $case ->
        *[nom] Mozilla VPN
@@ -104,8 +104,8 @@
         [ins] Mozillou VPN
     }
     .gender = feminine
--profiler-brand-name = Floorp Profiler
--translations-brand-name = Floorp Translations
+-profiler-brand-name = Firefox Profiler
+-translations-brand-name = Firefox Translations
 -rally-brand-name = Mozilla Rally
 -rally-short-name = Rally
 -focus-brand-name =
@@ -119,7 +119,6 @@
         [ins] Firefoxem Focus
     }
     .gender = masculine
-
 # “Suggest” can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefox-suggest-brand-name =
@@ -158,5 +157,85 @@
             { $capitalization ->
                *[upper] Návrhy od Firefoxu
                 [lower] návrhy od Firefoxu
+            }
+    }
+# ”Home" can be localized, “Firefox” must be treated as a brand
+# and kept in English.
+-firefox-home-brand-name =
+    { $case ->
+       *[nom]
+            { $capitalization ->
+               *[upper] Domovská stránka Firefoxu
+                [lower] domovská stránka Firefoxu
+            }
+        [gen]
+            { $capitalization ->
+               *[upper] Domovské stránky Firefoxu
+                [lower] domovské stránky Firefoxu
+            }
+        [dat]
+            { $capitalization ->
+               *[upper] Domovské stránce Firefoxu
+                [lower] domovské stránce Firefoxu
+            }
+        [acc]
+            { $capitalization ->
+               *[upper] Domovskou stránku Firefoxu
+                [lower] domovskou stránku Firefoxu
+            }
+        [voc]
+            { $capitalization ->
+               *[upper] Domovská stránko Firefoxu
+                [lower] domovská stránko Firefoxu
+            }
+        [loc]
+            { $capitalization ->
+               *[upper] Domovské stránce Firefoxu
+                [lower] domovské stránce Firefoxu
+            }
+        [ins]
+            { $capitalization ->
+               *[upper] Domovskou stránkou Firefoxu
+                [lower] domovskou stránkou Firefoxu
+            }
+    }
+# View" can be localized, “Firefox” must be treated as a brand
+# and kept in English.
+-firefoxview-brand-name =
+    { $case ->
+       *[nom]
+            { $capitalization ->
+               *[upper] Přehled Firefoxu
+                [lower] přehled Firefoxu
+            }
+        [gen]
+            { $capitalization ->
+               *[upper] Přehledu Firefoxu
+                [lower] přehledu Firefoxu
+            }
+        [dat]
+            { $capitalization ->
+               *[upper] Přehledu Firefoxu
+                [lower] přehledu Firefoxu
+            }
+        [acc]
+            { $capitalization ->
+               *[upper] Přehled Firefoxu
+                [lower] přehled Firefoxu
+            }
+        [voc]
+            { $capitalization ->
+               *[upper] Přehlede Firefoxu
+                [lower] přehlede Firefoxu
+            }
+        [loc]
+            { $capitalization ->
+               *[upper] Přehledu Firefoxu
+                [lower] přehledu Firefoxu
+            }
+        [ins]
+            { $capitalization ->
+               *[upper] Přehledem Firefoxu
+                [lower] přehledem Firefoxu
             }
     }

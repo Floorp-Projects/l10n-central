@@ -3,6 +3,12 @@
 # file, you can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+# Display Name
+
+vcard-displayname = Zobrazované jméno
+vcard-displayname-placeholder =
+    .placeholder = { vcard-displayname }
+
 # Type selection
 
 vcard-entry-type-label = Typ
@@ -35,8 +41,7 @@ vcard-n-add-suffix =
 vcard-email-header = E-mailové adresy
 vcard-email-add = Přidat e-mailové adresy
 vcard-email-label = E-mailová adresa
-vcard-email-choose-primary = Výchozí
-    .aria-label = Vyberte svou výchozí e-mailovou adresu
+vcard-primary-email-label = Výchozí
 
 # URL vCard field
 
@@ -54,3 +59,49 @@ vcard-tel-label = Telefonní číslo
 
 vcard-tz-header = Časové pásmo
 vcard-tz-add = Přidat časové pásmo
+
+# IMPP vCard field
+
+vcard-impp-header = Účty chatu
+vcard-impp-add = Přidat účet chatu
+vcard-impp-label = Účet chatu
+
+# BDAY and ANNIVERSARY vCard field
+
+vcard-bday-anniversary-header = Speciální data
+vcard-bday-anniversary-add = Přidat speciální datum
+vcard-bday-label = Narozeniny
+vcard-anniversary-label = Výročí
+vcard-date-day = Den
+vcard-date-month = Měsíc
+vcard-date-year = Rok
+
+# ADR vCard field
+
+vcard-adr-header = Adresy
+vcard-adr-add = Přidat adresu
+vcard-adr-label = Adresa
+vcard-adr-delivery-label = Doručovací štítek
+vcard-adr-pobox = Poštovní přihrádka
+vcard-adr-ext = Rozšířená adresa
+vcard-adr-street = Ulice
+# Or "Locality"
+vcard-adr-locality = Město
+# Or "Region"
+vcard-adr-region = Stát/Kraj
+# The term "ZIP code" only applies in USA. Most locales should use "Postal code" only.
+vcard-adr-code = PSČ
+vcard-adr-country = Země
+
+# NOTE vCard field
+
+vcard-note-header = Poznámky
+vcard-note-add = Přidat poznámku
+
+# TITLE, ROLE and ORGANIZATION vCard fields
+
+vcard-org-header = Informace o společnosti
+vcard-org-add = Přidat informace o společnosti
+vcard-org-title = Pozice
+vcard-org-role = Role
+vcard-org-org = Společnost

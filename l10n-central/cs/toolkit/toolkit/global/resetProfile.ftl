@@ -33,3 +33,12 @@ refresh-profile-button =
        *[other] aplikaci { -brand-short-name }
     }
 refresh-profile-learn-more = Zjistit více
+refresh-profile-progress =
+    .title =
+        { -brand-short-name.gender ->
+            [masculine] Obnovení { -brand-short-name(case: "gen") }
+            [feminine] Obnovení { -brand-short-name(case: "gen") }
+            [neuter] Obnovení { -brand-short-name(case: "gen") }
+           *[other] Obnovení aplikace { -brand-short-name }
+        }
+refresh-profile-progress-description = Téměř hotovo…
