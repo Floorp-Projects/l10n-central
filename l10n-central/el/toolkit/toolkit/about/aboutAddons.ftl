@@ -290,7 +290,17 @@ theme-disabled-heading = Ανενεργά
 theme-disabled-heading2 = Αποθηκευμένα θέματα
 theme-monochromatic-heading = Χρωματικοί συνδυασμοί
 theme-monochromatic-subheading = Νέοι, δυναμικοί χρωματικοί συνδυασμοί από το { -brand-product-name }. Διαθέσιμοι για περιορισμένο χρονικό διάστημα.
+# Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
 theme-colorways-button = Δοκιμή χρωματικών συνδυασμών
+colorway-collection-independent-voices-subheading = Φέρτε το { -brand-short-name } πιο κοντά στα μέτρα σας.
+# Variables:
+#   $expiryDate (string) - date on which the colorway collection expires.
+colorway-collection-expiry-date-span = Λήγει στις { DATETIME($expiryDate, month: "long", day: "numeric") }
+# Refers to the button label for the colorways card when a user has a colorway theme enabled.
+theme-colorways-button-colorway-enabled = Αλλαγή χρωματικού συνδυασμού
+# Variables:
+#   $expiryDate (string) - date on which the colorway collection expires. When formatting this, you may omit the year, only exposing the month and day, as colorway collections will always expire within a year.
+colorway-collection-expiry-label = Λήγει στις { DATETIME($expiryDate, month: "long", day: "numeric") }
 plugin-enabled-heading = Ενεργά
 plugin-disabled-heading = Ανενεργά
 dictionary-enabled-heading = Ενεργά
@@ -404,6 +414,7 @@ addon-page-options-button =
 # Variables:
 #   $version (String): application version.
 details-notification-incompatible = Το { $name } είναι ασύμβατο με τον { -brand-short-name } { $version }.
+details-notification-incompatible-link = Περισσότερες πληροφορίες
 details-notification-unsigned-and-disabled = Το { $name } δεν ήταν δυνατό να επαληθευτεί για χρήση από το { -brand-short-name } και έχει απενεργοποιηθεί.
 details-notification-unsigned-and-disabled-link = Περισσότερες πληροφορίες
 details-notification-unsigned = Το { $name } δεν ήταν δυνατό να επαληθευτεί για χρήση από το { -brand-short-name }. Συνεχίστε με προσοχή.

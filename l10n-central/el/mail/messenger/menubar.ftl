@@ -17,6 +17,27 @@ menu-addons-and-themes =
 
 ## Help Menu
 
+menu-help-help-title =
+    .label = Βοήθεια
+    .accesskey = Β
+menu-help-get-help =
+    .label = Λήψη βοήθειας
+    .accesskey = ψ
+menu-help-explore-features =
+    .label = Εξερεύνηση λειτουργιών
+    .accesskey = ν
+menu-help-shortcuts =
+    .label = Συντομεύσεις πληκτρολογίου
+    .accesskey = υ
+menu-help-get-involved =
+    .label = Συμμετοχή
+    .accesskey = Σ
+menu-help-donation =
+    .label = Πραγματοποίηση δωρεάς
+    .accesskey = γ
+menu-help-share-feedback =
+    .label = Κοινοποίηση ιδεών και σχολίων
+    .accesskey = Κ
 menu-help-enter-troubleshoot-mode =
     .label = Λειτουργία επίλυσης προβλημάτων…
     .accesskey = Λ
@@ -26,6 +47,12 @@ menu-help-exit-troubleshoot-mode =
 menu-help-more-troubleshooting-info =
     .label = Πληροφορίες επίλυσης προβλημάτων
     .accesskey = Π
+menu-help-troubleshooting-info =
+    .label = Πληροφορίες επίλυσης προβλημάτων
+    .accesskey = ο
+menu-help-about-product =
+    .label = Σχετικά με το { -brand-short-name }
+    .accesskey = χ
 
 ## Mail Toolbar
 
@@ -53,6 +80,12 @@ menu-view-repair-text-encoding =
 menu-font-size-label =
     .label = Μέγεθος γραμματοσειράς
     .accesskey = θ
+menuitem-font-size-enlarge =
+    .label = Αύξηση μεγέθους γραμματοσειράς
+    .accesskey = ξ
+menuitem-font-size-reduce =
+    .label = Μείωση μεγέθους γραμματοσειράς
+    .accesskey = ω
 menuitem-font-size-reset =
     .label = Επαναφορά μεγέθους γραμματοσειράς
     .accesskey = π
@@ -68,6 +101,12 @@ mail-uidensity-normal =
 mail-uidensity-touch =
     .label = Αφή
     .accesskey = Α
+mail-uidensity-default =
+    .label = Προεπιλογή
+    .accesskey = Π
+mail-uidensity-relaxed =
+    .label = Άνετη
+    .accesskey = Ά
 menu-spaces-toolbar-button =
     .label = Γραμμή χώρων
     .accesskey = χ

@@ -14,7 +14,7 @@
 <!ENTITY newevent.status.accesskey                "Κ" >
 <!ENTITY newevent.eventStatus.none.label          "Μη καθορισμένη" >
 <!ENTITY newevent.eventStatus.none.accesskey      "Μ" >
-<!ENTITY newevent.todoStatus.none.label           "Μη καθορισμένο" >
+<!ENTITY newevent.todoStatus.none.label           "Μη καθορισμένη" >
 <!ENTITY newevent.eventStatus.cancelled.label     "Ακυρωμένο" >
 <!ENTITY newevent.eventStatus.cancelled.accesskey "Α" >
 <!ENTITY newevent.todoStatus.cancelled.label      "Ακυρωμένη" >
@@ -63,7 +63,7 @@
 <!ENTITY  event.menu.item.new.task.accesskey              "Ε">
 <!ENTITY  event.menu.item.new.message.label               "Μήνυμα">
 <!ENTITY  event.menu.item.new.message.accesskey           "Μ">
-<!ENTITY  event.menu.item.new.contact.label               "Επαφή βιβλίου διευθύνσεων">
+<!ENTITY  event.menu.item.new.contact.label               "Επαφή ευρετηρίου">
 <!ENTITY  event.menu.item.new.contact.accesskey           "φ">
 <!ENTITY  event.menu.item.close.label                     "Κλείσιμο">
 <!ENTITY  event.menu.item.close.accesskey                 "Κ">
