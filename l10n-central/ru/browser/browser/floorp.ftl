@@ -243,11 +243,11 @@ bsb-website =
 sidebar2-pref-delete =
  .label = Удалить
 sidebar2-pref-setting =
- .label = Найстройки
+ .label = Настройки
 
 sidebar2-global-width = Глобальное значение ширины веб-панели
 
-use-icon-provider-option = Use Icon Provider
+use-icon-provider-option = Используемый провайдер иконок
 use-icon-provider-option-google =
  .label = Google
 use-icon-provider-option-duckduckgo =
