@@ -366,6 +366,12 @@ floorp-lepton-enable-overlap-sidebar =
     .label = Показывать перекрытие боковой панели основным средством просмотра
 ## tool attribute
 
+floorp-home-mode-choice-default =
+ .label = Домашняя страница Floorp (По умолчанию)
+floorp-home-prefs-content-header = Содержимое стартовой страницы Floorp
+floorp-home-prefs-content-description = Выберите, какое содержимое вы хотите видеть на стартовой странице Floorp.
+
+
 rest-mode = Делаем перерыв...
 rest-mode-description = Браузер остановлен. Нажмите OK или любую другую клавишу для возобновления работы.
 
