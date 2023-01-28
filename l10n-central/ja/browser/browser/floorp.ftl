@@ -298,6 +298,26 @@ newtab-background-not-background =
     .label = 背景を表示しない
 
 
+newtab-background-selected-image =
+    .label = 選択されているフォルダ内の画像を使用する
+    
+newtab-background-folder = 選択されているフォルダ
+
+newtab-background-folder-reload = 
+  .label = 画像を再読込する
+  
+newtab-background-folder-default = 
+  .label = 既定値に戻す
+  
+newtab-background-folder-open = 
+  .label = フォルダを開く
+  
+newtab-background-folder-choose = フォルダを選ぶ
+
+newtab-background-extensions = 画像の拡張子 (","で区切ります)
+
+
+
 ## lepton preferences
 
 about-lepton = { -brand-short-name } を Lepton を使用してカスタマイズします。設定の変更に、{ -brand-short-name } の再起動は必要ありません。代わりに Floorp は Lepton を再適用します。
