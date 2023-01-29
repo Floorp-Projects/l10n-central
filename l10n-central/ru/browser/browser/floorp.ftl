@@ -292,6 +292,18 @@ newtab-background-gradation =
 newtab-background-not-background =
  .label = Отключить фоновое изображение
 
+newtab-background-selected-image =
+ .label = Использовать изображения из выбранной папки
+newtab-background-folder = Выбранная папка
+newtab-background-folder-reload = 
+ .label = Перезагрузить изображения
+newtab-background-folder-default = 
+ .label = Восстановить по умолчанию
+newtab-background-folder-open = 
+ .label = Открыть папку
+newtab-background-folder-choose = Выбрать папку с изображениями
+newtab-background-extensions = Расширения изображений (разделенные символом ",")
+
 about-lepton = Настройте { -brand-short-name } с помощью Lepton
 
 lepton-preference-button =
