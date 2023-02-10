@@ -17,6 +17,10 @@ floorp-preference = { -brand-product-name } の実験的な設定
 tab-width = タブの最小幅
 enable-multitab = 
  .label = 多段タブを有効にしとく
+multirow-tabs-limit = 
+ .label = 多段タブの行制限を有効にしとく
+multirow-tabs-newtab = 
+ .label = 新しいタブボタンを常にタブの列内に配置しとくで
 multirow-tabs-value = 多段タブの有効化時の行制限数
 enable-tab-sleep = 
  .label = タブスリープを有効にしとく
@@ -297,6 +301,24 @@ newtab-background-gradation =
 newtab-background-not-background =
     .label = 背景を表示しへん
 
+newtab-background-selected-image =
+    .label = 選択されているフォルダ内の画像を使用する
+    
+    
+newtab-background-folder = 選択されているフォルダ
+
+newtab-background-folder-reload = 
+  .label = 画像を再読込する
+  
+newtab-background-folder-default = 
+  .label = 既定値に戻す
+  
+newtab-background-folder-open = 
+  .label = フォルダを開く
+  
+newtab-background-folder-choose = フォルダを選ぶ
+
+newtab-background-extensions = 画像の拡張子 (","で区切るで)
 
 ## lepton preferences
 
