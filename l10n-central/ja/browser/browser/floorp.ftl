@@ -220,6 +220,8 @@ linux-chrome-useragent-mode =
  .label = Linux 上の Chrome のユーザーエージェントを使用する
 mobile-chrome-useragent-mode =
  .label = iOS 上の Chrome のユーザーエージェントを使用する
+use-custom-useragent-mode =
+ .label = カスタムユーザーエージェントを使用する
 
 ## DMR UI
 download-mgr-UI =
