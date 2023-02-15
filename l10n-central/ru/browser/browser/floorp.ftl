@@ -27,11 +27,15 @@ auto-reboot = Если вы измените какие-либо из приве
 tab-width = Минимальная ширина вкладок
 enable-multitab = 
  .label = Включить многорядные вкладки
+multirow-tabs-limit = 
+ .label = Включить лимит рядов для многорядных вкладок
+multirow-tabs-newtab = 
+ .label = Всегда размещать кнопку "Открыть новую вкладку" в колонке многорядных вкладок
 multirow-tabs-value =
  .label = Количество строк при включении многорядных вкладок
 enable-tab-sleep = 
  .label = Включить режим сна вкладок
-tab-sleep-timeout-value = Перевести неактивные вкладки в спящий режим по истечению указанного времени (секунды)
+tab-sleep-timeout-minutes-value = Время перевода вкладок в спящий режим (минуты)
 enable-tab-scroll-change = 
  .label = Переключать вкладки с помощью прокрутки
 enable-doble-click-block = 
@@ -195,6 +199,10 @@ linux-chrome-useragent-mode =
  .label = Изменить пользовательский агент на Chrome под Linux
 mobile-chrome-useragent-mode =
  .label = Изменить пользовательский агент на Chrome под IOS
+use-custom-useragent-mode =
+ .label = Использвать сторонний пользовательский агент
+custom-useragent-value =
+ .label = Сторонний пользовательский агент
 
 ## DMR UI
 download-mgr-UI =
