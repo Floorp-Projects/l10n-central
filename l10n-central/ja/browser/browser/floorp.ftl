@@ -536,7 +536,7 @@ test-content-css =
     .accesskey = W
 
 not-found-editor-path = テキストエディターへのパスが見つかりません！
-set-pref-description = この操作には、テキストエディターへのパスを "about:config" の "view_source.editor.path" に設定する必要があります。
+set-pref-description = 以下のフォームに使用したいテキストエディターへのパスを入力してください。
 
 ################################################################### Undo-Closed-Tab ###############################################################
 
