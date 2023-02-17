@@ -574,10 +574,13 @@ gf-floorp-close-sidebar-name = [Floorp] サイドバーを閉じる
 gf-floorp-close-sidebar-description = Floorpのサイドバーを閉じます。
 
 gf-floorp-open-browser-manager-sidebar-name = [Floorp] BMSを開く
-gf-floorp-open-browser-manager-sidebar-description = Floorpのブラウザマネージャーサイドバーを開きます。
+gf-floorp-open-browser-manager-sidebar-description = Floorp のブラウザマネージャーサイドバーを開きます。
 
 gf-floorp-close-browser-manager-sidebar-name = [Floorp] BMSを閉じる
-gf-floorp-close-browser-manager-sidebar-description = Floorpのブラウザマネージャーサイドバーを閉じます。
+gf-floorp-close-browser-manager-sidebar-description = Floorp のブラウザマネージャーサイドバーを閉じます。
+
+gf-floorp-toggle-browser-manager-sidebar-name = [Floorp] BMS の表示を切り替える
+gf-floorp-toggle-browser-manager-sidebar-description = Floorp のブラウザマネージャーサイドバーを表示または非表示にします。
 
 gf-floorp-show-statusbar-name = [Floorp] ステータスバーを表示する
 gf-floorp-show-statusbar-description = Floorpのステータスバーを表示します。
