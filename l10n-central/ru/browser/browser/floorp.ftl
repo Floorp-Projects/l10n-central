@@ -36,7 +36,7 @@ multirow-tabs-value =
 enable-tab-sleep = 
  .label = Включить режим сна вкладок
 tab-sleep-timeout-minutes-value = Время перевода вкладок в спящий режим (минуты)
-enable-tab-scroll-change = 
+enable-tab-scroll-change =
  .label = Переключать вкладки с помощью прокрутки
 enable-doble-click-block = 
  .label = Использовать двойной щелчок для закрытия вкладки
@@ -200,7 +200,7 @@ linux-chrome-useragent-mode =
 mobile-chrome-useragent-mode =
  .label = Изменить пользовательский агент на Chrome под IOS
 use-custom-useragent-mode =
- .label = Использвать сторонний пользовательский агент
+ .label = Использовать сторонний пользовательский агент
 custom-useragent-value =
  .label = Сторонний пользовательский агент
 
