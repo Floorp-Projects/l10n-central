@@ -500,7 +500,7 @@ test-content-css =
  .accesskey = W
 
 not-found-editor-path = Путь к редактору не найден
-set-pref-description = Эта операция требует указания пути к редактору. Задайте "view_source.editor.path" в "about:config"
+set-pref-description = Укажите путь к редактору, который вы хотите использовать
 rebuild-complete = Пересборка завершена.
 please-enter-filename = Пожалуйста, введите имя файла.
 confirmed-update = Подтверждено обновление "{ $leafName }".
