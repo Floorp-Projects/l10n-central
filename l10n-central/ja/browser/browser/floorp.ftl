@@ -71,6 +71,8 @@ show-nav-bar-bottom =
 
 material-effect =
  .label = Mica for Everyone によるマテリアルデザインの効果を有効にする
+disable-extension-check-compatibility-option =
+ .label = アドオンと互換性があるか確認しない
 other-preference = その他の設定
 
 enable-userscript = 
