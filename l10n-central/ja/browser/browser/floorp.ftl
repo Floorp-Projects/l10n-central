@@ -604,3 +604,14 @@ update-portable-notification-success-message = アップデートが完了しま
 update-portable-notification-failed-title = アップデートに失敗しました。
 update-portable-notification-failed-redirector-message = アップデートに失敗しました。ブラウザーを再起動すると、問題が解決する場合があります。
 update-portable-notification-failed-prepare-message = アップデートの準備に失敗しました。
+
+##################################################################### Open link in external ###############################################################
+open-link-in-external-enabled-option =
+ .label = 「外部ブラウザーで開く」機能を有効にする
+open-link-in-external-select-browser-option = 「外部ブラウザーで開く」で開くブラウザー
+open-link-in-external-select-browser-option-default =
+ .label = デフォルトのブラウザー
+open-link-in-external-tab-context-menu = 外部ブラウザーで開く
+open-link-in-external-tab-dialog-title-error = エラー
+open-link-in-external-tab-dialog-message-default-browser-not-found = デフォルトのブラウザーが存在しないか、設定されていません。
+open-link-in-external-tab-dialog-message-selected-browser-not-found = 選択されたブラウザーは存在しません。
