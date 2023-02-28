@@ -553,3 +553,12 @@ update-portable-notification-success-message = Обновление прошло
 update-portable-notification-failed-title = Не удалось установить обновление.
 update-portable-notification-failed-redirector-message = Не удалось установить обновление. Перезапуск браузера может решить проблему.
 update-portable-notification-failed-prepare-message = Не удалось подготовить обновление.
+
+##################################################################### Open link in external ###############################################################
+open-link-in-external-select-browser-option = Выберите браузер, который вы хотите использовать в функции "Открыть в другом браузере".
+open-link-in-external-select-browser-option-default =
+ .label = Браузер по умолчанию
+open-link-in-external-tab-context-menu = Открыть в другом браузере
+open-link-in-external-tab-dialog-title-error = Ошибка
+open-link-in-external-tab-dialog-message-default-browser-not-found = Браузер по умолчанию не задан или не сконфигурирован.
+open-link-in-external-tab-dialog-message-selected-browser-not-found = Выбранный браузер не найден.
