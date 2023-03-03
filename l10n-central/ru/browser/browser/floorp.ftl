@@ -76,7 +76,9 @@ show-nav-bar-bottom =
  .label = Отображать панель навигации внизу { -brand-short-name }
 
 material-effect =
- .label = Разрешить Mica for Everyone изменять дизайн браузера 
+ .label = Разрешить Mica for Everyone изменять дизайн браузера
+disable-extension-check-compatibility-option =
+ .label = Не проверять совместимость с дополнениями
 other-preference = Другие настройки
 
 operation-settings = Управление браузером
