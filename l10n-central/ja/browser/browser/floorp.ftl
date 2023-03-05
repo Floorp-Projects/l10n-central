@@ -615,3 +615,17 @@ open-link-in-external-tab-context-menu = 外部ブラウザーで開く
 open-link-in-external-tab-dialog-title-error = エラー
 open-link-in-external-tab-dialog-message-default-browser-not-found = デフォルトのブラウザーが存在しないか、設定されていません。
 open-link-in-external-tab-dialog-message-selected-browser-not-found = 選択されたブラウザーは存在しません。
+
+######################################################################### Floorp Notes ###############################################################
+
+new-memo = 新規作成
+memo-title-input-placeholder = ここにタイトルを入力
+memo-input-placeholder = ここにメモを入力または貼り付け
+delete-memo = 削除
+save-memo = 保存
+memo-welcome-title = Floorp Notes へようこそ !
+memo-first-tip = Floorp Notes へようこそ！ここでは、使い方を説明します。
+memo-second-tip = Floorp Notes は、メモを作成・編集・保存・削除するための機能です。メモは、ブラウザーを閉じても保存されます。また、Firefox Syncを使用して、他の端末にも同期することができます。同期を有効にするには、Floorp に Firefox アカウントでログインしてください。
+memo-third-tip = あなたのメモは Floorp ブラウザーの設定に保存されます。Firefox Sync は、パスワードによって暗号化されているため、あなた以外の他の人に見られることはありません。もちろん Ablaze や Floorp は、あなたのメモを読むことはできません。Firefox Sync はバックアップ機能ではないため、メモは必ずバックアップを取ってください。
+memo-fourth-tip = Floorp Notes は、Floorp のブラウザーマネージャーサイドバーまたは、「about:notes」を URL に入力すること開くことができます。
+memo-new-title = 新規メモ
