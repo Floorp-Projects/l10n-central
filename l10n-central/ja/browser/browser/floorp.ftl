@@ -290,6 +290,10 @@ use-icon-provider-option-yandex =
 use-icon-provider-option-hatena =
  .label = Hatena (中国本土で利用可能)
 
+
+delete-border-and-roundup-option =
+  .label = 枠線をサイトの枠のみにし、{ -brand-short-name } 自体を丸くする
+
 ## DualTheme
 dualtheme-enable =
  .label = デュアルテーマを有効にする
@@ -606,6 +610,7 @@ update-portable-notification-failed-redirector-message = アップデートに�
 update-portable-notification-failed-prepare-message = アップデートの準備に失敗しました。
 
 ##################################################################### Open link in external ###############################################################
+openInExternal-title = 外部ブラウザーで開く
 open-link-in-external-enabled-option =
  .label = 「外部ブラウザーで開く」機能を有効にする
 open-link-in-external-select-browser-option = 「外部ブラウザーで開く」で開くブラウザー
