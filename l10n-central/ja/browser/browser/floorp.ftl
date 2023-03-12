@@ -266,6 +266,8 @@ bsb-history-sidebar =
   .label = { sidebar2-history-sidebar }
 bsb-download-sidebar =
   .label = { sidebar2-download-sidebar }
+bsb-notes-sidebar =
+  .label = { sidebar2-notes-sidebar }
 bsb-TST-sidebar =
   .label = { sidebar2-TST-sidebar }
 bsb-website = 
@@ -476,6 +478,11 @@ sidebar2-download-sidebar = ダウンロード
 
 show-download-sidebar =
   .tooltiptext = { sidebar2-download-sidebar }を表示する
+
+sidebar2-notes-sidebar = Notes
+
+show-notes-sidebar =
+  .tooltiptext = { sidebar2-notes-sidebar }サイドバーを表示する
 
 sidebar2-TST-sidebar = TST
 
