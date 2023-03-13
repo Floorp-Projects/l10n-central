@@ -584,6 +584,12 @@ gf-floorp-hide-statusbar-description = Floorpのステータスバーを非表�
 gf-floorp-toggle-statusbar-name = [Floorp] ステータスバーの表示を切り替え
 gf-floorp-toggle-statusbar-description = ステータスバーを表示または非表示にします。
 
+gf-floorp-open-extension-sidebar-name = [Floorp] サイドバーで選択したアドオンを開く
+gf-floorp-open-extension-sidebar-description = サイドバーで指定したアドオンを開きます。
+gf-floorp-open-extension-sidebar-settings-addons-id = アドオン ID
+gf-floorp-open-extension-sidebar-settings-addons-id-description = サイドバーで開くアドオンやで。
+gf-floorp-open-extension-sidebar-settings-list-default = アドオンを選択してや
+gf-floorp-open-extension-sidebar-settings-list-unknwon = 知らんアドオン
 ##################################################################### Floorp System Update Portable Version ###############################################################
 
 update-portable-notification-found-title = Floorpの最新バージョンがリリースされました。
