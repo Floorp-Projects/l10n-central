@@ -82,7 +82,7 @@ about-legacy-components = この機能を有効にすると予期せぬエラー
 Search-positon-top =
  .label = 検索バーを上部に表示
 allow-auto-restart =
- .label = 再起動が必要な設定を適用するための自動再起動を許可する
+ .label = 再起動が必要な設定を変更した時に自動で再起動する
 
 browser-rest-mode =
  .label = 休憩モードのショートカットキー（F9）を有効にする
