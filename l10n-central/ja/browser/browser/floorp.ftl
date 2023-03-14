@@ -85,7 +85,7 @@ allow-auto-restart =
  .label = 再起動が必要な設定を適用するための自動再起動を許可する
 
 browser-rest-mode =
- .label = 休憩モードのショートカットキーを有効にする
+ .label = 休憩モードのショートカットキー（F9）を有効にする
 
 disable-fullscreen-notification =
  .label = 動画閲覧時のフルスクリーン通知を無効にする
