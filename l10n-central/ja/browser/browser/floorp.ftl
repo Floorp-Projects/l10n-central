@@ -67,7 +67,7 @@ bookmarks-bottom-mode =
 
 nav-bar-settings = ナビゲーションバーの設定
 show-nav-bar-bottom =
- .label = ナビゲーションバーをウインドウの下部に表示
+ .label = ナビゲーションバーをウインドウの下部に表示 (実験的)
 
 material-effect =
  .label = Mica for Everyone によるマテリアルデザインの効果を有効にする
