@@ -570,7 +570,7 @@ gf-floorp-close-sidebar-name = [Floorp] サイドバーを閉じる
 gf-floorp-close-sidebar-description = Floorpのサイドバーを閉じます。
 
 gf-floorp-open-browser-manager-sidebar-name = [Floorp] BMSを開く
-gf-floorp-open-browser-manager-sidebar-description = Floorpのブラウザマネージャーサイドバーを開きます。
+gf-floorp-open-browser-manager-sidebar-description = Floorpのブラウザマネージャーサイドバーで最後に開いていたウェブパネルがロードされている場合開きます。
 
 gf-floorp-close-browser-manager-sidebar-name = [Floorp] BMSを閉じる
 gf-floorp-close-browser-manager-sidebar-description = Floorpのブラウザマネージャーサイドバーを閉じます。
