@@ -315,7 +315,7 @@ newtab-background-not-background =
 newtab-background-selected-image =
     .label = 選択されているフォルダ内の画像を使用する
     
-newtab-background-folder = 選択されているフォルダ (フォルダによっては利用できない場合があります)
+newtab-background-folder = 選択されているフォルダ
 
 newtab-background-folder-reload = 
   .label = 画像を再読込する
