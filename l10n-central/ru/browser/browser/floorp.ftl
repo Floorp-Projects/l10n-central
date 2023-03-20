@@ -51,7 +51,7 @@ enable-show-pinned-tabs-title =
  .label = Отображать заголовки закрепленных вкладок
 operation-settings = 
   .label = Настройки работы браузера
-Mouse-side-button = 
+Mouse-side-button =
   .label = Оптимизировать браузер для работы с мышью с боковыми кнопками
 
 tabbar-preference = Панель вкладок
@@ -220,7 +220,7 @@ downloading-red-color =
  .label = Выделять иконку менеджера загрузок красным цветом во время скачивания
 
 sidebar-preferences = Боковая панель
-view-sidebar2-right = 
+view-sidebar2-right =
  .label = Отображать боковую панель менеджера браузера справа
 enable-sidebar2 =
  .label = Включить боковую панель менеджера браузера
@@ -542,7 +542,7 @@ gf-floorp-open-synctabs-sidebar-description = Открыть панель син
 gf-floorp-close-sidebar-name = [Floorp] Закрыть боковую панель
 gf-floorp-close-sidebar-description = Закрыть боковую панель
 gf-floorp-open-browser-manager-sidebar-name = [Floorp] Открыть боковую панель менеджера браузера
-gf-floorp-open-browser-manager-sidebar-description = Открыть боковую панель менеджера браузера
+gf-floorp-open-browser-manager-sidebar-description = Открывать боковую панель менеджера браузера, если веб-панель менеджера браузера была загружена
 gf-floorp-close-browser-manager-sidebar-name = [Floorp] Закрыть боковую панель менеджера браузера
 gf-floorp-close-browser-manager-sidebar-description = Закрыть боковую панель менеджера браузера
 gf-floorp-toggle-browser-manager-sidebar-name = [Floorp] Включить/Выключить боковую панель менеджера браузера
