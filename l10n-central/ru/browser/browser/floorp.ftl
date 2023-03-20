@@ -25,7 +25,14 @@ browser-design-settings = Настройки панели вкладок
 
 auto-reboot = Если вы измените какие-либо из приведенных ниже настроек, ваш браузер будет перезапущен, чтобы применить изменения. Пожалуйста, сохраните данные, с которыми вы работаете, прежде чем вносить какие-либо изменения.
 tab-width = Минимальная ширина вкладок
-enable-multitab = 
+preferences-tabs-newtab-position = Новая позиция вкладки
+open-new-tab-use-default =
+ .label = Открывать новые вкладки по умолчанию
+open-new-tab-at-the-end =
+ .label = Открывать новые вкладки в конце панели вкладок
+open-new-tab-next-to-current =
+ .label = Открывать новые вкладки справа от текущей вкладки
+enable-multitab =
  .label = Включить многорядные вкладки
 multirow-tabs-limit = 
  .label = Включить лимит рядов для многорядных вкладок
@@ -73,7 +80,7 @@ bookmarks-bottom-mode =
 
 nav-bar-settings = Настройки панели навигации
 show-nav-bar-bottom =
- .label = Отображать панель навигации внизу { -brand-short-name }
+ .label = Отображать панель навигации внизу { -brand-short-name } (экспериментальная функция)
 
 material-effect =
  .label = Разрешить Mica for Everyone изменять дизайн браузера
@@ -83,7 +90,7 @@ other-preference = Другие настройки
 
 operation-settings = Управление браузером
 
-enable-userscript = 
+enable-userscript =
  .label = Включить устаревшие компоненты
 about-legacy-components = Включение этой функции может привести к неожиданным ошибкам или фатальным сбоям
 
