@@ -53,6 +53,11 @@ move-tabbar-position =
 tabbar-on-bottom = 
  .label = タブバーをウインドウの下部に表示
 
+native-tabbar = 
+ .label = 垂直タブ
+use-native-vertical =
+  .label = ネイティブ実装された垂直タブを使用する（実験的）
+
 treestyletabSettings-l10 = ツリー型タブの設定
 treestyletab-Settings = 
  .label = フォーカスされた場合に展開する（ブラウザーマネージャーサイドバーには適用されません）
