@@ -36,6 +36,14 @@ operation-settings =
 Mouse-side-button = 
   .label =「進む」・「戻る」ボタンを隠す
 
+preferences-tabs-newtab-position = 新しいタブの開く位置
+open-new-tab-use-default = 
+ .label = デフォルトの設定を使用
+open-new-tab-at-the-end = 
+ .label = 新しいタブをタブバーの最後の位置に開く
+open-new-tab-next-to-current = 
+ .label = 現在のタブの隣に新しいタブを開く
+
 tabbar-preference = タブバーの設定
 
 None-mode = 
