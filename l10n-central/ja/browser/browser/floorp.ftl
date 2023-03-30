@@ -67,9 +67,12 @@ use-native-vertical =
   .label = ネイティブ実装された垂直タブを使用する（実験的）
 native-tabbar-tip = この機能は Firefox のサイドバーを使用し、サイドバーを使用するアドオン・サイドバーパネルが使用できなくなります。
 
+hover-vertical-tab = 
+ .label = フォーカスされた場合に垂直タブを展開する
+ 
 treestyletabSettings-l10 = ツリー型タブの設定
 treestyletab-Settings = 
- .label = フォーカスされた場合に展開する（ブラウザーマネージャーサイドバーには適用されません）
+ .label = フォーカスされた場合にツリー型タブを展開する（ブラウザーマネージャーサイドバーには適用されません）
 treestyletab-open-option = ツリー型タブアドオンの設定
 
 bookmarks-bar-settings = ブックマークバーの設定（設定の併用不可）
