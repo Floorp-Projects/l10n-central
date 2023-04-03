@@ -21,16 +21,29 @@ floorp-preference = 实验性设置
 browser-design-settings = 标签栏设置
 auto-reboot = 如果您更改以下任何设置，您的浏览器将重新启动以应用更改。 在进行任何更改之前，请保存您正在使用的数据。
 tab-width = 标签最小宽度
+preferences-tabs-newtab-position = 新标签位置
+open-new-tab-use-default = 
+ .label = 在默认位置打开新标签
+open-new-tab-at-the-end =
+ .label = 在标签栏末尾打开新标签
+open-new-tab-next-to-current = 
+ .label = 在当前标签右侧打开新标签
 enable-multitab = 
  .label = 启用多行标签 
-multirow-tabs-value = 启用多行标签后标签的行数
+multirow-tabs-limit = 
+ .label = 启用标签行数限制
+multirow-tabs-newtab = 
+ .label = 始终将 "打开新标签 "按钮放在多行标签内
+multirow-tabs-value = 多行标签栏标签最大行数
 enable-tab-sleep = 
  .label = 启用标签休眠
-tab-sleep-timeout-value = 多久后休眠未激活标签 (秒)
+tab-sleep-timeout-minutes-value = 多久后休眠未激活标签 (单位：分钟)
 enable-tab-scroll-change = 
  .label = 通过滚轮切换标签
 enable-doble-click-block = 
  .label = 双击关闭标签
+enable-show-pinned-tabs-title =
+ .label = 显示固定标签页的标题
 operation-settings = 
   .label = 浏览器操作设置
 Mouse-side-button = 
@@ -53,7 +66,16 @@ move-tabbar-position =
 tabbar-on-bottom = 
  .label = 标签栏在窗口下方
 
-treestyletabSettings-l10 = 垂直标签栏
+native-tabbar = 原生垂直标签栏
+use-native-vertical =
+  .label = 启用原生垂直标签栏 (实验性功能)
+native-tabbar-tip = 这个功能基于 Firefox 侧边栏，所以你不能与其他侧边栏插件同时使用。
+hover-vertical-tab =
+ .label = 鼠标移动到垂直标签栏处后垂直标签栏自动扩展
+
+vertical-tab-reverse-position = 翻转垂直标签栏排序
+
+treestyletabSettings-l10 = 垂直标签栏设置
 treestyletab-Settings = 
  .label = 失去焦点时自动变小
 treestyletab-open-option = 更多设置
@@ -71,6 +93,8 @@ show-nav-bar-bottom =
 
 material-effect =
  .label = 允许 Mica for Everyone 修改浏览器外观
+ disable-extension-check-compatibility-option =
+ .label =  不检查附加组件的兼容性
 other-preference = 其他选项
 
 operation-settings = 浏览器操作
@@ -208,6 +232,10 @@ linux-chrome-useragent-mode =
  .label = 模拟 Chrome（Linux）
 mobile-chrome-useragent-mode =
  .label = 模拟 移动端
+use-custom-useragent-mode =
+ .label = 自定义 User Agent
+custom-useragent-value =
+  .label = 自定义 User Agent
 
 ## DMR UI
 download-mgr-UI =
@@ -249,8 +277,12 @@ bsb-history-sidebar =
   .label = { sidebar2-history-sidebar }
 bsb-download-sidebar =
   .label = { sidebar2-download-sidebar }
+bsb-notes-sidebar =
+  .label = { sidebar2-notes-sidebar }
 bsb-TST-sidebar =
   .label = { sidebar2-TST-sidebar }
+bsb-notes-sidebar =
+  .label = { sidebar2-notes-sidebar }
 bsb-website = 
   .label = 网站
 
@@ -282,6 +314,10 @@ balance-memory =
 
 max-memory = 
     .label = 最佳速度和性能 (高内存使用) 
+
+delete-border-and-roundup-option =
+  .label = 隐藏界面边框（除网页区域），网页区域圆角
+
 ## DualTheme
 dualtheme-enable =
  .label = 启用双重主题
@@ -296,6 +332,23 @@ newtab-background-gradation =
 
 newtab-background-not-background =
     .label = 不显示背景
+newtab-background-selected-image =
+    .label = 使用选定文件夹中的图片
+
+newtab-background-folder = 选定的文件夹
+
+newtab-background-folder-reload = 
+  .label = 重新载入图片
+
+newtab-background-folder-default = 
+  .label = 还原默认设置
+
+newtab-background-folder-open = 
+  .label = 打开文件夹
+
+newtab-background-folder-choose = 选择图片文件夹
+
+newtab-background-extensions = 图片后缀 (使用","间隔)
 ## lepton preferences
 
 about-lepton = 使用 Lepton 自定义 { -brand-short-name }，变更无需重启 { -brand-short-name }。
@@ -381,6 +434,10 @@ floorp-lepton-enable-tabbar-as-urlbar =
 lepton-sidebar-preferences = 侧边栏设置
 floorp-lepton-enable-overlap-sidebar =
     .label = 侧边栏悬浮
+floorp-home-mode-choice-default =
+    .label = Floorp 主页 (默认)
+floorp-home-prefs-content-header = Floorp 主页内容
+floorp-home-prefs-content-description = 选择你想在你的 Floorp 主页上看到的内容。
 ################################################################### browser・Sidebar ###############################################################
 
 
@@ -419,20 +476,24 @@ sidebar-muteAndUnmute-button =
 sidebar2-browser-manager-sidebar = 足迹
 
 show-browser-manager-sidebar =
-  .tooltiptext = 显示足迹侧边栏
+  .tooltiptext = 显示{ sidebar2-browser-manager-sidebar }侧边栏
 
 sidebar2-bookmark-sidebar = 书签
 show-bookmark-sidebar =
-  .tooltiptext = 显示书签侧边栏
+  .tooltiptext = 显示{ sidebar2-bookmark-sidebar }侧边栏
 
 sidebar2-history-sidebar = 历史
 show-history-sidebar =
-  .tooltiptext = 显示历史侧边栏
+  .tooltiptext = 显示{ show-history-sidebar }侧边栏
 
 sidebar2-download-sidebar = 下载
 show-download-sidebar =
-  .tooltiptext = 显示下载侧边栏
+  .tooltiptext = 显示{ show-download-sidebar }侧边栏
 
+sidebar2-notes-sidebar = 笔记
+
+show-notes-sidebar =
+  .tooltiptext = 显示{ sidebar2-notes-sidebar }侧边栏
 sidebar2-TST-sidebar = 垂直标签栏
 show-TST-sidebar =
   .tooltiptext = 显示垂直标签侧边栏
@@ -474,6 +535,9 @@ appmenuitem-reboot =
 ####################################################################### menu ###############################################################
 
 css-menu =
+    .label = CSS
+    .accesskey = C
+css-menubar =
     .label = CSS
     .accesskey = C
 rebuild-css =
@@ -541,6 +605,7 @@ gf-floorp-close-sidebar-description = 关闭侧边栏
 
 
 gf-floorp-open-browser-manager-sidebar-name = [Floorp] 打开侧边工具栏
+gf-floorp-open-browser-manager-sidebar-description =  打开侧边工具栏（若功能已启用）
 gf-floorp-open-browser-manager-sidebar-description = 打开侧边工具栏
 
 gf-floorp-close-browser-manager-sidebar-name = [Floorp] 关闭侧边工具栏
@@ -555,6 +620,12 @@ gf-floorp-hide-statusbar-description = 隐藏状态栏
 gf-floorp-toggle-statusbar-name = [Floorp] 切换状态栏
 gf-floorp-toggle-statusbar-description = 切换状态栏显示状态
 
+gf-floorp-open-extension-sidebar-name = [Floorp] 在侧边栏中打开选定的扩展
+gf-floorp-open-extension-sidebar-description = 在侧边栏中打开选定的扩展
+gf-floorp-open-extension-sidebar-settings-addons-id = 有侧边栏工具扩展
+gf-floorp-open-extension-sidebar-settings-addons-id-description = 有侧边栏工具扩展
+gf-floorp-open-extension-sidebar-settings-list-default = 请选择扩展
+gf-floorp-open-extension-sidebar-settings-list-unknwon = 位置扩展
 ##################################################################### Floorp System Update Portable Version ###############################################################
 
 update-portable-notification-found-title = 发现新版本！
@@ -566,3 +637,27 @@ update-portable-notification-success-message = 更新成功！希望你喜欢新
 update-portable-notification-failed-title = 更新失败。
 update-portable-notification-failed-redirector-message = 更新失败。也许重启浏览器能解决这个问题，
 update-portable-notification-failed-prepare-message = 准备更新失败。
+##################################################################### Open link in external ###############################################################
+openInExternal-title = 在其他浏览器中打开链接
+open-link-in-external-enabled-option =
+ .label = 启用 "在其他浏览器中打开链接" 功能
+open-link-in-external-select-browser-option = 选择浏览器
+open-link-in-external-select-browser-option-default =
+ .label = 默认浏览器
+open-link-in-external-tab-context-menu = 在其他浏览器中打开链接
+open-link-in-external-tab-dialog-title-error = 错误
+open-link-in-external-tab-dialog-message-default-browser-not-found = 默认浏览器不存在或未被配置。
+open-link-in-external-tab-dialog-message-selected-browser-not-found = 选中的浏览器不存在
+######################################################################### Floorp Notes ###############################################################
+
+new-memo = 新建
+memo-title-input-placeholder = 键入标题
+memo-input-placeholder = 键入内容
+delete-memo = 删除
+save-memo = 保存
+memo-welcome-title = 欢迎!
+memo-first-tip = 欢迎使用 Floorp 笔记! 以下是关于如何使用它的一些说明!
+memo-second-tip = Floorp 笔记是一个记事本，允许你存储多个笔记，并在不同的设备上进行同步。你必须用你的 Firefox 账户登录到 Floorp 浏览器，才能启用同步功能。
+memo-third-tip = Floorp 笔记将被保存在您的 Floorp 设置中。另外，Firefox Sync会用你的 Firefox 账户密码对同步的内容进行加密，所以除了你，没有人知道这些内容。
+memo-fourth-tip = 只有 Firefox Sync 备份不能确保数据不丢失，我们建议你手动备份。
+memo-new-title = 新建笔记
