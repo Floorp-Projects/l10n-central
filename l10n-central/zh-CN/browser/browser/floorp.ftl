@@ -93,7 +93,7 @@ show-nav-bar-bottom =
 
 material-effect =
  .label = 允许 Mica for Everyone 修改浏览器外观
- disable-extension-check-compatibility-option =
+disable-extension-check-compatibility-option =
  .label =  不检查附加组件的兼容性
 other-preference = 其他选项
 
