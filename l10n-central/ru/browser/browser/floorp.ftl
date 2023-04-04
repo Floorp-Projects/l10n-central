@@ -8,22 +8,10 @@ about-floorp = Об проекте { -brand-product-name }
 icon-creator = Создатели логотипа:  <label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> и <label data-l10n-name="brand-logo-twitter">@mwxdxx.</label>
 contributors = Список <label data-l10n-name="about-contributor">контрибьюторов и разработчиков</label>
 
-######################################################################### Themes #########################################################################
-
-extension-floorp-material-name = Тема материала
-extension-floorp-material-description = Следовать дизайну операционной системы для кнопок, меню и окон
-
-extension-floorp-photon-name = Тема Photon
-extension-floorp-photon-description = Следовать дизайну операционной системы для кнопок, меню и окон
-
 #################################################################### about:preferences ####################################################################
 
 feature-requires-restart = Для изменения настроек требуется перезагрузка
 
-floorp-preference = Экспериментальные настройки
-browser-design-settings = Настройки панели вкладок
-
-auto-reboot = Если вы измените какие-либо из приведенных ниже настроек, ваш браузер будет перезапущен, чтобы применить изменения. Пожалуйста, сохраните данные, с которыми вы работаете, прежде чем вносить какие-либо изменения.
 tab-width = Минимальная ширина вкладок
 preferences-tabs-newtab-position = Новая позиция вкладки
 open-new-tab-use-default =
@@ -34,7 +22,7 @@ open-new-tab-next-to-current =
  .label = Открывать новые вкладки справа от текущей вкладки
 enable-multitab =
  .label = Включить многорядные вкладки
-multirow-tabs-limit = 
+multirow-tabs-limit =
  .label = Включить лимит рядов для многорядных вкладок
 multirow-tabs-newtab = 
  .label = Всегда размещать кнопку "Открыть новую вкладку" в колонке многорядных вкладок
@@ -49,7 +37,7 @@ enable-double-click-block =
  .label = Использовать двойной щелчок для закрытия вкладки
 enable-show-pinned-tabs-title =
  .label = Отображать заголовки закрепленных вкладок
-operation-settings = 
+operation-settings =
   .label = Настройки работы браузера
 Mouse-side-button =
   .label = Оптимизировать браузер для работы с мышью с боковыми кнопками
@@ -97,8 +85,6 @@ material-effect =
 disable-extension-check-compatibility-option =
  .label = Не проверять совместимость с дополнениями
 other-preference = Другие настройки
-
-operation-settings = Управление браузером
 
 enable-userscript =
  .label = Включить устаревшие компоненты
@@ -148,42 +134,6 @@ floorp-gnomeUI =
  .label = Gnome Theme
 floorp-fluerialUI =
  .label = Floorp Fluerial UI
-waterfox-lepton =
- .label = Firefox Lepton UI
-
-## Protection Against Fingerprinting
-
-privacy-hub-header = Центр конфиденциальности
-block-more-tracker = Блокируйте больше рекламы и трекеров
-block-tracker = Данный раздел содержит расширения помогающие блокировать рекламу и трекеры
-
-view-at-AMO = Подробнее на AMO
-uBlock-Origin = uBlock Origin
-about-uboori = uBlock Origin блокирует рекламу, разнообразные трекеры и прочие опасные сайты.
-
-Privacy-Badger = Privacy Badger
-about-PBadger = Privacy Badger автоматически учится блокировать скрытые трекеры на основе их поведения на веб-сайтах.
-
-Duck-Duck-Go = DuckDuckGo Privacy Essentials
-about-DDG = DuckDuckGo Privacy Essentials заменяет поисковую систему по умолчанию на DuckDuckGo, блокируя при этом трекеры на посещаемых сайтах.
-
-fingerprint-header = Противодействие фингерпринтингу и утечке IP-адреса
-block-fingerprint = Фингерпринтинг - механизм слежки опирающийся на уникальные особенности браузера и операционной системы. Этот раздел содержит настройки для дальнейшего усиления этой защиты помимо блокировки по умолчанию.
-enable-firefox-fingerprint-protections = Включить защиту от фингерпринтинга.
-about-firefox-fingerprint-protection = Включение защиты Firefox включает принудительный светлый режим, деактивацию некоторых API и т.д. Работа некоторых сайтов может быть нарушена.
-fingerprint-Protection =
- .label = Защита от фингерпринтинга
-html5-canvas-prompt-settings = 
- .label = Автоматически скрывать запросы на подтверждение доступа к данным изображения HTML5
-canvas-prompt = Автоматически скрывать запрос на чтение холста.
-disable-webgl =
- .label =  Отключить WebGL
-about-webgl = WebGL - API Javascript используемый для рендеринга графики, который может использоваться для идентификации GPU.
-Canvas-Blocker = Canvas Blocker
-about-CB = Дополнение подменяющее данные браузера используемые для создания фингерпринта.
-WebRTC-connection = WebRTC - стандарт отвечающий за звонки в реальном времени. Если вы отключите эту настройку, вы не сможете использовать Discord и т.д.
-WebRTC = 
- .label = Включить WebRTC-подключение
 
 ## Download Manager
 download-notification-preferences = Уведомление о загрузке
@@ -234,8 +184,6 @@ view-sidebar2-right =
  .label = Отображать боковую панель менеджера браузера справа
 enable-sidebar2 =
  .label = Включить боковую панель менеджера браузера
-sidebar2-restore =
- .label = Восстанавливать режим боковой панели при перезапуске { -brand-short-name } или загрузке нового окна
 
 custom-URL-option = Задайте URL веб-панели
 set-custom-URL-button = 
@@ -514,18 +462,11 @@ edit-userChromeCss-editor =
  .label = Редактировать userChrome.css
 edit-userContentCss-editor =
  .label = Редактировать userContent.css
-test-chrome-css =
- .label = Простестировать Chrome CSS
- .accesskey = C
-test-content-css =
- .label = Простестировать Content CSS
- .accesskey = W
 
 not-found-editor-path = Путь к редактору не найден
 set-pref-description = Укажите путь к редактору, который вы хотите использовать
 rebuild-complete = Пересборка завершена.
 please-enter-filename = Пожалуйста, введите имя файла.
-confirmed-update = Подтверждено обновление "{ $leafName }".
 
 ################################################################### Undo-Closed-Tab ###############################################################
 
