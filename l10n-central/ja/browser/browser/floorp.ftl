@@ -14,46 +14,46 @@ feature-requires-restart = この機能を変更するには { -brand-short-name
 
 tab-width = タブの最小幅
 preferences-tabs-newtab-position = 新しいタブの開く位置
-open-new-tab-use-default = 
+open-new-tab-use-default =
  .label = デフォルトの設定を使用
-open-new-tab-at-the-end = 
+open-new-tab-at-the-end =
  .label = 新しいタブをタブバーの最後の位置に開く
-open-new-tab-next-to-current = 
+open-new-tab-next-to-current =
  .label = 現在のタブの隣に新しいタブを開く
-enable-multitab = 
+enable-multitab =
  .label = 多段タブを有効にする
-multirow-tabs-limit = 
+multirow-tabs-limit =
  .label = 多段タブの行制限を有効にする
-multirow-tabs-newtab = 
+multirow-tabs-newtab =
  .label = 新しいタブボタンを常にタブの列内に配置する
 multirow-tabs-value = 多段タブの有効化時の行制限数
-enable-tab-sleep = 
+enable-tab-sleep =
  .label = タブスリープを有効にする
 tab-sleep-timeout-minutes-value = タブをスリープ状態にするまでの時間 (分)
-enable-tab-scroll-change = 
+enable-tab-scroll-change =
  .label = タブをスクロールで切り替える
-enable-double-click-block = 
+enable-double-click-block =
  .label = ダブルクリックでタブを閉じる
 enable-show-pinned-tabs-title =
  .label = ピン留めされたタブのタイトルを表示する
-Mouse-side-button = 
+Mouse-side-button =
   .label =「進む」・「戻る」ボタンを隠す
 
 tabbar-preference = タブバーの設定
 
-None-mode = 
+None-mode =
  .label= 通常モード（変更なし）
 
-hide-horizontality-tabs = 
+hide-horizontality-tabs =
  .label= 水平タブを隠す
 
-verticalTab-setting = 
+verticalTab-setting =
  .label = 垂直タブにブラウザーを最適化
 
 move-tabbar-position =
  .label = タブバーの位置をツールバーの下部に表示
 
-tabbar-on-bottom = 
+tabbar-on-bottom =
  .label = タブバーをウインドウの下部に表示
 
 native-tabbar = 垂直タブ
@@ -61,13 +61,13 @@ use-native-vertical =
   .label = ネイティブ実装された垂直タブを使用する（実験的）
 native-tabbar-tip = この機能は Firefox のサイドバーを使用し、サイドバーを使用するアドオン・サイドバーパネルが使用できなくなります。
 
-hover-vertical-tab = 
+hover-vertical-tab =
  .label = フォーカスされた場合に垂直タブを展開する
 
 vertical-tab-reverse-position = 垂直タブの位置を反転させる
 
 treestyletabSettings-l10 = ツリー型タブの設定
-treestyletab-Settings = 
+treestyletab-Settings =
  .label = フォーカスされた場合にツリー型タブを展開する（ブラウザーマネージャーサイドバーには適用されません）
 treestyletab-open-option = ツリー型タブアドオンの設定
 
@@ -87,7 +87,7 @@ disable-extension-check-compatibility-option =
  .label = アドオンと互換性があるか確認しない
 other-preference = その他の設定
 
-enable-userscript = 
+enable-userscript =
  .label = userChrome.js スクリプト・レガシーアドオンのローダーを有効にする
 about-legacy-components = この機能を有効にすると予期せぬエラーを発生させる可能性があります。
 
@@ -103,9 +103,9 @@ disable-fullscreen-notification =
  .label = 動画閲覧時のフルスクリーン通知を無効にする
 
 floorp-updater = { -brand-short-name } のアップデーター設定
-enable-floorp-updater = 
+enable-floorp-updater =
  .label = { -brand-short-name } のアップデートを起動時に確認する
-floorp-update-latest = 
+floorp-update-latest =
  .label = { -brand-short-name } が最新版であることを自動アップデートチェック時に通知する
 
 ## system theme color
@@ -116,10 +116,10 @@ preferences-theme-appearance-header = テーマの外観設定
 system-theme-dark =
  .label = ダークモードを有効にする
 
-system-theme-light = 
+system-theme-light =
  .label = ライトモードを有効にする
 
-system-theme-auto =  
+system-theme-auto =
  .label = システムの設定に従う
 
 ## user interface prefernces
@@ -133,10 +133,10 @@ firefox-proton =
 firefox-proton-fix =
  .label = Firefox Proton FIX デザイン
 
-firefox-photon-lepton = 
+firefox-photon-lepton =
  .label = Firefox Photon・Lepton デザイン
 
-floorp-legacy =  
+floorp-legacy =
  .label = Floorp Legacy デザイン（サポート対象外）
 
 floorp-fluentUI =
@@ -152,7 +152,7 @@ floorp-gnomeUI =
 download-notification-preferences = ダウンロード通知の設定
 start-always-notify =
  .label = 開始時にのみ通知する
-finish-always-notify = 
+finish-always-notify =
  .label = 終了時にのみ通知する
 always-notify =
  .label = 開始時と終了時に通知する
@@ -194,18 +194,18 @@ downloading-red-color =
  .label = ダウンロード中の表示を赤色に変更する
 
 sidebar-preferences = ブラウザーマネージャーサイドバーの設定
-view-sidebar2-right = 
+view-sidebar2-right =
  .label = サイドバーを右側に表示する
 enable-sidebar2 =
  .label = ブラウザーマネージャーサイドバーを有効にする
 
 custom-URL-option = ウェブパネルの URL 設定
-set-custom-URL-button = 
+set-custom-URL-button =
     .label = カスタム URL を設定
     .accesskey = S
 bsb-header = ブラウザーマネージャーサイドバー
 bsb-context = コンテナタブを選択する
-bsb-userAgent-label = 
+bsb-userAgent-label =
   .label = ユーザーエージェントをモバイルに切り替える
 bsb-width = ウェブパネルの幅 (もし0ならグローバル値が使われます)
 bsb-page = 開くページ
@@ -214,10 +214,10 @@ bsb-add = ブラウザーマネージャーサイドバーのウェブパネル�
 
 bsb-setting = ウェブパネルの設定
 
-bsb-add-title = 
+bsb-add-title =
  .title = { bsb-add }
 
-bsb-setting-title = 
+bsb-setting-title =
  .title = { bsb-setting }
 
 bsb-browser-manager-sidebar =
@@ -265,13 +265,13 @@ use-icon-provider-option-hatena =
 
 memory-and-performance = メモリとパフォーマンスの設定
 
-min-memory = 
+min-memory =
     .label = メモリ使用量を最小限にする
 
-balance-memory = 
+balance-memory =
     .label = パフォーマンスとメモリ使用量のバランスを取る
 
-max-memory = 
+max-memory =
     .label = 最高パフォーマンスを得るためにメモリ使用量を最大限にする（既定）
 
 delete-border-and-roundup-option =
@@ -297,13 +297,13 @@ newtab-background-selected-image =
 
 newtab-background-folder = 選択されているフォルダ
 
-newtab-background-folder-reload = 
+newtab-background-folder-reload =
   .label = 画像を再読込する
 
-newtab-background-folder-default = 
+newtab-background-folder-default =
   .label = 既定値に戻す
 
-newtab-background-folder-open = 
+newtab-background-folder-open =
   .label = フォルダを開く
 
 newtab-background-folder-choose = フォルダを選ぶ
@@ -321,10 +321,10 @@ lepton-preference-button =
 lepton-header = Lepton の設定
 
 lepton-preference = Lepton の UI 設定
-photon-mode = 
+photon-mode =
     .label = Photon UI モード
 
-lepton-mode = 
+lepton-mode =
     .label = Lepton UI モード
 
 autohide-preference = 自動非表示のカスタマイズ
@@ -432,7 +432,7 @@ sidebar-back-button =
 sidebar-forward-button =
   .tooltiptext = 進む
 
-sidebar-reload-button = 
+sidebar-reload-button =
   .tooltiptext = リロード
 
 sidebar-muteAndUnmute-button =
@@ -486,16 +486,16 @@ sidebar-keepWidth-button =
 sidebar2-keep-width-for-global =
   .label = 現在のサイズをウェブパネルの幅のグローバル値として設定する
 
-bsb-context-add = 
+bsb-context-add =
   .label = このページをウェブパネルに追加
 
-bsb-context-link-add = 
+bsb-context-link-add =
   .label = リンク先をウェブパネルに追加
 
 
 #################################################################### menu panel ############################################################
 
-open-profile-dir = 
+open-profile-dir =
     .label = プロファイルフォルダーを開く
 appmenuitem-reboot =
     .label = 再起動
