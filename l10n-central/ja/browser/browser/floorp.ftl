@@ -65,7 +65,7 @@ hover-vertical-tab =
  .label = フォーカスされた場合に垂直タブを展開する
 
 vertical-tab-reverse-position = 垂直タブの位置を反転させる
- 
+
 treestyletabSettings-l10 = ツリー型タブの設定
 treestyletab-Settings = 
  .label = フォーカスされた場合にツリー型タブを展開する（ブラウザーマネージャーサイドバーには適用されません）
@@ -135,7 +135,7 @@ firefox-proton-fix =
 
 firefox-photon-lepton = 
  .label = Firefox Photon・Lepton デザイン
- 
+
 floorp-legacy =  
  .label = Floorp Legacy デザイン（サポート対象外）
 
@@ -272,7 +272,7 @@ balance-memory =
     .label = パフォーマンスとメモリ使用量のバランスを取る
 
 max-memory = 
-    .label = 最高パフォーマンスを得るためにメモリ使用量を最大限にする（既定） 
+    .label = 最高パフォーマンスを得るためにメモリ使用量を最大限にする（既定）
 
 delete-border-and-roundup-option =
   .label = 枠線をサイトの枠のみにし、{ -brand-short-name } 自体を丸くする
@@ -294,15 +294,15 @@ newtab-background-not-background =
 
 newtab-background-selected-image =
     .label = 選択されているフォルダ内の画像を使用する
-    
+
 newtab-background-folder = 選択されているフォルダ
 
 newtab-background-folder-reload = 
   .label = 画像を再読込する
-  
+
 newtab-background-folder-default = 
   .label = 既定値に戻す
-  
+
 newtab-background-folder-open = 
   .label = フォルダを開く
 
@@ -419,7 +419,7 @@ sidebar2-unload-panel =
 
 sidebar2-change-ua-panel =
   .label = このパネルでユーザーエージェントをモバイル/デスクトップに切り替える
-  
+
 sidebar2-delete-panel =
   .label = このパネルをサイドバーから削除
 
@@ -437,7 +437,7 @@ sidebar-reload-button =
 
 sidebar-muteAndUnmute-button =
   .tooltiptext = サイドバーの音声をミュート/ミュート解除する
-  
+
 sidebar2-browser-manager-sidebar = ブラウザマネージャーツール
 
 show-browser-manager-sidebar =
@@ -530,7 +530,7 @@ edit-userContentCss-editor =
 
 not-found-editor-path = テキストエディターへのパスが見つかりません！
 set-pref-description = 以下のフォームに使用したいテキストエディターへのパスを入力してください。
-rebuild-complete = リビルドが完了しました。
+rebuild-complete = 再構築が完了しました。
 please-enter-filename = ファイル名を入力してください。
 
 ################################################################### Undo-Closed-Tab ###############################################################
