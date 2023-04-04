@@ -61,8 +61,7 @@ move-tabbar-position =
 tabbar-on-bottom = 
  .label = タブバーをウインドウの下部に表示
 
-native-tabbar = 
- .label = 垂直タブ
+native-tabbar = 垂直タブ
 use-native-vertical =
   .label = ネイティブ実装された垂直タブを使用する（実験的）
 native-tabbar-tip = この機能は Firefox のサイドバーを使用し、サイドバーを使用するアドオン・サイドバーパネルが使用できなくなります。
