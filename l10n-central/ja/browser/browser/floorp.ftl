@@ -12,9 +12,14 @@ contributors = <label data-l10n-name="about-contributor">貢献者・開発者</
 
 feature-requires-restart = この機能を変更するには { -brand-short-name } を再起動する必要があります。
 
-floorp-preference = { -brand-product-name } の実験的な設定
-
 tab-width = タブの最小幅
+preferences-tabs-newtab-position = 新しいタブの開く位置
+open-new-tab-use-default = 
+ .label = デフォルトの設定を使用
+open-new-tab-at-the-end = 
+ .label = 新しいタブをタブバーの最後の位置に開く
+open-new-tab-next-to-current = 
+ .label = 現在のタブの隣に新しいタブを開く
 enable-multitab = 
  .label = 多段タブを有効にする
 multirow-tabs-limit = 
@@ -27,22 +32,12 @@ enable-tab-sleep =
 tab-sleep-timeout-minutes-value = タブをスリープ状態にするまでの時間 (分)
 enable-tab-scroll-change = 
  .label = タブをスクロールで切り替える
-enable-doble-click-block = 
+enable-double-click-block = 
  .label = ダブルクリックでタブを閉じる
 enable-show-pinned-tabs-title =
  .label = ピン留めされたタブのタイトルを表示する
-operation-settings = 
-  .label = ブラウザーの操作設定
 Mouse-side-button = 
   .label =「進む」・「戻る」ボタンを隠す
-
-preferences-tabs-newtab-position = 新しいタブの開く位置
-open-new-tab-use-default = 
- .label = デフォルトの設定を使用
-open-new-tab-at-the-end = 
- .label = 新しいタブをタブバーの最後の位置に開く
-open-new-tab-next-to-current = 
- .label = 現在のタブの隣に新しいタブを開く
 
 tabbar-preference = タブバーの設定
 
@@ -68,6 +63,8 @@ native-tabbar-tip = この機能は Firefox のサイドバーを使用し、サ
 
 hover-vertical-tab = 
  .label = フォーカスされた場合に垂直タブを展開する
+
+vertical-tab-reverse-position = 垂直タブの位置を反転させる
  
 treestyletabSettings-l10 = ツリー型タブの設定
 treestyletab-Settings = 
@@ -75,7 +72,6 @@ treestyletab-Settings =
 treestyletab-open-option = ツリー型タブアドオンの設定
 
 bookmarks-bar-settings = ブックマークバーの設定（設定の併用不可）
-operation-settings = ブラウザーの操作設定
 bookmarks-focus-mode =
  .label = ブックマークバーをフォーカスされた場合に表示
 bookmarks-bottom-mode =
@@ -146,62 +142,11 @@ floorp-legacy =
 floorp-fluentUI =
  .label = Microsoft Fluent UI デザイン
 
-floorp-gnomeUI =
- .label = GNOME デスクトップのデザイン（システムテーマ & GTK が必要）
-
-waterfox-lepton =
- .label = Lepton（Firefox UI FIX） のデザイン
- 
 floorp-fluerialUI =
  .label = Floorp Fluerial UI デザイン
 
-memory-and-performance = メモリとパフォーマンスの設定
-
-min-memory = 
-    .label = メモリ使用量を最小限にする
-
-balance-memory = 
-    .label = パフォーマンスとメモリ使用量のバランスを取る
-
-max-memory = 
-    .label = 最高パフォーマンスを得るためにメモリ使用量を最大限にする（既定） 
-
-## BlockMoreTracker
-
-privacy-hub-header = プライバシーハブ
-
-block-more-tracker = もっとに追跡を遮断する
-block-tracker = この項目では、追跡を遮断するための機能を { -brand-short-name } が選ぶアドオンと設定から提供します。
-
-view-at-AMO = AMO で表示
-uBlock-Origin = uBlock Origin
-about-uboori = uBlock Origin は、広告、トラッキング、スパイウェア、広告スクリプト、フォント、およびその他の要素をブロックするためのブラウザー拡張機能です。
-
-Privacy-Badger = Privacy Badger
-about-PBadger = Privacy Badger は、ウェブサイトがあなたのプライバシーを侵害するために使用するトラッキングツールを自動的に学習し、ブロックします。
-
-Duck-Duck-Go = DuckDuckGo Privacy Essentials
-about-DDG = DuckDuckGo Privacy Essentials は、ウェブサイトのプライバシーレベルを判定し、プライバシーを侵害するトラッキングツールをブロックします。
-
-## Fingerprint
-
-fingerprint-header = 指紋採取対策設定 & IP アドレス漏洩防止設定
-block-fingerprint = フィンガープリントは、ブラウザとオペレーティング システムの固有の機能に依存する追跡メカニズムです。 このセクションには、デフォルトのブロックを超えてこの保護をさらに強化するための設定が含まれています。
-enable-firefox-fingerprint-protections = Firefox の強力な指紋採取対策を有効にする
-about-firefox-fingerprint-protection = Firefox による指紋採取保護の有効化には、ウェブサイトのライトモードの強制、一部の API の無効化などが含まれます。一部のサイトが壊れる可能性があります。
-fingerprint-Protection =
- .label =  指紋防止保護
-html5-canvas-prompt-settings =
- .label =  HTML5 Canvas 画像データのアクセス確認プロンプトを自動的に承認する
-canvas-prompt = デフォルトでは、キャンバス読み取りプロンプトを自動的に拒否します
-disable-webgl =
- .label =  WebGL を無効にする
-about-webgl = WebGL は、3D グラフィックスを描画するための GPU 情報を漏洩させる可能性のある API です。 WebGL を無効にすると、一部のウェブサイトが壊れる可能性があります。
-Canvas-Blocker = Canvas Blocker
-about-CB = Canvas Blocker は、キャンバスの指紋をブロックするためのブラウザー拡張機能です。
-WebRTC-connection = WebRTC 接続は、ブラウザーと WebRTC サービスを介してピア間で直接接続を確立するために使用されます。 WebRTC 接続は、IP アドレスを漏洩させる可能性があります。
-WebRTC = 
- .label = WebRTC 接続を有効にする
+floorp-gnomeUI =
+ .label = GNOME デスクトップのデザイン（システムテーマ & GTK が必要）
 
 ## download mgr
 download-notification-preferences = ダウンロード通知の設定
@@ -213,6 +158,7 @@ always-notify =
  .label = 開始時と終了時に通知する
 do-not-notify =
  .label = 通知しない
+
 floorp-translater = 翻訳機能の設定
 click-to-option =
     .label = 設定を開く
@@ -253,14 +199,10 @@ view-sidebar2-right =
 enable-sidebar2 =
  .label = ブラウザーマネージャーサイドバーを有効にする
 
-sidebar2-restore =
- .label = サイドバーを再起動時・新しいウインドウ作成時に復元する
-
 custom-URL-option = ウェブパネルの URL 設定
 set-custom-URL-button = 
     .label = カスタム URL を設定
     .accesskey = S
-
 bsb-header = ブラウザーマネージャーサイドバー
 bsb-context = コンテナタブを選択する
 bsb-userAgent-label = 
@@ -269,29 +211,42 @@ bsb-width = ウェブパネルの幅 (もし0ならグローバル値が使わ�
 bsb-page = 開くページ
 
 bsb-add = ブラウザーマネージャーサイドバーのウェブパネルを追加する
+
 bsb-setting = ウェブパネルの設定
+
 bsb-add-title = 
  .title = { bsb-add }
+
 bsb-setting-title = 
  .title = { bsb-setting }
+
 bsb-browser-manager-sidebar =
   .label = { sidebar2-browser-manager-sidebar }
+
 bsb-bookmark-sidebar =
   .label = { sidebar2-bookmark-sidebar }
+
 bsb-history-sidebar =
   .label = { sidebar2-history-sidebar }
+
 bsb-download-sidebar =
   .label = { sidebar2-download-sidebar }
+
 bsb-notes-sidebar =
   .label = { sidebar2-notes-sidebar }
+
 bsb-TST-sidebar =
   .label = { sidebar2-TST-sidebar }
+
 bsb-website = 
   .label = ウェブサイト
+
 sidebar2-pref-delete =
  .label = 削除
+
 sidebar2-pref-setting =
  .label = 設定
+
 sidebar2-global-width = ウェブパネルの幅のグローバル値
 
 use-icon-provider-option = ウェブパネルのアイコン提供元
@@ -308,6 +263,16 @@ use-icon-provider-option-yandex =
 use-icon-provider-option-hatena =
  .label = Hatena (中国本土で利用可能)
 
+memory-and-performance = メモリとパフォーマンスの設定
+
+min-memory = 
+    .label = メモリ使用量を最小限にする
+
+balance-memory = 
+    .label = パフォーマンスとメモリ使用量のバランスを取る
+
+max-memory = 
+    .label = 最高パフォーマンスを得るためにメモリ使用量を最大限にする（既定） 
 
 delete-border-and-roundup-option =
   .label = 枠線をサイトの枠のみにし、{ -brand-short-name } 自体を丸くする
@@ -327,7 +292,6 @@ newtab-background-gradation =
 newtab-background-not-background =
     .label = 背景を表示しない
 
-
 newtab-background-selected-image =
     .label = 選択されているフォルダ内の画像を使用する
     
@@ -341,12 +305,10 @@ newtab-background-folder-default =
   
 newtab-background-folder-open = 
   .label = フォルダを開く
-  
+
 newtab-background-folder-choose = フォルダを選ぶ
 
 newtab-background-extensions = 画像の拡張子 (","で区切ります)
-
-
 
 ## lepton preferences
 
@@ -439,6 +401,7 @@ floorp-home-mode-choice-default =
 floorp-home-prefs-content-header = Floorp Home コンテンツ
 floorp-home-prefs-content-description = Floorp Home に表示するコンテンツを選びましょう。
 
+
 ################################################################### browser ###############################################################
 
 rest-mode = 休憩中
@@ -505,6 +468,9 @@ sidebar2-TST-sidebar = TST
 show-TST-sidebar =
   .tooltiptext = { sidebar2-TST-sidebar } サイドバーを表示する
 
+sidebar-add-button =
+  .tooltiptext = { bsb-add }
+
 sidebar-addons-button =
   .tooltiptext = アドオンマネージャーを開く
 
@@ -522,6 +488,7 @@ sidebar2-keep-width-for-global =
 
 bsb-context-add = 
   .label = このページをウェブパネルに追加
+
 bsb-context-link-add = 
   .label = リンク先をウェブパネルに追加
 
@@ -536,6 +503,10 @@ appmenuitem-reboot =
 ####################################################################### menu ###############################################################
 
 css-menu =
+    .label = CSS
+    .accesskey = C
+
+css-menubar =
     .label = CSS
     .accesskey = C
 
@@ -557,20 +528,14 @@ edit-userChromeCss-editor =
 edit-userContentCss-editor =
     .label = userContent.css を編集する
 
-test-chrome-css =
-    .label = userChrome.css ファイルをテストする
-    .accesskey = C
-test-content-css =
-    .label = userContent.css ファイルをテストする
-    .accesskey = W
-
 not-found-editor-path = テキストエディターへのパスが見つかりません！
 set-pref-description = 以下のフォームに使用したいテキストエディターへのパスを入力してください。
+rebuild-complete = リビルドが完了しました。
+please-enter-filename = ファイル名を入力してください。
 
 ################################################################### Undo-Closed-Tab ###############################################################
 
 undo-closed-tab = 閉じたタブを開く
-
 
 ################################################################### about:addons ###############################################################
 
@@ -578,6 +543,12 @@ undo-closed-tab = 閉じたタブを開く
 dual-theme-enable-addon-button = 有効化（サブテーマ）
 dual-theme-disable-addon-button = 無効化 (サブテーマ)
 dual-theme-enabled-heading = 有効（サブテーマ）
+
+##################################################################### migration  ###############################################################
+
+import-from-vivaldi =
+    .label = Vivaldi
+    .accesskey = V
 
 ##################################################################### toolbar ###############################################################
 
