@@ -519,7 +519,8 @@ update-portable-notification-failed-prepare-message = Не удалось под
 
 ##################################################################### Open link in external ###############################################################
 openInExternal-title = Открыть в другом браузере
-open-link-in-external-enabled-option = Включить функцию "Открыть в другом браузере"
+open-link-in-external-enabled-option =
+ .label = Включить функцию "Открыть в другом браузере"
 open-link-in-external-select-browser-option = Выберите браузер, который вы хотите использовать в функции "Открыть в другом браузере".
 open-link-in-external-select-browser-option-default =
  .label = Браузер по умолчанию
