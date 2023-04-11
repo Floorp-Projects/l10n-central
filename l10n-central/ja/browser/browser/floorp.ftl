@@ -56,15 +56,31 @@ move-tabbar-position =
 tabbar-on-bottom =
  .label = タブバーをウインドウの下部に表示
 
+
+## ↓ Will be deleted
 native-tabbar = 垂直タブ
+## ↓ Will be deleted
 use-native-vertical =
   .label = ネイティブ実装された垂直タブを使用する（実験的）
+
+tabbar-style-preference = タブスタイル
+
+horizontal-tabbar =
+ .label = 水平タブ
+multirow-tabbar =
+ .label = 多段タブ
+vertical-tabbar =
+ .label = 垂直タブ (実験的)
+ 
 native-tabbar-tip = この機能は Firefox のサイドバーを使用し、サイドバーを使用するアドオン・サイドバーパネルが使用できなくなります。
 
 hover-vertical-tab =
  .label = フォーカスされた場合に垂直タブを展開する
 
+## ↓ Will be deleted
 vertical-tab-reverse-position = 垂直タブの位置を反転させる
+
+sidebar-reverse-position-toolbar = サイドバーの位置を反転させる
 
 treestyletabSettings-l10 = ツリー型タブの設定
 treestyletab-Settings =
