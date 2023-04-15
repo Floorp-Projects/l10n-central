@@ -10,6 +10,11 @@ contributors = <label data-l10n-name="about-contributor">貢献者・開発者</
 
 #################################################################### about:preferences ####################################################################
 
+pane-design-title = デザイン
+category-design =
+    .tooltiptext = { pane-design-title }
+design-header = デザイン
+
 feature-requires-restart = この機能を変更するには { -brand-short-name } を再起動する必要があります。
 
 tab-width = タブの最小幅
