@@ -119,7 +119,7 @@ system-theme-auto =
  .label = Стандартный режим
 
 ui-preference = Внешний вид браузера
-preferences-browser-appearance-description = Вы можете выбрать один из замечательных дизайнов Floorp написанных сторонними разработчиками. Некоторые дизайны могут быть несовместимы с вашей конфигурацией.
+preferences-browser-appearance-description = Вы можете выбрать один из замечательных дизайнов написанных сторонними разработчиками. Некоторые дизайны могут быть несовместимы с вашей конфигурацией.
 firefox-proton =
  .label = Firefox modern Proton UI
 firefox-proton-fix =
@@ -241,7 +241,7 @@ max-memory =
  .label = Лучшая скорость и производительность (высокое потребление памяти)
 
 delete-border-and-roundup-option =
-  .label = Удалить рамки и округлить углы { -brand-short-name }
+  .label = Округлить углы { -brand-short-name }
 
 ## DualTheme
 dualtheme-enable =
@@ -359,7 +359,7 @@ floorp-lepton-enable-overlap-sidebar =
 floorp-home-mode-choice-default =
  .label = Домашняя страница Floorp (По умолчанию)
 floorp-home-prefs-content-header = Содержимое стартовой страницы Floorp
-floorp-home-prefs-content-description = Выберите, какое содержимое вы хотите видеть на стартовой странице Floorp.
+floorp-home-prefs-content-description = Выберите содержимое, которое вы хотите видеть на главной странице Floorp.
 
 
 rest-mode = Делаем перерыв...
@@ -538,7 +538,8 @@ delete-memo = Удалить
 save-memo = Сохранить
 memo-welcome-title = Добро пожаловать!
 memo-first-tip = Добро пожаловать в Floorp Notes! Вот несколько инструкций по его использованию!
-memo-second-tip = Floorp Notes - записная книжка, позволяющая хранить несколько заметок, которые синхронизируются между различными устройствами. Чтобы включить синхронизацию, необходимо войти в учетную запись Firefox.
+memo-second-tip = Floorp Notes - записная книжка, позволяющая хранить несколько заметок, которые синхронизируются между различными устройствами. Чтобы включить синхронизацию, необходимо войти в Floorp с учетной записью Firefox.
 memo-third-tip = Заметки будут сохранены в настройках Floorp. Кроме того, Firefox Sync шифрует содержимое синхронизации с помощью пароля вашей учетной записи Firefox, поэтому никто, кроме вас, не знает его содержимого.
 memo-fourth-tip = Firefox Sync не является службой резервного копирования. Мы рекомендуем вам создавать резервные копии.
 memo-new-title = Новая заметка
+chage-view-mode = Переключить режим просмотра/редактирования.
