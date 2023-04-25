@@ -568,7 +568,7 @@ floorp-show-all-downloads =
 workspace-prompt-title = Рабочие пространства Floorp
 please-enter-workspace-name = Пожалуйста, введите новое название рабочего пространства.
 workspace-error = Ошибка!
-workspace-error-discription = Название рабочего пространства пустое или уже существует.
+workspace-error-discription = Название рабочего пространства недопустимо или уже существует.
 
 workspace-button = Рабочее пространство
   .label = Рабочее пространство
