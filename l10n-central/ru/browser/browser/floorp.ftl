@@ -574,6 +574,6 @@ workspace-button = Рабочее пространство
   .label = Рабочее пространство
   .tooltiptext = Рабочее пространство
 
-workspace-default = Рабочее пространство по умолчанию
+workspace-default = По умолчанию
 workspace-add = 
  .label= Добавить новое рабочее пространство
