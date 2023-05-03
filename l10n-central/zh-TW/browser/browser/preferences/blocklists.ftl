@@ -6,6 +6,10 @@ blocklist-window =
     .title = 封鎖清單
     .style = width: 55em
 
+blocklist-window2 =
+    .title = 封鎖清單
+    .style = min-width: 55em
+
 blocklist-description = 請選擇 { -brand-short-name } 要用來封鎖線上追蹤器的清單。清單內容是由 <a data-l10n-name="disconnect-link" title="Disconnect">Disconnect</a> 提供。
 blocklist-close-key =
     .key = w

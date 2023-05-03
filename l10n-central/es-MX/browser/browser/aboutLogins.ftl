@@ -4,12 +4,14 @@
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = Inicios de sesión y contraseñas
-
 login-filter =
     .placeholder = Buscar inicios de sesión
-
 create-login-button = Crear nuevo inicio de sesión
-
+about-logins-login-filter =
+    .placeholder = Buscar inicios de sesión
+    .key = F
+create-new-login-button =
+    .title = Crear nuevo inicio de sesión
 fxaccounts-sign-in-text = Recibe tus contraseñas en tus dispositivos
 fxaccounts-sign-in-sync-button = Inicia sesión para sincronizar
 fxaccounts-avatar-button =
@@ -20,7 +22,7 @@ fxaccounts-avatar-button =
 menu =
     .title = Abrir menú
 # This menuitem is only visible on Windows and macOS
-about-logins-menu-menuitem-import-from-another-browser = Importar desde otro navegador...
+about-logins-menu-menuitem-import-from-another-browser = Importar desde otro navegador…
 about-logins-menu-menuitem-import-from-a-file = Importar desde un archivo…
 about-logins-menu-menuitem-export-logins = Exportar inicios de sesión...
 about-logins-menu-menuitem-remove-all-logins = Eliminar todos los inicios de sesión…
@@ -35,10 +37,21 @@ about-logins-menu-menuitem-help = Ayuda
 
 login-list =
     .aria-label = Inicios de sesión que coinciden con la consulta de búsqueda
+# Variables
+#   $count (number) - Number of logins
 login-list-count =
     { $count ->
         [one] { $count } inicio de sesión
        *[other] { $count } inicios de sesión
+    }
+# Variables
+#   $count (number) - Number of filtered logins
+#   $total (number) - Total number of logins
+login-list-filtered-count =
+    { $total ->
+        [one] { $count } de { $total } Inicio de sesión
+        [many] { $count } de { $total } Inicios de sesión
+       *[other] { $count } de { $total } Inicios de sesión
     }
 login-list-sort-label-text = Ordenar por:
 login-list-name-option = Nombre (A-Z)
@@ -72,7 +85,7 @@ about-logins-login-intro-heading-logged-out2 = ¿Buscas tus inicios de sesión g
 about-logins-login-intro-heading-logged-in = No se encontraron inicios de sesión sincronizados.
 login-intro-description = Si salvaste tus inicios de sesión en { -brand-product-name } en un dispositivo diferente, aquí se muestra como obtenerlas para aquí también:
 login-intro-instructions-fxa = Crea o inicia sesión en tu { -fxaccount-brand-name } en el dispositivo donde se guardan tus inicios de sesión.
-login-intro-instructions-fxa-settings = Ve a Configuración> Sincronizar > Activar sincronización… Marca la casilla Inicios de sesión y contraseñas.
+login-intro-instructions-fxa-settings = Ve a Ajustes> Sincronizar > Activar sincronización… Marca la casilla Inicios de sesión y contraseñas.
 login-intro-instructions-fxa-passwords-help = Visita <a data-l10n-name="passwords-help-link">soporte para contraseñas</a> para más ayuda.
 about-logins-intro-browser-only-import = Si tus inicios de sesión se guardan en otro navegador, puedes <a data-l10n-name="import-link">importarlos en { -brand-product-name }</a>
 about-logins-intro-import2 = Si tus credenciales se guardan fuera de { -brand-product-name }, puedes <a data-l10n-name="import-browser-link">importarlas desde otro navegador</a> o <a data-l10n-name="import-file-link">desde un archivo</a>
@@ -103,6 +116,17 @@ login-item-time-changed = Última modificación: { DATETIME($timeChanged, day: "
 login-item-time-created = Creado: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
 login-item-time-used = Último uso: { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
 
+## The date is displayed in a timeline showing the password evolution.
+## A label is displayed under the date to describe the type of change.
+## (e.g. updated, created, etc.)
+
+# Variables
+#   $datetime (date) - Event date
+login-item-timeline-point-date = { DATETIME($datetime, day: "numeric", month: "short", year: "numeric") }
+login-item-timeline-action-created = Creado
+login-item-timeline-action-updated = Actualizado
+login-item-timeline-action-used = Usado
+
 ## OS Authentication dialog
 
 about-logins-os-auth-dialog-caption = { -brand-full-name }
@@ -116,19 +140,16 @@ about-logins-edit-login-os-auth-dialog-message-win = Para editar tu inicio de se
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = editar el inicio de sesión guardado
-
 # This message can be seen when attempting to reveal a password in about:logins on Windows.
 about-logins-reveal-password-os-auth-dialog-message-win = Para ver tu contraseña, ingresa tus credenciales de inicio de sesión de Windows. Esto ayuda a proteger la seguridad de tus cuentas.
 # This message can be seen when attempting to reveal a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-reveal-password-os-auth-dialog-message-macosx = mostrar la contraseña guardada
-
 # This message can be seen when attempting to copy a password in about:logins on Windows.
 about-logins-copy-password-os-auth-dialog-message-win = Para copiar tu contraseña, ingresa tus credenciales de inicio de sesión de Windows. Esto ayuda a proteger la seguridad de tus cuentas.
 # This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = copiar la contraseña guardada
-
 # This message can be seen when attempting to export a password in about:logins on Windows.
 about-logins-export-password-os-auth-dialog-message-win = Para exportar tus inicios de sesión, ingresa tus credenciales de inicio de sesión de Windows. Esto ayuda a proteger la seguridad de tus cuentas.
 # This message can be seen when attempting to export a password in about:logins
@@ -147,10 +168,12 @@ master-password-reload-button =
 confirmation-dialog-cancel-button = Cancelar
 confirmation-dialog-dismiss-button =
     .title = Cancelar
-
 about-logins-confirm-remove-dialog-title = ¿Eliminar este inicio de sesión?
 confirm-delete-dialog-message = Esta acción no se puede deshacer
 about-logins-confirm-remove-dialog-confirm-button = Eliminar
+
+## Variables
+##   $count (number) - Number of items
 
 about-logins-confirm-remove-all-dialog-confirm-button-label =
     { $count ->
@@ -158,14 +181,12 @@ about-logins-confirm-remove-all-dialog-confirm-button-label =
         [one] Eliminar
        *[other] Eliminar todas
     }
-
 about-logins-confirm-remove-all-dialog-checkbox-label =
     { $count ->
         [1] Sí, eliminar este inicio de sesión
         [one] Sí, eliminar este inicio de sesión
        *[other] Sí, eliminar estos inicios de sesión
     }
-
 about-logins-confirm-remove-all-dialog-title =
     { $count ->
         [one] ¿Eliminar inicio de sesión de { $count }?
@@ -177,7 +198,6 @@ about-logins-confirm-remove-all-dialog-message =
         [one] Esto eliminará el inicio de sesión que guardó con { -brand-short-name } y cualquier alerta de filtración que aparezca aquí. No podrá deshacer esta acción.
        *[other] Esto eliminará los inicios de sesión que guardó con { -brand-short-name } y cualquier alerta de filtración que aparezca aquí. No podrá deshacer esta acción.
     }
-
 about-logins-confirm-remove-all-sync-dialog-title =
     { $count ->
         [one] ¿Eliminar { $count } inicio de sesión de todos los dispositivos?
@@ -190,13 +210,13 @@ about-logins-confirm-remove-all-sync-dialog-message =
        *[other] Esto eliminará todos los inicios de sesión que guardó en { -brand-short-name } en todos los dispositivos sincronizados con su { -fxaccount-brand-name }. Esto también eliminará las alertas de filtraciones que aparecen aquí. No podrá deshacer esta acción.
     }
 
+##
+
 about-logins-confirm-export-dialog-title = Exportar inicios de sesión y contraseñas
 about-logins-confirm-export-dialog-message = Tus contraseñas se guardarán como texto legible (por ejemplo, BadP@ssw0rd) de modo que cualquiera que abra el archivo exportado podrá verlas.
-about-logins-confirm-export-dialog-confirm-button = Exportar...
-
+about-logins-confirm-export-dialog-confirm-button = Exportar…
 about-logins-alert-import-title = Importación completa
 about-logins-alert-import-message = Ver resumen detallado de la importación
-
 confirm-discard-changes-dialog-title = ¿Descartar cambios no guardados?
 confirm-discard-changes-dialog-message = Todos los cambios no guardados se perderán.
 confirm-discard-changes-dialog-confirm-button = Descartar
@@ -227,7 +247,6 @@ about-logins-vulnerable-alert-learn-more-link = Saber más
 # Variables:
 #   $loginTitle (String) - The title of the website associated with the login.
 about-logins-error-message-duplicate-login-with-link = Ya hay una entrada para { $loginTitle } con ese nombre de usuario. <a data-l10n-name="duplicate-link">¿Quieres ir a esa entrada?</a>
-
 # This is a generic error message.
 about-logins-error-message-default = Se produjo un error al intentar guardar esta contraseña.
 
@@ -277,13 +296,11 @@ about-logins-import-dialog-items-added =
         [one] <span>Se agregaron nuevos inicios de sesión:</span> <span data-l10n-name="count">{ $count }</span>
        *[other] <span>Se agregaron nuevos inicios de sesión:</span> <span data-l10n-name="count">{ $count }</span>
     }
-
 about-logins-import-dialog-items-modified =
     { $count ->
         [one] <span>Se actualizaron los inicios de sesión :</span> <span data-l10n-name="count">{ $count }</span>
        *[other] <span>Se actualizaron los inicios de sesión :</span> <span data-l10n-name="count">{ $count }</span>
     }
-
 about-logins-import-dialog-items-no-change =
     { $count ->
         [one] <span>Se encontraron inicios de sesión duplicados:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(no importado)</span>
@@ -295,7 +312,6 @@ about-logins-import-dialog-items-error =
        *[other] <span>Errores:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(no importados)</span>
     }
 about-logins-import-dialog-done = Hecho
-
 about-logins-import-dialog-error-title = Error de importación
 about-logins-import-dialog-error-conflicting-values-title = Múltiples valores contradictorios para un mismo inicio de sesión
 about-logins-import-dialog-error-conflicting-values-description = Por ejemplo: múltiples nombres de usuario, contraseñas, URLs, etc. para un mismo inicio de sesión.
@@ -309,10 +325,8 @@ about-logins-import-dialog-error-no-logins-imported = No se importaron los inici
 about-logins-import-dialog-error-learn-more = Aprender más
 about-logins-import-dialog-error-try-import-again = Intenta importar de nuevo…
 about-logins-import-dialog-error-cancel = Cancelar
-
 about-logins-import-report-title = Resumen de importación
 about-logins-import-report-description = Inicios de sesión y contraseñas importadas a { -brand-short-name }.
-
 #
 # Variables:
 #  $number (number) - The number of the row

@@ -182,6 +182,17 @@ menu-view-full-screen =
     .label = Полный экран
     .accesskey = э
 
+## These menu items may use the same accesskey.
+
+# This should match reader-view-enter-button in browser.ftl
+menu-view-enter-readerview =
+    .label = Перейти в режим чтения
+    .accesskey = ч
+# This should match reader-view-close-button in browser.ftl
+menu-view-close-readerview =
+    .label = Закрыть режим чтения
+    .accesskey = ч
+
 ##
 
 menu-view-show-all-tabs =
@@ -223,7 +234,7 @@ menu-bookmarks-manage =
 menu-bookmark-current-tab =
     .label = Добавить текущую вкладку в закладки
 menu-bookmark-edit =
-    .label = Редактировать эту закладку
+    .label = Изменить эту закладку
 menu-bookmark-tab =
     .label = Добавить текущую вкладку в закладки…
 menu-edit-bookmark =
@@ -270,8 +281,8 @@ menu-tools-page-source =
     .label = Исходный код страницы
     .accesskey = х
 menu-tools-page-info =
-    .label = Информация о странице
-    .accesskey = ф
+    .label = Сведения о странице
+    .accesskey = в
 menu-settings =
     .label = Настройки
     .accesskey =

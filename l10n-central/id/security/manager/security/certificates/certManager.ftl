@@ -30,6 +30,10 @@ certmgr-edit-ca-cert =
     .title = Ubah pengaturan kepercayaan sertifikat CA
     .style = width: 48em;
 
+certmgr-edit-ca-cert2 =
+    .title = Ubah pengaturan kepercayaan sertifikat CA
+    .style = min-width: 48em;
+
 certmgr-edit-cert-edit-trust = Ubah pengaturan kepercayaan:
 
 certmgr-edit-cert-trust-ssl =
@@ -41,6 +45,10 @@ certmgr-edit-cert-trust-email =
 certmgr-delete-cert =
     .title = Hapus Sertifikat
     .style = width: 48em; height: 24em;
+
+certmgr-delete-cert2 =
+    .title = Hapus Sertifikat
+    .style = min-width: 48em; min-height: 24em;
 
 certmgr-cert-host =
     .label = Host

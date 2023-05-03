@@ -30,6 +30,10 @@ certmgr-edit-ca-cert =
     .title = Rediger tillidsindstillinger for CA-certifikat
     .style = width: 48em;
 
+certmgr-edit-ca-cert2 =
+    .title = Rediger tillidsindstillinger for CA-certifikat
+    .style = min-width: 48em;
+
 certmgr-edit-cert-edit-trust = Rediger tillidsindstillinger:
 
 certmgr-edit-cert-trust-ssl =
@@ -41,6 +45,10 @@ certmgr-edit-cert-trust-email =
 certmgr-delete-cert =
     .title = Slet certifikat
     .style = width: 48em; height: 24em;
+
+certmgr-delete-cert2 =
+    .title = Slet certifikat
+    .style = min-width: 48em; min-height: 24em;
 
 certmgr-cert-host =
     .label = Vært
@@ -185,8 +193,6 @@ delete-email-cert-impact = Hvis du sletter en persons mailcertifikat, vil du ikk
 #   $serialNumber : the serial number of the cert in AA:BB:CC hex format.
 cert-with-serial =
     .value = Certifikat med serienummer: { $serialNumber }
-
-## Cert Viewer
 
 # Used to indicate that the user chose not to send a client authentication certificate to a server that requested one in a TLS handshake.
 send-no-client-certificate = Send intet klient-certifikat

@@ -12,6 +12,7 @@ experimental-features-css-masonry-description = Active la prise en charge de la 
 experimental-features-web-gpu2 =
     .label = API web : WebGPU
 experimental-features-web-gpu-description2 = Cette nouvelle API fournit une prise en charge de bas niveau pour effectuer des calculs et des rendus graphiques à l’aide du <a data-l10n-name="wikipedia">processeur graphique (GPU)</a> de l’appareil ou de l’ordinateur de l’utilisateur. La <a data-l10n-name="spec">spécification</a> est toujours en cours de développement. Voir le <a data-l10n-name="bugzilla">bug 1602129</a> pour plus de détails.
+experimental-features-web-gpu-description3 = L’<a data-l10n-name="wikipedia-webgpu">API WebGPU</a> fournit une prise en charge de bas niveau pour effectuer des calculs et des rendus graphiques à l’aide du <a data-l10n-name="wikipedia-gpu">processeur graphique (GPU)</a> de l’appareil ou de l’ordinateur de l’utilisateur. La première version de la <a data-l10n-name="spec">spécification</a> est sur le point d’être finalisée. Voir le <a data-l10n-name="bugzilla">bug 1616739</a> pour plus de détails.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-media-jxl =
@@ -60,10 +61,6 @@ experimental-features-js-warp-description = Active Warp, un projet pour amélior
 experimental-features-ime-search =
     .label = Barre d’adresse : afficher les résultats pendant la composition IME
 experimental-features-ime-search-description = Un IME (Input Method Editor, éditeur de méthode de saisie) est un outil qui permet la saisie de symboles complexes, tels que ceux utilisés pour écrire les langues indiennes ou celles d’Asie de l’Est, tout en utilisant un clavier ordinaire. Activer cette expérience conserve ouvert le panneau de la barre d’adresse qui affiche les résultats de recherche et des suggestions, pendant que l’IME est utilisé pour saisir du texte. Notez que l’IME pourrait afficher un panneau recouvrant les résultats de la barre d’adresse, c’est pourquoi cette préférence n’est suggérée que pour les IME qui n’utilisent pas ce type de panneau.
-# Text recognition for images
-experimental-features-text-recognition =
-    .label = Reconnaissance de texte
-experimental-features-text-recognition-description = Activer les fonctionnalités de reconnaissance de texte dans des images.
 experimental-features-accessibility-cache =
     .label = Cache d’accessibilité
 experimental-features-accessibility-cache-description = Met en cache toutes les informations d’accessibilité de tous les documents du processus principal de { -brand-short-name }. Cela améliore les performances des lecteurs d’écran et d’autres applications qui utilisent des API d’accessibilité.

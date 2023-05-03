@@ -143,6 +143,8 @@ profiler-popup-button-capturing =
 profiler-popup-title =
     .value = { -profiler-brand-name }
 
+profiler-popup-header-text = { -profiler-brand-name }
+
 profiler-popup-reveal-description-button =
     .aria-label = Visualizza ulteriori informazioni
 
@@ -192,17 +194,21 @@ profiler-popup-capture-shortcut =
 # devtools/client/performance-new/popup/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/shared/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
 profiler-popup-presets-web-developer-description = Preset consigliato per il debug della maggior parte delle applicazioni web, con overhead limitato.
 profiler-popup-presets-web-developer-label =
     .label = Sviluppo web
 
 profiler-popup-presets-firefox-description = Preset consigliato per la profilazione di { -brand-shorter-name }.
 profiler-popup-presets-firefox-label =
-  .label = { -brand-shorter-name }
+    .label = { -brand-shorter-name }
 
 profiler-popup-presets-graphics-description = Preset per la diagnosi di problemi grafici in { -brand-shorter-name }.
 profiler-popup-presets-graphics-label =
-  .label = Grafica
+    .label = Grafica
 
 profiler-popup-presets-media-description2 = Preset per la diagnosi di problemi audio e video in { -brand-shorter-name }.
 profiler-popup-presets-media-label =
@@ -210,11 +216,11 @@ profiler-popup-presets-media-label =
 
 profiler-popup-presets-networking-description = Preset per la diagnosi di problemi di rete in { -brand-shorter-name }.
 profiler-popup-presets-networking-label =
-  .label = Rete
+    .label = Rete
 
 profiler-popup-presets-power-description = Preset per la diagnosi di problemi relativi al consumo di energia in { -brand-shorter-name }, con overhead limitato.
 profiler-popup-presets-power-label =
-  .label = Energia
+    .label = Energia
 
 profiler-popup-presets-custom-label =
     .label = Personalizzato
@@ -252,7 +258,7 @@ appmenu-help-report-site-issue =
     .label = Segnala problema con questo sito…
 appmenu-help-share-ideas =
     .label = Condividi idee e feedback…
-   .accesskey = k
+    .accesskey = k
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
@@ -263,6 +269,8 @@ appmenu-help-enter-troubleshoot-mode2 =
 appmenu-help-exit-troubleshoot-mode =
     .label = Disattiva Modalità risoluzione problemi
     .accesskey = m
+appmenu-help-switch-device =
+    .label = Passaggio a un nuovo dispositivo
 
 ## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

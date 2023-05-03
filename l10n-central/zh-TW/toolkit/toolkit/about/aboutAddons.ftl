@@ -137,6 +137,10 @@ addon-category-recent-updates-title =
 addon-category-sitepermission = 網站權限
 addon-category-sitepermission-title =
     .title = 網站權限
+# String displayed in about:addons in the Site Permissions section
+# Variables:
+#  $host (string): DNS host name for which the webextension enables permissions
+addon-sitepermission-host = { $host } 的網站權限
 
 ## These are global warnings
 
@@ -281,10 +285,6 @@ theme-monochromatic-heading = 配色
 theme-monochromatic-subheading = 活力滿點的 { -brand-product-name } 新配色，限時提供。
 # Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
 theme-colorways-button = 嘗試 Colorways
-colorway-collection-independent-voices-subheading = 讓 { -brand-short-name } 更有您的風格。
-# Variables:
-#   $expiryDate (string) - date on which the colorway collection expires.
-colorway-collection-expiry-date-span = 提供至 { DATETIME($expiryDate, month: "long", day: "numeric") } 為止
 # Refers to the button label for the colorways card when a user has a colorway theme enabled.
 theme-colorways-button-colorway-enabled = 更改配色
 # Variables:

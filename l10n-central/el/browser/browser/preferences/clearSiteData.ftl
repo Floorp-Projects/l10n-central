@@ -6,6 +6,10 @@ clear-site-data-window =
     .title = Απαλοιφή δεδομένων
     .style = width: 35em
 
+clear-site-data-window2 =
+    .title = Απαλοιφή δεδομένων
+    .style = min-width: 35em
+
 clear-site-data-description = Η απαλοιφή όλων των cookies και των δεδομένων ιστοτόπων που αποθηκεύει το { -brand-short-name } ίσως σας αποσυνδέσει από ιστοτόπους και ενδέχεται να αφαιρέσει το περιεχόμενο web εκτός σύνδεσης. Η διαγραφή της κρυφής μνήμης δεν θα επηρεάσει τις συνδέσεις σας.
 
 clear-site-data-close-key =

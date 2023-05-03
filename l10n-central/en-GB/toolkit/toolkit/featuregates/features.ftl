@@ -12,6 +12,7 @@ experimental-features-css-masonry-description = Enables support for the experime
 experimental-features-web-gpu2 =
     .label = Web API: WebGPU
 experimental-features-web-gpu-description2 = This new API provides low-level support for performing computation and graphics rendering using the <a data-l10n-name="wikipedia">Graphics Processing Unit (GPU)</a> of the user’s device or computer. The <a data-l10n-name="spec">specification</a> is still a work-in-progress. See <a data-l10n-name="bugzilla">bug 1602129</a> for more details.
+experimental-features-web-gpu-description3 = The <a data-l10n-name="wikipedia-webgpu">WebGPU API</a> provides low-level support for performing computation and graphics rendering using the <a data-l10n-name="wikipedia-gpu">Graphics Processing Unit (GPU)</a> of the user’s device or computer. The first version of the <a data-l10n-name="spec">specification</a> is nearing finalisation. See <a data-l10n-name="bugzilla">bug 1616739</a> for more details.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-media-jxl =
@@ -60,10 +61,6 @@ experimental-features-js-warp-description = Enable Warp, a project to improve Ja
 experimental-features-ime-search =
     .label = Address Bar: show results during IME composition
 experimental-features-ime-search-description = An IME (Input Method Editor) is a tool that allows you to enter complex symbols, such as those used in East Asian or Indic written languages, using a standard keyboard. Enabling this experiment will keep the address bar panel open, showing search results and suggestions, while using IME to input text. Note that the IME might display a panel that covers the address bar results, therefore this preference is only suggested for IME not using this type of panel.
-# Text recognition for images
-experimental-features-text-recognition =
-    .label = Text Recognition
-experimental-features-text-recognition-description = Enable features to recognise text in images.
 experimental-features-accessibility-cache =
     .label = Accessibility cache
 experimental-features-accessibility-cache-description = Caches all accessibility information from all documents in the { -brand-short-name } main process. This improves performance for screen readers and other applications which use accessibility APIs.

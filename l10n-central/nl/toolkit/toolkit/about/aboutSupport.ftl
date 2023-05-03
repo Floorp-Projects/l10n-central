@@ -110,11 +110,21 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Beslissingenlogboek
 graphics-crash-guards-title = Door crashbeveiliging uitgeschakelde functies
 graphics-workarounds-title = Workarounds
+graphics-device-pixel-ratios = Pixelverhoudingen van vensterapparaat
 # Windowing system in use on Linux (e.g. X11, Wayland).
 graphics-window-protocol = Vensterprotocol
 # Desktop environment in use on Linux (e.g. GNOME, KDE, XFCE, etc).
 graphics-desktop-environment = Desktopomgeving
 place-database-title = Places-database
+place-database-stats = Statistieken
+place-database-stats-show = Statistieken tonen
+place-database-stats-hide = Statistieken verbergen
+place-database-stats-entity = Entiteit
+place-database-stats-count = Aantal
+place-database-stats-size-kib = Grootte (KB)
+place-database-stats-size-perc = Grootte (%)
+place-database-stats-efficiency-perc = Efficiëntie (%)
+place-database-stats-sequentiality-perc = Volgorde (%)
 place-database-integrity = Integriteit
 place-database-verify-integrity = Integriteit verifiëren
 a11y-title = Toegankelijkheid
@@ -278,6 +288,8 @@ webgl2-renderer = Renderer van  WebGL 2-stuurprogramma
 webgl2-version = Versie van WebGL 2-stuurprogramma
 webgl2-driver-extensions = Extensies van WebGL 2-stuurprogramma
 webgl2-extensions = WebGL 2-extensies
+webgpu-default-adapter = WebGPU-standaardadapter
+webgpu-fallback-adapter = WebGPU-terugvaladapter
 # Variables
 #   $bugNumber (string) - Bug number on Bugzilla
 support-blocklisted-bug = Geblokkeerd vanwege bekende problemen: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
@@ -307,6 +319,7 @@ can-sandbox-media = Mediaplug-in-sandboxing
 content-sandbox-level = Sandboxniveau van inhoudsproces
 effective-content-sandbox-level = Effectief sandboxniveau van inhoudsproces
 content-win32k-lockdown-state = Win32k-vergrendelingsstatus voor inhoudsproces
+support-sandbox-gpu-level = Sandboxniveau van GPU-proces
 sandbox-proc-type-content = inhoud
 sandbox-proc-type-file = bestandsinhoud
 sandbox-proc-type-media-plugin = mediaplug-in

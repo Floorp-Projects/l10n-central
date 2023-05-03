@@ -24,9 +24,9 @@ list-empty-button =
 help-button = Wsparcie dla dodatków
 sidebar-help-button-title =
     .title = Wsparcie dla dodatków
-addons-settings-button = Ustawienia programu
+addons-settings-button = Ustawienia { -brand-short-name(case: "gen") }
 sidebar-settings-button-title =
-    .title = Ustawienia programu
+    .title = Ustawienia { -brand-short-name(case: "gen") }
 show-unsigned-extensions-button =
     .label = Niektóre rozszerzenia nie mogły zostać zweryfikowane
 show-all-extensions-button =
@@ -142,6 +142,10 @@ addon-category-recent-updates-title =
 addon-category-sitepermission = Uprawnienia witryn
 addon-category-sitepermission-title =
     .title = Uprawnienia witryn
+# String displayed in about:addons in the Site Permissions section
+# Variables:
+#  $host (string): DNS host name for which the webextension enables permissions
+addon-sitepermission-host = Uprawnienia witryny { $host }
 
 ## These are global warnings
 
@@ -253,7 +257,7 @@ created-by-author = Autor: <a data-l10n-name="author">{ $author }</a>
 # Variables:
 #   $dailyUsers (number) - The number of daily users.
 user-count = Użytkownicy: { $dailyUsers }
-install-extension-button = Dodaj do programu { -brand-product-name }
+install-extension-button = Dodaj do { -brand-product-name(case: "gen") }
 install-theme-button = Zainstaluj motyw
 # The label of the button that appears after installing an add-on. Upon click,
 # the detailed add-on view is opened, from where the add-on can be managed.
@@ -294,10 +298,6 @@ theme-monochromatic-heading = Kolorystyka
 theme-monochromatic-subheading = Energiczne nowe kolorystyki od przeglądarki { -brand-product-name }. Dostępne przez ograniczony czas.
 # Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
 theme-colorways-button = Wypróbuj kolorystykę
-colorway-collection-independent-voices-subheading = Spraw, aby { -brand-short-name } trochę bardziej do Ciebie pasował.
-# Variables:
-#   $expiryDate (string) - date on which the colorway collection expires.
-colorway-collection-expiry-date-span = Wygasa { DATETIME($expiryDate, month: "long", day: "numeric") }
 # Refers to the button label for the colorways card when a user has a colorway theme enabled.
 theme-colorways-button-colorway-enabled = Zmień kolorystykę
 # Variables:

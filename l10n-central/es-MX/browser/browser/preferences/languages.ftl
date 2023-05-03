@@ -6,6 +6,10 @@ webpage-languages-window =
     .title = Ajustes de idioma para la página web
     .style = width: 40em
 
+webpage-languages-window2 =
+    .title = Ajustes de idioma para la página web
+    .style = min-width: 40em
+
 languages-close-key =
     .key = w
 
@@ -52,6 +56,10 @@ languages-active-code-format =
 browser-languages-window =
     .title = { -brand-short-name } ajustes de idioma
     .style = width: 40em
+
+browser-languages-window2 =
+    .title = { -brand-short-name } ajustes de idioma
+    .style = min-width: 40em
 
 browser-languages-description = { -brand-short-name } mostrará el primer idioma como el predeterminado e irá mostrando idiomas alternativos si es necesario en orden que aparecen.
 

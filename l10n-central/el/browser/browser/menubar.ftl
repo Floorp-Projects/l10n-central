@@ -180,6 +180,17 @@ menu-view-full-screen =
     .label = Πλήρης οθόνη
     .accesskey = Π
 
+## These menu items may use the same accesskey.
+
+# This should match reader-view-enter-button in browser.ftl
+menu-view-enter-readerview =
+    .label = Άνοιγμα προβολής ανάγνωσης
+    .accesskey = Α
+# This should match reader-view-close-button in browser.ftl
+menu-view-close-readerview =
+    .label = Κλείσιμο προβολής ανάγνωσης
+    .accesskey = Α
+
 ##
 
 menu-view-show-all-tabs =

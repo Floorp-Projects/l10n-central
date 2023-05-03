@@ -34,6 +34,10 @@ text-action-paste =
     .label = Pegar
     .accesskey = P
 
+text-action-paste-no-formatting =
+    .label = Pegar sin formato
+    .accesskey = m
+
 text-action-paste-shortcut =
     .key = V
 

@@ -44,7 +44,7 @@ videocontrols-picture-in-picture-toggle-label2 = この動画をポップアウ�
 # This string is used as part of a variation of the Picture-in-Picture video toggle
 # button. When using this variation, this string appears below the toggle when the
 # mouse hovers the toggle.
-videocontrols-picture-in-picture-explainer2 = 多くの画面でさらに楽しめます。ブラウジング中もこの動画をピクチャーインピクチャーで再生します。
+videocontrols-picture-in-picture-explainer3 = 多くの画面でさらに楽しめます。他のことをしている間もこの動画を再生します。
 videocontrols-error-aborted = 動画の読み込みを中止しました。
 videocontrols-error-network = ネットワークエラーが発生したため動画の再生を中止しました。
 videocontrols-error-decode = ファイルが壊れているため動画を再生できません。
@@ -65,3 +65,12 @@ videocontrols-status-picture-in-picture = この動画はピクチャーイン�
 # duration video, $position would be "5:00" and the string which is
 # surrounded by <span> would be deleted, result string would be "5:00".
 videocontrols-position-and-duration-labels = { $position }<span data-l10n-name="position-duration-format"> / { $duration }</span>
+# This is a plain text version of the videocontrols-position-and-duration-labels
+# string, used by screenreaders.
+#
+# Variables:
+#   $position (String): The current media position
+#   $duration (String): The total video duration
+videocontrols-scrubber-position-and-duration =
+    .aria-label = 再生位置
+    .aria-valuetext = { $position } / { $duration }

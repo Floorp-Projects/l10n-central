@@ -118,6 +118,38 @@ main-context-menu-bookmark-change-with-shortcut =
     .aria-label = Taisyti adresyno įrašą
     .accesskey = y
     .tooltiptext = Taisyti šį adresyno įrašą ({ $shortcut })
+main-context-menu-bookmark-page =
+    .aria-label = Įtraukti į adresyną…
+    .accesskey = k
+    .tooltiptext = Įtraukti į adresyną
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-edit-bookmark-mac,
+# so should probably have the same access key if possible.
+main-context-menu-bookmark-page-mac =
+    .label = Įtraukti į adresyną…
+    .accesskey = k
+# This menuitem is only visible on macOS
+# Cannot be shown at the same time as main-context-menu-bookmark-page-mac,
+# so should probably have the same access key if possible.
+main-context-menu-edit-bookmark-mac =
+    .label = Redaguoti adresyno įrašą…
+    .accesskey = g
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+main-context-menu-bookmark-page-with-shortcut =
+    .aria-label = Įtraukti į adresyną…
+    .accesskey = k
+    .tooltiptext = Įtraukti į adresyną ({ $shortcut })
+main-context-menu-edit-bookmark =
+    .aria-label = Redaguoti adresyno įrašą…
+    .accesskey = g
+    .tooltiptext = Redaguoti adresyno įrašą
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+main-context-menu-edit-bookmark-with-shortcut =
+    .aria-label = Redaguoti adresyno įrašą…
+    .accesskey = g
+    .tooltiptext = Redaguoti adresyno įrašą ({ $shortcut })
 main-context-menu-open-link =
     .label = Atverti saitą
     .accesskey = A
@@ -136,6 +168,9 @@ main-context-menu-open-link-new-private-window =
 main-context-menu-bookmark-link =
     .label = Įtraukti saitą į adresyną
     .accesskey = t
+main-context-menu-bookmark-link-2 =
+    .label = Įtraukti į adresyną…
+    .accesskey = k
 main-context-menu-save-link =
     .label = Įrašyti saistomą objektą kaip…
     .accesskey = Į
@@ -248,6 +283,9 @@ main-context-menu-image-email =
 main-context-menu-image-set-image-as-background =
     .label = Naudoti kaip darbastalio foną…
     .accesskey = N
+main-context-menu-image-copy-text =
+    .label = Kopijuoti paveikslo tekstą
+    .accesskey = v
 main-context-menu-image-info =
     .label = Rodyti paveikslo savybes
     .accesskey = s
@@ -325,6 +363,9 @@ main-context-menu-frame-reload =
 main-context-menu-frame-bookmark =
     .label = Įtraukti kadrą į adresyną
     .accesskey = d
+main-context-menu-frame-add-bookmark =
+    .label = Įtraukti į adresyną…
+    .accesskey = k
 main-context-menu-frame-save-as =
     .label = Įrašyti kadrą kaip…
     .accesskey = r
@@ -340,6 +381,9 @@ main-context-menu-frame-view-info =
 main-context-menu-print-selection =
     .label = Spausdinti pažymėtą sritį
     .accesskey = p
+main-context-menu-print-selection-2 =
+    .label = Spausdinti pažymėtą sritį…
+    .accesskey = t
 main-context-menu-view-selection-source =
     .label = Rodyti atrankos pirminį tekstą
     .accesskey = d

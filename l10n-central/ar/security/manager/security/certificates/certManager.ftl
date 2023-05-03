@@ -27,6 +27,10 @@ certmgr-edit-ca-cert =
     .title = حرِّر إعدادات ثقة شهادة سلطة الشّهادات
     .style = width: 48em;
 
+certmgr-edit-ca-cert2 =
+    .title = حرِّر إعدادات ثقة شهادة سلطة الشّهادات
+    .style = min-width: 48em;
+
 certmgr-edit-cert-edit-trust = حرِّر إعدادات الثّقة:
 
 certmgr-edit-cert-trust-ssl =
@@ -38,6 +42,10 @@ certmgr-edit-cert-trust-email =
 certmgr-delete-cert =
     .title = احذف الشّهادة
     .style = width: 48em; height: 24em;
+
+certmgr-delete-cert2 =
+    .title = احذف الشّهادة
+    .style = min-width: 48em; min-height: 24em;
 
 certmgr-cert-host =
     .label = المستضيف
@@ -177,8 +185,6 @@ delete-email-cert-impact = إن حذفت شهادة بريد لشخص، فلن �
 #   $serialNumber : the serial number of the cert in AA:BB:CC hex format.
 cert-with-serial =
     .value = شهادة بالرقم التسلسلي: { $serialNumber }
-
-## Cert Viewer
 
 ## Used to show whether an override is temporary or permanent
 

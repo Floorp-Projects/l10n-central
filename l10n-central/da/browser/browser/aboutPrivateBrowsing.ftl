@@ -60,3 +60,11 @@ about-private-browsing-pin-promo-link-text =
        *[other] Fastgør til proceslinjen
     }
 about-private-browsing-pin-promo-title = Ingen gemte cookies eller historik, direkte fra dit skrivebord. Brug nettet uden tilskuere.
+
+## Strings used in a promotion message for cookie banner reduction
+
+# Simplified version of the headline if the original text doesn't work
+# in your language: `See fewer cookie requests`.
+about-private-browsing-cookie-banners-promo-header = Slut med cookie-bannere!
+about-private-browsing-cookie-banners-promo-button = Færre cookie-bannere
+about-private-browsing-cookie-banners-promo-message = Lad { -brand-short-name } automatisk svare på pop op-beskeder om cookies for dig, så du kan bruge nettet uden forstyrrelser. { -brand-short-name } vil afvise alle forespørgsler, når det er muligt.

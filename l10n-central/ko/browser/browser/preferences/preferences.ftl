@@ -73,6 +73,17 @@ restart-later = 나중에 다시 시작
 ## Variables:
 ##   $name (String): name of the extension
 
+
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (string) - Name of the extension
+
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
 extension-controlling-password-saving = <img data-l10n-name="icon"/> <strong>{ $name }</strong> 확장 기능이 이 설정을 제어합니다.
@@ -81,7 +92,7 @@ extension-controlling-password-saving = <img data-l10n-name="icon"/> <strong>{ $
 extension-controlling-web-notifications = <img data-l10n-name="icon"/> <strong>{ $name }</strong> 확장 기능이 이 설정을 제어합니다.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
-extension-controlling-privacy-containers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> 확장 기능에는 컨테이너 탭이 필요합니다.
+extension-controlling-privacy-containers = <img data-l10n-name="icon"/> <strong>{ $name }</strong>에 컨테이너 탭 필요.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
 extension-controlling-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/> <strong>{ $name }</strong> 확장 기능이 이 설정을 제어합니다.
@@ -120,6 +131,11 @@ startup-restore-warn-on-quit =
     .label = 브라우저 종료시 경고
 disable-extension =
     .label = 확장 기능 사용 안 함
+preferences-data-migration-header = 브라우저 데이터 가져오기
+preferences-data-migration-description = 북마크, 비밀번호, 기록 및 자동 채우기 데이터를 { -brand-short-name }로 가져옵니다.
+preferences-data-migration-button =
+    .label = 데이터 가져오기
+    .accesskey = m
 tabs-group-header = 탭
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab 단축키로 최근 사용한 순서대로 탭 순환
@@ -132,7 +148,7 @@ confirm-on-close-multiple-tabs =
     .accesskey = m
 # This string is used for the confirm before quitting preference.
 # Variables:
-#   $quitKey (String) - the quit keyboard shortcut, and formatted
+#   $quitKey (string) - the quit keyboard shortcut, and formatted
 #                       in the same manner as it would appear,
 #                       for example, in the File menu.
 confirm-on-quit-with-key =
@@ -142,7 +158,7 @@ warn-on-open-many-tabs =
     .label = 여러개의 탭을 열어서 { -brand-short-name }가 느려질 수 있으면 알려주기
     .accesskey = d
 switch-to-new-tabs =
-    .label = 링크, 이미지 또는 미디어를 새 탭에 열면 해당 탭으로 즉시 전환
+    .label = 링크, 이미지 또는 미디어를 새 탭에서 열면 해당 탭으로 즉시 전환
     .accesskey = h
 show-tabs-in-taskbar =
     .label = Windows 작업 표시줄에 탭 미리 보기 표시
@@ -155,12 +171,19 @@ browser-containers-settings =
     .label = 설정…
     .accesskey = i
 containers-disable-alert-title = 모든 컨테이너 탭을 닫으시겠습니까?
+
+## Variables:
+##   $tabCount (number) - Number of tabs
+
 containers-disable-alert-desc = 지금 컨테이너 탭을 비활성화하면 { $tabCount }개의 컨테이너 탭이 닫히게 됩니다. 컨테이너 탭을 비활성화하시겠습니까?
 containers-disable-alert-ok-button = 컨테이너 탭 { $tabCount }개 닫기
+
+##
+
 containers-disable-alert-cancel-button = 활성화 하기
 containers-remove-alert-title = 이 컨테이너를 삭제하시겠습니까?
 # Variables:
-#   $count (Number) - Number of tabs that will be closed.
+#   $count (number) - Number of tabs that will be closed.
 containers-remove-alert-msg = 이 컨테이너를 삭제하면 { $count } 컨테이너 탭이 닫힙니다. 이 컨테이너를 정말로 삭제하시겠습니까?
 containers-remove-ok-button = 이 컨테이너 삭제
 containers-remove-cancel-button = 이 컨테이너 삭제하지 않음
@@ -218,6 +241,8 @@ advanced-fonts =
 preferences-zoom-header = 확대/축소
 preferences-default-zoom = 기본 확대/축소
     .accesskey = z
+# Variables:
+#   $percentage (number) - Zoom percentage value
 preferences-default-zoom-value =
     .label = { $percentage }%
 preferences-zoom-text-only =
@@ -310,15 +335,15 @@ applications-manage-app =
 applications-always-ask =
     .label = 항상 묻기
 # Variables:
-#   $type-description (String) - Description of the type (e.g "Portable Document Format")
-#   $type (String) - the MIME type (e.g application/binary)
+#   $type-description (string) - Description of the type (e.g "Portable Document Format")
+#   $type (string) - The MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
-#   $extension (String) - file extension (e.g .TXT)
-#   $type (String) - the MIME type (e.g application/binary)
+#   $extension (string) - File extension (e.g .TXT)
+#   $type (string) - The MIME type (e.g application/binary)
 applications-file-ending-with-type = { applications-file-ending } ({ $type })
 # Variables:
-#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+#   $plugin-name (string) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = { $plugin-name } 사용 ({ -brand-short-name })
 applications-open-inapp =
@@ -361,6 +386,8 @@ play-drm-content =
 play-drm-content-learn-more = 더 알아보기
 update-application-title = { -brand-short-name } 업데이트
 update-application-description = { -brand-short-name }가 최상의 성능, 안정성, 보안을 유지할 수 있도록 최신 버전으로 유지합니다.
+# Variables:
+# $version (string) - Firefox version
 update-application-version = 버전 { $version } <a data-l10n-name="learn-more">새 기능</a>
 update-history =
     .label = 업데이트 기록 보기…
@@ -387,7 +414,7 @@ update-application-suppress-prompts =
     .accesskey = n
 update-setting-write-failure-title2 = 업데이트 설정 저장 중 오류 발생
 # Variables:
-#   $path (String) - Path to the configuration file
+#   $path (string) - Path to the configuration file
 # The newlines between the main text and the line containing the path is
 # intentional so the path is easier to identify.
 update-setting-write-failure-message2 =
@@ -417,7 +444,7 @@ performance-limit-content-process-option = 콘텐츠 프로세스 제한
 performance-limit-content-process-enabled-desc = 추가 콘텐츠 프로세스는 여러 탭을 사용할 때 성능을 향상시킬 수 있지만 더 많은 메모리를 사용합니다.
 performance-limit-content-process-blocked-desc = 콘텐츠 프로세스 갯수 변경은 다중 프로세스 { -brand-short-name }에서만 가능합니다. <a data-l10n-name="learn-more">다중 프로세스가 활성화되었는지 확인하는 방법</a>
 # Variables:
-#   $num - default value of the `dom.ipc.processCount` pref.
+#   $num (number) - Default value of the `dom.ipc.processCount` pref.
 performance-default-content-process-count =
     .label = { $num } (기본값)
 
@@ -434,8 +461,8 @@ browsing-gtk-use-non-overlay-scrollbars =
     .label = 항상 스크롤 막대 표시
     .accesskey = o
 browsing-use-onscreen-keyboard =
-    .label = 필요하면 터치 키보드 보여주기
-    .accesskey = k
+    .label = 필요한 경우 터치 키보드 표시
+    .accesskey = c
 browsing-use-cursor-navigation =
     .label = 커서 키를 항상 페이지 내에서 사용
     .accesskey = c
@@ -523,6 +550,10 @@ home-prefs-shortcuts-by-option-sponsored =
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
+
+## Variables:
+##  $provider (string) - Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = { $provider } 추천
 home-prefs-recommended-by-description-new = { -brand-product-name } 제품군의 일부인 { $provider }에서 선별한 뛰어난 콘텐츠
@@ -552,6 +583,8 @@ home-prefs-recent-activity-description = 최근 사이트 및 콘텐츠 선택
 home-prefs-snippets-header =
     .label = 짧은 소식
 home-prefs-snippets-description-new = { -vendor-short-name }와 { -brand-product-name }의 팁 및 뉴스
+# Variables:
+#   $num (number) - Number of rows displayed
 home-prefs-sections-rows-option =
     .label = { $num } 행
 
@@ -576,6 +609,11 @@ search-suggestions-option =
 search-show-suggestions-url-bar-option =
     .label = 주소 표시줄 결과에 검색 제안 표시
     .accesskey = l
+# With this option enabled, on the search results page
+# the URL will be replaced by the search terms in the address bar
+# when using the current default search engine.
+search-show-search-term-option =
+    .label = 기본 검색 엔진 결과 페이지에 URL 대신 검색어 표시
 # This string describes what the user will observe when the system
 # prioritizes search suggestions over browsing history in the results
 # that extend down from the address bar. In the original English string,
@@ -607,7 +645,7 @@ search-find-more-link = 더 많은 검색 엔진 찾기
 # ('Duplicate' is an adjective)
 search-keyword-warning-title = 키워드 복사
 # Variables:
-#   $name (String) - Name of a search engine.
+#   $name (string) - Name of a search engine.
 search-keyword-warning-engine = "{ $name }"에서 이미 사용 중인 키워드를 선택했습니다. 다른 것을 선택하세요.
 search-keyword-warning-bookmark = 북마크에서 이미 사용 중인 키워드를 선택했습니다. 다른 것을 선택하세요.
 
@@ -654,8 +692,15 @@ sync-sign-out =
     .accesskey = g
 sync-manage-account = 계정 관리
     .accesskey = o
+
+## Variables
+## $email (string) - Email used for Firefox account
+
 sync-signedin-unverified = { $email } 은 아직 인증되지 않았습니다.
 sync-signedin-login-failure = { $email }으로 다시 연결하려면 로그인하세요
+
+##
+
 sync-resend-verification =
     .label = 인증 메일 다시 보내기
     .accesskey = d
@@ -682,6 +727,7 @@ prefs-sync-now =
 ## The list of things currently syncing.
 
 sync-currently-syncing-heading = 현재 다음 항목을 동기화 중입니다:
+sync-syncing-across-devices-heading = 연결된 모든 기기에서 다음 항목을 동기화하고 있습니다:
 sync-currently-syncing-bookmarks = 북마크
 sync-currently-syncing-history = 기록
 sync-currently-syncing-tabs = 열린 탭
@@ -703,6 +749,14 @@ sync-choose-what-to-sync-dialog =
     .buttonaccesskeyaccept = S
     .buttonlabelextra2 = 연결 끊기…
     .buttonaccesskeyextra2 = D
+sync-choose-what-to-sync-dialog3 =
+    .title = 동기화할 항목 선택
+    .style = min-width: 36em;
+    .buttonlabelaccept = 변경 내용 저장
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra2 = 연결 끊기…
+    .buttonaccesskeyextra2 = D
+sync-choose-dialog-subtitle = 동기화할 항목 목록에 대한 변경 사항은 연결된 모든 기기에 반영됩니다.
 sync-engine-bookmarks =
     .label = 북마크
     .accesskey = m
@@ -771,6 +825,9 @@ forms-breach-alerts =
     .label = 유출된 웹 사이트의 비밀번호에 대한 경고 표시
     .accesskey = b
 forms-breach-alerts-learn-more-link = 더 알아보기
+relay-integration =
+    .label = { -brand-short-name } 비밀번호 관리자에서 { -relay-brand-name } 활성화
+relay-integration-learn-more-link = 더 알아보기
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = 로그인과 비밀번호 자동 채우기
@@ -859,8 +916,8 @@ history-clear-button =
 sitedata-header = 쿠키 및 사이트 데이터
 sitedata-total-size-calculating = 사이트 데이터와 캐시 크기 계산 중…
 # Variables:
-#   $value (Number) - Value of the unit (for example: 4.6, 500)
-#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+#   $value (number) - Value of the unit (for example: 4.6, 500)
+#   $unit (string) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = 현재 저장된 쿠키, 사이트 데이터 및 캐시가 { $value } { $unit }의 디스크를 사용하고 있습니다.
 sitedata-learn-more = 더 알아보기
 sitedata-delete-on-close =
@@ -887,6 +944,8 @@ sitedata-option-block-unvisited =
     .label = 방문하지 않은 웹 사이트의 쿠키
 sitedata-option-block-all-third-party =
     .label = 모든 제3자 쿠키 (웹 사이트가 제대로 작동 안 할 수 있음)
+sitedata-option-block-all-cross-site-cookies =
+    .label = 모든 교차 사이트 쿠키 (웹 사이트가 제대로 작동 안 할 수 있음)
 sitedata-option-block-all =
     .label = 모든 쿠키 (웹 사이트가 제대로 작동 안하게 됨)
 sitedata-clear =
@@ -898,6 +957,14 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = 예외 관리…
     .accesskey = x
+
+## Privacy Section - Cookie Banner Handling
+
+cookie-banner-handling-header = 쿠키 배너 감소
+cookie-banner-handling-description = { -brand-short-name }는 지원되는 사이트의 쿠키 배너에서 쿠키 요청을 자동으로 거부하려고 시도합니다.
+cookie-banner-learn-more = 더 알아보기
+forms-handle-cookie-banners =
+    .label = 쿠키 배너 줄이기
 
 ## Privacy Section - Address Bar
 
@@ -966,6 +1033,7 @@ content-blocking-all-cookies = 모든 쿠키
 content-blocking-unvisited-cookies = 방문하지 않은 사이트의 쿠키
 content-blocking-all-windows-tracking-content = 모든 창의 추적 콘텐츠
 content-blocking-all-third-party-cookies = 모든 제3자 쿠키
+content-blocking-all-cross-site-cookies = 모든 교차 사이트 쿠키
 content-blocking-cryptominers = 암호화폐 채굴기
 content-blocking-fingerprinters = 디지털 지문
 # "Test pilot" is used as a verb. Possible alternatives:
@@ -973,6 +1041,9 @@ content-blocking-fingerprinters = 디지털 지문
 content-blocking-etp-standard-tcp-rollout-checkbox =
     .label = 가장 강력한 개인 정보 보호 기능을 테스트
     .accesskey = T
+
+# The tcp-rollout strings are no longer used for the rollout but for tcp-by-default in the standard section
+
 # "Contains" here means "isolates", "limits".
 content-blocking-etp-standard-tcp-rollout-description = 전체 쿠키 보호는 사용자가 있는 사이트에 대한 쿠키가 포함되어 있으므로, 추적기가 사이트 간에 사용자를 팔로우하는데 쿠키를 사용할 수 없습니다.
 content-blocking-etp-standard-tcp-rollout-learn-more = 더 알아보기
@@ -998,7 +1069,7 @@ content-blocking-cookies-label =
     .label = 쿠키
     .accesskey = C
 content-blocking-expand-section =
-    .tooltiptext = 더 알아보기
+    .tooltiptext = 추가 정보
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
     .label = 암호화폐 채굴기
@@ -1034,6 +1105,11 @@ permissions-microphone = 마이크
 permissions-microphone-settings =
     .label = 설정…
     .accesskey = m
+# Short form for "the act of choosing sound output devices and redirecting audio to the chosen devices".
+permissions-speaker = 스피커 선택
+permissions-speaker-settings =
+    .label = 설정…
+    .accesskey = t
 permissions-notification = 알림
 permissions-notification-settings =
     .label = 설정…
@@ -1138,6 +1214,63 @@ httpsonly-radio-enabled-pbm =
     .label = 사생활 보호 창에서만 HTTPS 전용 모드 사용
 httpsonly-radio-disabled =
     .label = HTTPS 전용 모드 사용 안 함
+
+## DoH Section
+
+preferences-doh-header = DNS over HTTPS (HTTPS를 통한 DNS)
+preferences-doh-description = DNS over HTTPS (HTTPS를 통한 DNS)는 암호화된 연결을 통해 도메인 이름에 대한 요청을 전송하여 보안 DNS를 생성하고 다른 사람들이 사용자가 액세스하려는 웹 사이트를 보기 어렵게 만듭니다.
+# Variables:
+#   $status (string) - The status of the DoH connection
+preferences-doh-status = 상태: { $status }
+# Variables:
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-resolver = 공급자: { $name }
+# This is displayed instead of $name in preferences-doh-resolver
+# when the DoH URL is not a valid URL
+preferences-doh-bad-url = 잘못된 URL
+preferences-doh-steering-status = 로컬 공급자 사용 중
+preferences-doh-status-active = 활성
+preferences-doh-status-disabled = 꺼짐
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+preferences-doh-status-not-active = 활성화되지 않음 ({ $reason })
+preferences-doh-group-message = 다음을 사용하여 보안 DNS를 활성화:
+preferences-doh-expand-section =
+    .tooltiptext = 추가 정보
+preferences-doh-setting-default =
+    .label = 기본 보호
+    .accesskey = D
+preferences-doh-default-desc = { -brand-short-name }는 보안 DNS를 사용하여 개인 정보를 보호할 때를 결정합니다.
+preferences-doh-default-detailed-desc-1 = 사용 가능한 지역에서 보안 DNS 사용
+preferences-doh-default-detailed-desc-2 = 보안 DNS 공급자에 문제가 있는 경우 기본 DNS 확인자를 사용
+preferences-doh-default-detailed-desc-3 = 가능하면 로컬 공급자를 사용
+preferences-doh-default-detailed-desc-4 = VPN, 자녀 보호 또는 엔터프라이즈 정책이 활성화되면 끄기
+preferences-doh-default-detailed-desc-5 = 네트워크에서 { -brand-short-name }에 보안 DNS를 사용하지 말라고 하면 끄기
+preferences-doh-setting-enabled =
+    .label = 향상된 보호
+    .accesskey = I
+preferences-doh-enabled-desc = 보안 DNS를 사용할 때를 제어하고 공급자를 선택합니다.
+preferences-doh-enabled-detailed-desc-1 = 선택한 공급자 사용
+preferences-doh-enabled-detailed-desc-2 = 보안 DNS에 문제가 있는 경우에만 기본 DNS 확인자를 사용
+preferences-doh-setting-strict =
+    .label = 최대 보호
+    .accesskey = M
+preferences-doh-strict-desc = { -brand-short-name }는 항상 보안 DNS를 사용합니다. 시스템 DNS를 사용하기 전에 보안 위험 경고가 표시됩니다.
+preferences-doh-strict-detailed-desc-1 = 선택한 공급자만 사용
+preferences-doh-strict-detailed-desc-2 = 보안 DNS를 사용할 수 없는 경우 항상 경고
+preferences-doh-strict-detailed-desc-3 = 보안 DNS를 사용할 수 없으면 사이트가 제대로 로드되지 않거나 작동하지 않음
+preferences-doh-setting-off =
+    .label = 끄기
+    .accesskey = O
+preferences-doh-off-desc = 기본 DNS 확인자 사용
+preferences-doh-checkbox-warn =
+    .label = 제3자가 보안 DNS를 능동적으로 막는 경우 경고
+    .accesskey = W
+preferences-doh-select-resolver = 공급자 선택:
+preferences-doh-exceptions-description = { -brand-short-name }는 이러한 사이트에서 보안 DNS를 사용하지 않음
+preferences-doh-manage-exceptions =
+    .label = 예외 관리…
+    .accesskey = x
 
 ## The following strings are used in the Download section of settings
 

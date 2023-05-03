@@ -60,3 +60,11 @@ about-private-browsing-pin-promo-link-text =
        *[other] Καρφίτσωμα στη γραμμή εργασιών
     }
 about-private-browsing-pin-promo-title = Χωρίς αποθήκευση cookies ή ιστορικού, απευθείας από την επιφάνεια εργασίας σας. Περιηγηθείτε σαν να μην σας παρακολουθεί κανείς.
+
+## Strings used in a promotion message for cookie banner reduction
+
+# Simplified version of the headline if the original text doesn't work
+# in your language: `See fewer cookie requests`.
+about-private-browsing-cookie-banners-promo-header = Εξαφανιστείτε μηνύματα για cookies!
+about-private-browsing-cookie-banners-promo-button = Μείωση μηνυμάτων για cookies
+about-private-browsing-cookie-banners-promo-message = Επιτρέψτε στο { -brand-short-name } να απαντά αυτόματα σε αναδυόμενα μηνύματα για cookies, ώστε να κάνετε περιήγηση χωρίς περισπασμούς. Το { -brand-short-name } θα απορρίψει όλα τα αιτήματα εάν αυτό είναι δυνατό.

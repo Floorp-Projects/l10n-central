@@ -6,6 +6,10 @@ add-engine-window =
     .title = Добавить поисковую систему
     .style = width: 32em;
 
+add-engine-window2 =
+    .title = Добавить поисковую систему
+    .style = min-width: 32em;
+
 add-engine-button = Добавить персональную поисковую систему
 
 add-engine-name = Имя поисковой системы

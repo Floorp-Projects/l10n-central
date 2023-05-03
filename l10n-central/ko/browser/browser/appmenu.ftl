@@ -128,6 +128,7 @@ profiler-popup-button-capturing =
     .tooltiptext = 프로파일러가 프로파일을 캡처합니다
 profiler-popup-title =
     .value = { -profiler-brand-name }
+profiler-popup-header-text = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
     .aria-label = 더 많은 정보 보기
 profiler-popup-description-title =

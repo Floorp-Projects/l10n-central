@@ -6,6 +6,10 @@ blocklist-window =
     .title = Listes de blocage
     .style = width: 66em
 
+blocklist-window2 =
+    .title = Listes de blocage
+    .style = min-width: 66em
+
 blocklist-description = Choisissez quelle liste { -brand-short-name } utilise pour bloquer les traqueurs en ligne. Les listes proviennent de <a data-l10n-name="disconnect-link" title="Disconnect">Disconnect</a>.
 blocklist-close-key =
     .key = w

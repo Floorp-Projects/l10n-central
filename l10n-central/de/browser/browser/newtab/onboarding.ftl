@@ -25,6 +25,12 @@ return-to-amo-addon-title = Hol dir auch <img data-l10n-name="icon"/> <b>{ $addo
 return-to-amo-add-extension-label = Erweiterung hinzufügen
 return-to-amo-add-theme-label = Das Theme hinzufügen
 
+##  Variables: $addon-name (String) - Name of the add-on to be installed
+
+mr1-return-to-amo-subtitle = Willkommen bei { -brand-short-name }
+mr1-return-to-amo-addon-title = Du hast einen schnellen, privaten Browser zur Hand. Jetzt kannst du <b>{ $addon-name }</b> hinzufügen und noch mehr mit { -brand-short-name } machen.
+mr1-return-to-amo-add-extension-label = { $addon-name } hinzufügen
+
 ## Multistage onboarding strings (about:welcome pages)
 
 # Aria-label to make the "steps" of multistage onboarding visible to screen readers.
@@ -39,8 +45,8 @@ onboarding-welcome-steps-indicator =
 #   $current (Int) - Number of the current page
 #   $total (Int) - Total number of pages
 
-onboarding-welcome-steps-indicator2 =
-    .aria-valuetext = Fortschritt: Schritt { $current } von { $total }
+onboarding-welcome-steps-indicator-label =
+    .aria-label = Fortschritt: Schritt { $current } von { $total }
 # "Hero Text" displayed on left side of welcome screen.
 # The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
 # It also signals the passion users bring to Firefox, how they use
@@ -226,7 +232,7 @@ mr2-onboarding-start-browsing-button-label = Lossurfen
 
 onboarding-live-language-header = Wähle deine Sprache
 mr2022-onboarding-live-language-text = { -brand-short-name } spricht deine Sprache
-mr2022-language-mismatch-subtitle = Dank unserer Gemeinschaft wird { -brand-short-name } in über 90 Sprachen übersetzt. Offenbar verwendet Ihr System { $systemLanguage }, und { -brand-short-name } verwendet { $appLanguage }.
+mr2022-language-mismatch-subtitle = Dank unserer Gemeinschaft wird { -brand-short-name } in über 90 Sprachen übersetzt. Offenbar verwendet Ihr System { $systemLanguage } und { -brand-short-name } verwendet { $appLanguage }.
 onboarding-live-language-button-label-downloading = Das Sprachpaket für { $negotiatedLanguage } wird heruntergeladen…
 onboarding-live-language-waiting-button = Verfügbare Sprachen werden abgerufen…
 onboarding-live-language-installing = Das Sprachpaket für { $negotiatedLanguage } wird installiert…
@@ -261,6 +267,15 @@ fx100-upgrade-thank-you-body = Dies ist unsere 100. Version von { -brand-short-n
 # Message shown with either a pin-to-taskbar or set-default button.
 fx100-upgrade-thanks-keep-body = Dies ist unsere 100. Version! Danke, dass du Teil unserer Gemeinschaft bist. Halte { -brand-short-name } nur einen Klick entfernt für die nächsten 100.
 mr2022-onboarding-secondary-skip-button-label = Diesen Schritt überspringen
+
+## MR2022 New User Easy Setup screen strings
+
+# Primary button string used on new user onboarding first screen showing multiple actions such as Set Default, Import from previous browser.
+mr2022-onboarding-easy-setup-primary-button-label = Speichern und fortfahren
+# Set Default action checkbox label used on new user onboarding first screen
+mr2022-onboarding-easy-setup-set-default-checkbox-label = { -brand-short-name } als Standardbrowser festlegen
+# Import action checkbox label used on new user onboarding first screen
+mr2022-onboarding-easy-setup-import-checkbox-label = Aus vorherigem Browser importieren
 
 ## MR2022 New User Pin Firefox screen strings
 
@@ -325,35 +340,35 @@ mr2022-onboarding-import-primary-button-label-no-attribution = Aus vorherigem Br
 
 mr2022-onboarding-colorway-title = Wähle die Farbe, die dich inspiriert
 mr2022-onboarding-colorway-subtitle = Unabhängige Stimmen können die Kultur verändern.
-mr2022-onboarding-colorway-primary-button-label = Farbwelt festlegen
+mr2022-onboarding-colorway-primary-button-label-continue = Einstellen und weiter
 mr2022-onboarding-existing-colorway-checkbox-label = { -firefox-home-brand-name } zu deiner farbenfrohen Startseite machen
 mr2022-onboarding-colorway-label-default = Standard
-mr2022-onboarding-colorway-tooltip-default =
-    .title = Standard
+mr2022-onboarding-colorway-tooltip-default2 =
+    .title = Aktuelle { -brand-short-name }-Farben
 mr2022-onboarding-colorway-description-default = <b>Meine aktuellen { -brand-short-name }-Farben verwenden.</b>
 mr2022-onboarding-colorway-label-playmaker = Spielmacher
-mr2022-onboarding-colorway-tooltip-playmaker =
-    .title = Spielmacher
+mr2022-onboarding-colorway-tooltip-playmaker2 =
+    .title = Spielmacher (rot)
 mr2022-onboarding-colorway-description-playmaker = <b>Du bist Spielmacher.</b> Du schaffst Gewinnmöglichkeiten und hilfst allen um dich herum, ihr Spiel zu verbessern.
 mr2022-onboarding-colorway-label-expressionist = Expressionist
-mr2022-onboarding-colorway-tooltip-expressionist =
-    .title = Expressionist
+mr2022-onboarding-colorway-tooltip-expressionist2 =
+    .title = Expressionist (gelb)
 mr2022-onboarding-colorway-description-expressionist = <b>Du bist Expressionist.</b> Du siehst die Welt anders, und deine Kreationen wecken die Emotionen anderer.
 mr2022-onboarding-colorway-label-visionary = Visionär
-mr2022-onboarding-colorway-tooltip-visionary =
-    .title = Visionär
+mr2022-onboarding-colorway-tooltip-visionary2 =
+    .title = Visionär (grün)
 mr2022-onboarding-colorway-description-visionary = <b>Du bist Visionär.</b> Du hinterfragst den Status quo und bewegst andere dazu, sich eine bessere Zukunft vorzustellen.
 mr2022-onboarding-colorway-label-activist = Aktivist
-mr2022-onboarding-colorway-tooltip-activist =
-    .title = Aktivist
+mr2022-onboarding-colorway-tooltip-activist2 =
+    .title = Aktivist (blau)
 mr2022-onboarding-colorway-description-activist = <b>Du bist Aktivist.</b> Du hinterlässt die Welt als einen besseren Ort, als du ihn vorgefunden hast, und lässt andere an deine Sache glauben.
 mr2022-onboarding-colorway-label-dreamer = Träumer
-mr2022-onboarding-colorway-tooltip-dreamer =
-    .title = Träumer
+mr2022-onboarding-colorway-tooltip-dreamer2 =
+    .title = Träumer (lila)
 mr2022-onboarding-colorway-description-dreamer = <b>Du bist Träumer.</b> Du glaubst, dass das Glück den Mutigen hilft, und inspirierst andere dazu, tapfer zu sein.
 mr2022-onboarding-colorway-label-innovator = Innovator
-mr2022-onboarding-colorway-tooltip-innovator =
-    .title = Innovator
+mr2022-onboarding-colorway-tooltip-innovator2 =
+    .title = Innovator (orange)
 mr2022-onboarding-colorway-description-innovator = <b>Du bist Innovator.</b> Du siehst überall Möglichkeiten und beeinflusst das Leben aller um dich herum.
 
 ## MR2022 Multistage Mobile Download screen strings
@@ -384,7 +399,33 @@ mr2022-onboarding-privacy-segmentation-button-secondary-label = Detaillierte Inf
 
 ## MR2022 Multistage Gratitude screen strings
 
-mr2022-onboarding-gratitude-title = Du hilfst uns, ein besseres Web aufzubauen.
+mr2022-onboarding-gratitude-title = Du hilfst uns, ein besseres Web aufzubauen
 mr2022-onboarding-gratitude-subtitle = Vielen Dank, dass du { -brand-short-name } verwendest, unterstützt von der Mozilla Foundation. Mit deiner Unterstützung arbeiten wir daran, das Internet für alle offener, zugänglicher und besser zu machen.
 mr2022-onboarding-gratitude-primary-button-label = Neue Funktionen und Änderungen anschauen
 mr2022-onboarding-gratitude-secondary-button-label = Lossurfen
+
+## Onboarding spotlight for infrequent users
+
+onboarding-infrequent-import-title = Fühl dich wie zu Hause
+onboarding-infrequent-import-subtitle = Egal, ob du hierbleibst oder nur vorbeischaust, denk daran, dass du deine Lesezeichen, Passwörter und mehr importieren kannst.
+onboarding-infrequent-import-primary-button = In { -brand-short-name } importieren
+
+## MR2022 Illustration alt tags
+## Descriptive tags for illustrations used by screen readers and other assistive tech
+
+mr2022-onboarding-pin-image-alt =
+    .aria-label = Person arbeitet an einem Laptop umgeben von Sternen und Blumen
+mr2022-onboarding-default-image-alt =
+    .aria-label = Person umarmt das { -brand-product-name }-Logo
+mr2022-onboarding-import-image-alt =
+    .aria-label = Person, die ein Skateboard mit einer Kiste mit Softwaresymbolen fährt
+mr2022-onboarding-mobile-download-image-alt =
+    .aria-label = Frösche hüpfen über Seerosenblätter mit einem QR-Code zum Herunterladen von { -brand-product-name } für Mobilgeräte in der Mitte
+mr2022-onboarding-pin-private-image-alt =
+    .aria-label = Zauberstab lässt das Logo von { -brand-product-name } Privater Modus aus einem Hut erscheinen
+mr2022-onboarding-privacy-segmentation-image-alt =
+    .aria-label = Hellhäutige und dunkelhäutige Hände machen einen High Five
+mr2022-onboarding-gratitude-image-alt =
+    .aria-label = Blick auf einen Sonnenuntergang durch ein Fenster mit einem Fuchs und einer Zimmerpflanze auf einer Fensterbank
+mr2022-onboarding-colorways-image-alt =
+    .aria-label = Eine Hand sprüht eine farbenfrohe Collage eines grünen Auges, einem orangefarbenen Schuh, einem roten Basketball, lila Kopfhörern, einem blauen Herz und einer gelben Krone

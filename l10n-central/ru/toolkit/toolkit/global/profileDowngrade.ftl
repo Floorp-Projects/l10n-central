@@ -6,6 +6,10 @@ profiledowngrade-window =
     .title = Вы запустили устаревшую версию { -brand-product-name }
     .style = width: 490px;
 
+profiledowngrade-window2 =
+    .title = Вы запустили устаревшую версию { -brand-product-name }
+    .style = min-width: 490px;
+
 profiledowngrade-window-create =
     .label = Создать новый профиль
 

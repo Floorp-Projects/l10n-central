@@ -19,42 +19,46 @@ pictureinpicture-close =
 ## Variables:
 ##   $shortcut (String) - Keyboard shortcut to execute the command.
 
-pictureinpicture-pause-cmd =
+pictureinpicture-pause-btn =
     .aria-label = Szüneteltetés
-    .title = Szüneteltetés (szóköz)
-pictureinpicture-play-cmd =
+    .tooltip = Szüneteltetés (szóköz)
+pictureinpicture-play-btn =
     .aria-label = Lejátszás
-    .title = Lejátszás (szóköz)
-pictureinpicture-mute-cmd =
+    .tooltip = Lejátszás (szóköz)
+pictureinpicture-mute-btn =
     .aria-label = Némítás
-    .title = Némítás ({ $shortcut })
-pictureinpicture-unmute-cmd =
+    .tooltip = Némítás ({ $shortcut })
+pictureinpicture-unmute-btn =
     .aria-label = Némítás feloldása
-    .title = Némítás feloldása ({ $shortcut })
-pictureinpicture-unpip-cmd =
+    .tooltip = Némítás feloldása ({ $shortcut })
+pictureinpicture-unpip-btn =
     .aria-label = Visszaküldés a lapra
-    .title = Vissza a lapra
-pictureinpicture-close-cmd =
+    .tooltip = Vissza a lapra
+pictureinpicture-close-btn =
     .aria-label = Bezárás
-    .title = Bezárás ({ $shortcut })
-pictureinpicture-subtitles-cmd =
+    .tooltip = Bezárás ({ $shortcut })
+pictureinpicture-subtitles-btn =
     .aria-label = Feliratok
-    .title = Feliratok
+    .tooltip = Feliratok
 
 ##
 
-pictureinpicture-fullscreen-cmd =
+pictureinpicture-fullscreen-btn =
     .aria-label = Teljes képernyős mód
-    .title = Teljes képernyős mód (dupla kattintás)
-pictureinpicture-exit-fullscreen-cmd =
+    .tooltip = Teljes képernyős mód (dupla kattintás)
+pictureinpicture-exit-fullscreen-btn =
     .aria-label = Kilépés a teljes képernyős módból
-    .title = Kilépés a teljes képernyős módból (dupla kattintás)
-pictureinpicture-seekbackward-cmd =
+    .tooltip = Kilépés a teljes képernyős módból (dupla kattintás)
+pictureinpicture-seekbackward-btn =
     .aria-label = Vissza
-    .title = Vissza (←)
-pictureinpicture-seekforward-cmd =
+    .tooltip = Vissza (←)
+pictureinpicture-seekforward-btn =
     .aria-label = Előre
-    .title = Előre (→)
+    .tooltip = Előre (→)
+# This string is never displayed on the window. Is intended to be announced by
+# a screen reader whenever a user opens the subtitles settings panel
+# after selecting the subtitles button.
+pictureinpicture-subtitles-panel-accessible = Feliratbeállítások
 pictureinpicture-subtitles-label = Feliratok
 pictureinpicture-font-size-label = Betűméret
 pictureinpicture-font-size-small = Kicsi

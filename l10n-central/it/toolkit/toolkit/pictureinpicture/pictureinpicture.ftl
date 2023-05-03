@@ -4,53 +4,6 @@
 
 pictureinpicture-player-title = Picture-in-Picture
 
-## Variables:
-##   $shortcut (String) - Keyboard shortcut to execute the command.
-
-pictureinpicture-pause-cmd =
-  .aria-label = Pausa
-  .title = Pausa (barra spaziatrice)
-pictureinpicture-play-cmd =
-  .aria-label = Riproduci
-  .title = Riproduci (barra spaziatrice)
-
-pictureinpicture-mute-cmd =
-  .aria-label = Disattiva audio
-  .title = Disattiva audio ({ $shortcut })
-pictureinpicture-unmute-cmd =
-  .aria-label = Attiva audio
-  .title = Attiva audio ({ $shortcut })
-
-pictureinpicture-unpip-cmd =
-  .aria-label = Rimanda alla scheda
-  .title = Rimanda alla scheda
-
-pictureinpicture-close-cmd =
-  .aria-label = Chiudi
-  .title = Chiudi ({ $shortcut })
-
-pictureinpicture-subtitles-cmd =
-  .aria-label = Sottotitoli
-  .title = Sottotitoli
-
-##
-
-pictureinpicture-fullscreen-cmd =
-  .aria-label = Schermo intero
-  .title = Schermo intero (doppio clic)
-
-pictureinpicture-exit-fullscreen-cmd =
-  .aria-label = Esci da schermo intero
-  .title = Esci da schermo intero (doppio clic)
-
-pictureinpicture-seekbackward-cmd =
-  .aria-label = Indietro
-  .title = Indietro (←)
-
-pictureinpicture-seekforward-cmd =
-  .aria-label = Avanti
-  .title = Avanti (→)
-
 pictureinpicture-pause =
     .aria-label = Pausa
 pictureinpicture-play =
@@ -62,10 +15,62 @@ pictureinpicture-unmute =
     .aria-label = Attiva audio
 
 pictureinpicture-unpip =
-  .aria-label = Rimanda alla scheda
+    .aria-label = Rimanda alla scheda
 
 pictureinpicture-close =
-  .aria-label = Chiudi
+    .aria-label = Chiudi
+
+## Variables:
+##   $shortcut (String) - Keyboard shortcut to execute the command.
+
+pictureinpicture-pause-btn =
+    .aria-label = Pausa
+    .tooltip = Pausa (barra spaziatrice)
+pictureinpicture-play-btn =
+    .aria-label = Riproduci
+    .tooltip = Riproduci (barra spaziatrice)
+
+pictureinpicture-mute-btn =
+    .aria-label = Disattiva audio
+    .tooltip = Disattiva audio ({ $shortcut })
+pictureinpicture-unmute-btn =
+    .aria-label = Attiva audio
+    .tooltip = Attiva audio ({ $shortcut })
+
+pictureinpicture-unpip-btn =
+    .aria-label = Rimanda alla scheda
+    .tooltip = Rimanda alla scheda
+
+pictureinpicture-close-btn =
+    .aria-label = Chiudi
+    .tooltip = Chiudi ({ $shortcut })
+
+pictureinpicture-subtitles-btn =
+    .aria-label = Sottotitoli
+    .tooltip = Sottotitoli
+
+##
+
+pictureinpicture-fullscreen-btn =
+    .aria-label = Schermo intero
+    .tooltip = Schermo intero (doppio clic)
+
+pictureinpicture-exit-fullscreen-btn =
+    .aria-label = Esci da schermo intero
+    .tooltip = Esci da schermo intero (doppio clic)
+
+pictureinpicture-seekbackward-btn =
+    .aria-label = Indietro
+    .tooltip = Indietro (←)
+
+pictureinpicture-seekforward-btn =
+    .aria-label = Avanti
+    .tooltip = Avanti (→)
+
+# This string is never displayed on the window. Is intended to be announced by
+# a screen reader whenever a user opens the subtitles settings panel
+# after selecting the subtitles button.
+pictureinpicture-subtitles-panel-accessible = Impostazioni sottotitoli
 
 pictureinpicture-subtitles-label = Sottotitoli
 
@@ -76,3 +81,4 @@ pictureinpicture-font-size-small = Piccola
 pictureinpicture-font-size-medium = Media
 
 pictureinpicture-font-size-large = Grande
+

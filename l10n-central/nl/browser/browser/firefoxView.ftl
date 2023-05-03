@@ -17,7 +17,6 @@ firefoxview-just-now-timestamp = Zojuist
 # This is a headline for an area in the product where users can resume and re-open tabs they have previously viewed on other devices.
 firefoxview-tabpickup-header = Tabbladen ophalen
 firefoxview-tabpickup-description = Open pagina’s van andere apparaten.
-firefoxview-tabpickup-recenttabs-description = Hier komt de lijst met recente tabbladen
 # Variables:
 #  $percentValue (Number): the percentage value for setup completion
 firefoxview-tabpickup-progress-label = { $percentValue }% voltooid
@@ -43,6 +42,13 @@ firefoxview-tabpickup-sync-error-primarybutton = Opnieuw proberen
 firefoxview-tabpickup-sync-disconnected-header = Schakel synchronisatie in om door te gaan
 firefoxview-tabpickup-sync-disconnected-description = Om uw tabbladen te halen, moet u synchronisatie in { -brand-short-name } toestaan.
 firefoxview-tabpickup-sync-disconnected-primarybutton = Synchronisatie inschakelen in instellingen
+firefoxview-tabpickup-password-locked-header = Voer uw hoofdwachtwoord in om tabbladen te bekijken
+firefoxview-tabpickup-password-locked-description = Om uw tabbladen op te halen, moet u uw hoofdwachtwoord voor { -brand-short-name } ingeven.
+firefoxview-tabpickup-password-locked-link = Meer info
+firefoxview-tabpickup-password-locked-primarybutton = Hoofdwachtwoord invoeren
+firefoxview-tabpickup-signed-out-header = Aanmelden om opnieuw te verbinden
+firefoxview-tabpickup-signed-out-description = Meld u aan bij uw { -fxaccount-brand-name } om opnieuw te verbinden en uw tabbladen op te halen.
+firefoxview-tabpickup-signed-out-primarybutton = Aanmelden
 firefoxview-tabpickup-syncing = Een ogenblik, uw tabbladen worden gesynchroniseerd.
 firefoxview-mobile-promo-header = Haal tabbladen op van uw telefoon of tablet
 firefoxview-mobile-promo-description = Meld u aan bij { -brand-product-name } in iOS of Android om uw laatste mobiele tabbladen te bekijken.
@@ -50,8 +56,13 @@ firefoxview-mobile-promo-primarybutton = { -brand-product-name } voor mobiel dow
 firefoxview-mobile-confirmation-header = 🎉 U kunt van start!
 firefoxview-mobile-confirmation-description = U kunt nu uw { -brand-product-name }-tabbladen van uw tablet of telefoon ophalen.
 firefoxview-closed-tabs-title = Onlangs gesloten
-firefoxview-closed-tabs-description = Open pagina’s die u hebt gesloten opnieuw op dit apparaat.
-firefoxview-closed-tabs-placeholder = <strong>Geen onlangs gesloten pagina’s</strong><br/>Wees nooit meer bang een gesloten tabblad te verliezen. U kunt dit hier altijd ophalen.
+firefoxview-closed-tabs-description2 = Open pagina’s die u in dit venster hebt gesloten opnieuw.
+firefoxview-closed-tabs-placeholder-header = Geen onlangs gesloten tabbladen
+firefoxview-closed-tabs-placeholder-body = Wanneer u een tabblad in dit venster sluit, kunt u het hier ophalen.
+# Variables:
+#   $tabTitle (string) - Title of tab being dismissed
+firefoxview-closed-tabs-dismiss-tab =
+    .title = { $tabTitle } sluiten
 # refers to the last tab that was used
 firefoxview-pickup-tabs-badge = Laatst actief
 # Variables:
@@ -65,7 +76,8 @@ firefoxview-change-colorway-button = Kleurstelling wijzigen
 #  $intensity (String): Colorway intensity
 #  $collection (String): Colorway Collection name
 firefoxview-colorway-description = { $intensity } · { $collection }
-firefoxview-synced-tabs-placeholder = <strong>Nog niets te zien</strong><br/>De volgende keer dat u op een ander apparaat een pagina opent in { -brand-product-name }, kunt u deze hier als bij toverslag ophalen.
+firefoxview-synced-tabs-placeholder-header = Nog niets te zien
+firefoxview-synced-tabs-placeholder-body = De volgende keer dat u op een ander apparaat een pagina opent in { -brand-product-name }, kunt u deze hier als bij toverslag pakken.
 firefoxview-collapse-button-show =
     .title = Lijst tonen
 firefoxview-collapse-button-hide =

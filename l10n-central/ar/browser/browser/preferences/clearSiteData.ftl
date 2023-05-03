@@ -6,6 +6,10 @@ clear-site-data-window =
     .title = امسح البيانات
     .style = width: 35em
 
+clear-site-data-window2 =
+    .title = امسح البيانات
+    .style = min-width: 35em
+
 clear-site-data-description = مسحك كل الكعكات وبيانات المواقع التي خزّنها { -brand-short-name } قد يُخرجك من المواقع ويُزيل محتوى الوب بلا اتصال. لن يؤثر مسح بيانات الخبيئة على جلسات الولوج.
 
 clear-site-data-close-key =

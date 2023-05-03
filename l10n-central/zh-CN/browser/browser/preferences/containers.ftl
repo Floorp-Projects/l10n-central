@@ -5,12 +5,20 @@
 containers-window-new =
     .title = 添加新身份
     .style = width: 45em
-
 # Variables
 #   $name (String) - Name of the container
 containers-window-update-settings =
     .title = { $name } 身份设置
     .style = width: 45em
+
+containers-window-new2 =
+    .title = 添加新身份
+    .style = min-width: 45em
+# Variables
+#   $name (String) - Name of the container
+containers-window-update-settings2 =
+    .title = { $name } 身份设置
+    .style = min-width: 45em
 
 containers-window-close =
     .key = w

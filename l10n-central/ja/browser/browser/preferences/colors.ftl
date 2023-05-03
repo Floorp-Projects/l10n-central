@@ -9,9 +9,9 @@ colors-window =
             [macos] width: 41em
            *[other] width: 38em
         }
-colors-dialog =
+colors-dialog2 =
     .title = 配色
-    .style = width: 41em;
+    .style = min-width: 41em;
 colors-close-key =
     .key = w
 colors-page-override = ウェブページが指定した配色を選択した配色で上書きする

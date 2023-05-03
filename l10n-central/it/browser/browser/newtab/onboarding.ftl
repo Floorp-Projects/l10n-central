@@ -3,11 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### UI strings for the simplified onboarding / multistage about:welcome
-### Various strings use a non-breaking space to avoid a single dangling /
-### widowed word, so test on various window sizes if you also want this.
-
-
 ### UI strings for the MR1 onboarding / multistage about:welcome
 ### Various strings use a non-breaking space to avoid a single dangling /
 ### widowed word, so test on various window sizes if you also want this.
@@ -18,6 +13,17 @@
 onboarding-welcome-header = Benvenuti in { -brand-short-name }
 onboarding-start-browsing-button-label = Inizia a navigare
 onboarding-not-now-button-label = Non adesso
+
+# This string will be used on welcome page primary button label
+# when Firefox is both pinned and default
+mr1-onboarding-get-started-primary-button-label = Inizia
+
+mr1-onboarding-welcome-header = Benvenuti in { -brand-short-name }
+mr1-onboarding-set-default-pin-primary-button-label = Imposta { -brand-short-name } come browser principale
+    .title = Imposta { -brand-short-name } come browser predefinito e lo aggiunge alla barra delle applicazioni
+
+mr1-onboarding-set-default-only-primary-button-label = Imposta { -brand-short-name } come browser predefinito
+mr1-onboarding-set-default-secondary-button-label = Non adesso
 
 ## Custom Return To AMO onboarding strings
 
@@ -30,7 +36,11 @@ return-to-amo-addon-title = Perché adesso non provi <img data-l10n-name="icon"/
 return-to-amo-add-extension-label = Aggiungi l’estensione
 return-to-amo-add-theme-label = Aggiungi il tema
 
-## Multistage 3-screen onboarding flow strings (about:welcome pages)
+##  Variables: $addon-name (String) - Name of the add-on to be installed
+
+mr1-return-to-amo-subtitle = Ti presentiamo { -brand-short-name }
+mr1-return-to-amo-addon-title = Hai già un browser veloce e rispettoso della privacy a tua disposizione. Ora puoi aggiungere <b>{ $addon-name }</b> e fare ancora di più con { -brand-short-name }.
+mr1-return-to-amo-add-extension-label = Aggiungi { $addon-name }
 
 ## Multistage onboarding strings (about:welcome pages)
 
@@ -40,9 +50,6 @@ return-to-amo-add-theme-label = Aggiungi il tema
 #   $total (Int) - Total number of pages
 onboarding-welcome-steps-indicator =
     .aria-label = Come iniziare: schermata { $current } di { $total }
-
-onboarding-welcome-steps-indicator2 =
-  .aria-valuetext = Avanzamento: passo { $current } di { $total }
 
 # "Hero Text" displayed on left side of welcome screen.
 # The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
@@ -55,6 +62,14 @@ mr1-welcome-screen-hero-text = Cominciamo da qui
 # Caption for background image in about:welcome. "Soraya Osorio" is the name
 # of the person and shouldn't be translated.
 mr1-onboarding-welcome-image-caption = Soraya Osorio — Designer di mobili, fan di Firefox
+
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+
+onboarding-welcome-steps-indicator-label =
+    .aria-label = Avanzamento: passo { $current } di { $total }
 
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = Disattiva animazioni
@@ -78,16 +93,6 @@ mr1-onboarding-pin-primary-button-label =
 
 ## Multistage MR1 onboarding strings (about:welcome pages)
 
-# This string will be used on welcome page primary button label
-# when Firefox is both pinned and default
-mr1-onboarding-get-started-primary-button-label = Inizia
-
-mr1-onboarding-welcome-header = Benvenuti in { -brand-short-name }
-mr1-onboarding-set-default-pin-primary-button-label = Imposta { -brand-short-name } come browser principale
-    .title = Imposta { -brand-short-name } come browser predefinito e lo aggiunge alla barra delle applicazioni
-
-mr1-onboarding-set-default-only-primary-button-label = Imposta { -brand-short-name } come browser predefinito
-mr1-onboarding-set-default-secondary-button-label = Non adesso
 mr1-onboarding-sign-in-button-label = Accedi
 
 ## Title, subtitle and primary button string used on set default onboarding screen
@@ -108,7 +113,7 @@ mr1-onboarding-import-subtitle = Importa password, segnalibri<br/>e altro ancora
 mr1-onboarding-import-primary-button-label-attribution = Importa da { $previous }
 
 # This string will be used in cases where we can't detect the previous browser name.
-mr1-onboarding-import-primary-button-label-no-attribution = Importa da un browser esistente
+mr1-onboarding-import-primary-button-label-no-attribution = Importa dal browser precedente
 mr1-onboarding-import-secondary-button-label = Non adesso
 
 mr2-onboarding-colorway-header = Una vita a colori
@@ -146,14 +151,6 @@ onboarding-theme-primary-button-label = Fatto
 ## width corresponds to about 40 Latin characters, to ensure that the tooltip
 ## doesn't become too long. Line breaks will be preserved when displaying the
 ## tooltip.
-
-
-## Please make sure to split the content of the title attribute into lines whose
-## width corresponds to about 40 Latin characters, to ensure that the tooltip
-## doesn't become too long. Line breaks will be preserved when displaying the
-## tooltip.
-
-## Multistage MR1 onboarding strings (MR1 about:welcome pages)
 
 # Tooltip displayed on hover of system theme
 mr1-onboarding-theme-tooltip-system =
@@ -244,9 +241,8 @@ mr2-onboarding-start-browsing-button-label = Inizia a navigare
 ## The following language names are generated by the browser's Intl.DisplayNames API.
 ##
 ## Variables:
-##   $appLanguage (String) - The name of Firefox's language, e.g. "American English"
-##   $systemLanguage (String) - The name of the OS's language, e.g. "European Spanish"
-##   $negotiatedLanguage (String) - The name of the langpack's language, e.g. "European Spanish"
+##   $negotiatedLanguage (String) - The name of the langpack's language, e.g. "Español (ES)"
+
 
 ## Multistage live language reloading onboarding strings (about:welcome pages)
 ##
@@ -254,6 +250,8 @@ mr2-onboarding-start-browsing-button-label = Inizia a navigare
 ##
 ## Variables:
 ##   $negotiatedLanguage (String) - The name of the langpack's language, e.g. "Español (ES)"
+##   $systemLanguage (String) - The name of the system language, e.g "Español (ES)"
+##   $appLanguage (String) - The name of the language shipping in the browser build, e.g. "English (EN)"
 
 onboarding-live-language-header = Scegli la tua lingua
 
@@ -264,11 +262,12 @@ mr2022-language-mismatch-subtitle = Grazie alla nostra comunità, { -brand-short
 onboarding-live-language-button-label-downloading = Download del pacchetto lingua per { $negotiatedLanguage }…
 onboarding-live-language-waiting-button = Recupero elenco delle lingue disponibili…
 onboarding-live-language-installing = Installazione del pacchetto lingua per { $negotiatedLanguage }…
-onboarding-live-language-secondary-cancel-download = Annulla
-onboarding-live-language-skip-button-label = Salta
 
 mr2022-onboarding-live-language-switch-to = Passa a { $negotiatedLanguage }
 mr2022-onboarding-live-language-continue-in = Continua in { $appLanguage }
+
+onboarding-live-language-secondary-cancel-download = Annulla
+onboarding-live-language-skip-button-label = Salta
 
 ## Firefox 100 Thank You screens
 
@@ -280,14 +279,15 @@ mr2022-onboarding-live-language-continue-in = Continua in { $appLanguage }
 # The English text would normally be "100 Thank-Yous" i.e., plural noun, but for
 # aesthetics of splitting it across multiple lines, the hyphen is omitted.
 fx100-thank-you-hero-text =
-  100
-  volte
-  <span data-l10n-name="zap">grazie</span>
+    100
+    volte
+    <span data-l10n-name="zap">grazie</span>
 fx100-thank-you-subtitle = Questa è la nostra centesima versione! Grazie al tuo supporto possiamo rendere Internet un luogo migliore e più sano.
-fx100-thank-you-pin-primary-button-label = { PLATFORM() ->
-    [macos] Mantieni { -brand-short-name } nel Dock
-   *[other] Aggiungi { -brand-short-name } alla barra delle applicazioni
-}
+fx100-thank-you-pin-primary-button-label =
+    { PLATFORM() ->
+        [macos] Mantieni { -brand-short-name } nel Dock
+       *[other] Aggiungi { -brand-short-name } alla barra delle applicazioni
+    }
 
 fx100-upgrade-thanks-header = 100 volte grazie
 # Message shown with a start-browsing button. Emphasis <em> should be for "you"
@@ -297,6 +297,15 @@ fx100-upgrade-thank-you-body = Questa è la nostra centesima versione di { -bran
 fx100-upgrade-thanks-keep-body = Questa è la nostra centesima versione! Grazie per essere parte della nostra comunità. Tieni { -brand-short-name } a portata di clic per le prossime 100.
 
 mr2022-onboarding-secondary-skip-button-label = Salta questo passaggio
+
+## MR2022 New User Easy Setup screen strings
+
+# Primary button string used on new user onboarding first screen showing multiple actions such as Set Default, Import from previous browser.
+mr2022-onboarding-easy-setup-primary-button-label = Salva e continua
+# Set Default action checkbox label used on new user onboarding first screen
+mr2022-onboarding-easy-setup-set-default-checkbox-label = Imposta { -brand-short-name } come browser predefinito
+# Import action checkbox label used on new user onboarding first screen
+mr2022-onboarding-easy-setup-import-checkbox-label = Importa dal browser precedente
 
 ## MR2022 New User Pin Firefox screen strings
 
@@ -308,10 +317,11 @@ mr2022-onboarding-welcome-pin-header = Scopri le meraviglie di Internet
 # Subtitle is used on onboarding page for new users page when Firefox is not pinned
 mr2022-onboarding-welcome-pin-subtitle = Avvia { -brand-short-name } con un semplice clic, ovunque ti trovi. Scegli ogni volta un Web più aperto e indipendente.
 # Primary button string used on welcome page for when Firefox is not pinned.
-mr2022-onboarding-pin-primary-button-label = { PLATFORM() ->
-    [macos] Mantieni { -brand-short-name } nel Dock
-   *[other] Aggiungi { -brand-short-name } alla barra delle applicazioni
-}
+mr2022-onboarding-pin-primary-button-label =
+    { PLATFORM() ->
+        [macos] Mantieni { -brand-short-name } nel Dock
+       *[other] Aggiungi { -brand-short-name } alla barra delle applicazioni
+    }
 # Subtitle will be used when user already has Firefox pinned, but
 # has not set it as their default browser.
 # When translating "zip", please feel free to pick a verb that signifies movement and/or exploration
@@ -360,66 +370,66 @@ mr2022-onboarding-import-primary-button-label-no-attribution = Importa dal brows
 
 mr2022-onboarding-colorway-title = Scegli il colore che ti ispira
 mr2022-onboarding-colorway-subtitle = Le voci indipendenti possono cambiare la società.
-mr2022-onboarding-colorway-primary-button-label = Imposta tonalità
+mr2022-onboarding-colorway-primary-button-label-continue = Imposta e continua
 mr2022-onboarding-existing-colorway-checkbox-label = Utilizza { -firefox-home-brand-name } per una pagina iniziale multicolore
 
 mr2022-onboarding-colorway-label-default = Predefinito
-mr2022-onboarding-colorway-tooltip-default =
-  .title = Predefinito
+mr2022-onboarding-colorway-tooltip-default2 =
+    .title = Colori correnti di { -brand-short-name }
 mr2022-onboarding-colorway-description-default = <b>Continua a utilizzare i colori correnti di { -brand-short-name }.</b>
 
 mr2022-onboarding-colorway-label-playmaker = Regista
-mr2022-onboarding-colorway-tooltip-playmaker =
-  .title = Regista
+mr2022-onboarding-colorway-tooltip-playmaker2 =
+    .title = Regista (rossa)
 mr2022-onboarding-colorway-description-playmaker = <b>Regista:</b> crei opportunità per vincere e aiuti le persone intorno a te a migliorare il loro gioco.
 
 mr2022-onboarding-colorway-label-expressionist = Espressionista
-mr2022-onboarding-colorway-tooltip-expressionist =
-  .title = Espressionista
+mr2022-onboarding-colorway-tooltip-expressionist2 =
+    .title = Espressionista (gialla)
 mr2022-onboarding-colorway-description-expressionist = <b>Espressionista:</b> vedi il mondo in modo diverso e le tue creazioni suscitano emozioni negli altri.
 
 mr2022-onboarding-colorway-label-visionary = Visionaria
-mr2022-onboarding-colorway-tooltip-visionary =
-  .title = Visionaria
+mr2022-onboarding-colorway-tooltip-visionary2 =
+    .title = Visionaria (verde)
 mr2022-onboarding-colorway-description-visionary = <b>Visionaria:</b> metti in dubbio lo status quo e spingi chi ti circonda a immaginare un mondo migliore.
 
 mr2022-onboarding-colorway-label-activist = Attivista
-mr2022-onboarding-colorway-tooltip-activist =
-  .title = Attivista
+mr2022-onboarding-colorway-tooltip-activist2 =
+    .title = Attivista (blu)
 mr2022-onboarding-colorway-description-activist = <b>Attivista:</b> rendi il mondo migliore di come l’hai trovato e convinci le altre persone a credere nel cambiamento.
 
 mr2022-onboarding-colorway-label-dreamer = Sognatrice
-mr2022-onboarding-colorway-tooltip-dreamer =
-  .title = Sognatrice
+mr2022-onboarding-colorway-tooltip-dreamer2 =
+    .title = Sognatrice (viola)
 mr2022-onboarding-colorway-description-dreamer = <b>Sognatrice:</b> credi che la fortuna aiuti gli audaci e ispiri gli altri a essere coraggiosi.
 
 mr2022-onboarding-colorway-label-innovator = Innovatrice
-mr2022-onboarding-colorway-tooltip-innovator =
-  .title = Innovatrice
+mr2022-onboarding-colorway-tooltip-innovator2 =
+    .title = Innovatrice (arancio)
 mr2022-onboarding-colorway-description-innovator = <b>Innovatrice:</b> vedi opportunità ovunque e lasci un segno nella vita di chi ti circonda.
+
+## MR2022 Multistage Mobile Download screen strings
+
+mr2022-onboarding-mobile-download-title = Passa dal computer al telefono, e viceversa
+mr2022-onboarding-mobile-download-subtitle = Recupera le schede da un altro dispositivo e riprendi esattamente da dove eri rimasto. Inoltre, sincronizza i tuoi segnalibri e le tue password ovunque utilizzi { -brand-product-name }.
+mr2022-onboarding-mobile-download-cta-text = Scansiona il codice QR per ottenere { -brand-product-name } per dispositivi mobili oppure <a data-l10n-name="download-label">inviati un link per il download.</a>
+mr2022-onboarding-no-mobile-download-cta-text = Scansiona il codice QR per ottenere { -brand-product-name } per dispositivi mobili.
 
 ## MR2022 Upgrade Dialog screens
 ## Pin private window screen shown only for users who don't have Firefox private pinned
 
 mr2022-upgrade-onboarding-pin-private-window-header = La libertà della navigazione anonima in un clic
 mr2022-upgrade-onboarding-pin-private-window-subtitle = Niente cookie né cronologia, direttamente dal tuo desktop. Naviga come se nessuno ti stesse guardando.
-mr2022-upgrade-onboarding-pin-private-window-primary-button-label = { PLATFORM() ->
-    [macos] Mantieni { -brand-short-name } — Navigazione anonima nel Dock
-   *[other] Aggiungi { -brand-short-name } — Navigazione anonima alla barra delle applicazioni
-}
-
-## MR2022 Multistage Mobile Download screen strings
-
-mr2022-onboarding-mobile-download-title = Passa dal computer al telefono, e viceversa
-mr2022-onboarding-mobile-download-subtitle = Recupera le schede da un altro dispositivo e riprendi esattamente da dove avevi interrotto. Inoltre, sincronizza i tuoi segnalibri e le tue password ovunque utilizzi { -brand-product-name }.
-mr2022-onboarding-mobile-download-cta-text = Scansiona il codice QR per ottenere { -brand-product-name } per dispositivi mobili oppure <a data-l10n-name="download-label">inviati un link per il download.</a>
-mr2022-onboarding-no-mobile-download-cta-text = Scansiona il codice QR per ottenere { -brand-product-name } per dispositivi mobili.
+mr2022-upgrade-onboarding-pin-private-window-primary-button-label =
+    { PLATFORM() ->
+        [macos] Mantieni { -brand-short-name } — Navigazione anonima nel Dock
+       *[other] Aggiungi { -brand-short-name } — Navigazione anonima alla barra delle applicazioni
+    }
 
 ## MR2022 Privacy Segmentation screen strings
 
 mr2022-onboarding-privacy-segmentation-title = Rispettiamo sempre la tua privacy
 mr2022-onboarding-privacy-segmentation-subtitle = Da suggerimenti intelligenti a ricerche più efficienti, siamo sempre al lavoro per creare un’esperienza migliore e più personale in { -brand-product-name }.
-
 mr2022-onboarding-privacy-segmentation-text-cta = Quale scelta preferisci quando introduciamo nuove funzioni che utilizzano i tuoi dati per migliorare la navigazione?
 mr2022-onboarding-privacy-segmentation-button-primary-label = Usa le impostazioni consigliate da { -brand-product-name }
 mr2022-onboarding-privacy-segmentation-button-secondary-label = Mostra informazioni dettagliate
@@ -430,3 +440,29 @@ mr2022-onboarding-gratitude-title = Ci stai aiutando a realizzare un Web miglior
 mr2022-onboarding-gratitude-subtitle = Grazie per aver scelto di utilizzare { -brand-short-name }, il browser supportato da Mozilla Foundation. Con il tuo supporto, lavoriamo per rendere Internet più aperto, più accessibile e migliore per tutti.
 mr2022-onboarding-gratitude-primary-button-label = Scopri le novità
 mr2022-onboarding-gratitude-secondary-button-label = Inizia a navigare
+
+## Onboarding spotlight for infrequent users
+
+onboarding-infrequent-import-title = Mettiti a tuo agio
+onboarding-infrequent-import-subtitle = Non importa se hai intenzione di restare qui per un po’ oppure sei solo di passaggio, ricorda che puoi importare segnalibri, password e altro ancora.
+onboarding-infrequent-import-primary-button = Importa da { -brand-short-name }
+
+## MR2022 Illustration alt tags
+## Descriptive tags for illustrations used by screen readers and other assistive tech
+
+mr2022-onboarding-pin-image-alt =
+    .aria-label = Persona che lavora con un computer portatile, circondata da stelle e fiori
+mr2022-onboarding-default-image-alt =
+    .aria-label = Persona che abbraccia il logo di { -brand-product-name }
+mr2022-onboarding-import-image-alt =
+    .aria-label = Persona su uno skateboard con una scatola di icone di software
+mr2022-onboarding-mobile-download-image-alt =
+    .aria-label = Rane che saltano tra ninfee, con un codice QR visualizzato al centro per scaricare { -brand-product-name } per dispositivi mobili
+mr2022-onboarding-pin-private-image-alt =
+    .aria-label = Una bacchetta magica fa apparire da un cappello il logo della navigazione anonima di { -brand-product-name }
+mr2022-onboarding-privacy-segmentation-image-alt =
+    .aria-label = Due mani con pelle di colore chiara e scura si danno il cinque
+mr2022-onboarding-gratitude-image-alt =
+    .aria-label = Vista di un tramonto attraverso una finestra, con una volpe e una pianta sul davanzale
+mr2022-onboarding-colorways-image-alt =
+    .aria-label = Una mano disegna un graffito con un collage colorato che include un occhio verde, una scarpa arancio, un pallone rosso da basket, cuffie viola, un cuore blu e una corona gialla

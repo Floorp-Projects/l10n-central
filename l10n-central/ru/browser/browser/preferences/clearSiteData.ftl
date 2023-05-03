@@ -6,6 +6,10 @@ clear-site-data-window =
     .title = Удаление данных
     .style = width: 35em
 
+clear-site-data-window2 =
+    .title = Удаление данных
+    .style = min-width: 35em
+
 clear-site-data-description = Удаление всех кук и данных сайтов, хранимых в { -brand-short-name }, может привести к разрегистрации вас на веб-сайтах и удалению данных автономных веб-сайтов. Очистка кэша не затронет ваши логины.
 
 clear-site-data-close-key =

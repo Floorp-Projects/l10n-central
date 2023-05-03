@@ -155,10 +155,6 @@ spotlight-total-cookie-protection-body = Totalt vern mot infokapslar stoppar spo
 spotlight-total-cookie-protection-expanded = { -brand-short-name }byggjer eit gjerde rundt infokapslar, og avgrensar dei til nettstaden du er på, slik at sporarar ikkje kan bruke dei til å følgje deg. Med tidleg tilgang hjelper du til med å optimalisere denne funksjonen slik at vi kan fortsetje å byggje eit betre nett for alle.
 spotlight-total-cookie-protection-primary-button = Slå på total vern mot infokapslar
 spotlight-total-cookie-protection-secondary-button = Ikkje no
-cfr-total-cookie-protection-header = Takka vere deg er { -brand-short-name } meir privat og sikrare enn nokon gong
-# "Early access" for this feature rollout means it's a "feature preview" or
-# "soft launch". Only those who received it and accepted are shown this message.
-cfr-total-cookie-protection-body = Totalt vern mot infokapslar er vårt sterkaste personvern til no – og det er no ei standardinnstilling for { -brand-short-name }-brukarar overalt. Vi kunne ikkje ha gjort det utan deltakarar med tidleg tilgang som deg. Så takk for at du hjelper oss med å skape eit betre, meir privat internett.
 
 ## Emotive Continuous Onboarding
 
@@ -172,3 +168,83 @@ spotlight-pin-primary-button =
        *[other] Fest til oppgåvelinja
     }
 spotlight-pin-secondary-button = Ikkje no
+
+## MR2022 Background Update Windows native toast notification strings.
+##
+## These strings will be displayed by the Windows operating system in
+## a native toast, like:
+##
+## <b>multi-line title</b>
+## multi-line text
+## <img>
+## [ primary button ] [ secondary button ]
+##
+## The button labels are fitted into narrow fixed-width buttons by
+## Windows and therefore must be as narrow as possible.
+
+mr2022-background-update-toast-title = Ny { -brand-short-name }. Meir privat. Færre sporarar. Ingen kompromiss.
+mr2022-background-update-toast-text = Prøv den nyaste { -brand-short-name } no, oppgradert med det sterkaste anti-sporingsvernet vårt til no.
+# This button label will be fitted into a narrow fixed-width button by
+# Windows. Try to not exceed the width of the English text (compare it
+# using a variable font like Arial): the button can only fit 1-2
+# additional characters, exceeding characters will be truncated.
+mr2022-background-update-toast-primary-button-label = Opne { -brand-shorter-name } no
+# This button label will be fitted into a narrow fixed-width button by
+# Windows. Try to not exceed the width of the English text (compare it using a
+# variable font like Arial): the button can only fit 1-2 additional characters,
+# exceeding characters will be truncated.
+mr2022-background-update-toast-secondary-button-label = Minn meg på det seinare
+
+## Firefox View CFR
+
+firefoxview-cfr-primarybutton = Prøv det
+    .accesskey = t
+firefoxview-cfr-secondarybutton = Ikkje no
+    .accesskey = n
+firefoxview-cfr-header-v2 = Hald fram raskt der du slutta
+firefoxview-cfr-body-v2 = Få tilbake nyleg attlatne faner, og skift snøgt mellom einingar med { -firefoxview-brand-name }.
+
+## Firefox View Spotlight
+
+firefoxview-spotlight-promo-title = Sei hei til { -firefoxview-brand-name }
+# “Poof” refers to the expression to convey when something or someone suddenly disappears, or in this case, reappears. For example, “Poof, it’s gone.”
+firefoxview-spotlight-promo-subtitle = Vil du ha den opne fana på telefonen din? Hent henne. Treng du sida du nettopp har besøkt? Hent henne tilbake med { -firefoxview-brand-name }.
+firefoxview-spotlight-promo-primarybutton = Sjå korleis dette fungerer
+firefoxview-spotlight-promo-secondarybutton = Hopp over
+
+## Colorways expiry reminder CFR
+
+colorways-cfr-primarybutton = Vel fargesamansetjing
+    .accesskey = V
+# "shades" refers to the different color options available to users in colorways.
+colorways-cfr-body = Farg nettlesaren din med eksklusive { -brand-short-name }-fargenyansar inspirert av røyster som endra kulturen.
+colorways-cfr-header-28days = Fargesamansetjinga «Uavhengige røyster» går ut 16. januar
+colorways-cfr-header-14days = Fargesamansetjinga «Uavhengige røyster» går ut om to veker
+colorways-cfr-header-7days = Fargesamansetjinga «Uavhengige røyster» går ut om to veker
+colorways-cfr-header-today = Fargesamansetjinga «Uavhengige røyster» går ut i dag
+
+## Cookie Banner Handling CFR
+
+cfr-cbh-header = Tillate at { -brand-short-name } avviser infokapselbanner?
+cfr-cbh-body = { -brand-short-name } kan automatisk avvise mange infokapselbanner-førespurnadar.
+cfr-cbh-confirm-button = Avvis infokapselbanner
+    .accesskey = A
+cfr-cbh-dismiss-button = Ikkje no
+    .accesskey = N
+
+## These strings are used in the Fox doodle Pin/set default spotlights
+
+july-jam-headline = Vi beskyttar deg
+july-jam-body = Kvar månad blokkerer { -brand-short-name } i gjennomsnitt over 3000 sporarar per brukar, noko som gir deg trygg og rask tilgang til eit bra internett.
+july-jam-set-default-primary = Opne lenkene mine med { -brand-short-name }
+fox-doodle-pin-headline = Velkomen tilbake
+# “indie” is short for the term “independent”.
+# In this instance, free from outside influence or control.
+fox-doodle-pin-body = Her er ei rask påminning om at du kan ha den uavhengige nettlesaren din eitt klikk unna.
+fox-doodle-pin-primary = Opne lenkene mine med { -brand-short-name }
+fox-doodle-pin-secondary = Ikkje no
+
+## These strings are used in the Set Firefox as Default PDF Handler for Existing Users experiment
+
+set-default-pdf-handler-headline = <strong>PDF-filene dine vert no opna i { -brand-short-name }.</strong> Rediger eller fyll ut skjema direkte i nettlesaren din. For å endre, søk etter «PDF» i innstillingane.
+set-default-pdf-handler-primary = Eg forstår

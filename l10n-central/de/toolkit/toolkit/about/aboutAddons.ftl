@@ -141,6 +141,10 @@ addon-category-recent-updates-title =
 addon-category-sitepermission = Website-Berechtigungen
 addon-category-sitepermission-title =
     .title = Website-Berechtigungen
+# String displayed in about:addons in the Site Permissions section
+# Variables:
+#  $host (string): DNS host name for which the webextension enables permissions
+addon-sitepermission-host = Website-Berechtigungen für { $host }
 
 ## These are global warnings
 
@@ -294,10 +298,6 @@ theme-monochromatic-heading = Farbwelten
 theme-monochromatic-subheading = Lebendige, neue Farbwelten von { -brand-product-name }. Verfügbar für eine begrenzte Zeit.
 # Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
 theme-colorways-button = Farbwelten ausprobieren
-colorway-collection-independent-voices-subheading = Machen Sie { -brand-short-name } etwas persönlicher.
-# Variables:
-#   $expiryDate (string) - date on which the colorway collection expires.
-colorway-collection-expiry-date-span = Läuft am { DATETIME($expiryDate, month: "long", day: "numeric") } ab
 # Refers to the button label for the colorways card when a user has a colorway theme enabled.
 theme-colorways-button-colorway-enabled = Farbwelt ändern
 # Variables:

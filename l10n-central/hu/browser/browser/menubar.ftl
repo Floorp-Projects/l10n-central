@@ -181,6 +181,17 @@ menu-view-full-screen =
     .label = Teljes képernyő
     .accesskey = T
 
+## These menu items may use the same accesskey.
+
+# This should match reader-view-enter-button in browser.ftl
+menu-view-enter-readerview =
+    .label = Belépés olvasó nézetbe
+    .accesskey = O
+# This should match reader-view-close-button in browser.ftl
+menu-view-close-readerview =
+    .label = Olvasó nézet bezárása
+    .accesskey = O
+
 ##
 
 menu-view-show-all-tabs =

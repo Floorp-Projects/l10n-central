@@ -101,7 +101,7 @@ downloads-cmd-remove-from-history =
     .label = Remover do histórico
     .accesskey = E
 downloads-cmd-clear-list =
-    .label = Limpar painel de visualização
+    .label = Limpar painel de exibição
     .accesskey = a
 downloads-cmd-clear-downloads =
     .label = Limpar downloads
@@ -154,6 +154,16 @@ downloading-file-opens-in-minutes = Será aberto em { $minutes }m…
 downloading-file-opens-in-minutes-and-seconds = Será aberto em { $minutes }m { $seconds }s…
 downloading-file-opens-in-seconds = Será aberto em { $seconds }s…
 downloading-file-opens-in-some-time = Será aberto quando concluir…
+downloading-file-opens-in-hours-and-minutes-2 =
+    .value = Será aberto em { $hours }h e { $minutes }min…
+downloading-file-opens-in-minutes-2 =
+    .value = Será aberto em { $minutes }min…
+downloading-file-opens-in-minutes-and-seconds-2 =
+    .value = Será aberto em { $minutes }min e { $seconds }s…
+downloading-file-opens-in-seconds-2 =
+    .value = Será aberto em { $seconds }s…
+downloading-file-opens-in-some-time-2 =
+    .value = Será aberto quando terminar…
 downloading-file-click-to-open =
     .value = Abrir quando terminar de baixar
 
@@ -212,3 +222,17 @@ downloads-more-downloading =
         [one] Mais { $count } arquivo sendo baixado
        *[other] Mais { $count } arquivos sendo baixados
     }
+
+## Download errors
+
+downloads-error-alert-title = Erro no download
+# Variables:
+#   $extension (String): the name of the blocking extension.
+downloads-error-blocked-by = O download não pode ser salvo porque está bloqueado por { $extension }.
+# Used when the name of the blocking extension is unavailable.
+downloads-error-extension = O download não pode ser salvo porque está bloqueado por uma extensão.
+# Line breaks in this message are meaningful, and should be maintained.
+downloads-error-generic =
+    O arquivo não pôde ser salvo porque ocorreu um erro desconhecido.
+    
+    Tente novamente.

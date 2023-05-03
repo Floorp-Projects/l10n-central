@@ -334,7 +334,7 @@ main-context-menu-use-saved-password =
 ##
 
 main-context-menu-suggest-strong-password =
-    .label = Navrhnou bezpečně vygenerované heslo…
+    .label = Navrhnout bezpečně vygenerované heslo…
     .accesskey = g
 main-context-menu-manage-logins2 =
     .label = Správa přihlašovacích údajů
@@ -380,6 +380,9 @@ main-context-menu-frame-view-info =
     .accesskey = i
 main-context-menu-print-selection =
     .label = Vytisknout výběr
+    .accesskey = r
+main-context-menu-print-selection-2 =
+    .label = Vytisknout výběr…
     .accesskey = r
 main-context-menu-view-selection-source =
     .label = Zobrazit zdrojový kód výběru

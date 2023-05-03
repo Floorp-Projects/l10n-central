@@ -18,3 +18,28 @@ callout-firefox-view-recently-closed-subtitle = Tutaj w magiczny sposób pojawi
 callout-firefox-view-colorways-title = Dodaj odrobinę koloru
 # "Shade" refer to different color options in each colorway.
 callout-firefox-view-colorways-subtitle = Wybierz odcień kolorystyki, który do Ciebie pasuje. Tylko w przeglądarce { -brand-product-name }.
+callout-firefox-view-colorways-reminder-title = Poznaj nasze najnowsze kolorystyki
+# “Shades” refers to the different color options in each colorways
+callout-firefox-view-colorways-reminder-subtitle = Pokoloruj swoją przeglądarkę odcieniami zainspirowanymi przez niezależne głosy. Tylko w { -brand-product-name(case: "loc") }.
+
+## Continuous Onboarding - Firefox View: Tab pick up
+
+# “Boost your browsing” refers to the added benefit the user receives from having
+# access to the same browsing experience when moving from one browser to another.
+# Alternative: ”Improve your browsing experience with tab pickup”
+continuous-onboarding-firefox-view-tab-pickup-title = Przyspiesz przeglądanie za pomocą odbierania kart
+continuous-onboarding-firefox-view-tab-pickup-subtitle = Korzystaj z otwartych kart na każdym urządzeniu, a także synchronizuj zakładki, hasła i nie tylko.
+continuous-onboarding-firefox-view-tab-pickup-primary-button-label = Zacznij teraz
+
+## PDF.js Feature Tour Strings
+
+callout-pdfjs-edit-title = Edytuj pliki PDF za pomocą naszego nowego narzędzia tekstowego
+callout-pdfjs-edit-body-a = Wypełniaj formularze, dodawaj komentarze lub rób notatki od razu w przeglądarce { -brand-short-name }.
+callout-pdfjs-edit-body-b = Nie szukaj darmowych edytorów w sieci. Wypełniaj formularze, dodawaj komentarze lub rób notatki od razu w przeglądarce { -brand-short-name }.
+callout-pdfjs-edit-button = Dalej
+callout-pdfjs-draw-title = Podpisuj dokumenty za pomocą naszego nowego narzędzia do rysowania
+# “Mark up” refers to the process of “annotating” or adding free hand text or diagramming to the document.
+callout-pdfjs-draw-body-a = Opisuj pliki PDF i zapisuj swoje zmiany.
+# “Mark up” refers to the process of “annotating” or adding free hand text or diagramming to the document.
+callout-pdfjs-draw-body-b = Koniec z drukowaniem i skanowaniem. Opisuj pliki PDF i zapisuj swoje zmiany.
+callout-pdfjs-draw-button = OK

@@ -6,6 +6,10 @@ clear-site-data-window =
     .title = Effacer les données
     .style = width: 35em
 
+clear-site-data-window2 =
+    .title = Effacer les données
+    .style = min-width: 35em
+
 clear-site-data-description = Effacer l’ensemble des cookies et des données de sites stockés par { -brand-short-name } peut vous déconnecter de certains sites web et supprimer du contenu web hors connexion. Effacer les données mises en cache n’affectera pas vos identifiants.
 
 clear-site-data-close-key =

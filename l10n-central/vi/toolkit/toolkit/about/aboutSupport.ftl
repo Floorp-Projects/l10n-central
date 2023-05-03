@@ -107,11 +107,21 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Nhật ký quyết định
 graphics-crash-guards-title = Vô hiệu hóa tính năng bảo vệ sự cố
 graphics-workarounds-title = Cách giải quyết
+graphics-device-pixel-ratios = Tỉ lệ Pixel của cửa sổ thiết bị
 # Windowing system in use on Linux (e.g. X11, Wayland).
 graphics-window-protocol = Giao thức cửa sổ
 # Desktop environment in use on Linux (e.g. GNOME, KDE, XFCE, etc).
 graphics-desktop-environment = Môi trường máy tính để bàn
 place-database-title = Cơ sở dữ liệu địa điểm
+place-database-stats = Thống kê
+place-database-stats-show = Hiển thị thống kê
+place-database-stats-hide = Ẩn thống kê
+place-database-stats-entity = Thực thể
+place-database-stats-count = Tổng số
+place-database-stats-size-kib = Kích thước (KiB)
+place-database-stats-size-perc = Kích thước (%)
+place-database-stats-efficiency-perc = Hiệu quả (%)
+place-database-stats-sequentiality-perc = Tuần tự (%)
 place-database-integrity = Tính toàn vẹn
 place-database-verify-integrity = Xác nhận tính toàn vẹn
 a11y-title = Trợ năng
@@ -255,6 +265,8 @@ webgl2-renderer = Trình kết xuất trình điều khiển WebGL 2
 webgl2-version = Phiên bản trình điều khiển WebGL 2
 webgl2-driver-extensions = Tiện ích mở rộng trình điều khiển WebGL 2
 webgl2-extensions = Tiện ích mở rộng WebGL 2
+webgpu-default-adapter = Adapter WebGPU mặc định
+webgpu-fallback-adapter = Adapter WebGPU dự phòng
 # Variables
 #   $bugNumber (string) - Bug number on Bugzilla
 support-blocklisted-bug = Bị chặn trong danh sách do các sự cố đã biết: <a data-l10n-name="bug-link">mã lỗi { $bugNumber }</a>
@@ -284,6 +296,7 @@ can-sandbox-media = Media Plugin Sandboxing
 content-sandbox-level = Cấp độ quy trình nội dung hộp cát
 effective-content-sandbox-level = Cấp độ hiệu quả nội dung hộp cát
 content-win32k-lockdown-state = Trạng thái Win32k Lockdown cho tiến trình nội dung
+support-sandbox-gpu-level = Mức độ tiến trình GPU hộp cát
 sandbox-proc-type-content = nội dung
 sandbox-proc-type-file = nội dung tập tin
 sandbox-proc-type-media-plugin = phần bổ trợ phương tiện
@@ -318,12 +331,12 @@ fission-status-disabled-by-e10s-other = E10s bị vô hiệu hóa
 fission-status-enabled-by-rollout = Được kích hoạt bằng cách phát hành theo từng giai đoạn
 async-pan-zoom = Pan/Zoom không đồng bộ
 apz-none = không có
-wheel-enabled = con lăn đã bật
-touch-enabled = cảm ứng đã bật
-drag-enabled = thanh cuộn kéo đã bật
-keyboard-enabled = bàn phím đã bật
-autoscroll-enabled = tự động cuộn đã bật
-zooming-enabled = pinch-zoom mượt được kích hoạt
+wheel-enabled = con lăn được bật
+touch-enabled = cảm ứng được bật
+drag-enabled = thanh cuộn kéo được bật
+keyboard-enabled = bàn phím được bật
+autoscroll-enabled = tự động cuộn được bật
+zooming-enabled = pinch-zoom mượt được bật
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference

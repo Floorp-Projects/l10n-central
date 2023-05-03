@@ -6,6 +6,10 @@ clear-site-data-window =
     .title = Daten löschen
     .style = width: 45em
 
+clear-site-data-window2 =
+    .title = Daten löschen
+    .style = min-width: 45em
+
 clear-site-data-description = Das Leeren von durch { -brand-short-name } gespeicherten Cookies und Website-Daten meldet Sie eventuell von Websites ab und entfernt lokal zwischengespeicherte Webinhalte (Cache). Ihre Zugangsdaten bleiben beim Leeren des Caches erhalten.
 
 clear-site-data-close-key =

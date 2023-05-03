@@ -30,6 +30,10 @@ certmgr-edit-ca-cert =
     .title = Chỉnh thiết lập độ tin cậy chứng chỉ CA
     .style = width: 48em;
 
+certmgr-edit-ca-cert2 =
+    .title = Chỉnh thiết lập độ tin cậy chứng chỉ CA
+    .style = min-width: 48em;
+
 certmgr-edit-cert-edit-trust = Chỉnh thiết lập tin cậy:
 
 certmgr-edit-cert-trust-ssl =
@@ -41,6 +45,10 @@ certmgr-edit-cert-trust-email =
 certmgr-delete-cert =
     .title = Xóa chứng nhận
     .style = width: 48em; height: 24em;
+
+certmgr-delete-cert2 =
+    .title = Xóa chứng nhận
+    .style = min-width: 48em; min-height: 24em;
 
 certmgr-cert-host =
     .label = Máy chủ
@@ -185,8 +193,6 @@ delete-email-cert-impact = Nếu bạn xóa chứng chỉ email của một ngư
 #   $serialNumber : the serial number of the cert in AA:BB:CC hex format.
 cert-with-serial =
     .value = Chứng chỉ có số sê-ri: { $serialNumber }
-
-## Cert Viewer
 
 # Used to indicate that the user chose not to send a client authentication certificate to a server that requested one in a TLS handshake.
 send-no-client-certificate = Không gửi chứng chỉ máy khách

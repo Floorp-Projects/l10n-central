@@ -60,3 +60,11 @@ about-private-browsing-pin-promo-link-text =
        *[other] Przypnij do paska zadań
     }
 about-private-browsing-pin-promo-title = Żadnych zapisanych ciasteczek ani historii, prosto z pulpitu. Przeglądaj, jak gdyby nikt nie patrzył.
+
+## Strings used in a promotion message for cookie banner reduction
+
+# Simplified version of the headline if the original text doesn't work
+# in your language: `See fewer cookie requests`.
+about-private-browsing-cookie-banners-promo-header = Koniec z komunikatami o ciasteczkach!
+about-private-browsing-cookie-banners-promo-button = Ogranicz informacje o ciasteczkach
+about-private-browsing-cookie-banners-promo-message = Pozwól { -brand-short-name(case: "dat") } automatycznie odpowiadać na komunikaty o ciasteczkach, aby nie odrywać się od przeglądania. { -brand-short-name } odrzuci wszystkie prośby, jeśli to możliwe.

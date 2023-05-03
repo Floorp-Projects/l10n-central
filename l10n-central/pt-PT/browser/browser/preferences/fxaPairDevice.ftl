@@ -11,9 +11,12 @@ fxa-qrcode-heading-step3 = 3. Abra o <b>menu</b> (<img data-l10n-name="ios-menu-
 fxa-qrcode-heading-step4 = 4. Digitalize este código:
 fxa-pair-device-dialog-sync =
     .style = width: 32em;
-fxa-qrcode-pair-title = Sincronize { -brand-product-name } no seu telefone ou tablet
+fxa-pair-device-dialog-sync2 =
+    .style = min-width: 32em;
+fxa-qrcode-pair-title = Sincronize { -brand-product-name } no seu telemóvel ou tablet
 fxa-qrcode-pair-step1 = 1. Abra { -brand-product-name } no seu dispositivo móvel.
 fxa-qrcode-pair-step2 = 2. Abra o <strong>menu</strong> (<img data-l10n-name="ios-menu-icon"/> no iOS ou <img data-l10n-name="android-menu-icon"/> no Android) e toque em <strong>Iniciar sessão para sincronizar</strong>
-fxa-qrcode-pair-step3 = 3. Toque em <strong>Pronto para digitalizar</strong> e segure seu telefone sob este código
+fxa-qrcode-pair-step2-signin = 2. Vá para o menu (<img data-l10n-name="ios-menu-icon"/> no iOS ou <img data-l10n-name="android-menu-icon"/> no Android) e toque em <strong>Sincronizar e guardar dados</strong>
+fxa-qrcode-pair-step3 = 3. Toque em <strong>Pronto para digitalizar</strong> e segure seu telemóvel sob este código
 fxa-qrcode-error-title = Emparelhamento sem sucesso.
 fxa-qrcode-error-body = Tente novamente.

@@ -4,14 +4,16 @@
 
 page-title = Technické informace
 page-subtitle =
-    Tato stránka obsahuje technické informace, které mohou být užitečné, pokud se snažíte
-    vyřešit nějaký složitější problém s aplikací. Odpovědi na často kladené otázky ohledně
-    { -brand-short-name.gender ->
-        [masculine] { -brand-short-name(case: "gen") }
-        [feminine] { -brand-short-name(case: "gen") }
-        [neuter] { -brand-short-name(case: "gen") }
-       *[other] aplikace { -brand-short-name }
-    } naleznete na <a data-l10n-name="support-link">webových stránkách podpory</a>.
+    { -brand-short-name.case-status ->
+        [with-cases]
+            Tato stránka obsahuje technické informace, které mohou být užitečné, pokud se snažíte
+            vyřešit nějaký složitější problém s aplikací. Odpovědi na často kladené otázky ohledně
+            { -brand-short-name(case: "gen") } naleznete na <a data-l10n-name="support-link">webových stránkách podpory</a>.
+       *[no-cases]
+            Tato stránka obsahuje technické informace, které mohou být užitečné, pokud se snažíte
+            vyřešit nějaký složitější problém s aplikací. Odpovědi na často kladené otázky ohledně
+            aplikace { -brand-short-name } naleznete na <a data-l10n-name="support-link">webových stránkách podpory</a>.
+    }
 crashes-title = Hlášení pádů
 crashes-id = ID hlášení
 crashes-send-date = Odeslaná
@@ -30,11 +32,9 @@ security-software-antivirus = Antivir
 security-software-antispyware = Antispyware
 security-software-firewall = Firewall
 features-title =
-    Funkce { -brand-short-name.gender ->
-        [masculine] { -brand-short-name(case: "gen") }
-        [feminine] { -brand-short-name(case: "gen") }
-        [neuter] { -brand-short-name(case: "gen") }
-       *[other] aplikace { -brand-short-name }
+    { -brand-short-name.case-status ->
+        [with-cases] Funkce { -brand-short-name(case: "gen") }
+       *[no-cases] Funkce aplikace { -brand-short-name }
     }
 features-name = Název
 features-version = Verze
@@ -100,12 +100,10 @@ modified-prefs-name = Název
 modified-prefs-value = Hodnota
 user-js-title = Předvolby user.js
 user-js-description =
-    Složka s profilem obsahuje <a data-l10n-name="user-js-link">soubor user.js</a>, který obsahuje předvolby, které nebyly vytvořeny { -brand-short-name.gender ->
-        [masculine] { -brand-short-name(case: "ins") }
-        [feminine] { -brand-short-name(case: "ins") }
-        [neuter] { -brand-short-name(case: "ins") }
-       *[other] aplikací { -brand-short-name }
-    }.
+    { -brand-short-name.case-status ->
+        [with-cases] Složka s profilem obsahuje <a data-l10n-name="user-js-link">soubor user.js</a>, který obsahuje předvolby, které nebyly vytvořeny { -brand-short-name(case: "ins") }.
+       *[no-cases] Složka s profilem obsahuje <a data-l10n-name="user-js-link">soubor user.js</a>, který obsahuje předvolby, které nebyly vytvořeny aplikací { -brand-short-name }.
+    }
 locked-key-prefs-title = Důležité uzamčené předvolby
 locked-prefs-name = Název
 locked-prefs-value = Hodnota
@@ -118,11 +116,21 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Protokol rozhodování
 graphics-crash-guards-title = Zakázat funkce Crash Guard
 graphics-workarounds-title = Možná řešení
+graphics-device-pixel-ratios = Poměr pixelů zařízení okna
 # Windowing system in use on Linux (e.g. X11, Wayland).
 graphics-window-protocol = Protokol zobrazování oken
 # Desktop environment in use on Linux (e.g. GNOME, KDE, XFCE, etc).
 graphics-desktop-environment = Desktopové prostředí
 place-database-title = Databáze Places
+place-database-stats = Statistiky
+place-database-stats-show = Zobrazit statistiku
+place-database-stats-hide = Skrýt statistiku
+place-database-stats-entity = Entita
+place-database-stats-count = Počet
+place-database-stats-size-kib = Velikost (KiB)
+place-database-stats-size-perc = Velikost (%)
+place-database-stats-efficiency-perc = Efektivita (%)
+place-database-stats-sequentiality-perc = Sekvence (%)
 place-database-integrity = Integrita
 place-database-verify-integrity = Zkontrolovat integritu
 a11y-title = Přístupnost
@@ -147,12 +155,10 @@ restart-in-troubleshoot-mode-label = Režim řešení potíží…
 clear-startup-cache-title = Zkuste vymazat mezipaměť spouštění
 clear-startup-cache-label = Vymazat mezipaměť spouštění…
 startup-cache-dialog-title2 =
-    Chcete restartovat { -brand-shorter-name.gender ->
-        [masculine] { -brand-short-name(case: "acc") }
-        [feminine] { -brand-short-name(case: "acc") }
-        [neuter] { -brand-short-name(case: "acc") }
-       *[other] aplikaci { -brand-short-name }
-    } a vymazat mezipaměť spouštění?
+    { -brand-shorter-name.case-status ->
+        [with-cases] Chcete restartovat { -brand-short-name(case: "acc") } a vymazat mezipaměť spouštění?
+       *[no-cases] Chcete restartovat aplikaci { -brand-short-name } a vymazat mezipaměť spouštění?
+    }
 startup-cache-dialog-body2 = Vaše nastavení i nainstalována rozšíření nebudou nijak ovlivněna.
 restart-button-label = Restartovat
 
@@ -326,6 +332,7 @@ can-sandbox-media = Sandbox zásuvných modulů médií
 content-sandbox-level = Úroveň sandboxu procesů pro obsah
 effective-content-sandbox-level = Účinná úroveň sandboxu procesů pro obsah
 content-win32k-lockdown-state = Stav uzamčení Win32k procesů pro obsah
+support-sandbox-gpu-level = Úroveň sandboxu procesů GPU
 sandbox-proc-type-content = obsah
 sandbox-proc-type-file = obsah souboru
 sandbox-proc-type-media-plugin = zásuvný modul médií

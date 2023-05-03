@@ -6,12 +6,22 @@ create-profile-window =
     .title = Profil létrehozása
     .style = width: 45em; height: 32em;
 
+create-profile-window2 =
+    .title = Profil létrehozása
+    .style = min-width: 45em; min-height: 32em;
+
 ## First wizard page
 
 create-profile-first-page-header =
     { PLATFORM() ->
         [macos] Első lépés
        *[other] { create-profile-window.title } első lépése
+    }
+
+create-profile-first-page-header2 =
+    { PLATFORM() ->
+        [macos] Első lépés
+       *[other] { create-profile-window2.title } első lépése
     }
 
 profile-creation-explanation-1 = A { -brand-short-name } a személyes profilban tárolja a beállításait.
@@ -32,6 +42,12 @@ create-profile-last-page-header =
     { PLATFORM() ->
         [macos] Befejezés
        *[other] { create-profile-window.title } befejezése
+    }
+
+create-profile-last-page-header2 =
+    { PLATFORM() ->
+        [macos] Befejezés
+       *[other] { create-profile-window2.title } befejezése
     }
 
 profile-creation-intro = Ha több profilt hoz létre, akkor a nevük alapján különböztetheti meg azokat. Használhatja az itt megadott nevet, vagy beírhat egy másikat.

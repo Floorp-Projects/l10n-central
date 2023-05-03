@@ -19,42 +19,46 @@ pictureinpicture-close =
 ## Variables:
 ##   $shortcut (String) - Keyboard shortcut to execute the command.
 
-pictureinpicture-pause-cmd =
+pictureinpicture-pause-btn =
     .aria-label = Παύση
-    .title = Παύση (Spacebar)
-pictureinpicture-play-cmd =
+    .tooltip = Παύση (Spacebar)
+pictureinpicture-play-btn =
     .aria-label = Αναπαραγωγή
-    .title = Αναπαραγωγή (Spacebar)
-pictureinpicture-mute-cmd =
+    .tooltip = Αναπαραγωγή (Spacebar)
+pictureinpicture-mute-btn =
     .aria-label = Σίγαση
-    .title = Σίγαση ({ $shortcut })
-pictureinpicture-unmute-cmd =
+    .tooltip = Σίγαση ({ $shortcut })
+pictureinpicture-unmute-btn =
     .aria-label = Άρση σίγασης
-    .title = Άρση σίγασης ({ $shortcut })
-pictureinpicture-unpip-cmd =
+    .tooltip = Άρση σίγασης ({ $shortcut })
+pictureinpicture-unpip-btn =
     .aria-label = Αποστολή πίσω στην καρτέλα
-    .title = Πίσω στην καρτέλα
-pictureinpicture-close-cmd =
+    .tooltip = Πίσω στην καρτέλα
+pictureinpicture-close-btn =
     .aria-label = Κλείσιμο
-    .title = Κλείσιμο ({ $shortcut })
-pictureinpicture-subtitles-cmd =
+    .tooltip = Κλείσιμο ({ $shortcut })
+pictureinpicture-subtitles-btn =
     .aria-label = Υπότιτλοι
-    .title = Υπότιτλοι
+    .tooltip = Υπότιτλοι
 
 ##
 
-pictureinpicture-fullscreen-cmd =
+pictureinpicture-fullscreen-btn =
     .aria-label = Πλήρης οθόνη
-    .title = Πλήρης οθόνη (διπλό κλικ)
-pictureinpicture-exit-fullscreen-cmd =
+    .tooltip = Πλήρης οθόνη (διπλό κλικ)
+pictureinpicture-exit-fullscreen-btn =
     .aria-label = Έξοδος από πλήρη οθόνη
-    .title = Έξοδος από πλήρη οθόνη (διπλό κλικ)
-pictureinpicture-seekbackward-cmd =
+    .tooltip = Έξοδος από πλήρη οθόνη (διπλό κλικ)
+pictureinpicture-seekbackward-btn =
     .aria-label = Πίσω
-    .title = Πίσω (←)
-pictureinpicture-seekforward-cmd =
+    .tooltip = Πίσω (←)
+pictureinpicture-seekforward-btn =
     .aria-label = Εμπρός
-    .title = Εμπρός (→)
+    .tooltip = Εμπρός (→)
+# This string is never displayed on the window. Is intended to be announced by
+# a screen reader whenever a user opens the subtitles settings panel
+# after selecting the subtitles button.
+pictureinpicture-subtitles-panel-accessible = Ρυθμίσεις υπότιτλων
 pictureinpicture-subtitles-label = Υπότιτλοι
 pictureinpicture-font-size-label = Μέγεθος γραμματοσειράς
 pictureinpicture-font-size-small = Μικρό

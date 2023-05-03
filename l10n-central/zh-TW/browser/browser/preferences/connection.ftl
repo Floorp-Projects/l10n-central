@@ -10,6 +10,14 @@ connection-window =
            *[other] width: 49em
         }
 
+connection-window2 =
+    .title = 連線設定
+    .style =
+        { PLATFORM() ->
+            [macos] min-width: 44em
+           *[other] min-width: 49em
+        }
+
 connection-close-key =
     .key = w
 
@@ -35,7 +43,6 @@ connection-proxy-http = HTTP Proxy
     .accesskey = x
 connection-proxy-http-port = 埠
     .accesskey = P
-
 connection-proxy-https-sharing =
     .label = 也針對 HTTPS 連線使用此代理伺服器
     .accesskey = s

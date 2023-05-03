@@ -6,6 +6,10 @@ add-engine-window =
     .title = Thêm công cụ tìm kiếm
     .style = width: 32em;
 
+add-engine-window2 =
+    .title = Thêm công cụ tìm kiếm
+    .style = min-width: 32em;
+
 add-engine-button = Thêm công cụ tùy chỉnh
 
 add-engine-name = Tên công cụ tìm kiếm

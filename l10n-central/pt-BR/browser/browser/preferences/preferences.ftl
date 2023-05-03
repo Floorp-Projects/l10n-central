@@ -35,7 +35,7 @@ category-search =
 pane-privacy-title = Privacidade e Segurança
 category-privacy =
     .tooltiptext = { pane-privacy-title }
-pane-sync-title3 = Sync
+pane-sync-title3 = Sincronização
 category-sync3 =
     .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = Experimentos do { -brand-short-name }
@@ -72,6 +72,17 @@ restart-later = Reiniciar depois
 ##
 ## Variables:
 ##   $name (String): name of the extension
+
+
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (string) - Name of the extension
 
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
@@ -120,6 +131,11 @@ startup-restore-warn-on-quit =
     .label = Avisar ao sair do navegador
 disable-extension =
     .label = Desativar extensão
+preferences-data-migration-header = Importar dados de navegador
+preferences-data-migration-description = Importe favoritos, senhas, histórico e dados de preenchimento automático para o { -brand-short-name }.
+preferences-data-migration-button =
+    .label = Importar dados
+    .accesskey = m
 tabs-group-header = Abas
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab alternar entre abas por ordem de uso
@@ -132,7 +148,7 @@ confirm-on-close-multiple-tabs =
     .accesskey = m
 # This string is used for the confirm before quitting preference.
 # Variables:
-#   $quitKey (String) - the quit keyboard shortcut, and formatted
+#   $quitKey (string) - the quit keyboard shortcut, and formatted
 #                       in the same manner as it would appear,
 #                       for example, in the File menu.
 confirm-on-quit-with-key =
@@ -155,6 +171,10 @@ browser-containers-settings =
     .label = Configurações…
     .accesskey = C
 containers-disable-alert-title = Fechar todas as abas contêiner?
+
+## Variables:
+##   $tabCount (number) - Number of tabs
+
 containers-disable-alert-desc =
     { $tabCount ->
         [one] Se desativar abas contêiner agora, { $tabCount } aba contêiner será fechada. Tem certeza que quer desativar abas contêiner?
@@ -165,10 +185,13 @@ containers-disable-alert-ok-button =
         [one] Fechar { $tabCount } aba contêiner
        *[other] Fechar { $tabCount } abas contêiner
     }
+
+##
+
 containers-disable-alert-cancel-button = Manter ativado
 containers-remove-alert-title = Remover este contêiner?
 # Variables:
-#   $count (Number) - Number of tabs that will be closed.
+#   $count (number) - Number of tabs that will be closed.
 containers-remove-alert-msg =
     { $count ->
         [one] Se você remover este contêiner agora, { $count } aba contêiner será fechada. Tem certeza que quer remover este contêiner?
@@ -184,12 +207,15 @@ preferences-web-appearance-header = Aparência de sites
 preferences-web-appearance-description = Alguns sites adaptam seu esquema de cores com base em suas preferências. Escolha qual esquema de cores você quer usar nesses sites.
 preferences-web-appearance-choice-browser = Tema do { -brand-short-name }
 preferences-web-appearance-choice-system = Tema do sistema
+preferences-web-appearance-choice-auto = Automático
 preferences-web-appearance-choice-light = Claro
 preferences-web-appearance-choice-dark = Escuro
 preferences-web-appearance-choice-tooltip-browser =
     .title = Seguir sua configuração de tema do { -brand-short-name } no fundo e conteúdo de sites.
 preferences-web-appearance-choice-tooltip-system =
     .title = Seguir sua configuração do sistema no fundo e conteúdo de sites.
+preferences-web-appearance-choice-tooltip-auto =
+    .title = Mudar automaticamente o fundo e o conteúdo de sites com base nas configurações do sistema e no tema do { -brand-short-name }.
 preferences-web-appearance-choice-tooltip-light =
     .title = Usar uma aparência clara no fundo e conteúdo de sites.
 preferences-web-appearance-choice-tooltip-dark =
@@ -198,6 +224,8 @@ preferences-web-appearance-choice-input-browser =
     .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
 preferences-web-appearance-choice-input-system =
     .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-auto =
+    .aria-description = { preferences-web-appearance-choice-tooltip-auto.title }
 preferences-web-appearance-choice-input-light =
     .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
 preferences-web-appearance-choice-input-dark =
@@ -225,6 +253,8 @@ advanced-fonts =
 preferences-zoom-header = Zoom
 preferences-default-zoom = Zoom padrão
     .accesskey = Z
+# Variables:
+#   $percentage (number) - Zoom percentage value
 preferences-default-zoom-value =
     .label = { $percentage }%
 preferences-zoom-text-only =
@@ -317,15 +347,15 @@ applications-manage-app =
 applications-always-ask =
     .label = Sempre perguntar
 # Variables:
-#   $type-description (String) - Description of the type (e.g "Portable Document Format")
-#   $type (String) - the MIME type (e.g application/binary)
+#   $type-description (string) - Description of the type (e.g "Portable Document Format")
+#   $type (string) - The MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
-#   $extension (String) - file extension (e.g .TXT)
-#   $type (String) - the MIME type (e.g application/binary)
+#   $extension (string) - File extension (e.g .TXT)
+#   $type (string) - The MIME type (e.g application/binary)
 applications-file-ending-with-type = { applications-file-ending } ({ $type })
 # Variables:
-#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+#   $plugin-name (string) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Usar { $plugin-name } (no { -brand-short-name })
 applications-open-inapp =
@@ -368,6 +398,8 @@ play-drm-content =
 play-drm-content-learn-more = Saiba mais
 update-application-title = Atualização do { -brand-short-name }
 update-application-description = Mantenha o { -brand-short-name } atualizado para melhor desempenho, estabilidade e segurança.
+# Variables:
+# $version (string) - Firefox version
 update-application-version = Versão { $version } <a data-l10n-name="learn-more">Novidades</a>
 update-history =
     .label = Mostrar histórico de atualizações…
@@ -394,7 +426,7 @@ update-application-suppress-prompts =
     .accesskey = n
 update-setting-write-failure-title2 = Erro ao salvar configurações de atualização
 # Variables:
-#   $path (String) - Path to the configuration file
+#   $path (string) - Path to the configuration file
 # The newlines between the main text and the line containing the path is
 # intentional so the path is easier to identify.
 update-setting-write-failure-message2 =
@@ -424,7 +456,7 @@ performance-limit-content-process-option = Limite de processos de conteúdo
 performance-limit-content-process-enabled-desc = Processos de conteúdo adicionais podem melhorar o desempenho ao usar várias abas, mas também usam mais memória.
 performance-limit-content-process-blocked-desc = Modificar o número de processos de conteúdo só é possível com o multiprocessamento do { -brand-short-name }. <a data-l10n-name="learn-more">Saiba como verificar se o multiprocessamento está ativado</a>
 # Variables:
-#   $num - default value of the `dom.ipc.processCount` pref.
+#   $num (number) - Default value of the `dom.ipc.processCount` pref.
 performance-default-content-process-count =
     .label = { $num } (padrão)
 
@@ -530,6 +562,10 @@ home-prefs-shortcuts-by-option-sponsored =
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
+
+## Variables:
+##  $provider (string) - Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Recomendado pelo { $provider }
 home-prefs-recommended-by-description-new = Conteúdo excepcional selecionado pelo { $provider }, parte da família { -brand-product-name }
@@ -559,6 +595,8 @@ home-prefs-recent-activity-description = Uma seleção de sites e conteúdos rec
 home-prefs-snippets-header =
     .label = Snippets
 home-prefs-snippets-description-new = Dicas e novidades da { -vendor-short-name } e do { -brand-product-name }
+# Variables:
+#   $num (number) - Number of rows displayed
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -587,6 +625,11 @@ search-suggestions-option =
 search-show-suggestions-url-bar-option =
     .label = Mostrar sugestões de pesquisa nos resultados da barra de endereços
     .accesskey = l
+# With this option enabled, on the search results page
+# the URL will be replaced by the search terms in the address bar
+# when using the current default search engine.
+search-show-search-term-option =
+    .label = Mostrar termos de pesquisa em vez de URL na página de resultados do mecanismo de pesquisa padrão
 # This string describes what the user will observe when the system
 # prioritizes search suggestions over browsing history in the results
 # that extend down from the address bar. In the original English string,
@@ -618,7 +661,7 @@ search-find-more-link = Procurar mais mecanismos de pesquisa
 # ('Duplicate' is an adjective)
 search-keyword-warning-title = Atalho duplicado
 # Variables:
-#   $name (String) - Name of a search engine.
+#   $name (string) - Name of a search engine.
 search-keyword-warning-engine = Este atalho já está sendo usado para o “{ $name }”. Escolha outro.
 search-keyword-warning-bookmark = Este atalho já está sendo usado em um favorito. Escolha outro.
 
@@ -644,7 +687,7 @@ containers-remove-button =
 sync-signedout-caption = Leve a web com você
 sync-signedout-description2 = Sincronize seus favoritos, histórico, abas, senhas, extensões e configurações entre todos os seus dispositivos.
 sync-signedout-account-signin3 =
-    .label = Entrar para sincronizar…
+    .label = Entrar na conta para sincronizar…
     .accesskey = E
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -665,8 +708,15 @@ sync-sign-out =
     .accesskey = D
 sync-manage-account = Gerenciar conta
     .accesskey = o
+
+## Variables
+## $email (string) - Email used for Firefox account
+
 sync-signedin-unverified = { $email } não foi verificado.
 sync-signedin-login-failure = Entre para reconectar { $email }
+
+##
+
 sync-resend-verification =
     .label = Reenviar verificação
     .accesskey = r
@@ -693,6 +743,7 @@ prefs-sync-now =
 ## The list of things currently syncing.
 
 sync-currently-syncing-heading = No momento, você está sincronizando estes itens:
+sync-syncing-across-devices-heading = Estes itens estão sendo sincronizados em todos os seus dispositivos conectados:
 sync-currently-syncing-bookmarks = Favoritos
 sync-currently-syncing-history = Histórico
 sync-currently-syncing-tabs = Abas abertas
@@ -714,6 +765,14 @@ sync-choose-what-to-sync-dialog =
     .buttonaccesskeyaccept = S
     .buttonlabelextra2 = Desconectar…
     .buttonaccesskeyextra2 = D
+sync-choose-what-to-sync-dialog3 =
+    .title = Escolha o que sincronizar
+    .style = min-width: 36em;
+    .buttonlabelaccept = Salvar alterações
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra2 = Desconectar…
+    .buttonaccesskeyextra2 = D
+sync-choose-dialog-subtitle = Alterações na lista de itens a sincronizar são refletidas em todos os seus dispositivos conectados.
 sync-engine-bookmarks =
     .label = Favoritos
     .accesskey = F
@@ -782,6 +841,9 @@ forms-breach-alerts =
     .label = Exibir alertas sobre senhas de sites vazados
     .accesskey = v
 forms-breach-alerts-learn-more-link = Saiba mais
+relay-integration =
+    .label = Ativar o { -relay-brand-name } no gerenciador de senhas do { -brand-short-name }
+relay-integration-learn-more-link = Saiba mais
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Preencher contas e senhas automaticamente
@@ -870,8 +932,8 @@ history-clear-button =
 sitedata-header = Cookies e dados de sites
 sitedata-total-size-calculating = Calculando o tamanho dos dados de sites e do cache…
 # Variables:
-#   $value (Number) - Value of the unit (for example: 4.6, 500)
-#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+#   $value (number) - Value of the unit (for example: 4.6, 500)
+#   $unit (string) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Seus cookies, dados de sites e cache armazenados estão no momento ocupando { $value }{ $unit } de espaço em disco.
 sitedata-learn-more = Saiba mais
 sitedata-delete-on-close =
@@ -898,6 +960,8 @@ sitedata-option-block-unvisited =
     .label = Cookies de sites não visitados
 sitedata-option-block-all-third-party =
     .label = Todos os cookies de terceiros (pode atrapalhar alguns sites)
+sitedata-option-block-all-cross-site-cookies =
+    .label = Todos os cookies entre sites (pode atrapalhar alguns sites)
 sitedata-option-block-all =
     .label = Todos os cookies (atrapalha vários sites)
 sitedata-clear =
@@ -909,6 +973,14 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Gerenciar exceções…
     .accesskey = x
+
+## Privacy Section - Cookie Banner Handling
+
+cookie-banner-handling-header = Redução de avisos de cookies
+cookie-banner-handling-description = O { -brand-short-name } tenta rejeitar automaticamente solicitações de cookies em avisos de cookies em sites suportados.
+cookie-banner-learn-more = Saiba mais
+forms-handle-cookie-banners =
+    .label = Redução de avisos de cookies
 
 ## Privacy Section - Address Bar
 
@@ -977,6 +1049,7 @@ content-blocking-all-cookies = Todos os cookies
 content-blocking-unvisited-cookies = Cookies de sites não visitados
 content-blocking-all-windows-tracking-content = Conteúdo com rastreamento em todas as janelas
 content-blocking-all-third-party-cookies = Todos os cookies de terceiros
+content-blocking-all-cross-site-cookies = Todos os cookies entre sites
 content-blocking-cryptominers = Criptomineradores
 content-blocking-fingerprinters = Fingerprinters (rastreadores de identidade digital)
 # "Test pilot" is used as a verb. Possible alternatives:
@@ -984,6 +1057,9 @@ content-blocking-fingerprinters = Fingerprinters (rastreadores de identidade dig
 content-blocking-etp-standard-tcp-rollout-checkbox =
     .label = Ser piloto de teste do mais poderoso recurso de privacidade que já fizemos
     .accesskey = S
+
+# The tcp-rollout strings are no longer used for the rollout but for tcp-by-default in the standard section
+
 # "Contains" here means "isolates", "limits".
 content-blocking-etp-standard-tcp-rollout-description = A proteção total contra cookies isola os cookies do site em que você está, assim os rastreadores não conseguem usá-los para te seguir de um site para outro.
 content-blocking-etp-standard-tcp-rollout-learn-more = Saiba mais
@@ -1043,6 +1119,11 @@ permissions-camera-settings =
     .accesskey = C
 permissions-microphone = Microfone
 permissions-microphone-settings =
+    .label = Configurações…
+    .accesskey = C
+# Short form for "the act of choosing sound output devices and redirecting audio to the chosen devices".
+permissions-speaker = Seleção de saída de áudio
+permissions-speaker-settings =
     .label = Configurações…
     .accesskey = C
 permissions-notification = Notificações
@@ -1149,6 +1230,63 @@ httpsonly-radio-enabled-pbm =
     .label = Ativar o modo somente HTTPS apenas em janelas privativas
 httpsonly-radio-disabled =
     .label = Não ativar o modo somente HTTPS
+
+## DoH Section
+
+preferences-doh-header = DNS sobre HTTPS
+preferences-doh-description = O DNS (Domain Name System) sobre HTTPS envia sua requisição de nome de domínio através de uma conexão criptografada, criando um DNS seguro e dificultando a outras pessoas ver qual site você irá acessar.
+# Variables:
+#   $status (string) - The status of the DoH connection
+preferences-doh-status = Status: { $status }
+# Variables:
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-resolver = Provedor: { $name }
+# This is displayed instead of $name in preferences-doh-resolver
+# when the DoH URL is not a valid URL
+preferences-doh-bad-url = URL inválida
+preferences-doh-steering-status = Usando provedor local
+preferences-doh-status-active = Ativo
+preferences-doh-status-disabled = Desativado
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+preferences-doh-status-not-active = Não ativo ({ $reason })
+preferences-doh-group-message = Ativar DNS seguro usando:
+preferences-doh-expand-section =
+    .tooltiptext = Mais informações
+preferences-doh-setting-default =
+    .label = Proteção padrão
+    .accesskey = P
+preferences-doh-default-desc = O { -brand-short-name } decide quando usar DNS seguro para proteger sua privacidade.
+preferences-doh-default-detailed-desc-1 = Use DNS seguro em regiões onde estiver disponível
+preferences-doh-default-detailed-desc-2 = Use seu resolvedor de DNS padrão se houver um problema com o provedor de DNS seguro
+preferences-doh-default-detailed-desc-3 = Usar um provedor local, se possível
+preferences-doh-default-detailed-desc-4 = Desativar quando VPN, controle dos pais ou diretivas corporativas estiverem ativas
+preferences-doh-default-detailed-desc-5 = Desativar quando uma rede informar ao { -brand-short-name } que ele não deve usar DNS seguro
+preferences-doh-setting-enabled =
+    .label = Proteção maior
+    .accesskey = m
+preferences-doh-enabled-desc = Você controla quando usar DNS seguro e escolhe seu provedor.
+preferences-doh-enabled-detailed-desc-1 = Usar o provedor que você selecionar
+preferences-doh-enabled-detailed-desc-2 = Só usar seu resolvedor de DNS padrão se houver um problema com DNS seguro
+preferences-doh-setting-strict =
+    .label = Proteção máxima
+    .accesskey = m
+preferences-doh-strict-desc = O { -brand-short-name } sempre usará DNS seguro. Aparecerá um aviso de risco de segurança antes de usarmos o DNS do seu sistema.
+preferences-doh-strict-detailed-desc-1 = Só usar o provedor que você selecionar
+preferences-doh-strict-detailed-desc-2 = Sempre avise se DNS seguro não estiver disponível
+preferences-doh-strict-detailed-desc-3 = Se não tiver DNS seguro disponível, alguns sites podem não ser carregados ou não funcionar corretamente
+preferences-doh-setting-off =
+    .label = Desativado
+    .accesskey = D
+preferences-doh-off-desc = Usar seu resolvedor de DNS padrão
+preferences-doh-checkbox-warn =
+    .label = Avisar se um terceiro impedir DNS seguro ativamente
+    .accesskey = v
+preferences-doh-select-resolver = Escolher provedor:
+preferences-doh-exceptions-description = O { -brand-short-name } não usará DNS seguro nesses sites
+preferences-doh-manage-exceptions =
+    .label = Gerenciar exceções…
+    .accesskey = x
 
 ## The following strings are used in the Download section of settings
 

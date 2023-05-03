@@ -11,7 +11,7 @@
 ## Welcome page strings
 
 onboarding-welcome-header = Добро пожаловать в { -brand-short-name }
-onboarding-start-browsing-button-label = Начать веб-сёрфинг
+onboarding-start-browsing-button-label = Начать просмотр сети
 onboarding-not-now-button-label = Не сейчас
 
 ## Custom Return To AMO onboarding strings
@@ -24,6 +24,12 @@ return-to-amo-subtitle = Отлично, вы установили { -brand-shor
 return-to-amo-addon-title = Теперь давайте установим <img data-l10n-name="icon"/> <b>{ $addon-name }</b>.
 return-to-amo-add-extension-label = Добавить расширение
 return-to-amo-add-theme-label = Добавить тему
+
+##  Variables: $addon-name (String) - Name of the add-on to be installed
+
+mr1-return-to-amo-subtitle = Познакомьтесь с { -brand-short-name }
+mr1-return-to-amo-addon-title = Вы получили быстрый приватный браузер. Теперь вы можете добавить <b>{ $addon-name }</b> и сделать ещё больше с помощью { -brand-short-name }.
+mr1-return-to-amo-add-extension-label = Добавить { $addon-name }
 
 ## Multistage onboarding strings (about:welcome pages)
 
@@ -39,8 +45,8 @@ onboarding-welcome-steps-indicator =
 #   $current (Int) - Number of the current page
 #   $total (Int) - Total number of pages
 
-onboarding-welcome-steps-indicator2 =
-    .aria-valuetext = Прогресс: шаг { $current } из { $total }
+onboarding-welcome-steps-indicator-label =
+    .aria-label = Прогресс: шаг { $current } из { $total }
 # "Hero Text" displayed on left side of welcome screen.
 # The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
 # It also signals the passion users bring to Firefox, how they use
@@ -203,7 +209,7 @@ mr2-onboarding-default-theme-label = Посмотреть темы по умол
 
 mr2-onboarding-thank-you-header = Спасибо, что выбрали нас
 mr2-onboarding-thank-you-text = { -brand-short-name } 一 независимый браузер, поддерживаемый некоммерческой организацией. Вместе мы делаем Интернет более безопасным, здоровым и приватным.
-mr2-onboarding-start-browsing-button-label = Начать веб-сёрфинг
+mr2-onboarding-start-browsing-button-label = Начать просмотр сети
 
 ## Multistage live language reloading onboarding strings (about:welcome pages)
 ##
@@ -258,6 +264,15 @@ fx100-upgrade-thank-you-body = Это наш 100-й выпуск { -brand-short-
 # Message shown with either a pin-to-taskbar or set-default button.
 fx100-upgrade-thanks-keep-body = Это наш 100-й выпуск! Спасибо, что являетесь частью нашего сообщества. Держите { -brand-short-name } под рукой для следующих 100.
 mr2022-onboarding-secondary-skip-button-label = Пропустить этот шаг
+
+## MR2022 New User Easy Setup screen strings
+
+# Primary button string used on new user onboarding first screen showing multiple actions such as Set Default, Import from previous browser.
+mr2022-onboarding-easy-setup-primary-button-label = Сохранить и продолжить
+# Set Default action checkbox label used on new user onboarding first screen
+mr2022-onboarding-easy-setup-set-default-checkbox-label = Установить { -brand-short-name } своим браузером по умолчанию
+# Import action checkbox label used on new user onboarding first screen
+mr2022-onboarding-easy-setup-import-checkbox-label = Импортировать из предыдущего браузера
 
 ## MR2022 New User Pin Firefox screen strings
 
@@ -322,35 +337,35 @@ mr2022-onboarding-import-primary-button-label-no-attribution = Импортир�
 
 mr2022-onboarding-colorway-title = Выберите цвет, который вас вдохновляет
 mr2022-onboarding-colorway-subtitle = Независимые голоса могут изменить культуру.
-mr2022-onboarding-colorway-primary-button-label = Установить расцветку
+mr2022-onboarding-colorway-primary-button-label-continue = Установить и продолжить
 mr2022-onboarding-existing-colorway-checkbox-label = Сделайте { -firefox-home-brand-name(case: "accusative") } красочной домашней страницей
 mr2022-onboarding-colorway-label-default = По умолчанию
-mr2022-onboarding-colorway-tooltip-default =
-    .title = По умолчанию
+mr2022-onboarding-colorway-tooltip-default2 =
+    .title = Текущие цвета { -brand-short-name }
 mr2022-onboarding-colorway-description-default = <b>Использовать мои текущие цвета { -brand-short-name }.</b>
 mr2022-onboarding-colorway-label-playmaker = Создатель игр
-mr2022-onboarding-colorway-tooltip-playmaker =
-    .title = Создатель игр
+mr2022-onboarding-colorway-tooltip-playmaker2 =
+    .title = Создатель игр (красный)
 mr2022-onboarding-colorway-description-playmaker = <b>Вы — Создатель игр.</b> Вы создаёте возможности победить и помогаете всем вокруг поднять их игру на новый уровень.
 mr2022-onboarding-colorway-label-expressionist = Экспрессионист
-mr2022-onboarding-colorway-tooltip-expressionist =
-    .title = Экспрессионист
+mr2022-onboarding-colorway-tooltip-expressionist2 =
+    .title = Экспрессионист (желтый)
 mr2022-onboarding-colorway-description-expressionist = <b>Вы — Экспрессионист.</b> Вы видите мир иначе, а ваши творения поражают остальных.
 mr2022-onboarding-colorway-label-visionary = Провидец
-mr2022-onboarding-colorway-tooltip-visionary =
-    .title = Провидец
+mr2022-onboarding-colorway-tooltip-visionary2 =
+    .title = Провидец (зеленый)
 mr2022-onboarding-colorway-description-visionary = <b>Вы — Провидец.</b> Вы ставите под сомнение статус-кво и побуждаете остальных представлять лучшее будущее.
 mr2022-onboarding-colorway-label-activist = Активист
-mr2022-onboarding-colorway-tooltip-activist =
-    .title = Активист
+mr2022-onboarding-colorway-tooltip-activist2 =
+    .title = Активист (синий)
 mr2022-onboarding-colorway-description-activist = <b>Вы — Активист.</b> Вы делаете мир лучше и ведёте за собой остальных.
 mr2022-onboarding-colorway-label-dreamer = Мечтатель
-mr2022-onboarding-colorway-tooltip-dreamer =
-    .title = Мечтатель
+mr2022-onboarding-colorway-tooltip-dreamer2 =
+    .title = Мечтатель (фиолетовый)
 mr2022-onboarding-colorway-description-dreamer = <b>Вы — Мечтатель.</b> Вы верите, что удача любит смелых, и вдохновляете других быть отважнее.
 mr2022-onboarding-colorway-label-innovator = Новатор
-mr2022-onboarding-colorway-tooltip-innovator =
-    .title = Новатор
+mr2022-onboarding-colorway-tooltip-innovator2 =
+    .title = Новатор (оранжевый)
 mr2022-onboarding-colorway-description-innovator = <b>Вы — Новатор.</b> Вы везде видите возможности и влияете на жизнь всех вокруг.
 
 ## MR2022 Multistage Mobile Download screen strings
@@ -363,7 +378,7 @@ mr2022-onboarding-no-mobile-download-cta-text = Отсканируйте QR-ко
 ## MR2022 Upgrade Dialog screens
 ## Pin private window screen shown only for users who don't have Firefox private pinned
 
-mr2022-upgrade-onboarding-pin-private-window-header = Получите свободу приватного просмотра одним щелчком
+mr2022-upgrade-onboarding-pin-private-window-header = Получите свободу приватного просмотра сети одним щелчком
 mr2022-upgrade-onboarding-pin-private-window-subtitle = Никаких сохранённых кук или истории, прямо с вашего рабочего стола. Сёрфите так, как будто никто не смотрит.
 mr2022-upgrade-onboarding-pin-private-window-primary-button-label =
     { PLATFORM() ->
@@ -381,7 +396,33 @@ mr2022-onboarding-privacy-segmentation-button-secondary-label = Показать
 
 ## MR2022 Multistage Gratitude screen strings
 
-mr2022-onboarding-gratitude-title = Вы помогаете нам сделать Интернет лучше.
+mr2022-onboarding-gratitude-title = Вы помогаете нам сделать Интернет лучше
 mr2022-onboarding-gratitude-subtitle = Благодарим вас за использование { -brand-short-name }, поддерживаемого Mozilla Foundation. С вашей поддержкой мы работаем над тем, чтобы сделать Интернет более открытым, доступным и лучшим для всех и каждого.
 mr2022-onboarding-gratitude-primary-button-label = Ознакомьтесь с новинками
-mr2022-onboarding-gratitude-secondary-button-label = Начать веб-сёрфинг
+mr2022-onboarding-gratitude-secondary-button-label = Начать просмотр сети
+
+## Onboarding spotlight for infrequent users
+
+onboarding-infrequent-import-title = Чувствуйте себя как дома
+onboarding-infrequent-import-subtitle = Неважно, надолго вы здесь или только заглянули, помните, что можете импортировать закладки, пароли и другую информацию.
+onboarding-infrequent-import-primary-button = Импорт в { -brand-short-name }
+
+## MR2022 Illustration alt tags
+## Descriptive tags for illustrations used by screen readers and other assistive tech
+
+mr2022-onboarding-pin-image-alt =
+    .aria-label = Человек, работающий на ноутбуке в окружении звезд и цветов
+mr2022-onboarding-default-image-alt =
+    .aria-label = Человек, обнимающий логотип { -brand-product-name }
+mr2022-onboarding-import-image-alt =
+    .aria-label = Человек, катающийся на скейтборде с коробкой значков программ
+mr2022-onboarding-mobile-download-image-alt =
+    .aria-label = Лягушки прыгают по кувшинкам с QR-кодом для загрузки { -brand-product-name } для мобильных устройств в центре
+mr2022-onboarding-pin-private-image-alt =
+    .aria-label = Волшебная палочка заставляет логотип приватного просмотра { -brand-product-name } появиться из шляпы
+mr2022-onboarding-privacy-segmentation-image-alt =
+    .aria-label = Рукопожатие светлокожей и темнокожей рук
+mr2022-onboarding-gratitude-image-alt =
+    .aria-label = Вид на закат через окно с лисой и комнатным растением на подоконнике
+mr2022-onboarding-colorways-image-alt =
+    .aria-label = Баллончик с краской рисует красочный коллаж из зеленого глаза, оранжевой обуви, красного баскетбольного мяча, фиолетовых наушников, синего сердца и желтой короны

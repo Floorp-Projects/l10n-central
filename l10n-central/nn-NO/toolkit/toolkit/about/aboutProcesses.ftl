@@ -116,9 +116,18 @@ about-processes-frame-name-one = Underramme: { $url }
 #   $number (Number) The number of subframes in this group. Always ≥ 1.
 #   $shortUrl (String) The shared prefix for the subframes in the group.
 about-processes-frame-name-many = Underrammer ({ $number }): { $shortUrl }
-# Utility process actor names
+
+## Utility process actor names
+
 about-processes-utility-actor-unknown = Ukjent aktør
 about-processes-utility-actor-audio-decoder = Lyddekodar
+about-processes-utility-actor-audio-decoder-generic = Generisk lyd-dekodar
+about-processes-utility-actor-audio-decoder-applemedia = Apple Media Audio-dekodar
+about-processes-utility-actor-audio-decoder-wmf = Windows Media Framework Audio-dekodar
+about-processes-utility-actor-mf-media-engine = Windows Media Foundation Media Engine CDM
+# "Oracle" refers to an internal Firefox process and should be kept in English
+about-processes-utility-actor-js-oracle = JavaScript Oracle
+about-processes-utility-actor-windows-utils = Windows-verktøy
 
 ## Displaying CPU (percentage and total)
 ## Variables:

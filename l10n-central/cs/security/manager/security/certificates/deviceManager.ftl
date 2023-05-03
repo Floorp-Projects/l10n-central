@@ -9,6 +9,10 @@ devmgr =
     .title = Správce bezpečnostních zařízení
     .style = width: 67em; height: 32em;
 
+devmgr-window =
+    .title = Správce bezpečnostních zařízení
+    .style = min-width: 67em; min-height: 32em;
+
 devmgr-devlist =
     .label = Bezpečnostní moduly a zařízení
 

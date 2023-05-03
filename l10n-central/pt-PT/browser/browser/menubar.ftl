@@ -180,6 +180,17 @@ menu-view-full-screen =
     .label = Ecrã completo
     .accesskey = E
 
+## These menu items may use the same accesskey.
+
+# This should match reader-view-enter-button in browser.ftl
+menu-view-enter-readerview =
+    .label = Entrar na vista de leitura
+    .accesskey = l
+# This should match reader-view-close-button in browser.ftl
+menu-view-close-readerview =
+    .label = Fechar vista de leitura
+    .accesskey = l
+
 ##
 
 menu-view-show-all-tabs =
@@ -222,6 +233,10 @@ menu-bookmark-current-tab =
     .label = Adicionar separador aos marcadores
 menu-bookmark-edit =
     .label = Editar este marcador
+menu-bookmark-tab =
+    .label = Adicionar separador atual aos marcadores…
+menu-edit-bookmark =
+    .label = Editar este marcador…
 menu-bookmarks-all-tabs =
     .label = Adicionar todos os separadores aos marcadores…
 menu-bookmarks-toolbar =

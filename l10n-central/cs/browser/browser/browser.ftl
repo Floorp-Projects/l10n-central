@@ -38,6 +38,20 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Anonymní prohlížení)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Anonymní prohlížení)
+# These are the default window titles everywhere except macOS. The first two
+# attributes are used when the web content opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-window-titles =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } — anonymní prohlížení
+    .data-content-title-default = { $content-title } — { -brand-full-name }
+    .data-content-title-private = { $content-title } — { -brand-full-name } — anonymní prohlížení
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
@@ -62,6 +76,9 @@ browser-main-window-mac-window-titles =
 # This should match the `data-title-default` attribute in both
 # `browser-main-window` and `browser-main-window-mac`.
 browser-main-window-title = { -brand-full-name }
+# The non-variable portion of this MUST match the translation of
+# "PRIVATE_BROWSING_SHORTCUT_TITLE" in custom.properties
+private-browsing-shortcut-text-2 = { -brand-shortcut-name } — anonymní prohlížení
 
 ##
 
@@ -119,11 +136,23 @@ urlbar-addons-notification-anchor =
 urlbar-tip-help-icon =
     .title = Získat pomoc
 urlbar-search-tips-confirm = Ok, rozumím
+urlbar-search-tips-confirm-short = Rozumím
 # Read out before Urlbar Tip text content so screenreader users know the
 # subsequent text is a tip offered by the browser. It should end in a colon or
 # localized equivalent.
 urlbar-tip-icon-description =
     .alt = Tip:
+urlbar-result-menu-button =
+    .title = Otevře nabídku
+urlbar-result-menu-learn-more =
+    .label = Zjistit více
+    .accesskey = Z
+urlbar-result-menu-remove-from-history =
+    .label = Smazat z historie
+    .accesskey = r
+urlbar-result-menu-tip-get-help =
+    .label = Získat pomoc
+    .accesskey = Z
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -132,6 +161,8 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Méně psaní, více výsledků: používejte { $engineName } přímo z adresního řádku.
 urlbar-search-tips-redirect-2 = Zadejte do adresního řádku vyhledávaný text a uvidíte návrhy z vyhledávače { $engineName } a vaší historie prohlížení.
+# Make sure to match the name of the Search panel in settings.
+urlbar-search-tips-persist = Vyhledávání je nyní jednodušší. Zkuste své vyhledávání upřesnit zde v adresním řádku. Chcete-li místo toho zobrazit adresu URL, přejděte v nastavení do Vyhledávání.
 # Prompts users to use the Urlbar when they are typing in the domain of a
 # search engine, e.g. google.com or amazon.com.
 urlbar-tabtosearch-onboard = Klepněte na tuto zkratku, abyste rychleji našli, co potřebujete.
@@ -252,72 +283,75 @@ search-one-offs-actions =
     .tooltiptext = Akce ({ $restrict })
 
 ## QuickActions are shown in the urlbar as the user types a matching string
-
-
-## QuickActions are shown in the urlbar as the user types a matching string
 ## The -cmd- strings are comma separated list of keywords that will match
 ## the action.
 
-# Opens the about:addons page
+# Opens the about:addons page in the home / recommendations section
 quickactions-addons = Zobrazit doplňky
-quickactions-cmd-addons = doplňky, rozšíření, vzhledy
+quickactions-cmd-addons2 = doplňky
 # Opens the bookmarks library window
-quickactions-bookmarks = Zobrazit záložky
+quickactions-bookmarks2 = Správa záložek
 quickactions-cmd-bookmarks = záložky
 # Opens a SUMO article explaining how to clear history
 quickactions-clearhistory = Vymazat historii
 quickactions-cmd-clearhistory = vymazat historii
 # Opens about:downloads page
-quickactions-downloads = Otevřít seznam stahování
+quickactions-downloads2 = Zobrazit stahování
 quickactions-cmd-downloads = stahování
+# Opens about:addons page in the extensions section
+quickactions-extensions = Správa rozšíření
+quickactions-cmd-extensions = rozšíření
 # Opens the devtools web inspector
-quickactions-inspector = Otevřít průzkumník
+quickactions-inspector2 = Otevřít nástroje pro vývojáře
 quickactions-cmd-inspector = průzkumník, nástroje pro vývojáře, devtools
 # Opens about:logins
-quickactions-logins = Zobrazit přihlašovací údaje
+quickactions-logins2 = Správa přihlašovacích údajů
 quickactions-cmd-logins = přihlašovací údaje, hesla
+# Opens about:addons page in the plugins section
+quickactions-plugins = Správa zásuvných modulů
+quickactions-cmd-plugins = zásuvné moduly
 # Opens the print dialog
-quickactions-print = Tisk
+quickactions-print2 = Vytisknout stránku
 quickactions-cmd-print = tisk
 # Opens a new private browsing window
-quickactions-private = Otevřít nové anonymní okno
+quickactions-private2 = Otevřít anonymní okno
 quickactions-cmd-private = anonymní prohlížení
 # Opens a SUMO article explaining how to refresh
 quickactions-refresh =
-    { -brand-short-name.gender ->
-        [masculine] Obnova { -brand-short-name(case: "gen") }
-        [feminine] Obnova { -brand-short-name(case: "gen") }
-        [neuter] Obnova { -brand-short-name(case: "gen") }
-       *[other] Obnova aplikace { -brand-short-name }
+    { -brand-short-name.case-status ->
+        [with-cases] Obnova { -brand-short-name(case: "gen") }
+       *[no-cases] Obnova aplikace { -brand-short-name }
     }
 quickactions-cmd-refresh = obnova, obnovit
 # Restarts the browser
 quickactions-restart =
-    { -brand-short-name.gender ->
-        [masculine] Restartovat { -brand-short-name(case: "acc") }
-        [feminine] Restartovat { -brand-short-name(case: "acc") }
-        [neuter] Restartovat { -brand-short-name(case: "acc") }
-       *[other] Restartovat aplikaci { -brand-short-name }
+    { -brand-short-name.case-status ->
+        [with-cases] Restartovat { -brand-short-name(case: "acc") }
+       *[no-cases] Restartovat aplikaci { -brand-short-name }
     }
 quickactions-cmd-restart = restart, restartovat
 # Opens the screenshot tool
-quickactions-screenshot2 = Pořídit snímek stránky
+quickactions-screenshot3 = Pořídit snímek stránky
 quickactions-cmd-screenshot = snímek obrazovky, stránky
 # Opens about:preferences
-quickactions-settings = Otevřít nastavení
+quickactions-settings2 = Nastavení
 quickactions-cmd-settings = nastavení, předvolby, možnosti
+# Opens about:addons page in the themes section
+quickactions-themes = Nastavení vzhledu
+quickactions-cmd-themes = motivy vzhledu
 # Opens a SUMO article explaining how to update the browser
 quickactions-update =
-    { -brand-short-name.gender ->
-        [masculine] Aktualizace { -brand-short-name(case: "gen") }
-        [feminine] Aktualizace { -brand-short-name(case: "gen") }
-        [neuter] Aktualizace { -brand-short-name(case: "gen") }
-       *[other] Aktualizace aplikace { -brand-short-name }
+    { -brand-short-name.case-status ->
+        [with-cases] Aktualizace { -brand-short-name(case: "gen") }
+       *[no-cases] Aktualizace aplikace { -brand-short-name }
     }
 quickactions-cmd-update = aktualizace, aktualizovat
 # Opens the view-source UI with current pages source
-quickactions-viewsource = Zobrazit zdrojový kód
+quickactions-viewsource2 = Zobrazit zdrojový kód stránky
 quickactions-cmd-viewsource = zdrojový kód
+# Tooltip text for the help button shown in the result.
+quickactions-learn-more =
+    .title = Zjistit více o rychlých akcích
 
 ## Bookmark Panel
 
@@ -360,12 +394,10 @@ identity-connection-not-secure = Spojení není zabezpečené
 identity-connection-secure = Zabezpečené spojení
 identity-connection-failure = Chyba spojení
 identity-connection-internal =
-    Toto je zabezpečená stránka { -brand-short-name.gender ->
-        [masculine] { -brand-short-name(case: "gen") }
-        [feminine] { -brand-short-name(case: "gen") }
-        [neuter] { -brand-short-name(case: "gen") }
-       *[other] aplikace { -brand-short-name }
-    }.
+    { -brand-short-name.case-status ->
+        [with-cases] Toto je zabezpečená stránka { -brand-short-name(case: "gen") }.
+       *[no-cases] Toto je zabezpečená stránka aplikace { -brand-short-name }.
+    }
 identity-connection-file = Tato stránka je uložena ve vašem počítači.
 identity-extension-page = Tato stránka je načtena z doplňku.
 identity-active-blocked =
@@ -407,6 +439,7 @@ identity-connection-not-secure-security-view = Spojení s tímto serverem není 
 identity-connection-verified = Spojení s tímto serverem je zabezpečené.
 identity-ev-owner-label = Certifikát vydán pro:
 identity-description-custom-root = Mozilla tohoto vydavatele certifikátů nezná. Mohl být přidán operačním systémem nebo správcem vašeho počítače. <label data-l10n-name="link">Zjistit více</label>
+identity-description-custom-root2 = Mozilla tohoto vydavatele certifikátů nezná. Mohl být přidán operačním systémem nebo správcem vašeho počítače.
 identity-remove-cert-exception =
     .label = Odstranit výjimku
     .accesskey = O
@@ -421,6 +454,13 @@ identity-description-active-blocked =
         [neuter] { -brand-short-name } zablokovalo
        *[other] Aplikace { -brand-short-name } zablokovala
     } nezabezpečené části této stránky. <label data-l10n-name="link">Zjistit více</label>
+identity-description-active-blocked2 =
+    { -brand-short-name.gender ->
+        [masculine] { -brand-short-name } zablokoval
+        [feminine] { -brand-short-name } zablokovala
+        [neuter] { -brand-short-name } zablokovalo
+       *[other] Aplikace { -brand-short-name } zablokovala
+    } nezabezpečené části této stránky.
 identity-description-passive-loaded = Vaše připojení není soukromé a informace, které sdílíte s tímto serverem, mohou být viděny ostatními.
 identity-description-passive-loaded-insecure = Tato webová stránka obsahuje obsah, který není zabezpečen (například obrázky). <label data-l10n-name="link">Zjistit více</label>
 identity-description-passive-loaded-mixed =
@@ -430,6 +470,14 @@ identity-description-passive-loaded-mixed =
         [neuter] { -brand-short-name } zablokovalo
        *[other] aplikace { -brand-short-name } zablokovala
     } nějaký obsah, stránka stále ještě obsahuje nezabezpečený obsah (například obrázky). <label data-l10n-name="link">Zjistit více</label>
+identity-description-passive-loaded-insecure2 = Tato webová stránka obsahuje obsah, který není zabezpečen (například obrázky).
+identity-description-passive-loaded-mixed2 =
+    Ačkoli { -brand-short-name.gender ->
+        [masculine] { -brand-short-name } zablokoval
+        [feminine] { -brand-short-name } zablokovala
+        [neuter] { -brand-short-name } zablokovalo
+       *[other] aplikace { -brand-short-name } zablokovala
+    } nějaký obsah, stránka stále ještě obsahuje nezabezpečený obsah (například obrázky).
 identity-description-active-loaded = Tato webová stránka obsahuje obsah, který není zabezpečen (například skripty), a připojení k tomuto serveru tak není soukromé.
 identity-description-active-loaded-insecure = Informace, které sdílíte s tímto serverem (jako hesla, zprávy, číslo platební karty, atd.), mohou být viděny ostatními.
 identity-learn-more =
@@ -495,7 +543,11 @@ browser-tab-unblock =
 
 browser-import-button2 =
     .label = Importovat záložky…
-    .tooltiptext = Importovat záložky z jiného prohlížeče do { -brand-short-name(case: "gen") }.
+    .tooltiptext =
+        { -brand-short-name.case-status ->
+            [with-cases] Importovat záložky z jiného prohlížeče do { -brand-short-name(case: "gen") }.
+           *[no-cases] Importovat záložky z jiného prohlížeče do aplikace { -brand-short-name }
+        }
 bookmarks-toolbar-empty-message = Chcete-li mít ke svým záložkám rychlý přístup, umístěte je sem na lištu záložek. <a data-l10n-name="manage-bookmarks">Spravovat záložky…</a>
 
 ## WebRTC Pop-up notifications
@@ -512,6 +564,9 @@ popup-select-microphone-icon =
     .tooltiptext = Mikrofon
 popup-select-speaker-icon =
     .tooltiptext = Zvukový výstup
+popup-select-window-or-screen =
+    .label = Okno nebo obrazovka:
+    .accesskey = O
 popup-all-windows-shared = Budou sdílena všechna viditelná okna na vaší obrazovce.
 popup-screen-sharing-block =
     .label = Blokovat
@@ -523,7 +578,11 @@ popup-mute-notifications-checkbox = Ztlumit oznámení ze serverů během sdíle
 
 ## WebRTC window or screen share tab switch warning
 
-sharing-warning-window = Sdílíte obsah okna { -brand-short-name(case: "gen") }. Ostatní lidé uvidí obsah každého panelu, který otevřete.
+sharing-warning-window =
+    { -brand-short-name.case-status ->
+        [with-cases] Sdílíte obsah okna { -brand-short-name(case: "gen") }. Ostatní lidé uvidí obsah každého panelu, který otevřete.
+       *[no-cases] Sdílíte obsah okna aplikace { -brand-short-name }. Ostatní lidé uvidí obsah každého panelu, který otevřete.
+    }
 sharing-warning-screen = Sdílíte obsah celé své obrazovky. Ostatní lidé uvidí obsah každého panelu, který otevřete.
 sharing-warning-proceed-to-tab =
     .label = Otevřít panel
@@ -533,6 +592,7 @@ sharing-warning-disable-for-session =
 ## DevTools F12 popup
 
 enable-devtools-popup-description = Pokud chcete používat zkratku F12, otevřete nejprve DevTools z nabídky Nástroje pro vývojáře.
+enable-devtools-popup-description2 = Pokud chcete používat zkratku F12, otevřete nejprve DevTools z nabídky Nástroje prohlížeče.
 
 ## URL Bar
 
@@ -665,6 +725,20 @@ urlbar-group-search-suggestions =
 urlbar-group-quickactions =
     .label = Rychlé akce
 
+## Reader View toolbar buttons
+
+# This should match menu-view-enter-readerview in menubar.ftl
+reader-view-enter-button =
+    .aria-label = Zapnout zobrazení čtečky
+# This should match menu-view-close-readerview in menubar.ftl
+reader-view-close-button =
+    .aria-label = Zavřít zobrazení čtečky
+
+## Picture-in-Picture urlbar button
+## Variables:
+##   $shortcut (String) - Keyboard shortcut to execute the command.
+
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -684,22 +758,18 @@ pointerlock-warning-no-domain = Tento dokument má kontrolu nad vaším kurzorem
 ## Subframe crash notification
 
 crashed-subframe-message =
-    <strong>Část této stránky spadla.</strong> Pokud chcete autorům { -brand-shorter-name.gender ->
-        [masculine] { -brand-product-name(case: "gen") }
-        [feminine] { -brand-product-name(case: "gen") }
-        [neuter] { -brand-product-name(case: "gen") }
-       *[other] aplikace { -brand-product-name }
-    } tento problém nahlásit pro zrychlení opravy, odešlete prosím hlášení.
+    { -brand-shorter-name.case-status ->
+        [with-cases] <strong>Část této stránky spadla.</strong> Pokud chcete autorům { -brand-product-name(case: "gen") } tento problém nahlásit pro zrychlení opravy, odešlete prosím hlášení.
+       *[no-cases] <strong>Část této stránky spadla.</strong> Pokud chcete autorům aplikace { -brand-product-name } tento problém nahlásit pro zrychlení opravy, odešlete prosím hlášení.
+    }
 # The string for crashed-subframe-title.title should match crashed-subframe-message,
 # but without any markup.
 crashed-subframe-title =
     .title =
-        Část této stránky spadla. Pokud chcete autorům { -brand-product-name.gender ->
-            [masculine] { -brand-product-name(case: "gen") }
-            [feminine] { -brand-product-name(case: "gen") }
-            [neuter] { -brand-product-name(case: "gen") }
-           *[other] aplikace { -brand-product-name }
-        } tento problém nahlásit pro zrychlení opravy, odešlete prosím hlášení.
+        { -brand-product-name.case-status ->
+            [with-cases] Část této stránky spadla. Pokud chcete autorům { -brand-product-name(case: "gen") } tento problém nahlásit pro zrychlení opravy, odešlete prosím hlášení.
+           *[no-cases] Část této stránky spadla. Pokud chcete autorům aplikace { -brand-product-name } tento problém nahlásit pro zrychlení opravy, odešlete prosím hlášení.
+        }
 crashed-subframe-learnmore-link =
     .value = Zjistit více
 crashed-subframe-submit =
@@ -721,6 +791,11 @@ bookmarks-other-bookmarks-menu =
     .label = Ostatní záložky
 bookmarks-mobile-bookmarks-menu =
     .label = Záložky z mobilu
+
+## Variables:
+##   $isVisible (boolean): if the specific element (e.g. bookmarks sidebar,
+##                         bookmarks toolbar, etc.) is visible or not.
+
 bookmarks-tools-sidebar-visibility =
     .label =
         { $isVisible ->
@@ -745,6 +820,9 @@ bookmarks-tools-menu-button-visibility =
             [true] Odebrat nabídku záložek z lišty
            *[other] Přidat nabídku záložek na lištu
         }
+
+##
+
 bookmarks-search =
     .label = Hledat v záložkách
 bookmarks-tools =
@@ -814,6 +892,9 @@ toolbar-overflow-customize-button =
 toolbar-button-email-link =
     .label = Poslat odkaz e-mailem
     .tooltiptext = Odešle odkaz na aktuální stránku
+toolbar-button-logins =
+    .label = Přihlašovací údaje
+    .tooltiptext = Zobrazení a správa vašich uložených hesel
 # Variables:
 #  $shortcut (String): keyboard shortcut to save a copy of the page
 toolbar-button-save-page =
@@ -836,12 +917,10 @@ toolbar-button-new-private-window =
 ## EME notification panel
 
 eme-notifications-drm-content-playing =
-    Některé zvuky nebo videa na této stránce používají DRM software, což může omezit { -brand-short-name.gender ->
-        [masculine] { -brand-short-name(case: "acc") }
-        [feminine] { -brand-short-name(case: "acc") }
-        [neuter] { -brand-short-name(case: "acc") }
-       *[other] aplikaci { -brand-short-name }
-    } při práci s tímto obsahem.
+    { -brand-short-name.case-status ->
+        [with-cases] Některé zvuky nebo videa na této stránce používají DRM software, což může omezit { -brand-short-name(case: "acc") } při práci s tímto obsahem.
+       *[no-cases] Některé zvuky nebo videa na této stránce používají DRM software, což může omezit aplikaci { -brand-short-name } při práci s tímto obsahem.
+    }
 eme-notifications-drm-content-playing-manage = Nastavení
 eme-notifications-drm-content-playing-manage-accesskey = N
 eme-notifications-drm-content-playing-dismiss = Zavřít
@@ -858,11 +937,9 @@ panel-save-update-password = Heslo
 #  $name (String): The name of the addon that will be removed.
 addon-removal-title = Opravdu chcete odebrat rozšíření { $name }?
 addon-removal-abuse-report-checkbox =
-    Nahlásit toto rozšíření { -vendor-short-name.gender ->
-        [masculine] { -vendor-short-name(case: "dat") }
-        [feminine] { -vendor-short-name(case: "dat") }
-        [neuter] { -vendor-short-name(case: "dat") }
-       *[other] organizaci { -vendor-short-name }
+    { -vendor-short-name.case-status ->
+        [with-cases] Nahlásit toto rozšíření { -vendor-short-name(case: "dat") }
+       *[no-cases] Nahlásit toto rozšíření organizaci { -vendor-short-name }
     }
 
 ##
@@ -927,11 +1004,9 @@ navbar-print =
 navbar-home =
     .label = Domů
     .tooltiptext =
-        Otevře domovskou stránku { -brand-short-name.gender ->
-            [masculine] { -brand-short-name(case: "gen") }
-            [feminine] { -brand-short-name(case: "gen") }
-            [neuter] { -brand-short-name(case: "gen") }
-           *[other] aplikace { -brand-short-name }
+        { -brand-short-name.case-status ->
+            [with-cases] Otevře domovskou stránku { -brand-short-name(case: "gen") }
+           *[no-cases] Otevře domovskou stránku aplikace { -brand-short-name }
         }
 navbar-library =
     .label = Knihovna stránek
@@ -955,22 +1030,18 @@ tabs-toolbar-list-all-tabs =
 
 # <img data-l10n-name="icon"/> will be replaced by the application menu icon
 restore-session-startup-suggestion-message =
-    <strong>Chcete otevřít předchozí panely?</strong> Předchozí relaci { -brand-short-name.gender ->
-        [masculine] { -brand-short-name(case: "gen") }
-        [feminine] { -brand-short-name(case: "gen") }
-        [neuter] { -brand-short-name(case: "gen") }
-       *[other] aplikace { -brand-short-name }
-    } můžete obnovit z nabídky <img data-l10n-name="icon"/> v části Historie.
+    { -brand-short-name.case-status ->
+        [with-cases] <strong>Chcete otevřít předchozí panely?</strong> Předchozí relaci { -brand-short-name(case: "gen") } můžete obnovit z nabídky <img data-l10n-name="icon"/> v části Historie.
+       *[no-cases] <strong>Chcete otevřít předchozí panely?</strong> Předchozí relaci aplikace { -brand-short-name } můžete obnovit z nabídky <img data-l10n-name="icon"/> v části Historie.
+    }
 restore-session-startup-suggestion-button = Jak na to
 
 ## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
 
 data-reporting-notification-message =
-    { -vendor-short-name.gender ->
-        [masculine] { -brand-short-name } automaticky odesílá některá data { -vendor-short-name(case: "dat") } z důvodu vylepšení vašeho prohlížení.
-        [feminine] { -brand-short-name } automaticky odesílá některá data { -vendor-short-name(case: "dat") } z důvodu vylepšení vašeho prohlížení.
-        [neuter] { -brand-short-name } automaticky odesílá některá data { -vendor-short-name(case: "dat") } z důvodu vylepšení vašeho prohlížení.
-       *[other] { -brand-short-name } automaticky odesílá některá data organizaci { -vendor-short-name } z důvodu vylepšení vašeho prohlížení.
+    { -vendor-short-name.case-status ->
+        [with-cases] { -brand-short-name } automaticky odesílá některá data { -vendor-short-name(case: "dat") } z důvodu vylepšení vašeho prohlížení.
+       *[no-cases] { -brand-short-name } automaticky odesílá některá data organizaci { -vendor-short-name } z důvodu vylepšení vašeho prohlížení.
     }
 data-reporting-notification-button =
     .label = Nastavit odesílaná data
@@ -983,3 +1054,49 @@ private-browsing-indicator-label = Anonymní prohlížení
 unified-extensions-button =
     .label = Rozšíření
     .tooltiptext = Rozšíření
+
+## Unified extensions button when permission(s) are needed.
+## Note that the new line is intentionally part of the tooltip.
+
+unified-extensions-button-permissions-needed =
+    .label = Rozšíření
+    .tooltiptext =
+        Rozšíření
+        Vyžadována oprávnění
+
+## Autorefresh blocker
+
+refresh-blocked-refresh-label =
+    { -brand-short-name.gender ->
+        [masculine] { -brand-short-name } zabránil této stránce v automatickém opětovném načtení.
+        [feminine] { -brand-short-name } zabránila této stránce v automatickém opětovném načtení.
+        [neuter] { -brand-short-name } zabránilo této stránce v automatickém opětovném načtení.
+       *[other] Aplikace { -brand-short-name } zabránila této stránce v automatickém opětovném načtení.
+    }
+refresh-blocked-redirect-label =
+    { -brand-short-name.gender ->
+        [masculine] { -brand-short-name } zabránil této stránce v automatickém přesměrování na jinou stránku.
+        [feminine] { -brand-short-name } zabránila této stránce v automatickém přesměrování na jinou stránku.
+        [neuter] { -brand-short-name } zabránilo této stránce v automatickém přesměrování na jinou stránku.
+       *[other] Aplikace { -brand-short-name } zabránila této stránce v automatickém přesměrování na jinou stránku.
+    }
+refresh-blocked-allow =
+    .label = Povolit
+    .accesskey = P
+
+## Firefox Relay integration
+
+firefox-relay-offer-why-relay = { -relay-brand-name } skryje vaši skutečnou e-mailovou adresu, aby vás ochránila před úniky dat a nevyžádanou poštou.
+firefox-relay-offer-how-we-integrate =
+    { -brand-short-name.case-status ->
+        [with-cases] Budete-li pokračovat, budete moci generovat nové e-mailové masky služby { -relay-brand-short-name } přímo ze správce přihlašovacích údajů ve { -brand-shorter-name(case: "loc") }.
+       *[no-cases] Budete-li pokračovat, budete moci generovat nové e-mailové masky služby { -relay-brand-short-name } přímo ze správce přihlašovacích údajů v aplikaci { -brand-shorter-name }.
+    }
+# Variables:
+#  $sitename (String): name of the site where user enters their Relay mask
+#  $useremail (String): user email that will receive messages
+firefox-relay-offer-what-relay-does = Všechny e-maily z <strong>{ $sitename }</strong> přepošleme na <strong>{ $useremail }</strong>.
+
+## Popup Notification
+
+popup-notification-xpinstall-prompt-learn-more = Zjistit více o bezpečné instalaci doplňků

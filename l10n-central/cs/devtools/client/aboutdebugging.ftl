@@ -11,7 +11,8 @@
 # Page title (ie tab title) for the Setup page
 about-debugging-page-title-setup-page = Ladění - nastavení
 # Page title (ie tab title) for the Runtime page
-# { $selectedRuntimeId } is the id of the current runtime, such as "this-firefox", "localhost:6080", ...
+# Variables:
+#   $selectedRuntimeId - ID of the current runtime, such as "this-firefox", "localhost:6080", etc.
 about-debugging-page-title-runtime-page = Ladění - běhové prostředí / { $selectedRuntimeId }
 
 # Sidebar strings
@@ -62,10 +63,15 @@ about-debugging-sidebar-runtime-item-waiting-for-browser = Čekání na prohlí�
 # computer.
 about-debugging-sidebar-runtime-item-unplugged = Odpojeno
 # Title for runtime sidebar items that are related to a specific device (USB, WiFi).
+# Variables:
+#   $displayName (string) - Displayed name
+#   $deviceName (string) - Name of the device
 about-debugging-sidebar-runtime-item-name =
     .title = { $displayName } ({ $deviceName })
 # Title for runtime sidebar items where we cannot get device information (network
 # locations).
+# Variables:
+#   $displayName (string) - Displayed name
 about-debugging-sidebar-runtime-item-name-no-device =
     .title = { $displayName }
 # Text to show in the footer of the sidebar that links to a help page
@@ -86,19 +92,21 @@ about-debugging-setup-title = Nastavení
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = Nastavte si způsob připojení pro vzdálení ladění vašeho zařízení.
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
-about-debugging-setup-this-firefox2 = Použijte <a>{ about-debugging-this-firefox-runtime-name }</a> pro ladění rozšíření a service workerů v této verzi { -brand-shorter-name(case: "loc") }
+about-debugging-setup-this-firefox2 =
+    { -brand-shorter-name.case-status ->
+        [with-cases] Použijte <a>{ about-debugging-this-firefox-runtime-name }</a> pro ladění rozšíření a service workerů v této verzi { -brand-shorter-name(case: "loc") }
+       *[no-cases] Použijte <a>{ about-debugging-this-firefox-runtime-name }</a> pro ladění rozšíření a service workerů v této verzi aplikace { -brand-shorter-name }
+    }
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = Připojit zařízení
 # USB section of the Setup page
 about-debugging-setup-usb-title = USB
 # Explanatory text displayed in the Setup page when USB debugging is disabled
 about-debugging-setup-usb-disabled =
-    Povolení této možnosti stáhne do { -brand-shorter-name.gender ->
-        [masculine] { -brand-shorter-name(case: "gen") }
-        [feminine] { -brand-shorter-name(case: "gen") }
-        [neuter] { -brand-shorter-name(case: "gen") }
-       *[other] aplikace { -brand-shorter-name }
-    } komponenty potřebné pro ladění v Androidu pomocí USB.
+    { -brand-shorter-name.case-status ->
+        [with-cases] Povolení této možnosti stáhne do { -brand-shorter-name(case: "gen") } komponenty potřebné pro ladění v Androidu pomocí USB.
+       *[no-cases] Povolení této možnosti stáhne do aplikace { -brand-shorter-name } komponenty potřebné pro ladění v Androidu pomocí USB.
+    }
 # Text of the button displayed in the USB section of the setup page when USB debugging is disabled.
 # Clicking on it will download components needed to debug USB Devices remotely.
 about-debugging-setup-usb-enable-button = Povolit USB zařízení
@@ -195,7 +203,13 @@ about-debugging-browser-version-too-old-fennec = Tato verze Firefoxu nemůže la
 # { $localID } is the build ID of the current Firefox instance (same format)
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
 # { $localVersion } is the version of your current browser (same format)
-about-debugging-browser-version-too-recent = Připojený prohlížeč je novější ({ $runtimeVersion }, buildID { $runtimeID }) než váš { -brand-shorter-name } ({ $localVersion }, buildID { $localID }). Taková situace není podporována a může způsobit selhání nástrojů pro vývojáře. Aktualizujte prosím svůj Firefox. <a>Řešení potíží</a>
+about-debugging-browser-version-too-recent =
+    { -brand-shorter-name.gender ->
+        [masculine] Připojený prohlížeč je novější ({ $runtimeVersion }, buildID { $runtimeID }) než váš { -brand-shorter-name } ({ $localVersion }, buildID { $localID }). Taková situace není podporována a může způsobit selhání nástrojů pro vývojáře. Aktualizujte prosím svůj Firefox. <a>Řešení potíží</a>
+        [feminine] Připojený prohlížeč je novější ({ $runtimeVersion }, buildID { $runtimeID }) než vaše { -brand-shorter-name } ({ $localVersion }, buildID { $localID }). Taková situace není podporována a může způsobit selhání nástrojů pro vývojáře. Aktualizujte prosím svůj Firefox. <a>Řešení potíží</a>
+        [neuter] Připojený prohlížeč je novější ({ $runtimeVersion }, buildID { $runtimeID }) než vaše { -brand-shorter-name } ({ $localVersion }, buildID { $localID }). Taková situace není podporována a může způsobit selhání nástrojů pro vývojáře. Aktualizujte prosím svůj Firefox. <a>Řešení potíží</a>
+       *[other] Připojený prohlížeč je novější ({ $runtimeVersion }, buildID { $runtimeID }) než vaše aplikace { -brand-shorter-name } ({ $localVersion }, buildID { $localID }). Taková situace není podporována a může způsobit selhání nástrojů pro vývojáře. Aktualizujte prosím svůj Firefox. <a>Řešení potíží</a>
+    }
 # Displayed for runtime info in runtime pages.
 # { $name } is brand name such as "Firefox Nightly"
 # { $version } is version such as "64.0a1"
@@ -336,10 +350,11 @@ about-debugging-main-process-name = Hlavní proces
 # Displayed as description for the Main Process debug target in the Processes category.
 # Only for remote browsers, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-main-process-description2 = Hlavní proces pro cílový prohlížeč
-# Displayed instead of the Main Process debug target when the preference
-# `devtools.browsertoolbox.fission` is true.
+# Displayed as name for the Main Process debug target in the Processes category. Only for
+# remote runtimes, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-multiprocess-toolbox-name = Sada nástrojů pro práci s více procesy
-# Description for the Multiprocess Toolbox target.
+# Displayed as description for the Main Process debug target in the Processes category.
+# Only for remote browsers, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-multiprocess-toolbox-description = Hlavní procesy a procesy pro obsah v cílovém prohlížeči
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =

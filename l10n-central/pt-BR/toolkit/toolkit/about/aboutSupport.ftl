@@ -70,7 +70,7 @@ app-basics-launcher-process-status = Processo de lançamento
 app-basics-multi-process-support = Janelas multiprocessadas
 app-basics-fission-support = Janelas do Fission
 app-basics-remote-processes-count = Processos remotos
-app-basics-enterprise-policies = Diretivas empresariais
+app-basics-enterprise-policies = Diretivas corporativas
 app-basics-location-service-key-google = Chave do Serviço de Localização do Google
 app-basics-safebrowsing-key-google = Chave do Google Safebrowsing
 app-basics-key-mozilla = Chave do serviço de localização da Mozilla
@@ -110,11 +110,21 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Registro de decisões
 graphics-crash-guards-title = Recursos desativados da proteção contra travamentos
 graphics-workarounds-title = Soluções alternativas
+graphics-device-pixel-ratios = Proporções de pixels do dispositivo de janela
 # Windowing system in use on Linux (e.g. X11, Wayland).
 graphics-window-protocol = Protocolo de janelas
 # Desktop environment in use on Linux (e.g. GNOME, KDE, XFCE, etc).
 graphics-desktop-environment = Ambiente de trabalho
 place-database-title = Base de dados de lugares
+place-database-stats = Estatísticas
+place-database-stats-show = Mostrar estatísticas
+place-database-stats-hide = Ocultar estatísticas
+place-database-stats-entity = Entidade
+place-database-stats-count = Quantidade
+place-database-stats-size-kib = Tamanho (KiB)
+place-database-stats-size-perc = Tamanho (%)
+place-database-stats-efficiency-perc = Eficiência (%)
+place-database-stats-sequentiality-perc = Sequencialidade (%)
 place-database-integrity = Integridade
 place-database-verify-integrity = Verificar integridade
 a11y-title = Acessibilidade
@@ -278,6 +288,8 @@ webgl2-renderer = Renderizador do driver WebGL 2
 webgl2-version = Versão do driver WebGL 2
 webgl2-driver-extensions = Extensões do driver WebGL 2
 webgl2-extensions = Extensões WebGL 2
+webgpu-default-adapter = Adaptador padrão de WebGPU
+webgpu-fallback-adapter = Adaptador alternativo de WebGPU
 # Variables
 #   $bugNumber (string) - Bug number on Bugzilla
 support-blocklisted-bug = Incluído na lista de bloqueio devido a problemas conhecidos: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
@@ -307,6 +319,7 @@ can-sandbox-media = Isolamento (sandbox) de plugins de mídia
 content-sandbox-level = Nível de isolamento (sandbox) de processamento de conteúdo
 effective-content-sandbox-level = Nível efetivo de isolamento (sandbox) de processamento de conteúdo
 content-win32k-lockdown-state = Estado de confinamento de Win32k em processos de conteúdo
+support-sandbox-gpu-level = Nível de isolamento de processamento em GPU
 sandbox-proc-type-content = conteúdo
 sandbox-proc-type-file = conteúdo do arquivo
 sandbox-proc-type-media-plugin = plugin de mídia

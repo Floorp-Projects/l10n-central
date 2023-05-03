@@ -107,11 +107,21 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Avgjerdslogg
 graphics-crash-guards-title = Krasjvern slo av funksjonar
 graphics-workarounds-title = Løysingar
+graphics-device-pixel-ratios = Pikselforhold for vindauget
 # Windowing system in use on Linux (e.g. X11, Wayland).
 graphics-window-protocol = Protokoll for vindaugshandsamar
 # Desktop environment in use on Linux (e.g. GNOME, KDE, XFCE, etc).
 graphics-desktop-environment = Skrivebordsmiljø
 place-database-title = Plasser database
+place-database-stats = Statistikk
+place-database-stats-show = Vis statistikk
+place-database-stats-hide = Gøym statistikk
+place-database-stats-entity = Entitet
+place-database-stats-count = Antal
+place-database-stats-size-kib = Storleik (KiB)
+place-database-stats-size-perc = Storleik (%)
+place-database-stats-efficiency-perc = Effektivitet (%)
+place-database-stats-sequentiality-perc = Sekvensitet (%)
 place-database-integrity = Integritet
 place-database-verify-integrity = Stadfest integritet
 a11y-title = Tilgjenge
@@ -275,6 +285,8 @@ webgl2-renderer = WebGL2-renderar
 webgl2-version = WebGL 2 drivarversjon
 webgl2-driver-extensions = WebGL 2 drivarutviding
 webgl2-extensions = WebGL 2 utviding
+webgpu-default-adapter = WebGPU standardadapter
+webgpu-fallback-adapter = WebGPU reservadapter
 # Variables
 #   $bugNumber (string) - Bug number on Bugzilla
 support-blocklisted-bug = Blokkert på grunn av kjende problem: <a data-l10n-name="bug-link">feilrapport { $bugNumber }</a>
@@ -304,6 +316,7 @@ can-sandbox-media = Sandkasse for media-programtillegg
 content-sandbox-level = Nivå for sandkasse for innhaldsprosessar
 effective-content-sandbox-level = Effektiv sandbox-nivå for innhaldsprosess
 content-win32k-lockdown-state = Win32k-låsestatus for innhaldsprosessar
+support-sandbox-gpu-level = Nivå for sandkasse for GPU-prosessar
 sandbox-proc-type-content = innhald
 sandbox-proc-type-file = filinnhald
 sandbox-proc-type-media-plugin = programtillegg for media

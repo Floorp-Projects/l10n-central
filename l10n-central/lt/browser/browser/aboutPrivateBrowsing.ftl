@@ -50,3 +50,13 @@ about-private-browsing-search-banner-close-button =
     .aria-label = Užverti
 about-private-browsing-promo-close-button =
     .title = Užverti
+
+## Strings used in a “pin promotion” message, which prompts users to pin a private window
+
+about-private-browsing-pin-promo-header = Privataus naršymo laisvė vienu paspaudimu
+about-private-browsing-pin-promo-link-text =
+    { PLATFORM() ->
+        [macos] Laikyti užduočių juostoje
+       *[other] Įsegti į užduočių juostą
+    }
+about-private-browsing-pin-promo-title = Jokių įrašytų slapukų ar naršymo žurnalo – tiesiai iš darbalaukio. Naršykite, lyg niekas nestebėtų.

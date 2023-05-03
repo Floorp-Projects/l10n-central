@@ -6,6 +6,10 @@ add-engine-window =
     .title = Agregar motor de búsqueda
     .style = width: 32em;
 
+add-engine-window2 =
+    .title = Agregar motor de búsqueda
+    .style = min-width: 32em;
+
 add-engine-button = Agregar motor de búsqueda personalizado
 
 add-engine-name = Nombre del motor de búsqueda

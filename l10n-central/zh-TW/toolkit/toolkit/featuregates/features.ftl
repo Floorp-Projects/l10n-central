@@ -12,6 +12,7 @@ experimental-features-css-masonry-description = 開啟實驗中的 CSS 瀑布流
 experimental-features-web-gpu2 =
     .label = Web API: WebGPU
 experimental-features-web-gpu-description2 = 這組新的 API 針對使用裝置或電腦上的<a data-l10n-name="wikipedia">圖形處理單元</a>進行計算與繪圖提供了底層支援。<a data-l10n-name="spec">標準規格</a>仍在規劃中。若需更多資訊，請參考 <a data-l10n-name="bugzilla">bug 1602129</a>。
+experimental-features-web-gpu-description3 = <a data-l10n-name="wikipedia-webgpu">WebGPU API</a> 針對使用裝置或電腦上的<a data-l10n-name="wikipedia-gpu">圖形處理單元</a>進行計算與繪圖提供了底層支援。初版<a data-l10n-name="spec">規格</a>即將完成。若需更多資訊，請參考<a data-l10n-name="bugzilla">bug 1616739</a>。
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-media-jxl =
@@ -60,10 +61,6 @@ experimental-features-js-warp-description = 開啟改善 JavaScript 效能與記
 experimental-features-ime-search =
     .label = 網址列: 於輸入法未選字時就顯示搜尋引擎回傳的結果
 experimental-features-ime-search-description = 東亞與印度語系使用者須使用輸入法才能在標準鍵盤輸入各種文字。開啟此實驗功能後將在輸入字根的過程中保持開啟網址列面板，並根據使用者輸入內容顯示搜尋結果與建議。請注意: 某些輸入法可能會顯示輸入面板，蓋過網址列顯示的結果，因此建議您只在使用的輸入法不會顯示輸入面板，或顯示的面板不會覆蓋搜尋框時，開啟此設定。
-# Text recognition for images
-experimental-features-text-recognition =
-    .label = 文字辨識
-experimental-features-text-recognition-description = 開啟辨識圖片中文字的相關功能。
 experimental-features-accessibility-cache =
     .label = 輔助功能快取
 experimental-features-accessibility-cache-description = 將所有 { -brand-short-name } 主程序的所有文件當中的輔助功能資訊快取起來。此功能可幫助改善螢幕閱讀器或其他使用輔助功能 API 的應用程式的運作效能。

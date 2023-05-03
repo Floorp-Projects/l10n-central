@@ -19,42 +19,46 @@ pictureinpicture-close =
 ## Variables:
 ##   $shortcut (String) - Keyboard shortcut to execute the command.
 
-pictureinpicture-pause-cmd =
+pictureinpicture-pause-btn =
     .aria-label = 一時停止
-    .title = 一時停止 (スペースキー)
-pictureinpicture-play-cmd =
+    .tooltip = 一時停止 (スペースキー)
+pictureinpicture-play-btn =
     .aria-label = 再生
-    .title = 再生 (スペースキー)
-pictureinpicture-mute-cmd =
+    .tooltip = 再生 (スペースキー)
+pictureinpicture-mute-btn =
     .aria-label = ミュート
-    .title = ミュート ({ $shortcut })
-pictureinpicture-unmute-cmd =
+    .tooltip = ミュート ({ $shortcut })
+pictureinpicture-unmute-btn =
     .aria-label = ミュート解除
-    .title = ミュート解除 ({ $shortcut })
-pictureinpicture-unpip-cmd =
+    .tooltip = ミュート解除 ({ $shortcut })
+pictureinpicture-unpip-btn =
     .aria-label = タブに戻す
-    .title = タブに戻す
-pictureinpicture-close-cmd =
+    .tooltip = タブに戻す
+pictureinpicture-close-btn =
     .aria-label = 閉じる
-    .title = 閉じる ({ $shortcut })
-pictureinpicture-subtitles-cmd =
+    .tooltip = 閉じる ({ $shortcut })
+pictureinpicture-subtitles-btn =
     .aria-label = 字幕
-    .title = 字幕
+    .tooltip = 字幕
 
 ##
 
-pictureinpicture-fullscreen-cmd =
+pictureinpicture-fullscreen-btn =
     .aria-label = 全画面表示
-    .title = 全画面表示 (ダブルクリック)
-pictureinpicture-exit-fullscreen-cmd =
+    .tooltip = 全画面表示 (ダブルクリック)
+pictureinpicture-exit-fullscreen-btn =
     .aria-label = 全画面表示を終了
-    .title = 全画面表示を終了 (ダブルクリック)
-pictureinpicture-seekbackward-cmd =
+    .tooltip = 全画面表示を終了 (ダブルクリック)
+pictureinpicture-seekbackward-btn =
     .aria-label = 巻き戻し
-    .title = 巻き戻し (←)
-pictureinpicture-seekforward-cmd =
+    .tooltip = 巻き戻し (←)
+pictureinpicture-seekforward-btn =
     .aria-label = 早送り
-    .title = 早送り (→)
+    .tooltip = 早送り (→)
+# This string is never displayed on the window. Is intended to be announced by
+# a screen reader whenever a user opens the subtitles settings panel
+# after selecting the subtitles button.
+pictureinpicture-subtitles-panel-accessible = 字幕設定
 pictureinpicture-subtitles-label = 字幕
 pictureinpicture-font-size-label = フォントサイズ
 pictureinpicture-font-size-small = 小

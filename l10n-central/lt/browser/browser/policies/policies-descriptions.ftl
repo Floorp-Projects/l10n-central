@@ -42,6 +42,7 @@ policy-DisableFormHistory = Neįsiminti įvestų paieškos ir formų laukų reik
 policy-DisablePrimaryPasswordCreation = Jei „true“, negalima sukurti pagrindinio slaptažodžio.
 policy-DisablePasswordReveal = Neleisti parodyti slaptažodžių įrašytuose prisijungimuose.
 policy-DisablePocket = Išjungti funkcionalumą, skirtą tinklalapių įrašymui į „Pocket“.
+policy-DisablePocket2 = Išjungti funkcionalumą, skirtą tinklalapių įrašymui į „{ -pocket-brand-name }“.
 policy-DisablePrivateBrowsing = Išjungti privatųjį naršymą.
 policy-DisableProfileImport = Išjungti meniu komandą, skirtą importuoti duomenis iš kitos naršyklės.
 policy-DisableProfileRefresh = Išjungti mygtuką „Atšviežinti { -brand-short-name }“, esantį about:support puslapyje.

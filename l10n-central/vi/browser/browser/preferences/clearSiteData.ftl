@@ -6,6 +6,10 @@ clear-site-data-window =
     .title = Xóa dữ liệu
     .style = width: 35em
 
+clear-site-data-window2 =
+    .title = Xóa dữ liệu
+    .style = min-width: 35em
+
 clear-site-data-description = Xóa tất cả cookie và dữ liệu trang được lưu bởi { -brand-short-name } có thể khiến bạn đăng xuất khỏi trang web và xóa các nội dung ngoại tuyến. Xóa dữ liệu cache sẽ không ảnh hưởng đến đăng nhập của bạn.
 
 clear-site-data-close-key =

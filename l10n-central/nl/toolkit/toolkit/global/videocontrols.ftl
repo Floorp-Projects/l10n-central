@@ -41,10 +41,7 @@ videocontrols-picture-in-picture-explainer = Video’s op de voorgrond afspelen 
 # This string is used as the label for a variation of the Picture-in-Picture video
 # toggle button when the mouse is hovering over the video.
 videocontrols-picture-in-picture-toggle-label2 = Deze video naar voren halen
-# This string is used as part of a variation of the Picture-in-Picture video toggle
-# button. When using this variation, this string appears below the toggle when the
-# mouse hovers the toggle.
-videocontrols-picture-in-picture-explainer2 = Meer schermen is leuker. Speel deze video af in Picture-in-picture terwijl u navigeert.
+videocontrols-picture-in-picture-explainer3 = Meer schermen betekent meer plezier. Speel deze video af terwijl u andere dingen doet.
 videocontrols-error-aborted = Video laden gestopt.
 videocontrols-error-network = Video afspelen afgebroken vanwege een netwerkfout.
 videocontrols-error-decode = Video kan niet worden afgespeeld, omdat het bestand is beschadigd.
@@ -65,3 +62,12 @@ videocontrols-status-picture-in-picture = Deze video wordt in Picture-in-picture
 # duration video, $position would be "5:00" and the string which is
 # surrounded by <span> would be deleted, result string would be "5:00".
 videocontrols-position-and-duration-labels = { $position }<span data-l10n-name="position-duration-format"> / { $duration }</span>
+# This is a plain text version of the videocontrols-position-and-duration-labels
+# string, used by screenreaders.
+#
+# Variables:
+#   $position (String): The current media position
+#   $duration (String): The total video duration
+videocontrols-scrubber-position-and-duration =
+    .aria-label = Positie
+    .aria-valuetext = { $position } / { $duration }

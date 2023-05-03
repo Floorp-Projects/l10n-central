@@ -180,6 +180,17 @@ menu-view-full-screen =
     .label = Layar Penuh
     .accesskey = P
 
+## These menu items may use the same accesskey.
+
+# This should match reader-view-enter-button in browser.ftl
+menu-view-enter-readerview =
+    .label = Masuk ke Tampilan Baca
+    .accesskey = B
+# This should match reader-view-close-button in browser.ftl
+menu-view-close-readerview =
+    .label = Tutup Tampilan Pembaca
+    .accesskey = T
+
 ##
 
 menu-view-show-all-tabs =

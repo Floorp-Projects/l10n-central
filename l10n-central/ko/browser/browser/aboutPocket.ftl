@@ -22,6 +22,7 @@ pocket-panel-saved-page-saved = { -pocket-brand-name }에 저장됨
 pocket-panel-saved-page-saved-b = { -pocket-brand-name }에 저장됨!
 pocket-panel-saved-processing-remove = 페이지를 삭제하는 중…
 pocket-panel-saved-removed = 내 목록에서 페이지가 삭제됨
+pocket-panel-saved-removed-updated = 저장한 항목에서 페이지가 삭제됨
 pocket-panel-saved-processing-tags = 태그를 추가하는 중…
 pocket-panel-saved-remove-page = 페이지 삭제
 pocket-panel-saved-save-tags = 저장
@@ -45,8 +46,10 @@ pocket-panel-signup-tagline-story-one = { -pocket-brand-name } 버튼을 누르�
 pocket-panel-signup-tagline-story-two = 모든 기기에서 아무 때나 { -pocket-brand-name }에서 볼 수 있습니다.
 pocket-panel-signup-cta-a-fix = 인터넷 저장 버튼입니다.
 pocket-panel-signup-cta-b = 글, 동영상 및 링크를 저장하려면 { -pocket-brand-name } 버튼을 누르세요. 언제든지 모든 기기에서 목록을 볼 수 있습니다.
+pocket-panel-signup-cta-b-updated = 글, 동영상 및 링크를 저장하려면 { -pocket-brand-name } 버튼을 누르세요. 언제든지 모든 기기에서 저장한 항목을 볼 수 있습니다.
 pocket-panel-signup-cta-b-short = 글, 동영상 및 링크를 저장하려면 { -pocket-brand-name } 버튼을 누르세요.
 pocket-panel-signup-cta-c = 언제든지 모든 기기에서 목록을 볼 수 있습니다.
+pocket-panel-signup-cta-c-updated = 언제든지 모든 기기에서 저장한 항목을 볼 수 있습니다.
 
 ## about:pocket-home panel
 
@@ -64,6 +67,7 @@ pocket-panel-home-new-user-message = 여기에서 최근에 저장한 항목을 
 ## Pocket panel header component
 
 pocket-panel-header-my-list = 내 목록 보기
+pocket-panel-header-my-saves = 저장한 항목 보기
 pocket-panel-header-sign-in = 로그인
 
 ## Pocket panel buttons

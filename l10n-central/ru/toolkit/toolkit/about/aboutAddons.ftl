@@ -142,6 +142,10 @@ addon-category-recent-updates-title =
 addon-category-sitepermission = Разрешения для сайтов
 addon-category-sitepermission-title =
     .title = Разрешения для сайтов
+# String displayed in about:addons in the Site Permissions section
+# Variables:
+#  $host (string): DNS host name for which the webextension enables permissions
+addon-sitepermission-host = Разрешения сайта для { $host }
 
 ## These are global warnings
 
@@ -295,10 +299,6 @@ theme-monochromatic-heading = Расцветки
 theme-monochromatic-subheading = Яркие новые расцветки от { -brand-product-name }. Доступны в течение ограниченного времени.
 # Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
 theme-colorways-button = Попробуйте раскраски
-colorway-collection-independent-voices-subheading = Сделайте { -brand-short-name } немного более похожим на себя.
-# Variables:
-#   $expiryDate (string) - date on which the colorway collection expires.
-colorway-collection-expiry-date-span = Истекает { DATETIME($expiryDate, month: "long", day: "numeric") }
 # Refers to the button label for the colorways card when a user has a colorway theme enabled.
 theme-colorways-button-colorway-enabled = Сменить расцветку
 # Variables:
@@ -392,13 +392,13 @@ recommended-themes-heading = Рекомендуемые темы
 addon-sitepermissions-required = Предоставляет следующие возможности <span data-l10n-name="hostname">{ $hostname }</span>:
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
-recommended-theme-1 = Чувствуете прилив вдохновения? <a data-l10n-name="link">Создайте свою собственную тему с помощью Firefox Color.</a>
+recommended-theme-1 = Чувствуете прилив вдохновения? <a data-l10n-name="link">Создайте свою тему с помощью Firefox Color.</a>
 
 ## Page headings
 
-extension-heading = Управление моими расширениями
-theme-heading = Управление моими темами
-plugin-heading = Управление моими плагинами
+extension-heading = Управление расширениями
+theme-heading = Управление темами
+plugin-heading = Управление плагинами
 dictionary-heading = Управление моими словарями
 locale-heading = Управление моими языками
 updates-heading = Управление моими обновлениями

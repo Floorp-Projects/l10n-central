@@ -6,6 +6,10 @@ clear-site-data-window =
     .title = Gegevens wissen
     .style = width: 35em
 
+clear-site-data-window2 =
+    .title = Gegevens wissen
+    .style = min-width: 35em
+
 clear-site-data-description = Het wissen van alle cookies en websitegegevens die door { -brand-short-name } zijn opgeslagen kan u bij websites afmelden en offline webinhoud verwijderen. Het wissen van buffergegevens heeft geen invloed op uw aanmeldingen.
 
 clear-site-data-close-key =

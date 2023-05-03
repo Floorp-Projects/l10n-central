@@ -6,6 +6,10 @@ add-engine-window =
     .title = เพิ่มเครื่องมือค้นหา
     .style = width: 32em;
 
+add-engine-window2 =
+    .title = เพิ่มเครื่องมือค้นหา
+    .style = min-width: 32em;
+
 add-engine-button = เพิ่มเครื่องมือที่กำหนดเอง
 
 add-engine-name = ชื่อเครื่องมือค้นหา

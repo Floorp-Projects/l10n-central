@@ -19,42 +19,46 @@ pictureinpicture-close =
 ## Variables:
 ##   $shortcut (String) - Keyboard shortcut to execute the command.
 
-pictureinpicture-pause-cmd =
+pictureinpicture-pause-btn =
     .aria-label = Pause
-    .title = Pause (Spacebar)
-pictureinpicture-play-cmd =
+    .tooltip = Pause (Spacebar)
+pictureinpicture-play-btn =
     .aria-label = Play
-    .title = Play (Spacebar)
-pictureinpicture-mute-cmd =
+    .tooltip = Play (Spacebar)
+pictureinpicture-mute-btn =
     .aria-label = Mute
-    .title = Mute ({ $shortcut })
-pictureinpicture-unmute-cmd =
+    .tooltip = Mute ({ $shortcut })
+pictureinpicture-unmute-btn =
     .aria-label = Unmute
-    .title = Unmute ({ $shortcut })
-pictureinpicture-unpip-cmd =
+    .tooltip = Unmute ({ $shortcut })
+pictureinpicture-unpip-btn =
     .aria-label = Send back to tab
-    .title = Back to tab
-pictureinpicture-close-cmd =
+    .tooltip = Back to tab
+pictureinpicture-close-btn =
     .aria-label = Close
-    .title = Close ({ $shortcut })
-pictureinpicture-subtitles-cmd =
+    .tooltip = Close ({ $shortcut })
+pictureinpicture-subtitles-btn =
     .aria-label = Subtitles
-    .title = Subtitles
+    .tooltip = Subtitles
 
 ##
 
-pictureinpicture-fullscreen-cmd =
+pictureinpicture-fullscreen-btn =
     .aria-label = Fullscreen
-    .title = Fullscreen (double-click)
-pictureinpicture-exit-fullscreen-cmd =
+    .tooltip = Fullscreen (double-click)
+pictureinpicture-exit-fullscreen-btn =
     .aria-label = Exit fullscreen
-    .title = Exit fullscreen (double-click)
-pictureinpicture-seekbackward-cmd =
+    .tooltip = Exit fullscreen (double-click)
+pictureinpicture-seekbackward-btn =
     .aria-label = Backwards
-    .title = Backwards (←)
-pictureinpicture-seekforward-cmd =
+    .tooltip = Backwards (←)
+pictureinpicture-seekforward-btn =
     .aria-label = Forwards
-    .title = Forwards (→)
+    .tooltip = Forwards (→)
+# This string is never displayed on the window. Is intended to be announced by
+# a screen reader whenever a user opens the subtitles settings panel
+# after selecting the subtitles button.
+pictureinpicture-subtitles-panel-accessible = Subtitles settings
 pictureinpicture-subtitles-label = Subtitles
 pictureinpicture-font-size-label = Font size
 pictureinpicture-font-size-small = Small

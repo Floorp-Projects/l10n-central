@@ -5,12 +5,20 @@
 containers-window-new =
     .title = Tilføj ny kontekst
     .style = width: 33em
-
 # Variables
 #   $name (String) - Name of the container
 containers-window-update-settings =
     .title = Indstillinger for konteksten { $name }
     .style = width: 45em
+
+containers-window-new2 =
+    .title = Tilføj ny kontekst
+    .style = min-width: 33em
+# Variables
+#   $name (String) - Name of the container
+containers-window-update-settings2 =
+    .title = Indstillinger for konteksten { $name }
+    .style = min-width: 45em
 
 containers-window-close =
     .key = w

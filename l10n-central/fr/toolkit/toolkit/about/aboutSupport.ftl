@@ -110,11 +110,21 @@ graphics-gpu2-title = GPU 2
 graphics-decision-log-title = Journal des décisions
 graphics-crash-guards-title = Fonctionnalités désactivées par la protection contre les plantages
 graphics-workarounds-title = Solutions de contournement
+graphics-device-pixel-ratios = Rapports de pixels de l’appareil pour les fenêtres
 # Windowing system in use on Linux (e.g. X11, Wayland).
 graphics-window-protocol = Protocole de fenêtrage
 # Desktop environment in use on Linux (e.g. GNOME, KDE, XFCE, etc).
 graphics-desktop-environment = Environnement de bureau
 place-database-title = Base de données « Places »
+place-database-stats = Statistiques
+place-database-stats-show = Afficher les statistiques
+place-database-stats-hide = Masquer les statistiques
+place-database-stats-entity = Entité
+place-database-stats-count = Nombre
+place-database-stats-size-kib = Taille (Ko)
+place-database-stats-size-perc = Taille (%)
+place-database-stats-efficiency-perc = Efficacité (%)
+place-database-stats-sequentiality-perc = Séquentialité (%)
 place-database-integrity = Intégrité
 place-database-verify-integrity = Vérifier l’intégrité
 a11y-title = Accessibilité
@@ -278,6 +288,8 @@ webgl2-renderer = Pilote WebGL 2 - Rendu
 webgl2-version = Pilote WebGL 2 - Version
 webgl2-driver-extensions = Pilote WebGL 2 - Extensions
 webgl2-extensions = WebGL 2 - Extensions
+webgpu-default-adapter = Adaptateur WebGPU par défaut
+webgpu-fallback-adapter = Adaptateur WebGPU de secours
 # Variables
 #   $bugNumber (string) - Bug number on Bugzilla
 support-blocklisted-bug = Mis en liste de blocage en raison de problèmes connus : <a data-l10n-name="bug-link">bug { $bugNumber }</a>
@@ -307,6 +319,7 @@ can-sandbox-media = Bac à sable pour les plugins multimédia
 content-sandbox-level = Niveau du bac à sable pour les processus de contenu
 effective-content-sandbox-level = Niveau effectif du bac à sable pour les processus de contenu
 content-win32k-lockdown-state = État de verrouillage Win32k pour le processus de contenu
+support-sandbox-gpu-level = Niveau du bac à sable pour les processus du GPU
 sandbox-proc-type-content = contenu
 sandbox-proc-type-file = contenu du fichier
 sandbox-proc-type-media-plugin = plugin multimédia

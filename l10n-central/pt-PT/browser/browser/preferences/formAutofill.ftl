@@ -83,7 +83,7 @@ autofill-address-tel = Telefone
 autofill-address-email = Email
 autofill-cancel-button = Cancelar
 autofill-save-button = Guardar
-autofill-country-warning-message = O auto-preenchimento de formulários está disponível apenas para alguns países.
+autofill-country-warning-message = O autopreenchimento de formulários está disponível apenas para alguns países.
 # The dialog title for creating credit cards in browser preferences.
 autofill-add-new-card-title = Adicionar novo cartão de crédito
 # The dialog title for editing credit cards in browser preferences.

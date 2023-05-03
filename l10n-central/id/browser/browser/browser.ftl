@@ -76,7 +76,9 @@ browser-main-window-mac-window-titles =
 # This should match the `data-title-default` attribute in both
 # `browser-main-window` and `browser-main-window-mac`.
 browser-main-window-title = { -brand-full-name }
-private-browsing-shortcut-text = Penjelajahan Pribadi { -brand-short-name }
+# The non-variable portion of this MUST match the translation of
+# "PRIVATE_BROWSING_SHORTCUT_TITLE" in custom.properties
+private-browsing-shortcut-text-2 = Penjelajahan Pribadi { -brand-shortcut-name }
 
 ##
 
@@ -134,11 +136,23 @@ urlbar-addons-notification-anchor =
 urlbar-tip-help-icon =
     .title = Dapatkan bantuan
 urlbar-search-tips-confirm = Oke, Paham
+urlbar-search-tips-confirm-short = Paham
 # Read out before Urlbar Tip text content so screenreader users know the
 # subsequent text is a tip offered by the browser. It should end in a colon or
 # localized equivalent.
 urlbar-tip-icon-description =
     .alt = Kiat:
+urlbar-result-menu-button =
+    .title = Buka menu
+urlbar-result-menu-learn-more =
+    .label = Pelajari lebih lanjut
+    .accesskey = P
+urlbar-result-menu-remove-from-history =
+    .label = Hapus dari riwayat
+    .accesskey = r
+urlbar-result-menu-tip-get-help =
+    .label = Dapatkan bantuan
+    .accesskey = b
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -147,6 +161,8 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Ketik lebih sedikit, temukan lebih banyak: Pencarian { $engineName } langsung dari bilah alamat Anda.
 urlbar-search-tips-redirect-2 = Mulai pencarian Anda di bilah alat untuk melihat saran dari { $engineName } dan riwayat penjelajahan Anda.
+# Make sure to match the name of the Search panel in settings.
+urlbar-search-tips-persist = Pencarian menjadi lebih sederhana. Coba buat pencarian Anda lebih spesifik di bilah alamat. Untuk menampilkan URL saja, kunjungi Pencarian, di pengaturan.
 # Prompts users to use the Urlbar when they are typing in the domain of a
 # search engine, e.g. google.com or amazon.com.
 urlbar-tabtosearch-onboard = Pilih pintasan ini untuk menemukan lebih cepat apa yang dibutuhkan.
@@ -267,42 +283,38 @@ search-one-offs-actions =
     .tooltiptext = Aksi ({ $restrict })
 
 ## QuickActions are shown in the urlbar as the user types a matching string
-
-
-## QuickActions are shown in the urlbar as the user types a matching string
 ## The -cmd- strings are comma separated list of keywords that will match
 ## the action.
 
 # Opens the about:addons page in the home / recommendations section
 quickactions-addons = Tampilkan Pengaya
-quickactions-cmd-addons = pengaya, ekstensi, tema
 quickactions-cmd-addons2 = pengaya
 # Opens the bookmarks library window
-quickactions-bookmarks = Tampilkan Markah
+quickactions-bookmarks2 = Kelola markah
 quickactions-cmd-bookmarks = markah
 # Opens a SUMO article explaining how to clear history
 quickactions-clearhistory = Bersihkan Riwayat
 quickactions-cmd-clearhistory = bersihkan riwayat
 # Opens about:downloads page
-quickactions-downloads = Buka Unduhan
+quickactions-downloads2 = Tampilkan unduhan
 quickactions-cmd-downloads = unduhan
 # Opens about:addons page in the extensions section
 quickactions-extensions = Kelola ekstensi
 quickactions-cmd-extensions = ekstensi
 # Opens the devtools web inspector
-quickactions-inspector = Buka Inspektur
+quickactions-inspector2 = Buka Perangkat Pengembang
 quickactions-cmd-inspector = inspektur, perangkat pengembang
 # Opens about:logins
-quickactions-logins = Tampilkan Info Masuk
+quickactions-logins2 = Kelola sandi
 quickactions-cmd-logins = info masuk, kata sandi
 # Opens about:addons page in the plugins section
 quickactions-plugins = Kelola plugin
 quickactions-cmd-plugins = plugin
 # Opens the print dialog
-quickactions-print = Cetak
+quickactions-print2 = Cetak halaman
 quickactions-cmd-print = cetak
 # Opens a new private browsing window
-quickactions-private = Buka Jendela Penjelajahan Pribadi
+quickactions-private2 = Buka jendela pribadi
 quickactions-cmd-private = penjelajahan pribadi
 # Opens a SUMO article explaining how to refresh
 quickactions-refresh = Segarkan { -brand-short-name }
@@ -311,10 +323,10 @@ quickactions-cmd-refresh = segarkan
 quickactions-restart = Mulai Ulang { -brand-short-name }
 quickactions-cmd-restart = mulai ulang
 # Opens the screenshot tool
-quickactions-screenshot2 = Ambil Tangkapan Layar
+quickactions-screenshot3 = Ambil tangkapan layar
 quickactions-cmd-screenshot = tangkapan layar
 # Opens about:preferences
-quickactions-settings = Buka Pengaturan
+quickactions-settings2 = Kelola pengaturan
 quickactions-cmd-settings = pengaturan, preferensi, pilihan
 # Opens about:addons page in the themes section
 quickactions-themes = Kelola tema
@@ -323,8 +335,11 @@ quickactions-cmd-themes = tema;themes;
 quickactions-update = Perbarui { -brand-short-name }
 quickactions-cmd-update = versi baru
 # Opens the view-source UI with current pages source
-quickactions-viewsource = Lihat Sumber
+quickactions-viewsource2 = Lihat Kode Sumber Laman
 quickactions-cmd-viewsource = lihat kode sumber, sumber
+# Tooltip text for the help button shown in the result.
+quickactions-learn-more =
+    .title = Pelajari lebih lanjut tentang Tindakan Cepat
 
 ## Bookmark Panel
 
@@ -391,6 +406,7 @@ identity-connection-not-secure-security-view = Anda tidak terhubung dengan aman 
 identity-connection-verified = Anda terhubung dengan aman ke situs ini.
 identity-ev-owner-label = Sertifikat diterbitkan untuk:
 identity-description-custom-root = Mozilla tidak mengenali penerbit sertifikat ini. Itu mungkin telah ditambahkan dari sistem operasi Anda atau oleh administrator. <label data-l10n-name="link">Pelajari Lebih Lanjut</label>
+identity-description-custom-root2 = Mozilla tidak mengenali penerbit sertifikat ini. Itu mungkin telah ditambahkan dari sistem operasi Anda atau oleh administrator.
 identity-remove-cert-exception =
     .label = Buang Pengecualian
     .accesskey = B
@@ -399,9 +415,12 @@ identity-description-insecure-login-forms = Info masuk yang Anda masukkan di lam
 identity-description-weak-cipher-intro = Sambungan Anda ke situs web ini menggunakan enkripsi lemah dan tidak pribadi.
 identity-description-weak-cipher-risk = Orang lain dapat melihat informasi Anda atau memodifikasi perilaku situs web ini.
 identity-description-active-blocked = { -brand-short-name } telah memblokir bagian dari laman ini yang tidak aman. <label data-l10n-name="link">Pelajari Lebih Lanjut</label>
+identity-description-active-blocked2 = { -brand-short-name } telah memblokir bagian dari laman ini yang tidak aman.
 identity-description-passive-loaded = Sambungan Anda tidak pribadi dan informasi yang Anda bagikan dengan situs ini dapat dilihat oleh pihak lain.
 identity-description-passive-loaded-insecure = Situs web ini mengandung konten yang tidak aman (misalnya, gambar). <label data-l10n-name="link">Pelajari Lebih Lanjut</label>
 identity-description-passive-loaded-mixed = Meskipun { -brand-short-name } telah memblokir sejumlah konten, tetapi masih ada konten di laman ini yang tidak aman (misalnya gambar). <label data-l10n-name="link">Pelajari Lebih Lanjut</label>
+identity-description-passive-loaded-insecure2 = Situs web ini mengandung konten yang tidak aman (misalnya, gambar).
+identity-description-passive-loaded-mixed2 = Meskipun { -brand-short-name } telah memblokir sejumlah konten, tetapi masih ada konten di laman ini yang tidak aman (misalnya gambar).
 identity-description-active-loaded = Situs web ini mengandung konten yang tidak aman (misalnya skrip) dan sambungan Anda tidak pribadi.
 identity-description-active-loaded-insecure = Informasi yang Anda bagikan dengan situs ini dapat dilihat oleh pihak lain (misalnya sandi, pesan, kartu kredit, dll.)
 identity-learn-more =
@@ -478,6 +497,9 @@ popup-select-microphone-icon =
     .tooltiptext = Mikrofon
 popup-select-speaker-icon =
     .tooltiptext = Pengeras suara
+popup-select-window-or-screen =
+    .label = Jendela atau layar:
+    .accesskey = J
 popup-all-windows-shared = Semua jendela yang terlihat pada layar Anda akan dibagikan.
 popup-screen-sharing-block =
     .label = Blokir
@@ -499,6 +521,7 @@ sharing-warning-disable-for-session =
 ## DevTools F12 popup
 
 enable-devtools-popup-description = Untuk menggunakan pintasan F12, pertama buka DevTools melalui menu Pengembang Web.
+enable-devtools-popup-description2 = Untuk menggunakan pintasan F12, pertama-tama, buka DevTools melalui menu Alat Peramban.
 
 ## URL Bar
 
@@ -631,6 +654,20 @@ urlbar-group-search-suggestions =
 urlbar-group-quickactions =
     .label = Tindakan Cepat
 
+## Reader View toolbar buttons
+
+# This should match menu-view-enter-readerview in menubar.ftl
+reader-view-enter-button =
+    .aria-label = Masuk ke Tampilan Baca
+# This should match menu-view-close-readerview in menubar.ftl
+reader-view-close-button =
+    .aria-label = Tutup Tampilan Pembaca
+
+## Picture-in-Picture urlbar button
+## Variables:
+##   $shortcut (String) - Keyboard shortcut to execute the command.
+
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -675,6 +712,11 @@ bookmarks-other-bookmarks-menu =
     .label = Markah Lain
 bookmarks-mobile-bookmarks-menu =
     .label = Markah Seluler
+
+## Variables:
+##   $isVisible (boolean): if the specific element (e.g. bookmarks sidebar,
+##                         bookmarks toolbar, etc.) is visible or not.
+
 bookmarks-tools-sidebar-visibility =
     .label =
         { $isVisible ->
@@ -699,6 +741,9 @@ bookmarks-tools-menu-button-visibility =
             [true] Hapus Menu Markah dari Bilah Alat
            *[other] Tambahkan Menu Markah ke Bilah Alat
         }
+
+##
+
 bookmarks-search =
     .label = Cari Markah
 bookmarks-tools =
@@ -907,3 +952,33 @@ private-browsing-indicator-label = Penjelajahan pribadi
 unified-extensions-button =
     .label = Ekstensi
     .tooltiptext = Ekstensi
+
+## Unified extensions button when permission(s) are needed.
+## Note that the new line is intentionally part of the tooltip.
+
+unified-extensions-button-permissions-needed =
+    .label = Ekstensi
+    .tooltiptext =
+        Ekstensi
+        Izin dibutuhkan
+
+## Autorefresh blocker
+
+refresh-blocked-refresh-label = { -brand-short-name } telah mencegah laman ini untuk otomatis dimuat ulang.
+refresh-blocked-redirect-label = { -brand-short-name } telah mencegah laman ini untuk otomatis mengalihkan ke laman lain.
+refresh-blocked-allow =
+    .label = Izinkan
+    .accesskey = I
+
+## Firefox Relay integration
+
+firefox-relay-offer-why-relay = { -relay-brand-name } menyembunyikan alamat surel Anda yang sebenarnya untuk membantu melindungi Anda dari kebocoran data dan spam.
+firefox-relay-offer-how-we-integrate = Dengan melanjutkan, Anda dapat membuat topeng surel { -relay-brand-short-name } baru secara langsung dari pengelola sandi { -brand-shorter-name } Anda.
+# Variables:
+#  $sitename (String): name of the site where user enters their Relay mask
+#  $useremail (String): user email that will receive messages
+firefox-relay-offer-what-relay-does = Kami akan meneruskan semua email dari <strong>{ $sitename }</strong> ke <strong>{ $useremail }</strong>.
+
+## Popup Notification
+
+popup-notification-xpinstall-prompt-learn-more = Pelajari lebih lanjut tentang memasang pengaya dengan aman

@@ -67,6 +67,7 @@ cfr-doorhanger-extension-total-users =
 
 ## These messages are steps on how to use the feature and are shown together.
 
+## Cookie Banner Handling Onboarding
 
 ## Firefox Accounts Message
 
@@ -147,7 +148,7 @@ cfr-doorhanger-doh-secondary-button = Disattiva
 
 cfr-doorhanger-fission-body-approved = La tua privacy è importante. Ora { -brand-short-name } isola i siti web l’uno dall’altro, rendendo più difficile il furto di password, numeri di carte di credito e altre informazioni sensibili da parte di hacker.
 cfr-doorhanger-fission-header = Isolamento dei siti
-cfr-doorhanger-fission-primary-button = OK, ricevuto
+cfr-doorhanger-fission-primary-button = OK
   .accesskey = O
 cfr-doorhanger-fission-secondary-button = Ulteriori informazioni
   .accesskey = U
@@ -193,9 +194,6 @@ spotlight-total-cookie-protection-expanded = { -brand-short-name } crea un recin
 spotlight-total-cookie-protection-primary-button = Attiva Protezione totale per i cookie
 spotlight-total-cookie-protection-secondary-button = Non adesso
 
-cfr-total-cookie-protection-header = Grazie al tuo aiuto, { -brand-short-name } è più riservato e sicuro che mai
-cfr-total-cookie-protection-body = La Protezione totale per i cookie è lo strumento più potente per la protezione della privacy che abbiamo mai realizzato. E adesso è disponibile come impostazione predefinita per tutti gli utenti di { -brand-short-name } nel mondo. Questo risultato sarebbe stato impossibile senza il contributo di persone che, come te, hanno deciso di provare questa funzione in anteprima. Grazie per il tuo contributo e per aiutarci a creare un Internet migliore e più sicuro.
-
 ## Emotive Continuous Onboarding
 
 spotlight-better-internet-header = La strada verso un Internet migliore parte da te
@@ -207,3 +205,92 @@ spotlight-pin-primary-button = { PLATFORM() ->
    *[other] Aggiungi alla barra delle applicazioni
 }
 spotlight-pin-secondary-button = Non adesso
+
+## MR2022 Background Update Windows native toast notification strings.
+##
+## These strings will be displayed by the Windows operating system in
+## a native toast, like:
+##
+## <b>multi-line title</b>
+## multi-line text
+## <img>
+## [ primary button ] [ secondary button ]
+##
+## The button labels are fitted into narrow fixed-width buttons by
+## Windows and therefore must be as narrow as possible.
+
+mr2022-background-update-toast-title = Nuovo { -brand-short-name }. Più riservato. Meno elementi traccianti. Nessun compromesso.
+mr2022-background-update-toast-text = Prova ora il nuovo { -brand-short-name }, aggiornato con la protezione antitracciamento più potente che abbiamo mai realizzato.
+
+# This button label will be fitted into a narrow fixed-width button by
+# Windows. Try to not exceed the width of the English text (compare it
+# using a variable font like Arial): the button can only fit 1-2
+# additional characters, exceeding characters will be truncated.
+mr2022-background-update-toast-primary-button-label = Apri { -brand-shorter-name } ora
+
+# This button label will be fitted into a narrow fixed-width button by
+# Windows. Try to not exceed the width of the English text (compare it using a
+# variable font like Arial): the button can only fit 1-2 additional characters,
+# exceeding characters will be truncated.
+mr2022-background-update-toast-secondary-button-label = Ricorda più tardi
+
+## Firefox View CFR
+
+firefoxview-cfr-primarybutton = Provalo
+  .accesskey = P
+firefoxview-cfr-secondarybutton = Non adesso
+  .accesskey = N
+firefoxview-cfr-header-v2 = Riprendi da dove eri rimasto
+firefoxview-cfr-body-v2 = Recupera le schede chiuse di recente e passa velocemente da un dispositivo all’altro con { -firefoxview-brand-name }.
+
+## Firefox View Spotlight
+
+firefoxview-spotlight-promo-title = Ti presentiamo { -firefoxview-brand-name }
+
+# “Poof” refers to the expression to convey when something or someone suddenly disappears, or in this case, reappears. For example, “Poof, it’s gone.”
+firefoxview-spotlight-promo-subtitle = Ti serve proprio quella scheda aperta sul tuo telefono? Recuperala al volo. Hai bisogno di un sito che hai appena visitato? Lo trovi in { -firefoxview-brand-name }.
+firefoxview-spotlight-promo-primarybutton = Scopri come funziona
+firefoxview-spotlight-promo-secondarybutton = Salta
+
+## Colorways expiry reminder CFR
+
+colorways-cfr-primarybutton = Scegli una tonalità
+  .accesskey = S
+
+# "shades" refers to the different color options available to users in colorways.
+colorways-cfr-body = Personalizza il tuo browser con le iconiche combinazioni di colori di { -brand-short-name } ispirate alle voci che cambiano la società.
+colorways-cfr-header-28days = Le tonalità Voci indipendenti scadranno il 16 gennaio
+colorways-cfr-header-14days = Le tonalità Voci indipendenti scadranno in due settimane
+colorways-cfr-header-7days =  Le tonalità Voci indipendenti scadranno questa settimana
+colorways-cfr-header-today = Le tonalità Voci indipendenti scadono oggi
+
+## Cookie Banner Handling CFR
+
+## Cookie Banner Handling CFR
+
+cfr-cbh-header = Consentire a { -brand-short-name } di rifiutare automaticamente i banner per i cookie?
+cfr-cbh-body = { -brand-short-name } può rifiutare automaticamente i banner per i cookie in diversi siti.
+cfr-cbh-confirm-button = Rifiuta banner per i cookie
+  .accesskey = R
+cfr-cbh-dismiss-button = Non adesso
+  .accesskey = N
+
+## These strings are used in the Fox doodle Pin/set default spotlights
+
+july-jam-headline = Sempre dalla tua parte
+july-jam-body = Ogni mese { -brand-short-name } blocca in media oltre 3.000 elementi traccianti per ciascun utente, offrendoti un accesso sicuro e veloce alla parte migliore di Internet.
+july-jam-set-default-primary = Apri i miei link con { -brand-short-name }
+
+fox-doodle-pin-headline = Bentornato
+
+# “indie” is short for the term “independent”.
+# In this instance, free from outside influence or control.
+fox-doodle-pin-body = Un promemoria al volo: puoi tenere il tuo browser indipendente preferito sempre a portata di clic.
+fox-doodle-pin-primary = Apri i miei link con { -brand-short-name }
+fox-doodle-pin-secondary = Non adesso
+
+## These strings are used in the Set Firefox as Default PDF Handler for Existing Users experiment
+
+set-default-pdf-handler-headline = <strong>Ora puoi aprire i tuoi PDF in { -brand-short-name }.</strong> Modifica o firma i moduli direttamente nel tuo browser. Per iniziare, cerca “PDF” nelle impostazioni.
+set-default-pdf-handler-primary = OK
+

@@ -6,6 +6,10 @@ clear-site-data-window =
     .title = Rensa data
     .style = width: 35em
 
+clear-site-data-window2 =
+    .title = Rensa data
+    .style = min-width: 35em
+
 clear-site-data-description = Rensning av alla kakor och webbplatsdata lagrade av { -brand-short-name } kan logga ut dig från webbplatser och ta bort offline-webbinnehåll. Rensning av cache påverkar inte dina inloggningar.
 
 clear-site-data-close-key =

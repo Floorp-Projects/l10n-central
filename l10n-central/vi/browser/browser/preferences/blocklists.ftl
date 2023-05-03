@@ -6,6 +6,10 @@ blocklist-window =
     .title = Danh sách chặn
     .style = width: 55em
 
+blocklist-window2 =
+    .title = Danh sách chặn
+    .style = min-width: 55em
+
 blocklist-description = Chọn danh sách { -brand-short-name } sử dụng để chặn trình theo dõi trực tuyến. Danh sách được cung cấp bởi <a data-l10n-name="disconnect-link" title="Disconnect">Disconnect</a>.
 blocklist-close-key =
     .key = w

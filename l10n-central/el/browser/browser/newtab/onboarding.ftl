@@ -25,6 +25,12 @@ return-to-amo-addon-title = Τώρα, προτείνουμε το <img data-l10n
 return-to-amo-add-extension-label = Προσθήκη επέκτασης
 return-to-amo-add-theme-label = Προσθήκη θέματος
 
+##  Variables: $addon-name (String) - Name of the add-on to be installed
+
+mr1-return-to-amo-subtitle = Πείτε «γεια» στο { -brand-short-name }
+mr1-return-to-amo-addon-title = Έχετε ένα γρήγορο, ιδιωτικό πρόγραμμα περιήγησης στα χέρια σας. Μπορείτε να προσθέσετε το <b>{ $addon-name }</b> και να κάνετε ακόμα περισσότερα με το { -brand-short-name }.
+mr1-return-to-amo-add-extension-label = Προσθήκη του { $addon-name }
+
 ## Multistage onboarding strings (about:welcome pages)
 
 # Aria-label to make the "steps" of multistage onboarding visible to screen readers.
@@ -39,8 +45,8 @@ onboarding-welcome-steps-indicator =
 #   $current (Int) - Number of the current page
 #   $total (Int) - Total number of pages
 
-onboarding-welcome-steps-indicator2 =
-    .aria-valuetext = Πρόοδος: βήμα { $current } από { $total }
+onboarding-welcome-steps-indicator-label =
+    .aria-label = Πρόοδος: βήμα { $current } από { $total }
 # "Hero Text" displayed on left side of welcome screen.
 # The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
 # It also signals the passion users bring to Firefox, how they use
@@ -261,6 +267,15 @@ fx100-upgrade-thank-you-body = Είναι η 100η μας έκδοση του { 
 fx100-upgrade-thanks-keep-body = Είναι η 100η μας έκδοση! Σας ευχαριστούμε που είστε μέλος της κοινότητάς μας. Κρατήστε το { -brand-short-name } ένα κλικ μακριά για τις επόμενες 100.
 mr2022-onboarding-secondary-skip-button-label = Παράβλεψη βήματος
 
+## MR2022 New User Easy Setup screen strings
+
+# Primary button string used on new user onboarding first screen showing multiple actions such as Set Default, Import from previous browser.
+mr2022-onboarding-easy-setup-primary-button-label = Αποθήκευση και συνέχεια
+# Set Default action checkbox label used on new user onboarding first screen
+mr2022-onboarding-easy-setup-set-default-checkbox-label = Ορισμός του { -brand-short-name } ως προεπιλογής
+# Import action checkbox label used on new user onboarding first screen
+mr2022-onboarding-easy-setup-import-checkbox-label = Εισαγωγή από προηγούμενο πρόγραμμα περιήγησης
+
 ## MR2022 New User Pin Firefox screen strings
 
 # Title used on about:welcome for new users when Firefox is not pinned.
@@ -324,35 +339,35 @@ mr2022-onboarding-import-primary-button-label-no-attribution = Εισαγωγή 
 
 mr2022-onboarding-colorway-title = Επιλέξτε το χρώμα που σας εμπνέει
 mr2022-onboarding-colorway-subtitle = Οι ανεξάρτητες φωνές μπορούν να αλλάξουν τον πολιτισμό.
-mr2022-onboarding-colorway-primary-button-label = Ορισμός χρωματικού συνδυασμού
+mr2022-onboarding-colorway-primary-button-label-continue = Ορισμός και συνέχεια
 mr2022-onboarding-existing-colorway-checkbox-label = Κάντε την { -firefox-home-brand-name } σας μια πολύχρωμη αρχική σελίδα
 mr2022-onboarding-colorway-label-default = Προεπιλογή
-mr2022-onboarding-colorway-tooltip-default =
-    .title = Προεπιλογή
+mr2022-onboarding-colorway-tooltip-default2 =
+    .title = Τρέχοντα χρώματα { -brand-short-name }
 mr2022-onboarding-colorway-description-default = <b>Χρήση τρεχόντων χρωμάτων στο { -brand-short-name }.</b>
 mr2022-onboarding-colorway-label-playmaker = Δημιουργός
-mr2022-onboarding-colorway-tooltip-playmaker =
-    .title = Δημιουργός
+mr2022-onboarding-colorway-tooltip-playmaker2 =
+    .title = Δημιουργός (κόκκινο)
 mr2022-onboarding-colorway-description-playmaker = <b>Δημιουργός:</b> Δημιουργείτε ευκαιρίες για να κερδίσετε και βοηθάτε όλα τα άτομα γύρω σας να καταβάλουν τα μέγιστα.
 mr2022-onboarding-colorway-label-expressionist = Εξπρεσιονιστής
-mr2022-onboarding-colorway-tooltip-expressionist =
-    .title = Εξπρεσιονιστής
+mr2022-onboarding-colorway-tooltip-expressionist2 =
+    .title = Εξπρεσιονιστής (κίτρινο)
 mr2022-onboarding-colorway-description-expressionist = <b>Εξπρεσιονιστής:</b> Βλέπετε τον κόσμο διαφορετικά και οι δημιουργίες σας διεγείρουν τα συναισθήματα των άλλων.
 mr2022-onboarding-colorway-label-visionary = Οραματιστής
-mr2022-onboarding-colorway-tooltip-visionary =
-    .title = Οραματιστής
+mr2022-onboarding-colorway-tooltip-visionary2 =
+    .title = Οραματιστής (πράσινο)
 mr2022-onboarding-colorway-description-visionary = <b>Οραματιστής:</b> Αμφισβητείτε το status quo και κάνετε τους άλλους να φαντάζονται ένα καλύτερο μέλλον.
 mr2022-onboarding-colorway-label-activist = Ακτιβιστής
-mr2022-onboarding-colorway-tooltip-activist =
-    .title = Ακτιβιστής
+mr2022-onboarding-colorway-tooltip-activist2 =
+    .title = Ακτιβιστής (μπλε)
 mr2022-onboarding-colorway-description-activist = <b>Ακτιβιστής:</b> Παραδίδετε έναν καλύτερο κόσμο στους επόμενους και κάνετε τους άλλους να πιστεύουν.
 mr2022-onboarding-colorway-label-dreamer = Ονειροπόλος
-mr2022-onboarding-colorway-tooltip-dreamer =
-    .title = Ονειροπόλος
+mr2022-onboarding-colorway-tooltip-dreamer2 =
+    .title = Ονειροπόλος (μωβ)
 mr2022-onboarding-colorway-description-dreamer = <b>Ονειροπόλος:</b> Πιστεύετε ότι η τύχη ευνοεί τους τολμηρούς και εμπνέετε τους άλλους να είναι γενναίοι.
 mr2022-onboarding-colorway-label-innovator = Νεωτεριστής
-mr2022-onboarding-colorway-tooltip-innovator =
-    .title = Νεωτεριστής
+mr2022-onboarding-colorway-tooltip-innovator2 =
+    .title = Νεωτεριστής (πορτοκαλί)
 mr2022-onboarding-colorway-description-innovator = <b>Νεωτεριστής:</b> Βλέπετε ευκαιρίες παντού και επηρεάζετε τις ζωές όλων των ατόμων γύρω σας.
 
 ## MR2022 Multistage Mobile Download screen strings
@@ -383,7 +398,33 @@ mr2022-onboarding-privacy-segmentation-button-secondary-label = Εμφάνιση
 
 ## MR2022 Multistage Gratitude screen strings
 
-mr2022-onboarding-gratitude-title = Μας βοηθάτε να δημιουργήσουμε ένα καλύτερο διαδίκτυο.
+mr2022-onboarding-gratitude-title = Μας βοηθάτε να δημιουργήσουμε ένα καλύτερο διαδίκτυο
 mr2022-onboarding-gratitude-subtitle = Σας ευχαριστούμε που χρησιμοποιείτε το { -brand-short-name }, που υποστηρίζεται από το Mozilla Foundation. Με την υποστήριξή σας, εργαζόμαστε για να κάνουμε το διαδίκτυο πιο ανοικτό, προσβάσιμο και ωφέλιμο για όλους.
 mr2022-onboarding-gratitude-primary-button-label = Δείτε τι νέο υπάρχει
 mr2022-onboarding-gratitude-secondary-button-label = Έναρξη περιήγησης
+
+## Onboarding spotlight for infrequent users
+
+onboarding-infrequent-import-title = Νιώστε σαν στο σπίτι σας
+onboarding-infrequent-import-subtitle = Δεν έχει σημασία αν σκοπεύετε να μείνετε εδώ ή αν απλώς κάνετε μια στάση· μπορείτε να εισαγάγετε σελιδοδείκτες, κωδικούς πρόσβασης και πολλά άλλα.
+onboarding-infrequent-import-primary-button = Εισαγωγή στο { -brand-short-name }
+
+## MR2022 Illustration alt tags
+## Descriptive tags for illustrations used by screen readers and other assistive tech
+
+mr2022-onboarding-pin-image-alt =
+    .aria-label = Άτομο που εργάζεται σε φορητό υπολογιστή και περιβάλλεται από αστέρια και λουλούδια
+mr2022-onboarding-default-image-alt =
+    .aria-label = Άτομο που αγκαλιάζει το λογότυπο του { -brand-product-name }
+mr2022-onboarding-import-image-alt =
+    .aria-label = Άτομο που κάνει σκέιτμπορντ με ένα κουτί εικονιδίων λογισμικού
+mr2022-onboarding-mobile-download-image-alt =
+    .aria-label = Βάτραχοι που χοροπηδούν σε νούφαρα με έναν κωδικό QR για λήψη του { -brand-product-name } για κινητές συσκευές στο κέντρο
+mr2022-onboarding-pin-private-image-alt =
+    .aria-label = Ένα μαγικό ραβδί που εμφανίζει μέσα από ένα καπέλο το λογότυπο της ιδιωτικής περιήγησης του { -brand-product-name }
+mr2022-onboarding-privacy-segmentation-image-alt =
+    .aria-label = Ανοιχτόχρωμα και σκουρόχρωμα χέρια που κάνουν χειρονομία «κόλλα πέντε»
+mr2022-onboarding-gratitude-image-alt =
+    .aria-label = Άποψη ενός ηλιοβασιλέματος μέσα από ένα παράθυρο με μια αλεπού και ένα φυτό σε περβάζι
+mr2022-onboarding-colorways-image-alt =
+    .aria-label = Ένα χέρι ζωγραφίζει με σπρέι ένα πολύχρωμο κολάζ με ένα πράσινο μάτι, ένα πορτοκαλί παπούτσι, μια κόκκινη μπάλα μπάσκετ, μωβ ακουστικά, μια μπλε καρδιά και ένα κίτρινο στέμμα

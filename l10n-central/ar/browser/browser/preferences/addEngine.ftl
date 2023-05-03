@@ -6,6 +6,10 @@ add-engine-window =
     .title = أضِف محرك بحث
     .style = width: 32em;
 
+add-engine-window2 =
+    .title = أضِف محرك بحث
+    .style = min-width: 32em;
+
 add-engine-button = أضِف محركًا مخصصًا
 
 add-engine-name = اسم محرك البحث

@@ -6,6 +6,10 @@ profiledowngrade-window =
     .title = فتحت نسخة أقدم من { -brand-product-name }
     .style = width: 490px;
 
+profiledowngrade-window2 =
+    .title = فتحت نسخة أقدم من { -brand-product-name }
+    .style = min-width: 490px;
+
 profiledowngrade-window-create =
     .label = أنشِئ ملفًا شخصيًا
 

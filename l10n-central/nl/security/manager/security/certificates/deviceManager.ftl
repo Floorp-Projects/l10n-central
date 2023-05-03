@@ -9,6 +9,10 @@ devmgr =
     .title = Apparaatbeheerder
     .style = width: 67em; height: 32em;
 
+devmgr-window =
+    .title = Apparaatbeheerder
+    .style = min-width: 67em; min-height: 32em;
+
 devmgr-devlist =
     .label = Beveiligingsmodules en -apparaten
 

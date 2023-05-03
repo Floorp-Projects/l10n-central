@@ -128,6 +128,7 @@ profiler-popup-button-capturing =
     .tooltiptext = Profiler sedang melakukan perekaman profil
 profiler-popup-title =
     .value = { -profiler-brand-name }
+profiler-popup-header-text = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
     .aria-label = Tampilkan informasi lebih lanjut
 profiler-popup-description-title =

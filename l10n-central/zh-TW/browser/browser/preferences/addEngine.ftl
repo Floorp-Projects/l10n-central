@@ -6,6 +6,10 @@ add-engine-window =
     .title = 新增搜尋引擎
     .style = width: 32em;
 
+add-engine-window2 =
+    .title = 新增搜尋引擎
+    .style = min-width: 32em;
+
 add-engine-button = 新增自訂搜尋引擎
 
 add-engine-name = 搜尋引擎名稱

@@ -6,6 +6,10 @@ profiledowngrade-window =
     .title = Bạn vừa chạy phiên bản cũ của { -brand-product-name }
     .style = width: 490px;
 
+profiledowngrade-window2 =
+    .title = Bạn vừa chạy phiên bản cũ của { -brand-product-name }
+    .style = min-width: 490px;
+
 profiledowngrade-window-create =
     .label = Tạo hồ sơ mới
 

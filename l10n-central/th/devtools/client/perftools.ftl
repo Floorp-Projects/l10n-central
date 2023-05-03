@@ -72,7 +72,7 @@ perftools-button-edit-settings = แก้ไขการตั้งค่า�
 ## These messages are descriptions of the threads that can be enabled for the profiler.
 
 perftools-thread-gecko-main =
-    .title = กระบวนการหลักสำหรับทั้งกระบวนการแม่และกระบวนการเนื้อหา
+    .title = โปรเซสหลักสำหรับทั้งโปรเซสแม่และโปรเซสเนื้อหา
 perftools-thread-compositor =
     .title = รวมองค์ประกอบที่ถูกระบายสีต่าง ๆ บนหน้านี้เข้าด้วยกัน
 perftools-thread-dom-worker =
@@ -83,6 +83,8 @@ perftools-thread-render-backend =
     .title = เธรด RenderBackend ของ WebRender
 perftools-thread-paint-worker =
     .title = เมื่อเปิดใช้งานการวาดนอกเธรดหลักแล้ว เธรดที่ทำการวาด
+perftools-thread-timer =
+    .title = ตัวจับเวลาการจัดการเธรด (setTimeout, setInterval, nsITimer)
 perftools-thread-style-thread =
     .title = การคำนวณรูปแบบจะแบ่งออกเป็นหลายเธรด
 pref-thread-stream-trans =
@@ -95,6 +97,18 @@ perftools-thread-dns-resolver =
     .title = การแก้ปัญหา DNS เกิดขึ้นในเธรดนี้
 perftools-thread-task-controller =
     .title = เธรดในเธรดพูล TaskController
+perftools-thread-jvm-gecko =
+    .title = เธรดหลักของ Gecko JVM
+perftools-thread-jvm-nimbus =
+    .title = เธรดหลักสำหรับ Nimbus experiments SDK
+perftools-thread-jvm-default-dispatcher =
+    .title = ตัวจ่ายงานเริ่มต้นสำหรับไลบรารี coroutines ของ Kotlin
+perftools-thread-jvm-glean =
+    .title = เธรดหลักสำหรับ Glean telemetry SDK
+perftools-thread-jvm-arch-disk-io =
+    .title = ตัวจ่ายงาน IO สำหรับไลบรารี coroutines ของ Kotlin
+perftools-thread-jvm-pool =
+    .title = เธรดที่สร้างขึ้นในพูลเธรดที่ไม่มีชื่อ
 
 ##
 
@@ -126,6 +140,9 @@ perftools-presets-media-label = สื่อ
 perftools-presets-media-description2 = ค่าที่ตั้งล่วงหน้าสำหรับการตรวจสอบบั๊กเกี่ยวกับเสียงและวิดีโอใน { -brand-shorter-name }
 perftools-presets-networking-label = ระบบเครือข่าย
 perftools-presets-networking-description = ค่าที่ตั้งล่วงหน้าสำหรับการตรวจสอบบั๊กเกี่ยวกับระบบเครือข่ายใน { -brand-shorter-name }
+# "Power" is used in the sense of energy (electricity used by the computer).
+perftools-presets-power-label = พลังงาน
+perftools-presets-power-description = ค่าที่ตั้งล่วงหน้าสำหรับการตรวจสอบบั๊กเกี่ยวกับการใช้พลังงานใน { -brand-shorter-name } โดยมีโอเวอร์เฮดต่ำ
 perftools-presets-custom-label = กำหนดเอง
 
 ##

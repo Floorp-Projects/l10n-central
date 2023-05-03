@@ -12,6 +12,7 @@ experimental-features-css-masonry-description = Aktiverer den eksperimentelle fu
 experimental-features-web-gpu2 =
     .label = Web API: WebGPU
 experimental-features-web-gpu-description2 = Denne nye API giver low-level understøttelse til at anvende <a data-l10n-name="wikipedia">grafikprocessoren (GPU)</a> i brugerens enhed eller computer til at lave beregninger eller rendere grafik. <a data-l10n-name="spec">Specifikationen</a> er stadig ved at blive udarbejdet . Se flere detaljer på <a data-l10n-name="bugzilla">bug 1602129</a>.
+experimental-features-web-gpu-description3 = <a data-l10n-name="wikipedia-webgpu">WebGPU-API'et</a> giver mulighed for at anvende <a data-l10n-name="wikipedia-gpu">GPU'en (Graphics Processing Unit)</a> i brugerens enhed eller computer til beregning og rendering af grafik. Den første version af <a data-l10n-name="spec">specifikationen</a> er snart klar. Se <a data-l10n-name="bugzilla">bug 1616739</a>for at få flere oplysninger.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-media-jxl =
@@ -60,10 +61,6 @@ experimental-features-js-warp-description = Aktiver Warp, et projekt hvis formå
 experimental-features-ime-search =
     .label = Adressefelt: Vis resulter under IME-komponering
 experimental-features-ime-search-description = En IME (Input Method Editor) er et værktøj, der lader dig indtaste komplekse symboler med et almindeligt tastatur, fx symboler fra øst-asiatiske og indiske skriftsprog. Ved aktivering af dette eksperiment holdes adressefeltet åbent med søgeresultater og forslag, når du bruger IME til at indtaste tekst. Bemærk, at IME kan vise et panel, der dækker for resultaterne i adressefeltet. Derfor foreslås denne indstilling kun for IME, der ikke anvender denne type af panel.
-# Text recognition for images
-experimental-features-text-recognition =
-    .label = Tekstgenkendelse
-experimental-features-text-recognition-description = Aktiver funktioner til at genkende tekst i billeder.
 experimental-features-accessibility-cache =
     .label = Tilgængeligheds-cache
 experimental-features-accessibility-cache-description = Cachelagrer alle tilgængelighedsoplysninger fra alle dokumenter i { -brand-short-name }' hovedproces. Dette forbedrer ydelse for skærmlæsere og andre applikationer, der bruger tilgængeligheds-API'er.

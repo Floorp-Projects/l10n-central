@@ -12,6 +12,7 @@ experimental-features-css-masonry-description = 启用对 CSS 瀑布流布局的
 experimental-features-web-gpu2 =
     .label = Web API: WebGPU
 experimental-features-web-gpu-description2 = 这个新的 API 为利用用户设备或计算机的<a data-l10n-name="wikipedia">图形处理器（GPU）</a>执行计算和图形渲染提供了底层支持。该<a data-l10n-name="spec">规范</a>仍在完善中。欲详细了解，请参阅 <a data-l10n-name="bugzilla">Bug 1602129</a>。
+experimental-features-web-gpu-description3 = <a data-l10n-name="wikipedia-webgpu">WebGPU API</a> 为利用用户设备或计算机的<a data-l10n-name="wikipedia-gpu">图形处理器（GPU）</a>执行计算和图形渲染提供了底层支持。该<a data-l10n-name="spec">规范</a>仍在完善中。欲详细了解，请参阅 <a data-l10n-name="bugzilla">Bug 1616739</a>。
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-media-jxl =
@@ -60,10 +61,6 @@ experimental-features-js-warp-description = 启用 Warp，此项目旨在改善 
 experimental-features-ime-search =
     .label = 地址栏：实时显示输入过程中的结果
 experimental-features-ime-search-description = 对于东亚及印度语言使用者，要在标准键盘上输入各种文字，输入法是不可或缺的工具。启用此实验后，地址栏面板将在文本输入过程中保持打开状态，并实时显示搜索结果与建议。请注意：某些输入法的面板可能会覆盖地址栏显示的结果，建议在确认所用输入法无上述行为后，开启此首选项。
-# Text recognition for images
-experimental-features-text-recognition =
-    .label = 文字识别
-experimental-features-text-recognition-description = 启用识别图像内文字功能。
 experimental-features-accessibility-cache =
     .label = 无障碍服务缓存
 experimental-features-accessibility-cache-description = 缓存 { -brand-short-name } 主进程中全部文档的所有无障碍服务信息。此举可提升屏幕阅读器和其他使用无障碍服务 API 的应用程序的性能。

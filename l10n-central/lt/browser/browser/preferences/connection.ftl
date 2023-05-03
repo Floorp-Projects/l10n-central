@@ -10,6 +10,14 @@ connection-window =
            *[other] width: 49em
         }
 
+connection-window2 =
+    .title = Ryšio nuostatos
+    .style =
+        { PLATFORM() ->
+            [macos] min-width: 44em
+           *[other] min-width: 49em
+        }
+
 connection-close-key =
     .key = w
 
@@ -35,7 +43,6 @@ connection-proxy-http = HTTP įgaliotasis serveris
     .accesskey = g
 connection-proxy-http-port = Prievadas
     .accesskey = P
-
 connection-proxy-https-sharing =
     .label = Taip pat naudoti šį serverį jungiantis per HTTPS
     .accesskey = s

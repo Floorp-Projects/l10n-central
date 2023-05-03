@@ -30,6 +30,10 @@ certmgr-edit-ca-cert =
     .title = 编辑证书颁发机构信任关系设置
     .style = width: 48em;
 
+certmgr-edit-ca-cert2 =
+    .title = 编辑证书颁发机构信任关系设置
+    .style = min-width: 48em;
+
 certmgr-edit-cert-edit-trust = 编辑信任设置：
 
 certmgr-edit-cert-trust-ssl =
@@ -41,6 +45,10 @@ certmgr-edit-cert-trust-email =
 certmgr-delete-cert =
     .title = 删除证书
     .style = width: 48em; height: 24em;
+
+certmgr-delete-cert2 =
+    .title = 删除证书
+    .style = min-width: 48em; min-height: 24em;
 
 certmgr-cert-host =
     .label = 主机
@@ -185,8 +193,6 @@ delete-email-cert-impact = 如果您删除了某人的电子邮件证书，您�
 #   $serialNumber : the serial number of the cert in AA:BB:CC hex format.
 cert-with-serial =
     .value = 证书序列号：{ $serialNumber }
-
-## Cert Viewer
 
 # Used to indicate that the user chose not to send a client authentication certificate to a server that requested one in a TLS handshake.
 send-no-client-certificate = 不发送客户端证书

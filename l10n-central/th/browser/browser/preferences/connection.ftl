@@ -10,6 +10,14 @@ connection-window =
            *[other] width: 49em
         }
 
+connection-window2 =
+    .title = การตั้งค่าการเชื่อมต่อ
+    .style =
+        { PLATFORM() ->
+            [macos] min-width: 44em
+           *[other] min-width: 49em
+        }
+
 connection-close-key =
     .key = w
 
@@ -35,7 +43,6 @@ connection-proxy-http = พร็อกซี HTTP
     .accesskey = ก
 connection-proxy-http-port = พอร์ต
     .accesskey = พ
-
 connection-proxy-https-sharing =
     .label = ใช้พร็อกซีนี้สำหรับ HTTPS ด้วย
     .accesskey = s

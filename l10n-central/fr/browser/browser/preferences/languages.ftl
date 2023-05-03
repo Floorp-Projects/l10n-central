@@ -6,6 +6,10 @@ webpage-languages-window =
     .title = Paramètres de langue des pages web
     .style = width: 40em
 
+webpage-languages-window2 =
+    .title = Paramètres de langue des pages web
+    .style = min-width: 40em
+
 languages-close-key =
     .key = w
 
@@ -52,6 +56,10 @@ languages-active-code-format =
 browser-languages-window =
     .title = Paramètres de langue de { -brand-short-name }
     .style = width: 40em
+
+browser-languages-window2 =
+    .title = Paramètres de langue de { -brand-short-name }
+    .style = min-width: 40em
 
 browser-languages-description = { -brand-short-name } affichera la première langue par défaut et utilisera les langues alternatives si nécessaires dans leur ordre d’apparition.
 

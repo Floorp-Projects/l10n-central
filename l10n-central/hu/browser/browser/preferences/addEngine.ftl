@@ -6,6 +6,10 @@ add-engine-window =
     .title = Keresőszolgáltatás hozzáadása
     .style = width: 32em;
 
+add-engine-window2 =
+    .title = Keresőszolgáltatás hozzáadása
+    .style = min-width: 32em;
+
 add-engine-button = Egyéni keresőszolgáltatás hozzáadása
 
 add-engine-name = Keresőszolgáltatás neve

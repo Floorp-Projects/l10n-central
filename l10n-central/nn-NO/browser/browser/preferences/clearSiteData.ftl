@@ -6,6 +6,10 @@ clear-site-data-window =
     .title = Fjern data
     .style = width: 35em
 
+clear-site-data-window2 =
+    .title = Fjern data
+    .style = min-width: 35em
+
 clear-site-data-description = Om du fjernar alle infokapslar og nettstad-data som er lagra av { -brand-short-name } vil kunne logge deg ut av nettstadar og fjerne fråkopla nettinnhald. Fjerning av snøgglager- (cache-) data vil ikkje påverke innloggingane dine.
 
 clear-site-data-close-key =

@@ -19,33 +19,46 @@ pictureinpicture-close =
 ## Variables:
 ##   $shortcut (String) - Keyboard shortcut to execute the command.
 
-pictureinpicture-pause-cmd =
+pictureinpicture-pause-btn =
     .aria-label = Pausa
-    .title = Pausa (Barra de Espaço)
-pictureinpicture-play-cmd =
+    .tooltip = Pausa (Barra de Espaço)
+pictureinpicture-play-btn =
     .aria-label = Reproduzir
-    .title = Reproduzir (Barra de Espaço)
-pictureinpicture-mute-cmd =
+    .tooltip = Reproduzir (Barra de Espaço)
+pictureinpicture-mute-btn =
     .aria-label = Silenciar
-    .title = Silenciar ({ $shortcut })
-pictureinpicture-unmute-cmd =
+    .tooltip = Silenciar ({ $shortcut })
+pictureinpicture-unmute-btn =
     .aria-label = Repor som
-    .title = Repor som ({ $shortcut })
-pictureinpicture-unpip-cmd =
+    .tooltip = Repor som ({ $shortcut })
+pictureinpicture-unpip-btn =
     .aria-label = Enviar para o separador
-    .title = Para o separador
-pictureinpicture-close-cmd =
+    .tooltip = Para o separador
+pictureinpicture-close-btn =
     .aria-label = Fechar
-    .title = Fechar ({ $shortcut })
-pictureinpicture-subtitles-cmd =
+    .tooltip = Fechar ({ $shortcut })
+pictureinpicture-subtitles-btn =
     .aria-label = Legendas
-    .title = Legendas
+    .tooltip = Legendas
 
 ##
 
-pictureinpicture-fullscreen-cmd =
+pictureinpicture-fullscreen-btn =
     .aria-label = Ecrã completo
-    .title = Ecrã completo (duplo clique)
+    .tooltip = Ecrã completo (duplo clique)
+pictureinpicture-exit-fullscreen-btn =
+    .aria-label = Sair do ecrã completo
+    .tooltip = Sair do ecrã completo (duplo clique)
+pictureinpicture-seekbackward-btn =
+    .aria-label = Retroceder
+    .tooltip = Retroceder (←)
+pictureinpicture-seekforward-btn =
+    .aria-label = Avançar
+    .tooltip = Avançar (→)
+# This string is never displayed on the window. Is intended to be announced by
+# a screen reader whenever a user opens the subtitles settings panel
+# after selecting the subtitles button.
+pictureinpicture-subtitles-panel-accessible = Definições das legendas
 pictureinpicture-subtitles-label = Legendas
 pictureinpicture-font-size-label = Tamanho do tipo de letra
 pictureinpicture-font-size-small = Pequeno

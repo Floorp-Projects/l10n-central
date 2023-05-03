@@ -6,12 +6,22 @@ create-profile-window =
     .title = 프로필 만들기
     .style = width: 45em; height: 32em;
 
+create-profile-window2 =
+    .title = 프로필 만들기
+    .style = min-width: 45em; min-height: 32em;
+
 ## First wizard page
 
 create-profile-first-page-header =
     { PLATFORM() ->
         [macos] 소개
        *[other] { create-profile-window.title } 사용을 환영합니다.
+    }
+
+create-profile-first-page-header2 =
+    { PLATFORM() ->
+        [macos] 소개
+       *[other] { create-profile-window2.title } 사용을 환영합니다.
     }
 
 profile-creation-explanation-1 = { -brand-short-name }는 사용자 설정 및 기타 사용자 항목에 대한 정보를 사용자 프로필에 저장합니다.
@@ -32,6 +42,12 @@ create-profile-last-page-header =
     { PLATFORM() ->
         [macos] 결론
        *[other] { create-profile-window.title } 완료
+    }
+
+create-profile-last-page-header2 =
+    { PLATFORM() ->
+        [macos] 결론
+       *[other] { create-profile-window2.title } 완료
     }
 
 profile-creation-intro = 여러 개의 프로필을 만들면 프로필 이름으로 이들을 구별 할 수 있습니다. 여기에 제공된 이름을 사용하시거나 자신이 원하는 이름을 사용할 수 있습니다.

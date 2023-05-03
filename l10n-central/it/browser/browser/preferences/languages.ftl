@@ -6,6 +6,10 @@ webpage-languages-window =
     .title = Impostazioni lingue per pagine web
     .style = width: 40em
 
+webpage-languages-window2 =
+    .title = Impostazioni lingue per pagine web
+    .style = min-width: 40em
+
 languages-close-key =
     .key = w
 
@@ -52,6 +56,10 @@ languages-active-code-format =
 browser-languages-window =
     .title = Impostazioni lingue per { -brand-short-name }
     .style = width: 40em
+
+browser-languages-window2 =
+    .title = Impostazioni lingue per { -brand-short-name }
+    .style = min-width: 40em
 
 browser-languages-description = { -brand-short-name } utilizzerà la prima lingua come predefinita, mentre le altre lingue verranno utilizzate, se necessario, nell’ordine in cui sono visualizzate.
 

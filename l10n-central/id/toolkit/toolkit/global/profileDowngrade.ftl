@@ -6,6 +6,10 @@ profiledowngrade-window =
     .title = Anda telah meluncurkan versi { -brand-product-name } yang lebih lama
     .style = width: 490px
 
+profiledowngrade-window2 =
+    .title = Anda telah meluncurkan versi { -brand-product-name } yang lebih lama
+    .style = min-width: 490px
+
 profiledowngrade-window-create =
     .label = Buat Profil Baru
 

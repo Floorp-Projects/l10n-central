@@ -6,27 +6,21 @@
 ## These strings are used in the about:preferences moreFromMozilla page
 
 more-from-moz-title =
-    { -vendor-short-name.gender ->
-        [masculine] Více od { -vendor-short-name(case: "gen") }
-        [feminine] Více od { -vendor-short-name(case: "gen") }
-        [neuter] Více od { -vendor-short-name(case: "gen") }
-       *[other] Více od společnosti { -vendor-short-name }
+    { -vendor-short-name.case-status ->
+        [with-cases] Více od { -vendor-short-name(case: "gen") }
+       *[no-cases] Více od společnosti { -vendor-short-name }
     }
 more-from-moz-category =
     .tooltiptext =
-        { -vendor-short-name.gender ->
-            [masculine] Více od { -vendor-short-name(case: "gen") }
-            [feminine] Více od { -vendor-short-name(case: "gen") }
-            [neuter] Více od { -vendor-short-name(case: "gen") }
-           *[other] Více od společnosti { -vendor-short-name }
+        { -vendor-short-name.case-status ->
+            [with-cases] Více od { -vendor-short-name(case: "gen") }
+           *[no-cases] Více od společnosti { -vendor-short-name }
         }
 more-from-moz-subtitle =
-    Podívejte se na další produkty od { -vendor-short-name.gender ->
-        [masculine] { -vendor-short-name(case: "gen") }
-        [feminine] { -vendor-short-name(case: "gen") }
-        [neuter] { -vendor-short-name(case: "gen") }
-       *[other] společnosti { -vendor-short-name }
-    }, které podporují zdravý internet.
+    { -vendor-short-name.case-status ->
+        [with-cases] Podívejte se na další produkty od { -vendor-short-name(case: "gen") }, které podporují zdravý internet.
+       *[no-cases] Podívejte se na další produkty od společnosti { -vendor-short-name }, které podporují zdravý internet.
+    }
 more-from-moz-firefox-mobile-title = { -brand-product-name } pro mobily
 more-from-moz-firefox-mobile-description = Mobilní prohlížeč, který klade důraz na vaše soukromí.
 more-from-moz-firefox-mobile-description-advanced = Od blokování sledovacích prvků po automatické přehrávání videí, { -brand-product-name } pro mobily se pro vás snaží ze všech sil na internetu zajistit to nejlepší.
@@ -45,11 +39,15 @@ more-from-moz-qr-code-box-firefox-mobile-title = Pro stažení do svého mobiln�
 more-from-moz-qr-code-box-firefox-mobile-button = Nebo si nechte odkaz do mobilu poslat e-mailem
 more-from-moz-qr-code-firefox-mobile-img =
     .alt =
-        { -brand-product-name.gender ->
-            [masculine] QR kód pro stažení { -brand-product-name(case: "gen") } pro mobily
-            [feminine] QR kód pro stažení { -brand-product-name(case: "gen") } pro mobily
-            [neuter] QR kód pro stažení { -brand-product-name(case: "gen") } pro mobily
-           *[other] QR kód pro stažení aplikace { -brand-product-name } pro mobily
+        { -brand-product-name.case-status ->
+            [with-cases] QR kód pro stažení { -brand-product-name(case: "gen") } pro mobily
+           *[no-cases] QR kód pro stažení aplikace { -brand-product-name } pro mobily
         }
 more-from-moz-button-mozilla-vpn-2 = Získat VPN
 more-from-moz-learn-more-link = Zjistit více
+
+## These strings are for the Firefox Relay card in about:preferences moreFromMozilla page
+
+more-from-moz-firefox-relay-title = { -relay-brand-name }
+more-from-moz-firefox-relay-description = Chraňte svou e-mailovou schránku a svou identitu pomocí bezplatného maskování e-mailů.
+more-from-moz-firefox-relay-button = Získejte { -relay-brand-short-name(case: "acc") }

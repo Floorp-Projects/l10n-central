@@ -157,8 +157,8 @@ main-context-menu-open-link-new-tab =
     .label = Mở liên kết trong thẻ mới
     .accesskey = T
 main-context-menu-open-link-container-tab =
-    .label = Mở lên kết trong thẻ chứa mới
-    .accesskey = b
+    .label = Mở liên kết trong thẻ ngăn chứa mới
+    .accesskey = w
 main-context-menu-open-link-new-window =
     .label = Mở liên kết trong cửa sổ mới
     .accesskey = W
@@ -333,6 +333,9 @@ main-context-menu-use-saved-password =
 
 ##
 
+main-context-menu-use-relay-mask =
+    .label = Sử dụng mặt nạ email { -relay-brand-short-name }
+    .accesskey = E
 main-context-menu-suggest-strong-password =
     .label = Đề xuất mật khẩu mạnh…
     .accesskey = S

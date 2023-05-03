@@ -333,6 +333,9 @@ main-context-menu-use-saved-password =
 
 ##
 
+main-context-menu-use-relay-mask =
+    .label = { -relay-brand-short-name }-e-mailmasker gebruiken
+    .accesskey = m
 main-context-menu-suggest-strong-password =
     .label = Sterk wachtwoord voorstellen…
     .accesskey = S

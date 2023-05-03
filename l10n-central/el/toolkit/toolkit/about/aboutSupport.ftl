@@ -110,11 +110,21 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Αρχείο καταγραφής αποφάσεων
 graphics-crash-guards-title = Ανενεργές λειτουργίες φύλαξης καταρρεύσεων
 graphics-workarounds-title = Λύσεις
+graphics-device-pixel-ratios = Αναλογίες εικονοστοιχείων συσκευής παραθύρου
 # Windowing system in use on Linux (e.g. X11, Wayland).
 graphics-window-protocol = Πρωτόκολλο παραθύρου
 # Desktop environment in use on Linux (e.g. GNOME, KDE, XFCE, etc).
 graphics-desktop-environment = Περιβάλλον επιφάνειας εργασίας
 place-database-title = Βάση δεδομένων τοποθεσιών
+place-database-stats = Στατιστικά
+place-database-stats-show = Εμφάνιση στατιστικών
+place-database-stats-hide = Απόκρυψη στατιστικών
+place-database-stats-entity = Οντότητα
+place-database-stats-count = Αριθμός
+place-database-stats-size-kib = Μέγεθος (KiB)
+place-database-stats-size-perc = Μέγεθος (%)
+place-database-stats-efficiency-perc = Αποδοτικότητα (%)
+place-database-stats-sequentiality-perc = Διαδοχικότητα (%)
 place-database-integrity = Ακεραιότητα
 place-database-verify-integrity = Επαλήθευση ακεραιότητας
 a11y-title = Προσβασιμότητα
@@ -167,7 +177,7 @@ media-capabilities-enumerate = Απαρίθμηση βάσης δεδομένω�
 
 ##
 
-intl-title = Διεθνοποίηση & μετάφραση
+intl-title = Διεθνοποίηση και μετάφραση
 intl-app-title = Ρυθμίσεις εφαρμογής
 intl-locales-requested = Ζητούμενες γλώσσες
 intl-locales-available = Διαθέσιμες γλώσσες
@@ -278,6 +288,8 @@ webgl2-renderer = Πρόγραμμα οδήγησης απεικόνισης Web
 webgl2-version = Έκδοση προγράμματος οδήγησης WebGL 2
 webgl2-driver-extensions = Επεκτάσεις προγράμματος οδήγησης WebGL 2
 webgl2-extensions = Επεκτάσεις WebGL 2
+webgpu-default-adapter = Προεπιλεγμένος προσαρμογέας WebGPU
+webgpu-fallback-adapter = Εφεδρικός προσαρμογέας WebGPU
 # Variables
 #   $bugNumber (string) - Bug number on Bugzilla
 support-blocklisted-bug = Αποκλείστηκε λόγω γνωστών ζητημάτων: <a data-l10n-name="bug-link">σφάλμα { $bugNumber }</a>
@@ -307,6 +319,7 @@ can-sandbox-media = Sandboxing αρθρώματος πολυμέσων
 content-sandbox-level = Επίπεδο sandbox διεργασίας περιεχομένου
 effective-content-sandbox-level = Αποτελεσματικό επίπεδο επεξεργασίας περιεχομένου sandbox
 content-win32k-lockdown-state = Κατάσταση κλειδώματος Win32k για διεργασία περιεχομένου
+support-sandbox-gpu-level = Επίπεδο sandbox διεργασίας GPU
 sandbox-proc-type-content = περιεχόμενο
 sandbox-proc-type-file = περιεχόμενο αρχείου
 sandbox-proc-type-media-plugin = άρθρωμα πολυμέσων

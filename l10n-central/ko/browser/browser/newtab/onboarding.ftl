@@ -25,6 +25,12 @@ return-to-amo-addon-title = 이제 <img data-l10n-name="icon"/> <b>{ $addon-name
 return-to-amo-add-extension-label = 확장 기능 추가
 return-to-amo-add-theme-label = 테마 추가
 
+##  Variables: $addon-name (String) - Name of the add-on to be installed
+
+mr1-return-to-amo-subtitle = { -brand-short-name }를 만나보세요
+mr1-return-to-amo-addon-title = 빠르고 사생활을 보호하는 브라우저를 손쉽게 사용할 수 있습니다. 이제 <b>{ $addon-name }</b> 부가 기능을 추가하고 { -brand-short-name }로 더 많은 작업을 수행할 수 있습니다.
+mr1-return-to-amo-add-extension-label = { $addon-name } 추가
+
 ## Multistage onboarding strings (about:welcome pages)
 
 # Aria-label to make the "steps" of multistage onboarding visible to screen readers.
@@ -39,8 +45,8 @@ onboarding-welcome-steps-indicator =
 #   $current (Int) - Number of the current page
 #   $total (Int) - Total number of pages
 
-onboarding-welcome-steps-indicator2 =
-    .aria-valuetext = 진행률: { $current } / { $total } 단계
+onboarding-welcome-steps-indicator-label =
+    .aria-label = 진행률: { $current } / { $total } 단계
 # "Hero Text" displayed on left side of welcome screen.
 # The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
 # It also signals the passion users bring to Firefox, how they use
@@ -259,6 +265,15 @@ fx100-upgrade-thank-you-body = 100번째 { -brand-short-name } 출시입니다. 
 fx100-upgrade-thanks-keep-body = 100번째 출시입니다! 커뮤니티의 일원이 되어주셔서 감사합니다. 다음 100번을 위해 클릭 한 번으로 { -brand-short-name }를 유지하세요.
 mr2022-onboarding-secondary-skip-button-label = 이 단계 건너뛰기
 
+## MR2022 New User Easy Setup screen strings
+
+# Primary button string used on new user onboarding first screen showing multiple actions such as Set Default, Import from previous browser.
+mr2022-onboarding-easy-setup-primary-button-label = 저장하고 계속
+# Set Default action checkbox label used on new user onboarding first screen
+mr2022-onboarding-easy-setup-set-default-checkbox-label = { -brand-short-name }를 기본 브라우저로 설정
+# Import action checkbox label used on new user onboarding first screen
+mr2022-onboarding-easy-setup-import-checkbox-label = 이전 브라우저에서 가져오기
+
 ## MR2022 New User Pin Firefox screen strings
 
 # Title used on about:welcome for new users when Firefox is not pinned.
@@ -312,7 +327,7 @@ mr2022-onboarding-get-started-primary-button-label = 빠른 설정
 ## MR2022 Import Settings screen strings
 
 mr2022-onboarding-import-header = 매우 빠른 설정
-mr2022-onboarding-import-subtitle = { -brand-short-name }를 원하는 대로 설정하세요. 기존 브라우저에서 북마크, 비밀번호 등을 추가하세요.
+mr2022-onboarding-import-subtitle = { -brand-short-name }를 원하는 대로 설정하세요. 기존 브라우저의 북마크, 비밀번호 등을 추가하세요.
 mr2022-onboarding-import-primary-button-label-no-attribution = 이전 브라우저에서 가져오기
 
 ## If your language uses grammatical genders, in the description for the
@@ -322,35 +337,35 @@ mr2022-onboarding-import-primary-button-label-no-attribution = 이전 브라우�
 
 mr2022-onboarding-colorway-title = 영감을 주는 색상을 선택하세요
 mr2022-onboarding-colorway-subtitle = 독립적인 목소리가 문화를 바꿀 수 있습니다.
-mr2022-onboarding-colorway-primary-button-label = 컬러웨이 설정
-mr2022-onboarding-existing-colorway-checkbox-label = { -firefox-home-brand-name }를 다채로운 홈페이지로 만드세요
+mr2022-onboarding-colorway-primary-button-label-continue = 설정하고 계속
+mr2022-onboarding-existing-colorway-checkbox-label = { -firefox-home-brand-name }을 다채로운 홈페이지로 만드세요
 mr2022-onboarding-colorway-label-default = 기본
-mr2022-onboarding-colorway-tooltip-default =
-    .title = 기본
+mr2022-onboarding-colorway-tooltip-default2 =
+    .title = 현재 { -brand-short-name } 색상
 mr2022-onboarding-colorway-description-default = <b>현재의 { -brand-short-name } 색상을 사용합니다.</b>
 mr2022-onboarding-colorway-label-playmaker = 플레이메이커
-mr2022-onboarding-colorway-tooltip-playmaker =
-    .title = 플레이메이커
+mr2022-onboarding-colorway-tooltip-playmaker2 =
+    .title = 플레이메이커 (빨간색)
 mr2022-onboarding-colorway-description-playmaker = <b>플레이메이커입니다.</b> 여러분은 승리할 수 있는 기회를 만들고 주변의 모든 사람들이 게임을 향상시킬 수 있도록 돕습니다.
 mr2022-onboarding-colorway-label-expressionist = 표현주의자
-mr2022-onboarding-colorway-tooltip-expressionist =
-    .title = 표현주의자
+mr2022-onboarding-colorway-tooltip-expressionist2 =
+    .title = 표현주의자 (노란색)
 mr2022-onboarding-colorway-description-expressionist = <b>표현주의자입니다.</b> 여러분은 세상을 다르게 보고 여러분의 창조물이 다른 사람들의 감정을 자극합니다.
 mr2022-onboarding-colorway-label-visionary = 공상가
-mr2022-onboarding-colorway-tooltip-visionary =
-    .title = 공상가
+mr2022-onboarding-colorway-tooltip-visionary2 =
+    .title = 공상가 (녹색)
 mr2022-onboarding-colorway-description-visionary = <b>공상가입니다.</b> 여러분은 현상 유지에 의문을 제기하고 더 나은 미래를 상상하도록 다른 사람들을 움직입니다.
 mr2022-onboarding-colorway-label-activist = 활동가
-mr2022-onboarding-colorway-tooltip-activist =
-    .title = 활동가
-mr2022-onboarding-colorway-description-activist = <b>활동가입니다.</b> 여러분은 세상을 당신이 발견한 것보다 더 나은 곳으로 남겨두고 다른 사람들이 믿도록 이끕니다.
+mr2022-onboarding-colorway-tooltip-activist2 =
+    .title = 활동가 (파란색)
+mr2022-onboarding-colorway-description-activist = <b>활동가입니다.</b> 여러분은 세상을 당신이 찾은 것보다 더 나은 곳으로 만들고 다른 사람들이 믿도록 이끕니다.
 mr2022-onboarding-colorway-label-dreamer = 몽상가
-mr2022-onboarding-colorway-tooltip-dreamer =
-    .title = 몽상가
+mr2022-onboarding-colorway-tooltip-dreamer2 =
+    .title = 몽상가 (보라색)
 mr2022-onboarding-colorway-description-dreamer = <b>몽상가입니다.</b> 여러분은 행운이 대담한 사람을 선호하고 다른 사람들에게 용기를 북돋아준다고 믿습니다.
 mr2022-onboarding-colorway-label-innovator = 혁신가
-mr2022-onboarding-colorway-tooltip-innovator =
-    .title = 혁신가
+mr2022-onboarding-colorway-tooltip-innovator2 =
+    .title = 혁신가 (주황색)
 mr2022-onboarding-colorway-description-innovator = <b>혁신가입니다.</b> 여러분은 어디에서나 기회를 보고 여러분 주변의 모든 사람들의 삶에 영향을 미칩니다.
 
 ## MR2022 Multistage Mobile Download screen strings
@@ -381,7 +396,33 @@ mr2022-onboarding-privacy-segmentation-button-secondary-label = 자세한 정보
 
 ## MR2022 Multistage Gratitude screen strings
 
-mr2022-onboarding-gratitude-title = 저희가 더 나은 웹을 만드는 것을 돕고 계십니다.
+mr2022-onboarding-gratitude-title = 저희가 더 나은 웹을 만드는 것을 돕고 계십니다
 mr2022-onboarding-gratitude-subtitle = Mozilla 재단이 지원하는 { -brand-short-name }를 사용해 주셔서 감사합니다. 여러분의 지원으로 우리는 인터넷을 보다 개방적이고 접근 가능하며 모두에게 더 좋게 만들기 위해 노력하고 있습니다.
 mr2022-onboarding-gratitude-primary-button-label = 새 기능 보기
 mr2022-onboarding-gratitude-secondary-button-label = 탐색 시작
+
+## Onboarding spotlight for infrequent users
+
+onboarding-infrequent-import-title = 편하게 생각하세요
+onboarding-infrequent-import-subtitle = 늘 사용하든 가끔씩 사용하든, 북마크, 비밀번호 등을 가져올 수 있다는 점을 기억하세요.
+onboarding-infrequent-import-primary-button = { -brand-short-name }로 가져오기
+
+## MR2022 Illustration alt tags
+## Descriptive tags for illustrations used by screen readers and other assistive tech
+
+mr2022-onboarding-pin-image-alt =
+    .aria-label = 별과 꽃으로 둘러싸인 노트북에서 작업하는 사람
+mr2022-onboarding-default-image-alt =
+    .aria-label = { -brand-product-name } 로고를 껴안고 있는 사람
+mr2022-onboarding-import-image-alt =
+    .aria-label = 소프트웨어 아이콘 상자가 있는 스케이트보드를 타는 사람
+mr2022-onboarding-mobile-download-image-alt =
+    .aria-label = 중앙에서 모바일용 { -brand-product-name }를 다운로드하기 위해 QR 코드가 있는 백합 패드를 뛰어다니는 개구리
+mr2022-onboarding-pin-private-image-alt =
+    .aria-label = 마술 지팡이로 모자에서 { -brand-product-name } 사생활 보호 모드 로고가 나타남
+mr2022-onboarding-privacy-segmentation-image-alt =
+    .aria-label = 밝은 피부와 어두운 피부의 손 하이파이브
+mr2022-onboarding-gratitude-image-alt =
+    .aria-label = 창턱에 여우와 화초가 있는 창문을 통해 일몰의 전망
+mr2022-onboarding-colorways-image-alt =
+    .aria-label = 손 스프레이로 녹색 눈, 주황색 신발, 빨간색 농구공, 보라색 헤드폰, 파란색 하트, 노란색 왕관의 다채로운 콜라주를 그림

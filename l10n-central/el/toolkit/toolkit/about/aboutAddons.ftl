@@ -141,6 +141,10 @@ addon-category-recent-updates-title =
 addon-category-sitepermission = Άδειες ιστοτόπων
 addon-category-sitepermission-title =
     .title = Άδειες ιστοτόπων
+# String displayed in about:addons in the Site Permissions section
+# Variables:
+#  $host (string): DNS host name for which the webextension enables permissions
+addon-sitepermission-host = Άδειες ιστοτόπου για το { $host }
 
 ## These are global warnings
 
@@ -292,10 +296,6 @@ theme-monochromatic-heading = Χρωματικοί συνδυασμοί
 theme-monochromatic-subheading = Νέοι, δυναμικοί χρωματικοί συνδυασμοί από το { -brand-product-name }. Διαθέσιμοι για περιορισμένο χρονικό διάστημα.
 # Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
 theme-colorways-button = Δοκιμή χρωματικών συνδυασμών
-colorway-collection-independent-voices-subheading = Φέρτε το { -brand-short-name } πιο κοντά στα μέτρα σας.
-# Variables:
-#   $expiryDate (string) - date on which the colorway collection expires.
-colorway-collection-expiry-date-span = Λήγει στις { DATETIME($expiryDate, month: "long", day: "numeric") }
 # Refers to the button label for the colorways card when a user has a colorway theme enabled.
 theme-colorways-button-colorway-enabled = Αλλαγή χρωματικού συνδυασμού
 # Variables:
@@ -415,9 +415,9 @@ addon-page-options-button =
 #   $version (String): application version.
 details-notification-incompatible = Το { $name } είναι ασύμβατο με τον { -brand-short-name } { $version }.
 details-notification-incompatible-link = Περισσότερες πληροφορίες
-details-notification-unsigned-and-disabled = Το { $name } δεν ήταν δυνατό να επαληθευτεί για χρήση από το { -brand-short-name } και έχει απενεργοποιηθεί.
+details-notification-unsigned-and-disabled = Το { $name } δεν ήταν δυνατό να επαληθευτεί για χρήση στο { -brand-short-name } και έχει απενεργοποιηθεί.
 details-notification-unsigned-and-disabled-link = Περισσότερες πληροφορίες
-details-notification-unsigned = Το { $name } δεν ήταν δυνατό να επαληθευτεί για χρήση από το { -brand-short-name }. Συνεχίστε με προσοχή.
+details-notification-unsigned = Το { $name } δεν ήταν δυνατό να επαληθευτεί για χρήση στο { -brand-short-name }. Συνεχίστε με προσοχή.
 details-notification-unsigned-link = Περισσότερες πληροφορίες
 details-notification-blocked = Το { $name } έχει απενεργοποιηθεί για λόγους ασφαλείας ή σταθερότητας.
 details-notification-blocked-link = Περισσότερες πληροφορίες

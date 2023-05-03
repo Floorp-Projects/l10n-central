@@ -155,10 +155,6 @@ spotlight-total-cookie-protection-body = Η Ολική προστασία cookie
 spotlight-total-cookie-protection-expanded = Το { -brand-short-name } δημιουργεί έναν φράχτη προστασίας γύρω από τα cookie, περιορίζοντάς τα στον ιστότοπο όπου βρίσκεστε, ώστε οι ιχνηλάτες να μην μπορούν να τα χρησιμοποιήσουν για να σας ακολουθήσουν. Με την πρώιμη πρόσβαση, θα βοηθήσετε στη βελτιστοποίηση αυτής της λειτουργίας, ώστε να συνεχίσουμε να δημιουργούμε ένα καλύτερο διαδίκτυο για όλους.
 spotlight-total-cookie-protection-primary-button = Ενεργοποίηση ολικής προστασίας cookie
 spotlight-total-cookie-protection-secondary-button = Όχι τώρα
-cfr-total-cookie-protection-header = Χάρη σε εσάς, το { -brand-short-name } είναι πιο ιδιωτικό και ασφαλές από ποτέ
-# "Early access" for this feature rollout means it's a "feature preview" or
-# "soft launch". Only those who received it and accepted are shown this message.
-cfr-total-cookie-protection-body = Η Ολική προστασία cookie είναι η ισχυρότερη προστασία απορρήτου μέχρι σήμερα – και αποτελεί πλέον προεπιλεγμένη ρύθμιση για όλους τους χρήστες του { -brand-short-name }. Δεν θα το είχαμε καταφέρει χωρίς την πρώιμη πρόσβαση από συμμετέχοντες, όπως εσείς. Ευχαριστούμε λοιπόν που μας βοηθήσατε να δημιουργήσουμε ένα καλύτερο, πιο ιδιωτικό διαδίκτυο.
 
 ## Emotive Continuous Onboarding
 
@@ -172,3 +168,80 @@ spotlight-pin-primary-button =
        *[other] Καρφίτσωμα στη γραμμή εργασιών
     }
 spotlight-pin-secondary-button = Όχι τώρα
+
+## MR2022 Background Update Windows native toast notification strings.
+##
+## These strings will be displayed by the Windows operating system in
+## a native toast, like:
+##
+## <b>multi-line title</b>
+## multi-line text
+## <img>
+## [ primary button ] [ secondary button ]
+##
+## The button labels are fitted into narrow fixed-width buttons by
+## Windows and therefore must be as narrow as possible.
+
+mr2022-background-update-toast-title = Νέο { -brand-short-name }. Πιο ιδιωτικό. Λιγότεροι ιχνηλάτες. Χωρίς συμβιβασμούς.
+mr2022-background-update-toast-text = Δοκιμάστε το νεότερο { -brand-short-name } τώρα, αναβαθμισμένο με την ισχυρότερη προστασία κατά της καταγραφής μέχρι σήμερα.
+# This button label will be fitted into a narrow fixed-width button by
+# Windows. Try to not exceed the width of the English text (compare it
+# using a variable font like Arial): the button can only fit 1-2
+# additional characters, exceeding characters will be truncated.
+mr2022-background-update-toast-primary-button-label = Άνοιγμα του { -brand-shorter-name } τώρα
+# This button label will be fitted into a narrow fixed-width button by
+# Windows. Try to not exceed the width of the English text (compare it using a
+# variable font like Arial): the button can only fit 1-2 additional characters,
+# exceeding characters will be truncated.
+mr2022-background-update-toast-secondary-button-label = Υπενθύμιση αργότερα
+
+## Firefox View CFR
+
+firefoxview-cfr-primarybutton = Δοκιμή
+    .accesskey = Δ
+firefoxview-cfr-secondarybutton = Όχι τώρα
+    .accesskey = χ
+firefoxview-cfr-header-v2 = Συνεχίστε γρήγορα από εκεί που σταματήσατε
+firefoxview-cfr-body-v2 = Βρείτε ξανά τις καρτέλες που έκλεισαν πρόσφατα και κάντε απρόσκοπτη εναλλαγή μεταξύ συσκευών με την { -firefoxview-brand-name }.
+
+## Firefox View Spotlight
+
+firefoxview-spotlight-promo-title = Πείτε «γεια» στην { -firefoxview-brand-name }
+# “Poof” refers to the expression to convey when something or someone suddenly disappears, or in this case, reappears. For example, “Poof, it’s gone.”
+firefoxview-spotlight-promo-subtitle = Θέλετε αυτήν την ανοικτή καρτέλα στο τηλέφωνό σας; Αρπάξτε την. Χρειάζεστε αυτόν τον ιστότοπο που μόλις επισκεφτήκατε; Πουφ, επέστρεψε με την { -firefoxview-brand-name }.
+firefoxview-spotlight-promo-primarybutton = Δείτε πώς λειτουργεί
+firefoxview-spotlight-promo-secondarybutton = Παράλειψη
+
+## Colorways expiry reminder CFR
+
+colorways-cfr-primarybutton = Επιλογή χρωματικού συνδυασμού
+    .accesskey = Ε
+# "shades" refers to the different color options available to users in colorways.
+colorways-cfr-body = Δώστε χρώμα στο πρόγραμμα περιήγησής σας με τις αποκλειστικές αποχρώσεις του { -brand-short-name }, εμπνευσμένες από φωνές που άλλαξαν τον πολιτισμό.
+colorways-cfr-header-28days = Οι χρωματικοί συνδυασμοί «Ανεξάρτητες φωνές» λήγουν στις 16 Ιανουαρίου
+colorways-cfr-header-14days = Οι χρωματικοί συνδυασμοί «Ανεξάρτητες φωνές» λήγουν σε δύο εβδομάδες
+colorways-cfr-header-7days = Οι χρωματικοί συνδυασμοί «Ανεξάρτητες φωνές» λήγουν αυτήν την εβδομάδα
+colorways-cfr-header-today = Οι χρωματικοί συνδυασμοί «Ανεξάρτητες φωνές» λήγουν σήμερα
+
+## Cookie Banner Handling CFR
+
+cfr-cbh-header = Να επιτρέπεται στο { -brand-short-name } η απόρριψη των μηνυμάτων για cookies;
+cfr-cbh-body = Το { -brand-short-name } μπορεί να απορρίψει αυτόματα πολλά μηνύματα αιτημάτων για cookies.
+cfr-cbh-confirm-button = Απόρριψη μηνυμάτων για cookies
+    .accesskey = Α
+cfr-cbh-dismiss-button = Όχι τώρα
+    .accesskey = χ
+
+## These strings are used in the Fox doodle Pin/set default spotlights
+
+july-jam-headline = Πάντα στο πλευρό σας
+july-jam-body = Κάθε μήνα, το { -brand-short-name } αποκλείει κατά μέσο όρο 3.000+ ιχνηλάτες ανά χρήστη, παρέχοντάς σας ασφαλή και γρήγορη πρόσβαση στο διαδίκτυο.
+july-jam-set-default-primary = Άνοιγμα συνδέσμων με το { -brand-short-name }
+fox-doodle-pin-headline = Καλώς ορίσατε και πάλι
+fox-doodle-pin-primary = Άνοιγμα συνδέσμων με το { -brand-short-name }
+fox-doodle-pin-secondary = Όχι τώρα
+
+## These strings are used in the Set Firefox as Default PDF Handler for Existing Users experiment
+
+set-default-pdf-handler-headline = <strong>Τα PDF σας ανοίγουν πλέον στο { -brand-short-name }.</strong> Επεξεργαστείτε ή υπογράψτε φόρμες απευθείας από το πρόγραμμα περιήγησής σας. Για αλλαγή, αναζητήστε «PDF» στις ρυθμίσεις.
+set-default-pdf-handler-primary = Το κατάλαβα

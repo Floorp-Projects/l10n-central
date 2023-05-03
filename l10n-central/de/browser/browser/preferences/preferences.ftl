@@ -73,6 +73,17 @@ restart-later = Später neu starten
 ## Variables:
 ##   $name (String): name of the extension
 
+
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (string) - Name of the extension
+
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
 extension-controlling-password-saving = <img data-l10n-name="icon"/> <strong>{ $name }</strong> kontrolliert diese Einstellung.
@@ -120,6 +131,11 @@ startup-restore-warn-on-quit =
     .label = Beim Beenden des Browsers warnen
 disable-extension =
     .label = Erweiterung deaktivieren
+preferences-data-migration-header = Browserdaten importieren
+preferences-data-migration-description = Lesezeichen, Passwörter, Chronik und Daten für automatisches Ausfüllen in { -brand-short-name } importieren
+preferences-data-migration-button =
+    .label = Daten importieren
+    .accesskey = m
 tabs-group-header = Tabs
 ctrl-tab-recently-used-order =
     .label = Bei Strg+Tab die Tabs nach letzter Nutzung in absteigender Reihenfolge anzeigen
@@ -132,7 +148,7 @@ confirm-on-close-multiple-tabs =
     .accesskey = m
 # This string is used for the confirm before quitting preference.
 # Variables:
-#   $quitKey (String) - the quit keyboard shortcut, and formatted
+#   $quitKey (string) - the quit keyboard shortcut, and formatted
 #                       in the same manner as it would appear,
 #                       for example, in the File menu.
 confirm-on-quit-with-key =
@@ -155,6 +171,10 @@ browser-containers-settings =
     .label = Einstellungen…
     .accesskey = u
 containers-disable-alert-title = Alle Tabs im Umgebungen schließen?
+
+## Variables:
+##   $tabCount (number) - Number of tabs
+
 containers-disable-alert-desc =
     { $tabCount ->
         [one] Falls die Funktion "Tab-Umgebungen" jetzt deaktiviert wird, so wird { $tabCount } Tab in einer Umgebung geschlossen. Soll die Funktion "Tab-Umgebungen" wirklich deaktiviert werden?
@@ -165,10 +185,13 @@ containers-disable-alert-ok-button =
         [one] { $tabCount } Tab in einer Umgebung schließen
        *[other] { $tabCount } Tabs im Umgebungen schließen
     }
+
+##
+
 containers-disable-alert-cancel-button = Aktiviert belassen
 containers-remove-alert-title = Diese Umgebung löschen?
 # Variables:
-#   $count (Number) - Number of tabs that will be closed.
+#   $count (number) - Number of tabs that will be closed.
 containers-remove-alert-msg =
     { $count ->
         [one] Wenn diese Umgebung jetzt gelöscht wird, so wird { $count } Tab aus dieser Umgebung geschlossen. Soll diese Umgebung wirklich gelöscht werden?
@@ -230,6 +253,8 @@ advanced-fonts =
 preferences-zoom-header = Zoom
 preferences-default-zoom = Standard-Zoom
     .accesskey = Z
+# Variables:
+#   $percentage (number) - Zoom percentage value
 preferences-default-zoom-value =
     .label = { $percentage } %
 preferences-zoom-text-only =
@@ -322,15 +347,15 @@ applications-manage-app =
 applications-always-ask =
     .label = Jedes Mal nachfragen
 # Variables:
-#   $type-description (String) - Description of the type (e.g "Portable Document Format")
-#   $type (String) - the MIME type (e.g application/binary)
+#   $type-description (string) - Description of the type (e.g "Portable Document Format")
+#   $type (string) - The MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
-#   $extension (String) - file extension (e.g .TXT)
-#   $type (String) - the MIME type (e.g application/binary)
+#   $extension (string) - File extension (e.g .TXT)
+#   $type (string) - The MIME type (e.g application/binary)
 applications-file-ending-with-type = { applications-file-ending } ({ $type })
 # Variables:
-#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+#   $plugin-name (string) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = { $plugin-name } (in { -brand-short-name }) verwenden
 applications-open-inapp =
@@ -373,6 +398,8 @@ play-drm-content =
 play-drm-content-learn-more = Weitere Informationen
 update-application-title = { -brand-short-name }-Updates
 update-application-description = { -brand-short-name } aktuell halten, um höchste Leistung, Stabilität und Sicherheit zu erfahren.
+# Variables:
+# $version (string) - Firefox version
 update-application-version = Version { $version } <a data-l10n-name="learn-more">Neue Funktionen und Änderungen</a>
 update-history =
     .label = Update-Chronik anzeigen…
@@ -399,7 +426,7 @@ update-application-suppress-prompts =
     .accesskey = B
 update-setting-write-failure-title2 = Fehler beim Speichern der Update-Einstellungen
 # Variables:
-#   $path (String) - Path to the configuration file
+#   $path (string) - Path to the configuration file
 # The newlines between the main text and the line containing the path is
 # intentional so the path is easier to identify.
 update-setting-write-failure-message2 =
@@ -429,7 +456,7 @@ performance-limit-content-process-option = Maximale Anzahl an Inhaltsprozessen
 performance-limit-content-process-enabled-desc = Mehr Inhaltsprozesse verbessern die Leistung bei Verwendung mehrerer Tabs, aber nutzen auch mehr Arbeitsspeicher.
 performance-limit-content-process-blocked-desc = Das Ändern der Anzahl der Inhaltsprozesse ist nur in { -brand-short-name } mit mehreren Prozessen möglich. <a data-l10n-name="learn-more">Wie Sie herausfinden, ob Firefox mit mehreren Prozessen ausgeführt wird</a>
 # Variables:
-#   $num - default value of the `dom.ipc.processCount` pref.
+#   $num (number) - Default value of the `dom.ipc.processCount` pref.
 performance-default-content-process-count =
     .label = { $num } (Standard)
 
@@ -535,6 +562,10 @@ home-prefs-shortcuts-by-option-sponsored =
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
+
+## Variables:
+##  $provider (string) - Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Empfohlen von { $provider }
 home-prefs-recommended-by-description-new = Besondere Inhalte ausgewählt von { $provider }, Teil der { -brand-product-name }-Familie
@@ -564,6 +595,8 @@ home-prefs-recent-activity-description = Eine Auswahl kürzlich besuchter Websit
 home-prefs-snippets-header =
     .label = Kurzinformationen
 home-prefs-snippets-description-new = Tipps und Neuigkeiten von { -vendor-short-name } und { -brand-product-name }
+# Variables:
+#   $num (number) - Number of rows displayed
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -592,6 +625,11 @@ search-suggestions-option =
 search-show-suggestions-url-bar-option =
     .label = Suchvorschläge in Adressleiste anzeigen
     .accesskey = v
+# With this option enabled, on the search results page
+# the URL will be replaced by the search terms in the address bar
+# when using the current default search engine.
+search-show-search-term-option =
+    .label = Suchbegriffe statt URL auf der Standard-Suchmaschinen-Ergebnisseite anzeigen
 # This string describes what the user will observe when the system
 # prioritizes search suggestions over browsing history in the results
 # that extend down from the address bar. In the original English string,
@@ -623,7 +661,7 @@ search-find-more-link = Weitere Suchmaschinen hinzufügen
 # ('Duplicate' is an adjective)
 search-keyword-warning-title = Schlüsselwort duplizieren
 # Variables:
-#   $name (String) - Name of a search engine.
+#   $name (string) - Name of a search engine.
 search-keyword-warning-engine = Sie haben ein Schlüsselwort ausgewählt, das bereits von "{ $name }" verwendet wird, bitte wählen Sie ein anderes.
 search-keyword-warning-bookmark = Sie haben ein Schlüsselwort ausgewählt, das bereits von einem Lesezeichen verwendet wird, bitte wählen Sie ein anderes.
 
@@ -670,8 +708,15 @@ sync-sign-out =
     .accesskey = b
 sync-manage-account = Konto verwalten
     .accesskey = v
+
+## Variables
+## $email (string) - Email used for Firefox account
+
 sync-signedin-unverified = { $email } wurde noch nicht bestätigt.
 sync-signedin-login-failure = Melden Sie sich an, um erneut mit { $email } zu verbinden.
+
+##
+
 sync-resend-verification =
     .label = E-Mail zur Verifizierung erneut senden
     .accesskey = V
@@ -698,6 +743,7 @@ prefs-sync-now =
 ## The list of things currently syncing.
 
 sync-currently-syncing-heading = Derzeit werden folgende Elemente synchronisiert:
+sync-syncing-across-devices-heading = Sie synchronisieren diese Elemente mit allen Ihren verbundenen Geräten:
 sync-currently-syncing-bookmarks = Lesezeichen
 sync-currently-syncing-history = Chronik
 sync-currently-syncing-tabs = Offene Tabs
@@ -719,6 +765,14 @@ sync-choose-what-to-sync-dialog =
     .buttonaccesskeyaccept = s
     .buttonlabelextra2 = Trennen…
     .buttonaccesskeyextra2 = T
+sync-choose-what-to-sync-dialog3 =
+    .title = Auswählen, was synchronisiert wird
+    .style = min-width: 36em;
+    .buttonlabelaccept = Änderungen speichern
+    .buttonaccesskeyaccept = s
+    .buttonlabelextra2 = Trennen…
+    .buttonaccesskeyextra2 = T
+sync-choose-dialog-subtitle = Änderungen an der Liste der zu synchronisierenden Elemente werden auf alle Ihre verbundenen Geräte angewendet.
 sync-engine-bookmarks =
     .label = Lesezeichen
     .accesskey = L
@@ -787,6 +841,9 @@ forms-breach-alerts =
     .label = Alarme für Passwörter, deren Websites von einem Datenleck betroffen waren
     .accesskey = A
 forms-breach-alerts-learn-more-link = Weitere Informationen
+relay-integration =
+    .label = { -relay-brand-name } in Ihrem { -brand-short-name }-Passwortmanager aktivieren
+relay-integration-learn-more-link = Weitere Informationen
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Zugangsdaten und Passwörter automatisch ausfüllen
@@ -875,8 +932,8 @@ history-clear-button =
 sitedata-header = Cookies und Website-Daten
 sitedata-total-size-calculating = Größe von Website-Daten und Cache wird berechnet…
 # Variables:
-#   $value (Number) - Value of the unit (for example: 4.6, 500)
-#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+#   $value (number) - Value of the unit (for example: 4.6, 500)
+#   $unit (string) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Die gespeicherten Cookies, Website-Daten und der Cache belegen derzeit { $value } { $unit } Speicherplatz.
 sitedata-learn-more = Weitere Informationen
 sitedata-delete-on-close =
@@ -903,6 +960,8 @@ sitedata-option-block-unvisited =
     .label = Cookies von nicht besuchten Websites
 sitedata-option-block-all-third-party =
     .label = Alle Cookies von Drittanbietern (einige Websites funktionieren dann eventuell nicht mehr)
+sitedata-option-block-all-cross-site-cookies =
+    .label = Alle seitenübergreifenden Cookies (einige Websites funktionieren dann eventuell nicht mehr)
 sitedata-option-block-all =
     .label = Alle Cookies (einige Websites funktionieren dann nicht mehr)
 sitedata-clear =
@@ -914,6 +973,14 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Ausnahmen verwalten…
     .accesskey = u
+
+## Privacy Section - Cookie Banner Handling
+
+cookie-banner-handling-header = Reduzierung von Cookie-Bannern
+cookie-banner-handling-description = { -brand-short-name } versucht, Cookie-Anforderungen über Cookie-Banner auf unterstützten Websites automatisch abzulehnen.
+cookie-banner-learn-more = Weitere Informationen
+forms-handle-cookie-banners =
+    .label = Cookie-Banner reduzieren
 
 ## Privacy Section - Address Bar
 
@@ -982,6 +1049,7 @@ content-blocking-all-cookies = Alle Cookies
 content-blocking-unvisited-cookies = Cookies von nicht besuchten Websites
 content-blocking-all-windows-tracking-content = Inhalte zur Aktivitätenverfolgung in allen Fenstern
 content-blocking-all-third-party-cookies = Alle Cookies von Drittanbietern
+content-blocking-all-cross-site-cookies = Alle seitenübergreifenden Cookies
 content-blocking-cryptominers = Heimliche Digitalwährungsberechner (Krypto-Miner)
 content-blocking-fingerprinters = Identifizierer (Fingerprinter)
 # "Test pilot" is used as a verb. Possible alternatives:
@@ -989,6 +1057,9 @@ content-blocking-fingerprinters = Identifizierer (Fingerprinter)
 content-blocking-etp-standard-tcp-rollout-checkbox =
     .label = Nutzen Sie vorab unsere leistungsstärkste Datenschutzfunktion aller Zeiten
     .accesskey = N
+
+# The tcp-rollout strings are no longer used for the rollout but for tcp-by-default in the standard section
+
 # "Contains" here means "isolates", "limits".
 content-blocking-etp-standard-tcp-rollout-description = Der vollständige Cookie-Schutz beschränkt Cookies auf die Website, auf der Sie sich befinden, sodass Elemente zur Aktivitätenverfolgung sie nicht verwenden können, um Ihnen Website-übergreifend zu folgen.
 content-blocking-etp-standard-tcp-rollout-learn-more = Weitere Informationen
@@ -1048,6 +1119,11 @@ permissions-camera-settings =
     .accesskey = E
 permissions-microphone = Mikrofon
 permissions-microphone-settings =
+    .label = Einstellungen…
+    .accesskey = E
+# Short form for "the act of choosing sound output devices and redirecting audio to the chosen devices".
+permissions-speaker = Lautsprecherauswahl
+permissions-speaker-settings =
     .label = Einstellungen…
     .accesskey = E
 permissions-notification = Benachrichtigungen
@@ -1154,6 +1230,63 @@ httpsonly-radio-enabled-pbm =
     .label = Nur-HTTPS-Modus nur in privaten Fenstern aktivieren
 httpsonly-radio-disabled =
     .label = Nur-HTTPS-Modus nicht aktivieren
+
+## DoH Section
+
+preferences-doh-header = DNS über HTTPS
+preferences-doh-description = Domain Name System (DNS) über HTTPS sendet Ihre Anfrage für einen Domainnamen über eine verschlüsselte Verbindung, wodurch ein sicheres DNS geschaffen wird. Dies erschwert es anderen, zu sehen, welche Website Sie gerade besuchen.
+# Variables:
+#   $status (string) - The status of the DoH connection
+preferences-doh-status = Status: { $status }
+# Variables:
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-resolver = Anbieter: { $name }
+# This is displayed instead of $name in preferences-doh-resolver
+# when the DoH URL is not a valid URL
+preferences-doh-bad-url = Ungültige Adresse
+preferences-doh-steering-status = Lokaler Anbieter wird verwendet
+preferences-doh-status-active = Aktiv
+preferences-doh-status-disabled = Aus
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+preferences-doh-status-not-active = Nicht aktiv ({ $reason })
+preferences-doh-group-message = Sicheres DNS aktivieren mit:
+preferences-doh-expand-section =
+    .tooltiptext = Weitere Informationen
+preferences-doh-setting-default =
+    .label = Standardschutz
+    .accesskey = S
+preferences-doh-default-desc = { -brand-short-name } entscheidet, wann sicheres DNS verwendet wird, um Ihre Privatsphäre zu schützen.
+preferences-doh-default-detailed-desc-1 = Sicheres DNS in Regionen verwenden, in denen es verfügbar ist
+preferences-doh-default-detailed-desc-2 = Ihren Standard-DNS-Resolver verwenden, wenn ein Problem mit dem sicheren DNS-Anbieter auftritt
+preferences-doh-default-detailed-desc-3 = Lokalen Anbieter verwenden, wenn möglich
+preferences-doh-default-detailed-desc-4 = Deaktivieren, wenn VPN, Jugendschutz oder Unternehmensrichtlinien aktiv sind
+preferences-doh-default-detailed-desc-5 = Deaktivieren, wenn ein Netzwerk { -brand-short-name } sagt, dass es kein sicheres DNS verwenden sollte
+preferences-doh-setting-enabled =
+    .label = Erhöhter Schutz
+    .accesskey = E
+preferences-doh-enabled-desc = Sie kontrollieren, wann Sie sicheres DNS verwenden, und wählen Ihren Anbieter.
+preferences-doh-enabled-detailed-desc-1 = Ausgewählten Anbieter verwenden
+preferences-doh-enabled-detailed-desc-2 = Ihren Standard-DNS-Resolver nur verwenden, wenn ein Problem mit sicherem DNS auftritt
+preferences-doh-setting-strict =
+    .label = Maximaler Schutz
+    .accesskey = M
+preferences-doh-strict-desc = { -brand-short-name } wird immer sicheres DNS verwenden. Es wird eine Warnung zu einem Sicherheitsrisiko angezeigt, bevor wir Ihr System-DNS verwenden.
+preferences-doh-strict-detailed-desc-1 = Nur ausgewählten Anbieter verwenden
+preferences-doh-strict-detailed-desc-2 = Immer warnen, wenn kein sicheres DNS verfügbar ist
+preferences-doh-strict-detailed-desc-3 = Wenn sicheres DNS nicht verfügbar ist, werden Websites nicht laden oder funktionieren nicht richtig
+preferences-doh-setting-off =
+    .label = Aus
+    .accesskey = A
+preferences-doh-off-desc = Ihren Standard-DNS-Resolver verwenden
+preferences-doh-checkbox-warn =
+    .label = Warnen, wenn ein Drittanbieter sicheres DNS aktiv verhindert
+    .accesskey = W
+preferences-doh-select-resolver = Anbieter auswählen:
+preferences-doh-exceptions-description = { -brand-short-name } verwendet auf diesen Websites kein sicheres DNS
+preferences-doh-manage-exceptions =
+    .label = Ausnahmen verwalten…
+    .accesskey = u
 
 ## The following strings are used in the Download section of settings
 

@@ -48,7 +48,7 @@ pane-experimental-reset =
     .label = เรียกคืนค่าเริ่มต้น
     .accesskey = R
 help-button-label = การสนับสนุนของ { -brand-short-name }
-addons-button-label = ส่วนขยายและชุดตกแต่ง
+addons-button-label = ส่วนขยายและชุดรูปแบบ
 focus-search =
     .key = f
 close-button =
@@ -72,6 +72,17 @@ restart-later = เริ่มการทำงานใหม่ในภา�
 ##
 ## Variables:
 ##   $name (String): name of the extension
+
+
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (string) - Name of the extension
 
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
@@ -120,6 +131,11 @@ startup-restore-warn-on-quit =
     .label = เตือนคุณเมื่อออกจากเบราว์เซอร์
 disable-extension =
     .label = ปิดใช้งานส่วนขยาย
+preferences-data-migration-header = นำเข้าข้อมูลเบราว์เซอร์
+preferences-data-migration-description = นำเข้าที่คั่นหน้า รหัสผ่าน ประวัติ และข้อมูลกรอกอัตโนมัติใน { -brand-short-name }
+preferences-data-migration-button =
+    .label = นำเข้าข้อมูล
+    .accesskey = น
 tabs-group-header = แท็บ
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab เพื่อสลับเปลี่ยนแท็บตามลำดับที่ใช้ล่าสุด
@@ -132,7 +148,7 @@ confirm-on-close-multiple-tabs =
     .accesskey = ย
 # This string is used for the confirm before quitting preference.
 # Variables:
-#   $quitKey (String) - the quit keyboard shortcut, and formatted
+#   $quitKey (string) - the quit keyboard shortcut, and formatted
 #                       in the same manner as it would appear,
 #                       for example, in the File menu.
 confirm-on-quit-with-key =
@@ -155,12 +171,19 @@ browser-containers-settings =
     .label = การตั้งค่า…
     .accesskey = ต
 containers-disable-alert-title = ปิดแท็บแยกข้อมูลทั้งหมด?
+
+## Variables:
+##   $tabCount (number) - Number of tabs
+
 containers-disable-alert-desc = หากคุณปิดใช้งานแท็บแยกข้อมูลตอนนี้ { $tabCount } แท็บแยกข้อมูลจะถูกปิด คุณแน่ใจหรือไม่ว่าต้องการปิดใช้งานแท็บแยกข้อมูล?
 containers-disable-alert-ok-button = ปิด { $tabCount } แท็บแยกข้อมูล
+
+##
+
 containers-disable-alert-cancel-button = เปิดใช้งานต่อไป
 containers-remove-alert-title = เอาการแยกข้อมูลนี้ออก?
 # Variables:
-#   $count (Number) - Number of tabs that will be closed.
+#   $count (number) - Number of tabs that will be closed.
 containers-remove-alert-msg = หากคุณเอาการแยกข้อมูลนี้ออกตอนนี้ { $count } แท็บแยกข้อมูลจะถูกปิด คุณแน่ใจหรือไม่ว่าต้องการเอาการแยกข้อมูลนี้ออก?
 containers-remove-ok-button = เอาการแยกข้อมูลนี้ออก
 containers-remove-cancel-button = ไม่เอาการแยกข้อมูลนี้ออก
@@ -170,14 +193,17 @@ containers-remove-cancel-button = ไม่เอาการแยกข้อ�
 language-and-appearance-header = ภาษาและลักษณะที่ปรากฏ
 preferences-web-appearance-header = ลักษณะที่ปรากฏของเว็บไซต์
 preferences-web-appearance-description = บางเว็บไซต์ปรับโทนสีตามการกำหนดลักษณะของคุณ เลือกชุดสีที่คุณต้องการใช้สำหรับไซต์เหล่านั้น
-preferences-web-appearance-choice-browser = ชุดตกแต่ง { -brand-short-name }
-preferences-web-appearance-choice-system = ชุดตกแต่งระบบ
+preferences-web-appearance-choice-browser = ชุดรูปแบบของ { -brand-short-name }
+preferences-web-appearance-choice-system = ชุดรูปแบบของระบบ
+preferences-web-appearance-choice-auto = อัตโนมัติ
 preferences-web-appearance-choice-light = สว่าง
 preferences-web-appearance-choice-dark = มืด
 preferences-web-appearance-choice-tooltip-browser =
-    .title = จับคู่การตั้งค่าชุดตกแต่ง { -brand-short-name } ของคุณสำหรับพื้นหลังและเนื้อหาของเว็บไซต์
+    .title = จับคู่การตั้งค่าธีม { -brand-short-name } ของคุณสำหรับพื้นหลังและเนื้อหาของเว็บไซต์
 preferences-web-appearance-choice-tooltip-system =
     .title = จับคู่การตั้งค่าระบบของคุณสำหรับพื้นหลังและเนื้อหาของเว็บไซต์
+preferences-web-appearance-choice-tooltip-auto =
+    .title = เปลี่ยนพื้นหลังและเนื้อหาของเว็บไซต์โดยอัตโนมัติตามการตั้งค่าระบบและธีมของ { -brand-short-name }
 preferences-web-appearance-choice-tooltip-light =
     .title = ใช้ลักษณะที่ปรากฏแบบสว่างสำหรับพื้นหลังและเนื้อหาของเว็บไซต์
 preferences-web-appearance-choice-tooltip-dark =
@@ -186,6 +212,8 @@ preferences-web-appearance-choice-input-browser =
     .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
 preferences-web-appearance-choice-input-system =
     .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-auto =
+    .aria-description = { preferences-web-appearance-choice-tooltip-auto.title }
 preferences-web-appearance-choice-input-light =
     .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
 preferences-web-appearance-choice-input-dark =
@@ -195,7 +223,7 @@ preferences-web-appearance-choice-input-dark =
 preferences-web-appearance-override-warning = การเลือกสีของคุณมีผลเหนือลักษณะที่ปรากฏของเว็บไซต์ <a data-l10n-name="colors-link">จัดการสี</a>
 # This message contains one link. It can be moved within the sentence as needed
 # to adapt to your language, but should not be changed.
-preferences-web-appearance-footer = จัดการ { -brand-short-name } ชุดตกแต่ง ใน <a data-l10n-name="themes-link"> ส่วนขยายและชุดตกแต่ง </a>
+preferences-web-appearance-footer = จัดการธีมของ { -brand-short-name } ใน <a data-l10n-name="themes-link">ส่วนขยายและธีม</a>
 preferences-colors-header = สี
 preferences-colors-description = แทนที่สีเริ่มต้นของ { -brand-short-name } สำหรับข้อความ พื้นหลังของเว็บไซต์ และลิงก์
 preferences-colors-manage-button =
@@ -213,6 +241,8 @@ advanced-fonts =
 preferences-zoom-header = ซูม
 preferences-default-zoom = ซูมเริ่มต้น
     .accesskey = ร
+# Variables:
+#   $percentage (number) - Zoom percentage value
 preferences-default-zoom-value =
     .label = { $percentage }%
 preferences-zoom-text-only =
@@ -305,15 +335,15 @@ applications-manage-app =
 applications-always-ask =
     .label = ถามเสมอ
 # Variables:
-#   $type-description (String) - Description of the type (e.g "Portable Document Format")
-#   $type (String) - the MIME type (e.g application/binary)
+#   $type-description (string) - Description of the type (e.g "Portable Document Format")
+#   $type (string) - The MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
-#   $extension (String) - file extension (e.g .TXT)
-#   $type (String) - the MIME type (e.g application/binary)
+#   $extension (string) - File extension (e.g .TXT)
+#   $type (string) - The MIME type (e.g application/binary)
 applications-file-ending-with-type = { applications-file-ending } ({ $type })
 # Variables:
-#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+#   $plugin-name (string) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = ใช้ { $plugin-name } (ใน { -brand-short-name })
 applications-open-inapp =
@@ -356,6 +386,8 @@ play-drm-content =
 play-drm-content-learn-more = เรียนรู้เพิ่มเติม
 update-application-title = การอัปเดต { -brand-short-name }
 update-application-description = คง { -brand-short-name } ให้เป็นรุ่นล่าสุดเพื่อประสิทธิภาพ, เสถียรภาพ และความปลอดภัยที่ดีที่สุด
+# Variables:
+# $version (string) - Firefox version
 update-application-version = รุ่น { $version } <a data-l10n-name="learn-more">มีอะไรใหม่</a>
 update-history =
     .label = แสดงประวัติการอัปเดต…
@@ -382,7 +414,7 @@ update-application-suppress-prompts =
     .accesskey = n
 update-setting-write-failure-title2 = เกิดข้อผิดพลาดในการบันทึกการตั้งค่าการอัปเดต
 # Variables:
-#   $path (String) - Path to the configuration file
+#   $path (string) - Path to the configuration file
 # The newlines between the main text and the line containing the path is
 # intentional so the path is easier to identify.
 update-setting-write-failure-message2 =
@@ -410,9 +442,9 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = ขีดจำกัดโปรเซสเนื้อหา
     .accesskey = ข
 performance-limit-content-process-enabled-desc = โปรเซสเนื้อหาที่เพิ่มขึ้นสามารถปรับปรุงประสิทธิภาพเมื่อใช้หลายแท็บ แต่จะใช้หน่วยความจำมากขึ้นเช่นกัน
-performance-limit-content-process-blocked-desc = การเปลี่ยนแปลงจำนวนโปรเซสเนื้อหาทำได้เฉพาะกับ { -brand-short-name } แบบหลายโปรเซส <a data-l10n-name="learn-more">เรียนรู้วิธีตรวจสอบว่าการทำงานหลายโปรเซสถูกเปิดใช้งานอยู่หรือไม่</a>
+performance-limit-content-process-blocked-desc = การเปลี่ยนแปลงจำนวนโปรเซสเนื้อหาทำได้เฉพาะกับ { -brand-short-name } แบบมัลติโปรเซส <a data-l10n-name="learn-more">เรียนรู้วิธีตรวจสอบว่าการทำงานมัลติโปรเซสถูกเปิดใช้งานอยู่หรือไม่</a>
 # Variables:
-#   $num - default value of the `dom.ipc.processCount` pref.
+#   $num (number) - Default value of the `dom.ipc.processCount` pref.
 performance-default-content-process-count =
     .label = { $num } (ค่าเริ่มต้น)
 
@@ -478,6 +510,8 @@ home-restore-defaults =
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
     .label = หน้าแรก Firefox (ค่าเริ่มต้น)
+home-mode-choice-default-fx =
+    .label = { -firefox-home-brand-name } (ค่าเริ่มต้น)
 home-mode-choice-custom =
     .label = URL ที่กำหนดเอง…
 home-mode-choice-blank =
@@ -503,6 +537,8 @@ choose-bookmark =
 
 home-prefs-content-header = เนื้อหาหน้าแรก Firefox
 home-prefs-content-description = เลือกเนื้อหาที่คุณต้องการในหน้าจอหน้าแรก Firefox ของคุณ
+home-prefs-content-header2 = เนื้อหา { -firefox-home-brand-name }
+home-prefs-content-description2 = เลือกเนื้อหาที่คุณต้องการบนหน้าจอ { -firefox-home-brand-name } ของคุณ
 home-prefs-search-header =
     .label = การค้นหาเว็บ
 home-prefs-shortcuts-header =
@@ -513,6 +549,10 @@ home-prefs-shortcuts-by-option-sponsored =
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+
+## Variables:
+##  $provider (string) - Name of the corresponding content provider, e.g "Pocket".
 
 home-prefs-recommended-by-header =
     .label = แนะนำโดย { $provider }
@@ -543,6 +583,8 @@ home-prefs-recent-activity-description = ไซต์และเนื้อห
 home-prefs-snippets-header =
     .label = ส่วนย่อย
 home-prefs-snippets-description-new = เคล็ดลับและข่าวสารจาก { -vendor-short-name } และ { -brand-product-name }
+# Variables:
+#   $num (number) - Number of rows displayed
 home-prefs-sections-rows-option =
     .label = { $num } แถว
 
@@ -567,6 +609,11 @@ search-suggestions-option =
 search-show-suggestions-url-bar-option =
     .label = แสดงข้อเสนอแนะการค้นหาในผลลัพธ์ของแถบที่อยู่
     .accesskey = ส
+# With this option enabled, on the search results page
+# the URL will be replaced by the search terms in the address bar
+# when using the current default search engine.
+search-show-search-term-option =
+    .label = แสดงคำค้นหาแทน URL บนหน้าผลลัพธ์ของเครื่องมือค้นหาเริ่มต้น
 # This string describes what the user will observe when the system
 # prioritizes search suggestions over browsing history in the results
 # that extend down from the address bar. In the original English string,
@@ -598,7 +645,7 @@ search-find-more-link = ค้นหาเครื่องมือค้น�
 # ('Duplicate' is an adjective)
 search-keyword-warning-title = คำสำคัญซ้ำกัน
 # Variables:
-#   $name (String) - Name of a search engine.
+#   $name (string) - Name of a search engine.
 search-keyword-warning-engine = คุณได้เลือกคำสำคัญที่มีการใช้งานอยู่โดย “{ $name }” โปรดเลือกคำสำคัญอื่น
 search-keyword-warning-bookmark = คุณได้เลือกคำสำคัญที่มีการใช้งานอยู่โดยที่คั่นหน้า โปรดเลือกคำสำคัญอื่น
 
@@ -645,8 +692,15 @@ sync-sign-out =
     .accesskey = g
 sync-manage-account = จัดการบัญชี
     .accesskey = จ
+
+## Variables
+## $email (string) - Email used for Firefox account
+
 sync-signedin-unverified = { $email } ยังไม่ได้รับการยืนยัน
 sync-signedin-login-failure = โปรดลงชื่อเข้าเพื่อเชื่อมต่อ { $email } ใหม่
+
+##
+
 sync-resend-verification =
     .label = ส่งการยืนยันใหม่
     .accesskey = ส
@@ -694,6 +748,13 @@ sync-choose-what-to-sync-dialog =
     .buttonaccesskeyaccept = S
     .buttonlabelextra2 = ตัดการเชื่อมต่อ…
     .buttonaccesskeyextra2 = D
+sync-choose-what-to-sync-dialog3 =
+    .title = เลือกสิ่งที่จะซิงค์
+    .style = min-width: 36em;
+    .buttonlabelaccept = บันทึกการเปลี่ยนแปลง
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra2 = ตัดการเชื่อมต่อ…
+    .buttonaccesskeyextra2 = D
 sync-engine-bookmarks =
     .label = ที่คั่นหน้า
     .accesskey = ท
@@ -718,7 +779,7 @@ sync-engine-creditcards =
     .accesskey = ต
 sync-engine-addons =
     .label = ส่วนเสริม
-    .tooltiptext = ส่วนขยายและชุดตกแต่งสำหรับ Firefox เดสก์ท็อป
+    .tooltiptext = ส่วนขยายและชุดรูปแบบสำหรับ Firefox เดสก์ท็อป
     .accesskey = ส
 sync-engine-settings =
     .label = การตั้งค่า
@@ -762,6 +823,9 @@ forms-breach-alerts =
     .label = แสดงการแจ้งเตือนเกี่ยวกับรหัสผ่านสำหรับเว็บไซต์ที่มีการรั่วไหล
     .accesskey = b
 forms-breach-alerts-learn-more-link = เรียนรู้เพิ่มเติม
+relay-integration =
+    .label = เปิดใช้งาน { -relay-brand-name } ในตัวจัดการรหัสผ่านของ { -brand-short-name } ของคุณ
+relay-integration-learn-more-link = เรียนรู้เพิ่มเติม
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = กรอกการเข้าสู่ระบบและรหัสผ่านอัตโนมัติ
@@ -850,8 +914,8 @@ history-clear-button =
 sitedata-header = คุกกี้และข้อมูลไซต์
 sitedata-total-size-calculating = กำลังคำนวณขนาดข้อมูลไซต์และแคช…
 # Variables:
-#   $value (Number) - Value of the unit (for example: 4.6, 500)
-#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+#   $value (number) - Value of the unit (for example: 4.6, 500)
+#   $unit (string) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = คุกกี้, ข้อมูลไซต์ และแคชที่จัดเก็บไว้ของคุณใช้พื้นที่ดิสก์ไป { $value } { $unit }
 sitedata-learn-more = เรียนรู้เพิ่มเติม
 sitedata-delete-on-close =
@@ -878,6 +942,8 @@ sitedata-option-block-unvisited =
     .label = คุกกี้จากเว็บไซต์ที่ไม่ได้เยี่ยมชม
 sitedata-option-block-all-third-party =
     .label = คุกกี้จากบุคคลที่สามทั้งหมด (อาจส่งผลให้เว็บไซต์ไม่สมบูรณ์)
+sitedata-option-block-all-cross-site-cookies =
+    .label = คุกกี้ข้ามไซต์ทั้งหมด (อาจส่งผลให้เว็บไซต์ไม่สมบูรณ์)
 sitedata-option-block-all =
     .label = คุกกี้ทั้งหมด (จะส่งผลให้เว็บไซต์ไม่สมบูรณ์)
 sitedata-clear =
@@ -889,6 +955,14 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = จัดการข้อยกเว้น…
     .accesskey = ข
+
+## Privacy Section - Cookie Banner Handling
+
+cookie-banner-handling-header = การลดแบนเนอร์คุกกี้
+cookie-banner-handling-description = { -brand-short-name } จะพยายามปฏิเสธคำขอคุกกี้บนไซต์ที่รองรับโดยอัตโนมัติ
+cookie-banner-learn-more = เรียนรู้เพิ่มเติม
+forms-handle-cookie-banners =
+    .label = ลดแบนเนอร์คุกกี้
 
 ## Privacy Section - Address Bar
 
@@ -913,11 +987,15 @@ addressbar-locbar-topsites-option =
 addressbar-locbar-engines-option =
     .label = เครื่องมือค้นหา
     .accesskey = a
+addressbar-locbar-quickactions-option =
+    .label = คำสั่งด่วน
+    .accesskey = ด
 addressbar-suggestions-settings = เปลี่ยนการกำหนดลักษณะสำหรับข้อเสนอแนะของเครื่องมือค้นหา
+addressbar-quickactions-learn-more = เรียนรู้เพิ่มเติม
 
 ## Privacy Section - Content Blocking
 
-content-blocking-enhanced-tracking-protection = การป้องกันการติดตามที่มากขึ้น
+content-blocking-enhanced-tracking-protection = การป้องกันการติดตามแบบพิเศษ
 content-blocking-section-top-level-description = ตัวติดตามจะติดตามคุณทางออนไลน์เพื่อรวบรวมข้อมูลเกี่ยวกับพฤติกรรมการค้นหาและความสนใจของคุณ { -brand-short-name } ปิดกั้นตัวติดตามและสคริปต์ที่เป็นอันตรายอื่น ๆ จำนวนมาก
 content-blocking-learn-more = เรียนรู้เพิ่มเติม
 content-blocking-fpi-incompatibility-warning = คุณกำลังใช้ First Party Isolation (FPI) ซึ่งจะเขียนทับการตั้งค่าคุกกี้บางอย่างของ { -brand-short-name }
@@ -953,6 +1031,7 @@ content-blocking-all-cookies = คุกกี้ทั้งหมด
 content-blocking-unvisited-cookies = คุกกี้จากไซต์ที่ไม่ได้เยี่ยมชม
 content-blocking-all-windows-tracking-content = ตัวติดตามเนื้อหาในทุกหน้าต่าง
 content-blocking-all-third-party-cookies = คุกกี้จากบุคคลที่สามทั้งหมด
+content-blocking-all-cross-site-cookies = คุกกี้ข้ามไซต์ทั้งหมด
 content-blocking-cryptominers = ตัวขุดเหรียญดิจิทัล
 content-blocking-fingerprinters = ลายนิ้วมือดิจิทัล
 # "Test pilot" is used as a verb. Possible alternatives:
@@ -960,9 +1039,13 @@ content-blocking-fingerprinters = ลายนิ้วมือดิจิท�
 content-blocking-etp-standard-tcp-rollout-checkbox =
     .label = ลองใช้คุณลักษณะเกี่ยวกับความเป็นส่วนตัวที่ทรงพลังที่สุดของเราก่อนใคร
     .accesskey = ล
+
+# The tcp-rollout strings are no longer used for the rollout but for tcp-by-default in the standard section
+
 # "Contains" here means "isolates", "limits".
 content-blocking-etp-standard-tcp-rollout-description = การป้องกันคุกกี้ทั้งหมดประกอบด้วยคุกกี้สำหรับไซต์ที่คุณเยี่ยมชม ดังนั้นตัวติดตามจึงไม่สามารถใช้คุกกี้เหล่านี้เพื่อติดตามคุณบนไซต์ต่าง ๆ ได้
 content-blocking-etp-standard-tcp-rollout-learn-more = เรียนรู้เพิ่มเติม
+content-blocking-etp-standard-tcp-title = มาพร้อมกับการป้องกันคุกกี้แบบทั้งหมด คุณลักษณะความเป็นส่วนตัวที่ทรงพลังที่สุดของเรา
 content-blocking-warning-title = ระวัง!
 content-blocking-and-isolating-etp-warning-description-2 = การตั้งค่านี้อาจส่งผลให้บางเว็บไซต์ไม่แสดงผลเนื้อหาหรือไม่ทำงานอย่างถูกต้อง หากไซต์ดูเหมือนจะพัง คุณอาจต้องปิดการป้องกันการติดตามสำหรับไซต์นั้นเพื่อโหลดเนื้อหาทั้งหมด
 content-blocking-warning-learn-how = เรียนรู้วิธี
@@ -1020,6 +1103,11 @@ permissions-microphone = ไมโครโฟน
 permissions-microphone-settings =
     .label = การตั้งค่า…
     .accesskey = ค
+# Short form for "the act of choosing sound output devices and redirecting audio to the chosen devices".
+permissions-speaker = การเลือกลำโพง
+permissions-speaker-settings =
+    .label = การตั้งค่า…
+    .accesskey = ต
 permissions-notification = การแจ้งเตือน
 permissions-notification-settings =
     .label = การตั้งค่า…
@@ -1070,6 +1158,12 @@ addon-recommendations-link = เรียนรู้เพิ่มเติม
 collection-health-report-disabled = การรายงานข้อมูลถูกปิดใช้งานสำหรับการกำหนดค่าการสร้างนี้
 collection-backlogged-crash-reports-with-link = อนุญาตให้ { -brand-short-name } ส่งรายงานข้อขัดข้องในชื่อของคุณ <a data-l10n-name="crash-reports-link">เรียนรู้เพิ่มเติม</a>
     .accesskey = ข
+privacy-segmentation-section-header = คุณลักษณะใหม่ที่จะทำให้การท่องเว็บของคุณดีขึ้น
+privacy-segmentation-section-description = เมื่อเรานำเสนอคุณลักษณะที่ใช้ข้อมูลของคุณเพื่อมอบประสบการณ์ที่เป็นส่วนตัวมากขึ้น:
+privacy-segmentation-radio-off =
+    .label = ใช้คำแนะนำจาก { -brand-product-name }
+privacy-segmentation-radio-on =
+    .label = แสดงข้อมูลโดยละเอียด
 
 ## Privacy Section - Security
 ##

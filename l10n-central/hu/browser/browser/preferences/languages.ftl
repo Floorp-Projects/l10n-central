@@ -6,6 +6,10 @@ webpage-languages-window =
     .title = Weblap nyelvi beállításai
     .style = width: 40em
 
+webpage-languages-window2 =
+    .title = Weblap nyelvi beállításai
+    .style = min-width: 40em
+
 languages-close-key =
     .key = w
 
@@ -52,6 +56,10 @@ languages-active-code-format =
 browser-languages-window =
     .title = { -brand-short-name } nyelvi beállítások
     .style = width: 40em
+
+browser-languages-window2 =
+    .title = { -brand-short-name } nyelvi beállítások
+    .style = min-width: 40em
 
 browser-languages-description = A { -brand-short-name } az első nyelvet jeleníti meg alapértelmezettként, az alternatív nyelveket pedig szükség esetén a megjelenésük sorrendjében jeleníti meg.
 

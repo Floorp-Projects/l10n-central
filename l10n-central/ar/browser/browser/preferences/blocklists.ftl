@@ -6,6 +6,10 @@ blocklist-window =
     .title = قوائم الحجب
     .style = width: 55em
 
+blocklist-window2 =
+    .title = قوائم الحجب
+    .style = min-width: 55em
+
 blocklist-description = اختر القائمة التي على { -brand-short-name } استخدامها لحجب المتعقّبات على الشبكة. تُقدّم <a data-l10n-name="disconnect-link" title="Disconnect">Disconnect</a> هذه القوائم.
 blocklist-close-key =
     .key = w

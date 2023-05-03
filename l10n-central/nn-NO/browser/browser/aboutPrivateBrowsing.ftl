@@ -60,3 +60,11 @@ about-private-browsing-pin-promo-link-text =
        *[other] Fest til oppgåvelinja
     }
 about-private-browsing-pin-promo-title = Ingen lagra infokapslar eller historikk, rett frå skrivebordet. Surf som om ingen ser på.
+
+## Strings used in a promotion message for cookie banner reduction
+
+# Simplified version of the headline if the original text doesn't work
+# in your language: `See fewer cookie requests`.
+about-private-browsing-cookie-banners-promo-header = Fjern infokapselbanner!
+about-private-browsing-cookie-banners-promo-button = Færre infokapselbanner
+about-private-browsing-cookie-banners-promo-message = La { -brand-short-name } automatisk svare på sprettoppvindauge om infokapslar for deg slik at du kan gå tilbake til distraksjonsfri surfing. { -brand-short-name } vil avvise alle førespurnadar dersom muleg.

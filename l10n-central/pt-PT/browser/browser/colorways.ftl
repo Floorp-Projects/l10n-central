@@ -5,7 +5,7 @@
 
 ## Colorway collections
 
-colorway-collection-independent-voices = Vozes independentes
+colorway-collection-independent-voices = Vozes Independentes
 colorway-collection-independent-voices-description = A cor pode mudar a cultura. Os estilos de cor mais recentes celebram vozes que fazem do mundo um lugar melhor.
 # Used as a subheading for the colorway collection card in about:addons
 colorway-collection-independent-voices-short-description = Cores que mudam a cultura.
@@ -13,7 +13,7 @@ colorway-collection-independent-voices-short-description = Cores que mudam a cul
 ## Colorway names and descriptions
 
 playmaker-colorway-name = Impulsionador
-playmaker-colorway-description = Crias oportunidades para vencer e ajudar todos ao teu redor a elevar o seu jogo.
+playmaker-colorway-description = Tu crias oportunidades para vencer e ajudar todos à tua volta a melhorar.
 expressionist-colorway-name = Expressionista
 expressionist-colorway-description = Vês o mundo de maneira diferente e as tuas criações despertam as emoções dos outros.
 visionary-colorway-name = Visionário

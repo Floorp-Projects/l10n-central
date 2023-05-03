@@ -6,6 +6,10 @@ blocklist-window =
     .title = 차단 목록
     .style = width: 50em
 
+blocklist-window2 =
+    .title = 차단 목록
+    .style = min-width: 50em
+
 blocklist-description = 온라인 추적기를 차단하기 위해 { -brand-short-name }가 사용하는 목록을 선택하세요. <a data-l10n-name="disconnect-link" title="Disconnect">Disconnect</a>에서 목록 제공.
 blocklist-close-key =
     .key = w

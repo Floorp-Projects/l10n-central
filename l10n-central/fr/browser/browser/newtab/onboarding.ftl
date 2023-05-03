@@ -25,6 +25,12 @@ return-to-amo-addon-title = À présent, installons <img data-l10n-name="icon"/>
 return-to-amo-add-extension-label = Ajouter l’extension
 return-to-amo-add-theme-label = Ajouter le thème
 
+##  Variables: $addon-name (String) - Name of the add-on to be installed
+
+mr1-return-to-amo-subtitle = Découvrez { -brand-short-name }
+mr1-return-to-amo-addon-title = Vous disposez d’un navigateur rapide et respectueux de votre vie privée au bout de vos doigts. Maintenant, ajoutez-lui <b>{ $addon-name }</b> et faites-en encore plus avec { -brand-short-name }.
+mr1-return-to-amo-add-extension-label = Ajouter { $addon-name }
+
 ## Multistage onboarding strings (about:welcome pages)
 
 # Aria-label to make the "steps" of multistage onboarding visible to screen readers.
@@ -39,8 +45,8 @@ onboarding-welcome-steps-indicator =
 #   $current (Int) - Number of the current page
 #   $total (Int) - Total number of pages
 
-onboarding-welcome-steps-indicator2 =
-    .aria-valuetext = Progression : étape { $current } sur { $total }
+onboarding-welcome-steps-indicator-label =
+    .aria-label = Progression : étape { $current } sur { $total }
 # "Hero Text" displayed on left side of welcome screen.
 # The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
 # It also signals the passion users bring to Firefox, how they use
@@ -260,6 +266,15 @@ fx100-upgrade-thank-you-body = Il s’agit de notre 100ᵉ version de { -brand-s
 fx100-upgrade-thanks-keep-body = C’est notre 100ᵉ version ! Merci d’avoir fait partie de notre communauté. Gardez { -brand-short-name } à portée de clic pour les 100 prochaines.
 mr2022-onboarding-secondary-skip-button-label = Ignorer cette étape
 
+## MR2022 New User Easy Setup screen strings
+
+# Primary button string used on new user onboarding first screen showing multiple actions such as Set Default, Import from previous browser.
+mr2022-onboarding-easy-setup-primary-button-label = Enregistrer et continuer
+# Set Default action checkbox label used on new user onboarding first screen
+mr2022-onboarding-easy-setup-set-default-checkbox-label = Faire de { -brand-short-name } mon navigateur par défaut
+# Import action checkbox label used on new user onboarding first screen
+mr2022-onboarding-easy-setup-import-checkbox-label = Importer depuis un ancien navigateur
+
 ## MR2022 New User Pin Firefox screen strings
 
 # Title used on about:welcome for new users when Firefox is not pinned.
@@ -323,35 +338,35 @@ mr2022-onboarding-import-primary-button-label-no-attribution = Importer depuis u
 
 mr2022-onboarding-colorway-title = Choisissez la couleur qui vous inspire
 mr2022-onboarding-colorway-subtitle = Des voix indépendantes peuvent changer une culture.
-mr2022-onboarding-colorway-primary-button-label = Choisir ce coloris
+mr2022-onboarding-colorway-primary-button-label-continue = Configurer et continuer
 mr2022-onboarding-existing-colorway-checkbox-label = Faites de la { -firefox-home-brand-name } votre page d’accueil colorée
 mr2022-onboarding-colorway-label-default = Par défaut
-mr2022-onboarding-colorway-tooltip-default =
-    .title = Par défaut
+mr2022-onboarding-colorway-tooltip-default2 =
+    .title = Couleurs actuelles de { -brand-short-name }
 mr2022-onboarding-colorway-description-default = <b>Utiliser mes couleurs actuelles de { -brand-short-name }.</b>
 mr2022-onboarding-colorway-label-playmaker = Meneur/Meneuse
-mr2022-onboarding-colorway-tooltip-playmaker =
-    .title = Meneur/Meneuse
+mr2022-onboarding-colorway-tooltip-playmaker2 =
+    .title = Meneur/Meneuse (rouge)
 mr2022-onboarding-colorway-description-playmaker = <b>Meneur/Meneuse :</b> vous créez des occasions de gagner et vous aidez tout un chacun autour de vous à élever le niveau de son jeu.
 mr2022-onboarding-colorway-label-expressionist = Expressionniste
-mr2022-onboarding-colorway-tooltip-expressionist =
-    .title = Expressionniste
+mr2022-onboarding-colorway-tooltip-expressionist2 =
+    .title = Expressionniste (jaune)
 mr2022-onboarding-colorway-description-expressionist = <b>Expressionniste :</b> vous voyez le monde différemment et vos créations suscitent l’émotion chez les autres.
 mr2022-onboarding-colorway-label-visionary = Visionnaire
-mr2022-onboarding-colorway-tooltip-visionary =
-    .title = Visionnaire
+mr2022-onboarding-colorway-tooltip-visionary2 =
+    .title = Visionnaire (vert)
 mr2022-onboarding-colorway-description-visionary = <b>Visionnaire :</b> vous remettez en cause les statu quo et poussez les autres à imaginer un monde meilleur.
 mr2022-onboarding-colorway-label-activist = Militant/Militante
-mr2022-onboarding-colorway-tooltip-activist =
-    .title = Militant/Militante
+mr2022-onboarding-colorway-tooltip-activist2 =
+    .title = Militant/Militante (bleu)
 mr2022-onboarding-colorway-description-activist = <b>Militant/Militante :</b> vous rendez le monde meilleur que vous ne l’avez trouvé et convainquez les autres de croire au changement.
 mr2022-onboarding-colorway-label-dreamer = Rêveur/Rêveuse
-mr2022-onboarding-colorway-tooltip-dreamer =
-    .title = Rêveur/Rêveuse
+mr2022-onboarding-colorway-tooltip-dreamer2 =
+    .title = Rêveur/Rêveuse (violet)
 mr2022-onboarding-colorway-description-dreamer = <b>Rêveur/Rêveuse : </b> vous croyez que la chance sourit aux audacieux et vous insufflez le courage aux autres.
 mr2022-onboarding-colorway-label-innovator = Pionnier/Pionnière
-mr2022-onboarding-colorway-tooltip-innovator =
-    .title = Pionnier/Pionnière
+mr2022-onboarding-colorway-tooltip-innovator2 =
+    .title = Pionnier/Pionnière (orange)
 mr2022-onboarding-colorway-description-innovator = <b>Pionnier/Pionnière :</b> vous voyez partout des opportunités et vous influencez le cours des vies de tous et toutes autour de vous.
 
 ## MR2022 Multistage Mobile Download screen strings
@@ -382,7 +397,33 @@ mr2022-onboarding-privacy-segmentation-button-secondary-label = Afficher les inf
 
 ## MR2022 Multistage Gratitude screen strings
 
-mr2022-onboarding-gratitude-title = Vous nous aidez à créer un Web meilleur.
+mr2022-onboarding-gratitude-title = Vous nous aidez à créer un Web meilleur
 mr2022-onboarding-gratitude-subtitle = Merci d’utiliser { -brand-short-name }, soutenu par la Fondation Mozilla. Avec votre soutien, nous nous efforçons de rendre Internet plus ouvert, accessible et meilleur pour tout le monde.
 mr2022-onboarding-gratitude-primary-button-label = Découvrir les nouveautés
 mr2022-onboarding-gratitude-secondary-button-label = Commencer la navigation
+
+## Onboarding spotlight for infrequent users
+
+onboarding-infrequent-import-title = Installez-vous confortablement
+onboarding-infrequent-import-subtitle = Que vous vous installiez ou que vous ne soyez que de passage, souvenez-vous que vous pouvez importer marque-pages, mots de passe et bien plus.
+onboarding-infrequent-import-primary-button = Importer dans { -brand-short-name }
+
+## MR2022 Illustration alt tags
+## Descriptive tags for illustrations used by screen readers and other assistive tech
+
+mr2022-onboarding-pin-image-alt =
+    .aria-label = Une personne travaillant sur un ordinateur portable au milieu d’étoiles et de fleurs
+mr2022-onboarding-default-image-alt =
+    .aria-label = Une personne enlaçant le logo de { -brand-product-name }
+mr2022-onboarding-import-image-alt =
+    .aria-label = Une personne en skateboard portant une boîte d’icônes de logiciels
+mr2022-onboarding-mobile-download-image-alt =
+    .aria-label = Des grenouilles sautant sur des nénuphars avec un code QR pour télécharger { -brand-product-name } pour mobiles au centre.
+mr2022-onboarding-pin-private-image-alt =
+    .aria-label = Une baguette magique fait jaillir hors d’un chapeau le logo de la navigation privée de { -brand-product-name }
+mr2022-onboarding-privacy-segmentation-image-alt =
+    .aria-label = High five par une main à la peau claire et une à la peau foncée
+mr2022-onboarding-gratitude-image-alt =
+    .aria-label = Vue d’un coucher de soleil à travers une fenêtre avec un renard et un pot de fleurs sur le rebord d’une fenêtre
+mr2022-onboarding-colorways-image-alt =
+    .aria-label = Une bombe de peinture colorie le collage d’un œil vert, d’une chaussure orange, d’une balle de basket rouge, d’un casque audio violet, d’un cœur bleu et d’une couronne jaune

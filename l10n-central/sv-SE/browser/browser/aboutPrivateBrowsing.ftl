@@ -60,3 +60,11 @@ about-private-browsing-pin-promo-link-text =
        *[other] Fäst i aktivitetsfältet
     }
 about-private-browsing-pin-promo-title = Inga sparade kakor eller historik, direkt från ditt skrivbord. Surfa som om ingen tittar.
+
+## Strings used in a promotion message for cookie banner reduction
+
+# Simplified version of the headline if the original text doesn't work
+# in your language: `See fewer cookie requests`.
+about-private-browsing-cookie-banners-promo-header = Ta bort kak-banners!
+about-private-browsing-cookie-banners-promo-button = Reducera kak-banners
+about-private-browsing-cookie-banners-promo-message = Låt { -brand-short-name } automatiskt svara på popup-fönster för kakor så att du kan återgå till att surfa utan distraktion. { -brand-short-name } kommer att avvisa alla förfrågningar om möjligt.

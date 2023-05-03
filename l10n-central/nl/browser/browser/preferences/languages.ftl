@@ -6,6 +6,10 @@ webpage-languages-window =
     .title = Taalinstellingen voor webpagina’s
     .style = width: 40em
 
+webpage-languages-window2 =
+    .title = Taalinstellingen voor webpagina’s
+    .style = min-width: 40em
+
 languages-close-key =
     .key = w
 
@@ -52,6 +56,10 @@ languages-active-code-format =
 browser-languages-window =
     .title = { -brand-short-name }-taalinstellingen
     .style = width: 40em
+
+browser-languages-window2 =
+    .title = { -brand-short-name }-taalinstellingen
+    .style = min-width: 40em
 
 browser-languages-description = { -brand-short-name } zal de eerste taal als uw standaardtaal weergeven en zo nodig alternatieve talen weergeven in de volgorde waarin ze verschijnen.
 

@@ -34,6 +34,10 @@ text-action-paste =
     .label = Colar
     .accesskey = o
 
+text-action-paste-no-formatting =
+    .label = Colar sem formatação
+    .accesskey = m
+
 text-action-paste-shortcut =
     .key = V
 

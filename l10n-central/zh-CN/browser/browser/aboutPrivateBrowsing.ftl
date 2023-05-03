@@ -60,3 +60,11 @@ about-private-browsing-pin-promo-link-text =
        *[other] 固定到任务栏
     }
 about-private-browsing-pin-promo-title = 不保存任何 Cookie 和历史记录，隐私浏览不留痕迹。
+
+## Strings used in a promotion message for cookie banner reduction
+
+# Simplified version of the headline if the original text doesn't work
+# in your language: `See fewer cookie requests`.
+about-private-browsing-cookie-banners-promo-header = 消失吧，Cookie 横幅！
+about-private-browsing-cookie-banners-promo-button = 减少 Cookie 横幅
+about-private-browsing-cookie-banners-promo-message = 让 { -brand-short-name } 自动帮您回应 Cookie 弹窗，实现无干扰浏览体验。{ -brand-short-name } 将尽可能拒绝所有请求。

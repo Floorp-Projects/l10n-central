@@ -6,6 +6,10 @@ webpage-languages-window =
     .title = Setelan Bahasa Laman Web
     .style = width: 40em
 
+webpage-languages-window2 =
+    .title = Setelan Bahasa Laman Web
+    .style = min-width: 40em
+
 languages-close-key =
     .key = w
 
@@ -52,6 +56,10 @@ languages-active-code-format =
 browser-languages-window =
     .title = Setelan Bahasa { -brand-short-name }
     .style = width: 40em
+
+browser-languages-window2 =
+    .title = Setelan Bahasa { -brand-short-name }
+    .style = min-width: 40em
 
 browser-languages-description = { -brand-short-name } akan menampilkan bahasa pertama Anda sebagai bahasa baku dan akan menampilkan bahasa alternatif jika diperlukan sesuai urutan daftar.
 

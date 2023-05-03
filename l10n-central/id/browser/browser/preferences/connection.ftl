@@ -10,6 +10,14 @@ connection-window =
            *[other] width: 49em
         }
 
+connection-window2 =
+    .title = Pengaturan Sambungan
+    .style =
+        { PLATFORM() ->
+            [macos] min-width: 44em
+           *[other] min-width: 49em
+        }
+
 connection-close-key =
     .key = w
 
@@ -35,7 +43,6 @@ connection-proxy-http = Proksi HTTP
     .accesskey = k
 connection-proxy-http-port = Port
     .accesskey = P
-
 connection-proxy-https-sharing =
     .label = Juga gunakan proksi ini untuk HTTPS
     .accesskey = s

@@ -65,6 +65,9 @@ media-dimension =
     .value = Afmetingen:
 media-long-desc =
     .value = Lange beschrijving:
+media-select-all =
+    .label = Alles selecteren
+    .accesskey = c
 media-save-as =
     .label = Opslaan als…
     .accesskey = l
@@ -251,7 +254,7 @@ media-block-image =
 # This string is used to display the URL of the website on top of the
 # pageInfo dialog box
 # Variables:
-#   $website (string) - The url of the website pageInfo is getting info for
+#   $website (string) — The url of the website pageInfo is getting info for
 page-info-page =
     .title = Pagina-info - { $website }
 page-info-frame =

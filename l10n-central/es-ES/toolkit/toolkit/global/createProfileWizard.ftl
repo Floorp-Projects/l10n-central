@@ -6,12 +6,22 @@ create-profile-window =
     .title = Asistente de creación de perfiles
     .style = width: 45em; height: 32em;
 
+create-profile-window2 =
+    .title = Asistente de creación de perfiles
+    .style = min-width: 45em; min-height: 32em;
+
 ## First wizard page
 
 create-profile-first-page-header =
     { PLATFORM() ->
         [macos] Introducción
        *[other] Bienvenido a { create-profile-window.title }
+    }
+
+create-profile-first-page-header2 =
+    { PLATFORM() ->
+        [macos] Introducción
+       *[other] Bienvenido a { create-profile-window2.title }
     }
 
 profile-creation-explanation-1 = { -brand-short-name } guarda información sobre su configuración y preferencias en su perfil personal.
@@ -32,6 +42,12 @@ create-profile-last-page-header =
     { PLATFORM() ->
         [macos] Conclusión
        *[other] Completar { create-profile-window.title }
+    }
+
+create-profile-last-page-header2 =
+    { PLATFORM() ->
+        [macos] Conclusión
+       *[other] Completar { create-profile-window2.title }
     }
 
 profile-creation-intro = Si crea distintos perfiles puede distinguirlos por sus nombres. Puede usar el nombre proporcionado aquí o escoger uno usted mismo.

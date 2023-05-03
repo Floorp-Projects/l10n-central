@@ -6,6 +6,10 @@ webpage-languages-window =
     .title = Språkinställningar för webbsidor
     .style = width: 40em
 
+webpage-languages-window2 =
+    .title = Språkinställningar för webbsidor
+    .style = min-width: 40em
+
 languages-close-key =
     .key = w
 
@@ -52,6 +56,10 @@ languages-active-code-format =
 browser-languages-window =
     .title = { -brand-short-name } språkinställningar
     .style = width: 40em
+
+browser-languages-window2 =
+    .title = { -brand-short-name } språkinställningar
+    .style = min-width: 40em
 
 browser-languages-description = { -brand-short-name } visar första språket som standard och kommer att visa alternativa språk om det behövs i den ordning de tillkommer.
 

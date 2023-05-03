@@ -6,6 +6,10 @@ translation-window =
     .title = Wyjątki — tłumaczenie stron WWW
     .style = width: 36em
 
+translation-window2 =
+    .title = Wyjątki — tłumaczenie stron WWW
+    .style = min-width: 36em
+
 translation-close-key =
     .key = w
 

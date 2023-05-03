@@ -6,6 +6,10 @@ clear-site-data-window =
     .title = Ryd data
     .style = width: 35em
 
+clear-site-data-window2 =
+    .title = Ryd data
+    .style = min-width: 35em
+
 clear-site-data-description = Ved at rydde cookies og webstedsdata logger { -brand-short-name } dig muligvis ud fra websteder, og offline webstedsdata kan blive fjernet. Det påvirker ikke dine logins at rydde cache-data
 
 clear-site-data-close-key =

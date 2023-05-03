@@ -20,7 +20,7 @@ options-select-additional-tools-label = เครื่องมือนัก�
 # tool buttons.
 options-select-enabled-toolbox-buttons-label = ปุ่มกล่องเครื่องมือที่มี
 # The label for the heading of the radiobox corresponding to the theme
-options-select-dev-tools-theme-label = ชุดตกแต่ง
+options-select-dev-tools-theme-label = ชุดรูปแบบ
 
 ## Inspector section
 
@@ -122,8 +122,3 @@ options-source-maps-tooltip =
     .title = หากคุณเปิดใช้งานตัวเลือกนี้ ต้นฉบับจะถูกแมปในเครื่องมือ
 # The message shown for settings that trigger page reload
 options-context-triggers-page-refresh = *เรียกหน้าเว็บใหม่เฉพาะวาระปัจจุบันเท่านั้น
-# The label for the checkbox that toggles the display of the platform data in the
-# Profiler i.e. devtools.profiler.ui.show-platform-data a boolean preference in about:config
-options-show-platform-data-label = แสดงข้อมูลแพลตฟอร์ม Gecko
-options-show-platform-data-tooltip =
-    .title = ถ้าคุณเปิดใช้งานตัวเลือกนี้ รายงานตัวเก็บประวัติ JavaScript จะรวมสัญลักษณ์ของ Gecko platform เข้าไปด้วย

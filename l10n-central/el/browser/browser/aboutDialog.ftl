@@ -19,11 +19,17 @@ update-failed = Αποτυχία ενημέρωσης. <label data-l10n-name="fa
 update-failed-main = Αποτυχία ενημέρωσης. <a data-l10n-name="failed-link-main">Λήψη της πιο πρόσφατης έκδοσης</a>
 update-adminDisabled = Οι ενημερώσεις έχουν απενεργοποιηθεί από τον διαχειριστή του συστήματος σας
 update-noUpdatesFound = Το { -brand-short-name } είναι ενημερωμένο
+aboutdialog-update-checking-failed = Ο έλεγχος για ενημερώσεις απέτυχε.
 update-otherInstanceHandlingUpdates = Το { -brand-short-name } ενημερώνεται από μια άλλη διεργασία
 update-manual = Διαθέσιμες ενημερώσεις στο <label data-l10n-name="manual-link"/>
+aboutdialog-update-manual = Διαθέσιμες ενημερώσεις στο <a data-l10n-name="manual-link"/>
 update-unsupported = Δεν μπορείτε να εκτελέσετε περαιτέρω ενημερώσεις σε αυτό το σύστημα. <label data-l10n-name="unsupported-link">Μάθετε περισσότερα</label>
 update-restarting = Επανεκκίνηση…
+update-internal-error = Δεν είναι δυνατός ο έλεγχος για ενημερώσεις λόγω εσωτερικού σφάλματος. Οι ενημερώσεις διατίθενται στο <label data-l10n-name="manual-link"/>
 channel-description = Αυτήν τη στιγμή, βρίσκεστε στο κανάλι ενημερώσεων της έκδοσης <label data-l10n-name="current-channel"></label>.
+# Variables:
+#   $channel (String): description of the update channel (e.g. "release", "beta", "nightly" etc.)
+aboutdialog-channel-description = Αυτήν τη στιγμή, βρίσκεστε στο κανάλι ενημερώσεων της έκδοσης <label data-l10n-name="current-channel">{ $channel }</label>.
 warningDesc-version = Το { -brand-short-name } είναι σε πειραματικό στάδιο και πιθανότατα ασταθές.
 aboutdialog-help-user = Βοήθεια { -brand-product-name }
 aboutdialog-submit-feedback = Υποβολή σχολίων

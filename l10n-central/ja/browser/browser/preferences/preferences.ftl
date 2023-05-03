@@ -40,9 +40,9 @@ category-sync3 =
     .tooltiptext = { pane-sync-title3 }
 pane-experimental-title = 実験的な機能
 category-experimental =
-    .tooltiptext = 実験的な機能
+    .tooltiptext = { -brand-short-name } の実験的な機能
 pane-experimental-subtitle = 注意して進んでください
-pane-experimental-search-results-header = 実験的な機能: 注意して進んでください
+pane-experimental-search-results-header = { -brand-short-name } の実験的な機能: 注意して進んでください
 pane-experimental-description2 = 高度な設定を変更すると、{ -brand-short-name } の性能と安全性に影響を及ぼす可能性があります。
 pane-experimental-reset =
     .label = 既定値に戻す
@@ -71,7 +71,7 @@ restart-later = 後で再起動
 ## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
 ##
 ## Variables:
-##   $name (String): name of the extension
+##   $name (string) - Name of the extension
 
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
@@ -120,6 +120,11 @@ startup-restore-warn-on-quit =
     .label = ブラウザーを終了するときは確認する
 disable-extension =
     .label = 拡張機能を無効化
+preferences-data-migration-header = ブラウザーデータのインポート
+preferences-data-migration-description = ブックマークやパスワード、履歴、自動入力データを { -brand-short-name } にインポートします。
+preferences-data-migration-button =
+    .label = データをインポート
+    .accesskey = m
 tabs-group-header = タブグループ
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab で最近使用した順にタブを切り替える
@@ -132,7 +137,7 @@ confirm-on-close-multiple-tabs =
     .accesskey = m
 # This string is used for the confirm before quitting preference.
 # Variables:
-#   $quitKey (String) - the quit keyboard shortcut, and formatted
+#   $quitKey (string) - the quit keyboard shortcut, and formatted
 #                       in the same manner as it would appear,
 #                       for example, in the File menu.
 confirm-on-quit-with-key =
@@ -155,12 +160,19 @@ browser-containers-settings =
     .label = 設定...
     .accesskey = i
 containers-disable-alert-title = すべてのコンテナータブを閉じますか？
+
+## Variables:
+##   $tabCount (number) - Number of tabs
+
 containers-disable-alert-desc = コンテナータブを無効にすると、{ $tabCount } 個のコンテナータブが閉じられます。コンテナータブを無効にしますか？
 containers-disable-alert-ok-button = { $tabCount } 個のコンテナータブを閉じる
+
+##
+
 containers-disable-alert-cancel-button = このままにする
 containers-remove-alert-title = このコンテナーを削除しますか？
 # Variables:
-#   $count (Number) - Number of tabs that will be closed.
+#   $count (number) - Number of tabs that will be closed.
 containers-remove-alert-msg = このコンテナーを削除すると { $count } 個のコンテナータブが閉じられます。このコンテナーを削除してもよろしいですか？
 containers-remove-ok-button = このコンテナーを削除する
 containers-remove-cancel-button = 削除しない
@@ -172,12 +184,15 @@ preferences-web-appearance-header = ウェブサイトの外観
 preferences-web-appearance-description = 一部のウェブサイトはあなたの設定をもとにカラースキームを適用します。これらのサイトでどのカラースキームを使用するか選択してください。
 preferences-web-appearance-choice-browser = { -brand-short-name } テーマ
 preferences-web-appearance-choice-system = システムテーマ
+preferences-web-appearance-choice-auto = 自動
 preferences-web-appearance-choice-light = Light
 preferences-web-appearance-choice-dark = Dark
 preferences-web-appearance-choice-tooltip-browser =
     .title = { -brand-short-name } のテーマ設定をウェブサイトの背景と内容に適用させる。
 preferences-web-appearance-choice-tooltip-system =
     .title = システムの設定をウェブサイトの背景と内容に適用させる。
+preferences-web-appearance-choice-tooltip-auto =
+    .title = システムの設定と { -brand-short-name } のテーマをもとに、ウェブサイトの背景と内容を自動的に設定する。
 preferences-web-appearance-choice-tooltip-light =
     .title = 明るい外観をウェブサイトの背景と内容に使用する。
 preferences-web-appearance-choice-tooltip-dark =
@@ -186,6 +201,8 @@ preferences-web-appearance-choice-input-browser =
     .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
 preferences-web-appearance-choice-input-system =
     .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-auto =
+    .aria-description = { preferences-web-appearance-choice-tooltip-auto.title }
 preferences-web-appearance-choice-input-light =
     .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
 preferences-web-appearance-choice-input-dark =
@@ -213,6 +230,8 @@ advanced-fonts =
 preferences-zoom-header = ズーム
 preferences-default-zoom = 既定のズーム
     .accesskey = z
+# Variables:
+#   $percentage (number) - Zoom percentage value
 preferences-default-zoom-value =
     .label = { $percentage }%
 preferences-zoom-text-only =
@@ -305,15 +324,15 @@ applications-manage-app =
 applications-always-ask =
     .label = 毎回確認する
 # Variables:
-#   $type-description (String) - Description of the type (e.g "Portable Document Format")
-#   $type (String) - the MIME type (e.g application/binary)
+#   $type-description (string) - Description of the type (e.g "Portable Document Format")
+#   $type (string) - The MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
-#   $extension (String) - file extension (e.g .TXT)
-#   $type (String) - the MIME type (e.g application/binary)
+#   $extension (string) - File extension (e.g .TXT)
+#   $type (string) - The MIME type (e.g application/binary)
 applications-file-ending-with-type = { applications-file-ending } ({ $type })
 # Variables:
-#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+#   $plugin-name (string) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = { $plugin-name } を使用 ({ -brand-short-name } 内で表示)
 applications-open-inapp =
@@ -356,6 +375,8 @@ play-drm-content =
 play-drm-content-learn-more = 詳細情報
 update-application-title = { -brand-short-name } の更新
 update-application-description = 最高のパフォーマンスと安定性、セキュリティを提供するため { -brand-short-name } を最新の状態に保ちます。
+# Variables:
+# $version (string) - Firefox version
 update-application-version = バージョン { $version } <a data-l10n-name="learn-more">更新情報</a>
 update-history =
     .label = 更新履歴を表示...
@@ -382,7 +403,7 @@ update-application-suppress-prompts =
     .accesskey = n
 update-setting-write-failure-title2 = 設定変更の保存エラー
 # Variables:
-#   $path (String) - Path to the configuration file
+#   $path (string) - Path to the configuration file
 # The newlines between the main text and the line containing the path is
 # intentional so the path is easier to identify.
 update-setting-write-failure-message2 =
@@ -412,7 +433,7 @@ performance-limit-content-process-option = コンテンツプロセス数の制�
 performance-limit-content-process-enabled-desc = コンテンツプロセスを増やすと、複数タブの使用時にパフォーマンスが向上しますが、メモリーを多く消費します。
 performance-limit-content-process-blocked-desc = コンテンツプロセスの数はマルチプロセスの { -brand-short-name } でしか変更できません。 <a data-l10n-name="learn-more">マルチプロセスが有効になっているか確認してください</a>
 # Variables:
-#   $num - default value of the `dom.ipc.processCount` pref.
+#   $num (number) - Default value of the `dom.ipc.processCount` pref.
 performance-default-content-process-count =
     .label = { $num } (既定)
 
@@ -516,7 +537,7 @@ home-prefs-shortcuts-by-option-sponsored =
     .label = 広告ショートカット
 
 ## Variables:
-##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+##  $provider (string) - Name of the corresponding content provider, e.g "Pocket".
 
 home-prefs-recommended-by-header =
     .label = { $provider } のおすすめ
@@ -547,6 +568,8 @@ home-prefs-recent-activity-description = 最近のサイトとコンテンツの
 home-prefs-snippets-header =
     .label = スニペット
 home-prefs-snippets-description-new = { -vendor-short-name } と { -brand-product-name } に関するヒントと最新情報
+# Variables:
+#   $num (number) - Number of rows displayed
 home-prefs-sections-rows-option =
     .label = { $num } 行
 
@@ -571,6 +594,11 @@ search-suggestions-option =
 search-show-suggestions-url-bar-option =
     .label = アドレスバーに検索候補を表示する
     .accesskey = l
+# With this option enabled, on the search results page
+# the URL will be replaced by the search terms in the address bar
+# when using the current default search engine.
+search-show-search-term-option =
+    .label = 既定の検索エンジンの結果ページで URL の代わりに検索語句を表示する
 # This string describes what the user will observe when the system
 # prioritizes search suggestions over browsing history in the results
 # that extend down from the address bar. In the original English string,
@@ -581,7 +609,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = プライベートウィンドウで検索候補を表示する
 suggestions-addressbar-settings-generic2 = アドレスバーの入力候補のその他の設定を変更
-search-suggestions-cant-show = 履歴を保存しない設定となっているため、ロケーションバーに検索候補が表示されません。
+search-suggestions-cant-show = { -brand-short-name } に履歴を保存しないよう設定されているため、ロケーションバーに検索候補が表示されません。
 search-one-click-header2 = 検索ショートカット
 search-one-click-desc = キーワードの入力開始時にアドレスバーや検索バーの下に現れる代替検索エンジンを選んでください。
 search-choose-engine-column =
@@ -602,7 +630,7 @@ search-find-more-link = 他の検索エンジンを追加
 # ('Duplicate' is an adjective)
 search-keyword-warning-title = キーワードが重複しています
 # Variables:
-#   $name (String) - Name of a search engine.
+#   $name (string) - Name of a search engine.
 search-keyword-warning-engine = "{ $name }" で使用されているキーワードを指定しました。他のものを指定してください。
 search-keyword-warning-bookmark = ブックマークで使用されているキーワードを指定しました。他のものを指定してください。
 
@@ -649,8 +677,15 @@ sync-sign-out =
     .accesskey = g
 sync-manage-account = アカウントの管理
     .accesskey = o
+
+## Variables
+## $email (string) - Email used for Firefox account
+
 sync-signedin-unverified = { $email } は認証されていません。
 sync-signedin-login-failure = { $email } に再接続するにはログインしてください。
+
+##
+
 sync-resend-verification =
     .label = 認証メールを再送信
     .accesskey = d
@@ -694,6 +729,13 @@ sync-change-options =
 sync-choose-what-to-sync-dialog =
     .title = 同期する項目を選択
     .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = 変更を保存
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra2 = 切断...
+    .buttonaccesskeyextra2 = D
+sync-choose-what-to-sync-dialog3 =
+    .title = 同期する項目を選択
+    .style = min-width: 36em;
     .buttonlabelaccept = 変更を保存
     .buttonaccesskeyaccept = S
     .buttonlabelextra2 = 切断...
@@ -766,6 +808,9 @@ forms-breach-alerts =
     .label = 漏洩したウェブサイトのパスワードの警告を表示する
     .accesskey = b
 forms-breach-alerts-learn-more-link = 詳細情報
+relay-integration =
+    .label = { -brand-short-name } のパスワードマネージャーで { -relay-brand-name } を有効にする
+relay-integration-learn-more-link = 詳細情報
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = ログイン情報とパスワードを自動入力する
@@ -801,7 +846,6 @@ forms-windows-sso-desc = 端末の設定でアカウントを管理します
 
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = マスターパスワードを作成するには、Windows でのあなたの資格情報を入力してください。これはアカウントのセキュリティ保護に役立ちます。
-
 # This message can be seen by trying to add a Primary Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
@@ -855,8 +899,8 @@ history-clear-button =
 sitedata-header = Cookie とサイトデータ
 sitedata-total-size-calculating = サイトデータとキャッシュのサイズを計算しています...
 # Variables:
-#   $value (Number) - Value of the unit (for example: 4.6, 500)
-#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+#   $value (number) - Value of the unit (for example: 4.6, 500)
+#   $unit (string) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = 保存された Cookie とサイトデータとキャッシュのディスク使用量は現在 { $value } { $unit } です。
 sitedata-learn-more = 詳細情報
 sitedata-delete-on-close =
@@ -883,6 +927,8 @@ sitedata-option-block-unvisited =
     .label = 未訪問のウェブサイトの Cookie
 sitedata-option-block-all-third-party =
     .label = すべてのサードパーティ Cookie (ウェブサイトが動作しない可能性があります)
+sitedata-option-block-all-cross-site-cookies =
+    .label = すべてのクロスサイト Cookie (ウェブサイトが動作しない可能性があります)
 sitedata-option-block-all =
     .label = すべての Cookie (ウェブサイトが動作しなくなります)
 sitedata-clear =
@@ -894,6 +940,14 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = 例外を管理...
     .accesskey = x
+
+## Privacy Section - Cookie Banner Handling
+
+cookie-banner-handling-header = Cookie バナー削減
+cookie-banner-handling-description = サポートされたサイトの Cookie バナーの同意確認に対し、可能な場合は { -brand-short-name } が自動的に拒否します。
+cookie-banner-learn-more = 詳細情報
+forms-handle-cookie-banners =
+    .label = Cookie バナーの削減
 
 ## Privacy Section - Address Bar
 
@@ -961,7 +1015,8 @@ content-blocking-social-media-trackers = ソーシャルメディアトラッカ
 content-blocking-all-cookies = すべての Cookie
 content-blocking-unvisited-cookies = 未訪問のサイトの Cookie
 content-blocking-all-windows-tracking-content = すべてのウィンドウのトラッキングコンテンツ
-content-blocking-all-third-party-cookies = サードパーティ Cookie すべて
+content-blocking-all-third-party-cookies = すべてのサードパーティ Cookie
+content-blocking-all-cross-site-cookies = すべてのクロスサイト Cookie
 content-blocking-cryptominers = 暗号通貨マイニング
 content-blocking-fingerprinters = フィンガープリント採取
 # "Test pilot" is used as a verb. Possible alternatives:
@@ -969,6 +1024,7 @@ content-blocking-fingerprinters = フィンガープリント採取
 content-blocking-etp-standard-tcp-rollout-checkbox =
     .label = これまでにない最も強力なプライバシー保護機能を試す
     .accesskey = T
+# The tcp-rollout strings are no longer used for the rollout but for tcp-by-default in the standard section
 # "Contains" here means "isolates", "limits".
 content-blocking-etp-standard-tcp-rollout-description = 包括的 Cookie 保護機能により現在のサイトへの Cookie が制限されているため、トラッカーはサイトを横断してあなたを追跡する Cookie を利用できません。
 content-blocking-etp-standard-tcp-rollout-learn-more = 詳細情報
@@ -1028,6 +1084,11 @@ permissions-camera-settings =
     .accesskey = t
 permissions-microphone = マイク
 permissions-microphone-settings =
+    .label = 設定...
+    .accesskey = t
+# Short form for "the act of choosing sound output devices and redirecting audio to the chosen devices".
+permissions-speaker = スピーカー選択
+permissions-speaker-settings =
     .label = 設定...
     .accesskey = t
 permissions-notification = 通知

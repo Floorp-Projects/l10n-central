@@ -42,3 +42,7 @@ toolbox-mode-parent-process-label = Proses induk saja
 toolbox-mode-parent-process-sub-label = (Cepat)
 toolbox-mode-parent-process-container =
     .title = Hanya fokus pada sumber daya dari proses induk.
+toolbox-always-on-top-enabled2 = Nonaktifkan selalu di atas
+    .title = Ini akan memulai ulang Alat Pengembang
+toolbox-always-on-top-disabled2 = Aktifkan selalu di atas
+    .title = Ini akan memulai ulang Alat Pengembang

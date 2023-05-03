@@ -107,11 +107,21 @@ graphics-gpu2-title = 2. GPU
 graphics-decision-log-title = Döntésnapló
 graphics-crash-guards-title = Összeomlásvédelem által letiltott funkciók
 graphics-workarounds-title = Kerülő eljárások
+graphics-device-pixel-ratios = Ablakeszköz képpontarányai
 # Windowing system in use on Linux (e.g. X11, Wayland).
 graphics-window-protocol = Ablakprotokoll
 # Desktop environment in use on Linux (e.g. GNOME, KDE, XFCE, etc).
 graphics-desktop-environment = Asztali környezet
 place-database-title = Helyek adatbázisa
+place-database-stats = Statisztika
+place-database-stats-show = Statisztika megjelenítése
+place-database-stats-hide = Statisztika elrejtése
+place-database-stats-entity = Entitás
+place-database-stats-count = Darabszám
+place-database-stats-size-kib = Méret (KiB)
+place-database-stats-size-perc = Méret (%)
+place-database-stats-efficiency-perc = Hatékonyság (%)
+place-database-stats-sequentiality-perc = Sorozatosság (%)
 place-database-integrity = Sértetlenség
 place-database-verify-integrity = Sértetlenség ellenőrzése
 a11y-title = Kisegítő lehetőségek
@@ -275,6 +285,8 @@ webgl2-renderer = WebGL 2 illesztőprogram megjelenítő
 webgl2-version = WebGL 2 illesztőprogram verzió
 webgl2-driver-extensions = WebGL 2 illesztőprogram kiterjesztései
 webgl2-extensions = WebGL 2 kiterjesztések
+webgpu-default-adapter = WebGPU alapértelmezett adaptere
+webgpu-fallback-adapter = WebGPU tartalék adaptere
 # Variables
 #   $bugNumber (string) - Bug number on Bugzilla
 support-blocklisted-bug = Ismert problémák miatt blokkolva: <a data-l10n-name="bug-link">{ $bugNumber }. hiba</a>
@@ -304,6 +316,7 @@ can-sandbox-media = Médiabővítmény sandboxing
 content-sandbox-level = Tartalomfolyamat sandboxing szintje
 effective-content-sandbox-level = Tartalomfolyamat tényleges sandboxing szintje
 content-win32k-lockdown-state = Win32k zárolási állapot a tartalmi folyamathoz
+support-sandbox-gpu-level = GPU-folyamat sandboxing szintje
 sandbox-proc-type-content = tartalom
 sandbox-proc-type-file = fájltartalom
 sandbox-proc-type-media-plugin = médiabővítmény

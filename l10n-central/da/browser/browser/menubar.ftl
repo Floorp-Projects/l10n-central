@@ -82,13 +82,13 @@ menu-file-close-tab =
     .accesskey = L
 menu-file-close-window =
     .label = Luk vindue
-    .accesskey = k
+    .accesskey = n
 menu-file-save-page =
     .label = Gem side som…
     .accesskey = m
 menu-file-email-link =
     .label = Send link…
-    .accesskey = l
+    .accesskey = S
 menu-file-share-url =
     .label = Del
     .accesskey = D
@@ -180,6 +180,17 @@ menu-view-exit-full-screen =
 menu-view-full-screen =
     .label = Fuld skærm
     .accesskey = F
+
+## These menu items may use the same accesskey.
+
+# This should match reader-view-enter-button in browser.ftl
+menu-view-enter-readerview =
+    .label = Åbn læsevisning
+    .accesskey = L
+# This should match reader-view-close-button in browser.ftl
+menu-view-close-readerview =
+    .label = Luk læsevisning
+    .accesskey = L
 
 ##
 

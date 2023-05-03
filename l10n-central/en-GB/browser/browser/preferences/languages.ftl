@@ -6,6 +6,10 @@ webpage-languages-window =
     .title = Web Page Language Settings
     .style = width: 40em
 
+webpage-languages-window2 =
+    .title = Web Page Language Settings
+    .style = min-width: 40em
+
 languages-close-key =
     .key = w
 
@@ -52,6 +56,10 @@ languages-active-code-format =
 browser-languages-window =
     .title = { -brand-short-name } Language Settings
     .style = width: 40em
+
+browser-languages-window2 =
+    .title = { -brand-short-name } Language Settings
+    .style = min-width: 40em
 
 browser-languages-description = { -brand-short-name } will display the first language as your default and will display alternate languages if necessary in the order they appear.
 

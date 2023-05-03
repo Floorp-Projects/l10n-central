@@ -6,6 +6,10 @@ profiledowngrade-window =
     .title = U hebt een oudere versie van { -brand-product-name } gestart
     .style = width: 490px;
 
+profiledowngrade-window2 =
+    .title = U hebt een oudere versie van { -brand-product-name } gestart
+    .style = min-width: 490px;
+
 profiledowngrade-window-create =
     .label = Nieuw profiel aanmaken
 

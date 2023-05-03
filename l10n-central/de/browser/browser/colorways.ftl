@@ -6,9 +6,9 @@
 ## Colorway collections
 
 colorway-collection-independent-voices = Unabhängige Stimmen
-colorway-collection-independent-voices-description = Farbe kann Kultur verändern. Die neuesten Farbwelten feiern Stimmen, die die Welt zu einem besseren Ort machen.
+colorway-collection-independent-voices-description = Farbe kann Kultur verändern. Die neuesten Farbwelten feiern Stimmen, welche die Welt zu einem besseren Ort machen.
 # Used as a subheading for the colorway collection card in about:addons
-colorway-collection-independent-voices-short-description = Farben, die die Kultur verändern.
+colorway-collection-independent-voices-short-description = Farben, welche die Kultur verändern.
 
 ## Colorway names and descriptions
 

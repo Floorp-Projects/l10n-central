@@ -151,10 +151,6 @@ spotlight-total-cookie-protection-body = 全方位 Cookie 保护 - 阻止跟踪�
 spotlight-total-cookie-protection-expanded = { -brand-short-name } 可将每个网站的 Cookie 用“围栏”完全隔离，以阻止跟踪器借其实施跟踪。您可以通过抢先体验来帮助我们优化此功能，为每个人构建更好的网络环境。
 spotlight-total-cookie-protection-primary-button = 立即开启
 spotlight-total-cookie-protection-secondary-button = 暂时不要
-cfr-total-cookie-protection-header = 感谢有您，{ -brand-short-name } 的隐私保护能力和安全性比以往有亿点强
-# "Early access" for this feature rollout means it's a "feature preview" or
-# "soft launch". Only those who received it and accepted are shown this message.
-cfr-total-cookie-protection-body = “全方位 Cookie 保护”是我们迄今为止最强大的隐私保护功能，现已为所有 { -brand-short-name } 用户默认启用。若没有像您这样的早期用户参与测试，我们就无法推出此功能。非常感谢您帮助我们建构一个更美好、更保护隐私的互联网。
 
 ## Emotive Continuous Onboarding
 
@@ -168,3 +164,83 @@ spotlight-pin-primary-button =
        *[other] 固定到任务栏
     }
 spotlight-pin-secondary-button = 暂时不要
+
+## MR2022 Background Update Windows native toast notification strings.
+##
+## These strings will be displayed by the Windows operating system in
+## a native toast, like:
+##
+## <b>multi-line title</b>
+## multi-line text
+## <img>
+## [ primary button ] [ secondary button ]
+##
+## The button labels are fitted into narrow fixed-width buttons by
+## Windows and therefore must be as narrow as possible.
+
+mr2022-background-update-toast-title = { -brand-short-name } 新版本。更多隐私保护、更少跟踪骚扰。不将就，不妥协。
+mr2022-background-update-toast-text = 立即升级至最新版本的 { -brand-short-name }，获得我们迄今最为强大的反跟踪保护。
+# This button label will be fitted into a narrow fixed-width button by
+# Windows. Try to not exceed the width of the English text (compare it
+# using a variable font like Arial): the button can only fit 1-2
+# additional characters, exceeding characters will be truncated.
+mr2022-background-update-toast-primary-button-label = 立即打开 { -brand-shorter-name }
+# This button label will be fitted into a narrow fixed-width button by
+# Windows. Try to not exceed the width of the English text (compare it using a
+# variable font like Arial): the button can only fit 1-2 additional characters,
+# exceeding characters will be truncated.
+mr2022-background-update-toast-secondary-button-label = 稍后提醒我
+
+## Firefox View CFR
+
+firefoxview-cfr-primarybutton = 试试看
+    .accesskey = T
+firefoxview-cfr-secondarybutton = 暂时不要
+    .accesskey = N
+firefoxview-cfr-header-v2 = 快速从上次看到的地方继续浏览
+firefoxview-cfr-body-v2 = 通过 { -firefoxview-brand-name } 重新打开最近关闭的标签页，还能在设备间无缝切换。
+
+## Firefox View Spotlight
+
+firefoxview-spotlight-promo-title = 邂逅 { -firefoxview-brand-name }
+# “Poof” refers to the expression to convey when something or someone suddenly disappears, or in this case, reappears. For example, “Poof, it’s gone.”
+firefoxview-spotlight-promo-subtitle = 想要把标签页传到手机上？嘿，接稳了！还想重新打开刚浏览过的那个网页？瞧，回来了！这就是 { -firefoxview-brand-name } 带来的精彩功能。
+firefoxview-spotlight-promo-primarybutton = 看看怎么用
+firefoxview-spotlight-promo-secondarybutton = 跳过
+
+## Colorways expiry reminder CFR
+
+colorways-cfr-primarybutton = 选择配色
+    .accesskey = C
+# "shades" refers to the different color options available to users in colorways.
+colorways-cfr-body = 换上灵感来自“凡人之声，文化之味”的 { -brand-short-name } 独家配色，焕新您的浏览器外观。
+colorways-cfr-header-28days = “凡人之声”配色有效期至1月16日
+colorways-cfr-header-14days = “凡人之声”配色两周后到期
+colorways-cfr-header-7days = “凡人之声”配色本周到期
+colorways-cfr-header-today = “凡人之声”配色今日到期
+
+## Cookie Banner Handling CFR
+
+cfr-cbh-header = 要允许 { -brand-short-name } 自动拒绝 Cookie 横幅的请求吗？
+cfr-cbh-body = { -brand-short-name } 可以自动拒绝许多 Cookie 横幅的请求。
+cfr-cbh-confirm-button = 拒绝 Cookie 横幅
+    .accesskey = R
+cfr-cbh-dismiss-button = 暂时不要
+    .accesskey = N
+
+## These strings are used in the Fox doodle Pin/set default spotlights
+
+july-jam-headline = 保护您是我的职责
+july-jam-body = { -brand-short-name } 为每位用户月均拦截超过 3,000 个跟踪器，给您带来安全快速的良好互联网体验。
+july-jam-set-default-primary = 用 { -brand-short-name } 打开我的链接
+fox-doodle-pin-headline = 欢迎回来
+# “indie” is short for the term “independent”.
+# In this instance, free from outside influence or control.
+fox-doodle-pin-body = 小提示：您可以把最爱的独立浏览器固定起来，随时随地一键打开。
+fox-doodle-pin-primary = 用 { -brand-short-name } 打开我的链接
+fox-doodle-pin-secondary = 暂时不要
+
+## These strings are used in the Set Firefox as Default PDF Handler for Existing Users experiment
+
+set-default-pdf-handler-headline = <strong>您的 PDF 文件现在可以在 { -brand-short-name } 中打开。</strong>请直接在您的浏览器中编辑或签署表格。要更改，请在设置中搜索“PDF”。
+set-default-pdf-handler-primary = 明白了

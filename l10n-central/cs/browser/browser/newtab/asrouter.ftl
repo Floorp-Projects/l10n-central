@@ -12,33 +12,25 @@ cfr-doorhanger-feature-heading = Doporučená funkce
 
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Co to je
-
 cfr-doorhanger-extension-cancel-button = Teď ne
     .accesskey = n
-
 cfr-doorhanger-extension-ok-button = Přidat
     .accesskey = a
-
 cfr-doorhanger-extension-manage-settings-button = Nastavení doporučování
     .accesskey = d
-
 cfr-doorhanger-extension-never-show-recommendation = Toto doporučení už nezobrazovat
     .accesskey = N
-
 cfr-doorhanger-extension-learn-more-link = Zjistit více
-
 # This string is used on a new line below the add-on name
 # Variables:
 #   $name (String) - Add-on author name
 cfr-doorhanger-extension-author = autor: { $name }
-
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Doporučení
 cfr-doorhanger-extension-notification2 = Doporučení
     .tooltiptext = Doporučené rozšíření
     .a11y-announcement = Je dostupné doporučené rozšíření
-
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-feature-notification = Doporučení
@@ -87,11 +79,9 @@ cfr-protections-panel-link-text = Zjistit více
 # This string is used by screen readers to offer a text based alternative for
 # the notification icon
 cfr-badge-reader-label-newfeature = Nové funkce
-
 cfr-whatsnew-button =
     .label = Co je nového
     .tooltiptext = Co je nového
-
 cfr-whatsnew-release-notes-link-text = Přečtěte si poznámky k vydání
 
 ## Enhanced Tracking Protection Milestones
@@ -141,17 +131,10 @@ cfr-doorhanger-fission-secondary-button = Zjistit více
 ## Full Video Support CFR message
 
 cfr-doorhanger-video-support-body =
-    V této verzi { -brand-short-name.gender ->
-        [masculine] { -brand-short-name(case: "gen") }
-        [feminine] { -brand-short-name(case: "gen") }
-        [neuter] { -brand-short-name(case: "gen") }
-       *[other] aplikace { -brand-short-name }
-    } se videa na tomto serveru nemusí přehrávat správně. Pro plnou podporu videí { -brand-short-name.gender ->
-        [masculine] svůj { -brand-short-name(case: "acc") }
-        [feminine] svou { -brand-short-name(case: "acc") }
-        [neuter] své { -brand-short-name(case: "acc") }
-       *[other] aplikaci { -brand-short-name }
-    } aktualizujte.
+    { -brand-short-name.case-status ->
+        [with-cases] V této verzi { -brand-short-name(case: "gen") } se videa na tomto serveru nemusí přehrávat správně. Pro plnou podporu videí svůj { -brand-short-name(case: "acc") } aktualizujte.
+       *[no-cases] V této verzi aplikace { -brand-short-name } se videa na tomto serveru nemusí přehrávat správně. Pro plnou podporu videí aplikaci { -brand-short-name } aktualizujte.
+    }
 cfr-doorhanger-video-support-header =
     Pro přehrání videa aktualizujte { -brand-short-name.gender ->
         [masculine] svůj { -brand-short-name(case: "acc") }
@@ -178,13 +161,7 @@ spotlight-learn-more-expanded = Zjistit více
 # This header text can be explicitly wrapped.
 spotlight-public-wifi-vpn-header = Zdá se, že používáte veřejnou Wi-Fi síť
 spotlight-public-wifi-vpn-body = Pokud chcete skrýt svou polohu a aktivity během prohlížení internetu, zvažte využití služby virtuální privátní sítě. Poskytne vám ochranu během prohlížení internetu na veřejných místech, v kavárně nebo na letišti.
-spotlight-public-wifi-vpn-primary-button =
-    Ochraňte své soukromí { -mozilla-vpn-brand-name.gender ->
-        [masculine] s { -mozilla-vpn-brand-name(case: "ins") }
-        [feminine] s { -mozilla-vpn-brand-name(case: "ins") }
-        [neuter] s { -mozilla-vpn-brand-name(case: "ins") }
-       *[other] se službou { -mozilla-vpn-brand-name }
-    }
+spotlight-public-wifi-vpn-primary-button = Ochraňte své soukromí s { -mozilla-vpn-brand-name(case: "ins") }
     .accesskey = s
 spotlight-public-wifi-vpn-link = Teď ne
     .accesskey = n
@@ -207,11 +184,9 @@ spotlight-total-cookie-protection-secondary-button = Teď ne
 
 spotlight-better-internet-header = Lepší internet začíná u vás
 spotlight-better-internet-body =
-    { -brand-short-name.gender ->
-        [masculine] Používáním { -brand-short-name(case: "gen") } vyjadřujete svou podporu otevřenému webu, který je přístupný a lepší pro všechny.
-        [feminine] Používáním { -brand-short-name(case: "gen") } vyjadřujete svou podporu otevřenému webu, který je přístupný a lepší pro všechny.
-        [neuter] Používáním { -brand-short-name(case: "gen") } vyjadřujete svou podporu otevřenému webu, který je přístupný a lepší pro všechny.
-       *[other] Používáním aplikace { -brand-short-name } vyjadřujete svou podporu otevřenému webu, který je přístupný a lepší pro všechny.
+    { -brand-short-name.case-status ->
+        [with-cases] Používáním { -brand-short-name(case: "gen") } vyjadřujete svou podporu otevřenému webu, který je přístupný a lepší pro všechny.
+       *[no-cases] Používáním aplikace { -brand-short-name } vyjadřujete svou podporu otevřenému webu, který je přístupný a lepší pro všechny.
     }
 spotlight-peace-mind-header = Všechno, co potřebujete
 spotlight-peace-mind-body = Každý měsíc zablokuje { -brand-short-name } pro každého uživatele v průměru přes 3000 sledovacích prvků. A to proto, aby vám nic nesnižovalo kvalitu internetu, tím méně sledovací prvky porušující vaše soukromí.
@@ -221,3 +196,63 @@ spotlight-pin-primary-button =
        *[other] Připnout na lištu
     }
 spotlight-pin-secondary-button = Teď ne
+
+## MR2022 Background Update Windows native toast notification strings.
+##
+## These strings will be displayed by the Windows operating system in
+## a native toast, like:
+##
+## <b>multi-line title</b>
+## multi-line text
+## <img>
+## [ primary button ] [ secondary button ]
+##
+## The button labels are fitted into narrow fixed-width buttons by
+## Windows and therefore must be as narrow as possible.
+
+# This button label will be fitted into a narrow fixed-width button by
+# Windows. Try to not exceed the width of the English text (compare it
+# using a variable font like Arial): the button can only fit 1-2
+# additional characters, exceeding characters will be truncated.
+mr2022-background-update-toast-primary-button-label =
+    { -brand-shorter-name.case-status ->
+        [with-cases] Spustit { -brand-shorter-name(case: "acc") }
+       *[no-cases] Spustit aplikaci { -brand-shorter-name }
+    }
+# This button label will be fitted into a narrow fixed-width button by
+# Windows. Try to not exceed the width of the English text (compare it using a
+# variable font like Arial): the button can only fit 1-2 additional characters,
+# exceeding characters will be truncated.
+mr2022-background-update-toast-secondary-button-label = Upozornit mě později
+
+## Firefox View CFR
+
+firefoxview-cfr-primarybutton = Vyzkoušejte ho
+    .accesskey = t
+firefoxview-cfr-secondarybutton = Teď ne
+    .accesskey = n
+
+## Firefox View Spotlight
+
+firefoxview-spotlight-promo-title = Přivítejte { -firefoxview-brand-name(case: "acc") }
+# “Poof” refers to the expression to convey when something or someone suddenly disappears, or in this case, reappears. For example, “Poof, it’s gone.”
+firefoxview-spotlight-promo-subtitle = Chcete zrovna ten panel otevřený v telefonu? Vezměte si ho. Potřebujete znovu tu stránku, co jste před chvílí navštívili? Hups, díky { -firefoxview-brand-name(case: "dat", capitalization: "lower") } ji máte zpátky.
+firefoxview-spotlight-promo-primarybutton = Jak to funguje
+firefoxview-spotlight-promo-secondarybutton = Přeskočit
+
+## Colorways expiry reminder CFR
+
+colorways-cfr-primarybutton = Zvolit baletu barev
+    .accesskey = Z
+
+## Cookie Banner Handling CFR
+
+cfr-cbh-dismiss-button = Teď ne
+    .accesskey = n
+
+## These strings are used in the Fox doodle Pin/set default spotlights
+
+
+## These strings are used in the Set Firefox as Default PDF Handler for Existing Users experiment
+
+set-default-pdf-handler-primary = Rozumím

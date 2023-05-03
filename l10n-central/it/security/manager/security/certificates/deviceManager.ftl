@@ -9,6 +9,10 @@ devmgr =
     .title = Gestione dispositivi
     .style = width: 70em; height: 33em;
 
+devmgr-window =
+    .title = Gestione dispositivi
+    .style = min-width: 70em; min-height: 33em;
+
 devmgr-devlist =
     .label = Moduli e dispositivi di sicurezza
 

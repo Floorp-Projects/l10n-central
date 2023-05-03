@@ -65,8 +65,8 @@ about-processes-unknown-process = Egyéb: { $type } ({ $pid })
 about-processes-web-isolated-process = { $origin } ({ $pid })
 about-processes-web-serviceworker = { $origin } ({ $pid }, serviceworker)
 about-processes-with-coop-coep-process = { $origin } ({ $pid }, eredet szerint elkülönítve)
-about-processes-web-isolated-process-private = { $origin } – Privát ({ $pid })
-about-processes-with-coop-coep-process-private = { $origin } – Privát ({ $pid }, eredet szerint elkülönítve)
+about-processes-web-isolated-process-private = { $origin } – privát ({ $pid })
+about-processes-with-coop-coep-process-private = { $origin } – privát ({ $pid }, eredet szerint elkülönítve)
 
 ## Details within processes
 
@@ -125,6 +125,9 @@ about-processes-utility-actor-audio-decoder-generic = Általános hangdekóder
 about-processes-utility-actor-audio-decoder-applemedia = Apple Media hangdekóder
 about-processes-utility-actor-audio-decoder-wmf = Windows Media Framework hangdekóder
 about-processes-utility-actor-mf-media-engine = Windows Media Foundation Media Engine CDM
+# "Oracle" refers to an internal Firefox process and should be kept in English
+about-processes-utility-actor-js-oracle = JavaScript Oracle
+about-processes-utility-actor-windows-utils = Windowsos segédprogramok
 
 ## Displaying CPU (percentage and total)
 ## Variables:

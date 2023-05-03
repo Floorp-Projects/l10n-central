@@ -6,6 +6,10 @@ add-engine-window =
     .title = Adicionar mecanismo de pesquisa
     .style = width: 32em;
 
+add-engine-window2 =
+    .title = Adicionar mecanismo de pesquisa
+    .style = min-width: 32em;
+
 add-engine-button = Adicionar mecanismo personalizado
 
 add-engine-name = Nome do mecanismo de pesquisa

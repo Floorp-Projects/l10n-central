@@ -5,12 +5,20 @@
 containers-window-new =
     .title = أضف حاوية جديدة
     .style = width: 45em
-
 # Variables
 #   $name (String) - Name of the container
 containers-window-update-settings =
     .title = إعدادات الحاوية { $name }
     .style = width: 45em
+
+containers-window-new2 =
+    .title = أضف حاوية جديدة
+    .style = min-width: 45em
+# Variables
+#   $name (String) - Name of the container
+containers-window-update-settings2 =
+    .title = إعدادات الحاوية { $name }
+    .style = min-width: 45em
 
 containers-window-close =
     .key = w

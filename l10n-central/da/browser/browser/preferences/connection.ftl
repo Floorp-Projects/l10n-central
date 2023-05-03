@@ -10,6 +10,14 @@ connection-window =
            *[other] width: 44em
         }
 
+connection-window2 =
+    .title = Forbindelsesindstillinger
+    .style =
+        { PLATFORM() ->
+            [macos] min-width: 44em
+           *[other] min-width: 44em
+        }
+
 connection-close-key =
     .key = w
 
@@ -35,7 +43,6 @@ connection-proxy-http = HTTP-proxy
     .accesskey = H
 connection-proxy-http-port = Port
     .accesskey = P
-
 connection-proxy-https-sharing =
     .label = Brug også denne proxy til HTTPS
     .accesskey = s

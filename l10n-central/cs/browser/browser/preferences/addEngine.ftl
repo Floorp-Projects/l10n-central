@@ -6,6 +6,10 @@ add-engine-window =
     .title = Přidat vyhledávač
     .style = width: 32em;
 
+add-engine-window2 =
+    .title = Přidat vyhledávač
+    .style = min-width: 32em;
+
 add-engine-button = Přidat vlastní vyhledávač
 
 add-engine-name = Název vyhledávače

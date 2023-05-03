@@ -8,7 +8,7 @@ appmenu-update-available2 =
     .buttonaccesskey = D
     .secondarybuttonlabel = 닫기
     .secondarybuttonaccesskey = m
-appmenu-update-available-message2 = 최신 버전의 { -brand-shorter-name }를 다운로드합니다.
+appmenu-update-available-message2 = 최신 버전의 { -brand-shorter-name }를 다운로드하세요.
 appmenu-update-manual2 =
     .label = 업데이트 사용 가능
     .buttonlabel = 다운로드
@@ -45,7 +45,7 @@ appmenu-addon-post-install-message3 = 애플리케이션 메뉴를 통해 부가
 appmenu-addon-post-install-incognito-checkbox =
     .label = 이 확장 기능이 사생활 보호 창에서 실행되도록 허용
     .accesskey = A
-    
+
 appmenu-new-tab-controlled-changes =
     .label = 새 탭이 변경되었습니다.
     .buttonlabel = 변경한 설정 유지

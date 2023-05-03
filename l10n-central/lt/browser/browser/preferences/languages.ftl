@@ -6,6 +6,10 @@ webpage-languages-window =
     .title = Tinklalapių kalbos nuostatos
     .style = width: 40em
 
+webpage-languages-window2 =
+    .title = Tinklalapių kalbos nuostatos
+    .style = min-width: 40em
+
 languages-close-key =
     .key = w
 
@@ -52,6 +56,10 @@ languages-active-code-format =
 browser-languages-window =
     .title = „{ -brand-short-name }“ kalbos nuostatos
     .style = width: 40em
+
+browser-languages-window2 =
+    .title = „{ -brand-short-name }“ kalbos nuostatos
+    .style = min-width: 40em
 
 browser-languages-description = „{ -brand-short-name }“ laikys pirmąją kalbą numatytąja ir jei prireiks, rodys kitas kalbas tokiu eiliškumu, koks matosi čia.
 

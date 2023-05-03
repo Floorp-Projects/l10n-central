@@ -6,6 +6,10 @@ blocklist-window =
     .title = Daftar Blokir
     .style = width: 55em
 
+blocklist-window2 =
+    .title = Daftar Blokir
+    .style = min-width: 55em
+
 blocklist-description = Pilih daftar yang akan digunakan { -brand-short-name } untuk memblokir pelacak daring. Daftar disediakan oleh <a data-l10n-name="disconnect-link" title="Disconnect">Disconnect</a>.
 blocklist-close-key =
     .key = w

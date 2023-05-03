@@ -46,11 +46,11 @@ toolbar-button-forward-2 =
 ## Reload
 
 main-context-menu-reload =
-    .aria-label = 重新载入
+    .aria-label = 重新加载
     .accesskey = R
 # This menuitem is only visible on macOS
 main-context-menu-reload-mac =
-    .label = 重新载入
+    .label = 重新加载
     .accesskey = R
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
@@ -254,7 +254,7 @@ main-context-menu-media-watch-pip =
     .label = 画中画观看
     .accesskey = u
 main-context-menu-image-reload =
-    .label = 重新载入图像
+    .label = 重新加载图像
     .accesskey = R
 main-context-menu-image-view-new-tab =
     .label = 新建标签页打开图像
@@ -325,10 +325,10 @@ main-context-menu-send-to-device =
 ## are mutually exclusive.
 
 main-context-menu-use-saved-login =
-    .label = 使用存放的登录信息
+    .label = 使用保存的登录信息
     .accesskey = o
 main-context-menu-use-saved-password =
-    .label = 使用存放的密码
+    .label = 使用保存的密码
     .accesskey = o
 
 ##
@@ -358,7 +358,7 @@ main-context-menu-frame-open-window =
     .label = 新建窗口打开框架
     .accesskey = W
 main-context-menu-frame-reload =
-    .label = 重新载入框架
+    .label = 重新加载框架
     .accesskey = R
 main-context-menu-frame-bookmark =
     .label = 为此框架添加书签

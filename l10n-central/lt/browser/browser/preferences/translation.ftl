@@ -6,6 +6,10 @@ translation-window =
     .title = Tinklalapių vertimo išimtys
     .style = width: 36em
 
+translation-window2 =
+    .title = Tinklalapių vertimo išimtys
+    .style = min-width: 36em
+
 translation-close-key =
     .key = w
 

@@ -20,12 +20,12 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = Søg
     .aria-label = Søg
-# Variables
-#  $engine (String): the name of the user's default search engine
+# Variables:
+#   $engine (string) - The name of the user's default search engine
 newtab-search-box-handoff-text = Søg med { $engine } eller indtast adresse
 newtab-search-box-handoff-text-no-engine = Søg eller indtast adresse
-# Variables
-#  $engine (String): the name of the user's default search engine
+# Variables:
+#   $engine (string) - The name of the user's default search engine
 newtab-search-box-handoff-input =
     .placeholder = Søg med { $engine } eller indtast adresse
     .title = Søg med { $engine } eller indtast adresse
@@ -86,7 +86,7 @@ newtab-dismiss-button-tooltip =
     .aria-label = Fjern
 # This tooltip is for the context menu of Pocket cards or Topsites
 # Variables:
-#  $title (String): The label or hostname of the site. This is for screen readers when the context menu button is focused/active.
+#   $title (string) - The label or hostname of the site. This is for screen readers when the context menu button is focused/active.
 newtab-menu-content-tooltip =
     .title = Åbn menu
     .aria-label = Åbn genvejsmenuen for { $title }
@@ -159,16 +159,16 @@ newtab-label-saved = Gemt til { -pocket-brand-name }
 newtab-label-download = Hentet
 # This string is used in the story cards to indicate sponsored content
 # Variables:
-#  $sponsorOrSource (String): This is the name of a company or their domain
+#   $sponsorOrSource (string) - The name of a company or their domain
 newtab-label-sponsored = { $sponsorOrSource } · Sponsoreret
 # This string is used at the bottom of story cards to indicate sponsored content
 # Variables:
-#  $sponsor (String): This is the name of a sponsor
+#   $sponsor (string) - The name of a sponsor
 newtab-label-sponsored-by = Sponsoreret af { $sponsor }
 # This string is used under the image of story cards to indicate source and time to read
 # Variables:
-#  $source (String): This is the name of a company or their domain
-#  $timeToRead (Number): This is the estimated number of minutes to read this story
+#   $source (string) - The name of a company or their domain
+#   $timeToRead (number) - The estimated number of minutes to read this story
 newtab-label-source-read-time = { $source } · { $timeToRead } min
 
 ## Section Menu: These strings are displayed in the section context menu and are
@@ -183,7 +183,7 @@ newtab-section-menu-add-topsite = Tilføj ny webside
 newtab-section-menu-add-search-engine = Tilføj søgetjeneste
 newtab-section-menu-move-up = Flyt op
 newtab-section-menu-move-down = Flyt ned
-newtab-section-menu-privacy-notice = Privatlivspolitik
+newtab-section-menu-privacy-notice = Privatlivserklæring
 
 ## Section aria-labels
 
@@ -197,7 +197,7 @@ newtab-section-expand-section-label =
 newtab-section-header-topsites = Mest besøgte websider
 newtab-section-header-recent-activity = Seneste aktivitet
 # Variables:
-#  $provider (String): Name of the corresponding content provider.
+#   $provider (string) - Name of the corresponding content provider.
 newtab-section-header-pocket = Anbefalet af { $provider }
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
@@ -205,7 +205,7 @@ newtab-section-header-pocket = Anbefalet af { $provider }
 newtab-empty-section-highlights = Gå i gang med at browse, så vil vi vise dig nogle af de artikler, videoer og andre sider, du har besøgt eller gemt et bogmærke til for nylig.
 # Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 # Variables:
-#  $provider (String): Name of the content provider for this section, e.g "Pocket".
+#   $provider (string) - Name of the content provider for this section, e.g "Pocket".
 newtab-empty-section-topstories = Der er ikke flere nye historier. Kom tilbage senere for at se flere tophistorier fra { $provider }. Kan du ikke vente? Vælg et populært emne og find flere spændende historier fra hele verden.
 
 ## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
@@ -240,6 +240,9 @@ newtab-pocket-last-card-title = Du har læst det hele!
 newtab-pocket-last-card-desc = Kom tilbage senere for at se flere historier.
 newtab-pocket-last-card-image =
     .alt = Du har læst det hele
+# A save to Pocket button that shows over the card thumbnail on hover.
+newtab-pocket-save = Gem
+newtab-pocket-saved = Gemt
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.
@@ -251,6 +254,8 @@ newtab-error-fallback-refresh-link = Prøv igen ved at genindlæse siden.
 
 newtab-custom-shortcuts-title = Genveje
 newtab-custom-shortcuts-subtitle = Gemte eller besøgte websteder
+# Variables
+#   $num (number) - Number of rows to display
 newtab-custom-row-selector =
     { $num ->
         [one] { $num } række

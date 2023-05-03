@@ -76,7 +76,9 @@ browser-main-window-mac-window-titles =
 # This should match the `data-title-default` attribute in both
 # `browser-main-window` and `browser-main-window-mac`.
 browser-main-window-title = { -brand-full-name }
-private-browsing-shortcut-text = { -brand-short-name } Privat nettleseing
+# The non-variable portion of this MUST match the translation of
+# "PRIVATE_BROWSING_SHORTCUT_TITLE" in custom.properties
+private-browsing-shortcut-text-2 = { -brand-shortcut-name } Privat nettlesing
 
 ##
 
@@ -134,11 +136,23 @@ urlbar-addons-notification-anchor =
 urlbar-tip-help-icon =
     .title = Få hjelp
 urlbar-search-tips-confirm = Ok, eg forstår
+urlbar-search-tips-confirm-short = Eg forstår
 # Read out before Urlbar Tip text content so screenreader users know the
 # subsequent text is a tip offered by the browser. It should end in a colon or
 # localized equivalent.
 urlbar-tip-icon-description =
     .alt = Tips:
+urlbar-result-menu-button =
+    .title = Opne meny
+urlbar-result-menu-learn-more =
+    .label = Les meir
+    .accesskey = L
+urlbar-result-menu-remove-from-history =
+    .label = Fjern frå historikk
+    .accesskey = F
+urlbar-result-menu-tip-get-help =
+    .label = Få hjelp
+    .accesskey = F
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -147,6 +161,8 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Tast mindre, finn meir: Søk med { $engineName } rett frå adresselinja.
 urlbar-search-tips-redirect-2 = Start søket ditt i adressefeltet for å sjå forslag frå { $engineName } og nettleserhistorikken din.
+# Make sure to match the name of the Search panel in settings.
+urlbar-search-tips-persist = Det vart enklare å søkje. Prøv å gjere søket meir spesifikt her i adressefeltet. For å vise nettadressa i staden, gå til Søk i innstillingane.
 # Prompts users to use the Urlbar when they are typing in the domain of a
 # search engine, e.g. google.com or amazon.com.
 urlbar-tabtosearch-onboard = Vel denne snarvegen for å finne det du treng raskare.
@@ -267,42 +283,38 @@ search-one-offs-actions =
     .tooltiptext = Handlingar ({ $restrict })
 
 ## QuickActions are shown in the urlbar as the user types a matching string
-
-
-## QuickActions are shown in the urlbar as the user types a matching string
 ## The -cmd- strings are comma separated list of keywords that will match
 ## the action.
 
 # Opens the about:addons page in the home / recommendations section
 quickactions-addons = Vis tillegg
-quickactions-cmd-addons = tillegg, utviding, tema
 quickactions-cmd-addons2 = tillegg
 # Opens the bookmarks library window
-quickactions-bookmarks = Vis bokmerke
+quickactions-bookmarks2 = Handsam bokmerke
 quickactions-cmd-bookmarks = bokmerke
 # Opens a SUMO article explaining how to clear history
 quickactions-clearhistory = Tøm historikk
 quickactions-cmd-clearhistory = tøm historikk
 # Opens about:downloads page
-quickactions-downloads = Opne nedlastingar
+quickactions-downloads2 = Vis nedlastingar
 quickactions-cmd-downloads = nedlastingar
 # Opens about:addons page in the extensions section
 quickactions-extensions = Handsam utviding
 quickactions-cmd-extensions = Utvidingar
 # Opens the devtools web inspector
-quickactions-inspector = Opne inspeksjon
+quickactions-inspector2 = Opne utviklarverktøy
 quickactions-cmd-inspector = inspektør, utviklarverktøy
 # Opens about:logins
-quickactions-logins = Vis innloggingar
+quickactions-logins2 = Handsam passord
 quickactions-cmd-logins = Innloggingar, passord
 # Opens about:addons page in the plugins section
 quickactions-plugins = Handsam programtillegg
 quickactions-cmd-plugins = programtillegg
 # Opens the print dialog
-quickactions-print = Skriv ut
+quickactions-print2 = Skriv ut sida
 quickactions-cmd-print = utskrift, skriv ut
 # Opens a new private browsing window
-quickactions-private = Opne eit vindauge for privat nettlesing
+quickactions-private2 = Opne privat vindauge
 quickactions-cmd-private = privat nettlesing
 # Opens a SUMO article explaining how to refresh
 quickactions-refresh = Tilbakestill { -brand-short-name }
@@ -311,10 +323,10 @@ quickactions-cmd-refresh = oppdater
 quickactions-restart = Start { -brand-short-name } på nytt
 quickactions-cmd-restart = Start på nytt
 # Opens the screenshot tool
-quickactions-screenshot2 = Ta eit skjermbilde
+quickactions-screenshot3 = Ta eit skjermbilde
 quickactions-cmd-screenshot = skjermbilete
 # Opens about:preferences
-quickactions-settings = Opne Innstillingar
+quickactions-settings2 = Handsam innstillingar
 quickactions-cmd-settings = val, innstillingar, alternativ
 # Opens about:addons page in the themes section
 quickactions-themes = Handsam tema
@@ -323,8 +335,11 @@ quickactions-cmd-themes = tema
 quickactions-update = Oppdater { -brand-short-name }
 quickactions-cmd-update = oppdater
 # Opens the view-source UI with current pages source
-quickactions-viewsource = Vis kjeldekode
+quickactions-viewsource2 = Vis kjeldekode
 quickactions-cmd-viewsource = vis kjelde, kjelde
+# Tooltip text for the help button shown in the result.
+quickactions-learn-more =
+    .title = Les meir om snøgghandlingar
 
 ## Bookmark Panel
 
@@ -395,6 +410,7 @@ identity-connection-not-secure-security-view = Du er ikkje trygt kopla til denne
 identity-connection-verified = Du er trygt kopla til denne nettstaden.
 identity-ev-owner-label = Sertifikat skrive ut til:
 identity-description-custom-root = Mozilla kjenner ikkje att utskrivaren av dette sertifikatet. Det kan ha blitt lagt til av operativsystemet ditt, eller av ein administrator. <label data-l10n-name="link">Les meir</label>
+identity-description-custom-root2 = Mozilla kjenner ikkje att utskrivaren av dette sertifikatet. Det kan ha blitt lagt til av operativsystemet ditt, eller av ein administrator.
 identity-remove-cert-exception =
     .label = Fjern unntak
     .accesskey = F
@@ -403,9 +419,12 @@ identity-description-insecure-login-forms = Innloggingsinformasjonen du skreiv i
 identity-description-weak-cipher-intro = Sambandet til denne nettsida brukar ei svak kryptering og er ikkje privat.
 identity-description-weak-cipher-risk = Andre personar kan sjå informasjon eller endre måten nettsida oppfører seg på.
 identity-description-active-blocked = { -brand-short-name } har blokkert delar av denne sida som ikkje er trygg. <label data-l10n-name="link">Les meir</label>
+identity-description-active-blocked2 = { -brand-short-name } har blokkert delar av denne sida som ikkje er trygg.
 identity-description-passive-loaded = Sambandet til denne nettstaden er ikkje privat og informasjon du deler med denne sida kan sjåast av andre.
 identity-description-passive-loaded-insecure = Denne nettsida har innhald som ikkje er trygt (t.d. bilde). <label data-l10n-name="link">Les meir</label>
 identity-description-passive-loaded-mixed = Sjølv om { -brand-short-name } har blokkert noko innhald, finst det framleis innhald på sida som ikkje er trygt (slik som bilde). <label data-l10n-name="link">Les meir</label>
+identity-description-passive-loaded-insecure2 = Denne nettsida har innhald som ikkje er trygt (t.d. bilde).
+identity-description-passive-loaded-mixed2 = Sjølv om { -brand-short-name } har blokkert noko innhald, finst det framleis innhald på sida som ikkje er trygt (slik som bilde).
 identity-description-active-loaded = Denne nettstaden har innhald som ikkje er overført trygt (slik som skript) og tilkoplinga di er difor ikkje privat.
 identity-description-active-loaded-insecure = Informasjonen du deler med denne nettstaden kan sjåast av andre (t.d. passords, meldingar, kredittkort osb.).
 identity-learn-more =
@@ -482,6 +501,9 @@ popup-select-microphone-icon =
     .tooltiptext = Mikrofon
 popup-select-speaker-icon =
     .tooltiptext = Høgtalarar
+popup-select-window-or-screen =
+    .label = Vindauge eller skjerm:
+    .accesskey = V
 popup-all-windows-shared = Alle synlege vindauge på skjermen vil bli delte.
 popup-screen-sharing-block =
     .label = Blokker
@@ -503,6 +525,7 @@ sharing-warning-disable-for-session =
 ## DevTools F12 popup
 
 enable-devtools-popup-description = For å bruke F12-snarvegen, må du først opne DevTools via menyen for Nettsideutvikling
+enable-devtools-popup-description2 = For å bruke F12-snarvegen, må du først opne DevTools via menyen Nettlesarverktøy.
 
 ## URL Bar
 
@@ -545,7 +568,7 @@ urlbar-placeholder-search-mode-other-actions =
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
-    .placeholder = Søk med { $name } eller skriv inn adresse
+    .placeholder = Søk med { $name } eller skriv inn ei adresse
 # Variables
 #  $component (String): the name of the component which forces remote control.
 #    Example: "DevTools", "Marionette", "RemoteAgent".
@@ -633,7 +656,25 @@ urlbar-group-search-suggestions =
     .label = { $engine }-forslag
 # A label shown above Quick Actions in the urlbar results.
 urlbar-group-quickactions =
-    .label = Hurtighandlingar
+    .label = Snøgghandlingar
+
+## Reader View toolbar buttons
+
+# This should match menu-view-enter-readerview in menubar.ftl
+reader-view-enter-button =
+    .aria-label = Gå i lesevising
+# This should match menu-view-close-readerview in menubar.ftl
+reader-view-close-button =
+    .aria-label = Lat att lesevising
+
+## Picture-in-Picture urlbar button
+## Variables:
+##   $shortcut (String) - Keyboard shortcut to execute the command.
+
+picture-in-picture-urlbar-button-open =
+    .tooltiptext = Opne bilde-i-bilde ({ $shortcut })
+picture-in-picture-urlbar-button-close =
+    .tooltiptext = Lat att bilde-i-bilde ({ $shortcut })
 
 ## Full Screen and Pointer Lock UI
 
@@ -679,6 +720,11 @@ bookmarks-other-bookmarks-menu =
     .label = Andre bokmerke
 bookmarks-mobile-bookmarks-menu =
     .label = Mobile bokmerke
+
+## Variables:
+##   $isVisible (boolean): if the specific element (e.g. bookmarks sidebar,
+##                         bookmarks toolbar, etc.) is visible or not.
+
 bookmarks-tools-sidebar-visibility =
     .label =
         { $isVisible ->
@@ -703,6 +749,9 @@ bookmarks-tools-menu-button-visibility =
             [true] Fjern bokmerkemeny frå verktøylinja
            *[other] Legg til bokmerkemeny i verktøylinja
         }
+
+##
+
 bookmarks-search =
     .label = Søk i bokmerke
 bookmarks-tools =
@@ -772,6 +821,9 @@ toolbar-overflow-customize-button =
 toolbar-button-email-link =
     .label = Send lenke med e-post
     .tooltiptext = Send ei lenke til sida med e-post
+toolbar-button-logins =
+    .label = Passord
+    .tooltiptext = Vis og handsam dei lagra passorda dine
 # Variables:
 #  $shortcut (String): keyboard shortcut to save a copy of the page
 toolbar-button-save-page =
@@ -911,3 +963,33 @@ private-browsing-indicator-label = Privat nettlesing
 unified-extensions-button =
     .label = Utvidingar
     .tooltiptext = Utvidingar
+
+## Unified extensions button when permission(s) are needed.
+## Note that the new line is intentionally part of the tooltip.
+
+unified-extensions-button-permissions-needed =
+    .label = Utvidingar
+    .tooltiptext =
+        Utvidingar
+        Treng løyve
+
+## Autorefresh blocker
+
+refresh-blocked-refresh-label = { -brand-short-name } hindra denne nettsida frå å automatisk laste på nytt.
+refresh-blocked-redirect-label = { -brand-short-name } hindra denne netsida frå å automatisk omdirigere til ei anna nettside.
+refresh-blocked-allow =
+    .label = Tillat
+    .accesskey = T
+
+## Firefox Relay integration
+
+firefox-relay-offer-why-relay = { -relay-brand-name } skjuler den eigentlege e-postadressa di for å verne deg mot datainnbrot og spam.
+firefox-relay-offer-how-we-integrate = Ved å halde fram kan du generere nye { -relay-brand-short-name } e-postmasker direkte frå passordhandsamaren for { -brand-shorter-name }.
+# Variables:
+#  $sitename (String): name of the site where user enters their Relay mask
+#  $useremail (String): user email that will receive messages
+firefox-relay-offer-what-relay-does = Vi videaresender alle e-postar frå <strong>{ $sitename }</strong> til <strong>{ $useremail }</strong>.
+
+## Popup Notification
+
+popup-notification-xpinstall-prompt-learn-more = Les meir om sikker installering av tillegg

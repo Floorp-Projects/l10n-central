@@ -10,6 +10,14 @@ connection-window =
            *[other] width: 49em
         }
 
+connection-window2 =
+    .title = Параметры соединения
+    .style =
+        { PLATFORM() ->
+            [macos] min-width: 44em
+           *[other] min-width: 49em
+        }
+
 connection-close-key =
     .key = w
 
@@ -35,7 +43,6 @@ connection-proxy-http = HTTP прокси
     .accesskey = с
 connection-proxy-http-port = Порт
     .accesskey = о
-
 connection-proxy-https-sharing =
     .label = Также использовать этот прокси для HTTPS
     .accesskey = я

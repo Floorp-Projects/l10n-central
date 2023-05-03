@@ -76,7 +76,9 @@ browser-main-window-mac-window-titles =
 # This should match the `data-title-default` attribute in both
 # `browser-main-window` and `browser-main-window-mac`.
 browser-main-window-title = { -brand-full-name }
-private-browsing-shortcut-text = Navegação privativa do { -brand-short-name }
+# The non-variable portion of this MUST match the translation of
+# "PRIVATE_BROWSING_SHORTCUT_TITLE" in custom.properties
+private-browsing-shortcut-text-2 = Navegação privativa do { -brand-shortcut-name }
 
 ##
 
@@ -134,11 +136,23 @@ urlbar-addons-notification-anchor =
 urlbar-tip-help-icon =
     .title = Obter ajuda
 urlbar-search-tips-confirm = OK, entendi
+urlbar-search-tips-confirm-short = Entendi
 # Read out before Urlbar Tip text content so screenreader users know the
 # subsequent text is a tip offered by the browser. It should end in a colon or
 # localized equivalent.
 urlbar-tip-icon-description =
     .alt = Dica:
+urlbar-result-menu-button =
+    .title = Abrir menu
+urlbar-result-menu-learn-more =
+    .label = Saiba mais
+    .accesskey = S
+urlbar-result-menu-remove-from-history =
+    .label = Remover do histórico
+    .accesskey = R
+urlbar-result-menu-tip-get-help =
+    .label = Obter ajuda
+    .accesskey = O
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -147,6 +161,8 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Digite menos, encontre mais. Pesquise no { $engineName } direto na barra de endereços.
 urlbar-search-tips-redirect-2 = Inicie sua pesquisa na barra de endereços para ver sugestões do { $engineName } e do histórico de navegação.
+# Make sure to match the name of the Search panel in settings.
+urlbar-search-tips-persist = Pesquisar ficou ainda mais simples. Experimente tornar sua pesquisa mais específica aqui na barra de endereços. Para mostrar o endereço em vez disso, vá nas configurações de pesquisa.
 # Prompts users to use the Urlbar when they are typing in the domain of a
 # search engine, e.g. google.com or amazon.com.
 urlbar-tabtosearch-onboard = Selecione este atalho para encontrar mais rápido o que você precisa.
@@ -267,42 +283,38 @@ search-one-offs-actions =
     .tooltiptext = Ações ({ $restrict })
 
 ## QuickActions are shown in the urlbar as the user types a matching string
-
-
-## QuickActions are shown in the urlbar as the user types a matching string
 ## The -cmd- strings are comma separated list of keywords that will match
 ## the action.
 
 # Opens the about:addons page in the home / recommendations section
 quickactions-addons = Ver extensões
-quickactions-cmd-addons = extensões, temas
 quickactions-cmd-addons2 = extensões
 # Opens the bookmarks library window
-quickactions-bookmarks = Ver favoritos
+quickactions-bookmarks2 = Gerenciar favoritos
 quickactions-cmd-bookmarks = favoritos
 # Opens a SUMO article explaining how to clear history
 quickactions-clearhistory = Limpar histórico
 quickactions-cmd-clearhistory = limpar histórico
 # Opens about:downloads page
-quickactions-downloads = Abrir downloads
+quickactions-downloads2 = Ver arquivos baixados
 quickactions-cmd-downloads = downloads
 # Opens about:addons page in the extensions section
 quickactions-extensions = Gerenciar extensões
 quickactions-cmd-extensions = extensões
 # Opens the devtools web inspector
-quickactions-inspector = Abrir inspetor
+quickactions-inspector2 = Abrir ferramentas de desenvolvimento
 quickactions-cmd-inspector = inspetor, ferramentas de desenvolvimento
 # Opens about:logins
-quickactions-logins = Ver contas de acesso
+quickactions-logins2 = Gerenciar senhas
 quickactions-cmd-logins = contas, senhas
 # Opens about:addons page in the plugins section
 quickactions-plugins = Gerenciar plugins
 quickactions-cmd-plugins = plugins
 # Opens the print dialog
-quickactions-print = Imprimir
+quickactions-print2 = Imprimir página
 quickactions-cmd-print = imprimir
 # Opens a new private browsing window
-quickactions-private = Abrir janela de navegação privativa
+quickactions-private2 = Abrir janela privativa
 quickactions-cmd-private = navegação privativa
 # Opens a SUMO article explaining how to refresh
 quickactions-refresh = Restaurar o { -brand-short-name }
@@ -311,10 +323,10 @@ quickactions-cmd-refresh = atualizar
 quickactions-restart = Reiniciar o { -brand-short-name }
 quickactions-cmd-restart = reiniciar
 # Opens the screenshot tool
-quickactions-screenshot2 = Capturar tela
+quickactions-screenshot3 = Capturar tela
 quickactions-cmd-screenshot = capturar tela
 # Opens about:preferences
-quickactions-settings = Abrir configurações
+quickactions-settings2 = Gerenciar configurações
 quickactions-cmd-settings = configurações, preferências, opções
 # Opens about:addons page in the themes section
 quickactions-themes = Gerenciar temas
@@ -323,8 +335,11 @@ quickactions-cmd-themes = temas
 quickactions-update = Atualizar o { -brand-short-name }
 quickactions-cmd-update = atualizar
 # Opens the view-source UI with current pages source
-quickactions-viewsource = Ver código-fonte
+quickactions-viewsource2 = Ver código-fonte da página
 quickactions-cmd-viewsource = ver fonte, fonte
+# Tooltip text for the help button shown in the result.
+quickactions-learn-more =
+    .title = Saiba mais sobre ações rápidas
 
 ## Bookmark Panel
 
@@ -361,7 +376,7 @@ identity-site-information = Informações do site { $host }
 # Variables
 #  $host (String): the hostname of the site that is being displayed.
 identity-header-security-with-host =
-    .title = Segurança da conexão de { $host }
+    .title = Segurança da conexão com { $host }
 identity-connection-not-secure = Conexão não segura
 identity-connection-secure = Conexão segura
 identity-connection-failure = Falha na conexão
@@ -395,6 +410,7 @@ identity-connection-not-secure-security-view = Você não está conectado com se
 identity-connection-verified = Você está conectado com segurança a este site.
 identity-ev-owner-label = Certificado emitido para:
 identity-description-custom-root = A Mozilla não reconhece esta entidade certificadora. Ela pode ter sido adicionada pelo seu sistema operacional ou por um administrador. <label data-l10n-name="link">Saiba mais</label>
+identity-description-custom-root2 = A Mozilla não reconhece esta entidade certificadora. Ela pode ter sido adicionada pelo seu sistema operacional ou por um administrador.
 identity-remove-cert-exception =
     .label = Remover exceção
     .accesskey = R
@@ -403,9 +419,12 @@ identity-description-insecure-login-forms = As informações de acesso que você
 identity-description-weak-cipher-intro = Sua conexão com este site usa criptografia fraca e não é privativa.
 identity-description-weak-cipher-risk = Outras pessoas podem ver as suas informações ou modificar o comportamento do site.
 identity-description-active-blocked = O { -brand-short-name } bloqueou partes não seguras desta página. <label data-l10n-name="link">Saiba mais</label>
+identity-description-active-blocked2 = O { -brand-short-name } bloqueou partes não seguras desta página.
 identity-description-passive-loaded = Sua conexão não é privativa e as informações que compartilhar com o site podem ser vistas por outros.
 identity-description-passive-loaded-insecure = Este site tem conteúdo que não é seguro (como imagens). <label data-l10n-name="link">Saiba mais</label>
 identity-description-passive-loaded-mixed = Apesar do { -brand-short-name } ter bloqueado algum conteúdo, ainda há elementos na página que não são seguros (como imagens). <label data-l10n-name="link">Saiba mais</label>
+identity-description-passive-loaded-insecure2 = Este site tem conteúdo que não é seguro (como imagens).
+identity-description-passive-loaded-mixed2 = Apesar do { -brand-short-name } ter bloqueado algum conteúdo, ainda há elementos na página que não são seguros (como imagens).
 identity-description-active-loaded = Este site tem conteúdo que não é seguro (como scripts) e sua conexão com ele não é privativa.
 identity-description-active-loaded-insecure = Informações que você compartilhar com este site (como senhas, mensagens, cartões de créditos, etc.) podem ser vistas por terceiros.
 identity-learn-more =
@@ -482,6 +501,9 @@ popup-select-microphone-icon =
     .tooltiptext = Microfone
 popup-select-speaker-icon =
     .tooltiptext = Saídas de áudio
+popup-select-window-or-screen =
+    .label = Janela ou tela:
+    .accesskey = J
 popup-all-windows-shared = Todas as janelas visíveis na sua tela serão compartilhadas.
 popup-screen-sharing-block =
     .label = Bloquear
@@ -503,6 +525,7 @@ sharing-warning-disable-for-session =
 ## DevTools F12 popup
 
 enable-devtools-popup-description = Para usar o atalho F12, primeiro abra as ferramentas de desenvolvimento através do menu Desenvolvimento web.
+enable-devtools-popup-description2 = Para usar o atalho F12, primeiro abra as ferramentas de desenvolvimento através do menu 'Ferramentas do navegador'.
 
 ## URL Bar
 
@@ -554,7 +577,7 @@ urlbar-remote-control-notification-anchor2 =
 urlbar-permissions-granted =
     .tooltiptext = Você definiu permissões neste site.
 urlbar-switch-to-tab =
-    .value = Mudar para a aba:
+    .value = Mudar para aba:
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Extensão:
@@ -580,7 +603,7 @@ urlbar-result-action-search-in-private = Pesquisar em uma janela privativa
 #  $engine (String): the name of a search engine
 urlbar-result-action-search-w-engine = Pesquisar com { $engine }
 urlbar-result-action-sponsored = Patrocinado
-urlbar-result-action-switch-tab = Mudar para a aba
+urlbar-result-action-switch-tab = Mudar para aba
 urlbar-result-action-visit = Visitar
 # Directs a user to press the Tab key to perform a search with the specified
 # engine.
@@ -635,6 +658,24 @@ urlbar-group-search-suggestions =
 urlbar-group-quickactions =
     .label = Ações rápidas
 
+## Reader View toolbar buttons
+
+# This should match menu-view-enter-readerview in menubar.ftl
+reader-view-enter-button =
+    .aria-label = Ativar leitor
+# This should match menu-view-close-readerview in menubar.ftl
+reader-view-close-button =
+    .aria-label = Desativar leitor
+
+## Picture-in-Picture urlbar button
+## Variables:
+##   $shortcut (String) - Keyboard shortcut to execute the command.
+
+picture-in-picture-urlbar-button-open =
+    .tooltiptext = Abrir em picture-in-picture ({ $shortcut })
+picture-in-picture-urlbar-button-close =
+    .tooltiptext = Fechar picture-in-picture ({ $shortcut })
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -679,6 +720,11 @@ bookmarks-other-bookmarks-menu =
     .label = Outros favoritos
 bookmarks-mobile-bookmarks-menu =
     .label = Favoritos do celular
+
+## Variables:
+##   $isVisible (boolean): if the specific element (e.g. bookmarks sidebar,
+##                         bookmarks toolbar, etc.) is visible or not.
+
 bookmarks-tools-sidebar-visibility =
     .label =
         { $isVisible ->
@@ -703,6 +749,9 @@ bookmarks-tools-menu-button-visibility =
             [true] Remover menu de favoritos da barra de ferramentas
            *[other] Adicionar menu de favoritos à barra de ferramentas
         }
+
+##
+
 bookmarks-search =
     .label = Procurar favoritos
 bookmarks-tools =
@@ -772,6 +821,9 @@ toolbar-overflow-customize-button =
 toolbar-button-email-link =
     .label = Enviar link por email
     .tooltiptext = Enviar link desta página por email
+toolbar-button-logins =
+    .label = Senhas
+    .tooltiptext = Ver e gerenciar senhas salvas
 # Variables:
 #  $shortcut (String): keyboard shortcut to save a copy of the page
 toolbar-button-save-page =
@@ -911,3 +963,33 @@ private-browsing-indicator-label = Navegação privativa
 unified-extensions-button =
     .label = Extensões
     .tooltiptext = Extensões
+
+## Unified extensions button when permission(s) are needed.
+## Note that the new line is intentionally part of the tooltip.
+
+unified-extensions-button-permissions-needed =
+    .label = Extensões
+    .tooltiptext =
+        Extensões
+        Permissões necessárias
+
+## Autorefresh blocker
+
+refresh-blocked-refresh-label = O { -brand-short-name } impediu que esta página fosse recarregada automaticamente.
+refresh-blocked-redirect-label = O { -brand-short-name } impediu que esta página redirecionasse automaticamente para outra página.
+refresh-blocked-allow =
+    .label = Permitir
+    .accesskey = P
+
+## Firefox Relay integration
+
+firefox-relay-offer-why-relay = O { -relay-brand-name } mascara seu endereço de email verdadeiro para ajudar a te proteger contra vazamentos de dados e spam.
+firefox-relay-offer-how-we-integrate = Ao continuar, você poderá gerar novas máscaras de email do { -relay-brand-short-name } diretamente no gerenciador de senhas do { -brand-shorter-name }.
+# Variables:
+#  $sitename (String): name of the site where user enters their Relay mask
+#  $useremail (String): user email that will receive messages
+firefox-relay-offer-what-relay-does = Encaminharemos todos os emails de <strong>{ $sitename }</strong> para <strong>{ $useremail }</strong>.
+
+## Popup Notification
+
+popup-notification-xpinstall-prompt-learn-more = Saiba mais sobre instalação de extensões com segurança

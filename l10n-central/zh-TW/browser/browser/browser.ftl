@@ -76,7 +76,9 @@ browser-main-window-mac-window-titles =
 # This should match the `data-title-default` attribute in both
 # `browser-main-window` and `browser-main-window-mac`.
 browser-main-window-title = { -brand-full-name }
-private-browsing-shortcut-text = { -brand-short-name } 隱私瀏覽模式
+# The non-variable portion of this MUST match the translation of
+# "PRIVATE_BROWSING_SHORTCUT_TITLE" in custom.properties
+private-browsing-shortcut-text-2 = { -brand-shortcut-name } 隱私瀏覽模式
 
 ##
 
@@ -134,11 +136,23 @@ urlbar-addons-notification-anchor =
 urlbar-tip-help-icon =
     .title = 取得幫助
 urlbar-search-tips-confirm = 好的，知道了
+urlbar-search-tips-confirm-short = 知道了！
 # Read out before Urlbar Tip text content so screenreader users know the
 # subsequent text is a tip offered by the browser. It should end in a colon or
 # localized equivalent.
 urlbar-tip-icon-description =
     .alt = 秘訣:
+urlbar-result-menu-button =
+    .title = 開啟選單
+urlbar-result-menu-learn-more =
+    .label = 了解更多
+    .accesskey = L
+urlbar-result-menu-remove-from-history =
+    .label = 從紀錄移除
+    .accesskey = Ｒ
+urlbar-result-menu-tip-get-help =
+    .label = 取得幫助
+    .accesskey = h
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -147,6 +161,8 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = 打得更少，找到更多: 直接從網址列進行 { $engineName } 搜尋。
 urlbar-search-tips-redirect-2 = 在網址列進行搜尋，就可看見由 { $engineName } 及瀏覽紀錄提供的搜尋建議。
+# Make sure to match the name of the Search panel in settings.
+urlbar-search-tips-persist = 搜尋功能變得更簡單了，您可以直接在網址列讓搜尋變得更明確。若要改回顯示網址，請到設定當中的「搜尋」切換。
 # Prompts users to use the Urlbar when they are typing in the domain of a
 # search engine, e.g. google.com or amazon.com.
 urlbar-tabtosearch-onboard = 使用此捷徑，讓您更快找到想要的東西。
@@ -267,42 +283,38 @@ search-one-offs-actions =
     .tooltiptext = 動作（{ $restrict }）
 
 ## QuickActions are shown in the urlbar as the user types a matching string
-
-
-## QuickActions are shown in the urlbar as the user types a matching string
 ## The -cmd- strings are comma separated list of keywords that will match
 ## the action.
 
 # Opens the about:addons page in the home / recommendations section
 quickactions-addons = 檢視附加元件
-quickactions-cmd-addons = 附加元件, 擴充套件, 佈景主題, add-ons, extensions, themes
 quickactions-cmd-addons2 = 附加元件
 # Opens the bookmarks library window
-quickactions-bookmarks = 檢視書籤
+quickactions-bookmarks2 = 管理書籤
 quickactions-cmd-bookmarks = 書籤, bookmarks
 # Opens a SUMO article explaining how to clear history
 quickactions-clearhistory = 清除瀏覽記錄
 quickactions-cmd-clearhistory = 清除瀏覽紀錄, clear history
 # Opens about:downloads page
-quickactions-downloads = 開啟下載項目
+quickactions-downloads2 = 檢視下載項目
 quickactions-cmd-downloads = 下載項目, 下載, downloads
 # Opens about:addons page in the extensions section
 quickactions-extensions = 管理擴充套件
 quickactions-cmd-extensions = 擴充套件
 # Opens the devtools web inspector
-quickactions-inspector = 開啟檢測器
+quickactions-inspector2 = 開啟開發者工具
 quickactions-cmd-inspector = 檢測器, 開發工具, inspector, devtools
 # Opens about:logins
-quickactions-logins = 檢視登入資訊
+quickactions-logins2 = 管理密碼
 quickactions-cmd-logins = 登入資訊, 密碼, 帳號, logins, passwords
 # Opens about:addons page in the plugins section
 quickactions-plugins = 管理外掛程式
 quickactions-cmd-plugins = 外掛程式
 # Opens the print dialog
-quickactions-print = 列印
+quickactions-print2 = 列印頁面
 quickactions-cmd-print = 列印, print
 # Opens a new private browsing window
-quickactions-private = 開啟隱私瀏覽視窗
+quickactions-private2 = 開啟隱私視窗
 quickactions-cmd-private = 隱私瀏覽, 無痕模式, private browsing
 # Opens a SUMO article explaining how to refresh
 quickactions-refresh = 重新整理 { -brand-short-name }
@@ -311,10 +323,10 @@ quickactions-cmd-refresh = 重新整理, refresh
 quickactions-restart = 重新啟動 { -brand-short-name }
 quickactions-cmd-restart = 重新啟動, 重開, restart
 # Opens the screenshot tool
-quickactions-screenshot2 = 拍攝畫面擷圖
+quickactions-screenshot3 = 拍攝畫面擷圖
 quickactions-cmd-screenshot = 畫面擷圖, 擷圖, screenshot
 # Opens about:preferences
-quickactions-settings = 開啟設定
+quickactions-settings2 = 管理設定
 quickactions-cmd-settings = 設定, 偏好設定, 選項, settings, preferences, options
 # Opens about:addons page in the themes section
 quickactions-themes = 管理佈景主題
@@ -323,8 +335,11 @@ quickactions-cmd-themes = 佈景主題
 quickactions-update = 更新 { -brand-short-name }
 quickactions-cmd-update = 更新, update
 # Opens the view-source UI with current pages source
-quickactions-viewsource = 檢視原始碼
+quickactions-viewsource2 = 檢視原始碼
 quickactions-cmd-viewsource = 檢視原始碼, 原始碼, view source, source
+# Tooltip text for the help button shown in the result.
+quickactions-learn-more =
+    .title = 了解更多快速操作的相關資訊
 
 ## Bookmark Panel
 
@@ -395,6 +410,7 @@ identity-connection-not-secure-security-view = 您並未安全地連線至此網
 identity-connection-verified = 您正安全地連線至此網站。
 identity-ev-owner-label = 憑證簽發給:
 identity-description-custom-root = Mozilla 不認識此憑證簽發者，可能是由您的作業系統或網路管理員所加入的。<label data-l10n-name="link">了解更多</label>
+identity-description-custom-root2 = Mozilla 不認識此憑證簽發者，可能是由您的作業系統或網路管理員所加入的。
 identity-remove-cert-exception =
     .label = 移除例外
     .accesskey = R
@@ -403,9 +419,12 @@ identity-description-insecure-login-forms = 此頁面並不安全，您的登入
 identity-description-weak-cipher-intro = 您與此網站間的連線使用了弱強度的加密，並不私密。
 identity-description-weak-cipher-risk = 其他人可以看到您的資訊，或修改網站的行為。
 identity-description-active-blocked = { -brand-short-name } 已經封鎖此頁面中不安全的部分。<label data-l10n-name="link">了解更多</label>
+identity-description-active-blocked2 = { -brand-short-name } 已經封鎖此頁面中不安全的部分。
 identity-description-passive-loaded = 您的連線並不私密，提供給此網站的資訊可能會被其他人看到。
 identity-description-passive-loaded-insecure = 此網站包含不安全的內容（例如圖片）。<label data-l10n-name="link">了解更多</label>
 identity-description-passive-loaded-mixed = 雖然 { -brand-short-name } 已經封鎖部分內容，但頁面中還是有不安全的內容（例如圖片）。<label data-l10n-name="link">了解更多</label>
+identity-description-passive-loaded-insecure2 = 此網站包含不安全的內容（例如圖片）。
+identity-description-passive-loaded-mixed2 = 雖然 { -brand-short-name } 已經封鎖部分內容，但頁面中還是有不安全的內容（例如圖片）。
 identity-description-active-loaded = 此網站包含不安全的內容（例如指令碼），與其之間的連線並不私密。
 identity-description-active-loaded-insecure = 您提供給此網站的資訊（例如密碼、訊息、信用卡號等等）可能會被其他人看到。
 identity-learn-more =
@@ -482,6 +501,9 @@ popup-select-microphone-icon =
     .tooltiptext = 麥克風
 popup-select-speaker-icon =
     .tooltiptext = 音效輸出裝置
+popup-select-window-or-screen =
+    .label = 視窗或畫面:
+    .accesskey = W
 popup-all-windows-shared = 將分享您畫面上所有可見的視窗。
 popup-screen-sharing-block =
     .label = 封鎖
@@ -503,6 +525,7 @@ sharing-warning-disable-for-session =
 ## DevTools F12 popup
 
 enable-devtools-popup-description = 請透過「網頁開發者」選單開啟開發者工具，才能使用 F12 快速鍵。
+enable-devtools-popup-description2 = 請透過「瀏覽器工具」選單開啟開發者工具，才能使用 F12 快速鍵。
 
 ## URL Bar
 
@@ -635,6 +658,24 @@ urlbar-group-search-suggestions =
 urlbar-group-quickactions =
     .label = 快速操作
 
+## Reader View toolbar buttons
+
+# This should match menu-view-enter-readerview in menubar.ftl
+reader-view-enter-button =
+    .aria-label = 進入閱讀模式
+# This should match menu-view-close-readerview in menubar.ftl
+reader-view-close-button =
+    .aria-label = 關閉閱讀模式
+
+## Picture-in-Picture urlbar button
+## Variables:
+##   $shortcut (String) - Keyboard shortcut to execute the command.
+
+picture-in-picture-urlbar-button-open =
+    .tooltiptext = 開啟子母畫面（{ $shortcut }）
+picture-in-picture-urlbar-button-close =
+    .tooltiptext = 關閉子母畫面（{ $shortcut }）
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -679,6 +720,11 @@ bookmarks-other-bookmarks-menu =
     .label = 其他書籤
 bookmarks-mobile-bookmarks-menu =
     .label = 行動書籤
+
+## Variables:
+##   $isVisible (boolean): if the specific element (e.g. bookmarks sidebar,
+##                         bookmarks toolbar, etc.) is visible or not.
+
 bookmarks-tools-sidebar-visibility =
     .label =
         { $isVisible ->
@@ -703,6 +749,9 @@ bookmarks-tools-menu-button-visibility =
             [true] 從工具列移除書籤選單
            *[other] 在工具列中加入書籤選單
         }
+
+##
+
 bookmarks-search =
     .label = 搜尋書籤
 bookmarks-tools =
@@ -772,6 +821,9 @@ toolbar-overflow-customize-button =
 toolbar-button-email-link =
     .label = 寄送鏈結
     .tooltiptext = 寄出本頁面的鏈結
+toolbar-button-logins =
+    .label = 密碼
+    .tooltiptext = 檢視與管理您儲存的密碼
 # Variables:
 #  $shortcut (String): keyboard shortcut to save a copy of the page
 toolbar-button-save-page =
@@ -911,3 +963,31 @@ private-browsing-indicator-label = 隱私瀏覽
 unified-extensions-button =
     .label = 擴充套件
     .tooltiptext = 擴充套件
+
+## Unified extensions button when permission(s) are needed.
+## Note that the new line is intentionally part of the tooltip.
+
+unified-extensions-button-permissions-needed =
+    .label = 擴充套件
+    .tooltiptext = 擴充套件需要權限
+
+## Autorefresh blocker
+
+refresh-blocked-refresh-label = { -brand-short-name } 已阻止本頁面自動重新載入。
+refresh-blocked-redirect-label = { -brand-short-name } 已阻止本頁面自動重新導向到其他網頁。
+refresh-blocked-allow =
+    .label = 允許
+    .accesskey = A
+
+## Firefox Relay integration
+
+firefox-relay-offer-why-relay = { -relay-brand-name } 可隱藏您的實際電子郵件地址，以幫助您降低受到資料外洩事件與垃圾信的影響。
+firefox-relay-offer-how-we-integrate = 若繼續，將可以直接從 { -brand-shorter-name } 密碼管理員產生新的 { -relay-brand-short-name } 轉寄信箱。
+# Variables:
+#  $sitename (String): name of the site where user enters their Relay mask
+#  $useremail (String): user email that will receive messages
+firefox-relay-offer-what-relay-does = 我們會將所有 <strong>{ $sitename }</strong> 收到的電子郵件，轉寄到 <strong>{ $useremail }</strong>。
+
+## Popup Notification
+
+popup-notification-xpinstall-prompt-learn-more = 了解如何於安裝附加元件時確保安全的更多資訊

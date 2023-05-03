@@ -60,3 +60,11 @@ about-private-browsing-pin-promo-link-text =
        *[other] Aan taakbalk vastzetten
     }
 about-private-browsing-pin-promo-title = Geen opgeslagen cookies of geschiedenis, rechtstreeks vanaf uw bureaublad. Surf alsof niemand kijkt.
+
+## Strings used in a promotion message for cookie banner reduction
+
+# Simplified version of the headline if the original text doesn't work
+# in your language: `See fewer cookie requests`.
+about-private-browsing-cookie-banners-promo-header = Vaarwel cookiebanners!
+about-private-browsing-cookie-banners-promo-button = Cookiebanners reduceren
+about-private-browsing-cookie-banners-promo-message = Laat { -brand-short-name } cookie-pop-ups automatisch voor u beantwoorden, zodat u weer kunt navigeren zonder afleiding. { -brand-short-name } wijst alle verzoeken af indien mogelijk.

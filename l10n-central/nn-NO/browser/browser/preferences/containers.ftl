@@ -5,12 +5,20 @@
 containers-window-new =
     .title = Legg til ny behaldar
     .style = width: 45em
-
 # Variables
 #   $name (String) - Name of the container
 containers-window-update-settings =
     .title = Behaldarinstillingar for { $name }
     .style = width: 45em
+
+containers-window-new2 =
+    .title = Legg til ny behaldar
+    .style = min-width: 45em
+# Variables
+#   $name (String) - Name of the container
+containers-window-update-settings2 =
+    .title = Behaldarinstillingar for { $name }
+    .style = min-width: 45em
 
 containers-window-close =
     .key = w

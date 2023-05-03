@@ -76,7 +76,9 @@ browser-main-window-mac-window-titles =
 # This should match the `data-title-default` attribute in both
 # `browser-main-window` and `browser-main-window-mac`.
 browser-main-window-title = { -brand-full-name }
-private-browsing-shortcut-text = Ιδιωτική περιήγηση { -brand-short-name }
+# The non-variable portion of this MUST match the translation of
+# "PRIVATE_BROWSING_SHORTCUT_TITLE" in custom.properties
+private-browsing-shortcut-text-2 = Ιδιωτική περιήγηση { -brand-shortcut-name }
 
 ##
 
@@ -134,11 +136,23 @@ urlbar-addons-notification-anchor =
 urlbar-tip-help-icon =
     .title = Λάβετε βοήθεια
 urlbar-search-tips-confirm = Εντάξει, το 'πιασα
+urlbar-search-tips-confirm-short = Το κατάλαβα
 # Read out before Urlbar Tip text content so screenreader users know the
 # subsequent text is a tip offered by the browser. It should end in a colon or
 # localized equivalent.
 urlbar-tip-icon-description =
     .alt = Συμβουλή:
+urlbar-result-menu-button =
+    .title = Άνοιγμα μενού
+urlbar-result-menu-learn-more =
+    .label = Μάθετε περισσότερα
+    .accesskey = Μ
+urlbar-result-menu-remove-from-history =
+    .label = Αφαίρεση από το ιστορικό
+    .accesskey = Α
+urlbar-result-menu-tip-get-help =
+    .label = Λήψη βοήθειας
+    .accesskey = β
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -147,6 +161,8 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Πληκτρολογήστε λιγότερα, βρείτε περισσότερα: Αναζητήστε μέσω { $engineName } κατευθείαν από τη γραμμή διευθύνσεων.
 urlbar-search-tips-redirect-2 = Ξεκινήστε την αναζήτησή σας στη γραμμή διευθύνσεων για να δείτε προτάσεις από το { $engineName } και το ιστορικό περιήγησής σας.
+# Make sure to match the name of the Search panel in settings.
+urlbar-search-tips-persist = Η αναζήτηση μόλις έγινε πιο απλή. Δοκιμάστε να κάνετε την αναζήτησή σας πιο συγκεκριμένη εδώ, στη γραμμή διευθύνσεων. Για να εμφανίσετε τη διεύθυνση URL, μεταβείτε στην καρτέλα «Αναζήτηση» στις ρυθμίσεις.
 # Prompts users to use the Urlbar when they are typing in the domain of a
 # search engine, e.g. google.com or amazon.com.
 urlbar-tabtosearch-onboard = Επιλέξτε αυτήν τη συντόμευση για να βρείτε αυτό που χρειάζεστε, πιο γρήγορα.
@@ -267,42 +283,38 @@ search-one-offs-actions =
     .tooltiptext = Ενέργειες ({ $restrict })
 
 ## QuickActions are shown in the urlbar as the user types a matching string
-
-
-## QuickActions are shown in the urlbar as the user types a matching string
 ## The -cmd- strings are comma separated list of keywords that will match
 ## the action.
 
 # Opens the about:addons page in the home / recommendations section
 quickactions-addons = Προβολή προσθέτων
-quickactions-cmd-addons = πρόσθετα, επεκτάσεις, θέματα
 quickactions-cmd-addons2 = πρόσθετα
 # Opens the bookmarks library window
-quickactions-bookmarks = Προβολή σελιδοδεικτών
+quickactions-bookmarks2 = Διαχείριση σελιδοδεικτών
 quickactions-cmd-bookmarks = σελιδοδείκτες
 # Opens a SUMO article explaining how to clear history
 quickactions-clearhistory = Απαλοιφή ιστορικού
 quickactions-cmd-clearhistory = απαλοιφή ιστορικού, εκκαθάριση ιστορικού, διαγραφή ιστορικού
 # Opens about:downloads page
-quickactions-downloads = Άνοιγμα λήψεων
+quickactions-downloads2 = Προβολή λήψεων
 quickactions-cmd-downloads = λήψεις
 # Opens about:addons page in the extensions section
 quickactions-extensions = Διαχείριση επεκτάσεων
 quickactions-cmd-extensions = επεκτάσεις
 # Opens the devtools web inspector
-quickactions-inspector = Άνοιγμα επιθεώρησης
+quickactions-inspector2 = Άνοιγμα εργαλείων ανάπτυξης
 quickactions-cmd-inspector = επιθεώρηση, εργαλεία προγραμματιστή, εργαλεία ανάπτυξης, devtools
 # Opens about:logins
-quickactions-logins = Προβολή συνδέσεων
+quickactions-logins2 = Διαχείριση κωδικών πρόσβασης
 quickactions-cmd-logins = συνδέσεις, στοιχεία σύνδεσης, διαπιστευτήρια, κωδικοί πρόσβασης
 # Opens about:addons page in the plugins section
 quickactions-plugins = Διαχείριση αρθρωμάτων
 quickactions-cmd-plugins = αρθρώματα
 # Opens the print dialog
-quickactions-print = Εκτύπωση
+quickactions-print2 = Εκτύπωση σελίδας
 quickactions-cmd-print = εκτύπωση
 # Opens a new private browsing window
-quickactions-private = Άνοιγμα παραθύρου ιδιωτικής περιήγησης
+quickactions-private2 = Άνοιγμα ιδιωτικού παραθύρου
 quickactions-cmd-private = ιδιωτική περιήγηση
 # Opens a SUMO article explaining how to refresh
 quickactions-refresh = Ανανέωση του { -brand-short-name }
@@ -311,10 +323,10 @@ quickactions-cmd-refresh = ανανέωση, επαναφόρτωση
 quickactions-restart = Επανεκκίνηση του { -brand-short-name }
 quickactions-cmd-restart = επανεκκίνηση
 # Opens the screenshot tool
-quickactions-screenshot2 = Λήψη στιγμιότυπου
+quickactions-screenshot3 = Λήψη στιγμιότυπου
 quickactions-cmd-screenshot = στιγμιότυπο
 # Opens about:preferences
-quickactions-settings = Άνοιγμα ρυθμίσεων
+quickactions-settings2 = Διαχείριση ρυθμίσεων
 quickactions-cmd-settings = ρυθμίσεις, προτιμήσεις, επιλογές
 # Opens about:addons page in the themes section
 quickactions-themes = Διαχείριση θεμάτων
@@ -323,8 +335,11 @@ quickactions-cmd-themes = θέματα
 quickactions-update = Ενημέρωση του { -brand-short-name }
 quickactions-cmd-update = ενημέρωση
 # Opens the view-source UI with current pages source
-quickactions-viewsource = Προβολή πηγής
+quickactions-viewsource2 = Προβολή πηγαίου κώδικα σελίδας
 quickactions-cmd-viewsource = προβολή πηγής, πηγαίος κώδικας
+# Tooltip text for the help button shown in the result.
+quickactions-learn-more =
+    .title = Μάθετε περισσότερα για τις γρήγορες ενέργειες
 
 ## Bookmark Panel
 
@@ -395,6 +410,7 @@ identity-connection-not-secure-security-view = Η σύνδεσή σας με α�
 identity-connection-verified = Η σύνδεσή σας με αυτόν τον ιστότοπο είναι ασφαλής.
 identity-ev-owner-label = Το πιστοποιητικό εκδόθηκε για:
 identity-description-custom-root = Η Mozilla δεν αναγνωρίζει αυτόν τον εκδότη πιστοποιητικών. Ενδέχεται να έχει προστεθεί από το λειτουργικό σας σύστημα ή κάποιο διαχειριστή. <label data-l10n-name="link">Μάθετε περισσότερα</label>
+identity-description-custom-root2 = Η Mozilla δεν αναγνωρίζει αυτόν τον εκδότη πιστοποιητικών. Ενδέχεται να έχει προστεθεί από το λειτουργικό σας σύστημα ή κάποιο διαχειριστή.
 identity-remove-cert-exception =
     .label = Αφαίρεση εξαίρεσης
     .accesskey = ρ
@@ -403,9 +419,12 @@ identity-description-insecure-login-forms = Τα στοιχεία σύνδεση
 identity-description-weak-cipher-intro = Η σύνδεση σας με αυτόν τον ιστότοπο δεν χρησιμοποιεί ισχυρή κρυπτογράφηση και δεν είναι ιδιωτική.
 identity-description-weak-cipher-risk = Τρίτα άτομα μπορούν να δουν τις πληροφορίες σας ή να τροποποιήσουν τη συμπεριφορά αυτού του ιστοτόπου.
 identity-description-active-blocked = Το { -brand-short-name } έχει αποκλείσει επισφαλή τμήματα αυτής της σελίδας. <label data-l10n-name="link">Μάθετε περισσότερα</label>
+identity-description-active-blocked2 = Το { -brand-short-name } έχει αποκλείσει επισφαλή τμήματα αυτής της σελίδας.
 identity-description-passive-loaded = Η σύνδεσή σας δεν είναι ιδιωτική και οι πληροφορίες που μοιράζεστε με αυτόν τον ιστότοπο μπορεί να προβληθούν από τρίτους.
 identity-description-passive-loaded-insecure = Αυτός ο ιστότοπος διαθέτει επισφαλές περιεχόμενο (όπως εικόνες). <label data-l10n-name="link">Μάθετε περισσότερα</label>
 identity-description-passive-loaded-mixed = Παρόλο που το { -brand-short-name } έχει αποκλείσει ορισμένο περιεχόμενο, υπάρχει ακόμη επισφαλές περιεχόμενο (π.χ. εικόνες). <label data-l10n-name="link">Μάθετε περισσότερα</label>
+identity-description-passive-loaded-insecure2 = Αυτός ο ιστότοπος διαθέτει επισφαλές περιεχόμενο (όπως εικόνες).
+identity-description-passive-loaded-mixed2 = Παρόλο που το { -brand-short-name } έχει αποκλείσει ορισμένο περιεχόμενο, υπάρχει ακόμη επισφαλές περιεχόμενο (π.χ. εικόνες).
 identity-description-active-loaded = Αυτός ο ιστότοπος διαθέτει επισφαλές περιεχόμενο (όπως σενάρια) και η σύνδεσή σας δεν είναι ιδιωτική.
 identity-description-active-loaded-insecure = Οι πληροφορίες που μοιράζεστε με αυτόν τον ιστότοπο μπορεί να προβληθούν από τρίτους (όπως κωδικοί πρόσβασης, μηνύματα, πιστωτικές κάρτες κ.λπ.).
 identity-learn-more =
@@ -482,6 +501,9 @@ popup-select-microphone-icon =
     .tooltiptext = Μικρόφωνο
 popup-select-speaker-icon =
     .tooltiptext = Ηχεία
+popup-select-window-or-screen =
+    .label = Παράθυρο ή οθόνη:
+    .accesskey = Π
 popup-all-windows-shared = Όλα τα ορατά παράθυρα της οθόνης σας θα γίνουν κοινόχρηστα.
 popup-screen-sharing-block =
     .label = Φραγή
@@ -503,6 +525,7 @@ sharing-warning-disable-for-session =
 ## DevTools F12 popup
 
 enable-devtools-popup-description = Για να χρησιμοποιήσετε τη συντόμευση F12, ανοίξτε πρώτα τα DevTools μέσω του μενού προγραμματιστών ιστού.
+enable-devtools-popup-description2 = Για να χρησιμοποιήσετε τη συντόμευση F12, ανοίξτε πρώτα τα DevTools μέσω του μενού εργαλείων του προγράμματος περιήγησης.
 
 ## URL Bar
 
@@ -635,6 +658,24 @@ urlbar-group-search-suggestions =
 urlbar-group-quickactions =
     .label = Γρήγορες ενέργειες
 
+## Reader View toolbar buttons
+
+# This should match menu-view-enter-readerview in menubar.ftl
+reader-view-enter-button =
+    .aria-label = Άνοιγμα προβολής ανάγνωσης
+# This should match menu-view-close-readerview in menubar.ftl
+reader-view-close-button =
+    .aria-label = Κλείσιμο προβολής ανάγνωσης
+
+## Picture-in-Picture urlbar button
+## Variables:
+##   $shortcut (String) - Keyboard shortcut to execute the command.
+
+picture-in-picture-urlbar-button-open =
+    .tooltiptext = Άνοιγμα λειτουργίας «Εικόνα εντός εικόνας» ({ $shortcut })
+picture-in-picture-urlbar-button-close =
+    .tooltiptext = Κλείσιμο λειτουργίας «Εικόνα εντός εικόνας» ({ $shortcut })
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -679,6 +720,11 @@ bookmarks-other-bookmarks-menu =
     .label = Άλλοι σελιδοδείκτες
 bookmarks-mobile-bookmarks-menu =
     .label = Σελιδοδείκτες κινητού
+
+## Variables:
+##   $isVisible (boolean): if the specific element (e.g. bookmarks sidebar,
+##                         bookmarks toolbar, etc.) is visible or not.
+
 bookmarks-tools-sidebar-visibility =
     .label =
         { $isVisible ->
@@ -703,6 +749,9 @@ bookmarks-tools-menu-button-visibility =
             [true] Αφαίρεση μενού σελιδοδεικτών από τη γραμμή εργαλείων
            *[other] Προσθήκη μενού σελιδοδεικτών στη γραμμή εργαλείων
         }
+
+##
+
 bookmarks-search =
     .label = Αναζήτηση σελιδοδεικτών
 bookmarks-tools =
@@ -772,6 +821,9 @@ toolbar-overflow-customize-button =
 toolbar-button-email-link =
     .label = Αποστολή συνδέσμου
     .tooltiptext = Αποστολή συνδέσμου σελίδας
+toolbar-button-logins =
+    .label = Κωδικοί πρόσβασης
+    .tooltiptext = Προβολή και διαχείριση των αποθηκευμένων κωδικών πρόσβασης
 # Variables:
 #  $shortcut (String): keyboard shortcut to save a copy of the page
 toolbar-button-save-page =
@@ -911,3 +963,33 @@ private-browsing-indicator-label = Ιδιωτική περιήγηση
 unified-extensions-button =
     .label = Επεκτάσεις
     .tooltiptext = Επεκτάσεις
+
+## Unified extensions button when permission(s) are needed.
+## Note that the new line is intentionally part of the tooltip.
+
+unified-extensions-button-permissions-needed =
+    .label = Επεκτάσεις
+    .tooltiptext =
+        Επεκτάσεις
+        Απαιτούνται άδειες
+
+## Autorefresh blocker
+
+refresh-blocked-refresh-label = Το { -brand-short-name } εμπόδισε την αυτόματη ανανέωση της σελίδας.
+refresh-blocked-redirect-label = Το { -brand-short-name } εμπόδισε την αυτόματη ανακατεύθυνση της σελίδας σε μια άλλη σελίδα.
+refresh-blocked-allow =
+    .label = Αποδοχή
+    .accesskey = Α
+
+## Firefox Relay integration
+
+firefox-relay-offer-why-relay = Το { -relay-brand-name } κρύβει την πραγματική σας διεύθυνση email για να σας προστατεύσει από παραβιάσεις δεδομένων και ανεπιθύμητα μηνύματα.
+firefox-relay-offer-how-we-integrate = Αν συνεχίσετε, θα μπορείτε να δημιουργήσετε νέες μάσκες email του { -relay-brand-short-name } απευθείας από τη διαχείριση κωδικών πρόσβασης του { -brand-shorter-name }.
+# Variables:
+#  $sitename (String): name of the site where user enters their Relay mask
+#  $useremail (String): user email that will receive messages
+firefox-relay-offer-what-relay-does = Θα προωθήσουμε όλα τα email από το <strong>{ $sitename }</strong> στο <strong>{ $useremail }</strong>.
+
+## Popup Notification
+
+popup-notification-xpinstall-prompt-learn-more = Μάθετε περισσότερα σχετικά με την ασφαλή εγκατάσταση πρόσθετων

@@ -35,7 +35,7 @@ about-networking-bytes-sent = 送出的位元組數
 about-networking-bytes-received = 接收的位元組數
 about-networking-logging = 紀錄
 about-networking-log-tutorial = 請參考 <a data-l10n-name="logging">HTTP Logging</a> 一文當中的使用教學來使用此工具。
-about-networking-current-log-file = 目前的紀錄檔:
+about-networking-current-log-file = 目前的紀錄檔：
 about-networking-current-log-modules = 目前的紀錄模組:
 about-networking-set-log-file = 設定記錄檔
 about-networking-set-log-modules = 設定記錄模組
@@ -63,6 +63,8 @@ about-networking-rcwn-cache-slow = 快取較慢數量
 about-networking-rcwn-cache-not-slow = 快取較快數量
 about-networking-networkid = 網路 ID
 about-networking-networkid-id = 網路 ID
+# Note: do not translate about:logging, as it is a URL.
+about-networking-moved-about-logging = 此頁面已移動至 <a data-l10n-name="about-logging-url">about:logging</a>。
 
 ## Link is intended as "network link"
 

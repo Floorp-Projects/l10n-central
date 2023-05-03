@@ -30,6 +30,10 @@ certmgr-edit-ca-cert =
     .title = CA 인증서 신뢰도 설정 편집
     .style = width: 48em;
 
+certmgr-edit-ca-cert2 =
+    .title = CA 인증서 신뢰도 설정 편집
+    .style = min-width: 48em;
+
 certmgr-edit-cert-edit-trust = 신뢰도 설정 편집:
 
 certmgr-edit-cert-trust-ssl =
@@ -41,6 +45,10 @@ certmgr-edit-cert-trust-email =
 certmgr-delete-cert =
     .title = 인증서 삭제
     .style = width: 48em; height: 24em;
+
+certmgr-delete-cert2 =
+    .title = 인증서 삭제
+    .style = min-width: 48em; min-height: 24em;
 
 certmgr-cert-host =
     .label = 호스트
@@ -185,8 +193,6 @@ delete-email-cert-impact = 개인 전자 메일 인증서를 삭제하면 더 �
 #   $serialNumber : the serial number of the cert in AA:BB:CC hex format.
 cert-with-serial =
     .value = 일련 번호 인증서: { $serialNumber }
-
-## Cert Viewer
 
 # Used to indicate that the user chose not to send a client authentication certificate to a server that requested one in a TLS handshake.
 send-no-client-certificate = 클라이언트 인증서를 보내지 않음

@@ -333,6 +333,9 @@ main-context-menu-use-saved-password =
 
 ##
 
+main-context-menu-use-relay-mask =
+    .label = 使用 { -relay-brand-short-name } 轉寄信箱
+    .accesskey = E
 main-context-menu-suggest-strong-password =
     .label = 建議一組安全的密碼…
     .accesskey = S

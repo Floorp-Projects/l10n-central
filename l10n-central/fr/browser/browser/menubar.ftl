@@ -86,8 +86,8 @@ menu-file-save-page =
     .label = Enregistrer sous…
     .accesskey = E
 menu-file-email-link =
-    .label = Envoyer par courriel un lien vers la page…
-    .accesskey = c
+    .label = Envoyer par e-mail un lien vers la page…
+    .accesskey = m
 menu-file-share-url =
     .label = Partager
     .accesskey = P
@@ -179,6 +179,17 @@ menu-view-exit-full-screen =
 menu-view-full-screen =
     .label = Plein écran
     .accesskey = P
+
+## These menu items may use the same accesskey.
+
+# This should match reader-view-enter-button in browser.ftl
+menu-view-enter-readerview =
+    .label = Passer en mode lecture
+    .accesskey = r
+# This should match reader-view-close-button in browser.ftl
+menu-view-close-readerview =
+    .label = Quitter le mode lecture
+    .accesskey = r
 
 ##
 

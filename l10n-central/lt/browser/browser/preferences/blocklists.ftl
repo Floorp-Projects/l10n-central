@@ -6,6 +6,10 @@ blocklist-window =
     .title = Blokavimo sąrašai
     .style = width: 55em
 
+blocklist-window2 =
+    .title = Blokavimo sąrašai
+    .style = min-width: 55em
+
 blocklist-description = Pasirinkite, kurį sąrašą „{ -brand-short-name }“ naudos stebėjimo elementų blokavimui. Sąrašus teikia <a data-l10n-name="disconnect-link" title="Disconnect">„Disconnect“</a>.
 blocklist-close-key =
     .key = w

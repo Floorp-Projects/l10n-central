@@ -25,6 +25,12 @@ return-to-amo-addon-title = Pobierzmy teraz rozszerzenie <img data-l10n-name="ic
 return-to-amo-add-extension-label = Dodaj rozszerzenie
 return-to-amo-add-theme-label = Dodaj motyw
 
+##  Variables: $addon-name (String) - Name of the add-on to be installed
+
+mr1-return-to-amo-subtitle = Witamy w przeglądarce { -brand-short-name }
+mr1-return-to-amo-addon-title = Masz teraz szybką, prywatną przeglądarkę { -brand-short-name } zawsze pod ręką. Możesz do niej dodać <b>{ $addon-name }</b> i osiągnąć jeszcze więcej.
+mr1-return-to-amo-add-extension-label = Dodaj „{ $addon-name }”
+
 ## Multistage onboarding strings (about:welcome pages)
 
 # Aria-label to make the "steps" of multistage onboarding visible to screen readers.
@@ -39,8 +45,8 @@ onboarding-welcome-steps-indicator =
 #   $current (Int) - Number of the current page
 #   $total (Int) - Total number of pages
 
-onboarding-welcome-steps-indicator2 =
-    .aria-valuetext = Postęp: { $current }. krok z { $total }
+onboarding-welcome-steps-indicator-label =
+    .aria-label = Postęp: { $current }. krok z { $total }
 # "Hero Text" displayed on left side of welcome screen.
 # The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
 # It also signals the passion users bring to Firefox, how they use
@@ -261,6 +267,15 @@ fx100-upgrade-thank-you-body = To nasze setne wydanie przeglądarki { -brand-sho
 fx100-upgrade-thanks-keep-body = To nasze setne wydanie! Dziękujemy, że jesteś częścią naszej społeczności. Miej przeglądarkę { -brand-short-name } zawsze pod ręką przez następne sto.
 mr2022-onboarding-secondary-skip-button-label = Pomiń ten krok
 
+## MR2022 New User Easy Setup screen strings
+
+# Primary button string used on new user onboarding first screen showing multiple actions such as Set Default, Import from previous browser.
+mr2022-onboarding-easy-setup-primary-button-label = Zapisz i kontynuuj
+# Set Default action checkbox label used on new user onboarding first screen
+mr2022-onboarding-easy-setup-set-default-checkbox-label = Ustaw przeglądarkę { -brand-short-name } jako domyślną
+# Import action checkbox label used on new user onboarding first screen
+mr2022-onboarding-easy-setup-import-checkbox-label = Importuj z poprzedniej przeglądarki
+
 ## MR2022 New User Pin Firefox screen strings
 
 # Title used on about:welcome for new users when Firefox is not pinned.
@@ -324,35 +339,35 @@ mr2022-onboarding-import-primary-button-label-no-attribution = Importuj z poprz
 
 mr2022-onboarding-colorway-title = Wybierz kolor, który Cię inspiruje
 mr2022-onboarding-colorway-subtitle = Niezależne głosy mogą zmieniać kulturę.
-mr2022-onboarding-colorway-primary-button-label = Ustaw kolorystykę
+mr2022-onboarding-colorway-primary-button-label-continue = Ustaw i kontynuuj
 mr2022-onboarding-existing-colorway-checkbox-label = Ustaw kolorową { -firefox-home-brand-name(case: "acc", capitalization: "lower") }
 mr2022-onboarding-colorway-label-default = Domyślna
-mr2022-onboarding-colorway-tooltip-default =
-    .title = Domyślna
+mr2022-onboarding-colorway-tooltip-default2 =
+    .title = Obecne kolory przeglądarki { -brand-short-name }
 mr2022-onboarding-colorway-description-default = <b>Używaj obecnych kolorów przeglądarki { -brand-short-name }.</b>
 mr2022-onboarding-colorway-label-playmaker = Rozgrywająca
-mr2022-onboarding-colorway-tooltip-playmaker =
-    .title = Rozgrywająca
+mr2022-onboarding-colorway-tooltip-playmaker2 =
+    .title = Rozgrywająca (czerwona)
 mr2022-onboarding-colorway-description-playmaker = <b>Rozgrywająca.</b> Stwarzasz szanse na wygraną i pomagasz wszystkim wokół siebie grać na wyższym poziomie.
 mr2022-onboarding-colorway-label-expressionist = Ekspresjonistka
-mr2022-onboarding-colorway-tooltip-expressionist =
-    .title = Ekspresjonistka
+mr2022-onboarding-colorway-tooltip-expressionist2 =
+    .title = Ekspresjonistka (żółta)
 mr2022-onboarding-colorway-description-expressionist = <b>Ekspresjonistka.</b> Widzisz świat inaczej, a Twoje dzieła budzą w innych emocje.
 mr2022-onboarding-colorway-label-visionary = Wizjonerka
-mr2022-onboarding-colorway-tooltip-visionary =
-    .title = Wizjonerka
+mr2022-onboarding-colorway-tooltip-visionary2 =
+    .title = Wizjonerka (zielona)
 mr2022-onboarding-colorway-description-visionary = <b>Wizjonerka.</b> Kwestionujesz status quo i skłaniasz innych do wyobrażenia sobie lepszej przyszłości.
 mr2022-onboarding-colorway-label-activist = Aktywistka
-mr2022-onboarding-colorway-tooltip-activist =
-    .title = Aktywistka
+mr2022-onboarding-colorway-tooltip-activist2 =
+    .title = Aktywistka (niebieska)
 mr2022-onboarding-colorway-description-activist = <b>Aktywistka.</b> Zostawiasz świat lepszym miejscem niż go zastałaś i wskazujesz innym drogę.
 mr2022-onboarding-colorway-label-dreamer = Marzycielka
-mr2022-onboarding-colorway-tooltip-dreamer =
-    .title = Marzycielka
+mr2022-onboarding-colorway-tooltip-dreamer2 =
+    .title = Marzycielka (fioletowa)
 mr2022-onboarding-colorway-description-dreamer = <b>Marzycielka.</b> Wierzysz, że śmiałym szczęście sprzyja i inspirujesz innych do odwagi.
 mr2022-onboarding-colorway-label-innovator = Innowatorka
-mr2022-onboarding-colorway-tooltip-innovator =
-    .title = Innowatorka
+mr2022-onboarding-colorway-tooltip-innovator2 =
+    .title = Innowatorka (pomarańczowa)
 mr2022-onboarding-colorway-description-innovator = <b>Innowatorka.</b> Wszędzie widzisz możliwości i wpływasz na życie wszystkich wokół siebie.
 
 ## MR2022 Multistage Mobile Download screen strings
@@ -383,7 +398,33 @@ mr2022-onboarding-privacy-segmentation-button-secondary-label = Wyświetlaj szcz
 
 ## MR2022 Multistage Gratitude screen strings
 
-mr2022-onboarding-gratitude-title = Pomagasz nam budować lepszą sieć.
+mr2022-onboarding-gratitude-title = Pomagasz nam budować lepszą sieć
 mr2022-onboarding-gratitude-subtitle = Dziękujemy za używanie przeglądarki { -brand-short-name }, wspieranej przez Mozilla Foundation. Z waszą pomocą pracujemy nad tym, aby Internet był bardziej otwarty, dostępny i lepszy dla wszystkich.
 mr2022-onboarding-gratitude-primary-button-label = Zobacz co nowego
 mr2022-onboarding-gratitude-secondary-button-label = Zacznij przeglądać Internet
+
+## Onboarding spotlight for infrequent users
+
+onboarding-infrequent-import-title = Czuj się jak u siebie
+onboarding-infrequent-import-subtitle = Czy się wprowadzasz, czy tylko zaglądasz na chwilę, pamiętaj, że możesz zaimportować swoje zakładki, hasła i nie tylko.
+onboarding-infrequent-import-primary-button = Importuj do przeglądarki { -brand-short-name }
+
+## MR2022 Illustration alt tags
+## Descriptive tags for illustrations used by screen readers and other assistive tech
+
+mr2022-onboarding-pin-image-alt =
+    .aria-label = Osoba pracująca na laptopie w otoczeniu gwiazd i kwiatów
+mr2022-onboarding-default-image-alt =
+    .aria-label = Osoba przytulająca logo przeglądarki { -brand-product-name }
+mr2022-onboarding-import-image-alt =
+    .aria-label = Osoba jadąca na deskorolce z pudełkiem ikon programów
+mr2022-onboarding-mobile-download-image-alt =
+    .aria-label = Żaby skaczące po liliach z kodem QR do pobrania przeglądarki { -brand-product-name } na telefon na środku
+mr2022-onboarding-pin-private-image-alt =
+    .aria-label = Magiczna różdżka sprawia, że logo trybu prywatnego przeglądarki { -brand-product-name } wyskakuje z kapelusza
+mr2022-onboarding-privacy-segmentation-image-alt =
+    .aria-label = Jasnoskóre i ciemnoskóre ręce przybijają piątkę
+mr2022-onboarding-gratitude-image-alt =
+    .aria-label = Widok na zachód słońca przez okno z lisem i rośliną doniczkową na parapecie
+mr2022-onboarding-colorways-image-alt =
+    .aria-label = Farba w sprayu maluje kolorowy kolaż zielonego oka, pomarańczowego buta, czerwonej piłki do koszykówki, fioletowych słuchawek, niebieskiego serca i żółtej korony

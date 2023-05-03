@@ -8,9 +8,16 @@ search-header =
     .searchbuttonlabel = Hledat
 search-header-shortcut =
     .key = f
+
+## Variables
+##   $domain - Domain name where add-ons are available (e.g. addons.mozilla.org)
+
 list-empty-get-extensions-message = Rozšíření a motivy vzhledů získáte na <a data-l10n-name="get-extensions">{ $domain }</a>
 list-empty-get-dictionaries-message = Slovníky pro kontrolu pravopisu získáte na <a data-l10n-name="get-extensions">{ $domain }</a>
 list-empty-get-language-packs-message = Jazykové balíčky získáte na <a data-l10n-name="get-extensions">{ $domain }</a>
+
+##
+
 list-empty-installed =
     .value = Žádný doplněk tohoto typu není nainstalován
 list-empty-available-updates =
@@ -25,19 +32,15 @@ help-button = Nápověda
 sidebar-help-button-title =
     .title = Nápověda
 addons-settings-button =
-    Nastavení { -brand-short-name.gender ->
-        [masculine] { -brand-short-name(case: "gen") }
-        [feminine] { -brand-short-name(case: "gen") }
-        [neuter] { -brand-short-name(case: "gen") }
-       *[other] aplikace
+    { -brand-short-name.case-status ->
+        [with-cases] Nastavení { -brand-short-name(case: "gen") }
+       *[no-cases] Nastavení aplikace
     }
 sidebar-settings-button-title =
     .title =
-        Nastavení { -brand-short-name.gender ->
-            [masculine] { -brand-short-name(case: "gen") }
-            [feminine] { -brand-short-name(case: "gen") }
-            [neuter] { -brand-short-name(case: "gen") }
-           *[other] aplikace
+        { -brand-short-name.case-status ->
+            [with-cases] Nastavení { -brand-short-name(case: "gen") }
+           *[no-cases] Nastavení aplikace
         }
 show-unsigned-extensions-button =
     .label = Některá rozšíření nemohla být ověřena
@@ -114,12 +117,10 @@ addon-restart-now =
 disabled-unsigned-heading =
     .value = Některé doplňky byly zablokovány
 disabled-unsigned-description =
-    Následující doplňky nebyly ověřeny pro použití { -brand-short-name.gender ->
-        [masculine] ve { -brand-short-name(case: "loc") }
-        [feminine] v { -brand-short-name(case: "loc") }
-        [neuter] v { -brand-short-name(case: "loc") }
-       *[other] v aplikaci { -brand-short-name }
-    }. Můžete <label data-l10n-name="find-addons">za ně najít náhrady</label> nebo požádat vývojáře, aby je nechal ověřit.
+    { -brand-short-name.case-status ->
+        [with-cases] Následující doplňky nebyly ověřeny pro použití ve { -brand-short-name(case: "loc") }. Můžete <label data-l10n-name="find-addons">za ně najít náhrady</label> nebo požádat vývojáře, aby je nechal ověřit.
+       *[no-cases] Následující doplňky nebyly ověřeny pro použití v aplikaci { -brand-short-name }. Můžete <label data-l10n-name="find-addons">za ně najít náhrady</label> nebo požádat vývojáře, aby je nechal ověřit.
+    }
 disabled-unsigned-learn-more = Zjistěte více o naší snaze o vaši bezpečnost.
 disabled-unsigned-devinfo = Vývojáři, kteří mají zájem o ověření svých rozšíření, mohou pokračovat přečtením <label data-l10n-name="learn-more">našeho manuálu</label>.
 plugin-deprecation-description = Něco chybí? Některé zásuvné moduly už { -brand-short-name } nepodporuje. <label data-l10n-name="learn-more">Zjistit více.</label>
@@ -127,12 +128,10 @@ legacy-warning-show-legacy = Zobrazit zastaralá rozšíření
 legacy-extensions =
     .value = Zastaralá rozšíření
 legacy-extensions-description =
-    Tato rozšíření byla zakázána, protože neodpovídají současným standardům { -brand-short-name.gender ->
-        [masculine] { -brand-short-name(case: "gen") }
-        [feminine] { -brand-short-name(case: "gen") }
-        [neuter] { -brand-short-name(case: "gen") }
-       *[other] aplikace { -brand-short-name }
-    }. <label data-l10n-name="legacy-learn-more">Zjistit více o změnách pro doplňky</label>
+    { -brand-short-name.case-status ->
+        [with-cases] Tato rozšíření byla zakázána, protože neodpovídají současným standardům { -brand-short-name(case: "gen") }. <label data-l10n-name="legacy-learn-more">Zjistit více o změnách pro doplňky</label>
+       *[no-cases] Tato rozšíření byla zakázána, protože neodpovídají současným standardům aplikace { -brand-short-name }. <label data-l10n-name="legacy-learn-more">Zjistit více o změnách pro doplňky</label>
+    }
 private-browsing-description2 =
     Fungování rozšíření pro aplikaci { -brand-short-name } se v anonymních oknech mění. Žádné nově nainstalované rozšíření, nebude ve výchozím nastavení v anonymních oknech fungovat, pokud mu to nepovolíte. Rozšíření tak nebudou mít bez vašeho vědomí přístup k tomu, co v anonymních oknech děláte.
     <label data-l10n-name="private-browsing-learn-more">Jak na nastavení rozšíření</label>
@@ -163,6 +162,10 @@ addon-category-recent-updates-title =
 addon-category-sitepermission = Oprávnění serverů
 addon-category-sitepermission-title =
     .title = Oprávnění serverů
+# String displayed in about:addons in the Site Permissions section
+# Variables:
+#  $host (string) - DNS host name for which the webextension enables permissions
+addon-sitepermission-host = Oprávnění přístupu k webovým stránkám { $host }
 
 ## These are global warnings
 
@@ -231,11 +234,9 @@ shortcuts-modifier-other = Zahrnout Ctrl nebo Alt
 shortcuts-invalid = Neplatná kombinace kláves
 shortcuts-letter = Napište písmeno
 shortcuts-system =
-    Nelze přepsat zkratku { -brand-short-name.gender ->
-        [masculine] { -brand-short-name(case: "gen") }
-        [feminine] { -brand-short-name(case: "gen") }
-        [neuter] { -brand-short-name(case: "gen") }
-       *[other] aplikace { -brand-short-name }
+    { -brand-short-name.case-status ->
+        [with-cases] Nelze přepsat zkratku { -brand-short-name(case: "gen") }
+       *[no-cases] Nelze přepsat zkratku aplikace { -brand-short-name }
     }
 # String displayed in warning label when there is a duplicate shortcut
 shortcuts-duplicate = Duplicitní zkratka
@@ -247,6 +248,8 @@ shortcuts-duplicate-warning-message = Zkratka { $shortcut } se používá na ví
 # Variables:
 #   $addon (string) - Name of the add-on
 shortcuts-exists = Tuto zkratku už používá { $addon }
+# Variables:
+#   $numberToShow (number) - Number of other elements available to show
 shortcuts-card-expand-button =
     { $numberToShow ->
         [one] Zobrazit další
@@ -262,16 +265,20 @@ header-back-button =
 # Explanatory introduction to the list of recommended add-ons. The action word
 # ("recommends") in the final sentence is a link to external documentation.
 discopane-intro =
-    Rozšíření a vzhledy jsou jako aplikace pro váš prohlížeč. S nimi můžete chránit
-    svá hesla, stahovat videa, hledat výhodné nabídky, blokovat otravné reklamy,
-    měnit vzhled prohlížeče a mnoho dalšího. Tyto malé prográmky většinou vytváří
-    někdy jiný než my. Zde je výběr rozšíření <a data-l10n-name="learn-more-trigger">doporučených</a>
-    pro { -brand-product-name.gender ->
-        [masculine] { -brand-product-name(case: "acc") }
-        [feminine] { -brand-product-name(case: "acc") }
-        [neuter] { -brand-product-name(case: "acc") }
-       *[other] aplikaci { -brand-product-name }
-    } díky jejich jedinečné bezpečnosti a funkcím.
+    { -brand-product-name.case-status ->
+        [with-cases]
+            Rozšíření a vzhledy jsou jako aplikace pro váš prohlížeč. S nimi můžete chránit
+            svá hesla, stahovat videa, hledat výhodné nabídky, blokovat otravné reklamy,
+            měnit vzhled prohlížeče a mnoho dalšího. Tyto malé prográmky většinou vytváří
+            někdy jiný než my. Zde je výběr rozšíření <a data-l10n-name="learn-more-trigger">doporučených</a>
+            pro { -brand-product-name(case: "acc") } díky jejich jedinečné bezpečnosti a funkcím.
+       *[no-cases]
+            Rozšíření a vzhledy jsou jako aplikace pro váš prohlížeč. S nimi můžete chránit
+            svá hesla, stahovat videa, hledat výhodné nabídky, blokovat otravné reklamy,
+            měnit vzhled prohlížeče a mnoho dalšího. Tyto malé prográmky většinou vytváří
+            někdy jiný než my. Zde je výběr rozšíření <a data-l10n-name="learn-more-trigger">doporučených</a>
+            pro aplikaci { -brand-product-name } díky jejich jedinečné bezpečnosti a funkcím.
+    }
 # Notice to make user aware that the recommendations are personalized.
 discopane-notice-recommendations =
     Některá z těchto doporučení se zobrazují na základě informací o ostatních
@@ -287,11 +294,9 @@ created-by-author = od autora <a data-l10n-name="author">{ $author }</a>
 #   $dailyUsers (number) - The number of daily users.
 user-count = Počet uživatelů: { $dailyUsers }
 install-extension-button =
-    Přidat do { -brand-product-name.gender ->
-        [masculine] { -brand-product-name(case: "gen") }
-        [feminine] { -brand-product-name(case: "gen") }
-        [neuter] { -brand-product-name(case: "gen") }
-       *[other] aplikace { -brand-product-name }
+    { -brand-product-name.case-status ->
+        [with-cases] Přidat do { -brand-product-name(case: "gen") }
+       *[no-cases] Přidat do aplikace { -brand-product-name }
     }
 install-theme-button = Nainstalovat vzhled
 # The label of the button that appears after installing an add-on. Upon click,
@@ -331,21 +336,16 @@ theme-disabled-heading = Zakázané vzhledy
 theme-disabled-heading2 = Uložené vzhledy
 theme-monochromatic-heading = Palety barev
 theme-monochromatic-subheading =
-    Nové palety barev pro { -brand-product-name.gender ->
-        [masculine] { -brand-product-name(case: "acc") }
-        [feminine] { -brand-product-name(case: "acc") }
-        [neuter] { -brand-product-name(case: "acc") }
-       *[other] aplikaci { -brand-product-name }
-    } dostupné po omezenou dobu.
+    { -brand-product-name.case-status ->
+        [with-cases] Nové palety barev pro { -brand-product-name(case: "acc") } dostupné po omezenou dobu.
+       *[no-cases] Nové palety barev pro aplikaci { -brand-product-name } dostupné po omezenou dobu.
+    }
 # Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
 theme-colorways-button = Vyzkoušet palety barev
-# Variables:
-#   $expiryDate (string) - date on which the colorway collection expires.
-colorway-collection-expiry-date-span = Skončí { DATETIME($expiryDate, month: "long", day: "numeric") }
 # Refers to the button label for the colorways card when a user has a colorway theme enabled.
 theme-colorways-button-colorway-enabled = Změnit paletu barev
 # Variables:
-#   $expiryDate (string) - date on which the colorway collection expires. When formatting this, you may omit the year, only exposing the month and day, as colorway collections will always expire within a year.
+#   $expiryDate (string) - Date on which the colorway collection expires. When formatting this, you may omit the year, only exposing the month and day, as colorway collections will always expire within a year.
 colorway-collection-expiry-label = Skončí { DATETIME($expiryDate, month: "long", day: "numeric") }
 plugin-enabled-heading = Povolené moduly
 plugin-disabled-heading = Zakázané moduly
@@ -364,12 +364,10 @@ addon-detail-homepage-label = Domovská stránka
 addon-detail-rating-label = Hodnocení
 # Message for add-ons with a staged pending update.
 install-postponed-message =
-    Toto rozšíření bude aktualizováno během restartu { -brand-short-name.gender ->
-        [masculine] { -brand-short-name(case: "gen") }
-        [feminine] { -brand-short-name(case: "gen") }
-        [neuter] { -brand-short-name(case: "gen") }
-       *[other] aplikace { -brand-short-name }
-    }.
+    { -brand-short-name.case-status ->
+        [with-cases] Toto rozšíření bude aktualizováno během restartu { -brand-short-name(case: "gen") }.
+       *[no-cases] Toto rozšíření bude aktualizováno během restartu aplikace { -brand-short-name }.
+    }
 install-postponed-button = Aktualizovat hned
 # The average rating that the add-on has received.
 # Variables:
@@ -438,6 +436,8 @@ addon-permissions-optional = Volitelná oprávnění pro dodatečné funkce:
 addon-permissions-learnmore = Zjistit více o oprávněních
 recommended-extensions-heading = Doporučená rozšíření
 recommended-themes-heading = Doporučené vzhledy
+# Variables:
+#   $hostname (string) - Host where the permissions are granted
 addon-sitepermissions-required = Uděluje serveru <span data-l10n-name="hostname">{ $hostname }</span> následující oprávnění:
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
@@ -453,11 +453,9 @@ locale-heading = Správa jazyků
 updates-heading = Správa aktualizací
 sitepermission-heading = Správa oprávnění serverů
 discover-heading =
-    Přizpůsobte si { -brand-short-name.gender ->
-        [masculine] { -brand-short-name(case: "acc") }
-        [feminine] { -brand-short-name(case: "acc") }
-        [neuter] { -brand-short-name(case: "acc") }
-       *[other] aplikaci { -brand-short-name }
+    { -brand-short-name.case-status ->
+        [with-cases] Přizpůsobte si { -brand-short-name(case: "acc") }
+       *[no-cases] Přizpůsobte si aplikaci { -brand-short-name }
     }
 shortcuts-heading = Správa klávesových zkratek pro rozšíření
 default-heading-search-label = Najít další doplňky
@@ -470,30 +468,29 @@ addon-page-options-button =
 ## Variables:
 ##   $name (String): name of the add-on.
 
+
+## Detail notifications
+## Variables:
+##   $name (string) - Name of the add-on.
+
 # Variables:
-#   $version (String): application version.
+#   $version (string) - Application version.
 details-notification-incompatible =
-    { -brand-short-name.gender ->
-        [masculine] Doplněk { $name } není s { -brand-short-name(case: "ins") } { $version } kompatibilní.
-        [feminine] Doplněk { $name } není s { -brand-short-name(case: "ins") } { $version } kompatibilní.
-        [neuter] Doplněk { $name } není s { -brand-short-name(case: "ins") } { $version } kompatibilní.
-       *[other] Doplněk { $name } není s aplikací { -brand-short-name } { $version } kompatibilní.
+    { -brand-short-name.case-status ->
+        [with-cases] Doplněk { $name } není s { -brand-short-name(case: "ins") } { $version } kompatibilní.
+       *[no-cases] Doplněk { $name } není s aplikací { -brand-short-name } { $version } kompatibilní.
     }
 details-notification-incompatible-link = Více informací
 details-notification-unsigned-and-disabled =
-    { -brand-short-name.gender ->
-        [masculine] Doplněk { $name } nemohl být pro použití ve { -brand-short-name(case: "loc") } ověřen a byl zakázán.
-        [feminine] Doplněk { $name } nemohl být pro použití v { -brand-short-name(case: "loc") } ověřen a byl zakázán.
-        [neuter] Doplněk { $name } nemohl být pro použití v { -brand-short-name(case: "loc") } ověřen a byl zakázán.
-       *[other] Doplněk { $name } nemohl být pro použití v aplikaci { -brand-short-name } ověřen a byl zakázán.
+    { -brand-short-name.case-status ->
+        [with-cases] Doplněk { $name } nemohl být pro použití ve { -brand-short-name(case: "loc") } ověřen a byl zakázán.
+       *[no-cases] Doplněk { $name } nemohl být pro použití v aplikaci { -brand-short-name } ověřen a byl zakázán.
     }
 details-notification-unsigned-and-disabled-link = Více informací
 details-notification-unsigned =
-    { -brand-short-name.gender ->
-        [masculine] Doplněk { $name } nemohl být pro použití ve { -brand-short-name(case: "loc") } ověřen. Používejte ho obezřetně.
-        [feminine] Doplněk { $name } nemohl být pro použití v { -brand-short-name(case: "loc") } ověřen. Používejte ho obezřetně.
-        [neuter] Doplněk { $name } nemohl být pro použití v { -brand-short-name(case: "loc") } ověřen. Používejte ho obezřetně.
-       *[other] Doplněk { $name } nemohl být pro použití v aplikaci { -brand-short-name } ověřen. Používejte ho obezřetně.
+    { -brand-short-name.case-status ->
+        [with-cases] Doplněk { $name } nemohl být pro použití ve { -brand-short-name(case: "loc") } ověřen. Používejte ho obezřetně.
+       *[no-cases] Doplněk { $name } nemohl být pro použití v aplikaci { -brand-short-name } ověřen. Používejte ho obezřetně.
     }
 details-notification-unsigned-link = Více informací
 details-notification-blocked = Doplněk { $name } byl zakázán kvůli problémům se zabezpečením nebo stabilitou.

@@ -6,6 +6,10 @@ blocklist-window =
     .title = รายการปิดกั้น
     .style = width: 55em
 
+blocklist-window2 =
+    .title = รายการปิดกั้น
+    .style = min-width: 55em
+
 blocklist-description = เลือกรายการ { -brand-short-name } เพื่อใช้ในการปิดกั้นตัวติดตามออนไลน์ รายการนี้จัดหาให้โดย  <a data-l10n-name="disconnect-link" title="Disconnect">Disconnect</a>
 blocklist-close-key =
     .key = w

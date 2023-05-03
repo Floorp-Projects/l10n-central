@@ -6,6 +6,10 @@ translation-window =
     .title = Undtagelser for oversættelse
     .style = width: 36em
 
+translation-window2 =
+    .title = Undtagelser for oversættelse
+    .style = min-width: 36em
+
 translation-close-key =
     .key = w
 

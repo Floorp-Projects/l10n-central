@@ -6,6 +6,10 @@ clear-site-data-window =
     .title = Borrar datos
     .style = width: 35em
 
+clear-site-data-window2 =
+    .title = Borrar datos
+    .style = min-width: 35em
+
 clear-site-data-description = Limpiar las cookies y los datos de sitios almacenados por { -brand-short-name } puede ocasionar que se cierren tus sesiones activas y eliminar el contenido web sin conexión. Limpiar los datos de caché no afectará tus sesiones activas.
 
 clear-site-data-close-key =

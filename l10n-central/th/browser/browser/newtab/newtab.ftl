@@ -252,6 +252,10 @@ newtab-pocket-last-card-desc = คุณสามารถกลับมาต�
 newtab-pocket-last-card-image =
     .alt = คุณได้อ่านเรื่องราวครบทั้งหมดแล้ว
 
+# A save to Pocket button that shows over the card thumbnail on hover.
+newtab-pocket-save = บันทึก
+newtab-pocket-saved = บันทึกแล้ว
+
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.
 
@@ -270,6 +274,7 @@ newtab-custom-sponsored-sites = ทางลัดที่ได้รับก
 newtab-custom-pocket-title = แนะนำโดย { -pocket-brand-name }
 newtab-custom-pocket-subtitle = เนื้อหาสุดพิเศษที่คัดสรรโดย { -pocket-brand-name } ซึ่งเป็นส่วนหนึ่งของตระกูล { -brand-product-name }
 newtab-custom-pocket-sponsored = เรื่องราวที่ได้รับการสนับสนุน
+newtab-custom-pocket-show-recent-saves = แสดงบันทึกล่าสุด
 newtab-custom-recent-title = กิจกรรมล่าสุด
 newtab-custom-recent-subtitle = ไซต์และเนื้อหาล่าสุดที่คัดสรรมา
 newtab-custom-close-button = ปิด

@@ -6,6 +6,10 @@ clear-site-data-window =
     .title = Adatok törlése
     .style = width: 35em
 
+clear-site-data-window2 =
+    .title = Adatok törlése
+    .style = min-width: 35em
+
 clear-site-data-description = A { -brand-short-name } által tárolt összes süti és oldaladat törlése kijelentkeztetheti a webhelyekről és eltávolíthatja az offline webes tartalmat. A gyorsítótár törlése nem befolyásolja a bejelentkezéseit.
 
 clear-site-data-close-key =

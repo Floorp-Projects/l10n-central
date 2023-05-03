@@ -38,11 +38,9 @@ videocontrols-picture-in-picture-toggle-label = Sledovat jako obraz v obraze
 # button. When using this variation, this string appears below the toggle when the
 # mouse hovers the toggle.
 videocontrols-picture-in-picture-explainer =
-    { -brand-short-name.gender ->
-        [masculine] Přehrávejte videa v popředí a zároveň dělejte ve { -brand-short-name(case: "loc") } klidně i něco jiného
-        [feminine] Přehrávejte videa v popředí a zároveň dělejte v { -brand-short-name(case: "loc") } klidně i něco jiného
-        [neuter] Přehrávejte videa v popředí a zároveň dělejte v { -brand-short-name(case: "loc") } klidně i něco jiného
-       *[other] Přehrávejte videa v popředí a zároveň dělejte v aplikaci { -brand-short-name } klidně i něco jiného
+    { -brand-short-name.case-status ->
+        [with-cases] Přehrávejte videa v popředí a zároveň dělejte ve { -brand-short-name(case: "loc") } klidně i něco jiného
+       *[no-cases] Přehrávejte videa v popředí a zároveň dělejte v aplikaci { -brand-short-name } klidně i něco jiného
     }
 # This string is used as the label for a variation of the Picture-in-Picture video
 # toggle button when the mouse is hovering over the video.
@@ -50,7 +48,7 @@ videocontrols-picture-in-picture-toggle-label2 = Zobrazit video v samostatném o
 # This string is used as part of a variation of the Picture-in-Picture video toggle
 # button. When using this variation, this string appears below the toggle when the
 # mouse hovers the toggle.
-videocontrols-picture-in-picture-explainer2 = Více obrazovek, více zábavy. Sledujte toto video během prohlížení dalších stránek.
+videocontrols-picture-in-picture-explainer3 = Více obrazovek znamená více zábavy. Přehrajte si toto video i když děláte něco jiného.
 videocontrols-error-aborted = Nahrávání videa zastaveno.
 videocontrols-error-network = Přehrávání videa selhalo z důvodu chyby sítě.
 videocontrols-error-decode = Video nelze přehrát, protože soubor je poškozen.
@@ -71,3 +69,12 @@ videocontrols-status-picture-in-picture = Toto video se přehrává jako obraz v
 # duration video, $position would be "5:00" and the string which is
 # surrounded by <span> would be deleted, result string would be "5:00".
 videocontrols-position-and-duration-labels = { $position }<span data-l10n-name="position-duration-format"> / { $duration }</span>
+# This is a plain text version of the videocontrols-position-and-duration-labels
+# string, used by screenreaders.
+#
+# Variables:
+#   $position (String): The current media position
+#   $duration (String): The total video duration
+videocontrols-scrubber-position-and-duration =
+    .aria-label = Umístění
+    .aria-valuetext = { $position } / { $duration }

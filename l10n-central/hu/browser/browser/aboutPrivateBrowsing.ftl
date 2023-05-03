@@ -60,3 +60,11 @@ about-private-browsing-pin-promo-link-text =
        *[other] Rögzítés a tálcára
     }
 about-private-browsing-pin-promo-title = Nincsenek mentett sütik vagy előzmények, közvetlenül az asztaláról. Böngésszen úgy, mintha senki sem nézné.
+
+## Strings used in a promotion message for cookie banner reduction
+
+# Simplified version of the headline if the original text doesn't work
+# in your language: `See fewer cookie requests`.
+about-private-browsing-cookie-banners-promo-header = Elég a sütibannerekből!
+about-private-browsing-cookie-banners-promo-button = A sütibannerek számának csökkentése
+about-private-browsing-cookie-banners-promo-message = Hagyja, hogy a { -brand-short-name } automatikusan válaszoljon a sütik előugró ablakaira, így visszatérhet a zavartalan böngészéshez. A { -brand-short-name } elutasítja az összes kérést, ha az lehetséges.

@@ -19,42 +19,46 @@ pictureinpicture-close =
 ## Variables:
 ##   $shortcut (String) - Keyboard shortcut to execute the command.
 
-pictureinpicture-pause-cmd =
+pictureinpicture-pause-btn =
     .aria-label = 일시 정지
-    .title = 일시 정지 (스페이스바)
-pictureinpicture-play-cmd =
+    .tooltip = 일시 정지 (스페이스바)
+pictureinpicture-play-btn =
     .aria-label = 재생
-    .title = 재생 (스페이스바)
-pictureinpicture-mute-cmd =
+    .tooltip = 재생 (스페이스바)
+pictureinpicture-mute-btn =
     .aria-label = 음소거
-    .title = 음소거 ({ $shortcut })
-pictureinpicture-unmute-cmd =
+    .tooltip = 음소거 ({ $shortcut })
+pictureinpicture-unmute-btn =
     .aria-label = 음소거 해제
-    .title = 음소거 해제 ({ $shortcut })
-pictureinpicture-unpip-cmd =
+    .tooltip = 음소거 해제 ({ $shortcut })
+pictureinpicture-unpip-btn =
     .aria-label = 탭으로 다시 보내기
-    .title = 탭으로 돌아가기
-pictureinpicture-close-cmd =
+    .tooltip = 탭으로 돌아가기
+pictureinpicture-close-btn =
     .aria-label = 닫기
-    .title = 닫기 ({ $shortcut })
-pictureinpicture-subtitles-cmd =
+    .tooltip = 닫기 ({ $shortcut })
+pictureinpicture-subtitles-btn =
     .aria-label = 자막
-    .title = 자막
+    .tooltip = 자막
 
 ##
 
-pictureinpicture-fullscreen-cmd =
+pictureinpicture-fullscreen-btn =
     .aria-label = 전체 화면
-    .title = 전체 화면 (더블 클릭)
-pictureinpicture-exit-fullscreen-cmd =
+    .tooltip = 전체 화면 (더블 클릭)
+pictureinpicture-exit-fullscreen-btn =
     .aria-label = 전체 화면 종료
-    .title = 전체 화면 종료 (더블 클릭)
-pictureinpicture-seekbackward-cmd =
+    .tooltip = 전체 화면 종료 (더블 클릭)
+pictureinpicture-seekbackward-btn =
     .aria-label = 뒤로
-    .title = 뒤로 (←)
-pictureinpicture-seekforward-cmd =
+    .tooltip = 뒤로 (←)
+pictureinpicture-seekforward-btn =
     .aria-label = 앞으로
-    .title = 앞으로 (→)
+    .tooltip = 앞으로 (→)
+# This string is never displayed on the window. Is intended to be announced by
+# a screen reader whenever a user opens the subtitles settings panel
+# after selecting the subtitles button.
+pictureinpicture-subtitles-panel-accessible = 자막 설정
 pictureinpicture-subtitles-label = 자막
 pictureinpicture-font-size-label = 글꼴 크기
 pictureinpicture-font-size-small = 작게

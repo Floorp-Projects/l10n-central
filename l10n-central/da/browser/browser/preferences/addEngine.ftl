@@ -6,6 +6,10 @@ add-engine-window =
     .title = Tilføj søgetjeneste
     .style = width: 32em;
 
+add-engine-window2 =
+    .title = Tilføj søgetjeneste
+    .style = min-width: 32em;
+
 add-engine-button = Tilføj tilpasset søgetjeneste
 
 add-engine-name = Navn på søgetjeneste

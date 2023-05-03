@@ -6,6 +6,10 @@ clear-site-data-window =
     .title = Limpiar datos
     .style = width: 45em
 
+clear-site-data-window2 =
+    .title = Limpiar datos
+    .style = min-width: 45em
+
 clear-site-data-description = Limpiar todas las cookies y datos del sitio guardados por { -brand-short-name } puede desconectarle de los sitios web y eliminar el contenido web sin conexión. Limpiar los datos del caché no afectará a sus sesiones.
 
 clear-site-data-close-key =

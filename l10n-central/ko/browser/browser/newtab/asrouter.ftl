@@ -153,10 +153,6 @@ spotlight-total-cookie-protection-body = 전체 쿠키 보호는 추적기가 �
 spotlight-total-cookie-protection-expanded = { -brand-short-name }는 쿠키 주위에 울타리를 치고 사용자가 있는 사이트로 제한하므로 추적기가 사용자를 팔로우하는 데 쿠키를 사용할 수 없습니다. 먼저 이용해 보시면 이 기능을 최적화하는데 도움이 되므로 저희가 모든 사용자를 위한 더 나은 웹을 계속 구축할 수 있습니다.
 spotlight-total-cookie-protection-primary-button = 전체 쿠키 보호 켜기
 spotlight-total-cookie-protection-secondary-button = 나중에
-cfr-total-cookie-protection-header = 덕분에 { -brand-short-name }는 그 어느 때보다 사적이고 안전합니다
-# "Early access" for this feature rollout means it's a "feature preview" or
-# "soft launch". Only those who received it and accepted are shown this message.
-cfr-total-cookie-protection-body = 전체 쿠키 보호는 가장 강력한 개인 정보 보호 기능이며 이제 { -brand-short-name } 사용자를 위한 기본 설정입니다. 여러분과 같은 조기 참가자가 없었다면 불가능했을 것입니다. 더 나은 사적인 인터넷을 만들 수 있도록 도와주셔서 감사합니다.
 
 ## Emotive Continuous Onboarding
 
@@ -170,3 +166,83 @@ spotlight-pin-primary-button =
        *[other] 작업 표시줄에 고정
     }
 spotlight-pin-secondary-button = 나중에
+
+## MR2022 Background Update Windows native toast notification strings.
+##
+## These strings will be displayed by the Windows operating system in
+## a native toast, like:
+##
+## <b>multi-line title</b>
+## multi-line text
+## <img>
+## [ primary button ] [ secondary button ]
+##
+## The button labels are fitted into narrow fixed-width buttons by
+## Windows and therefore must be as narrow as possible.
+
+mr2022-background-update-toast-title = 새로운 { -brand-short-name }. 사생활을 더 보호합니다. 추적기가 더 적습니다. 타협이 없습니다.
+mr2022-background-update-toast-text = 가장 강력한 추적 방지 보호 기능으로 업그레이드된 최신 { -brand-short-name }를 지금 사용해 보세요.
+# This button label will be fitted into a narrow fixed-width button by
+# Windows. Try to not exceed the width of the English text (compare it
+# using a variable font like Arial): the button can only fit 1-2
+# additional characters, exceeding characters will be truncated.
+mr2022-background-update-toast-primary-button-label = 지금 { -brand-shorter-name } 열기
+# This button label will be fitted into a narrow fixed-width button by
+# Windows. Try to not exceed the width of the English text (compare it using a
+# variable font like Arial): the button can only fit 1-2 additional characters,
+# exceeding characters will be truncated.
+mr2022-background-update-toast-secondary-button-label = 나중에 알림
+
+## Firefox View CFR
+
+firefoxview-cfr-primarybutton = 사용해 보기
+    .accesskey = T
+firefoxview-cfr-secondarybutton = 나중에
+    .accesskey = N
+firefoxview-cfr-header-v2 = 중단한 부분부터 빠르게 다시 시작하세요
+firefoxview-cfr-body-v2 = { -firefoxview-brand-name }를 사용하여 최근에 닫은 탭을 다시 가져오고, 기기 간에 원활하게 전환하세요.
+
+## Firefox View Spotlight
+
+firefoxview-spotlight-promo-title = { -firefoxview-brand-name }를 만나보세요
+# “Poof” refers to the expression to convey when something or someone suddenly disappears, or in this case, reappears. For example, “Poof, it’s gone.”
+firefoxview-spotlight-promo-subtitle = 휴대폰에서 열린 탭을 보고 싶으세요? 가져오세요. 방금 방문했던 사이트가 필요하세요? { -firefoxview-brand-name }로 다시 여세요.
+firefoxview-spotlight-promo-primarybutton = 작동 방식 보기
+firefoxview-spotlight-promo-secondarybutton = 건너뛰기
+
+## Colorways expiry reminder CFR
+
+colorways-cfr-primarybutton = 컬러웨이 선택
+    .accesskey = C
+# "shades" refers to the different color options available to users in colorways.
+colorways-cfr-body = 문화를 바꾼 목소리에서 영감을 받은 { -brand-short-name } 독점 색상으로 브라우저를 색칠하세요.
+colorways-cfr-header-28days = 독립적인 목소리 컬러웨이 1월 16일 만료됨
+colorways-cfr-header-14days = 독립적인 목소리 컬러웨이 2주 후 만료됨
+colorways-cfr-header-7days = 독립적인 목소리 컬러웨이 이번 주 만료됨
+colorways-cfr-header-today = 독립적인 목소리 컬러웨이 오늘 만료됨
+
+## Cookie Banner Handling CFR
+
+cfr-cbh-header = { -brand-short-name }가 쿠키 배너를 거부하도록 허용하시겠습니까?
+cfr-cbh-body = { -brand-short-name }가 많은 쿠키 배너 요청을 자동으로 거부할 수 있습니다.
+cfr-cbh-confirm-button = 쿠키 배너 거부
+    .accesskey = R
+cfr-cbh-dismiss-button = 나중에
+    .accesskey = N
+
+## These strings are used in the Fox doodle Pin/set default spotlights
+
+july-jam-headline = 저희가 사용자를 보호합니다
+july-jam-body = 매달 { -brand-short-name }는 사용자당 평균 3,000개 이상의 추적기를 차단하여 좋은 인터넷에 안전하고 빠르게 액세스할 수 있도록 합니다.
+july-jam-set-default-primary = { -brand-short-name }로 내 링크 열기
+fox-doodle-pin-headline = 환영합니다
+# “indie” is short for the term “independent”.
+# In this instance, free from outside influence or control.
+fox-doodle-pin-body = 클릭 한 번으로 좋아하는 독립된 브라우저를 계속 사용할 수 있는다는 알림입니다.
+fox-doodle-pin-primary = { -brand-short-name }로 내 링크 열기
+fox-doodle-pin-secondary = 나중에
+
+## These strings are used in the Set Firefox as Default PDF Handler for Existing Users experiment
+
+set-default-pdf-handler-headline = <strong>이제 PDF가 { -brand-short-name }에서 열립니다.</strong> 브라우저에서 직접 양식을 편집하거나 서명하세요. 변경하려면, 설정에서 "PDF"를 검색하세요.
+set-default-pdf-handler-primary = 확인

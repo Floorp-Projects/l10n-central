@@ -59,3 +59,12 @@ about-private-browsing-pin-promo-link-text =
         [macos] Mantener en el Dock
        *[other] Fijar a la barra de tareas
     }
+about-private-browsing-pin-promo-title = Sin cookies guardadas ni historial, directamente desde su escritorio. Navegue como si nadie le estuviera mirando.
+
+## Strings used in a promotion message for cookie banner reduction
+
+# Simplified version of the headline if the original text doesn't work
+# in your language: `See fewer cookie requests`.
+about-private-browsing-cookie-banners-promo-header = ¡Se acabaron los avisos de cookies!
+about-private-browsing-cookie-banners-promo-button = Reducir los avisos de cookies
+about-private-browsing-cookie-banners-promo-message = Dejar que { -brand-short-name } responda automáticamente las ventanas emergentes de cookies para que pueda volver a navegar sin distracciones. { -brand-short-name } rechazará todas las solicitudes si es posible.

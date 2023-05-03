@@ -12,7 +12,7 @@ about-networking-dns-trr-mode = DoH 모드
 about-networking-dns-suffix = DNS 접미사
 about-networking-websockets = WebSockets
 about-networking-refresh = 새로 고침
-about-networking-auto-refresh = 3초마다 자동으로 새로 고침
+about-networking-auto-refresh = 3초마다 자동 새로 고침
 about-networking-hostname = 호스트명
 about-networking-port = 포트
 about-networking-http-version = HTTP 버전
@@ -63,6 +63,8 @@ about-networking-rcwn-cache-slow = 느린 캐시 횟수
 about-networking-rcwn-cache-not-slow = 느리지 않은 캐시 횟수
 about-networking-networkid = 네트워크 ID
 about-networking-networkid-id = 네트워크 ID
+# Note: do not translate about:logging, as it is a URL.
+about-networking-moved-about-logging = 이 페이지는 <a data-l10n-name="about-logging-url">about:logging</a>으로 이동되었습니다.
 
 ## Link is intended as "network link"
 

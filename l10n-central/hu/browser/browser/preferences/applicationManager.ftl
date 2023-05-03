@@ -6,6 +6,10 @@ app-manager-window =
     .title = Alkalmazás részletei
     .style = width: 30em; min-height: 20em;
 
+app-manager-window2 =
+    .title = Alkalmazás részletei
+    .style = min-width: 30em; min-height: 20em;
+
 app-manager-remove =
     .label = Eltávolítás
     .accesskey = E

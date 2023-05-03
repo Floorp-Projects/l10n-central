@@ -12,6 +12,7 @@ experimental-features-css-masonry-description = Aktiverer støtte for den eksper
 experimental-features-web-gpu2 =
     .label = Web API: WebGPU
 experimental-features-web-gpu-description2 = Denne nye API-en gir støtte på lågt nivå for  utrekning og grafisk attgiving ved å bruke <a data-l10n-name="wikipedia">grafikkprosessoren (GPU)</a> på eininga eller datamaskina til brukaren. <a data-l10n-name="spec">Spesifikasjonen</a> er enno under arbeid. Sjå <a data-l10n-name="bugzilla">bug 1602129</a> for meir informasjon.
+experimental-features-web-gpu-description3 = <a data-l10n-name="wikipedia-webgpu">WebGPU API-et</a> gir støtte på lågt nivå for å utføre utrekningar og grafikkattgiving ved bruk av <a data-l10n-name="wikipedia-gpu">grafikkprosessoren (GPU)</a> til brukaren si eining eller datamaskin. Den første versjonen av <a data-l10n-name="spec">spesifikasjonen</a> nærmar seg fullføring. Sjå <a data-l10n-name="bugzilla">bug 1616739</a> for meir informasjon.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-media-jxl =
@@ -60,7 +61,6 @@ experimental-features-js-warp-description = Slå på Warp, eit prosjekt for å f
 experimental-features-ime-search =
     .label = Adresselinja: Vis resultat under IME-samansetjing
 experimental-features-ime-search-description = Ein IME (Input Method Editor) er eit verktøy som lar deg skrive inn komplekse symbol, til dømes dei som vert brukte i austasiatiske eller Indiske skriftspråk, ved hjelp av eit standardtastatur. Aktivering av dette eksperimentet held adresselinjepanelet ope, viser søkjeresultat og forslag mens du brukar IME til å leggje inn tekst. Merk at IME kan vise eit panel som dekkjer resultata i adresselinja, og derfor er denne preferansen berre tilrådd for IME som ikkje brukar denne typen panel.
-# Text recognition for images
-experimental-features-text-recognition =
-    .label = Tekstattkjenning
-experimental-features-text-recognition-description = Slå på funksjonar for å kjenne att tekst i bilde.
+experimental-features-accessibility-cache =
+    .label = Tilgjengesnøgglager
+experimental-features-accessibility-cache-description = Snøgglagrar all tilgjengelegheitsinformasjon frå alle dokument i { -brand-short-name }-hovudprosessen. Dette forbetrar ytinga for skjermlesarar og andre applikasjonar som brukar tilgjengelegheits-APIar.

@@ -38,11 +38,9 @@ menu-quit =
             [windows] อ
            *[other] อ
         }
-
 # This menu-quit-mac string is only used on macOS.
 menu-quit-mac =
     .label = ออกจาก { -brand-shorter-name }
-
 menu-about =
     .label = เกี่ยวกับ { -brand-shorter-name }
     .accesskey = ก
@@ -182,6 +180,17 @@ menu-view-full-screen =
     .label = เต็มหน้าจอ
     .accesskey = จ
 
+## These menu items may use the same accesskey.
+
+# This should match reader-view-enter-button in browser.ftl
+menu-view-enter-readerview =
+    .label = เข้าสู่มุมมองผู้อ่าน
+    .accesskey = ผ
+# This should match reader-view-close-button in browser.ftl
+menu-view-close-readerview =
+    .label = ปิดมุมมองผู้อ่าน
+    .accesskey = ผ
+
 ##
 
 menu-view-show-all-tabs =
@@ -224,6 +233,10 @@ menu-bookmark-current-tab =
     .label = เพิ่มที่คั่นหน้าแท็บปัจจุบัน
 menu-bookmark-edit =
     .label = แก้ไขที่คั่นหน้านี้
+menu-bookmark-tab =
+    .label = เพิ่มที่คั่นหน้าสำหรับแท็บปัจจุบัน…
+menu-edit-bookmark =
+    .label = แก้ไขที่คั่นหน้านี้…
 menu-bookmarks-all-tabs =
     .label = เพิ่มที่คั่นหน้าสำหรับแท็บทั้งหมด…
 menu-bookmarks-toolbar =
@@ -242,7 +255,7 @@ menu-tools-downloads =
     .label = การดาวน์โหลด
     .accesskey = ด
 menu-tools-addons-and-themes =
-    .label = ส่วนเสริมและชุดตกแต่ง
+    .label = ส่วนเสริมและชุดรูปแบบ
     .accesskey = ส
 menu-tools-fxa-sign-in2 =
     .label = ลงชื่อเข้า

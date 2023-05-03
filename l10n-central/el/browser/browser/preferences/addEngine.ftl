@@ -6,6 +6,10 @@ add-engine-window =
     .title = Προσθήκη μηχανής αναζήτησης
     .style = width: 32em;
 
+add-engine-window2 =
+    .title = Προσθήκη μηχανής αναζήτησης
+    .style = min-width: 32em;
+
 add-engine-button = Προσθήκη προσαρμοσμένης μηχανής
 
 add-engine-name = Όνομα μηχανής αναζήτησης

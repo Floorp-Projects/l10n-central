@@ -6,6 +6,10 @@ profiledowngrade-window =
     .title = Jūs paleidote senesnę „{ -brand-product-name }“ laidą
     .style = width: 490px;
 
+profiledowngrade-window2 =
+    .title = Jūs paleidote senesnę „{ -brand-product-name }“ laidą
+    .style = min-width: 490px;
+
 profiledowngrade-window-create =
     .label = Kurti naują profilį
 

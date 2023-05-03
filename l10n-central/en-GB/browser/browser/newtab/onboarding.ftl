@@ -25,6 +25,12 @@ return-to-amo-addon-title = Now let’s get you <img data-l10n-name="icon"/> <b>
 return-to-amo-add-extension-label = Add the Extension
 return-to-amo-add-theme-label = Add the Theme
 
+##  Variables: $addon-name (String) - Name of the add-on to be installed
+
+mr1-return-to-amo-subtitle = Say hello to { -brand-short-name }
+mr1-return-to-amo-addon-title = You’ve got a fast, private browser at your fingertips. Now you can add <b>{ $addon-name }</b> and do even more with { -brand-short-name }.
+mr1-return-to-amo-add-extension-label = Add { $addon-name }
+
 ## Multistage onboarding strings (about:welcome pages)
 
 # Aria-label to make the "steps" of multistage onboarding visible to screen readers.
@@ -39,8 +45,8 @@ onboarding-welcome-steps-indicator =
 #   $current (Int) - Number of the current page
 #   $total (Int) - Total number of pages
 
-onboarding-welcome-steps-indicator2 =
-    .aria-valuetext = Progress: step { $current } of { $total }
+onboarding-welcome-steps-indicator-label =
+    .aria-label = Progress: step { $current } of { $total }
 # "Hero Text" displayed on left side of welcome screen.
 # The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
 # It also signals the passion users bring to Firefox, how they use
@@ -262,6 +268,15 @@ fx100-upgrade-thank-you-body = It’s our 100th release of { -brand-short-name }
 fx100-upgrade-thanks-keep-body = It’s our 100th release! Thanks for being a part of our community. Keep { -brand-short-name } one click away for the next 100.
 mr2022-onboarding-secondary-skip-button-label = Skip this step
 
+## MR2022 New User Easy Setup screen strings
+
+# Primary button string used on new user onboarding first screen showing multiple actions such as Set Default, Import from previous browser.
+mr2022-onboarding-easy-setup-primary-button-label = Save and continue
+# Set Default action checkbox label used on new user onboarding first screen
+mr2022-onboarding-easy-setup-set-default-checkbox-label = Set { -brand-short-name } as default browser
+# Import action checkbox label used on new user onboarding first screen
+mr2022-onboarding-easy-setup-import-checkbox-label = Import from previous browser
+
 ## MR2022 New User Pin Firefox screen strings
 
 # Title used on about:welcome for new users when Firefox is not pinned.
@@ -325,35 +340,35 @@ mr2022-onboarding-import-primary-button-label-no-attribution = Import from previ
 
 mr2022-onboarding-colorway-title = Choose the colour that inspires you
 mr2022-onboarding-colorway-subtitle = Independent voices can change culture.
-mr2022-onboarding-colorway-primary-button-label = Set colourway
+mr2022-onboarding-colorway-primary-button-label-continue = Set and continue
 mr2022-onboarding-existing-colorway-checkbox-label = Make { -firefox-home-brand-name } your colourful homepage
 mr2022-onboarding-colorway-label-default = Default
-mr2022-onboarding-colorway-tooltip-default =
-    .title = Default
+mr2022-onboarding-colorway-tooltip-default2 =
+    .title = Current { -brand-short-name } colours
 mr2022-onboarding-colorway-description-default = <b>Use my current { -brand-short-name } colours.</b>
 mr2022-onboarding-colorway-label-playmaker = Playmaker
-mr2022-onboarding-colorway-tooltip-playmaker =
-    .title = Playmaker
+mr2022-onboarding-colorway-tooltip-playmaker2 =
+    .title = Playmaker (red)
 mr2022-onboarding-colorway-description-playmaker = <b>You are a Playmaker.</b> You create opportunities to win and help everyone around you elevate their game.
 mr2022-onboarding-colorway-label-expressionist = Expressionist
-mr2022-onboarding-colorway-tooltip-expressionist =
-    .title = Expressionist
+mr2022-onboarding-colorway-tooltip-expressionist2 =
+    .title = Expressionist (yellow)
 mr2022-onboarding-colorway-description-expressionist = <b>You are an Expressionist.</b> You see the world differently and your creations stir the emotions of others.
 mr2022-onboarding-colorway-label-visionary = Visionary
-mr2022-onboarding-colorway-tooltip-visionary =
-    .title = Visionary
+mr2022-onboarding-colorway-tooltip-visionary2 =
+    .title = Visionary (green)
 mr2022-onboarding-colorway-description-visionary = <b>You are a Visionary.</b> You question the status quo and move others to imagine a better future.
 mr2022-onboarding-colorway-label-activist = Activist
-mr2022-onboarding-colorway-tooltip-activist =
-    .title = Activist
+mr2022-onboarding-colorway-tooltip-activist2 =
+    .title = Activist (blue)
 mr2022-onboarding-colorway-description-activist = <b>You are an Activist.</b> You leave the world a better place than you found it and lead others to believe.
 mr2022-onboarding-colorway-label-dreamer = Dreamer
-mr2022-onboarding-colorway-tooltip-dreamer =
-    .title = Dreamer
+mr2022-onboarding-colorway-tooltip-dreamer2 =
+    .title = Dreamer (purple)
 mr2022-onboarding-colorway-description-dreamer = <b>You are a Dreamer.</b> You believe that fortune favors the bold and inspire others to be brave.
 mr2022-onboarding-colorway-label-innovator = Innovator
-mr2022-onboarding-colorway-tooltip-innovator =
-    .title = Innovator
+mr2022-onboarding-colorway-tooltip-innovator2 =
+    .title = Innovator (orange)
 mr2022-onboarding-colorway-description-innovator = <b>You are an Innovator.</b> You see opportunities everywhere and make an impact on the lives of everyone around you.
 
 ## MR2022 Multistage Mobile Download screen strings
@@ -378,16 +393,39 @@ mr2022-upgrade-onboarding-pin-private-window-primary-button-label =
 
 mr2022-onboarding-privacy-segmentation-title = We always respect your privacy
 mr2022-onboarding-privacy-segmentation-subtitle = From intelligent suggestions to smarter search, we’re constantly working to create a better, more personal { -brand-product-name }.
-mr2022-onboarding-privacy-segmentation-cta-text = When we offer new features that use your data to enhance your browsing, do you want to see:
-mr2022-onboarding-privacy-segmentation-primary-button-label = { -brand-product-name } recommendations
-mr2022-onboarding-privacy-segmentation-secondary-button-label = Detailed information
 mr2022-onboarding-privacy-segmentation-text-cta = What do you want to see when we offer new features that use your data to enhance your browsing?
 mr2022-onboarding-privacy-segmentation-button-primary-label = Use { -brand-product-name } recommendations
 mr2022-onboarding-privacy-segmentation-button-secondary-label = Show detailed information
 
 ## MR2022 Multistage Gratitude screen strings
 
-mr2022-onboarding-gratitude-title = You’re helping us build a better web.
+mr2022-onboarding-gratitude-title = You’re helping us build a better web
 mr2022-onboarding-gratitude-subtitle = Thank you for using { -brand-short-name }, backed by the Mozilla Foundation. With your support, we’re working to make the internet more open, accessible, and better for everyone.
 mr2022-onboarding-gratitude-primary-button-label = See what’s new
 mr2022-onboarding-gratitude-secondary-button-label = Start browsing
+
+## Onboarding spotlight for infrequent users
+
+onboarding-infrequent-import-title = Make yourself at home
+onboarding-infrequent-import-subtitle = Whether you’re settling in or just stopping by, remember you can import your bookmarks, passwords, and more.
+onboarding-infrequent-import-primary-button = Import to { -brand-short-name }
+
+## MR2022 Illustration alt tags
+## Descriptive tags for illustrations used by screen readers and other assistive tech
+
+mr2022-onboarding-pin-image-alt =
+    .aria-label = Person working on a laptop surrounded by stars and flowers
+mr2022-onboarding-default-image-alt =
+    .aria-label = Person hugging the { -brand-product-name } logo
+mr2022-onboarding-import-image-alt =
+    .aria-label = Person riding a skateboard with a box of software icons
+mr2022-onboarding-mobile-download-image-alt =
+    .aria-label = Frogs hopping across lily pads with a QR code to download { -brand-product-name } for mobile in the centre
+mr2022-onboarding-pin-private-image-alt =
+    .aria-label = Magic wand makes { -brand-product-name } private browsing logo appear out of a hat
+mr2022-onboarding-privacy-segmentation-image-alt =
+    .aria-label = Light-skinned and dark-skinned hands high five
+mr2022-onboarding-gratitude-image-alt =
+    .aria-label = View of a sunset through a window with a fox and a house plant on a windowsill
+mr2022-onboarding-colorways-image-alt =
+    .aria-label = A hand spray paints a colourful collage of a green eye, orange shoe, red basketball, purple headphones, blue heart, and yellow crown

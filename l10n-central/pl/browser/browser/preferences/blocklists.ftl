@@ -6,6 +6,10 @@ blocklist-window =
     .title = Lista blokowanych elementów
     .style = width: 57em
 
+blocklist-window2 =
+    .title = Lista blokowanych elementów
+    .style = min-width: 57em
+
 blocklist-description = Wybierz listę używaną przez przeglądarkę { -brand-short-name } do blokowania elementów śledzących użytkownika w Internecie. Listy są dostarczane przez <a data-l10n-name="disconnect-link" title="Disconnect">Disconnect</a>.
 blocklist-close-key =
     .key = w

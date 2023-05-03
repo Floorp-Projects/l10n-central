@@ -41,10 +41,7 @@ videocontrols-picture-in-picture-explainer = { -brand-short-name }에서 다른 
 # This string is used as the label for a variation of the Picture-in-Picture video
 # toggle button when the mouse is hovering over the video.
 videocontrols-picture-in-picture-toggle-label2 = 이 동영상을 창 분리
-# This string is used as part of a variation of the Picture-in-Picture video toggle
-# button. When using this variation, this string appears below the toggle when the
-# mouse hovers the toggle.
-videocontrols-picture-in-picture-explainer2 = 더 많은 화면이 더 재미있습니다. 탐색하는 동안에 화면 속 화면으로 이 동영상을 재생하세요.
+videocontrols-picture-in-picture-explainer3 = 더 많은 화면이 더 재미있습니다. 다른 일을 하는 동안 이 동영상을 재생하세요.
 videocontrols-error-aborted = 동영상 로드가 중지되었습니다.
 videocontrols-error-network = 네트워크 오류로 인해 동영상 재생이 중단되었습니다.
 videocontrols-error-decode = 파일이 깨져서 동영상을 재생할 수 없습니다.
@@ -65,3 +62,12 @@ videocontrols-status-picture-in-picture = 이 동영상은 화면 속 화면 모
 # duration video, $position would be "5:00" and the string which is
 # surrounded by <span> would be deleted, result string would be "5:00".
 videocontrols-position-and-duration-labels = { $position }<span data-l10n-name="position-duration-format"> / { $duration }</span>
+# This is a plain text version of the videocontrols-position-and-duration-labels
+# string, used by screenreaders.
+#
+# Variables:
+#   $position (String): The current media position
+#   $duration (String): The total video duration
+videocontrols-scrubber-position-and-duration =
+    .aria-label = 위치
+    .aria-valuetext = { $position } / { $duration }

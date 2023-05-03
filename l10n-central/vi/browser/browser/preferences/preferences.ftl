@@ -73,6 +73,17 @@ restart-later = Khởi động lại sau
 ## Variables:
 ##   $name (String): name of the extension
 
+
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (string) - Name of the extension
+
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
 extension-controlling-password-saving = <img data-l10n-name="icon"/> <strong>{ $name }</strong> kiểm soát cài đặt này.
@@ -120,6 +131,11 @@ startup-restore-warn-on-quit =
     .label = Cảnh báo bạn khi thoát khỏi trình duyệt
 disable-extension =
     .label = Vô hiệu hóa tiện ích mở rộng
+preferences-data-migration-header = Nhập dữ liệu trình duyệt
+preferences-data-migration-description = Nhập dấu trang, mật khẩu, lịch sử và dữ liệu tự động điền vào { -brand-short-name }.
+preferences-data-migration-button =
+    .label = Nhập dữ liệu
+    .accesskey = m
 tabs-group-header = Thẻ
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab để chuyển qua các thẻ theo thứ tự sử dụng gần đây nhất
@@ -132,7 +148,7 @@ confirm-on-close-multiple-tabs =
     .accesskey = m
 # This string is used for the confirm before quitting preference.
 # Variables:
-#   $quitKey (String) - the quit keyboard shortcut, and formatted
+#   $quitKey (string) - the quit keyboard shortcut, and formatted
 #                       in the same manner as it would appear,
 #                       for example, in the File menu.
 confirm-on-quit-with-key =
@@ -155,12 +171,19 @@ browser-containers-settings =
     .label = Cài đặt…
     .accesskey = i
 containers-disable-alert-title = Đóng tất cả các ngăn chứa thẻ?
+
+## Variables:
+##   $tabCount (number) - Number of tabs
+
 containers-disable-alert-desc = Nếu bạn vô hiệu hóa ngăn chứa thẻ bây giờ, { $tabCount } thẻ trong ngăn chứa sẽ bị đóng. Bạn có chắc muốn vô hiệu hóa ngăn chứa thẻ?
 containers-disable-alert-ok-button = Đóng { $tabCount } thẻ trong ngăn chứa
+
+##
+
 containers-disable-alert-cancel-button = Tiếp tục bật
 containers-remove-alert-title = Xóa ngăn chứa này?
 # Variables:
-#   $count (Number) - Number of tabs that will be closed.
+#   $count (number) - Number of tabs that will be closed.
 containers-remove-alert-msg = Nếu bạn xóa ngăn chứa này bây giờ, { $count } thẻ trong ngăn chứa sẽ bị đóng. Bạn có chắc muốn xóa ngăn chứa này?
 containers-remove-ok-button = Xóa ngăn chứa này
 containers-remove-cancel-button = Không xóa ngăn chứa này
@@ -218,6 +241,8 @@ advanced-fonts =
 preferences-zoom-header = Thu phóng
 preferences-default-zoom = Thu phóng mặc định
     .accesskey = z
+# Variables:
+#   $percentage (number) - Zoom percentage value
 preferences-default-zoom-value =
     .label = { $percentage }%
 preferences-zoom-text-only =
@@ -230,7 +255,7 @@ choose-button =
     .accesskey = C
 choose-browser-language-description = Chọn ngôn ngữ được sử dụng để hiển thị bảng chọn, tin nhắn và thông báo từ { -brand-short-name }.
 manage-browser-languages-button =
-    .label = Đặt giải pháp thay thế…
+    .label = Đặt ngôn ngữ thay thế…
     .accesskey = I
 confirm-browser-language-change-description = Khởi động lại { -brand-short-name } để áp dụng các thay đổi này
 confirm-browser-language-change-button = Áp dụng và Khởi động lại
@@ -310,15 +335,15 @@ applications-manage-app =
 applications-always-ask =
     .label = Luôn hỏi
 # Variables:
-#   $type-description (String) - Description of the type (e.g "Portable Document Format")
-#   $type (String) - the MIME type (e.g application/binary)
+#   $type-description (string) - Description of the type (e.g "Portable Document Format")
+#   $type (string) - The MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
-#   $extension (String) - file extension (e.g .TXT)
-#   $type (String) - the MIME type (e.g application/binary)
+#   $extension (string) - File extension (e.g .TXT)
+#   $type (string) - The MIME type (e.g application/binary)
 applications-file-ending-with-type = { applications-file-ending } ({ $type })
 # Variables:
-#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+#   $plugin-name (string) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Dùng { $plugin-name } (trong { -brand-short-name })
 applications-open-inapp =
@@ -361,6 +386,8 @@ play-drm-content =
 play-drm-content-learn-more = Tìm hiểu thêm
 update-application-title = Cập nhật { -brand-short-name }
 update-application-description = Giữ { -brand-short-name } luôn cập nhật để đạt được hiệu năng, sự ổn định, và bảo mật tốt nhất.
+# Variables:
+# $version (string) - Firefox version
 update-application-version = Phiên bản { $version } <a data-l10n-name="learn-more">Có gì mới</a>
 update-history =
     .label = Hiển thị lịch sử cập nhật…
@@ -387,7 +414,7 @@ update-application-suppress-prompts =
     .accesskey = n
 update-setting-write-failure-title2 = Lỗi khi lưu cài đặt Cập nhật
 # Variables:
-#   $path (String) - Path to the configuration file
+#   $path (string) - Path to the configuration file
 # The newlines between the main text and the line containing the path is
 # intentional so the path is easier to identify.
 update-setting-write-failure-message2 =
@@ -417,7 +444,7 @@ performance-limit-content-process-option = Giới hạn xử lý nội dung
 performance-limit-content-process-enabled-desc = Các tiến trình xử lý nội dung bổ sung có thể cải thiện hiệu suất khi sử dụng nhiều thẻ một lúc, nhưng cũng sẽ tiêu tốn nhiều bộ nhớ.
 performance-limit-content-process-blocked-desc = Việc chỉnh sửa số tiến trình xử lý nội dung chỉ có thể thực hiện với { -brand-short-name } đa tiến trình. <a data-l10n-name="learn-more">Tìm hiểu làm cách nào để kiểm tra khi chế độ đa tiến trình được bật</a>
 # Variables:
-#   $num - default value of the `dom.ipc.processCount` pref.
+#   $num (number) - Default value of the `dom.ipc.processCount` pref.
 performance-default-content-process-count =
     .label = { $num } (mặc định)
 
@@ -523,6 +550,10 @@ home-prefs-shortcuts-by-option-sponsored =
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
+
+## Variables:
+##  $provider (string) - Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Được đề xuất bởi { $provider }
 home-prefs-recommended-by-description-new = Nội dung đặc biệt do { $provider }, một phần của { -brand-product-name }, quản lý
@@ -552,6 +583,8 @@ home-prefs-recent-activity-description = Tuyển chọn các trang và nội dun
 home-prefs-snippets-header =
     .label = Ghi chú nhỏ
 home-prefs-snippets-description-new = Mẹo và tin tức từ { -vendor-short-name } và { -brand-product-name }
+# Variables:
+#   $num (number) - Number of rows displayed
 home-prefs-sections-rows-option =
     .label = { $num } hàng
 
@@ -576,6 +609,11 @@ search-suggestions-option =
 search-show-suggestions-url-bar-option =
     .label = Hiển thị gợi ý tìm kiếm trong kết quả thanh địa chỉ
     .accesskey = l
+# With this option enabled, on the search results page
+# the URL will be replaced by the search terms in the address bar
+# when using the current default search engine.
+search-show-search-term-option =
+    .label = Hiển thị các cụm từ tìm kiếm thay vì URL trên trang kết quả của công cụ tìm kiếm mặc định
 # This string describes what the user will observe when the system
 # prioritizes search suggestions over browsing history in the results
 # that extend down from the address bar. In the original English string,
@@ -607,7 +645,7 @@ search-find-more-link = Tìm các công cụ tìm kiếm khác
 # ('Duplicate' is an adjective)
 search-keyword-warning-title = Nhân bản Từ khóa
 # Variables:
-#   $name (String) - Name of a search engine.
+#   $name (string) - Name of a search engine.
 search-keyword-warning-engine = Bạn đã chọn một từ khóa hiện đang được dùng bởi "{ $name }". Vui lòng chọn từ khác.
 search-keyword-warning-bookmark = Bạn đã chọn một từ khóa hiện đang được dùng bởi một dấu trang. Vui lòng chọn từ khác.
 
@@ -654,8 +692,15 @@ sync-sign-out =
     .accesskey = g
 sync-manage-account = Quản lý tài khoản
     .accesskey = k
+
+## Variables
+## $email (string) - Email used for Firefox account
+
 sync-signedin-unverified = { $email } chưa được kiểm tra.
 sync-signedin-login-failure = Xin hãy đăng nhập để kết nối lại { $email }
+
+##
+
 sync-resend-verification =
     .label = Gửi lại xác nhận
     .accesskey = d
@@ -682,6 +727,7 @@ prefs-sync-now =
 ## The list of things currently syncing.
 
 sync-currently-syncing-heading = Bạn hiện đang đồng bộ hóa các mục này:
+sync-syncing-across-devices-heading = Bạn đang đồng bộ hóa các mục này trên tất cả các thiết bị được kết nối của mình:
 sync-currently-syncing-bookmarks = Dấu trang
 sync-currently-syncing-history = Lịch sử
 sync-currently-syncing-tabs = Các thẻ đang mở
@@ -703,6 +749,14 @@ sync-choose-what-to-sync-dialog =
     .buttonaccesskeyaccept = S
     .buttonlabelextra2 = Ngắt kết nối…
     .buttonaccesskeyextra2 = D
+sync-choose-what-to-sync-dialog3 =
+    .title = Chọn những gì để đồng bộ hóa
+    .style = min-width: 46em;
+    .buttonlabelaccept = Lưu thay đổi
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra2 = Ngắt kết nối…
+    .buttonaccesskeyextra2 = D
+sync-choose-dialog-subtitle = Các thay đổi đối với danh sách các mục cần đồng bộ hóa sẽ được phản ánh trên tất cả các thiết bị được kết nối của bạn.
 sync-engine-bookmarks =
     .label = Dấu trang
     .accesskey = m
@@ -771,6 +825,9 @@ forms-breach-alerts =
     .label = Hiển thị cảnh báo về mật khẩu cho các trang web bị rò rỉ
     .accesskey = b
 forms-breach-alerts-learn-more-link = Tìm hiểu thêm
+relay-integration =
+    .label = Bật { -relay-brand-name } trong trình quản lý mật khẩu { -brand-short-name } của bạn
+relay-integration-learn-more-link = Tìm hiểu thêm
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Tự động điền đăng nhập và mật khẩu
@@ -859,8 +916,8 @@ history-clear-button =
 sitedata-header = Cookie và dữ liệu trang
 sitedata-total-size-calculating = Đang tính toán kích thước bộ nhớ đệm và dữ liệu trang…
 # Variables:
-#   $value (Number) - Value of the unit (for example: 4.6, 500)
-#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+#   $value (number) - Value of the unit (for example: 4.6, 500)
+#   $unit (string) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Cookie, dữ liệu trang và bộ nhớ đệm của bạn hiện đang sử dụng { $value } { $unit } dung lượng đĩa.
 sitedata-learn-more = Tìm hiểu thêm
 sitedata-delete-on-close =
@@ -887,17 +944,27 @@ sitedata-option-block-unvisited =
     .label = Cookie từ các trang web không mong muốn
 sitedata-option-block-all-third-party =
     .label = Tất cả cookie của bên thứ ba (có thể khiến các trang web bị hỏng)
+sitedata-option-block-all-cross-site-cookies =
+    .label = Tất cả cookie trên nhiều trang web (có thể khiến trang web bị hỏng)
 sitedata-option-block-all =
     .label = Tất cả các cookie (có thể khiến các trang web bị hỏng)
 sitedata-clear =
     .label = Xóa dữ liệu...
     .accesskey = l
 sitedata-settings =
-    .label = Quản lí dữ liệu...
+    .label = Quản lý dữ liệu...
     .accesskey = M
 sitedata-cookies-exceptions =
-    .label = Quản lý các ngoại lệ…
+    .label = Quản lý ngoại lệ…
     .accesskey = x
+
+## Privacy Section - Cookie Banner Handling
+
+cookie-banner-handling-header = Giảm biểu ngữ cookie
+cookie-banner-handling-description = { -brand-short-name } tự động cố gắng từ chối các yêu cầu cookie trên biểu ngữ cookie trên các trang web được hỗ trợ.
+cookie-banner-learn-more = Tìm hiểu thêm
+forms-handle-cookie-banners =
+    .label = Giảm biểu ngữ cookie
 
 ## Privacy Section - Address Bar
 
@@ -966,6 +1033,7 @@ content-blocking-all-cookies = Tất cả cookie
 content-blocking-unvisited-cookies = Cookie từ các trang không mong muốn
 content-blocking-all-windows-tracking-content = Trình theo dõi nội dung trong tất cả cửa sổ
 content-blocking-all-third-party-cookies = Toàn bộ cookie từ bên thứ ba
+content-blocking-all-cross-site-cookies = Tất cả cookie trên nhiều trang web
 content-blocking-cryptominers = Tiền điện tử
 content-blocking-fingerprinters = Dấu vết (Fingerprintng)
 # "Test pilot" is used as a verb. Possible alternatives:
@@ -973,6 +1041,9 @@ content-blocking-fingerprinters = Dấu vết (Fingerprintng)
 content-blocking-etp-standard-tcp-rollout-checkbox =
     .label = Thử tính năng bảo mật mạnh mẽ nhất của chúng tôi từ trước đến nay
     .accesskey = T
+
+# The tcp-rollout strings are no longer used for the rollout but for tcp-by-default in the standard section
+
 # "Contains" here means "isolates", "limits".
 content-blocking-etp-standard-tcp-rollout-description = Trình chống cookie chung chứa các cookie cho trang web bạn đang truy cập, vì vậy, trình theo dõi không thể sử dụng chúng để theo dõi bạn giữa các trang web.
 content-blocking-etp-standard-tcp-rollout-learn-more = Tìm hiểu thêm
@@ -1012,7 +1083,7 @@ content-blocking-fingerprinters-label =
 ## Privacy Section - Tracking
 
 tracking-manage-exceptions =
-    .label = Quản lý các ngoại lệ…
+    .label = Quản lý ngoại lệ…
     .accesskey = x
 
 ## Privacy Section - Permissions
@@ -1032,6 +1103,11 @@ permissions-camera-settings =
     .accesskey = t
 permissions-microphone = Micrô
 permissions-microphone-settings =
+    .label = Cài đặt…
+    .accesskey = t
+# Short form for "the act of choosing sound output devices and redirecting audio to the chosen devices".
+permissions-speaker = Lựa chọn loa
+permissions-speaker-settings =
     .label = Cài đặt…
     .accesskey = t
 permissions-notification = Thông báo
@@ -1138,6 +1214,63 @@ httpsonly-radio-enabled-pbm =
     .label = Chỉ kích hoạt chế độ HTTPS trong các cửa sổ riêng tư
 httpsonly-radio-disabled =
     .label = Không kích hoạt chế độ chỉ HTTPS
+
+## DoH Section
+
+preferences-doh-header = DNS qua HTTPS
+preferences-doh-description = Hệ thống tên miền (DNS) qua HTTPS gửi yêu cầu tên miền của bạn thông qua kết nối được mã hóa, tạo một DNS an toàn và khiến người khác khó nhìn thấy trang web bạn sắp truy cập hơn.
+# Variables:
+#   $status (string) - The status of the DoH connection
+preferences-doh-status = Trạng thái: { $status }
+# Variables:
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-resolver = Nhà cung cấp: { $name }
+# This is displayed instead of $name in preferences-doh-resolver
+# when the DoH URL is not a valid URL
+preferences-doh-bad-url = URL không hợp lệ
+preferences-doh-steering-status = Sử dụng nhà cung cấp cục bộ
+preferences-doh-status-active = Đang hoạt động
+preferences-doh-status-disabled = Đã tắt
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+preferences-doh-status-not-active = Không hoạt động ({ $reason })
+preferences-doh-group-message = Kích hoạt DNS an toàn sử dụng:
+preferences-doh-expand-section =
+    .tooltiptext = Thông tin chi tiết
+preferences-doh-setting-default =
+    .label = Bảo vệ mặc định
+    .accesskey = D
+preferences-doh-default-desc = { -brand-short-name } quyết định thời điểm sử dụng DNS an toàn để bảo vệ quyền riêng tư của bạn.
+preferences-doh-default-detailed-desc-1 = Sử dụng DNS an toàn ở những khu vực có sẵn
+preferences-doh-default-detailed-desc-2 = Sử dụng trình phân giải DNS mặc định của bạn nếu có sự cố với nhà cung cấp DNS an toàn
+preferences-doh-default-detailed-desc-3 = Sử dụng một nhà cung cấp cục bộ, nếu có thể
+preferences-doh-default-detailed-desc-4 = Tắt khi VPN, quyền kiểm soát của phụ huynh hoặc chính sách doanh nghiệp đang hoạt động
+preferences-doh-default-detailed-desc-5 = Tắt khi mạng thông báo { -brand-short-name } không nên sử dụng DNS an toàn
+preferences-doh-setting-enabled =
+    .label = Bảo vệ gia tăng
+    .accesskey = I
+preferences-doh-enabled-desc = Bạn kiểm soát thời điểm sử dụng DNS bảo mật và chọn nhà cung cấp của mình.
+preferences-doh-enabled-detailed-desc-1 = Sử dụng nhà cung cấp bạn chọn
+preferences-doh-enabled-detailed-desc-2 = Chỉ sử dụng trình phân giải DNS mặc định của bạn nếu có sự cố với DNS bảo mật
+preferences-doh-setting-strict =
+    .label = Bảo vệ tối đa
+    .accesskey = M
+preferences-doh-strict-desc = { -brand-short-name } sẽ luôn sử dụng DNS an toàn. Bạn sẽ thấy cảnh báo rủi ro bảo mật trước khi chúng tôi sử dụng DNS hệ thống của bạn.
+preferences-doh-strict-detailed-desc-1 = Chỉ sử dụng nhà cung cấp bạn chọn
+preferences-doh-strict-detailed-desc-2 = Luôn cảnh báo nếu không có DNS an toàn
+preferences-doh-strict-detailed-desc-3 = Nếu không có DNS an toàn, các trang web sẽ không tải hoặc hoạt động bình thường
+preferences-doh-setting-off =
+    .label = Tắt
+    .accesskey = O
+preferences-doh-off-desc = Sử dụng trình phân giải DNS mặc định của bạn
+preferences-doh-checkbox-warn =
+    .label = Cảnh báo nếu bên thứ ba chủ động ngăn chặn DNS an toàn
+    .accesskey = W
+preferences-doh-select-resolver = Chọn nhà cung cấp:
+preferences-doh-exceptions-description = { -brand-short-name } sẽ không sử dụng DNS an toàn trên các trang web này
+preferences-doh-manage-exceptions =
+    .label = Quản lý ngoại trừ…
+    .accesskey = x
 
 ## The following strings are used in the Download section of settings
 

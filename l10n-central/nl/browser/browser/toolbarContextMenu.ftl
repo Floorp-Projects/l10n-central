@@ -61,6 +61,11 @@ toolbar-context-menu-view-customize-toolbar =
 toolbar-context-menu-view-customize-toolbar-2 =
     .label = Werkbalk aanpassen…
     .accesskey = p
+# This is only ever shown when toolbar-context-menu-pin-to-overflow-menu
+# is hidden, so they can share access keys.
+toolbar-context-menu-pin-to-toolbar =
+    .label = Aan werkbalk vastzetten
+    .accesskey = v
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Altijd tonen
     .accesskey = A

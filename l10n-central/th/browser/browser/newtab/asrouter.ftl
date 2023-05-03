@@ -12,33 +12,25 @@ cfr-doorhanger-feature-heading = คุณลักษณะที่แนะ�
 
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = ทำไมฉันจึงเห็นสิ่งนี้
-
 cfr-doorhanger-extension-cancel-button = ไม่ใช่ตอนนี้
-    .accesskey = ม
-
+    .accesskey = ไ
 cfr-doorhanger-extension-ok-button = เพิ่มตอนนี้
-    .accesskey = พ
-
+    .accesskey = เ
 cfr-doorhanger-extension-manage-settings-button = จัดการการตั้งค่าคำแนะนำ
     .accesskey = จ
-
 cfr-doorhanger-extension-never-show-recommendation = ไม่ต้องแสดงคำแนะนำนี้ให้ฉัน
     .accesskey = ส
-
 cfr-doorhanger-extension-learn-more-link = เรียนรู้เพิ่มเติม
-
 # This string is used on a new line below the add-on name
 # Variables:
 #   $name (String) - Add-on author name
 cfr-doorhanger-extension-author = โดย { $name }
-
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = คำแนะนำ
 cfr-doorhanger-extension-notification2 = แนะนำ
     .tooltiptext = ส่วนขยายที่แนะนำ
     .a11y-announcement = ส่วนขยายแนะนำที่มีอยู่
-
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-feature-notification = แนะนำ
@@ -83,11 +75,9 @@ cfr-protections-panel-link-text = เรียนรู้เพิ่มเต�
 # This string is used by screen readers to offer a text based alternative for
 # the notification icon
 cfr-badge-reader-label-newfeature = คุณสมบัติใหม่:
-
 cfr-whatsnew-button =
     .label = มีอะไรใหม่
     .tooltiptext = มีอะไรใหม่
-
 cfr-whatsnew-release-notes-link-text = อ่านบันทึกประจำรุ่น
 
 ## Enhanced Tracking Protection Milestones
@@ -176,3 +166,96 @@ spotlight-pin-primary-button =
        *[other] ปักหมุดเข้ากับแถบงาน
     }
 spotlight-pin-secondary-button = ไม่ใช่ตอนนี้
+
+## MR2022 Background Update Windows native toast notification strings.
+##
+## These strings will be displayed by the Windows operating system in
+## a native toast, like:
+##
+## <b>multi-line title</b>
+## multi-line text
+## <img>
+## [ primary button ] [ secondary button ]
+##
+## The button labels are fitted into narrow fixed-width buttons by
+## Windows and therefore must be as narrow as possible.
+
+mr2022-background-update-toast-title = { -brand-short-name } ใหม่ เป็นส่วนตัวมากขึ้น ตัวติดตามน้อยลง ไม่ล่วงละเมิด
+mr2022-background-update-toast-text = ลองใช้ { -brand-short-name } ใหม่ที่สุดที่ได้รับการอัพเกรดด้วยระบบการป้องกันการติดตามที่แข็งแกร่งที่สุดของเราเลย
+# This button label will be fitted into a narrow fixed-width button by
+# Windows. Try to not exceed the width of the English text (compare it
+# using a variable font like Arial): the button can only fit 1-2
+# additional characters, exceeding characters will be truncated.
+mr2022-background-update-toast-primary-button-label = เปิด { -brand-shorter-name } เลย
+# This button label will be fitted into a narrow fixed-width button by
+# Windows. Try to not exceed the width of the English text (compare it using a
+# variable font like Arial): the button can only fit 1-2 additional characters,
+# exceeding characters will be truncated.
+mr2022-background-update-toast-secondary-button-label = เตือนฉันภายหลัง
+
+## Firefox View CFR
+
+firefoxview-cfr-primarybutton = ลองดู
+    .accesskey = ล
+firefoxview-cfr-secondarybutton = ไม่ใช่ตอนนี้
+    .accesskey = ม
+firefoxview-cfr-header-v2 = ทำต่อจากจุดที่คุณค้างไว้อย่างรวดเร็ว
+firefoxview-cfr-body-v2 = นำแท็บที่ปิดไปล่าสุดกลับมา รวมทั้งสลับไปมาระหว่างอุปกรณ์ได้อย่างราบรื่นด้วย { -firefoxview-brand-name }
+
+## Firefox View Spotlight
+
+firefoxview-spotlight-promo-title = ทำความรู้จัก { -firefoxview-brand-name }
+# “Poof” refers to the expression to convey when something or someone suddenly disappears, or in this case, reappears. For example, “Poof, it’s gone.”
+firefoxview-spotlight-promo-subtitle = ต้องการให้แท็บที่เปิดไว้มาอยู่บนโทรศัพท์ของคุณหรือเปล่า เอามันมาเลยสิ ต้องการไซต์นั้นที่คุณเพิ่งเข้าชมไปหรือเปล่า ปิ๊ง มันกลับมาแล้วใน { -firefoxview-brand-name }
+firefoxview-spotlight-promo-primarybutton = ดูวิธีการทำงาน
+firefoxview-spotlight-promo-secondarybutton = ข้าม
+
+## Colorways expiry reminder CFR
+
+colorways-cfr-primarybutton = เลือกชุดรูปแบบสี
+    .accesskey = ล
+# "shades" refers to the different color options available to users in colorways.
+colorways-cfr-body = แต่งเติมสีสันให้กับเบราว์เซอร์ของคุณด้วยเฉดสีสุดพิเศษสำหรับ { -brand-short-name } ที่ได้แรงบันดาลใจจากเสียงที่เปลี่ยนแปลงวัฒนธรรม
+colorways-cfr-header-28days = ชุดรูปแบบสี “เสียงแห่งอิสระ” หมดเขต 16 มกราคมนี้
+colorways-cfr-header-14days = ชุดรูปแบบสี “เสียงแห่งอิสระ” หมดเขตในอีกสองสัปดาห์นี้
+colorways-cfr-header-7days = ชุดรูปแบบสี “เสียงแห่งอิสระ” หมดเขตสัปดาห์นี้
+colorways-cfr-header-today = ชุดรูปแบบสี “เสียงแห่งอิสระ” หมดเขตวันนี้
+
+## Cookie Banner Handling CFR
+
+# Alternate headline for localization: "See fewer cookie requests"
+cfr-cookiebanner-header = เอาแบนเนอร์คุกกี้ออกไปให้พ้น!
+cfr-cookiebanner-body = ให้ { -brand-short-name } ปฏิเสธคำขอแบนเนอร์คุกกี้ทั้งหมดโดยอัตโนมัติเมื่อเป็นไปได้
+cfr-cookiebanner-accept-button-v2 = ปฏิเสธคำขอ
+    .accesskey = ป
+cfr-cookiebanner-reject-button = ไม่ใช่ตอนนี้
+    .accesskey = ม
+cfr-cookiebanner-header-variant-1 = เห็นป๊อปอัปคุกกี้น้อยลง
+cfr-cookiebanner-body-variant-1 = ให้ { -brand-short-name } ตอบป๊อปอัปคุกกี้ให้คุณโดยอัตโนมัติเพื่อให้คุณท่องเว็บได้โดยปราศจากสิ่งรบกวน { -brand-short-name } จะปฏิเสธคำขอทั้งหมดเมื่อเป็นไปได้
+cfr-cookiebanner-accept-button-variant-1 = ปิดป๊อปอัป
+    .accesskey = ป
+cfr-cookiebanner-reject-button-variant-1 = ไม่ ขอบคุณ
+    .accesskey = ม
+cfr-cookiebanner-header-variant-2 = การลดแบนเนอร์คุกกี้
+cfr-cookiebanner-body-variant-2 = ลดจำนวนแบนเนอร์คุกกี้ที่คุณเห็นโดยให้ { -brand-short-name } ปฏิเสธคำขอยินยอมคุกกี้ของเว็บไซต์หากเป็นไปได้
+cfr-cookiebanner-accept-button-variant-2 = อนุญาต
+    .accesskey = อ
+cfr-cookiebanner-reject-button-variant-2 = ไม่ใช่ตอนนี้
+    .accesskey = ม
+cfr-cbh-header = อนุญาตให้ { -brand-short-name } ปฏิเสธแบนเนอร์คุกกี้หรือไม่?
+cfr-cbh-body = { -brand-short-name } สามารถปฏิเสธคำขอคุกกี้จำนวนมากได้โดยอัตโนมัติ
+cfr-cbh-confirm-button = ปฏิเสธแบนเนอร์คุกกี้
+    .accesskey = ป
+cfr-cbh-dismiss-button = ไม่ใช่ตอนนี้
+    .accesskey = ม
+
+## These strings are used in the Fox doodle Pin/set default spotlights
+
+july-jam-headline = เราปกป้องคุณอย่างครอบคลุม
+july-jam-body = ทุกเดือน { -brand-short-name } ปิดกั้นตัวติดตามเฉลี่ย 3,000+ ตัวต่อผู้ใช้หนึ่งคน ทำให้คุณเข้าถึงอินเทอร์เน็ตที่ดีได้อย่างปลอดภัยและรวดเร็ว
+july-jam-set-default-primary = เปิดลิงก์ของฉันด้วย { -brand-short-name }
+
+## These strings are used in the Set Firefox as Default PDF Handler for Existing Users experiment
+
+set-default-pdf-handler-headline = <strong>ตอนนี้ไฟล์ PDF ของคุณจะเปิดใน { -brand-short-name }</strong> แก้ไขหรือเซ็นชื่อในแบบฟอร์มได้โดยตรงในเบราว์เซอร์ของคุณ หากต้องการเปลี่ยน ให้ค้นหาคำว่า “PDF” ในการตั้งค่า
+set-default-pdf-handler-primary = เข้าใจแล้ว

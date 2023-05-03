@@ -23,8 +23,6 @@ firefoxview-just-now-timestamp = adesso
 firefoxview-tabpickup-header = Riprendi schede
 firefoxview-tabpickup-description = Apri pagine da altri dispositivi.
 
-firefoxview-tabpickup-recenttabs-description = Le schede recenti verranno visualizzate qui
-
 # Variables:
 #  $percentValue (Number): the percentage value for setup completion
 firefoxview-tabpickup-progress-label = { $percentValue }% completato
@@ -58,6 +56,15 @@ firefoxview-tabpickup-sync-disconnected-header = Attiva la sincronizzazione per 
 firefoxview-tabpickup-sync-disconnected-description = Per recuperare le tue schede è necessario attivare la sincronizzazione in { -brand-short-name }.
 firefoxview-tabpickup-sync-disconnected-primarybutton = Attiva la sincronizzazione nelle impostazioni
 
+firefoxview-tabpickup-password-locked-header = Inserisci la password principale per visualizzare le schede
+firefoxview-tabpickup-password-locked-description = Per recuperare le tue schede devi inserire la tua password principale per { -brand-short-name }.
+firefoxview-tabpickup-password-locked-link = Ulteriori informazioni
+firefoxview-tabpickup-password-locked-primarybutton = Inserisci la password principale
+
+firefoxview-tabpickup-signed-out-header = Accedi per riconnetterti
+firefoxview-tabpickup-signed-out-description = Per riconnetterti e recuperare le tue schede, accedi al tuo { -fxaccount-brand-name }.
+firefoxview-tabpickup-signed-out-primarybutton = Accedi
+
 firefoxview-tabpickup-syncing = Stiamo sincronizzando le tue schede, ci vorrà solo un attimo.
 
 firefoxview-mobile-promo-header = Recupera le schede aperte sul tuo telefono o tablet
@@ -69,8 +76,14 @@ firefoxview-mobile-confirmation-description = Ora puoi recuperare le schede di {
 
 firefoxview-closed-tabs-title = Chiuse di recente
 
-firefoxview-closed-tabs-description = Riapri pagine che hai chiuso su questo dispositivo.
-firefoxview-closed-tabs-placeholder = <strong>Nessuna pagina chiusa di recente</strong><br/>Non avrai più paura di perdere una scheda chiusa per errore, potrai sempre riaprirla qui.
+firefoxview-closed-tabs-description2 = Riapri pagine che hai chiuso in questa finestra.
+firefoxview-closed-tabs-placeholder-header = Nessuna scheda chiusa di recente
+firefoxview-closed-tabs-placeholder-body = Quando chiudi una scheda in questa finestra potrai sempre recuperarla da qui.
+
+# Variables:
+#   $tabTitle (string) - Title of tab being dismissed
+firefoxview-closed-tabs-dismiss-tab =
+  .title = Rimuovi { $tabTitle }
 
 # refers to the last tab that was used
 firefoxview-pickup-tabs-badge = Ultima attiva
@@ -81,7 +94,6 @@ firefoxview-tabs-list-tab-button =
   .title = Apri { $targetURI } in una nuova scheda
 
 firefoxview-try-colorways-button = Prova nuove tonalità
-firefoxview-no-current-colorway-collection = Sono in arrivo nuove tonalità
 firefoxview-change-colorway-button = Cambia tonalità
 
 # Variables:
@@ -89,7 +101,8 @@ firefoxview-change-colorway-button = Cambia tonalità
 #  $collection (String): Colorway Collection name
 firefoxview-colorway-description = { $intensity } · { $collection }
 
-firefoxview-synced-tabs-placeholder = <strong>Non c’è ancora nulla da mostrare</strong><br/>La prossima volta che apri una pagina in { -brand-product-name } su un altro dispositivo, la troverai qui.
+firefoxview-synced-tabs-placeholder-header = Non c’è ancora nulla da mostrare
+firefoxview-synced-tabs-placeholder-body = La prossima volta che apri una pagina in { -brand-product-name } su un altro dispositivo, la troverai qui.
 
 firefoxview-collapse-button-show =
   .title = Mostra elenco

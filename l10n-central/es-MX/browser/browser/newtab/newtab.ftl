@@ -7,7 +7,7 @@
 
 newtab-page-title = Nueva pestaña
 newtab-settings-button =
-    .title = Personalizar tu página de nueva pestaña
+    .title = Personaliza tu página de nueva pestaña
 newtab-personalize-icon-label =
     .title = Personalizar la nueva pestaña
     .aria-label = Personalizar la nueva pestaña
@@ -112,7 +112,7 @@ newtab-menu-show-privacy-info = Nuestros patrocinadores y tu privacidad
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
 newtab-privacy-modal-button-done = Hecho
-newtab-privacy-modal-button-manage = Administrar la configuración de contenido patrocinado
+newtab-privacy-modal-button-manage = Administrar los ajustes de contenido patrocinado
 newtab-privacy-modal-header = Tu privacidad importa
 newtab-privacy-modal-paragraph-2 = Además de ofrecer historias cautivadoras, te mostramos contenido relevante y muy revisado de patrocinadores seleccionados. No te preocupes, <strong>tus datos de navegación jamás dejan una copia personal de { -brand-product-name }</strong> — nosotros los vemos, y tampoco lo hacen nuestros patrocinadores.
 newtab-privacy-modal-link = Conoce cómo tu privacidad trabaja en la nueva pestaña

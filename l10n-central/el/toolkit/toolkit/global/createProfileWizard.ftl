@@ -6,12 +6,22 @@ create-profile-window =
     .title = Βοηθός δημιουργίας προφίλ
     .style = width: 52em; height: 35em;
 
+create-profile-window2 =
+    .title = Βοηθός δημιουργίας προφίλ
+    .style = min-width: 52em; min-height: 35em;
+
 ## First wizard page
 
 create-profile-first-page-header =
     { PLATFORM() ->
         [macos] Εισαγωγή
        *[other] { create-profile-window.title } - Καλώς ήλθατε
+    }
+
+create-profile-first-page-header2 =
+    { PLATFORM() ->
+        [macos] Εισαγωγή
+       *[other] { create-profile-window2.title } - Καλώς ήλθατε
     }
 
 profile-creation-explanation-1 = Το { -brand-short-name } αποθηκεύει πληροφορίες σχετικά με τις ρυθμίσεις και τις προτιμήσεις σας στο προσωπικό σας προφίλ.
@@ -32,6 +42,12 @@ create-profile-last-page-header =
     { PLATFORM() ->
         [macos] Επίλογος
        *[other] { create-profile-window.title } - Ολοκλήρωση
+    }
+
+create-profile-last-page-header2 =
+    { PLATFORM() ->
+        [macos] Επίλογος
+       *[other] { create-profile-window2.title } - Ολοκλήρωση
     }
 
 profile-creation-intro = Αν δημιουργήσετε πολλά προφίλ, μπορείτε να τα ξεχωρίζετε από το όνομά τους. Μπορείτε να επιλέξτε το προεπιλεγμένο όνομα ή να δημιουργήσετε το δικό σας.

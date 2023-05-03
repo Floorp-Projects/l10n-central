@@ -60,3 +60,11 @@ about-private-browsing-pin-promo-link-text =
        *[other] Ghim vào thanh tác vụ
     }
 about-private-browsing-pin-promo-title = Không có cookie hoặc lịch sử đã lưu, ngay từ màn hình của bạn. Duyệt như không có ai đang xem.
+
+## Strings used in a promotion message for cookie banner reduction
+
+# Simplified version of the headline if the original text doesn't work
+# in your language: `See fewer cookie requests`.
+about-private-browsing-cookie-banners-promo-header = Biểu ngữ cookie sẽ biến mất!
+about-private-browsing-cookie-banners-promo-button = Giảm biểu ngữ cookie
+about-private-browsing-cookie-banners-promo-message = Hãy để { -brand-short-name } tự động trả lời các cửa sổ bật lên cookie cho bạn để bạn có thể quay lại trình duyệt mà không bị phân tâm. { -brand-short-name } sẽ từ chối tất cả các yêu cầu nếu có thể.

@@ -6,6 +6,10 @@ blocklist-window =
     .title = Blokkeerlijsten
     .style = width: 55em
 
+blocklist-window2 =
+    .title = Blokkeerlijsten
+    .style = min-width: 55em
+
 blocklist-description = Kies de lijst die { -brand-short-name } gebruikt om online trackers te blokkeren. Lijsten worden aangeboden door <a data-l10n-name="disconnect-link" title="Disconnect">Disconnect</a>.
 blocklist-close-key =
     .key = w

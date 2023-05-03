@@ -5,10 +5,18 @@
 containers-window-new =
     .title = Aggiungi nuovo contenitore
     .style = width: 45em
-
 containers-window-update-settings =
     .title = Impostazioni contenitore “{ $name }”
     .style = width: 45em
+
+containers-window-new2 =
+    .title = Aggiungi nuovo contenitore
+    .style = min-width: 45em
+# Variables
+#   $name (String) - Name of the container
+containers-window-update-settings2 =
+    .title = Impostazioni contenitore “{ $name }”
+    .style = min-width: 45em
 
 containers-window-close =
     .key = w

@@ -68,7 +68,7 @@ appmenuitem-fullscreen =
 ## Firefox Account toolbar button and Sync panel in App menu.
 
 appmenu-remote-tabs-sign-into-sync =
-    .label = Aanmelden bij Sync…
+    .label = Aanmelden om te synchroniseren…
 appmenu-remote-tabs-turn-on-sync =
     .label = Synchronisatie inschakelen…
 # This is shown after the tabs list if we can display more tabs by clicking on the button
@@ -128,6 +128,7 @@ profiler-popup-button-capturing =
     .tooltiptext = De profiler neemt een profiel op
 profiler-popup-title =
     .value = { -profiler-brand-name }
+profiler-popup-header-text = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
     .aria-label = Meer informatie onthullen
 profiler-popup-description-title =

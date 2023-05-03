@@ -6,6 +6,10 @@ app-manager-window =
     .title = Chi tiết ứng dụng
     .style = width: 30em; min-height: 20em;
 
+app-manager-window2 =
+    .title = Chi tiết ứng dụng
+    .style = min-width: 30em; min-height: 20em;
+
 app-manager-remove =
     .label = Gỡ bỏ
     .accesskey = G

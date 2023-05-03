@@ -6,6 +6,10 @@ profiledowngrade-window =
     .title = คุณได้เรียกใช้ { -brand-product-name } รุ่นเก่า
     .style = width: 490px;
 
+profiledowngrade-window2 =
+    .title = คุณได้เรียกใช้ { -brand-product-name } รุ่นเก่า
+    .style = min-width: 490px;
+
 profiledowngrade-window-create =
     .label = สร้างโปรไฟล์ใหม่
 

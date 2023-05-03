@@ -6,6 +6,10 @@ app-manager-window =
     .title = Detail aplikasi
     .style = width: 30em; min-height: 20em;
 
+app-manager-window2 =
+    .title = Detail aplikasi
+    .style = min-width: 30em; min-height: 20em;
+
 app-manager-remove =
     .label = Hapus
     .accesskey = H

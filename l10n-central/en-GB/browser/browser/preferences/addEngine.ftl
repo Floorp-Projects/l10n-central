@@ -6,6 +6,10 @@ add-engine-window =
     .title = Add Search Engine
     .style = width: 32em;
 
+add-engine-window2 =
+    .title = Add Search Engine
+    .style = min-width: 32em;
+
 add-engine-button = Add Custom Engine
 
 add-engine-name = Search engine name

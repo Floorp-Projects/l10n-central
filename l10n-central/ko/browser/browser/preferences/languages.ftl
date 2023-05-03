@@ -6,6 +6,10 @@ webpage-languages-window =
     .title = 웹 페이지 언어 설정
     .style = width: 40em
 
+webpage-languages-window2 =
+    .title = 웹 페이지 언어 설정
+    .style = min-width: 40em
+
 languages-close-key =
     .key = w
 
@@ -52,6 +56,10 @@ languages-active-code-format =
 browser-languages-window =
     .title = { -brand-short-name } 언어 설정
     .style = width: 40em
+
+browser-languages-window2 =
+    .title = { -brand-short-name } 언어 설정
+    .style = min-width: 40em
 
 browser-languages-description = { -brand-short-name }가 첫번째 언어를 기본 언어로 표시하고 필요한 경우 순서대로 대체 언어를 표시합니다.
 

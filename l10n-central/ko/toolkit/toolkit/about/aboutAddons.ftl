@@ -82,8 +82,8 @@ detail-check-for-updates =
 detail-show-preferences =
     .label =
         { PLATFORM() ->
-            [windows] 설정
-           *[other] 환경 설정
+            [windows] 옵션
+           *[other] 설정
         }
     .accesskey =
         { PLATFORM() ->
@@ -92,8 +92,8 @@ detail-show-preferences =
         }
     .tooltiptext =
         { PLATFORM() ->
-            [windows] 부가 기능 설정 변경
-           *[other] 부가 기능 환경 설정 변경
+            [windows] 부가 기능 옵션 변경
+           *[other] 부가 기능 설정 변경
         }
 detail-rating =
     .value = 평가
@@ -141,6 +141,10 @@ addon-category-recent-updates-title =
 addon-category-sitepermission = 사이트 권한
 addon-category-sitepermission-title =
     .title = 사이트 권한
+# String displayed in about:addons in the Site Permissions section
+# Variables:
+#  $host (string): DNS host name for which the webextension enables permissions
+addon-sitepermission-host = { $host }에 대한 사이트 권한
 
 ## These are global warnings
 
@@ -270,7 +274,7 @@ extension-enable-addon-button-label =
     .aria-label = 사용함
 preferences-addon-button =
     { PLATFORM() ->
-        [windows] 설정
+        [windows] 옵션
        *[other] 설정
     }
 details-addon-button = 상세 정보
@@ -285,15 +289,11 @@ theme-monochromatic-heading = 컬러웨이
 theme-monochromatic-subheading = { -brand-product-name }의 생동감 넘치는 새로운 컬러웨이입니다. 제한된 시간 동안 사용할 수 있습니다.
 # Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
 theme-colorways-button = 컬러웨이 체험
-colorway-collection-independent-voices-subheading = { -brand-short-name }를 좀 더 나만의 것으로 만드세요.
-# Variables:
-#   $expiryDate (string) - date on which the colorway collection expires.
-colorway-collection-expiry-date-span = 만료 { DATETIME($expiryDate, month: "long", day: "numeric") }
 # Refers to the button label for the colorways card when a user has a colorway theme enabled.
 theme-colorways-button-colorway-enabled = 컬러웨이 변경
 # Variables:
 #   $expiryDate (string) - date on which the colorway collection expires. When formatting this, you may omit the year, only exposing the month and day, as colorway collections will always expire within a year.
-colorway-collection-expiry-label = 만료 { DATETIME($expiryDate, month: "long", day: "numeric") }
+colorway-collection-expiry-label = { DATETIME($expiryDate, month: "long", day: "numeric") } 만료
 plugin-enabled-heading = 사용함
 plugin-disabled-heading = 사용 안 함
 dictionary-enabled-heading = 사용함
@@ -370,7 +370,7 @@ addon-badge-verified2 =
 available-updates-heading = 업데이트 가능 항목
 recent-updates-heading = 최근 업데이트
 release-notes-loading = 로드 중…
-release-notes-error = 죄송합니다. 출시 정보를 불러오는 중에 오류가 발생했습니다.
+release-notes-error = 죄송합니다. 출시 정보를 로드하는 중에 오류가 발생했습니다.
 addon-permissions-empty = 이 확장 기능은 권한이 필요하지 않습니다.
 addon-permissions-required = 핵심 기능에 필요한 필수 권한:
 addon-permissions-optional = 추가 기능에 필요한 선택 권한:

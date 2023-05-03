@@ -172,12 +172,15 @@ preferences-web-appearance-header = Tampilan situs web
 preferences-web-appearance-description = Beberapa situs web menyesuaikan skema warnanya berdasarkan preferensi Anda. Pilih skema warna mana yang ingin Anda gunakan untuk situs tersebut.
 preferences-web-appearance-choice-browser = Tema { -brand-short-name }
 preferences-web-appearance-choice-system = Tema sistem
+preferences-web-appearance-choice-auto = Otomatis
 preferences-web-appearance-choice-light = Terang
 preferences-web-appearance-choice-dark = Gelap
 preferences-web-appearance-choice-tooltip-browser =
     .title = Cocokkan pengaturan tema { -brand-short-name } Anda untuk latar belakang dan konten situs web.
 preferences-web-appearance-choice-tooltip-system =
     .title = Cocokkan pengaturan sistem Anda untuk latar belakang dan konten situs web.
+preferences-web-appearance-choice-tooltip-auto =
+    .title = Ubah latar belakang situs dan konten secara otomatis berdasarkan pengaturan sistem dan tema { -brand-short-name }.
 preferences-web-appearance-choice-tooltip-light =
     .title = Gunakan tampilan terang untuk latar belakang dan konten situs web.
 preferences-web-appearance-choice-tooltip-dark =
@@ -186,6 +189,8 @@ preferences-web-appearance-choice-input-browser =
     .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
 preferences-web-appearance-choice-input-system =
     .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+preferences-web-appearance-choice-input-auto =
+    .aria-description = { preferences-web-appearance-choice-tooltip-auto.title }
 preferences-web-appearance-choice-input-light =
     .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
 preferences-web-appearance-choice-input-dark =
@@ -571,6 +576,11 @@ search-suggestions-option =
 search-show-suggestions-url-bar-option =
     .label = Tampilkan saran pencarian di hasil bilah alamat
     .accesskey = l
+# With this option enabled, on the search results page
+# the URL will be replaced by the search terms in the address bar
+# when using the current default search engine.
+search-show-search-term-option =
+    .label = Tampilkan istilah penelusuran alih-alih URL di halaman hasil mesin pencarian baku
 # This string describes what the user will observe when the system
 # prioritizes search suggestions over browsing history in the results
 # that extend down from the address bar. In the original English string,
@@ -698,6 +708,13 @@ sync-choose-what-to-sync-dialog =
     .buttonaccesskeyaccept = S
     .buttonlabelextra2 = Putuskan…
     .buttonaccesskeyextra2 = P
+sync-choose-what-to-sync-dialog3 =
+    .title = Pilih yang Akan Disinkronkan
+    .style = min-width: 36em;
+    .buttonlabelaccept = Simpan Perubahan
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra2 = Putuskan…
+    .buttonaccesskeyextra2 = P
 sync-engine-bookmarks =
     .label = Markah
     .accesskey = M
@@ -766,6 +783,9 @@ forms-breach-alerts =
     .label = Tampilkan peringatan tentang kata sandi untuk situs web yang diretas
     .accesskey = w
 forms-breach-alerts-learn-more-link = Pelajari lebih lanjut
+relay-integration =
+    .label = Aktifkan { -relay-brand-name } pada pengelola sandi { -brand-short-name } Anda
+relay-integration-learn-more-link = Pelajari lebih lanjut
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Isi info masuk dan kata sandi secara otomatis
@@ -882,6 +902,8 @@ sitedata-option-block-unvisited =
     .label = Kuki dari situs yang tidak dikunjungi
 sitedata-option-block-all-third-party =
     .label = Semua kuki pihak ketiga (dapat menyebabkan kerusakan situs)
+sitedata-option-block-all-cross-site-cookies =
+    .label = Semua kuki lintas-situs (mungkin menyebabkan situs tidak berfungsi)
 sitedata-option-block-all =
     .label = Semua kuki (akan menyebabkan kerusakan situs)
 sitedata-clear =
@@ -961,6 +983,7 @@ content-blocking-all-cookies = Semua kuki
 content-blocking-unvisited-cookies = Kuki dari situs yang belum dikunjungi
 content-blocking-all-windows-tracking-content = Melacak konten di seluruh jendela
 content-blocking-all-third-party-cookies = Semua kuki pihak ketiga
+content-blocking-all-cross-site-cookies = Semua kuki lintas situs
 content-blocking-cryptominers = Penambang Kripto
 content-blocking-fingerprinters = Pelacak Sidik
 # "Test pilot" is used as a verb. Possible alternatives:
@@ -970,6 +993,9 @@ content-blocking-etp-standard-tcp-rollout-checkbox =
         Uji coba pengalaman privasi terkuat kami
         kami yang pernah ada
     .accesskey = U
+
+# The tcp-rollout strings are no longer used for the rollout but for tcp-by-default in the standard section
+
 # "Contains" here means "isolates", "limits".
 content-blocking-etp-standard-tcp-rollout-description = Perlindungan Kuki total membelenggu kuki situs tempat Anda berada, sehingga pelacak tidak dapat menggunakannya untuk mengikuti Anda antar-situs.
 content-blocking-etp-standard-tcp-rollout-learn-more = Pelajari lebih lanjut

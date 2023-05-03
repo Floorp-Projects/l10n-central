@@ -15,6 +15,50 @@ pictureinpicture-unpip =
     .aria-label = Enviar de vuelta a la pestaña
 pictureinpicture-close =
     .aria-label = Cerrar
+
+## Variables:
+##   $shortcut (String) - Keyboard shortcut to execute the command.
+
+pictureinpicture-pause-btn =
+    .aria-label = Pausar
+    .tooltip = Pausar (barra espaciadora)
+pictureinpicture-play-btn =
+    .aria-label = Reproducir
+    .tooltip = Reproducir (barra espaciadora)
+pictureinpicture-mute-btn =
+    .aria-label = Silenciar
+    .tooltip = Silenciar ({ $shortcut })
+pictureinpicture-unmute-btn =
+    .aria-label = Restaurar sonido
+    .tooltip = Restaurar sonido ({ $shortcut })
+pictureinpicture-unpip-btn =
+    .aria-label = Enviar de vuelta a la pestaña
+    .tooltip = Vuelta a la pestaña
+pictureinpicture-close-btn =
+    .aria-label = Cerrar
+    .tooltip = Cerrar ({ $shortcut })
+pictureinpicture-subtitles-btn =
+    .aria-label = Subtítulos
+    .tooltip = Subtítulos
+
+##
+
+pictureinpicture-fullscreen-btn =
+    .aria-label = Pantalla completa
+    .tooltip = Pantalla completa (doble clic)
+pictureinpicture-exit-fullscreen-btn =
+    .aria-label = Salir de pantalla completa
+    .tooltip = Salir de pantalla completa (doble clic)
+pictureinpicture-seekbackward-btn =
+    .aria-label = Retroceder
+    .tooltip = Retroceder (←)
+pictureinpicture-seekforward-btn =
+    .aria-label = Avanzar
+    .tooltip = Avanzar (→)
+# This string is never displayed on the window. Is intended to be announced by
+# a screen reader whenever a user opens the subtitles settings panel
+# after selecting the subtitles button.
+pictureinpicture-subtitles-panel-accessible = Ajustes de subtítulos
 pictureinpicture-subtitles-label = Subtítulos
 pictureinpicture-font-size-label = Tamaño de letra
 pictureinpicture-font-size-small = Pequeño

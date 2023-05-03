@@ -6,6 +6,10 @@ app-manager-window =
     .title = Detalhes do programa
     .style = width: 34em; min-height: 24em;
 
+app-manager-window2 =
+    .title = Detalhes do programa
+    .style = min-width: 34em; min-height: 24em;
+
 app-manager-remove =
     .label = Remover
     .accesskey = R

@@ -19,42 +19,46 @@ pictureinpicture-close =
 ## Variables:
 ##   $shortcut (String) - Keyboard shortcut to execute the command.
 
-pictureinpicture-pause-cmd =
+pictureinpicture-pause-btn =
     .aria-label = Приостановить
-    .title = Приостановить (Пробел)
-pictureinpicture-play-cmd =
+    .tooltip = Приостановить (Пробел)
+pictureinpicture-play-btn =
     .aria-label = Воспроизвести
-    .title = Воспроизвести (Пробел)
-pictureinpicture-mute-cmd =
+    .tooltip = Воспроизвести (Пробел)
+pictureinpicture-mute-btn =
     .aria-label = Отключить звук
-    .title = Отключить звук ({ $shortcut })
-pictureinpicture-unmute-cmd =
+    .tooltip = Отключить звук ({ $shortcut })
+pictureinpicture-unmute-btn =
     .aria-label = Включить звук
-    .title = Включить звук ({ $shortcut })
-pictureinpicture-unpip-cmd =
+    .tooltip = Включить звук ({ $shortcut })
+pictureinpicture-unpip-btn =
     .aria-label = Отправить обратно во вкладку
-    .title = Обратно во вкладку
-pictureinpicture-close-cmd =
+    .tooltip = Обратно во вкладку
+pictureinpicture-close-btn =
     .aria-label = Закрыть
-    .title = Закрыть ({ $shortcut })
-pictureinpicture-subtitles-cmd =
+    .tooltip = Закрыть ({ $shortcut })
+pictureinpicture-subtitles-btn =
     .aria-label = Субтитры
-    .title = Субтитры
+    .tooltip = Субтитры
 
 ##
 
-pictureinpicture-fullscreen-cmd =
+pictureinpicture-fullscreen-btn =
     .aria-label = Перейти в полноэкранный режим
-    .title = Перейти в полноэкранный режим (двойной щелчок)
-pictureinpicture-exit-fullscreen-cmd =
+    .tooltip = Перейти в полноэкранный режим (двойной щелчок)
+pictureinpicture-exit-fullscreen-btn =
     .aria-label = Выйти из полноэкранного режима
-    .title = Выйти из полноэкранного режима (двойной щелчок)
-pictureinpicture-seekbackward-cmd =
+    .tooltip = Выйти из полноэкранного режима (двойной щелчок)
+pictureinpicture-seekbackward-btn =
     .aria-label = Назад
-    .title = Назад (←)
-pictureinpicture-seekforward-cmd =
+    .tooltip = Назад (←)
+pictureinpicture-seekforward-btn =
     .aria-label = Вперёд
-    .title = Вперёд (→)
+    .tooltip = Вперёд (→)
+# This string is never displayed on the window. Is intended to be announced by
+# a screen reader whenever a user opens the subtitles settings panel
+# after selecting the subtitles button.
+pictureinpicture-subtitles-panel-accessible = Настройки субтитров
 pictureinpicture-subtitles-label = Субтитры
 pictureinpicture-font-size-label = Размер шрифта
 pictureinpicture-font-size-small = Маленький

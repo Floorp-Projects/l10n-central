@@ -6,12 +6,22 @@ create-profile-window =
     .title = 创建配置文件向导
     .style = width: 45em; height: 32em;
 
+create-profile-window2 =
+    .title = 创建配置文件向导
+    .style = min-width: 45em; min-height: 32em;
+
 ## First wizard page
 
 create-profile-first-page-header =
     { PLATFORM() ->
         [macos] 介绍
        *[other] 欢迎使用 { create-profile-window.title }
+    }
+
+create-profile-first-page-header2 =
+    { PLATFORM() ->
+        [macos] 介绍
+       *[other] 欢迎使用 { create-profile-window2.title }
     }
 
 profile-creation-explanation-1 = { -brand-short-name } 把您的偏好设置等各种数据保存在您的个人配置文件中。
@@ -32,6 +42,12 @@ create-profile-last-page-header =
     { PLATFORM() ->
         [macos] 总结
        *[other] 正在完成 { create-profile-window.title }
+    }
+
+create-profile-last-page-header2 =
+    { PLATFORM() ->
+        [macos] 总结
+       *[other] 正在完成 { create-profile-window2.title }
     }
 
 profile-creation-intro = 您需要为各个配置文件取不同的名称。您可以用这里提供的名称，也可以自行指定。

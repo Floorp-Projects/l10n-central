@@ -73,6 +73,17 @@ restart-later = 稍後再重新啟動
 ## Variables:
 ##   $name (String): name of the extension
 
+
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (string) - Name of the extension
+
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
 extension-controlling-password-saving = <img data-l10n-name="icon"/> 此設定受 <strong>{ $name }</strong> 控制。
@@ -120,6 +131,11 @@ startup-restore-warn-on-quit =
     .label = 關閉瀏覽器時警告您
 disable-extension =
     .label = 停用擴充套件
+preferences-data-migration-header = 匯入瀏覽器資料
+preferences-data-migration-description = 將書籤、密碼、瀏覽紀錄與網頁自動填寫資料匯入到 { -brand-short-name }。
+preferences-data-migration-button =
+    .label = 匯入資料
+    .accesskey = m
 tabs-group-header = 分頁
 ctrl-tab-recently-used-order =
     .label = 按下 Ctrl+Tab 時，依照最近使用分頁的順序切換分頁標籤
@@ -132,7 +148,7 @@ confirm-on-close-multiple-tabs =
     .accesskey = m
 # This string is used for the confirm before quitting preference.
 # Variables:
-#   $quitKey (String) - the quit keyboard shortcut, and formatted
+#   $quitKey (string) - the quit keyboard shortcut, and formatted
 #                       in the same manner as it would appear,
 #                       for example, in the File menu.
 confirm-on-quit-with-key =
@@ -155,12 +171,19 @@ browser-containers-settings =
     .label = 設定…
     .accesskey = i
 containers-disable-alert-title = 要關閉所有容器分頁嗎？
+
+## Variables:
+##   $tabCount (number) - Number of tabs
+
 containers-disable-alert-desc = 若您現在停用容器分頁，將關閉 { $tabCount } 個分頁。您真的要停用容器分頁嗎？
 containers-disable-alert-ok-button = 關閉 { $tabCount } 個容器分頁
+
+##
+
 containers-disable-alert-cancel-button = 保持開啟
 containers-remove-alert-title = 要移除這個容器嗎？
 # Variables:
-#   $count (Number) - Number of tabs that will be closed.
+#   $count (number) - Number of tabs that will be closed.
 containers-remove-alert-msg = 若您現在移除此容器，將關閉 { $count } 個容器分頁。您確定要移除此容器嗎？
 containers-remove-ok-button = 移除此容器
 containers-remove-cancel-button = 不要移除此容器
@@ -218,6 +241,8 @@ advanced-fonts =
 preferences-zoom-header = 縮放
 preferences-default-zoom = 預設縮放比例
     .accesskey = z
+# Variables:
+#   $percentage (number) - Zoom percentage value
 preferences-default-zoom-value =
     .label = { $percentage }%
 preferences-zoom-text-only =
@@ -310,15 +335,15 @@ applications-manage-app =
 applications-always-ask =
     .label = 總是詢問
 # Variables:
-#   $type-description (String) - Description of the type (e.g "Portable Document Format")
-#   $type (String) - the MIME type (e.g application/binary)
+#   $type-description (string) - Description of the type (e.g "Portable Document Format")
+#   $type (string) - The MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description }（{ $type }）
 # Variables:
-#   $extension (String) - file extension (e.g .TXT)
-#   $type (String) - the MIME type (e.g application/binary)
+#   $extension (string) - File extension (e.g .TXT)
+#   $type (string) - The MIME type (e.g application/binary)
 applications-file-ending-with-type = { applications-file-ending }（{ $type }）
 # Variables:
-#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+#   $plugin-name (string) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = 使用 { $plugin-name } (在 { -brand-short-name } 開啟)
 applications-open-inapp =
@@ -361,6 +386,8 @@ play-drm-content =
 play-drm-content-learn-more = 了解更多
 update-application-title = { -brand-short-name } 更新
 update-application-description = 保持更新 { -brand-short-name }，獲得最佳效能、穩定度以及安全性。
+# Variables:
+# $version (string) - Firefox version
 update-application-version = { $version } 版 <a data-l10n-name="learn-more">有什麼新鮮事</a>
 update-history =
     .label = 顯示更新紀錄…
@@ -387,7 +414,7 @@ update-application-suppress-prompts =
     .accesskey = n
 update-setting-write-failure-title2 = 儲存更新設定時發生錯誤
 # Variables:
-#   $path (String) - Path to the configuration file
+#   $path (string) - Path to the configuration file
 # The newlines between the main text and the line containing the path is
 # intentional so the path is easier to identify.
 update-setting-write-failure-message2 =
@@ -417,7 +444,7 @@ performance-limit-content-process-option = 內容處理程序數量限制
 performance-limit-content-process-enabled-desc = 調高內容處理程序的數量，可改善開啟多個分頁時的效能，但也會使用更多記憶體。
 performance-limit-content-process-blocked-desc = 僅能在多程序的 { -brand-short-name } 當中修改內容處理程序數量。<a data-l10n-name="learn-more">了解如何確認多程序模式是否已開啟</a>
 # Variables:
-#   $num - default value of the `dom.ipc.processCount` pref.
+#   $num (number) - Default value of the `dom.ipc.processCount` pref.
 performance-default-content-process-count =
     .label = { $num }（預設）
 
@@ -523,6 +550,10 @@ home-prefs-shortcuts-by-option-sponsored =
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
+
+## Variables:
+##  $provider (string) - Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = { $provider } 推薦
 home-prefs-recommended-by-description-new = 由 { -brand-product-name } 的姊妹作 { $provider } 精心策展的內容
@@ -552,6 +583,8 @@ home-prefs-recent-activity-description = 近期造訪過的網站與內容精選
 home-prefs-snippets-header =
     .label = 隻字片語
 home-prefs-snippets-description-new = 來自 { -vendor-short-name } 及 { -brand-product-name } 的使用秘訣與新聞
+# Variables:
+#   $num (number) - Number of rows displayed
 home-prefs-sections-rows-option =
     .label = { $num } 行
 
@@ -576,6 +609,11 @@ search-suggestions-option =
 search-show-suggestions-url-bar-option =
     .label = 在網址列結果中顯示搜尋建議
     .accesskey = l
+# With this option enabled, on the search results page
+# the URL will be replaced by the search terms in the address bar
+# when using the current default search engine.
+search-show-search-term-option =
+    .label = 在預設搜尋引擎的搜尋結果頁面中，顯示搜尋關鍵字而不顯示網址
 # This string describes what the user will observe when the system
 # prioritizes search suggestions over browsing history in the results
 # that extend down from the address bar. In the original English string,
@@ -607,7 +645,7 @@ search-find-more-link = 尋找更多搜尋引擎
 # ('Duplicate' is an adjective)
 search-keyword-warning-title = 關鍵字重複
 # Variables:
-#   $name (String) - Name of a search engine.
+#   $name (string) - Name of a search engine.
 search-keyword-warning-engine = 您選用的關鍵字目前正被「{ $name }」所使用，請另選一個。
 search-keyword-warning-bookmark = 您選用的關鍵字目前正被書籤項目所使用，請另選一個。
 
@@ -654,8 +692,15 @@ sync-sign-out =
     .accesskey = g
 sync-manage-account = 管理帳號
     .accesskey = o
+
+## Variables
+## $email (string) - Email used for Firefox account
+
 sync-signedin-unverified = { $email } 未驗證。
 sync-signedin-login-failure = 請登入以重新連線 { $email }
+
+##
+
 sync-resend-verification =
     .label = 重寄驗證信
     .accesskey = d
@@ -682,6 +727,7 @@ prefs-sync-now =
 ## The list of things currently syncing.
 
 sync-currently-syncing-heading = 您目前正在同步下列項目:
+sync-syncing-across-devices-heading = 您連線的裝置會同步下列項目:
 sync-currently-syncing-bookmarks = 書籤
 sync-currently-syncing-history = 瀏覽紀錄
 sync-currently-syncing-tabs = 開啟分頁
@@ -703,6 +749,14 @@ sync-choose-what-to-sync-dialog =
     .buttonaccesskeyaccept = S
     .buttonlabelextra2 = 中斷連線…
     .buttonaccesskeyextra2 = D
+sync-choose-what-to-sync-dialog3 =
+    .title = 選擇要同步哪些資料
+    .style = min-width: 36em;
+    .buttonlabelaccept = 儲存變更
+    .buttonaccesskeyaccept = S
+    .buttonlabelextra2 = 中斷連線…
+    .buttonaccesskeyextra2 = D
+sync-choose-dialog-subtitle = 對同步項目的變更，將套用到所有連線的裝置上。
 sync-engine-bookmarks =
     .label = 書籤
     .accesskey = m
@@ -771,6 +825,9 @@ forms-breach-alerts =
     .label = 針對發生過資料外洩的網站顯示密碼警告
     .accesskey = b
 forms-breach-alerts-learn-more-link = 了解更多
+relay-integration =
+    .label = 在您的 { -brand-short-name } 密碼管理員啟用 { -relay-brand-name }
+relay-integration-learn-more-link = 了解更多
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = 自動填寫登入資訊與密碼
@@ -859,8 +916,8 @@ history-clear-button =
 sitedata-header = Cookie 與網站資料
 sitedata-total-size-calculating = 正在計算網站資料與快取大小…
 # Variables:
-#   $value (Number) - Value of the unit (for example: 4.6, 500)
-#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+#   $value (number) - Value of the unit (for example: 4.6, 500)
+#   $unit (string) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = 您儲存的 Cookie、網站資料與快取目前使用了 { $value } { $unit } 磁碟空間
 sitedata-learn-more = 了解更多
 sitedata-delete-on-close =
@@ -887,6 +944,8 @@ sitedata-option-block-unvisited =
     .label = 來自未造訪過網站的 Cookie
 sitedata-option-block-all-third-party =
     .label = 所有第三方 Cookie（可能造成某些網站不正常）
+sitedata-option-block-all-cross-site-cookies =
+    .label = 所有跨網站 Cookie（可能會造成網站運作不正常）
 sitedata-option-block-all =
     .label = 所有 Cookie（會造成網站不正常）
 sitedata-clear =
@@ -898,6 +957,14 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = 管理例外網站…
     .accesskey = X
+
+## Privacy Section - Cookie Banner Handling
+
+cookie-banner-handling-header = 減少 Cookie 橫幅
+cookie-banner-handling-description = { -brand-short-name } 會自動在支援的網站，嘗試為您拒絕網站設定 Cookie 的請求。
+cookie-banner-learn-more = 了解更多
+forms-handle-cookie-banners =
+    .label = 減少 Cookie 橫幅
 
 ## Privacy Section - Address Bar
 
@@ -966,6 +1033,7 @@ content-blocking-all-cookies = 所有 Cookie
 content-blocking-unvisited-cookies = 來自未造訪過網站的 Cookie
 content-blocking-all-windows-tracking-content = 所有視窗中的追蹤內容
 content-blocking-all-third-party-cookies = 所有第三方 Cookie
+content-blocking-all-cross-site-cookies = 所有跨網站 Cookie
 content-blocking-cryptominers = 加密貨幣採礦程式
 content-blocking-fingerprinters = 數位指紋追蹤程式
 # "Test pilot" is used as a verb. Possible alternatives:
@@ -973,6 +1041,9 @@ content-blocking-fingerprinters = 數位指紋追蹤程式
 content-blocking-etp-standard-tcp-rollout-checkbox =
     .label = 試用我們有史以來最強大的隱私保護功能
     .accesskey = T
+
+# The tcp-rollout strings are no longer used for the rollout but for tcp-by-default in the standard section
+
 # "Contains" here means "isolates", "limits".
 content-blocking-etp-standard-tcp-rollout-description = 全方位 Cookie 保護功能會將 Cookie 限制於您所在的網站當中，這樣追蹤器就無法透過 Cookie 在不同網站間追蹤您。
 content-blocking-etp-standard-tcp-rollout-learn-more = 了解更多
@@ -1034,6 +1105,11 @@ permissions-microphone = 麥克風
 permissions-microphone-settings =
     .label = 設定…
     .accesskey = m
+# Short form for "the act of choosing sound output devices and redirecting audio to the chosen devices".
+permissions-speaker = 選擇喇叭
+permissions-speaker-settings =
+    .label = 設定…
+    .accesskey = t
 permissions-notification = 通知
 permissions-notification-settings =
     .label = 設定…
@@ -1138,6 +1214,63 @@ httpsonly-radio-enabled-pbm =
     .label = 僅在隱私瀏覽視窗開啟純 HTTPS 模式
 httpsonly-radio-disabled =
     .label = 不開啟純 HTTPS 模式
+
+## DoH Section
+
+preferences-doh-header = DNS over HTTPS
+preferences-doh-description = DNS over HTTPS 會將您的網域名稱查詢請求加密後傳送，使其他人更難得知您要開啟的網站，讓 DNS 查詢變得安全。
+# Variables:
+#   $status (string) - The status of the DoH connection
+preferences-doh-status = 狀態：{ $status }
+# Variables:
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-resolver = 提供者：{ $name }
+# This is displayed instead of $name in preferences-doh-resolver
+# when the DoH URL is not a valid URL
+preferences-doh-bad-url = 網址無效
+preferences-doh-steering-status = 使用本機提供者
+preferences-doh-status-active = 啟用
+preferences-doh-status-disabled = 關閉
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+preferences-doh-status-not-active = 未啟用（{ $reason }）
+preferences-doh-group-message = 使用下列方式開啟安全 DNS 功能：
+preferences-doh-expand-section =
+    .tooltiptext = 更多資訊
+preferences-doh-setting-default =
+    .label = 預設保護
+    .accesskey = D
+preferences-doh-default-desc = { -brand-short-name } 會為您覺得什麼時候要使用安全的 DNS 來保護您的隱私。
+preferences-doh-default-detailed-desc-1 = 在可用安全 DNS 的地區就使用
+preferences-doh-default-detailed-desc-2 = 若無法使用安全的 DNS 提供者，就使用您的預設 DNS 解析器。
+preferences-doh-default-detailed-desc-3 = 盡可能使用本機提供者
+preferences-doh-default-detailed-desc-4 = 當 VPN、家長監護設定或企業政策生效時就關閉
+preferences-doh-default-detailed-desc-5 = 當網路裝置告訴 { -brand-short-name } 不該使用安全 DNS 時就關閉
+preferences-doh-setting-enabled =
+    .label = 加強保護
+    .accesskey = I
+preferences-doh-enabled-desc = 由您自行決定何時。與使用哪個提供者的安全 DNS。
+preferences-doh-enabled-detailed-desc-1 = 使用您選擇的提供者
+preferences-doh-enabled-detailed-desc-2 = 只在無法使用安全的 DNS 提供者時，使用您的預設 DNS 解析器。
+preferences-doh-setting-strict =
+    .label = 最大保護
+    .accesskey = M
+preferences-doh-strict-desc = { -brand-short-name } 總是會使用安全 DNS。若我們需要使用系統 DNS 時，您會看到安全性警告。
+preferences-doh-strict-detailed-desc-1 = 只使用您選擇的提供者
+preferences-doh-strict-detailed-desc-2 = 安全 DNS 無法使用時總是警告我
+preferences-doh-strict-detailed-desc-3 = 若無法使用安全 DNS，就不開啟網站或無法正常運作
+preferences-doh-setting-off =
+    .label = 關閉
+    .accesskey = O
+preferences-doh-off-desc = 使用您系統預設的 DNS 解析器
+preferences-doh-checkbox-warn =
+    .label = 若有第三方系統主動封鎖安全 DNS 時警告我
+    .accesskey = W
+preferences-doh-select-resolver = 選擇提供者：
+preferences-doh-exceptions-description = { -brand-short-name } 將不對下列網站使用安全 DNS
+preferences-doh-manage-exceptions =
+    .label = 管理例外網站…
+    .accesskey = x
 
 ## The following strings are used in the Download section of settings
 

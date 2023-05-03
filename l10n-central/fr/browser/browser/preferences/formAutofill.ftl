@@ -80,7 +80,7 @@ autofill-address-eircode = Eircode
 
 autofill-address-country = Pays ou région
 autofill-address-tel = Téléphone
-autofill-address-email = Courriel
+autofill-address-email = Adresse e-mail
 autofill-cancel-button = Annuler
 autofill-save-button = Enregistrer
 autofill-country-warning-message = Pour le moment, le remplissage automatique des formulaires est uniquement disponible dans certains pays.

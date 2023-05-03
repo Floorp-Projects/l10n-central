@@ -107,7 +107,7 @@ newtab-menu-delete-history = Διαγραφή από ιστορικό
 newtab-menu-save-to-pocket = Αποθήκευση στο { -pocket-brand-name }
 newtab-menu-delete-pocket = Διαγραφή από το { -pocket-brand-name }
 newtab-menu-archive-pocket = Αρχειοθέτηση στο { -pocket-brand-name }
-newtab-menu-show-privacy-info = Οι χορηγοί μας & το απόρρητό σας
+newtab-menu-show-privacy-info = Οι χορηγοί μας και το απόρρητό σας
 
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 

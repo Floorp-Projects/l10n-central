@@ -12,6 +12,7 @@ experimental-features-css-masonry-description = Maakt ondersteuning voor de expe
 experimental-features-web-gpu2 =
     .label = Web API: WebGPU
 experimental-features-web-gpu-description2 = Deze nieuwe API biedt ondersteuning op laag niveau voor het uitvoeren van berekeningen en grafische weergave met behulp van de <a data-l10n-name="wikipedia">Graphics Processing Unit (GPU)</a> van het apparaat of de computer van de gebruiker. De <a data-l10n-name="spec">specificatie</a> is nog steeds in ontwikkeling. Zie <a data-l10n-name="bugzilla">bug 1602129</a> voor meer details.
+experimental-features-web-gpu-description3 = De <a data-l10n-name="wikipedia-webgpu">WebGPU-API</a> biedt ondersteuning op laag niveau voor het uitvoeren van berekeningen en grafische weergave met behulp van de <a data-l10n-name="wikipedia-gpu">Graphics Processing Unit (GPU)</a> van het apparaat of de computer van de gebruiker. De eerste versie van de <a data-l10n-name="spec">specificatie</a> is bijna gereed. Zie <a data-l10n-name="bugzilla">bug 1616739</a> voor meer details.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-media-jxl =
@@ -60,10 +61,6 @@ experimental-features-js-warp-description = Warp inschakelen, een project om de 
 experimental-features-ime-search =
     .label = Adresbalk: resultaten tonen tijdens opstellen met IME
 experimental-features-ime-search-description = Een IME (Input Method Editor) is een hulpmiddel waarmee u complexe symbolen, zoals in Oost-Aziatische of Indische geschreven talen worden gebruikt, met een standaard toetsenbord kunt invoeren. Als u dit experiment inschakelt, blijft het adresbalkpaneel open, waarbij zoekresultaten en -suggesties worden getoond, terwijl u IME gebruikt om tekst in te voeren. Merk op dat de IME een paneel kan tonen dat de adresbalkresultaten afdekt; daarom wordt deze voorkeur alleen gesuggereerd voor IME waarbij dit type paneel niet wordt gebruikt.
-# Text recognition for images
-experimental-features-text-recognition =
-    .label = Tekstherkenning
-experimental-features-text-recognition-description = Functies inschakelen om tekst in afbeeldingen te herkennen.
 experimental-features-accessibility-cache =
     .label = Toegankelijkheidsbuffer
 experimental-features-accessibility-cache-description = Buffert alle toegankelijkheidsinformatie van alle documenten in het hoofdproces { -brand-short-name }. Dit verbetert de prestaties voor schermlezers en andere toepassingen die toegankelijkheids-API’s gebruiken.

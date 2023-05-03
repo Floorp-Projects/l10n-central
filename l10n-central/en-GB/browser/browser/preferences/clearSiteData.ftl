@@ -6,6 +6,10 @@ clear-site-data-window =
     .title = Clear Data
     .style = width: 35em
 
+clear-site-data-window2 =
+    .title = Clear Data
+    .style = min-width: 35em
+
 clear-site-data-description = Clearing all cookies and site data stored by { -brand-short-name } may sign you out of web sites and remove offline web content. Clearing cache data will not affect your logins.
 
 clear-site-data-close-key =

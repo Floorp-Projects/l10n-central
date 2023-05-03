@@ -333,6 +333,9 @@ main-context-menu-use-saved-password =
 
 ##
 
+main-context-menu-use-relay-mask =
+    .label = { -relay-brand-short-name } e-mail-maszk használata
+    .accesskey = e
 main-context-menu-suggest-strong-password =
     .label = Erős jelszó javaslata…
     .accesskey = E

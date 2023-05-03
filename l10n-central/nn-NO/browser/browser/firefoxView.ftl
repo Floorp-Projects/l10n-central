@@ -17,7 +17,6 @@ firefoxview-just-now-timestamp = Akkurat no
 # This is a headline for an area in the product where users can resume and re-open tabs they have previously viewed on other devices.
 firefoxview-tabpickup-header = Synkroniserte faner
 firefoxview-tabpickup-description = Opne sider frå andre einingar.
-firefoxview-tabpickup-recenttabs-description = Lista over siste faner vil visast her
 # Variables:
 #  $percentValue (Number): the percentage value for setup completion
 firefoxview-tabpickup-progress-label = { $percentValue } % fullført
@@ -36,12 +35,20 @@ firefoxview-tabpickup-fxa-admin-disabled-header = Organisasjonen din har deaktiv
 firefoxview-tabpickup-fxa-admin-disabled-description = { -brand-short-name } kan ikkje synkronisere faner mellom einingar fordi administratoren din har deaktivert synkronisering.
 firefoxview-tabpickup-network-offline-header = Sjekk internettilkoplinga di
 firefoxview-tabpickup-network-offline-description = Dersom du brukar ein brannmur eller proxy, sjekk at { -brand-short-name } har tilgangsløyve til nettet.
-firefoxview-tabpickup-network-offline-primarybutton = Prøv igjen
+firefoxview-tabpickup-network-offline-primarybutton = Prøv på nytt
 firefoxview-tabpickup-sync-error-header = Vi har problem med å synkronisere
-firefoxview-tabpickup-sync-error-primarybutton = Prøv igjen
+firefoxview-tabpickup-generic-sync-error-description = { -brand-short-name } kan ikkje nå synkroniseringstenesta akkurat no. Prøv på nytt litt seinare.
+firefoxview-tabpickup-sync-error-primarybutton = Prøv på nytt
 firefoxview-tabpickup-sync-disconnected-header = Slå på synkronisering for å halde fram
 firefoxview-tabpickup-sync-disconnected-description = For å få tilgang til fanene dine må du aktivere synkronisering i { -brand-short-name }.
 firefoxview-tabpickup-sync-disconnected-primarybutton = Slå på synkronisering i innstillingane
+firefoxview-tabpickup-password-locked-header = Skriv inn hovudpassordet ditt for å vise faner
+firefoxview-tabpickup-password-locked-description = For å få tilgang til fanene dine må du skrive inn hovudpassordet for { -brand-short-name }.
+firefoxview-tabpickup-password-locked-link = Les meir
+firefoxview-tabpickup-password-locked-primarybutton = Skriv inn hovudpassord
+firefoxview-tabpickup-signed-out-header = Logg inn for å kople til på nytt
+firefoxview-tabpickup-signed-out-description = For å kople til på nytt og få tak i fanene dine, logg in på { -fxaccount-brand-name }.
+firefoxview-tabpickup-signed-out-primarybutton = Logg inn
 firefoxview-tabpickup-syncing = Vi synkroniserer fanene dine, det tek berre ein augneblink.
 firefoxview-mobile-promo-header = Opne faner frå telefonen eller nettbrettet
 firefoxview-mobile-promo-description = For å sjå dei siste mobilfanene dine, logg på { -brand-product-name } på iOS eller Android.
@@ -49,7 +56,13 @@ firefoxview-mobile-promo-primarybutton = Få { -brand-product-name } for mobil
 firefoxview-mobile-confirmation-header = 🎉 Alt klart!
 firefoxview-mobile-confirmation-description = No kan du hente { -brand-product-name }-fanene frå nettbrettet eller telefonen.
 firefoxview-closed-tabs-title = Nyleg attlatne
-firefoxview-closed-tabs-description = Opne sider du har late att, på denne eininga, på nytt.
+firefoxview-closed-tabs-description2 = Opne på nytt sider du har late att i dette vindauget.
+firefoxview-closed-tabs-placeholder-header = Ingen nyleg attlatne faner
+firefoxview-closed-tabs-placeholder-body = Når du lèt att ei fane i dette vindauget, kan du hente henne herifrå.
+# Variables:
+#   $tabTitle (string) - Title of tab being dismissed
+firefoxview-closed-tabs-dismiss-tab =
+    .title = Avvis { $tabTitle }
 # refers to the last tab that was used
 firefoxview-pickup-tabs-badge = Sist aktiv
 # Variables:
@@ -57,12 +70,13 @@ firefoxview-pickup-tabs-badge = Sist aktiv
 firefoxview-tabs-list-tab-button =
     .title = Opne { $targetURI } i ei ny fane
 firefoxview-try-colorways-button = Prøv fargesamansetjingar
-firefoxview-no-current-colorway-collection = Nye fargesamansetjingar er på veg
 firefoxview-change-colorway-button = Endre fargesamansetjing
 # Variables:
 #  $intensity (String): Colorway intensity
 #  $collection (String): Colorway Collection name
 firefoxview-colorway-description = { $intensity } · { $collection }
+firefoxview-synced-tabs-placeholder-header = Ingenting å sjå enno
+firefoxview-synced-tabs-placeholder-body = Neste gong du opnar ei side i { -brand-product-name } på ei anna eining, kan du hente henne her.
 firefoxview-collapse-button-show =
     .title = Vis liste
 firefoxview-collapse-button-hide =

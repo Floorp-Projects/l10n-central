@@ -128,6 +128,7 @@ profiler-popup-button-capturing =
     .tooltiptext = Profiliuoklė fiksuoja profilį
 profiler-popup-title =
     .value = { -profiler-brand-name }
+profiler-popup-header-text = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
     .aria-label = Rodyti daugiau informacijos
 profiler-popup-description-title =
@@ -181,6 +182,10 @@ profiler-popup-presets-media-label =
 profiler-popup-presets-networking-description = Nustatymas „{ -brand-shorter-name }“ tinklo problemų diagnozavimui.
 profiler-popup-presets-networking-label =
     .label = Tinklas
+profiler-popup-presets-power-description = Nustatymas „{ -brand-shorter-name }“ energijos suvartojimo problemų diagnozavimui, su nedidelėmis sąnaudomis.
+# "Power" is used in the sense of energy (electricity used by the computer).
+profiler-popup-presets-power-label =
+    .label = Energija
 profiler-popup-presets-custom-label =
     .label = Kitas
 

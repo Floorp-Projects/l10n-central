@@ -180,6 +180,17 @@ menu-view-full-screen =
     .label = Helskärm
     .accesskey = H
 
+## These menu items may use the same accesskey.
+
+# This should match reader-view-enter-button in browser.ftl
+menu-view-enter-readerview =
+    .label = Öppna läsarvy
+    .accesskey = R
+# This should match reader-view-close-button in browser.ftl
+menu-view-close-readerview =
+    .label = Stäng läsarvy
+    .accesskey = R
+
 ##
 
 menu-view-show-all-tabs =

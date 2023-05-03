@@ -6,6 +6,10 @@ profiledowngrade-window =
     .title = Você lançou uma versão mais antiga do { -brand-product-name }
     .style = width: 490px;
 
+profiledowngrade-window2 =
+    .title = Você lançou uma versão mais antiga do { -brand-product-name }
+    .style = min-width: 490px;
+
 profiledowngrade-window-create =
     .label = Criar novo perfil
 

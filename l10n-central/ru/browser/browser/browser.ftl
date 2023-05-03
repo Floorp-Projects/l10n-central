@@ -76,7 +76,9 @@ browser-main-window-mac-window-titles =
 # This should match the `data-title-default` attribute in both
 # `browser-main-window` and `browser-main-window-mac`.
 browser-main-window-title = { -brand-full-name }
-private-browsing-shortcut-text = Приватный просмотр { -brand-short-name }
+# The non-variable portion of this MUST match the translation of
+# "PRIVATE_BROWSING_SHORTCUT_TITLE" in custom.properties
+private-browsing-shortcut-text-2 = Приватный просмотр { -brand-shortcut-name }
 
 ##
 
@@ -134,11 +136,23 @@ urlbar-addons-notification-anchor =
 urlbar-tip-help-icon =
     .title = Получить помощь
 urlbar-search-tips-confirm = Хорошо, понятно
+urlbar-search-tips-confirm-short = Понятно
 # Read out before Urlbar Tip text content so screenreader users know the
 # subsequent text is a tip offered by the browser. It should end in a colon or
 # localized equivalent.
 urlbar-tip-icon-description =
     .alt = Совет:
+urlbar-result-menu-button =
+    .title = Открыть меню
+urlbar-result-menu-learn-more =
+    .label = Узнать больше
+    .accesskey = б
+urlbar-result-menu-remove-from-history =
+    .label = Удалить из истории
+    .accesskey = и
+urlbar-result-menu-tip-get-help =
+    .label = Получить помощь
+    .accesskey = м
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -147,6 +161,8 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Печатайте меньше, находите больше: Ищите в { $engineName } прямо из адресной строки.
 urlbar-search-tips-redirect-2 = Начните поиск в адресной строке, чтобы увидеть предложения из { $engineName } и истории посещений.
+# Make sure to match the name of the Search panel in settings.
+urlbar-search-tips-persist = Поиск стал проще: теперь вы можете уточнять поисковый запрос в адресной строке. Чтобы вместо этого отобразить адрес сайта, перейдите в раздел «Поиск» в настройках.
 # Prompts users to use the Urlbar when they are typing in the domain of a
 # search engine, e.g. google.com or amazon.com.
 urlbar-tabtosearch-onboard = Выберите этот ярлык, чтобы быстрее найти то, что вам нужно.
@@ -221,7 +237,7 @@ full-screen-exit =
 # the Urlbar and searchbar.
 search-one-offs-with-title = В этот раз искать в:
 search-one-offs-change-settings-compact-button =
-    .tooltiptext = Изменить параметры поиска
+    .tooltiptext = Изменить настройки поиска
 search-one-offs-context-open-new-tab =
     .label = Искать в новой вкладке
     .accesskey = а
@@ -267,42 +283,38 @@ search-one-offs-actions =
     .tooltiptext = Действия ({ $restrict })
 
 ## QuickActions are shown in the urlbar as the user types a matching string
-
-
-## QuickActions are shown in the urlbar as the user types a matching string
 ## The -cmd- strings are comma separated list of keywords that will match
 ## the action.
 
 # Opens the about:addons page in the home / recommendations section
 quickactions-addons = Просмотр дополнений
-quickactions-cmd-addons = дополнения, расширения, темы
 quickactions-cmd-addons2 = дополнения
 # Opens the bookmarks library window
-quickactions-bookmarks = Просмотр закладок
+quickactions-bookmarks2 = Управление закладками
 quickactions-cmd-bookmarks = закладки
 # Opens a SUMO article explaining how to clear history
 quickactions-clearhistory = Удаление истории
 quickactions-cmd-clearhistory = удалить историю
 # Opens about:downloads page
-quickactions-downloads = Открыть загрузки
+quickactions-downloads2 = Просмотреть загрузки
 quickactions-cmd-downloads = загрузки
 # Opens about:addons page in the extensions section
 quickactions-extensions = Управление расширениями
 quickactions-cmd-extensions = расширения
 # Opens the devtools web inspector
-quickactions-inspector = Открыть инспектор
+quickactions-inspector2 = Открыть Инструменты разработчика
 quickactions-cmd-inspector = инспектор, инструменты разработки
 # Opens about:logins
-quickactions-logins = Просмотр логинов
+quickactions-logins2 = Управление паролями
 quickactions-cmd-logins = логины, пароли
 # Opens about:addons page in the plugins section
 quickactions-plugins = Управление плагинами
 quickactions-cmd-plugins = плагины
 # Opens the print dialog
-quickactions-print = Распечатать
+quickactions-print2 = Распечатать страницу
 quickactions-cmd-print = печать
 # Opens a new private browsing window
-quickactions-private = Открыть окно приватного просмотра
+quickactions-private2 = Открыть приватное окно
 quickactions-cmd-private = приватный просмотр
 # Opens a SUMO article explaining how to refresh
 quickactions-refresh = Очистить { -brand-short-name }
@@ -311,10 +323,10 @@ quickactions-cmd-refresh = обновить
 quickactions-restart = Перезапустить { -brand-short-name }
 quickactions-cmd-restart = перезапустить
 # Opens the screenshot tool
-quickactions-screenshot2 = Сделать скриншот
+quickactions-screenshot3 = Сделать снимок экрана
 quickactions-cmd-screenshot = скриншот
 # Opens about:preferences
-quickactions-settings = Открыть настройки
+quickactions-settings2 = Управление настройками
 quickactions-cmd-settings = настройки, параметры, опции
 # Opens about:addons page in the themes section
 quickactions-themes = Управление темами
@@ -323,8 +335,11 @@ quickactions-cmd-themes = темы
 quickactions-update = Обновить { -brand-short-name }
 quickactions-cmd-update = обновление
 # Opens the view-source UI with current pages source
-quickactions-viewsource = Показать исходник
+quickactions-viewsource2 = Исходный код страницы
 quickactions-cmd-viewsource = просмотр исходного текста, кода
+# Tooltip text for the help button shown in the result.
+quickactions-learn-more =
+    .title = Узнать больше о Быстрых действиях
 
 ## Bookmark Panel
 
@@ -396,6 +411,7 @@ identity-connection-not-secure-security-view = Вы подключились к 
 identity-connection-verified = Вы подключились к этому сайту по защищённому соединению.
 identity-ev-owner-label = Сертификат выдан:
 identity-description-custom-root = Mozilla не может распознать этого издателя сертификатов. Возможно, он был добавлен из вашей операционной системы или администратором. <label data-l10n-name="link">Подробнее</label>
+identity-description-custom-root2 = Mozilla не может распознать этого издателя сертификатов. Возможно, он был добавлен из вашей операционной системы или администратором.
 identity-remove-cert-exception =
     .label = Удалить исключение
     .accesskey = л
@@ -404,9 +420,12 @@ identity-description-insecure-login-forms = Учётные данные, вво�
 identity-description-weak-cipher-intro = Ваше соединение с этим веб-сайтом использует слабое шифрование и не защищено.
 identity-description-weak-cipher-risk = Посторонние лица могут просматривать вашу информацию или изменять поведение веб-сайта.
 identity-description-active-blocked = { -brand-short-name } заблокировал незащищённые части этой страницы. <label data-l10n-name="link">Подробнее</label>
+identity-description-active-blocked2 = { -brand-short-name } заблокировал незащищённые части этой страницы.
 identity-description-passive-loaded = Ваше соединение не является защищённым и информация, вводимая вами на этом сайте, может быть видна посторонним.
 identity-description-passive-loaded-insecure = Этот веб-сайт содержит незащищённое содержимое (такое как изображения). <label data-l10n-name="link">Подробнее</label>
 identity-description-passive-loaded-mixed = Хотя { -brand-short-name } заблокировал некоторое содержимое, на этой странице всё ещё имеется незащищённое содержимое (такое как изображения). <label data-l10n-name="link">Подробнее</label>
+identity-description-passive-loaded-insecure2 = Этот веб-сайт содержит незащищённое содержимое (такое как изображения).
+identity-description-passive-loaded-mixed2 = Хотя { -brand-short-name } заблокировал некоторое содержимое, на этой странице всё ещё имеется незащищённое содержимое (такое как изображения).
 identity-description-active-loaded = Этот веб-сайт содержит незащищённое содержимое (такое как сценарии) и ваше соединение с ним является незащищённым.
 identity-description-active-loaded-insecure = Информация, вводимая вами на этом сайте (например, пароли, сообщения, номера банковских карт и т.д.), может быть видна посторонним.
 identity-learn-more =
@@ -487,6 +506,9 @@ popup-select-microphone-icon =
     .tooltiptext = Микрофон
 popup-select-speaker-icon =
     .tooltiptext = Динамики
+popup-select-window-or-screen =
+    .label = Окно или экран:
+    .accesskey = Н
 popup-all-windows-shared = Будет предоставлен доступ ко всем видимым окнам на вашем экране.
 popup-screen-sharing-block =
     .label = Блокировать
@@ -508,6 +530,7 @@ sharing-warning-disable-for-session =
 ## DevTools F12 popup
 
 enable-devtools-popup-description = Чтобы использовать клавишу F12, сначала откройте Инструменты разработчика через меню Веб-разработка.
+enable-devtools-popup-description2 = Чтобы использовать горячую клавишу F12, сначала откройте «Инструменты разработчика» в меню «Инструменты браузера».
 
 ## URL Bar
 
@@ -608,7 +631,7 @@ urlbar-result-action-tabtosearch-web = Ищите в { $engine } прямо в �
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Ищите на { $engine } прямо в адресной строке
 # Action text for copying to clipboard.
-urlbar-result-action-copy-to-clipboard = Копировать
+urlbar-result-action-copy-to-clipboard = Скопировать
 # Shows the result of a formula expression being calculated, the last = sign will be shown
 # as part of the result (e.g. "= 2").
 # Variables
@@ -640,6 +663,24 @@ urlbar-group-search-suggestions =
 urlbar-group-quickactions =
     .label = Быстрые действия
 
+## Reader View toolbar buttons
+
+# This should match menu-view-enter-readerview in menubar.ftl
+reader-view-enter-button =
+    .aria-label = Перейти в режим чтения
+# This should match menu-view-close-readerview in menubar.ftl
+reader-view-close-button =
+    .aria-label = Закрыть режим чтения
+
+## Picture-in-Picture urlbar button
+## Variables:
+##   $shortcut (String) - Keyboard shortcut to execute the command.
+
+picture-in-picture-urlbar-button-open =
+    .tooltiptext = Открыть «Картинку в картинке» ({ $shortcut })
+picture-in-picture-urlbar-button-close =
+    .tooltiptext = Закрыть «Картинку в картинке» ({ $shortcut })
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -658,11 +699,11 @@ pointerlock-warning-no-domain = Этот документ контролируе
 
 ## Subframe crash notification
 
-crashed-subframe-message = <strong>Часть этой страницы потерпела сбой.</strong> Чтобы сообщить { -brand-product-name } об этой проблеме и ускорить её исправление, отправьте отчёт.
+crashed-subframe-message = <strong>В части этой страницы произошёл сбой.</strong> Чтобы сообщить { -brand-product-name } об этой проблеме и ускорить её исправление, отправьте сообщение.
 # The string for crashed-subframe-title.title should match crashed-subframe-message,
 # but without any markup.
 crashed-subframe-title =
-    .title = Часть этой страницы потерпела сбой. Чтобы сообщить { -brand-product-name } об этой проблеме и ускорить её исправление, отправьте отчёт.
+    .title = В части этой страницы произошёл сбой. Чтобы сообщить { -brand-product-name } об этой проблеме и ускорить её исправление, отправьте сообщение.
 crashed-subframe-learnmore-link =
     .value = Узнать больше
 crashed-subframe-submit =
@@ -684,6 +725,11 @@ bookmarks-other-bookmarks-menu =
     .label = Другие закладки
 bookmarks-mobile-bookmarks-menu =
     .label = Мобильные закладки
+
+## Variables:
+##   $isVisible (boolean): if the specific element (e.g. bookmarks sidebar,
+##                         bookmarks toolbar, etc.) is visible or not.
+
 bookmarks-tools-sidebar-visibility =
     .label =
         { $isVisible ->
@@ -708,6 +754,9 @@ bookmarks-tools-menu-button-visibility =
             [true] Удалить меню закладок с панели
            *[other] Добавить меню закладок на панель
         }
+
+##
+
 bookmarks-search =
     .label = Поиск закладок
 bookmarks-tools =
@@ -777,6 +826,9 @@ toolbar-overflow-customize-button =
 toolbar-button-email-link =
     .label = Отправить ссылку
     .tooltiptext = Отправить по почте ссылку на эту страницу
+toolbar-button-logins =
+    .label = Пароли
+    .tooltiptext = Просмотр и управление сохраненными паролями
 # Variables:
 #  $shortcut (String): keyboard shortcut to save a copy of the page
 toolbar-button-save-page =
@@ -916,3 +968,33 @@ private-browsing-indicator-label = Приватный просмотр
 unified-extensions-button =
     .label = Расширения
     .tooltiptext = Расширения
+
+## Unified extensions button when permission(s) are needed.
+## Note that the new line is intentionally part of the tooltip.
+
+unified-extensions-button-permissions-needed =
+    .label = Расширения
+    .tooltiptext =
+        Расширения
+        Необходимы разрешения
+
+## Autorefresh blocker
+
+refresh-blocked-refresh-label = { -brand-short-name } заблокировал автоматическую перезагрузку этой страницы.
+refresh-blocked-redirect-label = { -brand-short-name } заблокировал автоматическое перенаправление на другую страницу.
+refresh-blocked-allow =
+    .label = Разрешить
+    .accesskey = Р
+
+## Firefox Relay integration
+
+firefox-relay-offer-why-relay = { -relay-brand-name } маскирует ваш настоящий адрес электронной почты, чтобы защитить вас от утечек данных и спама.
+firefox-relay-offer-how-we-integrate = Продолжив, вы сможете генерировать новые псевдонимы электронной почты { -relay-brand-short-name } напрямую из вашего менеджера паролей { -brand-shorter-name }.
+# Variables:
+#  $sitename (String): name of the site where user enters their Relay mask
+#  $useremail (String): user email that will receive messages
+firefox-relay-offer-what-relay-does = Мы будем пересылать все электронные письма с <strong>{ $sitename }</strong> на <strong>{ $useremail }</strong>
+
+## Popup Notification
+
+popup-notification-xpinstall-prompt-learn-more = Узнайте больше о безопасной установке дополнений

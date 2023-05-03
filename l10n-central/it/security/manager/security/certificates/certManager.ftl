@@ -30,6 +30,10 @@ certmgr-edit-ca-cert =
     .title = Modifica impostazioni fiducia certificato CA
     .style = width: 48em;
 
+certmgr-edit-ca-cert2 =
+    .title = Modifica impostazioni fiducia certificato CA
+    .style = min-width: 48em;
+
 certmgr-edit-cert-edit-trust = Modifica impostazioni attendibilità:
 
 certmgr-edit-cert-trust-ssl =
@@ -41,6 +45,10 @@ certmgr-edit-cert-trust-email =
 certmgr-delete-cert =
     .title = Eliminazione certificato
     .style = width: 48em; height: 24em;
+
+certmgr-delete-cert2 =
+    .title = Eliminazione certificato
+    .style = min-width: 48em; min-height: 24em;
 
 certmgr-cert-host =
     .label = Host
@@ -185,8 +193,6 @@ delete-email-cert-impact = Eliminando il certificato email di una persona, non s
 #   $serialNumber : the serial number of the cert in AA:BB:CC hex format.
 cert-with-serial =
     .value = Certificato con numero seriale: { $serialNumber }
-
-## Cert Viewer
 
 # Used to indicate that the user chose not to send a client authentication certificate to a server that requested one in a TLS handshake.
 send-no-client-certificate = Non inviare alcun certificato client

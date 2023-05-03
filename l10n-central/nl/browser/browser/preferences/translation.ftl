@@ -6,6 +6,10 @@ translation-window =
     .title = Uitzonderingen - Vertaling
     .style = width: 36em
 
+translation-window2 =
+    .title = Uitzonderingen - Vertaling
+    .style = min-width: 36em
+
 translation-close-key =
     .key = w
 

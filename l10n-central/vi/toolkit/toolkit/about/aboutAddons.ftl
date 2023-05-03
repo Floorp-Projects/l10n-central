@@ -142,6 +142,10 @@ addon-category-recent-updates-title =
 addon-category-sitepermission = Quyền hạn trang web
 addon-category-sitepermission-title =
     .title = Quyền hạn trang web
+# String displayed in about:addons in the Site Permissions section
+# Variables:
+#  $host (string): DNS host name for which the webextension enables permissions
+addon-sitepermission-host = Quyền hạn trang web cho { $host }
 
 ## These are global warnings
 

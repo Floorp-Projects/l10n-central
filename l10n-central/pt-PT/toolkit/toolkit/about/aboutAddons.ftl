@@ -142,6 +142,10 @@ addon-category-recent-updates-title =
 addon-category-sitepermission = Permissões do site
 addon-category-sitepermission-title =
     .title = Permissões do site
+# String displayed in about:addons in the Site Permissions section
+# Variables:
+#  $host (string): DNS host name for which the webextension enables permissions
+addon-sitepermission-host = Permissões de site para { $host }
 
 ## These are global warnings
 
@@ -290,16 +294,12 @@ extension-disabled-heading = Desativada
 theme-enabled-heading = Ativado
 theme-disabled-heading = Desativado
 theme-disabled-heading2 = Temas Guardados
-theme-monochromatic-heading = Esquemas de cor
-theme-monochromatic-subheading = Novos esquemas de cor vibrantes do { -brand-product-name }. Disponível por tempo limitado.
+theme-monochromatic-heading = Estilos de cor
+theme-monochromatic-subheading = Novos estilos de cor vibrantes do { -brand-product-name }. Disponível por tempo limitado.
 # Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
-theme-colorways-button = Experimente as Colorways
-colorway-collection-independent-voices-subheading = Faça com que { -brand-short-name } sinta um pouco mais de si.
-# Variables:
-#   $expiryDate (string) - date on which the colorway collection expires.
-colorway-collection-expiry-date-span = Expira em { DATETIME($expiryDate, month: "long", day: "numeric") }
+theme-colorways-button = Experimente os Estilos de cor
 # Refers to the button label for the colorways card when a user has a colorway theme enabled.
-theme-colorways-button-colorway-enabled = Alterar esquema de cor
+theme-colorways-button-colorway-enabled = Alterar estilo de cor
 # Variables:
 #   $expiryDate (string) - date on which the colorway collection expires. When formatting this, you may omit the year, only exposing the month and day, as colorway collections will always expire within a year.
 colorway-collection-expiry-label = Expira em { DATETIME($expiryDate, month: "long", day: "numeric") }

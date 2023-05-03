@@ -105,11 +105,21 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = 決定ログ
 graphics-crash-guards-title = クラッシュガードが無効化した機能
 graphics-workarounds-title = 回避策
+graphics-device-pixel-ratios = ウィンドウデバイスのピクセル比
 # Windowing system in use on Linux (e.g. X11, Wayland).
 graphics-window-protocol = ウィンドウプロトコル
 # Desktop environment in use on Linux (e.g. GNOME, KDE, XFCE, etc).
 graphics-desktop-environment = デスクトップ環境
 place-database-title = Places データベース
+place-database-stats = 統計
+place-database-stats-show = 統計を表示
+place-database-stats-hide = 統計を隠す
+place-database-stats-entity = 実体
+place-database-stats-count = カウント
+place-database-stats-size-kib = サイズ (KiB)
+place-database-stats-size-perc = サイズ (%)
+place-database-stats-efficiency-perc = 効率 (%)
+place-database-stats-sequentiality-perc = 連続性 (%)
 place-database-integrity = 完全性
 place-database-verify-integrity = 完全性を検証
 a11y-title = アクセシビリティ
@@ -253,6 +263,8 @@ webgl2-renderer = WebGL 2 ドライバーのレンダラー
 webgl2-version = WebGL 2 ドライバーのバージョン
 webgl2-driver-extensions = WebGL 2 ドライバーの拡張
 webgl2-extensions = WebGL 2 拡張
+webgpu-default-adapter = WebGPU の既定のアダプター
+webgpu-fallback-adapter = WebGPU のフォールバックアダプター
 # Variables
 #   $bugNumber (string) - Bug number on Bugzilla
 support-blocklisted-bug = 既知の問題によりブロックリストに追加: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
@@ -282,6 +294,7 @@ can-sandbox-media = メディアプラグインのサンドボックス化
 content-sandbox-level = コンテンツプロセスのサンドボックスレベル
 effective-content-sandbox-level = 効果的なコンテンツプロセスのサンドボックスレベル
 content-win32k-lockdown-state = コンテンツプロセスの Win32k ロックダウン状態
+support-sandbox-gpu-level = GPU プロセスのサンドボックスレベル
 sandbox-proc-type-content = コンテンツ
 sandbox-proc-type-file = ファイルコンテンツ
 sandbox-proc-type-media-plugin = メディアプラグイン

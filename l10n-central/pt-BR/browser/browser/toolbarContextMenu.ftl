@@ -20,6 +20,8 @@ toolbar-context-menu-bookmark-selected-tabs =
 toolbar-context-menu-select-all-tabs =
     .label = Selecionar todas as abas
     .accesskey = S
+# Variables
+#   $tabCount (number) - Number of tabs
 toolbar-context-menu-reopen-closed-tabs =
     .label =
         { $tabCount ->
@@ -60,6 +62,11 @@ toolbar-context-menu-view-customize-toolbar =
 toolbar-context-menu-view-customize-toolbar-2 =
     .label = Personalizar barra de ferramentas…
     .accesskey = P
+# This is only ever shown when toolbar-context-menu-pin-to-overflow-menu
+# is hidden, so they can share access keys.
+toolbar-context-menu-pin-to-toolbar =
+    .label = Fixar na barra de ferramentas
+    .accesskey = F
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Sempre aparecer
     .accesskey = S
@@ -67,7 +74,7 @@ toolbar-context-menu-bookmarks-toolbar-never-show-2 =
     .label = Nunca aparecer
     .accesskey = N
 toolbar-context-menu-bookmarks-toolbar-on-new-tab-2 =
-    .label = Aparecer somente em novas abas
+    .label = Aparecer somente em nova aba
     .accesskey = b
 toolbar-context-menu-bookmarks-show-other-bookmarks =
     .label = Mostrar outros favoritos

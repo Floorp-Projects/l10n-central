@@ -128,6 +128,7 @@ profiler-popup-button-capturing =
     .tooltiptext = Profiler đang ghi một hồ sơ
 profiler-popup-title =
     .value = { -profiler-brand-name }
+profiler-popup-header-text = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
     .aria-label = Hiển thị thêm thông tin
 profiler-popup-description-title =

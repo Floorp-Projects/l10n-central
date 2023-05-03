@@ -6,6 +6,10 @@ add-engine-window =
     .title = Pridėti ieškyklę
     .style = width: 32em;
 
+add-engine-window2 =
+    .title = Pridėti ieškyklę
+    .style = min-width: 32em;
+
 add-engine-button = Pridėti tinkintą ieškyklę
 
 add-engine-name = Ieškyklės pavadinimas

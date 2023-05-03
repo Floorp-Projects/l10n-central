@@ -25,6 +25,12 @@ return-to-amo-addon-title = 現在來安裝 <img data-l10n-name="icon"/><b>{ $ad
 return-to-amo-add-extension-label = 安裝擴充套件
 return-to-amo-add-theme-label = 安裝佈景主題
 
+##  Variables: $addon-name (String) - Name of the add-on to be installed
+
+mr1-return-to-amo-subtitle = 跟 { -brand-short-name } 說聲嗨！
+mr1-return-to-amo-addon-title = 您有了一套觸手可及，又快又有隱私斯的瀏覽器。現在您還可以新增 <b>{ $addon-name }</b>，讓 { -brand-short-name } 能做更多事。
+mr1-return-to-amo-add-extension-label = 新增 { $addon-name }
+
 ## Multistage onboarding strings (about:welcome pages)
 
 # Aria-label to make the "steps" of multistage onboarding visible to screen readers.
@@ -39,8 +45,8 @@ onboarding-welcome-steps-indicator =
 #   $current (Int) - Number of the current page
 #   $total (Int) - Total number of pages
 
-onboarding-welcome-steps-indicator2 =
-    .aria-valuetext = 進度：第 { $current } 步，共 { $total } 步
+onboarding-welcome-steps-indicator-label =
+    .aria-label = 進度：第 { $current } 步，共 { $total } 步
 # "Hero Text" displayed on left side of welcome screen.
 # The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
 # It also signals the passion users bring to Firefox, how they use
@@ -249,6 +255,15 @@ fx100-upgrade-thank-you-body = 這一版是 { -brand-short-name } 的第 100 版
 fx100-upgrade-thanks-keep-body = 這一版是我們的第 100 版！非常感謝您參與我們的社群，只要點一下即可進入 { -brand-short-name } 的下一個 100 版旅程。
 mr2022-onboarding-secondary-skip-button-label = 跳過這步
 
+## MR2022 New User Easy Setup screen strings
+
+# Primary button string used on new user onboarding first screen showing multiple actions such as Set Default, Import from previous browser.
+mr2022-onboarding-easy-setup-primary-button-label = 儲存並繼續
+# Set Default action checkbox label used on new user onboarding first screen
+mr2022-onboarding-easy-setup-set-default-checkbox-label = 將 { -brand-short-name } 設為預設瀏覽器
+# Import action checkbox label used on new user onboarding first screen
+mr2022-onboarding-easy-setup-import-checkbox-label = 從先前使用的瀏覽器匯入
+
 ## MR2022 New User Pin Firefox screen strings
 
 # Title used on about:welcome for new users when Firefox is not pinned.
@@ -296,7 +311,7 @@ mr2022-onboarding-set-default-subtitle = 使用由非營利組織在背後開發
 
 # When translating "zip", please feel free to pick a verb that signifies movement and/or exploration
 # and makes sense in the context of navigating the web.
-mr2022-onboarding-get-started-primary-subtitle = 最新版本是圍繞您打造的。讓您更簡單就可在網路中探索，我們希望您也會喜歡我們推出的滿滿功能。
+mr2022-onboarding-get-started-primary-subtitle = 最新版本是圍繞您打造的。讓您更簡單就可在網路中探索，希望您也會喜歡我們推出的滿滿功能。
 mr2022-onboarding-get-started-primary-button-label = 幾秒鐘就能設定完成
 
 ## MR2022 Import Settings screen strings
@@ -312,35 +327,35 @@ mr2022-onboarding-import-primary-button-label-no-attribution = 從先前使用�
 
 mr2022-onboarding-colorway-title = 選擇能激發您靈感的色彩
 mr2022-onboarding-colorway-subtitle = 獨立的聲音將改變文化。
-mr2022-onboarding-colorway-primary-button-label = 使用此配色
-mr2022-onboarding-existing-colorway-checkbox-label = 將 { -firefox-home-brand-name } 設定為您色彩繽紛的首頁
+mr2022-onboarding-colorway-primary-button-label-continue = 設定並繼續
+mr2022-onboarding-existing-colorway-checkbox-label = 將 { -firefox-home-brand-name }設定為色彩繽紛的首頁
 mr2022-onboarding-colorway-label-default = 預設
-mr2022-onboarding-colorway-tooltip-default =
-    .title = 預設
+mr2022-onboarding-colorway-tooltip-default2 =
+    .title = { -brand-short-name } 目前的配色
 mr2022-onboarding-colorway-description-default = <b>使用我目前的 { -brand-short-name } 色彩。</b>
 mr2022-onboarding-colorway-label-playmaker = 控球後衛
-mr2022-onboarding-colorway-tooltip-playmaker =
-    .title = 控球後衛
+mr2022-onboarding-colorway-tooltip-playmaker2 =
+    .title = 控球後衛（紅色）
 mr2022-onboarding-colorway-description-playmaker = <b>您是控球後衛。</b>您創造了勝利的機會，並且幫助您周圍的所有人，一同贏得競賽。
 mr2022-onboarding-colorway-label-expressionist = 表現主義者
-mr2022-onboarding-colorway-tooltip-expressionist =
-    .title = 表現主義者
+mr2022-onboarding-colorway-tooltip-expressionist2 =
+    .title = 表現主義者（黃色）
 mr2022-onboarding-colorway-description-expressionist = <b>您是表現主義者。</b>您用不同的方式看待世界，您的作品激發出他人的情感。
 mr2022-onboarding-colorway-label-visionary = 遠見家
-mr2022-onboarding-colorway-tooltip-visionary =
-    .title = 遠見家
+mr2022-onboarding-colorway-tooltip-visionary2 =
+    .title = 遠見家（綠色）
 mr2022-onboarding-colorway-description-visionary = <b>您是遠見家。</b>您不滿意於現狀，讓所有人能夠一同想像出更好的未來。
 mr2022-onboarding-colorway-label-activist = 社會運動家
-mr2022-onboarding-colorway-tooltip-activist =
-    .title = 社會運動家
+mr2022-onboarding-colorway-tooltip-activist2 =
+    .title = 社會運動家（藍色）
 mr2022-onboarding-colorway-description-activist = <b>您是社會運動家。</b>您讓世界變得更好，並讓他人也如此相信。
 mr2022-onboarding-colorway-label-dreamer = 夢想家
-mr2022-onboarding-colorway-tooltip-dreamer =
-    .title = 夢想家
+mr2022-onboarding-colorway-tooltip-dreamer2 =
+    .title = 夢想家（紫色）
 mr2022-onboarding-colorway-description-dreamer = <b>您是夢想家。</b>您相信命運之神眷顧大膽的人，並且鼓勵大家勇敢表現。
 mr2022-onboarding-colorway-label-innovator = 創造者
-mr2022-onboarding-colorway-tooltip-innovator =
-    .title = 創造者
+mr2022-onboarding-colorway-tooltip-innovator2 =
+    .title = 創造者（橘色）
 mr2022-onboarding-colorway-description-innovator = <b>您是創造者。</b>您看到各處的機會，並且對周遭的所有人產生正面影響。
 
 ## MR2022 Multistage Mobile Download screen strings
@@ -371,7 +386,33 @@ mr2022-onboarding-privacy-segmentation-button-secondary-label = 顯示詳細資�
 
 ## MR2022 Multistage Gratitude screen strings
 
-mr2022-onboarding-gratitude-title = 您正在幫助我們打造更好的網路環境。
+mr2022-onboarding-gratitude-title = 您正在幫助我們打造更好的網路環境
 mr2022-onboarding-gratitude-subtitle = 感謝您使用由 Mozilla Foundation 所支持開發的 { -brand-short-name }。透過您的支援，我們努力讓網路環境變得更好、更開放、更可被所有人使用。
 mr2022-onboarding-gratitude-primary-button-label = 看看有什麼新鮮事
 mr2022-onboarding-gratitude-secondary-button-label = 開始瀏覽
+
+## Onboarding spotlight for infrequent users
+
+onboarding-infrequent-import-title = 別客氣，當自己家
+onboarding-infrequent-import-subtitle = 不論您只是要暫時試用，還是已經決定好要使用，都可以匯入其他瀏覽器的書籤、密碼與其他資料。
+onboarding-infrequent-import-primary-button = 匯入 { -brand-short-name }
+
+## MR2022 Illustration alt tags
+## Descriptive tags for illustrations used by screen readers and other assistive tech
+
+mr2022-onboarding-pin-image-alt =
+    .aria-label = 有人的周圍圍繞著星星與花朵，並且正在使用筆記型電腦
+mr2022-onboarding-default-image-alt =
+    .aria-label = 有人擁抱著 { -brand-product-name } 圖示
+mr2022-onboarding-import-image-alt =
+    .aria-label = 有人踩著滑板，還有一盒軟體圖示
+mr2022-onboarding-mobile-download-image-alt =
+    .aria-label = 有隻青蛙跳過水蓮，正中間有一組能夠下載 { -brand-product-name } 行動版的 QR Code
+mr2022-onboarding-pin-private-image-alt =
+    .aria-label = 一支讓 { -brand-product-name } 隱私瀏覽圖示從帽子中冒出來的魔術棒
+mr2022-onboarding-privacy-segmentation-image-alt =
+    .aria-label = 淺色與深色皮膚的人舉手擊掌
+mr2022-onboarding-gratitude-image-alt =
+    .aria-label = 從窗戶看到日落，窗台上有隻狐狸與一顆盆栽
+mr2022-onboarding-colorways-image-alt =
+    .aria-label = 用噴漆的方式手繪出色彩繽紛的拼貼圖，當中有綠色的眼睛、橘色的鞋子、紅色的籃球、紫色的耳機、藍色的心、黃色的皇冠

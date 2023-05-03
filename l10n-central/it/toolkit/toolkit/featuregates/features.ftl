@@ -12,7 +12,9 @@ experimental-features-css-masonry-description = Attiva il supporto per la funzio
 # by various online articles and is technical in nature.
 experimental-features-web-gpu2 =
     .label = Web API: WebGPU
-experimental-features-web-gpu-description2 = Questa nuova API fornisce supporto di basso livello per l’esecuzione di calcolo e rendering grafico utilizzando l’<a data-l10n-name="wikipedia">unità di elaborazione grafica (GPU)</a> del dispositivo o del computer dell’utente. Le <a data-l10n-name="spec">specifiche</a> non sono ancora definitive. Consultare <a data-l10n-name="bugzilla">bug 1602129</a> per ulteriori dettagli.
+experimental-features-web-gpu-description2 = Questa nuova API fornisce supporto di basso livello per l’esecuzione di calcolo e rendering grafico utilizzando l’<a data-l10n-name="wikipedia">unità di elaborazione grafica (GPU)</a> del dispositivo o del computer dell’utente. Le <a data-l10n-name="spec">specifiche</a> non sono ancora definitive. Consultare il <a data-l10n-name="bugzilla">bug 1602129</a> per ulteriori dettagli.
+
+experimental-features-web-gpu-description3 = L’<a data-l10n-name="wikipedia-webgpu">API WebGPU</a> fornisce supporto di basso livello per l’esecuzione di calcolo e rendering grafico utilizzando l’<a data-l10n-name="wikipedia-gpu">unità di elaborazione grafica (GPU)</a> del dispositivo o del computer dell’utente. La prima versione delle <a data-l10n-name="spec">specifiche</a> è in fase di finalizzazione. Consultare il <a data-l10n-name="bugzilla">bug 1616739</a> per ulteriori dettagli.
 
 experimental-features-media-jxl =
     .label = Media: JPEG XL
@@ -22,7 +24,7 @@ experimental-features-media-jxl-description = Attiva in { -brand-short-name } il
 # by various online articles and is technical in nature.
 experimental-features-css-constructable-stylesheets =
     .label = CSS: Constructable Stylesheets
-experimental-features-css-constructable-stylesheets-description = L’aggiunta di un costruttore all’interfaccia <a data-l10n-name="mdn-cssstylesheet">CSSStyleSheet</a>, insieme ad altre modifiche correlate, rende possibile la creazione di nuovi fogli di stile senza bisogno di aggiungerli all’HTML. Questo rende molte più facile la creazione di fogli di stile riutilizzabili con <a data-l10n-name="mdn-shadowdom">Shadow DOM</a>. Consultare <a data-l10n-name="bugzilla">bug 1520690</a> per ulteriori dettagli.
+experimental-features-css-constructable-stylesheets-description = L’aggiunta di un costruttore all’interfaccia <a data-l10n-name="mdn-cssstylesheet">CSSStyleSheet</a>, insieme ad altre modifiche correlate, rende possibile la creazione di nuovi fogli di stile senza bisogno di aggiungerli all’HTML. Questo rende molto più facile la creazione di fogli di stile riutilizzabili con <a data-l10n-name="mdn-shadowdom">Shadow DOM</a>. Consultare <a data-l10n-name="bugzilla">bug 1520690</a> per ulteriori dettagli.
 
 experimental-features-devtools-compatibility-panel =
     .label = Strumenti di sviluppo: pannello compatibilità
@@ -33,6 +35,7 @@ experimental-features-devtools-compatibility-panel-description = Un pannello lat
 experimental-features-cookie-samesite-lax-by-default2 =
     .label = Cookie: SameSite=Lax predefinito
 experimental-features-cookie-samesite-lax-by-default2-description = Gestisci i cookie come “SameSite=Lax” per impostazione predefinita se non viene specificato alcun attributo “SameSite”. Gli sviluppatori devono utilizzare esplicitamente “SameSite=None” per ripristinare il funzionamento attuale che non prevede alcuna limitazione d’uso.
+
 
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
@@ -73,12 +76,8 @@ experimental-features-ime-search =
     .label = Barra degli indirizzi: mostra risultati quando si usa la composizione IME
 experimental-features-ime-search-description = Un IME (Input Method Editor) è uno strumento che permette di inserire simboli complessi, come quelli utilizzati da lingue asiatiche o indiane, utilizzando una tastiera tradizionale. Attivando questo esperimento il pannello della barra degli indirizzi rimarrà aperto, mostrando risultati di ricerca e suggerimenti, anche quando si utilizza IME per inserire il testo. Alcuni IME utilizzano un pannello che potrebbe coprire i risultati della barra degli indirizzi, per cui si consiglia di attivare questa opzione solo per IME che non usano questo approccio.
 
-# Text recognition for images
-experimental-features-text-recognition =
-    .label = Riconoscimento del testo
-experimental-features-text-recognition-description = Attiva il riconoscimento del testo nelle immagini.
-
 experimental-features-accessibility-cache =
     .label = Cache per accessibilità
 experimental-features-accessibility-cache-description = Salva in una cache le informazioni relative all’accessibilità per tutti i documenti nel processo principale di { -brand-short-name }. Questa operazione migliora le prestazioni delle utilità per la lettura dello schermo e altre applicazioni che utilizzano API per l’accessibilità.
+
 

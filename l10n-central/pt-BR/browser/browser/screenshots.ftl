@@ -44,3 +44,5 @@ screenshots-private-window-error-title = O { -screenshots-brand-name } é desati
 screenshots-private-window-error-details = Lamentamos o inconveniente. Estamos trabalhando neste recurso para lançamentos futuros.
 screenshots-generic-error-title = Epa! O { -screenshots-brand-name } ficou confuso.
 screenshots-generic-error-details = Não temos certeza do que acabou de acontecer. Poderia tentar novamente, ou capturar outra página?
+screenshots-too-large-error-title = Sua captura de tela foi cortada porque era grande demais
+screenshots-too-large-error-details = Experimente selecionar uma região de altura e largura menor que 32.700 pixels, ou 124.900.000 pixels de área total.

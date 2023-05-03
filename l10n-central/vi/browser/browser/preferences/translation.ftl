@@ -6,6 +6,10 @@ translation-window =
     .title = Ngoại lệ - Dịch tự động
     .style = width: 36em
 
+translation-window2 =
+    .title = Ngoại lệ - Dịch tự động
+    .style = min-width: 36em
+
 translation-close-key =
     .key = w
 

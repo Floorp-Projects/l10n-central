@@ -6,6 +6,10 @@ app-manager-window =
     .title = 程式詳細資訊
     .style = width: 30em; min-height: 20em;
 
+app-manager-window2 =
+    .title = 程式詳細資訊
+    .style = min-width: 30em; min-height: 20em;
+
 app-manager-remove =
     .label = 移除
     .accesskey = R

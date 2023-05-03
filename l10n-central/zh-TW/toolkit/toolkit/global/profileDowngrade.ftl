@@ -6,6 +6,10 @@ profiledowngrade-window =
     .title = 您啟動了舊版的 { -brand-product-name }
     .style = width: 490px;
 
+profiledowngrade-window2 =
+    .title = 您啟動了舊版的 { -brand-product-name }
+    .style = min-width: 490px;
+
 profiledowngrade-window-create =
     .label = 建立新設定檔
 

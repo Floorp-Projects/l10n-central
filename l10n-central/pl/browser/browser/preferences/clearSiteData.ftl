@@ -6,6 +6,10 @@ clear-site-data-window =
     .title = Czyszczenie danych
     .style = width: 35em
 
+clear-site-data-window2 =
+    .title = Czyszczenie danych
+    .style = min-width: 35em
+
 clear-site-data-description = Wyczyszczenie wszystkich ciasteczek i danych witryn przechowywanych przez przeglądarkę { -brand-short-name } może spowodować wylogowanie z witryn i usunąć treści offline. Czyszczenie danych pamięci podręcznej nie wpłynie na zachowane dane logowania.
 
 clear-site-data-close-key =

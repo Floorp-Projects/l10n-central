@@ -6,6 +6,10 @@ webpage-languages-window =
     .title = 網頁語言設定
     .style = width: 40em
 
+webpage-languages-window2 =
+    .title = 網頁語言設定
+    .style = min-width: 40em
+
 languages-close-key =
     .key = w
 
@@ -52,6 +56,10 @@ languages-active-code-format =
 browser-languages-window =
     .title = { -brand-short-name } 語言設定
     .style = width: 40em
+
+browser-languages-window2 =
+    .title = { -brand-short-name } 語言設定
+    .style = min-width: 40em
 
 browser-languages-description = { -brand-short-name } 將會以第一種語言作為您的預設語言，並根據所選的順序在需要時顯示其他語言。
 

@@ -9,6 +9,10 @@ devmgr =
     .title = Menedżer urządzeń
     .style = width: 67em; height: 32em;
 
+devmgr-window =
+    .title = Menedżer urządzeń
+    .style = min-width: 67em; min-height: 32em;
+
 devmgr-devlist =
     .label = Urządzenia i moduły zabezpieczające
 

@@ -12,6 +12,7 @@ experimental-features-css-masonry-description = Engedélyezi a kísérleti CSS M
 experimental-features-web-gpu2 =
     .label = Web API: WebGPU
 experimental-features-web-gpu-description2 = Ez az új API alacsony szintű támogatást nyújt a felhasználó eszközének vagy számítógépének <a data-l10n-name="wikipedia">grafikus processzorát (GPU)</a> használó számításokhoz és grafikus megjelenítéshez. A <a data-l10n-name="spec">specifikáció</a> még mindig folyamatban van. További részletekért lásd az <a data-l10n-name="bugzilla">1602129-es számú jegyet</a>.
+experimental-features-web-gpu-description3 = A <a data-l10n-name="wikipedia-webgpu">WebGPU API</a> alacsony szintű támogatást nyújt a felhasználó eszközének vagy számítógépének <a data-l10n-name="wikipedia-gpu">grafikus processzorát (GPU)</a> használó számításokhoz és grafikus megjelenítéshez. A <a data-l10n-name="spec">specifikáció</a> első verziója közel áll a véglegesítéshez. További részletekért lásd az <a data-l10n-name="bugzilla">1616739-es számú jegyet</a>.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-media-jxl =
@@ -60,10 +61,6 @@ experimental-features-js-warp-description = A Warp engedélyezése, amely javít
 experimental-features-ime-search =
     .label = Címsor: az eredmények megjelenítése az IME összeállítása alatt
 experimental-features-ime-search-description = Az IME (bemenetimód-szerkesztő) egy olyan eszköz, amellyel összetett szimbólumokat írhat be szabványos billentyűzetről, például olyanokat, melyek kelet-ázsiai vagy indoárja írt nyelvekben használatosak. A kísérlet engedélyezésével a címsáv panel nyitva marad, és keresési találatok és javaslatokat fog kapni, ha szövegbevitelre használja az IME-t. Ne feledje, hogy az IME olyan panelt jeleníthet meg, amely lefedi a címsáv találatait, ezért ez a beállítás csak akkor javasolt, ha nem ezt a típusú panelt használja.
-# Text recognition for images
-experimental-features-text-recognition =
-    .label = Szövegfelismerés
-experimental-features-text-recognition-description = Funkciók engedélyezése a képeken szereplő szövegek felismeréséhez.
 experimental-features-accessibility-cache =
     .label = Akadálymentesítési gyorsítótár
 experimental-features-accessibility-cache-description = Gyorsítótárazza az összes dokumentum összes akadálymentesítési információját a { -brand-short-name } főfolyamatban. Ez javítja a képernyőolvasók és az egyéb, akadálymentesítési API-kat használó alkalmazások teljesítményét.

@@ -17,7 +17,6 @@ firefoxview-just-now-timestamp = Épp most
 # This is a headline for an area in the product where users can resume and re-open tabs they have previously viewed on other devices.
 firefoxview-tabpickup-header = Lap átvétele
 firefoxview-tabpickup-description = Lapok megnyitása más eszközökről.
-firefoxview-tabpickup-recenttabs-description = Ide kerülne a legutóbbi lapok listája
 # Variables:
 #  $percentValue (Number): the percentage value for setup completion
 firefoxview-tabpickup-progress-label = { $percentValue }% kész
@@ -43,6 +42,13 @@ firefoxview-tabpickup-sync-error-primarybutton = Próbálja újra
 firefoxview-tabpickup-sync-disconnected-header = A folytatáshoz kapcsolja be a szinkronizálást
 firefoxview-tabpickup-sync-disconnected-description = A lapok átvételéhez engedélyeznie kell a szinkronizálást a { -brand-short-name }ban.
 firefoxview-tabpickup-sync-disconnected-primarybutton = Kapcsolja be a szinkronizálást a beállításokban
+firefoxview-tabpickup-password-locked-header = A lapok megtekintéséhez adja meg az elsődleges jelszavát
+firefoxview-tabpickup-password-locked-description = A lapok átvételéhez meg kell adnia az elsődleges jelszót a { -brand-short-name }ban.
+firefoxview-tabpickup-password-locked-link = További tudnivalók
+firefoxview-tabpickup-password-locked-primarybutton = Írja be az elsődleges jelszót
+firefoxview-tabpickup-signed-out-header = Jelentkezzen be az újrakapcsolódáshoz
+firefoxview-tabpickup-signed-out-description = Az újbóli csatlakozáshoz és a lapok megszerzéséhez jelentkezzen be a { -fxaccount-brand-name } fiókjába.
+firefoxview-tabpickup-signed-out-primarybutton = Bejelentkezés
 firefoxview-tabpickup-syncing = Várjon amíg a lapjai szinkronizálódnak. Csak egy pillanat lesz.
 firefoxview-mobile-promo-header = Vegye át a lapjait a telefonjáról vagy táblagépéről
 firefoxview-mobile-promo-description = A legújabb mobillapok megtekintéséhez jelentkezzen be a { -brand-product-name }be iOS-en vagy Androidon.
@@ -50,8 +56,13 @@ firefoxview-mobile-promo-primarybutton = Szerezze be a mobilos { -brand-product-
 firefoxview-mobile-confirmation-header = 🎉 Kész is van.
 firefoxview-mobile-confirmation-description = Most már átveheti a { -brand-product-name } lapjait a táblagépéről vagy telefonjáról.
 firefoxview-closed-tabs-title = Nemrég bezárt
-firefoxview-closed-tabs-description = Nyissa meg újra az ezen az eszközön bezárt oldalakat.
-firefoxview-closed-tabs-placeholder = <strong>Nincsenek nemrég bezárt oldalak</strong><br/>Soha többé ne féljen egy bezárt lap elvesztésétől. Itt bármikor visszakeresheti.
+firefoxview-closed-tabs-description2 = Az ebben az ablakban bezárt oldalak újranyitása.
+firefoxview-closed-tabs-placeholder-header = Nincsenek nemrég bezárt lapok
+firefoxview-closed-tabs-placeholder-body = Ha bezár egy lapot ebben az ablakban, innen kérheti le.
+# Variables:
+#   $tabTitle (string) - Title of tab being dismissed
+firefoxview-closed-tabs-dismiss-tab =
+    .title = A(z) { $tabTitle } eltüntetése
 # refers to the last tab that was used
 firefoxview-pickup-tabs-badge = Utoljára aktív
 # Variables:
@@ -65,7 +76,8 @@ firefoxview-change-colorway-button = Színvilág módosítása
 #  $intensity (String): Colorway intensity
 #  $collection (String): Colorway Collection name
 firefoxview-colorway-description = { $intensity } · { $collection }
-firefoxview-synced-tabs-placeholder = <strong>Még nincs semmi látnivaló</strong><br/>Ha legközelebb kinyit egy oldalt a { -brand-product-name }ben vagy egy másik eszközön, akkor itt varázsütésre átveheti.
+firefoxview-synced-tabs-placeholder-header = Még nincs semmi látnivaló
+firefoxview-synced-tabs-placeholder-body = Amikor legközelebb megnyit egy oldalt a { -brand-product-name }ban egy másik eszközön, akkor itt varázsütésre megtalálja.
 firefoxview-collapse-button-show =
     .title = Lista megjelenítése
 firefoxview-collapse-button-hide =

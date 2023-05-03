@@ -25,6 +25,12 @@ return-to-amo-addon-title = Sekarang dapatkan <img data-l10n-name="icon"/><b>{ $
 return-to-amo-add-extension-label = Tambahkan Ekstensi
 return-to-amo-add-theme-label = Tambahkan Tema
 
+##  Variables: $addon-name (String) - Name of the add-on to be installed
+
+mr1-return-to-amo-subtitle = Sambutlah { -brand-short-name }
+mr1-return-to-amo-addon-title = Anda memiliki peramban pribadi yang cepat di ujung jari Anda. Sekarang Anda dapat menambahkan <b>{ $addon-name }</b> dan melakukan lebih banyak lagi dengan { -brand-short-name }.
+mr1-return-to-amo-add-extension-label = Tambahkan { $addon-name }
+
 ## Multistage onboarding strings (about:welcome pages)
 
 # Aria-label to make the "steps" of multistage onboarding visible to screen readers.
@@ -39,8 +45,8 @@ onboarding-welcome-steps-indicator =
 #   $current (Int) - Number of the current page
 #   $total (Int) - Total number of pages
 
-onboarding-welcome-steps-indicator2 =
-    .aria-valuetext = Progres: langkah { $current } dari { $total }
+onboarding-welcome-steps-indicator-label =
+    .aria-label = Progres: langkah { $current } dari { $total }
 # "Hero Text" displayed on left side of welcome screen.
 # The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
 # It also signals the passion users bring to Firefox, how they use
@@ -261,6 +267,15 @@ fx100-upgrade-thank-you-body = Ini adalah rilis { -brand-short-name } ke-100. Te
 fx100-upgrade-thanks-keep-body = Ini adalah rilis ke-100 kami! Terima kasih telah menjadi bagian dari komunitas kami. Hanya sekali klik untuk terus 100x bersama { -brand-short-name } berikutnya.
 mr2022-onboarding-secondary-skip-button-label = Lewati langkah ini
 
+## MR2022 New User Easy Setup screen strings
+
+# Primary button string used on new user onboarding first screen showing multiple actions such as Set Default, Import from previous browser.
+mr2022-onboarding-easy-setup-primary-button-label = Simpan dan Lanjutkan
+# Set Default action checkbox label used on new user onboarding first screen
+mr2022-onboarding-easy-setup-set-default-checkbox-label = Atur { -brand-short-name } sebagai peramban baku
+# Import action checkbox label used on new user onboarding first screen
+mr2022-onboarding-easy-setup-import-checkbox-label = Impor dari peramban sebelumnya
+
 ## MR2022 New User Pin Firefox screen strings
 
 # Title used on about:welcome for new users when Firefox is not pinned.
@@ -324,35 +339,35 @@ mr2022-onboarding-import-primary-button-label-no-attribution = Impor dari peramb
 
 mr2022-onboarding-colorway-title = Pilih warna yang menginspirasi Anda
 mr2022-onboarding-colorway-subtitle = Suara independen dapat mengubah budaya.
-mr2022-onboarding-colorway-primary-button-label = Atur ragam warna
+mr2022-onboarding-colorway-primary-button-label-continue = Setel dan lanjutkan
 mr2022-onboarding-existing-colorway-checkbox-label = Jadikan { -firefox-home-brand-name } beranda penuh warna
 mr2022-onboarding-colorway-label-default = Bawaan
-mr2022-onboarding-colorway-tooltip-default =
-    .title = Baku
+mr2022-onboarding-colorway-tooltip-default2 =
+    .title = Warna { -brand-short-name } saat ini
 mr2022-onboarding-colorway-description-default = <b>Gunakan warna { -brand-short-name } saya saat ini.</b>
 mr2022-onboarding-colorway-label-playmaker = Playmaker
-mr2022-onboarding-colorway-tooltip-playmaker =
-    .title = Playmaker
+mr2022-onboarding-colorway-tooltip-playmaker2 =
+    .title = Playmaker (merah)
 mr2022-onboarding-colorway-description-playmaker = <b>Anda adalah seorang Playmaker.</b> Anda menciptakan peluang untuk menang dan membantu semua orang di sekitar Anda meningkatkan permainan mereka.
 mr2022-onboarding-colorway-label-expressionist = Ekspresionis
-mr2022-onboarding-colorway-tooltip-expressionist =
-    .title = Ekspresionis
+mr2022-onboarding-colorway-tooltip-expressionist2 =
+    .title = Ekspresionis (kuning)
 mr2022-onboarding-colorway-description-expressionist = <b>Anda adalah seorang Ekspresionis.</b> Anda melihat dunia secara berbeda dan kreasi Anda membangkitkan emosi orang lain.
 mr2022-onboarding-colorway-label-visionary = Visioner
-mr2022-onboarding-colorway-tooltip-visionary =
-    .title = Visioner
+mr2022-onboarding-colorway-tooltip-visionary2 =
+    .title = Visioner (hijau)
 mr2022-onboarding-colorway-description-visionary = <b>Anda adalah seorang Visioner.</b> Anda mempertanyakan status quo dan menggerakkan orang lain untuk membayangkan masa depan yang lebih baik.
 mr2022-onboarding-colorway-label-activist = Aktivis
-mr2022-onboarding-colorway-tooltip-activist =
-    .title = Aktivis
+mr2022-onboarding-colorway-tooltip-activist2 =
+    .title = Aktivis (biru)
 mr2022-onboarding-colorway-description-activist = <b>Anda adalah seorang Aktivis.</b> Anda meninggalkan dunia sebagai tempat yang lebih baik daripada yang Anda temukan dan membuat orang lain percaya.
 mr2022-onboarding-colorway-label-dreamer = Pemimpi
-mr2022-onboarding-colorway-tooltip-dreamer =
-    .title = Pemimpi
+mr2022-onboarding-colorway-tooltip-dreamer2 =
+    .title = Pemimpi (ungu)
 mr2022-onboarding-colorway-description-dreamer = <b>Anda adalah Pemimpi.</b> Anda percaya bahwa keberuntungan berpihak pada yang berani dan menginspirasi orang lain untuk menjadi berani.
 mr2022-onboarding-colorway-label-innovator = Inovator
-mr2022-onboarding-colorway-tooltip-innovator =
-    .title = Inovator
+mr2022-onboarding-colorway-tooltip-innovator2 =
+    .title = Inovator (oranye)
 mr2022-onboarding-colorway-description-innovator = <b>Anda adalah seorang Inovator.</b> Anda melihat peluang di mana-mana dan memberi dampak pada kehidupan semua orang di sekitar Anda.
 
 ## MR2022 Multistage Mobile Download screen strings
@@ -383,7 +398,33 @@ mr2022-onboarding-privacy-segmentation-button-secondary-label = Tampilkan inform
 
 ## MR2022 Multistage Gratitude screen strings
 
-mr2022-onboarding-gratitude-title = Anda membantu kami membangun web yang lebih baik.
+mr2022-onboarding-gratitude-title = Anda membantu kami membangun web yang lebih baik
 mr2022-onboarding-gratitude-subtitle = Terima kasih telah menggunakan { -brand-short-name }, yang didukung oleh Mozilla Foundation. Dengan dukungan Anda, kami berupaya menjadikan internet lebih terbuka, mudah diakses, dan lebih baik bagi semua orang.
 mr2022-onboarding-gratitude-primary-button-label = Lihat apa yang baru
 mr2022-onboarding-gratitude-secondary-button-label = Mulai menjelajah
+
+## Onboarding spotlight for infrequent users
+
+onboarding-infrequent-import-title = Anggap saja rumah sendiri
+onboarding-infrequent-import-subtitle = Baik Anda sedang menetap atau hanya mampir, ingatlah bahwa Anda dapat mengimpor markah, kata sandi, dan lainnya.
+onboarding-infrequent-import-primary-button = Impor ke { -brand-short-name }
+
+## MR2022 Illustration alt tags
+## Descriptive tags for illustrations used by screen readers and other assistive tech
+
+mr2022-onboarding-pin-image-alt =
+    .aria-label = Orang bekerja di laptop dikelilingi bintang-bintang dan bunga-bunga
+mr2022-onboarding-default-image-alt =
+    .aria-label = Orang yang memeluk logo { -brand-product-name }
+mr2022-onboarding-import-image-alt =
+    .aria-label = Orang mengendarai skateboard dengan sekotak ikon perangkat lunak
+mr2022-onboarding-mobile-download-image-alt =
+    .aria-label = Katak melompat melintasi bunga bakung dengan kode QR untuk mengunduh { -brand-product-name } untuk seluler di tengah
+mr2022-onboarding-pin-private-image-alt =
+    .aria-label = Tongkat sihir membuat logo penjelajahan pribadi { -brand-product-name } muncul dari topi
+mr2022-onboarding-privacy-segmentation-image-alt =
+    .aria-label = Tangan berkulit terang dan berkulit gelap melakukan tos
+mr2022-onboarding-gratitude-image-alt =
+    .aria-label = Pemandangan matahari terbenam melalui jendela dengan rubah dan tanaman rumah di ambang jendela
+mr2022-onboarding-colorways-image-alt =
+    .aria-label = Semprotan tangan melukis kolase warna-warni dari mata hijau, sepatu oranye, bola basket merah, headphone ungu, hati biru, dan mahkota kuning

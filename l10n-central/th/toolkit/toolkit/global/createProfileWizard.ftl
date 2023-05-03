@@ -6,12 +6,22 @@ create-profile-window =
     .title = ตัวช่วยสร้างโปรไฟล์
     .style = width: 45em; height: 32em;
 
+create-profile-window2 =
+    .title = ตัวช่วยสร้างโปรไฟล์
+    .style = min-width: 45em; min-height: 32em;
+
 ## First wizard page
 
 create-profile-first-page-header =
     { PLATFORM() ->
         [macos] หน้าแนะนำ
        *[other] ยินดีต้อนรับสู่ { create-profile-window.title }
+    }
+
+create-profile-first-page-header2 =
+    { PLATFORM() ->
+        [macos] หน้าแนะนำ
+       *[other] ยินดีต้อนรับสู่ { create-profile-window2.title }
     }
 
 profile-creation-explanation-1 = { -brand-short-name } จัดเก็บข้อมูลเกี่ยวกับการตั้งค่าและค่ากำหนดของคุณในโปรไฟล์ส่วนบุคคลของคุณ
@@ -32,6 +42,12 @@ create-profile-last-page-header =
     { PLATFORM() ->
         [macos] หน้าสรุป
        *[other] เสร็จสิ้นการ { create-profile-window.title }
+    }
+
+create-profile-last-page-header2 =
+    { PLATFORM() ->
+        [macos] หน้าสรุป
+       *[other] เสร็จสิ้นการ { create-profile-window2.title }
     }
 
 profile-creation-intro = หากคุณสร้างหลายโปรไฟล์ คุณสามารถแยกแยะโปรไฟล์ได้โดยชื่อโปรไฟล์ คุณอาจใช้ชื่อที่ให้มานี้หรือใช้ชื่อของคุณเอง

@@ -17,7 +17,6 @@ firefoxview-just-now-timestamp = Przed chwilą
 # This is a headline for an area in the product where users can resume and re-open tabs they have previously viewed on other devices.
 firefoxview-tabpickup-header = Odbierz karty
 firefoxview-tabpickup-description = Otwieraj karty z innych urządzeń.
-firefoxview-tabpickup-recenttabs-description = Lista ostatnio otwartych kart znajdzie się tutaj
 # Variables:
 #  $percentValue (Number): the percentage value for setup completion
 firefoxview-tabpickup-progress-label = Ukończono { $percentValue }%
@@ -43,6 +42,13 @@ firefoxview-tabpickup-sync-error-primarybutton = Spróbuj ponownie
 firefoxview-tabpickup-sync-disconnected-header = Włącz synchronizację, aby kontynuować
 firefoxview-tabpickup-sync-disconnected-description = Musisz włączyć synchronizację w przeglądarce { -brand-short-name }, aby odbierać karty.
 firefoxview-tabpickup-sync-disconnected-primarybutton = Wyłącz synchronizację w ustawieniach
+firefoxview-tabpickup-password-locked-header = Wprowadź hasło główne, aby wyświetlić karty
+firefoxview-tabpickup-password-locked-description = Musisz podać hasło główne przeglądarki { -brand-short-name }, aby odbierać karty.
+firefoxview-tabpickup-password-locked-link = Więcej informacji
+firefoxview-tabpickup-password-locked-primarybutton = Wprowadź hasło główne
+firefoxview-tabpickup-signed-out-header = Zaloguj się, aby połączyć ponownie
+firefoxview-tabpickup-signed-out-description = Zaloguj się na { -fxaccount-brand-name(case: "loc", capitalization: "lower") }, aby połączyć się ponownie i odbierać karty.
+firefoxview-tabpickup-signed-out-primarybutton = Zaloguj się
 firefoxview-tabpickup-syncing = Poczekaj chwilę, karty są synchronizowane.
 firefoxview-mobile-promo-header = Otwieraj karty z telefonu lub tabletu
 firefoxview-mobile-promo-description = Zaloguj się w przeglądarce { -brand-product-name } na iOS lub Androida, aby wyświetlać najnowsze karty z telefonu.
@@ -50,8 +56,13 @@ firefoxview-mobile-promo-primarybutton = Pobierz przeglądarkę { -brand-product
 firefoxview-mobile-confirmation-header = 🎉 Wszystko gotowe!
 firefoxview-mobile-confirmation-description = Możesz teraz otwierać karty z przeglądarki { -brand-product-name } na telefonie lub tablecie.
 firefoxview-closed-tabs-title = Ostatnio zamknięte
-firefoxview-closed-tabs-description = Ponownie otwieraj strony zamknięte na tym urządzeniu.
-firefoxview-closed-tabs-placeholder = <strong>Nie ma ostatnio zamkniętych stron</strong><br/>Nigdy więcej nie obawiaj się utraty zamkniętej karty. Zawsze możesz odzyskać ją tutaj.
+firefoxview-closed-tabs-description2 = Ponownie otwieraj strony zamknięte w tym oknie.
+firefoxview-closed-tabs-placeholder-header = Nie ma ostatnio zamkniętych kart
+firefoxview-closed-tabs-placeholder-body = Tutaj będzie można odzyskać karty zamknięte w tym oknie.
+# Variables:
+#   $tabTitle (string) - Title of tab being dismissed
+firefoxview-closed-tabs-dismiss-tab =
+    .title = Odrzuć kartę „{ $tabTitle }”
 # refers to the last tab that was used
 firefoxview-pickup-tabs-badge = Ostatnio aktywna
 # Variables:
@@ -65,7 +76,8 @@ firefoxview-change-colorway-button = Zmień kolorystykę
 #  $intensity (String): Colorway intensity
 #  $collection (String): Colorway Collection name
 firefoxview-colorway-description = { $intensity } · { $collection }
-firefoxview-synced-tabs-placeholder = <strong>Nic tu jeszcze nie ma</strong><br/>Gdy następnym razem otworzysz kartę w przeglądarce { -brand-product-name } na innym urządzeniu, magicznie pojawi się ona tutaj.
+firefoxview-synced-tabs-placeholder-header = Nic tu jeszcze nie ma
+firefoxview-synced-tabs-placeholder-body = Gdy następnym razem otworzysz kartę w przeglądarce { -brand-product-name } na innym urządzeniu, magicznie pojawi się ona tutaj.
 firefoxview-collapse-button-show =
     .title = Wyświetl listę
 firefoxview-collapse-button-hide =

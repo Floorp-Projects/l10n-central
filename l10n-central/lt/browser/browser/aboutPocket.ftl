@@ -22,6 +22,7 @@ pocket-panel-saved-page-saved = Išsaugota į „{ -pocket-brand-name }“
 pocket-panel-saved-page-saved-b = Įrašyta į „{ -pocket-brand-name }“!
 pocket-panel-saved-processing-remove = Tinklalapis šalinamas…
 pocket-panel-saved-removed = Tinklalapis pašalintas iš mano sąrašo
+pocket-panel-saved-removed-updated = Tinklalapis pašalintas iš įrašų
 pocket-panel-saved-processing-tags = Pridedamos gairės…
 pocket-panel-saved-remove-page = Pašalinti tinklalapį
 pocket-panel-saved-save-tags = Išsaugoti
@@ -45,8 +46,10 @@ pocket-panel-signup-tagline-story-one = Spustelėkite „{ -pocket-brand-name }�
 pocket-panel-signup-tagline-story-two = Peržiūrėkite bet kokiame įrenginyje su „{ -pocket-brand-name }“, bet kuriuo metu.
 pocket-panel-signup-cta-a-fix = Jūsų įrašymo mygtukas internetui
 pocket-panel-signup-cta-b = Spustelėkite „{ -pocket-brand-name }“ mygtuką, norėdami išsaugoti straipsnius, vaizdo įrašus, ir saitus. Peržiūrėkite savo sąrašą bet kuriame įrenginyje, bet kuriuo metu.
+pocket-panel-signup-cta-b-updated = Spustelėkite „{ -pocket-brand-name }“ mygtuką, norėdami išsaugoti straipsnius, vaizdo įrašus, ir saitus. Peržiūrėkite savo įrašus bet kuriame įrenginyje, bet kuriuo metu.
 pocket-panel-signup-cta-b-short = Spustelėkite „{ -pocket-brand-name }“ mygtuką, norėdami išsaugoti straipsnius, vaizdo įrašus, ir saitus.
 pocket-panel-signup-cta-c = Peržiūrėkite savo sąrašą bet kuriame įrenginyje, bet kuriuo metu.
+pocket-panel-signup-cta-c-updated = Peržiūrėkite savo įrašus bet kuriame įrenginyje, bet kuriuo metu.
 
 ## about:pocket-home panel
 
@@ -64,6 +67,7 @@ pocket-panel-home-new-user-message = Peržiūrėkite savo paskiausius įrašymus
 ## Pocket panel header component
 
 pocket-panel-header-my-list = Peržiūrėti mano sąrašą
+pocket-panel-header-my-saves = Peržiūrėti mano įrašus
 pocket-panel-header-sign-in = Prisijungti
 
 ## Pocket panel buttons

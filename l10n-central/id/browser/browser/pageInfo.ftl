@@ -65,6 +65,9 @@ media-dimension =
     .value = Dimensi:
 media-long-desc =
     .value = Deskripsi Lengkap:
+media-select-all =
+    .label = Pilih Semua
+    .accesskey = P
 media-save-as =
     .label = Simpan dengan Nama…
     .accesskey = S
@@ -247,7 +250,7 @@ media-block-image =
 # This string is used to display the URL of the website on top of the
 # pageInfo dialog box
 # Variables:
-#   $website (string) - The url of the website pageInfo is getting info for
+#   $website (string) — The url of the website pageInfo is getting info for
 page-info-page =
     .title = Informasi Laman - { $website }
 page-info-frame =

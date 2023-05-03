@@ -75,6 +75,8 @@ places-edit-generic =
 places-edit-folder2 =
     .label = フォルダーを編集...
     .accesskey = E
+# Variables
+#   $count (number) - Number of folders to delete
 places-delete-folder =
     .label = フォルダーを削除
     .accesskey = D
@@ -90,12 +92,14 @@ other-bookmarks-folder =
 places-show-in-folder =
     .label = フォルダーで表示
     .accesskey = F
-
 # Variables:
 # $count (number) - The number of elements being selected for removal.
 places-delete-bookmark =
     .label = ブックマークを削除
     .accesskey = D
+places-untag-bookmark =
+    .label = タグを消去
+    .accesskey = R
 places-manage-bookmarks =
     .label = ブックマークを管理
     .accesskey = M
@@ -103,10 +107,16 @@ places-forget-about-this-site-confirmation-title = このサイトのデータ�
 # Variables:
 # $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
 places-forget-about-this-site-confirmation-message = この操作は { $hostOrBaseDomain } に関連する履歴、パスワード、Cookie、キャッシュ、コンテンツの設定を含むすべてのデータを消去します。本当に消去してもよろしいですか？
+# Variables:
+# $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
+places-forget-about-this-site-confirmation-msg = この操作は { $hostOrBaseDomain } に関連する履歴、Cookie、キャッシュ、コンテンツの設定を含むデータを削除します。関連するブックマークとパスワードは削除されません。本当に削除してもよろしいですか？
+
 places-forget-about-this-site-forget = 消去
 places-library =
     .title = ブラウジングライブラリー
     .style = width:750px; height:500px;
+places-library3 =
+    .title = ブラウジングライブラリー
 places-organize-button =
     .label = 管理
     .tooltiptext = 履歴とブックマークを管理します

@@ -16,8 +16,7 @@ firefoxview-close-button =
 firefoxview-just-now-timestamp = 방금 전
 # This is a headline for an area in the product where users can resume and re-open tabs they have previously viewed on other devices.
 firefoxview-tabpickup-header = 탭 받기
-firefoxview-tabpickup-description = 다른 기기로부터 페이지를 엽니다.
-firefoxview-tabpickup-recenttabs-description = 최근 탭 목록이 여기에 표시됩니다.
+firefoxview-tabpickup-description = 다른 기기의 페이지를 엽니다.
 # Variables:
 #  $percentValue (Number): the percentage value for setup completion
 firefoxview-tabpickup-progress-label = { $percentValue }% 완료
@@ -43,6 +42,13 @@ firefoxview-tabpickup-sync-error-primarybutton = 다시 시도
 firefoxview-tabpickup-sync-disconnected-header = 계속하려면 동기화를 켜세요
 firefoxview-tabpickup-sync-disconnected-description = 탭을 가져오려면 { -brand-short-name }에서 동기화를 허용해야 합니다.
 firefoxview-tabpickup-sync-disconnected-primarybutton = 설정에서 동기화 켜기
+firefoxview-tabpickup-password-locked-header = 탭을 보려면 기본 비밀번호를 입력하세요
+firefoxview-tabpickup-password-locked-description = 탭을 가져오려면 { -brand-short-name }의 기본 비밀번호를 입력해야 합니다.
+firefoxview-tabpickup-password-locked-link = 더 알아보기
+firefoxview-tabpickup-password-locked-primarybutton = 기본 비밀번호 입력
+firefoxview-tabpickup-signed-out-header = 다시 연결하려면 로그인하세요
+firefoxview-tabpickup-signed-out-description = 다시 연결하고 탭을 가져오려면 { -fxaccount-brand-name }에 로그인하세요.
+firefoxview-tabpickup-signed-out-primarybutton = 로그인
 firefoxview-tabpickup-syncing = 잠깐이면 탭이 동기화됩니다.
 firefoxview-mobile-promo-header = 휴대폰 또는 태블릿에서 탭 가져오기
 firefoxview-mobile-promo-description = 최신 모바일 탭을 보려면, iOS 또는 Android에서 { -brand-product-name }에 로그인하세요.
@@ -50,8 +56,13 @@ firefoxview-mobile-promo-primarybutton = 모바일용 { -brand-product-name } �
 firefoxview-mobile-confirmation-header = 계속 진행!
 firefoxview-mobile-confirmation-description = 이제 태블릿이나 휴대폰에서 { -brand-product-name } 탭을 가져올 수 있습니다.
 firefoxview-closed-tabs-title = 최근에 닫음
-firefoxview-closed-tabs-description = 이 기기에서 닫은 페이지를 다시 엽니다.
-firefoxview-closed-tabs-placeholder = <strong>최근에 닫은 페이지 없음</strong><br/>닫은 탭을 다시 잃어버릴 염려가 없습니다. 언제든지 여기서 검색할 수 있습니다.
+firefoxview-closed-tabs-description2 = 이 창에서 닫은 페이지를 다시 엽니다.
+firefoxview-closed-tabs-placeholder-header = 최근에 닫은 탭 없음
+firefoxview-closed-tabs-placeholder-body = 이 창에서 탭을 닫으면 여기에서 가져올 수 있습니다.
+# Variables:
+#   $tabTitle (string) - Title of tab being dismissed
+firefoxview-closed-tabs-dismiss-tab =
+    .title = { $tabTitle } 닫기
 # refers to the last tab that was used
 firefoxview-pickup-tabs-badge = 마지막 활동
 # Variables:
@@ -65,7 +76,8 @@ firefoxview-change-colorway-button = 컬러웨이 변경
 #  $intensity (String): Colorway intensity
 #  $collection (String): Colorway Collection name
 firefoxview-colorway-description = { $intensity } · { $collection }
-firefoxview-synced-tabs-placeholder = <strong>아직 볼 것이 없음</strong><br/>다음에 다른 기기의 { -brand-product-name }에서 페이지를 열 때 마법처럼 여기로 가져옵니다.
+firefoxview-synced-tabs-placeholder-header = 아직 볼 것이 없음
+firefoxview-synced-tabs-placeholder-body = 다음에 다른 기기의 { -brand-product-name }에서 페이지를 열 때 마법처럼 여기로 가져옵니다.
 firefoxview-collapse-button-show =
     .title = 목록 표시
 firefoxview-collapse-button-hide =

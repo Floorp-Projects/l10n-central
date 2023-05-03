@@ -12,6 +12,7 @@ experimental-features-css-masonry-description = Ενεργοποιεί την υ
 experimental-features-web-gpu2 =
     .label = Web API: WebGPU
 experimental-features-web-gpu-description2 = Αυτό το νέο API παρέχει υποστήριξη χαμηλού επιπέδου για την εκτέλεση υπολογισμού και απόδοσης γραφικών, χρησιμοποιώντας τη <a data-l10n-name="wikipedia">κάρτα γραφικών (GPU)</a> της συσκευής ή του υπολογιστή του χρήστη. Η <a data-l10n-name="spec">προδιαγραφή</a> είναι υπό επεξεργασία. Δείτε το <a data-l10n-name="bugzilla">σφάλμα 1602129</a> για περισσότερες λεπτομέρειες.
+experimental-features-web-gpu-description3 = Το <a data-l10n-name="wikipedia-webgpu">WebGPU API</a> παρέχει υποστήριξη χαμηλού επιπέδου για την εκτέλεση υπολογισμού και απόδοσης γραφικών, χρησιμοποιώντας τη <a data-l10n-name="wikipedia-gpu">μονάδα επεξεργασίας γραφικών (GPU)</a> της συσκευής ή του υπολογιστή του χρήστη. Η πρώτη έκδοση της <a data-l10n-name="spec">προδιαγραφής</a> έχει σχεδόν ολοκληρωθεί. Δείτε το <a data-l10n-name="bugzilla">σφάλμα 1616739</a> για περισσότερες λεπτομέρειες.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-media-jxl =
@@ -60,10 +61,6 @@ experimental-features-js-warp-description = Ενεργοποίηση του Warp
 experimental-features-ime-search =
     .label = Γραμμή διευθύνσεων: εμφάνιση αποτελεσμάτων κατά τη σύνταξη IME
 experimental-features-ime-search-description = Το IME (Input Method Editor) είναι ένα εργαλείο που σας επιτρέπει να εισαγάγετε περίπλοκα σύμβολα, όπως αυτά που χρησιμοποιούνται στις γλώσσες της Ανατολικής Ασίας ή της Ινδίας, με ένα τυπικό πληκτρολόγιο. Η ενεργοποίηση αυτού του πειράματος θα διατηρεί ανοικτή τη λίστα της γραμμής διευθύνσεων, εμφανίζοντας αποτελέσματα και προτάσεις αναζήτησης, κατά τη χρήση του IME για εισαγωγή κειμένου. Σημειώστε ότι το IME ενδέχεται να εμφανίσει ένα παράθυρο που καλύπτει τα αποτελέσματα της γραμμής διευθύνσεων, επομένως αυτή η προτίμηση προτείνεται μόνο για IME που δεν χρησιμοποιεί αυτό τον τύπο παραθύρου.
-# Text recognition for images
-experimental-features-text-recognition =
-    .label = Αναγνώριση κειμένου
-experimental-features-text-recognition-description = Ενεργοποιήστε τις λειτουργίες αναγνώρισης κειμένου σε εικόνες.
 experimental-features-accessibility-cache =
     .label = Προσωρινή μνήμη προσβασιμότητας
 experimental-features-accessibility-cache-description = Αποθηκεύει προσωρινά όλες τις πληροφορίες προσβασιμότητας από όλα τα έγγραφα στην κύρια διεργασία του { -brand-short-name }. Αυτό βελτιώνει τις επιδόσεις των λογισμικών ανάγνωσης οθόνης και άλλων εφαρμογών που χρησιμοποιούν API προσβασιμότητας.

@@ -61,6 +61,11 @@ toolbar-context-menu-view-customize-toolbar =
 toolbar-context-menu-view-customize-toolbar-2 =
     .label = Настройка панели инструментов…
     .accesskey = с
+# This is only ever shown when toolbar-context-menu-pin-to-overflow-menu
+# is hidden, so they can share access keys.
+toolbar-context-menu-pin-to-toolbar =
+    .label = Закрепить на панели инструментов
+    .accesskey = З
 toolbar-context-menu-bookmarks-toolbar-always-show-2 =
     .label = Всегда отображать
     .accesskey = е

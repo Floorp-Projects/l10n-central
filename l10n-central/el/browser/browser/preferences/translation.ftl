@@ -6,6 +6,10 @@ translation-window =
     .title = Εξαιρέσεις - Μετάφραση
     .style = width: 36em
 
+translation-window2 =
+    .title = Εξαιρέσεις - Μετάφραση
+    .style = min-width: 36em
+
 translation-close-key =
     .key = w
 

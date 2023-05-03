@@ -11,6 +11,15 @@ containers-window-update-settings =
     .title = Ρυθμίσεις θεματικής ενότητας «{ $name }»
     .style = width: 45em
 
+containers-window-new2 =
+    .title = Προσθήκη νέας θεματικής ενότητας
+    .style = min-width: 45em
+# Variables
+#   $name (String) - Name of the container
+containers-window-update-settings2 =
+    .title = Ρυθμίσεις θεματικής ενότητας «{ $name }»
+    .style = min-width: 45em
+
 containers-window-close =
     .key = w
 

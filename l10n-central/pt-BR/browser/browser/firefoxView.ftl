@@ -15,15 +15,14 @@ firefoxview-close-button =
 # Used instead of the localized relative time when a timestamp is within a minute or so of now
 firefoxview-just-now-timestamp = há pouco
 # This is a headline for an area in the product where users can resume and re-open tabs they have previously viewed on other devices.
-firefoxview-tabpickup-header = Escolha de aba
-firefoxview-tabpickup-description = Abrir páginas de outros dispositivos.
-firefoxview-tabpickup-recenttabs-description = A lista de abas recentes aparece aqui
+firefoxview-tabpickup-header = Escolha de abas
+firefoxview-tabpickup-description = Abra páginas de outros dispositivos.
 # Variables:
 #  $percentValue (Number): the percentage value for setup completion
 firefoxview-tabpickup-progress-label = { $percentValue }% concluído
 firefoxview-tabpickup-step-signin-header = Passe facilmente de um dispositivo para outro
 firefoxview-tabpickup-step-signin-description = Para abrir aqui as abas do seu celular, primeiro entre na sua conta ou crie uma.
-firefoxview-tabpickup-step-signin-primarybutton = Continuar
+firefoxview-tabpickup-step-signin-primarybutton = Avançar
 firefoxview-tabpickup-adddevice-header = Sincronize o { -brand-product-name } em seu celular ou tablet
 firefoxview-tabpickup-adddevice-description = Instale o { -brand-product-name } para dispositivos móveis e entre na sua conta.
 firefoxview-tabpickup-adddevice-learn-how = Saiba como
@@ -43,6 +42,13 @@ firefoxview-tabpickup-sync-error-primarybutton = Tentar novamente
 firefoxview-tabpickup-sync-disconnected-header = Ative a sincronização para continuar
 firefoxview-tabpickup-sync-disconnected-description = Para pegar suas abas, você precisa permitir a sincronização no { -brand-short-name }.
 firefoxview-tabpickup-sync-disconnected-primarybutton = Ativar a sincronização nas configurações
+firefoxview-tabpickup-password-locked-header = Digite sua senha principal para ver abas
+firefoxview-tabpickup-password-locked-description = Para recuperar suas abas, precisa inserir a senha principal do { -brand-short-name }.
+firefoxview-tabpickup-password-locked-link = Saiba mais
+firefoxview-tabpickup-password-locked-primarybutton = Digite a senha principal
+firefoxview-tabpickup-signed-out-header = Entre na conta para reconectar
+firefoxview-tabpickup-signed-out-description = Para reconectar e acessar suas abas, entre na sua conta { -fxaccount-brand-name }.
+firefoxview-tabpickup-signed-out-primarybutton = Entrar
 firefoxview-tabpickup-syncing = Aguarde a sincronização de abas. É rápido.
 firefoxview-mobile-promo-header = Abra abas do seu celular ou tablet
 firefoxview-mobile-promo-description = Para ver suas abas mais recentes do celular, entre na sua conta no { -brand-product-name } no iOS ou Android.
@@ -50,8 +56,13 @@ firefoxview-mobile-promo-primarybutton = Instale o { -brand-product-name } para 
 firefoxview-mobile-confirmation-header = 🎉 Pronto!
 firefoxview-mobile-confirmation-description = Agora você pode abrir suas abas do { -brand-product-name } do seu tablet ou celular.
 firefoxview-closed-tabs-title = Fechado recentemente
-firefoxview-closed-tabs-description = Reabrir páginas que você fechou neste dispositivo.
-firefoxview-closed-tabs-placeholder = <strong>Nenhuma página fechada recentemente</strong><br/>Nunca mais tenha medo de perder uma aba fechada. Você sempre pode recuperar aqui.
+firefoxview-closed-tabs-description2 = Reabra páginas que você fechou neste computador.
+firefoxview-closed-tabs-placeholder-header = Nenhuma aba fechada recentemente
+firefoxview-closed-tabs-placeholder-body = Ao fechar uma aba nesta janela, você pode recuperar aqui.
+# Variables:
+#   $tabTitle (string) - Title of tab being dismissed
+firefoxview-closed-tabs-dismiss-tab =
+    .title = Descartar { $tabTitle }
 # refers to the last tab that was used
 firefoxview-pickup-tabs-badge = Última ativa
 # Variables:
@@ -59,13 +70,13 @@ firefoxview-pickup-tabs-badge = Última ativa
 firefoxview-tabs-list-tab-button =
     .title = Abrir { $targetURI } em nova aba
 firefoxview-try-colorways-button = Experimentar esquemas de cores
-firefoxview-no-current-colorway-collection = Estão chegando novos esquemas de cores
 firefoxview-change-colorway-button = Mudar esquema de cores
 # Variables:
 #  $intensity (String): Colorway intensity
 #  $collection (String): Colorway Collection name
 firefoxview-colorway-description = { $intensity } · { $collection }
-firefoxview-synced-tabs-placeholder = <strong>Nada ainda</strong><br/>Na próxima vez que você abrir uma página no { -brand-product-name } em outro dispositivo, aparece aqui como mágica.
+firefoxview-synced-tabs-placeholder-header = Nada para mostrar ainda
+firefoxview-synced-tabs-placeholder-body = A próxima vez que você abrir uma página no { -brand-product-name } em outro dispositivo, ela aparece aqui como mágica.
 firefoxview-collapse-button-show =
     .title = Exibir lista
 firefoxview-collapse-button-hide =

@@ -6,6 +6,10 @@ blocklist-window =
     .title = Elenchi per blocco elementi traccianti
     .style = width: 55em
 
+blocklist-window2 =
+    .title = Elenchi per blocco elementi traccianti
+    .style = min-width: 55em
+
 blocklist-description = Scegliere l’elenco da utilizzare in { -brand-short-name } per bloccare gli elementi traccianti online. Elenchi forniti da <a data-l10n-name="disconnect-link" title="Disconnect">Disconnect</a>.
 blocklist-close-key =
     .key = w

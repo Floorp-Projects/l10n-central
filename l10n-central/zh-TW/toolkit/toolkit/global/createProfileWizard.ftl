@@ -6,12 +6,22 @@ create-profile-window =
     .title = 建立設定檔精靈
     .style = width: 45em; height: 32em;
 
+create-profile-window2 =
+    .title = 建立設定檔精靈
+    .style = min-width: 45em; min-height: 32em;
+
 ## First wizard page
 
 create-profile-first-page-header =
     { PLATFORM() ->
         [macos] 介紹
        *[other] 歡迎使用{ create-profile-window.title }
+    }
+
+create-profile-first-page-header2 =
+    { PLATFORM() ->
+        [macos] 介紹
+       *[other] 歡迎使用{ create-profile-window2.title }
     }
 
 profile-creation-explanation-1 = { -brand-short-name } 把您的設定、偏好等各種資料存於您的個人設定檔 (Profile) 中。
@@ -32,6 +42,12 @@ create-profile-last-page-header =
     { PLATFORM() ->
         [macos] 最後一步
        *[other] 完成{ create-profile-window.title }
+    }
+
+create-profile-last-page-header2 =
+    { PLATFORM() ->
+        [macos] 最後一步
+       *[other] 完成{ create-profile-window2.title }
     }
 
 profile-creation-intro = 可用名稱來區分不同的設定檔。您可參考下列建議，或使用自己喜歡的名稱。

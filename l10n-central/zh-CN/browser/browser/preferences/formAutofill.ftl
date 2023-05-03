@@ -98,7 +98,7 @@ autofill-edit-card-password-prompt =
     }
 autofill-card-number = 卡号
 autofill-card-invalid-number = 请输入有效的卡号
-autofill-card-name-on-card = 卡上名称
+autofill-card-name-on-card = 持卡人姓名
 autofill-card-expires-month = 到期月
 autofill-card-expires-year = 到期年
 autofill-card-billing-address = 账单地址

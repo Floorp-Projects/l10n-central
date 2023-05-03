@@ -38,7 +38,7 @@ app-basics-update-channel = Канал обновления
 # as in "Folder for updates". "Update" is a noun, not a verb.
 app-basics-update-dir =
     { PLATFORM() ->
-        [linux] Каталог обновления
+        [linux] Папка обновления
        *[other] Папка обновления
     }
 app-basics-update-history = Журнал обновлений
@@ -47,7 +47,7 @@ app-basics-show-update-history = Показать журнал обновлен�
 app-basics-binary = Бинарный файл приложения
 app-basics-profile-dir =
     { PLATFORM() ->
-        [linux] Каталог профиля
+        [linux] Папка профиля
        *[other] Папка профиля
     }
 app-basics-enabled-plugins = Включённые плагины
@@ -73,7 +73,7 @@ app-basics-safebrowsing-key-google = Ключ Google Safebrowsing
 app-basics-key-mozilla = Ключ Службы определения местоположения от Mozilla
 app-basics-safe-mode = Безопасный Режим
 app-basics-memory-size = Объём памяти (ОЗУ)
-app-basics-disk-available = Доступное место на диске
+app-basics-disk-available = Доступное место на накопителе
 # Variables:
 #   $value (number) - Amount of data being stored
 #   $unit (string) - The unit of data being stored (e.g. MB)
@@ -82,7 +82,7 @@ show-dir-label =
     { PLATFORM() ->
         [macos] Показать в Finder
         [windows] Открыть папку
-       *[other] Открыть каталог
+       *[other] Открыть папку
     }
 environment-variables-title = Переменные среды
 environment-variables-name = Имя
@@ -107,11 +107,21 @@ graphics-gpu2-title = Видеокарта №2
 graphics-decision-log-title = Лог решения
 graphics-crash-guards-title = Возможности, отключённые защитой от падения
 graphics-workarounds-title = Способы обхода
+graphics-device-pixel-ratios = Пиксельные соотношения окна устройства
 # Windowing system in use on Linux (e.g. X11, Wayland).
 graphics-window-protocol = Протокол управления окнами
 # Desktop environment in use on Linux (e.g. GNOME, KDE, XFCE, etc).
 graphics-desktop-environment = Среда рабочего стола
 place-database-title = База данных Places
+place-database-stats = Статистика
+place-database-stats-show = Показать статистику
+place-database-stats-hide = Скрыть статистику
+place-database-stats-entity = Объект
+place-database-stats-count = Количество
+place-database-stats-size-kib = Размер (КиБ)
+place-database-stats-size-perc = Размер (%)
+place-database-stats-efficiency-perc = Эффективность (%)
+place-database-stats-sequentiality-perc = Последовательность (%)
 place-database-integrity = Целостность
 place-database-verify-integrity = Проверить целостность
 a11y-title = Поддержка доступности
@@ -120,8 +130,8 @@ a11y-force-disabled = Отключение поддержки доступнос
 a11y-handler-used = Используемый обработчик Доступности
 a11y-instantiator = Исполняемый файл поддержки доступности
 library-version-title = Версии библиотек
-copy-text-to-clipboard-label = Копировать текст в буфер обмена
-copy-raw-data-to-clipboard-label = Копировать необработанные данные в буфер обмена
+copy-text-to-clipboard-label = Скопировать текст в буфер обмена
+copy-raw-data-to-clipboard-label = Скопировать необработанные данные в буфер обмена
 sandbox-title = Песочница
 sandbox-sys-call-log-title = Отклонённые cистемные вызовы
 sandbox-sys-call-index = #
@@ -280,6 +290,8 @@ webgl2-renderer = WebGL 2 - Визуализатор драйвера
 webgl2-version = WebGL 2 - Версия драйвера
 webgl2-driver-extensions = WebGL 2 - Расширения драйвера
 webgl2-extensions = WebGL 2 - Расширения
+webgpu-default-adapter = Адаптер WebGPU по умолчанию
+webgpu-fallback-adapter = Резервный адаптер WebGPU
 # Variables
 #   $bugNumber (string) - Bug number on Bugzilla
 support-blocklisted-bug = Занесено в чёрный список из-за известных проблем: <a data-l10n-name="bug-link">баг { $bugNumber }</a>
@@ -309,6 +321,7 @@ can-sandbox-media = Песочница для медиаплагина
 content-sandbox-level = Степень изоляции процесса контента
 effective-content-sandbox-level = Эффективная степень изоляции процесса контента
 content-win32k-lockdown-state = Состояние блокировки Win32k для процесса содержимого
+support-sandbox-gpu-level = Уровень песочницы процесса GPU
 sandbox-proc-type-content = контент
 sandbox-proc-type-file = содержимое файла
 sandbox-proc-type-media-plugin = медиаплагин

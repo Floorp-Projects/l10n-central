@@ -6,6 +6,10 @@ translation-window =
     .title = Kivételek - fordítás
     .style = width: 36em
 
+translation-window2 =
+    .title = Kivételek - fordítás
+    .style = min-width: 36em
+
 translation-close-key =
     .key = w
 

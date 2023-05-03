@@ -16,8 +16,6 @@ change-password-old = Password attuale:
 change-password-new = Nuova password:
 change-password-reenter = Nuova password (conferma):
 
-## Reset Password dialog
-
 pippki-failed-pw-change = Impossibile cambiare la password.
 pippki-incorrect-pw = Non è stata inserita correttamente la password attuale. Ritentare.
 pippki-pw-change-ok = La password è stata cambiata correttamente.
@@ -33,9 +31,12 @@ pippki-pw-change2empty-in-fips-mode = Si è in modalità FIPS. FIPS richiede che
 reset-primary-password-window =
     .title = Rimozione password principale
     .style = width: 40em
+
+reset-primary-password-window2 =
+    .title = Rimozione password principale
+    .style = min-width: 40em
 reset-password-button-label =
     .label = Reimposta
-
 reset-primary-password-text = La rimozione della password principale comporterà la perdita di tutte le password di posta e dei siti web, dei dati dei moduli, dei certificati personali e delle chiavi private memorizzate. Rimuovere la password principale?
 
 pippki-reset-password-confirmation-title = Rimozione password principale
@@ -46,6 +47,10 @@ pippki-reset-password-confirmation-message = La password è stata eliminata.
 download-cert-window =
     .title = Download certificato
     .style = width: 46em
+
+download-cert-window2 =
+    .title = Download certificato
+    .style = min-width: 46em
 download-cert-message = È stato richiesto di dare fiducia a una nuova autorità di certificazione (CA).
 download-cert-trust-ssl =
     .label = Dai fiducia a questa CA per l’identificazione di siti web.
@@ -81,3 +86,11 @@ protected-auth-window =
     .title = Autenticazione token protetta
 protected-auth-msg = Autenticarsi con il token. Il metodo di autenticazione dipende dal tipo di token in uso.
 protected-auth-token = Token:
+
+## Protected authentication alert
+
+# Variables:
+# $tokenName (String) - The name of the token to authenticate to (for example, "OS Client Cert Token (Modern)")
+protected-auth-alert = Effettuare l’autenticazione utilizzando il token “{ $tokenName }”. La modalità precisa dipende dal token, ad esempio potrebbe essere necessario utilizzare un lettore di impronte digitali o inserire un codice con un tastierino numerico.
+
+

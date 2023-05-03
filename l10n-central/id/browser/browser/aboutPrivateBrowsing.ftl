@@ -60,3 +60,11 @@ about-private-browsing-pin-promo-link-text =
        *[other] Sematkan ke bilah tugas
     }
 about-private-browsing-pin-promo-title = Tidak ada kuki tersimpan atau riwayat, langsung dari desktop Anda. Menjelajah seperti tidak ada yang mengawasi.
+
+## Strings used in a promotion message for cookie banner reduction
+
+# Simplified version of the headline if the original text doesn't work
+# in your language: `See fewer cookie requests`.
+about-private-browsing-cookie-banners-promo-header = Lenyapkan spanduk kuki!
+about-private-browsing-cookie-banners-promo-button = Kurangi Spanduk Kuki
+about-private-browsing-cookie-banners-promo-message = Izinkan { -brand-short-name } menjawab pop-up kuki secara otomatis agar Anda dapat kembali ke penjelajahan bebas gangguan. { -brand-short-name } akan menolak semua permintaan jika memungkinkan.

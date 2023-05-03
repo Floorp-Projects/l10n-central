@@ -38,7 +38,7 @@ category-privacy =
 pane-sync-title3 = Synchronizacja
 category-sync3 =
     .tooltiptext = Ustawienia dotyczące synchronizacji
-pane-experimental-title = Eksperymenty
+pane-experimental-title = Eksperymenty { -brand-short-name(case: "gen") }
 category-experimental =
     .tooltiptext = Eksperymenty przeglądarki { -brand-short-name }
 pane-experimental-subtitle = Zachowaj ostrożność
@@ -47,7 +47,7 @@ pane-experimental-description2 = Modyfikacja zaawansowanych ustawień może wpł
 pane-experimental-reset =
     .label = Przywróć domyślne
     .accesskey = P
-help-button-label = Wsparcie programu { -brand-short-name }
+help-button-label = Wsparcie { -brand-short-name(case: "gen") }
 addons-button-label = Rozszerzenia i motywy
 focus-search =
     .key = f
@@ -58,8 +58,8 @@ close-button =
 
 feature-enable-requires-restart = Konieczne jest ponowne uruchomienie przeglądarki { -brand-short-name }, aby włączyć tę funkcję.
 feature-disable-requires-restart = Konieczne jest ponowne uruchomienie przeglądarki { -brand-short-name }, aby wyłączyć tę funkcję.
-should-restart-title = Ponowne uruchomienie przeglądarki { -brand-short-name }
-should-restart-ok = Uruchom przeglądarkę { -brand-short-name } ponownie
+should-restart-title = Ponowne uruchomienie { -brand-short-name(case: "gen") }
+should-restart-ok = Uruchom { -brand-short-name(case: "acc") } ponownie
 cancel-no-restart-button = Anuluj
 restart-later = Później
 
@@ -72,6 +72,17 @@ restart-later = Później
 ##
 ## Variables:
 ##   $name (String): name of the extension
+
+
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
+##   $name (string) - Name of the extension
 
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
@@ -120,6 +131,11 @@ startup-restore-warn-on-quit =
     .label = Ostrzeganie przy zamykaniu przeglądarki
 disable-extension =
     .label = Wyłącz rozszerzenie
+preferences-data-migration-header = Importowanie danych z innych przeglądarek
+preferences-data-migration-description = Importuj zakładki, hasła, historię i dane automatycznego wypełniania do { -brand-short-name(case: "gen") }.
+preferences-data-migration-button =
+    .label = Importuj dane
+    .accesskey = m
 tabs-group-header = Karty
 ctrl-tab-recently-used-order =
     .label = Przełączanie kart za pomocą Ctrl+Tab w kolejności ostatnich wyświetleń
@@ -132,7 +148,7 @@ confirm-on-close-multiple-tabs =
     .accesskey = a
 # This string is used for the confirm before quitting preference.
 # Variables:
-#   $quitKey (String) - the quit keyboard shortcut, and formatted
+#   $quitKey (string) - the quit keyboard shortcut, and formatted
 #                       in the same manner as it would appear,
 #                       for example, in the File menu.
 confirm-on-quit-with-key =
@@ -155,6 +171,10 @@ browser-containers-settings =
     .label = Dostosuj…
     .accesskey = D
 containers-disable-alert-title = Czy zamknąć wszystkie karty z kontekstem?
+
+## Variables:
+##   $tabCount (number) - Number of tabs
+
 containers-disable-alert-desc =
     { $tabCount ->
         [one] Jeśli wyłączysz funkcję kart z kontekstem, jedna taka karta zostanie zamknięta. Czy na pewno wyłączyć karty z kontekstem?
@@ -167,10 +187,13 @@ containers-disable-alert-ok-button =
         [few] Zamknij { $tabCount } karty z kontekstem
        *[many] Zamknij { $tabCount } kart z kontekstem
     }
+
+##
+
 containers-disable-alert-cancel-button = Anuluj
 containers-remove-alert-title = Usuwanie kontekstu
 # Variables:
-#   $count (Number) - Number of tabs that will be closed.
+#   $count (number) - Number of tabs that will be closed.
 containers-remove-alert-msg =
     { $count ->
         [one] Jeśli usuniesz teraz ten kontekst, { $count } karta zostanie zamknięta. Czy na pewno usunąć ten kontekst?
@@ -215,7 +238,7 @@ preferences-web-appearance-choice-input-dark =
 preferences-web-appearance-override-warning = Wybrane kolory mają pierwszeństwo przed ustawieniami wyglądu witryn. <a data-l10n-name="colors-link">Zarządzaj kolorami</a>
 # This message contains one link. It can be moved within the sentence as needed
 # to adapt to your language, but should not be changed.
-preferences-web-appearance-footer = Zarządzaj motywami przeglądarki { -brand-short-name } w <a data-l10n-name="themes-link">Rozszerzenia i motywy</a>
+preferences-web-appearance-footer = Zarządzaj motywami { -brand-short-name(case: "gen") } w <a data-l10n-name="themes-link">Rozszerzenia i motywy</a>
 preferences-colors-header = Kolory
 preferences-colors-description = Zastąp domyślne kolory przeglądarki { -brand-short-name } dla tekstu, teł witryn i odnośników.
 preferences-colors-manage-button =
@@ -233,6 +256,8 @@ advanced-fonts =
 preferences-zoom-header = Powiększenie
 preferences-default-zoom = Domyślne powiększenie:
     .accesskey = D
+# Variables:
+#   $percentage (number) - Zoom percentage value
 preferences-default-zoom-value =
     .label = { $percentage }%
 preferences-zoom-text-only =
@@ -325,15 +350,15 @@ applications-manage-app =
 applications-always-ask =
     .label = Zawsze pytaj
 # Variables:
-#   $type-description (String) - Description of the type (e.g "Portable Document Format")
-#   $type (String) - the MIME type (e.g application/binary)
+#   $type-description (string) - Description of the type (e.g "Portable Document Format")
+#   $type (string) - The MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
-#   $extension (String) - file extension (e.g .TXT)
-#   $type (String) - the MIME type (e.g application/binary)
+#   $extension (string) - File extension (e.g .TXT)
+#   $type (string) - The MIME type (e.g application/binary)
 applications-file-ending-with-type = { applications-file-ending } ({ $type })
 # Variables:
-#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+#   $plugin-name (string) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Wtyczka { $plugin-name } (w programie { -brand-short-name })
 applications-open-inapp =
@@ -376,6 +401,8 @@ play-drm-content =
 play-drm-content-learn-more = Więcej informacji
 update-application-title = Aktualizacje przeglądarki { -brand-short-name }
 update-application-description = Utrzymuj przeglądarkę { -brand-short-name } aktualną dla najlepszej wydajności, stabilności i bezpieczeństwa.
+# Variables:
+# $version (string) - Firefox version
 update-application-version = Wersja: { $version }. <a data-l10n-name="learn-more">Informacje o wydaniu</a>.
 update-history =
     .label = Wyświetl historię aktualizacji…
@@ -402,7 +429,7 @@ update-application-suppress-prompts =
     .accesskey = P
 update-setting-write-failure-title2 = Błąd podczas zachowywania ustawień aktualizacji
 # Variables:
-#   $path (String) - Path to the configuration file
+#   $path (string) - Path to the configuration file
 # The newlines between the main text and the line containing the path is
 # intentional so the path is easier to identify.
 update-setting-write-failure-message2 =
@@ -432,7 +459,7 @@ performance-limit-content-process-option = Limit liczby procesów treści:
 performance-limit-content-process-enabled-desc = Więcej procesów treści może poprawić wydajność przy wielu otwartych kartach, ale zwiększy też zapotrzebowanie na pamięć.
 performance-limit-content-process-blocked-desc = Zmiana liczby procesów jest możliwa, jeśli { -brand-short-name } został uruchomiony z obsługą wielu procesów. <a data-l10n-name="learn-more">Jak sprawdzić, czy obsługa wielu procesów jest włączona</a>?
 # Variables:
-#   $num - default value of the `dom.ipc.processCount` pref.
+#   $num (number) - Default value of the `dom.ipc.processCount` pref.
 performance-default-content-process-count =
     .label = { $num } (domyślnie)
 
@@ -538,6 +565,10 @@ home-prefs-shortcuts-by-option-sponsored =
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
+
+## Variables:
+##  $provider (string) - Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Polecane przez { $provider }
 home-prefs-recommended-by-description-new = Wyjątkowe rzeczy wybrane przez { $provider }, część rodziny produktów { -brand-product-name }.
@@ -566,7 +597,9 @@ home-prefs-recent-activity-description = Wybierane z ostatnio odwiedzanych stro
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = Od Mozilli
-home-prefs-snippets-description-new = Wskazówki i aktualności od organizacji { -vendor-short-name } i przeglądarki { -brand-product-name }.
+home-prefs-snippets-description-new = Wskazówki i aktualności od { -vendor-short-name(case: "gen") } i { -brand-product-name(case: "gen") }.
+# Variables:
+#   $num (number) - Number of rows displayed
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -596,6 +629,11 @@ search-suggestions-option =
 search-show-suggestions-url-bar-option =
     .label = Podpowiedzi wyszukiwania w wynikach paska adresu
     .accesskey = e
+# With this option enabled, on the search results page
+# the URL will be replaced by the search terms in the address bar
+# when using the current default search engine.
+search-show-search-term-option =
+    .label = Wyszukiwane słowa zamiast adresu na stronie wyników domyślnej wyszukiwarki
 # This string describes what the user will observe when the system
 # prioritizes search suggestions over browsing history in the results
 # that extend down from the address bar. In the original English string,
@@ -627,7 +665,7 @@ search-find-more-link = Znajdź więcej wyszukiwarek
 # ('Duplicate' is an adjective)
 search-keyword-warning-title = Słowo kluczowe już istnieje
 # Variables:
-#   $name (String) - Name of a search engine.
+#   $name (string) - Name of a search engine.
 search-keyword-warning-engine = Wybrano słowo kluczowe używane obecnie przez wyszukiwarkę { $name }. Należy wybrać inne.
 search-keyword-warning-bookmark = Wybrano słowo kluczowe używane obecnie przez zakładkę. Należy wybrać inne.
 
@@ -674,8 +712,15 @@ sync-sign-out =
     .accesskey = W
 sync-manage-account = Zarządzaj kontem
     .accesskey = Z
+
+## Variables
+## $email (string) - Email used for Firefox account
+
 sync-signedin-unverified = Konto { $email } nie zostało zweryfikowane.
 sync-signedin-login-failure = Zaloguj się, aby ponownie połączyć konto { $email }
+
+##
+
 sync-resend-verification =
     .label = Wyślij nową wiadomość weryfikującą
     .accesskey = W
@@ -719,6 +764,13 @@ sync-change-options =
 sync-choose-what-to-sync-dialog =
     .title = Wybierz, co synchronizować
     .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = Zapisz zmiany
+    .buttonaccesskeyaccept = Z
+    .buttonlabelextra2 = Rozłącz…
+    .buttonaccesskeyextra2 = R
+sync-choose-what-to-sync-dialog3 =
+    .title = Wybierz, co synchronizować
+    .style = min-width: 36em;
     .buttonlabelaccept = Zapisz zmiany
     .buttonaccesskeyaccept = Z
     .buttonlabelextra2 = Rozłącz…
@@ -791,6 +843,9 @@ forms-breach-alerts =
     .label = Powiadomienia o hasłach do stron, z których wyciekły dane.
     .accesskey = o
 forms-breach-alerts-learn-more-link = Więcej informacji
+relay-integration =
+    .label = Włącz { -relay-brand-name } w menedżerze haseł { -brand-short-name(case: "gen") }
+relay-integration-learn-more-link = Więcej informacji
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Automatyczne wypełnianie formularzy logowania
@@ -879,8 +934,8 @@ history-clear-button =
 sitedata-header = Ciasteczka i dane witryn
 sitedata-total-size-calculating = Obliczanie rozmiaru danych i pamięci podręcznej witryn…
 # Variables:
-#   $value (Number) - Value of the unit (for example: 4.6, 500)
-#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+#   $value (number) - Value of the unit (for example: 4.6, 500)
+#   $unit (string) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Przechowywane ciasteczka, dane i pamięć podręczna witryn zajmują { $value } { $unit } na dysku.
 sitedata-learn-more = Więcej informacji
 sitedata-delete-on-close =
@@ -907,6 +962,8 @@ sitedata-option-block-unvisited =
     .label = nieodwiedzonych witryn
 sitedata-option-block-all-third-party =
     .label = wszystkie zewnętrznych witryn (może powodować problemy)
+sitedata-option-block-all-cross-site-cookies =
+    .label = wszystkie między witrynami (może powodować problemy)
 sitedata-option-block-all =
     .label = wszystkie (powoduje problemy)
 sitedata-clear =
@@ -918,6 +975,14 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Wyjątki…
     .accesskey = W
+
+## Privacy Section - Cookie Banner Handling
+
+cookie-banner-handling-header = Ograniczanie informacji o ciasteczkach
+cookie-banner-handling-description = { -brand-short-name } automatycznie próbuje odrzucać prośby o akceptację ciasteczek na obsługiwanych witrynach.
+cookie-banner-learn-more = Więcej informacji
+forms-handle-cookie-banners =
+    .label = Ograniczanie informacji o ciasteczkach
 
 ## Privacy Section - Address Bar
 
@@ -986,6 +1051,7 @@ content-blocking-all-cookies = wszystkie ciasteczka
 content-blocking-unvisited-cookies = ciasteczka z nieodwiedzonych witryn
 content-blocking-all-windows-tracking-content = treści z elementami śledzącymi we wszystkich oknach
 content-blocking-all-third-party-cookies = wszystkie ciasteczka zewnętrznych witryn
+content-blocking-all-cross-site-cookies = wszystkie ciasteczka między witrynami
 content-blocking-cryptominers = elementy używające komputera użytkownika do generowania kryptowalut
 content-blocking-fingerprinters = elementy śledzące przez zbieranie informacji o konfiguracji
 # "Test pilot" is used as a verb. Possible alternatives:
@@ -993,6 +1059,9 @@ content-blocking-fingerprinters = elementy śledzące przez zbieranie informacji
 content-blocking-etp-standard-tcp-rollout-checkbox =
     .label = Przetestuj naszą najpotężniejszą funkcję ochrony prywatności w historii
     .accesskey = P
+
+# The tcp-rollout strings are no longer used for the rollout but for tcp-by-default in the standard section
+
 # "Contains" here means "isolates", "limits".
 content-blocking-etp-standard-tcp-rollout-description = Całkowita ochrona ciasteczek ogranicza ciasteczka do odwiedzanej witryny, więc elementy śledzące nie mogą ich używać do śledzenia Cię między witrynami.
 content-blocking-etp-standard-tcp-rollout-learn-more = Więcej informacji
@@ -1054,6 +1123,11 @@ permissions-microphone = Mikrofon
 permissions-microphone-settings =
     .label = Ustawienia…
     .accesskey = w
+# Short form for "the act of choosing sound output devices and redirecting audio to the chosen devices".
+permissions-speaker = Wybór głośników
+permissions-speaker-settings =
+    .label = Ustawienia…
+    .accesskey = i
 permissions-notification = Powiadomienia.
 permissions-notification-settings =
     .label = Ustawienia…
@@ -1090,12 +1164,12 @@ collection-privacy-notice = Prywatność
 collection-health-report-telemetry-disabled = { -vendor-short-name } nie ma już zezwolenia na zbieranie danych technicznych i o interakcjach z przeglądarką. Wszystkie wcześniej zebrane dane zostaną usunięte w ciągu 30 dni.
 collection-health-report-telemetry-disabled-link = Więcej informacji
 collection-health-report =
-    .label = Przesyłanie do organizacji { -vendor-short-name } danych technicznych i o interakcjach z przeglądarką { -brand-short-name }.
+    .label = Przesyłanie do { -vendor-short-name(case: "gen") } danych technicznych i o interakcjach z przeglądarką { -brand-short-name }.
     .accesskey = z
 collection-health-report-link = Więcej informacji
 collection-studies =
     .label = Instalowanie i przeprowadzanie badań przez przeglądarkę { -brand-short-name }.
-collection-studies-link = Wyświetl badania przeglądarki { -brand-short-name }
+collection-studies-link = Wyświetl badania { -brand-short-name(case: "gen") }
 addon-recommendations =
     .label = Personalizowane polecenia rozszerzeń przez przeglądarkę { -brand-short-name }.
 addon-recommendations-link = Więcej informacji

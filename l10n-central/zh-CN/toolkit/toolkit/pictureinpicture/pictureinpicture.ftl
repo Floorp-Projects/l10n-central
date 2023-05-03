@@ -19,42 +19,46 @@ pictureinpicture-close =
 ## Variables:
 ##   $shortcut (String) - Keyboard shortcut to execute the command.
 
-pictureinpicture-pause-cmd =
+pictureinpicture-pause-btn =
     .aria-label = 暂停
-    .title = 暂停（空格键）
-pictureinpicture-play-cmd =
+    .tooltip = 暂停（空格键）
+pictureinpicture-play-btn =
     .aria-label = 播放
-    .title = 播放（空格键）
-pictureinpicture-mute-cmd =
+    .tooltip = 播放（空格键）
+pictureinpicture-mute-btn =
     .aria-label = 静音
-    .title = 静音（{ $shortcut }）
-pictureinpicture-unmute-cmd =
+    .tooltip = 静音（{ $shortcut }）
+pictureinpicture-unmute-btn =
     .aria-label = 取消静音
-    .title = 取消静音（{ $shortcut }）
-pictureinpicture-unpip-cmd =
+    .tooltip = 取消静音（{ $shortcut }）
+pictureinpicture-unpip-btn =
     .aria-label = 切回标签页
-    .title = 切回标签页
-pictureinpicture-close-cmd =
+    .tooltip = 切回标签页
+pictureinpicture-close-btn =
     .aria-label = 关闭
-    .title = 关闭（{ $shortcut }）
-pictureinpicture-subtitles-cmd =
+    .tooltip = 关闭（{ $shortcut }）
+pictureinpicture-subtitles-btn =
     .aria-label = 字幕
-    .title = 字幕
+    .tooltip = 字幕
 
 ##
 
-pictureinpicture-fullscreen-cmd =
+pictureinpicture-fullscreen-btn =
     .aria-label = 全屏
-    .title = 全屏（双击）
-pictureinpicture-exit-fullscreen-cmd =
+    .tooltip = 全屏（双击）
+pictureinpicture-exit-fullscreen-btn =
     .aria-label = 退出全屏
-    .title = 退出全屏（双击）
-pictureinpicture-seekbackward-cmd =
+    .tooltip = 退出全屏（双击）
+pictureinpicture-seekbackward-btn =
     .aria-label = 快退
-    .title = 快退（←）
-pictureinpicture-seekforward-cmd =
+    .tooltip = 快退（←）
+pictureinpicture-seekforward-btn =
     .aria-label = 快进
-    .title = 快进（→）
+    .tooltip = 快进（→）
+# This string is never displayed on the window. Is intended to be announced by
+# a screen reader whenever a user opens the subtitles settings panel
+# after selecting the subtitles button.
+pictureinpicture-subtitles-panel-accessible = 字幕设置
 pictureinpicture-subtitles-label = 字幕
 pictureinpicture-font-size-label = 字号
 pictureinpicture-font-size-small = 小

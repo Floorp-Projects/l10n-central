@@ -6,6 +6,10 @@ profiledowngrade-window =
     .title = { -brand-product-name } 이전 버전을 사용 중입니다
     .style = width: 490px;
 
+profiledowngrade-window2 =
+    .title = { -brand-product-name } 이전 버전을 사용 중입니다
+    .style = min-width: 490px;
+
 profiledowngrade-window-create =
     .label = 새 프로필 만들기
 

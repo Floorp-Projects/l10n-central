@@ -241,8 +241,6 @@ newtab-pocket-pocket-firefox-family = { -pocket-brand-name } è parte della fami
 # A save to Pocket button that shows over the card thumbnail on hover.
 newtab-pocket-save-to-pocket = Salva in { -pocket-brand-name }
 newtab-pocket-saved-to-pocket = Salvato in { -pocket-brand-name }
-newtab-pocket-save = Salva
-newtab-pocket-saved = Salvato
 
 # This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
 newtab-pocket-load-more-stories-button = Carica altre storie
@@ -254,6 +252,14 @@ newtab-pocket-last-card-title = Non c’è altro.
 newtab-pocket-last-card-desc = Controlla più tardi per nuovi contenuti.
 newtab-pocket-last-card-image =
     .alt = Non c’è altro.
+
+newtab-pocket-save = Salva
+newtab-pocket-saved = Salvato
+
+## Pocket content onboarding experience dialog and modal for new users seeing the Pocket section for the first time, shown as the first item in the Pocket section.
+
+newtab-pocket-onboarding-discover = Scopri il meglio del Web
+newtab-pocket-onboarding-cta = { -pocket-brand-name } esplora un’ampia gamma di pubblicazioni per portare i contenuti più istruttivi, stimolanti e affidabili direttamente nel tuo { -brand-product-name }.
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.

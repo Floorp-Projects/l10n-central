@@ -6,6 +6,10 @@ translation-window =
     .title = ข้อยกเว้น - การแปล
     .style = width: 36em
 
+translation-window2 =
+    .title = ข้อยกเว้น - การแปล
+    .style = min-width: 36em
+
 translation-close-key =
     .key = w
 

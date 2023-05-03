@@ -155,10 +155,6 @@ spotlight-total-cookie-protection-body = La protección total contra las cookies
 spotlight-total-cookie-protection-expanded = { -brand-short-name } construye una valla alrededor de las cookies y las limita al sitio en el que se encuentra para que los rastreadores no puedan usarlas para seguirle. Con el acceso anticipado, ayudará a optimizar esta función para que podamos seguir construyendo una web mejor para todos.
 spotlight-total-cookie-protection-primary-button = Activar la protección total contra las cookies
 spotlight-total-cookie-protection-secondary-button = Ahora no
-cfr-total-cookie-protection-header = Gracias a usted, { -brand-short-name } es más privado y seguro que nunca
-# "Early access" for this feature rollout means it's a "feature preview" or
-# "soft launch". Only those who received it and accepted are shown this message.
-cfr-total-cookie-protection-body = La protección total contra cookies es nuestra protección de privacidad más robusta hasta la fecha y ahora es el ajuste predeterminado para los usuarios de { -brand-short-name }. No podríamos haberlo logrado sin participantes de acceso anticipado como usted. Por lo que le agradecemos su ayuda para crear un internet mejor y más privado.
 
 ## Emotive Continuous Onboarding
 
@@ -172,3 +168,83 @@ spotlight-pin-primary-button =
        *[other] Fijar a la barra de tareas
     }
 spotlight-pin-secondary-button = Ahora no
+
+## MR2022 Background Update Windows native toast notification strings.
+##
+## These strings will be displayed by the Windows operating system in
+## a native toast, like:
+##
+## <b>multi-line title</b>
+## multi-line text
+## <img>
+## [ primary button ] [ secondary button ]
+##
+## The button labels are fitted into narrow fixed-width buttons by
+## Windows and therefore must be as narrow as possible.
+
+mr2022-background-update-toast-title = Nuevo { -brand-short-name }. Más privado. Menos rastreadores. Sin compromisos.
+mr2022-background-update-toast-text = Pruebe el { -brand-short-name } más nuevo ahora, actualizado con nuestra protección contra el rastreo más potente hasta el momento.
+# This button label will be fitted into a narrow fixed-width button by
+# Windows. Try to not exceed the width of the English text (compare it
+# using a variable font like Arial): the button can only fit 1-2
+# additional characters, exceeding characters will be truncated.
+mr2022-background-update-toast-primary-button-label = Abrir { -brand-shorter-name } ahora
+# This button label will be fitted into a narrow fixed-width button by
+# Windows. Try to not exceed the width of the English text (compare it using a
+# variable font like Arial): the button can only fit 1-2 additional characters,
+# exceeding characters will be truncated.
+mr2022-background-update-toast-secondary-button-label = Recordármelo más tarde
+
+## Firefox View CFR
+
+firefoxview-cfr-primarybutton = Inténtelo
+    .accesskey = t
+firefoxview-cfr-secondarybutton = Ahora no
+    .accesskey = n
+firefoxview-cfr-header-v2 = Continúe rápidamente desde donde lo dejó.
+firefoxview-cfr-body-v2 = Recupere las pestañas cerradas recientemente y pase rápidamente entre dispositivos con { -firefoxview-brand-name }.
+
+## Firefox View Spotlight
+
+firefoxview-spotlight-promo-title = Salude a { -firefoxview-brand-name }
+# “Poof” refers to the expression to convey when something or someone suddenly disappears, or in this case, reappears. For example, “Poof, it’s gone.”
+firefoxview-spotlight-promo-subtitle = ¿Quiere esa pestaña abierta en su teléfono? Recupérela al vuelo. ¿Necesita ese sitio que acaba de visitar? Está en { -firefoxview-brand-name }.
+firefoxview-spotlight-promo-primarybutton = Ver cómo funciona
+firefoxview-spotlight-promo-secondarybutton = Saltar
+
+## Colorways expiry reminder CFR
+
+colorways-cfr-primarybutton = Elegir combinación de colores
+    .accesskey = c
+# "shades" refers to the different color options available to users in colorways.
+colorways-cfr-body = Coloree su navegador con los tonos exclusivos de { -brand-short-name } inspirados en voces que cambiaron la cultura.
+colorways-cfr-header-28days = Las combinaciones de colores de Independent Voices dejarán de estar disponibles el 16 de enero
+colorways-cfr-header-14days = Las combinaciones de colores de Independent Voices dejarán de estar disponibles en dos semanas
+colorways-cfr-header-7days = Las combinaciones de colores de Independent Voices dejarán de estar disponibles esta semana
+colorways-cfr-header-today = Las combinaciones de colores de Independent Voices dejarán de estar disponibles hoy
+
+## Cookie Banner Handling CFR
+
+cfr-cbh-header = ¿Permitir que { -brand-short-name } rechace los avisos de cookies?
+cfr-cbh-body = { -brand-short-name } puede rechazar automáticamente muchas solicitudes de avisos de cookies.
+cfr-cbh-confirm-button = Rechazar los avisos de cookies
+    .accesskey = R
+cfr-cbh-dismiss-button = Ahora no
+    .accesskey = n
+
+## These strings are used in the Fox doodle Pin/set default spotlights
+
+july-jam-headline = Siempre de tu parte
+july-jam-body = Cada mes, { -brand-short-name } bloquea un promedio de más de 3.000 rastreadores por usuario, lo que le brinda un acceso rápido y seguro a Internet.
+july-jam-set-default-primary = Abrir mis enlaces con { -brand-short-name }
+fox-doodle-pin-headline = Te damos de nuevo la bienvenida
+# “indie” is short for the term “independent”.
+# In this instance, free from outside influence or control.
+fox-doodle-pin-body = Un recordatorio rápido de que puede mantener su navegador independiente favorito a solo un clic de distancia.
+fox-doodle-pin-primary = Abrir mis enlaces con { -brand-short-name }
+fox-doodle-pin-secondary = Ahora no
+
+## These strings are used in the Set Firefox as Default PDF Handler for Existing Users experiment
+
+set-default-pdf-handler-headline = <strong>Los PDFs ahora se abren en { -brand-short-name }.</strong> Se pueden editar o firmar formularios directamente en el navegador. Para cambiarlo, busque “PDF” en los ajustes.
+set-default-pdf-handler-primary = Entendido

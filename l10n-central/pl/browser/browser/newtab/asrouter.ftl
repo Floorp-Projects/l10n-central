@@ -122,8 +122,8 @@ cfr-doorhanger-fission-secondary-button = Więcej informacji
 
 ## Full Video Support CFR message
 
-cfr-doorhanger-video-support-body = Filmy na tej witrynie mogą nie być poprawnie odtwarzane w tej wersji przeglądarki { -brand-short-name }. Zaktualizuj ją, aby móc oglądać filmy.
-cfr-doorhanger-video-support-header = Zaktualizuj przeglądarkę { -brand-short-name }, aby odtwarzać filmy
+cfr-doorhanger-video-support-body = Filmy na tej witrynie mogą nie być poprawnie odtwarzane w tej wersji { -brand-short-name(case: "gen") }. Zaktualizuj go, aby móc oglądać filmy.
+cfr-doorhanger-video-support-header = Zaktualizuj { -brand-short-name(case: "acc") }, aby odtwarzać filmy
 cfr-doorhanger-video-support-primary-button = Aktualizuj teraz
     .accesskey = k
 
@@ -161,15 +161,11 @@ spotlight-total-cookie-protection-body = Całkowita ochrona ciasteczek uniemożl
 spotlight-total-cookie-protection-expanded = { -brand-short-name } buduje płot wokół ciasteczek, ograniczając je do odwiedzanej witryny, aby elementy śledzące nie mogły ich używać do śledzenia Cię. Włączając tę funkcję przed innymi pomożesz ją zoptymalizować, abyśmy mogli kontynuować tworzenie lepszego Internetu dla wszystkich.
 spotlight-total-cookie-protection-primary-button = Włącz całkowitą ochronę ciasteczek
 spotlight-total-cookie-protection-secondary-button = Nie teraz
-cfr-total-cookie-protection-header = Dzięki Tobie { -brand-short-name } jest teraz bardziej prywatny i bezpieczny niż kiedykolwiek
-# "Early access" for this feature rollout means it's a "feature preview" or
-# "soft launch". Only those who received it and accepted are shown this message.
-cfr-total-cookie-protection-body = Całkowita ochrona ciasteczek to jak dotąd nasza najsilniejsza funkcja ochrony prywatności – i jest teraz domyślnie włączona dla użytkowników przeglądarki { -brand-short-name } na całym świecie. Nie moglibyśmy tego osiągnąć bez uczestników testów takich jak Ty. Dziękujemy za pomoc w tworzeniu lepszego, bardziej prywatnego Internetu.
 
 ## Emotive Continuous Onboarding
 
 spotlight-better-internet-header = Lepszy Internet zaczyna się od Ciebie
-spotlight-better-internet-body = Kiedy używasz przeglądarki { -brand-short-name }, głosujesz na otwarty i dostępny Internet, który jest lepszy dla wszystkich.
+spotlight-better-internet-body = Kiedy używasz { -brand-short-name(case: "gen") }, głosujesz na otwarty i dostępny Internet, który jest lepszy dla wszystkich.
 spotlight-peace-mind-header = Możesz na nas liczyć
 spotlight-peace-mind-body = Każdego miesiąca { -brand-short-name } blokuje średnio ponad 3000 elementów śledzących na użytkownika. Ponieważ nic, zwłaszcza psujące prywatność elementy śledzące, nie powinno stać między Tobą a dobrym Internetem.
 spotlight-pin-primary-button =
@@ -178,3 +174,96 @@ spotlight-pin-primary-button =
        *[other] Przypnij do paska zadań
     }
 spotlight-pin-secondary-button = Nie teraz
+
+## MR2022 Background Update Windows native toast notification strings.
+##
+## These strings will be displayed by the Windows operating system in
+## a native toast, like:
+##
+## <b>multi-line title</b>
+## multi-line text
+## <img>
+## [ primary button ] [ secondary button ]
+##
+## The button labels are fitted into narrow fixed-width buttons by
+## Windows and therefore must be as narrow as possible.
+
+mr2022-background-update-toast-title = Nowy { -brand-short-name }. Bardziej prywatny. Mniej śledzenia. Bez wyjątków.
+mr2022-background-update-toast-text = Już teraz wypróbuj najnowszego { -brand-short-name(case: "acc") }, zaktualizowanego o naszą najsilniejszą ochronę przed śledzeniem w historii.
+# This button label will be fitted into a narrow fixed-width button by
+# Windows. Try to not exceed the width of the English text (compare it
+# using a variable font like Arial): the button can only fit 1-2
+# additional characters, exceeding characters will be truncated.
+mr2022-background-update-toast-primary-button-label = Uruchom { -brand-shorter-name(case: "acc") }
+# This button label will be fitted into a narrow fixed-width button by
+# Windows. Try to not exceed the width of the English text (compare it using a
+# variable font like Arial): the button can only fit 1-2 additional characters,
+# exceeding characters will be truncated.
+mr2022-background-update-toast-secondary-button-label = Przypomnij później
+
+## Firefox View CFR
+
+firefoxview-cfr-primarybutton = Wypróbuj
+    .accesskey = W
+firefoxview-cfr-secondarybutton = Nie teraz
+    .accesskey = N
+firefoxview-cfr-header-v2 = Szybko kontynuuj od tego samego miejsca
+firefoxview-cfr-body-v2 = Odzyskaj ostatnio zamknięte karty i płynnie przechodź z urządzenia na urządzenie za pomocą { -firefoxview-brand-name(case: "gen", capitalization: "lower") }
+
+## Firefox View Spotlight
+
+firefoxview-spotlight-promo-title = Poznaj { -firefoxview-brand-name(case: "acc", capitalization: "lower") }
+# “Poof” refers to the expression to convey when something or someone suddenly disappears, or in this case, reappears. For example, “Poof, it’s gone.”
+firefoxview-spotlight-promo-subtitle = Potrzebujesz karty otwartej na telefonie? Otwórz ją tutaj. Chcesz wrócić do zamkniętej przed chwilą strony? { -firefoxview-brand-name } już ją ma.
+firefoxview-spotlight-promo-primarybutton = Zobacz, jak to działa
+firefoxview-spotlight-promo-secondarybutton = Pomiń
+
+## Colorways expiry reminder CFR
+
+colorways-cfr-primarybutton = Wybierz kolorystykę
+    .accesskey = W
+# "shades" refers to the different color options available to users in colorways.
+colorways-cfr-body = Pokoloruj swoją przeglądarkę odcieniami zainspirowanymi głosami, które zmieniły kulturę. Wyłącznie w { -brand-short-name(case: "loc") }.
+colorways-cfr-header-28days = Kolorystyki „Niezależne głosy” wygasają 16 stycznia
+colorways-cfr-header-14days = Kolorystyki „Niezależne głosy” wygasają za dwa tygodnie
+colorways-cfr-header-7days = Kolorystyki „Niezależne głosy” wygasają w tym tygodniu
+colorways-cfr-header-today = Kolorystyki „Niezależne głosy” wygasają dzisiaj
+
+## Cookie Banner Handling CFR
+
+# Alternate headline for localization: "See fewer cookie requests"
+cfr-cookiebanner-header = Koniec z komunikatami o ciasteczkach!
+cfr-cookiebanner-body = Pozwól { -brand-short-name(case: "dat") } automatycznie odrzucać wszystkie prośby o akceptację ciasteczek, kiedy to możliwe.
+cfr-cookiebanner-accept-button-v2 = Odrzucaj prośby
+    .accesskey = O
+cfr-cookiebanner-reject-button = Nie teraz
+    .accesskey = N
+cfr-cookiebanner-header-variant-1 = Zmniejsz liczbę komunikatów o ciasteczkach
+cfr-cookiebanner-body-variant-1 = Pozwól { -brand-short-name(case: "dat") } automatycznie odpowiadać na komunikaty o ciasteczkach, aby nie odrywać się od przeglądania. { -brand-short-name } odrzuci wszystkie prośby, jeśli to możliwe.
+cfr-cookiebanner-accept-button-variant-1 = Odrzucaj komunikaty o ciasteczkach
+    .accesskey = O
+cfr-cookiebanner-reject-button-variant-1 = Nie, dziękuję
+    .accesskey = N
+cfr-cookiebanner-header-variant-2 = Ograniczanie informacji o ciasteczkach
+cfr-cookiebanner-body-variant-2 = Zmniejsz liczbę wyświetlanych na stronach próśb o akceptację ciasteczek, pozwalając { -brand-short-name(case: "dat") } odrzucać je, jeśli to możliwe.
+cfr-cookiebanner-accept-button-variant-2 = Pozwól
+    .accesskey = P
+cfr-cookiebanner-reject-button-variant-2 = Nie teraz
+    .accesskey = N
+cfr-cbh-header = Pozwolić { -brand-short-name(case: "dat") } odrzucać prośby o akceptację ciasteczek?
+cfr-cbh-body = { -brand-short-name } może automatycznie odrzucać wiele próśb o akceptację ciasteczek.
+cfr-cbh-confirm-button = Odrzucaj prośby o akceptację ciasteczek
+    .accesskey = O
+cfr-cbh-dismiss-button = Nie teraz
+    .accesskey = N
+
+## These strings are used in the Fox doodle Pin/set default spotlights
+
+july-jam-headline = Możesz na nas liczyć
+july-jam-body = Każdego miesiąca { -brand-short-name } blokuje średnio ponad 3000 elementów śledzących na użytkownika, zapewniając bezpieczny i szybki dostęp do dobrego Internetu.
+july-jam-set-default-primary = Otwieraj odnośniki w { -brand-short-name(case: "loc") }
+
+## These strings are used in the Set Firefox as Default PDF Handler for Existing Users experiment
+
+set-default-pdf-handler-headline = <strong>Dokumenty PDF są teraz otwierane w { -brand-short-name(case: "loc") }.</strong> Edytuj i podpisuj formularze bez wychodzenia z przeglądarki. Aby to zmienić, wyszukaj „PDF” w ustawieniach.
+set-default-pdf-handler-primary = OK

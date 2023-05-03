@@ -76,7 +76,9 @@ browser-main-window-mac-window-titles =
 # This should match the `data-title-default` attribute in both
 # `browser-main-window` and `browser-main-window-mac`.
 browser-main-window-title = { -brand-full-name }
-private-browsing-shortcut-text = { -brand-short-name } Privat surfning
+# The non-variable portion of this MUST match the translation of
+# "PRIVATE_BROWSING_SHORTCUT_TITLE" in custom.properties
+private-browsing-shortcut-text-2 = { -brand-shortcut-name } Privat surfning
 
 ##
 
@@ -134,11 +136,23 @@ urlbar-addons-notification-anchor =
 urlbar-tip-help-icon =
     .title = Få hjälp
 urlbar-search-tips-confirm = Ok, jag förstår
+urlbar-search-tips-confirm-short = Jag förstår
 # Read out before Urlbar Tip text content so screenreader users know the
 # subsequent text is a tip offered by the browser. It should end in a colon or
 # localized equivalent.
 urlbar-tip-icon-description =
     .alt = Tips:
+urlbar-result-menu-button =
+    .title = Öppna meny
+urlbar-result-menu-learn-more =
+    .label = Läs mer
+    .accesskey = L
+urlbar-result-menu-remove-from-history =
+    .label = Ta bort från historik
+    .accesskey = T
+urlbar-result-menu-tip-get-help =
+    .label = Få hjälp
+    .accesskey = h
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -147,6 +161,8 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Skriv mindre, hitta mer: Sök med { $engineName } direkt från ditt adressfält.
 urlbar-search-tips-redirect-2 = Starta din sökning i adressfältet för att se förslag från { $engineName } och din surfhistorik.
+# Make sure to match the name of the Search panel in settings.
+urlbar-search-tips-persist = Det har blivit enklare att söka. Försök att göra din sökning mer specifik här i adressfältet. För att visa webbadressen istället, besök Sök i inställningarna.
 # Prompts users to use the Urlbar when they are typing in the domain of a
 # search engine, e.g. google.com or amazon.com.
 urlbar-tabtosearch-onboard = Välj den här genvägen för att hitta det du behöver snabbare.
@@ -267,42 +283,38 @@ search-one-offs-actions =
     .tooltiptext = Åtgärder ({ $restrict })
 
 ## QuickActions are shown in the urlbar as the user types a matching string
-
-
-## QuickActions are shown in the urlbar as the user types a matching string
 ## The -cmd- strings are comma separated list of keywords that will match
 ## the action.
 
 # Opens the about:addons page in the home / recommendations section
 quickactions-addons = Visa tillägg
-quickactions-cmd-addons = tillägg, teman
 quickactions-cmd-addons2 = tillägg
 # Opens the bookmarks library window
-quickactions-bookmarks = Visa bokmärken
+quickactions-bookmarks2 = Hantera bokmärken
 quickactions-cmd-bookmarks = bokmärken
 # Opens a SUMO article explaining how to clear history
 quickactions-clearhistory = Rensa historik
 quickactions-cmd-clearhistory = rensa historik
 # Opens about:downloads page
-quickactions-downloads = Öppna hämtningar
+quickactions-downloads2 = Visa nedladdningar
 quickactions-cmd-downloads = hämtningar
 # Opens about:addons page in the extensions section
 quickactions-extensions = Hantera tillägg
 quickactions-cmd-extensions = tillägg
 # Opens the devtools web inspector
-quickactions-inspector = Öppna inspektör
+quickactions-inspector2 = Öppna utvecklarverktyg
 quickactions-cmd-inspector = inspektör, utvecklarverktyg
 # Opens about:logins
-quickactions-logins = Visa inloggningar
+quickactions-logins2 = Hantera lösenord
 quickactions-cmd-logins = inloggningar, lösenord
 # Opens about:addons page in the plugins section
 quickactions-plugins = Hantera insticksmoduler
 quickactions-cmd-plugins = insticksmoduler
 # Opens the print dialog
-quickactions-print = Skriv ut
+quickactions-print2 = Skriv ut sida
 quickactions-cmd-print = skriva ut
 # Opens a new private browsing window
-quickactions-private = Öppna fönstret för privat surfning
+quickactions-private2 = Öppna privat fönster
 quickactions-cmd-private = privat surfning
 # Opens a SUMO article explaining how to refresh
 quickactions-refresh = Återställ { -brand-short-name }
@@ -311,10 +323,10 @@ quickactions-cmd-refresh = uppdatera
 quickactions-restart = Starta om { -brand-short-name }
 quickactions-cmd-restart = omstart
 # Opens the screenshot tool
-quickactions-screenshot2 = Ta en skärmbild
+quickactions-screenshot3 = Ta en skärmdump
 quickactions-cmd-screenshot = skärmbild
 # Opens about:preferences
-quickactions-settings = Öppna inställningar
+quickactions-settings2 = Hantera inställningar
 quickactions-cmd-settings = inställningar, alternativ
 # Opens about:addons page in the themes section
 quickactions-themes = Hantera teman
@@ -323,8 +335,11 @@ quickactions-cmd-themes = teman
 quickactions-update = Uppdatera { -brand-short-name }
 quickactions-cmd-update = uppdatera
 # Opens the view-source UI with current pages source
-quickactions-viewsource = Visa källa
+quickactions-viewsource2 = Visa källkod
 quickactions-cmd-viewsource = visa källa, källa
+# Tooltip text for the help button shown in the result.
+quickactions-learn-more =
+    .title = Läs mer om snabbåtgärder
 
 ## Bookmark Panel
 
@@ -395,6 +410,7 @@ identity-connection-not-secure-security-view = Du är inte säkert ansluten till
 identity-connection-verified = Du är säkert ansluten till den här webbplatsen.
 identity-ev-owner-label = Certifikat utfärdat till:
 identity-description-custom-root = Mozilla känner inte igen denna certifikatutgivare. Den kan ha lagts till från ditt operativsystem eller av en administratör. <label data-l10n-name="link">Lär dig mer</label>
+identity-description-custom-root2 = Mozilla känner inte igen denna certifikatutgivare. Den kan ha lagts till från ditt operativsystem eller av en administratör.
 identity-remove-cert-exception =
     .label = Ta bort undantag
     .accesskey = R
@@ -403,9 +419,12 @@ identity-description-insecure-login-forms = Inloggningsinformation du anger på 
 identity-description-weak-cipher-intro = Din anslutning till den här webbsidan använder en svag kryptering och är inte privat.
 identity-description-weak-cipher-risk = Andra personer kan se din information eller ändra webbplatsens beteende.
 identity-description-active-blocked = { -brand-short-name } har blockerat några osäkra komponenter på sidan. <label data-l10n-name="link">Lär dig mer</label>
+identity-description-active-blocked2 = { -brand-short-name } har blockerat några osäkra komponenter på sidan.
 identity-description-passive-loaded = Anslutningen till denna webbplats är inte privat och andra personer kan se din information.
 identity-description-passive-loaded-insecure = Den här webbplatsen har innehåll som inte är säkert (t.ex. bilder). <label data-l10n-name="link">Lär dig mer</label>
 identity-description-passive-loaded-mixed = { -brand-short-name } har blockerat några osäkra komponenter på sidan, men det finns fortfarande osäkra komponenter (såsom bilder). <label data-l10n-name="link">Lär dig mer</label>
+identity-description-passive-loaded-insecure2 = Den här webbplatsen har innehåll som inte är säkert (t.ex. bilder).
+identity-description-passive-loaded-mixed2 = { -brand-short-name } har blockerat några osäkra komponenter på sidan, men det finns fortfarande osäkra komponenter (såsom bilder).
 identity-description-active-loaded = Den här webbplatsen innehåller material som inte är säkra (såsom skript) och din anslutning till det är inte privat.
 identity-description-active-loaded-insecure = Information du delar med den här webbplatsen kan ses av andra (som lösenord, meddelanden, kreditkort, etc.).
 identity-learn-more =
@@ -482,6 +501,9 @@ popup-select-microphone-icon =
     .tooltiptext = Mikrofon
 popup-select-speaker-icon =
     .tooltiptext = Ljudenhet
+popup-select-window-or-screen =
+    .label = Fönster eller skärm:
+    .accesskey = F
 popup-all-windows-shared = Alla synliga fönster på din skärm kommer att delas.
 popup-screen-sharing-block =
     .label = Blockera
@@ -503,6 +525,7 @@ sharing-warning-disable-for-session =
 ## DevTools F12 popup
 
 enable-devtools-popup-description = För att använda tangentbordskommandot F12, öppnar du först DevTools i Webbutvecklare-menyn.
+enable-devtools-popup-description2 = För att använda F12-genvägen, öppna först DevTools via menyn Webbläsarverktyg.
 
 ## URL Bar
 
@@ -635,6 +658,24 @@ urlbar-group-search-suggestions =
 urlbar-group-quickactions =
     .label = Snabbåtgärder
 
+## Reader View toolbar buttons
+
+# This should match menu-view-enter-readerview in menubar.ftl
+reader-view-enter-button =
+    .aria-label = Öppna läsarvy
+# This should match menu-view-close-readerview in menubar.ftl
+reader-view-close-button =
+    .aria-label = Stäng läsarvy
+
+## Picture-in-Picture urlbar button
+## Variables:
+##   $shortcut (String) - Keyboard shortcut to execute the command.
+
+picture-in-picture-urlbar-button-open =
+    .tooltiptext = Öppna bild-i-bild ({ $shortcut })
+picture-in-picture-urlbar-button-close =
+    .tooltiptext = Stäng bild-i-bild ({ $shortcut })
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -679,6 +720,11 @@ bookmarks-other-bookmarks-menu =
     .label = Andra bokmärken
 bookmarks-mobile-bookmarks-menu =
     .label = Mobila bokmärken
+
+## Variables:
+##   $isVisible (boolean): if the specific element (e.g. bookmarks sidebar,
+##                         bookmarks toolbar, etc.) is visible or not.
+
 bookmarks-tools-sidebar-visibility =
     .label =
         { $isVisible ->
@@ -703,6 +749,9 @@ bookmarks-tools-menu-button-visibility =
             [true] Ta bort bokmärkesmeny från verktygsfältet
            *[other] Lägg till bokmärkesmeny till verktygsfältet
         }
+
+##
+
 bookmarks-search =
     .label = Sök bokmärken
 bookmarks-tools =
@@ -772,6 +821,9 @@ toolbar-overflow-customize-button =
 toolbar-button-email-link =
     .label = E-posta länk
     .tooltiptext = Mejla en länk till denna sidan
+toolbar-button-logins =
+    .label = Lösenord
+    .tooltiptext = Visa och hantera dina sparade lösenord
 # Variables:
 #  $shortcut (String): keyboard shortcut to save a copy of the page
 toolbar-button-save-page =
@@ -911,3 +963,33 @@ private-browsing-indicator-label = Privat surfning
 unified-extensions-button =
     .label = Tillägg
     .tooltiptext = Tillägg
+
+## Unified extensions button when permission(s) are needed.
+## Note that the new line is intentionally part of the tooltip.
+
+unified-extensions-button-permissions-needed =
+    .label = Tillägg
+    .tooltiptext =
+        Tillägg
+        Behörigheter behövs
+
+## Autorefresh blocker
+
+refresh-blocked-refresh-label = { -brand-short-name } har förhindrat att den här sidan uppdateras automatiskt.
+refresh-blocked-redirect-label = { -brand-short-name } har förhindrat att den här sidan automatiskt styr om till en annan sida.
+refresh-blocked-allow =
+    .label = Tillåt
+    .accesskey = T
+
+## Firefox Relay integration
+
+firefox-relay-offer-why-relay = { -relay-brand-name } maskerar din riktiga e-postadress för att skydda dig från dataintrång och spam.
+firefox-relay-offer-how-we-integrate = Genom att fortsätta kommer du att kunna generera nya { -relay-brand-short-name } e-postalias direkt från din lösenordshanterare för { -brand-shorter-name }.
+# Variables:
+#  $sitename (String): name of the site where user enters their Relay mask
+#  $useremail (String): user email that will receive messages
+firefox-relay-offer-what-relay-does = Vi vidarebefordrar alla e-postmeddelanden från <strong>{ $sitename }</strong> till <strong>{ $useremail }</strong>.
+
+## Popup Notification
+
+popup-notification-xpinstall-prompt-learn-more = Läs mer om hur du installerar tillägg säkert

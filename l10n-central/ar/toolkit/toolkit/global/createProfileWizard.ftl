@@ -6,12 +6,22 @@ create-profile-window =
     .title = مُرشِد إنشاء ملفّ شخصي
     .style = width: 45em; height: 32em;
 
+create-profile-window2 =
+    .title = مُرشِد إنشاء ملفّ شخصي
+    .style = min-width: 45em; min-height: 32em;
+
 ## First wizard page
 
 create-profile-first-page-header =
     { PLATFORM() ->
         [macos] مقدّمة
        *[other] مرحبًا في { create-profile-window.title }
+    }
+
+create-profile-first-page-header2 =
+    { PLATFORM() ->
+        [macos] مقدّمة
+       *[other] مرحبًا في { create-profile-window2.title }
     }
 
 profile-creation-explanation-1 = يخزن { -brand-short-name } معلومات عن إعداداتك و تفضيلاتك في ملفّك الشّخصي.
@@ -32,6 +42,12 @@ create-profile-last-page-header =
     { PLATFORM() ->
         [macos] خاتمة
        *[other] إكمال { create-profile-window.title }
+    }
+
+create-profile-last-page-header2 =
+    { PLATFORM() ->
+        [macos] خاتمة
+       *[other] إكمال { create-profile-window2.title }
     }
 
 profile-creation-intro = إذا أنشأت عدّة ملفّات شخصيّة، يمكنك التّمييز بينها من خلال اسم الملفّ الشّخصي. يمكنك استخدام الاسم المزود هنا أو اسم من عندك.

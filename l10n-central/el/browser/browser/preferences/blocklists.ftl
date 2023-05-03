@@ -6,6 +6,10 @@ blocklist-window =
     .title = Λίστες αποκλεισμού
     .style = width: 55em
 
+blocklist-window2 =
+    .title = Λίστες αποκλεισμού
+    .style = min-width: 55em
+
 blocklist-description = Επιλέξτε τη λίστα που χρησιμοποιεί το { -brand-short-name } για να αποκλείσει διαδικτυακούς ιχνηλάτες. Οι λίστες παρέχονται από το <a data-l10n-name="disconnect-link" title="Disconnect">Disconnect</a>.
 blocklist-close-key =
     .key = w

@@ -180,6 +180,17 @@ menu-view-full-screen =
     .label = 全螢幕
     .accesskey = F
 
+## These menu items may use the same accesskey.
+
+# This should match reader-view-enter-button in browser.ftl
+menu-view-enter-readerview =
+    .label = 進入閱讀模式
+    .accesskey = R
+# This should match reader-view-close-button in browser.ftl
+menu-view-close-readerview =
+    .label = 關閉閱讀模式
+    .accesskey = R
+
 ##
 
 menu-view-show-all-tabs =

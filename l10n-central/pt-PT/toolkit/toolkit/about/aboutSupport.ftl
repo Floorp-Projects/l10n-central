@@ -110,11 +110,21 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Registo de decisões
 graphics-crash-guards-title = Funcionalidades desativadas do Crash Guard
 graphics-workarounds-title = Alternativas
+graphics-device-pixel-ratios = Proporções de Píxeis da Janela do Dispositivo
 # Windowing system in use on Linux (e.g. X11, Wayland).
 graphics-window-protocol = Protocolo de janela
 # Desktop environment in use on Linux (e.g. GNOME, KDE, XFCE, etc).
 graphics-desktop-environment = Ambiente gráfico
 place-database-title = Base de dados de locais
+place-database-stats = Estatísticas
+place-database-stats-show = Mostrar estatísticas
+place-database-stats-hide = Ocultar estatísticas
+place-database-stats-entity = Entidade
+place-database-stats-count = Contagem
+place-database-stats-size-kib = Tamanho (KiB)
+place-database-stats-size-perc = Tamanho (%)
+place-database-stats-efficiency-perc = Eficiência (%)
+place-database-stats-sequentiality-perc = Sequencialidade (%)
 place-database-integrity = Integridade
 place-database-verify-integrity = Verificar integridade
 a11y-title = Acessibilidade
@@ -278,6 +288,8 @@ webgl2-renderer = Renderizador do controlador WebGL 2
 webgl2-version = Versão do controlador WebGL 2
 webgl2-driver-extensions = Extensões do controlador WebGL 2
 webgl2-extensions = Extensões WebGL 2
+webgpu-default-adapter = Adaptador WebGPU predefinido
+webgpu-fallback-adapter = Adaptador WebGPU de recurso
 # Variables
 #   $bugNumber (string) - Bug number on Bugzilla
 support-blocklisted-bug = Bloqueado devido a problemas conhecidos: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
@@ -307,6 +319,7 @@ can-sandbox-media = Sandboxing do plugin multimédia
 content-sandbox-level = Nível da sandbox do processo de conteúdo
 effective-content-sandbox-level = Nível efetivo da sandbox do processo de conteúdo
 content-win32k-lockdown-state = Estado de bloqueio do Win32k para o processo de conteúdo
+support-sandbox-gpu-level = Nível da sandbox do processo da GPU
 sandbox-proc-type-content = conteúdo
 sandbox-proc-type-file = conteúdo de ficheiro
 sandbox-proc-type-media-plugin = plugin multimédia

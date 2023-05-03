@@ -76,7 +76,9 @@ browser-main-window-mac-window-titles =
 # This should match the `data-title-default` attribute in both
 # `browser-main-window` and `browser-main-window-mac`.
 browser-main-window-title = { -brand-full-name }
-private-browsing-shortcut-text = { -brand-short-name } 사생활 보호 모드
+# The non-variable portion of this MUST match the translation of
+# "PRIVATE_BROWSING_SHORTCUT_TITLE" in custom.properties
+private-browsing-shortcut-text-2 = { -brand-shortcut-name } 사생활 보호 모드
 
 ##
 
@@ -134,11 +136,23 @@ urlbar-addons-notification-anchor =
 urlbar-tip-help-icon =
     .title = 도움 받기
 urlbar-search-tips-confirm = 확인
+urlbar-search-tips-confirm-short = 확인
 # Read out before Urlbar Tip text content so screenreader users know the
 # subsequent text is a tip offered by the browser. It should end in a colon or
 # localized equivalent.
 urlbar-tip-icon-description =
     .alt = 팁:
+urlbar-result-menu-button =
+    .title = 메뉴 열기
+urlbar-result-menu-learn-more =
+    .label = 더 알아보기
+    .accesskey = L
+urlbar-result-menu-remove-from-history =
+    .label = 기록에서 삭제
+    .accesskey = R
+urlbar-result-menu-tip-get-help =
+    .label = 도움 받기
+    .accesskey = h
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -147,6 +161,8 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = 입력은 더 적게하고 더 많이 찾기: 주소 표시줄에서 바로 { $engineName } 검색해 보세요.
 urlbar-search-tips-redirect-2 = 주소 표시줄에서 검색을 시작하여 { $engineName }의 제안 및 방문 기록을 확인하세요.
+# Make sure to match the name of the Search panel in settings.
+urlbar-search-tips-persist = 검색이 더욱 간편해졌습니다. 여기 주소 표시줄에서 더 구체적으로 검색해 보세요. URL을 대신 표시하려면 설정의 검색으로 이동하세요.
 # Prompts users to use the Urlbar when they are typing in the domain of a
 # search engine, e.g. google.com or amazon.com.
 urlbar-tabtosearch-onboard = 더 빨리 찾으려면 여기에서 하세요.
@@ -161,27 +177,27 @@ urlbar-search-mode-actions = 작업
 ##
 
 urlbar-geolocation-blocked =
-    .tooltiptext = 이 사이트의 위치 정보 사용을 차단하였습니다.
+    .tooltiptext = 이 사이트의 위치 정보 사용을 차단했습니다.
 urlbar-xr-blocked =
     .tooltiptext = 이 웹 사이트에 대한 가상 현실 기기 접근을 차단했습니다.
 urlbar-web-notifications-blocked =
-    .tooltiptext = 이 사이트의 알림 사용을 차단하였습니다.
+    .tooltiptext = 이 사이트의 알림 사용을 차단했습니다.
 urlbar-camera-blocked =
-    .tooltiptext = 이 사이트의 카메라 사용을 차단하였습니다.
+    .tooltiptext = 이 사이트의 카메라 사용을 차단했습니다.
 urlbar-microphone-blocked =
-    .tooltiptext = 이 사이트의 마이크 사용을 차단하였습니다.
+    .tooltiptext = 이 사이트의 마이크 사용을 차단했습니다.
 urlbar-screen-blocked =
-    .tooltiptext = 이 사이트의 화면 공유를 차단하였습니다.
+    .tooltiptext = 이 사이트의 화면 공유를 차단했습니다.
 urlbar-persistent-storage-blocked =
-    .tooltiptext = 이 사이트의 영구 저장소 사용을 차단하였습니다.
+    .tooltiptext = 이 사이트의 영구 저장소 사용을 차단했습니다.
 urlbar-popup-blocked =
-    .tooltiptext = 이 사이트의 팝업을 차단하였습니다.
+    .tooltiptext = 이 사이트의 팝업을 차단했습니다.
 urlbar-autoplay-media-blocked =
-    .tooltiptext = 이 사이트의 소리있는 미디어 자동 재생을 차단하였습니다.
+    .tooltiptext = 이 사이트의 소리있는 미디어 자동 재생을 차단했습니다.
 urlbar-canvas-blocked =
-    .tooltiptext = 이 사이트의 캔버스 데이터 추출을 차단하였습니다.
+    .tooltiptext = 이 사이트의 캔버스 데이터 추출을 차단했습니다.
 urlbar-midi-blocked =
-    .tooltiptext = 이 사이트의 MIDI 접근을 차단하였습니다.
+    .tooltiptext = 이 사이트의 MIDI 접근을 차단했습니다.
 urlbar-install-blocked =
     .tooltiptext = 이 사이트의 부가 기능 설치를 차단했습니다.
 # Variables
@@ -223,7 +239,7 @@ search-one-offs-with-title = 이번만 검색:
 search-one-offs-change-settings-compact-button =
     .tooltiptext = 검색 설정 변경
 search-one-offs-context-open-new-tab =
-    .label = 새 탭에 검색
+    .label = 새 탭에서 검색
     .accesskey = T
 search-one-offs-context-set-as-default =
     .label = 기본 검색 엔진으로 설정
@@ -267,64 +283,63 @@ search-one-offs-actions =
     .tooltiptext = 작업 ({ $restrict })
 
 ## QuickActions are shown in the urlbar as the user types a matching string
-
-
-## QuickActions are shown in the urlbar as the user types a matching string
 ## The -cmd- strings are comma separated list of keywords that will match
 ## the action.
 
 # Opens the about:addons page in the home / recommendations section
 quickactions-addons = 부가 기능
-quickactions-cmd-addons = 부가 기능, 확장 기능, 테마
-quickactions-cmd-addons2 = 부가 기능
+quickactions-cmd-addons2 = 부가 기능, add-ons
 # Opens the bookmarks library window
-quickactions-bookmarks = 북마크
-quickactions-cmd-bookmarks = 북마크
+quickactions-bookmarks2 = 북마크 관리
+quickactions-cmd-bookmarks = 북마크, bookmarks
 # Opens a SUMO article explaining how to clear history
 quickactions-clearhistory = 기록 지우기
-quickactions-cmd-clearhistory = 기록 지우기
+quickactions-cmd-clearhistory = 기록 지우기, clear history
 # Opens about:downloads page
-quickactions-downloads = 다운로드
-quickactions-cmd-downloads = 다운로드
+quickactions-downloads2 = 다운로드 보기
+quickactions-cmd-downloads = 다운로드, downloads
 # Opens about:addons page in the extensions section
 quickactions-extensions = 확장 기능 관리
-quickactions-cmd-extensions = 확장 기능
+quickactions-cmd-extensions = 확장 기능, extensions
 # Opens the devtools web inspector
-quickactions-inspector = 검사기
-quickactions-cmd-inspector = 검사기, devtools
+quickactions-inspector2 = 개발자 도구 열기
+quickactions-cmd-inspector = 검사기, inspector, devtools
 # Opens about:logins
-quickactions-logins = 로그인
-quickactions-cmd-logins = 로그인, 비밀번호
+quickactions-logins2 = 비밀번호 관리
+quickactions-cmd-logins = 로그인, 비밀번호, logins, passwords
 # Opens about:addons page in the plugins section
 quickactions-plugins = 플러그인 관리
-quickactions-cmd-plugins = 플러그인
+quickactions-cmd-plugins = 플러그인, plugins
 # Opens the print dialog
-quickactions-print = 인쇄
-quickactions-cmd-print = 인쇄
+quickactions-print2 = 페이지 인쇄
+quickactions-cmd-print = 인쇄, print
 # Opens a new private browsing window
-quickactions-private = 사생활 보호 창
-quickactions-cmd-private = 사생활 보호 모드
+quickactions-private2 = 사생활 보호 창 열기
+quickactions-cmd-private = 사생활 보호 모드, private browsing
 # Opens a SUMO article explaining how to refresh
 quickactions-refresh = { -brand-short-name } 새로 고침
-quickactions-cmd-refresh = 새로 고침
+quickactions-cmd-refresh = 새로 고침, refresh
 # Restarts the browser
 quickactions-restart = { -brand-short-name } 다시 시작
-quickactions-cmd-restart = 다시 시작
+quickactions-cmd-restart = 다시 시작, restart
 # Opens the screenshot tool
-quickactions-screenshot2 = 스크린샷 찍기
-quickactions-cmd-screenshot = 스크린샷
+quickactions-screenshot3 = 스크린샷 찍기
+quickactions-cmd-screenshot = 스크린샷, screenshot
 # Opens about:preferences
-quickactions-settings = 설정
-quickactions-cmd-settings = 설정, 설정, 옵션
+quickactions-settings2 = 설정 관리
+quickactions-cmd-settings = 설정, 설정, 옵션, settings, preferences, options
 # Opens about:addons page in the themes section
 quickactions-themes = 테마 관리
-quickactions-cmd-themes = 테마
+quickactions-cmd-themes = 테마, themes
 # Opens a SUMO article explaining how to update the browser
 quickactions-update = { -brand-short-name } 업데이트
-quickactions-cmd-update = 업데이트
+quickactions-cmd-update = 업데이트, update
 # Opens the view-source UI with current pages source
-quickactions-viewsource = 소스
-quickactions-cmd-viewsource = 소스 보기, 소스
+quickactions-viewsource2 = 페이지 소스 보기
+quickactions-cmd-viewsource = 소스 보기, 소스, view source, source
+# Tooltip text for the help button shown in the result.
+quickactions-learn-more =
+    .title = 빠른 작업에 대해 더 알아보기
 
 ## Bookmark Panel
 
@@ -391,6 +406,7 @@ identity-connection-not-secure-security-view = 이 사이트에 안전하게 연
 identity-connection-verified = 이 사이트에 안전하게 연결되어 있습니다.
 identity-ev-owner-label = 인증서 발급 대상:
 identity-description-custom-root = Mozilla는 이 인증서 발급자를 인식하지 못합니다. 운영 체제 또는 관리자가 추가한 것일 수 있습니다. <label data-l10n-name="link">더 알아보기</label>
+identity-description-custom-root2 = Mozilla는 이 인증서 발급자를 인식하지 못합니다. 운영 체제 또는 관리자가 추가한 것일 수 있습니다.
 identity-remove-cert-exception =
     .label = 예외 제거
     .accesskey = R
@@ -399,9 +415,12 @@ identity-description-insecure-login-forms = 이 페이지에 입력한 로그인
 identity-description-weak-cipher-intro = 이 사이트의 연결은 약한 암호화를 사용하며 비공개가 아닙니다.
 identity-description-weak-cipher-risk = 다른 사람이 정보를 보거나 웹 사이트의 동작을 바꿀 수 있습니다.
 identity-description-active-blocked = { -brand-short-name }가 안전하지 않은 페이지의 일부분을 차단했습니다. <label data-l10n-name="link">더 알아보기</label>
+identity-description-active-blocked2 = { -brand-short-name }가 안전하지 않은 페이지의 일부분을 차단했습니다.
 identity-description-passive-loaded = 이 사이트의 연결은 비공개가 아니므로 사용자가 공유하는 정보를 다른 사람들이 볼 수 있습니다.
 identity-description-passive-loaded-insecure = 이 웹 사이트는 안전하지 않은 콘텐츠(이미지 등)을 포함하고 있습니다. <label data-l10n-name="link">더 알아보기</label>
 identity-description-passive-loaded-mixed = { -brand-short-name }가 일부 콘텐츠를 차단했지만 아직 안전하지 않은 콘텐츠(이미지 등)가 있습니다. <label data-l10n-name="link">더 알아보기</label>
+identity-description-passive-loaded-insecure2 = 이 웹 사이트는 안전하지 않은 콘텐츠(이미지 등)을 포함하고 있습니다.
+identity-description-passive-loaded-mixed2 = { -brand-short-name }가 일부 콘텐츠를 차단했지만 아직 안전하지 않은 콘텐츠(이미지 등)가 있습니다.
 identity-description-active-loaded = 이 웹 사이트는 안전하지 않은 콘텐츠(스크립트 등)가 포함되어 있으며 이 사이트의 연결은 비공개가 아닙니다.
 identity-description-active-loaded-insecure = 이 사이트에 공유하는 정보(예: 비밀번호, 메시지, 신용 카드 등)를 다른 사람이 볼 수 있습니다.
 identity-learn-more =
@@ -478,6 +497,9 @@ popup-select-microphone-icon =
     .tooltiptext = 마이크
 popup-select-speaker-icon =
     .tooltiptext = 스피커
+popup-select-window-or-screen =
+    .label = 창 또는 화면:
+    .accesskey = W
 popup-all-windows-shared = 화면에 표시되어 있는 모든 창을 공유합니다.
 popup-screen-sharing-block =
     .label = 차단
@@ -499,6 +521,7 @@ sharing-warning-disable-for-session =
 ## DevTools F12 popup
 
 enable-devtools-popup-description = F12 단축키를 사용하려면, 먼저 웹 개발자 메뉴를 통해 DevTools를 여세요.
+enable-devtools-popup-description2 = F12 단축키를 사용하려면, 먼저 브라우저 도구 메뉴를 통해 DevTools를 여세요.
 
 ## URL Bar
 
@@ -631,6 +654,24 @@ urlbar-group-search-suggestions =
 urlbar-group-quickactions =
     .label = 빠른 작업
 
+## Reader View toolbar buttons
+
+# This should match menu-view-enter-readerview in menubar.ftl
+reader-view-enter-button =
+    .aria-label = 리더뷰 보기
+# This should match menu-view-close-readerview in menubar.ftl
+reader-view-close-button =
+    .aria-label = 리더뷰 닫기
+
+## Picture-in-Picture urlbar button
+## Variables:
+##   $shortcut (String) - Keyboard shortcut to execute the command.
+
+picture-in-picture-urlbar-button-open =
+    .tooltiptext = 화면 속 화면 열기 ({ $shortcut })
+picture-in-picture-urlbar-button-close =
+    .tooltiptext = 화면 속 화면 닫기 ({ $shortcut })
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -675,6 +716,11 @@ bookmarks-other-bookmarks-menu =
     .label = 기타 북마크
 bookmarks-mobile-bookmarks-menu =
     .label = 모바일 북마크
+
+## Variables:
+##   $isVisible (boolean): if the specific element (e.g. bookmarks sidebar,
+##                         bookmarks toolbar, etc.) is visible or not.
+
 bookmarks-tools-sidebar-visibility =
     .label =
         { $isVisible ->
@@ -699,6 +745,9 @@ bookmarks-tools-menu-button-visibility =
             [true] 도구 모음에서 북마크 메뉴 제거
            *[other] 도구 모음에 북마크 메뉴 추가
         }
+
+##
+
 bookmarks-search =
     .label = 북마크 검색
 bookmarks-tools =
@@ -768,6 +817,9 @@ toolbar-overflow-customize-button =
 toolbar-button-email-link =
     .label = 메일로 링크 보내기
     .tooltiptext = 메일로 이 페이지의 링크 보내기
+toolbar-button-logins =
+    .label = 비밀번호
+    .tooltiptext = 저장된 비밀번호 보기 및 관리
 # Variables:
 #  $shortcut (String): keyboard shortcut to save a copy of the page
 toolbar-button-save-page =
@@ -907,3 +959,33 @@ private-browsing-indicator-label = 사생활 보호 모드
 unified-extensions-button =
     .label = 확장 기능
     .tooltiptext = 확장 기능
+
+## Unified extensions button when permission(s) are needed.
+## Note that the new line is intentionally part of the tooltip.
+
+unified-extensions-button-permissions-needed =
+    .label = 확장 기능
+    .tooltiptext =
+        확장 기능
+        권한 필요
+
+## Autorefresh blocker
+
+refresh-blocked-refresh-label = { -brand-short-name }가 이 페이지를 자동으로 다시 로드하지 못하도록 차단했습니다.
+refresh-blocked-redirect-label = { -brand-short-name }가 이 페이지에서 다른 페이지로 자동으로 바뀌는 것을 차단했습니다.
+refresh-blocked-allow =
+    .label = 허용
+    .accesskey = A
+
+## Firefox Relay integration
+
+firefox-relay-offer-why-relay = { -relay-brand-name }는 데이터 유출 및 스팸으로부터 사용자를 보호하기 위해 사용자의 실제 이메일 주소를 마스킹합니다.
+firefox-relay-offer-how-we-integrate = 계속하면 { -brand-shorter-name } 비밀번호 관리자에서 직접 새 { -relay-brand-short-name } 이메일 마스크를 생성할 수 있습니다.
+# Variables:
+#  $sitename (String): name of the site where user enters their Relay mask
+#  $useremail (String): user email that will receive messages
+firefox-relay-offer-what-relay-does = <strong>{ $sitename }</strong>의 모든 이메일을 <strong>{ $useremail }</strong>로 전달합니다.
+
+## Popup Notification
+
+popup-notification-xpinstall-prompt-learn-more = 부가 기능을 안전하게 설치하는 방법에 대해 더 알아보기

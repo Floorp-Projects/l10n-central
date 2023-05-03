@@ -6,6 +6,10 @@ blocklist-window =
     .title = Blokkolási listák
     .style = width: 55em
 
+blocklist-window2 =
+    .title = Blokkolási listák
+    .style = min-width: 55em
+
 blocklist-description = Válassza ki a listát, amelyet a { -brand-short-name } az online nyomkövetők blokkolásához használjon. A listákat a <a data-l10n-name="disconnect-link" title="Disconnect">Disconnect</a> biztosítja.
 blocklist-close-key =
     .key = w

@@ -110,11 +110,21 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = 決策紀錄
 graphics-crash-guards-title = 因 Crash Guard 停用的功能
 graphics-workarounds-title = Workarounds
+graphics-device-pixel-ratios = Window 的裝置畫素比例
 # Windowing system in use on Linux (e.g. X11, Wayland).
 graphics-window-protocol = 視窗通訊協定
 # Desktop environment in use on Linux (e.g. GNOME, KDE, XFCE, etc).
 graphics-desktop-environment = 桌面環境
 place-database-title = Places 資料庫
+place-database-stats = 統計資訊
+place-database-stats-show = 顯示統計資訊
+place-database-stats-hide = 隱藏統計資訊
+place-database-stats-entity = 實體
+place-database-stats-count = 數量
+place-database-stats-size-kib = 大小 (KiB)
+place-database-stats-size-perc = 大小 (%)
+place-database-stats-efficiency-perc = 效率 (%)
+place-database-stats-sequentiality-perc = 順序性 (%)
 place-database-integrity = 資料完整
 place-database-verify-integrity = 確認資料完整
 a11y-title = 輔助功能
@@ -258,6 +268,8 @@ webgl2-renderer = WebGL2 Renderer
 webgl2-version = WebGL 2 驅動程式 Renderer
 webgl2-driver-extensions = WebGL 2 驅動程式擴充套件
 webgl2-extensions = WebGL 2 擴充套件
+webgpu-default-adapter = WebGPU 預設顯示卡
+webgpu-fallback-adapter = WebGPU 備用顯示卡
 # Variables
 #   $bugNumber (string) - Bug number on Bugzilla
 support-blocklisted-bug = 由於有已知問題，被加入封鎖名單: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
@@ -287,6 +299,7 @@ can-sandbox-media = 媒體外掛程式沙盒
 content-sandbox-level = 內容程序沙盒等級
 effective-content-sandbox-level = 有效內容處理程序沙盒等級
 content-win32k-lockdown-state = 內容處理程序的 Win32k Lockdown 狀態
+support-sandbox-gpu-level = GPU 處理程序沙盒等級
 sandbox-proc-type-content = 內容
 sandbox-proc-type-file = 檔案內容
 sandbox-proc-type-media-plugin = 媒體外掛程式

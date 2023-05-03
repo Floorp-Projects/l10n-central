@@ -70,6 +70,7 @@ protections-panel-site-not-working-view-issue-list-forms = Formulários
 protections-panel-site-not-working-view-issue-list-payments = Pagamento
 protections-panel-site-not-working-view-issue-list-comments = Comentários
 protections-panel-site-not-working-view-issue-list-videos = Vídeos
+protections-panel-site-not-working-view-issue-list-fonts = Fontes
 protections-panel-site-not-working-view-send-report = Enviar um relato
 
 ##
@@ -99,3 +100,23 @@ protections-panel-content-blocking-breakage-report-view-cancel =
     .label = Cancelar
 protections-panel-content-blocking-breakage-report-view-send-report =
     .label = Enviar relato
+
+# Cookie Banner Handling
+
+protections-panel-cookie-banner-handling-header = Redução de avisos de cookies
+protections-panel-cookie-banner-handling-enabled = Ativado neste site
+protections-panel-cookie-banner-handling-disabled = Desativado neste site
+protections-panel-cookie-banner-handling-undetected = Site atualmente não suportado
+protections-panel-cookie-banner-view-title =
+    .title = Redução de avisos de cookies
+protections-panel-cookie-banner-view-go-back =
+    .aria-label = Voltar
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+protections-panel-cookie-banner-view-turn-off-for-site = Desativar redução de avisos de cookies em { $host }?
+protections-panel-cookie-banner-view-turn-on-for-site = Ativar redução de avisos de cookies neste site?
+protections-panel-cookie-banner-view-cookie-clear-warning = O { -brand-short-name } irá limpar os cookies deste site e atualizar a página. Limpar todos os cookies pode encerrar a sessão de acesso no site ou esvaziar carrinhos de compras.
+protections-panel-cookie-banner-view-turn-on-description = O { -brand-short-name } tenta rejeitar automaticamente todas as solicitações de cookies em sites suportados.
+protections-panel-cookie-banner-view-cancel = Cancelar
+protections-panel-cookie-banner-view-turn-off = Desativar
+protections-panel-cookie-banner-view-turn-on = Ativar

@@ -128,6 +128,7 @@ profiler-popup-button-capturing =
     .tooltiptext = Profileraren fångar en profil
 profiler-popup-title =
     .value = { -profiler-brand-name }
+profiler-popup-header-text = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
     .aria-label = Avslöja mer information
 profiler-popup-description-title =

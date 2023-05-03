@@ -6,6 +6,10 @@ profiledowngrade-window =
     .title = A { -brand-product-name } egy régebbi verzióját indította el
     .style = width: 490px;
 
+profiledowngrade-window2 =
+    .title = A { -brand-product-name } egy régebbi verzióját indította el
+    .style = min-width: 490px;
+
 profiledowngrade-window-create =
     .label = Új profil létrehozása
 

@@ -161,7 +161,7 @@ menu-view-page-style-no-style =
     .label = Sem estilo
     .accesskey = m
 menu-view-page-basic-style =
-    .label = Estilo de página básico
+    .label = Estilo básico de página
     .accesskey = b
 menu-view-repair-text-encoding =
     .label = Reparar codificação de texto
@@ -179,6 +179,17 @@ menu-view-exit-full-screen =
 menu-view-full-screen =
     .label = Tela inteira
     .accesskey = T
+
+## These menu items may use the same accesskey.
+
+# This should match reader-view-enter-button in browser.ftl
+menu-view-enter-readerview =
+    .label = Ativar leitor
+    .accesskey = l
+# This should match reader-view-close-button in browser.ftl
+menu-view-close-readerview =
+    .label = Desativar leitor
+    .accesskey = l
 
 ##
 
@@ -250,7 +261,7 @@ menu-tools-fxa-sign-in2 =
     .label = Entrar
     .accesskey = E
 menu-tools-turn-on-sync2 =
-    .label = Ativar o Sync…
+    .label = Ativar sincronização…
     .accesskey = n
 menu-tools-sync-now =
     .label = Sincronizar agora

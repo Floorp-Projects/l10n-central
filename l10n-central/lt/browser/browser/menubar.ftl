@@ -182,6 +182,17 @@ menu-view-full-screen =
     .label = Visas ekranas
     .accesskey = V
 
+## These menu items may use the same accesskey.
+
+# This should match reader-view-enter-button in browser.ftl
+menu-view-enter-readerview =
+    .label = Pereiti į skaitymo rodinį
+    .accesskey = s
+# This should match reader-view-close-button in browser.ftl
+menu-view-close-readerview =
+    .label = Išjungti skaitymo rodinį
+    .accesskey = s
+
 ##
 
 menu-view-show-all-tabs =

@@ -46,7 +46,7 @@
 
 <!ENTITY translation.serviceUnavailable.label   "지금은 번역을 사용할 수 없습니다. 나중에 다시 시도하세요.">
 
-<!ENTITY translation.options.menu               "설정">
+<!ENTITY translation.options.menu               "옵션">
 <!-- LOCALIZATION NOTE (translation.options.neverForSite.accesskey,
   -                     translation.options.preferences.accesskey):
   -  The accesskey values used here should not clash with the value used for
@@ -56,4 +56,3 @@
 <!ENTITY translation.options.neverForSite.accesskey "e">
 <!ENTITY translation.options.preferences.label  "번역 환경 설정">
 <!ENTITY translation.options.preferences.accesskey "T">
-

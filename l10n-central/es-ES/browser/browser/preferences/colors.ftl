@@ -10,6 +10,14 @@ colors-window =
            *[other] width: 48em
         }
 
+colors-dialog =
+    .title = Colores
+    .style = width: 41em;
+
+colors-dialog2 =
+    .title = Colores
+    .style = min-width: 41em;
+
 colors-close-key =
     .key = w
 

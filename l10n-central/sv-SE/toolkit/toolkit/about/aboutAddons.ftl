@@ -8,7 +8,7 @@ search-header =
     .searchbuttonlabel = Sök
 search-header-shortcut =
     .key = f
-list-empty-get-extensions-message = Hämta tillägg och teman på <<a data-l10n-name="get-extensions">{ $domain }</a>
+list-empty-get-extensions-message = Hämta tillägg och teman på <a data-l10n-name="get-extensions">{ $domain }</a>
 list-empty-get-dictionaries-message = Hämta ordböcker på <a data-l10n-name="get-extensions">{ $domain }</a>
 list-empty-get-language-packs-message = Hämta språkpaket på <a data-l10n-name="get-extensions">{ $domain }</a>
 list-empty-installed =
@@ -57,7 +57,7 @@ detail-private-browsing-label = Kör i privata fönster
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
 # cannot be overridden by the user.
 detail-private-disallowed-label = Ej tillåtet i privata fönster
-detail-private-disallowed-description2 = Tillägget körs inte när du surfar privat. <<a data-l10n-name="learn-more">Läs mer</a>
+detail-private-disallowed-description2 = Tillägget körs inte när du surfar privat. <a data-l10n-name="learn-more">Läs mer</a>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
 detail-private-required-label = Kräver åtkomst till privata fönster
 detail-private-required-description2 = Detta tillägg har tillgång till dina onlineaktiviteter när du surfar privat. <a data-l10n-name="learn-more">Läs mer</a>
@@ -137,6 +137,10 @@ addon-category-recent-updates-title =
 addon-category-sitepermission = Webbplatsbehörigheter
 addon-category-sitepermission-title =
     .title = Webbplatsbehörigheter
+# String displayed in about:addons in the Site Permissions section
+# Variables:
+#  $host (string): DNS host name for which the webextension enables permissions
+addon-sitepermission-host = Webbplatsbehörigheter för { $host }
 
 ## These are global warnings
 
@@ -290,10 +294,6 @@ theme-monochromatic-heading = Colorways
 theme-monochromatic-subheading = Levande nya colorways från { -brand-product-name }. Tillgängliga under en begränsad tid.
 # Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
 theme-colorways-button = Prova Colorways
-colorway-collection-independent-voices-subheading = Gör { -brand-short-name } lite mer personlig.
-# Variables:
-#   $expiryDate (string) - date on which the colorway collection expires.
-colorway-collection-expiry-date-span = Upphör { DATETIME($expiryDate, month: "long", day: "numeric") }
 # Refers to the button label for the colorways card when a user has a colorway theme enabled.
 theme-colorways-button-colorway-enabled = Ändra Colorway
 # Variables:

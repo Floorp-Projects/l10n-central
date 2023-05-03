@@ -76,7 +76,9 @@ browser-main-window-mac-window-titles =
 # This should match the `data-title-default` attribute in both
 # `browser-main-window` and `browser-main-window-mac`.
 browser-main-window-title = { -brand-full-name }
-private-browsing-shortcut-text = Privat browsing med { -brand-short-name }
+# The non-variable portion of this MUST match the translation of
+# "PRIVATE_BROWSING_SHORTCUT_TITLE" in custom.properties
+private-browsing-shortcut-text-2 = Privat browsing med { -brand-shortcut-name }
 
 ##
 
@@ -124,7 +126,7 @@ urlbar-web-rtc-share-devices-notification-anchor =
 # "Speakers" is used in a general sense that might include headphones or
 # another audio output connection.
 urlbar-web-rtc-share-speaker-notification-anchor =
-    .tooltiptext = Håndter deling af andre højttalere med webstedet
+    .tooltiptext = Håndter deling af andre højtalere med webstedet
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Åbn panelet for automatisk afspilning
 urlbar-persistent-storage-notification-anchor =
@@ -134,11 +136,23 @@ urlbar-addons-notification-anchor =
 urlbar-tip-help-icon =
     .title = Få hjælp
 urlbar-search-tips-confirm = Okay, forstået
+urlbar-search-tips-confirm-short = Forstået
 # Read out before Urlbar Tip text content so screenreader users know the
 # subsequent text is a tip offered by the browser. It should end in a colon or
 # localized equivalent.
 urlbar-tip-icon-description =
     .alt = Tip:
+urlbar-result-menu-button =
+    .title = Åbn menu
+urlbar-result-menu-learn-more =
+    .label = Læs mere
+    .accesskey = L
+urlbar-result-menu-remove-from-history =
+    .label = Fjern fra historik
+    .accesskey = F
+urlbar-result-menu-tip-get-help =
+    .label = Få hjælp
+    .accesskey = h
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -147,6 +161,8 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Tast mindre, find mere: Søg med { $engineName } direkte i adressefeltet.
 urlbar-search-tips-redirect-2 = Start din søgning i adressefeltet for at få forslag fra { $engineName } og din browserhistorik.
+# Make sure to match the name of the Search panel in settings.
+urlbar-search-tips-persist = Nu er det blevet nemmere at søge. Prøv at gøre din søgning mere specifik hér i adressefeltet. For at få vist URL'er i stedet skal du gå til Indstillinger > Søgning.
 # Prompts users to use the Urlbar when they are typing in the domain of a
 # search engine, e.g. google.com or amazon.com.
 urlbar-tabtosearch-onboard = Vælg denne genvej for hurtigere at finde det, du leder efter.
@@ -267,42 +283,38 @@ search-one-offs-actions =
     .tooltiptext = Handlinger ({ $restrict })
 
 ## QuickActions are shown in the urlbar as the user types a matching string
-
-
-## QuickActions are shown in the urlbar as the user types a matching string
 ## The -cmd- strings are comma separated list of keywords that will match
 ## the action.
 
 # Opens the about:addons page in the home / recommendations section
 quickactions-addons = Vis tilføjelser
-quickactions-cmd-addons = tilføjelser, udvidelser, temaer
 quickactions-cmd-addons2 = tilføjelser
 # Opens the bookmarks library window
-quickactions-bookmarks = Vis bogmærker
+quickactions-bookmarks2 = Håndter bogmærker
 quickactions-cmd-bookmarks = bogmærker
 # Opens a SUMO article explaining how to clear history
 quickactions-clearhistory = Ryd historik
 quickactions-cmd-clearhistory = ryd historik
 # Opens about:downloads page
-quickactions-downloads = Åbn Filhentninger
+quickactions-downloads2 = Vis filhentninger
 quickactions-cmd-downloads = hentede filer, filhentninger
 # Opens about:addons page in the extensions section
 quickactions-extensions = Håndter udvidelser
 quickactions-cmd-extensions = udvidelser
 # Opens the devtools web inspector
-quickactions-inspector = Åbn Inspektør
+quickactions-inspector2 = Åbn udviklerværktøj
 quickactions-cmd-inspector = inspektør, udviklerværktøj
 # Opens about:logins
-quickactions-logins = Vis logins
+quickactions-logins2 = Håndter adgangskoder
 quickactions-cmd-logins = logins, adgangskoder
 # Opens about:addons page in the plugins section
 quickactions-plugins = Håndter plugins
 quickactions-cmd-plugins = plugins
 # Opens the print dialog
-quickactions-print = Udskriv
+quickactions-print2 = Udskriv side
 quickactions-cmd-print = udskriv
 # Opens a new private browsing window
-quickactions-private = Åbn privat browsing-vindue
+quickactions-private2 = Åbn privat vindue
 quickactions-cmd-private = privat browsing
 # Opens a SUMO article explaining how to refresh
 quickactions-refresh = Nulstil { -brand-short-name }
@@ -311,10 +323,10 @@ quickactions-cmd-refresh = nulstil
 quickactions-restart = Genstart { -brand-short-name }
 quickactions-cmd-restart = genstart
 # Opens the screenshot tool
-quickactions-screenshot2 = Tag et skærmbillede
+quickactions-screenshot3 = Tag et skærmbillede
 quickactions-cmd-screenshot = skærmbillede
 # Opens about:preferences
-quickactions-settings = Åbn Indstillinger
+quickactions-settings2 = Håndter indstillinger
 quickactions-cmd-settings = indstillinger
 # Opens about:addons page in the themes section
 quickactions-themes = Håndter temaer
@@ -323,8 +335,11 @@ quickactions-cmd-themes = temaer
 quickactions-update = Opdater { -brand-short-name }
 quickactions-cmd-update = opdater
 # Opens the view-source UI with current pages source
-quickactions-viewsource = Vis kildekode
+quickactions-viewsource2 = Vis sidens kildekode
 quickactions-cmd-viewsource = vis kildekode, kildekode
+# Tooltip text for the help button shown in the result.
+quickactions-learn-more =
+    .title = Læs mere om Hurtige handlinger
 
 ## Bookmark Panel
 
@@ -395,6 +410,7 @@ identity-connection-not-secure-security-view = Din forbindelse til webstedet er 
 identity-connection-verified = Din forbindelse til dette websted er sikker.
 identity-ev-owner-label = Certifikatet er udstedt til:
 identity-description-custom-root = Mozilla kender ikke udstederen af dette certifikat. Det kan være tilføjet af dit styresystem eller en administrator. <label data-l10n-name="link">Læs mere</label>
+identity-description-custom-root2 = Mozilla kender ikke udstederen af dette certifikat. Det kan være tilføjet af dit styresystem eller en administrator.
 identity-remove-cert-exception =
     .label = Fjern undtagelser
     .accesskey = F
@@ -403,9 +419,12 @@ identity-description-insecure-login-forms = Login-information, du indtaster på 
 identity-description-weak-cipher-intro = Din forbindelse til dette websted anvender svag kryptering og er ikke privat.
 identity-description-weak-cipher-risk = Andre kan se dine informationer eller ændre webstedets opførsel.
 identity-description-active-blocked = { -brand-short-name } har blokeret usikre dele af denne side. <label data-l10n-name="link">Læs mere</label>
+identity-description-active-blocked2 = { -brand-short-name } har blokeret usikre dele af denne side.
 identity-description-passive-loaded = Din forbindelse er ikke privat og de informationer, du deler, kan ses af andre.
 identity-description-passive-loaded-insecure = Noget af dette websteds indhold (fx billeder) er usikkert. <label data-l10n-name="link">Læs mere</label>
 identity-description-passive-loaded-mixed = Selvom { -brand-short-name } har blokeret noget af indholdet, så findes der stadig usikkert indhold på siden (fx billeder). <label data-l10n-name="link">Læs mere</label>
+identity-description-passive-loaded-insecure2 = Noget af dette websteds indhold (fx billeder) er usikkert.
+identity-description-passive-loaded-mixed2 = Selvom { -brand-short-name } har blokeret noget af indholdet, så findes der stadig usikkert indhold på siden (fx billeder).
 identity-description-active-loaded = Dette websted indeholder usikkert indhold (fx scripts), og din forbindelse til det er ikke privat.
 identity-description-active-loaded-insecure = Information, du deler med dette websted (fx adgangskoder, beskeder og oplysninger om betalingskort) kan ses af andre.
 identity-learn-more =
@@ -484,7 +503,10 @@ popup-select-microphone-device =
 popup-select-microphone-icon =
     .tooltiptext = Mikrofon
 popup-select-speaker-icon =
-    .tooltiptext = Højttalere
+    .tooltiptext = Højtalere
+popup-select-window-or-screen =
+    .label = Vindue eller skærm:
+    .accesskey = V
 popup-all-windows-shared = Alle synlige vinduer på din skærm vil blive delt.
 popup-screen-sharing-block =
     .label = Bloker
@@ -506,6 +528,7 @@ sharing-warning-disable-for-session =
 ## DevTools F12 popup
 
 enable-devtools-popup-description = For at bruge F12 som genvej skal du først åbne udviklerværktøj fra menuen Webudvikler.
+enable-devtools-popup-description2 = For at bruge F12 som genvej skal du først åbne udviklerværktøj fra menuen Browser-værktøj.
 
 ## URL Bar
 
@@ -638,6 +661,24 @@ urlbar-group-search-suggestions =
 urlbar-group-quickactions =
     .label = Hurtige handlinger
 
+## Reader View toolbar buttons
+
+# This should match menu-view-enter-readerview in menubar.ftl
+reader-view-enter-button =
+    .aria-label = Åbn læsevisning
+# This should match menu-view-close-readerview in menubar.ftl
+reader-view-close-button =
+    .aria-label = Luk læsevisning
+
+## Picture-in-Picture urlbar button
+## Variables:
+##   $shortcut (String) - Keyboard shortcut to execute the command.
+
+picture-in-picture-urlbar-button-open =
+    .tooltiptext = Åbn billede-i-billede ({ $shortcut })
+picture-in-picture-urlbar-button-close =
+    .tooltiptext = Luk billede-i-billede ({ $shortcut })
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -682,6 +723,11 @@ bookmarks-other-bookmarks-menu =
     .label = Andre bogmærker
 bookmarks-mobile-bookmarks-menu =
     .label = Mobil-bogmærker
+
+## Variables:
+##   $isVisible (boolean): if the specific element (e.g. bookmarks sidebar,
+##                         bookmarks toolbar, etc.) is visible or not.
+
 bookmarks-tools-sidebar-visibility =
     .label =
         { $isVisible ->
@@ -706,6 +752,9 @@ bookmarks-tools-menu-button-visibility =
             [true] Fjern bogmærke-menuen fra værktøjslinjen
            *[other] Føj bogmærke-menuen til værktøjslinjen
         }
+
+##
+
 bookmarks-search =
     .label = Søg i bogmærker
 bookmarks-tools =
@@ -775,6 +824,9 @@ toolbar-overflow-customize-button =
 toolbar-button-email-link =
     .label = Send link
     .tooltiptext = Send link til siden i en mail…
+toolbar-button-logins =
+    .label = Adgangskoder
+    .tooltiptext = Se og håndter dine gemte adgangskoder
 # Variables:
 #  $shortcut (String): keyboard shortcut to save a copy of the page
 toolbar-button-save-page =
@@ -914,3 +966,33 @@ private-browsing-indicator-label = Privat browsing
 unified-extensions-button =
     .label = Udvidelser
     .tooltiptext = Udvidelser
+
+## Unified extensions button when permission(s) are needed.
+## Note that the new line is intentionally part of the tooltip.
+
+unified-extensions-button-permissions-needed =
+    .label = Udvidelser
+    .tooltiptext =
+        Udvidelser
+        Tilladelser kræves
+
+## Autorefresh blocker
+
+refresh-blocked-refresh-label = { -brand-short-name } forhindrede denne side i automatisk at foretage genindlæsning.
+refresh-blocked-redirect-label = { -brand-short-name } forhindrede denne side i automatisk at viderestille til en anden side.
+refresh-blocked-allow =
+    .label = Tillad
+    .accesskey = T
+
+## Firefox Relay integration
+
+firefox-relay-offer-why-relay = { -relay-brand-name } skjuler din rigtige mailadresse for at beskytte dig mod datalæk og spam.
+firefox-relay-offer-how-we-integrate = Hvis du fortsætter, kan du oprette nye { -relay-brand-short-name }-mail-masker direkte fra adgangskode-håndteringen i din { -brand-shorter-name }.
+# Variables:
+#  $sitename (String): name of the site where user enters their Relay mask
+#  $useremail (String): user email that will receive messages
+firefox-relay-offer-what-relay-does = Vi videresender alle mails fra <strong>{ $sitename }</strong> til <strong>{ $useremail }</strong>.
+
+## Popup Notification
+
+popup-notification-xpinstall-prompt-learn-more = Læs mere om sikker installering af tilføjelser

@@ -5,12 +5,20 @@
 containers-window-new =
     .title = เพิ่มการแยกข้อมูลใหม่
     .style = width: 45em
-
 # Variables
 #   $name (String) - Name of the container
 containers-window-update-settings =
     .title = การตั้งค่าการแยกข้อมูล { $name }
     .style = width: 45em
+
+containers-window-new2 =
+    .title = เพิ่มการแยกข้อมูลใหม่
+    .style = min-width: 45em
+# Variables
+#   $name (String) - Name of the container
+containers-window-update-settings2 =
+    .title = การตั้งค่าการแยกข้อมูล { $name }
+    .style = min-width: 45em
 
 containers-window-close =
     .key = w

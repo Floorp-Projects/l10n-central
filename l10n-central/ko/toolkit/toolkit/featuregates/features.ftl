@@ -12,6 +12,7 @@ experimental-features-css-masonry-description = 실험적인 CSS Masonry 레이�
 experimental-features-web-gpu2 =
     .label = Web API: WebGPU
 experimental-features-web-gpu-description2 = 이 새로운 API는 사용자의 장치 또는 컴퓨터의 <a data-l10n-name="wikipedia">GPU (그래픽 처리 장치)</a>를 사용하여 계산 및 그래픽 렌더링을 수행하기 위한 낮은 수준의 지원을 제공합니다. <a data-l10n-name="spec">사양</a>은 여전히 진행 중입니다. 자세한 내용은 <a data-l10n-name="bugzilla">bug 1602129</a>를 참고하세요.
+experimental-features-web-gpu-description3 = <a data-l10n-name="wikipedia-webgpu">WebGPU API</a>는 사용자 기기 또는 컴퓨터의 <a data-l10n-name="wikipedia-gpu">그래픽 처리 장치 (GPU)</a>를 사용하여 계산 및 그래픽 렌더링을 수행하기 위한 저수준의 지원을 제공합니다. <a data-l10n-name="spec">사양</a>의 첫 번째 버전이 거의 마무리 단계에 있습니다. 자세한 내용은 <a data-l10n-name="bugzilla">버그 1616739</a>를 참조하세요.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-media-jxl =
@@ -60,10 +61,6 @@ experimental-features-js-warp-description = JavaScript 성능 및 메모리 사�
 experimental-features-ime-search =
     .label = 주소 표시줄: IME 입력 중 결과 표시
 experimental-features-ime-search-description = IME (Input Method Editor)는 표준 키보드를 사용하여 동아시아 또는 인도어에서 사용되는 것과 같은 복잡한 기호를 입력 할 수 있는 도구입니다. 이 실험을 활성화하면 IME를 사용하여 텍스트를 입력하는 동안 주소 표시줄 패널이 열려 검색 결과와 제안을 표시합니다. IME는 주소 표시줄 결과를 포함하는 패널을 표시할 수 있으므로, 이 설정은 이러한 유형의 패널을 사용하지 않는 IME에만 권장됩니다.
-# Text recognition for images
-experimental-features-text-recognition =
-    .label = 텍스트 인식
-experimental-features-text-recognition-description = 이미지의 텍스트를 인식하는 기능을 활성화합니다.
 experimental-features-accessibility-cache =
     .label = 접근성 캐시
 experimental-features-accessibility-cache-description = { -brand-short-name } 메인 프로세스의 모든 문서에서 모든 접근성 정보를 캐시합니다. 이렇게 하면 접근성 API를 사용하는 스크린 리더 및 기타 응용 프로그램의 성능이 향상됩니다.

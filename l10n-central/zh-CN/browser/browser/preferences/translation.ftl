@@ -6,6 +6,10 @@ translation-window =
     .title = 例外 - 翻译
     .style = width: 36em
 
+translation-window2 =
+    .title = 例外 - 翻译
+    .style = min-width: 36em
+
 translation-close-key =
     .key = w
 

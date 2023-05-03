@@ -17,7 +17,7 @@ toolbox-meatball-menu-dock-right-label = Закрепить справа
 toolbox-meatball-menu-dock-separate-window-label = Отдельное окно
 toolbox-meatball-menu-splitconsole-label = Показать консоль внизу
 toolbox-meatball-menu-hideconsole-label = Скрыть консоль внизу
-toolbox-meatball-menu-settings-label = Параметры
+toolbox-meatball-menu-settings-label = Настройки
 toolbox-meatball-menu-documentation-label = Документация…
 toolbox-meatball-menu-community-label = Сообщество…
 # This menu item is only available in the browser toolbox. It forces the popups/panels
@@ -42,3 +42,7 @@ toolbox-mode-parent-process-label = Только родительский про
 toolbox-mode-parent-process-sub-label = (Быстро)
 toolbox-mode-parent-process-container =
     .title = Фокусироваться только на ресурсах родительского процесса.
+toolbox-always-on-top-enabled2 = Отключить всегда наверху
+    .title = Это перезапустит Инструменты разработчика
+toolbox-always-on-top-disabled2 = Включить всегда наверху
+    .title = Это перезапустит Инструменты разработчика

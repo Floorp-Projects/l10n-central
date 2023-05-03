@@ -19,42 +19,46 @@ pictureinpicture-close =
 ## Variables:
 ##   $shortcut (String) - Keyboard shortcut to execute the command.
 
-pictureinpicture-pause-cmd =
+pictureinpicture-pause-btn =
     .aria-label = Pause
-    .title = Pause (Mellemrum)
-pictureinpicture-play-cmd =
+    .tooltip = Pause (Mellemrum)
+pictureinpicture-play-btn =
     .aria-label = Afspil
-    .title = Afspil (Mellemrum)
-pictureinpicture-mute-cmd =
+    .tooltip = Afspil (Mellemrum)
+pictureinpicture-mute-btn =
     .aria-label = Slå lyd fra
-    .title = Slå lyd fra ({ $shortcut })
-pictureinpicture-unmute-cmd =
+    .tooltip = Slå lyd fra ({ $shortcut })
+pictureinpicture-unmute-btn =
     .aria-label = Slå lyd til
-    .title = Slå lyd til ({ $shortcut })
-pictureinpicture-unpip-cmd =
+    .tooltip = Slå lyd til ({ $shortcut })
+pictureinpicture-unpip-btn =
     .aria-label = Send tilbage til faneblad
-    .title = Tilbage til faneblad
-pictureinpicture-close-cmd =
+    .tooltip = Tilbage til faneblad
+pictureinpicture-close-btn =
     .aria-label = Luk
-    .title = Luk ({ $shortcut })
-pictureinpicture-subtitles-cmd =
+    .tooltip = Luk ({ $shortcut })
+pictureinpicture-subtitles-btn =
     .aria-label = Undertekster
-    .title = Undertekster
+    .tooltip = Undertekster
 
 ##
 
-pictureinpicture-fullscreen-cmd =
+pictureinpicture-fullscreen-btn =
     .aria-label = Fuld skærm
-    .title = Fuld skærm (dobbeltklik)
-pictureinpicture-exit-fullscreen-cmd =
+    .tooltip = Fuld skærm (dobbeltklik)
+pictureinpicture-exit-fullscreen-btn =
     .aria-label = Fuld skærm
-    .title = Afslut fuld skærm (dobbeltklik)
-pictureinpicture-seekbackward-cmd =
+    .tooltip = Afslut fuld skærm (dobbeltklik)
+pictureinpicture-seekbackward-btn =
     .aria-label = Tilbage
-    .title = Tilbage (←)
-pictureinpicture-seekforward-cmd =
+    .tooltip = Tilbage (←)
+pictureinpicture-seekforward-btn =
     .aria-label = Frem
-    .title = Frem (→)
+    .tooltip = Frem (→)
+# This string is never displayed on the window. Is intended to be announced by
+# a screen reader whenever a user opens the subtitles settings panel
+# after selecting the subtitles button.
+pictureinpicture-subtitles-panel-accessible = Indstillinger for undertekster
 pictureinpicture-subtitles-label = Undertekster
 pictureinpicture-font-size-label = Skriftstørrelse
 pictureinpicture-font-size-small = Lille

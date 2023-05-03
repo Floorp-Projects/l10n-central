@@ -142,6 +142,10 @@ addon-category-recent-updates-title =
 addon-category-sitepermission = Nettstadløyve
 addon-category-sitepermission-title =
     .title = Nettstadløyve
+# String displayed in about:addons in the Site Permissions section
+# Variables:
+#  $host (string): DNS host name for which the webextension enables permissions
+addon-sitepermission-host = Nettstadløyve for { $host }
 
 ## These are global warnings
 
@@ -294,10 +298,6 @@ theme-monochromatic-heading = Fargesamansetjingar
 theme-monochromatic-subheading = Levande nye fargesamansetjingar frå { -brand-product-name }. Tilgjengeleg for ein avgrensa periode.
 # Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
 theme-colorways-button = Prøv Colorways
-colorway-collection-independent-voices-subheading = Gjer { -brand-short-name } litt meir personleg.
-# Variables:
-#   $expiryDate (string) - date on which the colorway collection expires.
-colorway-collection-expiry-date-span = Går ut { DATETIME($expiryDate, month: "long", day: "numeric") }
 # Refers to the button label for the colorways card when a user has a colorway theme enabled.
 theme-colorways-button-colorway-enabled = Endre fargesamansetjing
 # Variables:

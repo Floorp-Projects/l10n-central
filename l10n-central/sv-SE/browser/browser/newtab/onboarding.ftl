@@ -25,6 +25,12 @@ return-to-amo-addon-title = Låt oss nu hämta <img data-l10n-name="icon"/> <b>{
 return-to-amo-add-extension-label = Lägg till tillägget
 return-to-amo-add-theme-label = Lägg till temat
 
+##  Variables: $addon-name (String) - Name of the add-on to be installed
+
+mr1-return-to-amo-subtitle = Säg hej till { -brand-short-name }
+mr1-return-to-amo-addon-title = Du har en snabb, privat webbläsare till hands. Nu kan du lägga till <b>{ $addon-name }</b> och göra ännu mer med { -brand-short-name }.
+mr1-return-to-amo-add-extension-label = Lägg till { $addon-name }
+
 ## Multistage onboarding strings (about:welcome pages)
 
 # Aria-label to make the "steps" of multistage onboarding visible to screen readers.
@@ -39,8 +45,8 @@ onboarding-welcome-steps-indicator =
 #   $current (Int) - Number of the current page
 #   $total (Int) - Total number of pages
 
-onboarding-welcome-steps-indicator2 =
-    .aria-valuetext = Framsteg: steg { $current } av { $total }
+onboarding-welcome-steps-indicator-label =
+    .aria-label = Framsteg: steg { $current } av { $total }
 # "Hero Text" displayed on left side of welcome screen.
 # The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
 # It also signals the passion users bring to Firefox, how they use
@@ -259,6 +265,15 @@ fx100-upgrade-thank-you-body = Det är vår 100:e version av { -brand-short-name
 fx100-upgrade-thanks-keep-body = Det är vår 100:e utgåva! Tack för att du är en del av vår gemenskap. Ha { -brand-short-name } ett klick bort för de kommande 100.
 mr2022-onboarding-secondary-skip-button-label = Hoppa över det här steget
 
+## MR2022 New User Easy Setup screen strings
+
+# Primary button string used on new user onboarding first screen showing multiple actions such as Set Default, Import from previous browser.
+mr2022-onboarding-easy-setup-primary-button-label = Spara och fortsätt
+# Set Default action checkbox label used on new user onboarding first screen
+mr2022-onboarding-easy-setup-set-default-checkbox-label = Ställ in { -brand-short-name } som standardwebbläsare
+# Import action checkbox label used on new user onboarding first screen
+mr2022-onboarding-easy-setup-import-checkbox-label = Importera från tidigare webbläsare
+
 ## MR2022 New User Pin Firefox screen strings
 
 # Title used on about:welcome for new users when Firefox is not pinned.
@@ -322,35 +337,35 @@ mr2022-onboarding-import-primary-button-label-no-attribution = Importera från t
 
 mr2022-onboarding-colorway-title = Välj den färg som inspirerar dig
 mr2022-onboarding-colorway-subtitle = Oberoende röster kan förändra samhället.
-mr2022-onboarding-colorway-primary-button-label = Ange colorway
+mr2022-onboarding-colorway-primary-button-label-continue = Ställ in och fortsätt
 mr2022-onboarding-existing-colorway-checkbox-label = Gör { -firefox-home-brand-name } till din färgglada startsida
 mr2022-onboarding-colorway-label-default = Standard
-mr2022-onboarding-colorway-tooltip-default =
-    .title = Standard
+mr2022-onboarding-colorway-tooltip-default2 =
+    .title = Aktuella { -brand-short-name }-färger
 mr2022-onboarding-colorway-description-default = <b>Använd mina nuvarande { -brand-short-name } färger.</b>
 mr2022-onboarding-colorway-label-playmaker = Spelare
-mr2022-onboarding-colorway-tooltip-playmaker =
-    .title = Spelare
+mr2022-onboarding-colorway-tooltip-playmaker2 =
+    .title = Spelare (röd)
 mr2022-onboarding-colorway-description-playmaker = <b>Du är en spelare.</b> Du skapar möjligheter att vinna och hjälper alla runt omkring dig att lyfta sitt spel.
 mr2022-onboarding-colorway-label-expressionist = Expressionist
-mr2022-onboarding-colorway-tooltip-expressionist =
-    .title = Expressionist
+mr2022-onboarding-colorway-tooltip-expressionist2 =
+    .title = Expressionist (gul)
 mr2022-onboarding-colorway-description-expressionist = <b>Du är en expressionist.</b> Du ser världen annorlunda och dina skapelser rör upp andras känslor.
 mr2022-onboarding-colorway-label-visionary = Visionär
-mr2022-onboarding-colorway-tooltip-visionary =
-    .title = Visionär
+mr2022-onboarding-colorway-tooltip-visionary2 =
+    .title = Visionär (grön)
 mr2022-onboarding-colorway-description-visionary = <b>Du är en visionär.</b> Du ifrågasätter status quo och får andra att föreställa sig en bättre framtid.
 mr2022-onboarding-colorway-label-activist = Aktivist
-mr2022-onboarding-colorway-tooltip-activist =
-    .title = Aktivist
+mr2022-onboarding-colorway-tooltip-activist2 =
+    .title = Aktivist (blå)
 mr2022-onboarding-colorway-description-activist = <b>Du är en aktivist.</b> Du lämnar världen till en bättre plats än du hittade den och får andra att tro.
 mr2022-onboarding-colorway-label-dreamer = Drömmare
-mr2022-onboarding-colorway-tooltip-dreamer =
-    .title = Drömmare
+mr2022-onboarding-colorway-tooltip-dreamer2 =
+    .title = Drömmare (lila)
 mr2022-onboarding-colorway-description-dreamer = <b>Du är en drömmare.</b> Du tror att förmögenhet gynnar de djärva och inspirerar andra att vara modiga.
 mr2022-onboarding-colorway-label-innovator = Innovatör
-mr2022-onboarding-colorway-tooltip-innovator =
-    .title = Innovatör
+mr2022-onboarding-colorway-tooltip-innovator2 =
+    .title = Innovatör (orange)
 mr2022-onboarding-colorway-description-innovator = <b>Du är en innovatör.</b> Du ser möjligheter överallt och påverkar livet för alla runt omkring dig.
 
 ## MR2022 Multistage Mobile Download screen strings
@@ -385,3 +400,29 @@ mr2022-onboarding-gratitude-title = Du hjälper oss att bygga en bättre webb.
 mr2022-onboarding-gratitude-subtitle = Tack för att du använder { -brand-short-name }, med stöd av Mozilla Foundation. Med ditt stöd arbetar vi för att göra internet mer öppet, tillgängligt och bättre för alla.
 mr2022-onboarding-gratitude-primary-button-label = Se vad som är nytt
 mr2022-onboarding-gratitude-secondary-button-label = Börja surfa
+
+## Onboarding spotlight for infrequent users
+
+onboarding-infrequent-import-title = Känn dig själv som hemma
+onboarding-infrequent-import-subtitle = Det spelar ingen roll om du tänker stanna här ett tag eller bara är på genomresa, kom ihåg att du kan importera bokmärken, lösenord med mera.
+onboarding-infrequent-import-primary-button = Importera till { -brand-short-name }
+
+## MR2022 Illustration alt tags
+## Descriptive tags for illustrations used by screen readers and other assistive tech
+
+mr2022-onboarding-pin-image-alt =
+    .aria-label = Person som arbetar med en bärbar dator omgiven av stjärnor och blommor
+mr2022-onboarding-default-image-alt =
+    .aria-label = Person som kramar { -brand-product-name }-logotypen
+mr2022-onboarding-import-image-alt =
+    .aria-label = Person som åker skateboard med en låda med mjukvaruikoner
+mr2022-onboarding-mobile-download-image-alt =
+    .aria-label = Grodor som hoppar bland näckrosor, med en QR-kod i mitten för att ladda ner { -brand-product-name } för mobila enheter
+mr2022-onboarding-pin-private-image-alt =
+    .aria-label = Trollstaven får { -brand-product-name }-logotypen för privat surfning att dyka upp ur en hatt
+mr2022-onboarding-privacy-segmentation-image-alt =
+    .aria-label = Två händer med ljus och mörk hud ger varandra en high five
+mr2022-onboarding-gratitude-image-alt =
+    .aria-label = Utsikt över en solnedgång genom ett fönster med en räv och en krukväxt på en fönsterbräda
+mr2022-onboarding-colorways-image-alt =
+    .aria-label = En hand spraymålar ett färgglatt collage av ett grönt öga, en orange sko, en röd basketboll, lila hörlurar, ett blått hjärta och en gul krona

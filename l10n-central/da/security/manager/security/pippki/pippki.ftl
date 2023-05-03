@@ -8,24 +8,18 @@ password-quality-meter = Kvalitetsmåler for adgangskode
 
 change-device-password-window =
     .title = Skift adgangskode
-
 # Variables:
 # $tokenName (String) - Security device of the change password dialog
 change-password-token = Sikkerhedsenhed: { $tokenName }
 change-password-old = Nuværende adgangskode:
 change-password-new = Ny adgangskode:
 change-password-reenter = Ny adgangskode (igen):
-
-## Reset Password dialog
-
 pippki-failed-pw-change = Kan ikke ændre adgangskode.
 pippki-incorrect-pw = Du indtastede ikke den nuværende adgangskode. Prøv igen.
 pippki-pw-change-ok = Adgangskoden blev ændret.
-
 pippki-pw-empty-warning = Dine gemte afgangskoder og private nøgler vil ikke blive beskyttet.
 pippki-pw-erased-ok = Du har slettet din adgangskode. { pippki-pw-empty-warning }
 pippki-pw-not-wanted = Advarsel! Du har valgt ikke at bruge en adgangskode. { pippki-pw-empty-warning }
-
 pippki-pw-change2empty-in-fips-mode = Du befinder dig for øjeblikket i FIPS-tilstand. FIPS kræver, at du bruger en adgangskode.
 
 ## Reset Primary Password dialog
@@ -33,11 +27,12 @@ pippki-pw-change2empty-in-fips-mode = Du befinder dig for øjeblikket i FIPS-til
 reset-primary-password-window =
     .title = Nulstil hovedadgangskode
     .style = width: 40em
+reset-primary-password-window2 =
+    .title = Nulstil hovedadgangskode
+    .style = min-width: 40em
 reset-password-button-label =
     .label = Nulstil
-
 reset-primary-password-text = Hvis du nulstiller din hovedadgangskode, vil alle dine gemte websteds- og mail-adgangskoder, personlige certifikater og private nøgler blive glemt. Er du sikker på, at du vil nulstille din hovedadgangskode?
-
 pippki-reset-password-confirmation-title = Nulstil hovedadgangskode
 pippki-reset-password-confirmation-message = Din hovedadgangskode er blevet nulstillet.
 
@@ -46,6 +41,9 @@ pippki-reset-password-confirmation-message = Din hovedadgangskode er blevet nuls
 download-cert-window =
     .title = Henter certifikat
     .style = width: 46em
+download-cert-window2 =
+    .title = Henter certifikat
+    .style = min-width: 46em
 download-cert-message = Du er blevet bedt om at stole på en ny certifikatautoritet (CA).
 download-cert-trust-ssl =
     .label = Stol på denne CA til at identificere websteder.
@@ -81,3 +79,9 @@ protected-auth-window =
     .title = Beskyttet token-godkendelse
 protected-auth-msg = Identificer dig selv over for denne token. Godkendelsesmetoden afhænger af typen af dit token.
 protected-auth-token = Token:
+
+## Protected authentication alert
+
+# Variables:
+# $tokenName (String) - The name of the token to authenticate to (for example, "OS Client Cert Token (Modern)")
+protected-auth-alert = Udfør autentificering til token "{ $tokenName }". Det afhænger af token, hvordan det skal gøres (fx ved at bruge en fingeraftrykslæser eller indtaste en kode med et tastatur).

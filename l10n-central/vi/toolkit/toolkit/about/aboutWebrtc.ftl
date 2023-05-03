@@ -119,6 +119,12 @@ about-webrtc-rotation-degrees = Xoay (độ)
 ## SSRCs are identifiers that represent endpoints in an RTP stream
 
 
+## These are displayed on the button that shows or hides the
+## PeerConnection configuration disclosure
+
+about-webrtc-pc-configuration-show-msg = Hiển thị cấu hình
+about-webrtc-pc-configuration-hide-msg = Ẩn cấu hình
+
 ##
 
 # An option whose value will not be displayed but instead noted as having been
@@ -221,6 +227,9 @@ about-webrtc-sdp-set-at-timestamp-remote = Đặt SDP từ xa tại timestamp { 
 #  $timestamp (Number) - The Unix Epoch time at which the SDP was set.
 #  $relative-timestamp (Number) - The timestamp relative to the timestamp of the earliest received SDP.
 about-webrtc-sdp-set-timestamp = Timestamp { NUMBER($timestamp, useGrouping: "false") } (+ { $relative-timestamp } ms)
+
+## These are displayed on the button that shows or hides the SDP information disclosure
+
 
 ##
 

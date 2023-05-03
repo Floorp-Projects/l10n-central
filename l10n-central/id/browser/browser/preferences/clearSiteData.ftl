@@ -6,6 +6,10 @@ clear-site-data-window =
     .title = Bersihkan Data
     .style = width: 35em
 
+clear-site-data-window2 =
+    .title = Bersihkan Data
+    .style = min-width: 35em
+
 clear-site-data-description = Membersihkan semua kuki dan data situs yang disimpan oleh { -brand-short-name } mungkin mengeluarkan Anda dari situs web dan menghapus konten web luring. Membersihkan data tembolok tidak akan mempengaruhi info masuk Anda.
 
 clear-site-data-close-key =

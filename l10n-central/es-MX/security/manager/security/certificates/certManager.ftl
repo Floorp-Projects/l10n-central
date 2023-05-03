@@ -30,6 +30,10 @@ certmgr-edit-ca-cert =
     .title = Editar configuración de confianza de la CA
     .style = width: 48em;
 
+certmgr-edit-ca-cert2 =
+    .title = Editar configuración de confianza de la CA
+    .style = min-width: 48em;
+
 certmgr-edit-cert-edit-trust = Editar configuraciones de confianza:
 
 certmgr-edit-cert-trust-ssl =
@@ -41,6 +45,10 @@ certmgr-edit-cert-trust-email =
 certmgr-delete-cert =
     .title = Eliminar certificado
     .style = width: 48em; height: 24em;
+
+certmgr-delete-cert2 =
+    .title = Eliminar certificado
+    .style = min-width: 48em; min-height: 24em;
 
 certmgr-cert-host =
     .label = Servidor

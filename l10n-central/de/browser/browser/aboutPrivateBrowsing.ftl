@@ -60,3 +60,11 @@ about-private-browsing-pin-promo-link-text =
        *[other] An die Taskleiste anheften
     }
 about-private-browsing-pin-promo-title = Keine gespeicherten Cookies oder Chronik, direkt von Ihrem Desktop. Surfen Sie, als würde niemand zusehen.
+
+## Strings used in a promotion message for cookie banner reduction
+
+# Simplified version of the headline if the original text doesn't work
+# in your language: `See fewer cookie requests`.
+about-private-browsing-cookie-banners-promo-header = Weg mit Cookie-Bannern!
+about-private-browsing-cookie-banners-promo-button = Cookie-Banner reduzieren
+about-private-browsing-cookie-banners-promo-message = Lassen Sie { -brand-short-name } automatisch Cookie-Pop-ups für Sie beantworten, damit Sie wieder ablenkungsfrei surfen können. { -brand-short-name } wird nach Möglichkeit alle Anfragen ablehnen.

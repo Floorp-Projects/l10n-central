@@ -19,36 +19,46 @@ pictureinpicture-close =
 ## Variables:
 ##   $shortcut (String) - Keyboard shortcut to execute the command.
 
-pictureinpicture-pause-cmd =
+pictureinpicture-pause-btn =
     .aria-label = Pause
-    .title = Pause (mellomrom)
-pictureinpicture-play-cmd =
+    .tooltip = Pause (mellomrom)
+pictureinpicture-play-btn =
     .aria-label = Spel av
-    .title = Spel av (mellomrom)
-pictureinpicture-mute-cmd =
+    .tooltip = Spel av (mellomrom)
+pictureinpicture-mute-btn =
     .aria-label = Lyd av
-    .title = Lyd av ({ $shortcut })
-pictureinpicture-unmute-cmd =
+    .tooltip = Lyd av ({ $shortcut })
+pictureinpicture-unmute-btn =
     .aria-label = Lyd på
-    .title = Lyd på ({ $shortcut })
-pictureinpicture-unpip-cmd =
+    .tooltip = Lyd på ({ $shortcut })
+pictureinpicture-unpip-btn =
     .aria-label = Send tilbake til fana
-    .title = Tilbake til fana
-pictureinpicture-close-cmd =
+    .tooltip = Tilbake til fana
+pictureinpicture-close-btn =
     .aria-label = Lat att
-    .title = Lat att ({ $shortcut })
-pictureinpicture-subtitles-cmd =
+    .tooltip = Lat att ({ $shortcut })
+pictureinpicture-subtitles-btn =
     .aria-label = Undertekstar
-    .title = Undertekstar
+    .tooltip = Undertekstar
 
 ##
 
-pictureinpicture-fullscreen-cmd =
+pictureinpicture-fullscreen-btn =
     .aria-label = Fullskjerm
-    .title = Fullskjerm (dobbelklikk)
-pictureinpicture-exit-fullscreen-cmd =
+    .tooltip = Fullskjerm (dobbelklikk)
+pictureinpicture-exit-fullscreen-btn =
     .aria-label = Avslutt fullskjerm
-    .title = Avslutt fullskjerm (dobbelklikk)
+    .tooltip = Avslutt fullskjerm (dobbelklikk)
+pictureinpicture-seekbackward-btn =
+    .aria-label = Tilbake
+    .tooltip = Tilbake (←)
+pictureinpicture-seekforward-btn =
+    .aria-label = Fram
+    .tooltip = Fram (→)
+# This string is never displayed on the window. Is intended to be announced by
+# a screen reader whenever a user opens the subtitles settings panel
+# after selecting the subtitles button.
+pictureinpicture-subtitles-panel-accessible = Innstillingar for undertekstar
 pictureinpicture-subtitles-label = Undertekstar
 pictureinpicture-font-size-label = Skriftstorleik
 pictureinpicture-font-size-small = Liten

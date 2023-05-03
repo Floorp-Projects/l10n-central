@@ -333,6 +333,9 @@ main-context-menu-use-saved-password =
 
 ##
 
+main-context-menu-use-relay-mask =
+    .label = Bruk { -relay-brand-short-name } e-postalias
+    .accesskey = B
 main-context-menu-suggest-strong-password =
     .label = Foreslå sterkt passord…
     .accesskey = s

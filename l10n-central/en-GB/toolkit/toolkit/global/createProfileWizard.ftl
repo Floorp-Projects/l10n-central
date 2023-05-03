@@ -6,12 +6,22 @@ create-profile-window =
     .title = Create Profile Wizard
     .style = width: 45em; height: 32em;
 
+create-profile-window2 =
+    .title = Create Profile Wizard
+    .style = min-width: 45em; min-height: 32em;
+
 ## First wizard page
 
 create-profile-first-page-header =
     { PLATFORM() ->
         [macos] Introduction
        *[other] Welcome to the { create-profile-window.title }
+    }
+
+create-profile-first-page-header2 =
+    { PLATFORM() ->
+        [macos] Introduction
+       *[other] Welcome to the { create-profile-window2.title }
     }
 
 profile-creation-explanation-1 = { -brand-short-name } stores information about your settings and preferences in your personal profile.
@@ -32,6 +42,12 @@ create-profile-last-page-header =
     { PLATFORM() ->
         [macos] Conclusion
        *[other] Completing the { create-profile-window.title }
+    }
+
+create-profile-last-page-header2 =
+    { PLATFORM() ->
+        [macos] Conclusion
+       *[other] Completing the { create-profile-window2.title }
     }
 
 profile-creation-intro = If you create several profiles you can tell them apart by the profile names. You may use the name provided here or use one of your own.

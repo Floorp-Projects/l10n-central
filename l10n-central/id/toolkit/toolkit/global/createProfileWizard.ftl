@@ -6,12 +6,22 @@ create-profile-window =
     .title = Penuntun Pembuatan Profil
     .style = width: 45em; height: 32em;
 
+create-profile-window2 =
+    .title = Penuntun Pembuatan Profil
+    .style = min-width: 45em; min-height: 32em;
+
 ## First wizard page
 
 create-profile-first-page-header =
     { PLATFORM() ->
         [macos] Pendahuluan
        *[other] Selamat datang di { create-profile-window.title }
+    }
+
+create-profile-first-page-header2 =
+    { PLATFORM() ->
+        [macos] Pendahuluan
+       *[other] Selamat datang di { create-profile-window2.title }
     }
 
 profile-creation-explanation-1 = { -brand-short-name } menyimpan informasi tentang pengaturan di profil pribadi Anda.
@@ -32,6 +42,12 @@ create-profile-last-page-header =
     { PLATFORM() ->
         [macos] Kesimpulan
        *[other] Melengkapi { create-profile-window.title }
+    }
+
+create-profile-last-page-header2 =
+    { PLATFORM() ->
+        [macos] Kesimpulan
+       *[other] Melengkapi { create-profile-window2.title }
     }
 
 profile-creation-intro = Apabila Anda membuat beberapa profil, Anda dapat mengenali profil dari nama profilnya. Anda dapat menggunakan nama yang diberikan di bawah ini atau menggantinya dengan nama lain.

@@ -5,12 +5,20 @@
 containers-window-new =
     .title = Dodawanie kontekstu
     .style = width: 45em
-
 # Variables
 #   $name (String) - Name of the container
 containers-window-update-settings =
     .title = Ustawienia kontekstu „{ $name }”
     .style = width: 45em
+
+containers-window-new2 =
+    .title = Dodawanie kontekstu
+    .style = min-width: 45em
+# Variables
+#   $name (String) - Name of the container
+containers-window-update-settings2 =
+    .title = Ustawienia kontekstu „{ $name }”
+    .style = min-width: 45em
 
 containers-window-close =
     .key = w

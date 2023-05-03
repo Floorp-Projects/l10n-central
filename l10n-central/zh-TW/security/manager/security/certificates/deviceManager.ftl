@@ -9,6 +9,10 @@ devmgr =
     .title = 裝置管理員
     .style = width: 67em; height: 32em;
 
+devmgr-window =
+    .title = 裝置管理員
+    .style = min-width: 67em; min-height: 32em;
+
 devmgr-devlist =
     .label = 安全模組與裝置
 

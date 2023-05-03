@@ -6,12 +6,22 @@ create-profile-window =
     .title = Průvodce vytvořením profilu
     .style = width: 45em; height: 32em;
 
+create-profile-window2 =
+    .title = Průvodce vytvořením profilu
+    .style = min-width: 45em; min-height: 32em;
+
 ## First wizard page
 
 create-profile-first-page-header =
     { PLATFORM() ->
         [macos] Úvod
        *[other] { create-profile-window.title } - Vítejte
+    }
+
+create-profile-first-page-header2 =
+    { PLATFORM() ->
+        [macos] Úvod
+       *[other] { create-profile-window2.title } - Vítejte
     }
 
 profile-creation-explanation-1 = { -brand-short-name } ukládá informace o vašem nastavení a předvolbách do vašeho osobního profilu.
@@ -32,6 +42,12 @@ create-profile-last-page-header =
     { PLATFORM() ->
         [macos] Závěr
        *[other] { create-profile-window.title } - Dokončování
+    }
+
+create-profile-last-page-header2 =
+    { PLATFORM() ->
+        [macos] Závěr
+       *[other] { create-profile-window2.title } - Dokončování
     }
 
 profile-creation-intro = Pokud vytváříte profily, musíte si je nějak nazvat. Můžete použít buď předvolený název nebo si zvolit vlastní.

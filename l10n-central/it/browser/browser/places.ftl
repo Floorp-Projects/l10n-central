@@ -9,8 +9,8 @@ places-open-in-tab =
     .label = Apri in nuova scheda
     .accesskey = h
 places-open-in-container-tab =
-  .label = Apri in nuova scheda contenitore
-  .accesskey = o
+    .label = Apri in nuova scheda contenitore
+    .accesskey = o
 places-open-all-bookmarks =
     .label = Apri tutti i segnalibri
     .accesskey = u
@@ -99,8 +99,8 @@ other-bookmarks-folder =
     .label = Altri segnalibri
 
 places-show-in-folder =
-  .label = Mostra nella cartella
-  .accesskey = M
+    .label = Mostra nella cartella
+    .accesskey = M
 
 places-delete-bookmark =
     .label =
@@ -109,6 +109,10 @@ places-delete-bookmark =
            *[other] Elimina segnalibri
         }
     .accesskey = E
+
+places-untag-bookmark =
+    .label = Elimina etichetta
+    .accesskey = m
 
 places-manage-bookmarks =
     .label = Gestisci segnalibri
@@ -120,11 +124,16 @@ places-forget-about-this-site-confirmation-title = Dimentica questo sito
 # $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
 places-forget-about-this-site-confirmation-message = Questa operazione eliminerà tutti i dati relativi a { $hostOrBaseDomain }, inclusi cronologia, password, cookie, cache e preferenze relative ai contenuti. Dimenticare questo sito?
 
+places-forget-about-this-site-confirmation-msg = Questa operazione eliminerà tutti i dati relativi a { $hostOrBaseDomain }, inclusi cronologia, cookie, cache e preferenze relative ai contenuti. I segnalibri e le password associati non verranno rimossi. Proseguire?
+
 places-forget-about-this-site-forget = Dimentica
 
 places-library =
     .title = Libreria
     .style = width:700px; height:500px;
+
+places-library3 =
+    .title = Libreria
 
 places-organize-button =
     .label = Organizza

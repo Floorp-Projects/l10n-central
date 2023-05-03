@@ -11,9 +11,12 @@ fxa-qrcode-heading-step3 = 3. Öffnen Sie das <b>Menü</b> (<img data-l10n-name=
 fxa-qrcode-heading-step4 = 4. Scannen Sie diesen Code:
 fxa-pair-device-dialog-sync =
     .style = width: 32em;
+fxa-pair-device-dialog-sync2 =
+    .style = min-width: 32em;
 fxa-qrcode-pair-title = Synchronisieren Sie { -brand-product-name } auf Ihrem Telefon oder Tablet
 fxa-qrcode-pair-step1 = 1. Öffnen Sie { -brand-product-name } auf Ihrem Mobilgerät.
 fxa-qrcode-pair-step2 = 2. Öffnen Sie das <strong>Menü</strong> (<img data-l10n-name="ios-menu-icon"/> auf iOS oder <img data-l10n-name="android-menu-icon"/> auf Android) und tippen Sie auf <strong>Zum Synchronisieren anmelden</strong>
+fxa-qrcode-pair-step2-signin = 2. Öffnen Sie das Menü (<img data-l10n-name="ios-menu-icon"/> auf iOS oder <img data-l10n-name="android-menu-icon"/> auf Android) und tippen Sie auf <strong>Daten synchronisieren und speichern</strong>
 fxa-qrcode-pair-step3 = 3. Tippen Sie auf <strong>Bereit zum Scannen</strong> und halten Sie Ihr Telefon über diesen Code
 fxa-qrcode-error-title = Verbinden fehlschlagen
 fxa-qrcode-error-body = Erneut versuchen

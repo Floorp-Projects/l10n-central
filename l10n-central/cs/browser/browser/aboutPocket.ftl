@@ -22,6 +22,7 @@ pocket-panel-saved-page-saved = Uloženo do { -pocket-brand-name(case: "gen") }
 pocket-panel-saved-page-saved-b = Uloženo do { -pocket-brand-name(case: "gen") }
 pocket-panel-saved-processing-remove = Odstraňování stránky…
 pocket-panel-saved-removed = Stránka odstraněna z vašeho seznamu
+pocket-panel-saved-removed-updated = Stránka odstraněna z uložených položek
 pocket-panel-saved-processing-tags = Přidávání štítků…
 pocket-panel-saved-remove-page = Odstranit stránku
 pocket-panel-saved-save-tags = Uložit
@@ -40,31 +41,27 @@ pocket-panel-signup-login = Přihlaste se
 pocket-panel-signup-signup-email = Registrace e-mailem
 pocket-panel-signup-signup-cta = Zaregistrujte si { -pocket-brand-name(case: "acc") }. Je zdarma.
 pocket-panel-signup-signup-firefox =
-    Registrace pomocí { -brand-product-name.gender ->
-        [masculine] { -brand-product-name(case: "gen") }
-        [feminine] { -brand-product-name(case: "gen") }
-        [neuter] { -brand-product-name(case: "gen") }
-       *[other] aplikace { -brand-product-name }
+    { -brand-product-name.case-status ->
+        [with-cases] Registrace pomocí { -brand-product-name(case: "gen") }
+       *[no-cases] Registrace pomocí aplikace { -brand-product-name }
     }
 pocket-panel-signup-tagline =
-    Ukládejte si články a videa z { -brand-product-name.gender ->
-        [masculine] { -brand-product-name(case: "gen") }
-        [feminine] { -brand-product-name(case: "gen") }
-        [neuter] { -brand-product-name(case: "gen") }
-       *[other] aplikace { -brand-product-name }
-    } do { -pocket-brand-name(case: "gen") } pro zobrazení kdykoliv a na jakémkoli zařízení.
+    { -brand-product-name.case-status ->
+        [with-cases] Ukládejte si články a videa z { -brand-product-name(case: "gen") } do { -pocket-brand-name(case: "gen") } pro zobrazení kdykoliv a na jakémkoli zařízení.
+       *[no-cases] Ukládejte si články a videa z aplikace { -brand-product-name } do { -pocket-brand-name(case: "gen") } pro zobrazení kdykoliv a na jakémkoli zařízení.
+    }
 pocket-panel-signup-tagline-story-one =
-    Klepněte na tlačítko { -pocket-brand-name(case: "gen") } pro uložení jakéhokoliv článku, videa nebo stránky přímo z { -brand-product-name.gender ->
-        [masculine] { -brand-product-name(case: "gen") }
-        [feminine] { -brand-product-name(case: "gen") }
-        [neuter] { -brand-product-name(case: "gen") }
-       *[other] aplikace { -brand-product-name }
-    }.
+    { -brand-product-name.case-status ->
+        [with-cases] Klepněte na tlačítko { -pocket-brand-name(case: "gen") } pro uložení jakéhokoliv článku, videa nebo stránky přímo z { -brand-product-name(case: "gen") }.
+       *[no-cases] Klepněte na tlačítko { -pocket-brand-name(case: "gen") } pro uložení jakéhokoliv článku, videa nebo stránky přímo z aplikace { -brand-product-name }.
+    }
 pocket-panel-signup-tagline-story-two = Zobrazení v { -pocket-brand-name(case: "loc") } kdykoliv a na jakémkoliv zařízení.
 pocket-panel-signup-cta-a-fix = Vaše tlačítko „uložit“ pro internet
-pocket-panel-signup-cta-b = Klepnutím na tlačítko { -pocket-brand-name } můžete ukládat články, videa nebo odkazy. Seznam si můžete kdykoliv zobrazit na kterémkoliv svém zařízení.
-pocket-panel-signup-cta-b-short = Klepnutím na tlačítko { -pocket-brand-name } můžete ukládat články, videa nebo odkazy.
-pocket-panel-signup-cta-c = Zobrazte svůj seznam na jakémkoliv zařítení, kdykoliv.
+pocket-panel-signup-cta-b = Klepnutím na tlačítko { -pocket-brand-name(case: "gen") } můžete ukládat články, videa nebo odkazy. Seznam si můžete kdykoliv zobrazit na kterémkoliv svém zařízení.
+pocket-panel-signup-cta-b-updated = Klepnutím na tlačítko { -pocket-brand-name(case: "gen") } můžete ukládat články, videa nebo odkazy. Uložené položky si můžete kdykoliv zobrazit na kterémkoliv svém zařízení.
+pocket-panel-signup-cta-b-short = Klepnutím na tlačítko { -pocket-brand-name(case: "gen") } můžete ukládat články, videa nebo odkazy.
+pocket-panel-signup-cta-c = Zobrazte svůj seznam na jakémkoliv zařízení, kdykoliv.
+pocket-panel-signup-cta-c-updated = Zobrazte své uložené položky na jakémkoliv zařízení, kdykoliv.
 
 ## about:pocket-home panel
 
@@ -76,27 +73,23 @@ pocket-panel-home-discover-more = Objevte více
 pocket-panel-home-explore-more = Procházet
 pocket-panel-home-most-recent-saves = Váš nedávno uložený obsah:
 pocket-panel-home-most-recent-saves-loading = Načítání nedávno uloženého obsahu…
-pocket-panel-home-new-user-cta = Klepnutím na tlačítko { -pocket-brand-name } můžete ukládat články, videa nebo odkazy.
+pocket-panel-home-new-user-cta = Klepnutím na tlačítko { -pocket-brand-name(case: "gen") } můžete ukládat články, videa nebo odkazy.
 pocket-panel-home-new-user-message = Váš nedávno uložený obsah se zobrazí tady.
 
 ## Pocket panel header component
 
 pocket-panel-header-my-list = Zobrazit Můj seznam
+pocket-panel-header-my-saves = Zobrazit moje uložené položky
 pocket-panel-header-sign-in = Přihlásit se
 
 ## Pocket panel buttons
 
 pocket-panel-button-show-all = Zobrazit vše
 pocket-panel-button-activate =
-    { -pocket-brand-name.gender ->
-        [masculine] Aktivovat { -pocket-brand-name(case: "acc") }
-        [feminine] Aktivovat { -pocket-brand-name(case: "acc") }
-        [neuter] Aktivovat { -pocket-brand-name(case: "acc") }
-       *[other] Aktivovat službu { -pocket-brand-name }
-    } { -brand-product-name.gender ->
-        [masculine] ve { -brand-product-name(case: "loc") }
-        [feminine] v { -brand-product-name(case: "loc") }
-        [neuter] v { -brand-product-name(case: "loc") }
-       *[other] v aplikaci { -brand-product-name }
+    { -brand-product-name.gender ->
+        [masculine] Aktivovat { -pocket-brand-name(case: "acc") } ve { -brand-product-name(case: "loc") }
+        [feminine] Aktivovat { -pocket-brand-name(case: "acc") } v { -brand-product-name(case: "loc") }
+        [neuter] Aktivovat { -pocket-brand-name(case: "acc") } v { -brand-product-name(case: "loc") }
+       *[other] Aktivovat { -pocket-brand-name(case: "acc") } v aplikaci { -brand-product-name }
     }
 pocket-panel-button-remove = Odstranit

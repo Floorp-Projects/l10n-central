@@ -118,7 +118,7 @@ private-browsing-description2 =
     udvidelser være blokeret i privat browsing-tilstand, medmindre du giver dem tilladelse i indstillingerne.
     { -brand-short-name } blokerer udvidelserne for at sikre, at de kun med din tilladelse har adgang til din aktivitet
     på nettet, når du benytter privat browsing.
-    <label data-l10n-name="private-browsing-learn-more">Læs her, hvordan du håndterer indstillingerne for udvidelser.
+    <label data-l10n-name="private-browsing-learn-more">Læs her, hvordan du håndterer indstillingerne for udvidelser</label>.
 addon-category-discover = Anbefalinger
 addon-category-discover-title =
     .title = Anbefalinger
@@ -146,6 +146,10 @@ addon-category-recent-updates-title =
 addon-category-sitepermission = Websteds-tilladelser
 addon-category-sitepermission-title =
     .title = Websteds-tilladelser
+# String displayed in about:addons in the Site Permissions section
+# Variables:
+#  $host (string): DNS host name for which the webextension enables permissions
+addon-sitepermission-host = Websteds-tilladelser for { $host }
 
 ## These are global warnings
 

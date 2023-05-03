@@ -142,6 +142,10 @@ addon-category-recent-updates-title =
 addon-category-sitepermission = Izin Situs
 addon-category-sitepermission-title =
     .title = Izin Situs
+# String displayed in about:addons in the Site Permissions section
+# Variables:
+#  $host (string): DNS host name for which the webextension enables permissions
+addon-sitepermission-host = Izin Situs untuk { $host }
 
 ## These are global warnings
 
@@ -286,16 +290,12 @@ extension-disabled-heading = Nonaktif
 theme-enabled-heading = Aktif
 theme-disabled-heading = Nonaktif
 theme-disabled-heading2 = Tema Tersimpan
-theme-monochromatic-heading = Warna
+theme-monochromatic-heading = Ragam Warna
 theme-monochromatic-subheading = Warna baru yang semarak dari { -brand-product-name }. Tersedia untuk waktu terbatas.
 # Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
-theme-colorways-button = Coba Colorways
-colorway-collection-independent-voices-subheading = Buatlah { -brand-short-name } menjadi lebih seperti Anda.
-# Variables:
-#   $expiryDate (string) - date on which the colorway collection expires.
-colorway-collection-expiry-date-span = Kedaluwarsa { DATETIME($expiryDate, month: "long", day: "numeric") }
+theme-colorways-button = Coba Ragam Warna
 # Refers to the button label for the colorways card when a user has a colorway theme enabled.
-theme-colorways-button-colorway-enabled = Ubah Colorway
+theme-colorways-button-colorway-enabled = Ubah Ragam Warna
 # Variables:
 #   $expiryDate (string) - date on which the colorway collection expires. When formatting this, you may omit the year, only exposing the month and day, as colorway collections will always expire within a year.
 colorway-collection-expiry-label = Kedaluwarsa { DATETIME($expiryDate, month: "long", day: "numeric") }

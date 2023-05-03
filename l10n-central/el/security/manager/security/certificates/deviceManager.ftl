@@ -9,6 +9,10 @@ devmgr =
     .title = Διαχείριση συσκευών
     .style = width: 67em; height: 32em;
 
+devmgr-window =
+    .title = Διαχείριση συσκευών
+    .style = min-width: 67em; min-height: 32em;
+
 devmgr-devlist =
     .label = Μονάδες και συσκευές ασφαλείας
 

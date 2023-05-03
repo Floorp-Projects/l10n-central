@@ -6,12 +6,22 @@ create-profile-window =
     .title = Guiden skapa profil
     .style = width: 45em; height: 34em;
 
+create-profile-window2 =
+    .title = Guiden skapa profil
+    .style = min-width: 45em; min-height: 34em;
+
 ## First wizard page
 
 create-profile-first-page-header =
     { PLATFORM() ->
         [macos] Introduktion
        *[other] Välkommen till { create-profile-window.title }
+    }
+
+create-profile-first-page-header2 =
+    { PLATFORM() ->
+        [macos] Introduktion
+       *[other] Välkommen till { create-profile-window2.title }
     }
 
 profile-creation-explanation-1 = { -brand-short-name } lagrar information om inställningar i din personliga profil.
@@ -32,6 +42,12 @@ create-profile-last-page-header =
     { PLATFORM() ->
         [macos] Avslutning
        *[other] Slutför { create-profile-window.title }
+    }
+
+create-profile-last-page-header2 =
+    { PLATFORM() ->
+        [macos] Avslutning
+       *[other] Slutför { create-profile-window2.title }
     }
 
 profile-creation-intro = Om du skapar flera olika profiler kan du skilja dem åt med hjälp av profilnamnen. Du kan använda namnet som givits här, eller ange ett eget.

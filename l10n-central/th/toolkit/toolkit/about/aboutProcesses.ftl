@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 # Page title
-about-processes-title = ตัวจัดการกระบวนการ
+about-processes-title = ตัวจัดการโปรเซส
 # The Actions column
 about-processes-column-action =
     .title = การกระทำ
@@ -11,7 +11,7 @@ about-processes-column-action =
 ## Tooltips
 
 about-processes-shutdown-process =
-    .title = เลิกโหลดแท็บและหยุดการทำงานของกระบวนการ
+    .title = เลิกโหลดแท็บและหยุดการทำงานของโปรเซส
 about-processes-shutdown-tab =
     .title = ปิดแท็บ
 # Profiler icons
@@ -21,7 +21,7 @@ about-processes-shutdown-tab =
 about-processes-profile-process =
     .title =
         { $duration ->
-           *[other] สร้างโปรไฟล์เธรดทั้งหมดของกระบวนการนี้เป็นเวลา { $duration } วินาที
+           *[other] สร้างโปรไฟล์เธรดทั้งหมดของโปรเซสนี้เป็นเวลา { $duration } วินาที
         }
 
 ## Column headers
@@ -113,9 +113,15 @@ about-processes-frame-name-one = เฟรมย่อย: { $url }
 #   $number (Number) The number of subframes in this group. Always ≥ 1.
 #   $shortUrl (String) The shared prefix for the subframes in the group.
 about-processes-frame-name-many = เฟรมย่อย ({ $number }): { $shortUrl }
-# Utility process actor names
+
+## Utility process actor names
+
 about-processes-utility-actor-unknown = ตัวดำเนินการที่ไม่รู้จัก
 about-processes-utility-actor-audio-decoder = ตัวถอดรหัสเสียง
+about-processes-utility-actor-audio-decoder-generic = ตัวถอดรหัสเสียงทั่วไป
+about-processes-utility-actor-audio-decoder-applemedia = ตัวถอดรหัสเสียง Apple Media
+about-processes-utility-actor-audio-decoder-wmf = ตัวถอดรหัสเสียง Windows Media Framework
+about-processes-utility-actor-mf-media-engine = Windows Media Foundation Media Engine CDM
 
 ## Displaying CPU (percentage and total)
 ## Variables:

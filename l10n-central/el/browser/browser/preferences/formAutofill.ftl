@@ -83,7 +83,7 @@ autofill-address-tel = Τηλέφωνο
 autofill-address-email = Email
 autofill-cancel-button = Ακύρωση
 autofill-save-button = Αποθήκευση
-autofill-country-warning-message = Η αυτοσυμπλήρωση φορμών είναι διαθέσιμη μόνο σε ορισμένες χώρες προς το παρόν.
+autofill-country-warning-message = Η αυτόματη συμπλήρωση φορμών διατίθεται μόνο σε ορισμένες χώρες προς το παρόν.
 # The dialog title for creating credit cards in browser preferences.
 autofill-add-new-card-title = Προσθήκη νέας πιστωτικής κάρτας
 # The dialog title for editing credit cards in browser preferences.

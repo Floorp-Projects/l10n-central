@@ -6,6 +6,10 @@ add-engine-window =
     .title = Zoekmachine toevoegen
     .style = width: 32em;
 
+add-engine-window2 =
+    .title = Zoekmachine toevoegen
+    .style = min-width: 32em;
+
 add-engine-button = Aangepaste zoekmachine toevoegen
 
 add-engine-name = Naam zoekmachine

@@ -154,6 +154,16 @@ downloading-file-opens-in-minutes = Atveriama po { $minutes } min…
 downloading-file-opens-in-minutes-and-seconds = Atveriama po { $minutes } min. { $seconds } sek…
 downloading-file-opens-in-seconds = Atveriama po { $seconds } sek.
 downloading-file-opens-in-some-time = Bus atveriama užbaigus…
+downloading-file-opens-in-hours-and-minutes-2 =
+    .value = Atveriama po { $hours } val. { $minutes } min…
+downloading-file-opens-in-minutes-2 =
+    .value = Atveriama po { $minutes } min…
+downloading-file-opens-in-minutes-and-seconds-2 =
+    .value = Atveriama po { $minutes } min. { $seconds } sek…
+downloading-file-opens-in-seconds-2 =
+    .value = Atveriama po { $seconds } sek.
+downloading-file-opens-in-some-time-2 =
+    .value = Bus atveriama užbaigus…
 downloading-file-click-to-open =
     .value = Atverti užbaigus
 
@@ -214,3 +224,17 @@ downloads-more-downloading =
         [few] Parsiunčiami dar { $count } failai
        *[other] Parsiunčiama dar { $count } failų
     }
+
+## Download errors
+
+downloads-error-alert-title = Atsiuntimo klaida
+# Variables:
+#   $extension (String): the name of the blocking extension.
+downloads-error-blocked-by = Atsiuntimo nepavyko įrašyti, nes jį blokuoja „{ $extension }“.
+# Used when the name of the blocking extension is unavailable.
+downloads-error-extension = Atsiuntimo nepavyko įrašyti, nes jį blokuoja priedas.
+# Line breaks in this message are meaningful, and should be maintained.
+downloads-error-generic =
+    Siuntinio nepavyko įrašyti dėl nežinomos klaidos.
+    
+    Pabandykite dar kartą.

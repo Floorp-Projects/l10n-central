@@ -17,7 +17,6 @@ firefoxview-just-now-timestamp = 剛剛
 # This is a headline for an area in the product where users can resume and re-open tabs they have previously viewed on other devices.
 firefoxview-tabpickup-header = 接收分頁
 firefoxview-tabpickup-description = 開啟其他裝置上的頁面。
-firefoxview-tabpickup-recenttabs-description = 近期開啟的分頁將顯示於此處
 # Variables:
 #  $percentValue (Number): the percentage value for setup completion
 firefoxview-tabpickup-progress-label = 完成 { $percentValue }%
@@ -43,6 +42,13 @@ firefoxview-tabpickup-sync-error-primarybutton = 再試一次
 firefoxview-tabpickup-sync-disconnected-header = 開啟同步功能即可繼續
 firefoxview-tabpickup-sync-disconnected-description = 若要取得您的分頁，需要先在 { -brand-short-name } 開啟同步功能。
 firefoxview-tabpickup-sync-disconnected-primarybutton = 到設定中開啟
+firefoxview-tabpickup-password-locked-header = 請輸入您的主控密碼來檢視分頁
+firefoxview-tabpickup-password-locked-description = 若要取得您的分頁，需要先輸入 { -brand-short-name } 的主控密碼。
+firefoxview-tabpickup-password-locked-link = 了解更多
+firefoxview-tabpickup-password-locked-primarybutton = 輸入主控密碼
+firefoxview-tabpickup-signed-out-header = 登入即可重新連線
+firefoxview-tabpickup-signed-out-description = 登入 { -fxaccount-brand-name } 即可重新連線並取回分頁。
+firefoxview-tabpickup-signed-out-primarybutton = 登入
 firefoxview-tabpickup-syncing = 稍等分頁進行同步，只要一下下即可。
 firefoxview-mobile-promo-header = 在手機或平板電腦接收分頁
 firefoxview-mobile-promo-description = 若要檢視您最新的行動分頁，請登入 iOS 或 Android 上的 { -brand-product-name }。
@@ -50,8 +56,13 @@ firefoxview-mobile-promo-primarybutton = 下載 { -brand-product-name } 行動�
 firefoxview-mobile-confirmation-header = 🎉都搞定了！
 firefoxview-mobile-confirmation-description = 您現在可以直接開啟平板電腦或手機上的 { -brand-product-name } 分頁。
 firefoxview-closed-tabs-title = 最近關閉的分頁
-firefoxview-closed-tabs-description = 重新開啟您最近在此裝置關閉的分頁。
-firefoxview-closed-tabs-placeholder = <strong>沒有最近關閉的頁面</strong><br/>免擔心遺失關閉的分頁，可隨時在此重新取回。
+firefoxview-closed-tabs-description2 = 重新開啟您最近在此視窗關閉的分頁。
+firefoxview-closed-tabs-placeholder-header = 沒有最近關閉的分頁
+firefoxview-closed-tabs-placeholder-body = 當您關閉此視窗中的分頁時，可以在此取回。
+# Variables:
+#   $tabTitle (string) - Title of tab being dismissed
+firefoxview-closed-tabs-dismiss-tab =
+    .title = 關閉 { $tabTitle }
 # refers to the last tab that was used
 firefoxview-pickup-tabs-badge = 最後開啟
 # Variables:
@@ -65,7 +76,8 @@ firefoxview-change-colorway-button = 更改配色
 #  $intensity (String): Colorway intensity
 #  $collection (String): Colorway Collection name
 firefoxview-colorway-description = { $intensity } · { $collection }
-firefoxview-synced-tabs-placeholder = <strong>尚無資料</strong><br/>下次您在其他裝置上的 { -brand-product-name } 開啟頁面時，也可以在此同步開啟。
+firefoxview-synced-tabs-placeholder-header = 還沒有任何東西
+firefoxview-synced-tabs-placeholder-body = 下次您在另一台裝置上的 { -brand-product-name } 開啟頁面時，也可以在此處開啟。
 firefoxview-collapse-button-show =
     .title = 顯示清單
 firefoxview-collapse-button-hide =

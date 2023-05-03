@@ -99,9 +99,19 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Registro decisioni
 graphics-crash-guards-title = Funzioni disattivate da Crash Guard
 graphics-workarounds-title = Soluzioni alternative
+graphics-device-pixel-ratios = Proporzioni pixel dispositivo delle finestre
 graphics-window-protocol = Protocollo finestra
 graphics-desktop-environment = Ambiente desktop
 place-database-title = Database Places
+place-database-stats = Statistiche
+place-database-stats-show = Mostra statistiche
+place-database-stats-hide = Nascondi statistiche
+place-database-stats-entity = Entità
+place-database-stats-count = Numero
+place-database-stats-size-kib = Dimensione (KiB)
+place-database-stats-size-perc = Dimensione (%)
+place-database-stats-efficiency-perc = Efficienza (%)
+place-database-stats-sequentiality-perc = Sequenzialità (%)
 place-database-integrity = Integrità
 place-database-verify-integrity = Verifica integrità
 a11y-title = Accessibilità
@@ -274,6 +284,9 @@ webgl2-version = Versione driver WebGL 2
 webgl2-driver-extensions = Estensioni driver WebGL 2
 webgl2-extensions = Estensioni WebGL 2
 
+webgpu-default-adapter = Scheda WebGPU predefinita
+webgpu-fallback-adapter = Scheda WebGPU di fallback
+
 support-blocklisted-bug = Bloccato per problemi noti: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
 
 # Variables
@@ -306,6 +319,7 @@ can-sandbox-media = Sandbox plugin multimediali
 content-sandbox-level = Livello sandbox content process
 effective-content-sandbox-level = Livello effettivo sandbox del processo per i contenuti
 content-win32k-lockdown-state = Stato Win32k Lockdown del processo per i contenuti
+support-sandbox-gpu-level = Livello sandbox processo GPU
 sandbox-proc-type-content = contenuti
 sandbox-proc-type-file = contenuto file
 sandbox-proc-type-media-plugin = plugin multimediale

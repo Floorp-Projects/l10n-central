@@ -41,10 +41,7 @@ videocontrols-picture-in-picture-explainer = Oglądaj filmy nawet, kiedy robisz 
 # This string is used as the label for a variation of the Picture-in-Picture video
 # toggle button when the mouse is hovering over the video.
 videocontrols-picture-in-picture-toggle-label2 = Wyciągnij to wideo
-# This string is used as part of a variation of the Picture-in-Picture video toggle
-# button. When using this variation, this string appears below the toggle when the
-# mouse hovers the toggle.
-videocontrols-picture-in-picture-explainer2 = Więcej ekranów to więcej zabawy. Oglądaj ten film w trybie „Obraz w obrazie” podczas przeglądania Internetu.
+videocontrols-picture-in-picture-explainer3 = Więcej ekranów to więcej zabawy. Oglądaj ten film, robiąc coś innego.
 videocontrols-error-aborted = Wczytywanie wideo przerwane.
 videocontrols-error-network = Odtwarzanie wideo przerwane z powodu błędu sieci.
 videocontrols-error-decode = Nie można odtworzyć wideo, ponieważ plik jest uszkodzony.
@@ -65,3 +62,12 @@ videocontrols-status-picture-in-picture = To wideo jest odtwarzane w trybie „
 # duration video, $position would be "5:00" and the string which is
 # surrounded by <span> would be deleted, result string would be "5:00".
 videocontrols-position-and-duration-labels = { $position }<span data-l10n-name="position-duration-format"> / { $duration }</span>
+# This is a plain text version of the videocontrols-position-and-duration-labels
+# string, used by screenreaders.
+#
+# Variables:
+#   $position (String): The current media position
+#   $duration (String): The total video duration
+videocontrols-scrubber-position-and-duration =
+    .aria-label = Pozycja
+    .aria-valuetext = { $position } / { $duration }

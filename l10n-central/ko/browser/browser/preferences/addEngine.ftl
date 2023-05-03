@@ -6,6 +6,10 @@ add-engine-window =
     .title = 검색 엔진 추가
     .style = width: 32em;
 
+add-engine-window2 =
+    .title = 검색 엔진 추가
+    .style = min-width: 32em;
+
 add-engine-button = 사용자 지정 엔진 추가
 
 add-engine-name = 검색 엔진 이름

@@ -19,42 +19,46 @@ pictureinpicture-close =
 ## Variables:
 ##   $shortcut (String) - Keyboard shortcut to execute the command.
 
-pictureinpicture-pause-cmd =
+pictureinpicture-pause-btn =
     .aria-label = Pauzeren
-    .title = Pauzeren (spatiebalk)
-pictureinpicture-play-cmd =
+    .tooltip = Pauzeren (spatiebalk)
+pictureinpicture-play-btn =
     .aria-label = Afspelen
-    .title = Afspelen (spatiebalk)
-pictureinpicture-mute-cmd =
+    .tooltip = Afspelen (spatiebalk)
+pictureinpicture-mute-btn =
     .aria-label = Dempen
-    .title = Dempen ({ $shortcut })
-pictureinpicture-unmute-cmd =
+    .tooltip = Dempen ({ $shortcut })
+pictureinpicture-unmute-btn =
     .aria-label = Dempen opheffen
-    .title = Dempen opheffen ({ $shortcut })
-pictureinpicture-unpip-cmd =
+    .tooltip = Dempen opheffen ({ $shortcut })
+pictureinpicture-unpip-btn =
     .aria-label = Terugsturen naar tabblad
-    .title = Terug naar tabblad
-pictureinpicture-close-cmd =
+    .tooltip = Terug naar tabblad
+pictureinpicture-close-btn =
     .aria-label = Sluiten
-    .title = Sluiten ({ $shortcut })
-pictureinpicture-subtitles-cmd =
+    .tooltip = Sluiten ({ $shortcut })
+pictureinpicture-subtitles-btn =
     .aria-label = Ondertitels
-    .title = Ondertitels
+    .tooltip = Ondertitels
 
 ##
 
-pictureinpicture-fullscreen-cmd =
+pictureinpicture-fullscreen-btn =
     .aria-label = Volledig scherm
-    .title = Volledig scherm (dubbelklik)
-pictureinpicture-exit-fullscreen-cmd =
+    .tooltip = Volledig scherm (dubbelklik)
+pictureinpicture-exit-fullscreen-btn =
     .aria-label = Volledig scherm verlaten
-    .title = Volledig scherm verlaten (dubbelklik)
-pictureinpicture-seekbackward-cmd =
+    .tooltip = Volledig scherm verlaten (dubbelklik)
+pictureinpicture-seekbackward-btn =
     .aria-label = Terug
-    .title = Terug (←)
-pictureinpicture-seekforward-cmd =
+    .tooltip = Terug (←)
+pictureinpicture-seekforward-btn =
     .aria-label = Vooruit
-    .title = Vooruit (→)
+    .tooltip = Vooruit (→)
+# This string is never displayed on the window. Is intended to be announced by
+# a screen reader whenever a user opens the subtitles settings panel
+# after selecting the subtitles button.
+pictureinpicture-subtitles-panel-accessible = Ondertitelingsinstellingen
 pictureinpicture-subtitles-label = Ondertitels
 pictureinpicture-font-size-label = Lettergrootte
 pictureinpicture-font-size-small = Klein

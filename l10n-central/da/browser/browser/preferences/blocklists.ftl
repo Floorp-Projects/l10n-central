@@ -6,6 +6,10 @@ blocklist-window =
     .title = Blokeringslister
     .style = width: 55em
 
+blocklist-window2 =
+    .title = Blokeringslister
+    .style = min-width: 55em
+
 blocklist-description = Vælg hvilken liste, { -brand-short-name } skal bruge til at blokere sporings-teknologier på nettet. Listerne leveres af <a data-l10n-name="disconnect-link" title="Disconnect">Disconnect</a>.
 blocklist-close-key =
     .key = w

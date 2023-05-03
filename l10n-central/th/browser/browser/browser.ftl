@@ -38,11 +38,47 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (การเรียกดูแบบส่วนตัว)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (การเรียกดูแบบส่วนตัว)
+# These are the default window titles everywhere except macOS. The first two
+# attributes are used when the web content opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-window-titles =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = การเรียกดูแบบส่วนตัวของ { -brand-full-name }
+    .data-content-title-default = { $content-title } — { -brand-full-name }
+    .data-content-title-private = { $content-title } — การเรียกดูแบบส่วนตัวของ { -brand-full-name }
+# These are the default window titles on macOS. The first two are for use when
+# there is no content title:
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox — (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Do not use the brand name in the last two attributes, as we do on non-macOS.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-mac-window-titles =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } — การเรียกดูแบบส่วนตัว
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } — การเรียกดูแบบส่วนตัว
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
 # `browser-main-window` and `browser-main-window-mac`.
 browser-main-window-title = { -brand-full-name }
+# The non-variable portion of this MUST match the translation of
+# "PRIVATE_BROWSING_SHORTCUT_TITLE" in custom.properties
+private-browsing-shortcut-text-2 = การเรียกดูแบบส่วนตัวของ { -brand-shortcut-name }
 
 ##
 
@@ -62,7 +98,7 @@ urlbar-eme-notification-anchor =
 urlbar-web-authn-anchor =
     .tooltiptext = เปิดแผง ​Web Authentication
 urlbar-canvas-notification-anchor =
-    .tooltiptext = จัดการสิทธิอนุญาตการส่งออกผืนผ้าใบ
+    .tooltiptext = จัดการสิทธิ์อนุญาตการสกัดข้อมูลจาก canvas
 urlbar-web-rtc-share-microphone-notification-anchor =
     .tooltiptext = จัดการการแบ่งปันไมโครโฟนของคุณกับไซต์
 urlbar-default-notification-anchor =
@@ -82,7 +118,7 @@ urlbar-indexed-db-notification-anchor =
 urlbar-password-notification-anchor =
     .tooltiptext = เปิดแผงข้อความบันทึกรหัสผ่าน
 urlbar-translated-notification-anchor =
-    .tooltiptext = จัดการการแปลหน้านี้
+    .tooltiptext = จัดการการแปลหน้า
 urlbar-plugins-notification-anchor =
     .tooltiptext = จัดการการใช้ปลั๊กอิน
 urlbar-web-rtc-share-devices-notification-anchor =
@@ -100,11 +136,23 @@ urlbar-addons-notification-anchor =
 urlbar-tip-help-icon =
     .title = รับความช่วยเหลือ
 urlbar-search-tips-confirm = ตกลง เข้าใจแล้ว
+urlbar-search-tips-confirm-short = เข้าใจแล้ว
 # Read out before Urlbar Tip text content so screenreader users know the
 # subsequent text is a tip offered by the browser. It should end in a colon or
 # localized equivalent.
 urlbar-tip-icon-description =
     .alt = เคล็ดลับ:
+urlbar-result-menu-button =
+    .title = เปิดเมนู
+urlbar-result-menu-learn-more =
+    .label = เรียนรู้เพิ่มเติม
+    .accesskey = ร
+urlbar-result-menu-remove-from-history =
+    .label = เอาออกจากประวัติ
+    .accesskey = อ
+urlbar-result-menu-tip-get-help =
+    .label = รับความช่วยเหลือ
+    .accesskey = ช
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -113,6 +161,8 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = พิมพ์น้อยลง ค้นหามากขึ้น: ค้นหา { $engineName } โดยตรงจากแถบที่อยู่ของคุณ
 urlbar-search-tips-redirect-2 = เริ่มการค้นหาของคุณในแถบที่อยู่เพื่อดูข้อเสนอแนะจาก { $engineName } และประวัติการเรียกดูของคุณ
+# Make sure to match the name of the Search panel in settings.
+urlbar-search-tips-persist = ตอนนี้การค้นหาทำได้ง่ายขึ้นแล้ว ลองทำให้การค้นหาของคุณเจาะจงขึ้นที่นี่ในแถบที่อยู่ เมื่อต้องการแสดง URL แทน ให้ไปที่ การค้นหา ในการตั้งค่า
 # Prompts users to use the Urlbar when they are typing in the domain of a
 # search engine, e.g. google.com or amazon.com.
 urlbar-tabtosearch-onboard = เลือกทางลัดนี้เพื่อค้นหาสิ่งที่คุณต้องการได้เร็วขึ้น
@@ -229,34 +279,42 @@ search-one-offs-tabs =
     .tooltiptext = แท็บ ({ $restrict })
 search-one-offs-history =
     .tooltiptext = ประวัติ ({ $restrict })
-
-## QuickActions are shown in the urlbar as the user types a matching string
-
+search-one-offs-actions =
+    .tooltiptext = การกระทำ ({ $restrict })
 
 ## QuickActions are shown in the urlbar as the user types a matching string
 ## The -cmd- strings are comma separated list of keywords that will match
 ## the action.
 
-# Opens the about:addons page
+# Opens the about:addons page in the home / recommendations section
 quickactions-addons = ดูส่วนเสริม
+quickactions-cmd-addons2 = ส่วนเสริม
 # Opens the bookmarks library window
-quickactions-bookmarks = ดูที่คั่นหน้า
+quickactions-bookmarks2 = จัดการที่คั่นหน้า
 quickactions-cmd-bookmarks = ที่คั่นหน้าที่คั่นหน้า
 # Opens a SUMO article explaining how to clear history
 quickactions-clearhistory = ล้างประวัติ
 quickactions-cmd-clearhistory = ล้างประวัติ
 # Opens about:downloads page
-quickactions-downloads = เปิกการดาวน์โหลด
+quickactions-downloads2 = ดูการดาวน์โหลด
 quickactions-cmd-downloads = ดาวน์โหลด
+# Opens about:addons page in the extensions section
+quickactions-extensions = จัดการส่วนขยาย
+quickactions-cmd-extensions = ส่วนขยาย
 # Opens the devtools web inspector
-quickactions-inspector = เปิดตัวตรวจสอบ
+quickactions-inspector2 = เปิดเครื่องมือนักพัฒนา
+quickactions-cmd-inspector = ตัวตรวจสอบ, devtools
 # Opens about:logins
-quickactions-logins = ดูการเข้าสู่ระบบ
+quickactions-logins2 = จัดการรหัสผ่าน
+quickactions-cmd-logins = การเข้าสู่ระบบ, รหัสผ่าน
+# Opens about:addons page in the plugins section
+quickactions-plugins = จัดการปลั๊กอิน
+quickactions-cmd-plugins = ปลั๊กอิน
 # Opens the print dialog
-quickactions-print = พิมพ์
+quickactions-print2 = พิมพ์หน้า
 quickactions-cmd-print = พิมพ์
 # Opens a new private browsing window
-quickactions-private = เปิดหน้าต่างการท่องเว็บแบบส่วนตัว
+quickactions-private2 = เปิดหน้าต่างส่วนตัว
 quickactions-cmd-private = การเรียกดูแบบส่วนตัว
 # Opens a SUMO article explaining how to refresh
 quickactions-refresh = ล้าง { -brand-short-name } ใหม่
@@ -265,16 +323,23 @@ quickactions-cmd-refresh = เรียกใหม่
 quickactions-restart = เริ่มการทำงาน { -brand-short-name } ใหม่
 quickactions-cmd-restart = เริ่มการทำงานใหม่
 # Opens the screenshot tool
-quickactions-screenshot2 = จับภาพหน้าจอ
+quickactions-screenshot3 = จับภาพหน้าจอ
 quickactions-cmd-screenshot = ภาพหน้าจอ
 # Opens about:preferences
-quickactions-settings = เปิดการตั้งค่า
-quickactions-cmd-settings = การตั้งค่า ค่ากำหนด ตัวเลือก
+quickactions-settings2 = จัดการการตั้งค่า
+quickactions-cmd-settings = การตั้งค่า, การกำหนดลักษณะ, ตัวเลือก
+# Opens about:addons page in the themes section
+quickactions-themes = จัดการชุดรูปแบบ
+quickactions-cmd-themes = ชุดรูปแบบ
 # Opens a SUMO article explaining how to update the browser
-quickactions-update = ปรับปรุง { -brand-short-name }
+quickactions-update = อัปเดต { -brand-short-name }
 quickactions-cmd-update = อัปเดต
 # Opens the view-source UI with current pages source
-quickactions-viewsource = ดูต้นฉบับ
+quickactions-viewsource2 = ดูต้นฉบับหน้า
+quickactions-cmd-viewsource = ดูต้นฉบับ, ต้นฉบับ
+# Tooltip text for the help button shown in the result.
+quickactions-learn-more =
+    .title = เรียนรู้เพิ่มเติมเกี่ยวกับคำสั่งด่วน
 
 ## Bookmark Panel
 
@@ -341,6 +406,7 @@ identity-connection-not-secure-security-view = คุณไม่ได้เช
 identity-connection-verified = คุณได้เชื่อมต่ออย่างปลอดภัยไปยังไซต์นี้
 identity-ev-owner-label = ออกใบรับรองให้กับ:
 identity-description-custom-root = Mozilla ไม่รู้จักผู้ออกใบรับรองนี้ ซึ่งอาจถูกเพิ่มจากระบบปฏิบัติการของคุณหรือโดยผู้ดูแลระบบ <label data-l10n-name="link">เรียนรู้เพิ่มเติม</label>
+identity-description-custom-root2 = Mozilla ไม่รู้จักผู้ออกใบรับรองนี้ ซึ่งอาจถูกเพิ่มจากระบบปฏิบัติการของคุณหรือโดยผู้ดูแลระบบ
 identity-remove-cert-exception =
     .label = เอาข้อยกเว้นออก
     .accesskey = อ
@@ -349,9 +415,12 @@ identity-description-insecure-login-forms = การเข้าสู่ระ
 identity-description-weak-cipher-intro = การเชื่อมต่อของคุณไปยังเว็บไซต์นี้ใช้การเข้ารหัสที่อ่อนแอและไม่เป็นส่วนตัว
 identity-description-weak-cipher-risk = ผู้คนอื่น ๆ สามารถดูข้อมูลของคุณหรือเปลี่ยนแปลงลักษณะการทำงานของเว็บไซต์
 identity-description-active-blocked = { -brand-short-name } ได้ปิดกั้นบางส่วนของหน้านี้ที่ไม่ปลอดภัย <label data-l10n-name="link">เรียนรู้เพิ่มเติม</label>
+identity-description-active-blocked2 = { -brand-short-name } ได้ปิดกั้นบางส่วนของหน้านี้ที่ไม่ปลอดภัย
 identity-description-passive-loaded = การเชื่อมต่อของคุณไม่เป็นส่วนตัวและข้อมูลที่คุณแบ่งปันกับเว็บไซต์คนอื่นสามารถดูได้
 identity-description-passive-loaded-insecure = เว็บไซต์นี้มีเนื้อหาที่ไม่ปลอดภัย (อย่างเช่น ภาพ) <label data-l10n-name="link">เรียนรู้เพิ่มเติม</label>
 identity-description-passive-loaded-mixed = ถึงแม้ว่า { -brand-short-name } ได้ปิดกั้นเนื้อหาบางส่วน แต่ก็ยังคงมีเนื้อหาในหน้าที่ไม่ปลอดภัย (อย่างเช่น ภาพ) <label data-l10n-name="link">เรียนรู้เพิ่มเติม</label>
+identity-description-passive-loaded-insecure2 = เว็บไซต์นี้มีเนื้อหาที่ไม่ปลอดภัย (อย่างเช่น ภาพ)
+identity-description-passive-loaded-mixed2 = ถึงแม้ว่า { -brand-short-name } ได้ปิดกั้นเนื้อหาบางส่วน แต่ก็ยังคงมีเนื้อหาในหน้าที่ไม่ปลอดภัย (อย่างเช่น ภาพ)
 identity-description-active-loaded = เว็บไซต์นี้ประกอบด้วยเนื้อหาที่เชื่อถือไม่ได้ (เช่น สคริปต์) และการเชื่อมต่อไปยังไซต์ก็ไม่เป็นส่วนตัว
 identity-description-active-loaded-insecure = ข้อมูลที่คุณแบ่งปันกับไซต์นี้สามารถดูได้โดยผู้อื่น (เช่น รหัสผ่าน, ข้อความ, บัตรเครดิต ฯลฯ)
 identity-learn-more =
@@ -428,6 +497,9 @@ popup-select-microphone-icon =
     .tooltiptext = ไมโครโฟน
 popup-select-speaker-icon =
     .tooltiptext = ลำโพง
+popup-select-window-or-screen =
+    .label = หน้าต่างหรือหน้าจอ:
+    .accesskey = ห
 popup-all-windows-shared = หน้าต่างที่ปรากฏอยู่ทั้งหมดบนหน้าจอของคุณจะถูกแบ่งปัน
 popup-screen-sharing-block =
     .label = ปิดกั้น
@@ -449,6 +521,7 @@ sharing-warning-disable-for-session =
 ## DevTools F12 popup
 
 enable-devtools-popup-description = หากต้องการใช้ทางลัด F12 ให้เปิด DevTools ก่อนผ่านเมนู Web Developer
+enable-devtools-popup-description2 = หากต้องการใช้ทางลัด F12 ให้เปิด DevTools ก่อนผ่านเมนู เครื่องมือสำหรับเบราว์เซอร์
 
 ## URL Bar
 
@@ -484,6 +557,10 @@ urlbar-placeholder-search-mode-other-history =
 urlbar-placeholder-search-mode-other-tabs =
     .placeholder = ป้อนคำค้นหา
     .aria-label = ค้นหาแท็บ
+# This placeholder is used when searching quick actions.
+urlbar-placeholder-search-mode-other-actions =
+    .placeholder = ใส่คำค้นหา
+    .aria-label = คำสั่งการค้นหา
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
@@ -559,6 +636,7 @@ urlbar-result-action-calculator-result = = { $result }
 urlbar-result-action-search-bookmarks = ค้นหาที่คั่นหน้า
 urlbar-result-action-search-history = ค้นหาประวัติ
 urlbar-result-action-search-tabs = ค้นหาแท็บ
+urlbar-result-action-search-actions = คำสั่งการค้นหา
 
 ## Labels shown above groups of urlbar results
 
@@ -572,6 +650,23 @@ urlbar-group-firefox-suggest =
 #  $engine (String): the name of the search engine providing the suggestions
 urlbar-group-search-suggestions =
     .label = ข้อเสนอแนะ { $engine }
+# A label shown above Quick Actions in the urlbar results.
+urlbar-group-quickactions =
+    .label = คำสั่งด่วน
+
+## Reader View toolbar buttons
+
+# This should match menu-view-enter-readerview in menubar.ftl
+reader-view-enter-button =
+    .aria-label = เข้าสู่มุมมองผู้อ่าน
+# This should match menu-view-close-readerview in menubar.ftl
+reader-view-close-button =
+    .aria-label = ปิดมุมมองผู้อ่าน
+
+## Picture-in-Picture urlbar button
+## Variables:
+##   $shortcut (String) - Keyboard shortcut to execute the command.
+
 
 ## Full Screen and Pointer Lock UI
 
@@ -617,6 +712,11 @@ bookmarks-other-bookmarks-menu =
     .label = ที่คั่นหน้าอื่น ๆ
 bookmarks-mobile-bookmarks-menu =
     .label = ที่คั่นหน้าในมือถือ
+
+## Variables:
+##   $isVisible (boolean): if the specific element (e.g. bookmarks sidebar,
+##                         bookmarks toolbar, etc.) is visible or not.
+
 bookmarks-tools-sidebar-visibility =
     .label =
         { $isVisible ->
@@ -641,12 +741,17 @@ bookmarks-tools-menu-button-visibility =
             [true] เอาเมนูที่คั่นหน้าออกจากแถบเครื่องมือ
            *[other] เพิ่มเมนูที่คั่นหน้าไปยังแถบเครื่องมือ
         }
+
+##
+
 bookmarks-search =
     .label = ค้นหาที่คั่นหน้า
 bookmarks-tools =
     .label = เครื่องมือที่คั่นหน้า
 bookmarks-bookmark-edit-panel =
     .label = แก้ไขที่คั่นหน้านี้
+bookmarks-subview-edit-bookmark =
+    .label = แก้ไขที่คั่นหน้านี้…
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -663,6 +768,9 @@ bookmarks-toolbar-placeholder-button =
 # "Bookmark" is a verb, as in "Add current tab to bookmarks".
 bookmarks-current-tab =
     .label = เพิ่มที่คั่นหน้าแท็บปัจจุบัน
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-subview-bookmark-tab =
+    .label = เพิ่มที่คั่นหน้าสำหรับแท็บปัจจุบัน…
 
 ## Library Panel items
 
@@ -688,8 +796,8 @@ repair-text-encoding-button =
 # Variables:
 #  $shortcut (String): keyboard shortcut to open the add-ons manager
 toolbar-addons-themes-button =
-    .label = ส่วนเสริมและชุดตกแต่ง
-    .tooltiptext = จัดการส่วนเสริมและชุดตกแต่งของคุณ ({ $shortcut })
+    .label = ส่วนเสริมและชุดรูปแบบ
+    .tooltiptext = จัดการส่วนเสริมและชุดรูปแบบของคุณ ({ $shortcut })
 # Variables:
 #  $shortcut (String): keyboard shortcut to open settings (only on macOS)
 toolbar-settings-button =
@@ -703,8 +811,8 @@ toolbar-overflow-customize-button =
     .label = ปรับแต่งแถบเครื่องมือ…
     .accesskey = ป
 toolbar-button-email-link =
-    .label = ส่งอีเมลลิงก์
-    .tooltiptext = ส่งอีเมลลิงก์ไปยังหน้านี้
+    .label = ส่งลิงก์ทางอีเมล
+    .tooltiptext = ส่งลิงก์ที่ไปยังหน้านี้ทางอีเมล
 # Variables:
 #  $shortcut (String): keyboard shortcut to save a copy of the page
 toolbar-button-save-page =
@@ -841,3 +949,36 @@ private-browsing-indicator-label = การเรียกดูแบบส่
 
 ## Unified extensions (toolbar) button
 
+unified-extensions-button =
+    .label = ส่วนขยาย
+    .tooltiptext = ส่วนขยาย
+
+## Unified extensions button when permission(s) are needed.
+## Note that the new line is intentionally part of the tooltip.
+
+unified-extensions-button-permissions-needed =
+    .label = ส่วนขยาย
+    .tooltiptext =
+        ส่วนขยาย
+        ต้องการสิทธิอนุญาต
+
+## Autorefresh blocker
+
+refresh-blocked-refresh-label = { -brand-short-name } ได้ป้องกันไม่ให้หน้านี้โหลดใหม่โดยอัตโนมัติ
+refresh-blocked-redirect-label = { -brand-short-name } ได้ป้องกันไม่ให้หน้านี้เปลี่ยนเส้นทางไปยังหน้าอื่นโดยอัตโนมัติ
+refresh-blocked-allow =
+    .label = อนุญาต
+    .accesskey = อ
+
+## Firefox Relay integration
+
+firefox-relay-offer-why-relay = { -relay-brand-name } ปกปิดที่อยู่อีเมลที่แท้จริงของคุณเพื่อช่วยปกป้องคุณจากการรั่วไหลของข้อมูลและสแปม
+firefox-relay-offer-how-we-integrate = เมื่อดำเนินการต่อ คุณจะสามารถสร้างตัวปกปิดอีเมล { -relay-brand-short-name } ใหม่ได้โดยตรงจากตัวจัดการรหัสผ่าน { -brand-shorter-name } ของคุณ
+# Variables:
+#  $sitename (String): name of the site where user enters their Relay mask
+#  $useremail (String): user email that will receive messages
+firefox-relay-offer-what-relay-does = เราจะส่งต่ออีเมลทั้งหมดจาก <strong>{ $sitename }</strong> ไปยัง <strong>{ $useremail }</strong>
+
+## Popup Notification
+
+popup-notification-xpinstall-prompt-learn-more = เรียนรู้เพิ่มเติมเกี่ยวกับการติดตั้งส่วนเสริมอย่างปลอดภัย
