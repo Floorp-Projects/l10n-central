@@ -432,6 +432,10 @@ restore-from-backup-prompt-title = Floorp Notes 復元サービス
 restore-from-this-backup = このバックアップの状態に Notes を復元しますか？
 
 ## user.js
+
+userjs-button =  user.js オプションを開く... 
+userjs-select-option =  user.js を選択 
+
 header-userjs = user.js
 userjs-customize = user.js で { -brand-short-name } をカスタマイズする。
 about-userjs-customize = user.jsは、{ -brand-short-name } をカスタマイズするための設定ファイルです。user.js はインターネットからダウンロードされ、元の user.js ファイルを上書きします。user.js はインターネットからダウンロードされ、元のuser.jsを上書きしますので、バックアップをとってから使用してください。
