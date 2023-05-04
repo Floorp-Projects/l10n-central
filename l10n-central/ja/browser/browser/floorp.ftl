@@ -417,6 +417,50 @@ floorp-home-mode-choice-default =
 floorp-home-prefs-content-header = Floorp Home コンテンツ
 floorp-home-prefs-content-description = Floorp Home に表示するコンテンツを選びましょう。
 
+## Notes
+floorp-notes = { -brand-short-name } Notes
+restore-from-backup = Notes をバックアップから復元する
+enable-notes-sync = 
+ .label = Notes の Firefox Sync による同期を有効にする
+about-notes-backup-tips = Floorp Notes は、Firefox Sync を使用して、他のデバイスとノートを同期します。ノートを紛失した場合、バックアップから復元することができます。バックアップは { -brand-short-name } を起動すると作成されます。
+notes-sync-description = これにより、同期時にメモが上書きされ、コンテンツが失われる問題を解決することができます。
+backuped-time = バックアップ時刻
+notes-backup-option = バックアップ設定
+backup-option-button = バックアップ設定を開く...
+
+restore-from-backup-prompt-title = Floorp Notes 復元サービス
+restore-from-this-backup = このバックアップの状態に Notes を復元しますか？
+
+## user.js
+header-userjs = user.js
+userjs-customize = user.js で { -brand-short-name } をカスタマイズする。
+about-userjs-customize = user.jsは、{ -brand-short-name } をカスタマイズするための設定ファイルです。user.js はインターネットからダウンロードされ、元の user.js ファイルを上書きします。user.js はインターネットからダウンロードされ、元のuser.jsを上書きしますので、バックアップをとってから使用してください。
+
+userjs-label = user.js リスト
+userjs-prompt = Floorp user.js
+apply-userjs-attention = これにより、元の user.js ファイルは上書きされます。
+apply-userjs-attention2 = 使用する前に、元の user.js ファイルをバックアップしてください。
+
+## userjs Options
+
+default-userjs-label = Floorp Default
+about-default-userjs = テレメトリー無効。様々なカスタマイズが有効なバランスの良い { -brand-short-name } 設定です。
+
+Securefox-label = Yokoffing Securefox
+about-Securefox = HTTPS をデフォルトで有効に。サイト分離による Total Cookie Protection。状態やネットワークのパーティショニングを強化。その他、様々な機能強化。
+
+default-label = Yokoffing Default
+about-default = 必要なものはすべて。壊れることはありません。これが、あなたの user.js です。
+
+Fastfox-label = Yokoffing Fastfox
+about-Fastfox = { -brand-short-name } の閲覧速度を圧倒的に向上させる。Chrome 以上の速度を！
+
+Peskyfox-label = Yokoffing Peskyfox
+about-Peskyfox = 新しいタブページの整理をする。ポケットを削除する。コンパクトモードをオプションで復活させる。ウェブページの通知、ポップアップ、その他の迷惑行為を停止する。
+
+Smoothfox-label = Yokoffing Smoothfox
+about-Smoothfox = Edge のようなスムーズなスクロールを、お気に入りのブラウザで実現することができます。
+
 
 ################################################################### browser ###############################################################
 
