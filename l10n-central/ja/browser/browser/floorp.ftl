@@ -431,6 +431,8 @@ backup-option-button = バックアップ設定を開く...
 restore-from-backup-prompt-title = Floorp Notes 復元サービス
 restore-from-this-backup = このバックアップの状態に Notes を復元しますか？
 
+restore-button = 復元
+
 ## user.js
 
 userjs-button =  user.js オプションを開く... 
@@ -438,12 +440,14 @@ userjs-select-option =  user.js を選択
 
 header-userjs = user.js
 userjs-customize = user.js で { -brand-short-name } をカスタマイズする。
-about-userjs-customize = user.jsは、{ -brand-short-name } をカスタマイズするための設定ファイルです。user.js はインターネットからダウンロードされ、元の user.js ファイルを上書きします。user.js はインターネットからダウンロードされ、元のuser.jsを上書きしますので、バックアップをとってから使用してください。
+about-userjs-customize = user.jsは、{ -brand-short-name } をカスタマイズするための設定ファイルです。user.js はインターネットからダウンロードされ、元の user.js ファイルを上書きします。元の user.js のバックアップをとってから使用してください。ダウンロード先の user.js により発生した問題は Floorp は無関係として処理します。
 
 userjs-label = user.js リスト
 userjs-prompt = Floorp user.js
 apply-userjs-attention = これにより、元の user.js ファイルは上書きされます。
 apply-userjs-attention2 = 使用する前に、元の user.js ファイルをバックアップしてください。
+
+apply-userjs-button = 適用する
 
 ## userjs Options
 
