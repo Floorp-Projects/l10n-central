@@ -24,4 +24,4 @@
 # remain unchanged across different versions (Nightly, Beta, etc.).
 -brand-product-name = Floorp
 -vendor-short-name = Ablaze
-trademarkInfo = Firefox および Firefox ロゴは 米国 Mozilla Foundation の米国およびその他の国における商標です。
+trademarkInfo = Floorp の名称は開発者個人の日本における商標です。
