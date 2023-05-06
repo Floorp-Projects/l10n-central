@@ -35,6 +35,10 @@ enable-floorp-workspace =
 tab-sleep-timeout-minutes-value = Время перевода вкладок в спящий режим (минуты)
 enable-tab-scroll-change =
  .label = Переключать вкладки с помощью прокрутки
+enable-tab-scroll-reverse =
+ .label = Обратное направление прокрутки вкладок
+enable-tab-scroll-wrap =
+ .label = Переносить прокручивающиеся вкладки на край экрана
 enable-double-click-block = 
  .label = Использовать двойной щелчок для закрытия вкладки
 enable-show-pinned-tabs-title =
@@ -577,3 +581,47 @@ workspace-button = Рабочее пространство
 workspace-default = По умолчанию
 workspace-add = 
  .label= Добавить новое рабочее пространство
+
+workspace-context-menu-selected-tab =
+ .label = Выбранная вкладка не может быть перемещена
+move-tab-another-workspace =
+ .label = Переместить на другую рабочую область
+
+ 
+######################################################################### menubar item ###############################################################
+
+sharemode-menuitem =
+  .label = Режим общего доступа
+  .accesskey = S
+
+######################################################################### user js ###############################################################
+
+header-userjs = user.js
+userjs-customize = Кастомизируйте { -brand-short-name } используя user.js
+about-userjs-customize = user.js is a configuration file that allows you to customize { -brand-short-name }. user.js will download from the Internet and overwrite the original user.js file. Please back up the original user.js file before using it. config will be applied after restarting { -brand-short-name }.
+userjs-label = Список user.js
+userjs-prompt = Floorp user.js
+apply-userjs-attention = Это действие перезапишет оригинальный файл user.js
+apply-userjs-attention2 = Пожалуйста, создайте резервную копию оригинального файла user.js перед использованием.
+
+userjs-button = Открыть опции user.js...
+userjs-select-option = Выберите user.js
+
+apply-userjs-button = Применить
+## userjs Options
+
+default-userjs-label = Floorp Default
+about-default-userjs = Телеметрия отключена. Хорошо сбалансированный { -brand-short-name } с различными включёнными надстройками
+Securefox-label = Yokoffing Securefox
+about-Securefox = HTTPS по умолчанию. Полная защита куки с изоляцией сайтов. Enhanced state and network partitioning. Various other enhancements.
+default-label = Yokoffing Default
+about-default = Все необходимые настройки. Всё по умолчанию. Это ваш файл user.js.
+Fastfox-label = Yokoffing Fastfox
+about-Fastfox = Значительно увеличивает скорость просмотра в Firefox. Поборитесь с Chrome на его территории!
+Peskyfox-label = Yokoffing Peskyfox
+about-Peskyfox = Очищает новую вкладку. Удаляет Pocket. Восстанавливает компактный режим в качестве опции. Остановливает уведомления веб-страниц, всплывающие окна и другие раздражения..
+Smoothfox-label = Yokoffing Smoothfox
+about-Smoothfox = Получите плавную прокрутку, как в Edge, в своем любимом браузере, или выберите что-то более подходящее для вашего стиля.
+
+# Move them to where they should be
+restore-button = Восстановить
