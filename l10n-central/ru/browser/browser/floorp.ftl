@@ -598,7 +598,7 @@ sharemode-menuitem =
 
 header-userjs = user.js
 userjs-customize = Кастомизируйте { -brand-short-name } используя user.js
-about-userjs-customize = user.js is a configuration file that allows you to customize { -brand-short-name }. user.js will download from the Internet and overwrite the original user.js file. Please back up the original user.js file before using it. config will be applied after restarting { -brand-short-name }.
+about-userjs-customize = Файл user.js - это файл конфигурации, который позволяет настраивать { -brand-short-name }. Файл user.js будет загружен из Интернета и перезапишет оригинальный файл user.js. Пожалуйста, создайте резервную копию оригинального файла user.js перед использованием. Конфигурация будет применена после перезапуска { -brand-short-name }.
 userjs-label = Список user.js
 userjs-prompt = Floorp user.js
 apply-userjs-attention = Это действие перезапишет оригинальный файл user.js
