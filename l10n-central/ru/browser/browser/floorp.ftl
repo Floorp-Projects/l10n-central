@@ -571,6 +571,7 @@ floorp-show-all-downloads =
 
 workspace-prompt-title = Рабочие пространства Floorp
 please-enter-workspace-name = Пожалуйста, введите новое название рабочего пространства.
+please-enter-workspace-name-2 = Только буквенно-цифровые символы разрешены в названиях рабочих пространств.
 workspace-error = Ошибка!
 workspace-error-discription = Название рабочего пространства недопустимо или уже существует.
 
