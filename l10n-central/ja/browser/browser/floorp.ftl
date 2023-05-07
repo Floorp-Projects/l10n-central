@@ -723,3 +723,8 @@ workspace-context-menu-selected-tab =
  .label = 表示中のタブは他のワークスペースに移動できません。
 move-tab-another-workspace =
  .label = 他のワークスペースに移動
+
+######################################################################### Share mode ###############################################################
+
+sharemode-menuitem =
+  .label = 画面共有モード
