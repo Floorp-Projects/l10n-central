@@ -718,3 +718,8 @@ workspace-button = ワークスペース
 workspace-default = デフォルト
 workspace-add = 
  .label= ワークスペースを追加
+
+workspace-context-menu-selected-tab =
+ .label = 表示中のタブは他のワークスペースに移動できません。
+move-tab-another-workspace =
+ .label = 他のワークスペースに移動
