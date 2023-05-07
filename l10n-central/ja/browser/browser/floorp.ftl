@@ -707,7 +707,7 @@ memo-new-title = 新規メモ
 
 workspace-prompt-title = Floorp ワークスペース
 please-enter-workspace-name = 新しいワークスペース名を入力してください。
-please-enter-workspace-name-2 = アルファベットまたは数字のみが使えます。
+please-enter-workspace-name-2 = 記号と空白以外の文字かつ20文字以内で入力してください。
 workspace-error = エラー！
 workspace-error-discription = ワークスペース名が空白、長すぎるか既に存在します。
 
