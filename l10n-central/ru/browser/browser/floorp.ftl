@@ -626,3 +626,32 @@ about-Smoothfox = Получите плавную прокрутку, как в 
 
 # Move them to where they should be
 restore-button = Восстановить
+
+# Privacy Hub
+
+## BlockMoreTracker
+privacy-hub-header = Центр приватности
+block-more-tracker = Блокируйте больше рекламы и трекеров
+block-tracker = Этот раздел содержит набор расширений созданных для блокировки рекламы и трекеров
+view-at-AMO = Подробнее на addons.mozilla.org
+uBlock-Origin = uBlock Origin
+about-uboori = uBlock Origin блокирует рекламу, трекеры и опасные сайты.
+Facebook-Container = Facebook Container
+about-Facebook-Container = Предотвратите слежку Facebook за вами в Интернете. Facebook Container поможет вам взять под контроль и изолировать вашу веб-активность от Facebook.
+## Fingerprint
+fingerprint-header = Защита от фингерпринтинга и утечки IP-адреса.
+block-fingerprint = Фингерпринтинг - механизм отслеживания, основывающейся на уникальных характеристиках вашего браузера и операционной системы. Этот раздел содержит настройки, позволяющие дополнительно улучшить защиту от фингерпринтинга помимо блокировки по умолчанию.
+enable-firefox-fingerprint-protections = Включить надёжную защиту от фингерпринтинга.
+about-firefox-fingerprint-protection = Включение защиты в Floorp активирует принудительную светлую тему, отключает некоторые API, итд... Некоторые сайты могут работать некорректно.
+fingerprint-Protection =
+ .label = Защита от фингерпринтинга
+html5-canvas-prompt-settings =
+ .label = Автоматически одобрять запросы на подтверждение доступа к данным изображения HTML5
+canvas-prompt = Автоматически отклонять запросы на доступ к чтению холста.
+disable-webgl =
+ .label = Отключить WebGL
+about-webgl = WebGL - API Javascript, используемый для рендеринга графики, который может быть использован для идентификации GPU.
+Canvas-Blocker = Canvas Blocker
+WebRTC-connection = WebRTC - стандарт обеспечивающий звонки в режиме реального времени. Если вы отключите эту настройку, вы не сможете использовать Discord и т.д.
+WebRTC = 
+ .label = Включить WebRTC.
