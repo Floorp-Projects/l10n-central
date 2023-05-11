@@ -487,6 +487,11 @@ mouse-gesture-description = { -brand-short-name } でマウスジェスチャを
 Gesturefy = Gesturefy
 about-Gesturefy = Gesturefy はブラウザにマウスジェスチャを追加する拡張機能です。{ -brand-short-name } がこのアドオンのインストールを検出すると、{ -brand-short-name } でしか利用できないジェスチャーコマンドを Gesturefy に追加します。また、このアドオンは新しいタブで動作可能です。
 
+## Translate
+
+TWS = Translate Web Page
+about-TWS = Google や Yandexを使って、リアルタイムでページを翻訳します。選択したテキストやページ全体を翻訳することも可能です。新しいタブを開く必要はありません。ウェブページのテキストは、Google や Yandex などに送信されて翻訳されます。
+
 # Privacy Hub
 ## BlockMoreTracker
 privacy-hub-header = プライバシーハブ
