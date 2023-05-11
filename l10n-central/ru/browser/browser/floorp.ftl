@@ -217,8 +217,6 @@ bsb-history-sidebar =
   .label = { sidebar2-history-sidebar }
 bsb-download-sidebar =
   .label = { sidebar2-download-sidebar }
-bsb-TST-sidebar =
-  .label = { sidebar2-TST-sidebar }
 bsb-website = 
   .label = Сайт
 sidebar2-pref-delete =
@@ -259,10 +257,6 @@ dual-theme-disable-addon-button = Отключить (Субтема)
 dual-theme-enabled-heading = Включено (Субтема)
 
 ##################################################################### migration  ###############################################################
-
-import-from-vivaldi =
- .label = Vivaldi
- .accesskey = V
 
 status-bar =
  .label = Статусная строка
@@ -408,10 +402,6 @@ show-history-sidebar =
 sidebar2-download-sidebar = Загрузки
 show-download-sidebar =
  .tooltiptext = Показать боковую панель загрузок
-
-sidebar2-TST-sidebar = Вкладки в стиле древа
-show-TST-sidebar =
- .tooltiptext = Показать боковую панель в стиле древа
 
 show-CustomURL-sidebar =
  .label = Показать боковую панель пользовательских URL
