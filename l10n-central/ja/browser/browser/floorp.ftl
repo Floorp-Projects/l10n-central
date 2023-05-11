@@ -659,18 +659,3 @@ memo-second-tip = Floorp Notes は、メモを作成・編集・保存・削除�
 memo-third-tip = あなたのメモは Floorp ブラウザーの設定に保存されます。Firefox Sync は、パスワードによって暗号化されているため、あなた以外の他の人に見られることはありません。もちろん Ablaze や Floorp は、あなたのメモを読むことはできません。Firefox Sync はバックアップ機能ではないため、メモは必ずバックアップを取ってください。
 memo-fourth-tip = Floorp Notes は、Floorp のブラウザーマネージャーサイドバーまたは、「about:notes」を URL に入力すること開くことができます。
 memo-new-title = 新規メモ
-
-######################################################################### workspace ###############################################################
-
-workspace-prompt-title = Floorp ワークスペース
-please-enter-workspace-name = ワークスペース名を入力してください。
-workspace-error = エラー！
-workspace-error-discription = ワークスペース名が空白または既に存在します。
-
-workspace-button = ワークスペース
-  .label = ワークスペース
-  .tooltiptext = ワークスペース
-
-workspace-default = デフォルト
-workspace-add = 
- .label= ワークスペースを追加
