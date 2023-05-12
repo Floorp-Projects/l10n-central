@@ -614,6 +614,12 @@ about-Peskyfox = Очищает новую вкладку. Удаляет Pocket
 Smoothfox-label = Yokoffing Smoothfox
 about-Smoothfox = Получите плавную прокрутку, как в Edge, в своем любимом браузере, или выберите что-то более подходящее для вашего стиля.
 
+## Mouse Gesture
+mouse-gesture = Жесты мышью
+mouse-gesture-description = Gesturify должен быть установлен для использования жестов мыши в { -brand-short-name }.
+Gesturefy = Gesturefy
+about-Gesturefy = Gesturefy - расширение, которое добавляет использование жестов мыши в ваш браузер. Если { -brand-short-name } обнаружит установку этого дополнения, он добавит в Gesturefy жестовые команды, которые доступны только в { -brand-short-name }. Кроме того, этот аддон может работать с новыми вкладками!
+
 # Move them to where they should be
 restore-button = Восстановить
 
