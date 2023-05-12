@@ -617,6 +617,9 @@ about-Smoothfox = Получите плавную прокрутку, как в 
 # Move them to where they should be
 restore-button = Восстановить
 
+TWS = Translate Web Pages
+about-TWS = Переводите веб страницы в реальном времени используя переводчики Google или Яндекс. Вы можете выбрать между переводом целой страницы и выделенным текстом.
+
 # Privacy Hub
 
 ## BlockMoreTracker
