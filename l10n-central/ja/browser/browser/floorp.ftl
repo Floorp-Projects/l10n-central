@@ -779,3 +779,15 @@ move-tab-another-workspace =
 
 sharemode-menuitem =
   .label = 画面共有モード
+
+######################################################################### Like Chrome Download mgr ###############################################################
+
+floorp-delete-all-downloads = 
+  .label = すべてのダウンロードを隠す
+  .accesskey = D
+  .tooltiptext = すべてのダウンロードを隠す
+
+floorp-show-all-downloads =
+  .label = すべてのダウンロードを表示
+  .accesskey = S
+  .tooltiptext = すべてのダウンロードを表示
