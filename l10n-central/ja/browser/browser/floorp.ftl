@@ -335,6 +335,9 @@ newtab-background-folder-choose = フォルダを選ぶ
 
 newtab-background-extensions = 画像の拡張子 (","で区切ります)
 
+disable-blur-on-newtab = 
+  .label = { -brand-short-name } Home でのブラー効果を無効にする
+  
 ## lepton preferences
 
 about-lepton = { -brand-short-name } を Lepton を使用してカスタマイズします。設定の変更に、{ -brand-short-name } の再起動は必要ありません。代わりに Floorp は Lepton を再適用します。
