@@ -282,6 +282,9 @@ newtab-background-folder-open =
 newtab-background-folder-choose = Выбрать папку с изображениями
 newtab-background-extensions = Расширения изображений (разделенные символом ",")
 
+disable-blur-on-newtab = 
+  .label = Отключить эффект размытия на домашней странице { -brand-short-name }.
+
 about-lepton = Настройте { -brand-short-name } с помощью Lepton
 
 lepton-preference-button =
