@@ -217,8 +217,6 @@ bsb-history-sidebar =
   .label = { sidebar2-history-sidebar }
 bsb-download-sidebar =
   .label = { sidebar2-download-sidebar }
-bsb-TST-sidebar =
-  .label = { sidebar2-TST-sidebar }
 bsb-website = 
   .label = Сайт
 sidebar2-pref-delete =
@@ -259,10 +257,6 @@ dual-theme-disable-addon-button = Отключить (Субтема)
 dual-theme-enabled-heading = Включено (Субтема)
 
 ##################################################################### migration  ###############################################################
-
-import-from-vivaldi =
- .label = Vivaldi
- .accesskey = V
 
 status-bar =
  .label = Статусная строка
@@ -408,10 +402,6 @@ show-history-sidebar =
 sidebar2-download-sidebar = Загрузки
 show-download-sidebar =
  .tooltiptext = Показать боковую панель загрузок
-
-sidebar2-TST-sidebar = Вкладки в стиле древа
-show-TST-sidebar =
- .tooltiptext = Показать боковую панель в стиле древа
 
 show-CustomURL-sidebar =
  .label = Показать боковую панель пользовательских URL
@@ -624,8 +614,17 @@ about-Peskyfox = Очищает новую вкладку. Удаляет Pocket
 Smoothfox-label = Yokoffing Smoothfox
 about-Smoothfox = Получите плавную прокрутку, как в Edge, в своем любимом браузере, или выберите что-то более подходящее для вашего стиля.
 
+## Mouse Gesture
+mouse-gesture = Жесты мышью
+mouse-gesture-description = Gesturify должен быть установлен для использования жестов мыши в { -brand-short-name }.
+Gesturefy = Gesturefy
+about-Gesturefy = Gesturefy - расширение, которое добавляет использование жестов мыши в ваш браузер. Если { -brand-short-name } обнаружит установку этого дополнения, он добавит в Gesturefy жестовые команды, которые доступны только в { -brand-short-name }. Кроме того, этот аддон может работать с новыми вкладками!
+
 # Move them to where they should be
 restore-button = Восстановить
+
+TWS = Translate Web Pages
+about-TWS = Переводите веб страницы в реальном времени используя переводчики Google или Яндекс. Вы можете выбрать между переводом целой страницы и выделенным текстом.
 
 # Privacy Hub
 
@@ -640,7 +639,7 @@ Facebook-Container = Facebook Container
 about-Facebook-Container = Предотвратите слежку Facebook за вами в Интернете. Facebook Container поможет вам взять под контроль и изолировать вашу веб-активность от Facebook.
 ## Fingerprint
 fingerprint-header = Защита от фингерпринтинга и утечки IP-адреса.
-block-fingerprint = Фингерпринтинг - механизм отслеживания, основывающейся на уникальных характеристиках вашего браузера и операционной системы. Этот раздел содержит настройки, позволяющие дополнительно улучшить защиту от фингерпринтинга помимо блокировки по умолчанию.
+block-fingerprint = Фингерпринтинг - механизм отслеживания, основывающийся на уникальных характеристиках вашего браузера и операционной системы. Этот раздел содержит настройки, позволяющие дополнительно улучшить защиту от фингерпринтинга помимо блокировки по умолчанию.
 enable-firefox-fingerprint-protections = Включить надёжную защиту от фингерпринтинга.
 about-firefox-fingerprint-protection = Включение защиты в Floorp активирует принудительную светлую тему, отключает некоторые API, итд... Некоторые сайты могут работать некорректно.
 fingerprint-Protection =
