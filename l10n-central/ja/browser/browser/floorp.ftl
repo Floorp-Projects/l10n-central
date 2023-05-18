@@ -357,6 +357,9 @@ photon-mode =
 lepton-mode =
     .label = Lepton UI モード
 
+protonfix-mode =
+    .label = Proton Fix UI モード
+
 autohide-preference = 自動非表示のカスタマイズ
 
 floorp-lepton-enable-tab-autohide =
