@@ -293,10 +293,14 @@ lepton-preference-button =
 lepton-header = Настройки Lepton
 
 lepton-preference = Настройки дизайна Lepton
+
 photon-mode = 
     .label = Режим Photon
 lepton-mode = 
     .label = Режим Lepton
+
+protonfix-mode =
+    .label = Режим ProtonFix
 
 autohide-preference = Автоматически скрывать элементы
 floorp-lepton-enable-tab-autohide =
