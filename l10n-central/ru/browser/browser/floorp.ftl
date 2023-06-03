@@ -193,6 +193,9 @@ view-sidebar2-right =
 enable-sidebar2 =
  .label = Включить боковую панель менеджера браузера
 
+visible-bms =
+ .label = Видимость боковой панели менеджера браузера
+
 custom-URL-option = Задайте URL веб-панели
 set-custom-URL-button = 
  .label = Задать пользовательские URL...
