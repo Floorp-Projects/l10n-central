@@ -38,13 +38,15 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } —（隐私浏览）
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } —（隐私浏览）
-# These are the default window titles everywhere except macOS. The first two
-# attributes are used when the web content opened has no title:
+# These are the default window titles everywhere except macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
 #
 # default - "Mozilla Firefox"
 # private - "Mozilla Firefox (Private Browsing)"
 #
-# The last two are for use when there *is* a content title.
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
 # Variables:
 #  $content-title (String): the title of the web content.
 browser-main-window-window-titles =
@@ -52,14 +54,17 @@ browser-main-window-window-titles =
     .data-title-private = { -brand-full-name } 隐私浏览
     .data-content-title-default = { $content-title } — { -brand-full-name }
     .data-content-title-private = { $content-title } — { -brand-full-name } 隐私浏览
-# These are the default window titles on macOS. The first two are for use when
-# there is no content title:
+# These are the default window titles on macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
+#
 #
 # "default" - "Mozilla Firefox"
 # "private" - "Mozilla Firefox — (Private Browsing)"
 #
-# The last two are for use when there *is* a content title.
-# Do not use the brand name in the last two attributes, as we do on non-macOS.
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
+# Do not use the brand name in these, as we do on non-macOS.
 #
 # Also note the other subtle difference here: we use a `-` to separate the
 # brand name from `(Private Browsing)`, which does not happen on other OSes.
@@ -143,6 +148,8 @@ urlbar-search-tips-confirm-short = 知道了
 urlbar-tip-icon-description =
     .alt = 提示：
 urlbar-result-menu-button =
+    .title = 打开菜单
+urlbar-result-menu-button-feedback = 意见反馈
     .title = 打开菜单
 urlbar-result-menu-learn-more =
     .label = 详细了解
@@ -671,6 +678,11 @@ picture-in-picture-urlbar-button-open =
     .tooltiptext = 打开画中画（{ $shortcut }）
 picture-in-picture-urlbar-button-close =
     .tooltiptext = 关闭画中画（{ $shortcut }）
+picture-in-picture-panel-header = 画中画
+picture-in-picture-panel-headline = 不推荐在此网站使用画中画
+picture-in-picture-panel-body = 开启画中画后，视频可能会不按开发者预期的效果显示。
+picture-in-picture-enable-toggle =
+    .label = 仍要启用
 
 ## Full Screen and Pointer Lock UI
 
@@ -679,9 +691,9 @@ picture-in-picture-urlbar-button-close =
 #  $domain (String): the domain that is full screen, e.g. "mozilla.org"
 fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> 已进入全屏模式
 fullscreen-warning-no-domain = 此文档已进入全屏模式
-fullscreen-exit-button = 退出全屏模式(Esc)
+fullscreen-exit-button = 退出全屏模式 (Esc)
 # "esc" is lowercase on mac keyboards, but uppercase elsewhere.
-fullscreen-exit-mac-button = 退出全屏模式 (Esc)
+fullscreen-exit-mac-button = 退出全屏模式 (esc)
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
 # Variables
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
@@ -943,7 +955,7 @@ tabs-toolbar-list-all-tabs =
 
 # <img data-l10n-name="icon"/> will be replaced by the application menu icon
 restore-session-startup-suggestion-message = <strong>想打开先前的标签页？</strong>您可以从 { -brand-short-name } 应用程序菜单 <img data-l10n-name="icon"/> 中的“历史”恢复先前的浏览状态。
-restore-session-startup-suggestion-button = 告诉我如何做
+restore-session-startup-suggestion-button = 怎么做
 
 ## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
 
@@ -967,6 +979,15 @@ unified-extensions-button-permissions-needed =
     .label = 扩展
     .tooltiptext = 扩展所需权限
 
+## Unified extensions button when some extensions are quarantined.
+## Note that the new line is intentionally part of the tooltip.
+
+unified-extensions-button-quarantined =
+    .label = 扩展
+    .tooltiptext =
+        扩展
+        已禁用部分扩展
+
 ## Autorefresh blocker
 
 refresh-blocked-refresh-label = { -brand-short-name } 阻止了此页面自动重新加载。
@@ -986,4 +1007,39 @@ firefox-relay-offer-what-relay-does = 我们会将所有发送自“<strong>{ $s
 
 ## Popup Notification
 
+firefox-relay-offer-why-to-use-relay = 我们安全且易用的邮箱马甲通过隐藏您的电子邮件地址来保护您的身份并防止垃圾邮件。
+# Variables:
+#  $useremail (String): user email that will receive messages
+firefox-relay-offer-what-relay-provides = 发送到马甲邮箱的所有电子邮件都将转发到 <strong>{ $useremail }</strong>（除非您决定阻止它们）。
+firefox-relay-offer-legal-notice = 点击“使用马甲邮箱”，即表示您同意<label data-l10n-name="tos-url">服务条款</label>和<label data-l10n-name="privacy-url">隐私声明</label>。
+
+## Add-on Pop-up Notifications
+
+popup-notification-addon-install-unsigned =
+    .value = （未验证）
 popup-notification-xpinstall-prompt-learn-more = 详细了解如何安全地安装附加组件
+
+## Pop-up warning
+
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-message = { -brand-short-name } 阻止了此网站的 { $popupCount } 个弹窗。
+# The singular form is left out for English, since the number of blocked pop-ups is always greater than 1.
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-exceeded-message = { -brand-short-name } 阻止了此网站打开超过 { $popupCount } 个弹出式窗口。
+popup-warning-button =
+    .label =
+        { PLATFORM() ->
+            [windows] 选项
+           *[other] 首选项
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] P
+        }
+# Variables:
+#   $popupURI (String): the URI for the pop-up window
+popup-show-popup-menuitem =
+    .label = 显示“{ $popupURI }”

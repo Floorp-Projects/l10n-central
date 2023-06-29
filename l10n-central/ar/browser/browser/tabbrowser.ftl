@@ -13,10 +13,6 @@ tabbrowser-menuitem-close =
 #   $containerName (String): the name of the current container.
 tabbrowser-container-tab-title = ‏{ $title } ‏- ‏{ $containerName }
 # Variables:
-#   $title (String): the title of the current tab.
-tabbrowser-tab-tooltip =
-    .label = { $title }
-# Variables:
 #   $tabCount (Number): The number of tabs that will be closed.
 tabbrowser-close-tabs-tooltip =
     .label =
@@ -163,3 +159,16 @@ tabbrowser-context-mute-selected-tabs =
 tabbrowser-context-unmute-selected-tabs =
     .label = أطلِق صوت الألسنة
     .accesskey = ط
+
+## Ctrl-Tab dialog
+
+# Variables:
+#   $tabCount (Number): The number of tabs in the current browser window. It will always be 2 at least.
+tabbrowser-ctrl-tab-list-all-tabs =
+    .label =
+        { $tabCount ->
+            [two] اعرض لسانين
+            [few] اعرض { $tabCount } ألسنة
+            [many] اعرض { $tabCount } لسانًا
+           *[other] اعرض { $tabCount } لسان
+        }

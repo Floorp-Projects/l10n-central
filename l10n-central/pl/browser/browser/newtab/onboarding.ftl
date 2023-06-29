@@ -13,10 +13,18 @@
 onboarding-welcome-header = Witamy w przeglądarce { -brand-short-name }
 onboarding-start-browsing-button-label = Zacznij przeglądać Internet
 onboarding-not-now-button-label = Nie teraz
+mr1-onboarding-get-started-primary-button-label = Pierwsze kroki
+mr1-onboarding-welcome-header = Witamy w przeglądarce { -brand-short-name }
+mr1-onboarding-set-default-pin-primary-button-label = Ustaw przeglądarkę { -brand-short-name } jako główną
+    .title = Ustawia przeglądarkę { -brand-short-name } jako domyślną i przypina ją do paska zadań
+# This string will be used on welcome page primary button label
+# when Firefox is not default but already pinned
+mr1-onboarding-set-default-only-primary-button-label = Ustaw przeglądarkę { -brand-short-name } jako domyślną
+mr1-onboarding-set-default-secondary-button-label = Nie teraz
 
 ## Custom Return To AMO onboarding strings
 
-return-to-amo-subtitle = Świetnie, masz już przeglądarkę { -brand-short-name }
+return-to-amo-subtitle = Świetnie, masz już { -brand-short-name(case: "acc") }
 # <img data-l10n-name="icon"/> will be replaced with the icon belonging to the extension
 #
 # Variables:
@@ -27,7 +35,7 @@ return-to-amo-add-theme-label = Dodaj motyw
 
 ##  Variables: $addon-name (String) - Name of the add-on to be installed
 
-mr1-return-to-amo-subtitle = Witamy w przeglądarce { -brand-short-name }
+mr1-return-to-amo-subtitle = Witamy w { -brand-short-name(case: "loc") }
 mr1-return-to-amo-addon-title = Masz teraz szybką, prywatną przeglądarkę { -brand-short-name } zawsze pod ręką. Możesz do niej dodać <b>{ $addon-name }</b> i osiągnąć jeszcze więcej.
 mr1-return-to-amo-add-extension-label = Dodaj „{ $addon-name }”
 
@@ -39,14 +47,6 @@ mr1-return-to-amo-add-extension-label = Dodaj „{ $addon-name }”
 #   $total (Int) - Total number of pages
 onboarding-welcome-steps-indicator =
     .aria-label = Pierwsze kroki: { $current }. ekran z { $total }
-
-# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
-# Variables:
-#   $current (Int) - Number of the current page
-#   $total (Int) - Total number of pages
-
-onboarding-welcome-steps-indicator-label =
-    .aria-label = Postęp: { $current }. krok z { $total }
 # "Hero Text" displayed on left side of welcome screen.
 # The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
 # It also signals the passion users bring to Firefox, how they use
@@ -62,6 +62,14 @@ mr1-welcome-screen-hero-text =
 # In case your language needs to adapt the nouns to a gender, Soraya is a female name (she/her).
 # You can see the picture in about:welcome in Nightly 90.
 mr1-onboarding-welcome-image-caption = Soraya Osorio — projektantka mebli, fanka Firefoksa
+
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+
+onboarding-welcome-steps-indicator-label =
+    .aria-label = Postęp: { $current }. krok z { $total }
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = Wyłącz animacje
 
@@ -72,8 +80,8 @@ mr1-onboarding-reduce-motion-button-label = Wyłącz animacje
 # Title used on welcome page when Firefox is not pinned
 mr1-onboarding-pin-header =
     { PLATFORM() ->
-        [macos] Zatrzymaj przeglądarkę { -brand-short-name } w Docku, aby mieć do niej łatwy dostęp
-       *[other] Przypnij przeglądarkę { -brand-short-name } do paska zadań, aby mieć do niej łatwy dostęp
+        [macos] Zatrzymaj { -brand-short-name(case: "acc") } w Docku, aby mieć do niego łatwy dostęp
+       *[other] Przypnij { -brand-short-name(case: "acc") } do paska zadań, aby mieć do niego łatwy dostęp
     }
 # Primary button string used on welcome page when Firefox is not pinned.
 mr1-onboarding-pin-primary-button-label =
@@ -84,16 +92,7 @@ mr1-onboarding-pin-primary-button-label =
 
 ## Multistage MR1 onboarding strings (about:welcome pages)
 
-# This string will be used on welcome page primary button label
-# when Firefox is both pinned and default
-mr1-onboarding-get-started-primary-button-label = Pierwsze kroki
-mr1-onboarding-welcome-header = Witamy w przeglądarce { -brand-short-name }
-mr1-onboarding-set-default-pin-primary-button-label = Ustaw przeglądarkę { -brand-short-name } jako główną
-    .title = Ustawia przeglądarkę { -brand-short-name } jako domyślną i przypina ją do paska zadań
-# This string will be used on welcome page primary button label
-# when Firefox is not default but already pinned
-mr1-onboarding-set-default-only-primary-button-label = Ustaw przeglądarkę { -brand-short-name } jako domyślną
-mr1-onboarding-set-default-secondary-button-label = Nie teraz
+# String for the Firefox Accounts button
 mr1-onboarding-sign-in-button-label = Zaloguj się
 
 ## Title, subtitle and primary button string used on set default onboarding screen
@@ -128,7 +127,7 @@ mr2-onboarding-theme-label-auto = Automatyczny
 # This string will be used for Default theme
 mr2-onboarding-theme-label-default = Domyślny
 mr1-onboarding-theme-header = Używaj jej po swojemu
-mr1-onboarding-theme-subtitle = Spersonalizuj przeglądarkę { -brand-short-name } za pomocą motywu.
+mr1-onboarding-theme-subtitle = Spersonalizuj { -brand-short-name(case: "acc") } za pomocą motywu.
 mr1-onboarding-theme-primary-button-label = Zachowaj motyw
 mr1-onboarding-theme-secondary-button-label = Nie teraz
 # System theme uses operating system color settings
@@ -232,7 +231,7 @@ mr2-onboarding-start-browsing-button-label = Zacznij przeglądać Internet
 
 onboarding-live-language-header = Wybierz język
 mr2022-onboarding-live-language-text = { -brand-short-name } mówi w Twoim języku
-mr2022-language-mismatch-subtitle = Dzięki naszej społeczności { -brand-short-name } jest przetłumaczony na ponad 90 języków. Wygląda na to, że komputer używa innego języka ({ $systemLanguage }) niż przeglądarka { -brand-short-name } ({ $appLanguage }).
+mr2022-language-mismatch-subtitle = Dzięki naszej społeczności { -brand-short-name } jest przetłumaczony na ponad 90 języków. Wygląda na to, że komputer używa innego języka ({ $systemLanguage }) niż { -brand-short-name } ({ $appLanguage }).
 onboarding-live-language-button-label-downloading = Pobieranie pakietu językowego ({ $negotiatedLanguage })…
 onboarding-live-language-waiting-button = Pobieranie dostępnych języków…
 onboarding-live-language-installing = Instalowanie pakietu językowego ({ $negotiatedLanguage })…
@@ -256,15 +255,15 @@ fx100-thank-you-hero-text =
 fx100-thank-you-subtitle = To nasze setne wydanie! Dziękujemy za pomoc w budowaniu lepszego, zdrowszego Internetu.
 fx100-thank-you-pin-primary-button-label =
     { PLATFORM() ->
-        [macos] Zatrzymaj przeglądarkę { -brand-short-name } w Docku
-       *[other] Przypnij przeglądarkę { -brand-short-name } do paska zadań
+        [macos] Zatrzymaj { -brand-short-name(case: "acc") } w Docku
+       *[other] Przypnij { -brand-short-name(case: "acc") } do paska zadań
     }
 fx100-upgrade-thanks-header = 100 podziękowań
 # Message shown with a start-browsing button. Emphasis <em> should be for "you"
 # but "Thank" can be used instead if there's no "you" in the translation.
 fx100-upgrade-thank-you-body = To nasze setne wydanie przeglądarki { -brand-short-name }. <em>Dziękujemy</em> za pomoc w budowaniu lepszego, zdrowszego Internetu.
 # Message shown with either a pin-to-taskbar or set-default button.
-fx100-upgrade-thanks-keep-body = To nasze setne wydanie! Dziękujemy, że jesteś częścią naszej społeczności. Miej przeglądarkę { -brand-short-name } zawsze pod ręką przez następne sto.
+fx100-upgrade-thanks-keep-body = To nasze setne wydanie! Dziękujemy, że jesteś częścią naszej społeczności. Miej { -brand-short-name(case: "acc") } zawsze pod ręką przez następne sto.
 mr2022-onboarding-secondary-skip-button-label = Pomiń ten krok
 
 ## MR2022 New User Easy Setup screen strings
@@ -284,12 +283,12 @@ mr2022-onboarding-easy-setup-import-checkbox-label = Importuj z poprzedniej prz
 # If this translation does not make sense in your language, feel free to use the word "discover."
 mr2022-onboarding-welcome-pin-header = Odkrywaj fantastyczny Internet
 # Subtitle is used on onboarding page for new users page when Firefox is not pinned
-mr2022-onboarding-welcome-pin-subtitle = Uruchamiaj przeglądarkę { -brand-short-name } gdziekolwiek jesteś jednym kliknięciem. Za każdym razem, gdy to robisz, wybierasz bardziej otwartą i niezależną sieć.
+mr2022-onboarding-welcome-pin-subtitle = Uruchamiaj { -brand-short-name(case: "acc") } gdziekolwiek jesteś jednym kliknięciem. Za każdym razem, gdy to robisz, wybierasz bardziej otwartą i niezależną sieć.
 # Primary button string used on welcome page for when Firefox is not pinned.
 mr2022-onboarding-pin-primary-button-label =
     { PLATFORM() ->
-        [macos] Zatrzymaj przeglądarkę { -brand-short-name } w Docku
-       *[other] Przypnij przeglądarkę { -brand-short-name } do paska zadań
+        [macos] Zatrzymaj { -brand-short-name(case: "acc") } w Docku
+       *[other] Przypnij { -brand-short-name(case: "acc") } do paska zadań
     }
 # Subtitle will be used when user already has Firefox pinned, but
 # has not set it as their default browser.
@@ -306,7 +305,7 @@ mr2022-onboarding-existing-pin-subtitle = Uruchamiaj zdrowszy Internet gdziekolw
 # Subtitle will be used on the welcome screen for existing users
 # when they already have Firefox pinned but not set as default
 mr2022-onboarding-existing-set-default-only-subtitle = Korzystaj z przeglądarki broniącej Twojej prywatności, kiedy śmigasz po sieci. Nasza najnowsza aktualizacja jest wypełniona rzeczami, które uwielbiasz.
-mr2022-onboarding-existing-pin-checkbox-label = Dodaj także tryb prywatny przeglądarki { -brand-short-name }
+mr2022-onboarding-existing-pin-checkbox-label = Dodaj także tryb prywatny { -brand-short-name(case: "gen") }
 
 ## MR2022 New User Set Default screen strings
 
@@ -329,7 +328,7 @@ mr2022-onboarding-get-started-primary-button-label = Skonfiguruj w kilka sekund
 ## MR2022 Import Settings screen strings
 
 mr2022-onboarding-import-header = Błyskawiczna konfiguracja
-mr2022-onboarding-import-subtitle = Skonfiguruj przeglądarkę { -brand-short-name } tak, jak lubisz. Dodaj zakładki, hasła i nie tylko ze starej przeglądarki.
+mr2022-onboarding-import-subtitle = Skonfiguruj { -brand-short-name(case: "acc") } tak, jak lubisz. Dodaj zakładki, hasła i nie tylko ze starej przeglądarki.
 mr2022-onboarding-import-primary-button-label-no-attribution = Importuj z poprzedniej przeglądarki
 
 ## If your language uses grammatical genders, in the description for the
@@ -343,8 +342,8 @@ mr2022-onboarding-colorway-primary-button-label-continue = Ustaw i kontynuuj
 mr2022-onboarding-existing-colorway-checkbox-label = Ustaw kolorową { -firefox-home-brand-name(case: "acc", capitalization: "lower") }
 mr2022-onboarding-colorway-label-default = Domyślna
 mr2022-onboarding-colorway-tooltip-default2 =
-    .title = Obecne kolory przeglądarki { -brand-short-name }
-mr2022-onboarding-colorway-description-default = <b>Używaj obecnych kolorów przeglądarki { -brand-short-name }.</b>
+    .title = Obecne kolory { -brand-short-name(case: "gen") }
+mr2022-onboarding-colorway-description-default = <b>Używaj obecnych kolorów { -brand-short-name(case: "gen") }.</b>
 mr2022-onboarding-colorway-label-playmaker = Rozgrywająca
 mr2022-onboarding-colorway-tooltip-playmaker2 =
     .title = Rozgrywająca (czerwona)
@@ -384,8 +383,8 @@ mr2022-upgrade-onboarding-pin-private-window-header = Miej wolność trybu prywa
 mr2022-upgrade-onboarding-pin-private-window-subtitle = Żadnych zapisanych ciasteczek ani historii, prosto z pulpitu. Przeglądaj, jak gdyby nikt nie patrzył.
 mr2022-upgrade-onboarding-pin-private-window-primary-button-label =
     { PLATFORM() ->
-        [macos] Zatrzymaj tryb prywatny przeglądarki { -brand-short-name } w Docku
-       *[other] Przypnij tryb prywatny przeglądarki { -brand-short-name } do paska zadań
+        [macos] Zatrzymaj tryb prywatny { -brand-short-name(case: "gen") } w Docku
+       *[other] Przypnij tryb prywatny { -brand-short-name(case: "gen") } do paska zadań
     }
 
 ## MR2022 Privacy Segmentation screen strings
@@ -399,7 +398,7 @@ mr2022-onboarding-privacy-segmentation-button-secondary-label = Wyświetlaj szcz
 ## MR2022 Multistage Gratitude screen strings
 
 mr2022-onboarding-gratitude-title = Pomagasz nam budować lepszą sieć
-mr2022-onboarding-gratitude-subtitle = Dziękujemy za używanie przeglądarki { -brand-short-name }, wspieranej przez Mozilla Foundation. Z waszą pomocą pracujemy nad tym, aby Internet był bardziej otwarty, dostępny i lepszy dla wszystkich.
+mr2022-onboarding-gratitude-subtitle = Dziękujemy za używanie { -brand-short-name(case: "gen") }, wspieranego przez Mozilla Foundation. Z waszą pomocą pracujemy nad tym, aby Internet był bardziej otwarty, dostępny i lepszy dla wszystkich.
 mr2022-onboarding-gratitude-primary-button-label = Zobacz co nowego
 mr2022-onboarding-gratitude-secondary-button-label = Zacznij przeglądać Internet
 
@@ -407,7 +406,7 @@ mr2022-onboarding-gratitude-secondary-button-label = Zacznij przeglądać Intern
 
 onboarding-infrequent-import-title = Czuj się jak u siebie
 onboarding-infrequent-import-subtitle = Czy się wprowadzasz, czy tylko zaglądasz na chwilę, pamiętaj, że możesz zaimportować swoje zakładki, hasła i nie tylko.
-onboarding-infrequent-import-primary-button = Importuj do przeglądarki { -brand-short-name }
+onboarding-infrequent-import-primary-button = Importuj do { -brand-short-name(case: "gen") }
 
 ## MR2022 Illustration alt tags
 ## Descriptive tags for illustrations used by screen readers and other assistive tech
@@ -428,3 +427,11 @@ mr2022-onboarding-gratitude-image-alt =
     .aria-label = Widok na zachód słońca przez okno z lisem i rośliną doniczkową na parapecie
 mr2022-onboarding-colorways-image-alt =
     .aria-label = Farba w sprayu maluje kolorowy kolaż zielonego oka, pomarańczowego buta, czerwonej piłki do koszykówki, fioletowych słuchawek, niebieskiego serca i żółtej korony
+
+## Device migration onboarding
+
+onboarding-device-migration-image-alt =
+    .aria-label = Lis na ekranie laptopa macha łapą. Laptop ma podłączoną mysz.
+onboarding-device-migration-title = Witamy z powrotem!
+onboarding-device-migration-subtitle = Zaloguj się na { -fxaccount-brand-name(case: "loc", capitalization: "lower") }, aby przenieść swoje zakładki, hasła i historię na nowe urządzenie.
+onboarding-device-migration-primary-button-label = Zaloguj się

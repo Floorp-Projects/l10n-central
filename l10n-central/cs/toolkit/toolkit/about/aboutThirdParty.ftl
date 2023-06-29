@@ -64,6 +64,9 @@ third-party-status-loaded = Načtený
 third-party-status-blocked = Zablokovaný
 third-party-status-redirected = Přesměrovaný
 third-party-button-copy-to-clipboard = Zkopírovat data do schránky
+third-party-loading-data =
+    .alt = Načítání systémových informací…
+    .title = Načítají se systémové informace…
 third-party-button-reload = Znovu načíst se systémovými informacemi
     .title = Znovu načíst se systémovými informacemi
 third-party-button-open =
@@ -94,6 +97,11 @@ third-party-requires-restart =
         [with-cases] Pro změnu blokovaných modulů třetích stran je potřeba { -brand-short-name(case: "acc") } restartovat.
        *[no-cases] Pro změnu blokovaných modulů třetích stran je potřeba aplikaci { -brand-short-name } restartovat.
     }
+third-party-blocking-requires-restart =
+    { -brand-short-name.case-status ->
+        [with-cases] Chcete-li zablokovat modul třetí strany, musíte { -brand-short-name(case: "acc") } restartovat.
+       *[no-cases] Chcete-li zablokovat modul třetí strany, musíte aplikaci { -brand-short-name } restartovat.
+    }
 third-party-should-restart-title =
     { -brand-short-name.case-status ->
         [with-cases] Restartovat { -brand-short-name(case: "acc") }
@@ -104,6 +112,7 @@ third-party-should-restart-ok =
         [with-cases] Restartovat { -brand-short-name(case: "acc") }
        *[no-cases] Restartovat aplikaci { -brand-short-name }
     }
+third-party-restart-now = Restartovat
 third-party-restart-later = Restartovat později
 third-party-blocked-by-builtin =
     .title =

@@ -144,6 +144,8 @@ urlbar-tip-icon-description =
     .alt = Consejo:
 urlbar-result-menu-button =
     .title = Abrir menú
+urlbar-result-menu-button-feedback = Comentarios
+    .title = Abrir menú
 urlbar-result-menu-learn-more =
     .label = Saber más
     .accesskey = S
@@ -674,6 +676,10 @@ reader-view-close-button =
 ## Variables:
 ##   $shortcut (String) - Keyboard shortcut to execute the command.
 
+picture-in-picture-urlbar-button-open =
+    .tooltiptext = Abrir Picture-in-Picture ({ $shortcut })
+picture-in-picture-urlbar-button-close =
+    .tooltiptext = Cerrar Picture-in-Picture ({ $shortcut })
 
 ## Full Screen and Pointer Lock UI
 
@@ -991,4 +997,38 @@ firefox-relay-offer-what-relay-does = Reenviaremos todos los correos electrónic
 
 ## Popup Notification
 
+
+## Add-on Pop-up Notifications
+
+popup-notification-addon-install-unsigned =
+    .value = (No verificado)
 popup-notification-xpinstall-prompt-learn-more = Saber más sobre cómo instalar complementos de forma segura
+
+## Pop-up warning
+
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-message =
+    { $popupCount ->
+        [one] { -brand-short-name } evitó que este sitio abriera una ventana emergente
+       *[other] { -brand-short-name } evitó que este sitio abriera { $popupCount } ventanas emergentes.
+    }
+# The singular form is left out for English, since the number of blocked pop-ups is always greater than 1.
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-exceeded-message = { -brand-short-name } ha evitado que este sitio abra más de { $popupCount } ventanas emergentes.
+popup-warning-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Opciones
+           *[other] Preferencias
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] P
+        }
+# Variables:
+#   $popupURI (String): the URI for the pop-up window
+popup-show-popup-menuitem =
+    .label = Mostrar '{ $popupURI }'

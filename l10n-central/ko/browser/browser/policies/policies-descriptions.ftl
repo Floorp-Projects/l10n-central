@@ -36,7 +36,7 @@ policy-DisableDefaultBrowserAgent = 기본 브라우저 에이전트가 작업�
 policy-DisableDeveloperTools = 개발자 도구 접근을 차단합니다.
 policy-DisableFeedbackCommands = 도움말 메뉴의 의견 보내기 명령 (의견 보내기 및 가짜 사이트 신고)을 사용 안 합니다.
 policy-DisableFirefoxAccounts = 동기화를 포함한 { -fxaccount-brand-name } 기반의 서비스를 사용 안 합니다.
-# Firefox Screenshots is the name of the feature, and should not be translated.
+# Floorp Screenshots is the name of the feature, and should not be translated.
 policy-DisableFirefoxScreenshots = Firefox 스크린샷 기능을 사용 안 합니다.
 policy-DisableFirefoxStudies = { -brand-short-name } 연구 실행을 막습니다.
 policy-DisableForgetButton = Forget 버튼 접근을 막습니다.
@@ -116,6 +116,8 @@ policy-SearchEngines = 검색 엔진 설정을 구성합니다. 이 정책은 �
 policy-SearchSuggestEnabled = 검색 제안을 사용하거나 사용하지 않게 합니다.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = PKCS #11 모듈을 설치합니다.
+# For more information, see https://wikipedia.org/wiki/PKCS_11
+policy-SecurityDevices2 = PKCS #11 모듈을 추가하거나 삭제합니다.
 policy-ShowHomeButton = 도구 모음에 홈 버튼을 표시합니다.
 policy-SSLVersionMax = 최대 SSL 버전을 설정합니다.
 policy-SSLVersionMin = 최소 SSL 버전을 설정합니다.

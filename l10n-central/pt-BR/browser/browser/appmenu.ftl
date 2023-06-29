@@ -33,6 +33,8 @@ appmenuitem-print =
     .label = Imprimir…
 appmenuitem-find-in-page =
     .label = Procurar na página…
+appmenuitem-translate =
+    .label = Traduzir página…
 appmenuitem-zoom =
     .value = Zoom
 appmenuitem-more-tools =
@@ -167,6 +169,11 @@ profiler-popup-capture-shortcut =
 # devtools/client/performance-new/popup/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/shared/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
 profiler-popup-presets-web-developer-description = Ajuste prévio recomendado para depuração da maioria dos aplicativos web, com pouca sobrecarga.
 profiler-popup-presets-web-developer-label =
     .label = Desenvolvimento web
@@ -204,6 +211,9 @@ appmenu-recently-closed-tabs =
     .label = Abas fechadas recentemente
 appmenu-recently-closed-windows =
     .label = Janelas fechadas recentemente
+# This allows to search through the browser's history.
+appmenu-search-history =
+    .label = Pesquisar no histórico
 
 ## Help panel
 
@@ -223,6 +233,8 @@ appmenu-help-report-site-issue =
 appmenu-help-share-ideas =
     .label = Compartilhe ideias e comentários…
     .accesskey = C
+appmenu-help-switch-device =
+    .label = Mudança para outro dispositivo
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

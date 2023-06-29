@@ -36,6 +36,7 @@ migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge Beta
 migration-wizard-migrator-display-name-edge-legacy = 旧版 Microsoft Edge
 migration-wizard-migrator-display-name-firefox = Firefox
 migration-wizard-migrator-display-name-file-password-csv = CSV 文件中的密码
+migration-wizard-migrator-display-name-file-bookmarks = HTML 文件中的书签
 migration-wizard-migrator-display-name-ie = Microsoft Internet Explorer（IE 浏览器）
 migration-wizard-migrator-display-name-opera = Opera
 migration-wizard-migrator-display-name-opera-gx = Opera GX
@@ -57,7 +58,12 @@ migration-bookmarks-option-label = 书签
 migration-favorites-option-label = 收藏夹
 migration-logins-and-passwords-option-label = 保存的登录名和密码
 migration-history-option-label = 浏览历史
+migration-extensions-option-label = 扩展
 migration-form-autofill-option-label = 自动填写表单数据
+migration-payment-methods-option-label = 付款方式
+migration-cookies-option-label = Cookie
+migration-session-option-label = 窗口和标签页
+migration-otherdata-option-label = 其他数据
 migration-passwords-from-file-progress-header = 导入密码文件
 migration-passwords-from-file-success-header = 已成功导入密码
 migration-passwords-from-file = 正在检查文件中的密码
@@ -75,7 +81,7 @@ migration-passwords-from-file-csv-filter-title =
 # filter by the operating system. TSV is short for 'tab separated values'.
 migration-passwords-from-file-tsv-filter-title =
     { PLATFORM() ->
-        [macos] TSV 文件
+        [macos] TSV 文档
        *[other] TSV 文件
     }
 # Shown in the migration wizard after importing passwords from a file
@@ -90,11 +96,33 @@ migration-wizard-progress-success-new-passwords = 已添加 { $newEntries } 个
 # Variables:
 #  $updatedEntries (Number): the number of updated passwords
 migration-wizard-progress-success-updated-passwords = 已更新 { $updatedEntries } 个
+migration-bookmarks-from-file-picker-title = 导入书签文件
+migration-bookmarks-from-file-progress-header = 导入书签
+migration-bookmarks-from-file = 书签
+migration-bookmarks-from-file-success-header = 书签导入成功
+migration-bookmarks-from-file-no-valid-data = 此文件不含书签数据，请选择其他文件。
+# A description for the .html file format that may be shown as the file type
+# filter by the operating system.
+migration-bookmarks-from-file-html-filter-title =
+    { PLATFORM() ->
+        [macos] HTML 文稿
+       *[other] HTML 文件
+    }
+# A description for the .json file format that may be shown as the file type
+# filter by the operating system.
+migration-bookmarks-from-file-json-filter-title = JSON 文件
+# Shown in the migration wizard after importing bookmarks from a file
+# has completed.
+#
+# Variables:
+#  $newEntries (Number): the number of imported bookmarks.
+migration-wizard-progress-success-new-bookmarks = { $newEntries } 个书签
 migration-import-button-label = 导入
 migration-choose-to-import-from-file-button-label = 从文件导入
 migration-import-from-file-button-label = 选择文件
 migration-cancel-button-label = 取消
 migration-done-button-label = 完成
+migration-continue-button-label = 继续
 migration-wizard-import-browser-no-browsers = { -brand-short-name } 找不到存有书签、历史记录或密码数据的程序。
 migration-wizard-import-browser-no-resources = 出错了。{ -brand-short-name } 在所选的浏览器配置文件中找不到数据。
 
@@ -110,7 +138,9 @@ migration-list-bookmark-label = 书签
 migration-list-favorites-label = 收藏夹
 migration-list-password-label = 密码
 migration-list-history-label = 历史记录
+migration-list-extensions-label = 扩展
 migration-list-autofill-label = 自动填写数据
+migration-list-payment-methods-label = 付款方式
 
 ##
 
@@ -142,6 +172,23 @@ migration-wizard-progress-success-bookmarks = { $quantity } 个书签
 # Variables:
 #  $quantity (Number): the number of successfully imported bookmarks
 migration-wizard-progress-success-favorites = { $quantity } 个收藏
+
+## The import process identifies extensions installed in other supported
+## browsers and installs the corresponding (matching) extensions compatible
+## with Firefox, if available.
+
+# Shown in the migration wizard after importing all matched extensions
+# from supported browsers.
+#
+# Variables:
+#   $quantity (Number): the number of successfully imported extensions
+migration-wizard-progress-success-extensions = { $quantity } 个扩展
+# Shown in the migration wizard if there are no matched extensions
+# on import from supported browsers.
+migration-wizard-progress-no-matched-extensions = 没有匹配的扩展
+
+##
+
 # Shown in the migration wizard after importing passwords from another
 # browser has completed.
 #
@@ -159,7 +206,12 @@ migration-wizard-progress-success-history =
        *[other] 过去 { $maxAgeInDays } 天以来
     }
 migration-wizard-progress-success-formdata = 表单历史记录
+# Shown in the migration wizard after importing payment methods from another
+# browser has completed.
+#
+# Variables:
+#  $quantity (Number): the number of successfully imported payment methods
+migration-wizard-progress-success-payment-methods = { $quantity } 个付款方式
 migration-wizard-safari-permissions-sub-header = 如需导入 Safari 浏览器书签和历史记录：
 migration-wizard-safari-instructions-continue = 选择“继续”
-migration-wizard-safari-instructions-folder = 在列表中选择“Safari 浏览器”文件夹，然后选取“打开”
-migration-wizard-safari-select-button = 选择文件
+migration-wizard-safari-instructions-folder = 在列表中选择“Safari”文件夹，然后选取“打开”

@@ -38,13 +38,15 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (사생활 보호 모드)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (사생활 보호 모드)
-# These are the default window titles everywhere except macOS. The first two
-# attributes are used when the web content opened has no title:
+# These are the default window titles everywhere except macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
 #
 # default - "Mozilla Firefox"
 # private - "Mozilla Firefox (Private Browsing)"
 #
-# The last two are for use when there *is* a content title.
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
 # Variables:
 #  $content-title (String): the title of the web content.
 browser-main-window-window-titles =
@@ -52,14 +54,17 @@ browser-main-window-window-titles =
     .data-title-private = { -brand-full-name } 사생활 보호 모드
     .data-content-title-default = { $content-title } — { -brand-full-name }
     .data-content-title-private = { $content-title } — { -brand-full-name } 사생활 보호 모드
-# These are the default window titles on macOS. The first two are for use when
-# there is no content title:
+# These are the default window titles on macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
+#
 #
 # "default" - "Mozilla Firefox"
 # "private" - "Mozilla Firefox — (Private Browsing)"
 #
-# The last two are for use when there *is* a content title.
-# Do not use the brand name in the last two attributes, as we do on non-macOS.
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
+# Do not use the brand name in these, as we do on non-macOS.
 #
 # Also note the other subtle difference here: we use a `-` to separate the
 # brand name from `(Private Browsing)`, which does not happen on other OSes.
@@ -143,6 +148,8 @@ urlbar-search-tips-confirm-short = 확인
 urlbar-tip-icon-description =
     .alt = 팁:
 urlbar-result-menu-button =
+    .title = 메뉴 열기
+urlbar-result-menu-button-feedback = 의견 보내기
     .title = 메뉴 열기
 urlbar-result-menu-learn-more =
     .label = 더 알아보기
@@ -303,7 +310,7 @@ quickactions-extensions = 확장 기능 관리
 quickactions-cmd-extensions = 확장 기능, extensions
 # Opens the devtools web inspector
 quickactions-inspector2 = 개발자 도구 열기
-quickactions-cmd-inspector = 검사기, inspector, devtools
+quickactions-cmd-inspector = 검사기, 개발자 도구, inspector, devtools
 # Opens about:logins
 quickactions-logins2 = 비밀번호 관리
 quickactions-cmd-logins = 로그인, 비밀번호, logins, passwords
@@ -520,8 +527,8 @@ sharing-warning-disable-for-session =
 
 ## DevTools F12 popup
 
-enable-devtools-popup-description = F12 단축키를 사용하려면, 먼저 웹 개발자 메뉴를 통해 DevTools를 여세요.
-enable-devtools-popup-description2 = F12 단축키를 사용하려면, 먼저 브라우저 도구 메뉴를 통해 DevTools를 여세요.
+enable-devtools-popup-description = F12 단축키를 사용하려면, 먼저 웹 개발자 메뉴를 통해 개발자 도구를 여세요.
+enable-devtools-popup-description2 = F12 단축키를 사용하려면, 먼저 브라우저 도구 메뉴를 통해 개발자 도구를 여세요.
 
 ## URL Bar
 
@@ -671,6 +678,11 @@ picture-in-picture-urlbar-button-open =
     .tooltiptext = 화면 속 화면 열기 ({ $shortcut })
 picture-in-picture-urlbar-button-close =
     .tooltiptext = 화면 속 화면 닫기 ({ $shortcut })
+picture-in-picture-panel-header = 화면 속 화면
+picture-in-picture-panel-headline = 이 웹 사이트는 화면 속 화면을 권장하지 않음
+picture-in-picture-panel-body = 화면 속 화면을 사용하는 동안 동영상이 개발자가 의도한 대로 표시되지 않을 수 있습니다.
+picture-in-picture-enable-toggle =
+    .label = 그래도 사용
 
 ## Full Screen and Pointer Lock UI
 
@@ -724,8 +736,8 @@ bookmarks-mobile-bookmarks-menu =
 bookmarks-tools-sidebar-visibility =
     .label =
         { $isVisible ->
-            [true] 북마크 탐색창 숨기기
-           *[other] 북마크 탐색창 보기
+            [true] 북마크 사이드바 숨기기
+           *[other] 북마크 사이드바 표시
         }
 bookmarks-tools-toolbar-visibility-menuitem =
     .label =
@@ -969,6 +981,15 @@ unified-extensions-button-permissions-needed =
         확장 기능
         권한 필요
 
+## Unified extensions button when some extensions are quarantined.
+## Note that the new line is intentionally part of the tooltip.
+
+unified-extensions-button-quarantined =
+    .label = 확장 기능
+    .tooltiptext =
+        확장 기능
+        일부 확장 기능은 허용되지 않음
+
 ## Autorefresh blocker
 
 refresh-blocked-refresh-label = { -brand-short-name }가 이 페이지를 자동으로 다시 로드하지 못하도록 차단했습니다.
@@ -988,4 +1009,39 @@ firefox-relay-offer-what-relay-does = <strong>{ $sitename }</strong>의 모든 �
 
 ## Popup Notification
 
+firefox-relay-offer-why-to-use-relay = 안전하고 사용하기 쉬운 마스크는 이메일 주소를 숨김으로써 신원을 보호하고 스팸을 방지합니다.
+# Variables:
+#  $useremail (String): user email that will receive messages
+firefox-relay-offer-what-relay-provides = 이메일 마스크로 전송된 모든 이메일은 차단하지 않는 한 <strong>{ $useremail }</strong>(으)로 전달됩니다.
+firefox-relay-offer-legal-notice = "이메일 마스크 사용"을 클릭하면, <label data-l10n-name="tos-url">서비스 약관</label>및 <label data-l10n-name="privacy-url">개인정보처리방침</label>에 동의하는 것입니다.
+
+## Add-on Pop-up Notifications
+
+popup-notification-addon-install-unsigned =
+    .value = (검사하지 않았음)
 popup-notification-xpinstall-prompt-learn-more = 부가 기능을 안전하게 설치하는 방법에 대해 더 알아보기
+
+## Pop-up warning
+
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-message = { -brand-short-name }가 이 사이트에서 팝업 창 { $popupCount }개를 차단했습니다.
+# The singular form is left out for English, since the number of blocked pop-ups is always greater than 1.
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-exceeded-message = { -brand-short-name }가 이 사이트에서 팝업 창 { $popupCount }개 이상을 차단했습니다.
+popup-warning-button =
+    .label =
+        { PLATFORM() ->
+            [windows] 옵션
+           *[other] 환경 설정
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] P
+        }
+# Variables:
+#   $popupURI (String): the URI for the pop-up window
+popup-show-popup-menuitem =
+    .label = 표시: “{ $popupURI }”

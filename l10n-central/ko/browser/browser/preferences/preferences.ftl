@@ -385,7 +385,7 @@ play-drm-content =
     .accesskey = P
 play-drm-content-learn-more = 더 알아보기
 update-application-title = { -brand-short-name } 업데이트
-update-application-description = { -brand-short-name }가 최상의 성능, 안정성, 보안을 유지할 수 있도록 최신 버전으로 유지합니다.
+update-application-description = { -brand-short-name }가 최상의 성능, 안정성, 보안을 유지할 수 있도록 최신 버전으로 유지하세요.
 # Variables:
 # $version (string) - Firefox version
 update-application-version = 버전 { $version } <a data-l10n-name="learn-more">새 기능</a>
@@ -613,7 +613,7 @@ search-show-suggestions-url-bar-option =
 # the URL will be replaced by the search terms in the address bar
 # when using the current default search engine.
 search-show-search-term-option =
-    .label = 기본 검색 엔진 결과 페이지에 URL 대신 검색어 표시
+    .label = 기본 검색 엔진 결과 페이지에서 URL 대신 검색어 표시
 # This string describes what the user will observe when the system
 # prioritizes search suggestions over browsing history in the results
 # that extend down from the address bar. In the original English string,
@@ -668,6 +668,10 @@ containers-remove-button =
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
+
+## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = 웹과 함께 하세요.
 sync-signedout-description2 = 북마크, 기록, 탭, 비밀번호, 부가 기능, 설정을 모든 기기에 걸쳐 동기화하세요.
 sync-signedout-account-signin3 =
@@ -684,6 +688,9 @@ sync-signedout-account-signin3 =
 sync-mobile-promo = 모바일 기기와 동기화하려면 <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> 또는 <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a>용 Firefox를 다운로드하세요.
 
 ## Firefox Account - Signed in
+
+
+## Firefox account - Signed in
 
 sync-profile-picture =
     .tooltiptext = 프로필 사진 변경
@@ -723,6 +730,11 @@ prefs-sync-now =
     .labelnotsyncing = 지금 동기화
     .accesskeynotsyncing = N
     .labelsyncing = 동기화중…
+prefs-sync-now-button =
+    .label = 지금 동기화
+    .accesskey = N
+prefs-syncing-button =
+    .label = 동기화중…
 
 ## The list of things currently syncing.
 
@@ -802,6 +814,16 @@ sync-device-name-save =
     .accesskey = v
 sync-connect-another-device = 다른 기기 연결
 
+## These strings are shown in a desktop notification after the
+## user requests we resend a verification email.
+
+sync-verification-sent-title = 검증 이메일 보냄
+# Variables:
+#   $email (String): Email address of user's Firefox account.
+sync-verification-sent-body = { $email }로 검증 링크를 보냈습니다.
+sync-verification-not-sent-title = 검증 이메일을 보낼 수 없음
+sync-verification-not-sent-body = 지금 검증 이메일을 보낼 수 없습니다. 나중에 다시 시도하세요.
+
 ## Privacy Section
 
 privacy-header = 브라우저 개인 정보
@@ -827,6 +849,8 @@ forms-breach-alerts =
 forms-breach-alerts-learn-more-link = 더 알아보기
 relay-integration =
     .label = { -brand-short-name } 비밀번호 관리자에서 { -relay-brand-name } 활성화
+preferences-relay-integration-checkbox =
+    .label = 이메일 주소를 보호하기 위해 { -relay-brand-name } 이메일 마스크 제안
 relay-integration-learn-more-link = 더 알아보기
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
@@ -1141,19 +1165,19 @@ permissions-addon-exceptions =
 ## Privacy Section - Data Collection
 
 collection-header = { -brand-short-name } 데이터 수집과 사용
-collection-description = { -brand-short-name }를 모두를 위해 제공하고 개선하기 위해서 필요한 것만 수집하고 선택권을 제공하기 위해 노력합니다. 개인 정보를 전송하기 전에 항상 허가여부를 묻습니다.
+collection-description = 저희는 사용자에게 선택권을 제공하고 모두를 위해 { -brand-short-name }를 제공하고 개선하는 데 필요한 정보만 수집하기 위해 노력합니다. 개인정보를 전송하기 전에 항상 사용자의 동의를 구합니다.
 collection-privacy-notice = 개인정보처리방침
 collection-health-report-telemetry-disabled = { -vendor-short-name }에서 더 이상 기술 및 상호 작용 데이터를 캡처할 수 없습니다. 모든 과거 데이터는 30일 이내에 삭제됩니다.
 collection-health-report-telemetry-disabled-link = 더 알아보기
 collection-health-report =
-    .label = { -brand-short-name }가 기술과 상호 작용 정보를 { -vendor-short-name }에 전송하도록 허용
+    .label = { -brand-short-name }가 기술 및 상호 작용 데이터를 { -vendor-short-name }에 전송하도록 허용
     .accesskey = r
 collection-health-report-link = 더 알아보기
 collection-studies =
     .label = { -brand-short-name }가 연구를 설치하고 실행하도록 허용
 collection-studies-link = { -brand-short-name } 연구 보기
 addon-recommendations =
-    .label = { -brand-short-name }가 개인화된 확장 기능 추천을 하도록 허용
+    .label = { -brand-short-name }가 개인화된 확장 기능 추천을 할 수 있도록 허용
 addon-recommendations-link = 더 알아보기
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
@@ -1217,7 +1241,7 @@ httpsonly-radio-disabled =
 
 ## DoH Section
 
-preferences-doh-header = DNS over HTTPS (HTTPS를 통한 DNS)
+preferences-doh-header = DNS over HTTPS
 preferences-doh-description = DNS over HTTPS (HTTPS를 통한 DNS)는 암호화된 연결을 통해 도메인 이름에 대한 요청을 전송하여 보안 DNS를 생성하고 다른 사람들이 사용자가 액세스하려는 웹 사이트를 보기 어렵게 만듭니다.
 # Variables:
 #   $status (string) - The status of the DoH connection
@@ -1233,14 +1257,14 @@ preferences-doh-status-active = 활성
 preferences-doh-status-disabled = 꺼짐
 # Variables:
 #   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
-preferences-doh-status-not-active = 활성화되지 않음 ({ $reason })
-preferences-doh-group-message = 다음을 사용하여 보안 DNS를 활성화:
+preferences-doh-status-not-active = 활성 안 됨 ({ $reason })
+preferences-doh-group-message = 보안 DNS 활성화 수준:
 preferences-doh-expand-section =
     .tooltiptext = 추가 정보
 preferences-doh-setting-default =
     .label = 기본 보호
     .accesskey = D
-preferences-doh-default-desc = { -brand-short-name }는 보안 DNS를 사용하여 개인 정보를 보호할 때를 결정합니다.
+preferences-doh-default-desc = { -brand-short-name }가 보안 DNS를 사용하여 개인 정보를 보호할 때를 결정합니다.
 preferences-doh-default-detailed-desc-1 = 사용 가능한 지역에서 보안 DNS 사용
 preferences-doh-default-detailed-desc-2 = 보안 DNS 공급자에 문제가 있는 경우 기본 DNS 확인자를 사용
 preferences-doh-default-detailed-desc-3 = 가능하면 로컬 공급자를 사용
@@ -1255,7 +1279,7 @@ preferences-doh-enabled-detailed-desc-2 = 보안 DNS에 문제가 있는 경우�
 preferences-doh-setting-strict =
     .label = 최대 보호
     .accesskey = M
-preferences-doh-strict-desc = { -brand-short-name }는 항상 보안 DNS를 사용합니다. 시스템 DNS를 사용하기 전에 보안 위험 경고가 표시됩니다.
+preferences-doh-strict-desc = { -brand-short-name }가 항상 보안 DNS를 사용합니다. 시스템 DNS를 사용하기 전에 보안 위험 경고가 표시됩니다.
 preferences-doh-strict-detailed-desc-1 = 선택한 공급자만 사용
 preferences-doh-strict-detailed-desc-2 = 보안 DNS를 사용할 수 없는 경우 항상 경고
 preferences-doh-strict-detailed-desc-3 = 보안 DNS를 사용할 수 없으면 사이트가 제대로 로드되지 않거나 작동하지 않음
@@ -1267,7 +1291,7 @@ preferences-doh-checkbox-warn =
     .label = 제3자가 보안 DNS를 능동적으로 막는 경우 경고
     .accesskey = W
 preferences-doh-select-resolver = 공급자 선택:
-preferences-doh-exceptions-description = { -brand-short-name }는 이러한 사이트에서 보안 DNS를 사용하지 않음
+preferences-doh-exceptions-description = { -brand-short-name }는 다음 사이트에서 보안 DNS를 사용하지 않음
 preferences-doh-manage-exceptions =
     .label = 예외 관리…
     .accesskey = x

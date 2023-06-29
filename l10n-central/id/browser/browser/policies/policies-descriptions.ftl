@@ -34,8 +34,8 @@ policy-DisableDefaultBrowserAgent = Cegah agen bawaan peramban untuk melakukan t
 policy-DisableDeveloperTools = Blokir akses ke alat pengembang.
 policy-DisableFeedbackCommands = Nonaktifkan perintah untuk mengirim umpan balik dari menu Bantuan (Kirim Saran dan Laporkan Situs Tipuan).
 policy-DisableFirefoxAccounts = Nonaktifkan layanan berbasis { -fxaccount-brand-name }, termasuk Sync.
-# Firefox Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = Nonaktifkan fitur Firefox Screenshots.
+# Floorp Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Nonaktifkan fitur Floorp Screenshots.
 policy-DisableFirefoxStudies = Cegah { -brand-short-name } menjalankan kajian.
 policy-DisableForgetButton = Cegah akses ke tombol Lupakan.
 policy-DisableFormHistory = Jangan ingat riwayat pencarian dan formulir.

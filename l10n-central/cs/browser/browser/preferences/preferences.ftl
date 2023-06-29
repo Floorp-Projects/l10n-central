@@ -804,6 +804,10 @@ containers-remove-button =
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
+
+## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Vezměte si web s sebou
 sync-signedout-description2 = Synchronizujte své záložky, historii, panely, hesla, doplňky a nastavení ve všech svých zařízeních.
 sync-signedout-account-signin3 =
@@ -820,6 +824,9 @@ sync-signedout-account-signin3 =
 sync-mobile-promo = Stáhněte si Firefox pro <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> nebo <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> a synchronizujte svá data se svým mobilním zařízením.
 
 ## Firefox Account - Signed in
+
+
+## Firefox account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Změnit profilový obrázek
@@ -859,10 +866,16 @@ prefs-sync-now =
     .labelnotsyncing = Synchronizovat
     .accesskeynotsyncing = S
     .labelsyncing = Probíhá synchronizace…
+prefs-sync-now-button =
+    .label = Synchronizovat
+    .accesskey = S
+prefs-syncing-button =
+    .label = Probíhá synchronizace…
 
 ## The list of things currently syncing.
 
 sync-currently-syncing-heading = Máte zapnutou synchronizaci následujících dat:
+sync-syncing-across-devices-heading = Synchronizujete tyto položky ve všech připojených zařízeních:
 sync-currently-syncing-bookmarks = Záložky
 sync-currently-syncing-history = Historie
 sync-currently-syncing-tabs = Otevřené panely
@@ -891,6 +904,7 @@ sync-choose-what-to-sync-dialog3 =
     .buttonaccesskeyaccept = U
     .buttonlabelextra2 = Zrušit synchronizaci…
     .buttonaccesskeyextra2 = Z
+sync-choose-dialog-subtitle = Změny v seznamu položek k synchronizaci se projeví ve všech připojených zařízeních.
 sync-engine-bookmarks =
     .label = Záložky
     .accesskey = Z
@@ -936,6 +950,16 @@ sync-device-name-save =
     .accesskey = l
 sync-connect-another-device = Připojit další zařízení
 
+## These strings are shown in a desktop notification after the
+## user requests we resend a verification email.
+
+sync-verification-sent-title = Ověření odesláno
+# Variables:
+#   $email (String): Email address of user's Firefox account.
+sync-verification-sent-body = Odkaz pro ověření byl odeslán na { $email }.
+sync-verification-not-sent-title = Ověření nelze odeslat
+sync-verification-not-sent-body = V tuto chvíli nemůžeme ověřovací email odeslat, zkuste to prosím znovu později.
+
 ## Privacy Section
 
 privacy-header = Nastavení soukromí
@@ -965,6 +989,8 @@ relay-integration =
             [with-cases] Povolit { -relay-brand-name(case: "acc") } ve Správci hesel ve { -brand-short-name(case: "gen") }
            *[no-cases] Povolit { -relay-brand-name(case: "acc") } ve Správci hesel v aplikaci { -brand-short-name }
         }
+preferences-relay-integration-checkbox =
+    .label = Navrhovat e-mailové masky služby { -relay-brand-name } na ochranu vaší e-mailové adresy
 relay-integration-learn-more-link = Zjistit více
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
@@ -1106,7 +1132,11 @@ sitedata-cookies-exceptions =
 
 ## Privacy Section - Cookie Banner Handling
 
+cookie-banner-handling-header = Omezení cookie lišt
+cookie-banner-handling-description = { -brand-short-name } se automaticky snaží odmítat lišty s žádostmi o povolení cookies na podporovaných serverech.
 cookie-banner-learn-more = Zjistit více
+forms-handle-cookie-banners =
+    .label = Omezit cookie lišty
 
 ## Privacy Section - Address Bar
 
@@ -1414,8 +1444,61 @@ httpsonly-radio-disabled =
 preferences-doh-header = DNS over HTTPS
 preferences-doh-description = Systém doménových jmen (DNS) přes HTTPS odešle váš požadavek na doménu skrze šifrované spojení, čímž DNS zabezpečuje a znesnadňuje ostatním, aby viděli, které servery navštěvujete.
 # Variables:
+#   $status (string) - The status of the DoH connection
+preferences-doh-status = Stav: { $status }
+# Variables:
 #   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
 preferences-doh-resolver = Poskytovatel: { $name }
+# This is displayed instead of $name in preferences-doh-resolver
+# when the DoH URL is not a valid URL
+preferences-doh-bad-url = Neplatná adresa URL
+preferences-doh-steering-status = Pomocí místního poskytovatele
+preferences-doh-status-active = Aktivní
+preferences-doh-status-disabled = Vypnuto
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+preferences-doh-status-not-active = Neaktivní ({ $reason })
+preferences-doh-group-message = Povolit zabezpečené DNS:
+preferences-doh-expand-section =
+    .tooltiptext = Více informací
+preferences-doh-setting-default =
+    .label = Výchozí ochrana
+    .accesskey = V
+preferences-doh-default-desc = { -brand-short-name } se rozhodne, kdy používat bezpečné DNS pro ochranu vašeho soukromí.
+preferences-doh-default-detailed-desc-1 = Zabezpečené DNS se použije v oblastech, kde je dostupné
+preferences-doh-default-detailed-desc-2 = Pokud se zabezpečeným DNS nastane problém, použije se výchozí překladač DNS
+preferences-doh-default-detailed-desc-3 = Pokud je to možné, použijte místního poskytovatele
+preferences-doh-default-detailed-desc-4 = Vypne se, když je aktivní VPN, rodičovská kontrola nebo podnikové zásady
+preferences-doh-default-detailed-desc-5 =
+    { -brand-short-name.case-status ->
+        [with-cases] Vypne se, když síť oznámí { -brand-short-name(case: "dat") }, že nemá používat zabezpečené DNS
+       *[no-cases] Vypne se, když síť oznámí aplikaci { -brand-short-name }, že nemá používat zabezpečené DNS
+    }
+preferences-doh-setting-enabled =
+    .label = Zvýšená ochrana
+    .accesskey = Z
+preferences-doh-enabled-desc = Sami si nastavíte, kdy se zabezpečené DNS použije, a od jakého poskytovatele.
+preferences-doh-enabled-detailed-desc-1 = Použije se poskytovatel, kterého jste si vybrali
+preferences-doh-enabled-detailed-desc-2 = Výchozí překladač DNS se použijte jen v případě problému se zabezpečeným DNS
+preferences-doh-setting-strict =
+    .label = Maximální ochrana
+    .accesskey = M
+preferences-doh-strict-desc = { -brand-short-name } vždy použije zabezpečené DNS. Před použitím systémového překladače DNS vždy uvidíte bezpečnostní varování.
+preferences-doh-strict-detailed-desc-1 = Použije pouze poskytovatele, kterého si vyberete
+preferences-doh-strict-detailed-desc-2 = Vždy upozorní, pokud není zabezpečené DNS dostupné
+preferences-doh-strict-detailed-desc-3 = Pokud není zabezpečené DNS dostupné, webové stránky se nenačtou nebo nemusí správně fungovat
+preferences-doh-setting-off =
+    .label = Vypnuto
+    .accesskey = V
+preferences-doh-off-desc = Použije výchozí překladač DNS
+preferences-doh-checkbox-warn =
+    .label = Upozornit, pokud třetí strana aktivně brání zabezpečenému DNS
+    .accesskey = U
+preferences-doh-select-resolver = Vyberte poskytovatele:
+preferences-doh-exceptions-description = { -brand-short-name } nebude používat zabezpečené DNS na těchto stránkách
+preferences-doh-manage-exceptions =
+    .label = Výjimky…
+    .accesskey = k
 
 ## The following strings are used in the Download section of settings
 

@@ -32,3 +32,16 @@ unified-extensions-context-menu-remove-extension =
     .label = Odebrat rozšíření
 unified-extensions-context-menu-report-extension =
     .label = Nahlásit rozšíření
+unified-extensions-context-menu-move-widget-up =
+    .label = Posunout výše
+unified-extensions-context-menu-move-widget-down =
+    .label = Posunout níže
+
+## Notifications
+
+unified-extensions-mb-quarantined-domain-title = Některá rozšíření nejsou povolena
+unified-extensions-mb-quarantined-domain-message =
+    { -vendor-short-name.case-status ->
+        [with-cases] Kvůli ochraně vašich dat jsou na tomto webu povolena pouze některá rozšíření monitorovaná { -vendor-short-name(case: "ins") }.
+       *[no-cases] Kvůli ochraně vašich dat jsou na tomto webu povolena pouze některá rozšíření monitorovaná organizací { -vendor-short-name }.
+    }

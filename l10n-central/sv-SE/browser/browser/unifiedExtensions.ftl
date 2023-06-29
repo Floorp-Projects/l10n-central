@@ -32,3 +32,12 @@ unified-extensions-context-menu-remove-extension =
     .label = Ta bort tillägg
 unified-extensions-context-menu-report-extension =
     .label = Rapportera tillägg
+unified-extensions-context-menu-move-widget-up =
+    .label = Flytta upp
+unified-extensions-context-menu-move-widget-down =
+    .label = Flytta ner
+
+## Notifications
+
+unified-extensions-mb-quarantined-domain-title = Vissa tillägg är inte tillåtna
+unified-extensions-mb-quarantined-domain-message = Endast vissa tillägg som övervakas av { -vendor-short-name } är tillåtna på den här webbplatsen för att skydda dina data.

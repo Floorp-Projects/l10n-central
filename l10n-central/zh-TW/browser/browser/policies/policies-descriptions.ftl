@@ -36,8 +36,8 @@ policy-DisableDefaultBrowserAgent = 不讓預設瀏覽器代理工具作任何�
 policy-DisableDeveloperTools = 防止使用開發者工具。
 policy-DisableFeedbackCommands = 停用於「說明」選單中傳送意見回饋的相關指令（「送出意見回饋」與「回報詐騙網站」）。
 policy-DisableFirefoxAccounts = 停用 { -fxaccount-brand-name }相關服務，包含 Sync。
-# Firefox Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = 停用 Firefox Screenshots 功能。
+# Floorp Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = 停用 Floorp Screenshots 功能。
 policy-DisableFirefoxStudies = 防止 { -brand-short-name } 進行使用者研究。
 policy-DisableForgetButton = 防止使用「忘記」功能。
 policy-DisableFormHistory = 不要記住搜尋與表單填寫紀錄。
@@ -105,7 +105,7 @@ policy-PasswordManagerExceptions = 防止 { -brand-short-name } 儲存特定網�
 policy-PDFjs = 停用或設定 { -brand-short-name } 內建的 PDF 閱讀器 PDF.js。
 policy-Permissions2 = 設定攝影機、麥克風、地理位置、通知、自動播放等權限。
 policy-PictureInPicture = 開啟或關閉子母畫面功能。
-policy-PopupBlocking = 允許某些網站預設可顯示彈出視窗。
+policy-PopupBlocking = 允許某些網站預設可顯示彈出型視窗。
 policy-Preferences = 鎖定部分偏好設定的內容。
 policy-PromptForDownloadLocation = 下載檔案時，詢問要將檔案儲存至何處。
 policy-Proxy = 設定代理伺服器選項。
@@ -116,6 +116,8 @@ policy-SearchEngines = 調整搜尋引擎設定。此原則僅對 Extended Suppo
 policy-SearchSuggestEnabled = 啟用或停用搜尋建議。
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = 安裝 PKCS #11 模組。
+# For more information, see https://wikipedia.org/wiki/PKCS_11
+policy-SecurityDevices2 = 新增或刪除 PKCS #11 模組。
 policy-ShowHomeButton = 於工具列顯示首頁按鈕。
 policy-SSLVersionMax = 設定最大 SSL 版本。
 policy-SSLVersionMin = 設定最小 SSL 版本。

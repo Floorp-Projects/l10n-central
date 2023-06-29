@@ -38,13 +38,15 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Ιδιωτική Περιήγηση)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Ιδιωτική Περιήγηση)
-# These are the default window titles everywhere except macOS. The first two
-# attributes are used when the web content opened has no title:
+# These are the default window titles everywhere except macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
 #
 # default - "Mozilla Firefox"
 # private - "Mozilla Firefox (Private Browsing)"
 #
-# The last two are for use when there *is* a content title.
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
 # Variables:
 #  $content-title (String): the title of the web content.
 browser-main-window-window-titles =
@@ -52,14 +54,17 @@ browser-main-window-window-titles =
     .data-title-private = Ιδιωτική περιήγηση { -brand-full-name }
     .data-content-title-default = { $content-title } — { -brand-full-name }
     .data-content-title-private = { $content-title } — Ιδιωτική περιήγηση { -brand-full-name }
-# These are the default window titles on macOS. The first two are for use when
-# there is no content title:
+# These are the default window titles on macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
+#
 #
 # "default" - "Mozilla Firefox"
 # "private" - "Mozilla Firefox — (Private Browsing)"
 #
-# The last two are for use when there *is* a content title.
-# Do not use the brand name in the last two attributes, as we do on non-macOS.
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
+# Do not use the brand name in these, as we do on non-macOS.
 #
 # Also note the other subtle difference here: we use a `-` to separate the
 # brand name from `(Private Browsing)`, which does not happen on other OSes.
@@ -143,6 +148,8 @@ urlbar-search-tips-confirm-short = Το κατάλαβα
 urlbar-tip-icon-description =
     .alt = Συμβουλή:
 urlbar-result-menu-button =
+    .title = Άνοιγμα μενού
+urlbar-result-menu-button-feedback = Σχόλια
     .title = Άνοιγμα μενού
 urlbar-result-menu-learn-more =
     .label = Μάθετε περισσότερα
@@ -675,6 +682,11 @@ picture-in-picture-urlbar-button-open =
     .tooltiptext = Άνοιγμα λειτουργίας «Εικόνα εντός εικόνας» ({ $shortcut })
 picture-in-picture-urlbar-button-close =
     .tooltiptext = Κλείσιμο λειτουργίας «Εικόνα εντός εικόνας» ({ $shortcut })
+picture-in-picture-panel-header = Εικόνα εντός εικόνας
+picture-in-picture-panel-headline = Αυτός ο ιστότοπος δεν συνιστά τη λειτουργία «Εικόνα εντός εικόνας»
+picture-in-picture-panel-body = Τα βίντεο ενδέχεται να μην προβάλλονται όπως θα ήθελε ο προγραμματιστής όταν είναι ενεργοποιημένη η λειτουργία «Εικόνα εντός εικόνας».
+picture-in-picture-enable-toggle =
+    .label = Ενεργοποίηση ούτως ή άλλως
 
 ## Full Screen and Pointer Lock UI
 
@@ -973,6 +985,15 @@ unified-extensions-button-permissions-needed =
         Επεκτάσεις
         Απαιτούνται άδειες
 
+## Unified extensions button when some extensions are quarantined.
+## Note that the new line is intentionally part of the tooltip.
+
+unified-extensions-button-quarantined =
+    .label = Επεκτάσεις
+    .tooltiptext =
+        Επεκτάσεις
+        Ορισμένες επεκτάσεις δεν επιτρέπονται
+
 ## Autorefresh blocker
 
 refresh-blocked-refresh-label = Το { -brand-short-name } εμπόδισε την αυτόματη ανανέωση της σελίδας.
@@ -992,4 +1013,43 @@ firefox-relay-offer-what-relay-does = Θα προωθήσουμε όλα τα em
 
 ## Popup Notification
 
+firefox-relay-offer-why-to-use-relay = Οι ασφαλείς και εύχρηστες μάσκες μας, προστατεύουν την ταυτότητά σας και αποτρέπουν τα ανεπιθύμητα μηνύματα κρύβοντας τη διεύθυνση email σας.
+# Variables:
+#  $useremail (String): user email that will receive messages
+firefox-relay-offer-what-relay-provides = Όλα τα email που αποστέλλονται στις μάσκες email σας θα προωθηθούν στη διεύθυνση <strong>{ $useremail }</strong> (εκτός εάν αποφασίσετε να τα αποκλείσετε).
+firefox-relay-offer-legal-notice = Κάνοντας κλικ στο «Χρήση μάσκας email», συμφωνείτε με τους <label data-l10n-name="tos-url">Όρους υπηρεσίας</label> και τη <label data-l10n-name="privacy-url">Σημείωση απορρήτου </label>.
+
+## Add-on Pop-up Notifications
+
+popup-notification-addon-install-unsigned =
+    .value = (Μη επαληθευμένο)
 popup-notification-xpinstall-prompt-learn-more = Μάθετε περισσότερα σχετικά με την ασφαλή εγκατάσταση πρόσθετων
+
+## Pop-up warning
+
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-message =
+    { $popupCount ->
+        [one] Το { -brand-short-name } εμπόδισε το άνοιγμα ενός αναδυόμενου παραθύρου στον ιστότοπο.
+       *[other] Το { -brand-short-name } εμπόδισε το άνοιγμα { $popupCount } αναδυόμενων παραθύρων στον ιστότοπο.
+    }
+# The singular form is left out for English, since the number of blocked pop-ups is always greater than 1.
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-exceeded-message = Το { -brand-short-name } εμπόδισε το άνοιγμα περισσότερων από { $popupCount } αναδυόμενων παραθύρων στον ιστότοπο.
+popup-warning-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Επιλογές
+           *[other] Προτιμήσεις
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] λ
+           *[other] ρ
+        }
+# Variables:
+#   $popupURI (String): the URI for the pop-up window
+popup-show-popup-menuitem =
+    .label = Εμφάνιση του «{ $popupURI }»

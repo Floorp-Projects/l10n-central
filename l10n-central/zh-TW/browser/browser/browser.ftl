@@ -144,6 +144,8 @@ urlbar-tip-icon-description =
     .alt = 秘訣:
 urlbar-result-menu-button =
     .title = 開啟選單
+urlbar-result-menu-button-feedback = 意見回饋
+    .title = 開啟選單
 urlbar-result-menu-learn-more =
     .label = 了解更多
     .accesskey = L
@@ -191,7 +193,7 @@ urlbar-screen-blocked =
 urlbar-persistent-storage-blocked =
     .tooltiptext = 您已封鎖此網站儲存資料至持續性儲存空間。
 urlbar-popup-blocked =
-    .tooltiptext = 您封鎖了此網站的彈出視窗。
+    .tooltiptext = 您封鎖了此網站的彈出型視窗。
 urlbar-autoplay-media-blocked =
     .tooltiptext = 您已封鎖此網站自動播放有聲音的媒體內容。
 urlbar-canvas-blocked =
@@ -675,6 +677,11 @@ picture-in-picture-urlbar-button-open =
     .tooltiptext = 開啟子母畫面（{ $shortcut }）
 picture-in-picture-urlbar-button-close =
     .tooltiptext = 關閉子母畫面（{ $shortcut }）
+picture-in-picture-panel-header = 子母畫面
+picture-in-picture-panel-headline = 此網站不建議使用子母畫面功能
+picture-in-picture-panel-body = 開啟子母畫面功能時，影片可能無法如開發者所預期的顯示。
+picture-in-picture-enable-toggle =
+    .label = 還是開啟
 
 ## Full Screen and Pointer Lock UI
 
@@ -887,7 +894,7 @@ popups-infobar-dont-show-message =
     .label = 擋下彈出型視窗時不顯示此訊息
     .accesskey = D
 edit-popup-settings =
-    .label = 管理彈出視窗設定…
+    .label = 管理彈出型視窗設定…
     .accesskey = M
 picture-in-picture-hide-toggle =
     .label = 隱藏子母畫面切換按鈕
@@ -990,4 +997,43 @@ firefox-relay-offer-what-relay-does = 我們會將所有 <strong>{ $sitename }</
 
 ## Popup Notification
 
+firefox-relay-offer-why-to-use-relay = 我們安全易用的轉寄信箱，可隱藏您的實際信箱，並保護您的身分並防止垃圾信入侵。
+# Variables:
+#  $useremail (String): user email that will receive messages
+firefox-relay-offer-what-relay-provides = 所有寄到您的轉寄信箱中的郵件，將會再轉寄到 <strong>{ $useremail }</strong>，除非您決定要封鎖此轉寄信箱。
+firefox-relay-offer-legal-notice = 若點擊「使用轉寄信箱」，代表您同意<label data-l10n-name="tos-url">服務條款</label>與<label data-l10n-name="privacy-url">隱私權公告</label>。
+
+## Add-on Pop-up Notifications
+
+popup-notification-addon-install-unsigned =
+    .value = （未驗證）
 popup-notification-xpinstall-prompt-learn-more = 了解如何於安裝附加元件時確保安全的更多資訊
+
+## Pop-up warning
+
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-message =
+    { $popupCount ->
+        [1] { -brand-short-name } 封鎖了此網站開啟的彈出型視窗。
+       *[other] { -brand-short-name } 封鎖了此網站的 { $popupCount } 個彈出型視窗。
+    }
+# The singular form is left out for English, since the number of blocked pop-ups is always greater than 1.
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-exceeded-message = { -brand-short-name } 封鎖了此網站開啟超過 { $popupCount } 個彈出型視窗。
+popup-warning-button =
+    .label =
+        { PLATFORM() ->
+            [windows] 選項
+           *[other] 偏好設定
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] P
+        }
+# Variables:
+#   $popupURI (String): the URI for the pop-up window
+popup-show-popup-menuitem =
+    .label = 顯示「{ $popupURI }」

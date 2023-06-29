@@ -23,6 +23,8 @@ places-open-in-window =
 places-open-in-private-window =
     .label = 用新隱私視窗開啟
     .accesskey = P
+places-empty-bookmarks-folder =
+    .label = (空)
 places-add-bookmark =
     .label = 新增書籤…
     .accesskey = B
@@ -82,6 +84,15 @@ places-delete-folder =
            *[other] 刪除資料夾
         }
     .accesskey = D
+# Variables:
+#   $count (number) - The number of pages selected for removal.
+places-delete-page =
+    .label =
+        { $count ->
+            [1] 刪除頁面
+           *[other] 刪除頁面
+        }
+    .accesskey = D
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
 managed-bookmarks =
     .label = 受管理的書籤
@@ -103,6 +114,15 @@ places-delete-bookmark =
            *[other] 刪除書籤
         }
     .accesskey = D
+# Variables:
+#   $count (number) - The number of bookmarks being added.
+places-create-bookmark =
+    .label =
+        { $count ->
+            [1] 將頁面加入書籤…
+           *[other] 將頁面加入書籤…
+        }
+    .accesskey = B
 places-untag-bookmark =
     .label = 移除標籤
     .accesskey = R
@@ -120,9 +140,6 @@ places-forget-about-this-site-forget = 忘記
 places-library =
     .title = 收藏庫
     .style = width:700px; height:500px;
-places-library2 =
-    .title = 收藏庫
-    .style = min-width:700px; min-height:500px;
 places-library3 =
     .title = 收藏庫
 places-organize-button =
@@ -198,6 +215,27 @@ places-view-sort-col-date-added =
     .label = 加入日期
 places-view-sort-col-last-modified =
     .label = 上次修改
+places-view-sortby-name =
+    .label = 依名稱排序
+    .accesskey = N
+places-view-sortby-url =
+    .label = 依網址排序
+    .accesskey = L
+places-view-sortby-date =
+    .label = 依最近瀏覽時間排序
+    .accesskey = V
+places-view-sortby-visit-count =
+    .label = 依瀏覽次數排序
+    .accesskey = C
+places-view-sortby-date-added =
+    .label = 依加入日期排序
+    .accesskey = e
+places-view-sortby-last-modified =
+    .label = 依最後修改日期排序
+    .accesskey = M
+places-view-sortby-tags =
+    .label = 依標籤排序
+    .accesskey = T
 places-cmd-find-key =
     .key = f
 places-back-button =
@@ -205,3 +243,23 @@ places-back-button =
 places-forward-button =
     .tooltiptext = 到下一頁
 places-details-pane-select-an-item-description = 請選擇一個項目以檢視或編輯其屬性
+places-details-pane-no-items =
+    .value = 無項目
+# Variables:
+#   $count (Number): number of items
+places-details-pane-items-count =
+    .value = { $count } 個項目
+
+## Strings used as a placeholder in the Library search field. For example,
+## "Search History" stands for "Search through the browser's history".
+
+places-search-bookmarks =
+    .placeholder = 搜尋書籤
+places-search-history =
+    .placeholder = 搜尋記錄
+places-search-downloads =
+    .placeholder = 搜尋下載
+
+##
+
+places-locked-prompt = 因為 { -brand-short-name } 的檔案被其他程式鎖定，書籤與瀏覽記錄將無法使用。某些安全軟體會導致這個問題。

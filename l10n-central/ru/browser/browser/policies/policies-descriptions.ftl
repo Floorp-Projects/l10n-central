@@ -36,8 +36,8 @@ policy-DisableDefaultBrowserAgent = Не позволяет агенту бра�
 policy-DisableDeveloperTools = Блокирует доступ к инструментам разработчика.
 policy-DisableFeedbackCommands = Отключает команды отправки отзывов в меню Справка («Отправить отзыв...» и «Сообщить о поддельном сайте...»).
 policy-DisableFirefoxAccounts = Отключает службы, основанные на { -fxaccount-brand-name(case: "prepositional") }, включая Синхронизацию.
-# Firefox Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = Отключает функцию Firefox Screenshots.
+# Floorp Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Отключает функцию Floorp Screenshots.
 policy-DisableFirefoxStudies = Запрещает { -brand-short-name } выполнять исследования.
 policy-DisableForgetButton = Закрывает доступ к кнопке «Забыть».
 policy-DisableFormHistory = Отключает запоминание истории поиска и данных форм.
@@ -116,6 +116,8 @@ policy-SearchEngines = Настраивает параметры поисков�
 policy-SearchSuggestEnabled = Включает или отключает поисковые предложения.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Устанавливает модули PKCS #11.
+# For more information, see https://wikipedia.org/wiki/PKCS_11
+policy-SecurityDevices2 = Добавляет или удаляет модули PKCS #11.
 policy-ShowHomeButton = Включает кнопку «Домой» на панели инструментов.
 policy-SSLVersionMax = Устанавливает максимальную версию SSL.
 policy-SSLVersionMin = Устанавливает минимальную версию SSL.

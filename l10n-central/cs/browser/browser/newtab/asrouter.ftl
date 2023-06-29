@@ -210,6 +210,20 @@ spotlight-pin-secondary-button = Teď ne
 ## The button labels are fitted into narrow fixed-width buttons by
 ## Windows and therefore must be as narrow as possible.
 
+mr2022-background-update-toast-title =
+    { -brand-short-name.gender ->
+        [masculine] Nový { -brand-short-name }. Více soukromí, méně sledovacích prvků. Bez kompromisů.
+        [feminine] Nová { -brand-short-name }. Více soukromí, méně sledovacích prvků. Bez kompromisů.
+        [neuter] Nové { -brand-short-name }. Více soukromí, méně sledovacích prvků. Bez kompromisů.
+       *[other] Nová aplikace { -brand-short-name }. Více soukromí, méně sledovacích prvků. Bez kompromisů.
+    }
+mr2022-background-update-toast-text =
+    { -brand-short-name.gender ->
+        [masculine] Vyzkoušejte nyní nejnovější { -brand-short-name(case: "acc") }, který byl vylepšen o naši dosud nejsilnější ochranu proti sledování.
+        [feminine] Vyzkoušejte nyní nejnovější { -brand-short-name(case: "acc") }, která byla vylepšena o naši dosud nejsilnější ochranu proti sledování.
+        [neuter] Vyzkoušejte nyní nejnovější { -brand-short-name(case: "acc") }, které bylo vylepšeno o naši dosud nejsilnější ochranu proti sledování.
+       *[other] Vyzkoušejte nyní nejnovější aplikaci { -brand-short-name }, která byla vylepšena o naši dosud nejsilnější ochranu proti sledování.
+    }
 # This button label will be fitted into a narrow fixed-width button by
 # Windows. Try to not exceed the width of the English text (compare it
 # using a variable font like Arial): the button can only fit 1-2
@@ -231,6 +245,8 @@ firefoxview-cfr-primarybutton = Vyzkoušejte ho
     .accesskey = t
 firefoxview-cfr-secondarybutton = Teď ne
     .accesskey = n
+firefoxview-cfr-header-v2 = Rychle pokračujte tam, kde jste skončili
+firefoxview-cfr-body-v2 = Získejte zpět nedávno zavřené panely a plynule přecházejte mezi zařízeními pomocí { -firefoxview-brand-name(case: "gen") }.
 
 ## Firefox View Spotlight
 
@@ -244,15 +260,75 @@ firefoxview-spotlight-promo-secondarybutton = Přeskočit
 
 colorways-cfr-primarybutton = Zvolit baletu barev
     .accesskey = Z
+# "shades" refers to the different color options available to users in colorways.
+colorways-cfr-body =
+    { -brand-short-name.case-status ->
+        [with-cases] Vybarvěte svůj { -brand-short-name(case: "acc") } exkluzivními odstíny inspirovanými hlasy, které změnily kulturu.
+       *[no-cases] Vybarvěte svůj prohlížeč { -brand-short-name } exkluzivními odstíny inspirovanými hlasy, které změnily kulturu.
+    }
+colorways-cfr-header-28days = Paleta barev Nezávislé hlasy je dostupná pouze do 16. ledna.
+colorways-cfr-header-14days = Paleta barev Nezávislé hlasy vyprší během dvou týdnů
+colorways-cfr-header-7days = Paleta barev Nezávislé hlasy vyprší tento týden
+colorways-cfr-header-today = Paleta barev Nezávislé hlasy vyprší dnes
 
 ## Cookie Banner Handling CFR
 
+cfr-cbh-header =
+    { -brand-short-name.case-status ->
+        [with-cases] Povolit ve { -brand-short-name(case: "dat") } blokování cookie lišt?
+       *[no-cases] Povolit v aplikaci { -brand-short-name } blokování cookie lišt?
+    }
+cfr-cbh-body = { -brand-short-name } může automaticky blokovat řadu cookie lišt.
+cfr-cbh-confirm-button = Odmítat cookie lišty
+    .accesskey = c
 cfr-cbh-dismiss-button = Teď ne
     .accesskey = n
 
 ## These strings are used in the Fox doodle Pin/set default spotlights
 
+july-jam-headline = Všechno, co potřebujete
+july-jam-body = Každý měsíc { -brand-short-name } zablokuje v průměru více než 3 000 sledovacích prvků na uživatele, takže máte bezpečný a rychlý přístup ke kvalitnímu internetu.
+july-jam-set-default-primary =
+    { -brand-short-name.case-status ->
+        [with-cases] Otevírat mé odkazy pomocí { -brand-short-name(case: "gen") }
+       *[no-cases] Otevírat mé odkazy pomocí aplikace { -brand-short-name }
+    }
+fox-doodle-pin-headline = Vítejte zpět
+# “indie” is short for the term “independent”.
+# In this instance, free from outside influence or control.
+fox-doodle-pin-body = Zde je rychlé připomenutí, že si svůj oblíbený nezávislý prohlížeč můžete jediným klepnutím ponechat.
+fox-doodle-pin-primary =
+    { -brand-short-name.case-status ->
+        [with-cases] Otevírat mé odkazy pomocí { -brand-short-name(case: "gen") }
+       *[no-cases] Otevírat mé odkazy pomocí aplikace { -brand-short-name }
+    }
+fox-doodle-pin-secondary = Teď ne
 
 ## These strings are used in the Set Firefox as Default PDF Handler for Existing Users experiment
 
+set-default-pdf-handler-headline =
+    { -brand-short-name.case-status ->
+        [with-cases] <strong>Vaše PDF dokumenty se nyní otevírají ve { -brand-short-name(case: "loc") }.</strong> Upravujte nebo podepisujte formuláře přímo v prohlížeči. Pro změnu vyhledejte v nastavení položku „PDF“.
+       *[no-cases] <strong>Vaše PDF dokumenty se nyní otevírají v aplikaci { -brand-short-name }.</strong> Upravujte nebo podepisujte formuláře přímo v prohlížeči. Pro změnu vyhledejte v nastavení položku „PDF“.
+    }
 set-default-pdf-handler-primary = Rozumím
+
+## FxA sync CFR
+
+fxa-sync-cfr-header = Plánujete v blízké budoucnosti nové zařízení?
+fxa-sync-cfr-body =
+    { -brand-product-name.case-status ->
+        [with-cases] Ujistěte se, že máte své záložky, hesla a panely vždy při sobě, když otevřete novou instalaci { -brand-product-name(case: "gen") }.
+       *[no-cases] Ujistěte se, že máte své záložky, hesla a panely vždy při sobě, když otevřete novou instalaci prohlížeče { -brand-product-name }.
+    }
+fxa-sync-cfr-primary = Zjistit více
+    .accesskey = Z
+fxa-sync-cfr-secondary = Upozornit mě později
+    .accesskey = U
+
+## Device Migration FxA Spotlight
+
+device-migration-fxa-spotlight-header = Používáte starší zařízení?
+device-migration-fxa-spotlight-body = Zálohujte svá data, abyste neztratili důležité informace, jako jsou záložky a hesla – zejména pokud přejdete na nové zařízení.
+device-migration-fxa-spotlight-primary-button = Jak zálohovat moje data
+device-migration-fxa-spotlight-link = Upozornit mě později

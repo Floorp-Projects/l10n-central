@@ -172,6 +172,14 @@ media-codec-support-info = ข้อมูลการสนับสนุน�
 # List all the entries of the database.
 media-capabilities-enumerate = แจงนับฐานข้อมูล
 
+## Codec support table
+
+media-codec-support-sw-decoding = การถอดรหัสด้วยซอฟต์แวร์
+media-codec-support-hw-decoding = การถอดรหัสด้วยฮาร์ดแวร์
+media-codec-support-codec-name = ชื่อตัวแปลงสัญญาณ
+media-codec-support-supported = รองรับ
+media-codec-support-unsupported = ไม่รองรับ
+
 ##
 
 intl-title = การทำให้เป็นสากลและการแปลเป็นภาษาท้องถิ่น
@@ -265,6 +273,8 @@ webgl2-renderer = ตัวเรนเดอร์ไดรเวอร์ WebG
 webgl2-version = รุ่นไดรเวอร์ WebGL 2
 webgl2-driver-extensions = ส่วนขยายไดรเวอร์ WebGL 2
 webgl2-extensions = ส่วนขยาย WebGL 2
+webgpu-default-adapter = อะแดปเตอร์เริ่มต้นของ WebGPU
+webgpu-fallback-adapter = อะแดปเตอร์สำรองของ WebGPU
 # Variables
 #   $bugNumber (string) - Bug number on Bugzilla
 support-blocklisted-bug = ถูกเพิ่มในรายการปิดกั้นเนื่องจากมีปัญหาที่ทราบสาเหตุ: <a data-l10n-name="bug-link">bug { $bugNumber }</a>

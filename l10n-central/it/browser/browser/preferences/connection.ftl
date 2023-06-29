@@ -69,6 +69,10 @@ connection-proxy-autologin =
     .label = Non richiedere l’autenticazione se la password è salvata
     .accesskey = c
     .tooltip = Questa opzione permette di autenticarsi direttamente con un proxy se risultano salvate delle credenziali. La richiesta verrà visualizzata in caso di errore.
+connection-proxy-autologin-checkbox =
+    .label = Non richiedere l’autenticazione se la password è salvata
+    .accesskey = c
+    .tooltiptext = Questa opzione permette di autenticarsi direttamente con un proxy se risultano salvate delle credenziali. La richiesta verrà visualizzata in caso di errore.
 connection-proxy-socks-remote-dns =
     .label = DNS proxy per SOCKS v5
     .accesskey = D
@@ -87,3 +91,4 @@ connection-dns-over-https-url-custom =
     .accesskey = P
     .tooltiptext = Inserisci l’indirizzo da utilizzare per risolvere richieste DNS su HTTPS
 connection-dns-over-https-custom-label = Personalizzato
+

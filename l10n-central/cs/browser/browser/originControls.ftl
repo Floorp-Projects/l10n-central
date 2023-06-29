@@ -10,6 +10,8 @@
 
 origin-controls-no-access =
     .label = Rozšíření nemůže číst ani měnit data
+origin-controls-quarantined =
+    .label = Rozšíření nemůže číst ani měnit data
 origin-controls-options =
     .label = Rozšíření může číst a měnit data
 origin-controls-option-all-domains =
@@ -27,6 +29,11 @@ origin-controls-option-always-on =
 ## messages. They currently appear in the unified extensions panel.
 
 origin-controls-state-no-access = Nemůže číst ani měnit data na tomto webu
+origin-controls-state-quarantined =
+    { -vendor-short-name.case-status ->
+        [with-cases] Není povolené { -vendor-short-name(case: "ins") } na této stránce
+       *[no-cases] Není povolené organizací { -vendor-short-name } na této stránce
+    }
 origin-controls-state-always-on = Může vždy číst a měnit data na tomto webu
 origin-controls-state-when-clicked = Pro čtení nebo změnu dat na tomto webu je nutné oprávnění
 origin-controls-state-hover-run-visit-only = Spustit pouze pro tuto návštěvu
@@ -48,3 +55,16 @@ origin-controls-toolbar-button-permission-needed =
     .tooltiptext =
         { $extensionTitle }
         Vyžadováno oprávnění
+# Extension's toolbar button when quarantined.
+# Note that the new line is intentionally part of the tooltip.
+origin-controls-toolbar-button-quarantined =
+    .label = { $extensionTitle }
+    .tooltiptext =
+        { -vendor-short-name.case-status ->
+            [with-cases]
+                { $extensionTitle }
+                Na tomto serveru není { -vendor-short-name(case: "ins") } povoleno
+           *[no-cases]
+                { $extensionTitle }
+                Na tomto serveru není organizací { -vendor-short-name } povoleno
+        }

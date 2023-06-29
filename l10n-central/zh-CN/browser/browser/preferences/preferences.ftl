@@ -327,7 +327,7 @@ applications-use-app =
 # Variables:
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
-    .label = 使用 { $app-name } 处理（默认）
+    .label = 使用“{ $app-name }”处理（默认）
 applications-use-os-default =
     .label =
         { PLATFORM() ->
@@ -676,6 +676,10 @@ containers-remove-button =
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
+
+## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = 让您个性化的网络体验随身相伴
 sync-signedout-description2 = 在您的各种设备间同步您的书签、历史记录、标签页、密码、附加组件与设置。
 sync-signedout-account-signin3 =
@@ -689,9 +693,12 @@ sync-signedout-account-signin3 =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = 在 <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> 或者 <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> 上安装 Firefox，让您的个性体验随身相伴。
+sync-mobile-promo = 在 <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> 和 <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> 设备上安装 Firefox，让您的个性体验随身相伴。
 
 ## Firefox Account - Signed in
+
+
+## Firefox account - Signed in
 
 sync-profile-picture =
     .tooltiptext = 更改头像
@@ -731,6 +738,11 @@ prefs-sync-now =
     .labelnotsyncing = 立即同步
     .accesskeynotsyncing = N
     .labelsyncing = 正在同步...
+prefs-sync-now-button =
+    .label = 立即同步
+    .accesskey = N
+prefs-syncing-button =
+    .label = 正在同步...
 
 ## The list of things currently syncing.
 
@@ -810,6 +822,16 @@ sync-device-name-save =
     .accesskey = v
 sync-connect-another-device = 连接其他设备
 
+## These strings are shown in a desktop notification after the
+## user requests we resend a verification email.
+
+sync-verification-sent-title = 已发出验证邮件
+# Variables:
+#   $email (String): Email address of user's Firefox account.
+sync-verification-sent-body = 验证链接已发送到 { $email }。
+sync-verification-not-sent-title = 无法发送验证邮件
+sync-verification-not-sent-body = 我们目前无法发送验证邮件，请稍后再试。
+
 ## Privacy Section
 
 privacy-header = 浏览器隐私
@@ -835,6 +857,8 @@ forms-breach-alerts =
 forms-breach-alerts-learn-more-link = 详细了解
 relay-integration =
     .label = 启用 { -brand-short-name } 密码管理器的 { -relay-brand-name } 服务
+preferences-relay-integration-checkbox =
+    .label = 建议使用 { -relay-brand-name } 马甲邮箱以保护您的电子邮箱
 relay-integration-learn-more-link = 详细了解
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
@@ -1232,11 +1256,11 @@ preferences-doh-description = 基于 DNS 的 HTTPS 会加密发送您对域名�
 preferences-doh-status = 状态：{ $status }
 # Variables:
 #   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
-preferences-doh-resolver = 提供商：{ $name }
+preferences-doh-resolver = 提供方：{ $name }
 # This is displayed instead of $name in preferences-doh-resolver
 # when the DoH URL is not a valid URL
 preferences-doh-bad-url = 无效网址
-preferences-doh-steering-status = 使用本地提供商
+preferences-doh-steering-status = 使用本地提供方
 preferences-doh-status-active = 启用
 preferences-doh-status-disabled = 关闭
 # Variables:
@@ -1250,21 +1274,21 @@ preferences-doh-setting-default =
     .accesskey = D
 preferences-doh-default-desc = 由 { -brand-short-name } 决定何时使用安全 DNS 来保护您的隐私。
 preferences-doh-default-detailed-desc-1 = 位于安全 DNS 可用的地区则使用
-preferences-doh-default-detailed-desc-2 = 若安全 DNS 提供商出现问题则使用默认 DNS 解析器
-preferences-doh-default-detailed-desc-3 = 尽可能使用本地提供商
+preferences-doh-default-detailed-desc-2 = 若安全 DNS 提供方出现问题则使用默认 DNS 解析器
+preferences-doh-default-detailed-desc-3 = 尽可能使用本地提供方
 preferences-doh-default-detailed-desc-4 = 当 VPN、家长控制或企业策略生效时关闭
 preferences-doh-default-detailed-desc-5 = 当网络设备告知 { -brand-short-name } 不应使用安全 DNS 时关闭
 preferences-doh-setting-enabled =
     .label = 增强保护
     .accesskey = I
-preferences-doh-enabled-desc = 由您选择安全 DNS 的提供商并决定何时使用。
-preferences-doh-enabled-detailed-desc-1 = 使用您选择的提供商
+preferences-doh-enabled-desc = 由您选择安全 DNS 的提供方并决定何时使用。
+preferences-doh-enabled-detailed-desc-1 = 使用您选择的提供方
 preferences-doh-enabled-detailed-desc-2 = 只在安全 DNS 出现问题时使用默认 DNS 解析器
 preferences-doh-setting-strict =
     .label = 最大保护
     .accesskey = M
 preferences-doh-strict-desc = { -brand-short-name } 只会使用安全 DNS。如确实需要使用系统 DNS，您将预先收到安全风险警告。
-preferences-doh-strict-detailed-desc-1 = 只使用您选择的提供商
+preferences-doh-strict-detailed-desc-1 = 只使用您选择的提供方
 preferences-doh-strict-detailed-desc-2 = 安全 DNS 不可用时发出警告
 preferences-doh-strict-detailed-desc-3 = 在无法使用安全 DNS 的情况下，某些网站可能无法加载或功能异常
 preferences-doh-setting-off =
@@ -1274,7 +1298,7 @@ preferences-doh-off-desc = 使用默认 DNS 解析器
 preferences-doh-checkbox-warn =
     .label = 如果第三方主动阻止安全 DNS，则发出警告
     .accesskey = W
-preferences-doh-select-resolver = 选择提供商：
+preferences-doh-select-resolver = 选择提供方：
 preferences-doh-exceptions-description = { -brand-short-name } 将不再使用安全 DNS 解析这些网站
 preferences-doh-manage-exceptions =
     .label = 管理例外…

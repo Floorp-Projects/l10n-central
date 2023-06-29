@@ -235,7 +235,7 @@ preferences-web-appearance-choice-input-dark =
 preferences-web-appearance-override-warning = Fargevala dine overstyrer utsjånaden til nettstaden. <a data-l10n-name="colors-link">Handsam fargar</a>
 # This message contains one link. It can be moved within the sentence as needed
 # to adapt to your language, but should not be changed.
-preferences-web-appearance-footer = Handsam { -brand-short-name }-tema i <a data-l10n-name="themes-link">Tillegg og tema</a>
+preferences-web-appearance-footer = Handsam { -brand-short-name }-tema i <a data-l10n-name="themes-link">Utvidingar og tema</a>
 preferences-colors-header = Fargar
 preferences-colors-description = Overstyr { -brand-short-name } sine standardfargar for tekst, nettsidebakgrunnar og lenker.
 preferences-colors-manage-button =
@@ -684,6 +684,10 @@ containers-remove-button =
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
+
+## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Ta med deg nettet
 sync-signedout-description2 = Synkroniser bokmerke, historikk, faner, passord, utvidingar og innstillingar på tvers av alle einingane dine.
 sync-signedout-account-signin3 =
@@ -700,6 +704,9 @@ sync-signedout-account-signin3 =
 sync-mobile-promo = Last ned Firefox for <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> eller  <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> for å synkronisere med mobileininga di.
 
 ## Firefox Account - Signed in
+
+
+## Firefox account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Endre profilbilde
@@ -739,6 +746,11 @@ prefs-sync-now =
     .labelnotsyncing = Synkroniser no
     .accesskeynotsyncing = n
     .labelsyncing = Synkroniserer…
+prefs-sync-now-button =
+    .label = Synkroniser no
+    .accesskey = n
+prefs-syncing-button =
+    .label = Synkroniserer…
 
 ## The list of things currently syncing.
 
@@ -797,7 +809,7 @@ sync-engine-creditcards =
     .accesskey = K
 sync-engine-addons =
     .label = Tillegg
-    .tooltiptext = Tillegg og tema for Firefox desktop
+    .tooltiptext = Utvidingar og tema for Firefox desktop
     .accesskey = T
 sync-engine-settings =
     .label = Innstillingar
@@ -817,6 +829,16 @@ sync-device-name-save =
     .label = Lagre
     .accesskey = L
 sync-connect-another-device = Kople til ei anna eining
+
+## These strings are shown in a desktop notification after the
+## user requests we resend a verification email.
+
+sync-verification-sent-title = Stadfesting sendt
+# Variables:
+#   $email (String): Email address of user's Firefox account.
+sync-verification-sent-body = Ei stadfestingslenke er sendt til { $email }.
+sync-verification-not-sent-title = Klarte ikkje å sende stadfesting
+sync-verification-not-sent-body = Vi klarte ikkje å sende ei stadfesting på e-post no, prøv på nytt seinare.
 
 ## Privacy Section
 
@@ -843,6 +865,8 @@ forms-breach-alerts =
 forms-breach-alerts-learn-more-link = Les meir
 relay-integration =
     .label = Slå på { -relay-brand-name } i passordhandsamaren for { -brand-short-name }
+preferences-relay-integration-checkbox =
+    .label = Foreslå { -relay-brand-name } e-postalias for å beskytte e-postadressa di
 relay-integration-learn-more-link = Les meir
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =

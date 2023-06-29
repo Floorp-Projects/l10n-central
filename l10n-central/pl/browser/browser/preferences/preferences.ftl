@@ -688,6 +688,10 @@ containers-remove-button =
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
+
+## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Zabierz swoją sieć ze sobą
 sync-signedout-description2 = Synchronizuj zakładki, historię, karty, hasła, dodatki i ustawienia między wszystkimi swoimi urządzeniami.
 sync-signedout-account-signin3 =
@@ -704,6 +708,9 @@ sync-signedout-account-signin3 =
 sync-mobile-promo = Firefox na <a data-l10n-name="android-link">Androida</a> <img data-l10n-name="android-icon"/> i <a data-l10n-name="ios-link">iOS</a> <img data-l10n-name="ios-icon"/> daje możliwość synchronizacji z urządzeniami przenośnymi.
 
 ## Firefox Account - Signed in
+
+
+## Firefox account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Zmień zdjęcie profilowe
@@ -743,10 +750,16 @@ prefs-sync-now =
     .labelnotsyncing = Synchronizuj teraz
     .accesskeynotsyncing = S
     .labelsyncing = Synchronizowanie…
+prefs-sync-now-button =
+    .label = Synchronizuj teraz
+    .accesskey = S
+prefs-syncing-button =
+    .label = Synchronizowanie…
 
 ## The list of things currently syncing.
 
 sync-currently-syncing-heading = Obecnie synchronizowane:
+sync-syncing-across-devices-heading = Obecnie synchronizowane na wszystkich połączonych urządzeniach:
 sync-currently-syncing-bookmarks = zakładki
 sync-currently-syncing-history = historia
 sync-currently-syncing-tabs = otwarte karty
@@ -775,6 +788,7 @@ sync-choose-what-to-sync-dialog3 =
     .buttonaccesskeyaccept = Z
     .buttonlabelextra2 = Rozłącz…
     .buttonaccesskeyextra2 = R
+sync-choose-dialog-subtitle = Zmiany na tej liście zostaną odzwierciedlone na wszystkich połączonych urządzeniach.
 sync-engine-bookmarks =
     .label = zakładki
     .accesskey = z
@@ -820,6 +834,16 @@ sync-device-name-save =
     .accesskey = Z
 sync-connect-another-device = Połącz inne urządzenie
 
+## These strings are shown in a desktop notification after the
+## user requests we resend a verification email.
+
+sync-verification-sent-title = Wysłano wiadomość weryfikacyjną
+# Variables:
+#   $email (String): Email address of user's Firefox account.
+sync-verification-sent-body = Wysłano odnośnik weryfikacyjny na adres { $email }.
+sync-verification-not-sent-title = Błąd wysyłania wiadomości weryfikacyjnej
+sync-verification-not-sent-body = Nie udało się wysłać wiadomości z odnośnikiem weryfikacyjnym, proszę spróbować później.
+
 ## Privacy Section
 
 privacy-header = Prywatność
@@ -844,7 +868,9 @@ forms-breach-alerts =
     .accesskey = o
 forms-breach-alerts-learn-more-link = Więcej informacji
 relay-integration =
-    .label = Włącz { -relay-brand-name } w menedżerze haseł { -brand-short-name(case: "gen") }
+    .label = Włącz { -relay-brand-name } w menedżerze haseł { -brand-short-name(case: "gen") }.
+preferences-relay-integration-checkbox =
+    .label = Proponowanie masek { -relay-brand-name } do ochrony adresu e-mail.
 relay-integration-learn-more-link = Więcej informacji
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
@@ -1232,6 +1258,63 @@ httpsonly-radio-enabled-pbm =
     .label = Włącz tylko w oknach prywatnych
 httpsonly-radio-disabled =
     .label = Nie włączaj
+
+## DoH Section
+
+preferences-doh-header = DNS poprzez HTTPS
+preferences-doh-description = System nazw domen (DNS) poprzez HTTPS wysyła zapytanie o nazwę domeny przez zaszyfrowane połączenie, tworząc zabezpieczony serwer DNS i utrudniając innym podejrzenie, jaką witrynę zaraz otworzysz.
+# Variables:
+#   $status (string) - The status of the DoH connection
+preferences-doh-status = Stan: { $status }
+# Variables:
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-resolver = Dostawca: { $name }
+# This is displayed instead of $name in preferences-doh-resolver
+# when the DoH URL is not a valid URL
+preferences-doh-bad-url = Nieprawidłowy adres URL
+preferences-doh-steering-status = Używanie lokalnego dostawcy
+preferences-doh-status-active = Aktywne
+preferences-doh-status-disabled = Wyłączone
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+preferences-doh-status-not-active = Nieaktywne ({ $reason })
+preferences-doh-group-message = Włącz zabezpieczony serwer DNS:
+preferences-doh-expand-section =
+    .tooltiptext = Więcej informacji
+preferences-doh-setting-default =
+    .label = Domyślna ochrona
+    .accesskey = D
+preferences-doh-default-desc = { -brand-short-name } decyduje, kiedy używać zabezpieczonego serwera DNS do ochrony prywatności użytkownika.
+preferences-doh-default-detailed-desc-1 = Używa zabezpieczonego serwera DNS w regionach, gdzie jest dostępny
+preferences-doh-default-detailed-desc-2 = Używa domyślnego serwera DNS, jeśli występuje problem z dostawcą zabezpieczonego serwera DNS
+preferences-doh-default-detailed-desc-3 = Używa lokalnego dostawcy, jeśli to możliwe
+preferences-doh-default-detailed-desc-4 = Wyłącza, kiedy aktywna jest sieć VPN, kontrola rodzicielska lub zasady organizacji
+preferences-doh-default-detailed-desc-5 = Wyłącza, kiedy sieć mówi { -brand-short-name(case: "dat") }, że nie powinien używać zabezpieczonego serwera DNS
+preferences-doh-setting-enabled =
+    .label = Zwiększona ochrona
+    .accesskey = Z
+preferences-doh-enabled-desc = Użytkownik decyduje, kiedy używać zabezpieczonego serwera DNS i wybiera dostawcę.
+preferences-doh-enabled-detailed-desc-1 = Używa dostawcy wybranego przez użytkownika
+preferences-doh-enabled-detailed-desc-2 = Używa domyślnego serwera DNS tylko, jeśli występuje problem z zabezpieczonym serwerem DNS
+preferences-doh-setting-strict =
+    .label = Maksymalna ochrona
+    .accesskey = M
+preferences-doh-strict-desc = { -brand-short-name } będzie zawsze używał zabezpieczonego serwera DNS. Przed użyciem systemowego serwera DNS zostanie wyświetlone ostrzeżenie o zagrożeniu bezpieczeństwa.
+preferences-doh-strict-detailed-desc-1 = Używa wyłącznie dostawcy wybranego przez użytkownika
+preferences-doh-strict-detailed-desc-2 = Zawsze ostrzega, jeśli zabezpieczony serwer DNS jest niedostępny
+preferences-doh-strict-detailed-desc-3 = Jeśli zabezpieczony serwer DNS jest niedostępny, witryny nie będą się wczytywać ani poprawnie działać
+preferences-doh-setting-off =
+    .label = Wyłączone
+    .accesskey = W
+preferences-doh-off-desc = Używa domyślnego serwera DNS
+preferences-doh-checkbox-warn =
+    .label = Ostrzeganie, jeśli ktoś inny aktywnie uniemożliwia korzystanie z zabezpieczonego serwera DNS
+    .accesskey = O
+preferences-doh-select-resolver = Wybierz dostawcę:
+preferences-doh-exceptions-description = { -brand-short-name } nie będzie używał zabezpieczonego serwera DNS na tych witrynach
+preferences-doh-manage-exceptions =
+    .label = Wyjątki…
+    .accesskey = k
 
 ## The following strings are used in the Download section of settings
 

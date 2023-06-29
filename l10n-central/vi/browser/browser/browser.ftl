@@ -38,13 +38,15 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Duyệt web riêng tư)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Duyệt web riêng tư)
-# These are the default window titles everywhere except macOS. The first two
-# attributes are used when the web content opened has no title:
+# These are the default window titles everywhere except macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
 #
 # default - "Mozilla Firefox"
 # private - "Mozilla Firefox (Private Browsing)"
 #
-# The last two are for use when there *is* a content title.
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
 # Variables:
 #  $content-title (String): the title of the web content.
 browser-main-window-window-titles =
@@ -52,14 +54,17 @@ browser-main-window-window-titles =
     .data-title-private = { -brand-full-name } duyệt web riêng tư
     .data-content-title-default = { $content-title } — { -brand-full-name }
     .data-content-title-private = { $content-title } — { -brand-full-name } duyệt web riêng tư
-# These are the default window titles on macOS. The first two are for use when
-# there is no content title:
+# These are the default window titles on macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
+#
 #
 # "default" - "Mozilla Firefox"
 # "private" - "Mozilla Firefox — (Private Browsing)"
 #
-# The last two are for use when there *is* a content title.
-# Do not use the brand name in the last two attributes, as we do on non-macOS.
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
+# Do not use the brand name in these, as we do on non-macOS.
 #
 # Also note the other subtle difference here: we use a `-` to separate the
 # brand name from `(Private Browsing)`, which does not happen on other OSes.
@@ -144,6 +149,8 @@ urlbar-tip-icon-description =
     .alt = Mẹo:
 urlbar-result-menu-button =
     .title = Mở menu
+urlbar-result-menu-button-feedback = Phản hồi
+    .title = Mở menu
 urlbar-result-menu-learn-more =
     .label = Tìm hiểu thêm
     .accesskey = L
@@ -189,7 +196,7 @@ urlbar-microphone-blocked =
 urlbar-screen-blocked =
     .tooltiptext = Bạn đã chặn việc chia sẻ màn hình của mình với trang web này.
 urlbar-persistent-storage-blocked =
-    .tooltiptext = Bạn đã chặn lưu dữ liệu lâu dài ở trang này.
+    .tooltiptext = Bạn đã chặn lưu dữ liệu vào bộ nhớ lâu dài ở trang này.
 urlbar-popup-blocked =
     .tooltiptext = Bạn đã chặn cửa sổ bật lên ở trang web này.
 urlbar-autoplay-media-blocked =
@@ -671,6 +678,11 @@ picture-in-picture-urlbar-button-open =
     .tooltiptext = Mở hình trong hình ({ $shortcut })
 picture-in-picture-urlbar-button-close =
     .tooltiptext = Đóng hình trong hình ({ $shortcut })
+picture-in-picture-panel-header = Hình trong hình
+picture-in-picture-panel-headline = Trang web này không khuyến nghị hình trong hình
+picture-in-picture-panel-body = Video có thể không hiển thị như ý định của nhà phát triển khi hình trong hình được bật.
+picture-in-picture-enable-toggle =
+    .label = Vẫn bật
 
 ## Full Screen and Pointer Lock UI
 
@@ -969,6 +981,15 @@ unified-extensions-button-permissions-needed =
         Tiện ích mở rộng
         Cần yêu cầu quyền hạn
 
+## Unified extensions button when some extensions are quarantined.
+## Note that the new line is intentionally part of the tooltip.
+
+unified-extensions-button-quarantined =
+    .label = Tiện ích mở rộng
+    .tooltiptext =
+        Tiện ích mở rộng
+        Vài tiện ích mở rộng không được phép
+
 ## Autorefresh blocker
 
 refresh-blocked-refresh-label = { -brand-short-name } đã ngăn trang web này tự động tải lại.
@@ -988,4 +1009,39 @@ firefox-relay-offer-what-relay-does = Chúng tôi sẽ chuyển tiếp tất c�
 
 ## Popup Notification
 
+firefox-relay-offer-why-to-use-relay = Mặt nạ an toàn, dễ sử dụng của chúng tôi bảo vệ danh tính của bạn và ngăn chặn thư rác bằng cách ẩn địa chỉ email của bạn.
+# Variables:
+#  $useremail (String): user email that will receive messages
+firefox-relay-offer-what-relay-provides = Tất cả email gửi đến mặt nạ email của bạn sẽ được chuyển đến <strong>{ $useremail }</strong> (trừ khi bạn quyết định chặn chúng).
+firefox-relay-offer-legal-notice = Bằng cách nhấp vào “Sử dụng mặt nạ email”, bạn đồng ý với <label data-l10n-name="tos-url">điều khoản sử dụng</label> và <label data-l10n-name="privacy-url">thông báo về quyền riêng tư</label>.
+
+## Add-on Pop-up Notifications
+
+popup-notification-addon-install-unsigned =
+    .value = (Chưa xác thực)
 popup-notification-xpinstall-prompt-learn-more = Tìm hiểu thêm về cách cài đặt tiện ích một cách an toàn
+
+## Pop-up warning
+
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-message = { -brand-short-name } đã chặn trang web này mở { $popupCount } cửa sổ bật lên.
+# The singular form is left out for English, since the number of blocked pop-ups is always greater than 1.
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-exceeded-message = { -brand-short-name } đã ngăn trang web này mở nhiều hơn { $popupCount } cửa sổ bật lên.
+popup-warning-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Tùy chọn
+           *[other] Tùy chỉnh
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] P
+        }
+# Variables:
+#   $popupURI (String): the URI for the pop-up window
+popup-show-popup-menuitem =
+    .label = Hiển thị '{ $popupURI }'

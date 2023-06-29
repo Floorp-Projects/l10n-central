@@ -684,6 +684,10 @@ containers-remove-button =
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
+
+## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Ta med dig webben
 sync-signedout-description2 = Synkronisera dina bokmärken, historik, flikar, lösenord, tillägg och inställningar på alla dina enheter.
 sync-signedout-account-signin3 =
@@ -700,6 +704,9 @@ sync-signedout-account-signin3 =
 sync-mobile-promo = Hämta Firefox för <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> eller <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> för att synkronisera med din mobila enhet.
 
 ## Firefox Account - Signed in
+
+
+## Firefox account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Ändra profilbild
@@ -739,6 +746,11 @@ prefs-sync-now =
     .labelnotsyncing = Synkronisera nu
     .accesskeynotsyncing = n
     .labelsyncing = Synkroniserar…
+prefs-sync-now-button =
+    .label = Synkronisera nu
+    .accesskey = n
+prefs-syncing-button =
+    .label = Synkroniserar…
 
 ## The list of things currently syncing.
 
@@ -818,6 +830,16 @@ sync-device-name-save =
     .accesskey = S
 sync-connect-another-device = Anslut en annan enhet
 
+## These strings are shown in a desktop notification after the
+## user requests we resend a verification email.
+
+sync-verification-sent-title = Verifiering skickad
+# Variables:
+#   $email (String): Email address of user's Firefox account.
+sync-verification-sent-body = En verifieringslänk har skickats till { $email }.
+sync-verification-not-sent-title = Det gick inte att skicka verifiering
+sync-verification-not-sent-body = Vi kan inte skicka ett verifieringsmeddelande just nu, försök igen senare.
+
 ## Privacy Section
 
 privacy-header = Webbläsarintegritet
@@ -843,6 +865,8 @@ forms-breach-alerts =
 forms-breach-alerts-learn-more-link = Läs mer
 relay-integration =
     .label = Aktivera { -relay-brand-name } i lösenordshanteraren för { -brand-short-name }
+preferences-relay-integration-checkbox =
+    .label = Föreslå { -relay-brand-name } e-postalias för att skydda din e-postadress
 relay-integration-learn-more-link = Läs mer
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =

@@ -38,13 +38,15 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } — (tryb prywatny)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } — (tryb prywatny)
-# These are the default window titles everywhere except macOS. The first two
-# attributes are used when the web content opened has no title:
+# These are the default window titles everywhere except macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
 #
 # default - "Mozilla Firefox"
 # private - "Mozilla Firefox (Private Browsing)"
 #
-# The last two are for use when there *is* a content title.
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
 # Variables:
 #  $content-title (String): the title of the web content.
 browser-main-window-window-titles =
@@ -52,14 +54,17 @@ browser-main-window-window-titles =
     .data-title-private = { -brand-full-name } — tryb prywatny
     .data-content-title-default = { $content-title } — { -brand-full-name }
     .data-content-title-private = { $content-title } — { -brand-full-name } — tryb prywatny
-# These are the default window titles on macOS. The first two are for use when
-# there is no content title:
+# These are the default window titles on macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
+#
 #
 # "default" - "Mozilla Firefox"
 # "private" - "Mozilla Firefox — (Private Browsing)"
 #
-# The last two are for use when there *is* a content title.
-# Do not use the brand name in the last two attributes, as we do on non-macOS.
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
+# Do not use the brand name in these, as we do on non-macOS.
 #
 # Also note the other subtle difference here: we use a `-` to separate the
 # brand name from `(Private Browsing)`, which does not happen on other OSes.
@@ -143,6 +148,8 @@ urlbar-search-tips-confirm-short = OK
 urlbar-tip-icon-description =
     .alt = Wskazówka:
 urlbar-result-menu-button =
+    .title = Otwórz menu
+urlbar-result-menu-button-feedback = Opinia
     .title = Otwórz menu
 urlbar-result-menu-learn-more =
     .label = Więcej informacji
@@ -317,7 +324,7 @@ quickactions-cmd-print = drukuj, wydrukuj
 quickactions-private2 = Otwórz okno prywatne
 quickactions-cmd-private = tryb prywatny, przeglądanie prywatne, okno prywatne, incognito, tryb incognito
 # Opens a SUMO article explaining how to refresh
-quickactions-refresh = Odśwież przeglądarkę { -brand-short-name }
+quickactions-refresh = Odśwież { -brand-short-name(case: "acc") }
 quickactions-cmd-refresh = odśwież, odnów
 # Restarts the browser
 quickactions-restart = Uruchom { -brand-short-name(case: "acc") } ponownie
@@ -332,7 +339,7 @@ quickactions-cmd-settings = ustawienia, preferencje, opcje
 quickactions-themes = Zarządzaj motywami
 quickactions-cmd-themes = motywy
 # Opens a SUMO article explaining how to update the browser
-quickactions-update = Uaktualnij przeglądarkę { -brand-short-name }
+quickactions-update = Uaktualnij { -brand-short-name(case: "acc") }
 quickactions-cmd-update = uaktualnij, uaktualnienie, zaktualizuj, aktualizuj, aktualizacja, apdejt
 # Opens the view-source UI with current pages source
 quickactions-viewsource2 = Pokaż źródło strony
@@ -381,7 +388,7 @@ identity-header-security-with-host =
 identity-connection-not-secure = Niezabezpieczone połączenie
 identity-connection-secure = Zabezpieczone połączenie
 identity-connection-failure = Błąd połączenia
-identity-connection-internal = To jest strona programu { -brand-short-name }.
+identity-connection-internal = To jest bezpieczna strona { -brand-short-name(case: "gen") }.
 identity-connection-file = Strona wczytana z tego komputera.
 identity-extension-page = Ta strona została wczytana przez rozszerzenie.
 identity-active-blocked = { -brand-short-name } zablokował elementy tej strony, które nie były przesłane w sposób bezpieczny.
@@ -678,6 +685,15 @@ reader-view-close-button =
 ## Variables:
 ##   $shortcut (String) - Keyboard shortcut to execute the command.
 
+picture-in-picture-urlbar-button-open =
+    .tooltiptext = Otwórz „Obraz w obrazie” ({ $shortcut })
+picture-in-picture-urlbar-button-close =
+    .tooltiptext = Zamknij „Obraz w obrazie” ({ $shortcut })
+picture-in-picture-panel-header = Obraz w obrazie
+picture-in-picture-panel-headline = Ta witryna nie zaleca korzystania z funkcji „Obraz w obrazie”
+picture-in-picture-panel-body = W trybie „Obraz w obrazie” filmy mogą nie wyświetlać się tak, jak przewidział to autor witryny.
+picture-in-picture-enable-toggle =
+    .label = Włącz mimo to
 
 ## Full Screen and Pointer Lock UI
 
@@ -697,11 +713,11 @@ pointerlock-warning-no-domain = Dokument kontroluje teraz kursor. Naciśnij klaw
 
 ## Subframe crash notification
 
-crashed-subframe-message = <strong>Część tej strony uległa awarii.</strong> Prosimy to zgłosić, aby powiadomić twórców przeglądarki { -brand-product-name } o problemie i przyspieszyć jego naprawienie.
+crashed-subframe-message = <strong>Część tej strony uległa awarii.</strong> Prosimy to zgłosić, aby powiadomić twórców { -brand-product-name(case: "gen") } o problemie i przyspieszyć jego naprawienie.
 # The string for crashed-subframe-title.title should match crashed-subframe-message,
 # but without any markup.
 crashed-subframe-title =
-    .title = Część tej strony uległa awarii. Prosimy to zgłosić, aby powiadomić twórców przeglądarki { -brand-product-name } o problemie i przyspieszyć jego naprawienie.
+    .title = Część tej strony uległa awarii. Prosimy to zgłosić, aby powiadomić twórców { -brand-product-name(case: "gen") } o problemie i przyspieszyć jego naprawienie.
 crashed-subframe-learnmore-link =
     .value = Więcej informacji
 crashed-subframe-submit =
@@ -848,7 +864,7 @@ toolbar-button-new-private-window =
 
 ## EME notification panel
 
-eme-notifications-drm-content-playing = Dźwięk lub obraz na tej stronie używają oprogramowania DRM, które może ograniczać możliwości oferowane przez przeglądarkę { -brand-short-name }.
+eme-notifications-drm-content-playing = Dźwięk lub obraz na tej stronie używają oprogramowania DRM, które może ograniczać możliwości oferowane przez { -brand-short-name(case: "acc") }.
 eme-notifications-drm-content-playing-manage = Zarządzaj ustawieniami
 eme-notifications-drm-content-playing-manage-accesskey = u
 eme-notifications-drm-content-playing-dismiss = Zamknij
@@ -927,7 +943,7 @@ navbar-print =
     .tooltiptext = Wydrukuj tę stronę… ({ $shortcut })
 navbar-home =
     .label = Strona startowa
-    .tooltiptext = Przejdź do strony startowej przeglądarki { -brand-short-name }
+    .tooltiptext = Przejdź do strony startowej { -brand-short-name(case: "gen") }
 navbar-library =
     .label = Biblioteka
     .tooltiptext = Wyświetl historię, zachowane zakładki i jeszcze więcej
@@ -976,6 +992,15 @@ unified-extensions-button-permissions-needed =
         Rozszerzenia
         Wymagane uprawnienia
 
+## Unified extensions button when some extensions are quarantined.
+## Note that the new line is intentionally part of the tooltip.
+
+unified-extensions-button-quarantined =
+    .label = Rozszerzenia
+    .tooltiptext =
+        Rozszerzenia
+        Część rozszerzeń jest niedozwolona
+
 ## Autorefresh blocker
 
 refresh-blocked-refresh-label = { -brand-short-name } uniemożliwił tej stronie automatycznie odświeżyć stronę.
@@ -995,4 +1020,49 @@ firefox-relay-offer-what-relay-does = Będziemy przekierowywać wszystkie wiadom
 
 ## Popup Notification
 
+firefox-relay-offer-why-to-use-relay = Nasze bezpieczne, łatwe w użyciu maski chronią Twoją tożsamość i zapobiegają spamowi, ukrywając Twój adres e-mail.
+# Variables:
+#  $useremail (String): user email that will receive messages
+firefox-relay-offer-what-relay-provides = Wszystkie wiadomości wysłane na Twoje maski będą przekazywane na adres <strong>{ $useremail }</strong> (chyba że zdecydujesz się je zablokować).
+firefox-relay-offer-legal-notice = Klikając „Użyj maski dla adresu e-mail”, wyrażasz zgodę na <label data-l10n-name="tos-url">regulamin usługi</label> i <label data-l10n-name="privacy-url">zasady ochrony prywatności</label>.
+
+## Add-on Pop-up Notifications
+
+popup-notification-addon-install-unsigned =
+    .value = (niezweryfikowany)
 popup-notification-xpinstall-prompt-learn-more = Więcej informacji o bezpiecznym instalowaniu dodatków
+
+## Pop-up warning
+
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-message =
+    { $popupCount ->
+        [one] { -brand-short-name } uniemożliwił tej witrynie otwarcie wyskakującego okna.
+        [few] { -brand-short-name } uniemożliwił tej witrynie otwarcie { $popupCount } wyskakujących okien.
+       *[many] { -brand-short-name } uniemożliwił tej witrynie otwarcie { $popupCount } wyskakujących okien.
+    }
+# The singular form is left out for English, since the number of blocked pop-ups is always greater than 1.
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-exceeded-message =
+    { $popupCount ->
+        [one] { -brand-short-name } uniemożliwił tej witrynie otwarcie wyskakującego okna.
+        [few] { -brand-short-name } uniemożliwił tej witrynie otwarcie więcej niż { $popupCount } wyskakujących okien.
+       *[many] { -brand-short-name } uniemożliwił tej witrynie otwarcie więcej niż { $popupCount } wyskakujących okien.
+    }
+popup-warning-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Opcje
+           *[other] Preferencje
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] P
+        }
+# Variables:
+#   $popupURI (String): the URI for the pop-up window
+popup-show-popup-menuitem =
+    .label = Wyświetl „{ $popupURI }”

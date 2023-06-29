@@ -36,6 +36,7 @@ migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge Beta
 migration-wizard-migrator-display-name-edge-legacy = Microsoft Edge Legacy
 migration-wizard-migrator-display-name-firefox = Firefox
 migration-wizard-migrator-display-name-file-password-csv = Passwörter aus CSV-Datei
+migration-wizard-migrator-display-name-file-bookmarks = Lesezeichen aus HTML-Datei
 migration-wizard-migrator-display-name-ie = Microsoft Internet Explorer
 migration-wizard-migrator-display-name-opera = Opera
 migration-wizard-migrator-display-name-opera-gx = Opera GX
@@ -58,6 +59,10 @@ migration-favorites-option-label = Favoriten
 migration-logins-and-passwords-option-label = Gespeicherte Zugangsdaten und Passwörter
 migration-history-option-label = Chronik
 migration-form-autofill-option-label = Daten für Formular-Autovervollständigung
+migration-payment-methods-option-label = Zahlungsmethoden
+migration-cookies-option-label = Cookies
+migration-session-option-label = Fenster und Tabs
+migration-otherdata-option-label = Sonstige Daten
 migration-passwords-from-file-progress-header = Passwort-Datei importieren
 migration-passwords-from-file-success-header = Passwörter erfolgreich importiert
 migration-passwords-from-file = Datei wird auf Passwörter überprüft
@@ -98,6 +103,31 @@ migration-wizard-progress-success-updated-passwords =
         [one] { $updatedEntries } aktualisiert
        *[other] { $updatedEntries } aktualisiert
     }
+migration-bookmarks-from-file-picker-title = Lesezeichendatei importieren
+migration-bookmarks-from-file-progress-header = Lesezeichen werden importiert
+migration-bookmarks-from-file = Lesezeichen
+migration-bookmarks-from-file-success-header = Lesezeichen erfolgreich importiert
+migration-bookmarks-from-file-no-valid-data = Die Datei enthält keine Lesezeichen-Daten. Wählen Sie eine andere Datei.
+# A description for the .html file format that may be shown as the file type
+# filter by the operating system.
+migration-bookmarks-from-file-html-filter-title =
+    { PLATFORM() ->
+        [macos] HTML-Dokument
+       *[other] HTML-Datei
+    }
+# A description for the .json file format that may be shown as the file type
+# filter by the operating system.
+migration-bookmarks-from-file-json-filter-title = JSON-Datei
+# Shown in the migration wizard after importing bookmarks from a file
+# has completed.
+#
+# Variables:
+#  $newEntries (Number): the number of imported bookmarks.
+migration-wizard-progress-success-new-bookmarks =
+    { $newEntries ->
+        [one] { $newEntries } Lesezeichen
+       *[other] { $newEntries } Lesezeichen
+    }
 migration-import-button-label = Importieren
 migration-choose-to-import-from-file-button-label = Aus Datei importieren
 migration-import-from-file-button-label = Datei auswählen
@@ -120,6 +150,7 @@ migration-list-favorites-label = Favoriten
 migration-list-password-label = Passwörter
 migration-list-history-label = Chronik
 migration-list-autofill-label = Daten für automatisches Ausfüllen
+migration-list-payment-methods-label = Zahlungsmethoden
 
 ##
 
@@ -180,7 +211,16 @@ migration-wizard-progress-success-history =
        *[other] Von den letzten { $maxAgeInDays } Tagen
     }
 migration-wizard-progress-success-formdata = Gespeicherte Formulardaten
+# Shown in the migration wizard after importing payment methods from another
+# browser has completed.
+#
+# Variables:
+#  $quantity (Number): the number of successfully imported payment methods
+migration-wizard-progress-success-payment-methods =
+    { $quantity ->
+        [one] { $quantity } Zahlungsmethode
+       *[other] { $quantity } Zahlungsmethoden
+    }
 migration-wizard-safari-permissions-sub-header = Um Safari-Lesezeichen und die Surf-Chronik zu importieren:
 migration-wizard-safari-instructions-continue = Wählen Sie "Fortsetzen"
 migration-wizard-safari-instructions-folder = Wählen Sie in der Liste den Safari-Ordner aus und wählen Sie "Öffnen"
-migration-wizard-safari-select-button = Datei auswählen

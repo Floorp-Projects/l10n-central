@@ -27,6 +27,10 @@ about-webrtc-auto-refresh-label = Αυτόματη ανανέωση
 # an abbreviation for Identifier. This string should not normally be translated
 # and is used as a data label.
 about-webrtc-peerconnection-id-label = PeerConnection ID:
+# The number of DataChannels that a PeerConnection has opened
+about-webrtc-data-channels-opened-label = Ανοιγμένα κανάλια δεδομένων:
+# The number of once open DataChannels that a PeerConnection has closed
+about-webrtc-data-channels-closed-label = Κλεισμένα κανάλια δεδομένων:
 
 ## "SDP" is an abbreviation for Session Description Protocol, an IETF standard.
 ## See http://wikipedia.org/wiki/Session_Description_Protocol
@@ -88,6 +92,8 @@ about-webrtc-log-show-msg = εμφάνιση αρχείου καταγραφής
     .title = κάντε κλικ για επέκταση ενότητας
 about-webrtc-log-hide-msg = απόκρυψη αρχείου καταγραφής
     .title = κάντε κλικ για σύμπτυξη ενότητας
+about-webrtc-copy-report-button = Αντιγραφή αναφοράς
+about-webrtc-copy-report-history-button = Αντιγραφή ιστορικού αναφορών
 
 ## These are used to display a header for a PeerConnection.
 ## Variables:
@@ -257,6 +263,14 @@ about-webrtc-sdp-set-timestamp = Χρονική σήμανση { NUMBER($timesta
 
 about-webrtc-show-msg-sdp = Εμφάνιση SDP
 about-webrtc-hide-msg-sdp = Απόκρυψη SDP
+
+## These are displayed on the button that shows or hides the Media Context information disclosure.
+## The Media Context is the set of preferences and detected capabilities that informs
+## the negotiated CODEC settings.
+
+about-webrtc-media-context-show-msg = Εμφάνιση πλαισίου πολυμέσων
+about-webrtc-media-context-hide-msg = Απόκρυψη πλαισίου πολυμέσων
+about-webrtc-media-context-heading = Πλαίσιο πολυμέσων
 
 ##
 

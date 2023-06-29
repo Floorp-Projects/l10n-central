@@ -2,23 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-
-## The following feature name must be treated as a brand.
-##
-## They cannot be:
-## - Transliterated.
-## - Translated.
-##
-## Declension should be avoided where possible, leaving the original
-## brand unaltered in prominent UI positions.
-##
-## For further details, consult:
-## https://mozilla-l10n.github.io/styleguides/mozilla_general/#brands-copyright-and-trademark
-
--profiler-brand-name = Firefox Profiler
-
-##
-
 # This is the title of the page
 about-logging-title = Σχετικά με την καταγραφή
 about-logging-page-title = Διαχείριση καταγραφής
@@ -32,6 +15,8 @@ about-logging-set-log-file = Ορισμός αρχείου καταγραφής
 about-logging-set-log-modules = Ορισμός μονάδων καταγραφής
 about-logging-start-logging = Έναρξη καταγραφής
 about-logging-stop-logging = Τερματισμός καταγραφής
+about-logging-buttons-disabled = Η καταγραφή διαμορφώθηκε μέσω μεταβλητών περιβάλλοντος, η δυναμική διαμόρφωση δεν είναι διαθέσιμη.
+about-logging-some-elements-disabled = Η καταγραφή διαμορφώθηκε μέσω URL, ορισμένες επιλογές δεν είναι διαθέσιμες
 about-logging-info = Πληροφορίες:
 about-logging-log-modules-selection = Επιλογή μονάδας καταγραφής
 about-logging-new-log-modules = Νέες μονάδες καταγραφής:
@@ -41,6 +26,7 @@ about-logging-logging-to-profiler = Καταγραφή στο { -profiler-brand-
 about-logging-no-log-modules = Καμία
 about-logging-no-log-file = Κανένα
 about-logging-logging-preset-selector-text = Προκαθορισμένη καταγραφή:
+about-logging-with-profiler-stacks-checkbox = Ενεργοποίηση ιχνών στοίβας για μηνύματα καταγραφής
 
 ## Logging presets
 
@@ -49,6 +35,7 @@ about-logging-preset-networking-description = Μονάδες καταγραφή�
 about-logging-preset-media-playback-label = Αναπαραγωγή πολυμέσων
 about-logging-preset-media-playback-description = Μονάδες καταγραφής για τη διάγνωση προβλημάτων αναπαραγωγής πολυμέσων (όχι ζητημάτων τηλεδιασκέψεων)
 about-logging-preset-custom-label = Προσαρμοσμένο
+about-logging-preset-custom-description = Οι μονάδες καταγραφής επιλέχθηκαν χειροκίνητα
 # Error handling
 about-logging-error = Σφάλμα:
 
@@ -60,5 +47,6 @@ about-logging-invalid-output = Μη έγκυρη τιμή «{ $v }» για το
 about-logging-unknown-logging-preset = Άγνωστη προκαθορισμένη τιμή καταγραφής «{ $v }»
 about-logging-unknown-profiler-preset = Άγνωστη προκαθορισμένη τιμή καταγραφής σε προφίλ «{ $v }»
 about-logging-unknown-option = Άγνωστη επιλογή about:logging «{ $k }»
+about-logging-configuration-url-ignored = Αγνοήθηκε το URL ρυθμίσεων
 about-logging-file-and-profiler-override = Δεν είναι δυνατή η ταυτόχρονη επιβολή της εξόδου αρχείου και της παράκαμψης των επιλογών του εργαλείου προφίλ
 about-logging-configured-via-url = Η επιλογή διαμορφώθηκε μέσω URL

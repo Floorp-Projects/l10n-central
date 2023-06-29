@@ -38,13 +38,15 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Navegación privada)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Navegación privada)
-# These are the default window titles everywhere except macOS. The first two
-# attributes are used when the web content opened has no title:
+# These are the default window titles everywhere except macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
 #
 # default - "Mozilla Firefox"
 # private - "Mozilla Firefox (Private Browsing)"
 #
-# The last two are for use when there *is* a content title.
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
 # Variables:
 #  $content-title (String): the title of the web content.
 browser-main-window-window-titles =
@@ -52,14 +54,17 @@ browser-main-window-window-titles =
     .data-title-private = Navegación privada de { -brand-full-name }
     .data-content-title-default = { $content-title } — { -brand-full-name }
     .data-content-title-private = { $content-title } — Navegación privada de { -brand-full-name }
-# These are the default window titles on macOS. The first two are for use when
-# there is no content title:
+# These are the default window titles on macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
+#
 #
 # "default" - "Mozilla Firefox"
 # "private" - "Mozilla Firefox — (Private Browsing)"
 #
-# The last two are for use when there *is* a content title.
-# Do not use the brand name in the last two attributes, as we do on non-macOS.
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
+# Do not use the brand name in these, as we do on non-macOS.
 #
 # Also note the other subtle difference here: we use a `-` to separate the
 # brand name from `(Private Browsing)`, which does not happen on other OSes.
@@ -143,6 +148,8 @@ urlbar-search-tips-confirm-short = Entendido
 urlbar-tip-icon-description =
     .alt = Consejo:
 urlbar-result-menu-button =
+    .title = Abrir menú
+urlbar-result-menu-button-feedback = Comentarios
     .title = Abrir menú
 urlbar-result-menu-learn-more =
     .label = Saber más
@@ -678,6 +685,11 @@ picture-in-picture-urlbar-button-open =
     .tooltiptext = Abrir Picture-in-Picture ({ $shortcut })
 picture-in-picture-urlbar-button-close =
     .tooltiptext = Cerrar Picture-in-Picture ({ $shortcut })
+picture-in-picture-panel-header = Picture-in-Picture
+picture-in-picture-panel-headline = Este sitio web no recomienda Picture-in-Picture
+picture-in-picture-panel-body = Es posible que los videos no se muestren como el desarrollador pretendía mientras Picture-in-Picture está activado.
+picture-in-picture-enable-toggle =
+    .label = Activar de todos modos
 
 ## Full Screen and Pointer Lock UI
 
@@ -976,6 +988,15 @@ unified-extensions-button-permissions-needed =
         Extensiones
         Se necesitan permisos
 
+## Unified extensions button when some extensions are quarantined.
+## Note that the new line is intentionally part of the tooltip.
+
+unified-extensions-button-quarantined =
+    .label = Extensiones
+    .tooltiptext =
+        Extensiones
+        Algunas extensiones no están permitidas
+
 ## Autorefresh blocker
 
 refresh-blocked-refresh-label = { -brand-short-name } evitó que esta página se recargara automáticamente.
@@ -995,4 +1016,43 @@ firefox-relay-offer-what-relay-does = Reenviaremos todos los correos electrónic
 
 ## Popup Notification
 
+firefox-relay-offer-why-to-use-relay = Nuestras máscaras seguras y fáciles de usar protegen su identidad y evitan el correo no deseado al ocultar su dirección de correo electrónico.
+# Variables:
+#  $useremail (String): user email that will receive messages
+firefox-relay-offer-what-relay-provides = Todos los correos electrónicos enviados a sus máscaras de correo electrónico se reenviarán a <strong>{ $useremail }</strong> (a menos que decida bloquearlos).
+firefox-relay-offer-legal-notice = Al hacer clic en “Usar máscara de correo electrónico”, acepta los <label data-l10n-name="tos-url">Términos del servicio</label> y el <label data-l10n-name="privacy-url">Aviso de privacidad </label>.
+
+## Add-on Pop-up Notifications
+
+popup-notification-addon-install-unsigned =
+    .value = (No verificado)
 popup-notification-xpinstall-prompt-learn-more = Descubra más sobre cómo instalar complementos de forma segura
+
+## Pop-up warning
+
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-message =
+    { $popupCount ->
+        [one] { -brand-short-name } ha impedido que este sitio abriera una ventana emergente.
+       *[other] { -brand-short-name } ha impedido que este sitio abriera { $popupCount } ventanas emergentes.
+    }
+# The singular form is left out for English, since the number of blocked pop-ups is always greater than 1.
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-exceeded-message = { -brand-short-name } ha evitado que este sitio abra más de { $popupCount } ventanas emergentes.
+popup-warning-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Opciones
+           *[other] Preferencias
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] f
+        }
+# Variables:
+#   $popupURI (String): the URI for the pop-up window
+popup-show-popup-menuitem =
+    .label = Mostrar '{ $popupURI }'

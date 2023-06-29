@@ -38,13 +38,15 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Navigation privée)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Navigation privée)
-# These are the default window titles everywhere except macOS. The first two
-# attributes are used when the web content opened has no title:
+# These are the default window titles everywhere except macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
 #
 # default - "Mozilla Firefox"
 # private - "Mozilla Firefox (Private Browsing)"
 #
-# The last two are for use when there *is* a content title.
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
 # Variables:
 #  $content-title (String): the title of the web content.
 browser-main-window-window-titles =
@@ -52,14 +54,17 @@ browser-main-window-window-titles =
     .data-title-private = { -brand-full-name } (navigation privée)
     .data-content-title-default = { $content-title } — { -brand-full-name }
     .data-content-title-private = { $content-title } — { -brand-full-name }  (navigation privée)
-# These are the default window titles on macOS. The first two are for use when
-# there is no content title:
+# These are the default window titles on macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
+#
 #
 # "default" - "Mozilla Firefox"
 # "private" - "Mozilla Firefox — (Private Browsing)"
 #
-# The last two are for use when there *is* a content title.
-# Do not use the brand name in the last two attributes, as we do on non-macOS.
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
+# Do not use the brand name in these, as we do on non-macOS.
 #
 # Also note the other subtle difference here: we use a `-` to separate the
 # brand name from `(Private Browsing)`, which does not happen on other OSes.
@@ -143,6 +148,8 @@ urlbar-search-tips-confirm-short = J’ai compris
 urlbar-tip-icon-description =
     .alt = Suggestion :
 urlbar-result-menu-button =
+    .title = Ouvrir le menu
+urlbar-result-menu-button-feedback = Réagir
     .title = Ouvrir le menu
 urlbar-result-menu-learn-more =
     .label = En savoir plus
@@ -678,6 +685,11 @@ picture-in-picture-urlbar-button-open =
     .tooltiptext = Ouvrir l’incrustation vidéo ({ $shortcut })
 picture-in-picture-urlbar-button-close =
     .tooltiptext = Fermer l’incrustation vidéo ({ $shortcut })
+picture-in-picture-panel-header = Incrustation vidéo
+picture-in-picture-panel-headline = Ce site ne recommande pas l’utilisation de l’incrustation vidéo
+picture-in-picture-panel-body = Les vidéos peuvent ne pas s’afficher telles que le développeur le souhaite lorsque l’incrustation vidéo est activée.
+picture-in-picture-enable-toggle =
+    .label = Activer quand même
 
 ## Full Screen and Pointer Lock UI
 
@@ -976,6 +988,15 @@ unified-extensions-button-permissions-needed =
         Extensions
         Permissions requises
 
+## Unified extensions button when some extensions are quarantined.
+## Note that the new line is intentionally part of the tooltip.
+
+unified-extensions-button-quarantined =
+    .label = Extensions
+    .tooltiptext =
+        Extensions
+        Certaines extensions ne sont pas autorisées
+
 ## Autorefresh blocker
 
 refresh-blocked-refresh-label = { -brand-short-name } a empêché le rechargement automatique de cette page.
@@ -995,4 +1016,43 @@ firefox-relay-offer-what-relay-does = Nous transférerons tous les e-mails de <s
 
 ## Popup Notification
 
+firefox-relay-offer-why-to-use-relay = Nos alias sécurisés et faciles à utiliser protègent votre identité et bloquent le spam en masquant votre adresse e-mail.
+# Variables:
+#  $useremail (String): user email that will receive messages
+firefox-relay-offer-what-relay-provides = Tous les e-mails envoyés à vos alias de messagerie seront transférés à <strong>{ $useremail }</strong> (sauf si vous décidez de les bloquer).
+firefox-relay-offer-legal-notice = En cliquant sur « Utiliser les alias de messagerie », vous acceptez les <label data-l10n-name="tos-url">Conditions d’utilisation</label> et la <label data-l10n-name="privacy-url">Politique de confidentialité</label>.
+
+## Add-on Pop-up Notifications
+
+popup-notification-addon-install-unsigned =
+    .value = (Non vérifié)
 popup-notification-xpinstall-prompt-learn-more = En apprendre plus sur l’installation des modules complémentaires en toute sécurité
+
+## Pop-up warning
+
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-message =
+    { $popupCount ->
+        [one] { -brand-short-name } a empêché ce site d’ouvrir une fenêtre popup.
+       *[other] { -brand-short-name } a empêché ce site d’ouvrir { $popupCount } fenêtres popup.
+    }
+# The singular form is left out for English, since the number of blocked pop-ups is always greater than 1.
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-exceeded-message = { -brand-short-name } a empêché ce site d’ouvrir plus de { $popupCount } fenêtres popup.
+popup-warning-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Options
+           *[other] Préférences
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] P
+        }
+# Variables:
+#   $popupURI (String): the URI for the pop-up window
+popup-show-popup-menuitem =
+    .label = Afficher « { $popupURI } »

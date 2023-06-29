@@ -36,7 +36,7 @@ policy-DisableDefaultBrowserAgent = 阻止默认浏览器用户代理执行任�
 policy-DisableDeveloperTools = 阻止访问开发者工具。
 policy-DisableFeedbackCommands = 禁用“帮助”菜单中的“发送反馈”命令（提交反馈和举报诈骗网站）。
 policy-DisableFirefoxAccounts = 禁用 { -fxaccount-brand-name }的基础服务，包含同步。
-# Firefox Screenshots is the name of the feature, and should not be translated.
+# Floorp Screenshots is the name of the feature, and should not be translated.
 policy-DisableFirefoxScreenshots = 禁用 Firefox 的“截图”功能。
 policy-DisableFirefoxStudies = 阻止 { -brand-short-name } 运行研究实验。
 policy-DisableForgetButton = 阻止使用“忘记”功能。
@@ -116,6 +116,8 @@ policy-SearchEngines = 配置搜索引擎设置。此策略仅适用于延长支
 policy-SearchSuggestEnabled = 启用或禁用搜索建议。
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = 安装 PKCS #11 模块。
+# For more information, see https://wikipedia.org/wiki/PKCS_11
+policy-SecurityDevices2 = 添加或删除 PKCS #11 模块。
 policy-ShowHomeButton = 在工具栏显示“主页”按钮
 policy-SSLVersionMax = 设置最高 SSL 版本。
 policy-SSLVersionMin = 设置最低 SSL 版本。

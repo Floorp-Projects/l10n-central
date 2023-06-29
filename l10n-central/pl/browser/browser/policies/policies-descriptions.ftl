@@ -26,6 +26,8 @@ policy-Bookmarks = Tworzenie zakładek na pasku zakładek, w menu zakładek lub
 policy-CaptivePortal = Włączenie lub wyłączenie obsługi portalu przechwytującego.
 policy-CertificatesDescription = Dodawanie certyfikatów lub używanie wbudowanych.
 policy-Cookies = Zezwalanie lub zabranianie witrynom ustawiania ciasteczek.
+# Containers in this context is referring to container tabs in Firefox.
+policy-Containers = Ustawianie zasad związanych z kontekstami.
 policy-DisabledCiphers = Wyłączenie szyfrów.
 policy-DefaultDownloadDirectory = Ustawienie domyślnego katalogu pobierania.
 policy-DisableAppUpdate = Uniemożliwienie aktualizowania przeglądarki.
@@ -34,8 +36,8 @@ policy-DisableDefaultBrowserAgent = Uniemożliwienie agentowi domyślnej przegl�
 policy-DisableDeveloperTools = Blokowanie dostępu do narzędzi dla twórców witryn.
 policy-DisableFeedbackCommands = Wyłączenie poleceń do wysyłania opinii z menu Pomoc („Prześlij swoją opinię” i „Zgłoś oszustwo internetowe”).
 policy-DisableFirefoxAccounts = Wyłączenie usług korzystających z { -fxaccount-brand-name(case: "gen", capitalization: "lower") }, w tym synchronizacji.
-# Firefox Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = Wyłączenie funkcji Firefox Screenshots.
+# Floorp Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Wyłączenie funkcji Floorp Screenshots.
 policy-DisableFirefoxStudies = Uniemożliwienie przeprowadzania badań przez program { -brand-short-name }.
 policy-DisableForgetButton = Wyłączenie dostępu do przycisku „Wyczyść”.
 policy-DisableFormHistory = Wyłączenie zachowywania historii wyszukiwania i formularzy.
@@ -114,6 +116,8 @@ policy-SearchEngines = Konfiguracja ustawień wyszukiwarki. Ta zasada jest dost�
 policy-SearchSuggestEnabled = Włączenie lub wyłączenie podpowiedzi wyszukiwania.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Instalacja modułów PKCS #11.
+# For more information, see https://wikipedia.org/wiki/PKCS_11
+policy-SecurityDevices2 = Dodawanie i usuwanie modułów PKCS #11.
 policy-ShowHomeButton = Wyświetlanie przycisku strony domowej na pasku narzędzi.
 policy-SSLVersionMax = Ustawienie maksymalnej wersji SSL.
 policy-SSLVersionMin = Ustawienie minimalnej wersji SSL.

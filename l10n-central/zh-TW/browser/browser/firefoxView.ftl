@@ -70,7 +70,6 @@ firefoxview-pickup-tabs-badge = 最後開啟
 firefoxview-tabs-list-tab-button =
     .title = 用新分頁開啟 { $targetURI }
 firefoxview-try-colorways-button = 嘗試 Colorways
-firefoxview-no-current-colorway-collection = 新配色即將抵達
 firefoxview-change-colorway-button = 更改配色
 # Variables:
 #  $intensity (String): Colorway intensity
@@ -82,3 +81,34 @@ firefoxview-collapse-button-show =
     .title = 顯示清單
 firefoxview-collapse-button-hide =
     .title = 隱藏清單
+firefoxview-overview-nav = 近期瀏覽
+    .title = 近期瀏覽
+
+## History in this context refers to browser history
+
+firefoxview-history-nav = 瀏覽紀錄
+    .title = 瀏覽紀錄
+firefoxview-history-header = 瀏覽紀錄瀏覽紀錄
+
+## Open Tabs in this context refers to all open tabs in the browser
+
+firefoxview-opentabs-nav = 開啟分頁
+    .title = 開啟分頁
+firefoxview-opentabs-header = 開啟分頁
+
+## Recently closed tabs in this context refers to recently closed tabs from all windows
+
+firefoxview-recently-closed-nav = 最近關閉的分頁
+    .title = 最近關閉的分頁
+firefoxview-recently-closed-header = 最近關閉的分頁
+
+## Tabs from other devices refers in this context refers to synced tabs from other devices
+
+firefoxview-synced-tabs-nav = 來自其他裝置的分頁
+    .title = 來自其他裝置的分頁
+firefoxview-synced-tabs-header = 來自其他裝置的分頁
+
+##
+
+# Used for a link in collapsible cards, in the 'Recent browsing' page of Firefox View
+firefoxview-view-all-link = 檢視全部

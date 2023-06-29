@@ -31,7 +31,12 @@ flextype-item = Položka zobrazení flex
 # The layout type of an element shown in the infobar when hovering over a DOM element and
 # it is both a flex container and a flex item.
 flextype-dual = Kontejner/položka zobrazení flex
+# Text displayed in `remote-node-picker-notice`, when the remote page is on desktop
+remote-node-picker-notice-action-desktop = Klepnutím na prvek jej vyberete v Průzkumníku
 # The text displayed in the button that is in the notice in the content page when the user
 # clicks on the "Pick an element from the page" in about:devtools-toolbox inspector panel,
 # when debugging a remote page.
 remote-node-picker-notice-hide-button = Skrýt
+# Text displayed in a button inside the "simple-highlighters-message" toolbox
+# notification. "Settings" here refers to the DevTools settings panel.
+simple-highlighters-settings-button = Otevřít nastavení

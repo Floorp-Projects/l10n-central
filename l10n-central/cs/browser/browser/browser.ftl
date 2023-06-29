@@ -38,13 +38,15 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Anonymní prohlížení)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Anonymní prohlížení)
-# These are the default window titles everywhere except macOS. The first two
-# attributes are used when the web content opened has no title:
+# These are the default window titles everywhere except macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
 #
 # default - "Mozilla Firefox"
 # private - "Mozilla Firefox (Private Browsing)"
 #
-# The last two are for use when there *is* a content title.
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
 # Variables:
 #  $content-title (String): the title of the web content.
 browser-main-window-window-titles =
@@ -52,14 +54,17 @@ browser-main-window-window-titles =
     .data-title-private = { -brand-full-name } — anonymní prohlížení
     .data-content-title-default = { $content-title } — { -brand-full-name }
     .data-content-title-private = { $content-title } — { -brand-full-name } — anonymní prohlížení
-# These are the default window titles on macOS. The first two are for use when
-# there is no content title:
+# These are the default window titles on macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
+#
 #
 # "default" - "Mozilla Firefox"
 # "private" - "Mozilla Firefox — (Private Browsing)"
 #
-# The last two are for use when there *is* a content title.
-# Do not use the brand name in the last two attributes, as we do on non-macOS.
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
+# Do not use the brand name in these, as we do on non-macOS.
 #
 # Also note the other subtle difference here: we use a `-` to separate the
 # brand name from `(Private Browsing)`, which does not happen on other OSes.
@@ -144,6 +149,8 @@ urlbar-tip-icon-description =
     .alt = Tip:
 urlbar-result-menu-button =
     .title = Otevře nabídku
+urlbar-result-menu-button-feedback = Zpětná vazba
+    .title = Otevřít nabídku
 urlbar-result-menu-learn-more =
     .label = Zjistit více
     .accesskey = Z
@@ -738,6 +745,15 @@ reader-view-close-button =
 ## Variables:
 ##   $shortcut (String) - Keyboard shortcut to execute the command.
 
+picture-in-picture-urlbar-button-open =
+    .tooltiptext = Otevřít obraz v obraze ({ $shortcut })
+picture-in-picture-urlbar-button-close =
+    .tooltiptext = Zavřít obraz v obraze ({ $shortcut })
+picture-in-picture-panel-header = Obraz v obraze
+picture-in-picture-panel-headline = Tato webová stránka nedoporučuje režim Obraz v obraze
+picture-in-picture-panel-body = Pokud je zapnutý režim Obraz v obraze, videa se nemusí zobrazovat tak, jak vývojář zamýšlel.
+picture-in-picture-enable-toggle =
+    .label = Přesto povolit
 
 ## Full Screen and Pointer Lock UI
 
@@ -1064,6 +1080,15 @@ unified-extensions-button-permissions-needed =
         Rozšíření
         Vyžadována oprávnění
 
+## Unified extensions button when some extensions are quarantined.
+## Note that the new line is intentionally part of the tooltip.
+
+unified-extensions-button-quarantined =
+    .label = Rozšíření
+    .tooltiptext =
+        Rozšíření
+        Některá rozšíření nejsou povolena.
+
 ## Autorefresh blocker
 
 refresh-blocked-refresh-label =
@@ -1099,4 +1124,91 @@ firefox-relay-offer-what-relay-does = Všechny e-maily z <strong>{ $sitename }</
 
 ## Popup Notification
 
+firefox-relay-offer-why-to-use-relay = Naše bezpečné, snadno použitelné masky chrání vaši identitu a předchází nevyžádané poště tím, že skrývají vaši e-mailovou adresu.
+# Variables:
+#  $useremail (String): user email that will receive messages
+firefox-relay-offer-what-relay-provides = Všechny e-maily odeslané na vaše e-mailové masky budou přeposlány na adresu <strong>{ $useremail }</strong> (dokud se nerozhodnete je zablokovat).
+firefox-relay-offer-legal-notice = Klepnutím na „Použít e-mailovou masku“ souhlasíte s <label data-l10n-name="tos-url">podmínkami poskytování služby</label> a <label data-l10n-name="privacy-url">zásadami ochrany osobních údajů</label>.
+
+## Add-on Pop-up Notifications
+
+popup-notification-addon-install-unsigned =
+    .value = (Neověřeno)
 popup-notification-xpinstall-prompt-learn-more = Zjistit více o bezpečné instalaci doplňků
+
+## Pop-up warning
+
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-message =
+    { -brand-short-name.gender ->
+        [masculine]
+            { $popupCount ->
+                [one] { -brand-short-name } zabránil stránce otevřít vyskakovací okno.
+                [few] { -brand-short-name } zabránil stránce otevřít { $popupCount } vyskakovací okna
+               *[other] { -brand-short-name } zabránil stránce otevřít { $popupCount } vyskakovacích oken.
+            }
+        [feminine]
+            { $popupCount ->
+                [one] { -brand-short-name } zabránila stránce otevřít vyskakovací okno.
+                [few] { -brand-short-name } zabránila stránce otevřít { $popupCount } vyskakovací okna
+               *[other] { -brand-short-name } zabránila stránce otevřít { $popupCount } vyskakovacích oken.
+            }
+        [neuter]
+            { $popupCount ->
+                [one] { -brand-short-name } zabránilo stránce otevřít vyskakovací okno.
+                [few] { -brand-short-name } zabránilo stránce otevřít { $popupCount } vyskakovací okna
+               *[other] { -brand-short-name } zabránilo stránce otevřít { $popupCount } vyskakovacích oken.
+            }
+       *[other]
+            { $popupCount ->
+                [one] Aplikace { -brand-short-name } zabránila stránce otevřít vyskakovací okno.
+                [few] Aplikace { -brand-short-name } zabránila stránce otevřít { $popupCount } vyskakovací okna
+               *[other] Aplikace { -brand-short-name } zabránila stránce otevřít { $popupCount } vyskakovacích oken.
+            }
+    }
+# The singular form is left out for English, since the number of blocked pop-ups is always greater than 1.
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-exceeded-message =
+    { -brand-short-name.gender ->
+        [masculine]
+            { $popupCount ->
+                [one] { -brand-short-name } zabránil stránce otevřít více než jedno vyskakovací okno.
+                [few] { -brand-short-name } zabránil stránce otevřít více než { $popupCount } vyskakovací okna
+               *[other] { -brand-short-name } zabránil stránce otevřít více než { $popupCount } vyskakovacích oken.
+            }
+        [feminine]
+            { $popupCount ->
+                [one] { -brand-short-name } zabránila stránce otevřít více než jedno vyskakovací okno.
+                [few] { -brand-short-name } zabránila stránce otevřít více než { $popupCount } vyskakovací okna
+               *[other] { -brand-short-name } zabránila stránce otevřít více než { $popupCount } vyskakovacích oken.
+            }
+        [neuter]
+            { $popupCount ->
+                [one] { -brand-short-name } zabránilo stránce otevřít více než jedno vyskakovací okno.
+                [few] { -brand-short-name } zabránilo stránce otevřít více než { $popupCount } vyskakovací okna
+               *[other] { -brand-short-name } zabránilo stránce otevřít více než { $popupCount } vyskakovacích oken.
+            }
+       *[other]
+            { $popupCount ->
+                [one] Aplikace { -brand-short-name } zabránila stránce otevřít více než jedno vyskakovací okno.
+                [few] Aplikace { -brand-short-name } zabránila stránce otevřít více než { $popupCount } vyskakovací okna
+               *[other] Aplikace { -brand-short-name } zabránila stránce otevřít více než { $popupCount } vyskakovacích oken.
+            }
+    }
+popup-warning-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Možnosti
+           *[other] Předvolby
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] M
+           *[other] P
+        }
+# Variables:
+#   $popupURI (String): the URI for the pop-up window
+popup-show-popup-menuitem =
+    .label = Zobrazit „{ $popupURI }“

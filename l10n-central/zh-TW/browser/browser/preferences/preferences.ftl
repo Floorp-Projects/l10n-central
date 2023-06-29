@@ -668,6 +668,10 @@ containers-remove-button =
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
+
+## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = 把 Web 隨身帶著走
 sync-signedout-description2 = 在您所有裝置間同步書籤、歷史紀錄、分頁、密碼、附加元件與各種選項。
 sync-signedout-account-signin3 =
@@ -684,6 +688,9 @@ sync-signedout-account-signin3 =
 sync-mobile-promo = 下載 Firefox for<img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a>或<img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a>以與您的行動裝置同步。
 
 ## Firefox Account - Signed in
+
+
+## Firefox account - Signed in
 
 sync-profile-picture =
     .tooltiptext = 更改個人資料照片
@@ -723,6 +730,11 @@ prefs-sync-now =
     .labelnotsyncing = 立刻同步
     .accesskeynotsyncing = N
     .labelsyncing = 同步中…
+prefs-sync-now-button =
+    .label = 立刻同步
+    .accesskey = N
+prefs-syncing-button =
+    .label = 同步中…
 
 ## The list of things currently syncing.
 
@@ -802,6 +814,16 @@ sync-device-name-save =
     .accesskey = v
 sync-connect-another-device = 連結其他裝置
 
+## These strings are shown in a desktop notification after the
+## user requests we resend a verification email.
+
+sync-verification-sent-title = 已寄出驗證信
+# Variables:
+#   $email (String): Email address of user's Firefox account.
+sync-verification-sent-body = 已將驗證鏈結發送到 { $email }。
+sync-verification-not-sent-title = 無法傳送驗證信
+sync-verification-not-sent-body = 我們暫時無法寄出驗證信，請稍後再試。
+
 ## Privacy Section
 
 privacy-header = 瀏覽器隱私權
@@ -827,6 +849,8 @@ forms-breach-alerts =
 forms-breach-alerts-learn-more-link = 了解更多
 relay-integration =
     .label = 在您的 { -brand-short-name } 密碼管理員啟用 { -relay-brand-name }
+preferences-relay-integration-checkbox =
+    .label = 為您建議 { -relay-brand-name } 郵件轉寄信箱，幫助您保護實際信箱
 relay-integration-learn-more-link = 了解更多
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =

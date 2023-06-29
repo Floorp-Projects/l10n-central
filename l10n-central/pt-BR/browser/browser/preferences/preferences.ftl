@@ -132,7 +132,7 @@ startup-restore-warn-on-quit =
 disable-extension =
     .label = Desativar extensão
 preferences-data-migration-header = Importar dados de navegador
-preferences-data-migration-description = Importe favoritos, senhas, histórico e dados de preenchimento automático para o { -brand-short-name }.
+preferences-data-migration-description = Importar favoritos, senhas, histórico e dados de preenchimento automático para o { -brand-short-name }.
 preferences-data-migration-button =
     .label = Importar dados
     .accesskey = m
@@ -684,6 +684,10 @@ containers-remove-button =
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
+
+## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Leve a web com você
 sync-signedout-description2 = Sincronize seus favoritos, histórico, abas, senhas, extensões e configurações entre todos os seus dispositivos.
 sync-signedout-account-signin3 =
@@ -700,6 +704,9 @@ sync-signedout-account-signin3 =
 sync-mobile-promo = Instale o Firefox no <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> ou <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> para sincronizar com seu dispositivo móvel.
 
 ## Firefox Account - Signed in
+
+
+## Firefox account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Alterar imagem do perfil
@@ -739,6 +746,11 @@ prefs-sync-now =
     .labelnotsyncing = Sincronizar agora
     .accesskeynotsyncing = n
     .labelsyncing = Sincronizando…
+prefs-sync-now-button =
+    .label = Sincronizar agora
+    .accesskey = n
+prefs-syncing-button =
+    .label = Sincronizando…
 
 ## The list of things currently syncing.
 
@@ -818,6 +830,16 @@ sync-device-name-save =
     .accesskey = v
 sync-connect-another-device = Conectar outro dispositivo
 
+## These strings are shown in a desktop notification after the
+## user requests we resend a verification email.
+
+sync-verification-sent-title = Verificação enviada
+# Variables:
+#   $email (String): Email address of user's Firefox account.
+sync-verification-sent-body = Um link de verificação foi enviado para { $email }.
+sync-verification-not-sent-title = Não foi possível enviar a verificação
+sync-verification-not-sent-body = Não foi possível enviar um email de confirmação neste momento, tente novamente mais tarde.
+
 ## Privacy Section
 
 privacy-header = Privacidade do navegador
@@ -843,6 +865,8 @@ forms-breach-alerts =
 forms-breach-alerts-learn-more-link = Saiba mais
 relay-integration =
     .label = Ativar o { -relay-brand-name } no gerenciador de senhas do { -brand-short-name }
+preferences-relay-integration-checkbox =
+    .label = Sugerir máscaras de email do { -relay-brand-name } para proteger seu endereço de email
 relay-integration-learn-more-link = Saiba mais
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
@@ -1257,10 +1281,10 @@ preferences-doh-setting-default =
     .label = Proteção padrão
     .accesskey = P
 preferences-doh-default-desc = O { -brand-short-name } decide quando usar DNS seguro para proteger sua privacidade.
-preferences-doh-default-detailed-desc-1 = Use DNS seguro em regiões onde estiver disponível
-preferences-doh-default-detailed-desc-2 = Use seu resolvedor de DNS padrão se houver um problema com o provedor de DNS seguro
+preferences-doh-default-detailed-desc-1 = Usar DNS seguro em regiões onde estiver disponível
+preferences-doh-default-detailed-desc-2 = Usar seu resolvedor de DNS padrão se houver um problema com o provedor de DNS seguro
 preferences-doh-default-detailed-desc-3 = Usar um provedor local, se possível
-preferences-doh-default-detailed-desc-4 = Desativar quando VPN, controle dos pais ou diretivas corporativas estiverem ativas
+preferences-doh-default-detailed-desc-4 = Desativar quando estiver ativo VPN, controle dos pais ou diretivas corporativas
 preferences-doh-default-detailed-desc-5 = Desativar quando uma rede informar ao { -brand-short-name } que ele não deve usar DNS seguro
 preferences-doh-setting-enabled =
     .label = Proteção maior
@@ -1271,9 +1295,9 @@ preferences-doh-enabled-detailed-desc-2 = Só usar seu resolvedor de DNS padrão
 preferences-doh-setting-strict =
     .label = Proteção máxima
     .accesskey = m
-preferences-doh-strict-desc = O { -brand-short-name } sempre usará DNS seguro. Aparecerá um aviso de risco de segurança antes de usarmos o DNS do seu sistema.
+preferences-doh-strict-desc = O { -brand-short-name } sempre usa DNS seguro. Aparece um aviso de risco de segurança antes de usar o DNS do seu sistema.
 preferences-doh-strict-detailed-desc-1 = Só usar o provedor que você selecionar
-preferences-doh-strict-detailed-desc-2 = Sempre avise se DNS seguro não estiver disponível
+preferences-doh-strict-detailed-desc-2 = Sempre avisar se DNS seguro não estiver disponível
 preferences-doh-strict-detailed-desc-3 = Se não tiver DNS seguro disponível, alguns sites podem não ser carregados ou não funcionar corretamente
 preferences-doh-setting-off =
     .label = Desativado

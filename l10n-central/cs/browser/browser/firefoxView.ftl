@@ -121,3 +121,46 @@ firefoxview-collapse-button-show =
     .title = Zobrazit seznam
 firefoxview-collapse-button-hide =
     .title = Skrýt seznam
+firefoxview-overview-nav = Nedávné prohlížení
+    .title = Nedávné prohlížení
+
+## History in this context refers to browser history
+
+firefoxview-history-nav = Historie
+    .title = Historie
+firefoxview-history-header = Historie
+
+## Open Tabs in this context refers to all open tabs in the browser
+
+firefoxview-opentabs-nav = Otevřené panely
+    .title = Otevřené panely
+firefoxview-opentabs-header = Otevřené panely
+
+## Recently closed tabs in this context refers to recently closed tabs from all windows
+
+firefoxview-recently-closed-nav = Nedávno zavřené panely
+    .title = Nedávno zavřené panely
+firefoxview-recently-closed-header = Nedávno zavřené panely
+
+## Tabs from other devices refers in this context refers to synced tabs from other devices
+
+firefoxview-synced-tabs-nav = Panely z jiných zařízení
+    .title = Panely z jiných zařízení
+firefoxview-synced-tabs-header = Panely z jiných zařízení
+
+##
+
+# Used for a link in collapsible cards, in the 'Recent browsing' page of Firefox View
+firefoxview-view-all-link = Zobrazit vše
+# Variables:
+#   $winID (Number) - The index of the owner window for this set of tabs
+firefoxview-opentabs-window-header =
+    .title = Okno { $winID }
+# Variables:
+#   $winID (Number) - The index of the owner window (which is currently focused) for this set of tabs
+firefoxview-opentabs-current-window-header =
+    .title = Okno { $winID } (aktuální)
+firefoxview-opentabs-focus-tab =
+    .title = Přepnout na tento panel
+firefoxview-show-more = Zobrazit více
+firefoxview-show-less = Zobrazit méně

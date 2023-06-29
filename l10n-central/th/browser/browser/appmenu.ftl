@@ -33,6 +33,8 @@ appmenuitem-print =
     .label = พิมพ์…
 appmenuitem-find-in-page =
     .label = ค้นหาในหน้า…
+appmenuitem-translate =
+    .label = แปลหน้า…
 appmenuitem-zoom =
     .value = ซูม
 appmenuitem-more-tools =
@@ -167,6 +169,11 @@ profiler-popup-capture-shortcut =
 # devtools/client/performance-new/popup/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/shared/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
 profiler-popup-presets-web-developer-description = ค่าที่ตั้งล่วงหน้าที่แนะนำสำหรับการดีบั๊กเว็บแอปส่วนใหญ่ โดยมีโอเวอร์เฮดต่ำ
 profiler-popup-presets-web-developer-label =
     .label = นักพัฒนาเว็บ
@@ -204,6 +211,9 @@ appmenu-recently-closed-tabs =
     .label = แท็บที่ปิดล่าสุด
 appmenu-recently-closed-windows =
     .label = หน้าต่างที่ปิดล่าสุด
+# This allows to search through the browser's history.
+appmenu-search-history =
+    .label = ค้นหาประวัติ
 
 ## Help panel
 
@@ -223,6 +233,8 @@ appmenu-help-report-site-issue =
 appmenu-help-share-ideas =
     .label = แบ่งปันแนวคิดและคำติชม…
     .accesskey = บ
+appmenu-help-switch-device =
+    .label = สลับไปยังอุปกรณ์ใหม่
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

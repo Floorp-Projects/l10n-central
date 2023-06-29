@@ -36,8 +36,8 @@ policy-DisableDefaultBrowserAgent = Prevent the default browser agent from takin
 policy-DisableDeveloperTools = Block access to the developer tools.
 policy-DisableFeedbackCommands = Disable commands to send feedback from the Help menu (Submit Feedback and Report Deceptive Site).
 policy-DisableFirefoxAccounts = Disable { -fxaccount-brand-name } based services, including Sync.
-# Firefox Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = Disable the Firefox Screenshots feature.
+# Floorp Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Disable the Floorp Screenshots feature.
 policy-DisableFirefoxStudies = Prevent { -brand-short-name } from running studies.
 policy-DisableForgetButton = Prevent access to the Forget button.
 policy-DisableFormHistory = Don’t remember search and form history.
@@ -116,6 +116,8 @@ policy-SearchEngines = Configure search engine settings. This policy is only ava
 policy-SearchSuggestEnabled = Enable or disable search suggestions.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Install PKCS #11 modules.
+# For more information, see https://wikipedia.org/wiki/PKCS_11
+policy-SecurityDevices2 = Add or delete PKCS #11 modules.
 policy-ShowHomeButton = Show the home button on the toolbar.
 policy-SSLVersionMax = Set the maximum SSL version.
 policy-SSLVersionMin = Set the minimum SSL version.

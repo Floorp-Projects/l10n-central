@@ -70,7 +70,6 @@ firefoxview-pickup-tabs-badge = Seneste aktive
 firefoxview-tabs-list-tab-button =
     .title = Åbn { $targetURI } i et nyt faneblad
 firefoxview-try-colorways-button = Prøv farvekombinationer
-firefoxview-no-current-colorway-collection = Ny farvekombinationer er på vej
 firefoxview-change-colorway-button = Skift farvekombination
 # Variables:
 #  $intensity (String): Colorway intensity
@@ -82,3 +81,46 @@ firefoxview-collapse-button-show =
     .title = Vis liste
 firefoxview-collapse-button-hide =
     .title = Skjul liste
+firefoxview-overview-nav = Senest besøgte
+    .title = Senest besøgte
+
+## History in this context refers to browser history
+
+firefoxview-history-nav = Historik
+    .title = Historik
+firefoxview-history-header = Historik
+
+## Open Tabs in this context refers to all open tabs in the browser
+
+firefoxview-opentabs-nav = Åbne faneblade
+    .title = Åbne faneblade
+firefoxview-opentabs-header = Åbne faneblade
+
+## Recently closed tabs in this context refers to recently closed tabs from all windows
+
+firefoxview-recently-closed-nav = Senest lukkede faneblade
+    .title = Senest lukkede faneblade
+firefoxview-recently-closed-header = Senest lukkede faneblade
+
+## Tabs from other devices refers in this context refers to synced tabs from other devices
+
+firefoxview-synced-tabs-nav = Faneblade fra andre enheder
+    .title = Faneblade fra andre enheder
+firefoxview-synced-tabs-header = Faneblade fra andre enheder
+
+##
+
+# Used for a link in collapsible cards, in the 'Recent browsing' page of Firefox View
+firefoxview-view-all-link = Vis alle
+# Variables:
+#   $winID (Number) - The index of the owner window for this set of tabs
+firefoxview-opentabs-window-header =
+    .title = Vindue { $winID }
+# Variables:
+#   $winID (Number) - The index of the owner window (which is currently focused) for this set of tabs
+firefoxview-opentabs-current-window-header =
+    .title = Vindue { $winID } (aktuelt)
+firefoxview-opentabs-focus-tab =
+    .title = Skift til dette faneblad
+firefoxview-show-more = Vis flere
+firefoxview-show-less = Vis færre

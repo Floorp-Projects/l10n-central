@@ -36,8 +36,8 @@ policy-DisableDefaultBrowserAgent = Impedisci al “default browser agent” di 
 policy-DisableDeveloperTools = Blocca accesso agli strumenti di sviluppo.
 policy-DisableFeedbackCommands = Disattiva i comandi per inviare feedback dal menu Aiuto (“Invia feedback…” e “Segnala un sito ingannevole…”).
 policy-DisableFirefoxAccounts = Disattiva i servizi basati sugli { -fxaccount-brand-name }, incluso Sync.
-# Firefox Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = Disattiva Firefox Screenshots.
+# Floorp Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Disattiva Floorp Screenshots.
 policy-DisableFirefoxStudies = Impedisci a { -brand-short-name } di condurre studi.
 policy-DisableForgetButton = Impedisci accesso al pulsante “Dimentica”.
 policy-DisableFormHistory = Non conservare la cronologia delle ricerche e dei moduli.
@@ -115,7 +115,6 @@ policy-SearchBar = Imposta l’indirizzo predefinito nella barra di ricerca. L�
 policy-SearchEngines = Configura le impostazioni relative ai motori di ricerca. Questo criterio è disponibile solo nella versione Extended Support Release (ESR).
 policy-SearchSuggestEnabled = Attiva o disattiva suggerimenti di ricerca.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
-policy-SecurityDevices = Installa moduli PKCS #11.
 policy-SecurityDevices2 = Aggiungi o elimina moduli PKCS #11.
 policy-ShowHomeButton = Visualizza il pulsante Pagina iniziale nella barra degli strumenti.
 policy-SSLVersionMax = Imposta la versione massima di SSL.
@@ -127,4 +126,5 @@ policy-UseSystemPrintDialog = Stampa utilizzando la finestra di dialogo di siste
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Impedisci l’accesso a determinati siti web. Consulta la documentazione per ulteriori dettagli sul formato da utilizzare.
 policy-Windows10SSO = Permetti l’utilizzo di Windows single sign-on per account Microsoft, account aziendale o dell’istituto di istruzione.
+
 

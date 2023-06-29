@@ -36,8 +36,8 @@ policy-DisableDefaultBrowserAgent = Empêcher l’agent de navigateur par défau
 policy-DisableDeveloperTools = Bloquer l’accès aux outils de développement.
 policy-DisableFeedbackCommands = Désactiver les commandes permettant d’envoyer des commentaires dans le menu d’aide (Donner votre avis et Signaler un site trompeur).
 policy-DisableFirefoxAccounts = Désactiver les services basés sur un { -fxaccount-brand-name }, y compris la synchronisation.
-# Firefox Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = Désactiver la fonctionnalité Firefox Screenshots.
+# Floorp Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Désactiver la fonctionnalité Floorp Screenshots.
 policy-DisableFirefoxStudies = Empêcher { -brand-short-name } d’exécuter des études.
 policy-DisableForgetButton = Empêcher l’accès au bouton d’effacement des données.
 policy-DisableFormHistory = Désactiver la conservation de l’historique des recherches et des formulaires.
@@ -116,6 +116,8 @@ policy-SearchEngines = Configurer les paramètres du moteur de recherche. Cette 
 policy-SearchSuggestEnabled = Activer ou désactiver les suggestions de recherche.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Installer des modules PKCS #11.
+# For more information, see https://wikipedia.org/wiki/PKCS_11
+policy-SecurityDevices2 = Ajouter ou supprimer des modules PKCS #11.
 policy-ShowHomeButton = Afficher le bouton d’accueil dans la barre d’outils.
 policy-SSLVersionMax = Définir la version maximale de SSL à utiliser.
 policy-SSLVersionMin = Définir la version minimale de SSL à utiliser.

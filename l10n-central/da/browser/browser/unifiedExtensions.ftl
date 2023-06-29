@@ -32,3 +32,12 @@ unified-extensions-context-menu-remove-extension =
     .label = Fjern udvidelse
 unified-extensions-context-menu-report-extension =
     .label = Rapporter udvidelse
+unified-extensions-context-menu-move-widget-up =
+    .label = Flyt op
+unified-extensions-context-menu-move-widget-down =
+    .label = Flyt ned
+
+## Notifications
+
+unified-extensions-mb-quarantined-domain-title = Nogle udvidelser er ikke tilladt
+unified-extensions-mb-quarantined-domain-message = For at beskytte dine data er kun udvalgte udvidelser, der bliver overvåget af { -vendor-short-name }, tilladt på dette websted.

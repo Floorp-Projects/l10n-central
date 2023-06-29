@@ -38,6 +38,8 @@ appmenuitem-print =
     .label = Stampa…
 appmenuitem-find-in-page =
     .label = Trova nella pagina…
+appmenuitem-translate =
+    .label = Traduci pagina…
 appmenuitem-zoom =
     .value = Zoom
 appmenuitem-more-tools =
@@ -240,6 +242,9 @@ appmenu-recently-closed-tabs =
     .label = Schede chiuse di recente
 appmenu-recently-closed-windows =
     .label = Finestre chiuse di recente
+# This allows to search through the browser's history.
+appmenu-search-history =
+    .label = Cerca nella cronologia
 
 ## Help panel
 
@@ -290,3 +295,4 @@ appmenu-customizetoolbar =
 appmenu-developer-tools-subheader = Strumenti del browser
 appmenu-developer-tools-extensions =
     .label = Estensioni per sviluppatori
+

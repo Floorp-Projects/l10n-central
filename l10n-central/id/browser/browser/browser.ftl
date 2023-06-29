@@ -144,6 +144,8 @@ urlbar-tip-icon-description =
     .alt = Kiat:
 urlbar-result-menu-button =
     .title = Buka menu
+urlbar-result-menu-button-feedback = Umpan Balik
+    .title = Buka menu
 urlbar-result-menu-learn-more =
     .label = Pelajari lebih lanjut
     .accesskey = P
@@ -667,6 +669,10 @@ reader-view-close-button =
 ## Variables:
 ##   $shortcut (String) - Keyboard shortcut to execute the command.
 
+picture-in-picture-urlbar-button-open =
+    .tooltiptext = Buka Gambar dalam Gambar ({ $shortcut })
+picture-in-picture-urlbar-button-close =
+    .tooltiptext = Tutup Gambar dalam Gambar ({ $shortcut })
 
 ## Full Screen and Pointer Lock UI
 
@@ -813,6 +819,9 @@ toolbar-overflow-customize-button =
 toolbar-button-email-link =
     .label = Surelkan Tautan
     .tooltiptext = Surelkan tautan laman ini
+toolbar-button-logins =
+    .label = Sandi
+    .tooltiptext = Lihat dan kelola sandi tersimpan Anda
 # Variables:
 #  $shortcut (String): keyboard shortcut to save a copy of the page
 toolbar-button-save-page =
@@ -981,4 +990,34 @@ firefox-relay-offer-what-relay-does = Kami akan meneruskan semua email dari <str
 
 ## Popup Notification
 
+
+## Add-on Pop-up Notifications
+
+popup-notification-addon-install-unsigned =
+    .value = (Belum Diverifikasi)
 popup-notification-xpinstall-prompt-learn-more = Pelajari lebih lanjut tentang memasang pengaya dengan aman
+
+## Pop-up warning
+
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-message = { -brand-short-name } telah mencegah situs ini untuk membuka { $popupCount } jendela pop-up.
+# The singular form is left out for English, since the number of blocked pop-ups is always greater than 1.
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-exceeded-message = { -brand-short-name } mencegah situs ini membuka lebih dari { $popupCount } jendela pop-up.
+popup-warning-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Pengaturan
+           *[other] Pengaturan
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] P
+           *[other] P
+        }
+# Variables:
+#   $popupURI (String): the URI for the pop-up window
+popup-show-popup-menuitem =
+    .label = Tampilkan “{ $popupURI }”

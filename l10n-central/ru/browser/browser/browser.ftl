@@ -38,13 +38,15 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } — (Приватный режим)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } — (Приватный режим)
-# These are the default window titles everywhere except macOS. The first two
-# attributes are used when the web content opened has no title:
+# These are the default window titles everywhere except macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
 #
 # default - "Mozilla Firefox"
 # private - "Mozilla Firefox (Private Browsing)"
 #
-# The last two are for use when there *is* a content title.
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
 # Variables:
 #  $content-title (String): the title of the web content.
 browser-main-window-window-titles =
@@ -52,14 +54,17 @@ browser-main-window-window-titles =
     .data-title-private = Приватный просмотр { -brand-full-name }
     .data-content-title-default = { $content-title } — { -brand-full-name }
     .data-content-title-private = { $content-title } — Приватный просмотр { -brand-full-name }
-# These are the default window titles on macOS. The first two are for use when
-# there is no content title:
+# These are the default window titles on macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
+#
 #
 # "default" - "Mozilla Firefox"
 # "private" - "Mozilla Firefox — (Private Browsing)"
 #
-# The last two are for use when there *is* a content title.
-# Do not use the brand name in the last two attributes, as we do on non-macOS.
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
+# Do not use the brand name in these, as we do on non-macOS.
 #
 # Also note the other subtle difference here: we use a `-` to separate the
 # brand name from `(Private Browsing)`, which does not happen on other OSes.
@@ -143,6 +148,8 @@ urlbar-search-tips-confirm-short = Понятно
 urlbar-tip-icon-description =
     .alt = Совет:
 urlbar-result-menu-button =
+    .title = Открыть меню
+urlbar-result-menu-button-feedback = Обратная связь
     .title = Открыть меню
 urlbar-result-menu-learn-more =
     .label = Узнать больше
@@ -680,6 +687,11 @@ picture-in-picture-urlbar-button-open =
     .tooltiptext = Открыть «Картинку в картинке» ({ $shortcut })
 picture-in-picture-urlbar-button-close =
     .tooltiptext = Закрыть «Картинку в картинке» ({ $shortcut })
+picture-in-picture-panel-header = Картинка в картинке
+picture-in-picture-panel-headline = Этот веб-сайт не рекомендует функцию «Картинка в картинке».
+picture-in-picture-panel-body = Видео может отображаться не так, как задумано разработчиком, когда включена функция «Картинка в картинке».
+picture-in-picture-enable-toggle =
+    .label = Включить в любом случае
 
 ## Full Screen and Pointer Lock UI
 
@@ -978,6 +990,15 @@ unified-extensions-button-permissions-needed =
         Расширения
         Необходимы разрешения
 
+## Unified extensions button when some extensions are quarantined.
+## Note that the new line is intentionally part of the tooltip.
+
+unified-extensions-button-quarantined =
+    .label = Расширения
+    .tooltiptext =
+        Расширения
+        Некоторые расширения не разрешены
+
 ## Autorefresh blocker
 
 refresh-blocked-refresh-label = { -brand-short-name } заблокировал автоматическую перезагрузку этой страницы.
@@ -997,4 +1018,49 @@ firefox-relay-offer-what-relay-does = Мы будем пересылать вс�
 
 ## Popup Notification
 
+firefox-relay-offer-why-to-use-relay = Наши безопасные и простые в использовании псевдонимы защищают вашу личность и предотвращают спам, скрывая ваш адрес электронной почты.
+# Variables:
+#  $useremail (String): user email that will receive messages
+firefox-relay-offer-what-relay-provides = Все электронные письма, отправленные на ваши псевдонимы электронной почты, будут перенаправлены на <strong>{ $useremail }</strong> (если вы не решите их заблокировать).
+firefox-relay-offer-legal-notice = Нажимая «Использовать псевдоним электронной почты», вы соглашаетесь с <label data-l10n-name="tos-url">Условиями использования</label> и <label data-l10n-name="privacy-url">Примечанием о конфиденциальности</label>.
+
+## Add-on Pop-up Notifications
+
+popup-notification-addon-install-unsigned =
+    .value = (Не проверено)
 popup-notification-xpinstall-prompt-learn-more = Узнайте больше о безопасной установке дополнений
+
+## Pop-up warning
+
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-message =
+    { $popupCount ->
+        [one] { -brand-short-name } заблокировал { $popupCount } всплывающее окно с этого сайта.
+        [few] { -brand-short-name } заблокировал { $popupCount } всплывающих окна с этого сайта.
+       *[many] { -brand-short-name } заблокировал { $popupCount } всплывающих окон с этого сайта.
+    }
+# The singular form is left out for English, since the number of blocked pop-ups is always greater than 1.
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-exceeded-message =
+    { $popupCount ->
+        [one] { -brand-short-name } заблокировал более { $popupCount } всплывающего окна с этого сайта.
+        [few] { -brand-short-name } заблокировал более { $popupCount } всплывающих окон с этого сайта.
+       *[many] { -brand-short-name } заблокировал более { $popupCount } всплывающих окон с этого сайта.
+    }
+popup-warning-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Настройки
+           *[other] Настройки
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] Н
+           *[other] Н
+        }
+# Variables:
+#   $popupURI (String): the URI for the pop-up window
+popup-show-popup-menuitem =
+    .label = Показать «{ $popupURI }»

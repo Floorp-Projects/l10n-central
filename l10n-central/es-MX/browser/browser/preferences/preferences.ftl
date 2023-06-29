@@ -684,6 +684,10 @@ containers-remove-button =
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
+
+## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Lleva la Web contigo
 sync-signedout-description2 = Sincroniza tus marcadores, historial, pestañas, contraseñas, complementos y configuraciones en todos tus dispositivos.
 sync-signedout-account-signin3 =
@@ -700,6 +704,9 @@ sync-signedout-account-signin3 =
 sync-mobile-promo = Descargar Firefox para <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> o <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> para sincronizar con tu dispositivo móvil.
 
 ## Firefox Account - Signed in
+
+
+## Firefox account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Cambiar imagen de perfil
@@ -739,6 +746,11 @@ prefs-sync-now =
     .labelnotsyncing = Sincronizar ahora
     .accesskeynotsyncing = N
     .labelsyncing = Sincronizando…
+prefs-sync-now-button =
+    .label = Sincronizar ahora
+    .accesskey = N
+prefs-syncing-button =
+    .label = Sincronizando…
 
 ## The list of things currently syncing.
 
@@ -772,6 +784,7 @@ sync-choose-what-to-sync-dialog3 =
     .buttonaccesskeyaccept = S
     .buttonlabelextra2 = Cerrar sesión…
     .buttonaccesskeyextra2 = D
+sync-choose-dialog-subtitle = Los cambios en la lista de elementos a sincronizar se reflejarán en todos tus dispositivos conectados.
 sync-engine-bookmarks =
     .label = Marcadores
     .accesskey = M
@@ -816,6 +829,16 @@ sync-device-name-save =
     .label = Guardar
     .accesskey = v
 sync-connect-another-device = Conectar otro dispositivo
+
+## These strings are shown in a desktop notification after the
+## user requests we resend a verification email.
+
+sync-verification-sent-title = Verificación enviada
+# Variables:
+#   $email (String): Email address of user's Firefox account.
+sync-verification-sent-body = Un enlace de verificación ha sido enviado a { $email }.
+sync-verification-not-sent-title = No es posible enviar la verificación
+sync-verification-not-sent-body = No podemos enviar un correo de verificación en este momento, vuelve a intentarlo más tarde.
 
 ## Privacy Section
 
@@ -975,7 +998,11 @@ sitedata-cookies-exceptions =
 
 ## Privacy Section - Cookie Banner Handling
 
+cookie-banner-handling-header = Reducción de avisos de cookies
+cookie-banner-handling-description = { -brand-short-name } rechaza automáticamente las solicitudes de cookies en sitios compatibles.
 cookie-banner-learn-more = Saber más
+forms-handle-cookie-banners =
+    .label = Reducir los avisos de cookies
 
 ## Privacy Section - Address Bar
 
@@ -1225,6 +1252,63 @@ httpsonly-radio-enabled-pbm =
     .label = Habilitar el modo solo HTTPS solo en ventanas privadas
 httpsonly-radio-disabled =
     .label = No habilitar el modo solo HTTPS
+
+## DoH Section
+
+preferences-doh-header = DNS sobre HTTPS
+preferences-doh-description = El sistema de nombres de dominio (DNS) sobre HTTPS envía los pedidos de un nombre de dominio a través de una conexión cifrada, lo que crea un DNS seguro y hace más difícil que otros vean que sitio web estás tratando de acceder.
+# Variables:
+#   $status (string) - The status of the DoH connection
+preferences-doh-status = Estado: { $status }
+# Variables:
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-resolver = Proveedor: { $name }
+# This is displayed instead of $name in preferences-doh-resolver
+# when the DoH URL is not a valid URL
+preferences-doh-bad-url = URL inválida
+preferences-doh-steering-status = Usando un proveedor local
+preferences-doh-status-active = Activo
+preferences-doh-status-disabled = Desactivado
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+preferences-doh-status-not-active = Inactivo ({ $reason })
+preferences-doh-group-message = Habilitar DNS seguro usando:
+preferences-doh-expand-section =
+    .tooltiptext = Más información
+preferences-doh-setting-default =
+    .label = Protección predeterminada
+    .accesskey = D
+preferences-doh-default-desc = { -brand-short-name } decide cuándo usar DNS seguro para proteger tu privacidad.
+preferences-doh-default-detailed-desc-1 = Usar DNS seguro en regiones donde esté disponible
+preferences-doh-default-detailed-desc-2 = Usa la resolución de DNS predeterminada si hay un problema con el proveedor de DNS seguro
+preferences-doh-default-detailed-desc-3 = Usar un proveedor local si es posible
+preferences-doh-default-detailed-desc-4 = Desactivar cuando una VPN, control parental o políticas de empresa estén activas
+preferences-doh-default-detailed-desc-5 = Desactivar cuando una red le diga a { -brand-short-name } que no debería usar DNS seguro
+preferences-doh-setting-enabled =
+    .label = Incrementar protección
+    .accesskey = I
+preferences-doh-enabled-desc = Tu controlas cuándo usar un DNS seguro y eliges el proveedor.
+preferences-doh-enabled-detailed-desc-1 = Usar el proveedor seleccionado
+preferences-doh-enabled-detailed-desc-2 = Solo usar la resolución de DNS predeterminada si hay un problema con el DNS seguro
+preferences-doh-setting-strict =
+    .label = Máxima protección
+    .accesskey = M
+preferences-doh-strict-desc = { -brand-short-name } siempre usará DNS seguro. Se verá una advertencia de riesgo de seguridad antes de que usemos el DNS del sistema.
+preferences-doh-strict-detailed-desc-1 = Solo usar el proveedor seleccionado
+preferences-doh-strict-detailed-desc-2 = Avisar siempre si el DNS seguro no está disponible
+preferences-doh-strict-detailed-desc-3 = Si el DNS seguro no está disponible los sitios no se cargarán ni funcionarán correctamente.
+preferences-doh-setting-off =
+    .label = Desactivar
+    .accesskey = O
+preferences-doh-off-desc = Usar la resolución de DNS predeterminada
+preferences-doh-checkbox-warn =
+    .label = Advertir si un tercero impide activamente el DNS seguro
+    .accesskey = W
+preferences-doh-select-resolver = Seleccionar proveedor:
+preferences-doh-exceptions-description = { -brand-short-name } no usará DNS seguro en estos sitios
+preferences-doh-manage-exceptions =
+    .label = Administrar excepciones…
+    .accesskey = x
 
 ## The following strings are used in the Download section of settings
 

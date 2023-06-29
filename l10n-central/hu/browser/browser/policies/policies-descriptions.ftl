@@ -36,8 +36,8 @@ policy-DisableDefaultBrowserAgent = Akadályozza meg, hogy az alapértelmezett b
 policy-DisableDeveloperTools = A fejlesztői eszközökhöz hozzáférés blokkolása.
 policy-DisableFeedbackCommands = A visszajelzés küldési parancsok letiltása a Súgó menüben (Visszajelzés beküldése és Félrevezető oldal jelentése).
 policy-DisableFirefoxAccounts = A { -fxaccount-brand-name } alapú szolgáltatások letiltása, beleértve a Syncet.
-# Firefox Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = A Firefox Screenshots funkció letiltása.
+# Floorp Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = A Floorp Screenshots funkció letiltása.
 policy-DisableFirefoxStudies = Annak a megakadályozása, hogy a { -brand-short-name } tanulmányokat futtasson.
 policy-DisableForgetButton = Az Elfelejtés gombhoz hozzáférés megakadályozása.
 policy-DisableFormHistory = Ne jegyezze meg a keresőmezők és űrlapmezők előzményeit.
@@ -116,6 +116,8 @@ policy-SearchEngines = Keresőszolgáltatások beállításainak konfigurálása
 policy-SearchSuggestEnabled = A keresési javaslatok engedélyezése vagy letiltása.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = PKCS #11 modulok telepítése.
+# For more information, see https://wikipedia.org/wiki/PKCS_11
+policy-SecurityDevices2 = PKCS #11 modulok hozzáadása vagy törlése.
 policy-ShowHomeButton = A kezdőoldal gomb megjelenítése az eszköztáron.
 policy-SSLVersionMax = A legmagasabb SSL verzió beállítása.
 policy-SSLVersionMin = A legkisebb SSL verzió beállítása.

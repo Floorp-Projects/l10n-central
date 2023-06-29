@@ -111,3 +111,21 @@ tabbrowser-context-mute-selected-tabs =
 tabbrowser-context-unmute-selected-tabs =
     .label = 取消静音标签页
     .accesskey = m
+# This string is used as an additional tooltip and accessibility description for tabs playing audio
+tabbrowser-tab-audio-playing-description = 音频播放中
+
+## Ctrl-Tab dialog
+
+# Variables:
+#   $tabCount (Number): The number of tabs in the current browser window. It will always be 2 at least.
+tabbrowser-ctrl-tab-list-all-tabs =
+    .label = 列出全部 { $tabCount } 个标签页
+
+## Tab manager menu buttons
+
+tabbrowser-manager-mute-tab =
+    .tooltiptext = 静音标签页
+tabbrowser-manager-unmute-tab =
+    .tooltiptext = 取消静音标签页
+tabbrowser-manager-close-tab =
+    .tooltiptext = 关闭标签页

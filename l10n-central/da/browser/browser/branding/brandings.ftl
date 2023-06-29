@@ -22,10 +22,10 @@
 -monitor-brand-short-name = Monitor
 -pocket-brand-name = Pocket
 -send-brand-name = Firefox Send
--screenshots-brand-name = Firefox Screenshots
+-screenshots-brand-name = Floorp Screenshots
 -mozilla-vpn-brand-name = Mozilla VPN
 -profiler-brand-name = Firefox Profiler
--translations-brand-name = Firefox Translations
+-translations-brand-name = Floorp Translations
 -rally-brand-name = Mozilla Rally
 -rally-short-name = Rally
 -focus-brand-name = Firefox Focus
@@ -40,7 +40,7 @@
 
 # View" can be localized, “Firefox” must be treated as a brand
 # and kept in English.
--firefoxview-brand-name = Firefox View
+-firefoxview-brand-name = Floorp View
 
 -relay-brand-name = Firefox Relay
 -relay-brand-short-name = Relay

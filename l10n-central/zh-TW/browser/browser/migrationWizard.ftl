@@ -36,6 +36,7 @@ migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge Beta
 migration-wizard-migrator-display-name-edge-legacy = Microsoft Edge 傳統版
 migration-wizard-migrator-display-name-firefox = Firefox
 migration-wizard-migrator-display-name-file-password-csv = CSV 檔案中的密碼
+migration-wizard-migrator-display-name-file-bookmarks = HTML 檔裡的書籤
 migration-wizard-migrator-display-name-ie = Microsoft Internet Explorer
 migration-wizard-migrator-display-name-opera = Opera
 migration-wizard-migrator-display-name-opera-gx = Opera GX
@@ -58,6 +59,7 @@ migration-favorites-option-label = 我的最愛
 migration-logins-and-passwords-option-label = 儲存的登入資訊與密碼
 migration-history-option-label = 瀏覽紀錄
 migration-form-autofill-option-label = 表單自動填寫資料
+migration-payment-methods-option-label = 付款方式
 migration-passwords-from-file-progress-header = 匯入密碼檔
 migration-passwords-from-file-success-header = 已成功匯入密碼
 migration-passwords-from-file = 正在檢查檔案中的密碼
@@ -90,6 +92,26 @@ migration-wizard-progress-success-new-passwords = 已新增 { $newEntries } 筆
 # Variables:
 #  $updatedEntries (Number): the number of updated passwords
 migration-wizard-progress-success-updated-passwords = 已更新 { $updatedEntries } 筆
+migration-bookmarks-from-file-picker-title = 匯入書籤檔案
+migration-bookmarks-from-file-progress-header = 匯入書籤
+migration-bookmarks-from-file = 書籤
+migration-bookmarks-from-file-success-header = 已成功匯入書籤
+# A description for the .html file format that may be shown as the file type
+# filter by the operating system.
+migration-bookmarks-from-file-html-filter-title =
+    { PLATFORM() ->
+        [macos] HTML 文件
+       *[other] HTML 檔案
+    }
+# A description for the .json file format that may be shown as the file type
+# filter by the operating system.
+migration-bookmarks-from-file-json-filter-title = JSON 檔案
+# Shown in the migration wizard after importing bookmarks from a file
+# has completed.
+#
+# Variables:
+#  $newEntries (Number): the number of imported bookmarks.
+migration-wizard-progress-success-new-bookmarks = { $newEntries } 筆書籤
 migration-import-button-label = 匯入
 migration-choose-to-import-from-file-button-label = 從檔案匯入
 migration-import-from-file-button-label = 選擇檔案
@@ -112,6 +134,7 @@ migration-list-favorites-label = 我的最愛
 migration-list-password-label = 密碼
 migration-list-history-label = 瀏覽紀錄
 migration-list-autofill-label = 自動填寫資料
+migration-list-payment-methods-label = 付款方式
 
 ##
 
@@ -160,7 +183,12 @@ migration-wizard-progress-success-history =
        *[other] 過去 { $maxAgeInDays } 來
     }
 migration-wizard-progress-success-formdata = 表單填寫紀錄
+# Shown in the migration wizard after importing payment methods from another
+# browser has completed.
+#
+# Variables:
+#  $quantity (Number): the number of successfully imported payment methods
+migration-wizard-progress-success-payment-methods = { $quantity } 筆付款方式
 migration-wizard-safari-permissions-sub-header = 若要匯入 Safari 書籤與上網紀錄:
 migration-wizard-safari-instructions-continue = 選擇「繼續」
 migration-wizard-safari-instructions-folder = 從清單中選擇 Safari 資料夾，然後選擇「開啟」
-migration-wizard-safari-select-button = 選擇檔案

@@ -10,6 +10,9 @@
 origin-controls-no-access =
     .label = L’estensione non può leggere né modificare dati
 
+origin-controls-quarantined =
+    .label = L’estensione non ha il permesso di leggere e modificare dati
+
 origin-controls-options =
     .label = L’estensione può leggere e modificare dati:
 
@@ -30,6 +33,8 @@ origin-controls-option-always-on =
 ## messages. They currently appear in the unified extensions panel.
 
 origin-controls-state-no-access = Non può leggere né modificare dati in questo sito
+
+origin-controls-state-quarantined = Non consentita da { -vendor-short-name } in questo sito
 
 origin-controls-state-always-on = Può sempre leggere e modificare dati in questo sito
 
@@ -58,3 +63,12 @@ origin-controls-toolbar-button-permission-needed =
     .tooltiptext =
         { $extensionTitle }
         Permessi richiesti
+
+# Extension's toolbar button when quarantined.
+# Note that the new line is intentionally part of the tooltip.
+origin-controls-toolbar-button-quarantined =
+    .label = { $extensionTitle }
+    .tooltiptext =
+        { $extensionTitle }
+        Non consentita da { -vendor-short-name } in questo sito
+

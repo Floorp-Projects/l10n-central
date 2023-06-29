@@ -89,6 +89,7 @@ protections-panel-content-blocking-manage-settings =
 protections-panel-content-blocking-breakage-report-view =
     .title = Laporkan Situs yang Rusak
 protections-panel-content-blocking-breakage-report-view-description = Pemblokiran pelacak tertentu bisa menyebabkan beberapa situs web tidak berfungsi dengan baik. Saat Anda melaporkan masalahnya, Anda membantu agar { -brand-short-name } menjadi lebih baik bagi semua orang. Pengiriman laporan ini akan mengirimkan URL serta informasi tentang pengaturan peramban Anda ke Mozilla. <label data-l10n-name="learn-more">Pelajari lebih lanjut</label>
+protections-panel-content-blocking-breakage-report-view-description2 = Pemblokiran pelacak tertentu bisa menyebabkan beberapa situs web tidak berfungsi dengan baik. Saat Anda melaporkan masalahnya, Anda membantu agar { -brand-short-name } menjadi lebih baik bagi semua orang. Pengiriman laporan ini akan mengirimkan URL serta informasi tentang pengaturan peramban Anda ke { -vendor-short-name }.
 protections-panel-content-blocking-breakage-report-view-collection-url = URL
 protections-panel-content-blocking-breakage-report-view-collection-url-label =
     .aria-label = URL
@@ -108,8 +109,6 @@ protections-panel-cookie-banner-handling-disabled = Nonaktif untuk situs ini
 protections-panel-cookie-banner-handling-undetected = Saat ini, situs tidak didukung
 protections-panel-cookie-banner-view-title =
     .title = Pengurangan Spanduk Kuki
-protections-panel-cookie-banner-view-go-back =
-    .aria-label = Kembali
 # Variables
 #  $host (String): the hostname of the site that is being displayed.
 protections-panel-cookie-banner-view-turn-off-for-site = Nonaktifkan Pengurangan Spanduk Kuki untuk { $host }?

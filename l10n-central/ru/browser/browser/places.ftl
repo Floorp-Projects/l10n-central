@@ -23,6 +23,8 @@ places-open-in-window =
 places-open-in-private-window =
     .label = Открыть в новом приватном окне
     .accesskey = и
+places-empty-bookmarks-folder =
+    .label = (Пусто)
 places-add-bookmark =
     .label = Создать закладку…
     .accesskey = з
@@ -86,6 +88,15 @@ places-delete-folder =
            *[many] Удалить папки
         }
     .accesskey = л
+# Variables:
+#   $count (number) - The number of pages selected for removal.
+places-delete-page =
+    .label =
+        { $count ->
+            [1] Удалить страницу
+           *[other] Удалить страницы
+        }
+    .accesskey = а
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
 managed-bookmarks =
     .label = Управляемые закладки
@@ -109,6 +120,15 @@ places-delete-bookmark =
            *[many] Удалить { $count } закладок
         }
     .accesskey = л
+# Variables:
+#   $count (number) - The number of bookmarks being added.
+places-create-bookmark =
+    .label =
+        { $count ->
+            [1] Добавить страницу в закладки…
+           *[other] Добавить страницы в закладки…
+        }
+    .accesskey = н
 places-untag-bookmark =
     .label = Удалить метку
     .accesskey = и
@@ -118,10 +138,10 @@ places-manage-bookmarks =
 places-forget-about-this-site-confirmation-title = Забыть об этом сайте
 # Variables:
 # $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
-places-forget-about-this-site-confirmation-message = Это действие удалит все данные, связанные с { $hostOrBaseDomain }, в том числе историю, пароли, куки, кэш и настройки содержимого. Вы уверены, что хотите продолжить?
+places-forget-about-this-site-confirmation-message = Это действие удалит все данные, связанные с { $hostOrBaseDomain }, в том числе историю, пароли, куки, кеш и настройки содержимого. Вы уверены, что хотите продолжить?
 # Variables:
 # $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
-places-forget-about-this-site-confirmation-msg = Это действие удалит данные, связанные с { $hostOrBaseDomain }, включая историю, куки, кэш и настройки содержимого. Связанные закладки и пароли не будут удалены. Вы уверены, что хотите продолжить?
+places-forget-about-this-site-confirmation-msg = Это действие удалит данные, связанные с { $hostOrBaseDomain }, включая историю, куки, кеш и настройки содержимого. Связанные закладки и пароли не будут удалены. Вы уверены, что хотите продолжить?
 places-forget-about-this-site-forget = Забыть
 places-library =
     .title = Библиотека
@@ -201,6 +221,27 @@ places-view-sort-col-date-added =
     .label = Добавлена
 places-view-sort-col-last-modified =
     .label = Посл. изменение
+places-view-sortby-name =
+    .label = По имени
+    .accesskey = м
+places-view-sortby-url =
+    .label = По расположению
+    .accesskey = р
+places-view-sortby-date =
+    .label = По дате последнего посещения
+    .accesskey = а
+places-view-sortby-visit-count =
+    .label = По числу посещений
+    .accesskey = л
+places-view-sortby-date-added =
+    .label = По дате добавления
+    .accesskey = д
+places-view-sortby-last-modified =
+    .label = По дате последнего изменения
+    .accesskey = з
+places-view-sortby-tags =
+    .label = По меткам
+    .accesskey = т
 places-cmd-find-key =
     .key = f
 places-back-button =
@@ -208,3 +249,28 @@ places-back-button =
 places-forward-button =
     .tooltiptext = Перейти вперёд
 places-details-pane-select-an-item-description = Выберите элемент для просмотра и правки его свойств
+places-details-pane-no-items =
+    .value = Нет элементов
+# Variables:
+#   $count (Number): number of items
+places-details-pane-items-count =
+    .value =
+        { $count ->
+            [one] { $count } элемент
+            [few] { $count } элемента
+           *[many] { $count } элементов
+        }
+
+## Strings used as a placeholder in the Library search field. For example,
+## "Search History" stands for "Search through the browser's history".
+
+places-search-bookmarks =
+    .placeholder = Поиск в закладках
+places-search-history =
+    .placeholder = Поиск в журнале
+places-search-downloads =
+    .placeholder = Поиск в загрузках
+
+##
+
+places-locked-prompt = Работа с закладками и журналом невозможна, так как один из файлов { -brand-short-name } используется другим приложением. Данную проблему могут вызывать некоторые из защитных программ.

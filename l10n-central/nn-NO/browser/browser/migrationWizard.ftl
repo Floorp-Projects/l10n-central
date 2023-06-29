@@ -36,6 +36,7 @@ migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge Beta
 migration-wizard-migrator-display-name-edge-legacy = Microsoft Edge Legacy
 migration-wizard-migrator-display-name-firefox = Firefox
 migration-wizard-migrator-display-name-file-password-csv = Passord frå CSV-fil
+migration-wizard-migrator-display-name-file-bookmarks = Bokmerke frå HTML-fil
 migration-wizard-migrator-display-name-ie = Microsoft Internet Explorer
 migration-wizard-migrator-display-name-opera = Opera
 migration-wizard-migrator-display-name-opera-gx = Opera GX
@@ -58,6 +59,10 @@ migration-favorites-option-label = Favorittar
 migration-logins-and-passwords-option-label = Lagra innloggingar og passord
 migration-history-option-label = Nettlesarhistorikk
 migration-form-autofill-option-label = Autofylldata for skjema
+migration-payment-methods-option-label = Betalingsmåtar
+migration-cookies-option-label = Infokapslar
+migration-session-option-label = Vindauge og faner
+migration-otherdata-option-label = Andre data
 migration-passwords-from-file-progress-header = Importer passordfil
 migration-passwords-from-file-success-header = Passord importerte
 migration-passwords-from-file = Ser etter passord i fila
@@ -98,6 +103,30 @@ migration-wizard-progress-success-updated-passwords =
         [one] { $updatedEntries } oppdatert
        *[other] { $updatedEntries } oppdaterte
     }
+migration-bookmarks-from-file-picker-title = Importer bokmerkefil
+migration-bookmarks-from-file-progress-header = Importerer bokmerke
+migration-bookmarks-from-file = Bokmerke
+migration-bookmarks-from-file-success-header = Bokmerka vart importerte
+# A description for the .html file format that may be shown as the file type
+# filter by the operating system.
+migration-bookmarks-from-file-html-filter-title =
+    { PLATFORM() ->
+        [macos] HTML-dokument
+       *[other] HTML-fil
+    }
+# A description for the .json file format that may be shown as the file type
+# filter by the operating system.
+migration-bookmarks-from-file-json-filter-title = JSON-fil
+# Shown in the migration wizard after importing bookmarks from a file
+# has completed.
+#
+# Variables:
+#  $newEntries (Number): the number of imported bookmarks.
+migration-wizard-progress-success-new-bookmarks =
+    { $newEntries ->
+        [one] { $newEntries } bokmerke
+       *[other] { $newEntries } bokmerke
+    }
 migration-import-button-label = Importer
 migration-choose-to-import-from-file-button-label = Importer frå fil
 migration-import-from-file-button-label = Vel fil
@@ -120,6 +149,7 @@ migration-list-favorites-label = favorittar
 migration-list-password-label = passord
 migration-list-history-label = historikk
 migration-list-autofill-label = autofylldata
+migration-list-payment-methods-label = betalingsmåtar
 
 ##
 
@@ -180,7 +210,16 @@ migration-wizard-progress-success-history =
        *[other] Frå siste { $maxAgeInDays } dagar
     }
 migration-wizard-progress-success-formdata = Skjemahistorikk
+# Shown in the migration wizard after importing payment methods from another
+# browser has completed.
+#
+# Variables:
+#  $quantity (Number): the number of successfully imported payment methods
+migration-wizard-progress-success-payment-methods =
+    { $quantity ->
+        [one] { $quantity } betalingsmåte
+       *[other] { $quantity } betalingsmåtar
+    }
 migration-wizard-safari-permissions-sub-header = Slik importerer du Safari-bokmerke og netthistorik:
 migration-wizard-safari-instructions-continue = Vel «Hald fram»
 migration-wizard-safari-instructions-folder = Vel Safari-mappa i lista og vel «Opne»
-migration-wizard-safari-select-button = Vel fil

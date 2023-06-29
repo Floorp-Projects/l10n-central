@@ -36,6 +36,7 @@ migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge Beta
 migration-wizard-migrator-display-name-edge-legacy = Microsoft Edge Legacy
 migration-wizard-migrator-display-name-firefox = Firefox
 migration-wizard-migrator-display-name-file-password-csv = Lösenord från CSV-fil
+migration-wizard-migrator-display-name-file-bookmarks = Bokmärken från HTML-fil
 migration-wizard-migrator-display-name-ie = Microsoft Internet Explorer
 migration-wizard-migrator-display-name-opera = Opera
 migration-wizard-migrator-display-name-opera-gx = Opera GX
@@ -57,12 +58,18 @@ migration-bookmarks-option-label = Bokmärken
 migration-favorites-option-label = Favoriter
 migration-logins-and-passwords-option-label = Sparade inloggningar och lösenord
 migration-history-option-label = Webbläsarhistorik
+migration-extensions-option-label = Tillägg
 migration-form-autofill-option-label = Autofylldata för formulär
+migration-payment-methods-option-label = Betalningsmetoder
+migration-cookies-option-label = Kakor
+migration-session-option-label = Fönster och flikar
+migration-otherdata-option-label = Övrig data
 migration-passwords-from-file-progress-header = Importera lösenordsfil
 migration-passwords-from-file-success-header = Lösenord har importerats
 migration-passwords-from-file = Söker efter lösenord i filen
 migration-passwords-new = Nya lösenord
 migration-passwords-updated = Befintliga lösenord
+migration-passwords-from-file-no-valid-data = Filen innehåller inga giltiga lösenordsdata. Välj en annan fil.
 migration-passwords-from-file-picker-title = Importera lösenordsfil
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
@@ -98,6 +105,31 @@ migration-wizard-progress-success-updated-passwords =
         [one] { $updatedEntries } har uppdaterats
        *[other] { $updatedEntries } har uppdaterats
     }
+migration-bookmarks-from-file-picker-title = Importera bokmärkesfil
+migration-bookmarks-from-file-progress-header = Importerar bokmärken
+migration-bookmarks-from-file = Bokmärken
+migration-bookmarks-from-file-success-header = Bokmärken har importerats
+migration-bookmarks-from-file-no-valid-data = Filen innehåller inga bokmärkesdata. Välj en annan fil.
+# A description for the .html file format that may be shown as the file type
+# filter by the operating system.
+migration-bookmarks-from-file-html-filter-title =
+    { PLATFORM() ->
+        [macos] HTML-dokument
+       *[other] HTML-fil
+    }
+# A description for the .json file format that may be shown as the file type
+# filter by the operating system.
+migration-bookmarks-from-file-json-filter-title = JSON-fil
+# Shown in the migration wizard after importing bookmarks from a file
+# has completed.
+#
+# Variables:
+#  $newEntries (Number): the number of imported bookmarks.
+migration-wizard-progress-success-new-bookmarks =
+    { $newEntries ->
+        [one] { $newEntries } bokmärke
+       *[other] { $newEntries } bokmärken
+    }
 migration-import-button-label = Importera
 migration-choose-to-import-from-file-button-label = Importera från fil
 migration-import-from-file-button-label = Välj fil
@@ -119,7 +151,9 @@ migration-list-bookmark-label = bokmärken
 migration-list-favorites-label = favoriter
 migration-list-password-label = lösenord
 migration-list-history-label = historik
+migration-list-extensions-label = tillägg
 migration-list-autofill-label = autofylldata
+migration-list-payment-methods-label = betalningsmetoder
 
 ##
 
@@ -159,6 +193,36 @@ migration-wizard-progress-success-favorites =
         [one] { $quantity } favorit
        *[other] { $quantity } favoriter
     }
+
+## The import process identifies extensions installed in other supported
+## browsers and installs the corresponding (matching) extensions compatible
+## with Firefox, if available.
+
+# Shown in the migration wizard after importing all matched extensions
+# from supported browsers.
+#
+# Variables:
+#   $quantity (Number): the number of successfully imported extensions
+migration-wizard-progress-success-extensions =
+    { $quantity ->
+        [one] { $quantity } tillägg
+       *[other] { $quantity } tillägg
+    }
+# Shown in the migration wizard after importing a partial amount of
+# matched extensions from supported browsers.
+#
+# Variables:
+#   $matched (Number): the number of matched imported extensions
+#   $quantity (Number): the number of total extensions found during import
+migration-wizard-progress-partial-success-extensions = { $matched } av { $quantity } tillägg
+migration-wizard-progress-extensions-support-link = Läs om hur { -brand-product-name } matchar tillägg
+# Shown in the migration wizard if there are no matched extensions
+# on import from supported browsers.
+migration-wizard-progress-no-matched-extensions = Inga matchande tillägg
+migration-wizard-progress-extensions-addons-link = Bläddra bland tillägg för { -brand-short-name }
+
+##
+
 # Shown in the migration wizard after importing passwords from another
 # browser has completed.
 #
@@ -180,7 +244,16 @@ migration-wizard-progress-success-history =
        *[other] Från de senaste { $maxAgeInDays } dagarna
     }
 migration-wizard-progress-success-formdata = Formulärhistorik
+# Shown in the migration wizard after importing payment methods from another
+# browser has completed.
+#
+# Variables:
+#  $quantity (Number): the number of successfully imported payment methods
+migration-wizard-progress-success-payment-methods =
+    { $quantity ->
+        [one] { $quantity } betalningsmetod
+       *[other] { $quantity } betalningsmetoder
+    }
 migration-wizard-safari-permissions-sub-header = Så här importerar du Safari-bokmärken och webbhistorik:
 migration-wizard-safari-instructions-continue = Välj "Fortsätt"
 migration-wizard-safari-instructions-folder = Välj Safari-mappen i listan och välj "Öppna"
-migration-wizard-safari-select-button = Välj fil

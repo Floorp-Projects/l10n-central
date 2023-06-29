@@ -10,6 +10,8 @@
 
 origin-controls-no-access =
     .label = 扩展不可读取和更改任何数据
+origin-controls-quarantined =
+    .label = 不允许扩展读取和更改任何数据
 origin-controls-options =
     .label = 扩展可以读取和更改下列数据：
 origin-controls-option-all-domains =
@@ -27,6 +29,7 @@ origin-controls-option-always-on =
 ## messages. They currently appear in the unified extensions panel.
 
 origin-controls-state-no-access = 无法读取和更改此网站的数据
+origin-controls-state-quarantined = { -vendor-short-name } 不允许在此网站使用
 origin-controls-state-always-on = 总能读取和更改此网站的数据
 origin-controls-state-when-clicked = 需点击授权以读取和更改数据
 origin-controls-state-hover-run-visit-only = 仅在此次访问运行
@@ -46,3 +49,10 @@ origin-controls-toolbar-button =
 origin-controls-toolbar-button-permission-needed =
     .label = { $extensionTitle }
     .tooltiptext = { $extensionTitle }
+# Extension's toolbar button when quarantined.
+# Note that the new line is intentionally part of the tooltip.
+origin-controls-toolbar-button-quarantined =
+    .label = { $extensionTitle }
+    .tooltiptext =
+        { $extensionTitle }
+        已由 { -vendor-short-name } 在此网站上禁用

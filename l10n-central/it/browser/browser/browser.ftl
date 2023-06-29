@@ -117,7 +117,7 @@ urlbar-tip-icon-description =
 urlbar-result-menu-button =
     .title = Apri menu
 urlbar-result-menu-button-feedback = Feedback
-        .title = Apri menu
+    .title = Apri menu
 urlbar-result-menu-learn-more =
     .label = Ulteriori informazioni
     .accesskey = U
@@ -630,6 +630,12 @@ picture-in-picture-urlbar-button-open =
 picture-in-picture-urlbar-button-close =
     .tooltiptext = Chiudi Picture-in-Picture ({ $shortcut })
 
+picture-in-picture-panel-header = Picture-in-Picture
+picture-in-picture-panel-headline = Questo sito web sconsiglia l’utilizzo di Picture-in-Picture
+picture-in-picture-panel-body = I video potrebbero non essere visualizzati come previsto dallo sviluppatore utilizzando Picture-in-Picture.
+picture-in-picture-enable-toggle =
+  .label = Attiva comunque
+
 ## Full Screen and Pointer Lock UI
 
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
@@ -925,6 +931,15 @@ unified-extensions-button-permissions-needed =
         Estensioni
         Permessi richiesti
 
+## Unified extensions button when some extensions are quarantined.
+## Note that the new line is intentionally part of the tooltip.
+
+unified-extensions-button-quarantined =
+    .label = Estensioni
+    .tooltiptext =
+        Estensioni
+        Alcune estensioni non sono consentite
+
 ## Autorefresh blocker
 
 refresh-blocked-refresh-label = { -brand-short-name } ha impedito a questa pagina di ricaricarsi automaticamente.
@@ -944,5 +959,42 @@ firefox-relay-offer-what-relay-does = Le email da <strong>{ $sitename }</strong>
 
 ## Popup Notification
 
+firefox-relay-offer-why-to-use-relay = I nostri alias di posta elettronica, sicuri e facili da utilizzare, proteggono la tua identità e bloccano lo spam nascondendo il tuo indirizzo reale.
+firefox-relay-offer-what-relay-provides = Tutte le email inviate al tuo alias verranno inoltrate a <strong>{ $useremail }</strong> (a meno che tu non decida di bloccarle).
+firefox-relay-offer-legal-notice = Facendo clic su “Utilizza alias di posta elettronica”, accetti le <label data-l10n-name="tos-url">Condizioni di utilizzo del servizio</label> e l’<label data-l10n-name="privacy-url">Informativa sulla privacy</label>.
+
+## Add-on Pop-up Notifications
+
+popup-notification-addon-install-unsigned =
+    .value = (non verificato)
 popup-notification-xpinstall-prompt-learn-more = Scopri come installare componenti aggiuntivi in completa sicurezza
+
+## Pop-up warning
+
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-message =
+    { $popupCount ->
+        [one] { -brand-short-name } ha impedito a questo sito di aprire una finestra pop-up.
+       *[other] { -brand-short-name } ha impedito a questo sito di aprire { $popupCount } finestre pop-up.
+    }
+# The singular form is left out for English, since the number of blocked pop-ups is always greater than 1.
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-exceeded-message = { -brand-short-name } ha impedito a questo sito di aprire più di { $popupCount } finestre pop-up.
+popup-warning-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Opzioni
+           *[other] Preferenze
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] r
+        }
+# Variables:
+#   $popupURI (String): the URI for the pop-up window
+popup-show-popup-menuitem =
+    .label = Visualizza “{ $popupURI }”
 

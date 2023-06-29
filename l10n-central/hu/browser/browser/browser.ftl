@@ -144,6 +144,8 @@ urlbar-tip-icon-description =
     .alt = Tipp:
 urlbar-result-menu-button =
     .title = Menü megnyitása
+urlbar-result-menu-button-feedback = Visszajelzés
+    .title = Menü megnyitása
 urlbar-result-menu-learn-more =
     .label = További tudnivalók
     .accesskey = T
@@ -678,6 +680,11 @@ picture-in-picture-urlbar-button-open =
     .tooltiptext = Kép a képben megnyitása ({ $shortcut })
 picture-in-picture-urlbar-button-close =
     .tooltiptext = Kép a képben bezárása ({ $shortcut })
+picture-in-picture-panel-header = Kép a képben
+picture-in-picture-panel-headline = A weboldal nem ajánlja a Kép a képben módot
+picture-in-picture-panel-body = Előfordulhat, hogy a videók nem a fejlesztő által kívánt módon jelennek meg, ha a Kép a képben funkció engedélyezett.
+picture-in-picture-enable-toggle =
+    .label = Engedélyezés mindenképp
 
 ## Full Screen and Pointer Lock UI
 
@@ -863,7 +870,7 @@ panel-save-update-password = Jelszó
 
 # Variables:
 #  $name (String): The name of the addon that will be removed.
-addon-removal-title = Eltávoltja a következőt: { $name }?
+addon-removal-title = Eltávolítja a következőt: { $name }?
 addon-removal-abuse-report-checkbox = A kiegészítő jelentése a { -vendor-short-name } felé
 
 ##
@@ -995,4 +1002,43 @@ firefox-relay-offer-what-relay-does = Minden e-mailt továbbítunk a(z) <strong>
 
 ## Popup Notification
 
+firefox-relay-offer-why-to-use-relay = Biztonságos, könnyen használható maszkjaink az e-mail-címének elrejtésével védik személyazonosságát, és megakadályozzák a levélszemetet.
+# Variables:
+#  $useremail (String): user email that will receive messages
+firefox-relay-offer-what-relay-provides = Az e-mail-maszkjaira küldött levelek a(z) <strong>{ $useremail }</strong> címre lesznek továbbítva (hacsak nem dönt úgy, hogy letiltja őket).
+firefox-relay-offer-legal-notice = Az „E-mail-maszk használata” gombra kattintással elfogadja a <label data-l10n-name="tos-url">Szolgáltatási feltételeket</label> és az <label data-l10n-name="privacy-url">Adatvédelmi nyilatkozatot</label>.
+
+## Add-on Pop-up Notifications
+
+popup-notification-addon-install-unsigned =
+    .value = (Ellenőrizetlen)
 popup-notification-xpinstall-prompt-learn-more = Tudjon meg többet a bővítmények biztonságos telepítéséről
+
+## Pop-up warning
+
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-message =
+    { $popupCount ->
+        [one] A { -brand-short-name } megakadályozta, hogy ez a webhely felugró ablakot nyisson meg.
+       *[other] A { -brand-short-name } megakadályozta, hogy ez a webhely { $popupCount } felugró ablakot nyisson meg.
+    }
+# The singular form is left out for English, since the number of blocked pop-ups is always greater than 1.
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-exceeded-message = A { -brand-short-name } megakadályozta, hogy ez a webhely több mint { $popupCount } felugró ablakot nyisson meg.
+popup-warning-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Beállítások
+           *[other] Beállítások
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] B
+           *[other] B
+        }
+# Variables:
+#   $popupURI (String): the URI for the pop-up window
+popup-show-popup-menuitem =
+    .label = „{ $popupURI }” megjelenítése

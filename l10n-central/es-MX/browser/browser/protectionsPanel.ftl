@@ -70,6 +70,7 @@ protections-panel-site-not-working-view-issue-list-forms = Formularios
 protections-panel-site-not-working-view-issue-list-payments = Pagos
 protections-panel-site-not-working-view-issue-list-comments = Comentarios
 protections-panel-site-not-working-view-issue-list-videos = Videos
+protections-panel-site-not-working-view-issue-list-fonts = Fuentes
 protections-panel-site-not-working-view-send-report = Envía un reporte
 
 ##
@@ -89,6 +90,7 @@ protections-panel-content-blocking-manage-settings =
 protections-panel-content-blocking-breakage-report-view =
     .title = Informar de un sitio no funcional
 protections-panel-content-blocking-breakage-report-view-description = El bloqueo de ciertos rastreadores puede causar problemas con algunos sitios web. Informar sobre estos problemas ayuda a que { -brand-short-name } sea mejor para todos. Al enviar este informe, se enviará a Mozilla una URL e información sobre la configuración de tu navegador. <label data-l10n-name="learn-more">Más información</label>
+protections-panel-content-blocking-breakage-report-view-description2 = El bloqueo de ciertos rastreadores puede causar problemas con algunos sitios web. Informar sobre estos problemas ayuda a que { -brand-short-name } sea mejor para todos. Al enviar este informe, se enviará a { -vendor-short-name } una URL e información sobre la configuración de tu navegador.
 protections-panel-content-blocking-breakage-report-view-collection-url = URL
 protections-panel-content-blocking-breakage-report-view-collection-url-label =
     .aria-label = URL
@@ -108,8 +110,6 @@ protections-panel-cookie-banner-handling-disabled = Desactivar para este sitio
 protections-panel-cookie-banner-handling-undetected = Sitio actualmente no soportado
 protections-panel-cookie-banner-view-title =
     .title = Reducción de banner de cookies
-protections-panel-cookie-banner-view-go-back =
-    .aria-label = Atrás
 # Variables
 #  $host (String): the hostname of the site that is being displayed.
 protections-panel-cookie-banner-view-turn-off-for-site = ¿Desactivar la reducción de banner de cookies para { $host }?

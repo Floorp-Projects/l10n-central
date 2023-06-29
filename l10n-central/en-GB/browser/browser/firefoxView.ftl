@@ -70,7 +70,6 @@ firefoxview-pickup-tabs-badge = Last active
 firefoxview-tabs-list-tab-button =
     .title = Open { $targetURI } in a new tab
 firefoxview-try-colorways-button = Try colourways
-firefoxview-no-current-colorway-collection = New colourways are on the way
 firefoxview-change-colorway-button = Change colourway
 # Variables:
 #  $intensity (String): Colorway intensity
@@ -82,3 +81,46 @@ firefoxview-collapse-button-show =
     .title = Show list
 firefoxview-collapse-button-hide =
     .title = Hide list
+firefoxview-overview-nav = Recent browsing
+    .title = Recent browsing
+
+## History in this context refers to browser history
+
+firefoxview-history-nav = History
+    .title = History
+firefoxview-history-header = History
+
+## Open Tabs in this context refers to all open tabs in the browser
+
+firefoxview-opentabs-nav = Open tabs
+    .title = Open tabs
+firefoxview-opentabs-header = Open tabs
+
+## Recently closed tabs in this context refers to recently closed tabs from all windows
+
+firefoxview-recently-closed-nav = Recently closed tabs
+    .title = Recently closed tabs
+firefoxview-recently-closed-header = Recently closed tabs
+
+## Tabs from other devices refers in this context refers to synced tabs from other devices
+
+firefoxview-synced-tabs-nav = Tabs from other devices
+    .title = Tabs from other devices
+firefoxview-synced-tabs-header = Tabs from other devices
+
+##
+
+# Used for a link in collapsible cards, in the 'Recent browsing' page of Firefox View
+firefoxview-view-all-link = View all
+# Variables:
+#   $winID (Number) - The index of the owner window for this set of tabs
+firefoxview-opentabs-window-header =
+    .title = Window { $winID }
+# Variables:
+#   $winID (Number) - The index of the owner window (which is currently focused) for this set of tabs
+firefoxview-opentabs-current-window-header =
+    .title = Window { $winID } (Current)
+firefoxview-opentabs-focus-tab =
+    .title = Switch to this tab
+firefoxview-show-more = Show more
+firefoxview-show-less = Show less

@@ -38,13 +38,15 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Privat browsing)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Privat browsing)
-# These are the default window titles everywhere except macOS. The first two
-# attributes are used when the web content opened has no title:
+# These are the default window titles everywhere except macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
 #
 # default - "Mozilla Firefox"
 # private - "Mozilla Firefox (Private Browsing)"
 #
-# The last two are for use when there *is* a content title.
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
 # Variables:
 #  $content-title (String): the title of the web content.
 browser-main-window-window-titles =
@@ -52,14 +54,17 @@ browser-main-window-window-titles =
     .data-title-private = { -brand-full-name } Privat browsing
     .data-content-title-default = { $content-title } — { -brand-full-name }
     .data-content-title-private = { $content-title } — { -brand-full-name } Privat browsing
-# These are the default window titles on macOS. The first two are for use when
-# there is no content title:
+# These are the default window titles on macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
+#
 #
 # "default" - "Mozilla Firefox"
 # "private" - "Mozilla Firefox — (Private Browsing)"
 #
-# The last two are for use when there *is* a content title.
-# Do not use the brand name in the last two attributes, as we do on non-macOS.
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
+# Do not use the brand name in these, as we do on non-macOS.
 #
 # Also note the other subtle difference here: we use a `-` to separate the
 # brand name from `(Private Browsing)`, which does not happen on other OSes.
@@ -143,6 +148,8 @@ urlbar-search-tips-confirm-short = Forstået
 urlbar-tip-icon-description =
     .alt = Tip:
 urlbar-result-menu-button =
+    .title = Åbn menu
+urlbar-result-menu-button-feedback = Feedback
     .title = Åbn menu
 urlbar-result-menu-learn-more =
     .label = Læs mere
@@ -678,6 +685,11 @@ picture-in-picture-urlbar-button-open =
     .tooltiptext = Åbn billede-i-billede ({ $shortcut })
 picture-in-picture-urlbar-button-close =
     .tooltiptext = Luk billede-i-billede ({ $shortcut })
+picture-in-picture-panel-header = Billede-i-billede
+picture-in-picture-panel-headline = Dette websted anbefaler ikke billede-i-billede
+picture-in-picture-panel-body = Videoer vises muligvis ikke som udvikleren havde tænkt sig, når billede-i-billede er aktiveret.
+picture-in-picture-enable-toggle =
+    .label = Aktiver alligevel
 
 ## Full Screen and Pointer Lock UI
 
@@ -976,6 +988,15 @@ unified-extensions-button-permissions-needed =
         Udvidelser
         Tilladelser kræves
 
+## Unified extensions button when some extensions are quarantined.
+## Note that the new line is intentionally part of the tooltip.
+
+unified-extensions-button-quarantined =
+    .label = Udvidelser
+    .tooltiptext =
+        Udvidelser
+        Nogle udvidelser er ikke tilladt
+
 ## Autorefresh blocker
 
 refresh-blocked-refresh-label = { -brand-short-name } forhindrede denne side i automatisk at foretage genindlæsning.
@@ -995,4 +1016,43 @@ firefox-relay-offer-what-relay-does = Vi videresender alle mails fra <strong>{ $
 
 ## Popup Notification
 
+firefox-relay-offer-why-to-use-relay = Vores sikre og letanvendelige masker skjuler din mailadresse for at beskytte din identitet og forhindre spam.
+# Variables:
+#  $useremail (String): user email that will receive messages
+firefox-relay-offer-what-relay-provides = Alle mail sendt til dine mail-masker bliver sendt videre til <strong>{ $useremail }</strong> (medmindre du beslutter at blokere dem)
+firefox-relay-offer-legal-notice = Ved at klikke "Brug mail-maske" accepterer du <label data-l10n-name="tos-url">tjenestevilkårene</label> og <label data-l10n-name="privacy-url">privatlivserklæringen</label>.
+
+## Add-on Pop-up Notifications
+
+popup-notification-addon-install-unsigned =
+    .value = (Uverificeret)
 popup-notification-xpinstall-prompt-learn-more = Læs mere om sikker installering af tilføjelser
+
+## Pop-up warning
+
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-message =
+    { $popupCount ->
+        [one] { -brand-short-name } forhindrede dette websted i at åbne et pop op-vindue.
+       *[other] { -brand-short-name } forhindrede dette websted i at åbne { $popupCount } pop op-vinduer.
+    }
+# The singular form is left out for English, since the number of blocked pop-ups is always greater than 1.
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-exceeded-message = { -brand-short-name } forhindrede dette websted i at åbne mere end { $popupCount } pop op-vinduer.
+popup-warning-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Indstillinger
+           *[other] Indstillinger
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] I
+           *[other] I
+        }
+# Variables:
+#   $popupURI (String): the URI for the pop-up window
+popup-show-popup-menuitem =
+    .label = Vis '{ $popupURI }'

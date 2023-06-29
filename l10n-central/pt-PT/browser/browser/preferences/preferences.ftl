@@ -684,6 +684,10 @@ containers-remove-button =
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
+
+## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Leve a sua Web consigo
 sync-signedout-description2 = Sincronize os marcadores, histórico, separadores, palavras-passe, extras e definições entre dispositivos.
 sync-signedout-account-signin3 =
@@ -700,6 +704,9 @@ sync-signedout-account-signin3 =
 sync-mobile-promo = Transfira o Firefox para <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> ou <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> para sincronizar com o seu dispositivo móvel.
 
 ## Firefox Account - Signed in
+
+
+## Firefox account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Alterar imagem de perfil
@@ -739,6 +746,11 @@ prefs-sync-now =
     .labelnotsyncing = Sincronizar agora
     .accesskeynotsyncing = N
     .labelsyncing = A sincronizar...
+prefs-sync-now-button =
+    .label = Sincronizar agora
+    .accesskey = N
+prefs-syncing-button =
+    .label = A sincronizar...
 
 ## The list of things currently syncing.
 
@@ -818,6 +830,16 @@ sync-device-name-save =
     .accesskey = r
 sync-connect-another-device = Ligar outro dispositivo
 
+## These strings are shown in a desktop notification after the
+## user requests we resend a verification email.
+
+sync-verification-sent-title = Verificação enviada
+# Variables:
+#   $email (String): Email address of user's Firefox account.
+sync-verification-sent-body = A ligação de confirmação foi enviada para { $email }.
+sync-verification-not-sent-title = Verificação não enviada
+sync-verification-not-sent-body = Não foi possível enviar uma mensagem de verificação por esta altura, por favor, tente novamente mais tarde.
+
 ## Privacy Section
 
 privacy-header = Privacidade do navegador
@@ -843,6 +865,8 @@ forms-breach-alerts =
 forms-breach-alerts-learn-more-link = Saber mais
 relay-integration =
     .label = Ative o { -relay-brand-name } no seu gestor de palavras-passe do { -brand-short-name }
+preferences-relay-integration-checkbox =
+    .label = Sugerir as máscaras de e-mail { -relay-brand-name } para proteger seu endereço de e-mail
 relay-integration-learn-more-link = Saber mais
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =

@@ -32,7 +32,9 @@ appmenuitem-addons-and-themes =
 appmenuitem-print =
     .label = 印刷...
 appmenuitem-find-in-page =
-    .label = このページを検索...
+    .label = ページ内を検索...
+appmenuitem-translate =
+    .label = ページを翻訳...
 appmenuitem-zoom =
     .value = ズーム
 appmenuitem-more-tools =
@@ -203,6 +205,9 @@ appmenu-recently-closed-tabs =
     .label = 最近閉じたタブ
 appmenu-recently-closed-windows =
     .label = 最近閉じたウィンドウ
+# This allows to search through the browser's history.
+appmenu-search-history =
+    .label = 履歴を検索
 
 ## Help panel
 
@@ -222,6 +227,8 @@ appmenu-help-report-site-issue =
 appmenu-help-share-ideas =
     .label = 意見とフィードバックを共有...
     .accesskey = S
+appmenu-help-switch-device =
+    .label = 新しい端末に切り替え
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

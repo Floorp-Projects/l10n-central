@@ -363,6 +363,20 @@ mr2022-onboarding-welcome-pin-subtitle =
         [with-cases] Spusťte { -brand-short-name(case: "acc") } odkudkoli jediným klepnutím. Pokaždé, když to uděláte, volíte otevřenější a nezávislejší web.
        *[no-cases] Spusťte aplikaci { -brand-short-name } odkudkoli jediným klepnutím. Pokaždé, když to uděláte, volíte otevřenější a nezávislejší web.
     }
+# Primary button string used on welcome page for when Firefox is not pinned.
+mr2022-onboarding-pin-primary-button-label =
+    { PLATFORM() ->
+        [macos]
+            { -brand-short-name.case-status ->
+                [with-cases] Ponechat { -brand-short-name(case: "acc") } v docku
+               *[no-cases] Ponechat aplikaci { -brand-short-name } v docku
+            }
+       *[other]
+            { -brand-short-name.case-status ->
+                [with-cases] Připnout { -brand-short-name(case: "acc") } na hlavní panel
+               *[no-cases] Připnout aplikaci { -brand-short-name } na hlavní panel
+            }
+    }
 # Subtitle will be used when user already has Firefox pinned, but
 # has not set it as their default browser.
 # When translating "zip", please feel free to pick a verb that signifies movement and/or exploration
@@ -377,14 +391,33 @@ mr2022-onboarding-existing-pin-header =
         [with-cases] Děkujeme, že máte rádi { -brand-product-name(case: "acc") }
        *[no-cases] Děkujeme, že máte rádi aplikaci { -brand-product-name }
     }
+# Subtitle is used on onboarding page for existing users when Firefox is not pinned
+mr2022-onboarding-existing-pin-subtitle = Spusťte zdravější internet odkudkoli jediným klepnutím. Naše nejnovější aktualizace je plná nových věcí, o kterých si myslíme, že si je zamilujete.
+# Subtitle will be used on the welcome screen for existing users
+# when they already have Firefox pinned but not set as default
+mr2022-onboarding-existing-set-default-only-subtitle = Používejte prohlížeč, který chrání vaše soukromí při procházení webu. Naše nejnovější aktualizace je plná věcí, které si zamilujete.
+mr2022-onboarding-existing-pin-checkbox-label =
+    { -brand-short-name.case-status ->
+        [with-cases] Přidat též anonymní prohlížení { -brand-short-name(case: "gen") }
+       *[no-cases] Přidat též anonymní prohlížení aplikace { -brand-short-name }
+    }
 
 ## MR2022 New User Set Default screen strings
 
+# This string is the title used when the user already has pinned the browser, but has not set default.
+mr2022-onboarding-set-default-title =
+    { -brand-short-name.case-status ->
+        [with-cases] Nastavte si { -brand-short-name(case: "acc") } jako váš prohlížeč
+       *[no-cases] Nastavte si aplikaci { -brand-short-name } jako váš prohlížeč
+    }
 mr2022-onboarding-set-default-primary-button-label =
     { -brand-short-name.case-status ->
         [with-cases] Nastavit { -brand-short-name(case: "acc") } jako výchozí prohlížeč
        *[no-cases] Nastavit aplikaci { -brand-short-name } jako výchozí prohlížeč
     }
+# When translating "zip", please feel free to pick a verb that signifies movement and/or exploration
+# and makes sense in the context of navigating the web.
+mr2022-onboarding-set-default-subtitle = Používejte prohlížeč podporovaný neziskovou organizací. Chráníme vaše soukromí, když se pohybujete po webu.
 
 ## MR2022 Get Started screen strings.
 ## These strings will be used on the welcome page
@@ -473,11 +506,38 @@ mr2022-onboarding-no-mobile-download-cta-text =
 ## MR2022 Upgrade Dialog screens
 ## Pin private window screen shown only for users who don't have Firefox private pinned
 
+mr2022-upgrade-onboarding-pin-private-window-header = Získejte svobodu soukromého prohlížení jediným klepnutím
 mr2022-upgrade-onboarding-pin-private-window-subtitle = Žádné uložené cookies ani historie, přímo z vaší plochy. Prohlížejte, jako když se nikdo nedívá.Žádné uložené soubory cookies ani historie, přímo z vaší plochy. Prohlížejte, jako by se nikdo nedíval.
+mr2022-upgrade-onboarding-pin-private-window-primary-button-label =
+    { PLATFORM() ->
+        [macos]
+            { -brand-short-name.case-status ->
+                [with-cases] Ponechat anonymní prohlížení { -brand-short-name(case: "gen") } v docku
+               *[no-cases] Ponechat anonymní prohlížení aplikace { -brand-short-name } v docku
+            }
+       *[other]
+            { -brand-short-name.case-status ->
+                [with-cases] Připnout anonymní prohlížení { -brand-short-name(case: "gen") } na hlavní panel
+               *[no-cases] Připnout anonymní prohlížení aplikace { -brand-short-name } na hlavní panel
+            }
+    }
 
 ## MR2022 Privacy Segmentation screen strings
 
 mr2022-onboarding-privacy-segmentation-title = Vždy respektujeme vaše soukromí
+mr2022-onboarding-privacy-segmentation-subtitle =
+    { -brand-product-name.gender ->
+        [masculine] Od inteligentních návrhů po inteligentnější vyhledávání. Neustále pracujeme na vytvoření lepšího a osobnějšího { -brand-product-name(case: "gen") }.
+        [feminine] Od inteligentních návrhů po inteligentnější vyhledávání. Neustále pracujeme na vytvoření lepší a osobnější { -brand-product-name(case: "gen") }.
+        [neuter] Od inteligentních návrhů po inteligentnější vyhledávání. Neustále pracujeme na vytvoření lepšího a osobnějšího { -brand-product-name(case: "gen") }.
+       *[other] Od inteligentních návrhů po inteligentnější vyhledávání. Neustále pracujeme na vytvoření lepší a osobnější aplikace { -brand-product-name }.
+    }
+mr2022-onboarding-privacy-segmentation-text-cta = Co chcete vidět, když nabízíme nové funkce, které využívají vaše data k vylepšení vašeho prohlížení?
+mr2022-onboarding-privacy-segmentation-button-primary-label =
+    { -brand-product-name.case-status ->
+        [with-cases] Použít doporučení { -brand-product-name(case: "gen") }
+       *[no-cases] Použít doporučení aplikace { -brand-product-name }
+    }
 mr2022-onboarding-privacy-segmentation-button-secondary-label = Zobrazit podrobnosti
 
 ## MR2022 Multistage Gratitude screen strings
@@ -495,7 +555,8 @@ mr2022-onboarding-gratitude-secondary-button-label = Začít prohlížet
 
 ## Onboarding spotlight for infrequent users
 
-onboarding-infrequent-import-title = Ciťte se jako doma
+onboarding-infrequent-import-title = Buďte se jako doma
+onboarding-infrequent-import-subtitle = Ať už se zabydlujete, nebo se jen zastavujete, nezapomeňte, že můžete naimportovat své záložky, hesla a další položky.
 onboarding-infrequent-import-primary-button =
     { -brand-short-name.case-status ->
         [with-cases] Importovat do { -brand-short-name(case: "gen") }
@@ -505,3 +566,39 @@ onboarding-infrequent-import-primary-button =
 ## MR2022 Illustration alt tags
 ## Descriptive tags for illustrations used by screen readers and other assistive tech
 
+mr2022-onboarding-pin-image-alt =
+    .aria-label = Osoba pracující na notebooku obklopená hvězdami a květinami
+mr2022-onboarding-default-image-alt =
+    .aria-label =
+        { -brand-product-name.case-status ->
+            [with-cases] Osoba objímající logo { -brand-product-name(case: "gen") }
+           *[no-cases] Osoba objímající logo aplikace { -brand-product-name }
+        }
+mr2022-onboarding-import-image-alt =
+    .aria-label = Osoba na skateboardu s krabicí softwarových ikon
+mr2022-onboarding-mobile-download-image-alt =
+    .aria-label =
+        { -brand-product-name.case-status ->
+            [with-cases] Žáby poskakující po leknínech s QR kódem pro stažení { -brand-product-name(case: "gen") } do mobilu uprostřed.
+           *[no-cases] Žáby poskakující po leknínech s QR kódem pro stažení aplikace { -brand-product-name } do mobilu uprostřed.
+        }
+mr2022-onboarding-pin-private-image-alt =
+    .aria-label =
+        { -brand-product-name.case-status ->
+            [with-cases] Kouzelná hůlka způsobí, že se z klobouku objeví logo soukromého prohlížení { -brand-product-name(case: "gen") }
+           *[no-cases] Kouzelná hůlka způsobí, že se z klobouku objeví logo soukromého prohlížení aplikace { -brand-product-name }
+        }
+mr2022-onboarding-privacy-segmentation-image-alt =
+    .aria-label = Ruce světlé a tmavé pleti si plácnou
+mr2022-onboarding-gratitude-image-alt =
+    .aria-label = Pohled na západ slunce oknem s liškou a pokojovou rostlinou na parapetu
+mr2022-onboarding-colorways-image-alt =
+    .aria-label = Ruční sprej maluje barevnou koláž zeleného oka, oranžové boty, červeného basketbalového míče, fialových sluchátek, modrého srdce a žluté koruny
+
+## Device migration onboarding
+
+onboarding-device-migration-image-alt =
+    .aria-label = Liška na obrazovce přenosného počítače mává. V notebooku je připojena myš.
+onboarding-device-migration-title = Vítejte zpět!
+onboarding-device-migration-subtitle = Přihlaste se ke svému { -fxaccount-brand-name(capitalization: "sentence", case: "dat") } a přeneste si své záložky, hesla a historii do nového zařízení.
+onboarding-device-migration-primary-button-label = Přihlásit se

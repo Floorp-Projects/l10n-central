@@ -70,7 +70,6 @@ firefoxview-pickup-tabs-badge = Ativo pela última vez
 firefoxview-tabs-list-tab-button =
     .title = Abrir { $targetURI } num novo separador
 firefoxview-try-colorways-button = Experimente os estilos de cor
-firefoxview-no-current-colorway-collection = Novos estilos de cor estão a caminho
 firefoxview-change-colorway-button = Alterar estilo de cor
 # Variables:
 #  $intensity (String): Colorway intensity
@@ -82,3 +81,46 @@ firefoxview-collapse-button-show =
     .title = Mostrar lista
 firefoxview-collapse-button-hide =
     .title = Esconder lista
+firefoxview-overview-nav = Navegação recente
+    .title = Navegação recente
+
+## History in this context refers to browser history
+
+firefoxview-history-nav = Histórico
+    .title = Histórico
+firefoxview-history-header = Histórico
+
+## Open Tabs in this context refers to all open tabs in the browser
+
+firefoxview-opentabs-nav = Separadores abertos
+    .title = Separadores abertos
+firefoxview-opentabs-header = Separadores abertos
+
+## Recently closed tabs in this context refers to recently closed tabs from all windows
+
+firefoxview-recently-closed-nav = Separadores fechados recentemente
+    .title = Separadores fechados recentemente
+firefoxview-recently-closed-header = Separadores fechados recentemente
+
+## Tabs from other devices refers in this context refers to synced tabs from other devices
+
+firefoxview-synced-tabs-nav = Separadores de outros dispositivos
+    .title = Separadores de outros dispositivos
+firefoxview-synced-tabs-header = Separadores de outros dispositivos
+
+##
+
+# Used for a link in collapsible cards, in the 'Recent browsing' page of Firefox View
+firefoxview-view-all-link = Ver tudo
+# Variables:
+#   $winID (Number) - The index of the owner window for this set of tabs
+firefoxview-opentabs-window-header =
+    .title = Janela { $winID }
+# Variables:
+#   $winID (Number) - The index of the owner window (which is currently focused) for this set of tabs
+firefoxview-opentabs-current-window-header =
+    .title = Janela { $winID } (atual)
+firefoxview-opentabs-focus-tab =
+    .title = Trocar para este separador
+firefoxview-show-more = Mostrar mais
+firefoxview-show-less = Mostrar menos

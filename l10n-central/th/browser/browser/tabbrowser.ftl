@@ -14,10 +14,6 @@ tabbrowser-menuitem-close =
 #   $containerName (String): the name of the current container.
 tabbrowser-container-tab-title = { $title } - { $containerName }
 # Variables:
-#   $title (String): the title of the current tab.
-tabbrowser-tab-tooltip =
-    .label = { $title }
-# Variables:
 #   $tabCount (Number): The number of tabs that will be closed.
 tabbrowser-close-tabs-tooltip =
     .label = ปิด { $tabCount } แท็บ
@@ -115,3 +111,21 @@ tabbrowser-context-mute-selected-tabs =
 tabbrowser-context-unmute-selected-tabs =
     .label = เปิดเสียงแท็บ
     .accesskey = ส
+# This string is used as an additional tooltip and accessibility description for tabs playing audio
+tabbrowser-tab-audio-playing-description = กำลังเล่นเสียง
+
+## Ctrl-Tab dialog
+
+# Variables:
+#   $tabCount (Number): The number of tabs in the current browser window. It will always be 2 at least.
+tabbrowser-ctrl-tab-list-all-tabs =
+    .label = แสดงรายการ { $tabCount } แท็บทั้งหมด
+
+## Tab manager menu buttons
+
+tabbrowser-manager-mute-tab =
+    .tooltiptext = ปิดเสียงแท็บ
+tabbrowser-manager-unmute-tab =
+    .tooltiptext = เปิดเสียงแท็บ
+tabbrowser-manager-close-tab =
+    .tooltiptext = ปิดแท็บ

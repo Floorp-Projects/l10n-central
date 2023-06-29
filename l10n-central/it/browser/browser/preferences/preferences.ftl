@@ -684,6 +684,10 @@ containers-remove-button =
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
+
+## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Il tuo Web, sempre con te
 sync-signedout-description2 = Sincronizza segnalibri, cronologia, schede, password, componenti aggiuntivi e impostazioni attraverso tutti i tuoi dispositivi.
 sync-signedout-account-signin3 =
@@ -700,6 +704,9 @@ sync-signedout-account-signin3 =
 sync-mobile-promo = Scarica Firefox per <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> o <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> per sincronizzare con cellulari e tablet.
 
 ## Firefox Account - Signed in
+
+
+## Firefox account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Cambia l’immagine del profilo
@@ -739,6 +746,11 @@ prefs-sync-now =
     .labelnotsyncing = Sincronizza adesso
     .accesskeynotsyncing = a
     .labelsyncing = Sincronizzazione in corso…
+prefs-sync-now-button =
+    .label = Sincronizza adesso
+    .accesskey = a
+prefs-syncing-button =
+    .label = Sincronizzazione in corso…
 
 ## The list of things currently syncing.
 
@@ -818,6 +830,16 @@ sync-device-name-save =
     .accesskey = S
 sync-connect-another-device = Connetti un altro dispositivo
 
+## These strings are shown in a desktop notification after the
+## user requests we resend a verification email.
+
+sync-verification-sent-title = Verifica inviata
+# Variables:
+#   $email (String): Email address of user's Firefox account.
+sync-verification-sent-body = È stato inviato un link di verifica a { $email }.
+sync-verification-not-sent-title = Impossibile inviare la verifica
+sync-verification-not-sent-body = Non è stato possibile inviare la mail di verifica, riprovare più tardi.
+
 ## Privacy Section
 
 privacy-header = Privacy del browser
@@ -843,6 +865,8 @@ forms-breach-alerts =
 forms-breach-alerts-learn-more-link = Ulteriori informazioni
 relay-integration =
     .label = Attiva { -relay-brand-name } nel gestore password di { -brand-short-name }
+preferences-relay-integration-checkbox =
+    .label = Suggerisci alias di posta elettronica { -relay-brand-name } per proteggere il tuo indirizzo email
 relay-integration-learn-more-link = Ulteriori informazioni
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
@@ -1293,3 +1317,4 @@ preferences-doh-manage-exceptions =
 desktop-folder-name = Desktop
 downloads-folder-name = Download
 choose-download-folder-title = Selezionare la cartella di download:
+

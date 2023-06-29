@@ -36,6 +36,7 @@ migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge Beta
 migration-wizard-migrator-display-name-edge-legacy = Microsoft Edge (anciennes versions)
 migration-wizard-migrator-display-name-firefox = Firefox
 migration-wizard-migrator-display-name-file-password-csv = Mots de passe depuis un fichier CSV
+migration-wizard-migrator-display-name-file-bookmarks = Marque-pages depuis un fichier HTML
 migration-wizard-migrator-display-name-ie = Microsoft Internet Explorer
 migration-wizard-migrator-display-name-opera = Opera
 migration-wizard-migrator-display-name-opera-gx = Opera GX
@@ -57,12 +58,18 @@ migration-bookmarks-option-label = Marque-pages
 migration-favorites-option-label = Favoris
 migration-logins-and-passwords-option-label = Identifiants et mots de passe enregistrés
 migration-history-option-label = Historique de navigation
+migration-extensions-option-label = Extensions
 migration-form-autofill-option-label = Données de remplissage automatique des formulaires
+migration-payment-methods-option-label = Moyens de paiement
+migration-cookies-option-label = Cookies
+migration-session-option-label = Fenêtres et onglets
+migration-otherdata-option-label = Autres données
 migration-passwords-from-file-progress-header = Importer un fichier de mots de passe
 migration-passwords-from-file-success-header = Mots de passe correctement importés
 migration-passwords-from-file = Recherche des mots de passe dans le fichier
 migration-passwords-new = Nouveaux mots de passe
 migration-passwords-updated = Mots de passe existants
+migration-passwords-from-file-no-valid-data = Ce fichier ne contient pas de données de mots de passe. Choisissez un autre fichier.
 migration-passwords-from-file-picker-title = Importer un fichier de mots de passe
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
@@ -98,6 +105,31 @@ migration-wizard-progress-success-updated-passwords =
         [one] { $updatedEntries } mis à jour
        *[other] { $updatedEntries } mis à jour
     }
+migration-bookmarks-from-file-picker-title = Importer des marque-pages
+migration-bookmarks-from-file-progress-header = Importation des marque-pages
+migration-bookmarks-from-file = Marque-pages
+migration-bookmarks-from-file-success-header = Importation des marque-pages réussie
+migration-bookmarks-from-file-no-valid-data = Ce fichier ne contient pas de données de marque-pages. Choisissez un autre fichier.
+# A description for the .html file format that may be shown as the file type
+# filter by the operating system.
+migration-bookmarks-from-file-html-filter-title =
+    { PLATFORM() ->
+        [macos] Document HTML
+       *[other] Fichier HTML
+    }
+# A description for the .json file format that may be shown as the file type
+# filter by the operating system.
+migration-bookmarks-from-file-json-filter-title = Fichier JSON
+# Shown in the migration wizard after importing bookmarks from a file
+# has completed.
+#
+# Variables:
+#  $newEntries (Number): the number of imported bookmarks.
+migration-wizard-progress-success-new-bookmarks =
+    { $newEntries ->
+        [one] { $newEntries } marque-page
+       *[other] { $newEntries } marque-pages
+    }
 migration-import-button-label = Importer
 migration-choose-to-import-from-file-button-label = Importer depuis un fichier
 migration-import-from-file-button-label = Sélectionner un fichier
@@ -119,7 +151,9 @@ migration-list-bookmark-label = marque-pages
 migration-list-favorites-label = favoris
 migration-list-password-label = mots de passe
 migration-list-history-label = historique
+migration-list-extensions-label = extensions
 migration-list-autofill-label = données de remplissage automatique
+migration-list-payment-methods-label = moyens de paiement
 
 ##
 
@@ -159,6 +193,36 @@ migration-wizard-progress-success-favorites =
         [one] { $quantity } favori
        *[other] { $quantity } favoris
     }
+
+## The import process identifies extensions installed in other supported
+## browsers and installs the corresponding (matching) extensions compatible
+## with Firefox, if available.
+
+# Shown in the migration wizard after importing all matched extensions
+# from supported browsers.
+#
+# Variables:
+#   $quantity (Number): the number of successfully imported extensions
+migration-wizard-progress-success-extensions =
+    { $quantity ->
+        [one] { $quantity } extension
+       *[other] { $quantity } extensions
+    }
+# Shown in the migration wizard after importing a partial amount of
+# matched extensions from supported browsers.
+#
+# Variables:
+#   $matched (Number): the number of matched imported extensions
+#   $quantity (Number): the number of total extensions found during import
+migration-wizard-progress-partial-success-extensions =
+    { $matched ->
+        [one] { $matched } extension sur { $quantity }
+       *[other] { $matched } extensions sur { $quantity }
+    }
+migration-wizard-progress-extensions-addons-link = Parcourir les extensions pour { -brand-short-name }
+
+##
+
 # Shown in the migration wizard after importing passwords from another
 # browser has completed.
 #
@@ -180,7 +244,16 @@ migration-wizard-progress-success-history =
        *[other] Au cours des { $maxAgeInDays } derniers jours
     }
 migration-wizard-progress-success-formdata = Historique des formulaires
+# Shown in the migration wizard after importing payment methods from another
+# browser has completed.
+#
+# Variables:
+#  $quantity (Number): the number of successfully imported payment methods
+migration-wizard-progress-success-payment-methods =
+    { $quantity ->
+        [one] { $quantity } mode de paiement
+       *[other] { $quantity } modes de paiement
+    }
 migration-wizard-safari-permissions-sub-header = Pour importer les marque-pages et l’historique de navigation de Safari :
 migration-wizard-safari-instructions-continue = Sélectionnez « Continuer »
 migration-wizard-safari-instructions-folder = Sélectionnez le dossier Safari dans la liste et choisissez « Ouvrir »
-migration-wizard-safari-select-button = Sélectionner un fichier

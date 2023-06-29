@@ -23,6 +23,8 @@ places-open-in-window =
 places-open-in-private-window =
     .label = 새 사생활 보호 창에서 열기
     .accesskey = P
+places-empty-bookmarks-folder =
+    .label = (비어 있음)
 places-add-bookmark =
     .label = 북마크 추가…
     .accesskey = B
@@ -82,6 +84,15 @@ places-delete-folder =
            *[other] 폴더 삭제
         }
     .accesskey = D
+# Variables:
+#   $count (number) - The number of pages selected for removal.
+places-delete-page =
+    .label =
+        { $count ->
+            [1] 페이지 삭제
+           *[other] 페이지 삭제
+        }
+    .accesskey = D
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
 managed-bookmarks =
     .label = 관리되는 북마크
@@ -103,6 +114,15 @@ places-delete-bookmark =
            *[other] 북마크 삭제
         }
     .accesskey = D
+# Variables:
+#   $count (number) - The number of bookmarks being added.
+places-create-bookmark =
+    .label =
+        { $count ->
+            [1] 페이지 북마크…
+           *[other] 페이지 북마크…
+        }
+    .accesskey = B
 places-untag-bookmark =
     .label = 태그 제거
     .accesskey = R
@@ -120,9 +140,6 @@ places-forget-about-this-site-forget = 지우기
 places-library =
     .title = 라이브러리
     .style = width:700px; height:500px;
-places-library2 =
-    .title = 라이브러리
-    .style = min-width:700px; min-height:500px;
 places-library3 =
     .title = 라이브러리
 places-organize-button =
@@ -198,6 +215,27 @@ places-view-sort-col-date-added =
     .label = 저장일
 places-view-sort-col-last-modified =
     .label = 마지막 수정일
+places-view-sortby-name =
+    .label = 이름순 정렬
+    .accesskey = N
+places-view-sortby-url =
+    .label = 주소순 정렬
+    .accesskey = L
+places-view-sortby-date =
+    .label = 최근 방문일순 정렬
+    .accesskey = V
+places-view-sortby-visit-count =
+    .label = 방문 횟수순 정렬
+    .accesskey = C
+places-view-sortby-date-added =
+    .label = 저장일순 정렬
+    .accesskey = e
+places-view-sortby-last-modified =
+    .label = 마지막 수정일순 정렬
+    .accesskey = M
+places-view-sortby-tags =
+    .label = 태그순 정렬
+    .accesskey = T
 places-cmd-find-key =
     .key = f
 places-back-button =
@@ -205,3 +243,23 @@ places-back-button =
 places-forward-button =
     .tooltiptext = 앞으로 가기
 places-details-pane-select-an-item-description = 속성을 보고 편집할 항목을 선택하세요
+places-details-pane-no-items =
+    .value = 항목 없음
+# Variables:
+#   $count (Number): number of items
+places-details-pane-items-count =
+    .value = { $count }개
+
+## Strings used as a placeholder in the Library search field. For example,
+## "Search History" stands for "Search through the browser's history".
+
+places-search-bookmarks =
+    .placeholder = 북마크 검색
+places-search-history =
+    .placeholder = 기록 검색
+places-search-downloads =
+    .placeholder = 다운로드 항목 검색
+
+##
+
+places-locked-prompt = { -brand-short-name } 파일을 다른 애플리케이션이 사용하고 있기 때문에 북마크와 기록이 없어진 것처럼 보일 수 있습니다. 이 오류는 보안 소프트웨어가 원인일 수 있습니다.

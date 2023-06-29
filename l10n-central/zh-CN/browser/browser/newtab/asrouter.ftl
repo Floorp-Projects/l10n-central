@@ -244,3 +244,19 @@ fox-doodle-pin-secondary = 暂时不要
 
 set-default-pdf-handler-headline = <strong>您的 PDF 文件现在可以在 { -brand-short-name } 中打开。</strong>请直接在您的浏览器中编辑或签署表格。要更改，请在设置中搜索“PDF”。
 set-default-pdf-handler-primary = 明白了
+
+## FxA sync CFR
+
+fxa-sync-cfr-header = 打算换新设备？
+fxa-sync-cfr-body = 每次新打开 { -brand-product-name } 浏览器时，都会确保您的书签、密码和标签保持最新状态。
+fxa-sync-cfr-primary = 详细了解
+    .accesskey = L
+fxa-sync-cfr-secondary = 稍后提醒我
+    .accesskey = R
+
+## Device Migration FxA Spotlight
+
+device-migration-fxa-spotlight-header = 使用的是旧设备？
+device-migration-fxa-spotlight-body = 备份您的数据，以确保书签和密码等重要数据安全无虞。在换到新设备前更是如此。
+device-migration-fxa-spotlight-primary-button = 如何备份数据
+device-migration-fxa-spotlight-link = 稍后提醒我

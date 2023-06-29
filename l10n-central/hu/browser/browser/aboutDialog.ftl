@@ -14,6 +14,15 @@ update-updateButton =
 update-checkingForUpdates = Frissítések keresése…
 update-downloading = <img data-l10n-name="icon"/>Frissítés letöltése – <label data-l10n-name="download-status"/>
 update-downloading-message = Frissítés letöltése – <label data-l10n-name="download-status"/>
+
+## Variables:
+##   $transfer (string) - Transfer progress.
+
+settings-update-downloading = <img data-l10n-name="icon"/>Frissítés letöltése – <label data-l10n-name="download-status">{ $transfer }</label>
+aboutdialog-update-downloading = Frissítés letöltése – <label data-l10n-name="download-status">{ $transfer }</label>
+
+##
+
 update-applying = Frissítés alkalmazása…
 update-failed = A frissítés sikertelen.<label data-l10n-name="failed-link">Töltse le a legújabb verziót</label>
 update-failed-main = A frissítés sikertelen.<a data-l10n-name="failed-link-main">Töltse le a legújabb verziót</a>
@@ -23,10 +32,20 @@ aboutdialog-update-checking-failed = Nem sikerült a frissítések keresése.
 update-otherInstanceHandlingUpdates = A { -brand-short-name } frissítése folyamatban egy másik példány által
 update-manual = Frissítés elérhető: <label data-l10n-name="manual-link"/>
 aboutdialog-update-manual = Frissítés érhető el itt: <a data-l10n-name="manual-link"/>
+
+## Variables:
+##   $displayUrl (String): URL to page with download instructions. Example: www.mozilla.org/firefox/nightly/
+
+aboutdialog-update-manual-with-link = Frissítés elérhető: <label data-l10n-name="manual-link">{ $displayUrl }</label>
+settings-update-manual-with-link = Frissítés érhető el itt: <a data-l10n-name="manual-link">{ $displayUrl }</a>
 update-unsupported = Nem végezhet további frissítéseket ezen a rendszeren.<label data-l10n-name="unsupported-link">További tudnivalók</label>
 update-restarting = Újraindítás…
-update-internal-error = Belső hiba miatt nem lehet frissítéseket keresni. A frissítések itt érhetők el: <label data-l10n-name="manual-link"/>
 channel-description = Jelenleg a(z) <label data-l10n-name="current-channel"></label> frissítési csatornát használja.
+update-internal-error = Belső hiba miatt nem lehet frissítéseket keresni. A frissítések itt érhetők el: <label data-l10n-name="manual-link"/>
+update-internal-error2 = Belső hiba miatt nem lehet frissítéseket keresni. A frissítések itt érhetők el: <label data-l10n-name="manual-link">{ $displayUrl }</label>
+
+##
+
 # Variables:
 #   $channel (String): description of the update channel (e.g. "release", "beta", "nightly" etc.)
 aboutdialog-channel-description = Jelenleg a(z) <label data-l10n-name="current-channel">{ $channel }</label> frissítési csatornát használja.

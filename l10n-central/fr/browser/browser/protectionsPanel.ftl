@@ -90,6 +90,7 @@ protections-panel-content-blocking-manage-settings =
 protections-panel-content-blocking-breakage-report-view =
     .title = Signaler des problèmes avec ce site
 protections-panel-content-blocking-breakage-report-view-description = Le blocage de certains traqueurs peut occasionner des problèmes sur des sites web. En signalant ces problèmes, vous contribuez à rendre { -brand-short-name } meilleur pour tout le monde. L’envoi du rapport communiquera une URL ainsi que des informations sur les préférences de votre navigateur à Mozilla. <label data-l10n-name="learn-more">En savoir plus</label>
+protections-panel-content-blocking-breakage-report-view-description2 = Le blocage de certains traqueurs peut occasionner des problèmes sur des sites web. En signalant ces problèmes, vous contribuez à rendre { -brand-short-name } meilleur pour tout le monde. L’envoi du rapport communiquera une URL ainsi que des informations sur les préférences de votre navigateur à { -vendor-short-name }.
 protections-panel-content-blocking-breakage-report-view-collection-url = URL
 protections-panel-content-blocking-breakage-report-view-collection-url-label =
     .aria-label = URL
@@ -109,8 +110,6 @@ protections-panel-cookie-banner-handling-disabled = Désactivée pour ce site
 protections-panel-cookie-banner-handling-undetected = Site actuellement non pris en charge
 protections-panel-cookie-banner-view-title =
     .title = Réduction des bannières de cookies
-protections-panel-cookie-banner-view-go-back =
-    .aria-label = Retour
 # Variables
 #  $host (String): the hostname of the site that is being displayed.
 protections-panel-cookie-banner-view-turn-off-for-site = Désactiver la réduction des bannières de cookies pour { $host } ?

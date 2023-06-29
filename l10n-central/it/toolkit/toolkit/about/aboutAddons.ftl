@@ -208,6 +208,9 @@ extensions-warning-update-security = Il controllo sulla sicurezza degli aggiorna
 extensions-warning-update-security-button = Attiva
     .title = Attiva il controllo sulla sicurezza degli aggiornamenti dei componenti aggiuntivi
 
+extensions-warning-imported-addons = Completa l’installazione delle estensioni importate in { -brand-short-name }.
+extensions-warning-imported-addons-button = Installa estensioni
+
 ## Strings connected to add-on updates
 
 addon-updates-check-for-updates = Controlla aggiornamenti
@@ -352,11 +355,6 @@ theme-disabled-heading2 = Temi salvati
 theme-monochromatic-heading = Tonalità
 theme-monochromatic-subheading = Nuove vibranti tonalità da { -brand-product-name }. Disponibili per un periodo limitato.
 
-theme-colorways-button = Prova nuove tonalità
-theme-colorways-button-colorway-enabled = Cambia tonalità
-
-colorway-collection-expiry-label = Scade il { DATETIME($expiryDate, month: "long", day: "numeric") }
-
 plugin-enabled-heading = Attivi
 plugin-disabled-heading = Disattivati
 
@@ -414,6 +412,17 @@ addon-badge-private-browsing-allowed2 =
 addon-detail-private-browsing-help = Se viene garantito il permesso, l’estensione potrà accedere alle tue attività online nelle finestre anonime. <a data-l10n-name="learn-more">Ulteriori informazioni</a>
 addon-detail-private-browsing-allow = Consenti
 addon-detail-private-browsing-disallow = Non consentire
+
+## Protected domains (internally called "quarantined") are special domains
+## where add-ons are normally blocked for security reasons.
+
+# Used as a description for the option to allow or block an add-on on quarantined domains.
+addon-detail-quarantined-domains-label = Funzionamento in domini protetti
+# Used as help text part of the quarantined domains UI controls row.
+addon-detail-quarantined-domains-help = Se viene garantito il permesso, l’estensione avrà accesso a siti web protetti da { -vendor-short-name }. Consentire solo se si considera l’estensione affidabile.
+# Used as label and tooltip text on the radio inputs associated to the quarantined domains UI controls.
+addon-detail-quarantined-domains-allow = Consenti
+addon-detail-quarantined-domains-disallow = Non consentire
 
 ## This is the tooltip text for the recommended badges for an extension in about:addons. The
 ## badge is a small icon displayed next to an extension when it is recommended on AMO.

@@ -113,6 +113,10 @@ options-enable-chrome-tooltip =
 options-enable-remote-label = 啟用遠端除錯
 options-enable-remote-tooltip2 =
     .title = 開啟此選項後，將允許從遠端對此瀏覽器除錯
+# The label for checkbox that enables F12 as a shortcut to open DevTools
+options-enable-f12-label = 使用 F12 鍵開啟或關閉開發者工具
+options-enable-f12-tooltip =
+    .title = 開啟此選項後，將綁定 F12 鍵來開關開發者工具箱
 # The label for checkbox that toggles custom formatters for objects
 options-enable-custom-formatters-label = 啟用自訂格式化套件
 options-enable-custom-formatters-tooltip =
@@ -122,7 +126,7 @@ options-enable-service-workers-http-label = 啟用 Service Workers over HTTP（�
 options-enable-service-workers-http-tooltip =
     .title = 開啟此選項後，將會允許在開啟工具箱的所有分頁中透過 HTTP 使用 service workers。
 # The label for the checkbox that toggles source maps in all tools.
-options-source-maps-label = 開啟原始碼對應
+options-source-maps-label = 開啟原始碼對應表
 options-source-maps-tooltip =
     .title = 若您開啟此選項，將會在開發者工具中進行原始碼對應。
 # The message shown for settings that trigger page reload

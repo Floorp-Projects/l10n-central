@@ -30,3 +30,12 @@ unified-extensions-context-menu-remove-extension =
     .label = 拡張機能を削除
 unified-extensions-context-menu-report-extension =
     .label = 拡張機能を報告
+unified-extensions-context-menu-move-widget-up =
+    .label = 上へ移動
+unified-extensions-context-menu-move-widget-down =
+    .label = 下へ移動
+
+## Notifications
+
+unified-extensions-mb-quarantined-domain-title = 一部の拡張機能は許可されていません
+unified-extensions-mb-quarantined-domain-message = { -vendor-short-name } が監視している一部の拡張機能は、ユーザーのデータを保護するため、このサイトでの動作が許可されていません。

@@ -27,23 +27,14 @@
 -monitor-brand-short-name = Monitor
 -pocket-brand-name = Pocket
 -send-brand-name = Firefox Send
--screenshots-brand-name = Firefox Screenshots
+-screenshots-brand-name = Floorp Screenshots
 -mozilla-vpn-brand-name = Mozilla VPN
 -profiler-brand-name = Firefox Profiler
--translations-brand-name = Firefox Translations
+-translations-brand-name = Floorp Translations
 -rally-brand-name = Mozilla Rally
 -rally-short-name = Rally
 -focus-brand-name = Firefox Focus
 
--relay-brand-name = Firefox Relay
--relay-brand-short-name = Relay
-
 # “Suggest” can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefox-suggest-brand-name = Firefox Suggest
-
-# ”Home" can be localized, “Firefox” must be treated as a brand
-# and kept in English.
--firefox-home-brand-name = Firefox Home
-
--firefoxview-brand-name = Firefox View

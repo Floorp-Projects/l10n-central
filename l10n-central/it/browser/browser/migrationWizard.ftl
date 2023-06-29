@@ -36,6 +36,7 @@ migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge Beta
 migration-wizard-migrator-display-name-edge-legacy = Microsoft Edge Legacy
 migration-wizard-migrator-display-name-firefox = Firefox
 migration-wizard-migrator-display-name-file-password-csv = Password da file CSV
+migration-wizard-migrator-display-name-file-bookmarks = Segnalibri da file HTML
 migration-wizard-migrator-display-name-ie = Microsoft Internet Explorer
 migration-wizard-migrator-display-name-opera = Opera
 migration-wizard-migrator-display-name-opera-gx = Opera GX
@@ -57,17 +58,20 @@ migration-bookmarks-option-label = Segnalibri
 migration-favorites-option-label = Preferiti
 migration-logins-and-passwords-option-label = Credenziali e password salvate
 migration-history-option-label = Cronologia di navigazione
+migration-extensions-option-label = Estensioni
 migration-form-autofill-option-label = Dati per la compilazione automatica dei moduli
-# A description for the .csv file format that may be shown as the file type
-
+migration-payment-methods-option-label = Metodi di pagamento
+migration-cookies-option-label = Cookie
+migration-session-option-label = Finestre e schede
+migration-otherdata-option-label = Altri dati
 migration-passwords-from-file-progress-header = Importazione file di password
 migration-passwords-from-file-success-header = Password importate correttamente
 migration-passwords-from-file = Verifica delle password nel file
 migration-passwords-new = Nuove password
 migration-passwords-updated = Password esistenti
-
+migration-passwords-from-file-no-valid-data = Il file non include alcuna informazione valida relativa alle password. Seleziona un altro file.
 migration-passwords-from-file-picker-title = Importazione file di password
-
+# A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
 migration-passwords-from-file-csv-filter-title =
     { PLATFORM() ->
@@ -81,7 +85,6 @@ migration-passwords-from-file-tsv-filter-title =
         [macos] Documento TSV
        *[other] File TSV
     }
-
 # Shown in the migration wizard after importing passwords from a file
 # has completed, if new passwords were added.
 #
@@ -92,7 +95,6 @@ migration-wizard-progress-success-new-passwords =
         [one] { $newEntries } aggiunta
        *[other] { $newEntries } aggiunte
     }
-
 # Shown in the migration wizard after importing passwords from a file
 # has completed, if existing passwords were updated.
 #
@@ -104,11 +106,38 @@ migration-wizard-progress-success-updated-passwords =
        *[other] { $updatedEntries } aggiornate
     }
 
+migration-bookmarks-from-file-picker-title = Importazione file di segnalibri
+migration-bookmarks-from-file-progress-header = Importazione segnalibri
+migration-bookmarks-from-file = Segnalibri
+migration-bookmarks-from-file-success-header = Segnalibri importati correttamente
+migration-bookmarks-from-file-no-valid-data = Il file non include alcuna informazione relativa ai segnalibri. Seleziona un altro file.
+
+# A description for the .html file format that may be shown as the file type
+# filter by the operating system.
+migration-bookmarks-from-file-html-filter-title =
+  { PLATFORM() ->
+      [macos] Documento HTML
+     *[other] File HTML
+  }
+
+# A description for the .json file format that may be shown as the file type
+# filter by the operating system.
+migration-bookmarks-from-file-json-filter-title = File JSON
+
+# Shown in the migration wizard after importing bookmarks from a file
+# has completed.
+#
+# Variables:
+#  $newEntries (Number): the number of imported bookmarks.
+migration-wizard-progress-success-new-bookmarks =
+    { $newEntries ->
+        [one] { $newEntries } segnalibro
+       *[other] { $newEntries } segnalibri
+    }
 
 migration-import-button-label = Importa
 migration-choose-to-import-from-file-button-label = Importa da file
 migration-import-from-file-button-label = Seleziona file
-
 migration-cancel-button-label = Annulla
 migration-done-button-label = Fatto
 migration-continue-button-label = Continua
@@ -127,7 +156,9 @@ migration-list-bookmark-label = segnalibri
 migration-list-favorites-label = preferiti
 migration-list-password-label = password
 migration-list-history-label = cronologia
+migration-list-extensions-label = estensioni
 migration-list-autofill-label = dati per la compilazione automatica dei moduli
+migration-list-payment-methods-label = metodi di pagamento
 
 ##
 
@@ -167,6 +198,39 @@ migration-wizard-progress-success-favorites =
         [one] { $quantity } preferito
        *[other] { $quantity } preferiti
     }
+
+## The import process identifies extensions installed in other supported
+## browsers and installs the corresponding (matching) extensions compatible
+## with Firefox, if available.
+
+# Shown in the migration wizard after importing all matched extensions
+# from supported browsers.
+#
+# Variables:
+#   $quantity (Number): the number of successfully imported extensions
+migration-wizard-progress-success-extensions =
+    { $quantity ->
+        [one] { $quantity } estensione
+       *[other] { $quantity } estensioni
+    }
+
+# Shown in the migration wizard after importing a partial amount of
+# matched extensions from supported browsers.
+#
+# Variables:
+#   $matched (Number): the number of matched imported extensions
+#   $quantity (Number): the number of total extensions found during import
+migration-wizard-progress-partial-success-extensions = { $matched } di { $quantity } estensioni
+
+migration-wizard-progress-extensions-support-link = Scopri in che modo { -brand-product-name } trova corrispondenze tra le estensioni
+# Shown in the migration wizard if there are no matched extensions
+# on import from supported browsers.
+migration-wizard-progress-no-matched-extensions = Nessuna estensione corrispondente
+
+migration-wizard-progress-extensions-addons-link = Scopri estensioni per { -brand-short-name }
+
+##
+
 # Shown in the migration wizard after importing passwords from another
 # browser has completed.
 #
@@ -184,9 +248,18 @@ migration-wizard-progress-success-history =
        *[other] Degli ultimi { $maxAgeInDays } giorni
     }
 migration-wizard-progress-success-formdata = Cronologia moduli
+# Shown in the migration wizard after importing payment methods from another
+# browser has completed.
+#
+# Variables:
+#  $quantity (Number): the number of successfully imported payment methods
+migration-wizard-progress-success-payment-methods =
+    { $quantity ->
+        [one] { $quantity } metodo di pagamento
+       *[other] { $quantity } metodi di pagamento
+    }
 migration-wizard-safari-permissions-sub-header = Per importare i segnalibri di Safari e la cronologia di navigazione:
 migration-wizard-safari-instructions-continue = Seleziona “Continua”
 migration-wizard-safari-instructions-folder = Seleziona la cartella Safari nell’elenco e fai clic su “Apri”
-migration-wizard-safari-select-button = Seleziona file
 
 

@@ -36,6 +36,7 @@ migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge Beta
 migration-wizard-migrator-display-name-edge-legacy = Microsoft Edge (Legado)
 migration-wizard-migrator-display-name-firefox = Firefox
 migration-wizard-migrator-display-name-file-password-csv = Senhas de arquivo CSV
+migration-wizard-migrator-display-name-file-bookmarks = Favoritos de arquivo HTML
 migration-wizard-migrator-display-name-ie = Internet Explorer
 migration-wizard-migrator-display-name-opera = Opera
 migration-wizard-migrator-display-name-opera-gx = Opera GX
@@ -57,12 +58,18 @@ migration-bookmarks-option-label = Favoritos
 migration-favorites-option-label = Favoritos
 migration-logins-and-passwords-option-label = Contas e senhas salvas
 migration-history-option-label = Histórico de navegação
+migration-extensions-option-label = Extensões
 migration-form-autofill-option-label = Dados de preenchimento automático de formulários
+migration-payment-methods-option-label = Métodos de pagamento
+migration-cookies-option-label = Cookies
+migration-session-option-label = Janelas e abas
+migration-otherdata-option-label = Outros dados
 migration-passwords-from-file-progress-header = Importar arquivo de senhas
 migration-passwords-from-file-success-header = Senhas importadas com sucesso
 migration-passwords-from-file = Verificando senhas no arquivo
 migration-passwords-new = Novas senhas
 migration-passwords-updated = Senhas existentes
+migration-passwords-from-file-no-valid-data = O arquivo não tem nenhuma informação válida de senhas. Escolha outro arquivo.
 migration-passwords-from-file-picker-title = Importar arquivo de senhas
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
@@ -98,6 +105,31 @@ migration-wizard-progress-success-updated-passwords =
         [one] { $updatedEntries } atualizada
        *[other] { $updatedEntries } atualizadas
     }
+migration-bookmarks-from-file-picker-title = Importar arquivo de favoritos
+migration-bookmarks-from-file-progress-header = Importando favoritos
+migration-bookmarks-from-file = Favoritos
+migration-bookmarks-from-file-success-header = Favoritos importados com sucesso
+migration-bookmarks-from-file-no-valid-data = O arquivo não tem nenhuma informação de favoritos. Escolha outro arquivo.
+# A description for the .html file format that may be shown as the file type
+# filter by the operating system.
+migration-bookmarks-from-file-html-filter-title =
+    { PLATFORM() ->
+        [macos] Documento HTML
+       *[other] Arquivo HTML
+    }
+# A description for the .json file format that may be shown as the file type
+# filter by the operating system.
+migration-bookmarks-from-file-json-filter-title = Arquivo JSON
+# Shown in the migration wizard after importing bookmarks from a file
+# has completed.
+#
+# Variables:
+#  $newEntries (Number): the number of imported bookmarks.
+migration-wizard-progress-success-new-bookmarks =
+    { $newEntries ->
+        [one] { $newEntries } favorito
+       *[other] { $newEntries } favoritos
+    }
 migration-import-button-label = Importar
 migration-choose-to-import-from-file-button-label = Importar de arquivo
 migration-import-from-file-button-label = Selecionar arquivo
@@ -119,7 +151,9 @@ migration-list-bookmark-label = favoritos
 migration-list-favorites-label = favoritos
 migration-list-password-label = senhas
 migration-list-history-label = histórico
+migration-list-extensions-label = extensões
 migration-list-autofill-label = dados de preenchimento automático
+migration-list-payment-methods-label = métodos de pagamento
 
 ##
 
@@ -159,6 +193,36 @@ migration-wizard-progress-success-favorites =
         [one] { $quantity } favorito
        *[other] { $quantity } favoritos
     }
+
+## The import process identifies extensions installed in other supported
+## browsers and installs the corresponding (matching) extensions compatible
+## with Firefox, if available.
+
+# Shown in the migration wizard after importing all matched extensions
+# from supported browsers.
+#
+# Variables:
+#   $quantity (Number): the number of successfully imported extensions
+migration-wizard-progress-success-extensions =
+    { $quantity ->
+        [one] { $quantity } extensão
+       *[other] { $quantity } extensões
+    }
+# Shown in the migration wizard after importing a partial amount of
+# matched extensions from supported browsers.
+#
+# Variables:
+#   $matched (Number): the number of matched imported extensions
+#   $quantity (Number): the number of total extensions found during import
+migration-wizard-progress-partial-success-extensions = { $matched } de { $quantity } extensões
+migration-wizard-progress-extensions-support-link = Saiba como o { -brand-product-name } encontra correspondências entre extensões
+# Shown in the migration wizard if there are no matched extensions
+# on import from supported browsers.
+migration-wizard-progress-no-matched-extensions = Nenhuma extensão correspondente
+migration-wizard-progress-extensions-addons-link = Descubra extensões para o { -brand-short-name }
+
+##
+
 # Shown in the migration wizard after importing passwords from another
 # browser has completed.
 #
@@ -180,7 +244,16 @@ migration-wizard-progress-success-history =
        *[other] Dos últimos { $maxAgeInDays } dias
     }
 migration-wizard-progress-success-formdata = Histórico de formulários
+# Shown in the migration wizard after importing payment methods from another
+# browser has completed.
+#
+# Variables:
+#  $quantity (Number): the number of successfully imported payment methods
+migration-wizard-progress-success-payment-methods =
+    { $quantity ->
+        [one] { $quantity } método de pagamento
+       *[other] { $quantity } métodos de pagamento
+    }
 migration-wizard-safari-permissions-sub-header = Para importar favoritos e histórico de navegação do Safari:
 migration-wizard-safari-instructions-continue = Selecione “Avançar”
 migration-wizard-safari-instructions-folder = Selecione a pasta Safari na lista e escolha “Abrir”
-migration-wizard-safari-select-button = Selecionar arquivo

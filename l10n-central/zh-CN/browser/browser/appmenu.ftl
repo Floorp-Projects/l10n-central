@@ -33,6 +33,8 @@ appmenuitem-print =
     .label = 打印…
 appmenuitem-find-in-page =
     .label = 在页面中查找…
+appmenuitem-translate =
+    .label = 翻译页面
 appmenuitem-zoom =
     .value = 缩放
 appmenuitem-more-tools =
@@ -209,6 +211,9 @@ appmenu-recently-closed-tabs =
     .label = 最近关闭的标签页
 appmenu-recently-closed-windows =
     .label = 最近关闭的窗口
+# This allows to search through the browser's history.
+appmenu-search-history =
+    .label = 搜索历史记录
 
 ## Help panel
 
@@ -228,6 +233,8 @@ appmenu-help-report-site-issue =
 appmenu-help-share-ideas =
     .label = 分享想法和意见反馈…
     .accesskey = S
+appmenu-help-switch-device =
+    .label = 转入新设备
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

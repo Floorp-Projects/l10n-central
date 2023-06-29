@@ -76,6 +76,7 @@ protections-panel-site-not-working-view-issue-list-forms = fungováním formulá
 protections-panel-site-not-working-view-issue-list-payments = platbami
 protections-panel-site-not-working-view-issue-list-comments = psaním komentářů
 protections-panel-site-not-working-view-issue-list-videos = přehráváním videí
+protections-panel-site-not-working-view-issue-list-fonts = Písma
 protections-panel-site-not-working-view-send-report = Poslat hlášení
 
 ##
@@ -99,6 +100,19 @@ protections-panel-content-blocking-breakage-report-view-description =
         [with-cases] Blokování sledovacích prvků může na některých stránkách způsobovat problémy. Jejich nahlášením významně pomůžete { -brand-short-name(case: "acc") } dále vylepšovat. S vaším hlášením se Mozille odešle URL stránky a informace o vašem nastavení blokování obsahu. <label data-l10n-name="learn-more">Zjistit více</label>
        *[no-cases] Blokování sledovacích prvků může na některých stránkách způsobovat problémy. Jejich nahlášením významně pomůžete aplikaci { -brand-short-name } dále vylepšovat. S vaším hlášením se Mozille odešle URL stránky a informace o vašem nastavení blokování obsahu. <label data-l10n-name="learn-more">Zjistit více</label>
     }
+protections-panel-content-blocking-breakage-report-view-description2 =
+    { -brand-short-name.case-status ->
+        [with-cases]
+            { -vendor-short-name.case-status ->
+                [with-cases] Blokování sledovacích prvků může na některých stránkách způsobovat problémy. Jejich nahlášením významně pomůžete { -brand-short-name(case: "acc") } dále vylepšovat. S vaším hlášením se { -vendor-short-name(case: "dat") } odešle URL stránky a informace o vašem nastavení blokování obsahu.
+               *[no-cases] Blokování sledovacích prvků může na některých stránkách způsobovat problémy. Jejich nahlášením významně pomůžete { -brand-short-name(case: "acc") } dále vylepšovat. S vaším hlášením se organizaci { -vendor-short-name } odešle URL stránky a informace o vašem nastavení blokování obsahu.
+            }
+       *[no-cases]
+            { -vendor-short-name.case-status ->
+                [with-cases] Blokování sledovacích prvků může na některých stránkách způsobovat problémy. Jejich nahlášením významně pomůžete aplikaci { -brand-short-name } dále vylepšovat. S vaším hlášením se { -vendor-short-name(case: "dat") } odešle URL stránky a informace o vašem nastavení blokování obsahu.
+               *[no-cases] Blokování sledovacích prvků může na některých stránkách způsobovat problémy. Jejich nahlášením významně pomůžete aplikaci { -brand-short-name } dále vylepšovat. S vaším hlášením se organizaci { -vendor-short-name } odešle URL stránky a informace o vašem nastavení blokování obsahu.
+            }
+    }
 protections-panel-content-blocking-breakage-report-view-collection-url = URL
 protections-panel-content-blocking-breakage-report-view-collection-url-label =
     .aria-label = URL
@@ -112,11 +126,18 @@ protections-panel-content-blocking-breakage-report-view-send-report =
 
 # Cookie Banner Handling
 
+protections-panel-cookie-banner-handling-header = Omezení cookie lišt
 protections-panel-cookie-banner-handling-enabled = Zapnuto pro tento web
 protections-panel-cookie-banner-handling-disabled = Vypnuto pro tento web
 protections-panel-cookie-banner-handling-undetected = Server není aktuálně podporován
-protections-panel-cookie-banner-view-go-back =
-    .aria-label = Zpět
+protections-panel-cookie-banner-view-title =
+    .title = Omezení cookie lišt
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+protections-panel-cookie-banner-view-turn-off-for-site = Chcete vypnout omezení cookie lišt pro { $host }?
+protections-panel-cookie-banner-view-turn-on-for-site = Chcete zapnout omezení cookie lišt pro tento web?
+protections-panel-cookie-banner-view-cookie-clear-warning = { -brand-short-name } smaže cookies tohoto webu a stránku znovu načte. Vymazání všech cookies může způsobit vaše odhlášení nebo třeba vyprázdnění nákupního koše.
+protections-panel-cookie-banner-view-turn-on-description = { -brand-short-name } se pokusí automaticky odmítnout všechny žádosti o povolení cookies na podporovaných serverech.
 protections-panel-cookie-banner-view-cancel = Zrušit
 protections-panel-cookie-banner-view-turn-off = Vypnout
 protections-panel-cookie-banner-view-turn-on = Zapnout

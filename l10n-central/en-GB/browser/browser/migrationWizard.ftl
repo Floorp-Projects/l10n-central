@@ -36,6 +36,7 @@ migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge Beta
 migration-wizard-migrator-display-name-edge-legacy = Microsoft Edge Legacy
 migration-wizard-migrator-display-name-firefox = Firefox
 migration-wizard-migrator-display-name-file-password-csv = Passwords from CSV file
+migration-wizard-migrator-display-name-file-bookmarks = Bookmarks from HTML file
 migration-wizard-migrator-display-name-ie = Microsoft Internet Explorer
 migration-wizard-migrator-display-name-opera = Opera
 migration-wizard-migrator-display-name-opera-gx = Opera GX
@@ -57,12 +58,18 @@ migration-bookmarks-option-label = Bookmarks
 migration-favorites-option-label = Favourites
 migration-logins-and-passwords-option-label = Saved logins and passwords
 migration-history-option-label = Browsing history
+migration-extensions-option-label = Extensions
 migration-form-autofill-option-label = Form autofill data
+migration-payment-methods-option-label = Payment methods
+migration-cookies-option-label = Cookies
+migration-session-option-label = Windows and tabs
+migration-otherdata-option-label = Other data
 migration-passwords-from-file-progress-header = Import Passwords File
 migration-passwords-from-file-success-header = Passwords Imported Successfully
 migration-passwords-from-file = Checking file for passwords
 migration-passwords-new = New passwords
 migration-passwords-updated = Existing passwords
+migration-passwords-from-file-no-valid-data = The file doesn’t include any valid password data. Pick another file.
 migration-passwords-from-file-picker-title = Import Passwords File
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
@@ -98,11 +105,37 @@ migration-wizard-progress-success-updated-passwords =
         [one] { $updatedEntries } updated
        *[other] { $updatedEntries } updated
     }
+migration-bookmarks-from-file-picker-title = Import Bookmarks File
+migration-bookmarks-from-file-progress-header = Importing Bookmarks
+migration-bookmarks-from-file = Bookmarks
+migration-bookmarks-from-file-success-header = Bookmarks Imported Successfully
+migration-bookmarks-from-file-no-valid-data = The file doesn’t include any bookmark data. Pick another file.
+# A description for the .html file format that may be shown as the file type
+# filter by the operating system.
+migration-bookmarks-from-file-html-filter-title =
+    { PLATFORM() ->
+        [macos] HTML Document
+       *[other] HTML File
+    }
+# A description for the .json file format that may be shown as the file type
+# filter by the operating system.
+migration-bookmarks-from-file-json-filter-title = JSON File
+# Shown in the migration wizard after importing bookmarks from a file
+# has completed.
+#
+# Variables:
+#  $newEntries (Number): the number of imported bookmarks.
+migration-wizard-progress-success-new-bookmarks =
+    { $newEntries ->
+        [one] { $newEntries } bookmark
+       *[other] { $newEntries } bookmarks
+    }
 migration-import-button-label = Import
 migration-choose-to-import-from-file-button-label = Import From File
 migration-import-from-file-button-label = Select File
 migration-cancel-button-label = Cancel
 migration-done-button-label = Done
+migration-continue-button-label = Continue
 migration-wizard-import-browser-no-browsers = { -brand-short-name } couldn’t find any programmes that contain bookmark, history or password data.
 migration-wizard-import-browser-no-resources = There was an error. { -brand-short-name } can’t find any data to import from that browser profile.
 
@@ -118,7 +151,9 @@ migration-list-bookmark-label = bookmarks
 migration-list-favorites-label = favourites
 migration-list-password-label = passwords
 migration-list-history-label = history
+migration-list-extensions-label = extensions
 migration-list-autofill-label = autofill data
+migration-list-payment-methods-label = payment methods
 
 ##
 
@@ -158,6 +193,36 @@ migration-wizard-progress-success-favorites =
         [one] { $quantity } favourite
        *[other] { $quantity } favourites
     }
+
+## The import process identifies extensions installed in other supported
+## browsers and installs the corresponding (matching) extensions compatible
+## with Firefox, if available.
+
+# Shown in the migration wizard after importing all matched extensions
+# from supported browsers.
+#
+# Variables:
+#   $quantity (Number): the number of successfully imported extensions
+migration-wizard-progress-success-extensions =
+    { $quantity ->
+        [one] { $quantity } extension
+       *[other] { $quantity } extensions
+    }
+# Shown in the migration wizard after importing a partial amount of
+# matched extensions from supported browsers.
+#
+# Variables:
+#   $matched (Number): the number of matched imported extensions
+#   $quantity (Number): the number of total extensions found during import
+migration-wizard-progress-partial-success-extensions = { $matched } of { $quantity } extensions
+migration-wizard-progress-extensions-support-link = Learn how { -brand-product-name } matches extensions
+# Shown in the migration wizard if there are no matched extensions
+# on import from supported browsers.
+migration-wizard-progress-no-matched-extensions = No matching extensions
+migration-wizard-progress-extensions-addons-link = Browse extensions for { -brand-short-name }
+
+##
+
 # Shown in the migration wizard after importing passwords from another
 # browser has completed.
 #
@@ -179,7 +244,16 @@ migration-wizard-progress-success-history =
        *[other] From the last { $maxAgeInDays } days
     }
 migration-wizard-progress-success-formdata = Form history
+# Shown in the migration wizard after importing payment methods from another
+# browser has completed.
+#
+# Variables:
+#  $quantity (Number): the number of successfully imported payment methods
+migration-wizard-progress-success-payment-methods =
+    { $quantity ->
+        [one] { $quantity } payment method
+       *[other] { $quantity } payment methods
+    }
 migration-wizard-safari-permissions-sub-header = To import Safari bookmarks and browsing history:
 migration-wizard-safari-instructions-continue = Select “Continue”
 migration-wizard-safari-instructions-folder = Select Safari folder in the list and choose “Open”
-migration-wizard-safari-select-button = Select File

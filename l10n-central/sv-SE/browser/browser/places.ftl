@@ -23,6 +23,8 @@ places-open-in-window =
 places-open-in-private-window =
     .label = Öppna i nytt privat fönster
     .accesskey = p
+places-empty-bookmarks-folder =
+    .label = (Tom)
 places-add-bookmark =
     .label = Lägg till bokmärke…
     .accesskey = b
@@ -83,6 +85,15 @@ places-delete-folder =
            *[other] Ta bort mappar
         }
     .accesskey = b
+# Variables:
+#   $count (number) - The number of pages selected for removal.
+places-delete-page =
+    .label =
+        { $count ->
+            [1] Ta bort sida
+           *[other] Ta bort sidor
+        }
+    .accesskey = T
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
 managed-bookmarks =
     .label = Hanterade bokmärken
@@ -105,6 +116,15 @@ places-delete-bookmark =
            *[other] Ta bort bokmärken
         }
     .accesskey = b
+# Variables:
+#   $count (number) - The number of bookmarks being added.
+places-create-bookmark =
+    .label =
+        { $count ->
+            [1] Bokmärk sida…
+           *[other] Bokmärk sidor…
+        }
+    .accesskey = B
 places-untag-bookmark =
     .label = Ta bort tagg
     .accesskey = T
@@ -122,9 +142,6 @@ places-forget-about-this-site-forget = Glöm
 places-library =
     .title = Bibliotek
     .style = width:700px; height:500px;
-places-library2 =
-    .title = Bibliotek
-    .style = min-width:700px; min-height:500px;
 places-library3 =
     .title = Bibliotek
 places-organize-button =
@@ -200,6 +217,27 @@ places-view-sort-col-date-added =
     .label = Ursprungsdatum
 places-view-sort-col-last-modified =
     .label = Senast ändrad
+places-view-sortby-name =
+    .label = Sortera efter namn
+    .accesskey = N
+places-view-sortby-url =
+    .label = Sortera efter plats
+    .accesskey = P
+places-view-sortby-date =
+    .label = Sortera efter senaste besök
+    .accesskey = B
+places-view-sortby-visit-count =
+    .label = Sortera på antal besök
+    .accesskey = A
+places-view-sortby-date-added =
+    .label = Sortera på tillagd
+    .accesskey = T
+places-view-sortby-last-modified =
+    .label = Sortera efter senast uppdaterad
+    .accesskey = u
+places-view-sortby-tags =
+    .label = Sortera efter etiketter
+    .accesskey = e
 places-cmd-find-key =
     .key = f
 places-back-button =
@@ -207,3 +245,27 @@ places-back-button =
 places-forward-button =
     .tooltiptext = Gå framåt
 places-details-pane-select-an-item-description = Markera en post för att visa och redigera dess egenskaper
+places-details-pane-no-items =
+    .value = Inga poster
+# Variables:
+#   $count (Number): number of items
+places-details-pane-items-count =
+    .value =
+        { $count ->
+            [one] En post
+           *[other] { $count } poster
+        }
+
+## Strings used as a placeholder in the Library search field. For example,
+## "Search History" stands for "Search through the browser's history".
+
+places-search-bookmarks =
+    .placeholder = Sök bokmärken
+places-search-history =
+    .placeholder = Sök i historik
+places-search-downloads =
+    .placeholder = Sök hämtade filer
+
+##
+
+places-locked-prompt = Systemet med bokmärken och historik kommer inte att fungera eftersom en av { -brand-short-name } filer används av ett annat program. Vissa säkerhetsprogram kan orsaka detta problem.

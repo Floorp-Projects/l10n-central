@@ -36,6 +36,7 @@ migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge béta
 migration-wizard-migrator-display-name-edge-legacy = Microsoft Edge Legacy
 migration-wizard-migrator-display-name-firefox = Firefox
 migration-wizard-migrator-display-name-file-password-csv = Jelszavak egy CSV-fájlból
+migration-wizard-migrator-display-name-file-bookmarks = Könyvjelzők HTML-fájlból
 migration-wizard-migrator-display-name-ie = Microsoft Internet Explorer
 migration-wizard-migrator-display-name-opera = Opera
 migration-wizard-migrator-display-name-opera-gx = Opera GX
@@ -58,6 +59,7 @@ migration-favorites-option-label = Kedvencek
 migration-logins-and-passwords-option-label = Mentett bejelentkezések és jelszavak
 migration-history-option-label = Böngészési előzmények
 migration-form-autofill-option-label = Adatok automatikus kitöltése
+migration-payment-methods-option-label = Fizetési módok
 migration-passwords-from-file-progress-header = Jelszófájl importálása
 migration-passwords-from-file-success-header = A jelszavak sikeresen importálva
 migration-passwords-from-file = Jelszavak keresése a fájlban
@@ -98,6 +100,30 @@ migration-wizard-progress-success-updated-passwords =
         [one] { $updatedEntries } frissítve
        *[other] { $updatedEntries } frissítve
     }
+migration-bookmarks-from-file-picker-title = Könyvjelzőfájl importálása
+migration-bookmarks-from-file-progress-header = Könyvjelzők importálása
+migration-bookmarks-from-file = Könyvjelzők
+migration-bookmarks-from-file-success-header = A könyvjelzők sikeresen importálva
+# A description for the .html file format that may be shown as the file type
+# filter by the operating system.
+migration-bookmarks-from-file-html-filter-title =
+    { PLATFORM() ->
+        [macos] HTML-dokumentum
+       *[other] HTML-fájl
+    }
+# A description for the .json file format that may be shown as the file type
+# filter by the operating system.
+migration-bookmarks-from-file-json-filter-title = JSON-fájl
+# Shown in the migration wizard after importing bookmarks from a file
+# has completed.
+#
+# Variables:
+#  $newEntries (Number): the number of imported bookmarks.
+migration-wizard-progress-success-new-bookmarks =
+    { $newEntries ->
+        [one] { $newEntries } könyvjelző
+       *[other] { $newEntries } könyvjelző
+    }
 migration-import-button-label = Importálás
 migration-choose-to-import-from-file-button-label = Importálás fájlból
 migration-import-from-file-button-label = Fájl kiválasztása
@@ -120,6 +146,7 @@ migration-list-favorites-label = kedvencek
 migration-list-password-label = jelszavak
 migration-list-history-label = előzmények
 migration-list-autofill-label = adatok automatikus kitöltése
+migration-list-payment-methods-label = fizetési módok
 
 ##
 
@@ -180,7 +207,16 @@ migration-wizard-progress-success-history =
        *[other] Az elmúlt { $maxAgeInDays } napból
     }
 migration-wizard-progress-success-formdata = Űrlapok előzményei
+# Shown in the migration wizard after importing payment methods from another
+# browser has completed.
+#
+# Variables:
+#  $quantity (Number): the number of successfully imported payment methods
+migration-wizard-progress-success-payment-methods =
+    { $quantity ->
+        [one] { $quantity } fizetési mód
+       *[other] { $quantity } fizetési mód
+    }
 migration-wizard-safari-permissions-sub-header = A Safari könyvjelzőinek és böngészési előzményeinek importálásához:
 migration-wizard-safari-instructions-continue = Válassza a „Folytatás” gombot
 migration-wizard-safari-instructions-folder = Válassza ki a Safari mappát a listából, és válassza a „Megnyitás” lehetőséget
-migration-wizard-safari-select-button = Fájl kiválasztása

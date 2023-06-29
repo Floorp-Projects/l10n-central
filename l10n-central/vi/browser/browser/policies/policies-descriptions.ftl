@@ -36,8 +36,8 @@ policy-DisableDefaultBrowserAgent = Ngăn chặn tác nhân người dùng trìn
 policy-DisableDeveloperTools = Chặn truy cập đến công cụ nhà phát triển.
 policy-DisableFeedbackCommands = Tắt các lệnh để gửi phản hồi từ bảng chọn trợ giúp (gửi phản hồi và báo cáo trang web lừa đảo).
 policy-DisableFirefoxAccounts = Vô hiệu hóa { -fxaccount-brand-name } dựa trên các dịch vụ, bao gồm cả đồng bộ.
-# Firefox Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = Vô hiệu hóa tính năng Firefox Screenshots.
+# Floorp Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Vô hiệu hóa tính năng Floorp Screenshots.
 policy-DisableFirefoxStudies = Chặn { -brand-short-name } chạy các nghiên cứu.
 policy-DisableForgetButton = Chặn truy cập vào nút Quên.
 policy-DisableFormHistory = Không lưu lịch sử tìm kiếm và biểu mẫu.
@@ -116,6 +116,8 @@ policy-SearchEngines = Cấu hình cài đặt công cụ tìm kiếm. Chính s�
 policy-SearchSuggestEnabled = Kích hoạt hoặc vô hiệu hóa các đề xuất tìm kiếm.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Cài đặt các mô-đun PKCS # 11.
+# For more information, see https://wikipedia.org/wiki/PKCS_11
+policy-SecurityDevices2 = Thêm hoặc xóa module PKCS #11.
 policy-ShowHomeButton = Hiển thị nút trang chủ trên thanh công cụ.
 policy-SSLVersionMax = Chỉnh phiên bản SSL tối đa.
 policy-SSLVersionMin = Chỉnh phiên bản SSL tối thiểu.

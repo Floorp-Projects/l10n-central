@@ -36,6 +36,7 @@ migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge Beta
 migration-wizard-migrator-display-name-edge-legacy = Microsoft Edge Legacy
 migration-wizard-migrator-display-name-firefox = Firefox
 migration-wizard-migrator-display-name-file-password-csv = Palavras-passe do ficheiro CSV
+migration-wizard-migrator-display-name-file-bookmarks = Marcadores de ficheiro HTML
 migration-wizard-migrator-display-name-ie = Microsoft Internet Explorer
 migration-wizard-migrator-display-name-opera = Opera
 migration-wizard-migrator-display-name-opera-gx = Opera GX
@@ -58,6 +59,10 @@ migration-favorites-option-label = Favoritos
 migration-logins-and-passwords-option-label = Credenciais e palavras-passe guardadas
 migration-history-option-label = Histórico de navegação
 migration-form-autofill-option-label = Dados de preenchimento automático de formulários
+migration-payment-methods-option-label = Métodos de pagamento
+migration-cookies-option-label = Cookies
+migration-session-option-label = Janelas e separadores
+migration-otherdata-option-label = Outros dados
 migration-passwords-from-file-progress-header = Importar ficheiro de Palavras-passe
 migration-passwords-from-file-success-header = Palavras-passe importadas com sucesso
 migration-passwords-from-file = A verificar palavras-passe no ficheiro
@@ -98,6 +103,31 @@ migration-wizard-progress-success-updated-passwords =
         [one] { $updatedEntries } atualizada
        *[other] { $updatedEntries } atualizadas
     }
+migration-bookmarks-from-file-picker-title = Importar ficheiro de Marcadores
+migration-bookmarks-from-file-progress-header = A importar Marcadores…
+migration-bookmarks-from-file = Marcadores
+migration-bookmarks-from-file-success-header = Marcadores importados com sucesso
+migration-bookmarks-from-file-no-valid-data = O ficheiro não inclui quaisquer dados de marcadores. Escolha outro ficheiro.
+# A description for the .html file format that may be shown as the file type
+# filter by the operating system.
+migration-bookmarks-from-file-html-filter-title =
+    { PLATFORM() ->
+        [macos] Documento HTML
+       *[other] Ficheiro HTML
+    }
+# A description for the .json file format that may be shown as the file type
+# filter by the operating system.
+migration-bookmarks-from-file-json-filter-title = Ficheiro JSON
+# Shown in the migration wizard after importing bookmarks from a file
+# has completed.
+#
+# Variables:
+#  $newEntries (Number): the number of imported bookmarks.
+migration-wizard-progress-success-new-bookmarks =
+    { $newEntries ->
+        [one] { $newEntries } marcador
+       *[other] { $newEntries } marcadores
+    }
 migration-import-button-label = Importar
 migration-choose-to-import-from-file-button-label = Importar de um Ficheiro
 migration-import-from-file-button-label = Selecionar Ficheiro
@@ -120,6 +150,7 @@ migration-list-favorites-label = favoritos
 migration-list-password-label = palavras-passe
 migration-list-history-label = histórico
 migration-list-autofill-label = dados de preenchimento automático
+migration-list-payment-methods-label = métodos de pagamento
 
 ##
 
@@ -180,7 +211,16 @@ migration-wizard-progress-success-history =
        *[other] Dos últimos { $maxAgeInDays } dias
     }
 migration-wizard-progress-success-formdata = Histórico de formulários
+# Shown in the migration wizard after importing payment methods from another
+# browser has completed.
+#
+# Variables:
+#  $quantity (Number): the number of successfully imported payment methods
+migration-wizard-progress-success-payment-methods =
+    { $quantity ->
+        [one] { $quantity } método de pagamento
+       *[other] { $quantity } métodos de pagamento
+    }
 migration-wizard-safari-permissions-sub-header = Para importar os favoritos e histórico de navegação do Safari:
 migration-wizard-safari-instructions-continue = Selecione “Continuar”
 migration-wizard-safari-instructions-folder = Selecione a pasta Safari na lista e escolha “Abrir”
-migration-wizard-safari-select-button = Selecionar Ficheiro

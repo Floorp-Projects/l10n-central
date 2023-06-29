@@ -36,8 +36,8 @@ policy-DisableDefaultBrowserAgent = Hindre at standardnettlesaren gjer noko. Det
 policy-DisableDeveloperTools = Blokker tilgang til utviklarverktøya.
 policy-DisableFeedbackCommands = Deaktiver kommandoar for å sende tilbakemelding frå Hjelp-menyen (Gje tilbakemelding og Rapporter villeiande nettstad).
 policy-DisableFirefoxAccounts = Deaktiver { -fxaccount-brand-name }-baserte tenester, inkludert Sync.
-# Firefox Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = Deaktiver funksjonen Firefox Screenshots
+# Floorp Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Deaktiver funksjonen Floorp Screenshots
 policy-DisableFirefoxStudies = Hindre { -brand-short-name } frå å køyre undersøkingar.
 policy-DisableForgetButton = Hindre tilgang til knappen Gløym.
 policy-DisableFormHistory = Ikkje lagre søkje- og skjemahistorikk.
@@ -116,6 +116,8 @@ policy-SearchEngines = Konfigurer søkjemotorinnstillingar. Denne policyen er ku
 policy-SearchSuggestEnabled = Slå på eller av søkjeforslag.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Installer PKCS #11-modular.
+# For more information, see https://wikipedia.org/wiki/PKCS_11
+policy-SecurityDevices2 = Legg til eller slett PKCS #11-modular.
 policy-ShowHomeButton = Vis heimknappen på verktøylinja.
 policy-SSLVersionMax = Still inn den maksimale SSL-versjonen.
 policy-SSLVersionMin = Still inn den minimale SSL-versjonen.

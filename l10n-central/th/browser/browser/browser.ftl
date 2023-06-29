@@ -38,13 +38,15 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (การเรียกดูแบบส่วนตัว)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (การเรียกดูแบบส่วนตัว)
-# These are the default window titles everywhere except macOS. The first two
-# attributes are used when the web content opened has no title:
+# These are the default window titles everywhere except macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
 #
 # default - "Mozilla Firefox"
 # private - "Mozilla Firefox (Private Browsing)"
 #
-# The last two are for use when there *is* a content title.
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
 # Variables:
 #  $content-title (String): the title of the web content.
 browser-main-window-window-titles =
@@ -52,14 +54,17 @@ browser-main-window-window-titles =
     .data-title-private = การเรียกดูแบบส่วนตัวของ { -brand-full-name }
     .data-content-title-default = { $content-title } — { -brand-full-name }
     .data-content-title-private = { $content-title } — การเรียกดูแบบส่วนตัวของ { -brand-full-name }
-# These are the default window titles on macOS. The first two are for use when
-# there is no content title:
+# These are the default window titles on macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
+#
 #
 # "default" - "Mozilla Firefox"
 # "private" - "Mozilla Firefox — (Private Browsing)"
 #
-# The last two are for use when there *is* a content title.
-# Do not use the brand name in the last two attributes, as we do on non-macOS.
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
+# Do not use the brand name in these, as we do on non-macOS.
 #
 # Also note the other subtle difference here: we use a `-` to separate the
 # brand name from `(Private Browsing)`, which does not happen on other OSes.
@@ -143,6 +148,8 @@ urlbar-search-tips-confirm-short = เข้าใจแล้ว
 urlbar-tip-icon-description =
     .alt = เคล็ดลับ:
 urlbar-result-menu-button =
+    .title = เปิดเมนู
+urlbar-result-menu-button-feedback = ข้อคิดเห็น
     .title = เปิดเมนู
 urlbar-result-menu-learn-more =
     .label = เรียนรู้เพิ่มเติม
@@ -667,6 +674,12 @@ reader-view-close-button =
 ## Variables:
 ##   $shortcut (String) - Keyboard shortcut to execute the command.
 
+picture-in-picture-urlbar-button-open =
+    .tooltiptext = เปิดการแสดงภาพซ้อนภาพ ({ $shortcut })
+picture-in-picture-urlbar-button-close =
+    .tooltiptext = ปิดการแสดงภาพซ้อนภาพ ({ $shortcut })
+picture-in-picture-panel-header = ภาพที่เล่นควบคู่
+picture-in-picture-panel-headline = เว็บไซต์นี้ไม่แนะนำภาพที่เล่นควบคู่
 
 ## Full Screen and Pointer Lock UI
 
@@ -813,6 +826,9 @@ toolbar-overflow-customize-button =
 toolbar-button-email-link =
     .label = ส่งลิงก์ทางอีเมล
     .tooltiptext = ส่งลิงก์ที่ไปยังหน้านี้ทางอีเมล
+toolbar-button-logins =
+    .label = รหัสผ่าน
+    .tooltiptext = ดูและจัดการรหัสผ่านที่บันทึกไว้ของคุณ
 # Variables:
 #  $shortcut (String): keyboard shortcut to save a copy of the page
 toolbar-button-save-page =
@@ -962,6 +978,10 @@ unified-extensions-button-permissions-needed =
         ส่วนขยาย
         ต้องการสิทธิอนุญาต
 
+## Unified extensions button when some extensions are quarantined.
+## Note that the new line is intentionally part of the tooltip.
+
+
 ## Autorefresh blocker
 
 refresh-blocked-refresh-label = { -brand-short-name } ได้ป้องกันไม่ให้หน้านี้โหลดใหม่โดยอัตโนมัติ
@@ -981,4 +1001,39 @@ firefox-relay-offer-what-relay-does = เราจะส่งต่ออีเ
 
 ## Popup Notification
 
+firefox-relay-offer-why-to-use-relay = ตัวปกปิดที่ปลอดภัยและใช้ง่ายของเราช่วยปกป้องข้อมูลประจำตัวของคุณและป้องกันสแปมด้วยการซ่อนที่อยู่อีเมลของคุณ
+# Variables:
+#  $useremail (String): user email that will receive messages
+firefox-relay-offer-what-relay-provides = อีเมลทั้งหมดที่ส่งไปยังตัวปกปิดอีเมลของคุณจะถูกส่งต่อไปยัง <strong>{ $useremail }</strong> (นอกจากคุณจะตัดสินใจปิดกั้นอีเมลเหล่านั้น)
+firefox-relay-offer-legal-notice = การคลิก “ใช้ตัวปกปิดอีเมล” ถือว่าคุณยอมรับ<label data-l10n-name="tos-url">เงื่อนไขการใช้บริการ</label>และ<label data-l10n-name="privacy-url">ข้อกำหนดความเป็นส่วนตัว</label>
+
+## Add-on Pop-up Notifications
+
+popup-notification-addon-install-unsigned =
+    .value = (ไม่ได้รับการยืนยัน)
 popup-notification-xpinstall-prompt-learn-more = เรียนรู้เพิ่มเติมเกี่ยวกับการติดตั้งส่วนเสริมอย่างปลอดภัย
+
+## Pop-up warning
+
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-message = { -brand-short-name } ได้ป้องกันไม่ให้ไซต์นี้เปิด { $popupCount } หน้าต่างป๊อปอัป
+# The singular form is left out for English, since the number of blocked pop-ups is always greater than 1.
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-exceeded-message = { -brand-short-name } ได้ป้องกันไม่ให้ไซต์นี้เปิดมากกว่า { $popupCount } หน้าต่างป๊อปอัป
+popup-warning-button =
+    .label =
+        { PLATFORM() ->
+            [windows] ตัวเลือก
+           *[other] การตั้งค่า
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] ต
+           *[other] ค
+        }
+# Variables:
+#   $popupURI (String): the URI for the pop-up window
+popup-show-popup-menuitem =
+    .label = แสดง “{ $popupURI }”

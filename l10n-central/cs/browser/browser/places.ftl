@@ -23,6 +23,8 @@ places-open-in-window =
 places-open-in-private-window =
     .label = Otevřít v novém anonymním okně
     .accesskey = t
+places-empty-bookmarks-folder =
+    .label = (prázdný)
 places-add-bookmark =
     .label = Nová záložka
     .accesskey = z
@@ -75,6 +77,8 @@ places-edit-generic =
 places-edit-folder2 =
     .label = Upravit složku
     .accesskey = i
+# Variables
+#   $count (number) - Number of folders to delete
 places-delete-folder =
     .label =
         { $count ->
@@ -82,6 +86,15 @@ places-delete-folder =
             [one] Smazat složku
             [few] Smazat složky
            *[other] Smazat složky
+        }
+    .accesskey = m
+# Variables:
+#   $count (number) - The number of pages selected for removal.
+places-delete-page =
+    .label =
+        { $count ->
+            [1] Smazat stránku
+           *[other] Smazat stránky
         }
     .accesskey = m
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
@@ -107,6 +120,15 @@ places-delete-bookmark =
            *[other] Smazat záložky
         }
     .accesskey = m
+# Variables:
+#   $count (number) - The number of bookmarks being added.
+places-create-bookmark =
+    .label =
+        { $count ->
+            [1] Přidat stránku do záložek…
+           *[other] Přidat stránky do záložek…
+        }
+    .accesskey = P
 places-untag-bookmark =
     .label = Odebrat štítek
     .accesskey = r
@@ -199,6 +221,27 @@ places-view-sort-col-date-added =
     .label = Přidáno
 places-view-sort-col-last-modified =
     .label = Poslední změna
+places-view-sortby-name =
+    .label = Podle názvu
+    .accesskey = n
+places-view-sortby-url =
+    .label = Podle adresy
+    .accesskey = a
+places-view-sortby-date =
+    .label = Podle poslední návštěvy
+    .accesskey = l
+places-view-sortby-visit-count =
+    .label = Podle počtu návštěv
+    .accesskey = o
+places-view-sortby-date-added =
+    .label = Podle přidání
+    .accesskey = d
+places-view-sortby-last-modified =
+    .label = Podle poslední změny
+    .accesskey = m
+places-view-sortby-tags =
+    .label = Podle štítků
+    .accesskey = t
 places-cmd-find-key =
     .key = f
 places-back-button =
@@ -206,3 +249,32 @@ places-back-button =
 places-forward-button =
     .tooltiptext = Přejde vpřed
 places-details-pane-select-an-item-description = Pro zobrazení a úpravu vlastností vyberte některou z položek
+places-details-pane-no-items =
+    .value = Bez položek
+# Variables:
+#   $count (Number): number of items
+places-details-pane-items-count =
+    .value =
+        { $count ->
+            [one] Jedna položka
+            [few] { $count } položky
+           *[other] { $count } položek
+        }
+
+## Strings used as a placeholder in the Library search field. For example,
+## "Search History" stands for "Search through the browser's history".
+
+places-search-bookmarks =
+    .placeholder = Hledat v záložkách
+places-search-history =
+    .placeholder = Hledat v historii
+places-search-downloads =
+    .placeholder = Hledat stahování
+
+##
+
+places-locked-prompt =
+    { -brand-short-name.case-status ->
+        [with-cases] Není možné používat záložky a historii, protože některé soubory { -brand-short-name(case: "gen") } už jsou používány jinou aplikací. Toto může být způsobeno bezpečnostním softwarem.
+       *[no-cases] Není možné používat záložky a historii, protože některé soubory aplikace { -brand-short-name } už jsou používány jinou aplikací. Toto může být způsobeno bezpečnostním softwarem.
+    }

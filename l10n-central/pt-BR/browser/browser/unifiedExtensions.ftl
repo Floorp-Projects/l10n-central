@@ -32,3 +32,12 @@ unified-extensions-context-menu-remove-extension =
     .label = Remover extensão
 unified-extensions-context-menu-report-extension =
     .label = Denunciar extensão
+unified-extensions-context-menu-move-widget-up =
+    .label = Mover para cima
+unified-extensions-context-menu-move-widget-down =
+    .label = Mover para baixo
+
+## Notifications
+
+unified-extensions-mb-quarantined-domain-title = Algumas extensões não têm permissão
+unified-extensions-mb-quarantined-domain-message = Apenas algumas extensões monitoradas pela { -vendor-short-name } têm permissão neste site, para proteger seus dados.

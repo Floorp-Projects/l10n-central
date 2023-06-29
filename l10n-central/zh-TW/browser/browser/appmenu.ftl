@@ -33,6 +33,8 @@ appmenuitem-print =
     .label = 列印…
 appmenuitem-find-in-page =
     .label = 在頁面中搜尋…
+appmenuitem-translate =
+    .label = 翻譯此頁…
 appmenuitem-zoom =
     .value = 縮放
 appmenuitem-more-tools =
@@ -167,6 +169,11 @@ profiler-popup-capture-shortcut =
 # devtools/client/performance-new/popup/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/shared/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
 profiler-popup-presets-web-developer-description = 推薦於對大部分網頁應用程式除錯時使用，額外負荷較低。
 profiler-popup-presets-web-developer-label =
     .label = 網頁開發者
@@ -204,6 +211,9 @@ appmenu-recently-closed-tabs =
     .label = 最近關閉的分頁
 appmenu-recently-closed-windows =
     .label = 最近關閉的視窗
+# This allows to search through the browser's history.
+appmenu-search-history =
+    .label = 搜尋紀錄
 
 ## Help panel
 
@@ -223,6 +233,8 @@ appmenu-help-report-site-issue =
 appmenu-help-share-ideas =
     .label = 分享想法與意見回饋…
     .accesskey = S
+appmenu-help-switch-device =
+    .label = 切換至新裝置
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

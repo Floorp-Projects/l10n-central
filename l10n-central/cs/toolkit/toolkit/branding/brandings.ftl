@@ -92,7 +92,7 @@
         [ins] Firefoxem Send
     }
     .gender = masculine
--screenshots-brand-name = Firefox Screenshots
+-screenshots-brand-name = Floorp Screenshots
 -mozilla-vpn-brand-name =
     { $case ->
        *[nom] Mozilla VPN
@@ -115,7 +115,7 @@
        *[nom] Firefox Profiler
     }
     .gender = masculine
--translations-brand-name = Firefox Translations
+-translations-brand-name = Floorp Translations
 -focus-brand-name =
     { $case ->
        *[nom] Firefox Focus

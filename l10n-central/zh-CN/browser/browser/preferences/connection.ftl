@@ -69,13 +69,17 @@ connection-proxy-autologin =
     .label = 如果密码已保存，不提示身份验证
     .accesskey = i
     .tooltip = 此选项将允许在您已保存凭据的情况下自动向代理进行身份验证，如果验证失败再提示您输入信息。
+connection-proxy-autologin-checkbox =
+    .label = 如果密码已保存，不提示身份验证
+    .accesskey = i
+    .tooltiptext = 此选项将允许在您已保存凭据的情况下自动向代理进行身份验证，如果验证失败再提示您输入信息。
 connection-proxy-socks-remote-dns =
     .label = 使用 SOCKS v5 时代理 DNS 查询
     .accesskey = D
 connection-dns-over-https =
     .label = 启用基于 HTTPS 的 DNS
     .accesskey = H
-connection-dns-over-https-url-resolver = 选用提供商
+connection-dns-over-https-url-resolver = 选用提供方
     .accesskey = P
 # Variables:
 #   $name (String) - Display name or URL for the DNS over HTTPS provider

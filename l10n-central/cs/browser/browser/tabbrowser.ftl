@@ -168,3 +168,26 @@ tabbrowser-context-mute-selected-tabs =
 tabbrowser-context-unmute-selected-tabs =
     .label = Zapnout zvuk panelů
     .accesskey = u
+# This string is used as an additional tooltip and accessibility description for tabs playing audio
+tabbrowser-tab-audio-playing-description = Přehrává zvuk
+
+## Ctrl-Tab dialog
+
+# Variables:
+#   $tabCount (Number): The number of tabs in the current browser window. It will always be 2 at least.
+tabbrowser-ctrl-tab-list-all-tabs =
+    .label =
+        { $tabCount ->
+            [one] Zobrazit panel
+            [few] Zobrazit všechny { $tabCount } panely
+           *[other] Zobrazit všech { $tabCount } panelů
+        }
+
+## Tab manager menu buttons
+
+tabbrowser-manager-mute-tab =
+    .tooltiptext = Vypne zvuk panelu
+tabbrowser-manager-unmute-tab =
+    .tooltiptext = Zapne zvuk panelu
+tabbrowser-manager-close-tab =
+    .tooltiptext = Zavře panel

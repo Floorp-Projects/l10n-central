@@ -684,6 +684,10 @@ containers-remove-button =
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
+
+## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = Πάρτε μαζί σας το διαδίκτυο
 sync-signedout-description2 = Συγχρονίστε τους σελιδοδείκτες, το ιστορικό, τις καρτέλες, τους κωδικούς πρόσβασης, τα πρόσθετα και τις ρυθμίσεις σας σε όλες τις συσκευές σας.
 sync-signedout-account-signin3 =
@@ -700,6 +704,9 @@ sync-signedout-account-signin3 =
 sync-mobile-promo = Κάντε λήψη του Firefox για <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> ή <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> για συγχρονισμό με την κινητή σας συσκευή.
 
 ## Firefox Account - Signed in
+
+
+## Firefox account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Αλλαγή εικόνας προφίλ
@@ -739,6 +746,11 @@ prefs-sync-now =
     .labelnotsyncing = Συγχρονισμός τώρα
     .accesskeynotsyncing = τ
     .labelsyncing = Συγχρονισμός…
+prefs-sync-now-button =
+    .label = Συγχρονισμός τώρα
+    .accesskey = τ
+prefs-syncing-button =
+    .label = Συγχρονισμός…
 
 ## The list of things currently syncing.
 
@@ -818,6 +830,16 @@ sync-device-name-save =
     .accesskey = θ
 sync-connect-another-device = Σύνδεση άλλης συσκευής
 
+## These strings are shown in a desktop notification after the
+## user requests we resend a verification email.
+
+sync-verification-sent-title = Η επιβεβαίωση εστάλη
+# Variables:
+#   $email (String): Email address of user's Firefox account.
+sync-verification-sent-body = Έχει σταλεί ένα σύνδεσμος επαλήθευσης στην διεύθυνση { $email }.
+sync-verification-not-sent-title = Αδυναμία αποστολής επιβεβαίωσης
+sync-verification-not-sent-body = Δεν μπορέσαμε να στείλουμε ένα email επαλήθευσης, παρακαλούμε δοκιμάστε ξανά αργότερα.
+
 ## Privacy Section
 
 privacy-header = Απόρρητο προγράμματος περιήγησης
@@ -843,6 +865,8 @@ forms-breach-alerts =
 forms-breach-alerts-learn-more-link = Μάθετε περισσότερα
 relay-integration =
     .label = Ενεργοποίηση του { -relay-brand-name } στη Διαχείριση κωδικών πρόσβασης του { -brand-short-name }
+preferences-relay-integration-checkbox =
+    .label = Πρόταση μασκών email του { -relay-brand-name } για την προστασία της διεύθυνσης email σας
 relay-integration-learn-more-link = Μάθετε περισσότερα
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
@@ -1234,6 +1258,7 @@ httpsonly-radio-disabled =
 ## DoH Section
 
 preferences-doh-header = DNS over HTTPS
+preferences-doh-description = Το DNS (Domain Name System) over HTTPS στέλνει το αίτημά σας για όνομα τομέα μέσω κρυπτογραφημένης σύνδεσης, δημιουργώντας ένα ασφαλές DNS και δυσκολεύοντας τους άλλους να δουν σε ποιον ιστότοπο πρόκειται να αποκτήσετε πρόσβαση.
 # Variables:
 #   $status (string) - The status of the DoH connection
 preferences-doh-status = Κατάσταση: { $status }
@@ -1249,18 +1274,40 @@ preferences-doh-status-disabled = Ανενεργό
 # Variables:
 #   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
 preferences-doh-status-not-active = Μη ενεργό ({ $reason })
+preferences-doh-group-message = Ενεργοποίηση ασφαλούς DNS με:
 preferences-doh-expand-section =
     .tooltiptext = Περισσότερες πληροφορίες
 preferences-doh-setting-default =
     .label = Προεπιλεγμένη προστασία
     .accesskey = Π
+preferences-doh-default-desc = Το { -brand-short-name } αποφασίζει πότε θα χρησιμοποιεί ασφαλές DNS για την προστασία του απορρήτου σας.
+preferences-doh-default-detailed-desc-1 = Χρήση ασφαλούς DNS σε περιοχές όπου είναι διαθέσιμο
+preferences-doh-default-detailed-desc-2 = Χρήση προεπιλεγμένης ανάλυσης DNS εάν υπάρχει πρόβλημα με τον πάροχο ασφαλούς DNS
+preferences-doh-default-detailed-desc-3 = Χρήση τοπικού παρόχου εάν είναι δυνατόν
+preferences-doh-default-detailed-desc-4 = Απενεργοποίηση όταν είναι ενεργό το VPN, ο γονικός έλεγχος ή οι εταιρικές πολιτικές
+preferences-doh-default-detailed-desc-5 = Απενεργοποίηση όταν ένα δίκτυο ενημερώνει το { -brand-short-name } ότι δεν πρέπει να χρησιμοποιεί ασφαλές DNS
 preferences-doh-setting-enabled =
     .label = Αυξημένη προστασία
     .accesskey = Α
+preferences-doh-enabled-desc = Εσείς ελέγχετε πότε θα χρησιμοποιείται ασφαλές DNS και επιλέγετε τον πάροχό σας.
+preferences-doh-enabled-detailed-desc-1 = Χρήση του παρόχου της επιλογής σας
+preferences-doh-enabled-detailed-desc-2 = Χρήση προεπιλεγμένης ανάλυσης DNS μόνο εάν υπάρχει πρόβλημα με το ασφαλές DNS
 preferences-doh-setting-strict =
     .label = Μέγιστη προστασία
     .accesskey = Μ
+preferences-doh-strict-desc = Το { -brand-short-name } θα χρησιμοποιεί πάντα ασφαλές DNS. Θα βλέπετε μια προειδοποίηση πριν χρησιμοποιήσουμε το DNS του συστήματός σας.
+preferences-doh-strict-detailed-desc-1 = Χρήση μόνο του παρόχου της επιλογής σας
+preferences-doh-strict-detailed-desc-2 = Πάντα προειδοποίηση εάν το ασφαλές DNS δεν είναι διαθέσιμο
+preferences-doh-strict-detailed-desc-3 = Εάν δεν διατίθεται ασφαλές DNS, οι ιστότοποι δεν θα φορτώνονται ή δεν θα λειτουργούν σωστά
+preferences-doh-setting-off =
+    .label = Ανενεργή προστασία
+    .accesskey = Α
+preferences-doh-off-desc = Χρήση προεπιλεγμένης ανάλυσης DNS
+preferences-doh-checkbox-warn =
+    .label = Προειδοποίηση εάν ένα τρίτο μέρος εμποδίζει ενεργά το ασφαλές DNS
+    .accesskey = Π
 preferences-doh-select-resolver = Επιλογή παρόχου:
+preferences-doh-exceptions-description = Το { -brand-short-name } δεν θα χρησιμοποιεί ασφαλές DNS σε αυτούς τους ιστοτόπους
 preferences-doh-manage-exceptions =
     .label = Διαχείριση εξαιρέσεων…
     .accesskey = χ

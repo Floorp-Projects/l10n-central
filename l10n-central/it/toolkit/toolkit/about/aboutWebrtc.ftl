@@ -23,12 +23,22 @@ about-webrtc-aec-logging-on-state-msg = Registrazione AEC attiva (parlare per qu
 # The autorefresh checkbox causes the page to autorefresh its content when checked
 about-webrtc-auto-refresh-label = Aggiorna automaticamente
 
+about-webrtc-auto-refresh-default-label = Aggiorna automaticamente per impostazione predefinita
+
+about-webrtc-force-refresh-button = Aggiorna
+
 ##
 
 # "PeerConnection" is a proper noun associated with the WebRTC module. "ID" is
 # an abbreviation for Identifier. This string should not normally be translated
 # and is used as a data label.
 about-webrtc-peerconnection-id-label = ID PeerConnection:
+
+# The number of DataChannels that a PeerConnection has opened
+about-webrtc-data-channels-opened-label = Canali di dati aperti:
+
+# The number of once open DataChannels that a PeerConnection has closed
+about-webrtc-data-channels-closed-label = Canali di dati chiusi:
 
 ## "SDP" is an abbreviation for Session Description Protocol, an IETF standard.
 ## See http://wikipedia.org/wiki/Session_Description_Protocol
@@ -95,6 +105,8 @@ about-webrtc-log-show-msg = Visualizza registro
     .title = fare clic per espandere questa sezione
 about-webrtc-log-hide-msg = Nascondi registro
     .title = fare clic per comprimere questa sezione
+about-webrtc-copy-report-button = Copia rapporto
+about-webrtc-copy-report-history-button = Copia cronologia rapporti
 
 ## These are used to display a header for a PeerConnection.
 ## Variables:
@@ -281,4 +293,11 @@ about-webrtc-sdp-set-timestamp = Timestamp { NUMBER($timestamp, useGrouping: "fa
 about-webrtc-show-msg-sdp = Mostra SDP
 about-webrtc-hide-msg-sdp = Nascondi SDP
 
-##
+## These are displayed on the button that shows or hides the Media Context information disclosure.
+## The Media Context is the set of preferences and detected capabilities that informs
+## the negotiated CODEC settings.
+
+about-webrtc-media-context-show-msg = Mostra contesto multimediale
+about-webrtc-media-context-hide-msg = Nascondi contesto multimediale
+about-webrtc-media-context-heading = Contesto multimediale
+

@@ -81,3 +81,46 @@ firefoxview-collapse-button-show =
     .title = 显示列表
 firefoxview-collapse-button-hide =
     .title = 隐藏列表
+firefoxview-overview-nav = 近期浏览
+    .title = 近期浏览
+
+## History in this context refers to browser history
+
+firefoxview-history-nav = 历史记录
+    .title = 历史记录
+firefoxview-history-header = 历史记录
+
+## Open Tabs in this context refers to all open tabs in the browser
+
+firefoxview-opentabs-nav = 打开的标签页
+    .title = 打开的标签页
+firefoxview-opentabs-header = 打开的标签页
+
+## Recently closed tabs in this context refers to recently closed tabs from all windows
+
+firefoxview-recently-closed-nav = 最近关闭的标签页
+    .title = 最近关闭的标签页
+firefoxview-recently-closed-header = 最近关闭的标签页
+
+## Tabs from other devices refers in this context refers to synced tabs from other devices
+
+firefoxview-synced-tabs-nav = 来自其他设备的标签页
+    .title = 来自其他设备的标签页
+firefoxview-synced-tabs-header = 来自其他设备的标签页
+
+##
+
+# Used for a link in collapsible cards, in the 'Recent browsing' page of Firefox View
+firefoxview-view-all-link = 查看所有
+# Variables:
+#   $winID (Number) - The index of the owner window for this set of tabs
+firefoxview-opentabs-window-header =
+    .title = 窗口 { $winID }
+# Variables:
+#   $winID (Number) - The index of the owner window (which is currently focused) for this set of tabs
+firefoxview-opentabs-current-window-header =
+    .title = 窗口 { $winID }（当前）
+firefoxview-opentabs-focus-tab =
+    .title = 切换到此标签页
+firefoxview-show-more = 展开
+firefoxview-show-less = 折叠

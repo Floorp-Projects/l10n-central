@@ -70,7 +70,6 @@ firefoxview-pickup-tabs-badge = Última activa
 firefoxview-tabs-list-tab-button =
     .title = Abrir { $targetURI } en una nueva pestaña
 firefoxview-try-colorways-button = Probar combinaciones de colores
-firefoxview-no-current-colorway-collection = Hay nuevas combinaciones de colores en camino
 firefoxview-change-colorway-button = Cambiar la combinación de colores
 # Variables:
 #  $intensity (String): Colorway intensity
@@ -82,3 +81,46 @@ firefoxview-collapse-button-show =
     .title = Mostrar lista
 firefoxview-collapse-button-hide =
     .title = Ocultar lista
+firefoxview-overview-nav = Navegación reciente
+    .title = Navegación reciente
+
+## History in this context refers to browser history
+
+firefoxview-history-nav = Historia
+    .title = Historia
+firefoxview-history-header = Historial
+
+## Open Tabs in this context refers to all open tabs in the browser
+
+firefoxview-opentabs-nav = Pestañas abiertas
+    .title = Pestañas abiertas
+firefoxview-opentabs-header = Pestañas abiertas
+
+## Recently closed tabs in this context refers to recently closed tabs from all windows
+
+firefoxview-recently-closed-nav = Pestañas cerradas recientemente
+    .title = Pestañas cerradas recientemente
+firefoxview-recently-closed-header = Pestañas cerradas recientemente
+
+## Tabs from other devices refers in this context refers to synced tabs from other devices
+
+firefoxview-synced-tabs-nav = Pestañas de otros dispositivos
+    .title = Pestañas de otros dispositivos
+firefoxview-synced-tabs-header = Pestañas de otros dispositivos
+
+##
+
+# Used for a link in collapsible cards, in the 'Recent browsing' page of Firefox View
+firefoxview-view-all-link = Ver todo
+# Variables:
+#   $winID (Number) - The index of the owner window for this set of tabs
+firefoxview-opentabs-window-header =
+    .title = Ventana { $winID }
+# Variables:
+#   $winID (Number) - The index of the owner window (which is currently focused) for this set of tabs
+firefoxview-opentabs-current-window-header =
+    .title = Ventana { $winID } (Actual)
+firefoxview-opentabs-focus-tab =
+    .title = Cambiar a esta pestaña
+firefoxview-show-more = Mostrar más
+firefoxview-show-less = Mostrar menos

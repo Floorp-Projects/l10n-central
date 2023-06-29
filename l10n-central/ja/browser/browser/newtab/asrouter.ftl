@@ -27,11 +27,13 @@ cfr-doorhanger-extension-author = 作成者: { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = おすすめ
+# .a11y-announcement is extracted in JS and announced via A11y.announce.
 cfr-doorhanger-extension-notification2 = おすすめ
     .tooltiptext = おすすめの拡張機能です
     .a11y-announcement = おすすめの拡張機能があります
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
+# .a11y-announcement is extracted in JS and announced via A11y.announce.
 cfr-doorhanger-feature-notification = おすすめ
     .tooltiptext = おすすめの機能です
     .a11y-announcement = おすすめの機能があります
@@ -214,25 +216,6 @@ colorways-cfr-header-today = 揺るぎない声 Colorway は今日まで
 
 ## Cookie Banner Handling CFR
 
-# Alternate headline for localization: "See fewer cookie requests"
-cfr-cookiebanner-header = Cookie バナーよ去れ！
-cfr-cookiebanner-body = Cookie バナーの同意確認に対し、可能な場合は { -brand-short-name } が自動的に「すべて拒否」を選択できるようにします。
-cfr-cookiebanner-accept-button-v2 = 自動で拒否を選択する
-    .accesskey = R
-cfr-cookiebanner-reject-button = 後で
-    .accesskey = N
-cfr-cookiebanner-header-variant-1 = Cookie ポップアップを減らします
-cfr-cookiebanner-body-variant-1 = 目障りな Cookie ポップアップに { -brand-short-name } が自動的に応答します。可能な場合は { -brand-short-name } がすべて拒否します。
-cfr-cookiebanner-accept-button-variant-1 = ポップアップを自動で閉じる
-    .accesskey = D
-cfr-cookiebanner-reject-button-variant-1 = いいえ、結構です
-    .accesskey = N
-cfr-cookiebanner-header-variant-2 = Cookie バナー削減
-cfr-cookiebanner-body-variant-2 = ウェブサイトの Cookie 同意確認に対し、可能な場合は Cookie を拒否して目障りな Cookie バナーが表示されないようにすることを { -brand-short-name } に許可しますか？
-cfr-cookiebanner-accept-button-variant-2 = 許可する
-    .accesskey = A
-cfr-cookiebanner-reject-button-variant-2 = 後で
-    .accesskey = N
 cfr-cbh-header = { -brand-short-name } に Cookie バナーを拒否できるようにしますか？
 cfr-cbh-body = { -brand-short-name } が多くの Cookie バナーの同意確認を自動的に拒否します。
 cfr-cbh-confirm-button = Cookie バナーを拒否
@@ -245,8 +228,30 @@ cfr-cbh-dismiss-button = 後で
 july-jam-headline = 私たちがあなたを守ります
 july-jam-body = 毎月、{ -brand-short-name } はユーザーあたり平均 3000 件以上のトラッカーをブロックし、健全なインターネットへの安全で快適なアクセスをユーザーに提供しています。
 july-jam-set-default-primary = { -brand-short-name } でマイリンクを開く
+fox-doodle-pin-headline = おかえりなさい
+# “indie” is short for the term “independent”.
+# In this instance, free from outside influence or control.
+fox-doodle-pin-body = 実は、たったのクリック 1 回でお気に入りの独立系ブラウザーを使い続けられるんです。
+fox-doodle-pin-primary = { -brand-short-name } でマイリンクを開く
+fox-doodle-pin-secondary = 後で
 
 ## These strings are used in the Set Firefox as Default PDF Handler for Existing Users experiment
 
 set-default-pdf-handler-headline = <strong>PDF ファイルを { -brand-short-name } で開くように関連付けられます。</strong> ブラウザー内で編集または署名ができます。動作を変更するには、設定で “PDF” を検索してください。
 set-default-pdf-handler-primary = 了解
+
+## FxA sync CFR
+
+fxa-sync-cfr-header = 未来の新しい端末？
+fxa-sync-cfr-body = 新しい { -brand-product-name } ブラウザーを開けば、最新のブックマークやパスワード、タブがいつでもあなたの側にあります。
+fxa-sync-cfr-primary = 詳細情報
+  .accesskey = L
+fxa-sync-cfr-secondary = 後で通知
+  .accesskey = R
+
+## Device Migration FxA Spotlight
+
+device-migration-fxa-spotlight-header = 古い端末をご使用ですか？
+device-migration-fxa-spotlight-body = データをバックアップ保存して、ブックマークやパスワードなどの重要な情報を失わないようにしましょう。特に新しい端末に切り替えたときは。
+device-migration-fxa-spotlight-primary-button = データをバックアップする方法
+device-migration-fxa-spotlight-link = 後で通知

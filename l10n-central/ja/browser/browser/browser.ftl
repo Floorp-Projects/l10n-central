@@ -38,13 +38,15 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } — (プライベートブラウジング)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } — (プライベートブラウジング)
-# These are the default window titles everywhere except macOS. The first two
-# attributes are used when the web content opened has no title:
+# These are the default window titles everywhere except macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
 #
 # default - "Mozilla Firefox"
 # private - "Mozilla Firefox (Private Browsing)"
 #
-# The last two are for use when there *is* a content title.
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
 # Variables:
 #  $content-title (String): the title of the web content.
 browser-main-window-window-titles =
@@ -52,14 +54,17 @@ browser-main-window-window-titles =
     .data-title-private = { -brand-full-name } プライベートブラウジング
     .data-content-title-default = { $content-title } — { -brand-full-name }
     .data-content-title-private = { $content-title } — { -brand-full-name } プライベートブラウジング
-# These are the default window titles on macOS. The first two are for use when
-# there is no content title:
+# These are the default window titles on macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
+#
 #
 # "default" - "Mozilla Firefox"
 # "private" - "Mozilla Firefox — (Private Browsing)"
 #
-# The last two are for use when there *is* a content title.
-# Do not use the brand name in the last two attributes, as we do on non-macOS.
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
+# Do not use the brand name in these, as we do on non-macOS.
 #
 # Also note the other subtle difference here: we use a `-` to separate the
 # brand name from `(Private Browsing)`, which does not happen on other OSes.
@@ -143,6 +148,8 @@ urlbar-search-tips-confirm-short = 了解
 urlbar-tip-icon-description =
     .alt = ヒント:
 urlbar-result-menu-button =
+    .title = メニューを開く
+urlbar-result-menu-button-feedback = フィードバック
     .title = メニューを開く
 urlbar-result-menu-learn-more =
     .label = 詳細情報
@@ -667,6 +674,15 @@ reader-view-close-button =
 ## Variables:
 ##   $shortcut (String) - Keyboard shortcut to execute the command.
 
+picture-in-picture-urlbar-button-open =
+    .tooltiptext = ピクチャーインピクチャーを開きます ({ $shortcut })
+picture-in-picture-urlbar-button-close =
+    .tooltiptext = ピクチャーインピクチャーを閉じます ({ $shortcut })
+picture-in-picture-panel-header = ピクチャーインピクチャー
+picture-in-picture-panel-headline = このウェブサイトでのピクチャーインピクチャーはおすすめしません
+picture-in-picture-panel-body = ピクチャーインピクチャーを有効にした場合、動画が開発者の意図したように表示されない可能性があります。
+picture-in-picture-enable-toggle =
+    .label = とにかく有効化
 
 ## Full Screen and Pointer Lock UI
 
@@ -965,6 +981,15 @@ unified-extensions-button-permissions-needed =
         拡張機能
         権限が必要です
 
+## Unified extensions button when some extensions are quarantined.
+## Note that the new line is intentionally part of the tooltip.
+
+unified-extensions-button-quarantined =
+    .label = 拡張機能
+    .tooltiptext =
+        拡張機能
+        一部の拡張機能は許可されていません
+
 ## Autorefresh blocker
 
 refresh-blocked-refresh-label = { -brand-short-name } がこのページの自動再読み込みをブロックしました。
@@ -984,4 +1009,39 @@ firefox-relay-offer-what-relay-does = <strong>{ $sitename }</strong> に届い�
 
 ## Popup Notification
 
+firefox-relay-offer-why-to-use-relay = 安全で簡単に使えるメールマスクがあなたのメールアドレスを隠して個人情報を守り、迷惑メールを防ぎます。
+# Variables:
+#  $useremail (String): user email that will receive messages
+firefox-relay-offer-what-relay-provides = メールマスクに送信されたすべてのメールは (これらをブロックしない限り) <strong>{ $useremail }</strong> に転送されます。
+firefox-relay-offer-legal-notice = [メールマスクを使用] をクリックすることにより、<label data-l10n-name="tos-url">サービス利用規約</label> および <label data-l10n-name="privacy-url">プライバシー通知</label> に同意したものとみなされます。
+
+## Add-on Pop-up Notifications
+
+popup-notification-addon-install-unsigned =
+    .value = (未検証)
 popup-notification-xpinstall-prompt-learn-more = アドオンの安全なインストールの詳細
+
+## Pop-up warning
+
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-message = { -brand-short-name } が { $popupCount } 個のポップアップをブロックしました。
+# The singular form is left out for English, since the number of blocked pop-ups is always greater than 1.
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-exceeded-message = { -brand-short-name } がこのサイトで { $popupCount } 個のポップアップウィンドウをブロックしました。
+popup-warning-button =
+    .label =
+        { PLATFORM() ->
+            [windows] 設定
+           *[other] 設定
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] P
+        }
+# Variables:
+#   $popupURI (String): the URI for the pop-up window
+popup-show-popup-menuitem =
+    .label = “{ $popupURI }” を表示

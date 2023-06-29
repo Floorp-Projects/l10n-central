@@ -90,6 +90,7 @@ protections-panel-content-blocking-manage-settings =
 protections-panel-content-blocking-breakage-report-view =
     .title = Hibás webhely bejelentése
 protections-panel-content-blocking-breakage-report-view-description = Egyes nyomkövetők blokkolása problémákat okozhat néhány weboldalon. Ezen problémák bejelentése segít jobbá tenni a { -brand-short-name } böngészőt mindenki számára. A jelentés elküldi az URL-t és a böngészőbeállításait a Mozillának. <label data-l10n-name="learn-more">További tudnivalók</label>
+protections-panel-content-blocking-breakage-report-view-description2 = Egyes nyomkövetők blokkolása problémákat okozhat néhány weboldalon. Ezen problémák bejelentése segít jobbá tenni a { -brand-short-name } böngészőt mindenki számára. A jelentés elküldi az URL-t és a böngészőbeállításait a { -vendor-short-name(ending: "accented") }nak.
 protections-panel-content-blocking-breakage-report-view-collection-url = URL
 protections-panel-content-blocking-breakage-report-view-collection-url-label =
     .aria-label = URL
@@ -109,8 +110,6 @@ protections-panel-cookie-banner-handling-disabled = Kikapcsolva erre az oldalra
 protections-panel-cookie-banner-handling-undetected = A webhely jelenleg nem támogatott
 protections-panel-cookie-banner-view-title =
     .title = Sütibannerek számának csökkentése
-protections-panel-cookie-banner-view-go-back =
-    .aria-label = Vissza
 # Variables
 #  $host (String): the hostname of the site that is being displayed.
 protections-panel-cookie-banner-view-turn-off-for-site = Kikapcsolja a sütibanner-csökkentést a következőnél: { $host }?

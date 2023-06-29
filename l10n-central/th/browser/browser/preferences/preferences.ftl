@@ -668,6 +668,10 @@ containers-remove-button =
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
+
+## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = นำเว็บของคุณไปกับคุณ
 sync-signedout-description2 = ประสานที่คั่นหน้า, ประวัติ, แท็บ, รหัสผ่าน, ส่วนเสริม และการตั้งค่าระหว่างอุปกรณ์ทั้งหมดของคุณ
 sync-signedout-account-signin3 =
@@ -684,6 +688,9 @@ sync-signedout-account-signin3 =
 sync-mobile-promo = ดาวน์โหลด Firefox สำหรับ <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> หรือ <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> เพื่อซิงค์กับอุปกรณ์มือถือของคุณ
 
 ## Firefox Account - Signed in
+
+
+## Firefox account - Signed in
 
 sync-profile-picture =
     .tooltiptext = เปลี่ยนรูปโปรไฟล์
@@ -723,10 +730,16 @@ prefs-sync-now =
     .labelnotsyncing = ซิงค์ตอนนี้
     .accesskeynotsyncing = N
     .labelsyncing = กำลังซิงค์…
+prefs-sync-now-button =
+    .label = ซิงค์ตอนนี้
+    .accesskey = N
+prefs-syncing-button =
+    .label = กำลังซิงค์…
 
 ## The list of things currently syncing.
 
 sync-currently-syncing-heading = คุณกำลังซิงค์รายการเหล่านี้:
+sync-syncing-across-devices-heading = คุณกำลังซิงค์รายการเหล่านี้กับอุปกรณ์ที่เชื่อมต่อทั้งหมดของคุณ:
 sync-currently-syncing-bookmarks = ที่คั่นหน้า
 sync-currently-syncing-history = ประวัติ
 sync-currently-syncing-tabs = แท็บที่เปิด
@@ -755,6 +768,7 @@ sync-choose-what-to-sync-dialog3 =
     .buttonaccesskeyaccept = S
     .buttonlabelextra2 = ตัดการเชื่อมต่อ…
     .buttonaccesskeyextra2 = D
+sync-choose-dialog-subtitle = การเปลี่ยนรายการที่จะซิงค์จะมีผลกับอุปกรณ์ที่เชื่อมต่อทั้งหมดของคุณ
 sync-engine-bookmarks =
     .label = ที่คั่นหน้า
     .accesskey = ท
@@ -800,6 +814,16 @@ sync-device-name-save =
     .accesskey = บ
 sync-connect-another-device = เชื่อมต่ออุปกรณ์อื่น
 
+## These strings are shown in a desktop notification after the
+## user requests we resend a verification email.
+
+sync-verification-sent-title = ส่งการยืนยันแล้ว
+# Variables:
+#   $email (String): Email address of user's Firefox account.
+sync-verification-sent-body = ส่งลิงก์ยืนยันไปยัง { $email } แล้ว
+sync-verification-not-sent-title = ไม่สามารถส่งการยืนยัน
+sync-verification-not-sent-body = เราไม่สามารถส่งจดหมายยืนยันได้ในตอนนี้ โปรดลองอีกครั้งในภายหลัง
+
 ## Privacy Section
 
 privacy-header = ความเป็นส่วนตัวเบราว์เซอร์
@@ -825,6 +849,8 @@ forms-breach-alerts =
 forms-breach-alerts-learn-more-link = เรียนรู้เพิ่มเติม
 relay-integration =
     .label = เปิดใช้งาน { -relay-brand-name } ในตัวจัดการรหัสผ่านของ { -brand-short-name } ของคุณ
+preferences-relay-integration-checkbox =
+    .label = แนะนำตัวปกปิดอีเมล { -relay-brand-name } เพื่อปกป้องที่อยู่อีเมลของคุณ
 relay-integration-learn-more-link = เรียนรู้เพิ่มเติม
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
@@ -1140,7 +1166,7 @@ permissions-addon-exceptions =
 
 collection-header = การเก็บรวบรวมและใช้ข้อมูล { -brand-short-name }
 collection-description = เรามุ่งมั่นที่จะให้ทางเลือกกับคุณและเก็บรวบรวมเฉพาะสิ่งที่เราจำเป็นต้องให้บริการและปรับปรุง { -brand-short-name } สำหรับทุกคน เราขออนุญาตก่อนที่จะรับข้อมูลส่วนบุคคลเสมอ
-collection-privacy-notice = ประกาศความเป็นส่วนตัว
+collection-privacy-notice = ข้อกำหนดความเป็นส่วนตัว
 collection-health-report-telemetry-disabled = คุณจะไม่อนุญาตให้ { -vendor-short-name } เก็บข้อมูลทางเทคนิคและการโต้ตอบอีกต่อไป ข้อมูลที่ผ่านมาทั้งหมดจะถูกลบภายใน 30 วัน
 collection-health-report-telemetry-disabled-link = เรียนรู้เพิ่มเติม
 collection-health-report =
@@ -1212,6 +1238,63 @@ httpsonly-radio-enabled-pbm =
     .label = เปิดใช้งานโหมด HTTPS-Only ในหน้าต่างส่วนตัวเท่านั้น
 httpsonly-radio-disabled =
     .label = ไม่ต้องเปิดใช้งานโหมด HTTPS-Only
+
+## DoH Section
+
+preferences-doh-header = DNS over HTTPS
+preferences-doh-description = Domain Name System (DNS) over HTTPS จะส่งคำขอชื่อโดเมนของคุณผ่านการเชื่อมต่อที่มีการเข้ารหัส เพื่อเสริมความปลอดภัยให้กับ DNS และทำให้ผู้อื่นดูว่าคุณกำลังจะเข้าถึงเว็บไซต์ใดได้ยากขึ้น
+# Variables:
+#   $status (string) - The status of the DoH connection
+preferences-doh-status = สถานะ: { $status }
+# Variables:
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-resolver = ผู้ให้บริการ: { $name }
+# This is displayed instead of $name in preferences-doh-resolver
+# when the DoH URL is not a valid URL
+preferences-doh-bad-url = URL ไม่ถูกต้อง
+preferences-doh-steering-status = ใช้ผู้ให้บริการเฉพาะที่
+preferences-doh-status-active = ทำงาน
+preferences-doh-status-disabled = ปิด
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+preferences-doh-status-not-active = ไม่ทำงาน ({ $reason })
+preferences-doh-group-message = เปิดใช้งาน secure DNS โดยใช้:
+preferences-doh-expand-section =
+    .tooltiptext = ข้อมูลเพิ่มเติม
+preferences-doh-setting-default =
+    .label = การปกป้องแบบเริ่มต้น
+    .accesskey = ป
+preferences-doh-default-desc = { -brand-short-name } จะตัดสินใจว่าควรใช้ secure DNS เมื่อใดเพื่อที่จะปกป้องความเป็นส่วนตัวของคุณ
+preferences-doh-default-detailed-desc-1 = ใช้ secure DNS ในภูมิภาคที่สามารถใช้ได้
+preferences-doh-default-detailed-desc-2 = ใช้ DNS resolver เริ่มต้นของคุณหากมีปัญหากับผู้ให้บริการ secure DNS
+preferences-doh-default-detailed-desc-3 = ใช้ผู้ให้บริการเฉพาะที่หากเป็นไปได้
+preferences-doh-default-detailed-desc-4 = ปิดใช้เมื่อ VPN, การควบคุมโดยผู้ปกครอง, หรือนโยบายองค์กรทำงาน
+preferences-doh-default-detailed-desc-5 = ปิดใช้เมื่อเครือข่ายบอกกับ { -brand-short-name } ว่าไม่ควรใช้ secure DNS
+preferences-doh-setting-enabled =
+    .label = การปกป้องแบบเพิ่มเติม
+    .accesskey = พ
+preferences-doh-enabled-desc = ให้คุณควบคุมว่าควรใช้ secure DNS เมื่อใดและเลือกผู้ให้บริการของคุณเองได้
+preferences-doh-enabled-detailed-desc-1 = ใช้ผู้ให้บริการที่คุณเลือก
+preferences-doh-enabled-detailed-desc-2 = ใช้ DNS resolver เริ่มต้นของคุณเฉพาะเมื่อมีปัญหากับ secure DNS เท่านั้น
+preferences-doh-setting-strict =
+    .label = การปกป้องแบบสูงสุด
+    .accesskey = ส
+preferences-doh-strict-desc = { -brand-short-name } จะใช้ secure DNS เสมอ คุณจะเห็นคำเตือนเกี่ยวกับความเสี่ยงด้านความปลอดภัยก่อนที่เราจะใช้ DNS ของระบบของคุณ
+preferences-doh-strict-detailed-desc-1 = ใช้เฉพาะผู้ให้บริการที่คุณเลือกเท่านั้น
+preferences-doh-strict-detailed-desc-2 = เตือนเสมอเมื่อ secure DNS ใช้ไม่ได้
+preferences-doh-strict-detailed-desc-3 = หาก secure DNS ใช้ไม่ได้ ไซต์ต่างๆ จะไม่โหลดหรือทำงานถูกต้อง
+preferences-doh-setting-off =
+    .label = ปิด
+    .accesskey = ป
+preferences-doh-off-desc = ใช้ DNS resolver เริ่มต้นของคุณ
+preferences-doh-checkbox-warn =
+    .label = เตือนหากมีบุคคลที่สามเข้ามาขัดขวาง secure DNS อย่างต่อเนื่อง
+    .accesskey = ต
+preferences-doh-select-resolver = เลือกผู้ให้บริการ:
+preferences-doh-exceptions-description = { -brand-short-name } จะไม่ใช้ secure DNS บนไซต์เหล่านี้
+preferences-doh-manage-exceptions =
+    .label = จัดการข้อยกเว้น…
+    .accesskey = ย
 
 ## The following strings are used in the Download section of settings
 

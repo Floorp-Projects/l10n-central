@@ -19,27 +19,6 @@ pictureinpicture-close =
 ## Variables:
 ##   $shortcut (String) - Keyboard shortcut to execute the command.
 
-pictureinpicture-pause-cmd =
-    .aria-label = Wstrzymaj
-    .title = Wstrzymaj (spacja)
-pictureinpicture-play-cmd =
-    .aria-label = Odtwórz
-    .title = Odtwórz (spacja)
-pictureinpicture-mute-cmd =
-    .aria-label = Wycisz
-    .title = Wycisz ({ $shortcut })
-pictureinpicture-unmute-cmd =
-    .aria-label = Włącz dźwięk
-    .title = Włącz dźwięk ({ $shortcut })
-pictureinpicture-unpip-cmd =
-    .aria-label = Wyłącz „Obraz w obrazie”
-    .title = Wyłącz „Obraz w obrazie”
-pictureinpicture-close-cmd =
-    .aria-label = Zamknij
-    .title = Zamknij ({ $shortcut })
-pictureinpicture-subtitles-cmd =
-    .aria-label = Napisy
-    .title = Napisy
 pictureinpicture-pause-btn =
     .aria-label = Wstrzymaj
     .tooltip = Wstrzymaj (spacja)
@@ -61,33 +40,34 @@ pictureinpicture-close-btn =
 pictureinpicture-subtitles-btn =
     .aria-label = Napisy
     .tooltip = Napisy
+pictureinpicture-fullscreen-btn2 =
+    .aria-label = Pełny ekran
+    .tooltip = Pełny ekran (podwójne kliknięcie lub { $shortcut })
+pictureinpicture-exit-fullscreen-btn2 =
+    .aria-label = Opuść tryb pełnoekranowy
+    .tooltip = Opuść tryb pełnoekranowy (podwójne kliknięcie lub { $shortcut })
 
 ##
 
-pictureinpicture-fullscreen-cmd =
-    .aria-label = Pełny ekran
-    .title = Pełny ekran (podwójne kliknięcie)
-pictureinpicture-exit-fullscreen-cmd =
-    .aria-label = Opuść tryb pełnoekranowy
-    .title = Opuść tryb pełnoekranowy (podwójne kliknięcie)
-pictureinpicture-seekbackward-cmd =
-    .aria-label = Przewiń do tyłu
-    .title = Przewiń do tyłu (←)
-pictureinpicture-seekforward-cmd =
-    .aria-label = Przewiń do przodu
-    .title = Przewiń do przodu (→)
 pictureinpicture-fullscreen-btn =
     .aria-label = Pełny ekran
     .tooltip = Pełny ekran (podwójne kliknięcie)
 pictureinpicture-exit-fullscreen-btn =
     .aria-label = Opuść tryb pełnoekranowy
     .tooltip = Opuść tryb pełnoekranowy (podwójne kliknięcie)
+# Keyboard shortcut to toggle fullscreen mode when Picture-in-Picture is open.
+pictureinpicture-toggle-fullscreen-shortcut =
+    .key = F
 pictureinpicture-seekbackward-btn =
     .aria-label = Przewiń do tyłu
     .tooltip = Przewiń do tyłu (←)
 pictureinpicture-seekforward-btn =
     .aria-label = Przewiń do przodu
     .tooltip = Przewiń do przodu (→)
+# This string is never displayed on the window. Is intended to be announced by
+# a screen reader whenever a user opens the subtitles settings panel
+# after selecting the subtitles button.
+pictureinpicture-subtitles-panel-accessible = Ustawienia napisów
 pictureinpicture-subtitles-label = Napisy
 pictureinpicture-font-size-label = Rozmiar czcionki
 pictureinpicture-font-size-small = Mały

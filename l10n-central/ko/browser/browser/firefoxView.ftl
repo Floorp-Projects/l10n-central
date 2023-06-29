@@ -70,7 +70,6 @@ firefoxview-pickup-tabs-badge = 마지막 활동
 firefoxview-tabs-list-tab-button =
     .title = 새 탭에서 { $targetURI } 열기
 firefoxview-try-colorways-button = 컬러웨이 체험
-firefoxview-no-current-colorway-collection = 새로운 컬러웨이 출시 예정
 firefoxview-change-colorway-button = 컬러웨이 변경
 # Variables:
 #  $intensity (String): Colorway intensity
@@ -82,3 +81,46 @@ firefoxview-collapse-button-show =
     .title = 목록 표시
 firefoxview-collapse-button-hide =
     .title = 목록 숨기기
+firefoxview-overview-nav = 최근 탐색
+    .title = 최근 탐색
+
+## History in this context refers to browser history
+
+firefoxview-history-nav = 기록
+    .title = 기록
+firefoxview-history-header = 기록
+
+## Open Tabs in this context refers to all open tabs in the browser
+
+firefoxview-opentabs-nav = 열린 탭
+    .title = 열린 탭
+firefoxview-opentabs-header = 열린 탭
+
+## Recently closed tabs in this context refers to recently closed tabs from all windows
+
+firefoxview-recently-closed-nav = 최근에 닫은 탭
+    .title = 최근에 닫은 탭
+firefoxview-recently-closed-header = 최근에 닫은 탭
+
+## Tabs from other devices refers in this context refers to synced tabs from other devices
+
+firefoxview-synced-tabs-nav = 다른 기기의 탭
+    .title = 다른 기기의 탭
+firefoxview-synced-tabs-header = 다른 기기의 탭
+
+##
+
+# Used for a link in collapsible cards, in the 'Recent browsing' page of Firefox View
+firefoxview-view-all-link = 모두 보기
+# Variables:
+#   $winID (Number) - The index of the owner window for this set of tabs
+firefoxview-opentabs-window-header =
+    .title = 창 { $winID }
+# Variables:
+#   $winID (Number) - The index of the owner window (which is currently focused) for this set of tabs
+firefoxview-opentabs-current-window-header =
+    .title = 창 { $winID } (현재)
+firefoxview-opentabs-focus-tab =
+    .title = 이 탭으로 전환
+firefoxview-show-more = 자세히 보기
+firefoxview-show-less = 간단히 보기

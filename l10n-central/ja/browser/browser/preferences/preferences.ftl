@@ -71,6 +71,17 @@ restart-later = 後で再起動
 ## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
 ##
 ## Variables:
+##   $name (String): name of the extension
+
+
+## Extension Control Notifications
+##
+## These strings are used to inform the user
+## about changes made by extensions to browser settings.
+##
+## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
+##
+## Variables:
 ##   $name (string) - Name of the extension
 
 # This string is shown to notify the user that the password manager setting
@@ -537,6 +548,10 @@ home-prefs-shortcuts-by-option-sponsored =
     .label = 広告ショートカット
 
 ## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+
+## Variables:
 ##  $provider (string) - Name of the corresponding content provider, e.g "Pocket".
 
 home-prefs-recommended-by-header =
@@ -653,6 +668,10 @@ containers-remove-button =
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
+
+## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
+## more discrete ("signed in" no longer means "and sync is connected").
+
 sync-signedout-caption = ウェブを持ち歩こう
 sync-signedout-description2 = ブックマークやページの表示履歴、タブ、パスワード、アドオン、設定を、お持ちのすべての端末間で同期できます。
 sync-signedout-account-signin3 =
@@ -669,6 +688,9 @@ sync-signedout-account-signin3 =
 sync-mobile-promo = Firefox for <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> または <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> をダウンロードしてモバイル端末と同期しましょう。
 
 ## Firefox Account - Signed in
+
+
+## Firefox account - Signed in
 
 sync-profile-picture =
     .tooltiptext = プロフィール写真を変更します
@@ -708,10 +730,16 @@ prefs-sync-now =
     .labelnotsyncing = 今すぐ同期
     .accesskeynotsyncing = N
     .labelsyncing = 同期中...
+prefs-sync-now-button =
+    .label = 今すぐ同期
+    .accesskey = N
+prefs-syncing-button =
+    .label = 同期中...
 
 ## The list of things currently syncing.
 
 sync-currently-syncing-heading = これらの項目を同期しています:
+sync-syncing-across-devices-heading = アカウントに接続されたすべての端末でこれらの項目を同期しています:
 sync-currently-syncing-bookmarks = ブックマーク
 sync-currently-syncing-history = 表示履歴
 sync-currently-syncing-tabs = 開いているタブ
@@ -740,6 +768,7 @@ sync-choose-what-to-sync-dialog3 =
     .buttonaccesskeyaccept = S
     .buttonlabelextra2 = 切断...
     .buttonaccesskeyextra2 = D
+sync-choose-dialog-subtitle = 項目のリストを変更すると、アカウントに接続されたすべての端末に反映されます。
 sync-engine-bookmarks =
     .label = ブックマーク
     .accesskey = m
@@ -785,6 +814,16 @@ sync-device-name-save =
     .accesskey = v
 sync-connect-another-device = 別の端末を接続
 
+## These strings are shown in a desktop notification after the
+## user requests we resend a verification email.
+
+sync-verification-sent-title = 認証情報を送信しました
+# Variables:
+#   $email (String): Email address of user's Firefox account.
+sync-verification-sent-body = 認証情報を { $email } に送信しました。
+sync-verification-not-sent-title = 認証情報を送信できません
+sync-verification-not-sent-body = 認証情報メールを送信できませんでした。後で再度試してください。
+
 ## Privacy Section
 
 privacy-header = ブラウザープライバシー
@@ -810,6 +849,8 @@ forms-breach-alerts =
 forms-breach-alerts-learn-more-link = 詳細情報
 relay-integration =
     .label = { -brand-short-name } のパスワードマネージャーで { -relay-brand-name } を有効にする
+preferences-relay-integration-checkbox =
+    .label = { -relay-brand-name } メールマスクによるメールアドレスの保護を提案する
 relay-integration-learn-more-link = 詳細情報
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
@@ -1024,6 +1065,9 @@ content-blocking-fingerprinters = フィンガープリント採取
 content-blocking-etp-standard-tcp-rollout-checkbox =
     .label = これまでにない最も強力なプライバシー保護機能を試す
     .accesskey = T
+
+# The tcp-rollout strings are no longer used for the rollout but for tcp-by-default in the standard section
+
 # The tcp-rollout strings are no longer used for the rollout but for tcp-by-default in the standard section
 # "Contains" here means "isolates", "limits".
 content-blocking-etp-standard-tcp-rollout-description = 包括的 Cookie 保護機能により現在のサイトへの Cookie が制限されているため、トラッカーはサイトを横断してあなたを追跡する Cookie を利用できません。
@@ -1195,6 +1239,63 @@ httpsonly-radio-enabled-pbm =
     .label = プライベートウィンドウのみ HTTPS-Only モードを有効にする
 httpsonly-radio-disabled =
     .label = HTTPS-Only モードを有効にしない
+
+## DoH Section
+
+preferences-doh-header = DNS over HTTPS
+preferences-doh-description = Domain Name System (DNS) over HTTPS は暗号化された接続を通してドメイン名の要求を送信します。この安全な DNS によって、あなたがアクセスしようとしているウェブサイトを他者に知られないようにします。
+# Variables:
+#   $status (string) - The status of the DoH connection
+preferences-doh-status = 状態: { $status }
+# Variables:
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-resolver = プロバイダー: { $name }
+# This is displayed instead of $name in preferences-doh-resolver
+# when the DoH URL is not a valid URL
+preferences-doh-bad-url = 不正な URL
+preferences-doh-steering-status = ローカルプロバイダーを使用中
+preferences-doh-status-active = 使用中
+preferences-doh-status-disabled = オフ
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+preferences-doh-status-not-active = 未使用 ({ $reason })
+preferences-doh-group-message = 次のレベルで安全な DNS を使用します:
+preferences-doh-expand-section =
+    .tooltiptext = 詳細情報
+preferences-doh-setting-default =
+    .label = 既定の保護
+    .accesskey = D
+preferences-doh-default-desc = いつ安全な DNS を使用してユーザーのプライバシーを保護するかを { -brand-short-name } が決定します。
+preferences-doh-default-detailed-desc-1 = 利用可能な地域で安全な DNS を使用します
+preferences-doh-default-detailed-desc-2 = 安全な DNS プロバイダーで問題がある場合、既定の DNS リゾルバーを使用します
+preferences-doh-default-detailed-desc-3 = 可能であればローカルプロバイダーを使用します
+preferences-doh-default-detailed-desc-4 = VPN やペアレンタルコントロール、エンタープライズポリシーが有効な場合はオフにします
+preferences-doh-default-detailed-desc-5 = ネットワークが { -brand-short-name } に安全な DNS を使用させない場合はオフにします
+preferences-doh-setting-enabled =
+    .label = 強力な保護
+    .accesskey = I
+preferences-doh-enabled-desc = いつ安全な DNS を使用するかをユーザーが制御し、DNS プロバイダーを指定できます
+preferences-doh-enabled-detailed-desc-1 = 選択された DNS プロバイダーを使用します
+preferences-doh-enabled-detailed-desc-2 = 安全な DNS で問題がある場合のみ、既定の DNS リゾルバーを使用します
+preferences-doh-setting-strict =
+    .label = 最大限の保護
+    .accesskey = M
+preferences-doh-strict-desc = { -brand-short-name } は常に安全な DNS を使用します。ご使用のシステムの DNS が使用される前にセキュリティの危険性があることが警告されます。
+preferences-doh-strict-detailed-desc-1 = 選択された DNS プロバイダーのみを使用します
+preferences-doh-strict-detailed-desc-2 = 安全な DNS が利用できない場合、常に警告されます
+preferences-doh-strict-detailed-desc-3 = 安全な DNS が利用できない場合、サイトが読み込まれず正しく機能しません
+preferences-doh-setting-off =
+    .label = オフ
+    .accesskey = O
+preferences-doh-off-desc = 既定の DNS リゾルバーを使用します
+preferences-doh-checkbox-warn =
+    .label = 第三者が安全な DNS を妨げている時に警告する
+    .accesskey = W
+preferences-doh-select-resolver = プロバイダーを選択:
+preferences-doh-exceptions-description = { -brand-short-name } はこれらのサイトで安全な DNS を使用しません
+preferences-doh-manage-exceptions =
+    .label = 例外を管理...
+    .accesskey = x
 
 ## The following strings are used in the Download section of settings
 

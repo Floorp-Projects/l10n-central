@@ -70,7 +70,6 @@ firefoxview-pickup-tabs-badge = Последняя активная
 firefoxview-tabs-list-tab-button =
     .title = Открыть { $targetURI } в новой вкладке
 firefoxview-try-colorways-button = Попробуйте расцветки
-firefoxview-no-current-colorway-collection = Новые расцветки на подходе
 firefoxview-change-colorway-button = Сменить расцветку
 # Variables:
 #  $intensity (String): Colorway intensity
@@ -82,3 +81,46 @@ firefoxview-collapse-button-show =
     .title = Показать список
 firefoxview-collapse-button-hide =
     .title = Скрыть список
+firefoxview-overview-nav = Недавний просмотр
+    .title = Недавний просмотр
+
+## History in this context refers to browser history
+
+firefoxview-history-nav = История
+    .title = История
+firefoxview-history-header = История
+
+## Open Tabs in this context refers to all open tabs in the browser
+
+firefoxview-opentabs-nav = Открытые вкладки
+    .title = Открытые вкладки
+firefoxview-opentabs-header = Открытые вкладки
+
+## Recently closed tabs in this context refers to recently closed tabs from all windows
+
+firefoxview-recently-closed-nav = Недавно закрытые вкладки
+    .title = Недавно закрытые вкладки
+firefoxview-recently-closed-header = Недавно закрытые вкладки
+
+## Tabs from other devices refers in this context refers to synced tabs from other devices
+
+firefoxview-synced-tabs-nav = Вкладки с других устройств
+    .title = Вкладки с других устройств
+firefoxview-synced-tabs-header = Вкладки с других устройств
+
+##
+
+# Used for a link in collapsible cards, in the 'Recent browsing' page of Firefox View
+firefoxview-view-all-link = Просмотреть все
+# Variables:
+#   $winID (Number) - The index of the owner window for this set of tabs
+firefoxview-opentabs-window-header =
+    .title = Окно { $winID }
+# Variables:
+#   $winID (Number) - The index of the owner window (which is currently focused) for this set of tabs
+firefoxview-opentabs-current-window-header =
+    .title = Окно { $winID } (Текущее)
+firefoxview-opentabs-focus-tab =
+    .title = Переключаться на эту вкладку
+firefoxview-show-more = Показать больше
+firefoxview-show-less = Показать меньше

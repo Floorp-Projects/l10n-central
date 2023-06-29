@@ -70,6 +70,7 @@ protections-panel-site-not-working-view-issue-list-forms = แบบฟอร์
 protections-panel-site-not-working-view-issue-list-payments = การชำระเงิน
 protections-panel-site-not-working-view-issue-list-comments = ความคิดเห็น
 protections-panel-site-not-working-view-issue-list-videos = วิดีโอ
+protections-panel-site-not-working-view-issue-list-fonts = แบบอักษร
 protections-panel-site-not-working-view-send-report = ส่งรายงาน
 
 ##
@@ -89,6 +90,7 @@ protections-panel-content-blocking-manage-settings =
 protections-panel-content-blocking-breakage-report-view =
     .title = รายงานไซต์ที่ใช้งานไม่ได้
 protections-panel-content-blocking-breakage-report-view-description = การปิดกั้นตัวติดตามบางตัวอาจทำให้เกิดปัญหากับบางเว็บไซต์ได้ การรายงานปัญหา ก็เท่ากับคุณช่วยทำให้ { -brand-short-name } ดีขึ้นสำหรับทุก ๆ คน การรายงานนี้จะส่ง URL พร้อมทั้งข้อมูลเกี่ยวกับการตั้งค่าเบราว์เซอร์ของคุณไปให้กับ Mozilla <label data-l10n-name="learn-more">เรียนรู้เพิ่มเติม</label>
+protections-panel-content-blocking-breakage-report-view-description2 = การปิดกั้นตัวติดตามบางตัวอาจทำให้เกิดปัญหากับบางเว็บไซต์ได้ การรายงานปัญหา ก็เท่ากับคุณช่วยทำให้ { -brand-short-name } ดีขึ้นสำหรับทุก ๆ คน การรายงานนี้จะส่ง URL พร้อมทั้งข้อมูลเกี่ยวกับการตั้งค่าเบราว์เซอร์ของคุณไปให้กับ { -vendor-short-name }
 protections-panel-content-blocking-breakage-report-view-collection-url = URL
 protections-panel-content-blocking-breakage-report-view-collection-url-label =
     .aria-label = URL
@@ -108,8 +110,6 @@ protections-panel-cookie-banner-handling-disabled = ปิดสำหรับ�
 protections-panel-cookie-banner-handling-undetected = ไม่รองรับไซต์ในขณะนี้
 protections-panel-cookie-banner-view-title =
     .title = การลดแบนเนอร์คุกกี้
-protections-panel-cookie-banner-view-go-back =
-    .aria-label = กลับ
 # Variables
 #  $host (String): the hostname of the site that is being displayed.
 protections-panel-cookie-banner-view-turn-off-for-site = ต้องการปิดการลดแบนเนอร์คุกกี้สำหรับ { $host } หรือไม่?

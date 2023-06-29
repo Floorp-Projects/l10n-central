@@ -81,3 +81,38 @@ firefoxview-collapse-button-show =
     .title = Vis liste
 firefoxview-collapse-button-hide =
     .title = Skjul liste
+firefoxview-overview-nav = Nyleg besøkt
+    .title = Nyleg besøkt
+
+## History in this context refers to browser history
+
+firefoxview-history-nav = Historikk
+    .title = Historikk
+firefoxview-history-header = Historikk
+
+## Open Tabs in this context refers to all open tabs in the browser
+
+firefoxview-opentabs-nav = Opne faner
+    .title = Opne faner
+firefoxview-opentabs-header = Opne faner
+
+## Recently closed tabs in this context refers to recently closed tabs from all windows
+
+firefoxview-recently-closed-nav = Nyleg attlatne faner
+    .title = Nyleg attlatne faner
+firefoxview-recently-closed-header = Nyleg attlatne faner
+
+## Tabs from other devices refers in this context refers to synced tabs from other devices
+
+firefoxview-synced-tabs-nav = Faner frå andre einingar
+    .title = Faner frå andre einingar
+firefoxview-synced-tabs-header = Faner frå andre einingar
+
+##
+
+# Used for a link in collapsible cards, in the 'Recent browsing' page of Firefox View
+firefoxview-view-all-link = Vis alle
+firefoxview-opentabs-focus-tab =
+    .title = Byt til denne fana
+firefoxview-show-more = Vis meir
+firefoxview-show-less = Vis mindre

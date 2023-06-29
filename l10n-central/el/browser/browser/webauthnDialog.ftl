@@ -10,4 +10,20 @@ webauthn-pin-invalid-prompt =
         [one] Εσφαλμένο PIN! Παρακαλώ εισαγάγετε το σωστό PIN για τη συσκευή σας. Σας απομένει { $retriesLeft } προσπάθεια.
        *[other] Εσφαλμένο PIN! Παρακαλώ εισαγάγετε το σωστό PIN για τη συσκευή σας. Σας απομένουν { $retriesLeft } προσπάθειες.
     }
+# Variables:
+#  $retriesLeft (Number): number of tries left
+webauthn-pin-invalid-long-prompt =
+    { $retriesLeft ->
+        [one] Εσφαλμένο PIN. Σας απομένει { $retriesLeft } προσπάθεια πριν χάσετε οριστικά την πρόσβαση στα διαπιστευτήρια αυτής της συσκευής.
+       *[other] Εσφαλμένο PIN. Σας απομένουν { $retriesLeft } προσπάθειες πριν χάσετε οριστικά την πρόσβαση στα διαπιστευτήρια αυτής της συσκευής.
+    }
+webauthn-pin-invalid-short-prompt = Εσφαλμένο PIN. Δοκιμάστε ξανά.
 webauthn-pin-required-prompt = Παρακαλώ εισαγάγετε το PIN της συσκευής σας.
+# Variables:
+#  $retriesLeft (Number): number of tries left
+webauthn-uv-invalid-long-prompt =
+    { $retriesLeft ->
+        [one] Η επαλήθευση χρήστη απέτυχε. Σας απομένει { $retriesLeft } προσπάθεια. Δοκιμάστε ξανά.
+       *[other] Η επαλήθευση χρήστη απέτυχε. Σας απομένουν { $retriesLeft } προσπάθειες. Δοκιμάστε ξανά.
+    }
+webauthn-uv-invalid-short-prompt = Η επαλήθευση χρήστη απέτυχε. Δοκιμάστε ξανά.

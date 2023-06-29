@@ -26,6 +26,8 @@ policy-Bookmarks = สร้างที่คั่นหน้าในแถ�
 policy-CaptivePortal = เปิดหรือปิดใช้งานการสนับสนุนพอร์ทัลคัดกรอง
 policy-CertificatesDescription = เพิ่มใบรับรองหรือใช้ใบรับรองในตัว
 policy-Cookies = อนุญาตหรือปฏิเสธเว็บไซต์เพื่อตั้งคุกกี้
+# Containers in this context is referring to container tabs in Firefox.
+policy-Containers = ตั้งค่านโยบายที่เกี่ยวข้องกับการแยกข้อมูล
 policy-DisabledCiphers = ปิดการใช้งานรหัสลับ
 policy-DefaultDownloadDirectory = ตั้งไดเรกทอรีการดาวน์โหลดเริ่มต้น
 policy-DisableAppUpdate = ป้องกันไม่ให้เบราว์เซอร์อัปเดต
@@ -34,8 +36,8 @@ policy-DisableDefaultBrowserAgent = ป้องกันไม่ให้ต�
 policy-DisableDeveloperTools = ปิดกั้นการเข้าถึงเครื่องมือนักพัฒนา
 policy-DisableFeedbackCommands = ปิดใช้งานคำสั่งสำหรับส่งความคิดเห็นจากเมนู วิธีใช้ (ส่งความคิดเห็นและรายงานไซต์หลอกลวง)
 policy-DisableFirefoxAccounts = ปิดใช้งานบริการที่ใช้ { -fxaccount-brand-name } รวมถึง Sync ด้วย
-# Firefox Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = ปิดใช้งานคุณลักษณะ Firefox Screenshots
+# Floorp Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = ปิดใช้งานคุณลักษณะ Floorp Screenshots
 policy-DisableFirefoxStudies = ป้องกันไม่ให้ { -brand-short-name } เรียกใช้การศึกษา
 policy-DisableForgetButton = ป้องกันไม่ให้เข้าถึงปุ่ม ลืม
 policy-DisableFormHistory = ไม่จดจำประวัติการค้นหาและแบบฟอร์ม
@@ -114,6 +116,8 @@ policy-SearchEngines = กำหนดค่าการตั้งค่าเ
 policy-SearchSuggestEnabled = เปิดใช้งานหรือปิดใช้งานข้อเสนอแนะการค้นหา
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = ติดตั้งโมดูล PKCS #11
+# For more information, see https://wikipedia.org/wiki/PKCS_11
+policy-SecurityDevices2 = เพิ่มหรือลบโมดูล PKCS #11
 policy-ShowHomeButton = แสดงปุ่มหน้าแรกบนแถบเครื่องมือ
 policy-SSLVersionMax = ตั้งรุ่น SSL สูงสุด
 policy-SSLVersionMin = ตั้งรุ่น SSL ต่ำสุด

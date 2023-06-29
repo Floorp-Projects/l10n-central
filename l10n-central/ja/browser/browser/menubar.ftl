@@ -110,7 +110,7 @@ menu-edit =
     .label = 編集
     .accesskey = E
 menu-edit-find-in-page =
-    .label = ページを検索...
+    .label = ページ内を検索...
     .accesskey = F
 menu-edit-find-again =
     .label = 次を検索
@@ -330,6 +330,9 @@ menu-help-enter-troubleshoot-mode2 =
 menu-help-exit-troubleshoot-mode =
     .label = トラブルシューティングモードをオフにする
     .accesskey = M
+menu-help-switch-device =
+    .label = 新しい端末に切り替え
+    .accesskey = N
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =

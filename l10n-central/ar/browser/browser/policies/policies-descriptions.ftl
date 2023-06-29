@@ -30,7 +30,7 @@ policy-DisableDefaultBrowserAgent = امنع وكيل المتصفّح المب�
 policy-DisableDeveloperTools = منع الوصول إلى أدوات المطوّرين.
 policy-DisableFeedbackCommands = تعطيل أوامر إرسال الانطباعات في قائمة المساعدة (”أرسِل تعليقًا“ و ”أبلغ عن موقع مخادع“).
 policy-DisableFirefoxAccounts = تعطيل الخدمات التي تعتمد { -fxaccount-brand-name }، بما في ذلك المزامنة.
-# Firefox Screenshots is the name of the feature, and should not be translated.
+# Floorp Screenshots is the name of the feature, and should not be translated.
 policy-DisableFirefoxScreenshots = تعطيل ميزة لقطات شاشة Firefox.
 policy-DisableFirefoxStudies = منع { -brand-short-name } من تشغيل الدارسات.
 policy-DisableForgetButton = منع الوصول إلى زر النسيان.

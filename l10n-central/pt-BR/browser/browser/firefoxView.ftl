@@ -81,3 +81,46 @@ firefoxview-collapse-button-show =
     .title = Exibir lista
 firefoxview-collapse-button-hide =
     .title = Ocultar lista
+firefoxview-overview-nav = Navegação recente
+    .title = Navegação recente
+
+## History in this context refers to browser history
+
+firefoxview-history-nav = Histórico
+    .title = Histórico
+firefoxview-history-header = Histórico
+
+## Open Tabs in this context refers to all open tabs in the browser
+
+firefoxview-opentabs-nav = Abas abertas
+    .title = Abas abertas
+firefoxview-opentabs-header = Abas abertas
+
+## Recently closed tabs in this context refers to recently closed tabs from all windows
+
+firefoxview-recently-closed-nav = Abas fechadas recentemente
+    .title = Abas fechadas recentemente
+firefoxview-recently-closed-header = Abas fechadas recentemente
+
+## Tabs from other devices refers in this context refers to synced tabs from other devices
+
+firefoxview-synced-tabs-nav = Abas de outros dispositivos
+    .title = Abas de outros dispositivos
+firefoxview-synced-tabs-header = Abas de outros dispositivos
+
+##
+
+# Used for a link in collapsible cards, in the 'Recent browsing' page of Firefox View
+firefoxview-view-all-link = Ver tudo
+# Variables:
+#   $winID (Number) - The index of the owner window for this set of tabs
+firefoxview-opentabs-window-header =
+    .title = Janela { $winID }
+# Variables:
+#   $winID (Number) - The index of the owner window (which is currently focused) for this set of tabs
+firefoxview-opentabs-current-window-header =
+    .title = Janela { $winID } (atual)
+firefoxview-opentabs-focus-tab =
+    .title = Mudar para esta aba
+firefoxview-show-more = Mostrar mais
+firefoxview-show-less = Mostrar menos

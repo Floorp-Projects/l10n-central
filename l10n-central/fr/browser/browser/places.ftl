@@ -23,6 +23,8 @@ places-open-in-window =
 places-open-in-private-window =
     .label = Ouvrir dans une nouvelle fenêtre privée
     .accesskey = p
+places-empty-bookmarks-folder =
+    .label = (Vide)
 places-add-bookmark =
     .label = Ajouter un marque-page…
     .accesskey = o
@@ -82,6 +84,15 @@ places-delete-folder =
            *[other] Supprimer les dossiers
         }
     .accesskey = S
+# Variables:
+#   $count (number) - The number of pages selected for removal.
+places-delete-page =
+    .label =
+        { $count ->
+            [1] Supprimer la page
+           *[other] Supprimer les pages
+        }
+    .accesskey = S
 # Managed bookmarks are created by an administrator and cannot be changed by the user.
 managed-bookmarks =
     .label = Marque-pages gérés
@@ -103,6 +114,15 @@ places-delete-bookmark =
            *[other] Supprimer les marques pages
         }
     .accesskey = S
+# Variables:
+#   $count (number) - The number of bookmarks being added.
+places-create-bookmark =
+    .label =
+        { $count ->
+            [1] Marquer cette page…
+           *[other] Marquer ces pages…
+        }
+    .accesskey = M
 places-untag-bookmark =
     .label = Supprimer l’étiquette
     .accesskey = S
@@ -120,9 +140,6 @@ places-forget-about-this-site-forget = Oublier
 places-library =
     .title = Bibliothèque
     .style = width:730px; height:500px;
-places-library2 =
-    .title = Bibliothèque
-    .style = min-width:730px; min-height:500px;
 places-library3 =
     .title = Bibliothèque
 places-organize-button =
@@ -198,6 +215,27 @@ places-view-sort-col-date-added =
     .label = Date d’ajout
 places-view-sort-col-last-modified =
     .label = Date de modification
+places-view-sortby-name =
+    .label = nom
+    .accesskey = n
+places-view-sortby-url =
+    .label = adresse
+    .accesskey = e
+places-view-sortby-date =
+    .label = dernière visite
+    .accesskey = d
+places-view-sortby-visit-count =
+    .label = nombre de visites
+    .accesskey = v
+places-view-sortby-date-added =
+    .label = date d’ajout
+    .accesskey = t
+places-view-sortby-last-modified =
+    .label = date de modification
+    .accesskey = o
+places-view-sortby-tags =
+    .label = étiquette
+    .accesskey = u
 places-cmd-find-key =
     .key = F
 places-back-button =
@@ -205,3 +243,27 @@ places-back-button =
 places-forward-button =
     .tooltiptext = Avancer
 places-details-pane-select-an-item-description = Sélectionner un élément pour afficher et modifier ses propriétés
+places-details-pane-no-items =
+    .value = Pas d’élément
+# Variables:
+#   $count (Number): number of items
+places-details-pane-items-count =
+    .value =
+        { $count ->
+            [one] Un élément
+           *[other] { $count } éléments
+        }
+
+## Strings used as a placeholder in the Library search field. For example,
+## "Search History" stands for "Search through the browser's history".
+
+places-search-bookmarks =
+    .placeholder = Rechercher dans les marque-pages
+places-search-history =
+    .placeholder = Rechercher dans l’historique
+places-search-downloads =
+    .placeholder = Rechercher dans les téléchargements
+
+##
+
+places-locked-prompt = Le système de marque-pages et d’historique ne sera pas opérationnel car l’un des fichiers de { -brand-short-name } est en cours d’utilisation par une autre application. Certains logiciels de sécurité peuvent causer ce problème.

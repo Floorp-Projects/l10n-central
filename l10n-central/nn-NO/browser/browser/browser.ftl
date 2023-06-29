@@ -144,6 +144,8 @@ urlbar-tip-icon-description =
     .alt = Tips:
 urlbar-result-menu-button =
     .title = Opne meny
+urlbar-result-menu-button-feedback = Tilbakemelding
+    .title = Opne meny
 urlbar-result-menu-learn-more =
     .label = Les meir
     .accesskey = L
@@ -675,6 +677,11 @@ picture-in-picture-urlbar-button-open =
     .tooltiptext = Opne bilde-i-bilde ({ $shortcut })
 picture-in-picture-urlbar-button-close =
     .tooltiptext = Lat att bilde-i-bilde ({ $shortcut })
+picture-in-picture-panel-header = Bilde-i-bilde
+picture-in-picture-panel-headline = Denne nettstaden tilrår ikkje bilde-i-bilde
+picture-in-picture-panel-body = Det kan hende at videoar ikkje vert vist slik utviklaren hadde tenkt mens bilde-i-bilde er aktivert.
+picture-in-picture-enable-toggle =
+    .label = Slå på likevel
 
 ## Full Screen and Pointer Lock UI
 
@@ -992,4 +999,43 @@ firefox-relay-offer-what-relay-does = Vi videaresender alle e-postar frå <stron
 
 ## Popup Notification
 
+firefox-relay-offer-why-to-use-relay = Dei sikre, brukarvennlege aliasa våre vernar identiteten din og hindrar spam ved å skjule e-postadressa di.
+# Variables:
+#  $useremail (String): user email that will receive messages
+firefox-relay-offer-what-relay-provides = Alle e-postar som vert sende til e-postaliasa dine vil bli vidaresende til <strong>{ $useremail }</strong> (med mindre du bestemmer deg for å blokkere dei).
+firefox-relay-offer-legal-notice = Ved å klikke «Bruk e-postalias» godtek du <label data-l10n-name="tos-url">tenestevilkåra</label> og <label data-l10n-name="privacy-url">personvernerklæringa</label>.
+
+## Add-on Pop-up Notifications
+
+popup-notification-addon-install-unsigned =
+    .value = (Ikkje stadfesta)
 popup-notification-xpinstall-prompt-learn-more = Les meir om sikker installering av tillegg
+
+## Pop-up warning
+
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-message =
+    { $popupCount ->
+        [one] { -brand-short-name } hindra denne nettstaden frå å opne eit sprettopp-vindauge.
+       *[other] { -brand-short-name } hindra denne nettstaden frå å opne { $popupCount } sprettopp-vindauge.
+    }
+# The singular form is left out for English, since the number of blocked pop-ups is always greater than 1.
+# Variables:
+#   $popupCount (Number): the number of pop-ups blocked.
+popup-warning-exceeded-message = { -brand-short-name } hindra denne nettstaden frå å opne meir enn { $popupCount } sprettopp-vindauge.
+popup-warning-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Innstillingar
+           *[other] Innstillingar
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] I
+           *[other] I
+        }
+# Variables:
+#   $popupURI (String): the URI for the pop-up window
+popup-show-popup-menuitem =
+    .label = Vis «{ $popupURI }»

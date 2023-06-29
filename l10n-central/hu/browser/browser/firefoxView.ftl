@@ -70,7 +70,6 @@ firefoxview-pickup-tabs-badge = Utoljára aktív
 firefoxview-tabs-list-tab-button =
     .title = A(z) { $targetURI } megnyitása új lapon
 firefoxview-try-colorways-button = Próbálja ki a színvilágokat
-firefoxview-no-current-colorway-collection = Úton vannak az új színvilágok
 firefoxview-change-colorway-button = Színvilág módosítása
 # Variables:
 #  $intensity (String): Colorway intensity
@@ -82,3 +81,34 @@ firefoxview-collapse-button-show =
     .title = Lista megjelenítése
 firefoxview-collapse-button-hide =
     .title = Lista elrejtése
+firefoxview-overview-nav = Legutóbbi böngészés
+    .title = Legutóbbi böngészés
+
+## History in this context refers to browser history
+
+firefoxview-history-nav = Előzmények
+    .title = Előzmények
+firefoxview-history-header = Előzmények
+
+## Open Tabs in this context refers to all open tabs in the browser
+
+firefoxview-opentabs-nav = Nyitott lapok
+    .title = Nyitott lapok
+firefoxview-opentabs-header = Nyitott lapok
+
+## Recently closed tabs in this context refers to recently closed tabs from all windows
+
+firefoxview-recently-closed-nav = Nemrég bezárt lapok
+    .title = Nemrég bezárt lapok
+firefoxview-recently-closed-header = Nemrég bezárt lapok
+
+## Tabs from other devices refers in this context refers to synced tabs from other devices
+
+firefoxview-synced-tabs-nav = Lapok más eszközökről
+    .title = Lapok más eszközökről
+firefoxview-synced-tabs-header = Lapok más eszközökről
+
+##
+
+# Used for a link in collapsible cards, in the 'Recent browsing' page of Firefox View
+firefoxview-view-all-link = Összes megtekintése

@@ -2,7 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-
 tabbrowser-empty-tab-title = 新しいタブ
 tabbrowser-empty-private-tab-title = 新しいプライベートタブ
 tabbrowser-menuitem-close-tab =
@@ -14,10 +13,6 @@ tabbrowser-menuitem-close =
 #   $title (String): the title of the current tab.
 #   $containerName (String): the name of the current container.
 tabbrowser-container-tab-title = { $title } — { $containerName }
-# Variables:
-#   $title (String): the title of the current tab.
-tabbrowser-tab-tooltip =
-    .label = { $title }
 # Variables:
 #   $tabCount (Number): The number of tabs that will be closed.
 tabbrowser-close-tabs-tooltip =
@@ -146,3 +141,21 @@ tabbrowser-context-mute-selected-tabs =
 tabbrowser-context-unmute-selected-tabs =
     .label = タブのミュートを解除
     .accesskey = m
+# This string is used as an additional tooltip and accessibility description for tabs playing audio
+tabbrowser-tab-audio-playing-description = 音声を再生します
+
+## Ctrl-Tab dialog
+
+# Variables:
+#   $tabCount (Number): The number of tabs in the current browser window. It will always be 2 at least.
+tabbrowser-ctrl-tab-list-all-tabs =
+    .label = すべて ({ $tabCount } ページ) のタブを一覧
+
+## Tab manager menu buttons
+
+tabbrowser-manager-mute-tab =
+    .tooltiptext = タブをミュートにします
+tabbrowser-manager-unmute-tab =
+    .tooltiptext = タブのミュートを解除します
+tabbrowser-manager-close-tab =
+    .tooltiptext = タブを閉じます
