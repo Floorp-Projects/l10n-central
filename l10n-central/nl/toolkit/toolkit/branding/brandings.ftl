@@ -30,7 +30,7 @@
 
 # “Suggest” can be localized, “Firefox” must be treated as a brand
 # and kept in English.
--firefox-suggest-brand-name = Firefox Suggesties
+-firefox-suggest-brand-name = Floorp Suggesties
 
 # ”Home" can be localized, “Firefox” must be treated as a brand
 # and kept in English.

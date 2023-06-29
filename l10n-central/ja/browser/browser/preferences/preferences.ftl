@@ -509,7 +509,7 @@ home-restore-defaults =
 # "Firefox" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
-    .label = Firefox Home (既定)
+    .label = Floorp Home (既定)
 home-mode-choice-default-fx =
     .label = { -firefox-home-brand-name } (既定)
 home-mode-choice-custom =
@@ -533,10 +533,10 @@ choose-bookmark =
     .label = ブックマークを使う...
     .accesskey = B
 
-## Home Section - Firefox Home Content Customization
+## Home Section - Floorp Home Content Customization
 
-home-prefs-content-header = Firefox Home コンテンツ
-home-prefs-content-description = Firefox Home に表示するコンテンツを選びましょう。
+home-prefs-content-header = Floorp Home コンテンツ
+home-prefs-content-description = Floorp Home に表示するコンテンツを選びましょう。
 home-prefs-content-header2 = { -firefox-home-brand-name } コンテンツ
 home-prefs-content-description2 = { -firefox-home-brand-name } に表示するコンテンツを選びましょう。
 home-prefs-search-header =

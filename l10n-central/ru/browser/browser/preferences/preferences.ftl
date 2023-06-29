@@ -548,7 +548,7 @@ choose-bookmark =
     .label = Использовать закладку…
     .accesskey = в
 
-## Home Section - Firefox Home Content Customization
+## Home Section - Floorp Home Content Customization
 
 home-prefs-content-header = Домашняя страница Firefox
 home-prefs-content-description = Выберите, какое содержимое вы хотите видеть на домашней странице Firefox.

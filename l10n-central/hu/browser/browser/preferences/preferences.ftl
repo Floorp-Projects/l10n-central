@@ -545,7 +545,7 @@ choose-bookmark =
     .label = Könyvjelző használata…
     .accesskey = n
 
-## Home Section - Firefox Home Content Customization
+## Home Section - Floorp Home Content Customization
 
 home-prefs-content-header = Firefox kezdőlap tartalma
 home-prefs-content-description = Válassza ki milyen tartalmat szeretne a Firefox kezdőlapon.

@@ -533,7 +533,7 @@ choose-bookmark =
     .label = 북마크 사용…
     .accesskey = B
 
-## Home Section - Firefox Home Content Customization
+## Home Section - Floorp Home Content Customization
 
 home-prefs-content-header = Firefox 홈 콘텐츠
 home-prefs-content-description = Firefox 홈 화면에서 원하는 콘텐츠를 선택하세요.

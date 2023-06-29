@@ -651,7 +651,7 @@ urlbar-result-action-search-actions = Search Actions
 
 ## Labels shown above groups of urlbar results
 
-# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
+# A label shown above the "Floorp Suggest" (bookmarks/history) group in the
 # urlbar results.
 urlbar-group-firefox-suggest =
     .label = { -firefox-suggest-brand-name }

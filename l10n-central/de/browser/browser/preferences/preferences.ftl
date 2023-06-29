@@ -545,7 +545,7 @@ choose-bookmark =
     .label = Lesezeichen verwenden…
     .accesskey = L
 
-## Home Section - Firefox Home Content Customization
+## Home Section - Floorp Home Content Customization
 
 home-prefs-content-header = Inhalte des Firefox-Startbildschirms
 home-prefs-content-description = Wählen Sie, welche Inhalte auf Ihrem Firefox-Startbildschirm angezeigt werden sollen.

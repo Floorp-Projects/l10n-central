@@ -533,7 +533,7 @@ choose-bookmark =
     .label = ใช้ที่คั่นหน้า…
     .accesskey = ท
 
-## Home Section - Firefox Home Content Customization
+## Home Section - Floorp Home Content Customization
 
 home-prefs-content-header = เนื้อหาหน้าแรก Firefox
 home-prefs-content-description = เลือกเนื้อหาที่คุณต้องการในหน้าจอหน้าแรก Firefox ของคุณ
