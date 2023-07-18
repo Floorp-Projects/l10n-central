@@ -34,8 +34,18 @@ multirow-tabs-newtab =
 multirow-tabs-value = 多段タブの有効化時の行制限数
 enable-tab-sleep =
  .label = タブスリープを有効にする
+tab-sleep-settings-button =
+    .label = タブスリープの設定
+    .accesskey = S
 enable-floorp-workspace =
  .label =  ワークスペース機能を有効にする（実験的）
+floorp-workspace-settings-button =
+    .label = バックアップと復元...
+    .accesskey = B
+floorp-workspaces-title = { -brand-short-name } ワークスペース
+workspaces-backup-discription = ワークスペースのバックアップと復元
+workspaces-restore-service-title = ワークスペース復元サービス
+workspaces-restore-warning = 警告: この操作を実行すると、現在のワークスペースが上書きされ、ブラウザーが数秒の間使えなくなり、ワークスペースが復元されます。この操作は取り消せません。
 enable-tab-scroll-reverse =
   .label = タブバーでのスクロールを反転させる
 enable-tab-scroll-wrap =
@@ -56,23 +66,19 @@ None-mode =
  .label= 通常モード（変更なし）
 
 hide-horizontality-tabs =
- .label= 水平タブを隠す
+ .label= { -brand-short-name } の組み込みのタブバーを隠す
 
 verticalTab-setting =
- .label = 垂直タブにブラウザーを最適化
+ .label = 垂直タブにブラウザーを最適化 (Mac では非互換)
 
 move-tabbar-position =
- .label = タブバーの位置をツールバーの下部に表示
+ .label = タブバーの位置をツールバーの下部に表示 (Mac では非互換)
 
 tabbar-on-bottom =
  .label = タブバーをウインドウの下部に表示
 
-
-## ↓ Will be deleted
-native-tabbar = 垂直タブ
-## ↓ Will be deleted
-use-native-vertical =
-  .label = ネイティブ実装された垂直タブを使用する（実験的）
+tabbar-favicon-color =
+ .label = タブバーの背景色をウェブページに合わせる
 
 tabbar-style-preference = タブスタイル
 
@@ -92,11 +98,6 @@ hover-vertical-tab =
 vertical-tab-reverse-position = 垂直タブの位置を反転させる
 
 sidebar-reverse-position-toolbar = サイドバーの位置を反転させる
-
-treestyletabSettings-l10 = ツリー型タブの設定
-treestyletab-Settings =
- .label = フォーカスされた場合にツリー型タブを展開する（ブラウザーマネージャーサイドバーには適用されません）
-treestyletab-open-option = ツリー型タブアドオンの設定
 
 bookmarks-bar-settings = ブックマークバーの設定（設定の併用不可）
 bookmarks-focus-mode =
@@ -186,11 +187,6 @@ always-notify =
 do-not-notify =
  .label = 通知しない
 
-floorp-translater = 翻訳機能の設定
-click-to-option =
-    .label = 設定を開く
-    .accesskey = O
-
 ## sidebar
 profiles-button-label = プロファイルを管理
 floorp-help-button-label = { -brand-short-name } サポート
@@ -231,6 +227,9 @@ set-custom-URL-button =
     .label = カスタム URL を設定
     .accesskey = S
 bsb-header = ブラウザーマネージャーサイドバー
+bsb-preferences = ブラウザーマネージャーサイドバーの設定
+visible-bms = ブラウザーマネージャーサイドバーを表示する
+pane-BSB-title = ブラウザーマネージャーサイドバー
 bsb-context = コンテナタブを選択する
 bsb-userAgent-label =
   .label = ユーザーエージェントをモバイルに切り替える
