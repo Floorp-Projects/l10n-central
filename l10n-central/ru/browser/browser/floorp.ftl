@@ -31,12 +31,13 @@ enable-tab-sleep =
  .label = Включить режим сна вкладок
 enable-floorp-workspace =
  .label = Включить рабочее пространство
-tab-sleep-timeout-minutes-value = Время перевода вкладок в спящий режим (минуты)
+tab-sleep-timeout-minutes-value = Время перевода вкладок в режим сна (минуты)
 tab-sleep-settings-button = Настройки...
 tab-sleep-settings-dialog-title =
  .title = Настройки сна вкладок
 tab-sleep-settings-dialog-excludehosts-label = Список исключений
 tab-sleep-settings-dialog-excludehosts-label-2 = Введите одно исключение на строку
+tab-sleep-tab-context-menu-excludetab = Не переводить эту вкладку в режим сна
 enable-tab-scroll-change =
  .label = Переключать вкладки с помощью прокрутки
 enable-tab-scroll-reverse =
@@ -604,6 +605,28 @@ workspace-rename =
 sharemode-menuitem =
   .label = Режим общего доступа
   .accesskey = S
+
+############################################################################## Welcome page ###############################################################
+
+welcome-login-to-firefox-account = Войти в учетную запись Firefox
+welcome-to-floorp = Добро пожаловать в Floorp!
+welcome-discribe-floorp = "Floorp" - это браузер, который гибко поддерживает различные окружения и основан на Firefox. Это простой в использовании браузер с множеством функций.
+welcome-start-setup = Настройки для создания "вашего собственного браузера"
+welcome-skip-to-start-browsing = Пропустить для начала просмотра
+welcome-select-preferences-template = Выберите шаблон
+welcome-minimum-template = Основной
+welcome-enable-basic-features = Активировать основные функции и настройки для простого опыта.
+welcome-medium-template = Средний
+welcome-enable-some-features = Активировать дополнительные функции и настройки для улучшенного опыта
+welcome-maximum-template = Продвинутый
+welcome-enable-most-of-features = Наиболее гибкие функции и настройки. Рекомендуется для опытных пользователей.
+welcome-select-browser-design = Выберите дизайн браузера
+welcome-discribe-browser-design = Вы можете выбрать из разнообразных отличных сторонних или дизайнов Floorp. Дизайны, специфичные для операционных систем, также доступны в разделе "Настройки".
+welcome-design-lepton-name = Lepton Original Design
+welcome-design-photon-name = Lepton Photon Design
+welcome-design-ProtonFix-name = Lepton ProtonFix Design
+welcome-design-floorp-fluerial-name = Floorp Fluerial Design
+welcome-select-button = Выбрать
 
 ######################################################################### user js ###############################################################
 
