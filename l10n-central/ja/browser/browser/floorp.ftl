@@ -799,3 +799,34 @@ floorp-show-all-downloads =
   .label = すべてのダウンロードを表示
   .accesskey = S
   .tooltiptext = すべてのダウンロードを表示
+
+############################################################################## Welcome page ###############################################################
+
+welcome-login-to-firefox-account = Firefox アカウントにログイン
+welcome-to-floorp = { -brand-short-name } へようこそ !
+welcome-discribe-floorp = { -brand-short-name } は、Firefox ベースの、様々な機能を搭載した日本で開発されているフレキシブルなブラウザーです！
+welcome-start-setup = セットアップを開始する
+welcome-skip-to-start-browsing = 今すぐブラウジングを開始する
+welcome-select-preferences-template = テンプレートを選択
+welcome-minimum-template = 梅
+welcome-enable-basic-features = 基本的な機能と設定を有効にして、シンプルな体験を。
+welcome-medium-template = 竹 (既定)
+welcome-enable-some-features = より良い体験のための追加機能と設定を有効にします。
+welcome-maximum-template = 松
+welcome-enable-most-of-features = 高度な機能と設定を有効にします。ギークなユーザーにお勧めします。
+welcome-go-next-setup = 次へ進む
+welcome-select-browser-design = ブラウザーのデザインを選択
+welcome-discribe-browser-design = サードパーティによる素晴らしいデザインから { -brand-short-name } のデザインを 1 つを選ぶことができます。OS 固有のデザインも about:preferences で利用可能です。
+welcome-design-lepton-name = Lepton オリジナルデザイン
+welcome-design-photon-name = Lepton Photon デザイン
+welcome-design-ProtonFix-name = Lepton ProtonFix デザイン
+welcome-design-floorp-fluerial-name = Floorp Fluerial デザイン
+welcome-design-firefox-proton-name = Firefox Proton デザイン
+welcome-import-data = ユーザーデータのインポート
+welcome-import-data-description = 迅速なセットアップ！古いブラウザからブックマークやパスワードなどをインポートできます。Firefox ユーザーは Firefox Sync からデータをインポートできます。
+welcome-import-data-button = インポートを実行する
+welcome-import-data-skip = インポートをスキップする
+welcome-select-button = 選択
+welcome-finish-setup = セットアップを完了！
+welcome-finish-setup-description = これで設定完了です！垂直タブ・アドオン等のその他の設定は、about:preferences から確認できます。{ -brand-short-name } をお楽しみください !
+welcomet-finish-setup = ブラウジングを開始する
