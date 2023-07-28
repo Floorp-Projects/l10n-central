@@ -6,24 +6,22 @@
 
 about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label>是日本开发浏览器之一。 基于 Firefox 开发并由 <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label> 运营，旨在促进网络发展。 想支持我们？ <label data-l10n-name="helpus-donateLink">点此捐款</label>
 icon-creator = 图标作者： <label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> 和 <label data-l10n-name="brand-logo-twitter">@mwxdxx.</label>
-contributors =  <label data-l10n-name="about-contributor">点此</label> 查看贡献者和开发者列表
+contributors =  这是一份<label data-l10n-name="about-contributor">贡献者和开发者名单</label>。
 
 
-extension-floorp-material-name= 材质主题
-extension-floorp-material-description=跟随操作系统的按钮菜单和窗口样式
-
-extension-floorp-photon-name= Firefox Photon 主题
-extension-floorp-photon-description=跟随操作系统的按钮菜单和窗口样式
 #################################################################### about:preferences ####################################################################
 
-feature-requires-restart = 确认修改选项？需要重启才能使该选项生效。请在进行任何更改之前保存您正在使用的数据。
-floorp-preference = 实验性设置
-browser-design-settings = 标签栏设置
-auto-reboot = 如果您更改以下任何设置，您的浏览器将重新启动以应用更改。 在进行任何更改之前，请保存您正在使用的数据。
-tab-width = 标签最小宽度
-preferences-tabs-newtab-position = 新标签位置
-open-new-tab-use-default = 
- .label = 在默认位置打开新标签
+pane-design-title = 设计
+category-design =
+    .tooltiptext = { pane-design-title }
+design-header = 设计
+
+feature-requires-restart = 更改设置后需要重新启动
+
+tab-width = Minimum width of tabs
+preferences-tabs-newtab-position = 新标签页的位置
+open-new-tab-use-default =
+ .label = 在默认位置打开新标签页
 open-new-tab-at-the-end =
  .label = 在标签栏末尾打开新标签
 open-new-tab-next-to-current = 
@@ -38,16 +36,30 @@ multirow-tabs-value = 多行标签栏标签最大行数
 enable-tab-sleep = 
  .label = 启用标签休眠
 tab-sleep-timeout-minutes-value = 多久后休眠未激活标签 (单位：分钟)
+tab-sleep-settings-button = 设置...
+tab-sleep-settings-dialog-title =
+ .title = 标签休眠设置
+tab-sleep-settings-dialog-excludehosts-label = 排除域名
+tab-sleep-settings-dialog-excludehosts-label-2 = 一行一个赢
+tab-sleep-tab-context-menu-excludetab = 请勿让此标签页进入休眠状态
+enable-floorp-workspace =
+ .label = 启用工作空间
 enable-tab-scroll-change = 
  .label = 通过滚轮切换标签
+enable-tab-scroll-reverse =
+ .label = 反转标签页滚动方向
+enable-tab-scroll-wrap =
+ .label = 在边缘处循环滚动标签页
 enable-double-click-block = 
  .label = 双击关闭标签
 enable-show-pinned-tabs-title =
  .label = 显示固定标签页的标题
+tab-width = 
+ .label = 标签宽度
 operation-settings = 
-  .label = 浏览器操作设置
+ .label = 浏览器操作设置
 Mouse-side-button = 
-  .label = 带侧键鼠标模式（隐藏前进和后退按钮）
+ .label = 带侧键鼠标模式（隐藏前进和后退按钮）
 
 tabbar-preference = 标签栏
 
@@ -66,22 +78,26 @@ move-tabbar-position =
 tabbar-on-bottom = 
  .label = 标签栏在窗口下方
 
+tabbar-favicon-color =
+ .label = 标签栏图标颜色
+
 native-tabbar = 原生垂直标签栏
-use-native-vertical =
-  .label = 启用原生垂直标签栏 (实验性功能)
+tabbar-style-preference = 标签栏样式
+
+horizontal-tabbar =
+ .label = 横向标签栏
+
+multirow-tabbar =
+ .label = 多行标签栏
+vertical-tabbar =
+ .label = 垂直标签栏 (实验性)
 native-tabbar-tip = 这个功能基于 Firefox 侧边栏，所以你不能与其他侧边栏插件同时使用。
 hover-vertical-tab =
  .label = 鼠标移动到垂直标签栏处后垂直标签栏自动扩展
 
-vertical-tab-reverse-position = 翻转垂直标签栏排序
+sidebar-reverse-position-toolbar = 反转侧边栏位置
 
-treestyletabSettings-l10 = 垂直标签栏设置
-treestyletab-Settings = 
- .label = 失去焦点时自动变小
-treestyletab-open-option = 更多设置
-
-bookmarks-bar-settings = 书签栏设置（不能同时生效）
-
+bookmarks-bar-settings = 书签栏设置（不能同时使用）
 bookmarks-focus-mode =
  .label = 书签栏自动隐藏
 bookmarks-bottom-mode =
@@ -156,46 +172,6 @@ floorp-fluerialUI =
 
 floorp-gnomeUI =
  .label = GNOME 桌面设计（依赖于系统主题和 GTK）
- 
-waterfox-lepton =
- .label = Lepton 设计（Firefox UI FIX）
- 
-## BlockMoreTracker
-
-privacy-hub-header = 隐私中心
-
-block-more-tracker = 拦截更多的广告和跟踪器
-block-tracker = 本节包含一组旨在阻止广告和跟踪器的扩展程序
-
-view-at-AMO = 在附加组件中心查看
-uBlock-Origin = uBlock Origin
-about-uboori = uBlock Origin 拦截广告、大量跟踪器和其他危险网站。
-
-Privacy-Badger = Privacy Badger
-about-PBadger = Privacy Badger 自动学习各个网站上的行为来阻止隐藏的跟踪器。
-
-Duck-Duck-Go = DuckDuckGo Privacy Essentials
-about-DDG = DuckDuckGo Privacy Essentials 用 DuckDuckGo 替换默认搜索引擎，同时拦截所访问网站的跟踪器。
-
-## Fingerprint
-
-fingerprint-header = 抵制指纹和 IP 地址泄漏
-block-fingerprint = 指纹是一种跟踪机制，依赖于你的浏览器和操作系统的特性。本节包含部分设置，超出默认设置，以进一步加强指纹保护。
-enable-firefox-fingerprint-protections = 启用指纹保护
-about-firefox-fingerprint-protection =  启用 { -brand-short-name } 提供的更强大的保护，但可能导致某些网站异常。
-fingerprint-Protection =
- .label =  防指纹保护措施
-html5-canvas-prompt-settings =
- .label =  自动批准 HTML5 图像数据的访问确认提示
-canvas-prompt = 自动拒绝 Canvas 读取提示
-disable-webgl =
- .label =  禁用 WebGL
-about-webgl = WebGL 是用于渲染图形的 Javascript API，可用于识别 GPU。
-Canvas-Blocker = Canvas Blocker
-about-CB = Canvas Blocker 虚拟通过指纹技术读取的数据。
-WebRTC-connection = WebRTC 是一种提供实时调用的标准。 如果禁用此设置，您将无法使用 Discord 等。
-WebRTC = 
- .label = 启用 WebRTC 连接
 
 ## download mgr
 download-notification-preferences = 下载通知
@@ -234,29 +210,36 @@ mobile-chrome-useragent-mode =
  .label = 模拟 移动端
 use-custom-useragent-mode =
  .label = 自定义 User Agent
-custom-useragent-value =
-  .label = 自定义 User Agent
-
 ## DMR UI
 download-mgr-UI =
  .label = 使用简化的下载管理器
 downloading-red-color =
  .label = 在下载过程中红色高亮下载管理器图标
 
-sidebar-preferences = 侧边工具栏（类似 Opera）
+sidebar-preferences = 侧边工具栏（类似 Opera，垂直工具栏）
+
+bsb-preferences = 侧边栏设置
 view-sidebar2-right = 
  .label = 显示在浏览器窗口右侧
 enable-sidebar2 =
  .label = 启用侧边工具栏
 
-sidebar2-restore =
- .label = 当 { -brand-short-name } 重启或打开新窗口时还原侧边栏位置
-
+visible-bms = 
+ .label = 可见的侧边工具栏
+ 
 custom-URL-option = 设置侧边工具栏快捷网址
 set-custom-URL-button = 
     .label = 设置快捷网址...
     .accesskey = S
-bsb-header = 侧边工具栏快捷网址设置
+
+pane-BSB-title = { bsb-header }
+category-BSB =
+    .tooltiptext = { pane-BSB-title }
+
+category-downloads = 
+    .tooltiptext = { files-and-applications-title }
+
+bsb-header = 侧边工具栏
 bsb-context = 选择容器身份
 bsb-userAgent-label = 
   .label = 使用移动端 User Agent 
@@ -265,24 +248,28 @@ bsb-page = 需要打开的网页
 
 bsb-add = 添加面板到侧边工具栏
 bsb-setting = 面板设置
-bsb-add-title = 
+
+bsb-add-title =
  .title = { bsb-add }
+
 bsb-setting-title = 
  .title = { bsb-setting }
+
 bsb-browser-manager-sidebar =
   .label = { sidebar2-browser-manager-sidebar }
+
 bsb-bookmark-sidebar =
   .label = { sidebar2-bookmark-sidebar }
+
 bsb-history-sidebar =
   .label = { sidebar2-history-sidebar }
+
 bsb-download-sidebar =
   .label = { sidebar2-download-sidebar }
+
 bsb-notes-sidebar =
   .label = { sidebar2-notes-sidebar }
-bsb-TST-sidebar =
-  .label = { sidebar2-TST-sidebar }
-bsb-notes-sidebar =
-  .label = { sidebar2-notes-sidebar }
+
 bsb-website = 
   .label = 网站
 
@@ -290,6 +277,7 @@ sidebar2-pref-delete =
  .label = 删除
 sidebar2-pref-setting =
  .label = 设置
+
 sidebar2-global-width = 侧边工具栏全局面板宽度
 
 use-icon-provider-option = 侧边栏工具图标提供商
@@ -349,6 +337,8 @@ newtab-background-folder-open =
 newtab-background-folder-choose = 选择图片文件夹
 
 newtab-background-extensions = 图片后缀 (使用","间隔)
+disable-blur-on-newtab = 
+  .label = 在 { -brand-short-name } 主页上禁用模糊效果
 ## lepton preferences
 
 about-lepton = 使用 Lepton 自定义 { -brand-short-name }，变更无需重启 { -brand-short-name }。
@@ -366,6 +356,9 @@ photon-mode =
 lepton-mode = 
     .label = Lepton UI 模式
 
+
+protonfix-mode =
+    .label = Protonfix 模式
 autohide-preference = 自动隐藏设置
 
 floorp-lepton-enable-tab-autohide =
@@ -406,6 +399,8 @@ floorp-lepton-enable-bookmarkbar_label-hide =
 floorp-lepton-enable-disabled_menu-hide =
     .label = 隐藏被禁用的右键菜单项目
 
+floorp-lepton-disable-userChrome-icon =
+    .label = 禁用弹出菜单和面板图标
 positon-preferences = 位置设置
 
 floorp-lepton-enable-centered-tab =
@@ -438,6 +433,100 @@ floorp-home-mode-choice-default =
     .label = Floorp 主页 (默认)
 floorp-home-prefs-content-header = Floorp 主页内容
 floorp-home-prefs-content-description = 选择你想在你的 Floorp 主页上看到的内容。
+## Notes
+floorp-notes = { -brand-short-name } 备忘录
+restore-from-backup = 从备份中恢复备忘录
+enable-notes-sync = 
+ .label = 启用 { -brand-short-name } 备忘录同步
+about-notes-backup-tips  = Floorp 备忘录使用 Firefox Sync 将您的备忘录与其他设备同步。如果您丢失了备忘录，您可以从备份中恢复。在您启动{ -brand-short-name } 时，会自动创建一个备份。
+notes-sync-description = 这可以解决由于同步过程中覆盖备忘录而导致内容丢失的问题。
+backuped-time = 备份时间
+notes-backup-option = 备份选项
+backup-option-button = 打开备份选项...
+
+restore-from-backup-prompt-title = Floorp 备忘录还原服务
+restore-from-this-backup = 还原备份到 Floorp 备忘录 ?
+
+restore-button = 还原
+## user.js
+header-userjs = user.js
+userjs-customize = 使用 user.js 文件自定义 { -brand-short-name }。
+about-userjs-customize = user.js 是一个配置文件，用于自定义 { -brand-short-name }。即将从互联网下载 user.js ，并覆盖原始的 user.js 文件。在使用它之前，请备份原始的 user.js 文件。配置将在重新启动 { -brand-short-name } 后生效。
+
+userjs-label = user.js 列表
+userjs-prompt = Floorp user.js
+apply-userjs-attention = 这将覆盖原始的 user.js 文件。
+apply-userjs-attention2 = 在使用之前，请备份原始的user.js文件。
+
+userjs-button = 打开 user.js 选项...
+userjs-select-option = 选择 user.js
+
+apply-userjs-button = 应用
+## userjs Options
+
+default-userjs-label = Floorp 默认值
+about-default-userjs = 已禁用 Telemetry。启用了各种自定义设置的{ -brand-short-name }，达到了良好的平衡。
+
+Securefox-label = Yokoffing Securefox
+about-Securefox = 默认启 用HTTPS。具有站点隔离的全面 Cookie 保护。增强的状态和网络分区。还有其他各种增强功能。
+
+default-label = Yokoffing Default
+about-default = 所有必要的功能，无破坏性。这就是您的 user.js。
+
+Fastfox-label = Yokoffing Fastfox
+about-Fastfox = 极大地提升 Firefox 的浏览速度。让Chrome望尘莫及！
+
+Peskyfox-label = Yokoffing Peskyfox
+about-Peskyfox = 简化新标签页，移除 Pocket。恢复紧凑模式作为一个选项。停止网页通知、弹窗和其他烦扰。
+
+Smoothfox-label = Yokoffing Smoothfox
+about-Smoothfox = 在您喜爱的浏览器上获得类似Edge般的流畅滚动，或选择更符合您个人喜好的样式。
+
+## Workspaces
+floorp-workspaces-title = { -brand-short-name } 工作空间
+workspaces-backup-discription = 备份 & 还原工作空间
+workspaces-restore-service-title = Floorp 工作空间备份服务
+workspaces-restore-warning = 警告！运行此操作将导致浏览器暂时冻结并自动重新启动。
+floorp-workspace-settings-button = 备份设置...
+## Mouse Gesture
+mouse-gesture = 鼠标手势
+mouse-gesture-description = 要在 { -brand-short-name } 中使用鼠标手势，必须安装 Gesturefy 插件。
+Gesturefy = Gesturefy
+about-Gesturefy = Gesturefy 是一个扩展，可以在浏览器中添加鼠标手势功能。如果{ -brand-short-name } 检测到安装了此插件，将会向 Gesturefy 添加仅在 { -brand-short-name } 中可用的手势命令。此外，该插件还可以在新标签页中使用！
+
+# Translate
+TWS = 翻译网页
+about-TWS = 使用 Google 或 Yandex 实时翻译网页。您还可以选择性地翻译文本或整个页面。
+
+# Privacy Hub
+## BlockMoreTracker
+privacy-hub-header = 隐私中心
+block-more-tracker = 阻止更多广告和追踪器。
+block-tracker = 这个部分包含一组旨在阻止广告和追踪器的扩展
+view-at-AMO = 在 addons.mozilla.org 中查看此扩展
+uBlock-Origin = uBlock Origin
+about-uboori = uBlock Origin 可以阻止广告、广泛的追踪器和其他危险网站。
+Facebook-Container = Facebook Container
+about-Facebook-Container = Facebook Container 扩展可帮助您控制并将您的网络活动与 Facebook 隔离，防止 Facebook 在网络上追踪您。
+
+## Fingerprint
+fingerprint-header = 抵抗浏览器指纹追踪和 IP 地址泄漏
+block-fingerprint = 浏览器指纹追踪是一种依赖于您的浏览器和操作系统的唯一特征的跟踪机制。本节包含进一步增强此保护的设置，超出默认的阻止功能。
+enable-firefox-fingerprint-protections = 启用强大的浏览器指纹追踪保护
+about-firefox-fingerprint-protection = 通过 Firefox 启用保护可能包括强制启用轻模式、禁用某些 API 等。这可能会导致某些网站出现问题。
+fingerprint-Protection =
+ .label =  反浏览器指纹追踪
+html5-canvas-prompt-settings =
+ .label =  自动批准 HTML5 图像数据的访问确认提示。
+canvas-prompt = Automatically reject the canvas-reading prompt
+disable-webgl = 自动拒绝读取 Canvas 画布的提示
+ .label =  禁用 WebGL
+about-webgl = WebGL 是一个用于渲染图形的 JavaScript API，可以用于识别 GPU。
+Canvas-Blocker = Canvas Blocker
+about-CB = 这个扩展可以伪造指纹识别技术使用的数据
+WebRTC-connection = WebRTC 是一种提供实时通话的标准。如果您禁用此设置，将无法使用 Discord 等功能。
+WebRTC = 
+ .label = 启用 WebRTC 连接。
 ################################################################### browser・Sidebar ###############################################################
 
 
@@ -471,6 +560,8 @@ sidebar-forward-button =
 sidebar-reload-button = 
   .tooltiptext = 刷新
 
+sidebar-go-index-button =
+  .tooltiptext = 回到主页
 sidebar-muteAndUnmute-button =
   .tooltiptext = 侧边栏静音/恢复
 sidebar2-browser-manager-sidebar = 足迹
@@ -494,14 +585,6 @@ sidebar2-notes-sidebar = 笔记
 
 show-notes-sidebar =
   .tooltiptext = 显示{ sidebar2-notes-sidebar }侧边栏
-sidebar2-TST-sidebar = 垂直标签栏
-show-TST-sidebar =
-  .tooltiptext = 显示垂直标签侧边栏
-show-CustomURL-sidebar =
- .label = 在侧边栏中显示自定义 URL
-
-Edit-Custom-URL =
- .label = 在侧边栏中修改自定义 URL
 
 sidebar-add-button =
   .tooltiptext = { bsb-add }
@@ -529,8 +612,6 @@ bsb-context-link-add =
 
 open-profile-dir = 
     .label = 打开配置文件夹
-appmenuitem-reboot =
-    .label = 重启
 
 ####################################################################### menu ###############################################################
 
@@ -553,18 +634,11 @@ edit-userChromeCss-editor =
     .label = 修改 userChrome.css
 edit-userContentCss-editor =
     .label = 修改 userContent.css
-test-chrome-css =
-    .label = 测试 userChrome.css
-    .accesskey = C
-test-content-css =
-    .label = 测试 userContent.css
-    .accesskey = W
     
 not-found-editor-path = 编辑器路径不存在
-set-pref-description = 此操作需要一个存在的编辑器。请打开 “about:config” 并把 “view_source.editor.path” 设置为编辑器路径
+set-pref-description =  设置您想要使用的编辑器的路径。
 rebuild-complete = Rebuild 完成
 please-enter-filename = 请输入一个名字
-confirmed-update = 确认 "{ $leafName }" 的更新。
 
 ################################################################### Undo-Closed-Tab ###############################################################
 
@@ -575,11 +649,6 @@ undo-closed-tab = 撤销关闭标签页
 dual-theme-enable-addon-button = 激活（子主题）
 dual-theme-disable-addon-button =  禁用（子主题）
 dual-theme-enabled-heading = 已激活（子主题）
-##################################################################### migration  ###############################################################
-
-import-from-vivaldi =
-    .label = Vivaldi
-    .accesskey = V
 
 ##################################################################### toolbar ###############################################################
 
@@ -656,8 +725,86 @@ memo-input-placeholder = 键入内容
 delete-memo = 删除
 save-memo = 保存
 memo-welcome-title = 欢迎!
-memo-first-tip = 欢迎使用 Floorp 笔记! 以下是关于如何使用它的一些说明!
-memo-second-tip = Floorp 笔记是一个记事本，允许你存储多个笔记，并在不同的设备上进行同步。你必须用你的 Firefox 账户登录到 Floorp 浏览器，才能启用同步功能。
-memo-third-tip = Floorp 笔记将被保存在您的 Floorp 设置中。另外，Firefox Sync会用你的 Firefox 账户密码对同步的内容进行加密，所以除了你，没有人知道这些内容。
-memo-fourth-tip = 只有 Firefox Sync 备份不能确保数据不丢失，我们建议你手动备份。
-memo-new-title = 新建笔记
+memo-first-tip = 欢迎使用 Floorp 备忘录！以下是一些使用说明：
+memo-second-tip = Floorp 备忘录是一个便签应用，可让您在多台设备上同步存储多个备忘录。要启用同步功能，您需要使用 Firefox 账户登录 Floorp。
+memo-third-tip = Floorp 笔记将保存在您的 Floorp 设置中。此外，Firefox Sync 会使用您的 Firefox 账户密码对同步的内容进行加密，因此除了您之外，没有其他人能够访问这些内容。
+memo-import-data-tip = Firefox Sync 不是备份服务。我们建议您定期创建备份。
+memo-new-title = 新建备忘录
+chage-view-mode = 切换 只读/编辑 模式
+readonly-mode = 离线 (只读)
+######################################################################### Default bookmarks ###############################################################
+default-bookmark-ablaze-support = Ablaze 支持
+default-bookmark-notes = Floorp 备忘录
+
+######################################################################### Like Chrome Download mgr ###############################################################
+
+floorp-delete-all-downloads = 
+  .label = 隐藏所有下载
+  .accesskey = D
+  .tooltiptext = 隐藏所有下载
+
+floorp-show-all-downloads =
+  .label = 显示所有下载
+  .accesskey = S
+  .tooltiptext = 显示所有下载
+
+######################################################################### workspace ###############################################################
+
+workspace-prompt-title = Floorp 工作空间
+please-enter-workspace-name = 请输入新的工作空间名称。
+please-enter-workspace-name-2 = 请输入除了空格以外的非符号字符。
+workspace-error = 错误！
+workspace-error-discription = 工作空间名称无效或已存在。
+
+workspace-button = 工作空间
+  .label = 工作空间
+  .tooltiptext = 工作空间
+
+workspace-default = 默认
+workspace-add = 
+ .label= 新增工作空间
+
+workspace-context-menu-selected-tab =
+ .label = 无法移动选中的标签
+move-tab-another-workspace =
+ .label = 移动到另一个工作空间
+workspace-rename = 
+  .label = 更改工作空间名称
+
+######################################################################### menubar item ###############################################################
+
+sharemode-menuitem =
+  .label = 共享模式
+  .accesskey = S
+
+
+############################################################################## Welcome page ###############################################################
+
+welcome-login-to-firefox-account = 登录到 Firefox 账户
+welcome-to-floorp = 欢迎使用 { -brand-short-name } ！
+welcome-discribe-floorp = { -brand-short-name } 是一个功能丰富、灵活的浏览器，支持多种环境，基于 Firefox。
+welcome-start-setup = 准备好开始了吗？
+welcome-skip-to-start-browsing = 跳过，开始上网
+welcome-select-preferences-template = 请选择一个模板
+welcome-minimum-template = 基本
+welcome-enable-basic-features = 启用基本功能和设置，提供简单的使用体验。
+welcome-medium-template = 默认
+welcome-enable-some-features = 启用额外的功能和设置，以获得更好的使用体验。
+welcome-maximum-template = 高级
+welcome-enable-most-of-features = 启用高级功能和设置。建议有经验的用户使用。
+welcome-go-next-setup = 前往下一个设置
+welcome-select-browser-design = 选择一个浏览器设计
+welcome-discribe-browser-design = 您可以选择其中一个精美的第三方 { -brand-short-name } 设计。也可以在“偏好设置”中找到特定于操作系统的设计。
+welcome-design-lepton-name = Lepton 原始设计
+welcome-design-photon-name = Lepton Photon 设计
+welcome-design-ProtonFix-name = Lepton ProtonFix 设计
+welcome-design-floorp-fluerial-name = Floorp Fluerial 设计
+welcome-design-firefox-proton-name = Firefox Proton 设计
+welcome-import-data = 导入您的浏览器数据
+welcome-import-data-description = 快速设置！从旧浏览器中导入书签、密码和其他数据。Firefox 用户可以从 Firefox Sync 导入数据。
+welcome-import-data-button = 导入数据...
+welcome-import-data-skip = 跳过导入
+welcome-select-button = 选择
+welcome-finish-setup = 设置完成！
+welcome-finish-setup-description = 您已完成所有设置！其他设置，例如垂直标签和插件，可以在 about:preferences 页面找到。尽情享受 { -brand-short-name } 的使用体验吧！
+welcomet-finish-setup = 开始上网
