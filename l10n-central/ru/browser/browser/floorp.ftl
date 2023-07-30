@@ -556,7 +556,7 @@ memo-welcome-title = Добро пожаловать!
 memo-first-tip = Добро пожаловать в Floorp Notes! Вот несколько инструкций по его использованию!
 memo-second-tip = Floorp Notes - записная книжка, позволяющая хранить несколько заметок, которые синхронизируются между различными устройствами. Чтобы включить синхронизацию, необходимо войти в Floorp с учетной записью Firefox.
 memo-third-tip = Заметки будут сохранены в настройках Floorp. Кроме того, Firefox Sync шифрует содержимое синхронизации с помощью пароля вашей учетной записи Firefox, поэтому никто, кроме вас, не знает его содержимого.
-memo-fourth-tip = Firefox Sync не является службой резервного копирования. Мы рекомендуем вам создавать резервные копии.
+memo-import-data-tip = Firefox Sync не является службой резервного копирования. Мы рекомендуем вам создавать резервные копии.
 memo-new-title = Новая заметка
 chage-view-mode = Переключить режим просмотра/редактирования.
 readonly-mode =  Офлайн (Только для чтения)
@@ -600,33 +600,6 @@ move-tab-another-workspace =
 workspace-rename = 
  .label = Изменить название рабочей области
  
-######################################################################### menubar item ###############################################################
-
-sharemode-menuitem =
-  .label = Режим общего доступа
-  .accesskey = S
-
-############################################################################## Welcome page ###############################################################
-
-welcome-login-to-firefox-account = Войти в учетную запись Firefox
-welcome-to-floorp = Добро пожаловать в Floorp!
-welcome-discribe-floorp = "Floorp" - это браузер, который гибко поддерживает различные окружения и основан на Firefox. Это простой в использовании браузер с множеством функций.
-welcome-start-setup = Настройки для создания "вашего собственного браузера"
-welcome-skip-to-start-browsing = Пропустить для начала просмотра
-welcome-select-preferences-template = Выберите шаблон
-welcome-minimum-template = Основной
-welcome-enable-basic-features = Активировать основные функции и настройки для простого опыта.
-welcome-medium-template = Средний
-welcome-enable-some-features = Активировать дополнительные функции и настройки для улучшенного опыта
-welcome-maximum-template = Продвинутый
-welcome-enable-most-of-features = Наиболее гибкие функции и настройки. Рекомендуется для опытных пользователей.
-welcome-select-browser-design = Выберите дизайн браузера
-welcome-discribe-browser-design = Вы можете выбрать из разнообразных отличных сторонних или дизайнов Floorp. Дизайны, специфичные для операционных систем, также доступны в разделе "Настройки".
-welcome-design-lepton-name = Lepton Original Design
-welcome-design-photon-name = Lepton Photon Design
-welcome-design-ProtonFix-name = Lepton ProtonFix Design
-welcome-design-floorp-fluerial-name = Floorp Fluerial Design
-welcome-select-button = Выбрать
 
 ######################################################################### user js ###############################################################
 
@@ -656,6 +629,13 @@ Peskyfox-label = Yokoffing Peskyfox
 about-Peskyfox = Очищает новую вкладку. Удаляет Pocket. Восстанавливает компактный режим в качестве опции. Остановливает уведомления веб-страниц, всплывающие окна и другие раздражения..
 Smoothfox-label = Yokoffing Smoothfox
 about-Smoothfox = Получите плавную прокрутку, как в Edge, в своем любимом браузере, или выберите что-то более подходящее для вашего стиля.
+
+## Workspaces
+floorp-workspaces-title = Рабочие области { -brand-short-name }
+workspaces-backup-discription = Резервное копирование и восстановление ваших рабочих пространств
+workspaces-restore-service-title = Служба резервного копирования рабочего пространства Floorp
+workspaces-restore-warning = Внимание! Выполнение этой операции приведет к временному зависанию и автоматическому перезапуску браузера
+floorp-workspace-settings-button = Настройки резервного копирования...
 
 ## Mouse Gesture
 mouse-gesture = Жесты мышью
@@ -697,3 +677,41 @@ Canvas-Blocker = Canvas Blocker
 WebRTC-connection = WebRTC - стандарт обеспечивающий звонки в режиме реального времени. Если вы отключите эту настройку, вы не сможете использовать Discord и т.д.
 WebRTC = 
  .label = Включить WebRTC.
+
+######################################################################### menubar item ###############################################################
+
+sharemode-menuitem =
+  .label = Режим общего доступа
+  .accesskey = S
+
+############################################################################## Welcome page ###############################################################
+
+welcome-login-to-firefox-account = Вход в учетную запись Firefox
+welcome-to-floorp = Добро пожаловать в { -brand-short-name }!
+welcome-discribe-floorp = { -brand-short-name } это гибкий, многофункциональный браузер поддерживающий различные пользовательские окружения и основан на Firefox.
+welcome-start-setup = Готовы приступить?
+welcome-skip-to-start-browsing = Пропустить и начать просмотр.
+welcome-select-preferences-template = Выберите преднастройку
+welcome-minimum-template = Базовый функционал
+welcome-enable-basic-features = Активировать базовые функции и настройки. 
+welcome-medium-template = Дополнительный функционал
+welcome-enable-some-features = Активировать дополнительные функции и настройки.
+welcome-maximum-template = Расширенный функционал
+welcome-enable-most-of-features = Активировать расширенные функции и настройки. Рекомендуется для опытных пользователей.
+welcome-go-next-setup = Перейти к следующей настройке
+welcome-select-browser-design = Выберите дизайн браузера
+welcome-discribe-browser-design = Вы можете выбрать один из замечательных сторонних дизайнов { -brand-short-name }. Дизайны для конкретной операционной системы также доступны в разделе "Настройки".
+welcome-design-lepton-name = Lepton Original Design
+welcome-design-photon-name = Lepton Photon Design
+welcome-design-ProtonFix-name = Lepton ProtonFix Design
+welcome-design-floorp-fluerial-name = Floorp Fluerial Design
+welcome-design-firefox-proton-name = Firefox Proton Design
+welcome-import-data = Импортировать ваши данные
+welcome-import-data-description = Быстрая настройка! Импортируйте свои закладки, пароли и многое другое из вашего старого браузера. Пользователь Firefox может импортировать данные из Firefox Sync.
+welcome-import-data-button = Импортировать данные...
+welcome-import-data-skip = Пропустить импорт
+welcome-select-button = Выбрать
+welcome-finish-setup = Настройка завершена!
+welcome-finish-setup-description = Всё готово! Другие настройки, такие как вертикальные вкладки и дополнения могует быть найдены в about:preferences. Приятного использования { -brand-short-name } !
+welcomet-finish-setup = Начать просмотр
+
