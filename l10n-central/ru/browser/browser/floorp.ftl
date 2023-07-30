@@ -712,6 +712,6 @@ welcome-import-data-button = Импортировать данные...
 welcome-import-data-skip = Пропустить импорт
 welcome-select-button = Выбрать
 welcome-finish-setup = Настройка завершена!
-welcome-finish-setup-description = Всё готово! Другие настройки, такие как вертикальные вкладки и дополнения могует быть найдены в about:preferences. Приятного использования { -brand-short-name } !
+welcome-finish-setup-description = Всё готово! Другие настройки, такие как вертикальные вкладки и дополнения могует быть найдены в about:preferences. Приятного использования { -brand-short-name }!
 welcomet-finish-setup = Начать просмотр
 
