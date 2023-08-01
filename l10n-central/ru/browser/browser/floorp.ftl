@@ -195,6 +195,7 @@ set-custom-URL-button =
  .label = Задать пользовательские URL...
  .accesskey = S
 
+bsb-preferences = Настройки боковой панели менеджера браузера
 bsb-header = Боковая панель менеджера браузера
 bsb-context = Выбрать контейнер для вкладки
 bsb-userAgent-label = 
@@ -689,7 +690,7 @@ sharemode-menuitem =
 
 welcome-login-to-firefox-account = Вход в учетную запись Firefox
 welcome-to-floorp = Добро пожаловать в { -brand-short-name }!
-welcome-discribe-floorp = { -brand-short-name } это гибкий, многофункциональный браузер поддерживающий различные пользовательские окружения и основан на Firefox.
+welcome-discribe-floorp = { -brand-short-name } это гибкий, многофункциональный браузер поддерживающий различные пользовательские окружения и основанный на Firefox.
 welcome-start-setup = Готовы приступить?
 welcome-skip-to-start-browsing = Пропустить и начать просмотр.
 welcome-select-preferences-template = Выберите преднастройку
