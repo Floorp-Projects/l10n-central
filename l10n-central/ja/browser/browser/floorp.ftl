@@ -40,12 +40,8 @@ tab-sleep-settings-button =
 enable-floorp-workspace =
  .label =  ワークスペース機能を有効にする（実験的）
 floorp-workspace-settings-button =
-    .label = バックアップと復元...
+    .label = ワークスペースの設定と管理
     .accesskey = B
-floorp-workspaces-title = { -brand-short-name } ワークスペース
-workspaces-backup-discription = ワークスペースのバックアップと復元
-workspaces-restore-service-title = ワークスペース復元サービス
-workspaces-restore-warning = 警告: この操作を実行すると、現在のワークスペースが上書きされ、ブラウザーが数秒の間使えなくなり、ワークスペースが復元されます。この操作は取り消せません。
 enable-tab-scroll-reverse =
   .label = タブバーでのスクロールを反転させる
 enable-tab-scroll-wrap =
@@ -486,6 +482,70 @@ about-Peskyfox = 新しいタブページの整理をする。ポケットを削
 Smoothfox-label = Yokoffing Smoothfox
 about-Smoothfox = Edge のようなスムーズなスクロールを、お気に入りのブラウザで実現することができます。
 
+# workspaces
+floorp-workspaces-title = { -brand-short-name } ワークスペース
+workspaces-backup-discription = ワークスペースのバックアップと復元
+workspaces-restore-service-title = ワークスペース復元サービス
+workspaces-restore-warning = 警告: この操作を実行すると、現在のワークスペースが上書きされ、ブラウザーが数秒の間使えなくなり、ワークスペースが復元されます。この操作は取り消せません。
+
+change-to-close-workspace-popup-option = 
+ .label = ワークスペース選択時にワークスペースのポップアップを閉じる
+pinned-tabs-exclude-workspace-option = 
+ .label = ワークスペースに固定されたタブを含めない
+
+workspaces-reset-title = ワークスペースのリセット
+workspaces-reset-label =
+    .label = ワークスペースのリセット
+workspaces-reset-description = ワークスペースをリセットするとグループ化が解除され、初期状態に戻ります。
+workspaces-reset-button = ワークスペースのリセットを実行する...
+
+workspaces-reset-service-title = Floorp ワークスペース
+workspaces-reset-warning = 警告！この操作を実行すると、すべてのワークスペースが削除され、ブラウザーが数秒間使えなくなります。この操作は取り消せません。
+
+manage-workspace-on-bms-option =
+    .label = ブラウザーマネージャーサイドバーでワークスペースを管理する
+
+workspaces-manage-title = ワークスペースの管理
+workspaces-manage-description = ワークスペースの管理を開きます。アイコンの変更を行えます。
+workspaces-manage-label =
+    .label = ワークスペースの管理
+
+workspaces-manage-button  = ワークスペースマネージャーを開く... 
+
+select-workspace = ワークスペースを選択
+workspace-select-icon = アイコンを選択
+ .label = アイコンを選択
+
+workspace-customize = 
+ .title = ワークスペースのカスタマイズ
+
+workspace-icon-briefcase =
+ .label = 仕事
+workspace-icon-cart =
+ .label = ショッピング
+workspace-icon-circle =
+ .label = サークル
+workspace-icon-dollar =
+ .label = 銀行
+workspace-icon-fence =
+ .label = 柵
+workspace-icon-fingerprint =
+ .label = 個人
+workspace-icon-gift =
+ .label = ギフト
+workspace-icon-vacation =
+ .label = 休暇・旅行
+workspace-icon-food =
+ .label = 食べ物
+workspace-icon-fruit =
+ .label = フルーツ
+workspace-icon-pet =
+ .label = ペット
+workspace-icon-tree =
+ .label = 植物
+workspace-icon-chill =
+ .label = プライベート
+
 
 ## mouse Gesture
 mouse-gesture = マウスジェスチャー
@@ -782,6 +842,8 @@ move-tab-another-workspace =
  .label = 他のワークスペースに移動
 workspace-rename = 
   .label = ワークスペース名を変更
+workspace-delete = 
+  .label = ワークスペースを削除
 
 ######################################################################### Share mode ###############################################################
 
