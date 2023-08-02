@@ -39,6 +39,7 @@ tab-sleep-settings-button =
     .accesskey = S
 enable-floorp-workspace =
  .label =  ワークスペース機能を有効にする（実験的）
+workspace-warring = ワークスペースはタブグループアドオンと併用できません。タブグループアドオンを使用したい場合は、ワークスペースを無効にし、{ -brand-short-name} を再起動してください。
 floorp-workspace-settings-button =
     .label = ワークスペースの設定と管理
     .accesskey = B
@@ -56,7 +57,7 @@ enable-show-pinned-tabs-title =
 Mouse-side-button =
   .label =「進む」・「戻る」ボタンを隠す
 
-tabbar-preference = タブバーの設定
+tabbar-preference = タブバーの設定（実験的）
 
 None-mode =
  .label= 通常モード（変更なし）
