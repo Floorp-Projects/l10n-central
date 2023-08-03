@@ -78,7 +78,7 @@ tabbar-favicon-color =
  .label = タブバーの背景色をウェブページに合わせる
 
 tabbar-style-preference = タブスタイル
-
+tabbar-style-description = この設定の完全な適用には、{ -brand-short-name } を再起動する必要があります。
 horizontal-tabbar =
  .label = 水平タブ
 multirow-tabbar =
