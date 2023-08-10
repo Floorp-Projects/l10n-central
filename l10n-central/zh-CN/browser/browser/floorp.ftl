@@ -18,7 +18,7 @@ design-header = 设计
 
 feature-requires-restart = 更改设置后需要重新启动
 
-tab-width = Minimum width of tabs
+tab-width = 标签的最小宽度
 preferences-tabs-newtab-position = 新标签页的位置
 open-new-tab-use-default =
  .label = 在默认位置打开新标签页
