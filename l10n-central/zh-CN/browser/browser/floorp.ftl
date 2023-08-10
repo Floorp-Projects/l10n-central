@@ -18,7 +18,7 @@ design-header = 设计
 
 feature-requires-restart = 更改设置后需要重新启动
 
-tab-width = Minimum width of tabs
+tab-width = 标签的最小宽度
 preferences-tabs-newtab-position = 新标签页的位置
 open-new-tab-use-default =
  .label = 在默认位置打开新标签页
@@ -44,6 +44,7 @@ tab-sleep-settings-dialog-excludehosts-label-2 = 一行一个赢
 tab-sleep-tab-context-menu-excludetab = 请勿让此标签页进入休眠状态
 enable-floorp-workspace =
  .label = 启用工作空间
+workspace-warring = 工作空间无法与标签分组插件一同使用。如果您想要使用标签分组插件，请禁用工作空间并重新启动 { -brand-short-name}。
 enable-tab-scroll-change = 
  .label = 通过滚轮切换标签
 enable-tab-scroll-reverse =
@@ -54,10 +55,6 @@ enable-double-click-block =
  .label = 双击关闭标签
 enable-show-pinned-tabs-title =
  .label = 显示固定标签页的标题
-tab-width = 
- .label = 标签宽度
-operation-settings = 
- .label = 浏览器操作设置
 Mouse-side-button = 
  .label = 带侧键鼠标模式（隐藏前进和后退按钮）
 
@@ -81,23 +78,29 @@ tabbar-on-bottom =
 tabbar-favicon-color =
  .label = 标签栏图标颜色
 
-native-tabbar = 原生垂直标签栏
 tabbar-style-preference = 标签栏样式
 
 horizontal-tabbar =
  .label = 横向标签栏
 
+tabbar-style-description = 需要重新启动 { -brand-short-name } 以完全应用此设置。
 multirow-tabbar =
  .label = 多行标签栏
 vertical-tabbar =
  .label = 垂直标签栏 (实验性)
 native-tabbar-tip = 这个功能基于 Firefox 侧边栏，所以你不能与其他侧边栏插件同时使用。
+
 hover-vertical-tab =
  .label = 鼠标移动到垂直标签栏处后垂直标签栏自动扩展
 
-sidebar-reverse-position-toolbar = 反转侧边栏位置
+TST = Tree Style Tab
+about-TST = Tree Style Tab是一个受欢迎的插件，可以将标签以树状结构显示。Floorp 10内置了这个插件。请安装此插件以恢复Floorp 10内置的Tree Style Tab功能。
+treestyletab-Settings = 
+ .label = 折叠 Tree Style Tab
 
-bookmarks-bar-settings = 书签栏设置（不能同时使用）
+sidebar-reverse-position-toolbar = 在另一侧显示侧边栏
+
+bookmarks-bar-settings = 书签工具栏（每次只能选择一个选项）
 bookmarks-focus-mode =
  .label = 书签栏自动隐藏
 bookmarks-bottom-mode =
@@ -113,7 +116,6 @@ disable-extension-check-compatibility-option =
  .label =  不检查附加组件的兼容性
 other-preference = 其他选项
 
-operation-settings = 浏览器操作
 enable-userscript = 
  .label = 启用旧版组件
 about-legacy-components = 启用此功能可能会导致意外错误或致命错误
@@ -128,6 +130,7 @@ browser-rest-mode =
 
 disable-fullscreen-notification =
  .label = 观看视频时禁用全屏通知
+ 
 floorp-updater = { -brand-short-name } 更新设置
 enable-floorp-updater = 
  .label = 启动时检查 { -brand-short-name } 更新
@@ -167,6 +170,7 @@ floorp-legacy =
 
 floorp-fluentUI =
  .label = Microsoft Fluent UI 设计
+ 
 floorp-fluerialUI =
  .label = Floorp Fluerial UI
 
@@ -195,6 +199,7 @@ floorp-help-button-label = { -brand-short-name } 支持
 
 appmenuitem-reboot =
  .label = 重启
+ 
 ## useagent
 
 UserAgent-preference = User Agent
@@ -210,6 +215,7 @@ mobile-chrome-useragent-mode =
  .label = 模拟 移动端
 use-custom-useragent-mode =
  .label = 自定义 User Agent
+ 
 ## DMR UI
 download-mgr-UI =
  .label = 使用简化的下载管理器
@@ -223,7 +229,6 @@ view-sidebar2-right =
  .label = 显示在浏览器窗口右侧
 enable-sidebar2 =
  .label = 启用侧边工具栏
-
 visible-bms = 
  .label = 可见的侧边工具栏
  
@@ -247,6 +252,7 @@ bsb-width = 面板宽度 (如果设置为0, 则使用全局宽度)
 bsb-page = 需要打开的网页
 
 bsb-add = 添加面板到侧边工具栏
+
 bsb-setting = 面板设置
 
 bsb-add-title =
@@ -275,12 +281,14 @@ bsb-website =
 
 sidebar2-pref-delete =
  .label = 删除
+ 
 sidebar2-pref-setting =
  .label = 设置
 
 sidebar2-global-width = 侧边工具栏全局面板宽度
 
 use-icon-provider-option = 侧边栏工具图标提供商
+
 use-icon-provider-option-google =
  .label = Google
 
@@ -292,6 +300,7 @@ use-icon-provider-option-yandex =
 
 use-icon-provider-option-hatena =
  .label = Hatena (中国大陆可用)
+ 
 memory-and-performance = 内存性能设置
 
 min-memory = 
@@ -320,6 +329,7 @@ newtab-background-gradation =
 
 newtab-background-not-background =
     .label = 不显示背景
+    
 newtab-background-selected-image =
     .label = 使用选定文件夹中的图片
 
@@ -337,8 +347,10 @@ newtab-background-folder-open =
 newtab-background-folder-choose = 选择图片文件夹
 
 newtab-background-extensions = 图片后缀 (使用","间隔)
+
 disable-blur-on-newtab = 
   .label = 在 { -brand-short-name } 主页上禁用模糊效果
+  
 ## lepton preferences
 
 about-lepton = 使用 Lepton 自定义 { -brand-short-name }，变更无需重启 { -brand-short-name }。
@@ -356,9 +368,9 @@ photon-mode =
 lepton-mode = 
     .label = Lepton UI 模式
 
-
 protonfix-mode =
     .label = Protonfix 模式
+    
 autohide-preference = 自动隐藏设置
 
 floorp-lepton-enable-tab-autohide =
@@ -401,6 +413,7 @@ floorp-lepton-enable-disabled_menu-hide =
 
 floorp-lepton-disable-userChrome-icon =
     .label = 禁用弹出菜单和面板图标
+    
 positon-preferences = 位置设置
 
 floorp-lepton-enable-centered-tab =
@@ -429,10 +442,12 @@ floorp-lepton-enable-tabbar-as-urlbar =
 lepton-sidebar-preferences = 侧边栏设置
 floorp-lepton-enable-overlap-sidebar =
     .label = 侧边栏悬浮
+    
 floorp-home-mode-choice-default =
-    .label = Floorp 主页 (默认)
-floorp-home-prefs-content-header = Floorp 主页内容
-floorp-home-prefs-content-description = 选择你想在你的 Floorp 主页上看到的内容。
+    .label = { -brand-short-name } 主页 (默认)
+floorp-home-prefs-content-header = { -brand-short-name } 主页内容
+floorp-home-prefs-content-description = 选择你想在你的 { -brand-short-name } 主页上看到的内容。
+
 ## Notes
 floorp-notes = { -brand-short-name } 备忘录
 restore-from-backup = 从备份中恢复备忘录
@@ -448,6 +463,7 @@ restore-from-backup-prompt-title = Floorp 备忘录还原服务
 restore-from-this-backup = 还原备份到 Floorp 备忘录 ?
 
 restore-button = 还原
+
 ## user.js
 header-userjs = user.js
 userjs-customize = 使用 user.js 文件自定义 { -brand-short-name }。
@@ -485,9 +501,69 @@ about-Smoothfox = 在您喜爱的浏览器上获得类似Edge般的流畅滚动�
 ## Workspaces
 floorp-workspaces-title = { -brand-short-name } 工作空间
 workspaces-backup-discription = 备份 & 还原工作空间
+
 workspaces-restore-service-title = Floorp 工作空间备份服务
-workspaces-restore-warning = 警告！运行此操作将导致浏览器暂时冻结并自动重新启动。
-floorp-workspace-settings-button = 备份设置...
+workspaces-restore-warning = 警告！运行此操作将导致浏览器暂时冻结，并自动重新启动
+floorp-workspace-settings-button = 工作空间设置...
+
+change-to-close-workspace-popup-option = 
+ .label = 在选择工作空间时关闭工作空间弹出菜单
+pinned-tabs-exclude-workspace-option = 
+ .label = 工作空间中排除固定的标签页
+
+workspaces-reset-title = 重置工作空间
+workspaces-reset-label =
+    .label = 重置工作空间
+workspaces-reset-description = 如果还原备份不起作用，工作空间无法启动，请重置工作空间
+workspaces-reset-button = 重置工作空间
+
+workspaces-reset-service-title = Floorp 工作空间
+workspaces-reset-warning = 警告！此操作将删除所有工作空间并重新启动浏览器
+
+manage-workspace-on-bms-option =
+    .label = 在浏览器管理侧边栏上管理工作空间
+
+workspaces-manage-title = 管理工作空间
+workspaces-manage-description = 管理您的工作空间。更改工作空间图标
+workspaces-manage-label =
+    .label = 管理工作空间
+
+workspaces-manage-button = 打开工作空间管理器...
+
+select-workspace = 选择工作空间
+workspace-select-icon = 选择工作空间图标
+ .label = 选择工作空间图标
+
+workspace-customize = 
+ .title = 自定义工作空间
+
+workspace-icon-briefcase =
+ .label = 办公
+workspace-icon-cart =
+ .label = 购物
+workspace-icon-circle =
+ .label = 圆圈
+workspace-icon-dollar =
+ .label = 银行
+workspace-icon-fence =
+ .label = 栅栏
+workspace-icon-fingerprint =
+ .label = 个人
+workspace-icon-gift =
+ .label = 礼物
+workspace-icon-vacation =
+ .label = 度假
+workspace-icon-food =
+ .label = 食物
+workspace-icon-fruit =
+ .label = 水果
+workspace-icon-pet =
+ .label = 宠物
+workspace-icon-tree =
+ .label = 树木
+workspace-icon-chill =
+ .label = 私人
+ 
 ## Mouse Gesture
 mouse-gesture = 鼠标手势
 mouse-gesture-description = 要在 { -brand-short-name } 中使用鼠标手势，必须安装 Gesturefy 插件。
@@ -527,8 +603,8 @@ about-CB = 这个扩展可以伪造指纹识别技术使用的数据
 WebRTC-connection = WebRTC 是一种提供实时通话的标准。如果您禁用此设置，将无法使用 Discord 等功能。
 WebRTC = 
  .label = 启用 WebRTC 连接。
+ 
 ################################################################### browser・Sidebar ###############################################################
-
 
 rest-mode = 休息一下
 rest-mode-description = 浏览器崩溃了，点击确定或者按下回车键继续
@@ -545,6 +621,7 @@ sidebar2-unload-panel =
 
 sidebar2-change-ua-panel =
   .label = 切换 User Agent 【桌面/移动端】
+  
 sidebar2-delete-panel =
   .label = 从侧边栏中删除此面板
 
@@ -562,22 +639,27 @@ sidebar-reload-button =
 
 sidebar-go-index-button =
   .tooltiptext = 回到主页
+  
 sidebar-muteAndUnmute-button =
   .tooltiptext = 侧边栏静音/恢复
+  
 sidebar2-browser-manager-sidebar = 足迹
 
 show-browser-manager-sidebar =
   .tooltiptext = 显示{ sidebar2-browser-manager-sidebar }侧边栏
 
 sidebar2-bookmark-sidebar = 书签
+
 show-bookmark-sidebar =
   .tooltiptext = 显示{ sidebar2-bookmark-sidebar }侧边栏
 
 sidebar2-history-sidebar = 历史
+
 show-history-sidebar =
   .tooltiptext = 显示{ show-history-sidebar }侧边栏
 
 sidebar2-download-sidebar = 下载
+
 show-download-sidebar =
   .tooltiptext = 显示{ show-download-sidebar }侧边栏
 
@@ -588,6 +670,7 @@ show-notes-sidebar =
 
 sidebar-add-button =
   .tooltiptext = { bsb-add }
+  
 sidebar-addons-button =
   .tooltiptext = 打开扩展管理
 
@@ -605,10 +688,10 @@ sidebar2-keep-width-for-global =
 
 bsb-context-add = 
   .label = 添加当前页面到侧边工具栏
+  
 bsb-context-link-add = 
   .label = 添加当前链接到侧边工具栏
 #################################################################### menu panel ############################################################
-
 
 open-profile-dir = 
     .label = 打开配置文件夹
@@ -618,20 +701,26 @@ open-profile-dir =
 css-menu =
     .label = CSS
     .accesskey = C
+    
 css-menubar =
     .label = CSS
     .accesskey = C
+    
 rebuild-css =
     .label = 重新载入所有 CSS
     .accesskey = R
+
 make-browsercss-file =
     .label = 新建 CSS 样式
     .accesskey = M
+    
 open-css-folder =
     .label = 打开样式文件夹
     .accesskey = O
+    
 edit-userChromeCss-editor =
     .label = 修改 userChrome.css
+    
 edit-userContentCss-editor =
     .label = 修改 userContent.css
     
@@ -643,6 +732,7 @@ please-enter-filename = 请输入一个名字
 ################################################################### Undo-Closed-Tab ###############################################################
 
 undo-closed-tab = 撤销关闭标签页
+
 ################################################################### about:addons ###############################################################
 
 # DualTheme
@@ -655,6 +745,7 @@ dual-theme-enabled-heading = 已激活（子主题）
 status-bar =
     .label = 状态栏
      .accesskey = S
+     
 ##################################################################### Gesturefy ###############################################################
 
 gf-floorp-open-tree-style-tab-name = [Floorp] 打开垂直标签栏
@@ -675,10 +766,12 @@ gf-floorp-close-sidebar-description = 关闭侧边栏
 
 gf-floorp-open-browser-manager-sidebar-name = [Floorp] 打开侧边工具栏
 gf-floorp-open-browser-manager-sidebar-description =  打开侧边工具栏（若功能已启用）
-gf-floorp-open-browser-manager-sidebar-description = 打开侧边工具栏
 
 gf-floorp-close-browser-manager-sidebar-name = [Floorp] 关闭侧边工具栏
 gf-floorp-close-browser-manager-sidebar-description = 关闭侧边工具栏
+
+gf-floorp-toggle-browser-manager-sidebar-name = [Floorp] 显示/隐藏侧边工具栏
+gf-floorp-toggle-browser-manager-sidebar-description = 显示/隐藏侧边工具栏
 
 gf-floorp-show-statusbar-name = [Floorp] 显示状态栏
 gf-floorp-show-statusbar-description = 显示状态栏
@@ -706,6 +799,7 @@ update-portable-notification-success-message = 更新成功！希望你喜欢新
 update-portable-notification-failed-title = 更新失败。
 update-portable-notification-failed-redirector-message = 更新失败。也许重启浏览器能解决这个问题，
 update-portable-notification-failed-prepare-message = 准备更新失败。
+
 ##################################################################### Open link in external ###############################################################
 openInExternal-title = 在其他浏览器中打开链接
 open-link-in-external-enabled-option =
@@ -717,6 +811,8 @@ open-link-in-external-tab-context-menu = 在其他浏览器中打开链接
 open-link-in-external-tab-dialog-title-error = 错误
 open-link-in-external-tab-dialog-message-default-browser-not-found = 默认浏览器不存在或未被配置。
 open-link-in-external-tab-dialog-message-selected-browser-not-found = 选中的浏览器不存在
+
+
 ######################################################################### Floorp Notes ###############################################################
 
 new-memo = 新建
@@ -732,6 +828,7 @@ memo-import-data-tip = Firefox Sync 不是备份服务。我们建议您定期�
 memo-new-title = 新建备忘录
 chage-view-mode = 切换 只读/编辑 模式
 readonly-mode = 离线 (只读)
+
 ######################################################################### Default bookmarks ###############################################################
 default-bookmark-ablaze-support = Ablaze 支持
 default-bookmark-notes = Floorp 备忘录
@@ -771,6 +868,9 @@ move-tab-another-workspace =
 workspace-rename = 
   .label = 更改工作空间名称
 
+workspace-delete = 
+  .label = 删除工作空间
+  
 ######################################################################### menubar item ###############################################################
 
 sharemode-menuitem =
