@@ -20,7 +20,11 @@ feature-requires-restart = この機能を変更するには { -brand-short-name
 tab-width = タブの最小幅
 preferences-tabs-newtab-position = 新しいタブの開く位置
 open-new-tab-use-default =
- .label = デフォルトの設定を使用
+ .label =
+      { PLATFORM() ->
+        [macos] デフォルト設定を使用
+       *[other] 既定の設定を使用
+     }
 open-new-tab-at-the-end =
  .label = 新しいタブをタブバーの最後の位置に開く
 open-new-tab-next-to-current =
@@ -202,7 +206,12 @@ appmenuitem-reboot =
 
 UserAgent-preference = ユーザーエージェント
 default-useragent-mode =
- .label = Firefox のユーザーエージェントを使用する (デフォルト)
+ .label =
+  　{ PLATFORM() ->
+        [macos] デフォルトユーザーエージェントを使用する
+       *[other] 既定のユーザーエージェントを使用する
+    }
+
 windows-chrome-useragent-mode =
  .label = Windows 上の Chrome のユーザーエージェントを使用する
 macOS-chrome-useragent-mode =
@@ -476,8 +485,12 @@ default-userjs-label = Floorp Default
 about-default-userjs = テレメトリー無効。様々なカスタマイズが有効なバランスの良い { -brand-short-name } 設定です。
 
 Securefox-label = Yokoffing Securefox
-about-Securefox = HTTPS をデフォルトで有効に。サイト分離による Total Cookie Protection。状態やネットワークのパーティショニングを強化。その他、様々な機能強化。
-
+about-Securefox =
+  　{ PLATFORM() ->
+        [macos]  HTTPS を既定で有効に。サイト分離による Total Cookie Protection。状態やネットワークのパーティショニングを強化。その他、様々な機能強化。
+       *[other] HTTPS を既定で有効に。サイト分離による Total Cookie Protection。状態やネットワークのパーティショニングを強化。その他、様々な機能強化。
+    }
+    
 default-label = Yokoffing Default
 about-default = 必要なものはすべて。壊れることはありません。これが、あなたの user.js です。
 
@@ -566,8 +579,17 @@ CSK-manage-title = カスタムショートカットキーの管理
 CSK-remove-shortcutkey = ショートカットキーの削除
 CSK-remove-shortcutkey-description = 本当にこのショートカットキーを削除しますか？
 
-CSK-restore-default = デフォルトに戻す
-CSK-restore-default-description = これらの設定をデフォルトに戻します。現在の設定は失われます。
+CSK-restore-default = 
+    { PLATFORM() ->
+        [macos] HTTPS をデフォルトで有効に。サイト分離による Total Cookie Protection。状態やネットワークのパーティショニングを強化。その他、様々な機能強化。
+       *[other] HTTPS を既定で有効に。サイト分離による Total Cookie Protection。状態やネットワークのパーティショニングを強化。その他、様々な機能強化。
+    }
+
+CSK-restore-default-description = 
+    { PLATFORM() ->
+        [macos] これらの設定をデフォルトに戻します。現在の設定は失われます
+       *[other] これらの設定を既定に戻します。現在の設定は失われます
+    }
 
 ### Exsit shortcut key: "S", "shift"
 CSK-keyborad-shortcut-info = 設定されているショートカットキー：
@@ -609,7 +631,11 @@ about-Facebook-Container = Facebook がウェブ上であなたを追跡する�
 
 ## Fingerprint
 fingerprint-header = フィンガープリント & IP アドレスの漏洩対策
-block-fingerprint = フィンガープリンティングは、ブラウザとオペレーティングシステムの固有の機能に依存する追跡メカニズムです。このセクションでは、デフォルトのブロックを超えてこの保護をさらに強化するための設定が含まれています。
+block-fingerprint =
+    { PLATFORM() ->
+        [macos] フィンガープリンティングは、ブラウザとオペレーティングシステムの固有の機能に依存する追跡メカニズムです。このセクションでは、デフォルトのブロックを超えてこの保護をさらに強化するための設定が含まれています。
+       *[other] フィンガープリンティングは、ブラウザとオペレーティングシステムの固有の機能に依存する追跡メカニズムです。このセクションでは、既定のブロックを超えてこの保護をさらに強化するための設定が含まれています。
+    }
 enable-firefox-fingerprint-protections = フィンガープリントに対する強力な保護を有効にする
 about-firefox-fingerprint-protection = Firefox によるフィンガープリント保護を有効にした場合、強制ライトモード、一部の API を無効にするなどのデメリットがあります。一部のサイトが壊れる可能性もあります。
 fingerprint-Protection =
@@ -837,10 +863,18 @@ open-link-in-external-enabled-option =
  .label = 「外部ブラウザーで開く」機能を有効にする
 open-link-in-external-select-browser-option = 「外部ブラウザーで開く」で開くブラウザー
 open-link-in-external-select-browser-option-default =
- .label = デフォルトのブラウザー
+ .label =
+     { PLATFORM() ->
+        [macos] デフォルトブラウザー
+       *[other] 既定のブラウザー
+     }
 open-link-in-external-tab-context-menu = 外部ブラウザーで開く
 open-link-in-external-tab-dialog-title-error = エラー
-open-link-in-external-tab-dialog-message-default-browser-not-found = デフォルトのブラウザーが存在しないか、設定されていません。
+open-link-in-external-tab-dialog-message-default-browser-not-found =
+     { PLATFORM() ->
+        [macos] デフォルトブラウザーが存在しないか、設定されていません。
+       *[other] 既定のブラウザーが存在しないか、設定されていません。
+     }
 open-link-in-external-tab-dialog-message-selected-browser-not-found = 選択されたブラウザーは存在しません。
 
 ######################################################################### Floorp Notes ###############################################################
@@ -870,7 +904,12 @@ workspace-button = ワークスペース
   .label = ワークスペース
   .tooltiptext = ワークスペース
 
-workspace-default = デフォルト
+workspace-default = 
+  .label =
+     { PLATFORM() ->
+        [macos] デフォルトブラウザー
+       *[other] 既定のブラウザー
+     }
 workspace-add = 
  .label= ワークスペースを追加
 
