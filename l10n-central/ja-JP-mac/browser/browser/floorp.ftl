@@ -207,7 +207,7 @@ appmenuitem-reboot =
 UserAgent-preference = ユーザーエージェント
 default-useragent-mode =
  .label =
-  　{ PLATFORM() ->
+    { PLATFORM() ->
         [macos] デフォルトユーザーエージェントを使用する
        *[other] 既定のユーザーエージェントを使用する
     }
@@ -487,7 +487,7 @@ about-default-userjs = テレメトリー無効。様々なカスタマイズが
 Securefox-label = Yokoffing Securefox
 about-Securefox =
   　{ PLATFORM() ->
-        [macos]  HTTPS を既定で有効に。サイト分離による Total Cookie Protection。状態やネットワークのパーティショニングを強化。その他、様々な機能強化。
+        [macos] HTTPS をデフォルトで有効に。サイト分離による Total Cookie Protection。状態やネットワークのパーティショニングを強化。その他、様々な機能強化。
        *[other] HTTPS を既定で有効に。サイト分離による Total Cookie Protection。状態やネットワークのパーティショニングを強化。その他、様々な機能強化。
     }
     
@@ -592,7 +592,7 @@ CSK-restore-default-description =
     }
 
 ### Exsit shortcut key: "S", "shift"
-CSK-keyborad-shortcut-info = 設定されているショートカットキー：
+CSK-keyborad-shortcut-info = "{ $key }" と "{ $modifiers }" の組み合わせが設定されています。
 
 floorp-custom-actions-tab-action = タブのアクション
 floorp-custom-actions-page-action = ページのアクション

@@ -592,7 +592,7 @@ CSK-restore-default-description =
     }
 
 ### Exsit shortcut key: "S", "shift"
-CSK-keyborad-shortcut-info = 設定されているショートカットキー：
+CSK-keyborad-shortcut-info = "{ $key }" と "{ $modifiers }" の組み合わせが設定されています。
 
 floorp-custom-actions-tab-action = タブのアクション
 floorp-custom-actions-page-action = ページのアクション
