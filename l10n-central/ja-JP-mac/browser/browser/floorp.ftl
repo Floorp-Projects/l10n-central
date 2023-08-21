@@ -486,7 +486,7 @@ about-default-userjs = テレメトリー無効。様々なカスタマイズが
 
 Securefox-label = Yokoffing Securefox
 about-Securefox =
-  　{ PLATFORM() ->
+    { PLATFORM() ->
         [macos] HTTPS をデフォルトで有効に。サイト分離による Total Cookie Protection。状態やネットワークのパーティショニングを強化。その他、様々な機能強化。
        *[other] HTTPS を既定で有効に。サイト分離による Total Cookie Protection。状態やネットワークのパーティショニングを強化。その他、様々な機能強化。
     }
