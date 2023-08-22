@@ -594,6 +594,13 @@ CSK-restore-default-description =
 ### Exsit shortcut key: "S", "shift"
 CSK-keyborad-shortcut-info = "{ $key }" と "{ $modifiers }" の組み合わせが設定されています。
 
+disable-fx-actions =
+ .label = Firefox のキーボードショートカットを無効にする
+customize-Action =
+ .label = このアクションをカスタマイズ
+remove-Action =
+ .label = このアクションを削除
+
 floorp-custom-actions-tab-action = タブのアクション
 floorp-custom-actions-page-action = ページのアクション
 floorp-custom-actions-visible-action = 表示方法のアクション
@@ -1111,3 +1118,14 @@ floorp-custom-actions-hide-sidebar = サイドバーを隠す
   .label = サイドバーを隠す
 floorp-custom-actions-toggle-sidebar = サイドバーの表示を切り替え
   .label = サイドバーの表示を切り替え
+
+############################################################# プロファイルスイッチャー ###############################################################
+
+floorp-open-profile-with-new-instance = 新しいインスタンスで開く
+ .tooltiptext = 新しいインスタンスで開く
+floorp-profiles-in-use = このプロファイルは使用中です。
+floorp-profiles-title = プロファイル
+floorp-profiles-create = プロファイルを作成
+floorp-profile-manager = プロファイルマネージャー
+ .label = プロファイルマネージャー
+ .tooltiptext = プロファイルマネージャーを開く
