@@ -1121,8 +1121,8 @@ floorp-custom-actions-toggle-sidebar = サイドバーの表示を切り替え
 
 ############################################################# プロファイルスイッチャー ###############################################################
 
-floorp-open-profile-with-new-instance = 新しいインスタンスで開く
- .tooltiptext = 新しいインスタンスで開く
+floorp-open-profile-with-new-instance = 開く
+ .tooltiptext = 開く
 floorp-profiles-in-use = このプロファイルは使用中です。
 floorp-profiles-title = プロファイル
 floorp-profiles-create = プロファイルを作成
