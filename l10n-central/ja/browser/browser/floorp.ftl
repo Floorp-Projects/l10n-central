@@ -994,7 +994,7 @@ shortcutkey-customize-key-list-placeholder = 入力されたキー
 shortcut-key-label = アクションに使用するキー
 start-input-button-listen = キー読み取り開始
 end-input-button-listen = キー読み取り終了
-shortcut-key-description = 「キー読み取り開始」をクリックし、ショートカットキーとして使用したいキーを押します。一部では複数のキーを使用することもできます。
+shortcut-key-description = 「キー読み取り開始」をクリックし、ショートカットキーとして使用したいキーを押します。一部では複数のキーを使用することもできます。他のアクションと重複しないようにしてください。
 
 floorp-custom-actions-open-new-tab = 新しいタブを開く
   .label = 新しいタブを開く
