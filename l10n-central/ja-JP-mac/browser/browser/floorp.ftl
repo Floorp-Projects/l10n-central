@@ -525,7 +525,10 @@ workspaces-reset-warning = 警告！この操作を実行すると、すべて�
 
 manage-workspace-on-bms-option =
     .label = ブラウザーマネージャーサイドバーでワークスペースを管理する
-
+show-workspace-name-option =
+    .label = ワークスペース名を常にアイコンの隣に表示する
+change-workspace-with-default-key-option =
+    .label = ワークスペースを ↑ または、 ↓ SHIFT キーを同時押しで切り替える
 workspaces-manage-title = ワークスペースの管理
 workspaces-manage-description = ワークスペースの管理を開きます。アイコンの変更を行えます。
 workspaces-manage-label =
@@ -613,6 +616,7 @@ floorp-custom-actions-pip-action = ピクチャーインピクチャーのアク
 floorp-custom-actions-downloads-action = ダウンロードのアクション
 floorp-custom-actions-sidebar-action = サイドバーのアクション
 floorp-custom-actions-bms-action = ブラウザーマネージャーサイドバーのアクション
+floorp-custom-actions-workspace-action = ワークスペースのアクション
 
 ## mouse Gesture
 mouse-gesture = マウスジェスチャー
@@ -1118,6 +1122,10 @@ floorp-custom-actions-hide-sidebar = サイドバーを隠す
   .label = サイドバーを隠す
 floorp-custom-actions-toggle-sidebar = サイドバーの表示を切り替え
   .label = サイドバーの表示を切り替え
+floorp-custom-actions-open-previous-workspace = 前のワークスペースを開く
+  .label = 前のワークスペースを開く
+floorp-custom-actions-open-next-workspace = 次のワークスペースを開く
+  .label = 次のワークスペースを開く
 
 ############################################################# プロファイルスイッチャー ###############################################################
 
@@ -1129,3 +1137,5 @@ floorp-profiles-create = プロファイルを作成
 floorp-profile-manager = プロファイルマネージャー
  .label = プロファイルマネージャー
  .tooltiptext = プロファイルマネージャーを開く
+show-workspace-name-option = ワークスペース名をタブバーに表示
+    .label = ワークスペース名をタブバーに表示
