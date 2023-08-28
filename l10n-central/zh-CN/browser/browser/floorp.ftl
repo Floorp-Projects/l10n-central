@@ -8,7 +8,6 @@ about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name
 icon-creator = 图标作者： <label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> 和 <label data-l10n-name="brand-logo-twitter">@mwxdxx.</label>
 contributors =  这是一份<label data-l10n-name="about-contributor">贡献者和开发者名单</label>。
 
-
 #################################################################### about:preferences ####################################################################
 
 pane-design-title = 设计
@@ -413,6 +412,8 @@ floorp-lepton-enable-disabled_menu-hide =
 
 floorp-lepton-disable-userChrome-icon =
     .label = 禁用弹出菜单和面板图标
+floorp-lepton-disable-userChrome-menu-icon =
+.label = 启用 Lepton 的弹出菜单图标
     
 positon-preferences = 位置设置
 
@@ -523,6 +524,11 @@ workspaces-reset-warning = 警告！此操作将删除所有工作空间并重�
 manage-workspace-on-bms-option =
     .label = 在浏览器管理侧边栏上管理工作空间
 
+show-workspace-name-option =
+    .label = 在标签栏的工作区按钮上显示工作区名称
+change-workspace-with-default-key-option =
+    .label = 使用↑和↓键与SHIFT切换工作区。
+
 workspaces-manage-title = 管理工作空间
 workspaces-manage-description = 管理您的工作空间。更改工作空间图标
 workspaces-manage-label =
@@ -564,6 +570,45 @@ workspace-icon-tree =
 workspace-icon-chill =
  .label = 私人
  
+# CSK
+floorp-CSK-title = 自定义快捷键
+floorp-CSK-description = 自定义 { -brand-short-name } 的快捷键。Floorp 提供了超过80个快捷键选项。重新启动 { -brand-short-name } 以应用这些设置。重复的设置将不起作用。
+disable-fx-actions =
+.label = 禁用 Firefox 的默认快捷键
+customize-Action =
+.label = 自定义操作
+remove-Action =
+.label = 删除操作
+CSK-reset-title = 重置自定义快捷键
+CSK-reset-description = 将 { -brand-short-name } 的快捷键重置为默认设置。
+CSK-reset-label = 重置自定义快捷键
+CSK-reset-button = 重置自定义快捷键
+CSK-manage-title = 管理自定义快捷键
+
+CSK-remove-shortcutkey = 删除快捷键
+CSK-remove-shortcutkey-description = 您确定要删除此快捷键吗？
+
+CSK-restore-default = 恢复默认设置
+CSK-restore-default-description = 将这些设置恢复为默认设置。您当前的设置将丢失。
+
+### Exsit shortcut key: "S", "shift"
+CSK-keyborad-shortcut-info = 已存在的快捷键：{ $key } 和{ $modifiers }。
+CSK-keyborad-shortcut-info-with-keycode = 已存在的快捷键：{ $key }。
+
+floorp-custom-actions-tab-action = 标签页操作
+floorp-custom-actions-page-action = 页面操作
+floorp-custom-actions-visible-action = 可见操作
+floorp-custom-actions-search-action = 搜索操作
+floorp-custom-actions-tools-action = 工具操作
+floorp-custom-actions-bookmark-action = 书签操作
+floorp-custom-actions-open-page-action = 打开页面操作
+floorp-custom-actions-history-action = 历史记录操作
+floorp-custom-actions-pip-action = 图片中图片操作
+floorp-custom-actions-downloads-action = 下载操作
+floorp-custom-actions-sidebar-action = 侧边栏操作
+floorp-custom-actions-bms-action = 浏览器管理器侧边栏操作
+floorp-custom-actions-workspace-action = 工作空间操作
+
 ## Mouse Gesture
 mouse-gesture = 鼠标手势
 mouse-gesture-description = 要在 { -brand-short-name } 中使用鼠标手势，必须安装 Gesturefy 插件。
@@ -908,3 +953,162 @@ welcome-select-button = 选择
 welcome-finish-setup = 设置完成！
 welcome-finish-setup-description = 您已完成所有设置！其他设置，例如垂直标签和插件，可以在 about:preferences 页面找到。尽情享受 { -brand-short-name } 的使用体验吧！
 welcomet-finish-setup = 开始上网
+
+############################################################# Custom Shortcutkey ###############################################################
+
+category-CSK =
+.label = 自定义快捷键
+.tooltiptext = 自定义快捷键
+category-CSK-title = 自定义快捷键
+shortcutkey-customize =
+.title = 自定义快捷键
+select-shortcutkeyAction = 选择快捷键操作
+shortcutkey-customize-key-list-placeholder = 输入键位列表
+shortcut-key-label = 快捷键
+start-input-button-listen = 开始监听
+end-input-button-listen = 停止监听
+shortcut-key-description = 点击“开始监听”，然后按下您想要用作快捷键的键。可以使用多个键。重复的其他操作键将不起作用。
+
+floorp-custom-actions-open-new-tab = 打开新标签页
+.label = 打开新标签页
+
+floorp-custom-actions-close-tab = 关闭当前标签页
+.label = 关闭当前标签页
+floorp-custom-actions-open-new-window = 打开新窗口
+.label = 打开新窗口
+floorp-custom-actions-open-new-private-window = 打开新的隐私窗口
+.label = 打开新的隐私窗口
+floorp-custom-actions-close-window = 关闭当前窗口
+.label = 关闭当前窗口
+floorp-custom-actions-restore-last-session = 恢复上次会话
+.label = 恢复上次会话
+floorp-custom-actions-restore-last-window = 恢复上次窗口
+.label = 恢复上次窗口
+floorp-custom-actions-show-next-tab = 显示下一个标签页
+.label = 显示下一个标签页
+floorp-custom-actions-show-previous-tab = 显示上一个标签页
+.label = 显示上一个标签页
+floorp-custom-actions-show-all-tabs-panel = 显示所有标签页面板
+.label = 显示所有标签页面板
+floorp-custom-actions-send-with-mail = 通过邮件发送
+.label = 通过邮件发送
+floorp-custom-actions-save-page = 保存页面
+.label = 保存页面
+floorp-custom-actions-print-page = 打印页面
+.label = 打印页面
+floorp-custom-actions-mute-current-tab = 切换静音/取消静音当前标签页
+.label = 切换静音/取消静音当前标签页
+floorp-custom-actions-show-source-of-page = 显示页面源代码
+.label = 显示页面源代码
+floorp-custom-actions-show-page-info = 显示页面信息
+.label = 显示页面信息
+floorp-custom-actions-zoom-in = 放大
+.label = 放大
+floorp-custom-actions-zoom-out = 缩小
+.label = 缩小
+floorp-custom-actions-reset-zoom = 重置缩放
+.label = 重置缩放
+floorp-custom-actions-back = 后退
+.label = 后退
+floorp-custom-actions-forward = 前进
+.label = 前进
+floorp-custom-actions-reload = 重新加载
+.label = 重新加载
+floorp-custom-actions-stop = 停止
+.label = 停止
+floorp-custom-actions-force-reload = 强制重新加载
+.label = 强制重新加载
+floorp-custom-actions-search-in-this-page = 在此页面中搜索
+.label = 在此页面中搜索
+floorp-custom-actions-show-next-search-result = 显示下一个搜索结果
+.label = 下一个“在页面中查找”结果
+floorp-custom-actions-show-previous-search-result = 显示上一个搜索结果
+.label = 上一个“在页面中查找”结果
+floorp-custom-actions-search-the-web = 在网络上搜索
+.label = 在网络上搜索
+floorp-custom-actions-open-migration-wizard = 打开迁移向导
+.label = 打开迁移向导
+floorp-custom-actions-quit-from-application = 退出应用程序
+.label = 退出 { -brand-short-name }
+floorp-custom-actions-enter-into-customize-mode = 进入工具栏自定义模式
+.label = 打开自定义 { -brand-short-name }
+floorp-custom-actions-enter-into-offline-mode = 进入离线模式
+.label = 进入离线模式
+floorp-custom-actions-open-screen-capture = 打开屏幕截图工具
+.label = 截取屏幕截图
+floorp-custom-actions-show-pip = 显示画中画
+.label = 显示画中画
+floorp-custom-actions-bookmark-this-page = 添加书签至此页面
+.label = 添加书签至此页面
+floorp-custom-actions-open-bookmarks-sidebar = 打开书签侧边栏
+.label = 打开书签侧边栏
+floorp-custom-actions-open-bookmark-add-tool = 打开添加书签工具
+.label = 添加书签
+floorp-custom-actions-open-bookmark-add-toolbar = 打开书签添加工具栏
+.label = 添加到书签工具栏
+floorp-custom-actions-open-bookmarks-manager = 打开书签管理器
+.label = 打开书签管理器
+floorp-custom-actions-toggle-bookmark-toolbar = 切换书签工具栏
+.label = 切换书签工具栏
+floorp-custom-actions-open-general-preferences = 打开常规偏好设置
+.label = 打开常规偏好设置
+floorp-custom-actions-open-privacy-preferences = 打开隐私偏好设置
+.label = 打开隐私偏好设置
+floorp-custom-actions-open-workspaces-preferences = 打开工作区偏好设置
+.label = 打开工作区偏好设置
+floorp-custom-actions-open-containers-preferences = 打开容器偏好设置
+.label = 打开容器偏好设置
+floorp-custom-actions-open-search-preferences = 打开搜索偏好设置
+.label = 打开搜索偏好设置
+floorp-custom-actions-open-sync-preferences = 打开同步偏好设置
+.label = 打开同步偏好设置
+floorp-custom-actions-open-task-manager = 打开任务管理器
+.label = 打开 { -brand-short-name } 的任务管理器
+floorp-custom-actions-open-home-page = 打开 { -brand-short-name } 的主页
+.label = 打开 { -brand-short-name } 的主页
+floorp-custom-actions-open-addons-manager = 打开附加组件管理器
+.label = 打开附加组件和主题
+floorp-custom-actions-forget-history = 忘记历史记录
+.label = 忘记历史记录
+floorp-custom-actions-quick-forget-history = 快速忘记历史记录
+.label = 快速忘记历史记录
+floorp-custom-actions-clear-recent-history = 清除最近历史记录
+.label = 清除最近历史记录
+floorp-custom-actions-restore-last-session = 恢复上次会话
+.label = 恢复上次会话
+floorp-custom-actions-search-history = 搜索历史记录
+.label = 搜索历史记录
+floorp-custom-actions-manage-history = 管理历史记录
+.label = 管理历史记录
+floorp-custom-actions-open-downloads = 打开下载
+.label = 打开下载
+floorp-custom-actions-show-bsm = 显示浏览器管理器侧边栏
+.label = 显示浏览器管理器侧边栏
+floorp-custom-actions-show-bookmark-sidebar = 显示书签侧边栏
+.label = 显示书签侧边栏
+floorp-custom-actions-show-history-sidebar = 显示历史侧边栏
+.label = 显示历史侧边栏
+floorp-custom-actions-show-synced-tabs-sidebar = 显示同步的标签侧边栏
+.label = 显示同步的标签侧边栏
+floorp-custom-actions-reverse-sidebar = 反转侧边栏位置
+.label = 反转侧边栏位置
+floorp-custom-actions-hide-sidebar = 隐藏侧边栏
+.label = 隐藏侧边栏
+floorp-custom-actions-toggle-sidebar = 切换侧边栏
+.label = 切换侧边栏
+floorp-custom-actions-open-previous-workspace = 打开上一个工作区
+.label = 打开上一个工作区
+floorp-custom-actions-open-next-workspace = 打开下一个工作区
+.label = 打开下一个工作
+
+
+##################################################################### Profile Switcher ###############################################################
+
+floorp-open-profile-with-new-instance = 启动
+.tooltiptext = 使用此配置文件启动 { -brand-short-name }
+floorp-profiles-in-use = 此配置文件正在使用中。
+floorp-profiles-title = 配置文件
+floorp-profiles-create = 创建配置文件
+floorp-profile-manager = 配置文件管理器
+.label = 配置文件管理器
+.tooltiptext = 打开配置文件管理器
