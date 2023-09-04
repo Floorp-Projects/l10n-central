@@ -701,12 +701,12 @@ show-bookmark-sidebar =
 sidebar2-history-sidebar = 历史
 
 show-history-sidebar =
-  .tooltiptext = 显示{ show-history-sidebar }侧边栏
+  .tooltiptext = 显示{ sidebar2-history-sidebar }侧边栏
 
 sidebar2-download-sidebar = 下载
 
 show-download-sidebar =
-  .tooltiptext = 显示{ show-download-sidebar }侧边栏
+  .tooltiptext = 显示{ sidebar2-download-sidebar }侧边栏
 
 sidebar2-notes-sidebar = 笔记
 
@@ -961,7 +961,7 @@ category-CSK =
 .tooltiptext = 自定义快捷键
 category-CSK-title = 自定义快捷键
 shortcutkey-customize =
-.title = 自定义快捷键
+ .title = 自定义快捷键
 select-shortcutkeyAction = 选择快捷键操作
 shortcutkey-customize-key-list-placeholder = 输入键位列表
 shortcut-key-label = 快捷键
