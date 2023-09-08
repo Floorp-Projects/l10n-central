@@ -71,8 +71,6 @@ enable-double-click-block =
  .label = Использовать двойной щелчок для закрытия вкладки
 enable-show-pinned-tabs-title =
  .label = Отображать заголовки закрепленных вкладок
-operation-settings =
-  .label = Настройки работы браузера
 Mouse-side-button =
   .label = Оптимизировать браузер для работы с мышью с боковыми кнопками
 
@@ -92,20 +90,12 @@ tabbar-on-bottom =
 tabbar-favicon-color =
  .label = Использовать цвет иконки сайта для цвета фона панели вкладок
 
-native-tabbar = Встроенная вертикальная панель вкладок
-use-native-vertical =
-  .label = Использовать встроенную вертикальную панель вкладок (экспериментальная функция)
-
 native-tabbar-tip = Эта функция использует встроенную боковую панель Firefox, поэтому вы не можете использовать ее с другими дополнениями боковой панели и боковыми панелями Floorp.
 
 hover-vertical-tab = Разворачивать вертикальные вкладки при наведении курсора мыши
 
-vertical-tab-reverse-position = Обратное положение вертикальных вкладок
-
-treestyletabSettings-l10 = Настройки вертикальных вкладок в стиле древа
 treestyletab-Settings =
  .label = Разворачивать вкладки в стиле древа при наведении курсора мыши
-treestyletab-open-option = Настройки TreeStyleTab
 
 bookmarks-bar-settings = Настройки панели закладок (нельзя использовать параллельно)
 bookmarks-focus-mode =
@@ -131,8 +121,6 @@ Search-positon-top =
 
 about-legacy-components = Включение этой функции может привести к неожиданным ошибкам или фатальным сбоям
 
-Search-position-top =
- .label = Отображать поисковую строку в верхней части страницы
 allow-auto-restart =
  .label = Автоматически перезапускать браузер при изменении настроек, требующих перезапуска
 
@@ -199,8 +187,6 @@ mobile-chrome-useragent-mode =
  .label = Изменить пользовательский агент на Chrome для iOS
 use-custom-useragent-mode =
  .label = Использовать сторонний пользовательский агент
-custom-useragent-value =
- .label = Сторонний пользовательский агент
 
 ## DMR UI
 download-mgr-UI =
@@ -513,8 +499,6 @@ sidebar2-mute-and-unmute =
  .label = Выключить/включить звук на этой панели
 sidebar2-unload-panel =
  .label = Выгрузить эту панель
-sidebar-close-button =
- .tooltiptext = Закрыть боковую панель
 sidebar2-change-ua-panel =
   .label = Переключить пользовательский агент на мобильную/десктопную версию на этой панели
 sidebar-back-button =
@@ -549,11 +533,6 @@ show-download-sidebar =
 sidebar2-notes-sidebar = Заметки
 show-notes-sidebar =
   .tooltiptext = Отображать боковую панель заметок
-
-show-CustomURL-sidebar =
- .label = Отображать боковую панель пользовательских URL
-Edit-Custom-URL =
- .label = Редактировать пользовательский URL в боковой панели
 
 sidebar-add-button =
   .tooltiptext = { bsb-add }
@@ -618,9 +597,6 @@ please-enter-filename = Пожалуйста, введите имя файла.
 
 undo-closed-tab = Отменить закрытие вкладки
 
-disable-bg-newtab =
- .label = Отключить фоновое изображение на стартовой странице { -brand-short-name }
-how-to-disable-ntbg = Для отключения фонового изображения нажмите "Ctrl + Shift + R" на стартовой странице { -brand-short-name }.
 feature-requires-restart = Изменения настроек вступят в силу после перезагрузки.
 
 ##################################################################### Gesturefy ###############################################################
@@ -656,18 +632,11 @@ gf-floorp-open-extension-sidebar-settings-addons-id-description = Расшире
 gf-floorp-open-extension-sidebar-settings-list-default = Пожалуйста, выберите дополнение
 gf-floorp-open-extension-sidebar-settings-list-unknwon = Неизвестное дополнение
 
-
-gf-floorp-toggle-browser-manager-sidebar-name = [Floorp] Включить/Выключить боковую панель менеджера браузера
-gf-floorp-toggle-browser-manager-sidebar-description = Включить/Выключить боковую панель менеджера браузера
-
 gf-floorp-show-statusbar-name = [Floorp] Отображать строку состояния
 gf-floorp-show-statusbar-description = Отображать строку состояния
 
 gf-floorp-hide-statusbar-name = [Floorp] Скрывать строку состояния
 gf-floorp-hide-statusbar-description = Скрывать строку состояния
-
-gf-floorp-toggle-statusbar-name = [Floorp] Отображать или скрывать строку состояния
-gf-floorp-toggle-statusbar-description = Отображать или скрывать строку состояния
 
 ##################################################################### Floorp System Update Portable Version ###############################################################
 
