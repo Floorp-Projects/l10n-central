@@ -582,16 +582,12 @@ CSK-manage-title = カスタムショートカットキーの管理
 CSK-remove-shortcutkey = ショートカットキーの削除
 CSK-remove-shortcutkey-description = 本当にこのショートカットキーを削除しますか？
 
-CSK-restore-default = 
-    { PLATFORM() ->
-        [macos] HTTPS をデフォルトで有効に。サイト分離による Total Cookie Protection。状態やネットワークのパーティショニングを強化。その他、様々な機能強化。
-       *[other] HTTPS を既定で有効に。サイト分離による Total Cookie Protection。状態やネットワークのパーティショニングを強化。その他、様々な機能強化。
-    }
+CSK-restore-default = カスタムショートカットキー
 
 CSK-restore-default-description = 
     { PLATFORM() ->
-        [macos] これらの設定をデフォルトに戻します。現在の設定は失われます
-       *[other] これらの設定を既定に戻します。現在の設定は失われます
+        [macos] カスタムショートカットキーの設定をデフォルトに戻します。現在の設定は失われます
+       *[other] カスタムショートカットキーの設定を既定に戻します。現在の設定は失われます
     }
 
 ### Exsit shortcut key: "S", "shift"
