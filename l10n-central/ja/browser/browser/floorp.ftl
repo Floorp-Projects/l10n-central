@@ -668,7 +668,7 @@ rest-mode-description = 休憩中は、ブラウザーの機能が制限され�
 
 Sidebar2 =
   .label = ブラウザーマネージャーサイドバー
-  .tooltiptext = サイドバーの表示を切り替える
+  .tooltiptext = サイドバーの表示の切り替える
 
 sidebar2-mute-and-unmute =
   .label = サイドバーの音声をミュート/ミュート解除する
@@ -838,7 +838,7 @@ gf-floorp-open-browser-manager-sidebar-description = Floorpのブラウザマネ
 gf-floorp-close-browser-manager-sidebar-name = [Floorp] BMSを閉じる
 gf-floorp-close-browser-manager-sidebar-description = Floorp のブラウザマネージャーサイドバーを閉じます。
 
-gf-floorp-toggle-browser-manager-sidebar-name = [Floorp] BMS の表示を切り替える
+gf-floorp-toggle-browser-manager-sidebar-name = [Floorp] BMS の表示の切り替える
 gf-floorp-toggle-browser-manager-sidebar-description = Floorp のブラウザマネージャーサイドバーを表示または非表示にします。
 
 gf-floorp-show-statusbar-name = [Floorp] ステータスバーを表示する
@@ -847,7 +847,7 @@ gf-floorp-show-statusbar-description = Floorpのステータスバーを表示�
 gf-floorp-hide-statusbar-name = [Floorp] ステータスバーを非表示にする
 gf-floorp-hide-statusbar-description = Floorpのステータスバーを非表示にします。
 
-gf-floorp-toggle-statusbar-name = [Floorp] ステータスバーの表示を切り替え
+gf-floorp-toggle-statusbar-name = [Floorp] ステータスバーの表示の切り替え
 gf-floorp-toggle-statusbar-description = ステータスバーを表示または非表示にします。
 
 gf-floorp-open-extension-sidebar-name = [Floorp] サイドバーで選択したアドオンを開く
@@ -1074,8 +1074,8 @@ floorp-custom-actions-open-bookmark-add-toolbar = ブックマーク追加ツー
   .label = ブックマーク追加ツールバーを開く
 floorp-custom-actions-open-bookmarks-manager = ブックマークマネージャーを開く
   .label = ブックマークマネージャーを開く
-floorp-custom-actions-toggle-bookmark-toolbar = ブックマークツールバーの表示を切り替え
-  .label = ブックマークツールバーの表示を切り替え
+floorp-custom-actions-toggle-bookmark-toolbar = ブックマークツールバーの表示の切り替え
+  .label = ブックマークツールバーの表示の切り替え
 floorp-custom-actions-open-general-preferences = 一般設定を開く
   .label = 一般設定を開く
 floorp-custom-actions-open-privacy-preferences = プライバシー設定を開く
@@ -1126,7 +1126,26 @@ floorp-custom-actions-open-previous-workspace = 前のワークスペースを�
   .label = 前のワークスペースを開く
 floorp-custom-actions-open-next-workspace = 次のワークスペースを開く
   .label = 次のワークスペースを開く
-
+floorp-custom-actions-show-panel-1 = パネル 1 の表示の切り替え
+  .label = パネル 1 の表示の切り替え
+floorp-custom-actions-show-panel-2 = パネル 2 の表示の切り替え
+  .label = パネル 2 の表示の切り替え
+floorp-custom-actions-show-panel-3 = パネル 3 の表示の切り替え
+  .label = パネル 3 の表示の切り替え
+floorp-custom-actions-show-panel-4 = パネル 4 の表示の切り替え
+  .label = パネル 4 の表示の切り替え
+floorp-custom-actions-show-panel-5 = パネル 5 の表示の切り替え
+  .label = パネル 5 の表示の切り替え
+floorp-custom-actions-show-panel-6 = パネル 6 の表示の切り替え
+  .label = パネル 6 の表示の切り替え
+floorp-custom-actions-show-panel-7 = パネル 7 の表示の切り替え
+  .label = パネル 7 の表示の切り替え
+floorp-custom-actions-show-panel-8 = パネル 8 の表示の切り替え
+  .label = パネル 8 の表示の切り替え
+floorp-custom-actions-show-panel-9 = パネル 9 の表示の切り替え
+  .label = パネル 9 の表示の切り替え
+floorp-custom-actions-show-panel-10 = パネル 10 の表示の切り替え
+  .label = パネル 10 の表示の切り替え
 ############################################################# プロファイルスイッチャー ###############################################################
 
 floorp-open-profile-with-new-instance = 開く
@@ -1139,3 +1158,10 @@ floorp-profile-manager = プロファイルマネージャー
  .tooltiptext = プロファイルマネージャーを開く
 show-workspace-name-option = ワークスペース名をタブバーに表示
     .label = ワークスペース名をタブバーに表示
+
+
+##################################################################### Floorp Portable Preferences ###############################################################
+
+floorp-portable-update-application-allow = { -brand-short-name } ポータブル アップデート
+floorp-update-application-auto-enabled-option =
+  .label = { -brand-short-name } ポータブル の自動アップデートを有効にする (推奨)
