@@ -1161,3 +1161,7 @@ show-workspace-name-option = ワークスペース名をタブバーに表示
 floorp-portable-update-application-allow = { -brand-short-name } ポータブル アップデート
 floorp-update-application-auto-enabled-option =
   .label = { -brand-short-name } ポータブル の自動アップデートを有効にする (推奨)
+
+###################################################################### Private Container ##############################################################
+
+floorp-private-container-name = プライベート

@@ -1155,3 +1155,6 @@ floorp-profile-manager = プロファイルマネージャー
  .tooltiptext = プロファイルマネージャーを開く
 show-workspace-name-option = ワークスペース名をタブバーに表示
     .label = ワークスペース名をタブバーに表示
+###################################################################### Private Container ##############################################################
+
+floorp-private-container-name = プライベート
