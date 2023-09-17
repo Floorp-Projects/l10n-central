@@ -488,10 +488,10 @@ about-default-userjs = テレメトリー無効。様々なカスタマイズが
 
 Securefox-label = Yokoffing Securefox
 about-Securefox =
-    { PLATFORM() ->
-        [macos] HTTPS をデフォルトで有効に。サイト分離による Total Cookie Protection。状態やネットワークのパーティショニングを強化。その他、様々な機能強化。
-       *[other] HTTPS を既定で有効に。サイト分離による Total Cookie Protection。状態やネットワークのパーティショニングを強化。その他、様々な機能強化。
-    }
+  { PLATFORM() ->
+     [macos] HTTPS を既定で有効に。サイト分離による Total Cookie Protection。状態やネットワークのパーティショニングを強化。その他、様々な機能強化。
+    *[other] HTTPS を既定で有効に。サイト分離による Total Cookie Protection。状態やネットワークのパーティショニングを強化。その他、様々な機能強化。
+  }
     
 default-label = Yokoffing Default
 about-default = 必要なものはすべて。壊れることはありません。これが、あなたの user.js です。
@@ -541,7 +541,8 @@ workspaces-manage-button  = ワークスペースマネージャーを開く...
 select-workspace = ワークスペースを選択
 workspace-select-icon = アイコンを選択
  .label = アイコンを選択
-
+workspace-select-container = コンテナーを選択
+ .label = コンテナーを選択
 workspace-customize = 
  .title = ワークスペースのカスタマイズ
 
@@ -666,7 +667,7 @@ rest-mode-description = 休憩中は、ブラウザーの機能が制限され�
 
 Sidebar2 =
   .label = ブラウザーマネージャーサイドバー
-  .tooltiptext = サイドバーの表示を切り替える
+  .tooltiptext = サイドバーの表示の切り替える
 
 sidebar2-mute-and-unmute =
   .label = サイドバーの音声をミュート/ミュート解除する
@@ -836,7 +837,7 @@ gf-floorp-open-browser-manager-sidebar-description = Floorpのブラウザマネ
 gf-floorp-close-browser-manager-sidebar-name = [Floorp] BMSを閉じる
 gf-floorp-close-browser-manager-sidebar-description = Floorp のブラウザマネージャーサイドバーを閉じます。
 
-gf-floorp-toggle-browser-manager-sidebar-name = [Floorp] BMS の表示を切り替える
+gf-floorp-toggle-browser-manager-sidebar-name = [Floorp] BMS の表示の切り替える
 gf-floorp-toggle-browser-manager-sidebar-description = Floorp のブラウザマネージャーサイドバーを表示または非表示にします。
 
 gf-floorp-show-statusbar-name = [Floorp] ステータスバーを表示する
@@ -845,7 +846,7 @@ gf-floorp-show-statusbar-description = Floorpのステータスバーを表示�
 gf-floorp-hide-statusbar-name = [Floorp] ステータスバーを非表示にする
 gf-floorp-hide-statusbar-description = Floorpのステータスバーを非表示にします。
 
-gf-floorp-toggle-statusbar-name = [Floorp] ステータスバーの表示を切り替え
+gf-floorp-toggle-statusbar-name = [Floorp] ステータスバーの表示の切り替え
 gf-floorp-toggle-statusbar-description = ステータスバーを表示または非表示にします。
 
 gf-floorp-open-extension-sidebar-name = [Floorp] サイドバーで選択したアドオンを開く
@@ -930,6 +931,7 @@ workspace-rename =
   .label = ワークスペース名を変更
 workspace-delete = 
   .label = ワークスペースを削除
+manage-workspace = ワークスペースを管理
 
 ######################################################################### Share mode ###############################################################
 
@@ -1072,8 +1074,8 @@ floorp-custom-actions-open-bookmark-add-toolbar = ブックマーク追加ツー
   .label = ブックマーク追加ツールバーを開く
 floorp-custom-actions-open-bookmarks-manager = ブックマークマネージャーを開く
   .label = ブックマークマネージャーを開く
-floorp-custom-actions-toggle-bookmark-toolbar = ブックマークツールバーの表示を切り替え
-  .label = ブックマークツールバーの表示を切り替え
+floorp-custom-actions-toggle-bookmark-toolbar = ブックマークツールバーの表示の切り替え
+  .label = ブックマークツールバーの表示の切り替え
 floorp-custom-actions-open-general-preferences = 一般設定を開く
   .label = 一般設定を開く
 floorp-custom-actions-open-privacy-preferences = プライバシー設定を開く
@@ -1144,7 +1146,6 @@ floorp-custom-actions-show-panel-9 = パネル 9 の表示の切り替え
   .label = パネル 9 の表示の切り替え
 floorp-custom-actions-show-panel-10 = パネル 10 の表示の切り替え
   .label = パネル 10 の表示の切り替え
-
 ############################################################# プロファイルスイッチャー ###############################################################
 
 floorp-open-profile-with-new-instance = 開く

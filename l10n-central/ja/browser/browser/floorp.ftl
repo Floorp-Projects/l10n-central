@@ -541,7 +541,8 @@ workspaces-manage-button  = ワークスペースマネージャーを開く...
 select-workspace = ワークスペースを選択
 workspace-select-icon = アイコンを選択
  .label = アイコンを選択
-
+workspace-select-container = コンテナーを選択
+ .label = コンテナーを選択
 workspace-customize = 
  .title = ワークスペースのカスタマイズ
 
@@ -930,6 +931,7 @@ workspace-rename =
   .label = ワークスペース名を変更
 workspace-delete = 
   .label = ワークスペースを削除
+manage-workspace = ワークスペースを管理
 
 ######################################################################### Share mode ###############################################################
 
