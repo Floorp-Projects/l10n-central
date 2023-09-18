@@ -203,6 +203,9 @@ enable-sidebar2 =
 visible-bms =
  .label = Видимость боковой панели менеджера браузера
 
+hide-bms-to-unload-panel =
+ .label = Выгрузить панель при скрытии панели
+
 custom-URL-option = Пользовательские URL веб-панели
 set-custom-URL-button =
  .label = Задать URL...
@@ -417,6 +420,9 @@ workspaces-manage-button = Открыть менеджер рабочих про
 select-workspace = Выбрать рабочее пространство
 workspace-select-icon = Выбрать значок рабочего пространства
  .label = Выбрать значок рабочего пространства
+
+workspace-select-container = Выбрать вкладку контейнера
+ .label = Выбрать вкладку контейнера
 
 workspace-customize = 
  .title = Настроить рабочее пространство
@@ -731,8 +737,14 @@ move-tab-another-workspace =
 workspace-rename = 
  .label = Изменить название рабочего пространства
 
+workspace-rename = 
+  .label = Переименовать рабочее пространство
+
 workspace-delete = 
  .label = Удалить рабочее пространство
+
+manage-workspace = Управление рабочим пространством
+  .label = Управление рабочим пространством
 
 ######################################################################### user js ###############################################################
 
