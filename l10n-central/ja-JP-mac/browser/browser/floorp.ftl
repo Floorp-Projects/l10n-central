@@ -552,6 +552,10 @@ workspace-icon-cart =
  .label = ショッピング
 workspace-icon-circle =
  .label = サークル
+workspace-icon-compass =
+ .label = 探求
+workspace-icon-gear =
+ .label = ギア
 workspace-icon-dollar =
  .label = 銀行
 workspace-icon-fence =
@@ -572,6 +576,10 @@ workspace-icon-tree =
  .label = 植物
 workspace-icon-chill =
  .label = プライベート
+workspace-icon-question =
+ .label = 問題
+workspace-icon-star =
+ .label = 星
 
 # CSK
 floorp-CSK-title = カスタムショートカットキー
@@ -1163,6 +1171,14 @@ floorp-profile-manager = プロファイルマネージャー
  .tooltiptext = プロファイルマネージャーを開く
 show-workspace-name-option = ワークスペース名をタブバーに表示
     .label = ワークスペース名をタブバーに表示
+
+
+##################################################################### Floorp Portable Preferences ###############################################################
+
+floorp-portable-update-application-allow = { -brand-short-name } ポータブル アップデート
+floorp-update-application-auto-enabled-option =
+  .label = { -brand-short-name } ポータブルの自動アップデートを有効にする (推奨)
+
 ###################################################################### Private Container ##############################################################
 
 floorp-private-container-name = プライベート
