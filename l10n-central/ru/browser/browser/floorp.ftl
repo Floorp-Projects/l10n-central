@@ -485,6 +485,9 @@ CSK-remove-shortcutkey-description = Вы уверены, что хотите у
 CSK-restore-default = Восстановить настройки по умолчанию
 CSK-restore-default-description = Восстановить эти настройки по умолчанию. Ваши текущие настройки будут потеряны.
 
+CSK-reboot-browser-label = Перезапустите { -brand-short-name }, чтобы применить эти настройки
+CSK-reboot-browser-button = Перезапустить { -brand-short-name }
+
 CSK-keyborad-shortcut-info = Существующая горячая клавиша: { $key } & { $modifiers }.
 CSK-keyborad-shortcut-info-with-keycode = Существующая горячая клавиша: { $key }.
 
