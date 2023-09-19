@@ -593,8 +593,13 @@ CSK-restore-default-description =
        *[other] カスタムショートカットキーの設定を既定に戻します。現在の設定は失われます
     }
 
+CSK-reboot-browser-label = カスタムショートカットキーの変更は、{ -brand-short-name } の再起動後に適用されます。
+CSK-reboot-browser-button = { -brand-short-name } を再起動する...
 ### Exsit shortcut key: "S", "shift"
 CSK-keyborad-shortcut-info = "{ $key }" と "{ $modifiers }" の組み合わせが設定されています。
+CSK-keyborad-shortcut-info-with-keycode = "{ $key }" が設定されています。
+
+CSK-keyborad-shortcut-is-changed = (変更が未適用）
 
 disable-fx-actions =
  .label = Firefox のキーボードショートカットを無効にする
