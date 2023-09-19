@@ -491,6 +491,8 @@ CSK-reboot-browser-button = Перезапустить { -brand-short-name }
 CSK-keyborad-shortcut-info = Существующая горячая клавиша: { $key } & { $modifiers }.
 CSK-keyborad-shortcut-info-with-keycode = Существующая горячая клавиша: { $key }.
 
+CSK-keyborad-shortcut-is-changed = (Не применено)
+
 floorp-custom-actions-tab-action = Действия вкладок
 floorp-custom-actions-page-action = Действия страницы
 floorp-custom-actions-visible-action = Действия видимости
