@@ -1182,3 +1182,8 @@ floorp-update-application-auto-enabled-option =
 ###################################################################### Private Container ##############################################################
 
 floorp-private-container-name = プライベート
+floorp-toggle-private-container =
+  .label = プライベート/通常コンテナーで開き直す
+  .accesskey = P
+open-in_private-container =
+  .label = 新しいプライベートコンテナータブで開く
