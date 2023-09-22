@@ -1161,6 +1161,7 @@ floorp-custom-actions-show-panel-10 = パネル 10 の表示の切り替え
   .label = パネル 10 の表示の切り替え
 ############################################################# プロファイルスイッチャー ###############################################################
 
+floorp-profile = プロファイル
 floorp-open-profile-with-new-instance = 開く
  .tooltiptext = 開く
 floorp-profiles-in-use = このプロファイルは使用中です。
