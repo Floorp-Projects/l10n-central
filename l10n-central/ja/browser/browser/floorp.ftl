@@ -163,26 +163,28 @@ system-theme-auto =
 ui-preference = ユーザーインターフェイスの設定
 preferences-browser-appearance-description = ブラウザーの外観設定を決められます。完全テーマのように、５つのデザインの中からブラウザーの外観を変更することができます。
 
+-design = デザイン
+
 firefox-proton =
- .label = Firefox Proton デザイン
+ .label = Firefox Proton { -design }
 
 firefox-proton-fix =
- .label = Firefox Proton FIX デザイン
+ .label = Firefox Proton FIX { -design }
 
 firefox-photon-lepton =
- .label = Firefox Photon・Lepton デザイン
+ .label = Firefox Photon・Lepton { -design }
 
 floorp-legacy =
- .label = Floorp Legacy デザイン（サポート対象外）
+ .label = Floorp Legacy { -design }（サポート対象外）
 
 floorp-fluentUI =
- .label = Microsoft Fluent UI デザイン
+ .label = Microsoft Fluent UI { -design }
 
 floorp-fluerialUI =
- .label = Floorp Fluerial UI デザイン
+ .label = Floorp Fluerial UI { -design }
 
 floorp-gnomeUI =
- .label = GNOME デスクトップのデザイン（システムテーマ & GTK が必要）
+ .label = GNOME デスクトップの{ -design }（システムテーマ & GTK が必要）
 
 ## download mgr
 download-notification-preferences = ダウンロード通知の設定
@@ -202,26 +204,28 @@ floorp-help-button-label = { -brand-short-name } サポート
 appmenuitem-reboot =
  .label = 再起動
 
-## useagent
+## useragent
 
-UserAgent-preference = ユーザーエージェント
+-ua = ユーザーエージェント
+
+UserAgent-preference = { -ua }
 default-useragent-mode =
  .label =
     { PLATFORM() ->
-        [macos] デフォルトユーザーエージェントを使用する
-       *[other] 既定のユーザーエージェントを使用する
+        [macos] デフォルト{ -ua }を使用する
+       *[other] 既定の{ -ua }を使用する
     }
 
 windows-chrome-useragent-mode =
- .label = Windows 上の Chrome のユーザーエージェントを使用する
+ .label = Windows 上の Chrome の{ -ua }を使用する
 macOS-chrome-useragent-mode =
- .label = macOS 上の Chrome のユーザーエージェントを使用する
+ .label = macOS 上の Chrome の{ -ua }を使用する
 linux-chrome-useragent-mode =
- .label = Linux 上の Chrome のユーザーエージェントを使用する
+ .label = Linux 上の Chrome の{ -ua }を使用する
 mobile-chrome-useragent-mode =
- .label = iOS 上の Chrome のユーザーエージェントを使用する
+ .label = iOS 上の Chrome の{ -ua }を使用する
 use-custom-useragent-mode =
- .label = カスタムユーザーエージェントを使用する
+ .label = カスタム{ -ua }を使用する
 
 ## DMR UI
 download-mgr-UI =
@@ -229,30 +233,32 @@ download-mgr-UI =
 downloading-red-color =
  .label = ダウンロード中の表示を赤色に変更する
 
-sidebar-preferences = ブラウザーマネージャーサイドバーの設定
+-bsb = ブラウザーマネージャーサイドバー
+
+sidebar-preferences =  { -bsb }の設定
 view-sidebar2-right =
  .label = サイドバーを右側に表示する
 enable-sidebar2 =
- .label = ブラウザーマネージャーサイドバーを有効にする
+ .label = { -bsb }を有効にする
 
 custom-URL-option = ウェブパネルの URL 設定
 set-custom-URL-button =
     .label = カスタム URL を設定
     .accesskey = S
-bsb-header = ブラウザーマネージャーサイドバー
-bsb-preferences = ブラウザーマネージャーサイドバーの設定
+bsb-header = { -bsb }
+bsb-preferences = { -bsb }の設定
 visible-bms = 
- .label = ブラウザーマネージャーサイドバーを表示する
+ .label = { -bsb }を表示する
 hide-bms-to-unload-panel =
   .label = パネルを非表示にするときにパネルをアンロードする
-pane-BSB-title = ブラウザーマネージャーサイドバー
+pane-BSB-title = { -bsb }
 bsb-context = コンテナタブを選択する
 bsb-userAgent-label =
-  .label = ユーザーエージェントをモバイルに切り替える
+  .label = { -ua }をモバイルに切り替える
 bsb-width = ウェブパネルの幅 (もし0ならグローバル値が使われます)
 bsb-page = 開くページ
 
-bsb-add = ブラウザーマネージャーサイドバーのウェブパネルを追加する
+bsb-add = { -bsb }のウェブパネルを追加する
 
 bsb-setting = ウェブパネルの設定
 
@@ -357,7 +363,7 @@ disable-blur-on-newtab =
 
 ## lepton preferences
 
-about-lepton = { -brand-short-name } を Lepton を使用してカスタマイズします。設定の変更に、{ -brand-short-name } の再起動は必要ありません。代わりに Floorp は Lepton を再適用します。
+about-lepton = { -brand-short-name } を Lepton を使用してカスタマイズします。設定の変更に、{ -brand-short-name } の再起動は必要ありません。代わりに { -brand-product-name } は Lepton を再適用します。
 
 lepton-preference-button =
     .label = Lepton の設定を開く
@@ -377,20 +383,22 @@ protonfix-mode =
 
 autohide-preference = 自動非表示のカスタマイズ
 
+-enable-auto-hide = { $name }の自動非表示を有効にする
+
 floorp-lepton-enable-tab-autohide =
-    .label = タブバーの自動非表示を有効にする
+    .label = { -enable-auto-hide(name: "タブバー") }
 floorp-lepton-enable-navbar-autohide =
-    .label = ナビゲーションバーの自動非表示を有効にする
+    .label = { -enable-auto-hide(name: "ナビゲーションバー") }
 floorp-lepton-enable-sidebar-autohide =
-    .label = サイドバーの自動非表示を有効にする
+    .label = { -enable-auto-hide(name: "サイドバー") }
 floorp-lepton-enable-urlbar-autohide =
-    .label = URL バーの自動非表示を有効にする
+    .label = { -enable-auto-hide(name: "URL バー") }
 floorp-lepton-enable-back-button-autohide =
-    .label = 「戻る」ボタンの自動非表示を有効にする
+    .label = { -enable-auto-hide(name: "「戻る」ボタン") }
 floorp-lepton-enable-forward-button-autohide =
-    .label = 「進む」ボタンの自動非表示を有効にする
+    .label = { -enable-auto-hide(name: "「進む」ボタン") }
 floorp-lepton-enable-page-action-button-autohide =
-    .label = アドオンのページアクションボタンの自動非表示を有効にする
+    .label = { -enable-auto-hide(name: "アドオンのページアクションボタン") }
 floorp-lepton-enable-toolbar-overlap =
     .label = ツールバーを URL バーと重ねる
 floorp-lepton-enable-toolbar-overlap-allow-layout-shift-autohide =
@@ -398,22 +406,24 @@ floorp-lepton-enable-toolbar-overlap-allow-layout-shift-autohide =
 
 hide-preference = 非表示のカスタマイズ
 
+-do-hide = { $name }を非表示にする
+
 floorp-lepton-enable-tab_icon-hide =
-    .label = タブのアイコンを非表示にする
+    .label = { -do-hide(name: "タブのアイコン") }
 floorp-lepton-enable-tabbar-hide =
-    .label = タブバーを非表示にする
+    .label = { -do-hide(name: "タブバー") }
 floorp-lepton-enable-navbar-hide =
-    .label = ナビゲーションバーを非表示にする
+    .label = { -do-hide(name: "ナビゲーションバー") }
 floorp-lepton-enable-sidebar_header-hide =
-    .label = サイドバーのヘッダーを非表示にする
+    .label = { -do-hide(name: "サイドバーのヘッダー") }
 floorp-lepton-enable-urlbar_iconbox-hide =
-    .label = URL バーのアイコンボックスを非表示にする
+    .label = { -do-hide(name: "URL バーのアイコンボックス") }
 floorp-lepton-enable-bookmarkbar_icon-hide =
-    .label = ブックマークバーのアイコンを非表示にする
+    .label = { -do-hide(name: "ブックマークバーのアイコン") }
 floorp-lepton-enable-bookmarkbar_label-hide =
-    .label = ブックマークバーのラベル名を非表示にする
+    .label = { -do-hide(name: "ブックマークバーのラベル名") }
 floorp-lepton-enable-disabled_menu-hide =
-    .label = 無効なコンテストメニュー・メニューを非表示にする
+    .label = { -do-hide(name: "無効なコンテストメニュー・メニュー") }
 
 positon-preferences = 位置のカスタマイズ
 
@@ -506,45 +516,47 @@ Smoothfox-label = Yokoffing Smoothfox
 about-Smoothfox = Edge のようなスムーズなスクロールを、お気に入りのブラウザで実現することができます。
 
 # workspaces
-floorp-workspaces-title = { -brand-short-name } ワークスペース
-workspaces-backup-discription = ワークスペースのバックアップと復元
-workspaces-restore-service-title = ワークスペース復元サービス
-workspaces-restore-warning = 警告: この操作を実行すると、現在のワークスペースが上書きされ、ブラウザーが数秒の間使えなくなり、ワークスペースが復元されます。この操作は取り消せません。
+
+-workspaces = ワークスペース
+floorp-workspaces-title = { -brand-short-name } { -workspaces }
+workspaces-backup-discription = { -workspaces }のバックアップと復元
+workspaces-restore-service-title = { -workspaces }復元サービス
+workspaces-restore-warning = 警告: この操作を実行すると、現在の{ -workspaces }が上書きされ、ブラウザーが数秒の間使えなくなり、{ -workspaces }が復元されます。この操作は取り消せません。
 
 change-to-close-workspace-popup-option = 
- .label = ワークスペース選択時にワークスペースのポップアップを閉じる
+ .label = { -workspaces }選択時に{ -workspaces }のポップアップを閉じる
 pinned-tabs-exclude-workspace-option = 
- .label = ワークスペースに固定されたタブを含めない
+ .label = { -workspaces }に固定されたタブを含めない
 
-workspaces-reset-title = ワークスペースのリセット
+workspaces-reset-title = { -workspaces }のリセット
 workspaces-reset-label =
-    .label = ワークスペースのリセット
-workspaces-reset-description = ワークスペースをリセットするとグループ化が解除され、初期状態に戻ります。
-workspaces-reset-button = ワークスペースのリセットを実行する...
+    .label = { -workspaces }のリセット
+workspaces-reset-description = { -workspaces }をリセットするとグループ化が解除され、初期状態に戻ります。
+workspaces-reset-button = { -workspaces }のリセットを実行する...
 
-workspaces-reset-service-title = Floorp ワークスペース
-workspaces-reset-warning = 警告！この操作を実行すると、すべてのワークスペースが削除され、ブラウザーが数秒間使えなくなります。この操作は取り消せません。
+workspaces-reset-service-title = Floorp { -workspaces }
+workspaces-reset-warning = 警告！この操作を実行すると、すべての{ -workspaces }が削除され、ブラウザーが数秒間使えなくなります。この操作は取り消せません。
 
 manage-workspace-on-bms-option =
-    .label = ブラウザーマネージャーサイドバーでワークスペースを管理する
+    .label = ブラウザーマネージャーサイドバーで{ -workspaces }を管理する
 show-workspace-name-option =
-    .label = ワークスペース名を常にアイコンの隣に表示する
+    .label = { -workspaces }名を常にアイコンの隣に表示する
 change-workspace-with-default-key-option =
-    .label = ワークスペースを ↑ または、 ↓ SHIFT キーを同時押しで切り替える
-workspaces-manage-title = ワークスペースの管理
-workspaces-manage-description = ワークスペースの管理を開きます。アイコンの変更を行えます。
+    .label = { -workspaces }を ↑ または、 ↓ SHIFT キーを同時押しで切り替える
+workspaces-manage-title = { -workspaces }の管理
+workspaces-manage-description = { -workspaces }の管理を開きます。アイコンの変更を行えます。
 workspaces-manage-label =
-    .label = ワークスペースの管理
+    .label = { -workspaces }の管理
 
-workspaces-manage-button  = ワークスペースマネージャーを開く... 
+workspaces-manage-button  = { -workspaces }マネージャーを開く... 
 
-select-workspace = ワークスペースを選択
+select-workspace = { -workspaces }を選択
 workspace-select-icon = アイコンを選択
  .label = アイコンを選択
 workspace-select-container = コンテナーを選択
  .label = コンテナーを選択
 workspace-customize = 
- .title = ワークスペースのカスタマイズ
+ .title = { -workspaces }のカスタマイズ
 
 workspace-icon-briefcase =
  .label = 仕事
@@ -582,26 +594,27 @@ workspace-icon-star =
  .label = 星
 
 # CSK
-floorp-CSK-title = カスタムショートカットキー
+-csk = カスタムショートカットキー
+floorp-CSK-title = { -csk }
 floorp-CSK-description = { -brand-short-name } のショートカットキーをカスタマイズします。80 以上のアクションでブラウザーを自由自在に操作してください！これらの設定を適用するには、{ -brand-short-name } を再起動してください。
-CSK-reset-title = カスタムショートカットキーをリセットする
-CSK-reset-description = カスタムショートカットキーをリセットする
-CSK-reset-label = カスタムショートカットキーをリセットする
+CSK-reset-title = { -csk }をリセットする
+CSK-reset-description = { -csk }をリセットする
+CSK-reset-label = { -csk }をリセットする
 CSK-reset-button = リセットする...
-CSK-manage-title = カスタムショートカットキーの管理
+CSK-manage-title = { -csk }の管理
 
 CSK-remove-shortcutkey = ショートカットキーの削除
 CSK-remove-shortcutkey-description = 本当にこのショートカットキーを削除しますか？
 
-CSK-restore-default = カスタムショートカットキー
+CSK-restore-default = { -csk }
 
 CSK-restore-default-description = 
     { PLATFORM() ->
-        [macos] カスタムショートカットキーの設定をデフォルトに戻します。現在の設定は失われます
-       *[other] カスタムショートカットキーの設定を既定に戻します。現在の設定は失われます
+        [macos] { -csk }の設定をデフォルトに戻します。現在の設定は失われます
+       *[other] { -csk }の設定を既定に戻します。現在の設定は失われます
     }
 
-CSK-reboot-browser-label = カスタムショートカットキーの変更は、{ -brand-short-name } の再起動後に適用されます。
+CSK-reboot-browser-label = { -csk }ーの変更は、{ -brand-short-name } の再起動後に適用されます。
 CSK-reboot-browser-button = { -brand-short-name } を再起動する...
 ### Exsit shortcut key: "S", "shift"
 CSK-keyborad-shortcut-info = "{ $key }" と "{ $modifiers }" の組み合わせが設定されています。
@@ -609,26 +622,28 @@ CSK-keyborad-shortcut-info-with-keycode = "{ $key }" が設定されています
 
 CSK-keyborad-shortcut-is-changed = (変更が未適用）
 
+-action = アクション
+
 disable-fx-actions =
  .label = Firefox のキーボードショートカットを無効にする
 customize-Action =
- .label = このアクションをカスタマイズ
+ .label = この{ -action }をカスタマイズ
 remove-Action =
- .label = このアクションを削除
+ .label = この{ -action }を削除
 
-floorp-custom-actions-tab-action = タブのアクション
-floorp-custom-actions-page-action = ページのアクション
-floorp-custom-actions-visible-action = 表示方法のアクション
-floorp-custom-actions-search-action = 検索のアクション
-floorp-custom-actions-tools-action = ツールのアクション
-floorp-custom-actions-bookmark-action = ブックマークのアクション
-floorp-custom-actions-open-page-action = ページを開くアクション
-floorp-custom-actions-history-action = 履歴のアクション
-floorp-custom-actions-pip-action = ピクチャーインピクチャーのアクション
-floorp-custom-actions-downloads-action = ダウンロードのアクション
-floorp-custom-actions-sidebar-action = サイドバーのアクション
-floorp-custom-actions-bms-action = ブラウザーマネージャーサイドバーのアクション
-floorp-custom-actions-workspace-action = ワークスペースのアクション
+floorp-custom-actions-tab-action = タブの{ -action }
+floorp-custom-actions-page-action = ページの{ -action }
+floorp-custom-actions-visible-action = 表示方法の{ -action }
+floorp-custom-actions-search-action = 検索の{ -action }
+floorp-custom-actions-tools-action = ツールの{ -action }
+floorp-custom-actions-bookmark-action = ブックマークの{ -action }
+floorp-custom-actions-open-page-action = ページを開く{ -action }
+floorp-custom-actions-history-action = 履歴の{ -action }
+floorp-custom-actions-pip-action = ピクチャーインピクチャーの{ -action }
+floorp-custom-actions-downloads-action = ダウンロードの{ -action }
+floorp-custom-actions-sidebar-action = サイドバーの{ -action }
+floorp-custom-actions-bms-action = ブラウザーマネージャーサイドバーの{ -action }
+floorp-custom-actions-workspace-action = ワークスペースの{ -action }
 
 ## mouse Gesture
 mouse-gesture = マウスジェスチャー
@@ -870,12 +885,12 @@ gf-floorp-open-extension-sidebar-settings-list-default = アドオンを選択�
 gf-floorp-open-extension-sidebar-settings-list-unknwon = 不明なアドオン
 ##################################################################### Floorp System Update Portable Version ###############################################################
 
-update-portable-notification-found-title = Floorpの最新バージョンがリリースされました。
+update-portable-notification-found-title = { -brand-product-name }の最新バージョンがリリースされました。
 update-portable-notification-found-message = ダウンロードしています...
 update-portable-notification-ready-title = アップデートする準備ができました。
 update-portable-notification-ready-message = 次回ブラウザー起動時にアップデートが開始されます。
 update-portable-notification-success-title = アップデートが完了しました！
-update-portable-notification-success-message = アップデートが完了しました！新しいバージョンのFloorpをお楽しみください。
+update-portable-notification-success-message = アップデートが完了しました！新しいバージョンの{ -brand-product-name }をお楽しみください。
 update-portable-notification-failed-title = アップデートに失敗しました。
 update-portable-notification-failed-redirector-message = アップデートに失敗しました。ブラウザーを再起動すると、問題が解決する場合があります。
 update-portable-notification-failed-prepare-message = アップデートの準備に失敗しました。
@@ -1139,26 +1154,28 @@ floorp-custom-actions-open-previous-workspace = 前のワークスペースを�
   .label = 前のワークスペースを開く
 floorp-custom-actions-open-next-workspace = 次のワークスペースを開く
   .label = 次のワークスペースを開く
-floorp-custom-actions-show-panel-1 = パネル 1 の表示の切り替え
-  .label = パネル 1 の表示の切り替え
-floorp-custom-actions-show-panel-2 = パネル 2 の表示の切り替え
-  .label = パネル 2 の表示の切り替え
-floorp-custom-actions-show-panel-3 = パネル 3 の表示の切り替え
-  .label = パネル 3 の表示の切り替え
-floorp-custom-actions-show-panel-4 = パネル 4 の表示の切り替え
-  .label = パネル 4 の表示の切り替え
-floorp-custom-actions-show-panel-5 = パネル 5 の表示の切り替え
-  .label = パネル 5 の表示の切り替え
-floorp-custom-actions-show-panel-6 = パネル 6 の表示の切り替え
-  .label = パネル 6 の表示の切り替え
-floorp-custom-actions-show-panel-7 = パネル 7 の表示の切り替え
-  .label = パネル 7 の表示の切り替え
-floorp-custom-actions-show-panel-8 = パネル 8 の表示の切り替え
-  .label = パネル 8 の表示の切り替え
-floorp-custom-actions-show-panel-9 = パネル 9 の表示の切り替え
-  .label = パネル 9 の表示の切り替え
-floorp-custom-actions-show-panel-10 = パネル 10 の表示の切り替え
-  .label = パネル 10 の表示の切り替え
+
+-switch-show-panel = { $name } の表示の切り替え
+floorp-custom-actions-show-panel-1 = -switch-show-panel(name: "パネル 1")
+  .label = -switch-show-panel(name: "パネル 1")
+floorp-custom-actions-show-panel-2 = -switch-show-panel(name: "パネル 2")
+  .label = -switch-show-panel(name: "パネル 2")
+floorp-custom-actions-show-panel-3 = -switch-show-panel(name: "パネル 3")
+  .label = -switch-show-panel(name: "パネル 3")
+floorp-custom-actions-show-panel-4 = -switch-show-panel(name: "パネル 4")
+  .label = -switch-show-panel(name: "パネル 4")
+floorp-custom-actions-show-panel-5 = -switch-show-panel(name: "パネル 5")
+  .label = -switch-show-panel(name: "パネル 5")
+floorp-custom-actions-show-panel-6 = -switch-show-panel(name: "パネル 6")
+  .label = -switch-show-panel(name: "パネル 6")
+floorp-custom-actions-show-panel-7 = -switch-show-panel(name: "パネル 7")
+  .label = -switch-show-panel(name: "パネル 7")
+floorp-custom-actions-show-panel-8 = -switch-show-panel(name: "パネル 8")
+  .label = -switch-show-panel(name: "パネル 8")
+floorp-custom-actions-show-panel-9 = -switch-show-panel(name: "パネル 9")
+  .label = -switch-show-panel(name: "パネル 9")
+floorp-custom-actions-show-panel-10 = -switch-show-panel(name: "パネル 10")
+  .label = -switch-show-panel(name: "パネル 10")
 ############################################################# プロファイルスイッチャー ###############################################################
 
 floorp-profile = プロファイル
