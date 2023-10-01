@@ -70,10 +70,10 @@ hide-horizontality-tabs =
  .label= { -brand-short-name } の組み込みのタブバーを隠す
 
 verticalTab-setting =
- .label = 垂直タブにブラウザーを最適化 (Mac では非互換)
+ .label = 垂直タブにブラウザーを最適化
 
 move-tabbar-position =
- .label = タブバーの位置をツールバーの下部に表示 (Mac では非互換)
+ .label = タブバーの位置をツールバーの下部に表示
 
 tabbar-on-bottom =
  .label = タブバーをウインドウの下部に表示
