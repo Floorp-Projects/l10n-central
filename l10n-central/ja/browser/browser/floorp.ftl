@@ -557,6 +557,8 @@ workspace-select-container = コンテナーを選択
  .label = コンテナーを選択
 workspace-customize = 
  .title = { -workspaces }のカスタマイズ
+floorp-no-workspace-conatiner =
+  .label = コンテナーなし
 
 workspace-icon-briefcase =
  .label = 仕事
@@ -1176,6 +1178,18 @@ floorp-custom-actions-show-panel-9 = { -switch-show-panel(name: "パネル 9") }
   .label = { -switch-show-panel(name: "パネル 9") }
 floorp-custom-actions-show-panel-10 = { -switch-show-panel(name: "パネル 10") }
   .label = { -switch-show-panel(name: "パネル 10") }
+-custom-actions = カスタムアクション { $name }
+floorp-custom-actions-custom-action-1 = { -custom-actions(name: "1") }
+  .label = { -custom-actions(name: "1") }
+floorp-custom-actions-custom-action-2 = { -custom-actions(name: "2") }
+  .label = { -custom-actions(name: "2") }
+floorp-custom-actions-custom-action-3 = { -custom-actions(name: "3") }
+  .label = { -custom-actions(name: "3") }
+floorp-custom-actions-custom-action-4 = { -custom-actions(name: "4") }
+  .label = { -custom-actions(name: "4") }
+floorp-custom-actions-custom-action-5 = { -custom-actions(name: "5") }
+  .label = { -custom-actions(name: "5") }
+
 ############################################################# プロファイルスイッチャー ###############################################################
 
 floorp-profile = プロファイル
@@ -1205,3 +1219,12 @@ floorp-toggle-private-container =
   .accesskey = P
 open-in_private-container =
   .label = 新しいプライベートコンテナータブで開く
+######################################################################### Page Actions ###############################################################
+
+qrcode-generate-page-action-title = QR コードでウェブページを共有
+qrcode-generate-page-action =
+ .tooltiptext = QR コードでウェブページを共有
+
+######################################################################### Customize Mode ###############################################################
+floorp-customize-mode-unified-extensions-button =
+ .label = 統合拡張機能ボタン
