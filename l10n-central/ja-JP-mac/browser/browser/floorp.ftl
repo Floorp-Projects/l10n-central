@@ -25,6 +25,7 @@ open-new-tab-use-default =
         [macos] デフォルト設定を使用
        *[other] 既定の設定を使用
      }
+
 open-new-tab-at-the-end =
   .label = 新しいタブをタブバーの最後の位置に開く
 open-new-tab-next-to-current =
@@ -42,7 +43,7 @@ tab-sleep-settings-button =
   .label = タブスリープの設定
   .accesskey = S
 
-tab-sleep-settings-dialog-title
+tab-sleep-settings-dialog-title =
   .title = タブスリープの設定
 tab-sleep-settings-dialog-excludehosts-label = ホストを除外
 tab-sleep-settings-dialog-excludehosts-label-2 = 1つのホストを1行ずつ入力してください
@@ -179,7 +180,7 @@ firefox-proton =
   .label = Firefox Proton { -design }
 
 firefox-proton-fix =
-  .label = Firefox Proton FIX { -design }
+  .label = Firefox Proton Fix { -design }
 
 firefox-photon-lepton =
   .label = Firefox Photon・Lepton { -design }
@@ -503,7 +504,7 @@ restore-button = 復元
 
 ## user.js
 
-userjs-button = user.js オプションを開く... 
+userjs-button = user.js オプションを開く...
 userjs-select-option = user.js を選択 
 
 header-userjs = user.js
@@ -544,6 +545,7 @@ about-Smoothfox = Edge のようなスムーズなスクロールを、お気に
 ## Workspaces
 
 -workspaces = ワークスペース
+
 floorp-workspaces-title = { -brand-short-name } { -workspaces }
 workspaces-backup-discription = { -workspaces }のバックアップと復元
 workspaces-restore-service-title = { -workspaces }復元サービス
@@ -623,7 +625,9 @@ workspace-icon-star =
   .label = 星
 
 # Custom Keyboard Shortcuts
+
 -csk = カスタムショートカットキー
+
 floorp-CSK-title = { -csk }
 floorp-CSK-description = { -brand-short-name } のショートカットキーをカスタマイズします。80 以上のアクションでブラウザーを自由自在に操作してください！これらの設定を適用するには、{ -brand-short-name } を再起動してください。
 CSK-reset-title = { -csk }をリセットする
@@ -687,7 +691,8 @@ TWS = Translate Web Page
 about-TWS = Google や Yandexを使って、リアルタイムでページを翻訳します。選択したテキストやページ全体を翻訳することも可能です。新しいタブを開く必要はありません。ウェブページのテキストは、Google や Yandex などに送信されて翻訳されます。
 
 # Privacy Hub
-## BlockMoreTracker
+## BlockMoreTrackers
+
 privacy-hub-header = プライバシーハブ
 block-more-tracker = 更に多くの追跡を遮断する
 block-tracker = このセクションでは、ウイルスやトラッカーをブロックするために設計された拡張機能のセットの情報を提供します。これらの拡張機能は、{ -brand-short-name } によって自動的に検出され、表示されます。
@@ -741,7 +746,7 @@ sidebar2-change-ua-panel =
 sidebar2-delete-panel =
   .label = このパネルをサイドバーから削除
 
-sidebar-close-button =
+sidebar2-close-button =
   .tooltiptext = サイドバーを閉じる
 
 sidebar-back-button =
@@ -992,6 +997,7 @@ workspace-default =
         [macos] デフォルトブラウザー
        *[other] 既定のブラウザー
      }
+
 workspace-add =
   .label = ワークスペースを追加
 
@@ -1202,6 +1208,7 @@ floorp-custom-actions-open-next-workspace = 次のワークスペースを開く
   .label = 次のワークスペースを開く
 
 -switch-show-panel = { $name } の表示の切り替え
+
 floorp-custom-actions-show-panel-1 = { -switch-show-panel(name: "パネル 1") }
   .label = { -switch-show-panel(name: "パネル 1") }
 floorp-custom-actions-show-panel-2 = { -switch-show-panel(name: "パネル 2") }
@@ -1222,7 +1229,9 @@ floorp-custom-actions-show-panel-9 = { -switch-show-panel(name: "パネル 9") }
   .label = { -switch-show-panel(name: "パネル 9") }
 floorp-custom-actions-show-panel-10 = { -switch-show-panel(name: "パネル 10") }
   .label = { -switch-show-panel(name: "パネル 10") }
+
 -custom-actions = カスタムアクション { $name }
+
 floorp-custom-actions-custom-action-1 = { -custom-actions(name: "1") }
   .label = { -custom-actions(name: "1") }
 floorp-custom-actions-custom-action-2 = { -custom-actions(name: "2") }
@@ -1245,8 +1254,6 @@ floorp-profiles-create = プロファイルを作成
 floorp-profile-manager = プロファイルマネージャー
   .label = プロファイルマネージャー
   .tooltiptext = プロファイルマネージャーを開く
-show-workspace-name-option = ワークスペース名をタブバーに表示
-  .label = ワークスペース名をタブバーに表示
 fxa-not-signed-in = サインインしていません
 
 ##################################################################### Floorp Portable Preferences ###############################################################
