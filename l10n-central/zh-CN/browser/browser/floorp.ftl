@@ -21,6 +21,7 @@ tab-width = 标签页的最小宽度
 preferences-tabs-newtab-position = 新标签页的位置
 open-new-tab-use-default =
   .label = 使用默认位置
+
 open-new-tab-at-the-end =
   .label = 在标签栏的末尾打开新标签页
 open-new-tab-next-to-current =
@@ -175,7 +176,7 @@ firefox-proton =
   .label = Firefox Proton { -design }
 
 firefox-proton-fix =
-  .label = Firefox Proton FIX { -design }
+  .label = Firefox Proton Fix { -design }
 
 firefox-photon-lepton =
   .label = Firefox Photon・Lepton { -design }
@@ -532,6 +533,7 @@ about-Smoothfox = 在您喜爱的浏览器上实现类似 Edge 的平滑滚动�
 ## Workspaces
 
 -workspaces = 工作空间
+
 floorp-workspaces-title = { -brand-short-name } { -workspaces }
 workspaces-backup-discription = { -workspaces }的备份和还原
 workspaces-restore-service-title = { -workspaces }还原服务
@@ -611,7 +613,9 @@ workspace-icon-star =
   .label = 星星
 
 # Custom Keyboard Shortcuts
+
 -csk = 自定义快捷键
+
 floorp-CSK-title = { -csk }
 floorp-CSK-description = 自定义 { -brand-short-name } 的快捷键。Floorp 提供了超过 80 个可自定义的快捷键操作。重新启动 { -brand-short-name } 以应用这些设置。冲突的快捷键设置将不会生效。
 CSK-reset-title = 重置{ -csk }
@@ -960,6 +964,7 @@ workspace-button = 工作空间
 
 workspace-default =
   .label = 默认
+
 workspace-add =
   .label= 新建工作空间
 
@@ -1170,6 +1175,7 @@ floorp-custom-actions-open-next-workspace = 打开下一个工作空间
   .label = 打开下一个工作空间
 
 -switch-show-panel = 切换显示{ $name }
+
 floorp-custom-actions-show-panel-1 = { -switch-show-panel(name: "面板 1") }
   .label = { -switch-show-panel(name: "面板 1") }
 floorp-custom-actions-show-panel-2 = { -switch-show-panel(name: "面板 2") }
@@ -1190,7 +1196,9 @@ floorp-custom-actions-show-panel-9 = { -switch-show-panel(name: "面板 9") }
   .label = { -switch-show-panel(name: "面板 9") }
 floorp-custom-actions-show-panel-10 = { -switch-show-panel(name: "面板 10") }
   .label = { -switch-show-panel(name: "面板 10") }
+
 -custom-actions = 自定义操作{ $name }
+
 floorp-custom-actions-custom-action-1 = { -custom-actions(name: "1") }
   .label = { -custom-actions(name: "1") }
 floorp-custom-actions-custom-action-2 = { -custom-actions(name: "2") }
@@ -1213,8 +1221,6 @@ floorp-profiles-create = 创建新配置文件
 floorp-profile-manager = 配置文件管理器
   .label = 配置文件管理器
   .tooltiptext = 打开配置文件管理器
-show-workspace-name-option = 在标签栏显示工作空间名称
-  .label = 在标签栏显示工作空间名称
 fxa-not-signed-in = 未登录
 
 ##################################################################### Floorp Portable Preferences ###############################################################
