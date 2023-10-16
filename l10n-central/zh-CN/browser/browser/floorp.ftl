@@ -4,9 +4,9 @@
 
 ###################################################################### about:Dialog #################################################################################
 
-about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> 是一款由日本开发的网络浏览器。它基于 Firefox 开发，并由 <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label> 运营，旨在改善网络浏览体验。您想要支持我们吗？请考虑 <label data-l10n-name="helpus-donateLink">捐款</label> 。
-icon-creator = 图标设计者： <label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> 和 <label data-l10n-name="brand-logo-twitter">@mwxdxx</label> 。
-contributors = 请查看 <label data-l10n-name="about-contributor">贡献者和开发者名单</label> 。
+about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> 是一款由日本开发的网络浏览器。 它基于 Firefox 开发，并由 <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label> 运营，旨在改善网络浏览体验。 您想要支持我们吗？ 请考虑 <label data-l10n-name="helpus-donateLink">捐款</label>。
+icon-creator = 图标设计者： <label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> 和 <label data-l10n-name="brand-logo-twitter">@mwxdxx</label>
+contributors = 请查看 <label data-l10n-name="about-contributor">贡献者和开发者名单</label>
 
 #################################################################### about:preferences ####################################################################
 
@@ -64,7 +64,7 @@ enable-show-pinned-tabs-title =
 Mouse-side-button =
   .label = 带侧键鼠标模式（隐藏前进和后退按钮）
 
-tabbar-preference = 标签栏设置
+tabbar-preference = 标签栏设置（实验性）
 
 None-mode =
   .label = 默认模式
@@ -117,11 +117,11 @@ bookmarks-bar-settings = 书签栏设置（每次只能选择一个选项）
 bookmarks-focus-mode =
   .label = 悬浮标签栏（鼠标悬停时显示）
 bookmarks-bottom-mode =
-  .label = 在 { -brand-short-name } 底部显示书签栏
+  .label = 在浏览器窗口底部显示书签栏
 
 nav-bar-settings = 导航栏设置
 show-nav-bar-bottom =
-  .label = 在 { -brand-short-name } 底部显示导航栏（实验性）
+  .label = 在浏览器窗口底部显示导航栏（实验性）
 
 material-effect =
   .label = 允许 Mica For Everyone 修改浏览器外观
@@ -181,7 +181,7 @@ firefox-photon-lepton =
   .label = Firefox Photon・Lepton { -design }
 
 floorp-legacy =
-  .label = Floorp 旧版 { -design }（不再支持）
+  .label = Floorp 旧版{ -design }（不再支持）
 
 floorp-fluentUI =
   .label = Microsoft Fluent UI { -design }
@@ -222,6 +222,7 @@ appmenuitem-reboot =
 UserAgent-preference = { -ua }
 default-useragent-mode =
   .label = 使用默认的 { -ua }
+
 windows-chrome-useragent-mode =
   .label = 模拟 Chrome（Windows）
 macOS-chrome-useragent-mode =
@@ -395,7 +396,7 @@ protonfix-mode =
 
 autohide-preference = 自动隐藏设置
 
--enable-auto-hide = 自动隐藏 $name
+-enable-auto-hide = 自动隐藏 { $name }
 
 floorp-lepton-enable-tab-autohide =
   .label = { -enable-auto-hide(name: "标签栏") }
@@ -418,7 +419,7 @@ floorp-lepton-enable-toolbar-overlap-allow-layout-shift-autohide =
 
 hide-preference = 隐藏设置
 
--do-hide = 隐藏 $name
+-do-hide = 隐藏 { $name }
 
 floorp-lepton-enable-tab_icon-hide =
   .label = { -do-hide(name: "标签页图标") }
@@ -605,7 +606,7 @@ workspace-icon-tree =
 workspace-icon-chill =
   .label = 私人
 workspace-icon-question =
-  .label = 问号
+  .label = 问题
 workspace-icon-star =
   .label = 星星
 
@@ -892,7 +893,7 @@ gf-floorp-toggle-statusbar-name = [Floorp] 切换状态栏
 gf-floorp-toggle-statusbar-description = 切换【显示/隐藏】状态栏。
 
 gf-floorp-show-browser-manager-sidebar-name = [Floorp] 切换侧边工具栏
-gf-floorp-show-browser-manager-sidebar-description = 切换侧边工具栏
+gf-floorp-show-browser-manager-sidebar-description = 切换侧边工具栏。
 
 gf-floorp-open-extension-sidebar-name = [Floorp] 在侧边栏中打开选择的扩展
 gf-floorp-open-extension-sidebar-description = 在侧边栏中打开所选的扩展。
@@ -935,8 +936,8 @@ memo-welcome-title = 欢迎！
 memo-first-tip = 欢迎使用 Floorp 笔记！以下是一些使用说明：
 memo-second-tip = Floorp 笔记是一个便签应用，允许您在多台设备上同步存储多个备忘录。要启用同步功能，您需要使用 Firefox 账户登录 Floorp。
 memo-third-tip = Floorp 笔记将保存在您的 Floorp 设置中，并使用 Firefox Sync 在设备之间同步。Firefox Sync 使用您的 Firefox 账户密码对同步内容进行加密，因此只有您能够访问其内容。Firefox Sync 不是备份服务。我们建议您定期创建备份。
+memo-fourth-tip = Floorp 笔记可以通过 Floorp 的侧边工具栏或在 URL 中输入 “about:notes” 打开。
 memo-import-data-tip = Firefox Sync 不是备份服务。我们建议您定期创建备份。
-memo-fourth-tip = Floorp 笔记可以通过 Floorp 的侧边工具栏或在 URL 中输入 aboutnotes 打开。
 memo-new-title = 新建备忘录
 chage-view-mode = 切换【只读/编辑】模式
 readonly-mode = 离线（只读）
