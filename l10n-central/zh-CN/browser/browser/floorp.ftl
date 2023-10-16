@@ -4,7 +4,7 @@
 
 ###################################################################### about:Dialog #################################################################################
 
-about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> 是一款由日本开发的网络浏览器。 它基于 Firefox 开发，并由 <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label> 运营，旨在改善网络浏览体验。 您想要支持我们吗？ 请考虑 <label data-l10n-name="helpus-donateLink">捐款</label>。
+about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> 是一款由日本开发的网络浏览器。 它基于 Firefox 开发，并由 <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label> 运营，旨在改善网络浏览体验。 您想要支持我们吗？ 请考虑 <label data-l10n-name="helpus-donateLink">捐款</label> 。
 icon-creator = 图标设计者： <label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> 和 <label data-l10n-name="brand-logo-twitter">@mwxdxx</label>
 contributors = 请查看 <label data-l10n-name="about-contributor">贡献者和开发者名单</label>
 
@@ -54,7 +54,7 @@ enable-tab-scroll-reverse =
   .label = 反向滚动标签页
 enable-tab-scroll-wrap =
   .label = 在边缘处循环滚动标签页
-tab-sleep-timeout-minutes-value = 多久后休眠未激活标签页（单位：分钟）
+tab-sleep-timeout-minutes-value = 多久后休眠未激活标签页（分钟）
 enable-tab-scroll-change =
   .label = 使用滚轮切换标签页
 enable-double-click-block =
@@ -62,7 +62,7 @@ enable-double-click-block =
 enable-show-pinned-tabs-title =
   .label = 显示固定标签页的标题
 Mouse-side-button =
-  .label = 带侧键鼠标模式（隐藏前进和后退按钮）
+  .label = 带侧键鼠标模式（隐藏“前进”和“后退”按钮）
 
 tabbar-preference = 标签栏设置（实验性）
 
@@ -369,7 +369,7 @@ newtab-background-folder-open =
 
 newtab-background-folder-choose = 选择文件夹
 
-newtab-background-extensions = 图片文件扩展名（使用英文逗号分隔）
+newtab-background-extensions = 图片文件扩展名（使用 "," 分隔）
 
 disable-blur-on-newtab =
   .label = 禁用 { -brand-short-name } 主页上的模糊效果
@@ -629,9 +629,9 @@ CSK-restore-default-description = 恢复 Floorp 的默认快捷键设置？您�
 
 CSK-reboot-browser-label = 更改将在重新启动 { -brand-short-name } 后生效。
 CSK-reboot-browser-button = 重新启动 { -brand-short-name }...
-# Exist shortcut key S, shift
-CSK-keyborad-shortcut-info = 已存在的快捷键： { $key } 和 { $modifiers }。
-CSK-keyborad-shortcut-info-with-keycode = 已存在的快捷键：{ $key }。
+# Exist shortcut key: "S", "shift"
+CSK-keyborad-shortcut-info = 已存在的快捷键： "{ $key }" 和 "{ $modifiers }"。
+CSK-keyborad-shortcut-info-with-keycode = 已存在的快捷键："{ $key }"。
 
 CSK-keyborad-shortcut-is-changed =（未应用）
 
@@ -707,7 +707,7 @@ rest-mode-description = 浏览器功能已被限制。要退出休息模式，�
 
 Sidebar2 =
   .label = 侧边工具栏
-  .tooltiptext = 【显示/隐藏】侧边工具栏
+  .tooltiptext = 切换侧边工具栏的显示
 
 sidebar2-mute-and-unmute =
   .label = 【静音/取消静音】此面板
@@ -716,7 +716,7 @@ sidebar2-unload-panel =
   .label = 关闭此面板
 
 sidebar2-change-ua-panel =
-  .label = 在此面板上切换 User Agent （桌面移动端）
+  .label = 在此面板上切换 User Agent （桌面/移动端）
 
 sidebar2-delete-panel =
   .label = 从侧边工具栏删除此面板
@@ -838,7 +838,7 @@ please-enter-filename = 请输入文件名：
 
 undo-closed-tab = 重新打开已关闭的标签页
 
-################################################################### aboutaddons ###############################################################
+################################################################### about:addons ###############################################################
 
 # Dual Theme
 dual-theme-enable-addon-button = 启用（子主题）
@@ -880,8 +880,8 @@ gf-floorp-open-browser-manager-sidebar-description = 打开 Floorp 的侧边工�
 gf-floorp-close-browser-manager-sidebar-name = [Floorp] 关闭侧边工具栏
 gf-floorp-close-browser-manager-sidebar-description = 关闭 Floorp 的侧边工具栏。
 
-gf-floorp-toggle-browser-manager-sidebar-name = [Floorp] 切换侧边工具栏
-gf-floorp-toggle-browser-manager-sidebar-description = 切换【显示/隐藏】 Floorp 的侧边工具栏。
+gf-floorp-toggle-browser-manager-sidebar-name = [Floorp] 切换侧边工具栏的显示
+gf-floorp-toggle-browser-manager-sidebar-description = 显示或隐藏 Floorp 的侧边工具栏。
 
 gf-floorp-show-statusbar-name = [Floorp] 显示状态栏
 gf-floorp-show-statusbar-description = 显示 Floorp 的状态栏。
@@ -889,11 +889,11 @@ gf-floorp-show-statusbar-description = 显示 Floorp 的状态栏。
 gf-floorp-hide-statusbar-name = [Floorp] 隐藏状态栏
 gf-floorp-hide-statusbar-description = 隐藏 Floorp 的状态栏。
 
-gf-floorp-toggle-statusbar-name = [Floorp] 切换状态栏
-gf-floorp-toggle-statusbar-description = 切换【显示/隐藏】状态栏。
+gf-floorp-toggle-statusbar-name = [Floorp] 切换状态栏的显示
+gf-floorp-toggle-statusbar-description = 显示或隐藏状态栏。
 
-gf-floorp-show-browser-manager-sidebar-name = [Floorp] 切换侧边工具栏
-gf-floorp-show-browser-manager-sidebar-description = 切换侧边工具栏。
+gf-floorp-show-browser-manager-sidebar-name = [Floorp] 显示侧边工具栏
+gf-floorp-show-browser-manager-sidebar-description = 显示侧边工具栏。
 
 gf-floorp-open-extension-sidebar-name = [Floorp] 在侧边栏中打开选择的扩展
 gf-floorp-open-extension-sidebar-description = 在侧边栏中打开所选的扩展。
@@ -1008,7 +1008,7 @@ welcome-maximum-template = 高级模式
 welcome-enable-most-of-features = 启用高级功能和设置，推荐给有经验的用户。
 welcome-go-next-setup = 继续下一步
 welcome-select-browser-design = 选择浏览器设计
-welcome-discribe-browser-design = 您可以选择一个精美的第三方 { -brand-short-name } 设计，还可以在 “偏好设置” 中找到适合您的操作系统的设计。
+welcome-discribe-browser-design = 您可以选择一个精美的第三方 { -brand-short-name } 设计，还可以在 “about:preferences” 中找到适合您的操作系统的设计。
 welcome-design-lepton-name = Lepton 原始设计
 welcome-design-photon-name = Lepton Photon 设计
 welcome-design-ProtonFix-name = Lepton ProtonFix 设计
@@ -1020,7 +1020,7 @@ welcome-import-data-button = 开始导入
 welcome-import-data-skip = 跳过导入
 welcome-select-button = 选择
 welcome-finish-setup = 完成设置
-welcome-finish-setup-description = 您已经完成了所有设置！其他设置，如垂直标签栏和扩展，可以在 aboutpreferences 页面中找到。尽情享受 { -brand-short-name } 的使用体验吧！
+welcome-finish-setup-description = 您已经完成了所有设置！其他设置，如垂直标签栏和扩展，可以在 “about:preferences” 页面中找到。尽情享受 { -brand-short-name } 的使用体验吧！
 welcomet-finish-setup = 开始浏览网页
 
 ############################################################# Custom Shortcutkey ###############################################################
