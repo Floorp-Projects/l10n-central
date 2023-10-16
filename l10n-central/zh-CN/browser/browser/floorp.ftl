@@ -706,10 +706,10 @@ rest-mode-description = 浏览器功能已被限制。要退出休息模式，�
 
 Sidebar2 =
   .label = 侧边工具栏
-  .tooltiptext = 显示隐藏 侧边工具栏
+  .tooltiptext = 显示/隐藏 侧边工具栏
 
 sidebar2-mute-and-unmute =
-  .label = 静音取消静音此面板
+  .label = 静音/取消静音 此面板
 
 sidebar2-unload-panel =
   .label = 关闭此面板
@@ -736,7 +736,7 @@ sidebar-go-index-button =
   .tooltiptext = 返回主页
 
 sidebar-muteAndUnmute-button =
-  .tooltiptext = 静音取消静音 侧边工具栏
+  .tooltiptext = 静音/取消静音 侧边工具栏
 
 sidebar2-browser-manager-sidebar = 浏览器管理工具
 
@@ -880,7 +880,7 @@ gf-floorp-close-browser-manager-sidebar-name = [Floorp] 关闭侧边工具栏
 gf-floorp-close-browser-manager-sidebar-description = 关闭 Floorp 的侧边工具栏。
 
 gf-floorp-toggle-browser-manager-sidebar-name = [Floorp] 切换侧边工具栏
-gf-floorp-toggle-browser-manager-sidebar-description = 切换显示隐藏 Floorp 的侧边工具栏。
+gf-floorp-toggle-browser-manager-sidebar-description = 切换 显示/隐藏 Floorp 的侧边工具栏。
 
 gf-floorp-show-statusbar-name = [Floorp] 显示状态栏
 gf-floorp-show-statusbar-description = 显示 Floorp 的状态栏。
@@ -889,7 +889,7 @@ gf-floorp-hide-statusbar-name = [Floorp] 隐藏状态栏
 gf-floorp-hide-statusbar-description = 隐藏 Floorp 的状态栏。
 
 gf-floorp-toggle-statusbar-name = [Floorp] 切换状态栏
-gf-floorp-toggle-statusbar-description = 切换显示隐藏状态栏。
+gf-floorp-toggle-statusbar-description = 切换 显示/隐藏状态栏。
 
 gf-floorp-show-browser-manager-sidebar-name = [Floorp] 切换侧边工具栏
 gf-floorp-show-browser-manager-sidebar-description = 切换侧边工具栏
@@ -1063,8 +1063,8 @@ floorp-custom-actions-save-page = 保存页面
   .label = 保存页面
 floorp-custom-actions-print-page = 打印页面
   .label = 打印页面
-floorp-custom-actions-mute-current-tab = 静音取消静音 当前标签页
-  .label = 静音取消静音 当前标签页
+floorp-custom-actions-mute-current-tab = 静音/取消静音 当前标签页
+  .label = 静音/取消静音 当前标签页
 floorp-custom-actions-show-source-of-page = 显示页面源代码
   .label = 显示页面源代码
 floorp-custom-actions-show-page-info = 显示页面信息
