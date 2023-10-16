@@ -64,7 +64,7 @@ enable-show-pinned-tabs-title =
 Mouse-side-button =
   .label = 带侧键鼠标模式（隐藏前进和后退按钮）
 
-tabbar-preference = 标签栏首选项
+tabbar-preference = 标签栏设置
 
 None-mode =
   .label = 默认模式
@@ -127,7 +127,7 @@ material-effect =
   .label = 允许 Mica For Everyone 修改浏览器外观
 disable-extension-check-compatibility-option =
   .label = 不检查扩展的兼容性
-other-preference = 其他首选项
+other-preference = 其他设置
 
 enable-userscript =
   .label = 启用旧版组件
@@ -915,7 +915,7 @@ update-portable-notification-failed-prepare-message = 准备更新失败。
 ##################################################################### Open link in external ###############################################################
 openInExternal-title = 在其他浏览器中打开链接
 open-link-in-external-enabled-option =
-  .label = 启用 在其他浏览器中打开链接 功能
+  .label = 启用 “在其他浏览器中打开链接” 功能
 open-link-in-external-select-browser-option = 选择要打开的浏览器
 open-link-in-external-select-browser-option-default =
   .label = 默认浏览器
@@ -938,7 +938,7 @@ memo-third-tip = Floorp 笔记将保存在您的 Floorp 设置中，并使用 Fi
 memo-import-data-tip = Firefox Sync 不是备份服务。我们建议您定期创建备份。
 memo-fourth-tip = Floorp 笔记可以通过 Floorp 的侧边工具栏或在 URL 中输入 aboutnotes 打开。
 memo-new-title = 新建备忘录
-chage-view-mode = 切换 只读编辑 模式
+chage-view-mode = 切换【只读/编辑】模式
 readonly-mode = 离线（只读）
 
 ######################################################################### Default bookmarks ###############################################################
@@ -1063,8 +1063,8 @@ floorp-custom-actions-save-page = 保存页面
   .label = 保存页面
 floorp-custom-actions-print-page = 打印页面
   .label = 打印页面
-floorp-custom-actions-mute-current-tab = 静音/取消静音 当前标签页
-  .label = 静音/取消静音 当前标签页
+floorp-custom-actions-mute-current-tab = 【静音/取消静音】当前标签页
+  .label = 【静音/取消静音】当前标签页
 floorp-custom-actions-show-source-of-page = 显示页面源代码
   .label = 显示页面源代码
 floorp-custom-actions-show-page-info = 显示页面信息
@@ -1123,8 +1123,8 @@ floorp-custom-actions-open-general-preferences = 打开常规偏好设置
   .label = 打开常规偏好设置
 floorp-custom-actions-open-privacy-preferences = 打开隐私偏好设置
   .label = 打开隐私偏好设置
-floorp-custom-actions-open-workspaces-preferences = 打开工作区偏好设置
-  .label = 打开工作区偏好设置
+floorp-custom-actions-open-workspaces-preferences = 打开工作空间偏好设置
+  .label = 打开工作空间偏好设置
 floorp-custom-actions-open-containers-preferences = 打开容器偏好设置
   .label = 打开容器偏好设置
 floorp-custom-actions-open-search-preferences = 打开搜索偏好设置
@@ -1163,10 +1163,10 @@ floorp-custom-actions-hide-sidebar = 隐藏侧边栏
   .label = 隐藏侧边栏
 floorp-custom-actions-show-sidebar = 切换侧边栏
   .label = 切换侧边栏
-floorp-custom-actions-open-previous-workspace = 打开上一个工作区
-  .label = 打开上一个工作区
-floorp-custom-actions-open-next-workspace = 打开下一个工作区
-  .label = 打开下一个工作区
+floorp-custom-actions-open-previous-workspace = 打开上一个工作空间
+  .label = 打开上一个工作空间
+floorp-custom-actions-open-next-workspace = 打开下一个工作空间
+  .label = 打开下一个工作空间
 
 -switch-show-panel = 切换显示{ $name }
 floorp-custom-actions-show-panel-1 = { -switch-show-panel(name 面板 1) }
@@ -1226,7 +1226,7 @@ floorp-update-application-auto-enabled-option =
 
 floorp-private-container-name = 私人
 floorp-toggle-private-container =
-  .label = 重新以 私人无身份 方式打开
+  .label = 重新以【私人/无身份】方式打开
   .accesskey = P
 open-in_private-container =
   .label = 在新的私人容器标签页中打开
