@@ -1,14 +1,14 @@
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
-# file, You can obtain one at httpmozilla.orgMPL2.0.
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-###################################################################### aboutDialog #################################################################################
+###################################################################### about:Dialog #################################################################################
 
-about-floorp = label data-l10n-name=floorp-browser-link{ -brand-product-name }label 是一款由日本开发的网络浏览器。它基于 Firefox 开发，由 label data-l10n-name=ablaze-Link{ -vendor-short-name }label 运营，旨在改善网络浏览体验。您想要支持我们吗？请考虑 label data-l10n-name=helpus-donateLink捐款label 。
-icon-creator = 图标设计者： label data-l10n-name=browser-logo-twitter@CutterKnife_label 和 label data-l10n-name=brand-logo-twitter@mwxdxxlabel 。
-contributors = 请查看 label data-l10n-name=about-contributor贡献者和开发者名单label 。
+about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> 是一款由日本开发的网络浏览器。它基于 Firefox 开发，并由 <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label> 运营，旨在改善网络浏览体验。您想要支持我们吗？请考虑 <label data-l10n-name="helpus-donateLink">捐款</label> 。
+icon-creator = 图标设计者： <label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> 和 <label data-l10n-name="brand-logo-twitter">@mwxdxx</label> 。
+contributors = 请查看 <label data-l10n-name="about-contributor">贡献者和开发者名单</label> 。
 
-#################################################################### aboutpreferences ####################################################################
+#################################################################### about:preferences ####################################################################
 
 pane-design-title = 设计
 category-design =
