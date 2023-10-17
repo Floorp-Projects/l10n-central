@@ -427,6 +427,9 @@ workspace-select-container = Выбрать вкладку контейнера
 workspace-customize = 
  .title = Настроить рабочее пространство
 
+floorp-no-workspace-conatiner =
+ .label = Без контейнера
+
 workspace-icon-briefcase =
  .label = Работа
 workspace-icon-cart =
@@ -506,7 +509,10 @@ floorp-custom-actions-downloads-action = Действия загрузок
 floorp-custom-actions-sidebar-action = Действия боковой панели
 floorp-custom-actions-bms-action = Действия боковой панели менеджера браузера
 floorp-custom-actions-workspace-action = Действия рабочих пространств
+floorp-custom-actions-custom-action = Пользовательские действия (эксперементально)
 
+floorp-custom-actions-toggle-bookmark-toolbar =
+  .label = Переключить панель закладок
 
 rest-mode = Делаем перерыв...
 rest-mode-description = Браузер остановлен. Нажмите OK или ENTER для возобновления работы.
@@ -1055,7 +1061,16 @@ floorp-custom-actions-show-panel-9 = Показать/скрыть панель 
   .label = Показать/скрыть панель 9
 floorp-custom-actions-show-panel-10 = Показать/скрыть панель 10
   .label = Показать/скрыть панель 10
-
+floorp-custom-actions-custom-action-1 = Действие 1
+  .label = Действие 1
+floorp-custom-actions-custom-action-2 = Действие 2
+  .label = Действие 2
+floorp-custom-actions-custom-action-3 = Действие 3
+  .label = Действие 3
+floorp-custom-actions-custom-action-4 = Действие 4
+  .label = Действие 4
+floorp-custom-actions-custom-action-5 = Действие 5
+  .label = Действие 5
 ##################################################################### Profile Switcher ###############################################################
 
 floorp-open-profile-with-new-instance = Запустить
@@ -1066,6 +1081,7 @@ floorp-profiles-create = Создать профиль
 floorp-profile-manager = Менеджер профилей
  .label = Менеджер профилей
  .tooltiptext = Открыть менеджер профилей
+floorp-profile = Профиль
 fxa-not-signed-in = Не авторизован
 
 ###################################################################### Private Container ##############################################################
@@ -1084,3 +1100,10 @@ open-in_private-container =
 qrcode-generate-page-action-title = Сканировать QR-код с помощью телефона.
 qrcode-generate-page-action =
  .tooltiptext = Отправить страницу на телефон.
+
+######################################################################### Customize Mode ###############################################################
+floorp-customize-mode-unified-extensions-button =
+ .label = Расширения
+
+floorp-split-view-menu =
+ .label = Открыть вкладку в разделённом виде
