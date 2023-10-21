@@ -12,7 +12,7 @@ contributors = <label data-l10n-name="about-contributor">貢献者・開発者</
 
 pane-design-title = デザイン
 category-design =
-    .tooltiptext = { pane-design-title }
+  .tooltiptext = { pane-design-title }
 design-header = デザイン
 
 feature-requires-restart = この機能を変更するには { -brand-short-name } を再起動する必要があります。
@@ -20,80 +20,91 @@ feature-requires-restart = この機能を変更するには { -brand-short-name
 tab-width = タブの最小幅
 preferences-tabs-newtab-position = 新しいタブの開く位置
 open-new-tab-use-default =
- .label =
+  .label =
       { PLATFORM() ->
         [macos] デフォルト設定を使用
        *[other] 既定の設定を使用
      }
+
 open-new-tab-at-the-end =
- .label = 新しいタブをタブバーの最後の位置に開く
+  .label = 新しいタブをタブバーの最後の位置に開く
 open-new-tab-next-to-current =
- .label = 現在のタブの隣に新しいタブを開く
+  .label = 現在のタブの隣に新しいタブを開く
 enable-multitab =
- .label = 多段タブを有効にする
+  .label = 多段タブを有効にする
 multirow-tabs-limit =
- .label = 多段タブの行制限を有効にする
+  .label = 多段タブの行制限を有効にする
 multirow-tabs-newtab =
- .label = 新しいタブボタンを常にタブの列内に配置する
+  .label = 新しいタブボタンを常にタブの列内に配置する
 multirow-tabs-value = 多段タブの有効化時の行制限数
 enable-tab-sleep =
- .label = タブスリープを有効にする
+  .label = タブスリープを有効にする
 tab-sleep-settings-button =
-    .label = タブスリープの設定
-    .accesskey = S
+  .label = タブスリープの設定
+  .accesskey = S
+
+tab-sleep-settings-dialog-title =
+  .title = タブスリープの設定
+tab-sleep-settings-dialog-excludehosts-label = ホストを除外
+tab-sleep-settings-dialog-excludehosts-label-2 = 1つのホストを1行ずつ入力してください
+tab-sleep-tab-context-menu-excludetab = タブをアクティブに保持
+
 enable-floorp-workspace =
- .label =  ワークスペース機能を有効にする（実験的）
+  .label = ワークスペース機能を有効にする (実験的)
 workspace-warring = ワークスペースはタブグループアドオンと併用できません。タブグループアドオンを使用したい場合は、ワークスペースを無効にし、{ -brand-short-name} を再起動してください。
 floorp-workspace-settings-button =
-    .label = ワークスペースの設定と管理
-    .accesskey = B
+  .label = ワークスペースの設定と管理
+  .accesskey = B
 enable-tab-scroll-reverse =
   .label = タブバーでのスクロールを反転させる
 enable-tab-scroll-wrap =
   .label = タブバーでのスクロールをループさせる
 tab-sleep-timeout-minutes-value = タブをスリープ状態にするまでの時間 (分)
 enable-tab-scroll-change =
- .label = タブをスクロールで切り替える
+  .label = タブをスクロールで切り替える
 enable-double-click-block =
- .label = ダブルクリックでタブを閉じる
+  .label = ダブルクリックでタブを閉じる
 enable-show-pinned-tabs-title =
- .label = ピン留めされたタブのタイトルを表示する
+  .label = ピン留めされたタブのタイトルを表示する
 Mouse-side-button =
   .label =「進む」・「戻る」ボタンを隠す
 
-tabbar-preference = タブバーの設定（実験的）
+tabbar-preference = タブバーの設定 (実験的)
 
 None-mode =
- .label= 通常モード（変更なし）
+  .label = 通常モード (変更なし)
 
 hide-horizontality-tabs =
- .label= { -brand-short-name } の組み込みのタブバーを隠す
+  .label = { -brand-short-name } の組み込みのタブバーを隠す
 
 verticalTab-setting =
- .label = 垂直タブにブラウザーを最適化
+  .label = 垂直タブにブラウザーを最適化
 
 move-tabbar-position =
- .label = タブバーの位置をツールバーの下部に表示
+  .label = タブバーの位置をツールバーの下部に表示
 
 tabbar-on-bottom =
- .label = タブバーをウインドウの下部に表示
+  .label = タブバーをウインドウの下部に表示
 
 tabbar-favicon-color =
- .label = タブバーの背景色をウェブページに合わせる
+  .label = タブバーの背景色をウェブページに合わせる
 
 tabbar-style-preference = タブスタイル
 tabbar-style-description = この設定の完全な適用には、{ -brand-short-name } を再起動する必要があります。
 horizontal-tabbar =
- .label = 水平タブ
+  .label = 水平タブ
 multirow-tabbar =
- .label = 多段タブ
+  .label = 多段タブ
 vertical-tabbar =
- .label = 垂直タブ (実験的)
- 
+  .label = 垂直タブ (実験的)
+
 native-tabbar-tip = この機能は Firefox のサイドバーを使用し、サイドバーを使用するアドオン・サイドバーパネルが使用できなくなります。
 
+native-vertical-tab-show-right =
+  .label = ウィンドウの右側に垂直タブバーを表示
+
 hover-vertical-tab =
- .label = フォーカスされた場合に垂直タブを展開する
+  .label = フォーカスされた場合に垂直タブを展開する
 
 TST = ツリー型タブ
 
@@ -107,58 +118,58 @@ vertical-tab-reverse-position = 垂直タブの位置を反転させる
 
 sidebar-reverse-position-toolbar = サイドバーの位置を反転させる
 
-bookmarks-bar-settings = ブックマークバーの設定（設定の併用不可）
+bookmarks-bar-settings = ブックマークバーの設定 (設定の併用不可)
 bookmarks-focus-mode =
- .label = ブックマークバーをフォーカスされた場合に表示
+  .label = ブックマークバーをフォーカスされた場合に表示
 bookmarks-bottom-mode =
- .label = ブックマークバーをウインドウの下部に表示
+  .label = ブックマークバーをウインドウの下部に表示
 
 nav-bar-settings = ナビゲーションバーの設定
 show-nav-bar-bottom =
- .label = ナビゲーションバーをウインドウの下部に表示 (実験的)
+  .label = ナビゲーションバーをウインドウの下部に表示 (実験的)
 
 material-effect =
- .label = Mica for Everyone によるマテリアルデザインの効果を有効にする
+  .label = Mica For Everyone によるマテリアルデザインの効果を有効にする
 disable-extension-check-compatibility-option =
- .label = アドオンと互換性があるか確認しない
+  .label = アドオンと互換性があるか確認しない
 other-preference = その他の設定
 
 enable-userscript =
- .label = userChrome.js スクリプト・レガシーアドオンのローダーを有効にする
+  .label = userChrome.js スクリプト・レガシーアドオンのローダーを有効にする
 about-legacy-components = この機能を有効にすると予期せぬエラーを発生させる可能性があります。
 
 Search-positon-top =
- .label = 検索バーを上部に表示
+  .label = 検索バーを上部に表示
 allow-auto-restart =
- .label = 再起動が必要な設定を変更した時に自動で再起動する
+  .label = 再起動が必要な設定を変更した時に自動で再起動する
 
 browser-rest-mode =
- .label = 休憩モードのショートカットキー（F9）を有効にする
+  .label = 休憩モードのショートカットキー (F9) を有効にする
 
 disable-fullscreen-notification =
- .label = 動画閲覧時のフルスクリーン通知を無効にする
+  .label = 動画閲覧時のフルスクリーン通知を無効にする
 
 floorp-updater = { -brand-short-name } のアップデーター設定
 enable-floorp-updater =
- .label = { -brand-short-name } のアップデートを起動時に確認する
+  .label = { -brand-short-name } のアップデートを起動時に確認する
 floorp-update-latest =
- .label = { -brand-short-name } が最新版であることを自動アップデートチェック時に通知する
+  .label = { -brand-short-name } が最新版であることを自動アップデートチェック時に通知する
 
-## system theme color
+## Browser Theme
 
 system-color-settings = ライトモード・ダークモードの双方に設定中のテーマが対応している場合デザインを切り替えられます。
 preferences-theme-appearance-header = テーマの外観設定
 
 system-theme-dark =
- .label = ダークモードを有効にする
+  .label = ダークモードを有効にする
 
 system-theme-light =
- .label = ライトモードを有効にする
+  .label = ライトモードを有効にする
 
 system-theme-auto =
- .label = システムの設定に従う
+  .label = システムの設定に従う
 
-## user interface prefernces
+## User interface preferences
 
 ui-preference = ユーザーインターフェイスの設定
 preferences-browser-appearance-description = ブラウザーの外観設定を決められます。完全テーマのように、５つのデザインの中からブラウザーの外観を変更することができます。
@@ -166,89 +177,94 @@ preferences-browser-appearance-description = ブラウザーの外観設定を�
 -design = デザイン
 
 firefox-proton =
- .label = Firefox Proton { -design }
+  .label = Firefox Proton { -design }
 
 firefox-proton-fix =
- .label = Firefox Proton FIX { -design }
+  .label = Firefox Proton Fix { -design }
 
 firefox-photon-lepton =
- .label = Firefox Photon・Lepton { -design }
+  .label = Firefox Photon・Lepton { -design }
 
 floorp-legacy =
- .label = Floorp Legacy { -design }（サポート対象外）
+  .label = Floorp Legacy { -design } (サポート対象外)
 
 floorp-fluentUI =
- .label = Microsoft Fluent UI { -design }
+  .label = Microsoft Fluent UI { -design }
 
 floorp-fluerialUI =
- .label = Floorp Fluerial UI { -design }
+  .label = Floorp Fluerial UI { -design }
 
 floorp-gnomeUI =
- .label = GNOME デスクトップの{ -design }（システムテーマ & GTK が必要）
+  .label = GNOME デスクトップの{ -design } (システムテーマ & GTK が必要)
 
-## download mgr
+## Download Manager
 download-notification-preferences = ダウンロード通知の設定
 start-always-notify =
- .label = 開始時にのみ通知する
+  .label = 開始時にのみ通知する
 finish-always-notify =
- .label = 終了時にのみ通知する
+  .label = 終了時にのみ通知する
 always-notify =
- .label = 開始時と終了時に通知する
+  .label = 開始時と終了時に通知する
 do-not-notify =
- .label = 通知しない
+  .label = 通知しない
 
-## sidebar
+floorp-translater = 翻訳の設定
+click-to-option =
+  .label = 設定を開く
+  .accesskey = O
+
+## Sidebar
 profiles-button-label = プロファイルを管理
 floorp-help-button-label = { -brand-short-name } サポート
 
 appmenuitem-reboot =
- .label = 再起動
+  .label = 再起動
 
-## useragent
+## UserAgent
 
 -ua = ユーザーエージェント
 
 UserAgent-preference = { -ua }
 default-useragent-mode =
- .label =
+  .label =
     { PLATFORM() ->
         [macos] デフォルト{ -ua }を使用する
        *[other] 既定の{ -ua }を使用する
     }
 
 windows-chrome-useragent-mode =
- .label = Windows 上の Chrome の{ -ua }を使用する
+  .label = Windows 上の Chrome の{ -ua }を使用する
 macOS-chrome-useragent-mode =
- .label = macOS 上の Chrome の{ -ua }を使用する
+  .label = macOS 上の Chrome の{ -ua }を使用する
 linux-chrome-useragent-mode =
- .label = Linux 上の Chrome の{ -ua }を使用する
+  .label = Linux 上の Chrome の{ -ua }を使用する
 mobile-chrome-useragent-mode =
- .label = iOS 上の Chrome の{ -ua }を使用する
+  .label = iOS 上の Chrome の{ -ua }を使用する
 use-custom-useragent-mode =
- .label = カスタム{ -ua }を使用する
+  .label = カスタム{ -ua }を使用する
 
 ## DMR UI
 download-mgr-UI =
- .label = ダウンロードマネージャーの UI をシンプルに変更する
+  .label = ダウンロードマネージャーの UI をシンプルに変更する
 downloading-red-color =
- .label = ダウンロード中の表示を赤色に変更する
+  .label = ダウンロード中の表示を赤色に変更する
 
 -bsb = ブラウザーマネージャーサイドバー
 
-sidebar-preferences =  { -bsb }の設定
+sidebar-preferences = { -bsb }の設定
 view-sidebar2-right =
- .label = サイドバーを右側に表示する
+  .label = サイドバーを右側に表示する
 enable-sidebar2 =
- .label = { -bsb }を有効にする
+  .label = { -bsb }を有効にする
 
 custom-URL-option = ウェブパネルの URL 設定
 set-custom-URL-button =
-    .label = カスタム URL を設定
-    .accesskey = S
+  .label = カスタム URL を設定
+  .accesskey = S
 bsb-header = { -bsb }
 bsb-preferences = { -bsb }の設定
-visible-bms = 
- .label = { -bsb }を表示する
+visible-bms =
+  .label = { -bsb }を表示する
 hide-bms-to-unload-panel =
   .label = パネルを非表示にするときにパネルをアンロードする
 pane-BSB-title = { -bsb }
@@ -262,11 +278,17 @@ bsb-add = { -bsb }のウェブパネルを追加する
 
 bsb-setting = ウェブパネルの設定
 
+category-BSB =
+  .tooltiptext = { pane-BSB-title }
+
+category-downloads =
+  .tooltiptext = { files-and-applications-title }
+
 bsb-add-title =
- .title = { bsb-add }
+  .title = { bsb-add }
 
 bsb-setting-title =
- .title = { bsb-setting }
+  .title = { bsb-setting }
 
 bsb-browser-manager-sidebar =
   .label = { sidebar2-browser-manager-sidebar }
@@ -286,62 +308,62 @@ bsb-notes-sidebar =
 bsb-TST-sidebar =
   .label = { sidebar2-TST-sidebar }
 
-bsb-website = 
+bsb-website =
   .label = ウェブサイト
 
 sidebar2-pref-delete =
- .label = 削除
+  .label = 削除
 
 sidebar2-pref-setting =
- .label = 設定
+  .label = 設定
 
 sidebar2-global-width = ウェブパネルの幅のグローバル値
 
 use-icon-provider-option = ウェブパネルのアイコン提供元
 
 use-icon-provider-option-google =
- .label = Google
+  .label = Google
 
 use-icon-provider-option-duckduckgo =
- .label = DuckDuckGo
+  .label = DuckDuckGo
 
 use-icon-provider-option-yandex =
- .label = Yandex (中国本土で利用可能)
+  .label = Yandex (中国本土で利用可能)
 
 use-icon-provider-option-hatena =
- .label = Hatena (中国本土で利用可能)
+  .label = Hatena (中国本土で利用可能)
 
 memory-and-performance = メモリとパフォーマンスの設定
 
 min-memory =
-    .label = メモリ使用量を最小限にする
+  .label = メモリ使用量を最小限にする
 
 balance-memory =
-    .label = パフォーマンスとメモリ使用量のバランスを取る
+  .label = パフォーマンスとメモリ使用量のバランスを取る
 
 max-memory =
-    .label = 最高パフォーマンスを得るためにメモリ使用量を最大限にする（既定）
+  .label = 最高パフォーマンスを得るためにメモリ使用量を最大限にする (既定)
 
 delete-border-and-roundup-option =
   .label = 枠線をサイトの枠のみにし、{ -brand-short-name } 自体を丸くする
 
 ## DualTheme
 dualtheme-enable =
- .label = デュアルテーマを有効にする
+  .label = デュアルテーマを有効にする
 
 newtab-background = { -brand-short-name } Home の背景の設定
 
 newtab-background-random-image =
-    .label = ランダムな Unsplash の画像を使用する
+  .label = ランダムな Unsplash の画像を使用する
 
 newtab-background-gradation =
-    .label = グラデーション
+  .label = グラデーション
 
 newtab-background-not-background =
-    .label = 背景を表示しない
+  .label = 背景を表示しない
 
 newtab-background-selected-image =
-    .label = 選択されているフォルダ内の画像を使用する
+  .label = 選択されているフォルダ内の画像を使用する
 
 newtab-background-folder = 選択されているフォルダ
 
@@ -358,112 +380,117 @@ newtab-background-folder-choose = フォルダを選ぶ
 
 newtab-background-extensions = 画像の拡張子 (","で区切ります)
 
-disable-blur-on-newtab = 
+disable-blur-on-newtab =
   .label = { -brand-short-name } Home でのブラー効果を無効にする
 
-## lepton preferences
+## Lepton Preferences
 
 about-lepton = { -brand-short-name } を Lepton を使用してカスタマイズします。設定の変更に、{ -brand-short-name } の再起動は必要ありません。代わりに { -brand-product-name } は Lepton を再適用します。
 
 lepton-preference-button =
-    .label = Lepton の設定を開く
-    .accesskey = L
+  .label = Lepton の設定を開く
+  .accesskey = L
 
 lepton-header = Lepton の設定
 
 lepton-preference = Lepton の UI 設定
 photon-mode =
-    .label = Photon UI モード
+  .label = Photon UI モード
 
 lepton-mode =
-    .label = Lepton UI モード
+  .label = Lepton UI モード
 
 protonfix-mode =
-    .label = Proton Fix UI モード
+  .label = Proton Fix UI モード
 
 autohide-preference = 自動非表示のカスタマイズ
 
 -enable-auto-hide = { $name }の自動非表示を有効にする
 
 floorp-lepton-enable-tab-autohide =
-    .label = { -enable-auto-hide(name: "タブバー") }
+  .label = { -enable-auto-hide(name: "タブバー") }
 floorp-lepton-enable-navbar-autohide =
-    .label = { -enable-auto-hide(name: "ナビゲーションバー") }
+  .label = { -enable-auto-hide(name: "ナビゲーションバー") }
 floorp-lepton-enable-sidebar-autohide =
-    .label = { -enable-auto-hide(name: "サイドバー") }
+  .label = { -enable-auto-hide(name: "サイドバー") }
 floorp-lepton-enable-urlbar-autohide =
-    .label = { -enable-auto-hide(name: "URL バー") }
+  .label = { -enable-auto-hide(name: "URL バー") }
 floorp-lepton-enable-back-button-autohide =
-    .label = { -enable-auto-hide(name: "「戻る」ボタン") }
+  .label = { -enable-auto-hide(name: "「戻る」ボタン") }
 floorp-lepton-enable-forward-button-autohide =
-    .label = { -enable-auto-hide(name: "「進む」ボタン") }
+  .label = { -enable-auto-hide(name: "「進む」ボタン") }
 floorp-lepton-enable-page-action-button-autohide =
-    .label = { -enable-auto-hide(name: "アドオンのページアクションボタン") }
+  .label = { -enable-auto-hide(name: "アドオンのページアクションボタン") }
 floorp-lepton-enable-toolbar-overlap =
-    .label = ツールバーを URL バーと重ねる
+  .label = ツールバーを URL バーと重ねる
 floorp-lepton-enable-toolbar-overlap-allow-layout-shift-autohide =
-    .label = ツールバーを URL バーと重ねる (自動非表示を有効にするとレイアウトが崩れる場合があります)
+  .label = ツールバーを URL バーと重ねる (自動非表示を有効にするとレイアウトが崩れる場合があります)
 
 hide-preference = 非表示のカスタマイズ
 
 -do-hide = { $name }を非表示にする
 
 floorp-lepton-enable-tab_icon-hide =
-    .label = { -do-hide(name: "タブのアイコン") }
+  .label = { -do-hide(name: "タブのアイコン") }
 floorp-lepton-enable-tabbar-hide =
-    .label = { -do-hide(name: "タブバー") }
+  .label = { -do-hide(name: "タブバー") }
 floorp-lepton-enable-navbar-hide =
-    .label = { -do-hide(name: "ナビゲーションバー") }
+  .label = { -do-hide(name: "ナビゲーションバー") }
 floorp-lepton-enable-sidebar_header-hide =
-    .label = { -do-hide(name: "サイドバーのヘッダー") }
+  .label = { -do-hide(name: "サイドバーのヘッダー") }
 floorp-lepton-enable-urlbar_iconbox-hide =
-    .label = { -do-hide(name: "URL バーのアイコンボックス") }
+  .label = { -do-hide(name: "URL バーのアイコンボックス") }
 floorp-lepton-enable-bookmarkbar_icon-hide =
-    .label = { -do-hide(name: "ブックマークバーのアイコン") }
+  .label = { -do-hide(name: "ブックマークバーのアイコン") }
 floorp-lepton-enable-bookmarkbar_label-hide =
-    .label = { -do-hide(name: "ブックマークバーのラベル名") }
+  .label = { -do-hide(name: "ブックマークバーのラベル名") }
 floorp-lepton-enable-disabled_menu-hide =
-    .label = { -do-hide(name: "無効なコンテストメニュー・メニュー") }
+  .label = { -do-hide(name: "無効なコンテストメニュー・メニュー") }
+
+floorp-lepton-disable-userChrome-icon =
+  .label = Lepton のコンテキストメニューとパネルメニューアイコンを無効にする
+floorp-lepton-disable-userChrome-menu-icon =
+  .label = Lepton のコンテキストメニューアイコンを有効にする
 
 positon-preferences = 位置のカスタマイズ
 
 floorp-lepton-enable-centered-tab =
-    .label = タブ名を中央に配置する
+  .label = タブ名を中央に配置する
 floorp-lepton-enable-centered-urlbar =
-    .label = URL バーを中央に配置する
+  .label = URL バーを中央に配置する
 floorp-lepton-enable-centered-bookmarkbar =
-    .label = ブックマークバーを中央に配置する
+  .label = ブックマークバーを中央に配置する
 
 urlbar-preferences = URLバーのカスタマイズ
 
 floorp-lepton-enable-urlbar-icon-move-to-left =
-    .label = URL バーのアイコンを左に移動する
+  .label = URL バーのアイコンを左に移動する
 floorp-lepton-enable-urlname-go_button_when_typing =
-    .label = URL バーで入力中は「移動」ボタンを表示する
+  .label = URL バーで入力中は「移動」ボタンを表示する
 floorp-lepton-enable-always-show-page_action =
-    .label = アドオンのページアクションボタンを常に表示する
+  .label = アドオンのページアクションボタンを常に表示する
 
 tabbar-preferences = タブバーのカスタマイズ
 
 floorp-lepton-enable-tabbar-positon-as-titlebar =
-    .label = タブバーをタイトルバーの位置に配置する
+  .label = タブバーをタイトルバーの位置に配置する
 floorp-lepton-enable-tabbar-as-urlbar =
-    .label = タブバーを URL バーの位置に配置する
+  .label = タブバーを URL バーの位置に配置する
 
 lepton-sidebar-preferences = サイドバーのカスタマイズ
 floorp-lepton-enable-overlap-sidebar =
-    .label = サイドバーをウェブサイトビューワーの上にオーバーラップする
+  .label = サイドバーをウェブサイトビューワーの上にオーバーラップする
 
 floorp-home-mode-choice-default =
-    .label = Floorp Home (既定)
+  .label = Floorp Home (既定)
 floorp-home-prefs-content-header = Floorp Home コンテンツ
 floorp-home-prefs-content-description = Floorp Home に表示するコンテンツを選びましょう。
 
 ## Notes
 floorp-notes = { -brand-short-name } Notes
 restore-from-backup = Notes をバックアップから復元する
-enable-notes-sync = 
- .label = Notes の Firefox Sync による同期を有効にする
+enable-notes-sync =
+  .label = Notes の Firefox Sync による同期を有効にする
 about-notes-backup-tips = Floorp Notes は、Firefox Sync を使用して、他のデバイスとノートを同期します。ノートを紛失した場合、バックアップから復元することができます。バックアップは { -brand-short-name } を起動すると作成されます。
 notes-sync-description = これにより、同期時にメモが上書きされ、コンテンツが失われる問題を解決することができます。
 backuped-time = バックアップ時刻
@@ -477,8 +504,8 @@ restore-button = 復元
 
 ## user.js
 
-userjs-button =  user.js オプションを開く... 
-userjs-select-option =  user.js を選択 
+userjs-button = user.js オプションを開く...
+userjs-select-option = user.js を選択 
 
 header-userjs = user.js
 userjs-customize = user.js で { -brand-short-name } をカスタマイズする。
@@ -502,7 +529,7 @@ about-Securefox =
      [macos] HTTPS を既定で有効に。サイト分離による Total Cookie Protection。状態やネットワークのパーティショニングを強化。その他、様々な機能強化。
     *[other] HTTPS を既定で有効に。サイト分離による Total Cookie Protection。状態やネットワークのパーティショニングを強化。その他、様々な機能強化。
   }
-    
+
 default-label = Yokoffing Default
 about-default = 必要なものはすべて。壊れることはありません。これが、あなたの user.js です。
 
@@ -515,22 +542,23 @@ about-Peskyfox = 新しいタブページの整理をする。ポケットを削
 Smoothfox-label = Yokoffing Smoothfox
 about-Smoothfox = Edge のようなスムーズなスクロールを、お気に入りのブラウザで実現することができます。
 
-# workspaces
+## Workspaces
 
 -workspaces = ワークスペース
+
 floorp-workspaces-title = { -brand-short-name } { -workspaces }
 workspaces-backup-discription = { -workspaces }のバックアップと復元
 workspaces-restore-service-title = { -workspaces }復元サービス
 workspaces-restore-warning = 警告: この操作を実行すると、現在の{ -workspaces }が上書きされ、ブラウザーが数秒の間使えなくなり、{ -workspaces }が復元されます。この操作は取り消せません。
 
-change-to-close-workspace-popup-option = 
- .label = { -workspaces }選択時に{ -workspaces }のポップアップを閉じる
-pinned-tabs-exclude-workspace-option = 
- .label = { -workspaces }に固定されたタブを含めない
+change-to-close-workspace-popup-option =
+  .label = { -workspaces }選択時に{ -workspaces }のポップアップを閉じる
+pinned-tabs-exclude-workspace-option =
+  .label = { -workspaces }に固定されたタブを含めない
 
 workspaces-reset-title = { -workspaces }のリセット
 workspaces-reset-label =
-    .label = { -workspaces }のリセット
+  .label = { -workspaces }のリセット
 workspaces-reset-description = { -workspaces }をリセットするとグループ化が解除され、初期状態に戻ります。
 workspaces-reset-button = { -workspaces }のリセットを実行する...
 
@@ -538,65 +566,68 @@ workspaces-reset-service-title = Floorp { -workspaces }
 workspaces-reset-warning = 警告！この操作を実行すると、すべての{ -workspaces }が削除され、ブラウザーが数秒間使えなくなります。この操作は取り消せません。
 
 manage-workspace-on-bms-option =
-    .label = ブラウザーマネージャーサイドバーで{ -workspaces }を管理する
+  .label = ブラウザーマネージャーサイドバーで{ -workspaces }を管理する
 show-workspace-name-option =
-    .label = { -workspaces }名を常にアイコンの隣に表示する
+  .label = { -workspaces }名を常にアイコンの隣に表示する
 change-workspace-with-default-key-option =
-    .label = { -workspaces }を ↑ または、 ↓ SHIFT キーを同時押しで切り替える
+  .label = { -workspaces }を ↑ または、 ↓ SHIFT キーを同時押しで切り替える
 workspaces-manage-title = { -workspaces }の管理
 workspaces-manage-description = { -workspaces }の管理を開きます。アイコンの変更を行えます。
 workspaces-manage-label =
-    .label = { -workspaces }の管理
+  .label = { -workspaces }の管理
 
 workspaces-manage-button  = { -workspaces }マネージャーを開く... 
 
 select-workspace = { -workspaces }を選択
 workspace-select-icon = アイコンを選択
- .label = アイコンを選択
+  .label = アイコンを選択
 workspace-select-container = コンテナーを選択
- .label = コンテナーを選択
-workspace-customize = 
- .title = { -workspaces }のカスタマイズ
+  .label = コンテナーを選択
+workspace-customize =
+  .title = { -workspaces }のカスタマイズ
+
 floorp-no-workspace-conatiner =
   .label = コンテナーなし
 
 workspace-icon-briefcase =
- .label = 仕事
+  .label = 仕事
 workspace-icon-cart =
- .label = ショッピング
+  .label = ショッピング
 workspace-icon-circle =
- .label = サークル
+  .label = サークル
 workspace-icon-compass =
- .label = 探求
+  .label = 探求
 workspace-icon-gear =
- .label = ギア
+  .label = ギア
 workspace-icon-dollar =
- .label = 銀行
+  .label = 銀行
 workspace-icon-fence =
- .label = 柵
+  .label = 柵
 workspace-icon-fingerprint =
- .label = 個人
+  .label = 個人
 workspace-icon-gift =
- .label = ギフト
+  .label = ギフト
 workspace-icon-vacation =
- .label = 休暇・旅行
+  .label = 休暇・旅行
 workspace-icon-food =
- .label = 食べ物
+  .label = 食べ物
 workspace-icon-fruit =
- .label = フルーツ
+  .label = フルーツ
 workspace-icon-pet =
- .label = ペット
+  .label = ペット
 workspace-icon-tree =
- .label = 植物
+  .label = 植物
 workspace-icon-chill =
- .label = プライベート
+  .label = プライベート
 workspace-icon-question =
- .label = 問題
+  .label = 問題
 workspace-icon-star =
- .label = 星
+  .label = 星
 
-# CSK
+# Custom Keyboard Shortcuts
+
 -csk = カスタムショートカットキー
+
 floorp-CSK-title = { -csk }
 floorp-CSK-description = { -brand-short-name } のショートカットキーをカスタマイズします。80 以上のアクションでブラウザーを自由自在に操作してください！これらの設定を適用するには、{ -brand-short-name } を再起動してください。
 CSK-reset-title = { -csk }をリセットする
@@ -610,7 +641,7 @@ CSK-remove-shortcutkey-description = 本当にこのショートカットキー�
 
 CSK-restore-default = { -csk }
 
-CSK-restore-default-description = 
+CSK-restore-default-description =
     { PLATFORM() ->
         [macos] { -csk }の設定をデフォルトに戻します。現在の設定は失われます
        *[other] { -csk }の設定を既定に戻します。現在の設定は失われます
@@ -618,20 +649,20 @@ CSK-restore-default-description =
 
 CSK-reboot-browser-label = { -csk }ーの変更は、{ -brand-short-name } の再起動後に適用されます。
 CSK-reboot-browser-button = { -brand-short-name } を再起動する...
-### Exsit shortcut key: "S", "shift"
+# Exist shortcut key: "S", "shift"
 CSK-keyborad-shortcut-info = "{ $key }" と "{ $modifiers }" の組み合わせが設定されています。
 CSK-keyborad-shortcut-info-with-keycode = "{ $key }" が設定されています。
 
-CSK-keyborad-shortcut-is-changed = (変更が未適用）
+CSK-keyborad-shortcut-is-changed = (変更が未適用)
 
 -action = アクション
 
 disable-fx-actions =
- .label = Firefox のキーボードショートカットを無効にする
+  .label = Firefox のキーボードショートカットを無効にする
 customize-Action =
- .label = この{ -action }をカスタマイズ
+  .label = この{ -action }をカスタマイズ
 remove-Action =
- .label = この{ -action }を削除
+  .label = この{ -action }を削除
 
 floorp-custom-actions-tab-action = タブの{ -action }
 floorp-custom-actions-page-action = ページの{ -action }
@@ -646,20 +677,22 @@ floorp-custom-actions-downloads-action = ダウンロードの{ -action }
 floorp-custom-actions-sidebar-action = サイドバーの{ -action }
 floorp-custom-actions-bms-action = ブラウザーマネージャーサイドバーの{ -action }
 floorp-custom-actions-workspace-action = ワークスペースの{ -action }
+floorp-custom-actions-custom-action = カスタムアクションの{ -action } (実験的)
 
-## mouse Gesture
+## Mouse Gestures
 mouse-gesture = マウスジェスチャー
 mouse-gesture-description = { -brand-short-name } でマウスジェスチャを使用するには、Gesturefy がインストールされている必要があります。
 Gesturefy = Gesturefy
 about-Gesturefy = Gesturefy はブラウザにマウスジェスチャを追加する拡張機能です。{ -brand-short-name } がこのアドオンのインストールを検出すると、{ -brand-short-name } でしか利用できないジェスチャーコマンドを Gesturefy に追加します。また、このアドオンは新しいタブで動作可能です。
 
-## Translate
+# Translate
 
 TWS = Translate Web Page
 about-TWS = Google や Yandexを使って、リアルタイムでページを翻訳します。選択したテキストやページ全体を翻訳することも可能です。新しいタブを開く必要はありません。ウェブページのテキストは、Google や Yandex などに送信されて翻訳されます。
 
 # Privacy Hub
-## BlockMoreTracker
+## BlockMoreTrackers
+
 privacy-hub-header = プライバシーハブ
 block-more-tracker = 更に多くの追跡を遮断する
 block-tracker = このセクションでは、ウイルスやトラッカーをブロックするために設計された拡張機能のセットの情報を提供します。これらの拡張機能は、{ -brand-short-name } によって自動的に検出され、表示されます。
@@ -669,7 +702,7 @@ about-uboori = uBlock Originは、コンテンツフィルタリングのため�
 Facebook-Container = Facebook Container
 about-Facebook-Container = Facebook がウェブ上であなたを追跡するのを防ぎましょう。Mozilla によって提供される Facebook Container アドオンは、あなたのウェブ活動を Facebook から切り離すのに役立ちます。
 
-## Fingerprint
+## Fingerprinting
 fingerprint-header = フィンガープリント & IP アドレスの漏洩対策
 block-fingerprint =
     { PLATFORM() ->
@@ -679,16 +712,18 @@ block-fingerprint =
 enable-firefox-fingerprint-protections = フィンガープリントに対する強力な保護を有効にする
 about-firefox-fingerprint-protection = Firefox によるフィンガープリント保護を有効にした場合、強制ライトモード、一部の API を無効にするなどのデメリットがあります。一部のサイトが壊れる可能性もあります。
 fingerprint-Protection =
- .label =  フィンガープリント保護
+  .label = フィンガープリント保護
 html5-canvas-prompt-settings =
- .label =  HTML5 画像データのアクセス確認プロンプトを自動承認する
+  .label = HTML5 画像データのアクセス確認プロンプトを自動承認する
 canvas-prompt = キャンバス読み取りのプロンプトを自動で拒否する
 disable-webgl =
- .label =  WebGL を無効にする
+  .label = WebGL を無効にする
 about-webgl = WebGL は、グラフィックを描画するための Javascript API で、GPU を識別するために使用されることがあります。
 WebRTC-connection = WebRTC は、リアルタイム通話を実現する規格です。この設定を無効にすると、Discord などが使えなくなります。
-WebRTC = 
- .label = WebRTC 接続を有効にする
+Canvas-Blocker = キャンバスブロッカー
+about-CB = このアドオンは、フィンガープリンティング技術で使用されるデータを偽装します。
+WebRTC =
+  .label =WebRTC 接続を有効にする
 
 ################################################################### browser ###############################################################
 
@@ -701,7 +736,7 @@ Sidebar2 =
 
 sidebar2-mute-and-unmute =
   .label = サイドバーの音声をミュート/ミュート解除する
- 
+
 sidebar2-unload-panel =
   .label = このパネルをアンロードする
 
@@ -711,7 +746,7 @@ sidebar2-change-ua-panel =
 sidebar2-delete-panel =
   .label = このパネルをサイドバーから削除
 
-sidebar-close-button =
+sidebar2-close-button =
   .tooltiptext = サイドバーを閉じる
 
 sidebar-back-button =
@@ -722,6 +757,9 @@ sidebar-forward-button =
 
 sidebar-reload-button =
   .tooltiptext = リロード
+
+sidebar-go-index-button =
+  .tooltiptext = ホームに移動
 
 sidebar-muteAndUnmute-button =
   .tooltiptext = サイドバーの音声をミュート/ミュート解除する
@@ -784,37 +822,37 @@ bsb-context-link-add =
 #################################################################### menu panel ############################################################
 
 open-profile-dir =
-    .label = プロファイルフォルダーを開く
+  .label = プロファイルフォルダーを開く
 appmenuitem-reboot =
-    .label = 再起動
+  .label = 再起動
 
 ####################################################################### menu ###############################################################
 
 css-menu =
-    .label = CSS
-    .accesskey = C
+  .label = CSS
+  .accesskey = C
 
 css-menubar =
-    .label = CSS
-    .accesskey = C
+  .label = CSS
+  .accesskey = C
 
 rebuild-css =
-    .label = ブラウザー CSS を再構築する
-    .accesskey = R
+  .label = ブラウザー CSS を再構築する
+  .accesskey = R
 
 make-browsercss-file =
-    .label = ブラウザー CSS ファイルを作成する
-    .accesskey = M
+  .label = ブラウザー CSS ファイルを作成する
+  .accesskey = M
 
 open-css-folder =
-    .label = ブラウザー CSS フォルダーを開く
-    .accesskey = O
+  .label = ブラウザー CSS フォルダーを開く
+  .accesskey = O
 
 edit-userChromeCss-editor =
-    .label = userChrome.css を編集する
+  .label = userChrome.css を編集する
 
 edit-userContentCss-editor =
-    .label = userContent.css を編集する
+  .label = userContent.css を編集する
 
 not-found-editor-path = テキストエディターへのパスが見つかりません！
 set-pref-description = 以下のフォームに使用したいテキストエディターへのパスを入力してください。
@@ -827,16 +865,16 @@ undo-closed-tab = 閉じたタブを開く
 
 ################################################################### about:addons ###############################################################
 
-# DualTheme
-dual-theme-enable-addon-button = 有効化（サブテーマ）
+# Dual Theme
+dual-theme-enable-addon-button = 有効化 (ブテーマ)
 dual-theme-disable-addon-button = 無効化 (サブテーマ)
-dual-theme-enabled-heading = 有効（サブテーマ）
+dual-theme-enabled-heading = 有効 (サブテーマ)
 
 ##################################################################### migration  ###############################################################
 
 import-from-vivaldi =
-    .label = Vivaldi
-    .accesskey = V
+  .label = Vivaldi
+  .accesskey = V
 
 ##################################################################### toolbar ###############################################################
 
@@ -879,6 +917,9 @@ gf-floorp-hide-statusbar-description = Floorpのステータスバーを非表�
 gf-floorp-toggle-statusbar-name = [Floorp] ステータスバーの表示の切り替え
 gf-floorp-toggle-statusbar-description = ステータスバーを表示または非表示にします。
 
+gf-floorp-show-browser-manager-sidebar-name = [Floorp] BMSの切り替え
+gf-floorp-show-browser-manager-sidebar-description = ブラウザマネージャーサイドバーの切り替え。
+
 gf-floorp-open-extension-sidebar-name = [Floorp] サイドバーで選択したアドオンを開く
 gf-floorp-open-extension-sidebar-description = サイドバーで指定したアドオンを開きます。
 gf-floorp-open-extension-sidebar-settings-addons-id = アドオン ID
@@ -900,10 +941,10 @@ update-portable-notification-failed-prepare-message = アップデートの準�
 ##################################################################### Open link in external ###############################################################
 openInExternal-title = 外部ブラウザーで開く
 open-link-in-external-enabled-option =
- .label = 「外部ブラウザーで開く」機能を有効にする
+  .label = 「外部ブラウザーで開く」機能を有効にする
 open-link-in-external-select-browser-option = 「外部ブラウザーで開く」で開くブラウザー
 open-link-in-external-select-browser-option-default =
- .label =
+  .label =
      { PLATFORM() ->
         [macos] デフォルトブラウザー
        *[other] 既定のブラウザー
@@ -929,8 +970,14 @@ memo-first-tip = Floorp Notes へようこそ！ここでは、使い方を説�
 memo-second-tip = Floorp Notes は、メモを作成・編集・保存・削除するための機能です。メモは、ブラウザーを閉じても保存されます。また、Firefox Syncを使用して、他の端末にも同期することができます。同期を有効にするには、Floorp に Firefox アカウントでログインしてください。
 memo-third-tip = あなたのメモは Floorp ブラウザーの設定に保存されます。Firefox Sync は、パスワードによって暗号化されているため、あなた以外の他の人に見られることはありません。もちろん Ablaze や Floorp は、あなたのメモを読むことはできません。Firefox Sync はバックアップ機能ではないため、メモは必ずバックアップを取ってください。
 memo-fourth-tip = Floorp Notes は、Floorp のブラウザーマネージャーサイドバーまたは、「about:notes」を URL に入力すること開くことができます。
+memo-import-data-tip = Firefox Sync はバックアップ機能ではないため、メモは必ずバックアップを取ってください。
 memo-new-title = 新規メモ
 chage-view-mode = 編集/表示モード切り替え
+readonly-mode = オフライン (読み取り専用)
+
+######################################################################### Default bookmarks ###############################################################
+default-bookmark-ablaze-support = Ablaze Support
+default-bookmark-notes = Floorp Notes
 
 ######################################################################### workspace ###############################################################
 
@@ -944,33 +991,36 @@ workspace-button = ワークスペース
   .label = ワークスペース
   .tooltiptext = ワークスペース
 
-workspace-default = 
+workspace-default =
   .label =
      { PLATFORM() ->
         [macos] デフォルトブラウザー
        *[other] 既定のブラウザー
      }
-workspace-add = 
- .label= ワークスペースを追加
+
+workspace-add =
+  .label = ワークスペースを追加
 
 workspace-context-menu-selected-tab =
- .label = 表示中のタブは他のワークスペースに移動できません。
+  .label = 表示中のタブは他のワークスペースに移動できません。
 move-tab-another-workspace =
- .label = 他のワークスペースに移動
-workspace-rename = 
+  .label = 他のワークスペースに移動
+workspace-rename =
   .label = ワークスペース名を変更
-workspace-delete = 
+workspace-delete =
   .label = ワークスペースを削除
 manage-workspace = ワークスペースを管理
+  .label = ワークスペースを管理
 
 ######################################################################### Share mode ###############################################################
 
 sharemode-menuitem =
   .label = 画面共有モード
+  .accesskey = S
 
 ######################################################################### Like Chrome Download mgr ###############################################################
 
-floorp-delete-all-downloads = 
+floorp-delete-all-downloads =
   .label = すべてのダウンロードを隠す
   .accesskey = D
   .tooltiptext = すべてのダウンロードを隠す
@@ -1014,11 +1064,11 @@ welcomet-finish-setup = ブラウジングを開始する
 ############################################################# Custom Shortcutkey ###############################################################
 
 category-CSK =
- .label = カスタムショートカットキー
- .tooltiptext = カスタムショートカットキー
+  .label = カスタムショートカットキー
+  .tooltiptext = カスタムショートカットキー
 category-CSK-title = カスタムショートカットキー
-shortcutkey-customize = 
- .title = カスタムショートカットキー
+shortcutkey-customize =
+  .title = カスタムショートカットキー
 select-shortcutkeyAction = ショートカットキーのアクションを選択
 shortcutkey-customize-key-list-placeholder = 入力されたキー
 shortcut-key-label = アクションに使用するキー
@@ -1106,6 +1156,8 @@ floorp-custom-actions-open-bookmarks-manager = ブックマークマネージャ
   .label = ブックマークマネージャーを開く
 floorp-custom-actions-toggle-bookmark-toolbar = ブックマークツールバーの表示の切り替え
   .label = ブックマークツールバーの表示の切り替え
+floorp-custom-actions-show-bookmark-toolbar = ブックマークツールバーの切り替え
+  .label = ブックマークツールバーの切り替え
 floorp-custom-actions-open-general-preferences = 一般設定を開く
   .label = 一般設定を開く
 floorp-custom-actions-open-privacy-preferences = プライバシー設定を開く
@@ -1130,8 +1182,6 @@ floorp-custom-actions-quick-forget-history = 履歴のクイック削除
   .label = 履歴のクイック削除
 floorp-custom-actions-clear-recent-history = 最近の履歴をクリア
   .label = 最近の履歴をクリア
-floorp-custom-actions-restore-last-session = 最後のセッションを復元
-  .label = 最後のセッションを復元
 floorp-custom-actions-search-history = 履歴を検索
   .label = 履歴を検索
 floorp-custom-actions-manage-history = 履歴を管理
@@ -1158,6 +1208,7 @@ floorp-custom-actions-open-next-workspace = 次のワークスペースを開く
   .label = 次のワークスペースを開く
 
 -switch-show-panel = { $name } の表示の切り替え
+
 floorp-custom-actions-show-panel-1 = { -switch-show-panel(name: "パネル 1") }
   .label = { -switch-show-panel(name: "パネル 1") }
 floorp-custom-actions-show-panel-2 = { -switch-show-panel(name: "パネル 2") }
@@ -1178,7 +1229,9 @@ floorp-custom-actions-show-panel-9 = { -switch-show-panel(name: "パネル 9") }
   .label = { -switch-show-panel(name: "パネル 9") }
 floorp-custom-actions-show-panel-10 = { -switch-show-panel(name: "パネル 10") }
   .label = { -switch-show-panel(name: "パネル 10") }
+
 -custom-actions = カスタムアクション { $name }
+
 floorp-custom-actions-custom-action-1 = { -custom-actions(name: "1") }
   .label = { -custom-actions(name: "1") }
 floorp-custom-actions-custom-action-2 = { -custom-actions(name: "2") }
@@ -1190,20 +1243,18 @@ floorp-custom-actions-custom-action-4 = { -custom-actions(name: "4") }
 floorp-custom-actions-custom-action-5 = { -custom-actions(name: "5") }
   .label = { -custom-actions(name: "5") }
 
-############################################################# プロファイルスイッチャー ###############################################################
+##################################################################### Profile Switcher ###############################################################
 
 floorp-profile = プロファイル
 floorp-open-profile-with-new-instance = 開く
- .tooltiptext = 開く
+  .tooltiptext = 開く
 floorp-profiles-in-use = このプロファイルは使用中です。
 floorp-profiles-title = プロファイル
 floorp-profiles-create = プロファイルを作成
 floorp-profile-manager = プロファイルマネージャー
- .label = プロファイルマネージャー
- .tooltiptext = プロファイルマネージャーを開く
-show-workspace-name-option = ワークスペース名をタブバーに表示
-    .label = ワークスペース名をタブバーに表示
-
+  .label = プロファイルマネージャー
+  .tooltiptext = プロファイルマネージャーを開く
+fxa-not-signed-in = サインインしていません
 
 ##################################################################### Floorp Portable Preferences ###############################################################
 
@@ -1219,12 +1270,18 @@ floorp-toggle-private-container =
   .accesskey = P
 open-in_private-container =
   .label = 新しいプライベートコンテナータブで開く
+
 ######################################################################### Page Actions ###############################################################
 
 qrcode-generate-page-action-title = QR コードでウェブページを共有
 qrcode-generate-page-action =
- .tooltiptext = QR コードでウェブページを共有
+  .tooltiptext = QR コードでウェブページを共有
 
 ######################################################################### Customize Mode ###############################################################
 floorp-customize-mode-unified-extensions-button =
- .label = 統合拡張機能ボタン
+  .label = 統合拡張機能ボタン
+
+######################################################################## Split View ###############################################################
+
+floorp-split-view-menu =
+  .label = このタブを分割表示に固定
